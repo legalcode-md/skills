@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "reportTitle": "Supplier Agreement Portfolio Review",
+    "generatedAt": "2026-04-09T19:15:00.000Z",
+    "runId": "run-2026-04-09-example",
+    "corpusLabel": "April supplier intake / mixed folders",
+    "executionPath": "cli",
+    "documentCount": 4,
+    "columnCount": 4
+  },
+  "columns": [
+    {
+      "key": "governing_law",
+      "label": "Governing Law",
+      "type": "text",
+      "sortable": true,
+      "filterable": true
+    },
+    {
+      "key": "termination_for_convenience",
+      "label": "Termination for Convenience",
+      "type": "text",
+      "sortable": true,
+      "filterable": true
+    },
+    {
+      "key": "liability_cap",
+      "label": "Liability Cap",
+      "type": "text",
+      "sortable": true,
+      "filterable": true
+    },
+    {
+      "key": "dpa_risk",
+      "label": "DPA / Privacy Risk",
+      "type": "risk",
+      "sortable": true,
+      "filterable": true
+    }
+  ],
+  "rows": [
+    {
+      "id": "DOC-001",
+      "documentName": "Acme Master Services Agreement.pdf",
+      "documentPath": "/matters/suppliers/acme/Acme Master Services Agreement.pdf",
+      "documentType": "MSA",
+      "sourceGroup": "Supplier folder A",
+      "overallStatus": "verified",
+      "cells": {
+        "governing_law": {
+          "answer": "England and Wales",
+          "status": "verified",
+          "confidence": "high",
+          "source": {
+            "page": 17,
+            "section": "18.7",
+            "quote": "This Agreement is governed by and construed in accordance with the laws of England and Wales."
+          },
+          "notes": "Standard UK governing law."
+        },
+        "termination_for_convenience": {
+          "answer": "Customer only, on 30 days' notice",
+          "status": "verified",
+          "confidence": "high",
+          "source": {
+            "page": 11,
+            "section": "12.4",
+            "quote": "Customer may terminate this Agreement for convenience upon not less than thirty (30) days' prior written notice."
+          },
+          "notes": ""
+        },
+        "liability_cap": {
+          "answer": "Fees paid in prior 12 months",
+          "status": "verified",
+          "confidence": "definite",
+          "source": {
+            "page": 9,
+            "section": "10.2",
+            "quote": "the aggregate liability shall not exceed the fees paid in the twelve (12) months preceding the claim"
+          },
+          "notes": "Confidentiality and data breach carveouts excluded from cap."
+        },
+        "dpa_risk": {
+          "answer": "Partial - DPA referenced but breach notice timing is vague",
+          "status": "needs_review",
+          "confidence": "probable",
+          "source": {
+            "page": 23,
+            "section": "Schedule 3",
+            "quote": "Processor shall notify Controller without undue delay after becoming aware of a personal data breach."
+          },
+          "notes": "Check playbook for maximum acceptable breach notification timing."
+        }
+      }
+    },
+    {
+      "id": "DOC-002",
+      "documentName": "Beacon SaaS Order Form.docx",
+      "documentPath": "/matters/suppliers/beacon/Beacon SaaS Order Form.docx",
+      "documentType": "Order Form",
+      "sourceGroup": "Supplier folder B",
+      "overallStatus": "needs_review",
+      "cells": {
+        "governing_law": {
+          "answer": "Delaware",
+          "status": "verified",
+          "confidence": "high",
+          "source": {
+            "page": 4,
+            "section": "9",
+            "quote": "This Order Form is governed by the laws of the State of Delaware."
+          },
+          "notes": ""
+        },
+        "termination_for_convenience": {
+          "answer": "No express termination for convenience",
+          "status": "not_found",
+          "confidence": "possible",
+          "source": {
+            "heading": "Termination",
+            "quote": "The parties may terminate for material breach..."
+          },
+          "notes": "Manual confirmation recommended because the order form may incorporate online terms."
+        },
+        "liability_cap": {
+          "answer": "Unclear - order form references online master terms",
+          "status": "conflict",
+          "confidence": "possible",
+          "source": {
+            "page": 2,
+            "section": "Incorporation",
+            "quote": "This Order Form is subject to Vendor's Master Subscription Terms available at..."
+          },
+          "notes": "Need the incorporated online terms to confirm the operative cap."
+        },
+        "dpa_risk": {
+          "answer": "Needs review - DPA not attached",
+          "status": "needs_review",
+          "confidence": "possible",
+          "source": {
+            "page": 3,
+            "section": "Data Processing",
+            "quote": "The parties shall enter into a data processing addendum where required by applicable law."
+          },
+          "notes": "Missing DPA attachment."
+        }
+      }
+    },
+    {
+      "id": "DOC-003",
+      "documentName": "Cinder Security Addendum.pdf",
+      "documentPath": "/matters/suppliers/cinder/Cinder Security Addendum.pdf",
+      "documentType": "Security Addendum",
+      "sourceGroup": "Security annexes",
+      "overallStatus": "conflict",
+      "cells": {
+        "governing_law": {
+          "answer": "New York",
+          "status": "conflict",
+          "confidence": "probable",
+          "source": {
+            "page": 6,
+            "section": "14",
+            "quote": "This Addendum shall be governed by the laws of the State of New York..."
+          },
+          "notes": "Main agreement appears to use California law; addendum may create a conflict."
+        },
+        "termination_for_convenience": {
+          "answer": "Not applicable to standalone addendum",
+          "status": "not_found",
+          "confidence": "high",
+          "source": {
+            "heading": "Scope",
+            "quote": "This Addendum supplements the Master Services Agreement."
+          },
+          "notes": ""
+        },
+        "liability_cap": {
+          "answer": "Security addendum silent; defer to main agreement",
+          "status": "not_found",
+          "confidence": "high",
+          "source": {
+            "heading": "General",
+            "quote": "Except as expressly modified herein, the MSA remains in full force and effect."
+          },
+          "notes": ""
+        },
+        "dpa_risk": {
+          "answer": "Verified - 72 hour breach notice",
+          "status": "verified",
+          "confidence": "definite",
+          "source": {
+            "page": 3,
+            "section": "7.2",
+            "quote": "Vendor shall notify Customer within seventy-two (72) hours of becoming aware of a personal data breach."
+          },
+          "notes": ""
+        }
+      }
+    },
+    {
+      "id": "DOC-004",
+      "documentName": "Delta Services Agreement Scan.pdf",
+      "documentPath": "/matters/legacy/Delta Services Agreement Scan.pdf",
+      "documentType": "Services Agreement",
+      "sourceGroup": "Legacy scans",
+      "overallStatus": "failed",
+      "cells": {
+        "governing_law": {
+          "answer": "",
+          "status": "failed",
+          "confidence": "unlikely",
+          "source": {
+            "quote": "OCR failure on core pages"
+          },
+          "notes": "Scan quality too poor for reliable extraction."
+        },
+        "termination_for_convenience": {
+          "answer": "",
+          "status": "failed",
+          "confidence": "unlikely",
+          "source": {
+            "quote": "OCR failure on core pages"
+          },
+          "notes": "Requires re-OCR or manual review."
+        },
+        "liability_cap": {
+          "answer": "",
+          "status": "failed",
+          "confidence": "unlikely",
+          "source": {
+            "quote": "OCR failure on liability section"
+          },
+          "notes": ""
+        },
+        "dpa_risk": {
+          "answer": "",
+          "status": "failed",
+          "confidence": "unlikely",
+          "source": {
+            "quote": "OCR failure on data processing provisions"
+          },
+          "notes": ""
+        }
+      }
+    }
+  ],
+  "summary": {},
+  "conflicts": [],
+  "filters": {
+    "sourceGroups": ["Supplier folder A", "Supplier folder B", "Security annexes", "Legacy scans"],
+    "documentTypes": ["MSA", "Order Form", "Security Addendum", "Services Agreement"],
+    "statuses": ["verified", "needs_review", "conflict", "not_found", "failed"]
+  }
+}

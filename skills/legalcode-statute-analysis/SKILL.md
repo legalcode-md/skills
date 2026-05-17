@@ -23,14 +23,6 @@ agent: general-purpose
 ---
 
 # Legalcode Statute Analysis
-## Legalcode MCP Access
-
-Use Legalcode MCP for source lookup while keeping documents and matter context in the user's agent environment.
-
-- Public MCP: `https://mcp.legalcode.md` for anonymous laws and case law.
-- Pro MCP: `https://mcppro.legalcode.md` for stronger search, up to 20 results per query, guidance, agreements, downloads, and authenticated higher-throughput access.
-- Send only legal source lookup queries to Legalcode; keep client documents local to the agent.
-
 
 > **Disclaimer**: This skill provides a framework for AI-assisted statutory analysis.
 > It does not constitute legal advice. All outputs should be reviewed by a qualified
@@ -102,9 +94,21 @@ context, the workflow pauses and asks when:
 - The user's purpose (compliance, litigation, policy, drafting) shapes what matters
 - Scope decisions must be made (full analysis vs. targeted sections)
 
-Use the ask-user-question pattern (structured options with descriptions) wherever marked
-with **⟁ CLARIFY** below. If the user has already provided the information, skip the
-question and proceed.
+When you reach a **⟁ CLARIFY** block, ask the user before proceeding — do not silently assume
+defaults. Use the harness's structured question tool when one is available:
+
+- **Claude Code / Agent SDK:** invoke the `AskUserQuestion` tool. Limits: 1–4 questions per
+  call, 2–4 options each, header ≤ 12 characters. Pass the CLARIFY options as the `options`
+  array.
+- **OpenAI Codex CLI:** invoke `ask_user_question` (runtime) or, in plan mode,
+  `request_user_input`. Pass the CLARIFY options as choices.
+- **No structured tool available (other harnesses, CI, headless mode without a `canUseTool`
+  callback):** emit the CLARIFY questions as numbered plain text and **stop until the user
+  replies**. Do not proceed with assumed answers.
+
+Skip any CLARIFY question the user has already answered in the initial prompt or prior
+conversation. When you proceed with partial context, state every assumption explicitly so the
+user can correct it.
 
 ---
 

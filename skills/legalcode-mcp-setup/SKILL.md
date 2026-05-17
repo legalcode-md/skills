@@ -67,4 +67,3 @@ Your agent keeps your documents and matter context. Legalcode provides legal sou
 - Install docs: https://legalcode.md/docs/install
 - Public MCP: https://mcp.legalcode.md
 - Pro MCP: https://mcppro.legalcode.md
-
