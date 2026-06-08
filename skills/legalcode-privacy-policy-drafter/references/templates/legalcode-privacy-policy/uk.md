@@ -73,11 +73,11 @@ Where this policy uses everyday English ("we share", "we keep", "we let you opt 
 - **Registered address:** {{Company Address}}
 - **Country of establishment:** {{Company Country}}
 - **General privacy contact:** {{Company Email Privacy}}
-- **ICO registration number:** *[REPLACE with your ICO data-protection fee registration number — required for most controllers under the Data Protection (Charges and Information) Regulations 2018]*
+- **ICO registration number:** _[REPLACE with your ICO data-protection fee registration number — required for most controllers under the Data Protection (Charges and Information) Regulations 2018]_
 
-*OPTIONAL — only if you have appointed a Data Protection Officer.* We have appointed a Data Protection Officer in line with UK GDPR Art. 37. Our DPO can be reached at {{Company Email DPO}}.
+_OPTIONAL — only if you have appointed a Data Protection Officer._ We have appointed a Data Protection Officer in line with UK GDPR Art. 37. Our DPO can be reached at {{Company Email DPO}}.
 
-*OPTIONAL — only if {{Company Legal Name}} is established outside the United Kingdom and offers the Service to individuals in the UK or monitors their behaviour in the UK (UK GDPR Art. 27).* We have appointed a UK representative who acts as our point of contact for UK data subjects and the ICO on questions related to the processing of UK personal data:
+_OPTIONAL — only if {{Company Legal Name}} is established outside the United Kingdom and offers the Service to individuals in the UK or monitors their behaviour in the UK (UK GDPR Art. 27)._ We have appointed a UK representative who acts as our point of contact for UK data subjects and the ICO on questions related to the processing of UK personal data:
 
 - **UK representative:** {{Company UK Representative}}
 
@@ -92,10 +92,10 @@ We collect three families of personal data: information you give us, information
 ### 4.1 Information you provide
 
 - **Account data** — your name, email address, a password (stored hashed and salted), and any profile information you choose to add.
-- **Billing data** — *OPTIONAL — only if you offer paid plans.* Where you take a paid plan, we receive a billing record from our payment processor (cardholder name, billing address, last four digits of the payment instrument, and transaction reference). We do not store full card numbers; payment instruments are tokenised by our PCI-DSS compliant processor.
+- **Billing data** — _OPTIONAL — only if you offer paid plans._ Where you take a paid plan, we receive a billing record from our payment processor (cardholder name, billing address, last four digits of the payment instrument, and transaction reference). We do not store full card numbers; payment instruments are tokenised by our PCI-DSS compliant processor.
 - **Content** — text, files, images, code, or other material you upload, create, or transmit through the Service.
 - **Communications** — messages you send to support, feedback you submit, survey responses, and any correspondence with us.
-- **Identity verification material** — *OPTIONAL — only if you carry out KYC, age verification, or sanctions screening.* Documents or attestations you provide when we have to verify who you are, your age, or your eligibility to use a feature.
+- **Identity verification material** — _OPTIONAL — only if you carry out KYC, age verification, or sanctions screening._ Documents or attestations you provide when we have to verify who you are, your age, or your eligibility to use a feature.
 - **Marketing preferences** — your subscription state for newsletters, product announcements, and similar communications, plus any opt-in or opt-out we have recorded for you.
 
 ### 4.2 Information collected automatically
@@ -107,7 +107,7 @@ We collect three families of personal data: information you give us, information
 
 ### 4.3 Information from other sources
 
-- **Authentication providers** — *OPTIONAL — only if you offer SSO/OAuth login.* Where you sign in with a third-party identity provider (for example Google, Microsoft, or GitHub), we receive the profile fields you authorise that provider to share.
+- **Authentication providers** — _OPTIONAL — only if you offer SSO/OAuth login._ Where you sign in with a third-party identity provider (for example Google, Microsoft, or GitHub), we receive the profile fields you authorise that provider to share.
 - **Service partners and integrators** — vendors and integrators that help us deliver the Service may share data with us within the scope of their engagement.
 - **Public sources** — publicly accessible registries, business directories, and other lawful public sources where, for example, we obtain business contact information for B2B outreach.
 - **Other users** — other users of the Service may share information about you when they refer you, mention you, invite you to a workspace, or include data about you in content they submit.
@@ -116,7 +116,7 @@ We collect three families of personal data: information you give us, information
 
 We do not actively seek special category data (UK GDPR Art. 9) or criminal offence data (UK GDPR Art. 10 and DPA 2018 s.10). Where you choose to include such information in content you upload — for example, in a free-text field — we treat it as content under Section 4.1 and apply additional safeguards.
 
-*OPTIONAL — only if you intentionally process special category or criminal offence data.* Where we do process special category or criminal offence data deliberately, we identify the relevant Article 9(2) condition and the corresponding DPA 2018 Schedule 1 condition in advance and document them in our appropriate policy document, in line with DPA 2018 Sch. 1 Pt. 4 paragraph 5.
+_OPTIONAL — only if you intentionally process special category or criminal offence data._ Where we do process special category or criminal offence data deliberately, we identify the relevant Article 9(2) condition and the corresponding DPA 2018 Schedule 1 condition in advance and document them in our appropriate policy document, in line with DPA 2018 Sch. 1 Pt. 4 paragraph 5.
 
 ## 5. Sources of personal data
 
@@ -136,7 +136,7 @@ If you would like to know the source of a specific piece of personal data we hol
 We process personal data only for purposes we can justify. The main purposes are listed below; Section 7 then maps each purpose to the lawful basis we rely on.
 
 - **Providing the Service** — creating and authenticating your account, delivering features you request, and keeping the Service operational and reliable.
-- **Account administration** — billing, invoicing, subscription management, refunds, and related record-keeping. *OPTIONAL — only if you offer paid services.*
+- **Account administration** — billing, invoicing, subscription management, refunds, and related record-keeping. _OPTIONAL — only if you offer paid services._
 - **Support** — answering your questions, troubleshooting issues, and following up on incidents you report.
 - **Security and abuse prevention** — detecting, investigating, and stopping fraud, account takeover, spam, malicious traffic, abuse, and breaches of our terms.
 - **Service improvement** — understanding how the Service is used so we can fix bugs, prioritise features, and improve performance and reliability.
@@ -144,7 +144,7 @@ We process personal data only for purposes we can justify. The main purposes are
 - **Legal compliance** — meeting tax, accounting, anti-money-laundering, sanctions, dispute-resolution, and other obligations imposed on us under UK or applicable foreign law.
 - **Establishment, exercise, or defence of legal claims** — keeping records we need to defend ourselves, you, or others against legal claims.
 - **Analytics and aggregation** — generating aggregated, de-identified statistics about usage. Once data is reduced to a form that no longer identifies any individual, this policy no longer constrains its use.
-- **Research and development** — *OPTIONAL — only if you use de-identified or pseudonymised data for R&D.* Improving existing features and developing new ones, using de-identified or pseudonymised data wherever possible.
+- **Research and development** — _OPTIONAL — only if you use de-identified or pseudonymised data for R&D._ Improving existing features and developing new ones, using de-identified or pseudonymised data wherever possible.
 
 We do not use personal data for purposes that are incompatible with the ones listed here without first telling you and, where required by law, obtaining your consent.
 
@@ -173,18 +173,18 @@ You can object to processing based on legitimate interests at any time (see Sect
 
 ### 7.2 Mapping our purposes to lawful bases
 
-| Purpose | Lawful basis (Art. 6(1)) | Notes |
-|---|---|---|
-| Providing the Service; account administration | (b) Contract | We need to process your data to give you the account and features you have signed up for. |
-| Billing, invoicing, refunds | (b) Contract; (c) Legal obligation | Our contract with you, plus tax, accounting, and AML record-keeping requirements. |
-| Support | (b) Contract; (f) Legitimate interests | Performing our part of the contract; running an effective support function. |
-| Security, fraud prevention, abuse handling | (f) Legitimate interests; (c) Legal obligation | Protecting our service, our users, and third parties; certain security measures are required by law. ICO guidance treats network and information security as a legitimate interest expressly recognised in Recital 49. |
-| Service improvement and analytics | (f) Legitimate interests | Understanding how a feature is used so we can fix bugs and improve performance. We minimise where possible and rely on consent for cookies-based analytics where required (Section 12). |
-| Marketing communications to existing customers | (f) Legitimate interests + PECR Reg. 22 soft opt-in | Limited to similar products of our own, with an unsubscribe option in every message. |
-| Marketing communications to new contacts | (a) Consent | We obtain prior opt-in consent for marketing where PECR requires it. |
-| Compliance with legal and regulatory obligations | (c) Legal obligation | Tax, accounting, AML, sanctions, court orders, regulatory requests. |
-| Establishment, exercise, or defence of legal claims | (f) Legitimate interests | Maintaining the records we need to defend or pursue claims within applicable limitation periods. |
-| Research and development on de-identified data | (f) Legitimate interests | Strictly limited to de-identified or pseudonymised data wherever possible. |
+| Purpose                                             | Lawful basis (Art. 6(1))                            | Notes                                                                                                                                                                                                                  |
+| --------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Providing the Service; account administration       | (b) Contract                                        | We need to process your data to give you the account and features you have signed up for.                                                                                                                              |
+| Billing, invoicing, refunds                         | (b) Contract; (c) Legal obligation                  | Our contract with you, plus tax, accounting, and AML record-keeping requirements.                                                                                                                                      |
+| Support                                             | (b) Contract; (f) Legitimate interests              | Performing our part of the contract; running an effective support function.                                                                                                                                            |
+| Security, fraud prevention, abuse handling          | (f) Legitimate interests; (c) Legal obligation      | Protecting our service, our users, and third parties; certain security measures are required by law. ICO guidance treats network and information security as a legitimate interest expressly recognised in Recital 49. |
+| Service improvement and analytics                   | (f) Legitimate interests                            | Understanding how a feature is used so we can fix bugs and improve performance. We minimise where possible and rely on consent for cookies-based analytics where required (Section 12).                                |
+| Marketing communications to existing customers      | (f) Legitimate interests + PECR Reg. 22 soft opt-in | Limited to similar products of our own, with an unsubscribe option in every message.                                                                                                                                   |
+| Marketing communications to new contacts            | (a) Consent                                         | We obtain prior opt-in consent for marketing where PECR requires it.                                                                                                                                                   |
+| Compliance with legal and regulatory obligations    | (c) Legal obligation                                | Tax, accounting, AML, sanctions, court orders, regulatory requests.                                                                                                                                                    |
+| Establishment, exercise, or defence of legal claims | (f) Legitimate interests                            | Maintaining the records we need to defend or pursue claims within applicable limitation periods.                                                                                                                       |
+| Research and development on de-identified data      | (f) Legitimate interests                            | Strictly limited to de-identified or pseudonymised data wherever possible.                                                                                                                                             |
 
 If you would like more detail about the lawful basis we rely on for a specific activity — including a copy of the relevant LIA — write to {{Company Email Privacy}}.
 
@@ -192,7 +192,7 @@ If you would like more detail about the lawful basis we rely on for a specific a
 
 We do not normally process special category data. Where you provide it within content, we treat it as part of the Service-delivery purpose without relying on it as a category, on the basis that the processing is necessary for the performance of our contract with you and that you have placed the data into the Service of your own initiative.
 
-*OPTIONAL — only if you intentionally process special category data.* Where we deliberately process special category data, we identify both an Art. 9(2) condition and (where required) a DPA 2018 Schedule 1 condition. Common combinations include:
+_OPTIONAL — only if you intentionally process special category data._ Where we deliberately process special category data, we identify both an Art. 9(2) condition and (where required) a DPA 2018 Schedule 1 condition. Common combinations include:
 
 - Art. 9(2)(a) **explicit consent** — for clearly defined optional features that depend on special category data.
 - Art. 9(2)(b) **employment, social security, and social protection** + DPA 2018 Sch. 1 Pt. 1 para. 1 — for HR processing about our own staff.
@@ -207,7 +207,7 @@ Where required by DPA 2018 Sch. 1 Pt. 4 paragraph 5, we maintain an appropriate 
 
 Processing of criminal offence data is restricted by UK GDPR Art. 10 and DPA 2018 s.10. Outside the control of an official authority, we may process criminal offence data only where authorised by domestic law that provides appropriate safeguards — in practice, where one of the conditions in DPA 2018 Schedule 1 applies.
 
-*OPTIONAL — only if you process criminal offence data.* Where we process criminal offence data — for example to comply with sanctions screening obligations or to investigate suspected fraud — we identify the specific DPA 2018 Schedule 1 condition we rely on, document it in our appropriate policy document, and apply additional access controls.
+_OPTIONAL — only if you process criminal offence data._ Where we process criminal offence data — for example to comply with sanctions screening obligations or to investigate suspected fraud — we identify the specific DPA 2018 Schedule 1 condition we rely on, document it in our appropriate policy document, and apply additional access controls.
 
 ### 7.5 Withdrawing consent and changing basis
 
@@ -220,17 +220,17 @@ We share personal data only where we need to, and only with parties that have co
 ### 8.1 Categories of recipients
 
 - **Subprocessors and service providers** — hosting, storage, content delivery, email delivery, payment processing, analytics, customer support tooling, error reporting, and similar infrastructure vendors. Each operates under a written Art. 28 processor agreement.
-- **Affiliates** — *OPTIONAL — only if you have group companies.* Other entities under common control with {{Company Legal Name}}, for shared services such as engineering, finance, security, and back-office support.
-- **Joint controllers** — *OPTIONAL — only if you have an Art. 26 joint controller arrangement.* Where {{Company Short Name}} and another organisation jointly determine the purposes and means of processing for a specific activity, we publish the essence of the arrangement so you know which controller you can contact.
+- **Affiliates** — _OPTIONAL — only if you have group companies._ Other entities under common control with {{Company Legal Name}}, for shared services such as engineering, finance, security, and back-office support.
+- **Joint controllers** — _OPTIONAL — only if you have an Art. 26 joint controller arrangement._ Where {{Company Short Name}} and another organisation jointly determine the purposes and means of processing for a specific activity, we publish the essence of the arrangement so you know which controller you can contact.
 - **Authorities** — courts, regulators, law enforcement, tax authorities, and other public authorities, where we are legally compelled or where disclosure is permitted to protect rights, safety, or property.
 - **Professional advisors** — auditors, lawyers, insurers, and other advisors bound by professional confidentiality.
-- **Successors** — *OPTIONAL — only if you describe corporate transactions.* Where we undergo a merger, acquisition, financing, reorganisation, or sale of assets, the counterparty receives personal data as part of due diligence and any closing transfer, subject to confidentiality.
+- **Successors** — _OPTIONAL — only if you describe corporate transactions._ Where we undergo a merger, acquisition, financing, reorganisation, or sale of assets, the counterparty receives personal data as part of due diligence and any closing transfer, subject to confidentiality.
 - **Other users** — only as you have configured the Service; for example, content you have shared in a workspace becomes visible to others in that workspace.
 - **At your direction** — anyone else you ask us to share with, including third-party applications you have authorised to access your account.
 
 ### 8.2 Subprocessor list
 
-A current list of our subprocessors — including the nature of the processing each carries out, the country of operation, and the transfer mechanism where applicable — is available at *[REPLACE with the URL where you publish your subprocessor list]*. We update this list when we add, remove, or replace a subprocessor and, where required by contract, give business customers advance notice so they can object.
+A current list of our subprocessors — including the nature of the processing each carries out, the country of operation, and the transfer mechanism where applicable — is available at _[REPLACE with the URL where you publish your subprocessor list]_. We update this list when we add, remove, or replace a subprocessor and, where required by contract, give business customers advance notice so they can object.
 
 We do not sell personal data, and we do not share it for cross-context behavioural advertising except where you have opted in.
 
@@ -261,12 +261,12 @@ Where a transfer is to a country not covered by an adequacy regulation, we rely 
 
 - **UK International Data Transfer Agreement (IDTA)** — the UK-native standalone transfer contract issued under DPA 2018 s.119A. We use the IDTA where SCCs are not the appropriate instrument and the transfer is direct under UK GDPR.
 - **UK Addendum to the EU SCCs** — where our counterparty has signed the EU 2021/914 Standard Contractual Clauses, we attach the **International Data Transfer Addendum to the EU Commission Standard Contractual Clauses** so the SCCs operate as a valid UK transfer mechanism.
-- **Binding corporate rules (BCRs)** — *OPTIONAL — only if you have approved UK BCRs.* Approved by the ICO under UK GDPR Art. 47.
+- **Binding corporate rules (BCRs)** — _OPTIONAL — only if you have approved UK BCRs._ Approved by the ICO under UK GDPR Art. 47.
 - **Approved codes of conduct or certification schemes** — under UK GDPR Arts. 40 and 42.
 
 ### 9.3 Transfer Risk Assessment (TRA)
 
-Following the *Schrems II* judgment of the Court of Justice of the EU (which is retained case law in the UK to the extent it relates to retained EU law), and consistent with the ICO's Transfer Risk Assessment guidance, we carry out a Transfer Risk Assessment for transfers to non-adequate countries. The TRA examines:
+Following the _Schrems II_ judgment of the Court of Justice of the EU (which is retained case law in the UK to the extent it relates to retained EU law), and consistent with the ICO's Transfer Risk Assessment guidance, we carry out a Transfer Risk Assessment for transfers to non-adequate countries. The TRA examines:
 
 - The nature of the personal data and the purpose of the transfer.
 - The legal regime in the destination country, including law-enforcement and intelligence access powers, and the rights and remedies available to data subjects.
@@ -293,16 +293,16 @@ We keep personal data only as long as we need it for the purpose we collected it
 
 ### 10.1 Indicative retention schedule
 
-| Data | Indicative retention |
-|---|---|
-| Account record | Lifetime of the account, plus a short closure tail (typically 30–90 days) and any longer period required for legal limitation. |
-| Content you create or upload | Until you delete it, or until your account is closed and the closure grace period ends. |
-| Billing, invoicing, and tax records | 6 years from the end of the financial year (HMRC and Companies Act 2006 baselines), or longer where another statute requires. |
-| AML and KYC records | *OPTIONAL — only if you carry out AML/KYC.* 5 years from the end of the business relationship (MLR 2017). |
-| Server, application, and security logs | 30–365 days as standard, with longer retention only for incidents under investigation. |
-| Marketing preferences and unsubscribe records | Indefinite suppression record so we do not contact you again after opt-out. |
-| Support tickets | Up to 3 years after closure of the ticket, for service-improvement and dispute-resolution purposes. |
-| Cookie consent records | Up to 12 months for the consent itself; longer for the audit log of changes. |
+| Data                                          | Indicative retention                                                                                                           |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Account record                                | Lifetime of the account, plus a short closure tail (typically 30–90 days) and any longer period required for legal limitation. |
+| Content you create or upload                  | Until you delete it, or until your account is closed and the closure grace period ends.                                        |
+| Billing, invoicing, and tax records           | 6 years from the end of the financial year (HMRC and Companies Act 2006 baselines), or longer where another statute requires.  |
+| AML and KYC records                           | _OPTIONAL — only if you carry out AML/KYC._ 5 years from the end of the business relationship (MLR 2017).                      |
+| Server, application, and security logs        | 30–365 days as standard, with longer retention only for incidents under investigation.                                         |
+| Marketing preferences and unsubscribe records | Indefinite suppression record so we do not contact you again after opt-out.                                                    |
+| Support tickets                               | Up to 3 years after closure of the ticket, for service-improvement and dispute-resolution purposes.                            |
+| Cookie consent records                        | Up to 12 months for the consent itself; longer for the audit log of changes.                                                   |
 
 These are guides, not commitments. The exact retention period for a specific record may be longer or shorter depending on the factors above. When we no longer need personal data, we delete it or convert it into an anonymised form that no longer identifies you.
 
@@ -333,14 +333,14 @@ To report a vulnerability or suspected incident, write to {{Company Email Privac
 
 ## 12. Cookies & similar technologies
 
-The Service uses cookies and similar technologies (local storage, session storage, pixels, SDK identifiers, fingerprinting techniques) for the purposes set out below. Our use of cookies is subject to **Regulation 6 of the Privacy and Electronic Communications (EC Directive) Regulations 2003 (PECR)**, as updated by the ICO's *Guidance on the use of cookies and similar technologies*. PECR requires us to give you clear and comprehensive information about non-essential cookies and to obtain your consent before setting them.
+The Service uses cookies and similar technologies (local storage, session storage, pixels, SDK identifiers, fingerprinting techniques) for the purposes set out below. Our use of cookies is subject to **Regulation 6 of the Privacy and Electronic Communications (EC Directive) Regulations 2003 (PECR)**, as updated by the ICO's _Guidance on the use of cookies and similar technologies_. PECR requires us to give you clear and comprehensive information about non-essential cookies and to obtain your consent before setting them.
 
 ### 12.1 Categories of cookies we use
 
 - **Strictly necessary** — sign-in, session management, security, fraud prevention, and load balancing. The Service cannot operate without these. They fall within the PECR Reg. 6(4) "strictly necessary" exemption, so we do not need consent to set them.
 - **Functional** — remembering preferences such as language, display settings, and accessibility options. We ask for consent before setting these.
 - **Analytics** — understanding how the Service is used, so we can improve it. We ask for consent before setting these.
-- **Marketing** — *OPTIONAL — only if you run advertising.* Measuring the effectiveness of advertising campaigns and personalising messaging. We ask for consent before setting these.
+- **Marketing** — _OPTIONAL — only if you run advertising._ Measuring the effectiveness of advertising campaigns and personalising messaging. We ask for consent before setting these.
 
 ### 12.2 How you control cookies
 
@@ -382,13 +382,13 @@ Where the Service is an information society service likely to be accessed by chi
 
 If you believe a child has provided us with personal data and you have parental responsibility for that child, contact {{Company Email Privacy}} and we will investigate and, where appropriate, delete the data.
 
-*OPTIONAL — only if you offer a youth-facing or education-tier product.* Where the Service is offered to children under 13 with verifiable parental or school consent, we describe the additional safeguards we apply in a separate notice.
+_OPTIONAL — only if you offer a youth-facing or education-tier product._ Where the Service is offered to children under 13 with verifiable parental or school consent, we describe the additional safeguards we apply in a separate notice.
 
 ## 14. Your rights & how to exercise them
 
 Under the UK GDPR (Arts. 12–22) and Part 2 of the Data Protection Act 2018, you have the rights described below. The exact conditions for each right, the timelines we have to respond, and any limited exemptions are set by statute.
 
-*OPTIONAL — only if you process personal data for a "competent authority" within the scope of DPA 2018 Part 3 (law enforcement processing).* Where we act as a competent authority under DPA 2018 Part 3, a separate set of rights applies under that Part; see the law-enforcement supplement to this policy.
+_OPTIONAL — only if you process personal data for a "competent authority" within the scope of DPA 2018 Part 3 (law enforcement processing)._ Where we act as a competent authority under DPA 2018 Part 3, a separate set of rights applies under that Part; see the law-enforcement supplement to this policy.
 
 ### 14.1 The rights
 
@@ -437,7 +437,7 @@ We do use automated processing for:
 - Spam, abuse, and fraud detection.
 - Security signals (for example, detecting suspicious sign-in attempts, denial-of-service patterns, or compromised credentials).
 - Service-improvement analytics described in Section 6.
-- *OPTIONAL — only if you do this.* Personalising content or recommendations within the Service.
+- _OPTIONAL — only if you do this._ Personalising content or recommendations within the Service.
 
 These activities involve **profiling** within the meaning of UK GDPR Art. 4(4), but they do not normally produce legal or similarly significant effects on you, and they are not solely automated decisions within Art. 22.
 
@@ -469,9 +469,9 @@ For any privacy question, request, or complaint, please contact us first.
 - **Email:** {{Company Email Privacy}}
 - **Postal address:** {{Company Legal Name}}, {{Company Address}}
 
-*OPTIONAL — only if you have appointed a DPO.* Our Data Protection Officer can be reached at {{Company Email DPO}}.
+_OPTIONAL — only if you have appointed a DPO._ Our Data Protection Officer can be reached at {{Company Email DPO}}.
 
-*OPTIONAL — only if you have appointed a UK representative under Art. 27.* Our UK representative is {{Company UK Representative}}.
+_OPTIONAL — only if you have appointed a UK representative under Art. 27._ Our UK representative is {{Company UK Representative}}.
 
 We will acknowledge your message and aim to resolve the matter directly, normally within one calendar month (see Section 14.2).
 
@@ -507,8 +507,8 @@ The following Mustache placeholders appear in this document. Replace each with a
 - `{{Company Address}}`
 - `{{Company Country}}`
 - `{{Company Email Privacy}}`
-- `{{Company Email DPO}}` — *optional, only if a DPO is appointed*
-- `{{Company UK Representative}}` — *optional, only for non-UK controllers required to appoint a UK Art. 27 representative*
+- `{{Company Email DPO}}` — _optional, only if a DPO is appointed_
+- `{{Company UK Representative}}` — _optional, only for non-UK controllers required to appoint a UK Art. 27 representative_
 - `{{Service Name}}`
 - `{{Service URL}}`
 - `{{Effective Date}}`
@@ -553,4 +553,4 @@ The following are the authoritative sources we rely on. Verify each at the time 
 
 ---
 
-*This document is informational only and is not legal advice. It is a starting point for drafting, not a finished privacy policy. Before publishing, have it reviewed by qualified UK counsel, confirm that every "we collect X" sentence matches what you actually collect, verify each statutory citation against the current version on `legislation.gov.uk`, and check ICO guidance for any updates issued after the "Last updated" date above.*
+_This document is informational only and is not legal advice. It is a starting point for drafting, not a finished privacy policy. Before publishing, have it reviewed by qualified UK counsel, confirm that every "we collect X" sentence matches what you actually collect, verify each statutory citation against the current version on `legislation.gov.uk`, and check ICO guidance for any updates issued after the "Last updated" date above._

@@ -38,6 +38,7 @@ through department-by-department discovery, mandatory-field population, complete
 assessment, and supervisory-authority-ready output.
 
 **Covers:**
+
 - Art. 30(5) exemption screening before building the ROPA
 - Controller RoPA (Art. 30(1)) with all 13 mandatory field categories
 - Processor RoPA (Art. 30(2)) with all 11 mandatory field categories
@@ -54,6 +55,7 @@ assessment, and supervisory-authority-ready output.
 - Supervisory authority submission readiness checklist
 
 **Does not:**
+
 - Replace a Data Protection Impact Assessment (see `legalcode-dpia-generator`)
 - Conduct a full data mapping discovery exercise (see `legalcode-data-mapping-workflow`)
 - Draft Data Processing Agreements (see `legalcode-data-processing-agreement-drafter`)
@@ -61,6 +63,7 @@ assessment, and supervisory-authority-ready output.
 - Guarantee compliance with any jurisdiction — outputs require professional verification
 
 **Related skills:**
+
 - `legalcode-data-mapping-workflow` — discovery upstream of ROPA population
 - `legalcode-dpia-generator` — DPIA for activities flagged by ROPA
 - `legalcode-legitimate-interest-assessment` — LIA for Art. 6(1)(f) activities
@@ -75,12 +78,12 @@ This skill is jurisdiction-aware across four regimes. The applicable regime is d
 during Step 3 and conditions the mandatory field matrix, classification criteria, and
 output format.
 
-| Regime | Instrument | ROPA Equivalent | Key Difference |
-|--------|-----------|----------------|---------------|
-| **EU GDPR** | Art. 30 GDPR (Reg. 2016/679) | Records of Processing Activities | Reference standard; mandatory legal basis in practice |
-| **UK GDPR** | Art. 30 UK GDPR (onshored via EU Withdrawal Act 2018 + DPA 2018) | Records of Processing Activities | Must document DPA 2018 Sch. 1 conditions; UK IDTA for transfers |
-| **Swiss FADP** | Art. 12 FADP (effective 1 Sept 2023) | Bearbeitungsverzeichnis | No "where possible" qualifier for TOMs; federal bodies must report via DataReg |
-| **Brazil LGPD** | Art. 37 LGPD (Lei 13.709/2018) | Registro das atividades de tratamento | Sparse statutory text; ANPD non-binding template; "especially when legitimate interest" |
+| Regime          | Instrument                                                       | ROPA Equivalent                       | Key Difference                                                                          |
+| --------------- | ---------------------------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------- |
+| **EU GDPR**     | Art. 30 GDPR (Reg. 2016/679)                                     | Records of Processing Activities      | Reference standard; mandatory legal basis in practice                                   |
+| **UK GDPR**     | Art. 30 UK GDPR (onshored via EU Withdrawal Act 2018 + DPA 2018) | Records of Processing Activities      | Must document DPA 2018 Sch. 1 conditions; UK IDTA for transfers                         |
+| **Swiss FADP**  | Art. 12 FADP (effective 1 Sept 2023)                             | Bearbeitungsverzeichnis               | No "where possible" qualifier for TOMs; federal bodies must report via DataReg          |
+| **Brazil LGPD** | Art. 37 LGPD (Lei 13.709/2018)                                   | Registro das atividades de tratamento | Sparse statutory text; ANPD non-binding template; "especially when legitimate interest" |
 
 [JURISDICTION-SPECIFIC] When the governing jurisdiction differs from EU GDPR, apply the
 regime-specific field matrix in Step 6 and the localization notes in Section 15 of this skill.
@@ -98,6 +101,7 @@ than assuming intent, the workflow pauses and asks when the answer materially ch
 analysis direction, the mandatory field set, or the output format.
 
 In non-interactive (batch) mode, apply these defaults and state assumptions explicitly:
+
 - Side: Controller (Art. 30(1))
 - Exemption: Exemption does not apply — full ROPA required
 - Regime: EU GDPR primary with overlays as described
@@ -147,12 +151,12 @@ maintain one at all.
 
 **Exemption determination logic:**
 
-| Condition | Result |
-|-----------|--------|
-| 250 or more employees | **ROPA REQUIRED** — exemption not available |
-| Fewer than 250 AND processing is regular/ongoing | **ROPA REQUIRED** — "not occasional" trigger |
-| Fewer than 250 AND processes special category or criminal data | **ROPA REQUIRED** — data sensitivity trigger |
-| Fewer than 250 AND processing is likely to risk data subject rights | **ROPA REQUIRED** — risk trigger |
+| Condition                                                                  | Result                                          |
+| -------------------------------------------------------------------------- | ----------------------------------------------- |
+| 250 or more employees                                                      | **ROPA REQUIRED** — exemption not available     |
+| Fewer than 250 AND processing is regular/ongoing                           | **ROPA REQUIRED** — "not occasional" trigger    |
+| Fewer than 250 AND processes special category or criminal data             | **ROPA REQUIRED** — data sensitivity trigger    |
+| Fewer than 250 AND processing is likely to risk data subject rights        | **ROPA REQUIRED** — risk trigger                |
 | Fewer than 250 AND genuinely occasional AND no sensitive data AND low risk | **EXEMPTION MAY APPLY** — document the decision |
 
 > **Warning — Exemption is nearly illusory in practice**: Any organization that maintains
@@ -161,9 +165,11 @@ maintain one at all.
 > genuinely one-off processing (e.g., a community event organizer collecting one
 > attendance list). Supervisory authorities interpret "occasional" very narrowly.
 > [VERIFY — EDPB WP29 Position Paper 19 April 2018; 2025 Omnibus IV proposes 750-employee
-> threshold but is not yet law as of this skill's creation]
+>
+> > threshold but is not yet law as of this skill's creation]
 
 If the exemption may apply, produce a written **Exemption Decision Record** with:
+
 - Organization size and basis for that figure
 - Rationale why processing is genuinely occasional
 - Confirmation that no special category or criminal data is processed
@@ -184,9 +190,9 @@ If ROPA is required, proceed to Step 3.
    - **Both controller and processor** — the organization acts as controller for some
      activities and processor for others → Generate two separate ROPA documents
 
-   *Why this matters*: The mandatory field set differs fundamentally. Controllers must
+   _Why this matters_: The mandatory field set differs fundamentally. Controllers must
    document purposes, legal basis, data subject categories, and personal data categories.
-   Processors document what they *do* for each controller — not why it is done. Confusing
+   Processors document what they _do_ for each controller — not why it is done. Confusing
    the two is the most common ROPA structural error.
 
 2. **Scope**:
@@ -237,10 +243,10 @@ discovery using this questionnaire. Issue to each department head or process own
 
 **Department ROPA Discovery Questionnaire**
 
-*Department/Business Unit*: ______________________
-*Completed by*: ______________________
-*Date*: ______________________
-*Reviewed by DPO*: ______________________
+_Department/Business Unit_: \***\*\*\*\*\***\_\_\***\*\*\*\*\***
+_Completed by_: \***\*\*\*\*\***\_\_\***\*\*\*\*\***
+_Date_: \***\*\*\*\*\***\_\_\***\*\*\*\*\***
+_Reviewed by DPO_: \***\*\*\*\*\***\_\_\***\*\*\*\*\***
 
 **Section A — Processing Activities**
 
@@ -298,9 +304,9 @@ For each distinct processing activity in your department:
     - Have you conducted a DPIA for this automated decision-making?
 
 12. **Has a Data Protection Impact Assessment (DPIA) been conducted for this activity?**
-    - Yes — DPIA ID: ____________ Status: ____________
+    - Yes — DPIA ID: \***\*\_\_\_\_\*\*** Status: \***\*\_\_\_\_\*\***
     - No — should one be conducted? (Will be assessed in Step 11)
-    - Not required — basis: ____________
+    - Not required — basis: \***\*\_\_\_\_\*\***
 
 ---
 
@@ -313,55 +319,55 @@ Apply the mandatory field matrix appropriate to the organization's role:
 
 #### Controller ROPA Entry — Art. 30(1) Mandatory Fields
 
-| # | Field | Mandatory? | Notes |
-|---|-------|-----------|-------|
-| C1 | **Controller name** | Yes | Legal entity name of the controller |
-| C2 | **Controller contact details** | Yes | Address, email, phone |
-| C3 | **Joint controller name and contact** | If applicable | Any entity jointly determining purposes and means |
-| C4 | **Controller's EU representative** | If applicable | Required for non-EU controllers targeting EU data subjects |
-| C5 | **Data Protection Officer contact** | If applicable | Required if DPO appointed; name and contact |
-| C6 | **Processing activity name** | Best practice | Short descriptive label per activity |
-| C7 | **Processing purposes** | Yes | Specific, substantiated purpose — not generic |
-| C8 | **Legal basis (Art. 6)** | Best practice (EDPB-recommended; required by Art. 5(2)) | Specify sub-paragraph; document LIA reference for Art. 6(1)(f) |
-| C9 | **Art. 9 condition** | If special category data | Specify Art. 9(2) sub-paragraph |
-| C10 | **DPA 2018 Schedule 1 condition** | UK only, if Art. 9 applies | Cross-reference Schedule 1 condition |
-| C11 | **Art. 10 authorisation** | If criminal data | Specify domestic law authorisation |
-| C12 | **Categories of data subjects** | Yes | Employees, customers, job applicants, children, etc. |
-| C13 | **Categories of personal data** | Yes | Specific data types (name, email, IP address, etc.) |
-| C14 | **Categories of recipients** | Yes | Internal and external recipients; named processors |
-| C15 | **Third-country recipients** | If applicable | Named countries receiving data |
-| C16 | **Transfer mechanism** | If third-country transfer | SCCs (module), IDTA, adequacy decision, BCR, Art. 49 derogation |
-| C17 | **Envisaged time limits for erasure** | Yes ("where possible") | Specific period + trigger + deletion method |
-| C18 | **General description of TOMs** | Yes ("where possible") | Encryption, access controls, certifications |
-| C19 | **Profiling / ADM flag** | Best practice | Art. 22 screening result |
-| C20 | **DPIA status** | Best practice | Completed, pending, or basis for no DPIA required |
-| C21 | **LIA reference** | Best practice if Art. 6(1)(f) | LIA document ID and completion status |
-| C22 | **Business unit / data owner** | Best practice | Department responsible for this activity |
-| C23 | **Source of personal data** | Best practice | Directly from subject, third party, or public source |
-| C24 | **Review date** | Best practice | When entry was last reviewed and by whom |
+| #   | Field                                 | Mandatory?                                              | Notes                                                           |
+| --- | ------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------- |
+| C1  | **Controller name**                   | Yes                                                     | Legal entity name of the controller                             |
+| C2  | **Controller contact details**        | Yes                                                     | Address, email, phone                                           |
+| C3  | **Joint controller name and contact** | If applicable                                           | Any entity jointly determining purposes and means               |
+| C4  | **Controller's EU representative**    | If applicable                                           | Required for non-EU controllers targeting EU data subjects      |
+| C5  | **Data Protection Officer contact**   | If applicable                                           | Required if DPO appointed; name and contact                     |
+| C6  | **Processing activity name**          | Best practice                                           | Short descriptive label per activity                            |
+| C7  | **Processing purposes**               | Yes                                                     | Specific, substantiated purpose — not generic                   |
+| C8  | **Legal basis (Art. 6)**              | Best practice (EDPB-recommended; required by Art. 5(2)) | Specify sub-paragraph; document LIA reference for Art. 6(1)(f)  |
+| C9  | **Art. 9 condition**                  | If special category data                                | Specify Art. 9(2) sub-paragraph                                 |
+| C10 | **DPA 2018 Schedule 1 condition**     | UK only, if Art. 9 applies                              | Cross-reference Schedule 1 condition                            |
+| C11 | **Art. 10 authorisation**             | If criminal data                                        | Specify domestic law authorisation                              |
+| C12 | **Categories of data subjects**       | Yes                                                     | Employees, customers, job applicants, children, etc.            |
+| C13 | **Categories of personal data**       | Yes                                                     | Specific data types (name, email, IP address, etc.)             |
+| C14 | **Categories of recipients**          | Yes                                                     | Internal and external recipients; named processors              |
+| C15 | **Third-country recipients**          | If applicable                                           | Named countries receiving data                                  |
+| C16 | **Transfer mechanism**                | If third-country transfer                               | SCCs (module), IDTA, adequacy decision, BCR, Art. 49 derogation |
+| C17 | **Envisaged time limits for erasure** | Yes ("where possible")                                  | Specific period + trigger + deletion method                     |
+| C18 | **General description of TOMs**       | Yes ("where possible")                                  | Encryption, access controls, certifications                     |
+| C19 | **Profiling / ADM flag**              | Best practice                                           | Art. 22 screening result                                        |
+| C20 | **DPIA status**                       | Best practice                                           | Completed, pending, or basis for no DPIA required               |
+| C21 | **LIA reference**                     | Best practice if Art. 6(1)(f)                           | LIA document ID and completion status                           |
+| C22 | **Business unit / data owner**        | Best practice                                           | Department responsible for this activity                        |
+| C23 | **Source of personal data**           | Best practice                                           | Directly from subject, third party, or public source            |
+| C24 | **Review date**                       | Best practice                                           | When entry was last reviewed and by whom                        |
 
 #### Processor ROPA Entry — Art. 30(2) Mandatory Fields
 
-| # | Field | Mandatory? | Notes |
-|---|-------|-----------|-------|
-| P1 | **Processor name** | Yes | Legal entity name of the processor |
-| P2 | **Processor contact details** | Yes | Address, email, phone |
-| P3 | **Processor's EU representative** | If applicable | For non-EU processors |
-| P4 | **DPO contact** | If applicable | Processor's DPO, if appointed |
-| P5 | **Controller name(s)** | Yes | Each controller on whose behalf the processor acts |
-| P6 | **Controller contact details** | Yes | For each controller — name and contact |
-| P7 | **Controller's EU representative** | If applicable | For each controller without EU establishment |
-| P8 | **Categories of processing** | Yes | Per each controller — describe what types of processing are carried out |
-| P9 | **Sub-processors used** | Best practice (required in DPA; should mirror here) | Name, function, and location of each sub-processor |
-| P10 | **Third-country transfers** | If applicable | Countries to which data is transferred |
-| P11 | **Transfer mechanism** | If third-country transfer | Per each transfer — SCCs module, adequacy, BCR |
-| P12 | **General description of TOMs** | Yes | Security measures per Art. 32(1) |
-| P13 | **Processing categories per controller** | If multiple controllers | Separate section per controller where different |
-| P14 | **Sub-processor notification protocol** | Best practice | When and how controllers are notified of sub-processor changes |
+| #   | Field                                    | Mandatory?                                          | Notes                                                                   |
+| --- | ---------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------- |
+| P1  | **Processor name**                       | Yes                                                 | Legal entity name of the processor                                      |
+| P2  | **Processor contact details**            | Yes                                                 | Address, email, phone                                                   |
+| P3  | **Processor's EU representative**        | If applicable                                       | For non-EU processors                                                   |
+| P4  | **DPO contact**                          | If applicable                                       | Processor's DPO, if appointed                                           |
+| P5  | **Controller name(s)**                   | Yes                                                 | Each controller on whose behalf the processor acts                      |
+| P6  | **Controller contact details**           | Yes                                                 | For each controller — name and contact                                  |
+| P7  | **Controller's EU representative**       | If applicable                                       | For each controller without EU establishment                            |
+| P8  | **Categories of processing**             | Yes                                                 | Per each controller — describe what types of processing are carried out |
+| P9  | **Sub-processors used**                  | Best practice (required in DPA; should mirror here) | Name, function, and location of each sub-processor                      |
+| P10 | **Third-country transfers**              | If applicable                                       | Countries to which data is transferred                                  |
+| P11 | **Transfer mechanism**                   | If third-country transfer                           | Per each transfer — SCCs module, adequacy, BCR                          |
+| P12 | **General description of TOMs**          | Yes                                                 | Security measures per Art. 32(1)                                        |
+| P13 | **Processing categories per controller** | If multiple controllers                             | Separate section per controller where different                         |
+| P14 | **Sub-processor notification protocol**  | Best practice                                       | When and how controllers are notified of sub-processor changes          |
 
 > **Key distinction**: Processors do NOT document processing purposes, data subject
 > categories, personal data categories, or retention periods. These are the controller's
-> responsibility. The processor records what it *does* — not why. Documenting purposes
+> responsibility. The processor records what it _does_ — not why. Documenting purposes
 > in a processor ROPA is a structural error that creates confusion about role boundaries.
 
 ### Step 7: Recipient, Sub-Processor, and Transfer Mapping
@@ -369,10 +375,12 @@ Apply the mandatory field matrix appropriate to the organization's role:
 For each processing activity, conduct a systematic recipient audit:
 
 **7a — Internal Recipients**
+
 - List internal teams, departments, or roles that have access to the data
 - Document access basis (role-based access control, need-to-know)
 
 **7b — External Processors**
+
 - For each vendor, cloud provider, or SaaS tool that processes personal data on the
   organization's behalf:
   - Confirm a Data Processing Agreement (DPA/DPA) is in place
@@ -381,21 +389,22 @@ For each processing activity, conduct a systematic recipient audit:
   - Note whether authorization is specific (named sub-processors) or general (categories)
 
 **7c — Third-Party Controllers**
+
 - For data disclosed to recipients who determine their own purposes (not processors),
   record the recipient, the disclosure basis, and the categories of data disclosed
 
 **7d — International Transfer Mapping**
 For each transfer of personal data to a country outside the EEA / UK / Switzerland / Brazil:
 
-| Transfer Field | Content |
-|---------------|---------|
-| Destination country | Named country |
-| Recipient name and role | Controller or processor |
-| Transfer mechanism | Adequacy decision / EU SCCs (Module 1-4) / UK IDTA / UK SCCs + Addendum / Swiss FADP SCCs / BCRs / Art. 49 derogation |
-| SCC Module | Controller-to-controller (M1), Controller-to-processor (M2), Processor-to-controller (M3), Processor-to-processor (M4) |
-| Transfer Risk Assessment | Completed / Pending / Not required (adequacy) |
-| Transfer mechanism document reference | DPA clause, SCC execution date, BCR approval date |
-| Transfer mechanism status | Current / Requires renewal |
+| Transfer Field                        | Content                                                                                                                |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Destination country                   | Named country                                                                                                          |
+| Recipient name and role               | Controller or processor                                                                                                |
+| Transfer mechanism                    | Adequacy decision / EU SCCs (Module 1-4) / UK IDTA / UK SCCs + Addendum / Swiss FADP SCCs / BCRs / Art. 49 derogation  |
+| SCC Module                            | Controller-to-controller (M1), Controller-to-processor (M2), Processor-to-controller (M3), Processor-to-processor (M4) |
+| Transfer Risk Assessment              | Completed / Pending / Not required (adequacy)                                                                          |
+| Transfer mechanism document reference | DPA clause, SCC execution date, BCR approval date                                                                      |
+| Transfer mechanism status             | Current / Requires renewal                                                                                             |
 
 > **Common gap**: Many organizations fail to recognize that using US-headquartered SaaS
 > providers (AWS, Google Workspace, Microsoft 365, Salesforce) constitutes a restricted
@@ -404,6 +413,7 @@ For each transfer of personal data to a country outside the EEA / UK / Switzerla
 > certification status. [VERIFY — adequacy decision status and DPF certification list]
 
 **⟁ CLARIFY** — If any transfer destination lacks a documented mechanism:
+
 - Flag as RED (blocking gap)
 - Ask the user to identify the mechanism or confirm suspension of that transfer
 
@@ -411,14 +421,14 @@ For each transfer of personal data to a country outside the EEA / UK / Switzerla
 
 For each processing activity, document the full retention lifecycle:
 
-| Retention Field | Content |
-|----------------|---------|
-| Retention trigger | What event starts the retention clock (e.g., end of contract, date of last transaction, departure of employee) |
-| Retention period | Specific duration from trigger (e.g., "7 years," "2 years," "1 month") |
-| Statutory basis | Legal or regulatory requirement driving the period, if any |
-| Deletion method | How data is deleted (e.g., secure deletion, anonymization, physical destruction) |
-| Deletion responsibility | Which team or system performs the deletion |
-| Exception | Any category of data retained longer, and the basis |
+| Retention Field         | Content                                                                                                        |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Retention trigger       | What event starts the retention clock (e.g., end of contract, date of last transaction, departure of employee) |
+| Retention period        | Specific duration from trigger (e.g., "7 years," "2 years," "1 month")                                         |
+| Statutory basis         | Legal or regulatory requirement driving the period, if any                                                     |
+| Deletion method         | How data is deleted (e.g., secure deletion, anonymization, physical destruction)                               |
+| Deletion responsibility | Which team or system performs the deletion                                                                     |
+| Exception               | Any category of data retained longer, and the basis                                                            |
 
 > **Supervisory authority red flag**: Retention entries that say "as required by law,"
 > "see retention policy," or contain hyperlinks to external documents are consistently
@@ -428,17 +438,17 @@ For each processing activity, document the full retention lifecycle:
 
 **Common retention periods by data category** (verify against applicable jurisdiction):
 
-| Data Category | Common Minimum Period | Common Maximum Period | Notes |
-|--------------|----------------------|----------------------|-------|
-| Employee payroll records | 3 years | 7 years | Tax law drives minimum; varies by jurisdiction |
-| Employee personnel files | End of employment + 6 years | End of employment + 10 years | Statute of limitations for claims |
-| Customer invoices | 5 years | 10 years | VAT / tax law; insolvency law |
-| Customer contracts | Term + 6 years | Term + 10 years | Limitation periods |
-| Marketing consent records | Duration of consent + 3 years | Duration of consent + 5 years | Evidence for consent-based processing |
-| Job application records (unsuccessful) | 6 months | 1 year | Discrimination claim risk |
-| Website analytics / cookies | 1 month (session) | 25 months (analytics) | EDPB Guideline recommendation |
-| CCTV footage | 30 days | 90 days | Unless part of incident investigation |
-| Health/medical records | Varies — see sector rules | Varies | Heavily jurisdiction-specific [VERIFY] |
+| Data Category                          | Common Minimum Period         | Common Maximum Period         | Notes                                          |
+| -------------------------------------- | ----------------------------- | ----------------------------- | ---------------------------------------------- |
+| Employee payroll records               | 3 years                       | 7 years                       | Tax law drives minimum; varies by jurisdiction |
+| Employee personnel files               | End of employment + 6 years   | End of employment + 10 years  | Statute of limitations for claims              |
+| Customer invoices                      | 5 years                       | 10 years                      | VAT / tax law; insolvency law                  |
+| Customer contracts                     | Term + 6 years                | Term + 10 years               | Limitation periods                             |
+| Marketing consent records              | Duration of consent + 3 years | Duration of consent + 5 years | Evidence for consent-based processing          |
+| Job application records (unsuccessful) | 6 months                      | 1 year                        | Discrimination claim risk                      |
+| Website analytics / cookies            | 1 month (session)             | 25 months (analytics)         | EDPB Guideline recommendation                  |
+| CCTV footage                           | 30 days                       | 90 days                       | Unless part of incident investigation          |
+| Health/medical records                 | Varies — see sector rules     | Varies                        | Heavily jurisdiction-specific [VERIFY]         |
 
 [JURISDICTION-SPECIFIC] Verify retention periods against applicable sector-specific
 regulations (employment law, financial services, healthcare, consumer protection) in
@@ -451,17 +461,17 @@ Art. 30(1)(g) / Art. 30(2)(d):
 
 **ROPA-appropriate TOM description** (general description — not full Art. 32 documentation):
 
-| TOM Category | Document in ROPA |
-|-------------|-----------------|
-| Encryption | "Encryption at rest (AES-256) and in transit (TLS 1.3)" |
-| Access control | "Role-based access control; MFA required for admin access" |
-| Pseudonymization | "Customer IDs pseudonymized in analytics pipeline" |
-| Backups | "Daily automated backups with 30-day retention" |
-| Incident response | "Documented incident response plan; breach notification procedure in place" |
-| Staff training | "Annual data protection training; DPA awareness e-learning on onboarding" |
-| Physical security | "Servers in ISO 27001-certified data center" |
-| Vendor certifications | "Primary cloud provider: AWS (ISO 27001, SOC 2 Type II, C5)" |
-| Penetration testing | "Annual penetration test; most recent [date]" |
+| TOM Category          | Document in ROPA                                                            |
+| --------------------- | --------------------------------------------------------------------------- |
+| Encryption            | "Encryption at rest (AES-256) and in transit (TLS 1.3)"                     |
+| Access control        | "Role-based access control; MFA required for admin access"                  |
+| Pseudonymization      | "Customer IDs pseudonymized in analytics pipeline"                          |
+| Backups               | "Daily automated backups with 30-day retention"                             |
+| Incident response     | "Documented incident response plan; breach notification procedure in place" |
+| Staff training        | "Annual data protection training; DPA awareness e-learning on onboarding"   |
+| Physical security     | "Servers in ISO 27001-certified data center"                                |
+| Vendor certifications | "Primary cloud provider: AWS (ISO 27001, SOC 2 Type II, C5)"                |
+| Penetration testing   | "Annual penetration test; most recent [date]"                               |
 
 > **Level of detail calibration**: The ROPA requires a "general description" — not the
 > full security architecture. Write enough to allow a supervisory authority to understand
@@ -484,6 +494,7 @@ system below. Run the assessment silently before presenting results.
 ### Completeness Classification — Per Processing Activity
 
 #### GREEN — Fully Compliant and Audit-Ready
+
 **All of the following must be true:**
 
 - [ ] Processing purpose is specific, substantiated, and not generic
@@ -500,16 +511,17 @@ system below. Run the assessment silently before presenting results.
 - [ ] Entry is version-controlled with review date
 
 #### YELLOW — Partial Compliance — Remediation Required
+
 **Any of the following present:**
 
 - [ ] Legal basis stated but without adequate documentation (e.g., "consent" with no
-  confirmation of consent records being maintained)
+      confirmation of consent records being maintained)
 - [ ] Purpose described generically ("service improvement") without specific operational
-  articulation
+      articulation
 - [ ] Recipient identified by category but specific processor names missing or incomplete
 - [ ] DPA flagged as "pending" or "under review" with a processor actively processing data
 - [ ] Third-country transfer identified but transfer mechanism documentation incomplete
-  (mechanism type known but SCC execution not confirmed)
+      (mechanism type known but SCC execution not confirmed)
 - [ ] Retention period stated but deletion trigger or method missing
 - [ ] TOMs described as "appropriate security measures" without substance
 - [ ] Art. 6(1)(f) claimed without LIA completion status documented
@@ -521,6 +533,7 @@ system below. Run the assessment silently before presenting results.
 Do not block processing — proceed with 30-day remediation SLA.
 
 #### RED — Blocking Gap — Immediate Action Required
+
 **Any single one of the following:**
 
 - [ ] Processing purpose missing entirely
@@ -532,7 +545,7 @@ Do not block processing — proceed with 30-day remediation SLA.
 - [ ] Processor relationship with no DPA / processing contract in place
 - [ ] Data retention period entirely missing (not just vague — completely absent)
 - [ ] Automated decision-making with significant effects identified; no DPIA, no Art. 22
-  safeguards
+      safeguards
 - [ ] Data source unknown (e.g., purchased from data broker without provenance)
 - [ ] Consent-based processing with no retrievable consent records
 - [ ] Processing activity identified but legal basis claimed is clearly inapplicable
@@ -569,6 +582,7 @@ Verification: [How to confirm the finding is closed]
 Prioritize remediation across the ROPA gap log using this three-tier framework:
 
 **Tier 1 — Immediate (RED items, must resolve before relying on ROPA)**
+
 - Missing legal basis for any processing activity
 - Third-country transfers without documented mechanisms
 - Special category or criminal data processing without Art. 9(2) / Art. 10 basis
@@ -576,6 +590,7 @@ Prioritize remediation across the ROPA gap log using this three-tier framework:
 - Automated decision-making with significant effects and no DPIA
 
 **Tier 2 — Near-Term (HIGH-impact YELLOW items, within 30 days)**
+
 - Vague purposes requiring specification
 - Retention periods missing triggers or deletion methods
 - Pending DPAs with active processors
@@ -583,6 +598,7 @@ Prioritize remediation across the ROPA gap log using this three-tier framework:
 - DPIAs triggered but not initiated
 
 **Tier 3 — Background (LOW-impact YELLOW items, within 90 days)**
+
 - Missing best-practice fields (data owner, system reference, source)
 - Entries not reviewed in 12+ months
 - Sub-processor lists incomplete in detail
@@ -597,13 +613,13 @@ Prioritize remediation across the ROPA gap log using this three-tier framework:
 Run these five gates silently before delivering any ROPA output. If any gate fails, revise
 before delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal basis claim cites a specific article and paragraph | Add citation or mark "[UNVERIFIED]" |
-| **Format** | Citations follow consistent, jurisdiction-aware format | Standardize format |
-| **Currency** | Cited provisions checked for amendments (e.g., EDPB guidance updates, adequacy decisions) | Flag "[CHECK CURRENCY]" |
-| **Domain** | Analysis stays within the skill's applicable regime scope | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated; no hidden assumptions | Add confidence qualifier |
+| Gate           | Rule                                                                                      | Fail Action                         |
+| -------------- | ----------------------------------------------------------------------------------------- | ----------------------------------- |
+| **Source**     | Every legal basis claim cites a specific article and paragraph                            | Add citation or mark "[UNVERIFIED]" |
+| **Format**     | Citations follow consistent, jurisdiction-aware format                                    | Standardize format                  |
+| **Currency**   | Cited provisions checked for amendments (e.g., EDPB guidance updates, adequacy decisions) | Flag "[CHECK CURRENCY]"             |
+| **Domain**     | Analysis stays within the skill's applicable regime scope                                 | Remove or flag jurisdictional bleed |
+| **Confidence** | Uncertainty explicitly stated; no hidden assumptions                                      | Add confidence qualifier            |
 
 ### Self-Interrogation for RED Items
 
@@ -627,13 +643,13 @@ counter-argument is persuasive, reconsider the classification.
 
 Apply confidence scoring to every legal basis assignment and transfer mechanism determination:
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Settled law; clear statutory text | State with confidence |
-| **High** | 0.80–0.94 | Strong authority, minor interpretive questions | State with brief caveat |
-| **Probable** | 0.60–0.79 | Good arguments; reasonable interpretation | State with reasoning |
-| **Possible** | 0.40–0.59 | Genuine legal uncertainty | Flag for professional review |
-| **Unlikely** | 0.0–0.39 | Weak basis; speculative | Do not assert; mark "[UNCERTAIN]" |
+| Level        | Range     | Meaning                                        | Action                            |
+| ------------ | --------- | ---------------------------------------------- | --------------------------------- |
+| **Definite** | 0.95–1.0  | Settled law; clear statutory text              | State with confidence             |
+| **High**     | 0.80–0.94 | Strong authority, minor interpretive questions | State with brief caveat           |
+| **Probable** | 0.60–0.79 | Good arguments; reasonable interpretation      | State with reasoning              |
+| **Possible** | 0.40–0.59 | Genuine legal uncertainty                      | Flag for professional review      |
+| **Unlikely** | 0.0–0.39  | Weak basis; speculative                        | Do not assert; mark "[UNCERTAIN]" |
 
 Confidence below 0.80 on a legal basis assignment → automatically classify the activity
 as YELLOW regardless of other field completeness.
@@ -835,6 +851,7 @@ Apply these standards to all ROPA output and finding descriptions:
 ### legalcode-mcp (Preferred for Legal Authority Verification)
 
 Use **legalcode-mcp** to verify:
+
 - Current adequacy decisions per destination country (adequacy decisions change)
 - Current version of EU SCCs and any implementing guidance
 - Specific EDPB opinions and guidelines on RoPA format and completeness
@@ -846,6 +863,7 @@ Use **legalcode-mcp** to verify:
 Save results to `/tmp/legalcode-ropa-research.md` and mark citations as VERIFIED.
 
 **Without legalcode-mcp:**
+
 - Mark all adequacy decisions, SCC references, and DPA guidance citations with [VERIFY]
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Focus on structural completeness, mandatory field coverage, and classification accuracy
@@ -869,6 +887,7 @@ legalcode-data-mapping-workflow
 
 **DPIA handoff trigger**: Any ROPA entry flagged with any of these characteristics should
 be passed to `legalcode-dpia-generator`:
+
 - Large-scale processing of special category data
 - Systematic monitoring of publicly accessible areas
 - Automated decision-making with legal / significant effects
@@ -889,9 +908,9 @@ For each processing activity, assess and document:
 
 **LIA Cross-Reference** (controller-side only):
 
-| Activity | Legal Basis Claimed | LIA Required? | LIA Status | LIA Doc ID | Owner | Deadline |
-|----------|--------------------|--------------| -----------|------------|-------|---------|
-| [Activity] | Art. 6(1)(f) LI | Yes | Completed / Pending / Not initiated | [ID or N/A] | [Name] | [Date] |
+| Activity   | Legal Basis Claimed | LIA Required? | LIA Status                          | LIA Doc ID  | Owner  | Deadline |
+| ---------- | ------------------- | ------------- | ----------------------------------- | ----------- | ------ | -------- |
+| [Activity] | Art. 6(1)(f) LI     | Yes           | Completed / Pending / Not initiated | [ID or N/A] | [Name] | [Date]   |
 
 **DPIA Cross-Reference**:
 
@@ -900,11 +919,13 @@ are met, a DPIA is likely required. If any Art. 35(3) automatic trigger applies,
 is required without qualification:
 
 Art. 35(3) automatic triggers:
+
 - Systematic and extensive profiling with legal or similarly significant effects
 - Large-scale processing of Art. 9 special category or Art. 10 criminal data
 - Systematic monitoring of publicly accessible areas on a large scale
 
 EDPB WP248 nine criteria (≥2 = DPIA likely required):
+
 1. Evaluation or scoring
 2. Automated decision-making with legal/significant effects
 3. Systematic monitoring
@@ -915,15 +936,16 @@ EDPB WP248 nine criteria (≥2 = DPIA likely required):
 8. Innovative use or application of technology
 9. Data transfers across borders with risk
 
-| Activity | Art. 35(3) Trigger? | WP248 Criteria Count | DPIA Required? | DPIA Status | DPIA Doc ID |
-|----------|--------------------|--------------------|----------------|------------|------------|
-| [Activity] | Yes / No | [n]/9 | Yes / No / Recommended | Completed / Pending / Not initiated | [ID or N/A] |
+| Activity   | Art. 35(3) Trigger? | WP248 Criteria Count | DPIA Required?         | DPIA Status                         | DPIA Doc ID |
+| ---------- | ------------------- | -------------------- | ---------------------- | ----------------------------------- | ----------- |
+| [Activity] | Yes / No            | [n]/9                | Yes / No / Recommended | Completed / Pending / Not initiated | [ID or N/A] |
 
 ### Step 12: Output Assembly and Maintenance Framework
 
 Assemble the final ROPA package and establish the maintenance protocol.
 
 **⟁ CLARIFY** — Confirm which output format(s) the user needs:
+
 - **Full ROPA package** (all parts A–J below)
 - **Controller ROPA register only** (Part B)
 - **Gap log and remediation plan only** (Parts F and G)
@@ -933,6 +955,7 @@ Assemble the final ROPA package and establish the maintenance protocol.
 **Maintenance Protocol**: Present the user with a maintenance trigger checklist:
 
 **Events requiring immediate ROPA update** (update within 5 business days):
+
 - [ ] New third-party vendor / processor onboarded
 - [ ] Existing processor relationship terminated
 - [ ] New processing purpose implemented (new product feature, new marketing channel)
@@ -947,6 +970,7 @@ Assemble the final ROPA package and establish the maintenance protocol.
 - [ ] Corporate restructure, acquisition, or divestiture affecting data flows
 
 **Annual ROPA review** (scheduled, regardless of events):
+
 - Full review of all entries for accuracy and completeness
 - Update review dates on each entry
 - Re-assess transfer mechanism currency (adequacy decisions, SCC version)
@@ -962,6 +986,7 @@ Assemble the final ROPA package and establish the maintenance protocol.
 
 ```markdown
 # Records of Processing Activities — [Organization Name]
+
 **Generated by**: legalcode-ropa-generator
 **Date**: [YYYY-MM-DD]
 **Version**: [n.n]
@@ -971,15 +996,18 @@ Assemble the final ROPA package and establish the maintenance protocol.
 **DPO**: [Name, contact]
 
 ## Overview
+
 - **Total processing activities documented**: [n]
 - **GREEN (audit-ready)**: [n] ([%])
 - **YELLOW (remediation required)**: [n] ([%])
 - **RED (blocking gaps)**: [n] ([%])
 
 ## Immediate Actions Required
+
 [List of RED items requiring immediate attention]
 
 ## Key Metrics
+
 - Mandatory fields complete (all activities): [%]
 - Activities with documented legal basis: [n/n]
 - Activities with documented retention: [n/n]
@@ -993,73 +1021,74 @@ Assemble the final ROPA package and establish the maintenance protocol.
 
 **Controller ROPA Format:**
 
-| Activity ID | Activity Name | Purpose | Legal Basis | Data Subjects | Personal Data | Recipients | Transfers | Retention | TOMs | ADM | DPIA | LIA | Classification |
-|------------|--------------|---------|------------|---------------|---------------|-----------|----------|-----------|------|-----|------|-----|---------------|
-| ACT-001 | [Name] | [Purpose] | Art. 6(1)([x]) | [Types] | [Categories] | [Named] | [Countries + mechanism] | [Period + trigger] | [Summary] | [Yes/No] | [Status] | [Status] | 🟢/🟡/🔴 |
+| Activity ID | Activity Name | Purpose   | Legal Basis    | Data Subjects | Personal Data | Recipients | Transfers               | Retention          | TOMs      | ADM      | DPIA     | LIA      | Classification |
+| ----------- | ------------- | --------- | -------------- | ------------- | ------------- | ---------- | ----------------------- | ------------------ | --------- | -------- | -------- | -------- | -------------- |
+| ACT-001     | [Name]        | [Purpose] | Art. 6(1)([x]) | [Types]       | [Categories]  | [Named]    | [Countries + mechanism] | [Period + trigger] | [Summary] | [Yes/No] | [Status] | [Status] | 🟢/🟡/🔴       |
 
 **Processor ROPA Format:**
 
-| Activity ID | Controller Name | Controller Contact | Categories of Processing | Sub-Processors | Transfers | TOMs | Classification |
-|------------|-----------------|-------------------|--------------------------|---------------|----------|------|---------------|
-| PRO-001 | [Controller] | [Contact] | [Processing types] | [Named] | [Countries + mechanism] | [Summary] | 🟢/🟡/🔴 |
+| Activity ID | Controller Name | Controller Contact | Categories of Processing | Sub-Processors | Transfers               | TOMs      | Classification |
+| ----------- | --------------- | ------------------ | ------------------------ | -------------- | ----------------------- | --------- | -------------- |
+| PRO-001     | [Controller]    | [Contact]          | [Processing types]       | [Named]        | [Countries + mechanism] | [Summary] | 🟢/🟡/🔴       |
 
 ### Part C — Mandatory Field Coverage Matrix
 
-| Activity | C1 | C2 | C6 | C7 | C8 | C9 | C12 | C13 | C14 | C15 | C16 | C17 | C18 | Status |
-|---------|----|----|----|----|----|----|-----|-----|-----|-----|-----|-----|-----|--------|
-| ACT-001 | ✅ | ✅ | ✅ | ✅ | ✅ | N/A | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🟢 |
+| Activity | C1  | C2  | C6  | C7  | C8  | C9  | C12 | C13 | C14 | C15 | C16 | C17 | C18 | Status |
+| -------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------ |
+| ACT-001  | ✅  | ✅  | ✅  | ✅  | ✅  | N/A | ✅  | ✅  | ✅  | ✅  | ✅  | ✅  | ✅  | 🟢     |
 
-*(C-codes correspond to field numbers in the Controller ROPA Entry table in Step 6)*
+_(C-codes correspond to field numbers in the Controller ROPA Entry table in Step 6)_
 
 ### Part D — Transfer Ledger
 
-| Activity | Destination Country | Recipient | Role | Mechanism | Module | TRA Status | Mechanism Reference | Status |
-|---------|--------------------|---------|----|---------|------|-----------|-------------------|--------|
-| ACT-001 | United States | [Vendor] | Processor | EU SCCs 2021 | M2 | Completed | DPA Annex B, dated [date] | ✅ |
+| Activity | Destination Country | Recipient | Role      | Mechanism    | Module | TRA Status | Mechanism Reference       | Status |
+| -------- | ------------------- | --------- | --------- | ------------ | ------ | ---------- | ------------------------- | ------ |
+| ACT-001  | United States       | [Vendor]  | Processor | EU SCCs 2021 | M2     | Completed  | DPA Annex B, dated [date] | ✅     |
 
 ### Part E — Retention Schedule
 
-| Activity | Data Category | Retention Trigger | Period | Deletion Method | Statutory Basis | Exception |
-|---------|--------------|------------------|--------|-----------------|-----------------|-----------|
-| ACT-001 | Customer invoices | End of tax year | 7 years | Secure deletion | VAT Act § [x] | None |
+| Activity | Data Category     | Retention Trigger | Period  | Deletion Method | Statutory Basis | Exception |
+| -------- | ----------------- | ----------------- | ------- | --------------- | --------------- | --------- |
+| ACT-001  | Customer invoices | End of tax year   | 7 years | Secure deletion | VAT Act § [x]   | None      |
 
 ### Part F — Sub-Processor Inventory (Processor ROPA)
 
-| Controller | Sub-Processor | Function | Location | Authorization Type | Notification Date | Status |
-|-----------|-------------|--------|--------|------------------|-----------------|--------|
-| [Controller] | [Sub-processor] | [Function] | [Country] | Specific / General | [Date] | Active |
+| Controller   | Sub-Processor   | Function   | Location  | Authorization Type | Notification Date | Status |
+| ------------ | --------------- | ---------- | --------- | ------------------ | ----------------- | ------ |
+| [Controller] | [Sub-processor] | [Function] | [Country] | Specific / General | [Date]            | Active |
 
 ### Part G — Gap Log (YELLOW Items)
 
-| Finding ID | Activity | Field | Gap Description | Remediation Action | Owner | Deadline | Status |
-|-----------|---------|-------|-----------------|-------------------|-------|---------|--------|
-| ROPA-[date]-001 | ACT-001 | C8 — Legal Basis | LIA not completed for Art. 6(1)(f) claim | Complete LIA using legalcode-legitimate-interest-assessment | DPO | [30 days] | Open |
+| Finding ID      | Activity | Field            | Gap Description                          | Remediation Action                                          | Owner | Deadline  | Status |
+| --------------- | -------- | ---------------- | ---------------------------------------- | ----------------------------------------------------------- | ----- | --------- | ------ |
+| ROPA-[date]-001 | ACT-001  | C8 — Legal Basis | LIA not completed for Art. 6(1)(f) claim | Complete LIA using legalcode-legitimate-interest-assessment | DPO   | [30 days] | Open   |
 
 ### Part H — Escalation Log (RED Items)
 
-| Finding ID | Activity | Field | Blocking Gap | Immediate Action | DPO Notified | Legal Counsel Needed |
-|-----------|---------|-------|-------------|----------------|-------------|---------------------|
-| ROPA-[date]-001 | ACT-003 | C16 — Transfer | US vendor transfer: no documented mechanism | Suspend transfer or execute DPF verification / SCCs | Yes | Yes |
+| Finding ID      | Activity | Field          | Blocking Gap                                | Immediate Action                                    | DPO Notified | Legal Counsel Needed |
+| --------------- | -------- | -------------- | ------------------------------------------- | --------------------------------------------------- | ------------ | -------------------- |
+| ROPA-[date]-001 | ACT-003  | C16 — Transfer | US vendor transfer: no documented mechanism | Suspend transfer or execute DPF verification / SCCs | Yes          | Yes                  |
 
 ### Part I — Completeness Scorecard
 
 ```markdown
 ## ROPA Completeness Scorecard
+
 **Assessment date**: [date]
 
-| Metric | Count | % Complete |
-|--------|-------|-----------|
-| Total activities | [n] | — |
-| GREEN (fully compliant) | [n] | [%] |
-| YELLOW (remediation needed) | [n] | [%] |
-| RED (blocking gaps) | [n] | [%] |
-| Activities with legal basis documented | [n/n] | [%] |
-| Activities with retention documented | [n/n] | [%] |
-| Activities with transfer mechanism documented | [n/n] | [%] |
-| Processors with DPA confirmed | [n/n] | [%] |
-| DPIA status documented | [n/n] | [%] |
-| LIA documented for Art. 6(1)(f) activities | [n/n] | [%] |
-| Mandatory fields complete | [n/24 per activity avg] | [%] |
+| Metric                                        | Count                   | % Complete |
+| --------------------------------------------- | ----------------------- | ---------- |
+| Total activities                              | [n]                     | —          |
+| GREEN (fully compliant)                       | [n]                     | [%]        |
+| YELLOW (remediation needed)                   | [n]                     | [%]        |
+| RED (blocking gaps)                           | [n]                     | [%]        |
+| Activities with legal basis documented        | [n/n]                   | [%]        |
+| Activities with retention documented          | [n/n]                   | [%]        |
+| Activities with transfer mechanism documented | [n/n]                   | [%]        |
+| Processors with DPA confirmed                 | [n/n]                   | [%]        |
+| DPIA status documented                        | [n/n]                   | [%]        |
+| LIA documented for Art. 6(1)(f) activities    | [n/n]                   | [%]        |
+| Mandatory fields complete                     | [n/24 per activity avg] | [%]        |
 
 **Overall ROPA readiness**: 🔴 NOT READY / 🟡 REQUIRES REMEDIATION / 🟢 AUDIT-READY
 ```
@@ -1118,12 +1147,14 @@ activities:
 ## Localization Notes
 
 ### EU GDPR (Reference standard)
+
 - Legal basis field: Art. 6(1)(a)–(f); Art. 9(2)(a)–(j) for special categories
 - Transfer mechanisms: EU SCCs 2021 (Modules 1–4), BCRs, adequacy decisions, Art. 49 derogations
 - EDPB guidelines are binding interpretive authority
 - Fines for Art. 30 violations: Art. 83(4)(a) — up to EUR 10M or 2% of global turnover
 
 ### UK GDPR
+
 - Additional field: DPA 2018 Schedule 1 condition for Art. 9 processing
 - Additional field: Appropriate Policy Document (APD) reference for several Schedule 1 conditions
 - Transfer mechanisms: UK IDTA, EU SCCs + UK Addendum (transition deadline: 21 March 2024 for legacy contracts)
@@ -1132,6 +1163,7 @@ activities:
 - ICO audit framework includes ROPA completeness as a scored element
 
 ### Swiss FADP (Art. 12)
+
 - Effective: 1 September 2023
 - No "where possible" qualifier — TOMs are mandatory without qualification
 - Exemption: 250 employees + negligible risk (narrower framing than GDPR three conditions)
@@ -1141,6 +1173,7 @@ activities:
 - Language: German (Bearbeitungsverzeichnis), French (registre des activités de traitement), Italian (registro delle attività di trattamento)
 
 ### Brazil LGPD (Art. 37)
+
 - Statutory text: One sentence; no mandatory fields in statute
 - ANPD template: 13 fields — non-binding but represents regulatory expectation
 - Both controllers (controladores) and operators (operadores) must maintain records

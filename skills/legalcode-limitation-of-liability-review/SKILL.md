@@ -48,6 +48,7 @@ interaction with other provisions (indemnification, SLA sole-remedy, insurance m
 This skill addresses all three failure modes.
 
 **Covers:**
+
 - Aggregate liability caps (fixed, fee-multiple, insurance-linked)
 - Per-incident and per-claim caps and their implications
 - Exclusion of consequential, indirect, special, incidental, and punitive damages
@@ -63,12 +64,14 @@ This skill addresses all three failure modes.
 - Redline suggestions with fallback positions
 
 **Does not:**
+
 - Draft full limitation of liability clauses from scratch (see `legalcode-contract-review` or relevant drafting skills)
 - Perform comprehensive clause-by-clause review of any commercial agreement (see `legalcode-contract-review`)
 - Replace qualified counsel — particularly for high-value deals, regulated-sector contracts, or cross-border transactions where enforceability turns on specific local law
 - Apply to consumer contracts exclusively — consumer protection rules add mandatory floors not fully covered here
 
 **Related skills:**
+
 - `legalcode-contract-review` — full clause-by-clause review of any commercial agreement
 - `legalcode-saas-agreement-drafter` — drafts liability structures for SaaS agreements
 - `legalcode-master-services-agreement` — MSA-specific liability cap frameworks
@@ -87,6 +90,7 @@ jurisdiction-specific enforceability issues throughout.
 [JURISDICTION-SPECIFIC] When localizing, research and apply:
 
 **United States:**
+
 - UCC §2-719: permits limitation of consequential damages in goods contracts; subject to
   unconscionability; may be voided for gross negligence or willful misconduct
 - California Civil Code §1668: limitations on liability for willful injury to person or
@@ -97,6 +101,7 @@ jurisdiction-specific enforceability issues throughout.
   override for regulated data categories
 
 **United Kingdom:**
+
 - Unfair Contract Terms Act 1977 (UCTA), as amended: reasonableness test applies to
   B2B exclusion and limitation clauses (s.11; Schedule 2 reasonableness factors); death
   and personal injury liability cannot be excluded (s.2(1)); negligence causing other loss
@@ -111,6 +116,7 @@ jurisdiction-specific enforceability issues throughout.
   contracting); not an absolute exclusion even without clause [VERIFY current treatment]
 
 **Germany (BGB):**
+
 - §309 No. 7(a): in standard terms (AGBs), liability for death or bodily injury cannot
   be limited — VOID
 - §309 No. 7(b): in standard terms, limitation of liability for gross negligence
@@ -122,6 +128,7 @@ jurisdiction-specific enforceability issues throughout.
   accepted definition in BGB contract law [VERIFY German doctrine]
 
 **France (Code Civil):**
+
 - Art. 1170 (2016 reform): any clause that empties a material contractual obligation of
   its meaning (substance) shall be "deemed not written" (réputée non écrite)
 - Art. 1231-3: only reasonably foreseeable loss recoverable; LOL clauses must not
@@ -132,6 +139,7 @@ jurisdiction-specific enforceability issues throughout.
 - B2C: additional consumer protection under Code de la consommation
 
 **Australia:**
+
 - Australian Consumer Law (ACL): unfair contract terms regime (expanded November 2023
   to include small businesses); civil penalties for unfair terms
 - Death and personal injury: cannot be excluded in consumer contracts
@@ -185,35 +193,35 @@ answered by the user:
 1. **Which side are you on?**
    - Options: Customer / Buyer, Vendor / Supplier, Licensor, Licensee, Service Provider,
      Client, Neutral / Both, Other
-   - *Why this matters*: The entire analysis flips. A cap that is reasonable for a vendor
+   - _Why this matters_: The entire analysis flips. A cap that is reasonable for a vendor
      may be catastrophically inadequate from the customer's perspective — and vice versa.
 
 2. **What type of contract is this?**
    - Options: SaaS / cloud services, Professional services / MSA, Software license,
      Procurement / supply chain, Employment / services, Distribution / reseller,
      Construction / EPC, Financial services, Other / mixed
-   - *Why this matters*: Market standards for cap amounts, carve-outs, and damages
+   - _Why this matters_: Market standards for cap amounts, carve-outs, and damages
      exclusions vary substantially by contract type. A 12-month cap is standard for SaaS
      but potentially inadequate for high-risk outsourcing.
 
 3. **What is the approximate deal value / annual contract value?**
    - Options: Under $100K / £100K, $100K–$500K / £100K–£500K, $500K–$5M / £500K–£5M,
      Over $5M / £5M, Not sure / not relevant
-   - *Why this matters*: Cap adequacy must be assessed relative to deal value and
+   - _Why this matters_: Cap adequacy must be assessed relative to deal value and
      realistic exposure. A $5M cap sounds large until you realize it covers a $100M
      outsourcing program.
 
 4. **What is the governing law / jurisdiction?**
    - Options: English/UK law, US (specify state if known), German law, French law,
      Australian law, Other EU member state, Other / not stated, Multiple jurisdictions
-   - *Why this matters*: Mandatory statutory floors differ materially. A clause that
+   - _Why this matters_: Mandatory statutory floors differ materially. A clause that
      validly excludes death/PI liability under US common law is void under UCTA s.2(1)
      in England.
 
 5. **Do you have the organization's negotiation playbook positions?**
    - Options: Yes, I'll provide them, Use general market standards (no playbook),
      I'll provide key positions as we go
-   - *Why this matters*: Playbook positions define what is "acceptable" for GREEN
+   - _Why this matters_: Playbook positions define what is "acceptable" for GREEN
      classification. Without them, analysis defaults to market standards — which may not
      reflect your risk appetite.
 
@@ -221,7 +229,7 @@ answered by the user:
    - Options: Conservative (prefer to flag any deviation from standard),
      Pragmatic (flag material deviations only; accept commercially reasonable terms),
      Case-by-case (I'll judge each issue as you raise it)
-   - *Why this matters*: Affects YELLOW vs. RED threshold — particularly for borderline
+   - _Why this matters_: Affects YELLOW vs. RED threshold — particularly for borderline
      items where reasonable practitioners could differ.
 
 If the user provides partial context, proceed with what you have and **state assumptions
@@ -318,16 +326,17 @@ and generate a finding.
 
 **What to assess:**
 
-| Contract Type | Vendor-Favorable (Minimum) | Market Range | Customer-Favorable (Maximum) |
-|---------------|---------------------------|--------------|-------------------------------|
-| SaaS / Cloud | 3–6 months' fees | 12 months' fees | 24 months' fees (or more for data-critical) |
-| Professional Services / MSA | 100% of fees paid | 100–200% of total fees paid | 200%+ of fees, or fixed higher amount |
-| Software License (perpetual) | License fees paid | 2–5× license fees | Replacement cost of system |
-| Outsourcing (BPO/ITO) | 100% of fees paid | 100–300% of annual fees | Higher; may include regulatory exposure |
-| Procurement / Supply Chain | Cost of goods supplied | 100–200% of contract value | Replacement cost + downstream losses |
-| Distribution / Reseller | Supplier's wholesale value | 2× gross margin | Full downstream exposure |
+| Contract Type                | Vendor-Favorable (Minimum) | Market Range                | Customer-Favorable (Maximum)                |
+| ---------------------------- | -------------------------- | --------------------------- | ------------------------------------------- |
+| SaaS / Cloud                 | 3–6 months' fees           | 12 months' fees             | 24 months' fees (or more for data-critical) |
+| Professional Services / MSA  | 100% of fees paid          | 100–200% of total fees paid | 200%+ of fees, or fixed higher amount       |
+| Software License (perpetual) | License fees paid          | 2–5× license fees           | Replacement cost of system                  |
+| Outsourcing (BPO/ITO)        | 100% of fees paid          | 100–300% of annual fees     | Higher; may include regulatory exposure     |
+| Procurement / Supply Chain   | Cost of goods supplied     | 100–200% of contract value  | Replacement cost + downstream losses        |
+| Distribution / Reseller      | Supplier's wholesale value | 2× gross margin             | Full downstream exposure                    |
 
 **Assessment criteria:**
+
 - [ ] Cap is expressed as a formula (fee multiple) rather than an arbitrary fixed number
 - [ ] Formula reflects the **actual** economic relationship (e.g., "fees paid or payable in the 12 months preceding the claim")
 - [ ] Cap is proportionate to the realistic exposure from a breach or failure
@@ -369,6 +378,7 @@ down. Flag if cap amount is significantly below market range for the contract ty
   multiple claims from a single incident.
 
 **Interaction risks:**
+
 - An aggregate cap of 12 months' fees that resets annually protects the vendor more
   than a static aggregate cap
 - "Per occurrence" language creates litigation risk on whether multiple impacts from
@@ -378,6 +388,7 @@ down. Flag if cap amount is significantly below market range for the contract ty
   cumulative over the contract term
 
 **Assessment criteria:**
+
 - [ ] Cap type (aggregate / per-incident / per-claim) is unambiguous
 - [ ] Temporal scope is clear (annual? per contract term? cumulative lifetime?)
 - [ ] Reset mechanism (if any) is explicitly stated
@@ -392,30 +403,31 @@ down. Flag if cap amount is significantly below market range for the contract ty
 
 **Common excluded categories:**
 
-| Category | Definition | Risk if Excluded |
-|----------|-----------|-----------------|
-| Consequential damages | Losses not directly caused by breach; Hadley v Baxendale Limb 2 [VERIFY] | May eliminate meaningful recovery for downstream impacts |
-| Indirect damages | Synonym for consequential in most jurisdictions; Limb 2 losses | Same as consequential |
-| Special damages | Losses known to both parties at time of contracting; Hadley Limb 2 [VERIFY] | Covers foreseeable but non-direct losses |
-| Incidental damages | Costs incurred in dealing with a breach | Eliminates cost-of-substitute and mitigation costs |
-| Punitive / exemplary damages | Court-awarded punishment above actual loss | Rarely available in commercial contracts anyway (UK/EU); more relevant in US |
-| Loss of profit / revenue | Operating profit or gross revenue lost due to breach | Critical carve-out for customers whose revenue depends on the service |
-| Loss of data | Cost of reconstruction and downstream loss from data loss | Critical for cloud/SaaS; must NOT be covered by standard consequential exclusion [VERIFY jurisdiction] |
-| Loss of goodwill | Brand/reputational damage from breach | Difficult to quantify; exclusion typically acceptable |
-| Loss of opportunity | Commercial opportunities foregone due to breach | Difficult to quantify; exclusion often acceptable |
-| Wasted expenditure | Costs incurred in reliance on the contract | Customer-side concern; exclusion may be problematic for critical IT contracts |
+| Category                     | Definition                                                                  | Risk if Excluded                                                                                       |
+| ---------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Consequential damages        | Losses not directly caused by breach; Hadley v Baxendale Limb 2 [VERIFY]    | May eliminate meaningful recovery for downstream impacts                                               |
+| Indirect damages             | Synonym for consequential in most jurisdictions; Limb 2 losses              | Same as consequential                                                                                  |
+| Special damages              | Losses known to both parties at time of contracting; Hadley Limb 2 [VERIFY] | Covers foreseeable but non-direct losses                                                               |
+| Incidental damages           | Costs incurred in dealing with a breach                                     | Eliminates cost-of-substitute and mitigation costs                                                     |
+| Punitive / exemplary damages | Court-awarded punishment above actual loss                                  | Rarely available in commercial contracts anyway (UK/EU); more relevant in US                           |
+| Loss of profit / revenue     | Operating profit or gross revenue lost due to breach                        | Critical carve-out for customers whose revenue depends on the service                                  |
+| Loss of data                 | Cost of reconstruction and downstream loss from data loss                   | Critical for cloud/SaaS; must NOT be covered by standard consequential exclusion [VERIFY jurisdiction] |
+| Loss of goodwill             | Brand/reputational damage from breach                                       | Difficult to quantify; exclusion typically acceptable                                                  |
+| Loss of opportunity          | Commercial opportunities foregone due to breach                             | Difficult to quantify; exclusion often acceptable                                                      |
+| Wasted expenditure           | Costs incurred in reliance on the contract                                  | Customer-side concern; exclusion may be problematic for critical IT contracts                          |
 
 **Enforceability by jurisdiction (summary):**
 
-| Jurisdiction | General Enforceability | Mandatory Carve-Outs | Notes |
-|-------------|----------------------|---------------------|-------|
-| **England/Wales** | Generally valid in B2B (UCTA reasonableness test) | Death/PI (UCTA s.2(1)), fraud | "Consequential" ≠ "indirect" in all clauses — depends on contract language [VERIFY] |
-| **US (general)** | Generally valid in B2B (UCC §2-719 for goods) | Willful misconduct (CA Cal Civ §1668), gross negligence (varies by state) | Unconscionability doctrine applies; "essential purpose" failure may void clause [VERIFY per state] |
-| **Germany** | Limited in standard terms (AGBs) | Death/PI (§309 No. 7(a)), gross negligence (§309 No. 7(b)) | Individually negotiated contracts have more flexibility |
-| **France** | Valid if not emptying essential obligation (Art. 1170) | Dol (fraud), faute lourde (gross negligence), personal injury | Direct/indirect distinction used differently than UK/US [VERIFY] |
-| **Australia** | ACL unfair terms regime (Nov 2023 expansion) | Death/PI (consumer contracts) | Civil penalties for unfair terms in small business contracts |
+| Jurisdiction      | General Enforceability                                 | Mandatory Carve-Outs                                                      | Notes                                                                                              |
+| ----------------- | ------------------------------------------------------ | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **England/Wales** | Generally valid in B2B (UCTA reasonableness test)      | Death/PI (UCTA s.2(1)), fraud                                             | "Consequential" ≠ "indirect" in all clauses — depends on contract language [VERIFY]                |
+| **US (general)**  | Generally valid in B2B (UCC §2-719 for goods)          | Willful misconduct (CA Cal Civ §1668), gross negligence (varies by state) | Unconscionability doctrine applies; "essential purpose" failure may void clause [VERIFY per state] |
+| **Germany**       | Limited in standard terms (AGBs)                       | Death/PI (§309 No. 7(a)), gross negligence (§309 No. 7(b))                | Individually negotiated contracts have more flexibility                                            |
+| **France**        | Valid if not emptying essential obligation (Art. 1170) | Dol (fraud), faute lourde (gross negligence), personal injury             | Direct/indirect distinction used differently than UK/US [VERIFY]                                   |
+| **Australia**     | ACL unfair terms regime (Nov 2023 expansion)           | Death/PI (consumer contracts)                                             | Civil penalties for unfair terms in small business contracts                                       |
 
 **Assessment criteria:**
+
 - [ ] Exclusion categories are specifically named (not just "indirect and consequential")
 - [ ] **Data loss** is NOT swept into the consequential damages exclusion without a specific carve-out or super-cap
 - [ ] **Loss of profits** exclusion does not eliminate the customer's entire meaningful recovery
@@ -435,25 +447,25 @@ subsequent UK cases].
 
 **Required carve-outs by jurisdiction:**
 
-| Carve-Out | US | UK | Germany | France | Australia |
-|----------|----|----|---------|--------|-----------|
-| Death / personal injury | Recommended | **MANDATORY** (UCTA s.2(1)) | **MANDATORY** (§309 No. 7(a)) | **MANDATORY** | Consumer: mandatory |
-| Fraud / fraudulent misrepresentation | Public policy void | **MANDATORY** (public policy) | Void | **MANDATORY** (dol) | Void |
-| Gross negligence | State-dependent | Market standard | **MANDATORY** in standard terms (§309 No. 7(b)) | **MANDATORY** (faute lourde) | Market standard |
-| Willful misconduct / intentional acts | CA Civil Code §1668 void | Market standard (UCTA s.2(2)) | Mandatory (§276 BGB intentional act) | Mandatory (dol) | Market standard |
+| Carve-Out                             | US                       | UK                            | Germany                                         | France                       | Australia           |
+| ------------------------------------- | ------------------------ | ----------------------------- | ----------------------------------------------- | ---------------------------- | ------------------- |
+| Death / personal injury               | Recommended              | **MANDATORY** (UCTA s.2(1))   | **MANDATORY** (§309 No. 7(a))                   | **MANDATORY**                | Consumer: mandatory |
+| Fraud / fraudulent misrepresentation  | Public policy void       | **MANDATORY** (public policy) | Void                                            | **MANDATORY** (dol)          | Void                |
+| Gross negligence                      | State-dependent          | Market standard               | **MANDATORY** in standard terms (§309 No. 7(b)) | **MANDATORY** (faute lourde) | Market standard     |
+| Willful misconduct / intentional acts | CA Civil Code §1668 void | Market standard (UCTA s.2(2)) | Mandatory (§276 BGB intentional act)            | Mandatory (dol)              | Market standard     |
 
 **Market-standard carve-outs (expected in any well-drafted commercial contract):**
 
-| Carve-Out | Market Status | Typical Treatment |
-|----------|--------------|-------------------|
-| IP indemnification (third-party IP claims) | Market standard | Historically uncapped; increasingly capped at 2–5× contract value (super-cap) |
-| Data breach / privacy violation | Market standard (emerging) | Carve-out from standard cap; super-cap at 2–3× standard cap; or uncapped for GDPR-covered breaches |
-| Confidentiality breach | Market standard | Carve-out from standard cap; often uncapped or super-capped |
-| Willful misconduct | Market standard | Uncapped |
-| Gross negligence | Market standard | Uncapped (mandatory in some jurisdictions) |
-| Fraud | Market standard | Always uncapped |
-| Death / personal injury | Market standard | Always uncapped (mandatory in UK/EU) |
-| Payment obligations (fees already owed) | Market standard | Uncapped (otherwise vendor could cap its own breach of contract to pay) |
+| Carve-Out                                  | Market Status              | Typical Treatment                                                                                  |
+| ------------------------------------------ | -------------------------- | -------------------------------------------------------------------------------------------------- |
+| IP indemnification (third-party IP claims) | Market standard            | Historically uncapped; increasingly capped at 2–5× contract value (super-cap)                      |
+| Data breach / privacy violation            | Market standard (emerging) | Carve-out from standard cap; super-cap at 2–3× standard cap; or uncapped for GDPR-covered breaches |
+| Confidentiality breach                     | Market standard            | Carve-out from standard cap; often uncapped or super-capped                                        |
+| Willful misconduct                         | Market standard            | Uncapped                                                                                           |
+| Gross negligence                           | Market standard            | Uncapped (mandatory in some jurisdictions)                                                         |
+| Fraud                                      | Market standard            | Always uncapped                                                                                    |
+| Death / personal injury                    | Market standard            | Always uncapped (mandatory in UK/EU)                                                               |
+| Payment obligations (fees already owed)    | Market standard            | Uncapped (otherwise vendor could cap its own breach of contract to pay)                            |
 
 **Super-cap structures:**
 
@@ -461,14 +473,15 @@ A **super-cap** is a higher cap applied to specific high-risk categories. It bri
 gap between the standard cap (vendor-favorable) and fully uncapped liability
 (customer-favorable) for carve-out categories.
 
-| Category | Standard Super-Cap Range | Notes |
-|----------|-------------------------|-------|
-| IP indemnification | 2–5× annual contract value | Driven by third-party IP claim costs |
-| Data breach | 2–3× standard cap; sometimes tied to data protection regulatory fines (e.g., 4% of global turnover for GDPR [VERIFY Art. 83]) | GDPR fines can far exceed standard caps |
-| Confidentiality breach | 2–3× standard cap; sometimes uncapped | Damage may be irreversible |
-| Regulatory fines | Often separate; links to governing regulation maximum | Cannot contractually limit regulator; can allocate between parties |
+| Category               | Standard Super-Cap Range                                                                                                      | Notes                                                              |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| IP indemnification     | 2–5× annual contract value                                                                                                    | Driven by third-party IP claim costs                               |
+| Data breach            | 2–3× standard cap; sometimes tied to data protection regulatory fines (e.g., 4% of global turnover for GDPR [VERIFY Art. 83]) | GDPR fines can far exceed standard caps                            |
+| Confidentiality breach | 2–3× standard cap; sometimes uncapped                                                                                         | Damage may be irreversible                                         |
+| Regulatory fines       | Often separate; links to governing regulation maximum                                                                         | Cannot contractually limit regulator; can allocate between parties |
 
 **Assessment criteria:**
+
 - [ ] Death / personal injury: carved out (mandatory in UK/EU; market standard elsewhere)
 - [ ] Fraud / fraudulent misrepresentation: carved out (mandatory in all reviewed jurisdictions)
 - [ ] Willful misconduct: carved out (mandatory or market standard in all reviewed jurisdictions)
@@ -490,6 +503,7 @@ covers the vendor's obligation to defend and indemnify the customer for third-pa
 claims that use of the vendor's product/service infringes a third party's IP rights.
 
 **Key variables:**
+
 - Is the IP indemnity carved out from the general cap? (Should be YES)
 - Is there a sub-limit on the IP indemnity (super-cap)? What amount?
 - Does the IP indemnity cover: defense costs + damages + settlements?
@@ -500,6 +514,7 @@ claims that use of the vendor's product/service infringes a third party's IP rig
 - Is it mutual? (Customer should also indemnify vendor for customer-provided content)
 
 **Assessment criteria:**
+
 - [ ] IP indemnity is present (missing = RED; vendor takes no ownership risk for own product)
 - [ ] IP indemnity is carved out from general cap
 - [ ] Scope covers defense costs, not just damages (defense is often the largest cost)
@@ -533,6 +548,7 @@ need dedicated treatment for data breach liability.
   [JURISDICTION-SPECIFIC]
 
 **Assessment criteria:**
+
 - [ ] Data breach explicitly carved out from standard cap (not swept in by consequential damages exclusion)
 - [ ] Super-cap or uncapped treatment clearly stated
 - [ ] Super-cap amount is commercially reasonable relative to potential breach costs
@@ -557,6 +573,7 @@ any other damages claim — effectively creating a de facto liability cap at the
 credit ceiling.
 
 **Key risks:**
+
 - SLA credits are typically 10–30% of monthly fees per downtime incident
   (far below actual business impact)
 - "Sole remedy" for service outages — not a problem if outages are minor
@@ -564,6 +581,7 @@ credit ceiling.
 - "Sole remedy" for data breach — potential statutory violation in some jurisdictions
 
 **Assessment criteria:**
+
 - [ ] Sole-remedy language, if present, applies only to service-level breaches (uptime, response time), NOT to data loss or data breach
 - [ ] Sole-remedy clause does not conflict with mandatory statutory remedies
 - [ ] Service credit amounts are reasonable relative to the business impact of downtime
@@ -579,6 +597,7 @@ A symmetric LOL clause applies identically to both parties. An asymmetric clause
 one party (typically the vendor) more than the other.
 
 **Asymmetric patterns to flag:**
+
 - Vendor's liability is capped; customer's liability is uncapped (RED)
 - Same cap amount but vendor has broader exclusions (YELLOW–RED)
 - Vendor has death/PI carve-out but customer does not (RED — mandatory in some jurisdictions)
@@ -587,9 +606,10 @@ one party (typically the vendor) more than the other.
 - One party can receive punitive/exemplary damages; the other cannot (jurisdiction-dependent)
 
 **Assessment criteria:**
+
 - [ ] Cap structure is mutual (identical formula applies to both parties) OR
 - [ ] Asymmetry is commercially justified (e.g., vendor caps liability for service delivery; customer
-  caps liability for use of licensed software) AND
+      caps liability for use of licensed software) AND
 - [ ] Asymmetry is disclosed and transparent, not buried in defined terms
 - [ ] Mandatory carve-outs (death/PI, fraud) apply equally to both parties
 
@@ -604,16 +624,17 @@ dimension identifies enforceability risks and flags provisions that may be void.
 
 **Enforceability analysis matrix:**
 
-| Issue | England/Wales | US | Germany | France |
-|-------|--------------|-----|---------|--------|
-| Death/PI excluded | **VOID** (UCTA s.2(1)) | Rarely enforceable | **VOID** (BGB §309 No. 7(a)) | **VOID** |
-| Gross negligence excluded (standard terms) | Risk of unreasonableness (UCTA s.2(2)) | State-dependent | **VOID** in AGBs (§309 No. 7(b)) | **VOID** (faute lourde) |
-| Fraud / willful act excluded | **VOID** (public policy) | **VOID** (public policy) | **VOID** (§276 BGB) | **VOID** (dol) |
-| LOL empties essential obligation | UCTA unreasonable | Unconscionable | **VOID** (§307 BGB) | **VOID** (Art. 1170 Code Civil) |
-| Consumer LOL | Consumer Rights Act 2015 | State UDAP laws | §310 BGB | Code de la consommation |
-| Very low cap (e.g., token amount) | UCTA reasonableness | Unconscionability | §307 BGB | Art. 1170 Code Civil |
+| Issue                                      | England/Wales                          | US                       | Germany                          | France                          |
+| ------------------------------------------ | -------------------------------------- | ------------------------ | -------------------------------- | ------------------------------- |
+| Death/PI excluded                          | **VOID** (UCTA s.2(1))                 | Rarely enforceable       | **VOID** (BGB §309 No. 7(a))     | **VOID**                        |
+| Gross negligence excluded (standard terms) | Risk of unreasonableness (UCTA s.2(2)) | State-dependent          | **VOID** in AGBs (§309 No. 7(b)) | **VOID** (faute lourde)         |
+| Fraud / willful act excluded               | **VOID** (public policy)               | **VOID** (public policy) | **VOID** (§276 BGB)              | **VOID** (dol)                  |
+| LOL empties essential obligation           | UCTA unreasonable                      | Unconscionable           | **VOID** (§307 BGB)              | **VOID** (Art. 1170 Code Civil) |
+| Consumer LOL                               | Consumer Rights Act 2015               | State UDAP laws          | §310 BGB                         | Code de la consommation         |
+| Very low cap (e.g., token amount)          | UCTA reasonableness                    | Unconscionability        | §307 BGB                         | Art. 1170 Code Civil            |
 
 **Assessment criteria:**
+
 - [ ] No provision purports to exclude death/PI liability where governing law prohibits it
 - [ ] No provision purports to exclude gross negligence in a jurisdiction where it is mandatory
 - [ ] No provision purports to exclude fraud liability
@@ -631,6 +652,7 @@ Indemnification and limitation of liability are closely linked but often drafted
 independently, creating gaps and conflicts.
 
 **Key interactions:**
+
 - Is the indemnification obligation subject to the general cap? (Common: vendor prefers
   NO; customer prefers YES for any indemnity they must pay)
 - Does the IP indemnity sit outside the cap? (Should be YES for vendor-given IP indemnity)
@@ -641,6 +663,7 @@ independently, creating gaps and conflicts.
   purports to limit? (Conflict — must be harmonized)
 
 **Assessment criteria:**
+
 - [ ] LOL clause explicitly states whether indemnification obligations are inside or outside the cap
 - [ ] IP indemnification is stated to be outside the general cap (or subject to a super-cap)
 - [ ] Data breach indemnification is stated to be outside the general cap (or subject to a super-cap)
@@ -748,6 +771,7 @@ Negotiation note: [Why this matters and how to frame the ask to the counterparty
 **Standard Redline Library:**
 
 **Cap Amount — Below Market (SaaS):**
+
 ```
 Proposed: "IN NO EVENT SHALL EITHER PARTY'S AGGREGATE LIABILITY
 ARISING OUT OF OR RELATED TO THIS AGREEMENT EXCEED THE AMOUNT
@@ -759,6 +783,7 @@ standard SaaS operations without high data-processing risk)
 ```
 
 **Data Breach Super-Cap (add where missing):**
+
 ```
 Proposed: "Notwithstanding the foregoing, the aggregate liability of
 [Vendor] arising out of or related to a Data Breach (as defined in
@@ -769,6 +794,7 @@ Fallback: Super-cap at 1.5× standard cap (minimum meaningful elevation)
 ```
 
 **Missing Carve-Outs — Add:**
+
 ```
 Proposed: "The limitations in this Section shall not apply to:
 (a) either party's indemnification obligations under Section [X];
@@ -781,6 +807,7 @@ Proposed: "The limitations in this Section shall not apply to:
 ```
 
 **Sole Remedy — Limit Scope:**
+
 ```
 Proposed: "The remedies set forth in Section [X] are [Vendor's] sole
 and exclusive liability, and Customer's sole and exclusive remedy,
@@ -792,6 +819,7 @@ confidentiality obligations under this Agreement."
 ```
 
 **Asymmetric Cap — Restore Mutuality:**
+
 ```
 Proposed: "The limitations set forth in this Section [X] apply
 equally to both parties and to all causes of action in the aggregate."
@@ -804,12 +832,14 @@ equally to both parties and to all causes of action in the aggregate."
 Assign each finding a negotiation tier:
 
 **Tier 1 — Non-Negotiable (hold the line):**
+
 - Statutory violations (death/PI, fraud, gross negligence in mandatory jurisdictions)
 - Complete absence of IP indemnity carve-out
 - Sole remedy for data breach
 - Cap below critical floor for contract type and risk level
 
 **Tier 2 — Material (strong preference; trade for equivalent):**
+
 - Cap below market range by >25%
 - Missing data breach super-cap
 - Missing confidentiality carve-out
@@ -817,6 +847,7 @@ Assign each finding a negotiation tier:
 - Asymmetric cap without commercial justification
 
 **Tier 3 — Preferred (can concede with appropriate trade):**
+
 - Cap below preferred range but above market floor
 - Super-cap at token level (prefer higher but not blocking)
 - Missing wasted-expenditure carveout
@@ -836,13 +867,13 @@ the Glass Box YAML block at the end of every analysis.
 Run these 5 gates **silently** before delivering any output. If any gate fails, revise
 before delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, regulation, or established case | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **Format** | All citations follow a consistent, recognizable format for the jurisdiction | Fix format |
-| **Currency** | Every cited provision checked for amendments or repeal | Flag "[CHECK CURRENCY — may have been amended]" |
-| **Domain** | Analysis stays within the contract's governing law; no jurisdictional bleed | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated, not hidden | Add confidence qualifier |
+| Gate           | Rule                                                                        | Fail Action                                              |
+| -------------- | --------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, regulation, or established case | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
+| **Format**     | All citations follow a consistent, recognizable format for the jurisdiction | Fix format                                               |
+| **Currency**   | Every cited provision checked for amendments or repeal                      | Flag "[CHECK CURRENCY — may have been amended]"          |
+| **Domain**     | Analysis stays within the contract's governing law; no jurisdictional bleed | Remove or flag jurisdictional bleed                      |
+| **Confidence** | Uncertainty explicitly stated, not hidden                                   | Add confidence qualifier                                 |
 
 ---
 
@@ -873,13 +904,13 @@ trail with `self_interrogation: PASS` or `self_interrogation: REVISED`.
 
 For the overall classification and each material finding, assign a confidence level:
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Settled law, clear contractual provision, no ambiguity | State with confidence |
-| **High** | 0.80–0.94 | Strong basis, minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60–0.79 | Good arguments but reasonable minds could differ | State with reasoning and contra-indicators |
-| **Possible** | 0.40–0.59 | Genuinely uncertain, competing interpretations | Flag for counsel review with both sides |
-| **Unlikely** | 0.0–0.39 | Weak basis, speculative | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                                | Action                                                |
+| ------------ | --------- | ------------------------------------------------------ | ----------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Settled law, clear contractual provision, no ambiguity | State with confidence                                 |
+| **High**     | 0.80–0.94 | Strong basis, minor interpretation questions           | State with brief caveat                               |
+| **Probable** | 0.60–0.79 | Good arguments but reasonable minds could differ       | State with reasoning and contra-indicators            |
+| **Possible** | 0.40–0.59 | Genuinely uncertain, competing interpretations         | Flag for counsel review with both sides               |
+| **Unlikely** | 0.0–0.39  | Weak basis, speculative                                | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
 
 **Critical rule**: If overall confidence is below 0.60, escalate to counsel review
 regardless of GREEN/YELLOW classification. Never GREEN-classify with sub-0.60 confidence.
@@ -1080,6 +1111,7 @@ What NOT to do when reviewing limitation of liability clauses:
 ### With legalcode-mcp (preferred)
 
 Use legalcode-mcp in Step 4 to:
+
 - Retrieve current UCTA 1977 / Consumer Rights Act 2015 case law (UK)
 - Retrieve current BGB §307-309 enforcement positions (Germany)
 - Retrieve current Code Civil Art. 1170 case law (France)
@@ -1156,6 +1188,7 @@ Plain language. Business-focused.]
 ## Holistic Risk Assessment
 
 [Assessment of how the LOL clause interacts with:
+
 - Indemnification obligations
 - SLA / service credit / sole-remedy clauses
 - Insurance requirements
@@ -1193,15 +1226,15 @@ How to sequence the negotiation for best results.]
 When applying this skill to a specific jurisdiction, replace [JURISDICTION-SPECIFIC]
 markers with verified local content:
 
-| Jurisdiction | Key Statute | Critical Mandatory Floor | Primary Case |
-|-------------|-------------|--------------------------|-------------|
-| England/Wales | UCTA 1977; Consumer Rights Act 2015 | Death/PI; fraud; UCTA reasonableness | Photo Production v Securicor [1980] UKHL 2 [VERIFY] |
-| Scotland | UCTA 1977 (separate provisions); CRA 2015 | Same as England; judicial approach may differ | [VERIFY Scottish authority] |
-| United States | UCC §2-719; state-specific | Willful misconduct (CA); unconscionability | [VERIFY per state] |
-| Germany | BGB §307–309 | Death/PI; gross negligence in AGBs | [VERIFY German case law] |
-| France | Code Civil Arts. 1170, 1231-3 | Dol; faute lourde; personal injury | [VERIFY French Court of Cassation authority] |
-| Australia | ACL (Competition and Consumer Act 2010, Sch 2) | Consumer contracts: death/PI; unfair terms | [VERIFY ACL Nov 2023 amendments] |
-| EU cross-border | GDPR Art. 82 (data subjects) | Cannot limit data subject compensation rights | [VERIFY current EDPB guidance] |
+| Jurisdiction    | Key Statute                                    | Critical Mandatory Floor                      | Primary Case                                        |
+| --------------- | ---------------------------------------------- | --------------------------------------------- | --------------------------------------------------- |
+| England/Wales   | UCTA 1977; Consumer Rights Act 2015            | Death/PI; fraud; UCTA reasonableness          | Photo Production v Securicor [1980] UKHL 2 [VERIFY] |
+| Scotland        | UCTA 1977 (separate provisions); CRA 2015      | Same as England; judicial approach may differ | [VERIFY Scottish authority]                         |
+| United States   | UCC §2-719; state-specific                     | Willful misconduct (CA); unconscionability    | [VERIFY per state]                                  |
+| Germany         | BGB §307–309                                   | Death/PI; gross negligence in AGBs            | [VERIFY German case law]                            |
+| France          | Code Civil Arts. 1170, 1231-3                  | Dol; faute lourde; personal injury            | [VERIFY French Court of Cassation authority]        |
+| Australia       | ACL (Competition and Consumer Act 2010, Sch 2) | Consumer contracts: death/PI; unfair terms    | [VERIFY ACL Nov 2023 amendments]                    |
+| EU cross-border | GDPR Art. 82 (data subjects)                   | Cannot limit data subject compensation rights | [VERIFY current EDPB guidance]                      |
 
 For EU member states not listed, apply the relevant national implementation of EU
 consumer rights directives and identify local court interpretation of "unfair terms"
@@ -1212,6 +1245,7 @@ under Directive 93/13/EEC. [VERIFY]
 ## Provenance
 
 Created by Legalcode (2026-03-01). Original synthesis based on:
+
 - Deep legal research on limitation of liability enforceability across US, UK, EU
   (Germany, France), and Australian law
 - Analysis of structural patterns from `legalcode-contract-review`, `legalcode-nda-triage`,

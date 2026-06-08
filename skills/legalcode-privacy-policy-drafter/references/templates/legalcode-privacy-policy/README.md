@@ -7,13 +7,13 @@ Last updated: 2026-04-28
 
 ## Documents
 
-| File | Document Type | Use when |
-|------|--------------|----------|
-| `core.md` | Jurisdiction-neutral baseline | You operate in a jurisdiction not covered below, or you want to understand the shared structure before specialising. |
-| `us.md` | US — CCPA/CPRA + multi-state (CO, VA, CT, UT) | You target US consumers and need CCPA "Notice at Collection" + state-specific addenda. |
-| `eu.md` | EU/EEA — GDPR + DE-DSGVO | You process personal data of EU/EEA residents. Includes German DSGVO specifics. |
-| `uk.md` | UK — UK GDPR + DPA 2018 (ICO-aligned) | You target UK consumers / users post-Brexit. |
-| `is.md` | Iceland — Act 90/2018 (Persónuverndarlög) | You operate in Iceland or process personal data of Icelandic residents. |
+| File      | Document Type                                 | Use when                                                                                                             |
+| --------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `core.md` | Jurisdiction-neutral baseline                 | You operate in a jurisdiction not covered below, or you want to understand the shared structure before specialising. |
+| `us.md`   | US — CCPA/CPRA + multi-state (CO, VA, CT, UT) | You target US consumers and need CCPA "Notice at Collection" + state-specific addenda.                               |
+| `eu.md`   | EU/EEA — GDPR + DE-DSGVO                      | You process personal data of EU/EEA residents. Includes German DSGVO specifics.                                      |
+| `uk.md`   | UK — UK GDPR + DPA 2018 (ICO-aligned)         | You target UK consumers / users post-Brexit.                                                                         |
+| `is.md`   | Iceland — Act 90/2018 (Persónuverndarlög)     | You operate in Iceland or process personal data of Icelandic residents.                                              |
 
 ## How to use
 

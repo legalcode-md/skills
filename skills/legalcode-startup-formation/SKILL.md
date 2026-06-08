@@ -38,6 +38,7 @@ filing checklist, and validates the package against common founder mistakes and 
 due diligence expectations.
 
 **Generates:**
+
 - Certificate of Incorporation (DGCL § 102)
 - Bylaws (DGCL § 109)
 - Action by Incorporator (DGCL § 108)
@@ -48,12 +49,14 @@ due diligence expectations.
 - Director and Officer Indemnification Agreement(s)
 
 **Produces additionally:**
+
 - Post-formation filing checklist with critical deadlines (especially the 30-day §83(b) deadline)
 - Initial cap table summary
 - Delaware franchise tax guidance (APV method election)
 - Quality verification report against the 18-point formation checklist
 
 **Does not:**
+
 - Provide legal advice or replace qualified Delaware counsel
 - Draft equity incentive plans or stock option agreements (see `legalcode-equity-incentive-plan-review`)
 - Draft Series Seed / Series A preferred stock documents (see `legalcode-venture-financing-suite`)
@@ -73,14 +76,14 @@ is governed by the Delaware General Corporation Law (DGCL), Title 8 of the Delaw
 **State-of-operations overlays:** Founders based in certain states have additional rights
 and obligations that affect CIIA enforceability and §83(b) state filings:
 
-| State | Key Statute | Impact on Formation Documents |
-|-------|-------------|-------------------------------|
-| California | Cal. Lab. Code § 2870–2872 | Mandatory CIIA carve-out notice; CA FTB copy of §83(b) election [VERIFY current FTB requirement] |
-| Washington | RCW § 49.44.140 | Similar CIIA carve-out to CA § 2870 |
-| Minnesota | Minn. Stat. § 181.78 | Similar CIIA carve-out |
-| Illinois | 765 ILCS § 1060/2 | Similar CIIA carve-out |
-| North Carolina | N.C. Gen. Stat. § 66-57.1 | Similar CIIA carve-out |
-| Delaware | No equivalent | No statutory CIIA carve-out; maximum assignment enforceability |
+| State          | Key Statute                | Impact on Formation Documents                                                                    |
+| -------------- | -------------------------- | ------------------------------------------------------------------------------------------------ |
+| California     | Cal. Lab. Code § 2870–2872 | Mandatory CIIA carve-out notice; CA FTB copy of §83(b) election [VERIFY current FTB requirement] |
+| Washington     | RCW § 49.44.140            | Similar CIIA carve-out to CA § 2870                                                              |
+| Minnesota      | Minn. Stat. § 181.78       | Similar CIIA carve-out                                                                           |
+| Illinois       | 765 ILCS § 1060/2          | Similar CIIA carve-out                                                                           |
+| North Carolina | N.C. Gen. Stat. § 66-57.1  | Similar CIIA carve-out                                                                           |
+| Delaware       | No equivalent              | No statutory CIIA carve-out; maximum assignment enforceability                                   |
 
 **Foreign qualification:** A Delaware corporation must qualify as a foreign corporation
 in every state where it "does business" (typically: any state where a founder/employee
@@ -124,6 +127,7 @@ user can correct it.
 ### Step 1: Accept Input
 
 Accept founder information in any of these formats:
+
 - **Structured intake form** pasted into the conversation (see Output Format Template — Intake Form)
 - **Free-form description** ("I'm forming a Delaware C-Corp with two co-founders, 60/40 split, both in California...")
 - **Partial information** — proceed with what is provided and ask for the rest
@@ -134,25 +138,16 @@ Accept founder information in any of these formats:
 Present as a numbered list. If any answers have already been provided, skip those questions.
 
 **Company:**
+
 1. **Legal name**: Proposed corporation name (include a backup — Delaware requires the name be distinguishable from existing entities)
 2. **Business purpose**: One-sentence description of what the company does (used for the Certificate's purpose clause)
 3. **State(s) of operations**: Where founders are located / where the company will initially operate (determines foreign qualification needs and state CIIA overlay)
 4. **Fiscal year end**: Calendar year (December 31) or other? (December 31 is almost always correct for US startups)
 5. **Registered agent**: Do you have a Delaware registered agent, or should the documents reference a placeholder? (Commercial agents: CT Corporation, Cogency Global, Harvard Business Services, Registered Agents Inc. — typical cost $100–$300/year)
 
-**Founders (one block per founder):**
-6. **Full legal name** and **mailing address** (needed for stock certificates and consents)
-7. **Equity percentage** (negotiate before incorporation — hardest conversation to have post-incorporation)
-8. **Cash consideration**: How much cash will each founder pay for their shares? (Market standard: par value × shares = $0.0001/share × number of shares. Any amount above par value becomes additional paid-in capital.)
-9. **IP/services contribution**: Will each founder contribute pre-formation IP or services as partial consideration? If yes, describe what.
-10. **Vesting commencement date**: Today, the company formation date, or a prior date (often founders' founding start date)?
-11. **Vesting schedule**: Standard 4-year / 1-year cliff / monthly thereafter? Or different?
-12. **Prior inventions**: Does each founder have prior inventions, side projects, or other pre-existing IP they wish to **exclude** from the CIIA assignment? If yes, list them.
+**Founders (one block per founder):** 6. **Full legal name** and **mailing address** (needed for stock certificates and consents) 7. **Equity percentage** (negotiate before incorporation — hardest conversation to have post-incorporation) 8. **Cash consideration**: How much cash will each founder pay for their shares? (Market standard: par value × shares = $0.0001/share × number of shares. Any amount above par value becomes additional paid-in capital.) 9. **IP/services contribution**: Will each founder contribute pre-formation IP or services as partial consideration? If yes, describe what. 10. **Vesting commencement date**: Today, the company formation date, or a prior date (often founders' founding start date)? 11. **Vesting schedule**: Standard 4-year / 1-year cliff / monthly thereafter? Or different? 12. **Prior inventions**: Does each founder have prior inventions, side projects, or other pre-existing IP they wish to **exclude** from the CIIA assignment? If yes, list them.
 
-**Officers (Initial):**
-13. **CEO/President**: Name (usually the founding CEO)
-14. **Secretary**: Name
-15. **CFO/Treasurer**: Name (can be same person as CEO at formation)
+**Officers (Initial):** 13. **CEO/President**: Name (usually the founding CEO) 14. **Secretary**: Name 15. **CFO/Treasurer**: Name (can be same person as CEO at formation)
 
 **Share Structure:**
 
@@ -162,7 +157,7 @@ Present as a numbered list. If any answers have already been provided, skip thos
 - **Option B: Common + Blank Check Preferred (VC-ready)** — 10,000,000 shares Common + 10,000,000 authorized but undesignated Preferred Stock, $0.0001 par value. Use when: planning a priced financing round within 12–18 months or expecting term sheets.
 - **Option C: Custom** — Specify total authorized, classes, and par values.
 
-*Why this matters*: Blank check preferred allows the board to create Series A/B/C preferred by board resolution (Certificate of Designations) without a stockholder vote each time. Without it, a stockholder vote is needed to authorize preferred stock before each financing.
+_Why this matters_: Blank check preferred allows the board to create Series A/B/C preferred by board resolution (Certificate of Designations) without a stockholder vote each time. Without it, a stockholder vote is needed to authorize preferred stock before each financing.
 
 **Option pool:**
 
@@ -171,11 +166,12 @@ Present as a numbered list. If any answers have already been provided, skip thos
 - **Option A: No pool at formation** — Issue all initial shares to founders. Create the option plan when you first need to grant options to employees. Maximizes founder ownership at formation.
 - **Option B: Reserve [X]% at formation** — Reserve a block of authorized but unissued shares for future option grants. Creates a "shadow dilution" for founders now but avoids a later stockholder consent to expand authorized shares.
 
-*Standard practice*: No formal option pool at formation (Option A). The option plan is typically adopted when the first non-founder employee joins.
+_Standard practice_: No formal option pool at formation (Option A). The option plan is typically adopted when the first non-founder employee joins.
 
 ### Step 3: Gather Legal Authority (legalcode-mcp)
 
 If **legalcode-mcp** is connected, search for:
+
 - Current text of DGCL §§ 102, 108, 109, 141, 145, 151 (verify 2025 amendments effective)
 - IRS Form 15620 (current version, released November 7, 2024; online filing available July/August 2025)
 - Current California Labor Code § 2870 text (for CIIA state overlay)
@@ -184,6 +180,7 @@ If **legalcode-mcp** is connected, search for:
 Save results to `/tmp/legalcode-formation-authority.md`.
 
 **If legalcode-mcp is not connected:**
+
 - Mark all statutory text with [VERIFY]
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Proceed using the statutory references in this skill, all of which should be independently verified before execution
@@ -195,30 +192,32 @@ Draft the Certificate of Incorporation following DGCL § 102(a) mandatory provis
 
 **Required provisions (DGCL § 102(a)):**
 
-| Provision | Content to Draft |
-|-----------|-----------------|
-| Corporate name | Use founder's preferred name + "Inc." or "Corp." (confirm Delaware availability [VERIFY via Delaware Division of Corporations search]) |
-| Registered office and agent | Insert agent name and Delaware street address |
-| Business purpose | "The purpose of the Corporation is to engage in any lawful act or activity for which corporations may be organized under the General Corporation Law of the State of Delaware." (Broad language is standard and preferred — avoids restricting the business scope) |
-| Authorized capital | Per Step 2 intake (Option A, B, or C) |
-| Incorporator | Name and mailing address of the incorporator (typically a lawyer or paralegal; founders are rarely the incorporator) |
+| Provision                   | Content to Draft                                                                                                                                                                                                                                                   |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Corporate name              | Use founder's preferred name + "Inc." or "Corp." (confirm Delaware availability [VERIFY via Delaware Division of Corporations search])                                                                                                                             |
+| Registered office and agent | Insert agent name and Delaware street address                                                                                                                                                                                                                      |
+| Business purpose            | "The purpose of the Corporation is to engage in any lawful act or activity for which corporations may be organized under the General Corporation Law of the State of Delaware." (Broad language is standard and preferred — avoids restricting the business scope) |
+| Authorized capital          | Per Step 2 intake (Option A, B, or C)                                                                                                                                                                                                                              |
+| Incorporator                | Name and mailing address of the incorporator (typically a lawyer or paralegal; founders are rarely the incorporator)                                                                                                                                               |
 
 **Market-standard optional provisions (DGCL § 102(b)) — include all of the following:**
 
-| Provision | Recommended Language Approach | Why Include |
-|-----------|-------------------------------|-------------|
-| § 102(b)(7) Director exculpation | Eliminate personal monetary liability for breach of fiduciary duty except for: (i) breach of duty of loyalty; (ii) bad faith/intentional misconduct/knowing law violation; (iii) § 174 violations; (iv) improper personal benefit; (v) direct officer conduct in corporate actions (2022 amendment) | Makes it possible to recruit independent directors; required by most VC investors |
-| Exclusive forum selection (§ 115) | Delaware Court of Chancery as exclusive forum for all internal corporate claims | Reduces risk of out-of-state securities litigation |
-| No preemptive rights | Explicitly exclude preemptive rights | VC investors will require this — it simplifies future financings |
-| Blank check preferred (if Option B) | Board may by resolution designate series of Preferred Stock with specified rights under § 151 | Enables future preferred stock financings without a stockholder vote |
+| Provision                           | Recommended Language Approach                                                                                                                                                                                                                                                                       | Why Include                                                                       |
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| § 102(b)(7) Director exculpation    | Eliminate personal monetary liability for breach of fiduciary duty except for: (i) breach of duty of loyalty; (ii) bad faith/intentional misconduct/knowing law violation; (iii) § 174 violations; (iv) improper personal benefit; (v) direct officer conduct in corporate actions (2022 amendment) | Makes it possible to recruit independent directors; required by most VC investors |
+| Exclusive forum selection (§ 115)   | Delaware Court of Chancery as exclusive forum for all internal corporate claims                                                                                                                                                                                                                     | Reduces risk of out-of-state securities litigation                                |
+| No preemptive rights                | Explicitly exclude preemptive rights                                                                                                                                                                                                                                                                | VC investors will require this — it simplifies future financings                  |
+| Blank check preferred (if Option B) | Board may by resolution designate series of Preferred Stock with specified rights under § 151                                                                                                                                                                                                       | Enables future preferred stock financings without a stockholder vote              |
 
 **2025 DGCL Amendments — verify compliance:**
+
 - § 102(f): Confirm no fee-shifting provisions against stockholders (prohibited)
 - § 144: New safe-harbor procedures for conflict-of-interest transactions (note in governance provisions)
 - § 115(c): Optional multi-forum designation now permitted (Delaware court must be available)
 
 **⟁ CLARIFY** — Ask about the forum selection clause:
-- **Include standard exclusive forum (Delaware only)** — Court of Chancery is exclusive forum for all internal corporate claims. Widely standard post-*Salzburg* litigation wave.
+
+- **Include standard exclusive forum (Delaware only)** — Court of Chancery is exclusive forum for all internal corporate claims. Widely standard post-_Salzburg_ litigation wave.
 - **Include expanded forum (Delaware + one federal court)** — For companies anticipating federal securities litigation. More protective but slightly more complex.
 - **Omit forum clause** — Not recommended; leaves the company exposed to multi-forum litigation.
 
@@ -228,22 +227,23 @@ Draft internal governance bylaws. **Bylaws are not filed with the state.**
 
 **Key provisions to include:**
 
-| Topic | Market-Standard Approach |
-|-------|--------------------------|
-| Board size | "Not less than one (1) nor more than [7]" — adjustable by board resolution |
-| Board quorum | Majority of directors then in office |
-| Board action without meeting | Permitted by unanimous written consent (DGCL § 141(f)) |
-| Officer titles | CEO/President, Secretary, CFO/Treasurer (same person may hold multiple offices at formation) |
-| Annual stockholder meeting | Required by DGCL § 211; typically held within 13 months of last annual meeting |
-| Special meetings | Callable by the Board or by holders of a majority of voting stock |
-| Stockholder record date | Board sets record date not more than 60 days before any meeting (DGCL § 213) |
-| Indemnification | To the fullest extent permitted by DGCL § 145 (supplements the standalone Indemnification Agreement) |
-| Amendment authority | Board may amend bylaws; stockholders may also amend by majority vote |
-| Fiscal year | December 31 (unless founder specified otherwise in Step 2) |
-| Uncertificated shares | Authorize the Board to issue uncertificated shares (avoids physical certificates — increasingly standard) |
-| Electronic records | Permit electronic books, records, and consents |
+| Topic                        | Market-Standard Approach                                                                                  |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Board size                   | "Not less than one (1) nor more than [7]" — adjustable by board resolution                                |
+| Board quorum                 | Majority of directors then in office                                                                      |
+| Board action without meeting | Permitted by unanimous written consent (DGCL § 141(f))                                                    |
+| Officer titles               | CEO/President, Secretary, CFO/Treasurer (same person may hold multiple offices at formation)              |
+| Annual stockholder meeting   | Required by DGCL § 211; typically held within 13 months of last annual meeting                            |
+| Special meetings             | Callable by the Board or by holders of a majority of voting stock                                         |
+| Stockholder record date      | Board sets record date not more than 60 days before any meeting (DGCL § 213)                              |
+| Indemnification              | To the fullest extent permitted by DGCL § 145 (supplements the standalone Indemnification Agreement)      |
+| Amendment authority          | Board may amend bylaws; stockholders may also amend by majority vote                                      |
+| Fiscal year                  | December 31 (unless founder specified otherwise in Step 2)                                                |
+| Uncertificated shares        | Authorize the Board to issue uncertificated shares (avoids physical certificates — increasingly standard) |
+| Electronic records           | Permit electronic books, records, and consents                                                            |
 
 **Omit from bylaws:**
+
 - Supermajority voting thresholds (reserved for post-investment certificate amendments)
 - Pre-negotiated protective provisions for preferred stock (set in Certificate of Designations at funding)
 
@@ -254,6 +254,7 @@ Draft the Action by Incorporator (written consent in lieu of organizational meet
 **Must execute AFTER the Certificate is filed and accepted by Delaware — never before.**
 
 **Required contents:**
+
 1. Recitals: the Certificate has been filed and accepted; the incorporator has authority to act
 2. ADOPT the Bylaws (attach as Exhibit A)
 3. APPOINT the initial Board of Directors (full legal name + address of each initial director)
@@ -261,6 +262,7 @@ Draft the Action by Incorporator (written consent in lieu of organizational meet
 5. Date and incorporator signature line
 
 **⟁ CLARIFY** — Ask who will serve as initial directors:
+
 - In a 2-founder company: both founders typically serve as directors at formation
 - Note: at the first VC round, investors will require board seats and may require independent directors
 
@@ -271,24 +273,25 @@ governance action that sets up the company for operations.
 
 **Include all of the following resolutions:**
 
-| Resolution | Content |
-|------------|---------|
-| 1. Ratify organizational documents | Ratify Certificate and Bylaws as adopted |
-| 2. Elect officers | CEO, Secretary, CFO/Treasurer (names from Step 2) |
-| 3. Authorize stock certificates / uncertificated shares | Approve form of certificate or authorize uncertificated shares under Delaware law |
-| 4. Approve stock issuances | Authorize issuance of [X] shares of Common Stock to each founder at $0.0001/share (or other stated consideration) per the Restricted Stock Purchase Agreement |
-| 5. Approve FSPA form | Approve the form of Founders Restricted Stock Purchase Agreement |
-| 6. Approve CIIA form | Approve the form of CIIA / CIIAA |
-| 7. Approve indemnification agreements | Approve form and authorize execution with each director and officer |
-| 8. Set fiscal year | Fiscal year ending December 31 |
-| 9. Open bank accounts | Authorize specified officers to open bank accounts |
-| 10. Apply for EIN | Authorize specified officer to apply for federal EIN (IRS Form SS-4) |
-| 11. Registered agent | Confirm appointment of registered agent |
-| 12. Authorize S-Corp election waiver | Explicitly waive S-Corp election (a C-Corp cannot make an S-Corp election; confirm the company intends to remain a C-Corp) |
-| 13. Foreign qualification | If founders are in a state requiring immediate foreign qualification (e.g., California), authorize the filing |
-| 14. Authorize formation counsel | Authorize payment of legal fees for formation work |
+| Resolution                                              | Content                                                                                                                                                       |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Ratify organizational documents                      | Ratify Certificate and Bylaws as adopted                                                                                                                      |
+| 2. Elect officers                                       | CEO, Secretary, CFO/Treasurer (names from Step 2)                                                                                                             |
+| 3. Authorize stock certificates / uncertificated shares | Approve form of certificate or authorize uncertificated shares under Delaware law                                                                             |
+| 4. Approve stock issuances                              | Authorize issuance of [X] shares of Common Stock to each founder at $0.0001/share (or other stated consideration) per the Restricted Stock Purchase Agreement |
+| 5. Approve FSPA form                                    | Approve the form of Founders Restricted Stock Purchase Agreement                                                                                              |
+| 6. Approve CIIA form                                    | Approve the form of CIIA / CIIAA                                                                                                                              |
+| 7. Approve indemnification agreements                   | Approve form and authorize execution with each director and officer                                                                                           |
+| 8. Set fiscal year                                      | Fiscal year ending December 31                                                                                                                                |
+| 9. Open bank accounts                                   | Authorize specified officers to open bank accounts                                                                                                            |
+| 10. Apply for EIN                                       | Authorize specified officer to apply for federal EIN (IRS Form SS-4)                                                                                          |
+| 11. Registered agent                                    | Confirm appointment of registered agent                                                                                                                       |
+| 12. Authorize S-Corp election waiver                    | Explicitly waive S-Corp election (a C-Corp cannot make an S-Corp election; confirm the company intends to remain a C-Corp)                                    |
+| 13. Foreign qualification                               | If founders are in a state requiring immediate foreign qualification (e.g., California), authorize the filing                                                 |
+| 14. Authorize formation counsel                         | Authorize payment of legal fees for formation work                                                                                                            |
 
 **Attach as Exhibits:**
+
 - Exhibit A: Bylaws
 - Exhibit B: Form of Restricted Stock Purchase Agreement
 - Exhibit C: Form of CIIA
@@ -299,6 +302,7 @@ governance action that sets up the company for operations.
 Draft one FSPA per founder. Each FSPA:
 
 **Covers:**
+
 - Number of shares purchased
 - Purchase price per share (typically $0.0001)
 - Total consideration (cash + any IP/services contribution)
@@ -323,6 +327,7 @@ Full vest: [48]-month anniversary of the Vesting Commencement Date.
 ```
 
 **Repurchase right mechanics:**
+
 - Company holds repurchase right over the Unvested Portion only
 - Repurchase price: **lower of** (i) original purchase price ($0.0001/share) or (ii) then-current fair market value
 - Exercise window: 90 days after the founder's termination of service (voluntary or involuntary)
@@ -332,22 +337,26 @@ Full vest: [48]-month anniversary of the Vesting Commencement Date.
 **Acceleration provisions:**
 
 **⟁ CLARIFY** — Ask about acceleration:
+
 - **No acceleration** (VC-preferred) — vesting continues unchanged through any acquisition; acquirer retains retention incentive
 - **Double-trigger acceleration** (market standard for VC-backed) — acceleration on (i) Change of Control AND (ii) founder terminated without cause or resigns for good reason within 12–18 months post-closing
 - **Single-trigger acceleration** (founder-favorable, disfavored by VCs) — full acceleration on Change of Control alone
 
-*Why this matters*: VCs will negotiate this at Series A. Starting with double-trigger is the market standard and avoids a conflict at financing.
+_Why this matters_: VCs will negotiate this at Series A. Starting with double-trigger is the market standard and avoids a conflict at financing.
 
 **Transfer restrictions and ROFR:**
+
 - Shares are subject to the company's right of first refusal (ROFR) on any proposed transfer
 - Permitted transfers: to trusts for estate planning, with board consent
 - ROFR procedure: founder gives notice; company has 30 days to exercise at the same price
 
 **Consideration section — specify precisely:**
+
 - Cash portion: $[X] (number of shares × $0.0001 per share)
 - IP/services portion: assignment of pre-formation IP and intellectual property contributions, as further described in the CIIA signed concurrently
 
 **Legends on stock certificates / restriction notices for uncertificated shares:**
+
 - Securities Act restrictive legend
 - DGCL transfer restriction legend
 - Repurchase right notice
@@ -366,10 +375,11 @@ reduce to practice, or cause to be conceived, developed, or reduced to practice
 during the period of Employee's employment by the Company.
 ```
 
-*Do not use future-tense ("agrees to assign") — present tense effects an automatic
-assignment. Future tense requires a court order to compel assignment.*
+_Do not use future-tense ("agrees to assign") — present tense effects an automatic
+assignment. Future tense requires a court order to compel assignment._
 
 **Categories of assigned IP:**
+
 - Inventions, discoveries, developments, improvements, innovations
 - Software, code, algorithms, and documentation
 - Patents and patent applications
@@ -379,6 +389,7 @@ assignment. Future tense requires a court order to compel assignment.*
 - All IP created during the period of employment (whether or not within working hours, if using company resources or related to company business)
 
 **Confidentiality obligations:**
+
 - Broad definition of Confidential Information (business plans, technical data, financial information, customer lists, trade secrets)
 - Obligation survives employment for the life of any trade secret + at least 3 years for other confidential information
 - Standard carve-outs: information in the public domain, independently developed without use of confidential information, required disclosures to government (with prior written notice where legally permitted)
@@ -387,19 +398,20 @@ assignment. Future tense requires a court order to compel assignment.*
 
 **⟁ CLARIFY** — For each founder, ask:
 
-*"Do you have any inventions, software, creative works, or other intellectual property
+_"Do you have any inventions, software, creative works, or other intellectual property
 created before your employment with the company that you wish to exclude from the
 assignment? If yes, list them in Exhibit A — Prior Inventions. If no prior inventions,
-write 'None.'"*
+write 'None.'"_
 
-*Why this matters*: An empty schedule creates the strongest inference that all relevant
+_Why this matters_: An empty schedule creates the strongest inference that all relevant
 IP belongs to the company. A founder who omits relevant prior IP from the schedule
 risks losing it to the company. A founder who over-discloses creates a gap that could
 affect company IP ownership in due diligence.
 
 **State-specific overlays — include for founders in these states:**
 
-*California founders (Cal. Lab. Code § 2870–2872):*
+_California founders (Cal. Lab. Code § 2870–2872):_
+
 ```
 NOTICE TO CALIFORNIA EMPLOYEES: The assignment provisions of this Agreement do not
 apply to an Invention that Employee developed entirely on Employee's own time without
@@ -431,6 +443,7 @@ under seal and does not disclose the trade secret, except pursuant to court orde
 ```
 
 **Moral rights waiver:**
+
 ```
 To the extent that moral rights under applicable law cannot be assigned, Employee
 hereby irrevocably and unconditionally waives all enforcement of such moral rights
@@ -438,17 +451,20 @@ to the fullest extent permitted by applicable law.
 ```
 
 **Non-solicitation provisions** (optional — check enforceability in founders' states):
+
 - Non-solicitation of employees: typically enforceable in most US states (narrower than non-competes)
 - Non-solicitation of customers: enforceability varies; California Business & Professions Code § 16600 effectively voids non-solicitation of customers [VERIFY]
 
 **⟁ CLARIFY** — Ask about non-compete provisions:
+
 - **Omit non-compete entirely** (recommended for CA, WA, MN, ND, OK founders — statutorily void)
 - **Include narrowly tailored non-compete for non-CA founders** — time-limited (typically 12 months post-termination), geographic scope, and scope of competitive activity must be reasonable
 - **Include non-competition in employment agreement instead of CIIA** — separates IP assignment from restrictive covenants
 
-*Why this matters*: California Business & Professions Code § 16600 voids non-competes in employment agreements; SB 699 (effective January 2024) extends this to agreements signed outside California. Including an unenforceable non-compete for a California founder may, in some circumstances, taint the CIIA — consult California counsel [VERIFY].
+_Why this matters_: California Business & Professions Code § 16600 voids non-competes in employment agreements; SB 699 (effective January 2024) extends this to agreements signed outside California. Including an unenforceable non-compete for a California founder may, in some circumstances, taint the CIIA — consult California counsel [VERIFY].
 
 **Termination provisions:**
+
 - Employment is at-will (if applicable under state law)
 - Upon termination: return all company property; certify compliance with confidentiality obligations
 - Post-termination disclosure: disclose inventions made within 6 months after termination if they relate to company business or use company information
@@ -459,27 +475,26 @@ Draft one §83(b) election per founder. **The 30-day deadline from the date of s
 issuance is absolute and non-waivable — missing it is a permanent, irreversible mistake.**
 
 **Use IRS Form 15620 (released November 7, 2024) or a qualifying self-drafted statement
-per Treas. Reg. § 1.83-2(e). Online filing is available via IRS.gov (launched July/August
-2025) and is the IRS's preferred method.**
+per Treas. Reg. § 1.83-2(e). Online filing is available via IRS.gov (launched July/August 2025) and is the IRS's preferred method.**
 
 **Required information for each election:**
 
-| Field | Content |
-|-------|---------|
-| Taxpayer name | Founder's full legal name |
-| Taxpayer SSN/TIN | [To be completed by founder — do not include in draft] |
-| Taxpayer address | Founder's home mailing address |
-| Date of transfer | Date the FSPA was executed and shares were issued |
-| Tax year for which election is made | Calendar year of the transfer date |
-| Description of restrictions | Time-based vesting schedule per FSPA; company repurchase right over unvested portion at lower of original price or FMV |
-| FMV per share at transfer | $[0.0001 per share] (fair market value at the date of the transfer — in a brand new startup with no assets, FMV ≈ par value) [VERIFY with a 409A valuation if the company has any significant pre-existing assets] |
-| Number of shares transferred | [X,XXX,XXX] |
-| Total FMV at transfer | $[X] (shares × $0.0001) |
-| Amount paid | $[X] (total consideration paid, including cash + FMV of IP assigned) |
-| Amount to include in gross income | $[Total FMV] minus $[Amount paid] = $[0 or near-zero for early-stage startups] |
-| Service recipient (company) name and EIN | [Company name] — EIN to be completed after EIN application |
-| Service recipient address | Company mailing address |
-| Declaration | "I hereby elect, pursuant to §83(b) of the Internal Revenue Code of 1986, as amended, to include in gross income for the taxable year in which the property was transferred the excess (if any) of the fair market value of the property at the time of transfer over the amount paid for the property." |
+| Field                                    | Content                                                                                                                                                                                                                                                                                                  |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Taxpayer name                            | Founder's full legal name                                                                                                                                                                                                                                                                                |
+| Taxpayer SSN/TIN                         | [To be completed by founder — do not include in draft]                                                                                                                                                                                                                                                   |
+| Taxpayer address                         | Founder's home mailing address                                                                                                                                                                                                                                                                           |
+| Date of transfer                         | Date the FSPA was executed and shares were issued                                                                                                                                                                                                                                                        |
+| Tax year for which election is made      | Calendar year of the transfer date                                                                                                                                                                                                                                                                       |
+| Description of restrictions              | Time-based vesting schedule per FSPA; company repurchase right over unvested portion at lower of original price or FMV                                                                                                                                                                                   |
+| FMV per share at transfer                | $[0.0001 per share] (fair market value at the date of the transfer — in a brand new startup with no assets, FMV ≈ par value) [VERIFY with a 409A valuation if the company has any significant pre-existing assets]                                                                                       |
+| Number of shares transferred             | [X,XXX,XXX]                                                                                                                                                                                                                                                                                              |
+| Total FMV at transfer                    | $[X] (shares × $0.0001)                                                                                                                                                                                                                                                                                  |
+| Amount paid                              | $[X] (total consideration paid, including cash + FMV of IP assigned)                                                                                                                                                                                                                                     |
+| Amount to include in gross income        | $[Total FMV] minus $[Amount paid] = $[0 or near-zero for early-stage startups]                                                                                                                                                                                                                           |
+| Service recipient (company) name and EIN | [Company name] — EIN to be completed after EIN application                                                                                                                                                                                                                                               |
+| Service recipient address                | Company mailing address                                                                                                                                                                                                                                                                                  |
+| Declaration                              | "I hereby elect, pursuant to §83(b) of the Internal Revenue Code of 1986, as amended, to include in gross income for the taxable year in which the property was transferred the excess (if any) of the fair market value of the property at the time of transfer over the amount paid for the property." |
 
 **Filing instructions to include with each letter:**
 
@@ -539,12 +554,14 @@ Company or any affiliate].
 ```
 
 **Coverage triggers:**
+
 - Any civil, criminal, administrative, investigative, or arbitration proceeding
 - Proceedings by reason of the Indemnitee's Corporate Status
 - Derivative actions (by or in the right of the Company) — note: indemnification in derivative suits is subject to § 145(b) limits (expenses only; no judgments in favor of the company)
 - Service at the Company's request to other entities (subsidiaries, investee companies)
 
 **Mandatory advancement of expenses:**
+
 ```
 The Company shall advance expenses (including attorneys' fees) incurred by Indemnitee
 in defending any Proceeding within thirty (30) days after written request, subject to
@@ -556,6 +573,7 @@ Indemnitee is not entitled to be indemnified.
 cannot condition advancement on a finding that indemnification will ultimately be available.**
 
 **Exclusions — the following are NOT indemnifiable:**
+
 - Dishonest, fraudulent, or malicious conduct adjudicated by final court judgment
 - Actions taken not in good faith and not reasonably believed to be in the Company's best interest
 - Improper personal benefit (DGCL § 145 prohibits indemnification for this)
@@ -563,6 +581,7 @@ cannot condition advancement on a finding that indemnification will ultimately b
 - Claims covered by and paid under D&O insurance
 
 **Response requirement:**
+
 - Company must respond to indemnification requests within 60 days
 - Failure to respond within 60 days creates a right to seek judicial enforcement
 
@@ -571,6 +590,7 @@ If indemnification is unavailable for any reason, the Company shall contribute t
 Indemnitee's losses in proportion to the relative benefits received and relative fault.
 
 **D&O insurance:**
+
 ```
 The Company shall use commercially reasonable efforts to obtain and maintain in effect
 a policy of directors' and officers' liability insurance. If the Company's D&O insurance
@@ -583,6 +603,7 @@ Include a tail coverage provision requiring the Company to obtain at least a 6-y
 discovery period ("tail") upon any Change of Control.
 
 **⟁ CLARIFY** — Ask about who should receive indemnification agreements:
+
 - **Minimum**: Each initial director and officer (CEO, Secretary, CFO/Treasurer)
 - **Recommended**: All founders (in their capacity as founders, regardless of officer title)
 - **Advisory board members**: Some companies extend indemnification to advisory board members — ask if the company has any advisors at formation
@@ -593,20 +614,23 @@ Produce a complete post-formation checklist with every action item, responsible 
 and deadline.
 
 **Phase 1 — Pre-filing (before Certificate is submitted to Delaware):**
-- [ ] Agree on founder equity split and vesting terms *(founders — do before anything)*
-- [ ] Inventory pre-formation IP per founder *(founders — feeds CIIA Exhibit A)*
-- [ ] Confirm company name availability in Delaware *(counsel / incorporator)*
+
+- [ ] Agree on founder equity split and vesting terms _(founders — do before anything)_
+- [ ] Inventory pre-formation IP per founder _(founders — feeds CIIA Exhibit A)_
+- [ ] Confirm company name availability in Delaware _(counsel / incorporator)_
 - [ ] Select and engage Delaware registered agent
 - [ ] Prepare Certificate of Incorporation
 
 **Phase 2 — Filing:**
+
 - [ ] File Certificate of Incorporation with Delaware Division of Corporations
   - Standard: 1–2 business days; expedited (same day/1-hour) available for additional fee
   - State filing fee: ~$89 (standard) or higher for expedited
-- [ ] Obtain certified copy of Certificate *(required for bank accounts and foreign qualification)*
+- [ ] Obtain certified copy of Certificate _(required for bank accounts and foreign qualification)_
 
 **Phase 3 — Organization (immediately after Delaware accepts the Certificate):**
-- [ ] Incorporator executes Action by Incorporator *(after Certificate accepted — not before)*
+
+- [ ] Incorporator executes Action by Incorporator _(after Certificate accepted — not before)_
 - [ ] Board executes Initial Board Unanimous Written Consent
 - [ ] Each founder signs Restricted Stock Purchase Agreement
 - [ ] Founders pay stock consideration (cash + IP assignment)
@@ -617,6 +641,7 @@ and deadline.
 - [ ] Set up corporate minute book (physical or electronic)
 
 **Phase 4 — CRITICAL: §83(b) Elections (must happen within 30 days of stock issuance):**
+
 - [ ] **DEADLINE: [DATE — 30 days after stock issuance date]**
 - [ ] Each founder files §83(b) election via IRS.gov online portal or certified mail
 - [ ] Each founder provides copy of signed §83(b) election to the company
@@ -624,6 +649,7 @@ and deadline.
 - [ ] [If California founders]: Confirm whether CA FTB copy is required [VERIFY]
 
 **Phase 5 — Ongoing Compliance:**
+
 - [ ] Apply for federal EIN (IRS Form SS-4 online — same day; international founders via fax/mail)
 - [ ] Open business bank account (requires: certified Certificate, EIN, board resolutions)
 - [ ] Foreign qualify in each state where the company "does business"
@@ -662,16 +688,16 @@ Before delivering the formation package, run the quality checks below.
 
 **13a. Formation Document Completeness Check:**
 
-| Document | Generated | Signed/Executed? | Critical Provisions Present |
-|----------|-----------|-------------------|-----------------------------|
-| Certificate of Incorporation | ☐ | ☐ | §102(b)(7) exculpation, authorized shares, registered agent |
-| Bylaws | ☐ | ☐ | Board size, quorum, officer titles, indemnification |
-| Action by Incorporator | ☐ | ☐ | Bylaws adopted, directors appointed, incorporator authority terminated |
-| Initial Board Consent | ☐ | ☐ | Officers elected, stock issuances approved, CIIA approved |
-| FSPAs (one per founder) | ☐ | ☐ | Shares, consideration, vesting schedule, repurchase right |
-| CIIAs (one per founder) | ☐ | ☐ | Present-tense assignment, prior inventions exhibit, state overlay, DTSA notice |
-| §83(b) Letters (one per founder) | ☐ | ☐ | All required fields per Form 15620, 30-day deadline prominent |
-| Indemnification Agreements | ☐ | ☐ | Mandatory advancement, exclusions, D&O insurance obligation |
+| Document                         | Generated | Signed/Executed? | Critical Provisions Present                                                    |
+| -------------------------------- | --------- | ---------------- | ------------------------------------------------------------------------------ |
+| Certificate of Incorporation     | ☐         | ☐                | §102(b)(7) exculpation, authorized shares, registered agent                    |
+| Bylaws                           | ☐         | ☐                | Board size, quorum, officer titles, indemnification                            |
+| Action by Incorporator           | ☐         | ☐                | Bylaws adopted, directors appointed, incorporator authority terminated         |
+| Initial Board Consent            | ☐         | ☐                | Officers elected, stock issuances approved, CIIA approved                      |
+| FSPAs (one per founder)          | ☐         | ☐                | Shares, consideration, vesting schedule, repurchase right                      |
+| CIIAs (one per founder)          | ☐         | ☐                | Present-tense assignment, prior inventions exhibit, state overlay, DTSA notice |
+| §83(b) Letters (one per founder) | ☐         | ☐                | All required fields per Form 15620, 30-day deadline prominent                  |
+| Indemnification Agreements       | ☐         | ☐                | Mandatory advancement, exclusions, D&O insurance obligation                    |
 
 **13b. VC Due Diligence Readiness Check:**
 
@@ -738,10 +764,11 @@ A condition that, if uncorrected, will result in permanent legal or tax harm or
 render the formation package unfit for VC due diligence.
 
 **Examples:**
-- §83(b) election not filed within 30 days of stock issuance *(irremediable)*
-- CIIA not executed before or concurrent with employment start *(creates IP ownership gap)*
-- Certificate not filed before founders begin issuing shares *(shares may be invalid)*
-- Pre-formation IP not assigned; VC will require this in due diligence *(may block financing)*
+
+- §83(b) election not filed within 30 days of stock issuance _(irremediable)_
+- CIIA not executed before or concurrent with employment start _(creates IP ownership gap)_
+- Certificate not filed before founders begin issuing shares _(shares may be invalid)_
+- Pre-formation IP not assigned; VC will require this in due diligence _(may block financing)_
 
 **Action:** Escalate immediately. Explain the specific harm. If still within the remedy
 window (e.g., 83(b) deadline has not yet passed), provide emergency instructions.
@@ -757,7 +784,7 @@ When advising founders on what to prioritize, organize provisions into three tie
 
 - Certificate filed with DGCL-compliant mandatory provisions
 - Founders' shares subject to vesting (or documented rationale for departure)
-- §83(b) elections filed within 30 days *(absolute deadline — no exceptions)*
+- §83(b) elections filed within 30 days _(absolute deadline — no exceptions)_
 - CIIAs executed by all founders assigning all company-relevant IP
 - Pre-formation IP assigned via CIIA or Technology Assignment Agreement
 - Proper corporate authorization for all stock issuances (board resolutions)
@@ -797,29 +824,32 @@ When advising founders on what to prioritize, organize provisions into three tie
 Run these 5 gates silently before delivering the formation package. If any gate fails,
 revise before delivery.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every statutory reference cites a specific DGCL section, IRC provision, or established legal principle | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **Format** | All statutory citations follow a consistent format (e.g., "DGCL § 102(b)(7)"; "IRC § 83(b)") | Fix citation format |
-| **Currency** | Every provision checked against current law (note: 2025 DGCL amendments to §§ 102, 144, 115, 220 are effective; IRS Form 15620 released November 2024; online §83(b) filing available from July/August 2025) | Flag "[CHECK CURRENCY — verify against current Delaware Code and IRS guidance]" |
-| **Domain** | Analysis stays within Delaware corporate law and applicable federal tax law; no unauthorized assumptions from other state laws | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty is explicitly stated (e.g., California FTB §83(b) copy requirement is uncertain — marked [VERIFY]); never hidden | Add confidence qualifier |
+| Gate           | Rule                                                                                                                                                                                                         | Fail Action                                                                     |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| **Source**     | Every statutory reference cites a specific DGCL section, IRC provision, or established legal principle                                                                                                       | Add citation or mark "[UNVERIFIED — counsel to confirm]"                        |
+| **Format**     | All statutory citations follow a consistent format (e.g., "DGCL § 102(b)(7)"; "IRC § 83(b)")                                                                                                                 | Fix citation format                                                             |
+| **Currency**   | Every provision checked against current law (note: 2025 DGCL amendments to §§ 102, 144, 115, 220 are effective; IRS Form 15620 released November 2024; online §83(b) filing available from July/August 2025) | Flag "[CHECK CURRENCY — verify against current Delaware Code and IRS guidance]" |
+| **Domain**     | Analysis stays within Delaware corporate law and applicable federal tax law; no unauthorized assumptions from other state laws                                                                               | Remove or flag jurisdictional bleed                                             |
+| **Confidence** | Uncertainty is explicitly stated (e.g., California FTB §83(b) copy requirement is uncertain — marked [VERIFY]); never hidden                                                                                 | Add confidence qualifier                                                        |
 
 ### Self-Interrogation for CRITICAL Items
 
 For any item classified as CRITICAL, apply this 3-pass self-interrogation before delivery:
 
 **Pass 1 — Legal Chain Integrity:**
+
 - Does the risk follow logically from the cited statutory provision?
 - Would a Delaware court or the IRS actually reach this conclusion on these facts?
 - Is there a counter-argument a sophisticated founder's counsel would make?
 
 **Pass 2 — Completeness:**
+
 - Have all relevant statutes, regulations, and IRS guidance been considered?
 - Are there state law dimensions not yet addressed?
 - Are there timing considerations that could affect the analysis?
 
 **Pass 3 — Challenge:**
+
 - What is the strongest argument that this item is NOT actually CRITICAL?
 - Under what circumstances might a reasonable formation attorney accept this risk?
 - Is the CRITICAL classification proportionate, or is this actually MISSING (DEFICIENT)?
@@ -831,15 +861,16 @@ If any pass reveals a weakness, revise before delivery. Mark the audit trail wit
 
 Assign a confidence level to each material legal position in the formation package:
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Settled Delaware law, clear DGCL text, no ambiguity | State with confidence |
-| **High** | 0.80–0.94 | Strong authority, minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60–0.79 | Good arguments but reasonable practitioners could differ | State with explicit reasoning and contra-indicators |
-| **Possible** | 0.40–0.59 | Genuinely uncertain; state law may vary | Flag for attorney review with both sides |
-| **Unlikely** | 0.0–0.39 | Weak basis, speculative, or jurisdiction-specific | Do not assert; flag as "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                                  | Action                                                   |
+| ------------ | --------- | -------------------------------------------------------- | -------------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Settled Delaware law, clear DGCL text, no ambiguity      | State with confidence                                    |
+| **High**     | 0.80–0.94 | Strong authority, minor interpretation questions         | State with brief caveat                                  |
+| **Probable** | 0.60–0.79 | Good arguments but reasonable practitioners could differ | State with explicit reasoning and contra-indicators      |
+| **Possible** | 0.40–0.59 | Genuinely uncertain; state law may vary                  | Flag for attorney review with both sides                 |
+| **Unlikely** | 0.0–0.39  | Weak basis, speculative, or jurisdiction-specific        | Do not assert; flag as "[UNCERTAIN — counsel to advise]" |
 
 **Key confidence calls in startup formation:**
+
 - DGCL mandatory provisions (§ 102(a)): **Definite** — clear statutory text
 - §83(b) 30-day deadline: **Definite** — absolute, non-waivable
 - Present-tense IP assignment vs. agreement-to-assign: **High** — strong case law support but some nuance
@@ -1061,6 +1092,7 @@ When drafting formation documents, apply these quality gates before delivery:
 ### legalcode-mcp (preferred — if connected)
 
 Use legalcode-mcp to verify:
+
 - Current DGCL text (particularly §§ 102, 108, 109, 141, 145, 151 and 2025 amendments)
 - Current IRS guidance on §83(b) elections (Form 15620, online filing procedures)
 - California Labor Code § 2870 current text and any recent amendments
@@ -1085,11 +1117,13 @@ Deliver the formation package in this structure:
 
 ```markdown
 # [Company Name], Inc. — Delaware C-Corp Formation Package
+
 ## Prepared: [Date]
 
 ---
 
 ### CRITICAL DEADLINE
+
 > §83(b) elections for all founders must be filed no later than:
 > **[DATE — 30 days from stock issuance date]**
 > This deadline is absolute. Missing it is irremediable.
@@ -1098,20 +1132,20 @@ Deliver the formation package in this structure:
 
 ## DOCUMENT SUMMARY
 
-| Document | Recipient | Status | Key Dates |
-|----------|-----------|--------|-----------|
-| Certificate of Incorporation | File with Delaware | COMPLETE | File date: [DATE] |
-| Bylaws | Internal | COMPLETE | Adopted: [DATE] |
-| Action by Incorporator | Internal | COMPLETE | After Certificate filed |
-| Initial Board Consent | Internal | COMPLETE | Date: [DATE] |
-| FSPA — [Founder 1] | [Founder 1] | COMPLETE | Signed: [DATE] |
-| FSPA — [Founder 2] | [Founder 2] | COMPLETE | Signed: [DATE] |
-| CIIA — [Founder 1] | [Founder 1] | COMPLETE | Signed: [DATE] |
-| CIIA — [Founder 2] | [Founder 2] | COMPLETE | Signed: [DATE] |
-| §83(b) — [Founder 1] | File with IRS | COMPLETE | Deadline: [DATE] |
-| §83(b) — [Founder 2] | File with IRS | COMPLETE | Deadline: [DATE] |
-| Indemnification — [Director 1] | [Director 1] | COMPLETE | Signed: [DATE] |
-| Indemnification — [Director 2] | [Director 2] | COMPLETE | Signed: [DATE] |
+| Document                       | Recipient          | Status   | Key Dates               |
+| ------------------------------ | ------------------ | -------- | ----------------------- |
+| Certificate of Incorporation   | File with Delaware | COMPLETE | File date: [DATE]       |
+| Bylaws                         | Internal           | COMPLETE | Adopted: [DATE]         |
+| Action by Incorporator         | Internal           | COMPLETE | After Certificate filed |
+| Initial Board Consent          | Internal           | COMPLETE | Date: [DATE]            |
+| FSPA — [Founder 1]             | [Founder 1]        | COMPLETE | Signed: [DATE]          |
+| FSPA — [Founder 2]             | [Founder 2]        | COMPLETE | Signed: [DATE]          |
+| CIIA — [Founder 1]             | [Founder 1]        | COMPLETE | Signed: [DATE]          |
+| CIIA — [Founder 2]             | [Founder 2]        | COMPLETE | Signed: [DATE]          |
+| §83(b) — [Founder 1]           | File with IRS      | COMPLETE | Deadline: [DATE]        |
+| §83(b) — [Founder 2]           | File with IRS      | COMPLETE | Deadline: [DATE]        |
+| Indemnification — [Director 1] | [Director 1]       | COMPLETE | Signed: [DATE]          |
+| Indemnification — [Director 2] | [Director 2]       | COMPLETE | Signed: [DATE]          |
 
 ---
 
@@ -1128,50 +1162,61 @@ Deliver the formation package in this structure:
 ---
 
 ## DOCUMENT 1: CERTIFICATE OF INCORPORATION
+
 [Full text of Certificate]
 
 ---
 
 ## DOCUMENT 2: BYLAWS
+
 [Full text of Bylaws]
 
 ---
 
 ## DOCUMENT 3: ACTION BY INCORPORATOR
+
 [Full text]
 
 ---
 
 ## DOCUMENT 4: INITIAL BOARD OF DIRECTORS UNANIMOUS WRITTEN CONSENT
+
 [Full text]
 
 ---
 
 ## DOCUMENT 5A: FOUNDERS RESTRICTED STOCK PURCHASE AGREEMENT — [FOUNDER 1]
+
 [Full text]
 
 ## DOCUMENT 5B: FOUNDERS RESTRICTED STOCK PURCHASE AGREEMENT — [FOUNDER 2]
+
 [Full text]
 
 ---
 
 ## DOCUMENT 6A: CONFIDENTIAL INFORMATION AND INVENTION ASSIGNMENT AGREEMENT — [FOUNDER 1]
+
 [Full text — including Exhibit A: Prior Inventions Schedule]
 
 ## DOCUMENT 6B: CIIA — [FOUNDER 2]
+
 [Full text — including Exhibit A: Prior Inventions Schedule]
 
 ---
 
 ## DOCUMENT 7A: SECTION 83(b) ELECTION LETTER — [FOUNDER 1]
+
 [Full text — with filing instructions]
 
 ## DOCUMENT 7B: SECTION 83(b) ELECTION LETTER — [FOUNDER 2]
+
 [Full text — with filing instructions]
 
 ---
 
 ## DOCUMENT 8: DIRECTOR AND OFFICER INDEMNIFICATION AGREEMENT
+
 [Full text — one per director/officer, individually named]
 
 ---
@@ -1187,17 +1232,21 @@ Deliver the formation package in this structure:
 ## NEXT STEPS
 
 ### IMMEDIATE (within 30 days of stock issuance):
+
 1. [ACTION: File §83(b) elections]
 
 ### THIS WEEK:
+
 2. [ACTION: Apply for EIN]
 3. [ACTION: Open bank account]
 
 ### THIS MONTH:
+
 4. [ACTION: Foreign qualify in [state(s)]]
 5. [ACTION: Obtain D&O insurance]
 
 ### BEFORE FIRST EMPLOYEE:
+
 6. [ACTION: Adopt equity incentive plan]
 7. [ACTION: Set up cap table software]
 ```
@@ -1210,16 +1259,19 @@ This skill covers **Delaware C-Corps only**. Key variations if the company or fo
 operate in other jurisdictions:
 
 **California-headquartered companies:**
+
 - Foreign qualify in California (California Secretary of State, Form S-1)
 - Comply with California Corporations Code securities exemption (Cal. Corp. Code § 25102(f) [VERIFY]) for initial stock issuances to founders
 - Note the CA §16600 non-compete prohibition applies to any employee who resides or works in California, regardless of where the company is incorporated
 - Consider California's statutory minimum wage and labor law obligations once employees are hired
 
 **New York-headquartered companies:**
+
 - Foreign qualify in New York
 - Note New York's relatively strict law regarding securities exemptions for founder stock issuances [VERIFY current NY exemption requirements]
 
 **International founders (non-US citizens / non-US residents):**
+
 - A US EIN application for a foreign-owned corporation must be submitted by fax or mail to the IRS (no online option for entities without a US responsible party with an SSN or ITIN)
 - Foreign founders may have additional reporting obligations (FinCEN BOI Report under the Corporate Transparency Act; Form BE-15 for foreign direct investment [VERIFY current CTA enforcement status post-2025 litigation]; potential withholding tax issues on dividends)
 - CFIUS review considerations if the company works in regulated industries (defense, critical technology, sensitive personal data) and founders or early investors are from CFIUS-designated countries [VERIFY]
@@ -1233,6 +1285,7 @@ As of [VERIFY current status], most new US corporations must file a Beneficial O
 
 Created by Legalcode, 2026-03-21. Original synthesis for Delaware C-Corp startup
 formation based on:
+
 - Delaware General Corporation Law (DGCL), Title 8, as amended through 2025 amendments
   (84 Del. Laws, including amendments to §§ 102, 115, 144, 220)
 - IRC § 83(b) and Treas. Reg. § 1.83-2; IRS Form 15620 (released November 7, 2024)

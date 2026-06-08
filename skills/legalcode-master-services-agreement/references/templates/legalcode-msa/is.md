@@ -106,7 +106,7 @@ This section explains how an engagement is scoped. The Provider performs only wh
 
 4.5 **Independent contractor status.** The relationship of the Parties is that of independent contractors. Nothing in this Agreement creates an employment relationship, an agency, a partnership (sameignarfélag), or a joint venture. Neither Party may bind the other to any obligation without that Party's prior written consent. The Provider shall ensure that its own employees and Subcontractors do not hold themselves out as employees, agents, or representatives of the Client.
 
-## 5. Fees, expenses and invoicing / Þóknun, kostnaður og reikningsgerð  *(DUAL-PERSPECTIVE)*
+## 5. Fees, expenses and invoicing / Þóknun, kostnaður og reikningsgerð _(DUAL-PERSPECTIVE)_
 
 This section explains how money flows. Fees are set on the Statement of Work or Order Form and are payable in the currency stated there. Late payments accrue Icelandic statutory interest under Lög nr. 38/2001 um vexti og verðtryggingu.
 
@@ -127,11 +127,11 @@ This section explains how money flows. Fees are set on the Statement of Work or 
 5.8 **Currency.** Where the Statement of Work elects EUR or USD instead of ISK, the Parties may record an FX conversion mechanism in that document. In the absence of such a mechanism, the Statement of Work currency is the currency of payment, and currency-conversion costs lie with the paying Party.
 
 > **Dual-perspective drafting note (§5).**
-> *Client-favourable.* Extend payment term to Net 45 or Net 60; require itemised time-and-materials invoices with rate cards and individual time entries; cap annual rate-card escalation to a published Hagstofa Íslands consumer price index figure; require dráttarvextir to accrue only after a written reminder and a five-business-day grace window.
-> *Provider-favourable.* Shorten payment term to Net 15 or due-on-receipt; permit interim or progress invoicing without milestone gating; add a reasonable late-payment uplift on top of statutory dráttarvextir consistent with Lög nr. 38/2001; require the Client to pay all FX and bank-transfer costs.
-> *Market-standard.* Net 30 payment term; statutory dráttarvextir at the Seðlabanki Íslands published rate from the due date; reasonable cost-of-collection recovery under § 9 of the Act; annual escalation at CPI plus a stated margin where the engagement runs longer than twelve months.
+> _Client-favourable._ Extend payment term to Net 45 or Net 60; require itemised time-and-materials invoices with rate cards and individual time entries; cap annual rate-card escalation to a published Hagstofa Íslands consumer price index figure; require dráttarvextir to accrue only after a written reminder and a five-business-day grace window.
+> _Provider-favourable._ Shorten payment term to Net 15 or due-on-receipt; permit interim or progress invoicing without milestone gating; add a reasonable late-payment uplift on top of statutory dráttarvextir consistent with Lög nr. 38/2001; require the Client to pay all FX and bank-transfer costs.
+> _Market-standard._ Net 30 payment term; statutory dráttarvextir at the Seðlabanki Íslands published rate from the due date; reasonable cost-of-collection recovery under § 9 of the Act; annual escalation at CPI plus a stated margin where the engagement runs longer than twelve months.
 
-## 6. Change control and change orders / Breytingarstýring  *(DUAL-PERSPECTIVE)*
+## 6. Change control and change orders / Breytingarstýring _(DUAL-PERSPECTIVE)_
 
 This section explains how the parties handle requests to change a Statement of Work after it has been signed. Changes are made through written Change Orders, not through informal email or hallway conversations.
 
@@ -148,9 +148,9 @@ This section explains how the parties handle requests to change a Statement of W
 6.6 **Verbal changes are not binding.** A verbal request, an email confirmation absent the agreed approval method, or a Slack/Teams message is not a Change Order and does not amend the Statement of Work, regardless of the seniority of the persons involved.
 
 > **Dual-perspective drafting note (§6).**
-> *Client-favourable.* Cap permitted Fee uplift per Change Order at a stated percentage; require the Provider to absorb up to a stated number of hours of minor changes per quarter without charge; require that any change to Key Personnel composition needs Client written approval before the Change Order is binding.
-> *Provider-favourable.* Require the Client to pay for the impact assessment itself where the request is not adopted; permit the Provider to suspend related work pending Change Order signature; add a small administrative fee per Change Order to cover overhead.
-> *Market-standard.* Written Change Order required, ten-business-day impact-assessment window, Fees and timeline adjusted on a rate-card basis, Key Personnel changes require notice but not consent except for named individuals.
+> _Client-favourable._ Cap permitted Fee uplift per Change Order at a stated percentage; require the Provider to absorb up to a stated number of hours of minor changes per quarter without charge; require that any change to Key Personnel composition needs Client written approval before the Change Order is binding.
+> _Provider-favourable._ Require the Client to pay for the impact assessment itself where the request is not adopted; permit the Provider to suspend related work pending Change Order signature; add a small administrative fee per Change Order to cover overhead.
+> _Market-standard._ Written Change Order required, ten-business-day impact-assessment window, Fees and timeline adjusted on a rate-card basis, Key Personnel changes require notice but not consent except for named individuals.
 
 ## 7. Personnel, key personnel and subcontracting / Starfsfólk og undirverktaka
 
@@ -190,7 +190,7 @@ This section explains what happens when the Provider hands over a Deliverable. T
 
 8.6 **Service-level engagements.** Where the Statement of Work is for ongoing services rather than discrete Deliverables, acceptance is replaced by service-level measurement against the standards recorded in Annex C and any service-level addendum.
 
-## 9. Intellectual property / Hugverkaréttindi  *(DUAL-PERSPECTIVE)*
+## 9. Intellectual property / Hugverkaréttindi _(DUAL-PERSPECTIVE)_
 
 This section explains who owns what. The default in this template is `{{IP Ownership Default}}` — typically Client owns the Foreground IP in the Deliverables once paid, while the Provider keeps the Background IP. Icelandic copyright and moral-rights rules require some care; the rules are not identical to the United States or to the United Kingdom.
 
@@ -202,13 +202,13 @@ This section explains who owns what. The default in this template is `{{IP Owner
 
 9.4 **Höfundalög — Icelandic copyright defaults.** The Parties acknowledge that under Lög nr. 73/1972 um höfundarétt (Höfundalög):
 
-  (a) **No automatic vesting.** A commissioning relationship does not by itself vest copyright in the commissioner. An express written assignment is required for the Client to take copyright ownership.
+(a) **No automatic vesting.** A commissioning relationship does not by itself vest copyright in the commissioner. An express written assignment is required for the Client to take copyright ownership.
 
-  (b) **Sæmdarréttur — moral rights (§ 3).** The economic rights of an author may be assigned, but the moral rights of attribution and integrity (sæmdarréttur) are inalienable. They may, however, be waived in writing for individual specific uses. Each individual creator who contributes to a Deliverable shall, where reasonably required by the Client, sign a written waiver of sæmdarréttur in respect of the agreed specific uses.
+(b) **Sæmdarréttur — moral rights (§ 3).** The economic rights of an author may be assigned, but the moral rights of attribution and integrity (sæmdarréttur) are inalienable. They may, however, be waived in writing for individual specific uses. Each individual creator who contributes to a Deliverable shall, where reasonably required by the Client, sign a written waiver of sæmdarréttur in respect of the agreed specific uses.
 
-  (c) **Software — § 11 default.** Where computer software is created by an employee in the course of employment, the employer is the default owner of the economic rights, consistent with § 11 of Höfundalög and the EEA-imported Software Directive.
+(c) **Software — § 11 default.** Where computer software is created by an employee in the course of employment, the employer is the default owner of the economic rights, consistent with § 11 of Höfundalög and the EEA-imported Software Directive.
 
-  (d) **Database right.** Where a Deliverable qualifies as a database within the meaning of § 50 of Höfundalög (transposing the EU Database Directive), the sui generis database right vests in the maker; the Parties intend that, where the Client is the maker by reason of substantial investment, the database right vests in the Client.
+(d) **Database right.** Where a Deliverable qualifies as a database within the meaning of § 50 of Höfundalög (transposing the EU Database Directive), the sui generis database right vests in the maker; the Parties intend that, where the Client is the maker by reason of substantial investment, the database right vests in the Client.
 
 9.5 **Trade secrets.** Trade secrets (uppskriftir) are protected under Lög nr. 16/2016 um vernd uppskrifta (Iceland's transposition of EU Directive 2016/943 on trade secrets). Each Party undertakes to handle the other Party's trade secrets in accordance with that Act, and the additional remedies available under that Act are preserved.
 
@@ -217,9 +217,9 @@ This section explains who owns what. The default in this template is `{{IP Owner
 9.7 **Reservation.** Except as expressly granted in this section, no licence is granted by either Party.
 
 > **Dual-perspective drafting note (§9).**
-> *Client-favourable.* Broaden the Foreground IP assignment to include all Provider know-how reasonably embedded in the Deliverable; require the Provider to procure signed sæmdarréttur waivers from each individual creator before delivery; cap the Provider's reservation of Background IP to items listed in an attached schedule.
-> *Provider-favourable.* Narrow the Foreground IP transfer to a non-exclusive licence rather than an assignment; reserve the right to reuse generic methodologies, frameworks, and patterns; refuse to procure individual sæmdarréttur waivers and instead rely on a corporate undertaking not to enforce moral rights.
-> *Market-standard.* Provider assigns Client-specific Foreground IP on payment; Provider keeps Background IP and grants a use licence; Provider warrants no embedded copyleft; Provider procures sæmdarréttur waivers for delivery uses but not for arbitrary downstream Client uses.
+> _Client-favourable._ Broaden the Foreground IP assignment to include all Provider know-how reasonably embedded in the Deliverable; require the Provider to procure signed sæmdarréttur waivers from each individual creator before delivery; cap the Provider's reservation of Background IP to items listed in an attached schedule.
+> _Provider-favourable._ Narrow the Foreground IP transfer to a non-exclusive licence rather than an assignment; reserve the right to reuse generic methodologies, frameworks, and patterns; refuse to procure individual sæmdarréttur waivers and instead rely on a corporate undertaking not to enforce moral rights.
+> _Market-standard._ Provider assigns Client-specific Foreground IP on payment; Provider keeps Background IP and grants a use licence; Provider warrants no embedded copyleft; Provider procures sæmdarréttur waivers for delivery uses but not for arbitrary downstream Client uses.
 
 ## 10. Confidentiality / Trúnaður
 
@@ -253,25 +253,25 @@ This section governs the handling of personal data and the security of informati
 
 11.6 **EEA-imported regulations — flag of transposition status.** The following EU instruments reach Iceland through the EEA Agreement. Each is annotated `[VERIFY]` so that a verifying lawyer can confirm the current incorporation status before execution:
 
-  (a) **GDPR — Regulation (EU) 2016/679** is incorporated into the EEA Agreement and transposed by PSL nr. 90/2018; status confirmed.
+(a) **GDPR — Regulation (EU) 2016/679** is incorporated into the EEA Agreement and transposed by PSL nr. 90/2018; status confirmed.
 
-  (b) **Late Payment Directive — Directive 2011/7/EU** is reflected in Lög nr. 38/2001 um vexti og verðtryggingu; status confirmed `[VERIFY current consolidated text]`.
+(b) **Late Payment Directive — Directive 2011/7/EU** is reflected in Lög nr. 38/2001 um vexti og verðtryggingu; status confirmed `[VERIFY current consolidated text]`.
 
-  (c) **eIDAS — Regulation (EU) 910/2014** is reflected in Lög nr. 28/2001 um rafræn samskipti og rafrænar undirskriftir, with EEA-related amendments `[VERIFY current consolidated text]`.
+(c) **eIDAS — Regulation (EU) 910/2014** is reflected in Lög nr. 28/2001 um rafræn samskipti og rafrænar undirskriftir, with EEA-related amendments `[VERIFY current consolidated text]`.
 
-  (d) **Data Act — Regulation (EU) 2023/2854** `[VERIFY EEA Joint Committee Decision and Icelandic implementing act at execution]`.
+(d) **Data Act — Regulation (EU) 2023/2854** `[VERIFY EEA Joint Committee Decision and Icelandic implementing act at execution]`.
 
-  (e) **AI Act — Regulation (EU) 2024/1689** `[VERIFY EEA Joint Committee Decision and Icelandic implementing act, including timing of staged application, at execution]`.
+(e) **AI Act — Regulation (EU) 2024/1689** `[VERIFY EEA Joint Committee Decision and Icelandic implementing act, including timing of staged application, at execution]`.
 
-  (f) **NIS2 — Directive (EU) 2022/2555** `[VERIFY EEA incorporation, Icelandic implementing act, and operator-of-essential-services designation framework at execution]`.
+(f) **NIS2 — Directive (EU) 2022/2555** `[VERIFY EEA incorporation, Icelandic implementing act, and operator-of-essential-services designation framework at execution]`.
 
-  (g) **DORA — Regulation (EU) 2022/2554** `[VERIFY EEA Joint Committee Decision and Icelandic implementing act for fjármálafyrirtæki / financial entities at execution]`.
+(g) **DORA — Regulation (EU) 2022/2554** `[VERIFY EEA Joint Committee Decision and Icelandic implementing act for fjármálafyrirtæki / financial entities at execution]`.
 
 11.7 **Data Act / switching support.** Where the Services include the storage or processing of Client Data, and subject to verification of EEA Joint Committee incorporation under §11.6(d), the Provider shall (a) make the Client Data available in a structured, commonly used, and machine-readable format on reasonable request; (b) facilitate the Client's switch to another provider of equivalent services consistent with Articles 23 to 25 of the Data Act; and (c) not impose unreasonable contractual, technical, or commercial obstacles to switching.
 
 11.8 **AI Act flow-down.** Where the Services include the development, integration, deployment, or operation of an AI system, the Provider shall, subject to verification under §11.6(e), comply with applicable risk-tier obligations under Regulation (EU) 2024/1689 and shall provide the Client with the documentation reasonably required for the Client to discharge its own obligations as deployer (notandi) or as provider (veitandi).
 
-## 12. Representations and warranties / Yfirlýsingar og ábyrgðir  *(DUAL-PERSPECTIVE)*
+## 12. Representations and warranties / Yfirlýsingar og ábyrgðir _(DUAL-PERSPECTIVE)_
 
 This section sets the warranties that each Party gives the other. Warranties are not the same as performance promises in the Statement of Work; warranties are statements about state of facts at a point in time.
 
@@ -279,17 +279,17 @@ This section sets the warranties that each Party gives the other. Warranties are
 
 12.2 **Provider warranties.** The Provider further represents and warrants that:
 
-  (a) it shall perform the Services with the reasonable skill and care to be expected of a competent professional services provider in the relevant industry;
+(a) it shall perform the Services with the reasonable skill and care to be expected of a competent professional services provider in the relevant industry;
 
-  (b) the Deliverables will, on delivery and for the warranty period stated in the Statement of Work (default ninety (90) days), substantially conform to the acceptance criteria;
+(b) the Deliverables will, on delivery and for the warranty period stated in the Statement of Work (default ninety (90) days), substantially conform to the acceptance criteria;
 
-  (c) the Services and the Deliverables, when used in accordance with the Statement of Work and the Documentation, will not knowingly infringe the IP of any third party;
+(c) the Services and the Deliverables, when used in accordance with the Statement of Work and the Documentation, will not knowingly infringe the IP of any third party;
 
-  (d) it has not embedded, and will not embed, malicious code (skaðsamur kóði) into any Deliverable;
+(d) it has not embedded, and will not embed, malicious code (skaðsamur kóði) into any Deliverable;
 
-  (e) it complies with applicable Icelandic and EEA-imported laws in performing the Services, including the data-protection, anti-bribery, sanctions, and AML/CFT laws referenced elsewhere in this Agreement;
+(e) it complies with applicable Icelandic and EEA-imported laws in performing the Services, including the data-protection, anti-bribery, sanctions, and AML/CFT laws referenced elsewhere in this Agreement;
 
-  (f) the open-source bill of materials referenced in §9.6 is materially complete and accurate at delivery.
+(f) the open-source bill of materials referenced in §9.6 is materially complete and accurate at delivery.
 
 12.3 **Client warranties.** The Client represents and warrants that (a) Client Materials, when used by the Provider in accordance with the Statement of Work, will not knowingly infringe third-party rights; and (b) the Client has the rights necessary to provide Client Materials and to authorise the Provider's use of them.
 
@@ -298,11 +298,11 @@ This section sets the warranties that each Party gives the other. Warranties are
 12.5 **Mandatory law preserved.** Nothing in this section excludes or limits any warranty that cannot be excluded under applicable Icelandic mandatory law (e.g., the warranties owed to a consumer under Lög nr. 16/2016 um neytendasamninga, where applicable).
 
 > **Dual-perspective drafting note (§12).**
-> *Client-favourable.* Add an explicit "fitness for purpose" warranty referenced to a written brief; extend the warranty period from 90 to 180 days; require a remediation SLA for warranty defects.
-> *Provider-favourable.* Limit the conformity warranty to the express acceptance criteria, with no implied "fitness for purpose"; shorten the warranty period to thirty (30) days; require warranty claims to be raised in writing within the period or be deemed waived.
-> *Market-standard.* Reasonable skill and care; ninety-day conformity warranty; no embedded malicious code; open-source bill of materials accurate at delivery.
+> _Client-favourable._ Add an explicit "fitness for purpose" warranty referenced to a written brief; extend the warranty period from 90 to 180 days; require a remediation SLA for warranty defects.
+> _Provider-favourable._ Limit the conformity warranty to the express acceptance criteria, with no implied "fitness for purpose"; shorten the warranty period to thirty (30) days; require warranty claims to be raised in writing within the period or be deemed waived.
+> _Market-standard._ Reasonable skill and care; ninety-day conformity warranty; no embedded malicious code; open-source bill of materials accurate at delivery.
 
-## 13. Indemnification / Skaðabætur og gjaldfærsla  *(DUAL-PERSPECTIVE)*
+## 13. Indemnification / Skaðabætur og gjaldfærsla _(DUAL-PERSPECTIVE)_
 
 This section explains who pays when a third party sues. The Provider typically defends the Client against third-party IP infringement claims linked to the Deliverables. The Client typically defends the Provider against third-party claims arising from Client Materials. Each side has carve-outs.
 
@@ -317,11 +317,11 @@ This section explains who pays when a third party sues. The Provider typically d
 13.5 **Procedure.** The Party seeking indemnity shall (a) give prompt written notice of the claim; (b) give the indemnifying Party sole control of the defence and settlement (provided that no settlement requiring an admission of liability or imposing a non-monetary obligation on the indemnified Party may be entered without that Party's prior written consent, not unreasonably withheld); and (c) provide reasonable cooperation at the indemnifying Party's expense.
 
 > **Dual-perspective drafting note (§13).**
-> *Client-favourable.* Add an indemnity for Persónuvernd or Persónuvernd-equivalent regulatory fines arising from Provider breach of the DPA; broaden the Provider IP indemnity to cover any allegation of infringement, not only those resulting in a court award or approved settlement; remove the carve-out at §13.2(c) for combinations that the Provider could reasonably have foreseen.
-> *Provider-favourable.* Narrow the Provider IP indemnity to direct copyright and registered patent claims; cap defence costs at the §14 liability cap; exclude indirect IP infringement allegations (induced or contributory) and any claim grounded in standards-essential patents.
-> *Market-standard.* Provider defends third-party IP claims against the Deliverables, with the carve-outs at §13.2; remedies at §13.3 are exclusive; Client defends third-party claims arising from Client Materials.
+> _Client-favourable._ Add an indemnity for Persónuvernd or Persónuvernd-equivalent regulatory fines arising from Provider breach of the DPA; broaden the Provider IP indemnity to cover any allegation of infringement, not only those resulting in a court award or approved settlement; remove the carve-out at §13.2(c) for combinations that the Provider could reasonably have foreseen.
+> _Provider-favourable._ Narrow the Provider IP indemnity to direct copyright and registered patent claims; cap defence costs at the §14 liability cap; exclude indirect IP infringement allegations (induced or contributory) and any claim grounded in standards-essential patents.
+> _Market-standard._ Provider defends third-party IP claims against the Deliverables, with the carve-outs at §13.2; remedies at §13.3 are exclusive; Client defends third-party claims arising from Client Materials.
 
-## 14. Limitation of liability / Takmörkun ábyrgðar  *(DUAL-PERSPECTIVE)*
+## 14. Limitation of liability / Takmörkun ábyrgðar _(DUAL-PERSPECTIVE)_
 
 This section caps each Party's exposure. The cap is intended to allocate predictable commercial risk; it does not change either Party's mandatory-law obligations.
 
@@ -336,9 +336,9 @@ This section caps each Party's exposure. The cap is intended to allocate predict
 14.5 **One bite at the apple.** A claim that arises under more than one section of this Agreement is recoverable once only and is subject to the cap in §14.2, save where §14.3 applies.
 
 > **Dual-perspective drafting note (§14).**
-> *Client-favourable.* Multiplier of two times annual Fees, with a higher floor (e.g., ISK 100,000,000); add a super-cap for data-protection breaches at the actual Article 83 GDPR maximum administrative fine; remove the indirect-damages exclusion for breaches of §11.
-> *Provider-favourable.* Multiplier of one times annual Fees, with a low floor; full indirect-damages exclusion; carve-outs strictly limited to (i) Client payment obligations, (ii) Provider §13.1 IP indemnity (capped at the §14.2 cap), and (iii) wilful misconduct; explicitly disclaim any super-cap for data-protection.
-> *Market-standard.* One-time annual Fees cap with a moderate floor; carve-outs at §14.3; indirect-damages exclusion preserved except for §11 data breaches; § 36 Samningalög flag retained.
+> _Client-favourable._ Multiplier of two times annual Fees, with a higher floor (e.g., ISK 100,000,000); add a super-cap for data-protection breaches at the actual Article 83 GDPR maximum administrative fine; remove the indirect-damages exclusion for breaches of §11.
+> _Provider-favourable._ Multiplier of one times annual Fees, with a low floor; full indirect-damages exclusion; carve-outs strictly limited to (i) Client payment obligations, (ii) Provider §13.1 IP indemnity (capped at the §14.2 cap), and (iii) wilful misconduct; explicitly disclaim any super-cap for data-protection.
+> _Market-standard._ One-time annual Fees cap with a moderate floor; carve-outs at §14.3; indirect-damages exclusion preserved except for §11 data breaches; § 36 Samningalög flag retained.
 
 ## 15. Insurance / Vátryggingar
 
@@ -346,11 +346,11 @@ This section requires each Party to carry insurance appropriate to the engagemen
 
 15.1 **Provider insurance.** During the term of this Agreement, the Provider shall maintain, at its own cost, with reputable insurers authorised in Iceland or in another EEA Member State and consistent with Lög nr. 30/2004 um vátryggingasamninga (Insurance Contracts Act):
 
-  (a) **Starfsábyrgðartrygging — professional indemnity (PI)** with a limit of not less than `{{PI Insurance Minimum}}` (typical range ISK 30,000,000 to ISK 100,000,000);
+(a) **Starfsábyrgðartrygging — professional indemnity (PI)** with a limit of not less than `{{PI Insurance Minimum}}` (typical range ISK 30,000,000 to ISK 100,000,000);
 
-  (b) **Rekstraábyrgðartrygging — public/general liability (PL)** with a limit of not less than `{{PL Insurance Minimum}}` (typical range ISK 50,000,000 to ISK 200,000,000); and
+(b) **Rekstraábyrgðartrygging — public/general liability (PL)** with a limit of not less than `{{PL Insurance Minimum}}` (typical range ISK 50,000,000 to ISK 200,000,000); and
 
-  (c) **Netöryggistrygging — cyber/data-breach insurance** with a limit of not less than `{{Cyber Insurance Minimum}}` (typical range ISK 25,000,000 to ISK 100,000,000), where the Services involve the processing of Personal Data or the operation of Client systems.
+(c) **Netöryggistrygging — cyber/data-breach insurance** with a limit of not less than `{{Cyber Insurance Minimum}}` (typical range ISK 25,000,000 to ISK 100,000,000), where the Services involve the processing of Personal Data or the operation of Client systems.
 
 15.2 **Workers' coverage.** The Provider shall maintain employer liability and any statutory accident-insurance cover required for its personnel performing Services in Iceland, with limits not less than `{{WC Insurance Minimum}}` `[VERIFY current minimum statutory cover and applicable kjarasamningur requirements]`.
 
@@ -360,7 +360,7 @@ This section requires each Party to carry insurance appropriate to the engagemen
 
 15.5 **Cap consistency.** The insurance limits at §15.1 are set so that the aggregate liability cap at §14.2 is meaningfully backed. The Parties shall review the limits if a Statement of Work materially increases the potential exposure.
 
-## 16. Term and termination / Tími samnings og uppsögn  *(DUAL-PERSPECTIVE)*
+## 16. Term and termination / Tími samnings og uppsögn _(DUAL-PERSPECTIVE)_
 
 This section explains how long the Agreement lasts and how each side may end it. Termination must be in writing.
 
@@ -379,11 +379,11 @@ This section explains how long the Agreement lasts and how each side may end it.
 16.7 **Pledge interplay.** Where any obligation under this Agreement is secured by a pledge or mortgage (veð) governed by Lög nr. 75/1997 um samningsveð or by the interest provisions of Lög nr. 38/2001 um vexti og verðtryggingu § 5, the security continues to operate in accordance with its terms and is not extinguished by termination, except to the extent the Parties agree otherwise in writing.
 
 > **Dual-perspective drafting note (§16).**
-> *Client-favourable.* Shorten convenience-termination notice to thirty (30) days; remove wind-down cost reimbursement; add a Client-only termination right for unsatisfactory performance against Annex C standards on two occasions in any twelve-month period.
-> *Provider-favourable.* Lengthen convenience-termination notice to ninety (90) days; require the Client to pay through the end of any annual rate-card period in addition to actual performance Fees; remove the Client convenience-termination right for the first six months of any Statement of Work.
-> *Market-standard.* Sixty-day convenience-termination notice; thirty-day cure period for material breach; reasonable wind-down cost reimbursement; surviving clauses listed.
+> _Client-favourable._ Shorten convenience-termination notice to thirty (30) days; remove wind-down cost reimbursement; add a Client-only termination right for unsatisfactory performance against Annex C standards on two occasions in any twelve-month period.
+> _Provider-favourable._ Lengthen convenience-termination notice to ninety (90) days; require the Client to pay through the end of any annual rate-card period in addition to actual performance Fees; remove the Client convenience-termination right for the first six months of any Statement of Work.
+> _Market-standard._ Sixty-day convenience-termination notice; thirty-day cure period for material breach; reasonable wind-down cost reimbursement; surviving clauses listed.
 
-## 17. Transition assistance and wind-down / Aðstoð við yfirfærslu  *(DUAL-PERSPECTIVE)*
+## 17. Transition assistance and wind-down / Aðstoð við yfirfærslu _(DUAL-PERSPECTIVE)_
 
 This section governs what the Provider does after termination to help the Client move on. Transition is purchased at agreed rates, not given for free.
 
@@ -398,9 +398,9 @@ This section governs what the Provider does after termination to help the Client
 17.5 **Reverse transition.** Where the engagement involved the assignment of Provider know-how and tooling that the Client has paid for as Foreground IP under §9, the Provider shall not retain operational copies beyond the period reasonably necessary for transition and de-commissioning.
 
 > **Dual-perspective drafting note (§17).**
-> *Client-favourable.* Extend the transition window to twelve (12) months; cap rates at no more than the rates in force during the active term; require a documented exit plan to be maintained throughout the term, refreshed annually.
-> *Provider-favourable.* Limit the transition window to ninety (90) days; permit the Provider to charge a transition-readiness fee on top of hourly rates; refuse to participate in joint planning with a named successor that is a direct Provider competitor.
-> *Market-standard.* Six-month transition window; rate-card pricing; reasonable cooperation with a successor; mutual obligation to maintain a basic exit plan in the Annex.
+> _Client-favourable._ Extend the transition window to twelve (12) months; cap rates at no more than the rates in force during the active term; require a documented exit plan to be maintained throughout the term, refreshed annually.
+> _Provider-favourable._ Limit the transition window to ninety (90) days; permit the Provider to charge a transition-readiness fee on top of hourly rates; refuse to participate in joint planning with a named successor that is a direct Provider competitor.
+> _Market-standard._ Six-month transition window; rate-card pricing; reasonable cooperation with a successor; mutual obligation to maintain a basic exit plan in the Annex.
 
 ## 18. Dispute resolution and governing law / Lausn ágreinings og lögsaga
 
@@ -412,7 +412,7 @@ This section explains how disputes are escalated and where lawsuits are heard. I
 
 18.3 **Default venue — Iceland courts.** Subject to §18.4, the Parties submit to the exclusive jurisdiction of `{{Venue}}` (default Héraðsdómur Reykjavíkur as the first-instance court), with appeal to Landsréttur and, where appropriate, to Hæstiréttur Íslands as the apex court.
 
-18.4 **Arbitration alternative (OPTIONAL — only if both Parties expressly elect arbitration in writing).** *OPTIONAL — only if expressly elected.* Where the Statement of Work or a separate written election so provides, any dispute that cannot be resolved through escalation under §18.1 shall be referred to arbitration under Lög nr. 53/1989 um samningsbundinn gerðardóm (Arbitration Act) under `{{Arbitration Rules}}` (default the rules of the Nordic Arbitration Centre or, in the alternative, the rules of the ICC Iceland chapter), with the seat in Reykjavík and the language of arbitration in English unless the Parties agree otherwise. The arbitral award is final and binding, subject to the limited grounds for challenge under Lög nr. 53/1989.
+18.4 **Arbitration alternative (OPTIONAL — only if both Parties expressly elect arbitration in writing).** _OPTIONAL — only if expressly elected._ Where the Statement of Work or a separate written election so provides, any dispute that cannot be resolved through escalation under §18.1 shall be referred to arbitration under Lög nr. 53/1989 um samningsbundinn gerðardóm (Arbitration Act) under `{{Arbitration Rules}}` (default the rules of the Nordic Arbitration Centre or, in the alternative, the rules of the ICC Iceland chapter), with the seat in Reykjavík and the language of arbitration in English unless the Parties agree otherwise. The arbitral award is final and binding, subject to the limited grounds for challenge under Lög nr. 53/1989.
 
 18.5 **Equitable relief.** Each Party may seek interim or injunctive relief (lögbann) from a competent court to protect IP, Confidential Information, or trade secrets, regardless of any election of arbitration under §18.4.
 
@@ -454,27 +454,27 @@ This section gathers the standard miscellaneous provisions and provides the bili
 >
 > **For the Provider / Þjónustuveitandi: `{{Provider Legal Name}}`**
 >
-> | Field | Value |
-> |---|---|
-> | Nafn / Name | `{{Provider Signatory Name}}` |
-> | Staða / Title | `{{Provider Signatory Title}}` |
-> | Kennitala | `{{Provider Kennitala}}` |
-> | Heimilisfang / Address | `{{Provider Address}}` |
-> | Netfang fyrir tilkynningar / Notice email | `{{Provider Notice Email}}` |
-> | Dagsetning / Date | ____________________________ |
-> | Undirskrift / Signature | ____________________________ |
+> | Field                                     | Value                                            |
+> | ----------------------------------------- | ------------------------------------------------ |
+> | Nafn / Name                               | `{{Provider Signatory Name}}`                    |
+> | Staða / Title                             | `{{Provider Signatory Title}}`                   |
+> | Kennitala                                 | `{{Provider Kennitala}}`                         |
+> | Heimilisfang / Address                    | `{{Provider Address}}`                           |
+> | Netfang fyrir tilkynningar / Notice email | `{{Provider Notice Email}}`                      |
+> | Dagsetning / Date                         | \***\*\*\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*\*\*** |
+> | Undirskrift / Signature                   | \***\*\*\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*\*\*** |
 >
 > **For the Client / Verkkaupi: `{{Client Legal Name}}`**
 >
-> | Field | Value |
-> |---|---|
-> | Nafn / Name | `{{Client Signatory Name}}` |
-> | Staða / Title | `{{Client Signatory Title}}` |
-> | Kennitala | `{{Client Kennitala}}` |
-> | Heimilisfang / Address | `{{Client Address}}` |
-> | Netfang fyrir tilkynningar / Notice email | `{{Client Notice Email}}` |
-> | Dagsetning / Date | ____________________________ |
-> | Undirskrift / Signature | ____________________________ |
+> | Field                                     | Value                                            |
+> | ----------------------------------------- | ------------------------------------------------ |
+> | Nafn / Name                               | `{{Client Signatory Name}}`                      |
+> | Staða / Title                             | `{{Client Signatory Title}}`                     |
+> | Kennitala                                 | `{{Client Kennitala}}`                           |
+> | Heimilisfang / Address                    | `{{Client Address}}`                             |
+> | Netfang fyrir tilkynningar / Notice email | `{{Client Notice Email}}`                        |
+> | Dagsetning / Date                         | \***\*\*\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*\*\*** |
+> | Undirskrift / Signature                   | \***\*\*\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*\*\*** |
 
 ---
 

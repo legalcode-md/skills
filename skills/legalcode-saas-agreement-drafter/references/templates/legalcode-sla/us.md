@@ -1,7 +1,16 @@
 ---
 title: Service Level Agreement — United States
 jurisdictions: [us, us-ca, us-ny, us-tx, us-de]
-statutes: [State-breach-notification-laws, NYDFS-Reg-500, MA-201-CMR-17, TX-SB-820, NIST-CSF, CISA, FTC-Act]
+statutes:
+  [
+    State-breach-notification-laws,
+    NYDFS-Reg-500,
+    MA-201-CMR-17,
+    TX-SB-820,
+    NIST-CSF,
+    CISA,
+    FTC-Act,
+  ]
 audience: [B2B]
 license: MIT
 last_updated: 2026-04-28
@@ -57,13 +66,13 @@ This section sets the uptime target and verification method. Vendor commits to U
 
 Equivalent monthly Downtime budgets at common targets (illustrative, based on a 30-day month / `43,200` total minutes):
 
-| Target | Maximum Downtime / month |
-|--------|--------------------------|
-| `99.0%` | ~`7h 12m` |
-| `99.5%` | ~`3h 36m` |
-| `99.9%` | ~`43m 12s` |
-| `99.95%` | ~`21m 36s` |
-| `99.99%` | ~`4m 19s` |
+| Target   | Maximum Downtime / month |
+| -------- | ------------------------ |
+| `99.0%`  | ~`7h 12m`                |
+| `99.5%`  | ~`3h 36m`                |
+| `99.9%`  | ~`43m 12s`               |
+| `99.95%` | ~`21m 36s`               |
+| `99.99%` | ~`4m 19s`                |
 
 **Customer perspective:** Higher targets command premium pricing and tighter exclusions. **Vendor perspective:** A single regional sub-provider event can consume the entire monthly budget at `99.99%`.
 
@@ -97,12 +106,12 @@ This section lists conditions that do not count against the uptime budget; Vendo
 
 This section sets ticket acknowledgment and work targets by severity. Severity is initially set by Customer and may be reclassified by Vendor under Annex A with documentation in the ticket. Targets run from ticket creation to Vendor's first substantive (non-automated) response.
 
-| Severity | Initial Response | Status Update Cadence | Workaround / Resolution Target | Hours of Coverage |
-|---|---|---|---|---|
-| **P1 — Critical** | `15` minutes | Hourly | Continuous effort until workaround | `24×7` |
-| **P2 — High** | `1` business hour | Every `4` business hours | Workaround within `1` business day | Business hours (`{{Support Time Zone}}`) |
-| **P3 — Medium** | `1` business day | Every `2` business days | Resolution in next regular release | Business hours |
-| **P4 — Low** | `3` business days | Weekly | Backlog / roadmap | Business hours |
+| Severity          | Initial Response  | Status Update Cadence    | Workaround / Resolution Target     | Hours of Coverage                        |
+| ----------------- | ----------------- | ------------------------ | ---------------------------------- | ---------------------------------------- |
+| **P1 — Critical** | `15` minutes      | Hourly                   | Continuous effort until workaround | `24×7`                                   |
+| **P2 — High**     | `1` business hour | Every `4` business hours | Workaround within `1` business day | Business hours (`{{Support Time Zone}}`) |
+| **P3 — Medium**   | `1` business day  | Every `2` business days  | Resolution in next regular release | Business hours                           |
+| **P4 — Low**      | `3` business days | Weekly                   | Backlog / roadmap                  | Business hours                           |
 
 "**Business hours**" means `08:00–18:00` **{{Support Time Zone}}** (default `US Eastern Time`), Mon–Fri excluding US federal holidays. P1 coverage is `24×7×365`. Tickets via **{{Support Portal URL}}**; for P1, Customer may also page **{{P1 Pager Number}}**.
 
@@ -116,11 +125,11 @@ OPTIONAL — only if the Order Form elects Premier / Mission-Critical support: t
 
 This section translates SLA misses into refunds; math is in Annex B, request mechanics in §8. If Uptime Percentage falls below target, Customer is eligible for a Service Credit against the Monthly Service Fee for the affected Service:
 
-| Monthly Uptime % | Service Credit (% of Monthly Service Fee) |
-|---|---|
-| < `99.9%` and ≥ `99.0%` | `10%` |
-| < `99.0%` and ≥ `95.0%` | `25%` |
-| < `95.0%` | `30%` (cap = **{{Monthly Credit Cap}}**) |
+| Monthly Uptime %        | Service Credit (% of Monthly Service Fee) |
+| ----------------------- | ----------------------------------------- |
+| < `99.9%` and ≥ `99.0%` | `10%`                                     |
+| < `99.0%` and ≥ `95.0%` | `25%`                                     |
+| < `95.0%`               | `30%` (cap = **{{Monthly Credit Cap}}**)  |
 
 Total Service Credits in any Calendar Month will not exceed **{{Monthly Credit Cap}}** (default `30%`) of that month's Monthly Service Fee, regardless of Incident count.
 
@@ -172,12 +181,12 @@ Vendor delivers a quarterly availability report within `15` calendar days after 
 
 This section sets recovery targets aligned to US frameworks. Vendor maintains and tests a written Disaster Recovery ("**DR**") / Business Continuity ("**BC**") program with Recovery Time Objective ("**RTO**") and Recovery Point Objective ("**RPO**") targets for regional or systemic failures.
 
-| Metric | Target |
-|---|---|
-| **RTO (Recovery Time Objective)** | **{{RTO Hours}}** (default `4` hours) |
-| **RPO (Recovery Point Objective)** | **{{RPO Hours}}** (default `1` hour) |
-| **DR test frequency** | At least annually; tabletop and partial-failover exercises documented |
-| **Backup retention** | Encrypted backups retained for at least `30` days, with quarterly restore validation |
+| Metric                             | Target                                                                               |
+| ---------------------------------- | ------------------------------------------------------------------------------------ |
+| **RTO (Recovery Time Objective)**  | **{{RTO Hours}}** (default `4` hours)                                                |
+| **RPO (Recovery Point Objective)** | **{{RPO Hours}}** (default `1` hour)                                                 |
+| **DR test frequency**              | At least annually; tabletop and partial-failover exercises documented                |
+| **Backup retention**               | Encrypted backups retained for at least `30` days, with quarterly restore validation |
 
 §11.1 Vendor notifies Customer without undue delay when a DR event is invoked.
 §11.2 Vendor provides the executive summary of its most recent DR test on request, subject to confidentiality.
@@ -198,14 +207,14 @@ This section sets when and how Vendor takes maintenance windows. Scheduled Maint
 
 UTC-to-US conversion table for the standard maintenance window (`Saturday 04:00–08:00 UTC`):
 
-| US Time Zone | Local Window |
-|---|---|
+| US Time Zone                                            | Local Window                                                        |
+| ------------------------------------------------------- | ------------------------------------------------------------------- |
 | `US Eastern Time` (`UTC−5` standard / `UTC−4` daylight) | `Fri 23:00 – Sat 03:00` (standard) / `Sat 00:00 – 04:00` (daylight) |
-| `US Central Time` (`UTC−6` / `UTC−5`) | `Fri 22:00 – Sat 02:00` / `Fri 23:00 – Sat 03:00` |
-| `US Mountain Time` (`UTC−7` / `UTC−6`) | `Fri 21:00 – Sat 01:00` / `Fri 22:00 – Sat 02:00` |
-| `US Pacific Time` (`UTC−8` / `UTC−7`) | `Fri 20:00 – Sat 00:00` / `Fri 21:00 – Sat 01:00` |
-| `Alaska Time` (`UTC−9` / `UTC−8`) | `Fri 19:00 – Sat 23:00` / `Fri 20:00 – Sat 00:00` |
-| `Hawaii–Aleutian Time` (`UTC−10`, no DST) | `Fri 18:00 – 22:00` |
+| `US Central Time` (`UTC−6` / `UTC−5`)                   | `Fri 22:00 – Sat 02:00` / `Fri 23:00 – Sat 03:00`                   |
+| `US Mountain Time` (`UTC−7` / `UTC−6`)                  | `Fri 21:00 – Sat 01:00` / `Fri 22:00 – Sat 02:00`                   |
+| `US Pacific Time` (`UTC−8` / `UTC−7`)                   | `Fri 20:00 – Sat 00:00` / `Fri 21:00 – Sat 01:00`                   |
+| `Alaska Time` (`UTC−9` / `UTC−8`)                       | `Fri 19:00 – Sat 23:00` / `Fri 20:00 – Sat 00:00`                   |
+| `Hawaii–Aleutian Time` (`UTC−10`, no DST)               | `Fri 18:00 – 22:00`                                                 |
 
 OPTIONAL — only if Customer's workload cannot tolerate weekend windows: an alternate maintenance window may be elected on the Order Form for an upcharge.
 
@@ -271,14 +280,14 @@ The `24`-hour Vendor → Customer SLA in §17.1(a) does **not** waive any tighte
 
 For situational awareness only; statutes change frequently and definitions of "Personal Information," "breach," and triggering harms vary. Drafters should consult current state statutes and AG guidance.
 
-| State | Notification Deadline (to consumer) | Reporting Trigger |
-|---|---|---|
-| **CA** (Cal. Civ. Code §1798.82) | "Most expedient time possible" / "Without unreasonable delay" | Reasonable belief of unauthorized acquisition of unencrypted Personal Information |
+| State                                                    | Notification Deadline (to consumer)                           | Reporting Trigger                                                                                            |
+| -------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **CA** (Cal. Civ. Code §1798.82)                         | "Most expedient time possible" / "Without unreasonable delay" | Reasonable belief of unauthorized acquisition of unencrypted Personal Information                            |
 | **NY** (Gen. Bus. Law §899-aa, as amended by SHIELD Act) | "Most expedient time possible" / "Without unreasonable delay" | Same trigger; expanded definition of Personal Information includes biometric and account-credential elements |
-| **TX** (Bus. & Com. Code §521.053) | `60` days | Same trigger |
-| **FL** (Stat. §501.171) | `30` days | Same trigger; Florida AG must be notified at `≥500` affected residents |
-| **MA** (Gen. Laws ch. 93H) | "As soon as practicable and without unreasonable delay" | Same trigger; AG and OCABR notified concurrently |
-| **AL** (Code §8-38-1 et seq.) | `45` days | Same trigger |
+| **TX** (Bus. & Com. Code §521.053)                       | `60` days                                                     | Same trigger                                                                                                 |
+| **FL** (Stat. §501.171)                                  | `30` days                                                     | Same trigger; Florida AG must be notified at `≥500` affected residents                                       |
+| **MA** (Gen. Laws ch. 93H)                               | "As soon as practicable and without unreasonable delay"       | Same trigger; AG and OCABR notified concurrently                                                             |
+| **AL** (Code §8-38-1 et seq.)                            | `45` days                                                     | Same trigger                                                                                                 |
 
 `[VERIFY each row — several states have amended notification windows, expanded PI definitions, or added regulator-notification thresholds.]`
 
@@ -337,6 +346,7 @@ Reclassification: Vendor may reclassify when reproducible facts change impact (e
 This annex shows how to compute credits under §7, using a `30`-day month (`43,200` total minutes).
 
 **Worked example 1 — Single multi-hour outage.**
+
 - Customer Monthly Service Fee: `$10,000`
 - Total minutes: `43,200`; Excluded Downtime: `0`
 - Downtime: one event of `4` hours `30` minutes = `270` minutes
@@ -345,6 +355,7 @@ This annex shows how to compute credits under §7, using a `30`-day month (`43,2
 - Credit = `$10,000 × 10%` = **`$1,000`**
 
 **Worked example 2 — Sustained chronic outage exceeding the cap.**
+
 - Customer Monthly Service Fee: `$10,000`
 - Downtime: `12` hours = `720` minutes
 - Uptime % = `(43,200 − 720) / 43,200 × 100` ≈ `98.333%`
@@ -352,6 +363,7 @@ This annex shows how to compute credits under §7, using a `30`-day month (`43,2
 - Credit = `$10,000 × 25%` = **`$2,500`**
 
 **Worked example 3 — Severe outage above the cap.**
+
 - Customer Monthly Service Fee: `$10,000`
 - Downtime: `48` hours = `2,880` minutes
 - Uptime % = `(43,200 − 2,880) / 43,200 × 100` ≈ `93.333%`
@@ -359,6 +371,7 @@ This annex shows how to compute credits under §7, using a `30`-day month (`43,2
 - Cap (`{{Monthly Credit Cap}}` default `30%`) applies → **`$3,000`**
 
 **Worked example 4 — Mixed Excluded Downtime.**
+
 - Customer Monthly Service Fee: `$10,000`
 - Downtime: `120` minutes (counted) + `60` minutes (Excluded — Scheduled Maintenance under §5(a))
 - Uptime % = `((43,200 − 60) − 120) / (43,200 − 60) × 100` = `99.722%`
@@ -384,20 +397,20 @@ Non-binding template for §10 monthly reports.
 - **Uptime Percentage:** `[xx.xxx%]` (target `{{Uptime Percentage}}`)
 - **Incident summary:**
 
-| Incident ID | Start (UTC) | End (UTC) | Duration | Severity | Excluded? | Brief description |
-|---|---|---|---|---|---|---|
-| `INC-2026-0042` | `2026-MM-DD HH:MM` | `2026-MM-DD HH:MM` | `mm:ss` | P1 | No | Auth gateway 5xx errors |
-| `INC-2026-0043` | `2026-MM-DD HH:MM` | `2026-MM-DD HH:MM` | `mm:ss` | P2 | No | Latency degradation in `us-east-1` |
-| `INC-2026-0044` | `2026-MM-DD HH:MM` | `2026-MM-DD HH:MM` | `mm:ss` | — | Yes (§5(a)) | Scheduled Maintenance |
+| Incident ID     | Start (UTC)        | End (UTC)          | Duration | Severity | Excluded?   | Brief description                  |
+| --------------- | ------------------ | ------------------ | -------- | -------- | ----------- | ---------------------------------- |
+| `INC-2026-0042` | `2026-MM-DD HH:MM` | `2026-MM-DD HH:MM` | `mm:ss`  | P1       | No          | Auth gateway 5xx errors            |
+| `INC-2026-0043` | `2026-MM-DD HH:MM` | `2026-MM-DD HH:MM` | `mm:ss`  | P2       | No          | Latency degradation in `us-east-1` |
+| `INC-2026-0044` | `2026-MM-DD HH:MM` | `2026-MM-DD HH:MM` | `mm:ss`  | —        | Yes (§5(a)) | Scheduled Maintenance              |
 
 - **Support ticket compliance:**
 
 | Severity | Tickets opened | P-target hits | P-target misses | Median initial response |
-|---|---|---|---|---|
-| P1 | `n` | `n` | `n` | `mm:ss` |
-| P2 | `n` | `n` | `n` | `hh:mm` |
-| P3 | `n` | `n` | `n` | `dd:hh` |
-| P4 | `n` | `n` | `n` | `dd:hh` |
+| -------- | -------------- | ------------- | --------------- | ----------------------- |
+| P1       | `n`            | `n`           | `n`             | `mm:ss`                 |
+| P2       | `n`            | `n`           | `n`             | `hh:mm`                 |
+| P3       | `n`            | `n`           | `n`             | `dd:hh`                 |
+| P4       | `n`            | `n`           | `n`             | `dd:hh`                 |
 
 - **DR posture:** RTO target `{{RTO Hours}}`; RPO target `{{RPO Hours}}`; DR exercises performed in period: `[summary]`.
 - **Service Credits owed (preliminary):** `$[n]` (`[band]` band; subject to §8 request).

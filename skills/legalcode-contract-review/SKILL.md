@@ -30,6 +30,7 @@ general commercial standards. It identifies deviations, classifies their severit
 actionable redline suggestions, and produces a confidence-scored, auditable analysis.
 
 **Covers:**
+
 - Clause-by-clause analysis of any commercial agreement
 - Deviation classification (GREEN / YELLOW / RED)
 - Redline generation with fallback positions
@@ -38,6 +39,7 @@ actionable redline suggestions, and produces a confidence-scored, auditable anal
 - Quality-verified output with Glass Box audit trail
 
 **Does not:**
+
 - Draft new contracts (see drafting-specific skills)
 - Provide legal advice or replace qualified counsel
 - Apply to one jurisdiction exclusively — jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers
@@ -49,6 +51,7 @@ which legal framework applies. The review identifies the governing law early and
 the analysis accordingly.
 
 [JURISDICTION-SPECIFIC] When localizing, research and apply:
+
 - Mandatory consumer protection rules (if any consumer party is involved)
 - Statutory limits on exclusion or limitation of liability
 - IP ownership defaults (work-for-hire, employee works, assignment formalities)
@@ -93,6 +96,7 @@ user can correct it.
 ### Step 1: Accept the Contract
 
 Accept the contract in any of these formats:
+
 - **File**: PDF, DOCX, or other document format
 - **URL**: Link to a contract in a CLM, cloud storage, or document system
 - **Pasted text**: Contract text pasted directly into the conversation
@@ -106,23 +110,23 @@ as a structured set of options where possible:
 
 1. **Which side are you on?**
    - Options: Vendor/Supplier, Customer/Buyer, Licensor, Licensee, Partner, Other
-   - *Why this matters*: The entire analysis flips depending on which side you represent.
+   - _Why this matters_: The entire analysis flips depending on which side you represent.
      What protects a vendor harms a customer and vice versa.
 
 2. **Deadline**: When does this need to be finalized?
    - Options: Urgent (days), Standard (1-2 weeks), Flexible (no hard deadline)
-   - *Why this matters*: Affects how many issues to surface vs. focus only on critical ones.
+   - _Why this matters_: Affects how many issues to surface vs. focus only on critical ones.
 
 3. **Focus areas**: Any specific concerns?
    - Options: Data protection, IP ownership, Liability exposure, Termination flexibility,
      Payment terms, No specific focus — full review
    - Allow multiple selections.
-   - *Why this matters*: Lets the analysis lead with what the user cares about most.
+   - _Why this matters_: Lets the analysis lead with what the user cares about most.
 
 4. **Deal context**: Relevant business context?
    - Free text. Prompt with examples: deal size, strategic importance, existing relationship,
      whether this is a template or one-off negotiation.
-   - *Why this matters*: A $10K vendor contract gets different treatment than a $10M
+   - _Why this matters_: A $10K vendor contract gets different treatment than a $10M
      strategic partnership.
 
 If the user provides partial context, proceed with what you have but **state your
@@ -134,6 +138,7 @@ if that's wrong and I'll re-run the analysis"). Do not silently assume.
 Check for the organization's contract review playbook in local settings (e.g., `legal.local.md` or similar configuration files).
 
 The playbook should define:
+
 - **Standard positions**: Preferred terms for each major clause type
 - **Acceptable ranges**: Terms that can be agreed without escalation
 - **Escalation triggers**: Terms that require senior counsel or decision-maker sign-off
@@ -191,18 +196,23 @@ search. Use it to gather the legal authority you need before analyzing clauses.
 
    ```markdown
    # Legal Authority Reference — [Contract Name]
+
    ## Governing Law: [Jurisdiction]
+
    ## Date Gathered: [date]
 
    ### Statutes & Regulations
+
    - [Statute name, section, current text or summary]
    - [...]
 
    ### Case Law
+
    - [Case name, citation, key holding relevant to this contract]
    - [...]
 
    ### Regulatory Guidance
+
    - [Regulator, guidance title, relevance]
    - [...]
    ```
@@ -212,12 +222,14 @@ search. Use it to gather the legal authority you need before analyzing clauses.
    Mark any citation sourced from legalcode-mcp as VERIFIED in the Glass Box audit trail.
 
 **If legalcode-mcp is not connected:**
+
 - Mark every statutory and case law reference with [VERIFY]
 - Note in the Glass Box audit trail: `external_tools_used: "None — manual verification required"`
 - Proceed with the analysis using general commercial knowledge, but flag that legal
   authority has not been independently verified
 
 [JURISDICTION-SPECIFIC] For each jurisdiction, the research should cover at minimum:
+
 - Statute governing exclusion/limitation clauses
 - IP ownership and assignment formalities
 - Data protection regime and transfer mechanisms
@@ -233,6 +245,7 @@ by a broad limitation of liability).
 
 **⟁ CLARIFY** — For long or complex contracts (50+ pages, or with multiple schedules,
 exhibits, or incorporated documents):
+
 - Ask the user whether to perform a **full review** of all 14 clause categories, or a
   **priority review** focused on the user's stated focus areas (from Step 2) plus any
   RED items discovered.
@@ -244,22 +257,22 @@ Cover all 14 clause categories below (unless the user opted for a priority revie
 each, assess against the playbook (or general standards) and note whether the clause is
 present, absent, or unusual.
 
-| # | Clause Category | Depth | Key Review Points |
-|---|----------------|-------|-------------------|
-| 1 | Limitation of Liability | Deep | Cap amount, carveouts, mutual vs. unilateral, consequential damages |
-| 2 | Indemnification | Deep | Scope, mutual vs. unilateral, cap, IP infringement, data breach, procedure |
-| 3 | Intellectual Property | Deep | Pre-existing IP, developed IP, assignment, license grants, moral rights |
-| 4 | Data Protection | Deep | DPA requirement, processing terms, sub-processors, breach notification, transfers |
-| 5 | Term & Termination | Deep | Duration, renewal, convenience termination, cause termination, wind-down |
-| 6 | Governing Law & Disputes | Deep | Jurisdiction, venue, arbitration vs. litigation, escalation |
-| 7 | Confidentiality | Standard | Scope, term, carveouts, return/destruction obligations |
-| 8 | Representations & Warranties | Standard | Scope, disclaimers, survival period, remedies for breach |
-| 9 | Insurance | Standard | Coverage requirements, minimums, evidence of coverage |
-| 10 | Assignment | Standard | Consent requirements, change of control, exceptions |
-| 11 | Force Majeure | Standard | Scope of events, notification, mitigation, termination rights |
-| 12 | Payment Terms | Standard | Net terms, late fees, taxes, price escalation, disputed invoices |
-| 13 | Compliance & Regulatory | Standard | Anti-bribery, sanctions, export control, modern slavery, regulatory approvals |
-| 14 | Definitions & Boilerplate | Standard | Entire agreement, severability, waiver, notices, counterparts, amendments |
+| #   | Clause Category              | Depth    | Key Review Points                                                                 |
+| --- | ---------------------------- | -------- | --------------------------------------------------------------------------------- |
+| 1   | Limitation of Liability      | Deep     | Cap amount, carveouts, mutual vs. unilateral, consequential damages               |
+| 2   | Indemnification              | Deep     | Scope, mutual vs. unilateral, cap, IP infringement, data breach, procedure        |
+| 3   | Intellectual Property        | Deep     | Pre-existing IP, developed IP, assignment, license grants, moral rights           |
+| 4   | Data Protection              | Deep     | DPA requirement, processing terms, sub-processors, breach notification, transfers |
+| 5   | Term & Termination           | Deep     | Duration, renewal, convenience termination, cause termination, wind-down          |
+| 6   | Governing Law & Disputes     | Deep     | Jurisdiction, venue, arbitration vs. litigation, escalation                       |
+| 7   | Confidentiality              | Standard | Scope, term, carveouts, return/destruction obligations                            |
+| 8   | Representations & Warranties | Standard | Scope, disclaimers, survival period, remedies for breach                          |
+| 9   | Insurance                    | Standard | Coverage requirements, minimums, evidence of coverage                             |
+| 10  | Assignment                   | Standard | Consent requirements, change of control, exceptions                               |
+| 11  | Force Majeure                | Standard | Scope of events, notification, mitigation, termination rights                     |
+| 12  | Payment Terms                | Standard | Net terms, late fees, taxes, price escalation, disputed invoices                  |
+| 13  | Compliance & Regulatory      | Standard | Anti-bribery, sanctions, export control, modern slavery, regulatory approvals     |
+| 14  | Definitions & Boilerplate    | Standard | Entire agreement, severability, waiver, notices, counterparts, amendments         |
 
 ### Step 6: Missing Clause Detection
 
@@ -267,11 +280,13 @@ After analyzing the clauses that are present, check for important clauses that a
 absent from the contract. A missing clause can be as significant as a problematic one.
 
 For each of the 14 clause categories:
+
 - If the clause category is entirely absent, flag it
 - Assess whether the absence is acceptable (e.g., no force majeure in a short-term contract may be fine) or a material gap (e.g., no limitation of liability is always a RED flag)
 - Classify the absence as GREEN (not needed for this contract type), YELLOW (should be added), or RED (must be added)
 
 Common missing clause issues:
+
 - No DPA when personal data is processed (RED)
 - No limitation of liability clause (RED)
 - No termination for convenience in a long-term contract (YELLOW)
@@ -368,6 +383,7 @@ Framework** section:
 ### Step 11: CLM Routing
 
 If a Contract Lifecycle Management system is connected via MCP:
+
 - Recommend the appropriate approval workflow based on contract type and risk level
 - Suggest the correct routing path (standard approval, senior counsel, outside counsel)
 - Note any required approvals based on contract value or risk flags
@@ -381,6 +397,7 @@ If no CLM is connected, skip this step.
 ### 1. Limitation of Liability
 
 **Key elements to review:**
+
 - Cap amount (fixed amount, multiple of fees, or uncapped)
 - Whether the cap is mutual or applies differently to each party
 - Carveouts from the cap (what liabilities are uncapped)
@@ -390,12 +407,14 @@ If no CLM is connected, skip this step.
 - Whether the cap applies per-claim, per-year, or aggregate
 
 **Common issues:**
+
 - Cap set at a fraction of fees paid (e.g., "fees paid in the prior 3 months" on a low-value contract)
 - Asymmetric carveouts favoring the drafter
 - Broad carveouts that effectively eliminate the cap (e.g., "any breach of Section X" where Section X covers most obligations)
 - No consequential damages exclusion for one party's breaches
 
 [JURISDICTION-SPECIFIC] Key variations:
+
 - **Common law jurisdictions**: Check whether statutory reasonableness tests apply to exclusion clauses (e.g., UCTA in England, unconscionability in the US) [VERIFY]
 - **Civil law jurisdictions**: Check whether liability for intentional fault (dolus/Vorsatz/wina umyslna) can be excluded — many civil codes prohibit this [VERIFY]
 - **Consumer contracts**: Additional mandatory protections typically apply [VERIFY]
@@ -403,6 +422,7 @@ If no CLM is connected, skip this step.
 ### 2. Indemnification
 
 **Key elements to review:**
+
 - Whether indemnification is mutual or unilateral
 - Scope: what triggers the obligation (IP infringement, data breach, bodily injury, breach of representations)
 - Whether indemnification is capped (subject to the overall liability cap, or uncapped)
@@ -411,18 +431,21 @@ If no CLM is connected, skip this step.
 - Relationship between indemnification and the limitation of liability clause
 
 **Common issues:**
+
 - Unilateral indemnification for IP infringement when both parties contribute IP
 - Indemnification for "any breach" (too broad — effectively uncaps liability)
 - No right to control defense of claims
 - Indemnification obligations that survive termination indefinitely
 
 [JURISDICTION-SPECIFIC] Key variations:
+
 - **Common law**: Indemnity is a primary obligation distinct from damages for breach. Different remoteness rules and limitation periods may apply [VERIFY]
 - **Civil law**: Indemnification (indemnity) is not a native concept in many civil law systems. It is used under freedom of contract but may be interpreted differently. Distinguish from suretyship/guarantee [VERIFY]
 
 ### 3. Intellectual Property
 
 **Key elements to review:**
+
 - Ownership of pre-existing IP (each party should retain their own)
 - Ownership of IP developed during the engagement
 - Work-for-hire or assignment provisions and their scope
@@ -432,12 +455,14 @@ If no CLM is connected, skip this step.
 - Moral rights waivers (where applicable)
 
 **Common issues:**
+
 - Broad IP assignment that could capture the customer's pre-existing IP
 - Work-for-hire provisions extending beyond the deliverables
 - Unrestricted feedback clauses granting perpetual, irrevocable licenses
 - License scope broader than needed for the business relationship
 
 [JURISDICTION-SPECIFIC] Key variations:
+
 - **US**: Work-for-hire doctrine applies to certain categories of works. Copyright assignment does not require specific formalities beyond a signed writing [VERIFY]
 - **England & Wales**: No work-for-hire doctrine. Copyright assignment must be in writing (CDPA s.90(3)). Moral rights can be waived but not assigned [VERIFY]
 - **Civil law (EU)**: Many jurisdictions require specifying fields of exploitation for copyright transfers. Moral rights are often inalienable [VERIFY]
@@ -445,6 +470,7 @@ If no CLM is connected, skip this step.
 ### 4. Data Protection
 
 **Key elements to review:**
+
 - Whether a Data Processing Agreement/Addendum (DPA) is required
 - Data controller vs. data processor classification
 - Sub-processor rights and notification obligations
@@ -455,6 +481,7 @@ If no CLM is connected, skip this step.
 - Purpose limitation for data processing
 
 **Common issues:**
+
 - No DPA when personal data is being processed
 - Blanket authorization for sub-processors without notification
 - Breach notification timeline longer than regulatory requirements
@@ -462,6 +489,7 @@ If no CLM is connected, skip this step.
 - Inadequate data deletion provisions
 
 [JURISDICTION-SPECIFIC] Key variations:
+
 - **EU (GDPR)**: 72-hour breach notification to supervisory authority. SCCs or adequacy decisions for transfers. Art. 28 processor requirements [VERIFY]
 - **UK**: UK GDPR + DPA 2018. UK IDTA or UK Addendum to EU SCCs for transfers. ICO is the supervisory authority [VERIFY]
 - **US**: Patchwork of state laws (CCPA/CPRA, state breach notification). No single federal data protection law [VERIFY]
@@ -470,6 +498,7 @@ If no CLM is connected, skip this step.
 ### 5. Term and Termination
 
 **Key elements to review:**
+
 - Initial term and renewal terms
 - Auto-renewal provisions and notice periods
 - Termination for convenience: available? notice period? early termination fees?
@@ -478,6 +507,7 @@ If no CLM is connected, skip this step.
 - Wind-down period and obligations
 
 **Common issues:**
+
 - Long initial terms with no termination for convenience
 - Auto-renewal with short notice windows (e.g., 30-day notice for annual renewal)
 - No cure period for termination for cause
@@ -485,6 +515,7 @@ If no CLM is connected, skip this step.
 - Survival clauses that effectively extend the agreement indefinitely
 
 [JURISDICTION-SPECIFIC] Key variations:
+
 - **Common law**: Termination for breach generally requires a "material" or "repudiatory" breach. Contractual termination clauses supplement common law rights [VERIFY]
 - **Civil law**: Termination rights may be governed by specific code provisions. Open-ended obligations often have a statutory right to terminate on notice [VERIFY]
 - **Early termination fees**: Check whether the jurisdiction's penalty/liquidated damages doctrine constrains these (e.g., UK penalty doctrine, civil law miarkowanie) [VERIFY]
@@ -492,6 +523,7 @@ If no CLM is connected, skip this step.
 ### 6. Governing Law and Dispute Resolution
 
 **Key elements to review:**
+
 - Choice of law (governing jurisdiction)
 - Dispute resolution mechanism (litigation, arbitration, mediation, expert determination)
 - Venue and jurisdiction for litigation
@@ -500,12 +532,14 @@ If no CLM is connected, skip this step.
 - Costs and fees provisions
 
 **Common issues:**
+
 - Unfavorable jurisdiction (unusual or remote venue)
 - Mandatory arbitration with rules favorable to the drafter
 - No escalation process before formal dispute resolution
 - Unclear or "pathological" arbitration clauses
 
 [JURISDICTION-SPECIFIC] Key variations:
+
 - **US**: Jury waiver, class action waiver, and prevailing party attorney's fees are common and meaningful provisions [VERIFY]
 - **England & Wales**: No jury trials or class actions in commercial disputes. "Loser pays" is the default. Exclusive vs. non-exclusive jurisdiction matters [VERIFY]
 - **Civil law**: Many jurisdictions do not have jury trials or US-style class actions. Concepts like "jury waiver" may be meaningless [VERIFY]
@@ -517,6 +551,7 @@ For the following clause categories, review presence, reasonableness, and alignm
 the playbook. Flag deviations using the same GREEN/YELLOW/RED system.
 
 **7. Confidentiality**
+
 - [ ] Scope of confidential information defined and reasonable
 - [ ] Term of confidentiality obligations appropriate (typically 2-5 years, or indefinite for trade secrets)
 - [ ] Standard carveouts present (public domain, independent development, required by law)
@@ -524,6 +559,7 @@ the playbook. Flag deviations using the same GREEN/YELLOW/RED system.
 - [ ] Permitted disclosures (affiliates, advisors, under NDA)
 
 **8. Representations and Warranties**
+
 - [ ] Scope appropriate for the contract type
 - [ ] Disclaimers reasonable (e.g., "AS IS" for software)
 - [ ] Survival period defined
@@ -531,24 +567,28 @@ the playbook. Flag deviations using the same GREEN/YELLOW/RED system.
 - [ ] Warranty of authority and enforceability included
 
 **9. Insurance**
+
 - [ ] Coverage types and minimums specified
 - [ ] Evidence of coverage (certificates) required
 - [ ] Additional insured status requested where appropriate
 - [ ] Coverage period extends through the engagement and a tail period
 
 **10. Assignment**
+
 - [ ] Consent required for assignment (or "not to be unreasonably withheld")
 - [ ] Change of control provisions addressed
 - [ ] Exceptions for affiliates or corporate restructuring
 - [ ] Anti-assignment clause is mutual
 
 **11. Force Majeure**
+
 - [ ] Events are specifically enumerated (not just "acts of God")
 - [ ] Notification and mitigation obligations specified
 - [ ] Duration threshold for triggering termination rights
 - [ ] Pandemic/epidemic explicitly addressed or excluded
 
 **12. Payment Terms**
+
 - [ ] Net payment terms specified (Net 30, Net 60, etc.)
 - [ ] Late payment interest and consequences defined
 - [ ] Tax responsibilities clearly allocated
@@ -557,6 +597,7 @@ the playbook. Flag deviations using the same GREEN/YELLOW/RED system.
 - [ ] Currency and payment method specified
 
 **13. Compliance and Regulatory**
+
 - [ ] Anti-bribery and anti-corruption representations and obligations
 - [ ] Sanctions and export control compliance
 - [ ] Modern slavery / human trafficking statement (where required by law)
@@ -565,6 +606,7 @@ the playbook. Flag deviations using the same GREEN/YELLOW/RED system.
 - [ ] Consequences of compliance breach (typically a termination trigger)
 
 **14. Definitions and Boilerplate**
+
 - [ ] Key terms defined consistently and used throughout
 - [ ] Entire agreement / integration clause present
 - [ ] Severability clause present
@@ -585,6 +627,7 @@ The clause aligns with or is better than the organization's standard position. M
 variations that are commercially reasonable and do not materially increase risk.
 
 **Examples:**
+
 - Liability cap at 18 months of fees when standard is 12 months (better for the customer)
 - Mutual NDA term of 2 years when standard is 3 years (shorter but reasonable)
 - Governing law in a well-established commercial jurisdiction close to the preferred one
@@ -598,6 +641,7 @@ common in the market but not the organization's preference. Requires attention a
 negotiation, but not escalation.
 
 **Examples:**
+
 - Liability cap at 6 months of fees when standard is 12 months
 - Unilateral indemnification for IP infringement when standard is mutual
 - Auto-renewal with 60-day notice when standard is 90 days
@@ -613,6 +657,7 @@ poses material risk. Requires senior counsel review, outside counsel involvement
 business decision-maker sign-off.
 
 **Examples:**
+
 - Uncapped liability or no limitation of liability clause
 - Unilateral broad indemnification with no cap
 - IP assignment of pre-existing IP
@@ -630,6 +675,7 @@ market-standard alternative language. Estimate exposure. Recommend escalation pa
 ## Redline Format
 
 For each redline:
+
 ```
 **Clause**: [Section reference and clause name]
 **Current language**: "[exact quote from the contract]"
@@ -659,6 +705,7 @@ When presenting redlines, organize by negotiation priority:
 ### Tier 1 — Must-Haves (Deal Breakers)
 
 Issues where the organization cannot proceed without resolution:
+
 - Uncapped or materially insufficient liability protections
 - Missing data protection requirements for regulated data
 - IP provisions that could jeopardize core assets
@@ -669,6 +716,7 @@ Issues where the organization cannot proceed without resolution:
 ### Tier 2 — Should-Haves (Strong Preferences)
 
 Issues that materially affect risk but have negotiation room:
+
 - Liability cap adjustments within range
 - Indemnification scope and mutuality
 - Termination flexibility and cure periods
@@ -678,6 +726,7 @@ Issues that materially affect risk but have negotiation room:
 ### Tier 3 — Nice-to-Haves (Concession Candidates)
 
 Issues that improve the position but can be conceded strategically:
+
 - Preferred governing law (if alternative is acceptable)
 - Notice period preferences
 - Minor definitional improvements
@@ -714,29 +763,32 @@ of a standard position, note it for playbook update.
 Run these 5 gates silently before delivering any output. If any gate fails, revise before
 delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, regulation, or established principle | Add citation or mark as "[UNVERIFIED — counsel to confirm]" |
-| **Format** | All citations follow a consistent, recognizable format for the jurisdiction | Fix format |
-| **Currency** | Every cited provision checked for amendments or repeal against authoritative sources where accessible | Flag as "[CHECK CURRENCY — may have been amended]" |
-| **Domain** | Analysis stays within the contract's governing law. No assumptions from other jurisdictions leaking in | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated, not hidden. If you are not certain of a legal position, say so | Add confidence qualifier |
+| Gate           | Rule                                                                                                   | Fail Action                                                 |
+| -------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, regulation, or established principle                       | Add citation or mark as "[UNVERIFIED — counsel to confirm]" |
+| **Format**     | All citations follow a consistent, recognizable format for the jurisdiction                            | Fix format                                                  |
+| **Currency**   | Every cited provision checked for amendments or repeal against authoritative sources where accessible  | Flag as "[CHECK CURRENCY — may have been amended]"          |
+| **Domain**     | Analysis stays within the contract's governing law. No assumptions from other jurisdictions leaking in | Remove or flag jurisdictional bleed                         |
+| **Confidence** | Uncertainty explicitly stated, not hidden. If you are not certain of a legal position, say so          | Add confidence qualifier                                    |
 
 ### Self-Interrogation for RED Items
 
 For any clause classified as RED, apply this 3-pass self-interrogation before delivering:
 
 **Pass 1 — Legal Chain Integrity**:
+
 - Does the risk assessment follow logically from the statute/principle cited?
 - Would a court in this jurisdiction actually reach this conclusion on these facts?
 - Is there a counter-argument the counterparty's counsel will make?
 
 **Pass 2 — Completeness**:
+
 - Have all relevant statutes and regulations been considered?
 - Have any relevant cases or principles been missed?
 - Are there regulatory dimensions not yet considered?
 
 **Pass 3 — Challenge**:
+
 - What is the strongest argument that this clause IS acceptable?
 - Under what commercial circumstances might a reasonable lawyer accept this risk?
 - Is the RED classification proportionate, or is this actually YELLOW with mitigations?
@@ -748,13 +800,13 @@ with `self_interrogation: PASS` or `self_interrogation: REVISED`.
 
 For each material clause analysis, assign a confidence level:
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95-1.0 | Settled law, clear statute, no ambiguity | State with confidence |
-| **High** | 0.80-0.94 | Strong authority, minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60-0.79 | Good arguments but reasonable minds could differ | State with explicit reasoning and contra-indicators |
-| **Possible** | 0.40-0.59 | Genuinely uncertain, competing authorities | Flag for counsel review with both sides of the argument |
-| **Unlikely** | 0.0-0.39 | Weak basis, speculative | Do not assert; flag as "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                          | Action                                                   |
+| ------------ | --------- | ------------------------------------------------ | -------------------------------------------------------- |
+| **Definite** | 0.95-1.0  | Settled law, clear statute, no ambiguity         | State with confidence                                    |
+| **High**     | 0.80-0.94 | Strong authority, minor interpretation questions | State with brief caveat                                  |
+| **Probable** | 0.60-0.79 | Good arguments but reasonable minds could differ | State with explicit reasoning and contra-indicators      |
+| **Possible** | 0.40-0.59 | Genuinely uncertain, competing authorities       | Flag for counsel review with both sides of the argument  |
+| **Unlikely** | 0.0-0.39  | Weak basis, speculative                          | Do not assert; flag as "[UNCERTAIN — counsel to advise]" |
 
 ---
 
@@ -796,14 +848,14 @@ glass_box:
 For every contract, identify ALL affected stakeholders — not just the two contracting
 parties:
 
-| Stakeholder | Role | Affected Clauses | Impact | Action Required |
-|-------------|------|-----------------|--------|-----------------|
-| [Party A] | [Customer] | [All] | Primary | Sign / Negotiate |
-| [Party B] | [Supplier] | [All] | Primary | Sign / Negotiate |
-| [Data subjects] | Third party | Data protection | Indirect | DPA required |
-| [Sub-processors] | Third party | Data protection, liability | Indirect | Notification rights |
-| [Regulator] | Regulator | Data protection, compliance | Compliance | Breach notification |
-| [Employees] | Internal | IP, confidentiality | Indirect | Employment contract alignment |
+| Stakeholder      | Role        | Affected Clauses            | Impact     | Action Required               |
+| ---------------- | ----------- | --------------------------- | ---------- | ----------------------------- |
+| [Party A]        | [Customer]  | [All]                       | Primary    | Sign / Negotiate              |
+| [Party B]        | [Supplier]  | [All]                       | Primary    | Sign / Negotiate              |
+| [Data subjects]  | Third party | Data protection             | Indirect   | DPA required                  |
+| [Sub-processors] | Third party | Data protection, liability  | Indirect   | Notification rights           |
+| [Regulator]      | Regulator   | Data protection, compliance | Compliance | Breach notification           |
+| [Employees]      | Internal    | IP, confidentiality         | Indirect   | Employment contract alignment |
 
 This prevents the common failure of reviewing a contract as a two-party document when it
 affects multiple stakeholders with different interests and regulatory requirements.
@@ -851,6 +903,7 @@ Explicit catalogue of what NOT to do in contract review:
 Apply plain-language discipline to all output:
 
 **For redline rationales** (shared with counterparty's counsel):
+
 - Plain language. No jargon or filler.
 - Active voice: "This clause excludes liability for negligence" not "Liability for negligence is excluded by this clause"
 - Short sentences. One point per sentence.
@@ -858,12 +911,14 @@ Apply plain-language discipline to all output:
 - Specific, not vague: cite the relevant provision rather than saying "this may have enforceability issues"
 
 **For internal analysis**:
+
 - Same plain-language standards
 - May include more technical legal analysis
 - Confidence qualifiers where appropriate
 - Glass Box audit trail appended
 
 **Quality gates before delivery**:
+
 1. Can a non-lawyer business stakeholder understand the executive summary?
 2. Can the counterparty's counsel understand and respond to each redline?
 3. Is every legal claim backed by a specific citation (or flagged [VERIFY])?
@@ -879,6 +934,7 @@ legalcode-mcp is a law, regulatory, and case law database with powerful search a
 jurisdictions.
 
 **With legalcode-mcp connected (preferred):**
+
 - In Step 4, search for jurisdiction-relevant statutes, regulations, and case law
 - Save the most relevant results to a local temp file (`/tmp/legalcode-review-authority.md`)
 - Reference verified authority from the temp file throughout the clause analysis
@@ -887,6 +943,7 @@ jurisdictions.
 - Mark all legalcode-mcp-sourced citations as VERIFIED in the Glass Box audit trail
 
 **Without legalcode-mcp:**
+
 - Mark all statutory and case law references with [VERIFY]
 - Note in the Glass Box audit trail: `external_tools_used: "None — manual verification required"`
 - Include a prominent notice that legal citations require independent verification
@@ -933,6 +990,7 @@ Structure the final deliverable as:
 **Deviation**: [description of gap]
 **Business impact**: [what this means practically]
 **Redline** (if YELLOW or RED):
+
 > [Specific proposed language]
 
 [Repeat for each clause category]
@@ -980,6 +1038,7 @@ This skill is jurisdiction-agnostic by design. To create a jurisdiction-specific
 6. Add relevant case law and statutory framework sections
 
 Existing jurisdiction-specific variants:
+
 - **England & Wales**: `imported-uk-legal-plugins--skills-uk-legal-contract-review/SKILL.md`
 - **Poland**: `imported-iura-plugins--iura-pl-skills-contract-review/SKILL.md`
 

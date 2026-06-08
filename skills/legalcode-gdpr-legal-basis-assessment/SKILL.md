@@ -51,6 +51,7 @@ DPC, January 2023), LinkedIn €310M (Irish DPC, October 2024), and Meta €479M
 AEPD, 2025) all stemming from improperly applied or switched legal bases.
 
 **Covers:**
+
 - Adequacy assessment of all six Art. 6(1) lawful bases (a through f)
 - Screening triage to identify viable candidate bases quickly
 - Deep-dive analysis per viable basis: eligibility criteria, necessity test, and
@@ -70,6 +71,7 @@ AEPD, 2025) all stemming from improperly applied or switched legal bases.
 - Glass Box audit trail for supervisory authority demonstrability
 
 **Does not:**
+
 - Conduct a full Legitimate Interest Assessment (LIA) — see
   `legalcode-legitimate-interest-assessment` for the complete three-part test
 - Generate a DPIA — see `legalcode-dpia-generator`
@@ -80,6 +82,7 @@ AEPD, 2025) all stemming from improperly applied or switched legal bases.
 - Guarantee against supervisory authority enforcement action
 
 **Complementary skills in the GDPR skill family:**
+
 - `legalcode-legitimate-interest-assessment` — deep Art. 6(1)(f) three-part test
 - `legalcode-ropa-generator` — records the output of this skill in the Art. 30 register
 - `legalcode-dpia-generator` — triggered by high-risk processing identified here
@@ -92,13 +95,14 @@ AEPD, 2025) all stemming from improperly applied or switched legal bases.
 
 This skill operates primarily under EU GDPR and UK GDPR, with Swiss FADP annotation.
 
-| Regime | Primary Instrument | Supervisory Authority | Key Guidance |
-|--------|-------------------|-----------------------|--------------|
-| **EU GDPR** | Regulation (EU) 2016/679 | Lead SA + EDPB | EDPB Guidelines 2/2019 (Art. 6(1)(b)); EDPB Guidelines 1/2024 (Art. 6(1)(f)); EDPB Guidelines 05/2020 (consent) |
-| **UK GDPR** | UK GDPR + Data Protection Act 2018 (DPA 2018) | ICO | ICO lawful basis guidance; DPA 2018 Schedule 1 (special categories); DUA Act 2025 |
-| **Swiss FADP** | Federal Act on Data Protection (nDSG), eff. 1 Sep 2023 | FDPIC | FDPIC guidance [VERIFY — comprehensive guidance pending as of 2026] |
+| Regime         | Primary Instrument                                     | Supervisory Authority | Key Guidance                                                                                                    |
+| -------------- | ------------------------------------------------------ | --------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **EU GDPR**    | Regulation (EU) 2016/679                               | Lead SA + EDPB        | EDPB Guidelines 2/2019 (Art. 6(1)(b)); EDPB Guidelines 1/2024 (Art. 6(1)(f)); EDPB Guidelines 05/2020 (consent) |
+| **UK GDPR**    | UK GDPR + Data Protection Act 2018 (DPA 2018)          | ICO                   | ICO lawful basis guidance; DPA 2018 Schedule 1 (special categories); DUA Act 2025                               |
+| **Swiss FADP** | Federal Act on Data Protection (nDSG), eff. 1 Sep 2023 | FDPIC                 | FDPIC guidance [VERIFY — comprehensive guidance pending as of 2026]                                             |
 
 **Primary legal authority:**
+
 - **Art. 6** — Lawful bases for processing; six conditions enumerated
 - **Art. 7** — Consent conditions (withdrawal obligation; burden of proof on controller)
 - **Art. 8** — Children's consent for information society services
@@ -111,6 +115,7 @@ This skill operates primarily under EU GDPR and UK GDPR, with Swiss FADP annotat
 - **Art. 30** — ROPA: must record the lawful basis for every processing activity
 
 **Key guidance documents:**
+
 - EDPB Guidelines 2/2019 — Processing of personal data under Art. 6(1)(b) [VERIFY current version]
 - EDPB Guidelines 05/2020 — Consent under Regulation 2016/679
 - EDPB Guidelines 1/2024 — Processing of personal data based on legitimate interests (Art. 6(1)(f))
@@ -118,12 +123,14 @@ This skill operates primarily under EU GDPR and UK GDPR, with Swiss FADP annotat
 - WP29 Opinion 06/2014 — Concept of legitimate interests
 
 **Major enforcement precedents (basis selection):**
+
 - Meta €390M (Irish DPC, January 2023) — Art. 6(1)(b) inapplicable for behavioural advertising; processing not necessary for contract performance
 - LinkedIn €310M (Irish DPC, October 2024) — Art. 6(1)(f) failed for targeted advertising; data subjects' rights override
 - Meta €479M (AEPD, Spain, 2025) — Basis switch from consent to contract not permitted
 - CJEU C-621/22 (KNLTB, 2024) — Commercial interests CAN constitute legitimate interest; balancing test remains critical
 
 [JURISDICTION-SPECIFIC] Before final output, localise:
+
 - Mandatory national derogations restricting specific bases in health, employment,
   financial services, and telecommunications sectors (Art. 23 GDPR)
 - Member state age of consent thresholds for Art. 8 (13–16; EU default 16; UK 13)
@@ -142,6 +149,7 @@ ask the user before proceeding. If the information is already available, skip th
 prompt and proceed using stated assumptions.
 
 CLARIFY topics in this skill (all in Step 2):
+
 1. Jurisdiction(s) — EU / UK / Swiss / multi-regime
 2. Data subject categories — employees, consumers, children, patients, vulnerable groups
 3. Data categories — ordinary personal data, special category (Art. 9), criminal (Art. 10), children's
@@ -158,6 +166,7 @@ CLARIFY topics in this skill (all in Step 2):
 ### Step 1: Accept Input
 
 Accept the processing activity in any of these formats:
+
 - **Free text description**: "We want to process [data categories] for [purpose] by [means]"
 - **ROPA extract**: An existing or draft record of processing activities entry
 - **Project brief or technical specification**: Product documentation, system design doc
@@ -165,6 +174,7 @@ Accept the processing activity in any of these formats:
 - **Multiple activities**: A list of processing activities for batch legal basis review
 
 If no description is provided, prompt the user to supply one. At minimum, collect:
+
 - Processing **purpose** — what the organisation is trying to achieve
 - **Data categories** — what personal data is involved
 - **Data subjects** — who the data relates to (employees, customers, public, children)
@@ -183,59 +193,67 @@ activity separately, then produce a combined legal basis register in Step 10.
 structured options. Skip any question already answered by the input material.
 
 **1. Which jurisdiction(s) apply?**
+
 - Options: EU GDPR only, UK GDPR only, Swiss FADP only, EU + UK, EU + UK + Swiss, Other
-- *Why this matters*: Regime differences affect which Art. 9(2) conditions apply, the
+- _Why this matters_: Regime differences affect which Art. 9(2) conditions apply, the
   children's age threshold (EU: 16; UK: 13), and whether UK DUA Act 2025 Recognised
   Legitimate Interests are available.
 
 **2. Who are the data subjects?**
+
 - Options: Employees/staff, Consumers/customers, General public, Children (under 18),
   Patients/health service users, People in financial difficulty, Multiple groups
-- *Why this matters*: Vulnerable data subjects attract heightened protection and may
+- _Why this matters_: Vulnerable data subjects attract heightened protection and may
   restrict which bases are viable (e.g., consent is rarely freely given by employees
   due to power imbalance).
 
 **3. What categories of data are involved?**
+
 - Multi-select: Ordinary personal data, Special-category data under Art. 9 (health,
   biometric, genetic, racial/ethnic origin, political opinions, religious beliefs, trade
   union membership, sex life, sexual orientation), Criminal conviction/offence data
   under Art. 10, Children's data, Financial data, Location data
-- *Why this matters*: Special-category and criminal data require a separate legal
+- _Why this matters_: Special-category and criminal data require a separate legal
   condition (Art. 9(2) or Art. 10) in addition to an Art. 6 basis. Children's data
   triggers Art. 8 age/parental consent requirements.
 
 **4. What type of processing is this?**
+
 - Options: Marketing/advertising, Fraud prevention/security, Contract performance,
   Employment management, Legal/regulatory compliance, Research/analytics, Profiling,
   Intra-group transfers, Public service delivery, Medical treatment, Other
-- *Why this matters*: Processing type directly signals which bases are viable (e.g.,
+- _Why this matters_: Processing type directly signals which bases are viable (e.g.,
   contract performance is strongly linked to Art. 6(1)(b); legal compliance is strongly
   linked to Art. 6(1)(c)) and which EDPB guidance applies.
 
 **5. Is the controller a public authority?**
+
 - Options: Yes — public authority acting in official capacity, Yes — public body but
   acting outside official functions, No — private controller
-- *Why this matters*: Public authorities acting in official capacity **cannot** rely on
+- _Why this matters_: Public authorities acting in official capacity **cannot** rely on
   Art. 6(1)(f) (legitimate interests) for official functions per Art. 6(1) final clause.
 
 **6. Risk tolerance / escalation approach?**
+
 - Options: Conservative (flag CONDITIONAL outcomes, require explicit mitigations before
   proceeding), Pragmatic (accept CONDITIONAL with documented mitigations), Strict (any
   REQUIRES REVIEW triggers escalation to legal counsel)
-- *Why this matters*: Affects how borderline basis assessments are classified and whether
+- _Why this matters_: Affects how borderline basis assessments are classified and whether
   REQUIRES REVIEW findings trigger immediate remediation or documented acceptance.
 
 **7. ROPA integration context?**
+
 - Options: Assessing a new processing activity (no ROPA entry exists), Auditing an
   existing ROPA entry (current basis needs validation), Batch audit of multiple ROPA
   activities
-- *Why this matters*: Determines the output format — standalone assessment report vs.
+- _Why this matters_: Determines the output format — standalone assessment report vs.
   ROPA field update vs. bulk assessment spreadsheet.
 
 **8. Prior assessments completed?**
+
 - Options: Consent already obtained (provide details), LIA already conducted (provide
   file), DPIA already conducted (provide file), No prior assessments
-- *Why this matters*: If consent was previously obtained, assess whether it remains
+- _Why this matters_: If consent was previously obtained, assess whether it remains
   valid. If LIA was conducted, incorporate its conclusions into the Art. 6(1)(f) analysis
   rather than repeating the full three-part test.
 
@@ -249,18 +267,19 @@ eligible.
 **3a. Entity type constraint (public authority exclusion)**
 
 If the controller is a public authority acting in official capacity:
+
 - **ELIMINATE** Art. 6(1)(f) (legitimate interests) from viable candidates
 - Add note: "Public authority acting in official capacity — Art. 6(1)(f) not available
   per final clause of Art. 6(1) GDPR"
 
 **3b. Data category screening**
 
-| Trigger | Art. overlay required | Action |
-|---------|----------------------|--------|
-| Health, biometric, genetic, racial/ethnic origin, political opinion, religious/philosophical belief, trade union membership, sex life, or sexual orientation data | Art. 9 overlay | Flag for Step 7 |
-| Criminal conviction, offence, or related security measure data | Art. 10 overlay | Flag for Step 8 |
-| Data relating to individuals under 18 in an Information Society Service context | Art. 8 overlay | Flag for Step 9 |
-| None of the above | No overlay | Proceed to Step 4 |
+| Trigger                                                                                                                                                           | Art. overlay required | Action            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ----------------- |
+| Health, biometric, genetic, racial/ethnic origin, political opinion, religious/philosophical belief, trade union membership, sex life, or sexual orientation data | Art. 9 overlay        | Flag for Step 7   |
+| Criminal conviction, offence, or related security measure data                                                                                                    | Art. 10 overlay       | Flag for Step 8   |
+| Data relating to individuals under 18 in an Information Society Service context                                                                                   | Art. 8 overlay        | Flag for Step 9   |
+| None of the above                                                                                                                                                 | No overlay            | Proceed to Step 4 |
 
 Note: Art. 6 basis and Art. 9/10 conditions are **separate requirements**. Both must be
 satisfied for special-category or criminal data processing. A valid Art. 6 basis alone
@@ -279,19 +298,20 @@ to the batch legal basis register in Step 10.
 Screen all six Art. 6 bases with a quick pass/fail filter to identify viable candidates
 for deep-dive analysis in Step 5. Assign each a preliminary triage status.
 
-| Basis | Triage question | Preliminary status |
-|-------|----------------|-------------------|
-| **Art. 6(1)(a) — Consent** | Is genuine, freely given, informed, specific, unambiguous consent obtainable? Is the processing one where consent is practical (not employment context, not required for core service)? | VIABLE / UNCERTAIN / NOT VIABLE |
-| **Art. 6(1)(b) — Contract** | Is the controller itself a party to the contract? Is the processing objectively necessary — not merely convenient — for contract performance? Does the data subject have a pre-existing or pending contractual relationship with this controller? | VIABLE / UNCERTAIN / NOT VIABLE |
-| **Art. 6(1)(c) — Legal Obligation** | Can a specific EU or member state law obligation (not a contractual obligation, not foreign law) be identified that requires this exact processing? | VIABLE / UNCERTAIN / NOT VIABLE |
-| **Art. 6(1)(d) — Vital Interests** | Does the processing protect someone's physical life (as a last resort, when consent is unobtainable)? Note: this basis is narrow and rarely applies in commercial processing. | VIABLE / UNCERTAIN / NOT VIABLE |
-| **Art. 6(1)(e) — Public Task** | Is the controller a public authority or body acting in the public interest under clear member state law authority? Is processing necessary for that specific public function? | VIABLE / UNCERTAIN / NOT VIABLE |
-| **Art. 6(1)(f) — Legitimate Interests** | Does a genuine, specific, real and present legitimate interest exist? Is the controller NOT a public authority acting in official capacity? | VIABLE / UNCERTAIN / NOT VIABLE |
+| Basis                                   | Triage question                                                                                                                                                                                                                                   | Preliminary status              |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| **Art. 6(1)(a) — Consent**              | Is genuine, freely given, informed, specific, unambiguous consent obtainable? Is the processing one where consent is practical (not employment context, not required for core service)?                                                           | VIABLE / UNCERTAIN / NOT VIABLE |
+| **Art. 6(1)(b) — Contract**             | Is the controller itself a party to the contract? Is the processing objectively necessary — not merely convenient — for contract performance? Does the data subject have a pre-existing or pending contractual relationship with this controller? | VIABLE / UNCERTAIN / NOT VIABLE |
+| **Art. 6(1)(c) — Legal Obligation**     | Can a specific EU or member state law obligation (not a contractual obligation, not foreign law) be identified that requires this exact processing?                                                                                               | VIABLE / UNCERTAIN / NOT VIABLE |
+| **Art. 6(1)(d) — Vital Interests**      | Does the processing protect someone's physical life (as a last resort, when consent is unobtainable)? Note: this basis is narrow and rarely applies in commercial processing.                                                                     | VIABLE / UNCERTAIN / NOT VIABLE |
+| **Art. 6(1)(e) — Public Task**          | Is the controller a public authority or body acting in the public interest under clear member state law authority? Is processing necessary for that specific public function?                                                                     | VIABLE / UNCERTAIN / NOT VIABLE |
+| **Art. 6(1)(f) — Legitimate Interests** | Does a genuine, specific, real and present legitimate interest exist? Is the controller NOT a public authority acting in official capacity?                                                                                                       | VIABLE / UNCERTAIN / NOT VIABLE |
 
 For each VIABLE or UNCERTAIN candidate: proceed to deep-dive in Step 5.
 For NOT VIABLE candidates: record reason and exclude from further analysis.
 
 **CLARIFY** — If fewer than two bases appear viable after triage:
+
 - If only one basis appears viable: confirm with the user before proceeding ("Based on
   the processing description, only Art. 6(1)(c) [legal obligation] appears viable. Is
   there additional context about the purpose or relationship that might open other bases?")
@@ -315,21 +335,22 @@ or **INADEQUATE** (basis conditions not met).
 
 **Eligibility criteria checklist:**
 
-| Criterion | GDPR requirement | Assessment question | Status |
-|-----------|-----------------|---------------------|--------|
-| **Freely given** | Art. 4(11); Recitals 42-43 | Is consent genuinely voluntary? No negative consequence for refusal? No power imbalance (employment, state, financial dependency)? Not bundled with unrelated processing? | PASS / FAIL / PARTIAL |
-| **Specific** | Art. 4(11); Art. 7(2) | Is consent requested separately for each distinct processing purpose? Not a blanket or generic consent? | PASS / FAIL / PARTIAL |
-| **Informed** | Art. 7(2); Arts. 13/14 | Is the controller identified? Is the processing purpose disclosed? Is the right to withdraw explained? Is the right to object or erasure explained? | PASS / FAIL / PARTIAL |
-| **Unambiguous affirmative action** | Art. 4(11); Recital 32 | Does consent require a positive act (ticking a box, clicking "Accept")? No pre-ticked boxes, no silence, no inactivity treated as consent? | PASS / FAIL / PARTIAL |
-| **Withdrawable** | Art. 7(3) | Can withdrawal be exercised at any time, easily, without detriment? Is withdrawal as easy as giving consent? | PASS / FAIL / PARTIAL |
-| **Documented** | Art. 7(1) | Can the controller demonstrate that consent was given (date, mechanism, version of notice)? | PASS / FAIL / PARTIAL |
-| **Not conditional** | Recital 43 | Is consent not a condition for accessing a service unless the processing is strictly necessary for that service? | PASS / FAIL / PARTIAL |
-| **Not exploiting imbalance** | Art. 7(4) | For employment context: is genuine freedom of choice demonstrated despite the employer-employee power imbalance? (Note: EDPB considers this rarely possible.) | PASS / FAIL / N/A |
+| Criterion                          | GDPR requirement           | Assessment question                                                                                                                                                       | Status                |
+| ---------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| **Freely given**                   | Art. 4(11); Recitals 42-43 | Is consent genuinely voluntary? No negative consequence for refusal? No power imbalance (employment, state, financial dependency)? Not bundled with unrelated processing? | PASS / FAIL / PARTIAL |
+| **Specific**                       | Art. 4(11); Art. 7(2)      | Is consent requested separately for each distinct processing purpose? Not a blanket or generic consent?                                                                   | PASS / FAIL / PARTIAL |
+| **Informed**                       | Art. 7(2); Arts. 13/14     | Is the controller identified? Is the processing purpose disclosed? Is the right to withdraw explained? Is the right to object or erasure explained?                       | PASS / FAIL / PARTIAL |
+| **Unambiguous affirmative action** | Art. 4(11); Recital 32     | Does consent require a positive act (ticking a box, clicking "Accept")? No pre-ticked boxes, no silence, no inactivity treated as consent?                                | PASS / FAIL / PARTIAL |
+| **Withdrawable**                   | Art. 7(3)                  | Can withdrawal be exercised at any time, easily, without detriment? Is withdrawal as easy as giving consent?                                                              | PASS / FAIL / PARTIAL |
+| **Documented**                     | Art. 7(1)                  | Can the controller demonstrate that consent was given (date, mechanism, version of notice)?                                                                               | PASS / FAIL / PARTIAL |
+| **Not conditional**                | Recital 43                 | Is consent not a condition for accessing a service unless the processing is strictly necessary for that service?                                                          | PASS / FAIL / PARTIAL |
+| **Not exploiting imbalance**       | Art. 7(4)                  | For employment context: is genuine freedom of choice demonstrated despite the employer-employee power imbalance? (Note: EDPB considers this rarely possible.)             | PASS / FAIL / N/A     |
 
 **Necessity assessment (consent-specific):**
 
 Art. 6(1)(a) does not have a necessity test in the same sense as other bases — the
 consent itself provides the lawful basis. However, assess:
+
 - Is consent the most appropriate and robust basis for this processing, or would another
   basis provide greater certainty (e.g., Art. 6(1)(b) for contract, Art. 6(1)(c) for
   legal obligation)?
@@ -349,6 +370,7 @@ consent itself provides the lawful basis. However, assess:
   (Art. 89 — consent may be waived for compatible research)
 
 **Classification:**
+
 - **ADEQUATE**: All eligibility criteria PASS; withdrawal mechanism operational; documented
 - **REQUIRES REVIEW**: One or more criteria PARTIAL; power imbalance risk; documentation gaps
 - **INADEQUATE**: Pre-ticked boxes; bundled consent; no withdrawal mechanism; employment context without demonstrated freedom; not documented
@@ -359,31 +381,33 @@ consent itself provides the lawful basis. However, assess:
 
 **Eligibility criteria checklist:**
 
-| Criterion | GDPR requirement | Assessment question | Status |
-|-----------|-----------------|---------------------|--------|
-| **Controller is party** | Art. 6(1)(b) | Is the controller itself a party to the contract? (Not a third party's contract.) | PASS / FAIL |
-| **Data subject is the contracting party** | Art. 6(1)(b) | Is the data subject the other party to the contract? Processing for a third party's benefit does not satisfy this basis. | PASS / FAIL |
-| **Necessity for performance** | Art. 6(1)(b) | Is the processing **objectively necessary** to perform the contract — not just required because the controller included it in the terms? Apply EDPB Guidelines 2/2019 [VERIFY] "inextricably linked" test. | PASS / FAIL / PARTIAL |
-| **Pre-contractual steps** | Art. 6(1)(b) | If relying on pre-contractual steps: were these steps taken **at the request of the data subject**? Not at the controller's initiative. | PASS / FAIL / N/A |
-| **Purpose limitation** | Art. 5(1)(b) | Is the processing purpose limited to what is necessary for contract performance? Does it extend to purposes that benefit the controller rather than being necessary for the data subject's contract? | PASS / FAIL / PARTIAL |
+| Criterion                                 | GDPR requirement | Assessment question                                                                                                                                                                                        | Status                |
+| ----------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| **Controller is party**                   | Art. 6(1)(b)     | Is the controller itself a party to the contract? (Not a third party's contract.)                                                                                                                          | PASS / FAIL           |
+| **Data subject is the contracting party** | Art. 6(1)(b)     | Is the data subject the other party to the contract? Processing for a third party's benefit does not satisfy this basis.                                                                                   | PASS / FAIL           |
+| **Necessity for performance**             | Art. 6(1)(b)     | Is the processing **objectively necessary** to perform the contract — not just required because the controller included it in the terms? Apply EDPB Guidelines 2/2019 [VERIFY] "inextricably linked" test. | PASS / FAIL / PARTIAL |
+| **Pre-contractual steps**                 | Art. 6(1)(b)     | If relying on pre-contractual steps: were these steps taken **at the request of the data subject**? Not at the controller's initiative.                                                                    | PASS / FAIL / N/A     |
+| **Purpose limitation**                    | Art. 5(1)(b)     | Is the processing purpose limited to what is necessary for contract performance? Does it extend to purposes that benefit the controller rather than being necessary for the data subject's contract?       | PASS / FAIL / PARTIAL |
 
 **EDPB Guidelines 2/2019 necessity test for Art. 6(1)(b):**
 
 Processing is necessary for contract performance only when:
+
 1. The contract **cannot be performed** without the processing; AND
 2. The data subject **cannot reasonably be expected** to receive the contracted service
    without the processing.
 
 **Common FAILS:**
 
-| Processing | Common misapplication | Why it fails |
-|-----------|----------------------|-------------|
-| Fraud analytics on purchase transactions | "Necessary for contract" | Fraud prevention is NOT necessary for delivery of the purchased goods; Art. 6(1)(f) is the appropriate basis |
-| Behavioural advertising to platform users | "Necessary for free service contract" | LinkedIn €310M; Meta €390M — advertising at scale is not necessary to provide the platform service |
-| Location tracking beyond delivery purposes | "Part of the service" | Only location data strictly necessary for the specific delivery is covered |
-| Pre-service prospecting data | "Pre-contractual steps" | Pre-contractual steps must be at the data subject's request; outbound prospecting fails |
+| Processing                                 | Common misapplication                 | Why it fails                                                                                                 |
+| ------------------------------------------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Fraud analytics on purchase transactions   | "Necessary for contract"              | Fraud prevention is NOT necessary for delivery of the purchased goods; Art. 6(1)(f) is the appropriate basis |
+| Behavioural advertising to platform users  | "Necessary for free service contract" | LinkedIn €310M; Meta €390M — advertising at scale is not necessary to provide the platform service           |
+| Location tracking beyond delivery purposes | "Part of the service"                 | Only location data strictly necessary for the specific delivery is covered                                   |
+| Pre-service prospecting data               | "Pre-contractual steps"               | Pre-contractual steps must be at the data subject's request; outbound prospecting fails                      |
 
 **Classification:**
+
 - **ADEQUATE**: Processing inextricably linked to contract performance; would not be possible without it; pre-contractual steps at subject's request
 - **REQUIRES REVIEW**: Processing partially necessary; some elements may exceed necessity; pre-contractual steps ambiguous
 - **INADEQUATE**: Processing for controller's convenience; advertising or analytics beyond service necessity; no contract exists or controller is not a party
@@ -394,23 +418,25 @@ Processing is necessary for contract performance only when:
 
 **Eligibility criteria checklist:**
 
-| Criterion | GDPR requirement | Assessment question | Status |
-|-----------|-----------------|---------------------|--------|
-| **EU/member state law** | Art. 6(1)(c); Art. 6(3) | Can a specific EU regulation or member state law be identified that imposes the obligation? (Not foreign law. Not guidance, soft law, or best practice.) | PASS / FAIL |
-| **Specific and foreseeable** | Recital 45 | Is the obligation sufficiently clear and foreseeable? Vague or implied obligations do not qualify. | PASS / FAIL / PARTIAL |
-| **Necessity** | Art. 6(1)(c) | Is the processing necessary to comply with the obligation — not broader than what the law requires? | PASS / FAIL / PARTIAL |
-| **No excess beyond obligation** | Art. 5(1)(c) | Does the processing go beyond what the specific legal obligation requires? | PASS / FAIL |
-| **Processing serves the public interest** | Art. 6(3) | For EU law obligations: does the processing pursue a legitimate aim of general interest proportionate to the aim? | PASS / FAIL / PARTIAL |
+| Criterion                                 | GDPR requirement        | Assessment question                                                                                                                                      | Status                |
+| ----------------------------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| **EU/member state law**                   | Art. 6(1)(c); Art. 6(3) | Can a specific EU regulation or member state law be identified that imposes the obligation? (Not foreign law. Not guidance, soft law, or best practice.) | PASS / FAIL           |
+| **Specific and foreseeable**              | Recital 45              | Is the obligation sufficiently clear and foreseeable? Vague or implied obligations do not qualify.                                                       | PASS / FAIL / PARTIAL |
+| **Necessity**                             | Art. 6(1)(c)            | Is the processing necessary to comply with the obligation — not broader than what the law requires?                                                      | PASS / FAIL / PARTIAL |
+| **No excess beyond obligation**           | Art. 5(1)(c)            | Does the processing go beyond what the specific legal obligation requires?                                                                               | PASS / FAIL           |
+| **Processing serves the public interest** | Art. 6(3)               | For EU law obligations: does the processing pursue a legitimate aim of general interest proportionate to the aim?                                        | PASS / FAIL / PARTIAL |
 
 **Identify the specific obligation:**
 
 Record the specific legal obligation in full citation format:
+
 ```
 Legal obligation: [Name of statute/regulation], [Jurisdiction], [Section/Article],
 [Obligation text or summary], [Processing required by the obligation]
 ```
 
 Examples of valid legal obligations:
+
 - AML/CTF: UK Proceeds of Crime Act 2002 ss. 327-333 / EU AMLD6
 - Tax: UK HMRC payroll reporting (PAYE) / EU VAT Directive
 - Employment: UK Statutory sick pay reporting / Working Time Regulations 1998
@@ -422,6 +448,7 @@ GDPR itself can be a legal obligation basis for DPA compliance requirements (e.g
 33 breach reporting to supervisory authority).
 
 **Classification:**
+
 - **ADEQUATE**: Specific, identified EU/member state law obligation; processing is strictly necessary to comply; no excess
 - **REQUIRES REVIEW**: Obligation identified but scope of necessary processing is ambiguous; legal analysis required to determine minimum necessary scope
 - **INADEQUATE**: No specific legal obligation identified; obligation is contractual not statutory; foreign law obligation; guidance/soft law; processing exceeds minimum required
@@ -432,18 +459,19 @@ GDPR itself can be a legal obligation basis for DPA compliance requirements (e.g
 
 **Eligibility criteria checklist:**
 
-| Criterion | GDPR requirement | Assessment question | Status |
-|-----------|-----------------|---------------------|--------|
+| Criterion                      | GDPR requirement         | Assessment question                                                                                                                                               | Status      |
+| ------------------------------ | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | **Life-threatening situation** | Art. 6(1)(d); Recital 46 | Is the processing necessary to protect the life of the data subject or another person? Not financial interests, contractual interests, or reputational interests. | PASS / FAIL |
-| **Last resort** | Recital 46 | Could another basis (consent, legal obligation, legitimate interest) have been relied upon instead? Vital interests apply only where other bases are unavailable. | PASS / FAIL |
-| **Consent unobtainable** | Recital 46 | If the processing involves the data subject's own vital interests: is it impossible or unreasonable to obtain consent (e.g., data subject is incapacitated)? | PASS / FAIL |
-| **Necessity** | Art. 6(1)(d) | Is the specific processing activity necessary for the life-protection purpose, or would less intrusive means suffice? | PASS / FAIL |
+| **Last resort**                | Recital 46               | Could another basis (consent, legal obligation, legitimate interest) have been relied upon instead? Vital interests apply only where other bases are unavailable. | PASS / FAIL |
+| **Consent unobtainable**       | Recital 46               | If the processing involves the data subject's own vital interests: is it impossible or unreasonable to obtain consent (e.g., data subject is incapacitated)?      | PASS / FAIL |
+| **Necessity**                  | Art. 6(1)(d)             | Is the specific processing activity necessary for the life-protection purpose, or would less intrusive means suffice?                                             | PASS / FAIL |
 
 **Scope note:** Vital interests is an extremely narrow basis applying almost exclusively
 to medical emergencies, disaster response, and similar life-safety contexts. It is
 very rarely the correct basis for commercial processing activities.
 
 **Classification:**
+
 - **ADEQUATE**: Clear life-threatening situation; other bases unavailable; processing strictly necessary
 - **REQUIRES REVIEW**: Life risk plausible but other bases not fully assessed; necessity of specific processing unclear
 - **INADEQUATE**: No imminent life risk; financial/contractual interests; other bases available; deployed as fallback convenience basis
@@ -454,12 +482,12 @@ very rarely the correct basis for commercial processing activities.
 
 **Eligibility criteria checklist:**
 
-| Criterion | GDPR requirement | Assessment question | Status |
-|-----------|-----------------|---------------------|--------|
-| **Public authority or public function** | Art. 6(1)(e); Recital 45 | Is the controller a public authority, OR is the controller performing a task in the public interest or exercising official authority? | PASS / FAIL |
-| **Clear legal basis for the task** | Art. 6(3); Recital 45 | Is the public task/official authority grounded in a clear, specific EU or member state law provision? | PASS / FAIL |
-| **Necessity for the task** | Art. 6(1)(e) | Is the specific processing necessary to carry out the identified public task — not merely convenient or useful? | PASS / FAIL / PARTIAL |
-| **Not private commercial processing** | Art. 6(1) final clause | Is the processing in the exercise of official authority or public interest, rather than commercial activity? | PASS / FAIL |
+| Criterion                               | GDPR requirement         | Assessment question                                                                                                                   | Status                |
+| --------------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| **Public authority or public function** | Art. 6(1)(e); Recital 45 | Is the controller a public authority, OR is the controller performing a task in the public interest or exercising official authority? | PASS / FAIL           |
+| **Clear legal basis for the task**      | Art. 6(3); Recital 45    | Is the public task/official authority grounded in a clear, specific EU or member state law provision?                                 | PASS / FAIL           |
+| **Necessity for the task**              | Art. 6(1)(e)             | Is the specific processing necessary to carry out the identified public task — not merely convenient or useful?                       | PASS / FAIL / PARTIAL |
+| **Not private commercial processing**   | Art. 6(1) final clause   | Is the processing in the exercise of official authority or public interest, rather than commercial activity?                          | PASS / FAIL           |
 
 [JURISDICTION-SPECIFIC] In the UK, this basis applies to public authorities under
 DPA 2018 and to private bodies exercising statutory functions (e.g., regulatory bodies,
@@ -467,6 +495,7 @@ licensed broadcasters, qualifying professional bodies). The specific statutory f
 must be identified.
 
 **Classification:**
+
 - **ADEQUATE**: Public authority/function clearly identified; specific legal basis for task; processing necessary for that task
 - **REQUIRES REVIEW**: Public task plausible but scope of processing exceeds what the specific task requires; legal basis for task needs clarification
 - **INADEQUATE**: Controller is a private entity with no public function; no identified statutory basis for the task; processing serves commercial rather than public interest
@@ -485,10 +514,10 @@ of Art. 6(1)).
 
 **Three-part adequacy summary:**
 
-| Part | Test | EDPB authority | Assessment |
-|------|------|----------------|------------|
-| **Stage 1 — Purpose** | Is there a lawful, clearly and precisely articulated, real and present legitimate interest? | EDPB Guidelines 1/2024, paras. 18-47 | ADEQUATE / REQUIRES REVIEW / INADEQUATE |
-| **Stage 2 — Necessity** | Is processing strictly necessary (not merely useful) to achieve the interest? Are there less intrusive alternatives? | EDPB Guidelines 1/2024, paras. 48-64 | ADEQUATE / REQUIRES REVIEW / INADEQUATE |
+| Part                    | Test                                                                                                                                                                                    | EDPB authority                        | Assessment                              |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------- |
+| **Stage 1 — Purpose**   | Is there a lawful, clearly and precisely articulated, real and present legitimate interest?                                                                                             | EDPB Guidelines 1/2024, paras. 18-47  | ADEQUATE / REQUIRES REVIEW / INADEQUATE |
+| **Stage 2 — Necessity** | Is processing strictly necessary (not merely useful) to achieve the interest? Are there less intrusive alternatives?                                                                    | EDPB Guidelines 1/2024, paras. 48-64  | ADEQUATE / REQUIRES REVIEW / INADEQUATE |
 | **Stage 3 — Balancing** | Does the controller's interest outweigh the data subjects' interests, rights, and freedoms? (EDPB four-factor test: nature of data, likely impact, reasonable expectations, safeguards) | EDPB Guidelines 1/2024, paras. 65-115 | ADEQUATE / REQUIRES REVIEW / INADEQUATE |
 
 **CLARIFY** — If the preliminary Stage 1 purpose assessment is REQUIRES REVIEW: ask the
@@ -497,6 +526,7 @@ purpose ("business improvement," "analytics," "security") cannot pass the balanc
 EDPB Guidelines 1/2024 require the interest to be stated in a single, concrete sentence.
 
 **Recognised legitimate interests (reduced scrutiny — Recitals 47-50):**
+
 - Direct marketing to existing customers (Recital 47)
 - Intra-group administrative transfers (Recital 48)
 - Network and information security (Recital 49)
@@ -510,6 +540,7 @@ safeguarding, democratic engagement, and others. [VERIFY commencement date and
 specific Schedule 4 list.]
 
 **Classification:**
+
 - **ADEQUATE**: All three stages pass; purpose specific; necessity demonstrated; balancing favours controller or safeguards implemented; LIA documented
 - **REQUIRES REVIEW**: One or more stages borderline; safeguards can tip the balance but must be documented; full LIA recommended via `legalcode-legitimate-interest-assessment`
 - **INADEQUATE**: Purpose fails (vague, unlawful, speculative); necessity fails (less intrusive alternatives not considered); balancing test fails (data subjects' rights clearly override)
@@ -521,6 +552,7 @@ specific Schedule 4 list.]
 After completing Step 5 for all viable bases, rank the candidates:
 
 **Basis selection principles:**
+
 1. **Precision first**: Choose the basis that best fits the processing purpose and provides
    the clearest legal grounding. Do not choose a weaker basis to avoid a harder test.
 2. **No hierarchy**: GDPR does not rank the six bases — they are all equally legitimate
@@ -538,23 +570,23 @@ After completing Step 5 for all viable bases, rank the candidates:
 
 **Recommended ranking for common scenarios:**
 
-| Scenario | Primary recommendation | Rationale |
-|----------|----------------------|-----------|
-| Payroll, tax reporting, PAYE | Art. 6(1)(c) | Specific legal obligation |
-| Delivery of goods/services agreed in contract | Art. 6(1)(b) | Contractually necessary |
-| Marketing to existing customers | Art. 6(1)(f) + Recital 47 | Recognised LI; Recital 47 baseline |
-| Marketing to prospective customers | Art. 6(1)(a) or (f) | Consent or LI; depends on relationship |
-| Emergency medical treatment | Art. 6(1)(d) + Art. 9(2)(c) | Vital interests (last resort) |
-| Government statistical reporting | Art. 6(1)(e) | Public task/official authority |
-| Fraud detection for financial services | Art. 6(1)(f) + Recital 50 | Recognised LI; Recital 50 baseline |
-| Background checks (employment) | Art. 6(1)(b) or (c) | Contract or legal obligation; Art. 10 overlay required |
-| Research analytics | Art. 6(1)(f) or (a) | LI (public interest) or consent; depends on context |
+| Scenario                                      | Primary recommendation      | Rationale                                              |
+| --------------------------------------------- | --------------------------- | ------------------------------------------------------ |
+| Payroll, tax reporting, PAYE                  | Art. 6(1)(c)                | Specific legal obligation                              |
+| Delivery of goods/services agreed in contract | Art. 6(1)(b)                | Contractually necessary                                |
+| Marketing to existing customers               | Art. 6(1)(f) + Recital 47   | Recognised LI; Recital 47 baseline                     |
+| Marketing to prospective customers            | Art. 6(1)(a) or (f)         | Consent or LI; depends on relationship                 |
+| Emergency medical treatment                   | Art. 6(1)(d) + Art. 9(2)(c) | Vital interests (last resort)                          |
+| Government statistical reporting              | Art. 6(1)(e)                | Public task/official authority                         |
+| Fraud detection for financial services        | Art. 6(1)(f) + Recital 50   | Recognised LI; Recital 50 baseline                     |
+| Background checks (employment)                | Art. 6(1)(b) or (c)         | Contract or legal obligation; Art. 10 overlay required |
+| Research analytics                            | Art. 6(1)(f) or (a)         | LI (public interest) or consent; depends on context    |
 
 ---
 
 ### Step 7: Article 9 Special Category Overlay
 
-*Complete only if Step 3 flagged special-category data.*
+_Complete only if Step 3 flagged special-category data._
 
 Art. 9(1) prohibits processing of special-category data **unless** one of Art. 9(2)'s
 ten conditions is met. A valid Art. 6 basis is necessary but **not sufficient** for
@@ -562,18 +594,18 @@ special-category processing — both Art. 6 and Art. 9(2) conditions must be sat
 
 **Art. 9(2) conditions — complete assessment table:**
 
-| Condition | Art. 9(2) | Requirements | Common use cases | EU/UK note |
-|-----------|----------|-------------|-----------------|------------|
-| **(a) Explicit consent** | Art. 9(2)(a) | Higher standard than Art. 6 consent: clear affirmative statement to the specific special-category processing; cannot be implied | Biobank, clinical research, genetic screening | UK: explicit consent also sufficient in DPA 2018 |
-| **(b) Employment/social security law** | Art. 9(2)(b) | Processing for rights/obligations in employment, social security law under EU/member state law; appropriate safeguards | Occupational health, disability accommodation, sick leave | UK: DPA 2018 Schedule 1, para. 1 (employment) |
-| **(c) Vital interests** | Art. 9(2)(c) | Protection of vital interests where data subject physically or legally unable to give consent | Emergency medical; unconscious patient | Mirrors Art. 6(1)(d) — narrow scope |
-| **(d) Not-for-profit bodies** | Art. 9(2)(d) | Processing by foundation/association for political, philosophical, religious, or trade union purposes; for members/former members; no disclosure outside body without consent | Trade union membership records; religious organisations | Must be membership-based; strict limits |
-| **(e) Manifestly public data** | Art. 9(2)(e) | Data subject has manifestly made the data public themselves | Data subject discussed health publicly; openly disclosed political affiliation | Narrow: must be manifestly, deliberately made public |
-| **(f) Legal claims** | Art. 9(2)(f) | Necessary for establishment, exercise, or defence of legal claims, or court acting in judicial capacity | Litigation support; insurance claims; HR investigations | Must be genuinely necessary; not precautionary |
-| **(g) Substantial public interest** | Art. 9(2)(g) | Member state law; substantial public interest; proportionate; appropriate safeguards | Public health monitoring; equality monitoring; prevention of fraud | UK: DPA 2018 Schedule 1 Part 2 (27 specific conditions) [VERIFY] |
-| **(h) Healthcare** | Art. 9(2)(h) | Medical/dental diagnosis, treatment, social medicine; EU/member state law or professional obligations; confidentiality obligation | Patient records; occupational medicine; prescription records | [JURISDICTION-SPECIFIC] — healthcare professional confidentiality obligations vary |
-| **(i) Public health** | Art. 9(2)(i) | Necessary for public health in public interest (epidemic, cross-border health threats); EU/member state law; appropriate safeguards | Public health surveillance; COVID-19 contact tracing; pandemic response | Narrow public health scope; not general health research |
-| **(j) Research/statistics/archiving** | Art. 9(2)(j) | EU/member state law; scientific, historical, or statistical purposes; public interest; proportionate; Art. 89 safeguards | Academic research; national statistics; historical archives | Must satisfy Art. 89 safeguards (anonymisation where possible) |
+| Condition                              | Art. 9(2)    | Requirements                                                                                                                                                                  | Common use cases                                                               | EU/UK note                                                                         |
+| -------------------------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| **(a) Explicit consent**               | Art. 9(2)(a) | Higher standard than Art. 6 consent: clear affirmative statement to the specific special-category processing; cannot be implied                                               | Biobank, clinical research, genetic screening                                  | UK: explicit consent also sufficient in DPA 2018                                   |
+| **(b) Employment/social security law** | Art. 9(2)(b) | Processing for rights/obligations in employment, social security law under EU/member state law; appropriate safeguards                                                        | Occupational health, disability accommodation, sick leave                      | UK: DPA 2018 Schedule 1, para. 1 (employment)                                      |
+| **(c) Vital interests**                | Art. 9(2)(c) | Protection of vital interests where data subject physically or legally unable to give consent                                                                                 | Emergency medical; unconscious patient                                         | Mirrors Art. 6(1)(d) — narrow scope                                                |
+| **(d) Not-for-profit bodies**          | Art. 9(2)(d) | Processing by foundation/association for political, philosophical, religious, or trade union purposes; for members/former members; no disclosure outside body without consent | Trade union membership records; religious organisations                        | Must be membership-based; strict limits                                            |
+| **(e) Manifestly public data**         | Art. 9(2)(e) | Data subject has manifestly made the data public themselves                                                                                                                   | Data subject discussed health publicly; openly disclosed political affiliation | Narrow: must be manifestly, deliberately made public                               |
+| **(f) Legal claims**                   | Art. 9(2)(f) | Necessary for establishment, exercise, or defence of legal claims, or court acting in judicial capacity                                                                       | Litigation support; insurance claims; HR investigations                        | Must be genuinely necessary; not precautionary                                     |
+| **(g) Substantial public interest**    | Art. 9(2)(g) | Member state law; substantial public interest; proportionate; appropriate safeguards                                                                                          | Public health monitoring; equality monitoring; prevention of fraud             | UK: DPA 2018 Schedule 1 Part 2 (27 specific conditions) [VERIFY]                   |
+| **(h) Healthcare**                     | Art. 9(2)(h) | Medical/dental diagnosis, treatment, social medicine; EU/member state law or professional obligations; confidentiality obligation                                             | Patient records; occupational medicine; prescription records                   | [JURISDICTION-SPECIFIC] — healthcare professional confidentiality obligations vary |
+| **(i) Public health**                  | Art. 9(2)(i) | Necessary for public health in public interest (epidemic, cross-border health threats); EU/member state law; appropriate safeguards                                           | Public health surveillance; COVID-19 contact tracing; pandemic response        | Narrow public health scope; not general health research                            |
+| **(j) Research/statistics/archiving**  | Art. 9(2)(j) | EU/member state law; scientific, historical, or statistical purposes; public interest; proportionate; Art. 89 safeguards                                                      | Academic research; national statistics; historical archives                    | Must satisfy Art. 89 safeguards (anonymisation where possible)                     |
 
 **UK DPA 2018 Schedule 1 Part 2 — Substantial Public Interest Conditions:**
 DPA 2018 provides 27 additional substantial public interest conditions [VERIFY full
@@ -586,37 +618,39 @@ condition has specific requirements for documented policy compliance.
 For each Art. 6 basis identified as ADEQUATE or REQUIRES REVIEW in Step 5, assess
 whether an Art. 9(2) condition is also met:
 
-| Art. 6 basis | Compatible Art. 9(2) conditions | Incompatible/Restricted |
-|-------------|--------------------------------|-------------------------|
-| Art. 6(1)(a) consent | Art. 9(2)(a) explicit consent (must pair) | Cannot use regular consent for Art. 9 — explicit required |
-| Art. 6(1)(b) contract | Art. 9(2)(b) employment law; (f) legal claims | No direct Art. 9 counterpart for pure contract basis; check if (b) or (h) fits |
-| Art. 6(1)(c) legal obligation | Art. 9(2)(b) employment/SS law; (g) substantial public interest; (h) healthcare; (i) public health | Usually (b) or (g) will align |
-| Art. 6(1)(d) vital interests | Art. 9(2)(c) vital interests | Direct alignment |
-| Art. 6(1)(e) public task | Art. 9(2)(g) substantial public interest; (h) healthcare; (i) public health; (j) research | Depends on public function type |
-| Art. 6(1)(f) legitimate interests | Art. 9(2)(g) (if member state law exists); (j) research; (e) manifestly public | Note: Art. 6(1)(f) + Art. 9(2)(g) requires specific member state law |
+| Art. 6 basis                      | Compatible Art. 9(2) conditions                                                                    | Incompatible/Restricted                                                        |
+| --------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Art. 6(1)(a) consent              | Art. 9(2)(a) explicit consent (must pair)                                                          | Cannot use regular consent for Art. 9 — explicit required                      |
+| Art. 6(1)(b) contract             | Art. 9(2)(b) employment law; (f) legal claims                                                      | No direct Art. 9 counterpart for pure contract basis; check if (b) or (h) fits |
+| Art. 6(1)(c) legal obligation     | Art. 9(2)(b) employment/SS law; (g) substantial public interest; (h) healthcare; (i) public health | Usually (b) or (g) will align                                                  |
+| Art. 6(1)(d) vital interests      | Art. 9(2)(c) vital interests                                                                       | Direct alignment                                                               |
+| Art. 6(1)(e) public task          | Art. 9(2)(g) substantial public interest; (h) healthcare; (i) public health; (j) research          | Depends on public function type                                                |
+| Art. 6(1)(f) legitimate interests | Art. 9(2)(g) (if member state law exists); (j) research; (e) manifestly public                     | Note: Art. 6(1)(f) + Art. 9(2)(g) requires specific member state law           |
 
 ---
 
 ### Step 8: Article 10 Criminal Data Overlay
 
-*Complete only if Step 3 flagged criminal conviction or offence data.*
+_Complete only if Step 3 flagged criminal conviction or offence data._
 
 Art. 10 GDPR provides that processing of personal data relating to criminal convictions,
 offences, or related security measures may only be carried out:
+
 - Under the control of official authority; OR
 - When authorised by EU or member state law providing appropriate safeguards.
 
 **Criminal data scope:**
+
 - Criminal convictions (including spent/pardoned)
 - Criminal offences (alleged or charged, not only convicted)
 - Security measures associated with criminal proceedings
 
 **Authorization assessment:**
 
-| Path | Requirements | Status |
-|------|-------------|--------|
-| **Official authority** | Processing under the control of an official authority (courts, law enforcement, prosecutorial bodies) acting within their statutory function | AUTHORISED / NOT APPLICABLE |
-| **Member state law authorization** | Specific EU or member state law provision that authorises processing of criminal data; with appropriate safeguards | AUTHORISED [cite law] / NOT AUTHORISED |
+| Path                               | Requirements                                                                                                                                 | Status                                 |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **Official authority**             | Processing under the control of an official authority (courts, law enforcement, prosecutorial bodies) acting within their statutory function | AUTHORISED / NOT APPLICABLE            |
+| **Member state law authorization** | Specific EU or member state law provision that authorises processing of criminal data; with appropriate safeguards                           | AUTHORISED [cite law] / NOT AUTHORISED |
 
 **UK DPA 2018 — Criminal offences conditions:**
 DPA 2018 Schedule 1, Part 1, para. 36 — Criminal conviction data
@@ -624,6 +658,7 @@ May be processed for substantial public interest purposes listed in Schedule 1 P
 same policy document requirements apply. [VERIFY current DPA 2018 Schedule 1 para. references]
 
 **Common authorised contexts:**
+
 - Background screening under sector-specific legislation (financial services, childcare)
 - CRB/DBS checks (UK) under Police Act 1997 / Protection of Children Act 1999
 - AML/KYC obligations (criminal proceeds identification) under money laundering regulations
@@ -631,6 +666,7 @@ same policy document requirements apply. [VERIFY current DPA 2018 Schedule 1 par
 - Insurance claims involving criminal allegations
 
 **Art. 10 overlay classification:**
+
 - **COMPATIBLE**: Specific authorization or official authority identified; appropriate safeguards in place
 - **REQUIRES REVIEW**: Processing involves criminal data but authorization is indirect or unclear; legal analysis needed
 - **NOT COMPATIBLE**: No official authority; no member state law authorization; criminal data being processed without authorisation
@@ -639,9 +675,10 @@ same policy document requirements apply. [VERIFY current DPA 2018 Schedule 1 par
 
 ### Step 9: Article 8 Children's Data Overlay
 
-*Complete only if Step 3 flagged children's data in an information society service (ISS) context.*
+_Complete only if Step 3 flagged children's data in an information society service (ISS) context._
 
 **Art. 8 scope:** Art. 8 applies when:
+
 1. Processing is for the offer of **information society services** (ISS — online services offered directly to children); AND
 2. The lawful basis relied upon is **consent** (Art. 6(1)(a))
 
@@ -653,20 +690,20 @@ child) still apply under Art. 5(1)(a) and EDPB guidance.
 
 **Age threshold assessment:**
 
-| Regime | Age of consent | Below threshold requirement |
-|--------|---------------|---------------------------|
-| **EU GDPR** | 16 years (Art. 8(1)) | Parental consent required |
-| **EU GDPR — member state lower limit** | 13–15 years (member state may lower to minimum 13) | Parental consent required for those below member state's chosen threshold |
-| **UK GDPR** | 13 years (DPA 2018 s.9) | Parental consent required for under-13s |
-| **Swiss FADP** | No specific ISS age threshold; general consent capacity rules apply | [VERIFY FDPIC guidance on children] |
+| Regime                                 | Age of consent                                                      | Below threshold requirement                                               |
+| -------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **EU GDPR**                            | 16 years (Art. 8(1))                                                | Parental consent required                                                 |
+| **EU GDPR — member state lower limit** | 13–15 years (member state may lower to minimum 13)                  | Parental consent required for those below member state's chosen threshold |
+| **UK GDPR**                            | 13 years (DPA 2018 s.9)                                             | Parental consent required for under-13s                                   |
+| **Swiss FADP**                         | No specific ISS age threshold; general consent capacity rules apply | [VERIFY FDPIC guidance on children]                                       |
 
 **Parental consent verification:**
 
-| Requirement | GDPR | Assessment |
-|-------------|------|-----------|
-| Reasonable efforts to verify age | Art. 8(2) | Does the ISS implement age verification? What method? (Attribute-based — yes/no over threshold — preferred over ID collection) |
-| Verification of parental responsibility | Art. 8(2) | For under-threshold users: is there a mechanism to obtain and verify parental/guardian consent? |
-| Avoid excessive data collection for verification | Art. 5(1)(c) | Age verification mechanism must be proportionate; avoid collecting more personal data than necessary |
+| Requirement                                      | GDPR         | Assessment                                                                                                                     |
+| ------------------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| Reasonable efforts to verify age                 | Art. 8(2)    | Does the ISS implement age verification? What method? (Attribute-based — yes/no over threshold — preferred over ID collection) |
+| Verification of parental responsibility          | Art. 8(2)    | For under-threshold users: is there a mechanism to obtain and verify parental/guardian consent?                                |
+| Avoid excessive data collection for verification | Art. 5(1)(c) | Age verification mechanism must be proportionate; avoid collecting more personal data than necessary                           |
 
 **ICO Children's Code (Age Appropriate Design Code):**
 UK controllers offering services likely accessed by children must also comply with the
@@ -674,6 +711,7 @@ ICO Age Appropriate Design Code (s.123 DPA 2018). The Code's 15 standards apply
 regardless of which lawful basis is used. [JURISDICTION-SPECIFIC — applies to UK only]
 
 **Art. 8 overlay classification:**
+
 - **COMPLIANT**: Correct age threshold applied; parental consent mechanism operational; reasonable verification
 - **REQUIRES REVIEW**: Age threshold unclear; verification mechanism not implemented; design may be accessible to children without age check
 - **NON-COMPLIANT**: No age check; under-threshold children using service with no parental consent; no verification efforts
@@ -687,6 +725,7 @@ Synthesise the per-basis analysis from Steps 5–9 into a final determination.
 **10a. Select primary basis**
 
 Identify the strongest single basis for each processing purpose based on:
+
 - All three adequacy criteria met (ADEQUATE in Step 5)
 - Compatible Art. 9(2) condition (if applicable)
 - Art. 10 authorization (if applicable)
@@ -717,22 +756,22 @@ considered, apply the basis-change rules:
 
 If the assessment involves existing consent, evaluate whether consent remains valid:
 
-| Trigger | Reassessment required? |
-|---------|----------------------|
-| Processing purpose has changed since consent was obtained | YES — new consent required for the new purpose |
-| Privacy notice has materially changed | YES — re-inform; may require fresh consent |
-| Change in controller identity (acquisition, merger) | YES — new controller must re-obtain or confirm consent |
-| Consent was not freely given (power imbalance identified) | YES — remediate or change basis |
-| Consent was obtained without adequate disclosure | YES — retroactively invalid; immediate remediation |
-| Time elapsed / relationship changed (consent is "stale") | ASSESS — no fixed expiry; factor in nature of processing and reasonable expectations |
+| Trigger                                                   | Reassessment required?                                                               |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Processing purpose has changed since consent was obtained | YES — new consent required for the new purpose                                       |
+| Privacy notice has materially changed                     | YES — re-inform; may require fresh consent                                           |
+| Change in controller identity (acquisition, merger)       | YES — new controller must re-obtain or confirm consent                               |
+| Consent was not freely given (power imbalance identified) | YES — remediate or change basis                                                      |
+| Consent was obtained without adequate disclosure          | YES — retroactively invalid; immediate remediation                                   |
+| Time elapsed / relationship changed (consent is "stale")  | ASSESS — no fixed expiry; factor in nature of processing and reasonable expectations |
 
 **10e. Assign overall classification**
 
-| Classification | Conditions |
-|----------------|-----------|
-| **APPROVED** | Primary basis ADEQUATE; any required Art. 9/10/8 overlays satisfied; no remediation required before processing |
-| **CONDITIONAL** | Primary basis REQUIRES REVIEW or one overlay REQUIRES REVIEW; specified remediations must be completed before relying on this basis |
-| **REJECTED** | No viable basis found; or primary basis INADEQUATE; or Art. 9/10/8 overlay conditions unmet; processing must not proceed without fundamental redesign |
+| Classification  | Conditions                                                                                                                                            |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **APPROVED**    | Primary basis ADEQUATE; any required Art. 9/10/8 overlays satisfied; no remediation required before processing                                        |
+| **CONDITIONAL** | Primary basis REQUIRES REVIEW or one overlay REQUIRES REVIEW; specified remediations must be completed before relying on this basis                   |
+| **REJECTED**    | No viable basis found; or primary basis INADEQUATE; or Art. 9/10/8 overlay conditions unmet; processing must not proceed without fundamental redesign |
 
 ---
 
@@ -740,14 +779,14 @@ If the assessment involves existing consent, evaluate whether consent remains va
 
 The selected lawful basis determines which data subject rights apply:
 
-| Right | Art. | Consent (a) | Contract (b) | Legal obligation (c) | Vital interests (d) | Public task (e) | Legitimate interests (f) |
-|-------|------|-------------|-------------|---------------------|--------------------|-----------------|-----------------------|
-| **Erasure** | 17 | YES — on withdrawal or purpose achieved | YES — when no longer necessary | LIMITED — unless processing exceeds obligation | LIMITED | LIMITED — public interest override possible | YES — if interests do not override |
-| **Portability** | 20 | YES — automated processing | YES — automated processing | NO | NO | NO | NO |
-| **Object** | 21 | Not applicable (withdrawal covers this) | Not applicable | Not applicable | YES | YES — unless compelling grounds | YES — unless compelling grounds; absolute for direct marketing |
-| **Restriction** | 18 | YES — pending withdrawal | YES — accuracy contested; erasure dispute | YES — accuracy contested | YES | YES | YES |
-| **Rectification** | 16 | YES | YES | YES | YES | YES | YES |
-| **Not be subject to automated decision** | 22 | Only with explicit consent | If necessary for contract | If authorised by EU/member state law | N/A | If authorised by EU/member state law | Cannot ground Art. 22 solely automated decisions |
+| Right                                    | Art. | Consent (a)                             | Contract (b)                              | Legal obligation (c)                           | Vital interests (d) | Public task (e)                             | Legitimate interests (f)                                       |
+| ---------------------------------------- | ---- | --------------------------------------- | ----------------------------------------- | ---------------------------------------------- | ------------------- | ------------------------------------------- | -------------------------------------------------------------- |
+| **Erasure**                              | 17   | YES — on withdrawal or purpose achieved | YES — when no longer necessary            | LIMITED — unless processing exceeds obligation | LIMITED             | LIMITED — public interest override possible | YES — if interests do not override                             |
+| **Portability**                          | 20   | YES — automated processing              | YES — automated processing                | NO                                             | NO                  | NO                                          | NO                                                             |
+| **Object**                               | 21   | Not applicable (withdrawal covers this) | Not applicable                            | Not applicable                                 | YES                 | YES — unless compelling grounds             | YES — unless compelling grounds; absolute for direct marketing |
+| **Restriction**                          | 18   | YES — pending withdrawal                | YES — accuracy contested; erasure dispute | YES — accuracy contested                       | YES                 | YES                                         | YES                                                            |
+| **Rectification**                        | 16   | YES                                     | YES                                       | YES                                            | YES                 | YES                                         | YES                                                            |
+| **Not be subject to automated decision** | 22   | Only with explicit consent              | If necessary for contract                 | If authorised by EU/member state law           | N/A                 | If authorised by EU/member state law        | Cannot ground Art. 22 solely automated decisions               |
 
 ---
 
@@ -758,6 +797,7 @@ identified lawful basis. Document the basis before processing commences.
 
 **Multiple purposes → multiple bases:** A single processing activity may serve multiple
 purposes, each with its own basis:
+
 - Example: Customer purchase data — Art. 6(1)(b) for order fulfilment, Art. 6(1)(c)
   for VAT records, Art. 6(1)(f) for fraud detection. Each purpose is documented separately.
 
@@ -769,12 +809,14 @@ transparency principle (Art. 5(1)(a)) require that the basis be fixed at the out
 data subjects can rely on the basis stated in privacy notices.
 
 **When basis change is permitted:**
+
 1. Before processing commences — update draft privacy notice and ROPA
 2. Original basis genuinely no longer applies (contract terminated; legal obligation
    repealed) AND the change is disclosed to data subjects under Art. 13/14
 3. The "change" is actually a new processing purpose requiring a new assessment
 
 **Documentation requirements for any basis change:**
+
 - Date of original basis and date of change
 - Reason for change (changed circumstances or original error)
 - Updated ROPA entry
@@ -789,19 +831,19 @@ Apply to each basis adequacy finding and each overlay check:
 
 **Per-basis classification:**
 
-| Classification | Criteria |
-|----------------|---------|
-| **ADEQUATE** | ALL eligibility criteria for the basis are PASS; necessity confirmed; no significant gaps; documented and ready for ROPA recording |
+| Classification      | Criteria                                                                                                                                                                                                             |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ADEQUATE**        | ALL eligibility criteria for the basis are PASS; necessity confirmed; no significant gaps; documented and ready for ROPA recording                                                                                   |
 | **REQUIRES REVIEW** | One or more eligibility criteria are PARTIAL; necessity plausible but not fully documented; safeguards or conditions should be implemented before reliance; LIA, expert review, or additional documentation required |
-| **INADEQUATE** | One or more core eligibility criteria FAIL; basis not available for this processing purpose; do not rely on this basis |
+| **INADEQUATE**      | One or more core eligibility criteria FAIL; basis not available for this processing purpose; do not rely on this basis                                                                                               |
 
 **Overall determination:**
 
-| Classification | Criteria |
-|----------------|---------|
-| **APPROVED** | Primary basis ADEQUATE; all required overlays (Art. 9/10/8) satisfied; ROPA ready |
+| Classification  | Criteria                                                                                                                                        |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **APPROVED**    | Primary basis ADEQUATE; all required overlays (Art. 9/10/8) satisfied; ROPA ready                                                               |
 | **CONDITIONAL** | Primary basis REQUIRES REVIEW; specified actions must be completed within documented timeline; document conditions and implement before relying |
-| **REJECTED** | No viable basis found; primary basis INADEQUATE; Art. 9/10/8 overlay unresolvable; processing must not proceed as described |
+| **REJECTED**    | No viable basis found; primary basis INADEQUATE; Art. 9/10/8 overlay unresolvable; processing must not proceed as described                     |
 
 ---
 
@@ -809,12 +851,12 @@ Apply to each basis adequacy finding and each overlay check:
 
 Triage findings by urgency:
 
-| Priority | Classification | Action |
-|----------|---------------|--------|
-| **Immediate** | REJECTED — no viable basis; Art. 9 processing without condition; Art. 10 processing without authorisation | Stop processing; escalate to DPO/counsel immediately |
-| **Near-term (14 days)** | CONDITIONAL — primary basis REQUIRES REVIEW; critical overlay gap (Art. 8 age check missing) | Implement required conditions; update ROPA/privacy notice |
-| **Planned (30–90 days)** | REQUIRES REVIEW — documentation gaps; consent refresh needed; basis-change documentation required | Document, assign ownership, set review date |
-| **Ongoing** | APPROVED — periodic reassessment due date | Set reassessment calendar (annually or on material change) |
+| Priority                 | Classification                                                                                            | Action                                                     |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **Immediate**            | REJECTED — no viable basis; Art. 9 processing without condition; Art. 10 processing without authorisation | Stop processing; escalate to DPO/counsel immediately       |
+| **Near-term (14 days)**  | CONDITIONAL — primary basis REQUIRES REVIEW; critical overlay gap (Art. 8 age check missing)              | Implement required conditions; update ROPA/privacy notice  |
+| **Planned (30–90 days)** | REQUIRES REVIEW — documentation gaps; consent refresh needed; basis-change documentation required         | Document, assign ownership, set review date                |
+| **Ongoing**              | APPROVED — periodic reassessment due date                                                                 | Set reassessment calendar (annually or on material change) |
 
 ---
 
@@ -824,13 +866,13 @@ Triage findings by urgency:
 
 Run these five gates silently before delivering any output. If any gate fails, revise.
 
-| Gate | Rule | Fail action |
-|------|------|-------------|
-| **Source** | Every legal claim cites Art. 6, GDPR recital, EDPB guideline, case law, or DPA enforcement decision | Add citation or mark **[UNVERIFIED]** |
-| **Format** | All citations follow consistent format: `Art. 6(1)(f) GDPR`, `Recital 47 GDPR`, `EDPB Guidelines 1/2024`, `CJEU C-621/22` | Fix format |
-| **Currency** | Every cited provision and guideline checked for amendments (EDPB guidance updates; DUA Act 2025 UK; EU Omnibus package) | Flag **[CHECK CURRENCY]** |
-| **Domain** | Analysis stays within GDPR/UK GDPR framework; no CCPA/LGPD/PDPA concepts introduced unless explicitly flagged as other regime | Remove or flag cross-regime bleed |
-| **Confidence** | All uncertainties explicitly stated; no hidden gaps or assumed positions | Add confidence qualifier |
+| Gate           | Rule                                                                                                                          | Fail action                           |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| **Source**     | Every legal claim cites Art. 6, GDPR recital, EDPB guideline, case law, or DPA enforcement decision                           | Add citation or mark **[UNVERIFIED]** |
+| **Format**     | All citations follow consistent format: `Art. 6(1)(f) GDPR`, `Recital 47 GDPR`, `EDPB Guidelines 1/2024`, `CJEU C-621/22`     | Fix format                            |
+| **Currency**   | Every cited provision and guideline checked for amendments (EDPB guidance updates; DUA Act 2025 UK; EU Omnibus package)       | Flag **[CHECK CURRENCY]**             |
+| **Domain**     | Analysis stays within GDPR/UK GDPR framework; no CCPA/LGPD/PDPA concepts introduced unless explicitly flagged as other regime | Remove or flag cross-regime bleed     |
+| **Confidence** | All uncertainties explicitly stated; no hidden gaps or assumed positions                                                      | Add confidence qualifier              |
 
 ### Self-Interrogation for REJECTED or INADEQUATE Findings
 
@@ -851,13 +893,13 @@ if additional information were available or safeguards were implemented)?
 
 ### Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | GDPR text unambiguous; EDPB guidance directly on point | State with confidence |
-| **High** | 0.80–0.94 | Strong authority; minor interpretive questions | State with brief caveat |
-| **Probable** | 0.60–0.79 | Good arguments; enforcement could differ; guidance general | State with reasoning and contra-indicators |
-| **Possible** | 0.40–0.59 | Genuinely uncertain; depends on unreported facts or value judgments | Flag for professional review; present both sides |
-| **Unlikely** | 0.0–0.39 | Weak evidentiary basis; speculative; major information gaps | Do not assert; flag **[UNCERTAIN]**; recommend counsel |
+| Level        | Range     | Meaning                                                             | Action                                                 |
+| ------------ | --------- | ------------------------------------------------------------------- | ------------------------------------------------------ |
+| **Definite** | 0.95–1.0  | GDPR text unambiguous; EDPB guidance directly on point              | State with confidence                                  |
+| **High**     | 0.80–0.94 | Strong authority; minor interpretive questions                      | State with brief caveat                                |
+| **Probable** | 0.60–0.79 | Good arguments; enforcement could differ; guidance general          | State with reasoning and contra-indicators             |
+| **Possible** | 0.40–0.59 | Genuinely uncertain; depends on unreported facts or value judgments | Flag for professional review; present both sides       |
+| **Unlikely** | 0.0–0.39  | Weak evidentiary basis; speculative; major information gaps         | Do not assert; flag **[UNCERTAIN]**; recommend counsel |
 
 ---
 
@@ -965,10 +1007,10 @@ What NOT to do when assessing or documenting a GDPR lawful basis:
 Before delivering any output, verify:
 
 - [ ] Every lawful basis cited using the precise GDPR article reference (e.g.,
-  "Art. 6(1)(f) GDPR" not "legitimate interests" alone)
+      "Art. 6(1)(f) GDPR" not "legitimate interests" alone)
 - [ ] Special-category conditions cited as "Art. 9(2)(x) GDPR" + member state law where applicable
 - [ ] Every EDPB guideline cited with version and date (e.g., "EDPB Guidelines 1/2024
-  on legitimate interests, adopted 8 October 2024")
+      on legitimate interests, adopted 8 October 2024")
 - [ ] All unverified legal claims marked [VERIFY]
 - [ ] All jurisdiction-specific content marked [JURISDICTION-SPECIFIC]
 - [ ] Plain language used in recommended ROPA field entries (not legal jargon)
@@ -984,6 +1026,7 @@ Before delivering any output, verify:
 ### legalcode-mcp (if connected)
 
 Use legalcode-mcp to verify and enrich the assessment before delivery:
+
 - Search for the specific national implementing legislation for Art. 6(1)(c) legal
   obligations in the applicable member state(s)
 - Search for recent EDPB binding decisions and consistency mechanism opinions on the
@@ -995,19 +1038,20 @@ Use legalcode-mcp to verify and enrich the assessment before delivery:
 Mark all legalcode-mcp sourced citations as VERIFIED in the Glass Box audit trail.
 
 **If legalcode-mcp is not connected:**
+
 - Mark statutory and case law references with [VERIFY]
 - Note in Glass Box: `legalcode_mcp: "Not connected"`
 - Proceed on the basis of known GDPR text and EDPB guidance
 
 ### Skill family integration
 
-| Trigger | Action |
-|---------|--------|
-| Art. 6(1)(f) selected as primary or fallback basis | Launch `legalcode-legitimate-interest-assessment` for full three-part LIA |
-| Step 10 classification is APPROVED but processing involves large-scale, systematic, or novel data use | Recommend `legalcode-dpia-generator` for DPIA trigger assessment |
-| Assessment produces ROPA-ready legal basis assignment | Pass output to `legalcode-ropa-generator` for ROPA population |
-| Privacy notice update required | Pass basis disclosure language to `legalcode-privacy-policy-drafter` |
-| Processing involves cross-border data transfers | Flag for `legalcode-cross-border-transfer-assessment` |
+| Trigger                                                                                               | Action                                                                    |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Art. 6(1)(f) selected as primary or fallback basis                                                    | Launch `legalcode-legitimate-interest-assessment` for full three-part LIA |
+| Step 10 classification is APPROVED but processing involves large-scale, systematic, or novel data use | Recommend `legalcode-dpia-generator` for DPIA trigger assessment          |
+| Assessment produces ROPA-ready legal basis assignment                                                 | Pass output to `legalcode-ropa-generator` for ROPA population             |
+| Privacy notice update required                                                                        | Pass basis disclosure language to `legalcode-privacy-policy-drafter`      |
+| Processing involves cross-border data transfers                                                       | Flag for `legalcode-cross-border-transfer-assessment`                     |
 
 ---
 
@@ -1079,14 +1123,14 @@ Every legal basis assessment output must follow this structure:
 **Art. 8 children's data** (if applicable): [COMPLIANT / REQUIRES REVIEW / N/A]
 **Overall classification**: APPROVED / CONDITIONAL / REJECTED
 
-| Basis | Viability | Art. 9 | Art. 10 | Art. 8 | Overall |
-|-------|-----------|--------|---------|--------|---------|
-| Art. 6(1)(a) Consent | ADEQUATE/REQ. REVIEW/INADEQUATE | Compatible/Conflict/N/A | N/A | COMPLIANT/REQ/N/A | VIABLE/NOT |
-| Art. 6(1)(b) Contract | ADEQUATE/REQ. REVIEW/INADEQUATE | — | N/A | — | VIABLE/NOT |
-| Art. 6(1)(c) Legal Obligation | ADEQUATE/REQ. REVIEW/INADEQUATE | — | — | — | VIABLE/NOT |
-| Art. 6(1)(d) Vital Interests | ADEQUATE/REQ. REVIEW/INADEQUATE | — | — | — | VIABLE/NOT |
-| Art. 6(1)(e) Public Task | ADEQUATE/REQ. REVIEW/INADEQUATE | — | — | — | VIABLE/NOT |
-| Art. 6(1)(f) Legitimate Interests | ADEQUATE/REQ. REVIEW/INADEQUATE | — | — | — | VIABLE/NOT |
+| Basis                             | Viability                       | Art. 9                  | Art. 10 | Art. 8            | Overall    |
+| --------------------------------- | ------------------------------- | ----------------------- | ------- | ----------------- | ---------- |
+| Art. 6(1)(a) Consent              | ADEQUATE/REQ. REVIEW/INADEQUATE | Compatible/Conflict/N/A | N/A     | COMPLIANT/REQ/N/A | VIABLE/NOT |
+| Art. 6(1)(b) Contract             | ADEQUATE/REQ. REVIEW/INADEQUATE | —                       | N/A     | —                 | VIABLE/NOT |
+| Art. 6(1)(c) Legal Obligation     | ADEQUATE/REQ. REVIEW/INADEQUATE | —                       | —       | —                 | VIABLE/NOT |
+| Art. 6(1)(d) Vital Interests      | ADEQUATE/REQ. REVIEW/INADEQUATE | —                       | —       | —                 | VIABLE/NOT |
+| Art. 6(1)(e) Public Task          | ADEQUATE/REQ. REVIEW/INADEQUATE | —                       | —       | —                 | VIABLE/NOT |
+| Art. 6(1)(f) Legitimate Interests | ADEQUATE/REQ. REVIEW/INADEQUATE | —                       | —       | —                 | VIABLE/NOT |
 
 **Key finding**: [One sentence — why the recommended basis is the strongest; why alternatives fail]
 **Recommended action**: [One sentence — what to do next]
@@ -1099,10 +1143,10 @@ Every legal basis assessment output must follow this structure:
 
 **Eligibility criteria assessment**:
 
-| Criterion | Requirement | Assessment | Status |
-|-----------|------------|------------|--------|
+| Criterion     | Requirement        | Assessment | Status            |
+| ------------- | ------------------ | ---------- | ----------------- |
 | [Criterion 1] | [GDPR requirement] | [Analysis] | PASS/FAIL/PARTIAL |
-| ... | ... | ... | ... |
+| ...           | ...                | ...        | ...               |
 
 **Necessity assessment**: [Analysis]
 
@@ -1145,14 +1189,14 @@ Every legal basis assessment output must follow this structure:
 
 ## Downstream Data Subject Rights
 
-| Right | Applies under this basis? | Notes |
-|-------|--------------------------|-------|
-| Erasure (Art. 17) | YES / LIMITED / NO | [Conditions] |
-| Portability (Art. 20) | YES / NO | [Automated processing requirement] |
-| Object (Art. 21) | YES / NO | [Override conditions] |
-| Restriction (Art. 18) | YES | [Circumstances] |
-| Rectification (Art. 16) | YES | [Always applies] |
-| Not subject to automated decisions (Art. 22) | YES / LIMITED / NO | [Conditions] |
+| Right                                        | Applies under this basis? | Notes                              |
+| -------------------------------------------- | ------------------------- | ---------------------------------- |
+| Erasure (Art. 17)                            | YES / LIMITED / NO        | [Conditions]                       |
+| Portability (Art. 20)                        | YES / NO                  | [Automated processing requirement] |
+| Object (Art. 21)                             | YES / NO                  | [Override conditions]              |
+| Restriction (Art. 18)                        | YES                       | [Circumstances]                    |
+| Rectification (Art. 16)                      | YES                       | [Always applies]                   |
+| Not subject to automated decisions (Art. 22) | YES / LIMITED / NO        | [Conditions]                       |
 
 ---
 
@@ -1166,9 +1210,9 @@ Every legal basis assessment output must follow this structure:
 
 ## Findings and Remediation Plan
 
-| Finding ID | Basis/Overlay | Severity | Finding | Required Action | Owner | Due |
-|-----------|---------------|---------|---------|----------------|-------|-----|
-| LBA-001 | [Basis] | [IMMEDIATE/NEAR-TERM/PLANNED] | [Description] | [Specific action] | [Role] | [Date] |
+| Finding ID | Basis/Overlay | Severity                      | Finding       | Required Action   | Owner  | Due    |
+| ---------- | ------------- | ----------------------------- | ------------- | ----------------- | ------ | ------ |
+| LBA-001    | [Basis]       | [IMMEDIATE/NEAR-TERM/PLANNED] | [Description] | [Specific action] | [Role] | [Date] |
 
 ---
 
@@ -1176,16 +1220,20 @@ Every legal basis assessment output must follow this structure:
 
 **ROPA field update — lawful basis**:
 ```
+
 Art. 6(1)(?) — [specific purpose or interest statement]
 [Art. 9(2)(?) — [condition] — if special category data]
+
 ```
 
 **Privacy notice update required?** [Yes / No]
 **Required disclosure language** (Arts. 13/14):
 ```
+
 Lawful basis: We process your [data type] on the basis of [Art. 6(1)(?) description]
 [for special categories: We process your [special category] data on the additional
 basis of [Art. 9(2)(?) description]]
+
 ```
 
 **DPIA recommended?** [Yes — trigger legalcode-dpia-generator / No]
@@ -1233,6 +1281,7 @@ To apply this skill to a specific member state or UK/Swiss context:
 
 Created by Legalcode (2026-03-02). Original synthesis for the Legalcode skill library.
 Informed by:
+
 - GDPR Regulation (EU) 2016/679, Articles 6–10
 - EDPB Guidelines 05/2020 on consent
 - EDPB Guidelines 2/2019 on processing under Art. 6(1)(b)

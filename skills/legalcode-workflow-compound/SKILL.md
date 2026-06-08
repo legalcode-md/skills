@@ -218,67 +218,103 @@ Every task should produce at least one insight. Most will produce 2-5. Complex l
 
 #### Standard Insight Types
 
-| Insight Type | What It Captures | Example |
-|-------------|-----------------|---------|
-| `pattern` | An approach that worked or didn't | "Pre-mortem before board presentations surfaces risks the team glosses over" |
-| `template` | A reusable structure for future work | A generalized board update template with section placeholders |
-| `preference` | A user style/tone/detail preference | "Prefers bullet points over prose in executive summaries" |
-| `failure` | What went wrong and how to prevent it | "Announcing reorgs by email before 1:1s caused trust damage" |
-| `insight` | A non-obvious learning or connection | "Investors respond better when bad news is framed as decisions, not problems" |
+| Insight Type | What It Captures                      | Example                                                                       |
+| ------------ | ------------------------------------- | ----------------------------------------------------------------------------- |
+| `pattern`    | An approach that worked or didn't     | "Pre-mortem before board presentations surfaces risks the team glosses over"  |
+| `template`   | A reusable structure for future work  | A generalized board update template with section placeholders                 |
+| `preference` | A user style/tone/detail preference   | "Prefers bullet points over prose in executive summaries"                     |
+| `failure`    | What went wrong and how to prevent it | "Announcing reorgs by email before 1:1s caused trust damage"                  |
+| `insight`    | A non-obvious learning or connection  | "Investors respond better when bad news is framed as decisions, not problems" |
 
 #### Legal-Specific Insight Types
 
-| Insight Type | What It Captures | Example |
-|-------------|-----------------|---------|
-| `precedent` | A case, statute, or regulatory decision that proved relevant — with full citation, jurisdiction, holding, and applicability notes | "*Waymo LLC v. Uber Techs., Inc.*, N.D. Cal. 2017 — trade secret misappropriation claim survived summary judgment where plaintiff demonstrated inevitable disclosure; relevant when drafting non-compete/NDA provisions for departing employees in technology sector" |
-| `clause-library` | A contract clause or provision that worked well — with markup showing negotiable vs non-negotiable portions | "Limitation of liability clause with carve-outs for IP indemnification and data breach — **non-negotiable**: uncapped for willful misconduct and IP infringement; **negotiable**: cap multiplier (1x-3x annual fees) for general liability" |
-| `jurisdiction-note` | A jurisdiction-specific nuance that matters — differences in law between jurisdictions that affected outcome | "California's statutory prohibition on non-compete agreements (Cal. Bus. & Prof. Code 16600) means garden leave provisions must substitute for post-employment restrictive covenants; Delaware approach to same issue differs materially" |
-| `regulatory-update` | A regulatory change or enforcement action that affected the work | "SEC Final Rule on cybersecurity incident reporting (July 2023) requires 8-K filing within 4 business days of materiality determination — affects incident response playbook timing and board notification templates" |
-| `opposing-counsel-pattern` | Patterns observed in opposing counsel's approach, arguments, or negotiation tactics | "Firm X consistently leads with aggressive IP indemnification demands as an anchor, then concedes to market standard when met with reasoned pushback citing comparable deals — don't over-concede on first pass" |
-| `judge-pattern` | Patterns observed in a particular judge's rulings, preferences, or procedural requirements | "Judge Y in S.D.N.Y. consistently enforces page limits strictly, requires joint discovery plans before initial conference, and has ruled against boilerplate 'irreparable harm' assertions in TRO motions three times in the last two years — need specific harm showing with declarations" |
+| Insight Type               | What It Captures                                                                                                                  | Example                                                                                                                                                                                                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `precedent`                | A case, statute, or regulatory decision that proved relevant — with full citation, jurisdiction, holding, and applicability notes | "_Waymo LLC v. Uber Techs., Inc._, N.D. Cal. 2017 — trade secret misappropriation claim survived summary judgment where plaintiff demonstrated inevitable disclosure; relevant when drafting non-compete/NDA provisions for departing employees in technology sector"                       |
+| `clause-library`           | A contract clause or provision that worked well — with markup showing negotiable vs non-negotiable portions                       | "Limitation of liability clause with carve-outs for IP indemnification and data breach — **non-negotiable**: uncapped for willful misconduct and IP infringement; **negotiable**: cap multiplier (1x-3x annual fees) for general liability"                                                 |
+| `jurisdiction-note`        | A jurisdiction-specific nuance that matters — differences in law between jurisdictions that affected outcome                      | "California's statutory prohibition on non-compete agreements (Cal. Bus. & Prof. Code 16600) means garden leave provisions must substitute for post-employment restrictive covenants; Delaware approach to same issue differs materially"                                                   |
+| `regulatory-update`        | A regulatory change or enforcement action that affected the work                                                                  | "SEC Final Rule on cybersecurity incident reporting (July 2023) requires 8-K filing within 4 business days of materiality determination — affects incident response playbook timing and board notification templates"                                                                       |
+| `opposing-counsel-pattern` | Patterns observed in opposing counsel's approach, arguments, or negotiation tactics                                               | "Firm X consistently leads with aggressive IP indemnification demands as an anchor, then concedes to market standard when met with reasoned pushback citing comparable deals — don't over-concede on first pass"                                                                            |
+| `judge-pattern`            | Patterns observed in a particular judge's rulings, preferences, or procedural requirements                                        | "Judge Y in S.D.N.Y. consistently enforces page limits strictly, requires joint discovery plans before initial conference, and has ruled against boilerplate 'irreparable harm' assertions in TRO motions three times in the last two years — need specific harm showing with declarations" |
 
 **Insight Format:**
 
 ```markdown
 ---
-type: [pattern | template | preference | failure | insight | precedent | clause-library | jurisdiction-note | regulatory-update | opposing-counsel-pattern | judge-pattern]
+type:
+  [
+    pattern | template | preference | failure | insight | precedent | clause-library | jurisdiction-note | regulatory-update | opposing-counsel-pattern | judge-pattern,
+  ]
 date: [YYYY-MM-DD]
-category: [communication | decision | analysis | meeting | coaching | operations | contract | litigation | regulatory | corporate | ip | employment | data-privacy | tax | real-estate]
+category:
+  [
+    communication | decision | analysis | meeting | coaching | operations | contract | litigation | regulatory | corporate | ip | employment | data-privacy | tax | real-estate,
+  ]
 task: [Brief description of the original task]
 outcome: [success | partial | failure]
-jurisdiction: [Jurisdiction tag if applicable — e.g., US-CA, US-DE, UK, EU, DE, FR, ES, SG]
-practice-area: [contract-negotiation | m-and-a | litigation | regulatory-compliance | corporate-governance | ip-prosecution | employment | data-privacy | tax | real-estate | arbitration | antitrust | securities | banking | insolvency]
-court-tribunal: [Court or tribunal if applicable — e.g., SDNY, Del-Ch, ICC, LCIA, AAA]
-statute-regulation: [Relevant statute or regulation if applicable — e.g., GDPR-Art-28, UCC-2-207, DTSA, SOX-302]
-privilege-reviewed: [true | false — whether this insight has been reviewed for privilege compliance]
-tags: [comma-separated: anonymized matter descriptors, frameworks, topics, practice areas, jurisdictions]
-takeaway: [One sentence - the key thing to remember. This is what gets searched.]
+jurisdiction:
+  [Jurisdiction tag if applicable — e.g., US-CA, US-DE, UK, EU, DE, FR, ES, SG]
+practice-area:
+  [
+    contract-negotiation | m-and-a | litigation | regulatory-compliance | corporate-governance | ip-prosecution | employment | data-privacy | tax | real-estate | arbitration | antitrust | securities | banking | insolvency,
+  ]
+court-tribunal:
+  [Court or tribunal if applicable — e.g., SDNY, Del-Ch, ICC, LCIA, AAA]
+statute-regulation:
+  [
+    Relevant statute or regulation if applicable — e.g.,
+    GDPR-Art-28,
+    UCC-2-207,
+    DTSA,
+    SOX-302,
+  ]
+privilege-reviewed:
+  [
+    true | false — whether this insight has been reviewed for privilege compliance,
+  ]
+tags:
+  [
+    comma-separated: anonymized matter descriptors,
+    frameworks,
+    topics,
+    practice areas,
+    jurisdictions,
+  ]
+takeaway:
+  [One sentence - the key thing to remember. This is what gets searched.]
 ---
 
 # [Descriptive Title]
 
 ## Context
+
 [2-3 sentences: What task this came from, what the situation was. Anonymized — no client names, matter numbers, or privileged information.]
 
 ## The Learning
+
 [The actual insight, pattern, template, preference, or failure analysis. Self-contained - a reader should understand this without seeing anything else.]
 
 ## Jurisdiction Applicability
+
 [If legal-specific: which jurisdictions this applies to, and any known variations. If a precedent, note whether it is binding or persuasive authority in relevant jurisdictions.]
 
 ## When to Apply
+
 [Specific situations where this insight is relevant. Be concrete.]
 
 ## Limitations and Caveats
+
 [When this insight does NOT apply. Jurisdictional limitations. Time-sensitivity of the legal analysis. Whether the underlying law has changed or is likely to change.]
 
 ## Related
+
 [References to related insights by filename, if any]
 ```
 
 **Keep each insight focused.** One pattern per file, one preference per file, one template per file. If a task yielded a good pattern AND a template AND a preference, that's three separate insight files. This granularity is what makes retrieval work.
 
 **For legal insights specifically:**
+
 - One precedent per file (even if you discovered five relevant cases — each gets its own insight)
 - One clause formulation per file (even if you refined three clauses — each gets its own entry)
 - One jurisdictional note per file (even if you discovered differences across four jurisdictions — each comparison gets its own file)
@@ -299,14 +335,15 @@ Insights must be stored so the **Research phase can find them quickly** by categ
    - Create the index with the table header if it doesn't exist
 
    Index format:
+
    ```markdown
    # Learnings Index
 
-   | Date | Type | Category | Title | Outcome | Jurisdiction | Practice Area | Tags | Takeaway | File |
-   |------|------|----------|-------|---------|--------------|---------------|------|----------|------|
-   | 2026-02-12 | precedent | litigation | Trade secret inevitable disclosure doctrine | success | US-CA | litigation | trade-secret, non-compete, employee-departure, technology | Waymo v. Uber inevitable disclosure analysis survives summary judgment — cite when drafting NDA enforcement strategy | litigation/2026-02-12-precedent-trade-secret-inevitable-disclosure.md |
-   | 2026-02-12 | clause-library | contract | LOL cap with IP indemnification carve-out | success | jurisdiction-agnostic | contract-negotiation | limitation-of-liability, ip-indemnification, saas, enterprise | Uncapped IP indemnification carve-out with 2x cap for general liability — survived pushback in 3 enterprise SaaS negotiations | contract/2026-02-12-clause-library-lol-cap-ip-carveout.md |
-   | 2026-02-12 | pattern | decision | Pre-mortem for board decisions | success | — | corporate-governance | board, pre-mortem, risk | Pre-mortem surfaces risks the team glosses over in optimistic planning | decision/2026-02-12-pattern-premortem-board.md |
+   | Date       | Type           | Category   | Title                                       | Outcome | Jurisdiction          | Practice Area        | Tags                                                          | Takeaway                                                                                                                      | File                                                                  |
+   | ---------- | -------------- | ---------- | ------------------------------------------- | ------- | --------------------- | -------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+   | 2026-02-12 | precedent      | litigation | Trade secret inevitable disclosure doctrine | success | US-CA                 | litigation           | trade-secret, non-compete, employee-departure, technology     | Waymo v. Uber inevitable disclosure analysis survives summary judgment — cite when drafting NDA enforcement strategy          | litigation/2026-02-12-precedent-trade-secret-inevitable-disclosure.md |
+   | 2026-02-12 | clause-library | contract   | LOL cap with IP indemnification carve-out   | success | jurisdiction-agnostic | contract-negotiation | limitation-of-liability, ip-indemnification, saas, enterprise | Uncapped IP indemnification carve-out with 2x cap for general liability — survived pushback in 3 enterprise SaaS negotiations | contract/2026-02-12-clause-library-lol-cap-ip-carveout.md             |
+   | 2026-02-12 | pattern        | decision   | Pre-mortem for board decisions              | success | —                     | corporate-governance | board, pre-mortem, risk                                       | Pre-mortem surfaces risks the team glosses over in optimistic planning                                                        | decision/2026-02-12-pattern-premortem-board.md                        |
    ```
 
    The Research phase searches this index by: type, category, jurisdiction, practice area, tags, and full-text grep across the Takeaway column. **Every field matters for retrieval.**
@@ -348,12 +385,14 @@ Present these suggestions to the user for approval.
 ### Example 1: Contract Negotiation Compounding
 
 **First negotiation of a SaaS enterprise agreement** (estimated: 60 hours)
+
 - Research standard market terms from scratch
 - Draft initial positions without precedent
 - Negotiate without understanding opposing counsel patterns
 - No clause library to draw from
 
 **Insights captured after the first negotiation:**
+
 - `clause-library`: Limitation of liability with IP carve-out that survived pushback
 - `clause-library`: Data processing addendum tailored to GDPR and CCPA dual compliance
 - `opposing-counsel-pattern`: Major law firm X anchors aggressively on IP indemnification but concedes to market standard
@@ -362,12 +401,14 @@ Present these suggestions to the user for approval.
 - `jurisdiction-note`: California law requires express opt-out of implied warranty of merchantability under UCC 2-316
 
 **Second negotiation of a similar SaaS agreement** (estimated: 25 hours)
+
 - Pull relevant clause library entries — start from battle-tested language
 - Apply opposing counsel patterns — don't over-concede on IP indemnification anchor
 - Use preferred redline format — client satisfaction from day one
 - Apply jurisdiction-specific knowledge — no re-research needed
 
 **Fifth negotiation** (estimated: 12 hours)
+
 - Comprehensive clause library covers 90% of provisions
 - Pattern database covers most counterparty negotiation styles
 - Jurisdiction matrix covers common governing law choices
@@ -376,6 +417,7 @@ Present these suggestions to the user for approval.
 ### Example 2: Litigation Pattern Compounding
 
 **First trade secret misappropriation case:**
+
 - `precedent`: Five key cases on inevitable disclosure doctrine, annotated with holdings and limitations
 - `judge-pattern`: Assigned judge requires specific harm declarations for TRO motions
 - `pattern`: Early forensic imaging of departing employee devices proved critical to evidence preservation
@@ -383,6 +425,7 @@ Present these suggestions to the user for approval.
 - `template`: Litigation hold notice template with device-specific preservation instructions
 
 **Second trade secret case (different client, different jurisdiction):**
+
 - Pull precedent database — three of five cases still good law; two need updating
 - Apply forensic imaging pattern immediately — no evidence preservation mistakes
 - Use litigation hold template — no delay this time
@@ -391,6 +434,7 @@ Present these suggestions to the user for approval.
 ### Example 3: Regulatory Compliance Compounding
 
 **First GDPR compliance audit:**
+
 - `regulatory-update`: Latest DPA enforcement guidance on consent mechanisms
 - `template`: Data processing agreement template meeting Article 28 requirements
 - `pattern`: Starting with data mapping before policy review saved 30% of audit time
@@ -398,6 +442,7 @@ Present these suggestions to the user for approval.
 - `failure`: Missed vendor sub-processor chain — standard audit checklist didn't cover fourth-party processors
 
 **Subsequent compliance audits:**
+
 - Updated checklist includes sub-processor chain review
 - DPA template reflects latest enforcement guidance
 - Jurisdiction-specific notes prevent incorrect assumptions about "legitimate interest"
@@ -406,6 +451,7 @@ Present these suggestions to the user for approval.
 ### Example 4: Corporate Governance Compounding
 
 **First board consent action for a portfolio company:**
+
 - `template`: Written consent template with proper authorization language
 - `pattern`: Secretary's certificate format that satisfies lender requirements
 - `jurisdiction-note`: Delaware DGCL 141(f) allows written consent in lieu of meeting — but charter must not prohibit it
@@ -413,6 +459,7 @@ Present these suggestions to the user for approval.
 - `failure`: Initial consent lacked unanimous signature — one director's electronic signature was insufficient under the company's bylaws
 
 **Subsequent consent actions:**
+
 - Template includes signature format guidance aligned with bylaws
 - Action summary format standardized to board's preferred style
 - Charter and bylaw review automated into the consent preparation checklist
@@ -421,6 +468,7 @@ Present these suggestions to the user for approval.
 ### Example 5: Employment Agreement Compounding
 
 **First executive employment agreement in a new jurisdiction:**
+
 - `jurisdiction-note`: Non-compete enforceability varies dramatically — California prohibits, Massachusetts requires garden leave, Delaware allows with reasonable scope
 - `clause-library`: Inventions assignment clause with adequate consideration and state-specific carve-outs
 - `pattern`: Starting with the restrictive covenant analysis before drafting saves time — no point drafting unenforceable provisions
@@ -428,6 +476,7 @@ Present these suggestions to the user for approval.
 - `preference`: HR prefers employment agreements that can be explained to candidates in plain language
 
 **Subsequent employment agreements:**
+
 - Jurisdiction matrix instantly identifies enforceable restrictive covenant structures
 - Inventions assignment clause library provides state-specific alternatives
 - Regulatory tracker flags pending changes that may affect restrictive covenants
@@ -436,47 +485,55 @@ Present these suggestions to the user for approval.
 ## Compounding Principles
 
 ### Compound Everything Worth Repeating
+
 - If you might do something similar again, compound it
 - Even partial successes have valuable patterns
 - Failures are the most valuable compounding opportunities
 - **Legal-specific**: Every matter produces reusable knowledge — even routine contracts yield clause formulations, jurisdiction notes, and preference data
 
 ### Be Honest About Failures
+
 - Don't sugarcoat what went wrong
 - Root cause matters more than symptoms
 - Prevention > cure
 - **Legal-specific**: Malpractice prevention requires honest analysis of near-misses, not just actual failures. A deadline almost missed is as important to document as a deadline actually missed.
 
 ### Keep It Retrievable
+
 - Descriptive filenames, deliberate tags, and one-sentence takeaways are what make retrieval work
 - Cross-reference related insights in the "Related" section
 - The index is sacred — keep it updated
 - **Legal-specific**: Jurisdiction tags, practice area tags, court tags, and statute tags are critical for legal retrieval. A litigation insight without a jurisdiction tag is nearly useless.
 
 ### One Insight Per File
+
 - Granular insights are findable; monolithic documents are not
 - A pattern, a template, and a preference from the same task are three separate files
 - Each file should be self-contained: readable without context
 - **Legal-specific**: One precedent per file, one clause per file, one jurisdictional note per file. A "summary of everything we learned from the Jones deal" is useless for retrieval.
 
 ### Preferences Are Insights
+
 - Style, tone, and detail preferences are project-scoped, not universal
 - Store them as `preference` type insights alongside patterns and templates
 - **Legal-specific**: Client preferences for communication style, risk tolerance, and drafting conventions are critical institutional knowledge that should survive attorney transitions
 
 ### Templates Compound Fastest
+
 - A good template saves the most time on repeat tasks
 - Store as `template` type insights with the generalized template in the body
 - Include usage notes and "When to Apply" guidance
 - **Legal-specific**: Clause libraries compound even faster than full templates — a battle-tested indemnification clause is the single highest-value unit of compounded legal knowledge
 
 ### Precedent Compounds Deepest
+
 - Legal research compounds in ways that general knowledge work does not
 - A well-annotated case that was researched for one matter may be cited in dozens of future matters
 - Keep precedent insights current — note when cases are overruled, distinguished, or superseded by statute
 - Cross-reference related precedents to build a case law map over time
 
 ### Privilege Is Non-Negotiable
+
 - Never store privileged communications, regardless of how valuable the insight
 - When in doubt, anonymize further or don't store
 - Privilege review should be a required step before any insight from a client matter is stored
@@ -484,22 +541,22 @@ Present these suggestions to the user for approval.
 
 ## When to Compound
 
-| Situation | Compound? | Focus On |
-|-----------|-----------|----------|
-| Completed high-stakes work | Always | Full analysis — patterns, templates, preferences |
-| Work received positive feedback | Yes | What worked, template creation |
-| Work received negative feedback | Absolutely | Failure insights, prevention |
-| Routine work done well | Sometimes | Efficiency patterns |
-| New type of work attempted | Yes | Approach and framework learnings |
-| Discovered user preference | Yes | Preference insight |
-| **Completed a contract negotiation** | **Always** | **Clause formulations, opposing counsel patterns, jurisdiction notes, negotiation patterns** |
-| **Completed a litigation milestone** | **Always** | **Precedent, judge patterns, motion strategies, evidentiary lessons** |
-| **Completed a regulatory filing or audit** | **Always** | **Regulatory updates, compliance patterns, template updates, enforcement trend analysis** |
-| **Received a court ruling** | **Always** | **Precedent analysis, judge pattern update, procedural lessons** |
-| **Deal closed or fell through** | **Always** | **Full deal post-mortem — what worked, what failed, what to replicate or avoid** |
-| **New regulation or enforcement action** | **Yes** | **Regulatory update insight, affected template review, compliance checklist update** |
-| **Attorney departure or transition** | **Yes** | **Knowledge capture — ensure institutional knowledge is documented before it walks out the door** |
-| **Malpractice near-miss** | **Absolutely** | **Failure analysis, systemic fix, checklist update, training need identification** |
+| Situation                                  | Compound?      | Focus On                                                                                          |
+| ------------------------------------------ | -------------- | ------------------------------------------------------------------------------------------------- |
+| Completed high-stakes work                 | Always         | Full analysis — patterns, templates, preferences                                                  |
+| Work received positive feedback            | Yes            | What worked, template creation                                                                    |
+| Work received negative feedback            | Absolutely     | Failure insights, prevention                                                                      |
+| Routine work done well                     | Sometimes      | Efficiency patterns                                                                               |
+| New type of work attempted                 | Yes            | Approach and framework learnings                                                                  |
+| Discovered user preference                 | Yes            | Preference insight                                                                                |
+| **Completed a contract negotiation**       | **Always**     | **Clause formulations, opposing counsel patterns, jurisdiction notes, negotiation patterns**      |
+| **Completed a litigation milestone**       | **Always**     | **Precedent, judge patterns, motion strategies, evidentiary lessons**                             |
+| **Completed a regulatory filing or audit** | **Always**     | **Regulatory updates, compliance patterns, template updates, enforcement trend analysis**         |
+| **Received a court ruling**                | **Always**     | **Precedent analysis, judge pattern update, procedural lessons**                                  |
+| **Deal closed or fell through**            | **Always**     | **Full deal post-mortem — what worked, what failed, what to replicate or avoid**                  |
+| **New regulation or enforcement action**   | **Yes**        | **Regulatory update insight, affected template review, compliance checklist update**              |
+| **Attorney departure or transition**       | **Yes**        | **Knowledge capture — ensure institutional knowledge is documented before it walks out the door** |
+| **Malpractice near-miss**                  | **Absolutely** | **Failure analysis, systemic fix, checklist update, training need identification**                |
 
 ## Insight Quality Standards
 
@@ -507,16 +564,16 @@ Present these suggestions to the user for approval.
 
 Every stored insight should meet these minimum quality standards before entering the knowledge base:
 
-| Criterion | Minimum Standard | Gold Standard |
-|-----------|-----------------|---------------|
-| **Self-contained** | Readable without any other context | Reader could apply the insight to a new matter without additional research |
-| **Anonymized** | No client names, matter numbers, or deal values | Impossible to identify the source matter even with effort |
-| **Jurisdiction-tagged** | At least one jurisdiction tag | All applicable jurisdictions noted with variation descriptions |
-| **Practice-area-tagged** | At least one practice area tag | All applicable practice areas noted |
-| **Privilege-reviewed** | Marked `privilege-reviewed: true` | Reviewed by supervising attorney |
-| **Actionable** | Contains a clear "when to apply" section | Contains specific trigger conditions, application guidance, and caveats |
-| **Current** | Reflects law as of the stated date | Includes currency decay notes and review-by date |
-| **Sourced** | States the authority level (primary, secondary, practical) | Includes full citations for all legal authorities |
+| Criterion                | Minimum Standard                                           | Gold Standard                                                              |
+| ------------------------ | ---------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **Self-contained**       | Readable without any other context                         | Reader could apply the insight to a new matter without additional research |
+| **Anonymized**           | No client names, matter numbers, or deal values            | Impossible to identify the source matter even with effort                  |
+| **Jurisdiction-tagged**  | At least one jurisdiction tag                              | All applicable jurisdictions noted with variation descriptions             |
+| **Practice-area-tagged** | At least one practice area tag                             | All applicable practice areas noted                                        |
+| **Privilege-reviewed**   | Marked `privilege-reviewed: true`                          | Reviewed by supervising attorney                                           |
+| **Actionable**           | Contains a clear "when to apply" section                   | Contains specific trigger conditions, application guidance, and caveats    |
+| **Current**              | Reflects law as of the stated date                         | Includes currency decay notes and review-by date                           |
+| **Sourced**              | States the authority level (primary, secondary, practical) | Includes full citations for all legal authorities                          |
 
 ### What Disqualifies an Insight
 
@@ -549,16 +606,16 @@ Created -> Active -> Review Needed -> Updated OR Superseded OR Archived
 
 These events should trigger review of related stored insights:
 
-| Event | Review Scope |
-|-------|-------------|
-| New case decided in relevant jurisdiction | Precedent database, litigation patterns |
-| Statute amended or new regulation effective | Regulatory tracker, clause library, compliance templates |
-| Major enforcement action | Regulatory tracker, compliance patterns |
-| Significant negotiation outcome | Clause library, opposing counsel patterns, negotiation patterns |
-| Court ruling affecting stored judge pattern | Judge pattern database |
-| Attorney departure | Matter knowledge base — capture institutional knowledge |
-| New practice area entered | CLE tracker, competence gap assessment |
-| Malpractice claim or near-miss | Failure database, checklists, process knowledge |
+| Event                                       | Review Scope                                                    |
+| ------------------------------------------- | --------------------------------------------------------------- |
+| New case decided in relevant jurisdiction   | Precedent database, litigation patterns                         |
+| Statute amended or new regulation effective | Regulatory tracker, clause library, compliance templates        |
+| Major enforcement action                    | Regulatory tracker, compliance patterns                         |
+| Significant negotiation outcome             | Clause library, opposing counsel patterns, negotiation patterns |
+| Court ruling affecting stored judge pattern | Judge pattern database                                          |
+| Attorney departure                          | Matter knowledge base — capture institutional knowledge         |
+| New practice area entered                   | CLE tracker, competence gap assessment                          |
+| Malpractice claim or near-miss              | Failure database, checklists, process knowledge                 |
 
 ## Next Step
 

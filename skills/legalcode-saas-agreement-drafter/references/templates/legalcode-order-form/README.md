@@ -14,13 +14,13 @@ the CSA, not the Order Form.
 
 ## Documents
 
-| File | Document Type | Use when |
-|------|--------------|----------|
-| `core.md` | Jurisdiction-neutral baseline | You operate in a jurisdiction not covered below, or you want the master before specialising. |
-| `us.md` | US — Delaware/NY default + state PO + auto-renewal disclosures | Customer is US-based; covers state-by-state purchase-order rules, NY Truth-in-Lending, IL/CA auto-renewal disclosures embedded in the Order Form. |
-| `eu.md` | EU/EEA — Data Act + late-payment + VAT + DE-AGB | Customer is EU/EEA-based. Includes German overlay for written-form / Schriftform requirements and B2B late-payment statutory interest. |
-| `uk.md` | UK — DMCCA 2024 Pt 4 (where applicable to SME) + UK CRA + late-payment | Customer is UK-based. Includes DMCCA Pt 4 reminder-notice flagging if Customer is SME. |
-| `is.md` | Iceland — Lög nr. 16/2016 carve-out + EEA-imported Data Act + kennitala | Customer is Iceland-based. Bilingual labels in signature block. |
+| File      | Document Type                                                           | Use when                                                                                                                                          |
+| --------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `core.md` | Jurisdiction-neutral baseline                                           | You operate in a jurisdiction not covered below, or you want the master before specialising.                                                      |
+| `us.md`   | US — Delaware/NY default + state PO + auto-renewal disclosures          | Customer is US-based; covers state-by-state purchase-order rules, NY Truth-in-Lending, IL/CA auto-renewal disclosures embedded in the Order Form. |
+| `eu.md`   | EU/EEA — Data Act + late-payment + VAT + DE-AGB                         | Customer is EU/EEA-based. Includes German overlay for written-form / Schriftform requirements and B2B late-payment statutory interest.            |
+| `uk.md`   | UK — DMCCA 2024 Pt 4 (where applicable to SME) + UK CRA + late-payment  | Customer is UK-based. Includes DMCCA Pt 4 reminder-notice flagging if Customer is SME.                                                            |
+| `is.md`   | Iceland — Lög nr. 16/2016 carve-out + EEA-imported Data Act + kennitala | Customer is Iceland-based. Bilingual labels in signature block.                                                                                   |
 
 ## How to use
 

@@ -47,6 +47,7 @@ jurisdiction-specific annexes for UK, California, Brazil, and India, and produce
 clause language for both controller-side and processor-side drafting.
 
 **Covers:**
+
 - Drafting complete DPAs from scratch for any controller/processor relationship
 - Adapting or supplementing existing DPA templates to meet current regulatory requirements
 - Controller-to-processor DPAs (GDPR Art. 28 / UK GDPR / CCPA service provider / LGPD operator)
@@ -60,6 +61,7 @@ clause language for both controller-side and processor-side drafting.
 - Quality-verified output with Glass Box audit trail and confidence scoring
 
 **Does not:**
+
 - Review or negotiate existing DPAs (see `legalcode-dpa-review-and-negotiation`)
 - Provide legal advice or replace qualified DPO or counsel review
 - Cover all global privacy regimes — primary coverage is EU/UK/US(CA)/BR/IN; for PDPA Singapore,
@@ -70,6 +72,7 @@ clause language for both controller-side and processor-side drafting.
 - Guarantee compliance or regulatory approval
 
 **Related skills:**
+
 - `legalcode-dpa-review-and-negotiation` — review and negotiate an existing DPA clause-by-clause
 - `legalcode-cross-border-transfer-assessment` — deep transfer mechanism analysis
 - `legalcode-dpia-generator` — generate Data Protection Impact Assessments
@@ -88,13 +91,13 @@ generates modular output accordingly.
 
 ### Regime Overview
 
-| Regime | Primary Instrument | Mandatory DPA? | Key Authority | Transfer Mechanism |
-|--------|--------------------|---------------|---------------|-------------------|
-| **EU GDPR** | Regulation (EU) 2016/679, Art. 28 | Yes — controller/processor | EDPB | EU SCCs 2021, adequacy decisions, BCRs |
-| **UK GDPR** | UK GDPR + DPA 2018 + Data (Use and Access) Act 2025 | Yes — mirrors EU GDPR Art. 28 | ICO | UK IDTA, UK Addendum to EU SCCs, adequacy |
-| **CCPA/CPRA** | Cal. Civil Code §1798.100 et seq.; CPPA Regs § 7050 et seq. | Yes — service provider contracts | CPPA | N/A (domestic regime; foreign transfer follows other applicable law) |
-| **LGPD (Brazil)** | Lei Geral de Proteção de Dados, Law 13,709/2018, Arts. 37–39 | Required — operator agreements | ANPD | Brazilian SCCs (mandatory as of 2024 grace period end), adequacy |
-| **DPDP Act (India)** | Digital Personal Data Protection Act 2023, §§ 8, 9, 10 | Required — data processor agreements | DPBI (Data Protection Board of India) | Rules pending; transfer to countries on whitelist |
+| Regime               | Primary Instrument                                           | Mandatory DPA?                       | Key Authority                         | Transfer Mechanism                                                   |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------ | ------------------------------------- | -------------------------------------------------------------------- |
+| **EU GDPR**          | Regulation (EU) 2016/679, Art. 28                            | Yes — controller/processor           | EDPB                                  | EU SCCs 2021, adequacy decisions, BCRs                               |
+| **UK GDPR**          | UK GDPR + DPA 2018 + Data (Use and Access) Act 2025          | Yes — mirrors EU GDPR Art. 28        | ICO                                   | UK IDTA, UK Addendum to EU SCCs, adequacy                            |
+| **CCPA/CPRA**        | Cal. Civil Code §1798.100 et seq.; CPPA Regs § 7050 et seq.  | Yes — service provider contracts     | CPPA                                  | N/A (domestic regime; foreign transfer follows other applicable law) |
+| **LGPD (Brazil)**    | Lei Geral de Proteção de Dados, Law 13,709/2018, Arts. 37–39 | Required — operator agreements       | ANPD                                  | Brazilian SCCs (mandatory as of 2024 grace period end), adequacy     |
+| **DPDP Act (India)** | Digital Personal Data Protection Act 2023, §§ 8, 9, 10       | Required — data processor agreements | DPBI (Data Protection Board of India) | Rules pending; transfer to countries on whitelist                    |
 
 ### Multi-Regime Strategy
 
@@ -167,14 +170,14 @@ without a DPA, ask whether personal data is being processed and whether a DPA ad
    - Options: **Controller** (you control the purpose/means; drafting DPA terms to impose on processor),
      **Processor** (you process on behalf of a controller; responding to controller's DPA requirements),
      **Both** (building a bilateral negotiated DPA template)
-   - *Why this matters*: Controller-side drafting maximizes audit rights, breach notification speed,
+   - _Why this matters_: Controller-side drafting maximizes audit rights, breach notification speed,
      and liability protections. Processor-side drafting balances compliance with operational feasibility.
 
 2. **What type of DPA is needed?**
    - Options: **Controller-to-Processor** (Art. 28 DPA), **Controller-to-Controller** (Art. 26 joint
      arrangement), **Processor-to-Sub-Processor** (flow-down DPA), **Service Provider Addendum**
      (CCPA/CPRA), **Multi-variant** (all of the above for a platform DPA program)
-   - *Why this matters*: Each variant has fundamentally different obligations and structure.
+   - _Why this matters_: Each variant has fundamentally different obligations and structure.
      Art. 26 joint arrangements require mutual obligation clauses; Art. 28 DPAs are controller-led.
 
 3. **Which regimes apply?**
@@ -182,13 +185,13 @@ without a DPA, ask whether personal data is being processed and whether a DPA ad
      **LGPD (Brazil) also in scope**, **India DPDP Act also in scope**, **All regimes**, **Let me
      determine from the context**
    - Allow multiple selections.
-   - *Why this matters*: Determines which modular annexes to generate. Missing a regime creates
+   - _Why this matters_: Determines which modular annexes to generate. Missing a regime creates
      compliance exposure.
 
 4. **Any existing organizational DPA template or playbook?**
    - Options: **Yes — load from local settings or provide path**, **No — use regulatory baseline**,
      **I'll describe key positions as we go**
-   - *Why this matters*: Org-specific templates (e.g., "we require 24-hour breach notification" or
+   - _Why this matters_: Org-specific templates (e.g., "we require 24-hour breach notification" or
      "we never accept general sub-processor authorization") change the clause defaults and
      negotiate posture throughout.
 
@@ -197,7 +200,7 @@ without a DPA, ask whether personal data is being processed and whether a DPA ad
      **Professional services** (bespoke, negotiated, custom data handling),
      **Sub-processor / downstream vendor** (further downstream; flow-down obligations apply),
      **Strategic partner** (joint processing with shared benefit)
-   - *Why this matters*: A high-volume SaaS processor warrants general sub-processor authorization
+   - _Why this matters_: A high-volume SaaS processor warrants general sub-processor authorization
      with notification mechanism; a bespoke professional services provider may warrant specific
      authorization for each sub-processor.
 
@@ -213,31 +216,35 @@ operational reality. **Role misclassification is one of the most consequential D
 Apply the EDPB Guidelines 07/2020 decision tree [VERIFY]:
 
 **Step 3a — Who determines the purpose?**
+
 - One party alone determines purpose → that party is the controller; other is processor or
   independent controller
 - Both parties together determine purpose → candidate joint controllers (Art. 26, not Art. 28)
 - One party executes processing as told by the other → candidate processor
 
 **Step 3b — Who determines the essential means?**
+
 - "Essential means" = which data, legal basis, retention period, data subject categories → controller function
 - "Non-essential means" = technical tool selection, software implementation → does not trigger controller status
 
 **Step 3c — Joint Controller Indicators (Art. 26 scenario)**
+
 - Both parties benefit from the same processing outcomes independently
 - Processing impossible without both parties' active contribution
 - Both parties can independently determine to use or stop using the data
 
 **Consequences table:**
 
-| Role | Applicable Instrument | Key Obligation |
-|------|----------------------|---------------|
-| Controller | GDPR Art. 6/9 lawful basis + Art. 28 DPA with processor | Demonstrate lawful basis; respond to data subjects |
-| Processor | GDPR Art. 28 DPA | Process only on documented instructions |
-| Joint Controller | GDPR Art. 26 arrangement | Determine respective responsibilities; make arrangement available to data subjects |
-| Independent Controller | Own privacy notice + Art. 6/9 basis | No DPA required; each has separate obligations |
-| Sub-Processor | Flow-down Art. 28 DPA from processor | Same obligations as processor but vis-à-vis the direct processor |
+| Role                   | Applicable Instrument                                   | Key Obligation                                                                     |
+| ---------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Controller             | GDPR Art. 6/9 lawful basis + Art. 28 DPA with processor | Demonstrate lawful basis; respond to data subjects                                 |
+| Processor              | GDPR Art. 28 DPA                                        | Process only on documented instructions                                            |
+| Joint Controller       | GDPR Art. 26 arrangement                                | Determine respective responsibilities; make arrangement available to data subjects |
+| Independent Controller | Own privacy notice + Art. 6/9 basis                     | No DPA required; each has separate obligations                                     |
+| Sub-Processor          | Flow-down Art. 28 DPA from processor                    | Same obligations as processor but vis-à-vis the direct processor                   |
 
 **⟁ CLARIFY** — If role assignment is ambiguous:
+
 - "The context suggests [Party A] may be a joint controller rather than a processor, because
   [indicator]. Should I generate an Art. 26 joint controller arrangement instead of an Art. 28 DPA?"
 - "The processor appears to use the data for its own service optimization. This could make it a
@@ -252,6 +259,7 @@ Check for an organization-specific DPA template or playbook in local settings (e
 or similar configuration files).
 
 A DPA playbook defines:
+
 - **Standard positions**: Preferred language for each major DPA clause type
 - **Acceptable ranges**: Terms that can be accepted without escalation
 - **Escalation triggers**: Terms requiring DPO, senior counsel, or executive sign-off
@@ -308,6 +316,7 @@ Save the most relevant results to `/tmp/legalcode-dpa-drafter-research.md`. Mark
 legalcode-mcp-sourced citations as VERIFIED in the Glass Box audit trail.
 
 **If legalcode-mcp is not connected:**
+
 - Mark all statutory and case law references throughout the DPA with [VERIFY]
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Focus on structural quality, clause completeness, and dual-perspective generation
@@ -316,26 +325,28 @@ legalcode-mcp-sourced citations as VERIFIED in the Glass Box audit trail.
 
 Based on the context gathered in Steps 2–5, determine which DPA components to generate:
 
-| Component | Generate When | Regime |
-|-----------|--------------|--------|
-| **Core DPA (15 clauses)** | Always | GDPR Art. 28 baseline |
-| **Annex A: Processing Schedule** | Always | GDPR Art. 28(3) preamble |
-| **Annex B: Technical and Organizational Measures** | Always | GDPR Art. 32 |
-| **Annex C: Sub-Processor Authorization** | Sub-processors exist or expected | GDPR Art. 28(2) |
-| **UK Addendum** | UK data subjects or UK-established processor | UK GDPR + DUA Act 2025 |
-| **California Exhibit** | CA residents' data; CCPA/CPRA in scope | CCPA/CPRA §§ 7050–7053 |
-| **Brazil Annex** | Brazilian data subjects; LGPD in scope | LGPD Arts. 37–39 + ANPD SCCs |
-| **India Annex** | Indian data subjects; DPDP Act in scope | DPDP Act §§ 8–10 (rules pending) |
-| **Art. 26 Joint Controller Arrangement** | Joint controller confirmed in Step 3 | GDPR Art. 26 |
-| **Sub-Processor Flow-Down DPA** | Processor-to-sub-processor requested | GDPR Art. 28(4) |
+| Component                                          | Generate When                                | Regime                           |
+| -------------------------------------------------- | -------------------------------------------- | -------------------------------- |
+| **Core DPA (15 clauses)**                          | Always                                       | GDPR Art. 28 baseline            |
+| **Annex A: Processing Schedule**                   | Always                                       | GDPR Art. 28(3) preamble         |
+| **Annex B: Technical and Organizational Measures** | Always                                       | GDPR Art. 32                     |
+| **Annex C: Sub-Processor Authorization**           | Sub-processors exist or expected             | GDPR Art. 28(2)                  |
+| **UK Addendum**                                    | UK data subjects or UK-established processor | UK GDPR + DUA Act 2025           |
+| **California Exhibit**                             | CA residents' data; CCPA/CPRA in scope       | CCPA/CPRA §§ 7050–7053           |
+| **Brazil Annex**                                   | Brazilian data subjects; LGPD in scope       | LGPD Arts. 37–39 + ANPD SCCs     |
+| **India Annex**                                    | Indian data subjects; DPDP Act in scope      | DPDP Act §§ 8–10 (rules pending) |
+| **Art. 26 Joint Controller Arrangement**           | Joint controller confirmed in Step 3         | GDPR Art. 26                     |
+| **Sub-Processor Flow-Down DPA**                    | Processor-to-sub-processor requested         | GDPR Art. 28(4)                  |
 
 **⟁ CLARIFY** — If generating a full DPA program would be very large:
+
 - "I can generate the full DPA with all [N] components, or focus on the highest-priority
   components first. Which do you prefer?"
 
 ### Step 7: Draft Core DPA Clauses
 
 Draft all 15 DPA clause categories. For each clause, generate:
+
 1. **REQUIRED** minimum language (regulatory floor)
 2. **Controller-favorable position** (maximizes controller protections)
 3. **Processor-favorable position** (balances compliance with operational feasibility)
@@ -352,6 +363,7 @@ the templates in the **Jurisdiction-Specific Annexes** section below.
 ### Step 9: Quality Verification
 
 Before delivering the draft, run all quality checks (see **Quality Assurance Framework**):
+
 1. **Citation Quality Gates** (5 gates) — run silently, revise any failures
 2. **Self-Interrogation** (3-pass) — for every REQUIRED clause with HIGH severity consequences
 3. **Confidence Scoring** — assign confidence to each clause analysis
@@ -363,6 +375,7 @@ Before delivering the draft, run all quality checks (see **Quality Assurance Fra
 ### Step 10: Deliver DPA Draft
 
 Structure output per **Output Format Template** below. Include:
+
 - Executive summary with regime coverage matrix
 - Full DPA draft (clauses 1–15)
 - All applicable annexes and addenda
@@ -376,12 +389,12 @@ Structure output per **Output Format Template** below. Include:
 
 ### Classification Legend
 
-| Classification | Meaning |
-|---------------|---------|
-| **REQUIRED** | Mandated by applicable statute — omission creates direct regulatory violation |
+| Classification             | Meaning                                                                                        |
+| -------------------------- | ---------------------------------------------------------------------------------------------- |
+| **REQUIRED**               | Mandated by applicable statute — omission creates direct regulatory violation                  |
 | **CONDITIONALLY REQUIRED** | Required only if specified condition applies (e.g., cross-border transfer, specific data type) |
-| **RECOMMENDED** | Not explicitly mandated but strongly advised by regulatory guidance or best practice |
-| **OPTIONAL** | Commonly included for commercial clarity but not required by any applicable statute |
+| **RECOMMENDED**            | Not explicitly mandated but strongly advised by regulatory guidance or best practice           |
+| **OPTIONAL**               | Commonly included for commercial clarity but not required by any applicable statute            |
 
 ---
 
@@ -391,6 +404,7 @@ Structure output per **Output Format Template** below. Include:
 consistently with applicable data protection law.
 
 **REQUIRED elements:**
+
 - [ ] Identify the Controller (name, address, registration number)
 - [ ] Identify the Processor (name, address, registration number)
 - [ ] Define "Personal Data," "Processing," "Data Subject" consistent with applicable regime
@@ -399,12 +413,14 @@ consistently with applicable data protection law.
 - [ ] Identify applicable data protection law
 
 **Controller-favorable language:**
+
 > "This DPA supplements and forms part of the Agreement. In the event of conflict between this
 > DPA and the Agreement, this DPA takes precedence with respect to matters of data protection.
 > Capitalized terms used in this DPA but not defined herein have the meaning given in Regulation
 > (EU) 2016/679 (GDPR)."
 
 **Processor-favorable language:**
+
 > "This DPA supplements the Agreement and does not modify it. Defined terms in the Agreement
 > apply to this DPA unless otherwise specified. In the event of conflict, the Agreement governs
 > except to the extent this DPA addresses specific data protection compliance obligations."
@@ -422,6 +438,7 @@ requires use of "Business" and "Service Provider" (not "Controller" and "Process
 **Purpose**: Specifies the scope, duration, and nature of the processing relationship.
 
 **REQUIRED elements:**
+
 - [ ] Subject matter (what service gives rise to the processing)
 - [ ] Duration (term of DPA, aligned with main service term plus post-termination period)
 - [ ] Nature of processing (what operations are performed: collection, storage, analysis, disclosure)
@@ -430,6 +447,7 @@ requires use of "Business" and "Service Provider" (not "Controller" and "Process
 - [ ] Categories of data subjects (whose data is processed)
 
 **Controller-favorable language (Article 28 minimum, with specificity requirement):**
+
 > "The Processor shall Process Personal Data solely in accordance with the documented instructions
 > of the Controller as set out in Annex A (Processing Schedule) to this DPA. The subject matter,
 > duration, nature, and purpose of Processing, the types of Personal Data, and the categories of
@@ -437,6 +455,7 @@ requires use of "Business" and "Service Provider" (not "Controller" and "Process
 > written agreement of the Controller."
 
 **Common deficiencies:**
+
 - Subject matter defined only as "providing the services" (too vague; EDPB requires specificity)
 - No duration specified or duration is "indefinite"
 - Purpose defined as "as required to provide the services" (circular, not independently verifiable)
@@ -456,6 +475,7 @@ and categories of personal data (Art. 37). DPDP Act requires description of proc
 instructions.
 
 **REQUIRED elements:**
+
 - [ ] Processor processes only on documented instructions from controller
 - [ ] Instructions can be issued through the Agreement, this DPA, and written amendments
 - [ ] Processor must notify controller if an instruction would violate applicable data protection law
@@ -463,6 +483,7 @@ instructions.
 - [ ] Instructions mechanism covers international transfers (not just operational instructions)
 
 **Controller-favorable language:**
+
 > "The Processor shall Process Personal Data only on the documented instructions of the Controller,
 > including with regard to transfers of Personal Data to a third country or an international
 > organization, unless required to do so by Union or Member State law to which the Processor is
@@ -477,6 +498,7 @@ Art. 28(3)(a) in sub-processing contracts is "highly recommended but not mandato
 adopt similar phrases like "unless required to do so by law or binding order of a governmental body."
 
 **Common deficiencies:**
+
 - No provision for processor to challenge instructions on legality grounds
 - Instructions mechanism does not cover transfers to third countries
 - No specification of who can issue instructions (creates unauthorized instruction risk)
@@ -491,11 +513,13 @@ adopt similar phrases like "unless required to do so by law or binding order of 
 **Purpose**: Ensures that persons authorized to process personal data are bound by confidentiality.
 
 **REQUIRED elements:**
+
 - [ ] Authorized persons are bound to confidentiality (contractual obligation, statutory, or equivalent)
 - [ ] List or description of authorized persons or categories
 - [ ] Processor's obligation to ensure authorized persons are limited to those needed
 
 **Market-standard language:**
+
 > "The Processor shall ensure that persons authorized to Process Personal Data have committed
 > themselves to confidentiality or are under an appropriate statutory obligation of confidentiality.
 > The Processor shall ensure that access to Personal Data is limited to those persons who need
@@ -514,6 +538,7 @@ this obligation; explicit contractual terms are not required if statutory equiva
 measures. **A DPA that merely references Art. 32 without specifying measures is non-compliant.**
 
 **REQUIRED elements:**
+
 - [ ] Reference to Art. 32 measures (or equivalent under applicable regime)
 - [ ] Concrete TOM specification (either in-clause or by reference to Annex B)
 - [ ] Encryption and pseudonymization obligations
@@ -523,6 +548,7 @@ measures. **A DPA that merely references Art. 32 without specifying measures is 
 - [ ] Risk-proportionate approach to security measures
 
 **Controller-favorable language:**
+
 > "The Processor shall implement and maintain the technical and organizational measures specified
 > in Annex B (Technical and Organizational Measures). The Processor shall not materially reduce
 > the security measures described in Annex B without prior written notice to the Controller. The
@@ -530,6 +556,7 @@ measures. **A DPA that merely references Art. 32 without specifying measures is 
 > profile of the processing upon reasonable notice."
 
 **Processor-favorable language:**
+
 > "The Processor shall implement and maintain technical and organizational measures that provide
 > a level of security appropriate to the risk, taking into account the state of the art, the costs
 > of implementation, and the nature, scope, context, and purposes of Processing. The Processor
@@ -548,11 +575,13 @@ measures. **A DPA that merely references Art. 32 without specifying measures is 
 of DPA obligations.
 
 **Authorization types:**
+
 - **Specific authorization**: Controller must approve each and every sub-processor individually
 - **General authorization**: Processor may engage sub-processors from a maintained list; processor
   must notify controller of intended changes to allow objection
 
 **REQUIRED elements (for general authorization):**
+
 - [ ] Controller provides general written authorization to engage listed sub-processors (Annex C)
 - [ ] Processor must inform controller of intended additions or replacements (notification window)
 - [ ] Controller has right to object to new sub-processors (with objection process)
@@ -565,6 +594,7 @@ guarantees, but the responsibility for verifying those guarantees remains with t
 Controllers should have identity information on all processors and sub-processors readily available.
 
 **Controller-favorable language (with meaningful objection right):**
+
 > "The Processor shall not engage a sub-processor without the prior specific or general written
 > authorization of the Controller. Where the Processor is given general written authorization to
 > engage sub-processors, the Processor shall notify the Controller at least [30] days in advance
@@ -577,6 +607,7 @@ Controllers should have identity information on all processors and sub-processor
 > remain fully liable to the Controller for the performance of those obligations."
 
 **Processor-favorable language (with limited objection right):**
+
 > "The Processor may engage sub-processors listed in Annex C. The Processor shall provide
 > [14] days' written notice before engaging a new sub-processor. The Controller may object to
 > a new sub-processor solely on reasonable data protection grounds by notifying the Processor
@@ -597,6 +628,7 @@ LGPD Art. 37: Operators must contract with sub-operators and ensure equivalent p
 (access, rectification, erasure, portability, objection, restriction).
 
 **REQUIRED elements:**
+
 - [ ] Processor assists controller in responding to data subject requests
 - [ ] Timeframe for processor to provide assistance (typically within [5–10] business days)
 - [ ] Scope of assistance (providing data in usable format, confirming deletion, etc.)
@@ -604,6 +636,7 @@ LGPD Art. 37: Operators must contract with sub-operators and ensure equivalent p
 - [ ] Processor must not respond directly to data subjects unless authorized
 
 **Controller-favorable language:**
+
 > "The Processor shall promptly notify the Controller if the Processor receives a request from
 > a Data Subject regarding any Personal Data. The Processor shall not respond to any such request
 > directly without the Controller's prior authorization. Taking into account the nature of the
@@ -629,11 +662,13 @@ processor assistance obligations — verify current ICO guidance.
 Assessments and prior consultations with supervisory authorities.
 
 **REQUIRED elements:**
+
 - [ ] Processor assists with DPIA process when required
 - [ ] Processor assists with prior consultation with supervisory authority if required
 - [ ] Scope of assistance includes providing information about processing
 
 **Market-standard language:**
+
 > "Taking into account the nature of the Processing and the information available to the Processor,
 > the Processor shall assist the Controller in ensuring compliance with the obligations pursuant to
 > Articles 35 and 36 of the GDPR relating to data protection impact assessments and prior
@@ -650,6 +685,7 @@ Assessments and prior consultations with supervisory authorities.
 breaches and to assist with investigation and remediation.
 
 **REQUIRED elements:**
+
 - [ ] Processor notifies controller of breach without undue delay after becoming aware
 - [ ] Minimum notification timeline (commonly 24–48 hours, to ensure controller meets Art. 33's 72-hour window)
 - [ ] Minimum content of notification (Art. 33(3) categories: nature, data categories, approximate numbers)
@@ -658,6 +694,7 @@ breaches and to assist with investigation and remediation.
 - [ ] No public disclosure without controller authorization
 
 **Controller-favorable language:**
+
 > "In the event of a Personal Data Breach, the Processor shall notify the Controller without
 > undue delay and in any event within [24] hours after becoming aware of the breach. The
 > notification shall include, to the extent available: (a) a description of the nature of the
@@ -670,6 +707,7 @@ breaches and to assist with investigation and remediation.
 > with the Controller in investigating the breach and taking remediation steps."
 
 **Processor-favorable language:**
+
 > "In the event of a Personal Data Breach involving Controller's Personal Data, the Processor
 > shall notify the Controller without undue delay after becoming aware of the breach. Where not
 > all information required under Art. 33(3) GDPR is available at the time of notification, the
@@ -700,12 +738,14 @@ current DPDP Rules 2025 requirements [VERIFY].
 **Purpose**: Ensures the controller can verify the processor's compliance with its DPA obligations.
 
 **REQUIRED elements:**
+
 - [ ] Processor makes available all information necessary to demonstrate compliance
 - [ ] Processor allows for and contributes to audits and inspections
 - [ ] Process for conducting inspections (frequency, notice, format, cost)
 - [ ] Third-party audit reliance option (processor can offer certification reports)
 
 **Controller-favorable language:**
+
 > "The Processor shall make available to the Controller all information necessary to demonstrate
 > compliance with the obligations laid down in this DPA and shall allow for and contribute to
 > audits and inspections conducted by the Controller or a mandated auditor. The Processor shall
@@ -717,6 +757,7 @@ current DPDP Rules 2025 requirements [VERIFY].
 > has reasonable grounds to believe audit reports are insufficient."
 
 **Processor-favorable language:**
+
 > "The Processor shall make available all information reasonably necessary to demonstrate
 > compliance with this DPA and shall allow for audits conducted by the Controller or a mandated
 > auditor no more than once per calendar year, upon [30] business days' written notice, and
@@ -734,6 +775,7 @@ current DPDP Rules 2025 requirements [VERIFY].
 **Purpose**: Requires the processor to return or delete all personal data upon termination.
 
 **REQUIRED elements:**
+
 - [ ] Controller's choice: return or deletion of all personal data (including copies held by sub-processors)
 - [ ] Timeline for return/deletion (typically [30–60] days after termination)
 - [ ] Deletion confirmation / deletion certificate
@@ -741,6 +783,7 @@ current DPDP Rules 2025 requirements [VERIFY].
 - [ ] Post-termination confidentiality obligations survive
 
 **Market-standard language:**
+
 > "Upon termination or expiry of the Agreement, the Processor shall, at the choice of the
 > Controller, delete or return to the Controller all Personal Data, and delete existing copies,
 > unless Union or Member State law requires storage of the Personal Data. The Processor shall
@@ -751,6 +794,7 @@ current DPDP Rules 2025 requirements [VERIFY].
 > return or deletion obligations."
 
 **Common deficiencies:**
+
 - No deletion certificate requirement (creates proof-of-compliance gap)
 - No timeline for return/deletion
 - Backups not included in deletion obligation
@@ -767,14 +811,14 @@ UK (for UK GDPR), outside Brazil (for LGPD), or outside India (for DPDP Act).
 
 **Transfer mechanism options:**
 
-| Mechanism | Availability | Requirements |
-|-----------|-------------|-------------|
-| **Adequacy decision** | Available for adequacy-recognized countries | Verify currency of decision; no supplementary measures required if adequate |
-| **EU SCCs 2021** | Module 1 (C2C), Module 2 (C2P), Module 3 (P2P), Module 4 (P2C) | Execute applicable module; conduct Transfer Impact Assessment (TIA) for high-risk destinations |
-| **UK IDTA** | UK transfers post-Brexit | ICO-approved template (effective 21 March 2022); or UK Addendum to EU SCCs 2021 |
-| **BCRs** | Intra-group transfers | Prior approval from lead DPA required; complex but provides comprehensive coverage |
-| **Art. 49 derogations** | Specific limited circumstances | Explicit consent, necessity for contract performance, public interest, vital interests |
-| **Brazil SCCs** | Brazilian international transfers | Resolução CD/ANPD nº 19/2024 mandatory SCCs [VERIFY] |
+| Mechanism               | Availability                                                   | Requirements                                                                                   |
+| ----------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Adequacy decision**   | Available for adequacy-recognized countries                    | Verify currency of decision; no supplementary measures required if adequate                    |
+| **EU SCCs 2021**        | Module 1 (C2C), Module 2 (C2P), Module 3 (P2P), Module 4 (P2C) | Execute applicable module; conduct Transfer Impact Assessment (TIA) for high-risk destinations |
+| **UK IDTA**             | UK transfers post-Brexit                                       | ICO-approved template (effective 21 March 2022); or UK Addendum to EU SCCs 2021                |
+| **BCRs**                | Intra-group transfers                                          | Prior approval from lead DPA required; complex but provides comprehensive coverage             |
+| **Art. 49 derogations** | Specific limited circumstances                                 | Explicit consent, necessity for contract performance, public interest, vital interests         |
+| **Brazil SCCs**         | Brazilian international transfers                              | Resolução CD/ANPD nº 19/2024 mandatory SCCs [VERIFY]                                           |
 
 **Schrems II requirement** (C-311/18) [VERIFY]: SCCs alone may be insufficient for transfers to
 countries with surveillance laws (e.g., US pre-Privacy Shield adequacy). Conduct Transfer Impact
@@ -782,6 +826,7 @@ Assessment (TIA) for high-risk destinations and implement supplementary measures
 unacceptable risk.
 
 **EU SCCs 2021 Module selection:**
+
 - **Module 1**: Controller-to-Controller
 - **Module 2**: Controller-to-Processor ← most common for DPAs
 - **Module 3**: Processor-to-Processor (for sub-processor flow-down)
@@ -808,12 +853,14 @@ remains in effect but the EU-UK adequacy decision expires; verify renewal status
 controller-drafted DPAs).
 
 **RECOMMENDED elements:**
+
 - [ ] Controller warrants that it has a lawful basis to provide the personal data
 - [ ] Controller is responsible for accuracy and completeness of personal data provided
 - [ ] Controller must inform the processor of changes to legal basis or applicable regimes
 - [ ] Controller must provide timely responses to processor requests for instructions
 
 **Market-standard language:**
+
 > "The Controller warrants that it has a valid lawful basis for Processing the Personal Data under
 > applicable Data Protection Law, including for disclosing the Personal Data to the Processor for
 > the purposes described in Annex A. The Controller is solely responsible for the accuracy, quality,
@@ -830,6 +877,7 @@ controller-drafted DPAs).
 **Purpose**: Allocates liability between controller and processor for data protection failures.
 
 **RECOMMENDED elements:**
+
 - [ ] Each party liable for breaches of its own data protection obligations
 - [ ] Processor liable for non-compliance with this DPA or acting outside controller instructions
 - [ ] Processor not liable for damages caused solely by the controller's instructions
@@ -848,6 +896,7 @@ cannot be contractually allocated away from the party responsible for the violat
 **Purpose**: Sets the DPA term, termination triggers, and survival of obligations.
 
 **RECOMMENDED elements:**
+
 - [ ] DPA term tied to the main agreement term
 - [ ] DPA automatically terminates upon main agreement termination
 - [ ] Controller right to terminate DPA if Processor materially breaches data protection obligations
@@ -860,20 +909,20 @@ cannot be contractually allocated away from the party responsible for the violat
 For each clause, this matrix identifies the specific requirements per regime to ensure multi-regime
 DPAs are fully compliant.
 
-| Clause | EU GDPR | UK GDPR | CCPA/CPRA | LGPD | DPDP Act (India) |
-|--------|---------|---------|-----------|------|-----------------|
-| **Subject Matter** | Art. 28(3) preamble — specificity required | Mirrors EU GDPR | Specify "specific purposes" §7051(a)(1) | Art. 37 — processing activities + data categories | § 8(5) — data fiduciary must specify purposes [VERIFY] |
-| **Instructions** | Art. 28(3)(a) — documented instructions only | Mirrors EU GDPR | Service provider cannot use PI for own purposes §1798.140(ag) | Art. 39 — operator acts per controller instructions | § 8(1) — processor acts only per data fiduciary instructions [VERIFY] |
-| **Confidentiality** | Art. 28(3)(b) — contractual or statutory | Mirrors EU GDPR | Implicit in service provider definition | Art. 37 — confidentiality required | Not explicitly addressed; implied [VERIFY] |
-| **Security** | Art. 28(3)(c) + Art. 32 | Mirrors; ICO guidance on encryption expectations | CPPA regs require security obligations §7051(a)(3) | Art. 46 — security measures required | § 8(5) — appropriate safeguards required [VERIFY] |
-| **Sub-Processors** | Art. 28(2) + Art. 28(3)(d) | Mirrors; IDTA must flow down | Sub-service providers must receive equivalent obligations | Art. 37 — operators must impose same obligations on sub-operators | Not explicitly addressed; implied obligation [VERIFY] |
-| **Data Subject Rights** | Art. 28(3)(e) — assist with DSARs | Mirrors; DUAA 2025 proportionate search standard [VERIFY] | Assist with consumer rights requests §7051(a)(5) | Art. 37 — assist with LGPD rights requests | § 8(3) — processor must assist fiduciary [VERIFY] |
-| **DPIA Support** | Art. 28(3)(f) | Mirrors | Not required | Not explicitly required | Not currently required [VERIFY] |
-| **Breach Notification** | Art. 28(3)(f) — processor notifies controller "without undue delay"; 72hr controller-to-SA | Mirrors EU; ICO is authority; DUAA 2025 no change to timeline | CCPA breach notification under Civil Code §1798.150 (separate obligation) [VERIFY] | Art. 48 — ANPD + data subjects within **3 business days** (CD/ANPD No. 2/2022) [VERIFY] | DPDP Rules 2025 — "without delay"; data fiduciary notifies Board; Rules effective May 2027 [VERIFY] |
-| **Audit Rights** | Art. 28(3)(h) | Mirrors | CPPA regs allow audit rights §7051(a)(7) | Art. 37 — inspection rights | § 8(2) — processor must enable compliance verification [VERIFY] |
-| **Data Return/Deletion** | Art. 28(3)(g) | Mirrors | CPPA regs require deletion procedures §7051(a)(8) | Art. 37 — data handling on termination | § 8(4) — delete personal data per instruction [VERIFY] |
-| **Transfer Mechanism** | Arts. 44–49 + TIA for Schrems II | UK IDTA or UK Addendum to EU SCCs | N/A (domestic regime) | Arts. 33–34 + ANPD SCCs mandatory | § 16 — whitelist of countries [VERIFY] |
-| **Joint Controller** | Art. 26 — arrangement required | Mirrors | N/A | Not explicitly addressed | Not explicitly addressed |
+| Clause                   | EU GDPR                                                                                    | UK GDPR                                                       | CCPA/CPRA                                                                          | LGPD                                                                                    | DPDP Act (India)                                                                                    |
+| ------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| **Subject Matter**       | Art. 28(3) preamble — specificity required                                                 | Mirrors EU GDPR                                               | Specify "specific purposes" §7051(a)(1)                                            | Art. 37 — processing activities + data categories                                       | § 8(5) — data fiduciary must specify purposes [VERIFY]                                              |
+| **Instructions**         | Art. 28(3)(a) — documented instructions only                                               | Mirrors EU GDPR                                               | Service provider cannot use PI for own purposes §1798.140(ag)                      | Art. 39 — operator acts per controller instructions                                     | § 8(1) — processor acts only per data fiduciary instructions [VERIFY]                               |
+| **Confidentiality**      | Art. 28(3)(b) — contractual or statutory                                                   | Mirrors EU GDPR                                               | Implicit in service provider definition                                            | Art. 37 — confidentiality required                                                      | Not explicitly addressed; implied [VERIFY]                                                          |
+| **Security**             | Art. 28(3)(c) + Art. 32                                                                    | Mirrors; ICO guidance on encryption expectations              | CPPA regs require security obligations §7051(a)(3)                                 | Art. 46 — security measures required                                                    | § 8(5) — appropriate safeguards required [VERIFY]                                                   |
+| **Sub-Processors**       | Art. 28(2) + Art. 28(3)(d)                                                                 | Mirrors; IDTA must flow down                                  | Sub-service providers must receive equivalent obligations                          | Art. 37 — operators must impose same obligations on sub-operators                       | Not explicitly addressed; implied obligation [VERIFY]                                               |
+| **Data Subject Rights**  | Art. 28(3)(e) — assist with DSARs                                                          | Mirrors; DUAA 2025 proportionate search standard [VERIFY]     | Assist with consumer rights requests §7051(a)(5)                                   | Art. 37 — assist with LGPD rights requests                                              | § 8(3) — processor must assist fiduciary [VERIFY]                                                   |
+| **DPIA Support**         | Art. 28(3)(f)                                                                              | Mirrors                                                       | Not required                                                                       | Not explicitly required                                                                 | Not currently required [VERIFY]                                                                     |
+| **Breach Notification**  | Art. 28(3)(f) — processor notifies controller "without undue delay"; 72hr controller-to-SA | Mirrors EU; ICO is authority; DUAA 2025 no change to timeline | CCPA breach notification under Civil Code §1798.150 (separate obligation) [VERIFY] | Art. 48 — ANPD + data subjects within **3 business days** (CD/ANPD No. 2/2022) [VERIFY] | DPDP Rules 2025 — "without delay"; data fiduciary notifies Board; Rules effective May 2027 [VERIFY] |
+| **Audit Rights**         | Art. 28(3)(h)                                                                              | Mirrors                                                       | CPPA regs allow audit rights §7051(a)(7)                                           | Art. 37 — inspection rights                                                             | § 8(2) — processor must enable compliance verification [VERIFY]                                     |
+| **Data Return/Deletion** | Art. 28(3)(g)                                                                              | Mirrors                                                       | CPPA regs require deletion procedures §7051(a)(8)                                  | Art. 37 — data handling on termination                                                  | § 8(4) — delete personal data per instruction [VERIFY]                                              |
+| **Transfer Mechanism**   | Arts. 44–49 + TIA for Schrems II                                                           | UK IDTA or UK Addendum to EU SCCs                             | N/A (domestic regime)                                                              | Arts. 33–34 + ANPD SCCs mandatory                                                       | § 16 — whitelist of countries [VERIFY]                                                              |
+| **Joint Controller**     | Art. 26 — arrangement required                                                             | Mirrors                                                       | N/A                                                                                | Not explicitly addressed                                                                | Not explicitly addressed                                                                            |
 
 ---
 
@@ -885,46 +934,54 @@ control" is insufficient. Use this framework to generate Annex B content.
 ### TOM Categories and Minimum Specifications
 
 **1. Access Control and Authentication**
+
 - [ ] Multi-factor authentication (MFA) required for access to systems processing Personal Data
 - [ ] Role-based access control (RBAC) with minimum necessary privilege
 - [ ] Review access rights at least annually; revoke upon role change or departure
 - [ ] Log and monitor all access attempts
 
 **2. Encryption and Pseudonymization**
+
 - [ ] Encryption in transit: TLS 1.2+ (TLS 1.3 preferred) for all data in transit
 - [ ] Encryption at rest: AES-256 or equivalent for all stored Personal Data
 - [ ] Encryption key management policy (key rotation, separation of duties)
 - [ ] Pseudonymization applied where technically feasible and appropriate
 
 **3. System Resilience and Availability**
+
 - [ ] Redundant systems and failover capabilities for critical processing systems
 - [ ] Recovery Point Objective (RPO) and Recovery Time Objective (RTO) defined
 - [ ] Disaster recovery plan tested at least annually
 - [ ] Business continuity plan covering data protection incidents
 
 **4. Vulnerability and Patch Management**
+
 - [ ] Critical security patches applied within [30] days of release
 - [ ] Regular vulnerability scanning (at least quarterly)
 - [ ] Annual penetration testing by independent third party
 - [ ] Vulnerability disclosure and remediation process documented
 
 **5. Incident Detection and Response**
+
 - [ ] 24/7 monitoring and alerting for security incidents
 - [ ] Documented incident response procedure aligned with breach notification obligations
 - [ ] Designated data breach response team with clear escalation paths
 - [ ] Log retention for at least [12] months for forensic purposes
 
 **6. Physical Security**
+
 - [ ] Data centers with access control, CCTV, and environmental monitoring
 - [ ] Secure disposal of physical media containing Personal Data
 - [ ] Clean desk and clear screen policies for personnel
 
 **7. Staff Training and Awareness**
+
 - [ ] Annual data protection training for all staff with access to Personal Data
 - [ ] Background checks where permitted by applicable law
 - [ ] Specific training for staff processing special categories of data
 
 **8. Third-Party and Supply Chain Security**
+
 - [ ] Due diligence on all sub-processors and data recipients
 - [ ] Annual security assessments for critical sub-processors
 - [ ] Contractual security requirements imposed on all sub-processors
@@ -941,11 +998,13 @@ as Digital Service Providers (DSPs) operating in the EU [VERIFY].
 ### Authorization Types
 
 **Specific Authorization:**
+
 - Each sub-processor individually approved by the controller before engagement
 - Appropriate for: high-sensitivity processing, small number of sub-processors, bespoke services
 - Risk: slows processor's operational flexibility; may require frequent amendments
 
 **General Authorization (with notification mechanism):**
+
 - Controller grants blanket authorization subject to prior notification of changes
 - Notification period: [30] days recommended; shorter for time-sensitive operational needs
 - Objection mechanism: controller may object on data protection grounds within notification period
@@ -1037,12 +1096,12 @@ Note: UK transfers cannot rely on EU SCCs alone (post-Brexit). IDTA or UK Addend
 
 ### Clause Status Classifications
 
-| Classification | Definition |
-|---------------|-----------|
-| **REQUIRED** | Statutory mandate — omission creates direct regulatory violation |
-| **CONDITIONALLY REQUIRED** | Required when a specified condition exists (cross-border transfer, specific data type) |
-| **RECOMMENDED** | Strongly advised by regulatory guidance or professional best practice; omission creates compliance risk |
-| **OPTIONAL** | Commercially useful for clarity but not required by applicable statute |
+| Classification             | Definition                                                                                              |
+| -------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **REQUIRED**               | Statutory mandate — omission creates direct regulatory violation                                        |
+| **CONDITIONALLY REQUIRED** | Required when a specified condition exists (cross-border transfer, specific data type)                  |
+| **RECOMMENDED**            | Strongly advised by regulatory guidance or professional best practice; omission creates compliance risk |
+| **OPTIONAL**               | Commercially useful for clarity but not required by applicable statute                                  |
 
 ### Tier 1 — Must-Haves (Non-Negotiable Compliance Floor)
 
@@ -1080,13 +1139,13 @@ Every Art. 28 DPA must include, verbatim or substantively:
 
 Run these 5 gates silently before delivering any output. If any gate fails, revise before delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, article, or regulatory guidance | Add citation or mark "[UNVERIFIED — DPO/counsel to confirm]" |
-| **Format** | Citations follow consistent format: Reg./Law name, article/section, jurisdiction | Fix format |
-| **Currency** | Every cited provision checked for amendments or repeal | Flag "[CHECK CURRENCY — may have been amended or superseded]" |
-| **Domain** | Analysis stays within the applicable regime's law; no jurisdictional bleed | Remove or flag cross-jurisdiction assumptions |
-| **Confidence** | Uncertainty explicitly stated, never hidden | Add confidence qualifier |
+| Gate           | Rule                                                                             | Fail Action                                                   |
+| -------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, article, or regulatory guidance      | Add citation or mark "[UNVERIFIED — DPO/counsel to confirm]"  |
+| **Format**     | Citations follow consistent format: Reg./Law name, article/section, jurisdiction | Fix format                                                    |
+| **Currency**   | Every cited provision checked for amendments or repeal                           | Flag "[CHECK CURRENCY — may have been amended or superseded]" |
+| **Domain**     | Analysis stays within the applicable regime's law; no jurisdictional bleed       | Remove or flag cross-jurisdiction assumptions                 |
+| **Confidence** | Uncertainty explicitly stated, never hidden                                      | Add confidence qualifier                                      |
 
 ### Self-Interrogation for REQUIRED Clauses
 
@@ -1107,15 +1166,16 @@ Mark audit trail with `self_interrogation: PASS` or `self_interrogation: REVISED
 
 ### Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Settled law, clear statute, unambiguous provision | State with confidence |
-| **High** | 0.80–0.94 | Strong authority, minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60–0.79 | Good arguments, reasonable minds could differ | State with reasoning and contra-indicators |
-| **Possible** | 0.40–0.59 | Genuinely uncertain, competing authorities | Flag for DPO/counsel review with both sides |
-| **Unlikely** | 0.0–0.39 | Weak basis, speculative | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                           | Action                                                |
+| ------------ | --------- | ------------------------------------------------- | ----------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Settled law, clear statute, unambiguous provision | State with confidence                                 |
+| **High**     | 0.80–0.94 | Strong authority, minor interpretation questions  | State with brief caveat                               |
+| **Probable** | 0.60–0.79 | Good arguments, reasonable minds could differ     | State with reasoning and contra-indicators            |
+| **Possible** | 0.40–0.59 | Genuinely uncertain, competing authorities        | Flag for DPO/counsel review with both sides           |
+| **Unlikely** | 0.0–0.39  | Weak basis, speculative                           | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
 
 Apply confidence scoring to:
+
 - Role classification determination (controller/processor/joint controller)
 - Each clause's compliance status per applicable regime
 - Transfer mechanism selection
@@ -1306,6 +1366,7 @@ What NOT to do when drafting Data Processing Agreements:
 Apply plain-language discipline to all DPA clause language:
 
 **For generated clause text (to be incorporated into the DPA):**
+
 - Active voice: "The Processor shall notify..." not "Notification shall be provided..."
 - Name the actor clearly: "The Controller shall specify..." not "It shall be specified..."
 - One obligation per sentence. Long obligation clauses create interpretation disputes.
@@ -1315,12 +1376,14 @@ Apply plain-language discipline to all DPA clause language:
 - Avoid defined-term proliferation: define key terms once; do not create synonyms
 
 **For internal rationale notes (shared with user):**
+
 - Confidence qualifiers where appropriate: "GDPR Art. 33 clearly requires..." vs.
   "The ICO has indicated, though without binding guidance, that..."
 - Explain the negotiation risk: "Processor will likely resist this because..."
 - Flag verification: any unverified citation marked [VERIFY]
 
 **Quality gates before delivery:**
+
 1. Can a privacy professional (not a specialized lawyer) understand the clause without reference
    to external materials?
 2. Is every obligation clear as to: who does what, by when, in what format, at whose cost?
@@ -1335,6 +1398,7 @@ Apply plain-language discipline to all DPA clause language:
 This skill is designed to work with **legalcode-mcp** as its primary legal research tool.
 
 **With legalcode-mcp connected (preferred):**
+
 - In Step 5, search for current regulatory requirements, EDPB/ICO/CPPA/ANPD guidance, and
   recent enforcement actions relevant to each DPA clause
 - Verify currency of GDPR Art. 28 requirements, CCPA/CPRA regulations, LGPD provisions, and
@@ -1344,6 +1408,7 @@ This skill is designed to work with **legalcode-mcp** as its primary legal resea
 - Save results to `/tmp/legalcode-dpa-drafter-research.md`
 
 **Without legalcode-mcp:**
+
 - Mark all statutory references with [VERIFY]
 - Note in Glass Box: `legalcode_mcp: "Not connected"`
 - Proceed with structural quality and dual-perspective generation
@@ -1371,30 +1436,30 @@ Structure the final deliverable as:
 
 ## Tier 1 Compliance Checklist (GDPR Art. 28)
 
-| Clause | Status | Notes |
-|--------|--------|-------|
+| Clause                                              | Status                      | Notes  |
+| --------------------------------------------------- | --------------------------- | ------ |
 | Subject matter, duration, nature, purpose (Annex A) | ✅ Drafted / ⚠️ Needs input | [note] |
-| Processing instructions mechanism | ✅ Drafted | |
-| Confidentiality of personnel | ✅ Drafted | |
-| Security / TOM (Annex B) | ✅ Drafted / ⚠️ Customize | |
-| Sub-processor controls (Annex C) | ✅ Drafted | |
-| Data subject rights assistance | ✅ Drafted | |
-| DPIA support | ✅ Drafted | |
-| Breach notification | ✅ Drafted | |
-| Audit rights | ✅ Drafted | |
-| Data return / deletion | ✅ Drafted | |
+| Processing instructions mechanism                   | ✅ Drafted                  |        |
+| Confidentiality of personnel                        | ✅ Drafted                  |        |
+| Security / TOM (Annex B)                            | ✅ Drafted / ⚠️ Customize   |        |
+| Sub-processor controls (Annex C)                    | ✅ Drafted                  |        |
+| Data subject rights assistance                      | ✅ Drafted                  |        |
+| DPIA support                                        | ✅ Drafted                  |        |
+| Breach notification                                 | ✅ Drafted                  |        |
+| Audit rights                                        | ✅ Drafted                  |        |
+| Data return / deletion                              | ✅ Drafted                  |        |
 
 ---
 
 ## Regime Coverage Matrix
 
-| Regime | Covered? | Component | Gap / Note |
-|--------|----------|-----------|------------|
-| EU GDPR | ✅ Yes | Core DPA | — |
-| UK GDPR | [✅/⚠️] | UK Addendum | [note if needed] |
-| CCPA/CPRA | [✅/⚠️/N/A] | California Exhibit | [note] |
-| LGPD (Brazil) | [✅/⚠️/N/A] | Brazil Annex | [note] |
-| DPDP Act (India) | [✅/⚠️/N/A] | India Annex | Rules pending [VERIFY] |
+| Regime           | Covered?    | Component          | Gap / Note             |
+| ---------------- | ----------- | ------------------ | ---------------------- |
+| EU GDPR          | ✅ Yes      | Core DPA           | —                      |
+| UK GDPR          | [✅/⚠️]     | UK Addendum        | [note if needed]       |
+| CCPA/CPRA        | [✅/⚠️/N/A] | California Exhibit | [note]                 |
+| LGPD (Brazil)    | [✅/⚠️/N/A] | Brazil Annex       | [note]                 |
+| DPDP Act (India) | [✅/⚠️/N/A] | India Annex        | Rules pending [VERIFY] |
 
 ---
 
@@ -1486,11 +1551,13 @@ the SaaS platform services described in the Agreement including user account man
 delivery, and product analytics strictly limited to improving services provided to Controller."]
 
 **Categories of Personal Data**:
+
 - [Category 1, e.g., Contact data: name, email, telephone]
 - [Category 2, e.g., Transactional data: order history, payment records]
 - [Special categories (if any): health data, biometric data — note heightened sensitivity]
 
 **Categories of Data Subjects**:
+
 - [Category 1, e.g., Controller's employees]
 - [Category 2, e.g., Controller's customers / end users]
 
@@ -1565,6 +1632,7 @@ before engagement. Controller may object within [20] business days on data prote
 ### UK Addendum (UK GDPR + Data (Use and Access) Act 2025)
 
 **Key differences from EU GDPR:**
+
 - **Transfer mechanism**: UK IDTA (effective 21 March 2022) or UK Addendum to EU SCCs is required
   for UK-origin transfers to third countries. EU SCCs alone do not satisfy UK requirements [VERIFY].
 - **Supervisory authority**: ICO (Information Commissioner's Office), not EDPB or national DPA
@@ -1574,12 +1642,12 @@ before engagement. Controller may object within [20] business days on data prote
 - **Adequacy**: UK has made its own adequacy decisions post-Brexit; verify current list from ICO.
 
 **UK Addendum Clause:**
+
 > "This UK Addendum applies to any Processing of Personal Data governed by the UK GDPR and the
 > Data Protection Act 2018 (UK Data Protection Law). The parties agree that the terms of this DPA
 > apply to UK-origin Personal Data mutatis mutandis. For any transfer of UK-origin Personal Data
 > to a third country, the parties shall execute and maintain the UK International Data Transfer
-> Agreement (UK IDTA) issued by the ICO, or the UK Addendum to the EU Standard Contractual Clauses
-> 2021. References to 'GDPR' in this DPA shall be construed as references to the UK GDPR for
+> Agreement (UK IDTA) issued by the ICO, or the UK Addendum to the EU Standard Contractual Clauses 2021. References to 'GDPR' in this DPA shall be construed as references to the UK GDPR for
 > UK-origin Personal Data."
 
 [JURISDICTION-SPECIFIC] Verify implementation timeline of the Data (Use and Access) Act 2025;
@@ -1592,17 +1660,19 @@ several provisions implement in phases between June 2025 and June 2026 [VERIFY].
 **Key CCPA/CPRA-specific requirements** (Cal. Civil Code §1798.140(ag); CPPA Regs §§ 7050–7053) [VERIFY]:
 
 **Mandatory service provider contract prohibitions:**
+
 - [ ] Service provider may not **sell or share** personal information
 - [ ] Service provider may not **retain, use, or disclose** personal information for any commercial
-  purpose other than the business purpose specified in the contract or as permitted by the CCPA/CPRA
+      purpose other than the business purpose specified in the contract or as permitted by the CCPA/CPRA
 - [ ] Service provider may not **retain, use, or disclose** personal information outside the direct
-  business relationship between the service provider and the business
+      business relationship between the service provider and the business
 - [ ] Service provider may not **combine** personal information received from the business with
-  personal information received from other sources, except as permitted by CCPA/CPRA
+      personal information received from other sources, except as permitted by CCPA/CPRA
 - [ ] Service provider must **cooperate** with the business in responding to consumer rights requests
 - [ ] Service provider must **certify** it understands the restrictions and will comply
 
 **California Exhibit Clause:**
+
 > "Service Provider certifies that it understands the restrictions set forth in this Exhibit and
 > will comply with them. Service Provider shall not: (a) sell or share Personal Information (as
 > defined by the CCPA/CPRA) received from Business; (b) retain, use, or disclose Personal
@@ -1633,6 +1703,7 @@ several provisions implement in phases between June 2025 and June 2026 [VERIFY].
   for international transfers from Brazilian controllers/operators [VERIFY currency of ANPD SCCs]
 
 **Brazil Annex Clause:**
+
 > "This Brazil Annex applies to any Processing of Personal Data governed by Brazil's Lei Geral
 > de Proteção de Dados (LGPD), Law 13,709/2018. The Operador (Processor) shall perform the
 > Processing of Dados Pessoais (Personal Data) solely according to the instructions provided by
@@ -1667,6 +1738,7 @@ Indian data protection counsel before execution.
 - **§ 16**: Transfer of personal data outside India only to countries on DPBI whitelist [VERIFY]
 
 **India Annex Clause:**
+
 > "This India Annex applies to any Processing of Personal Data (as defined in the DPDP Act)
 > governed by India's Digital Personal Data Protection Act, 2023. The Data Processor shall
 > Process Personal Data only in accordance with the instructions of the Data Fiduciary as

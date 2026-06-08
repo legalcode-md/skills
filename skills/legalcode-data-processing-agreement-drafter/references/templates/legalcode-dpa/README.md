@@ -7,13 +7,13 @@ Last updated: 2026-04-28
 
 ## Documents
 
-| File | Document Type | Use when |
-|------|--------------|----------|
-| `core.md` | Jurisdiction-neutral controller↔processor DPA | You operate in a jurisdiction not covered below, you want the dual-perspective master before specialising, or you are drafting a sub-processor flow-down. |
-| `us.md` | US — CCPA/CPRA Service Provider Exhibit + multi-state | You target US business customers and need a CCPA service-provider/contractor addendum; typically attached to an MSA rather than a standalone DPA. |
-| `eu.md` | EU/EEA — GDPR Art. 28 + DE-DSGVO + CH-FDPIC + SCCs Modules 1–4 | You process EU/EEA personal data, including Swiss data. Includes the SCCs annex builder for all four transfer modules. |
-| `uk.md` | UK — UK GDPR + DPA 2018 + IDTA + UK Addendum | You target UK business customers post-Brexit. Includes both the standalone UK IDTA and the UK Addendum to the EU SCCs. |
-| `is.md` | Iceland — Act 90/2018 (Persónuverndarlög) + EEA framing | You operate in Iceland or have Icelandic data subjects. EEA-framed transfer rules apply. |
+| File      | Document Type                                                  | Use when                                                                                                                                                  |
+| --------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `core.md` | Jurisdiction-neutral controller↔processor DPA                  | You operate in a jurisdiction not covered below, you want the dual-perspective master before specialising, or you are drafting a sub-processor flow-down. |
+| `us.md`   | US — CCPA/CPRA Service Provider Exhibit + multi-state          | You target US business customers and need a CCPA service-provider/contractor addendum; typically attached to an MSA rather than a standalone DPA.         |
+| `eu.md`   | EU/EEA — GDPR Art. 28 + DE-DSGVO + CH-FDPIC + SCCs Modules 1–4 | You process EU/EEA personal data, including Swiss data. Includes the SCCs annex builder for all four transfer modules.                                    |
+| `uk.md`   | UK — UK GDPR + DPA 2018 + IDTA + UK Addendum                   | You target UK business customers post-Brexit. Includes both the standalone UK IDTA and the UK Addendum to the EU SCCs.                                    |
+| `is.md`   | Iceland — Act 90/2018 (Persónuverndarlög) + EEA framing        | You operate in Iceland or have Icelandic data subjects. EEA-framed transfer rules apply.                                                                  |
 
 ## How to use
 

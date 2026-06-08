@@ -1,7 +1,17 @@
 ---
 title: Order Form — Iceland
 jurisdictions: [is]
-statutes: [Lög-7/1936, Lög-90/2018-Persónuverndarlög, Lög-38/2001-vextir, Lög-28/2001-rafrænar-undirskriftir, Data-Act-via-EEA, GDPR-via-EEA, NIS2-via-EEA, DORA-via-EEA]
+statutes:
+  [
+    Lög-7/1936,
+    Lög-90/2018-Persónuverndarlög,
+    Lög-38/2001-vextir,
+    Lög-28/2001-rafrænar-undirskriftir,
+    Data-Act-via-EEA,
+    GDPR-via-EEA,
+    NIS2-via-EEA,
+    DORA-via-EEA,
+  ]
 audience: [B2B]
 license: MIT
 last_updated: 2026-04-29
@@ -30,19 +40,19 @@ If this Order Form conflicts with the CSA, the CSA prevails, except where Sectio
 
 The Parties to this Order Form are recorded below, including each Party's kennitala (10-digit Icelandic identifier) and contacts for legal notices, billing, and operations. Both kennitala are required fields under Icelandic commercial practice.
 
-| Field | Vendor (Söluaðili) | Customer (Kaupandi) |
-|---|---|---|
-| Legal name (Lögaðili) | `{{Vendor Legal Name}}` | `{{Customer Legal Name}}` |
-| Kennitala (10-digit ID) | `{{Vendor Kennitala}}` | `{{Customer Kennitala}}` |
-| Registered address (Skráð heimilisfang) | `{{Vendor Address}}` | `{{Customer Address}}` |
-| Municipality (Sveitarfélag) | `{{Vendor Municipality}}` | `{{Customer Municipality}}` |
-| Signatory name (Nafn undirritanda) | `{{Vendor Signatory Name}}` | `{{Customer Signatory Name}}` |
-| Signatory title (Starf undirritanda) | `{{Vendor Signatory Title}}` | `{{Customer Signatory Title}}` |
-| Notice email — legal (Tilkynningar / lögfræði) | `{{Vendor Notice Email}}` | `{{Customer Notice Email}}` |
-| Billing email (Reikningar / AR) | `{{Vendor AR Email}}` | `{{Customer Billing Email}}` |
-| Operational contact (Rekstrartengiliður) | `{{Vendor Ops Contact}}` | `{{Customer Ops Contact}}` |
-| Security contact (Öryggistengiliður) | `{{Vendor Security Contact}}` | `{{Customer Security Contact}}` |
-| Purchase order number (Innkaupanúmer) | n/a | `{{Customer PO Number}}` *(OPTIONAL — only if Customer requires a PO reference)* |
+| Field                                          | Vendor (Söluaðili)            | Customer (Kaupandi)                                                              |
+| ---------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------- |
+| Legal name (Lögaðili)                          | `{{Vendor Legal Name}}`       | `{{Customer Legal Name}}`                                                        |
+| Kennitala (10-digit ID)                        | `{{Vendor Kennitala}}`        | `{{Customer Kennitala}}`                                                         |
+| Registered address (Skráð heimilisfang)        | `{{Vendor Address}}`          | `{{Customer Address}}`                                                           |
+| Municipality (Sveitarfélag)                    | `{{Vendor Municipality}}`     | `{{Customer Municipality}}`                                                      |
+| Signatory name (Nafn undirritanda)             | `{{Vendor Signatory Name}}`   | `{{Customer Signatory Name}}`                                                    |
+| Signatory title (Starf undirritanda)           | `{{Vendor Signatory Title}}`  | `{{Customer Signatory Title}}`                                                   |
+| Notice email — legal (Tilkynningar / lögfræði) | `{{Vendor Notice Email}}`     | `{{Customer Notice Email}}`                                                      |
+| Billing email (Reikningar / AR)                | `{{Vendor AR Email}}`         | `{{Customer Billing Email}}`                                                     |
+| Operational contact (Rekstrartengiliður)       | `{{Vendor Ops Contact}}`      | `{{Customer Ops Contact}}`                                                       |
+| Security contact (Öryggistengiliður)           | `{{Vendor Security Contact}}` | `{{Customer Security Contact}}`                                                  |
+| Purchase order number (Innkaupanúmer)          | n/a                           | `{{Customer PO Number}}` _(OPTIONAL — only if Customer requires a PO reference)_ |
 
 A change to any contact takes effect on written notice through the CSA §17 channel or Section 9 of this Order.
 
@@ -61,7 +71,7 @@ The subscription details (Þjónusta, Magn, Tími) for this Order are summarised
 - **Unit of Measure (Mælieining):** `{{Unit}}`
 - **Overage Rate (Yfirnotkunargjald):** `{{Overage Rate}}` (e.g., "ISK 1,500 per additional user / month")
 - **True-Up Frequency (Uppgjörstímabil):** `{{True-Up Frequency}}` (default "quarterly / ársfjórðungslega")
-- **Provisioning Date (Afhendingardagur):** `{{Provisioning Date}}` *(OPTIONAL — only if different from Initial Term Start)*
+- **Provisioning Date (Afhendingardagur):** `{{Provisioning Date}}` _(OPTIONAL — only if different from Initial Term Start)_
 
 See **Schedule 1** for the full line-item breakdown of services, SKUs, and quantities.
 
@@ -108,7 +118,7 @@ Service levels are governed by the SLA at CSA Exhibit B (the `legalcode-sla` IS 
 
 - **Default uptime tier:** as set in CSA Exhibit B (the `legalcode-sla` IS variant).
 - **Order-specific uptime tier:** `{{Uptime Tier}}` (default "as set in CSA Exhibit B").
-- **Premium support tier (Forgangsþjónusta):** `{{Premium Support Tier}}` *(OPTIONAL — only if Customer has purchased a premium support plan flagged in Schedule 1)*.
+- **Premium support tier (Forgangsþjónusta):** `{{Premium Support Tier}}` _(OPTIONAL — only if Customer has purchased a premium support plan flagged in Schedule 1)_.
 - **Service credit cap:** as set in CSA Exhibit B unless expressly varied in Section 8.
 
 Nothing in this section enlarges Vendor's liability beyond the cap stated in CSA §13 (Limitation of Liability).
@@ -119,7 +129,7 @@ Nothing in this section enlarges Vendor's liability beyond the cap stated in CSA
 
 This section records deal-specific elections about where Customer Data is processed, whether it may be used for AI model training, and the security and regulatory framework that applies under Icelandic and EEA-imported law.
 
-- **§7.1 Data residency (Gagnastaðsetning):** `{{Data Residency}}` (default "Iceland or EEA"). Iceland-pinned hosting may carry a region-pinning premium recorded as `{{Region Pinning Premium}}` *(OPTIONAL — only if Customer requires data to be pinned within Iceland)*.
+- **§7.1 Data residency (Gagnastaðsetning):** `{{Data Residency}}` (default "Iceland or EEA"). Iceland-pinned hosting may carry a region-pinning premium recorded as `{{Region Pinning Premium}}` _(OPTIONAL — only if Customer requires data to be pinned within Iceland)_.
 
 - **§7.2 Persónuverndarlög — Lög nr. 90/2018.** Processing of personal data (persónuupplýsingar) is governed by GDPR (Reg. (EU) 2016/679) as imported into the EEA Agreement and implemented by Lög nr. 90/2018 um persónuvernd og vinnslu persónuupplýsinga. The Parties cross-reference the DPA at CSA Exhibit C (the `legalcode-dpa` IS variant); the supervisory authority is Persónuvernd.
 
@@ -147,9 +157,9 @@ Default: **None — all CSA terms apply unchanged.**
 
 The Parties may use this section to record any term that varies, supplements, or supersedes the CSA solely for this Order. Only the items expressly listed below override the CSA; everything else continues to apply in full.
 
-- Override 1: `{{Override 1}}` *(OPTIONAL — e.g., "Liability cap raised to two times fees paid in the prior 12 months")*
-- Override 2: `{{Override 2}}` *(OPTIONAL — e.g., "Customer-specific indemnity carve-out for `{{Carve-Out Topic}}`")*
-- Override 3: `{{Override 3}}` *(OPTIONAL)*
+- Override 1: `{{Override 1}}` _(OPTIONAL — e.g., "Liability cap raised to two times fees paid in the prior 12 months")_
+- Override 2: `{{Override 2}}` _(OPTIONAL — e.g., "Customer-specific indemnity carve-out for `{{Carve-Out Topic}}`")_
+- Override 3: `{{Override 3}}` _(OPTIONAL)_
 
 **Sector-specific flow-downs (greinasérstök ákvæði).** The following sector-specific flow-downs apply where ticked in Schedule 3:
 
@@ -179,19 +189,19 @@ Each Party signs below; counterparts and electronic signatures (rafrænar undirs
 
 > **{{Vendor Legal Name}}** (kt. `{{Vendor Kennitala}}`)
 >
-> Undirritun (Signature): ___________________________
+> Undirritun (Signature): \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
 > Nafn (Name): `{{Vendor Signatory Name}}`
 > Starf / Title: `{{Vendor Signatory Title}}`
-> Dagsetning (Date): ___________________________
-> Staður (Place): ___________________________
+> Dagsetning (Date): \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
+> Staður (Place): \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
 >
 > **{{Customer Legal Name}}** (kt. `{{Customer Kennitala}}`)
 >
-> Undirritun (Signature): ___________________________
+> Undirritun (Signature): \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
 > Nafn (Name): `{{Customer Signatory Name}}`
 > Starf / Title: `{{Customer Signatory Title}}`
-> Dagsetning (Date): ___________________________
-> Staður (Place): ___________________________
+> Dagsetning (Date): \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
+> Staður (Place): \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
 
 Counterparts and electronic signatures executed under Reg. (EU) 910/2014 (eIDAS) via EEA, together with Lög nr. 28/2001 um rafrænar undirskriftir, are valid and enforceable `[VERIFY EEA-imported eIDAS specifics]`. Advanced or qualified electronic signatures (fullgildar rafrænar undirskriftir) are recommended for cross-border enforceability and required where one Party is established outside Iceland.
 
@@ -199,11 +209,11 @@ Counterparts and electronic signatures executed under Reg. (EU) 910/2014 (eIDAS)
 
 ## Schedule 1 — Subscribed Services & Quantities
 
-| Service / SKU | Description | Quantity | Unit | Initial Term Fee | Overage Rate | Notes |
-|---|---|---|---|---|---|---|
-| `{{Service Name}}` | `{{Service Description}}` | `{{Subscribed Quantity}}` | `{{Unit}}` | `{{Annual Fee}}` `{{Currency}}` | `{{Overage Rate}}` | `{{Schedule 1 Notes}}` |
-| `{{Add-On SKU}}` | `{{Add-On Description}}` | `{{Add-On Quantity}}` | `{{Add-On Unit}}` | `{{Add-On Fee}}` `{{Currency}}` | `{{Add-On Overage}}` | *(OPTIONAL — additional SKU)* |
-| `{{Add-On SKU 2}}` | `{{Add-On Description 2}}` | `{{Add-On Quantity 2}}` | `{{Add-On Unit 2}}` | `{{Add-On Fee 2}}` `{{Currency}}` | `{{Add-On Overage 2}}` | *(OPTIONAL — additional SKU)* |
+| Service / SKU      | Description                | Quantity                  | Unit                | Initial Term Fee                  | Overage Rate           | Notes                         |
+| ------------------ | -------------------------- | ------------------------- | ------------------- | --------------------------------- | ---------------------- | ----------------------------- |
+| `{{Service Name}}` | `{{Service Description}}`  | `{{Subscribed Quantity}}` | `{{Unit}}`          | `{{Annual Fee}}` `{{Currency}}`   | `{{Overage Rate}}`     | `{{Schedule 1 Notes}}`        |
+| `{{Add-On SKU}}`   | `{{Add-On Description}}`   | `{{Add-On Quantity}}`     | `{{Add-On Unit}}`   | `{{Add-On Fee}}` `{{Currency}}`   | `{{Add-On Overage}}`   | _(OPTIONAL — additional SKU)_ |
+| `{{Add-On SKU 2}}` | `{{Add-On Description 2}}` | `{{Add-On Quantity 2}}`   | `{{Add-On Unit 2}}` | `{{Add-On Fee 2}}` `{{Currency}}` | `{{Add-On Overage 2}}` | _(OPTIONAL — additional SKU)_ |
 
 Add additional rows as needed. Quantities measured per the metering methodology in the Documentation; true-ups occur per Section 3.
 
@@ -211,13 +221,13 @@ Add additional rows as needed. Quantities measured per the metering methodology 
 
 ## Schedule 2 — Fees & Payment Schedule
 
-| Invoice Date | Invoice Period | Amount | Currency | Payment Due | Description |
-|---|---|---|---|---|---|
-| `{{Initial Term Start}}` | Year 1 | `{{Annual Fee}}` | `{{Currency}}` | Net 30 | Initial Term annual fee |
-| `{{Year 2 Invoice Date}}` | Year 2 | `{{Year 2 Fee}}` | `{{Currency}}` | Net 30 | *(OPTIONAL — only if multi-year)* |
-| `{{Year 3 Invoice Date}}` | Year 3 | `{{Year 3 Fee}}` | `{{Currency}}` | Net 30 | *(OPTIONAL — only if multi-year)* |
-| `{{True-Up Invoice Date}}` | True-up | as measured | `{{Currency}}` | Net 30 | Quarterly / annual true-up against Schedule 1 |
-| `{{Milestone Invoice Date}}` | Milestone | `{{Milestone Amount}}` | `{{Currency}}` | Net 30 | *(OPTIONAL — only if milestone billing applies)* |
+| Invoice Date                 | Invoice Period | Amount                 | Currency       | Payment Due | Description                                      |
+| ---------------------------- | -------------- | ---------------------- | -------------- | ----------- | ------------------------------------------------ |
+| `{{Initial Term Start}}`     | Year 1         | `{{Annual Fee}}`       | `{{Currency}}` | Net 30      | Initial Term annual fee                          |
+| `{{Year 2 Invoice Date}}`    | Year 2         | `{{Year 2 Fee}}`       | `{{Currency}}` | Net 30      | _(OPTIONAL — only if multi-year)_                |
+| `{{Year 3 Invoice Date}}`    | Year 3         | `{{Year 3 Fee}}`       | `{{Currency}}` | Net 30      | _(OPTIONAL — only if multi-year)_                |
+| `{{True-Up Invoice Date}}`   | True-up        | as measured            | `{{Currency}}` | Net 30      | Quarterly / annual true-up against Schedule 1    |
+| `{{Milestone Invoice Date}}` | Milestone      | `{{Milestone Amount}}` | `{{Currency}}` | Net 30      | _(OPTIONAL — only if milestone billing applies)_ |
 
 Amounts above are exclusive of VSK; Section 4.7 governs VAT treatment. Currency and payment terms default to the values in Section 4 unless this schedule states otherwise.
 
@@ -227,14 +237,14 @@ Amounts above are exclusive of VSK; Section 4.7 governs VAT treatment. Currency 
 
 Tick each addendum that applies. An unticked addendum is not part of this Order.
 
-- [ ] **GDPR Article 28 / Lög nr. 90/2018 DPA** — Vendor and Customer execute the Data Processing Agreement (cross-reference companion `legalcode-dpa` IS variant). *(OPTIONAL — only if personal data is processed.)*
-- [ ] **Sector-specific addenda** — `{{Sector-Specific Addenda}}` (FME for financial entities; Lyfjastofnun for medical-device or pharma; Persónuvernd pre-approval where special-category processing requires it). *(OPTIONAL — list any sector-specific obligations.)*
+- [ ] **GDPR Article 28 / Lög nr. 90/2018 DPA** — Vendor and Customer execute the Data Processing Agreement (cross-reference companion `legalcode-dpa` IS variant). _(OPTIONAL — only if personal data is processed.)_
+- [ ] **Sector-specific addenda** — `{{Sector-Specific Addenda}}` (FME for financial entities; Lyfjastofnun for medical-device or pharma; Persónuvernd pre-approval where special-category processing requires it). _(OPTIONAL — list any sector-specific obligations.)_
 - [ ] **Data Act Articles 23–25 switching readiness** — Vendor confirms that data-export and switching-support obligations are met, with the data-export window and format recorded at `{{Data Act Switching Window}}` `[VERIFY EEA Joint Committee transposition status of Reg. 2023/2854]`.
 - [ ] **EU AI Act tier confirmation via EEA** — Vendor confirms the Service classification under Reg. (EU) 2024/1689 at tier `{{AI Act Tier}}` and attaches any required transparency or risk-management documentation `[VERIFY EEA transposition]`.
-- [ ] **Telecom Act — Lög nr. 70/2022 um fjarskipti** — for electronic-communications-service providers, Vendor confirms the relevant flow-downs apply *(OPTIONAL — only if Vendor or Customer is an ECS provider)*.
-- [ ] **Custom security questionnaire** — Vendor has completed Customer's security questionnaire dated `{{Security Questionnaire Date}}`. *(OPTIONAL — only if Customer requires a completed questionnaire.)*
-- [ ] **Bilingual companion document** — the Icelandic-language `is-isl.md` companion is attached and treated as the controlling text per the bilingual usage notice above. *(OPTIONAL — recommended whenever the Order is signed in Iceland.)*
-- [ ] **Other** — `{{Other Addendum}}`. *(OPTIONAL — describe any other addendum the Parties want to attach.)*
+- [ ] **Telecom Act — Lög nr. 70/2022 um fjarskipti** — for electronic-communications-service providers, Vendor confirms the relevant flow-downs apply _(OPTIONAL — only if Vendor or Customer is an ECS provider)_.
+- [ ] **Custom security questionnaire** — Vendor has completed Customer's security questionnaire dated `{{Security Questionnaire Date}}`. _(OPTIONAL — only if Customer requires a completed questionnaire.)_
+- [ ] **Bilingual companion document** — the Icelandic-language `is-isl.md` companion is attached and treated as the controlling text per the bilingual usage notice above. _(OPTIONAL — recommended whenever the Order is signed in Iceland.)_
+- [ ] **Other** — `{{Other Addendum}}`. _(OPTIONAL — describe any other addendum the Parties want to attach.)_
 
 Each ticked addendum is incorporated into this Order. If an addendum conflicts with the CSA, the conflict is resolved per CSA §18 (Order of Precedence) unless Section 8 of this Order expressly says otherwise.
 
@@ -322,7 +332,7 @@ The following Mustache merge fields appear in this template:
 
 The following permissively licensed baselines and Icelandic / EEA primary materials were consulted while drafting this template; no consecutive run of five or more words is traceable to any of them.
 
-- Common Paper — Order Form `[CC-BY-4.0]` *(primary structural baseline)*
+- Common Paper — Order Form `[CC-BY-4.0]` _(primary structural baseline)_
 - Common Paper — Cloud Services Agreement v2.1 Order Form exhibit `[CC-BY-4.0]`
 - Bonterms — Cloud Terms Order Form attachments `[CC-BY-4.0]`
 - GitHub — `site-policy` repository `[CC0]`

@@ -39,6 +39,7 @@ legal operations teams, and compliance professionals who need a defensible, audi
 process that works across the five major data subject access regimes.
 
 **This skill covers:**
+
 - Intake normalization from any channel (email, web form, phone, certified mail, in-person)
 - Identity and authority verification (individual, agent, guardian, attorney, executor)
 - Jurisdiction mapping and deadline calculation across GDPR, UK GDPR, CCPA/CPRA, LGPD, PIPEDA
@@ -56,6 +57,7 @@ process that works across the five major data subject access regimes.
 - Post-dispatch monitoring for appeals and supplemental requests
 
 **This skill does not:**
+
 - Provide legal advice or replace qualified Data Protection Officer review
 - Guarantee regulatory approval or exemption from enforcement
 - Draft or review privacy policies (see `legalcode-privacy-policy-drafter`)
@@ -74,15 +76,16 @@ the organization's location, and the applicable sectoral rules.
 
 ### Regime Overview
 
-| Regime | Primary Instrument | Response Deadline | Extension | Fee |
-|--------|--------------------|-------------------|-----------|-----|
-| **EU GDPR** | GDPR Article 15 + EDPB Guidelines 01/2022 | 1 calendar month | +2 months (complex/multiple) | Free; reasonable fee for manifestly excessive |
-| **UK GDPR** | UK GDPR Article 15 + DPA 2018 | 1 calendar month | +2 months | Free (with narrow exceptions) |
-| **CCPA/CPRA** | Cal. Civ. Code § 1798.100 + CPPA Regs | 45 calendar days | +45 days | Free; limit 2 per 12 months |
-| **LGPD (Brazil)** | LGPD Articles 18–19 | 15 calendar days | +15 days | [JURISDICTION-SPECIFIC] |
-| **PIPEDA (Canada)** | PIPEDA Principle 9 + OPC Guidance | 30 days (OPC recommendation) | Reasonable extension | Minimal / nil |
+| Regime              | Primary Instrument                        | Response Deadline            | Extension                    | Fee                                           |
+| ------------------- | ----------------------------------------- | ---------------------------- | ---------------------------- | --------------------------------------------- |
+| **EU GDPR**         | GDPR Article 15 + EDPB Guidelines 01/2022 | 1 calendar month             | +2 months (complex/multiple) | Free; reasonable fee for manifestly excessive |
+| **UK GDPR**         | UK GDPR Article 15 + DPA 2018             | 1 calendar month             | +2 months                    | Free (with narrow exceptions)                 |
+| **CCPA/CPRA**       | Cal. Civ. Code § 1798.100 + CPPA Regs     | 45 calendar days             | +45 days                     | Free; limit 2 per 12 months                   |
+| **LGPD (Brazil)**   | LGPD Articles 18–19                       | 15 calendar days             | +15 days                     | [JURISDICTION-SPECIFIC]                       |
+| **PIPEDA (Canada)** | PIPEDA Principle 9 + OPC Guidance         | 30 days (OPC recommendation) | Reasonable extension         | Minimal / nil                                 |
 
 [JURISDICTION-SPECIFIC] Before finalizing deadline calculations, localize:
+
 - Member State-specific implementation derogations (EU GDPR)
 - DPA 2018 Schedule 2 exemption list (UK GDPR)
 - California Privacy Protection Agency regulations updated post-2023 (CCPA/CPRA)
@@ -100,6 +103,7 @@ changes the direction or output of the workflow. Do not proceed on assumptions w
 decision fork is marked **CLARIFY** — pause and ask the user.
 
 CLARIFY format used throughout:
+
 ```
 **CLARIFY** — [Decision Point Name]
 1. [Question]
@@ -119,6 +123,7 @@ assumption explicitly.
 Accept the DSAR in any channel format and normalize into a canonical request record.
 
 **Supported intake channels:**
+
 - **Email**: forward to designated privacy inbox
 - **Web form**: structured intake via privacy portal or cookie consent platform
 - **Certified mail / postal**: scan and log
@@ -127,30 +132,31 @@ Accept the DSAR in any channel format and normalize into a canonical request rec
 
 **Canonical Request Record fields:**
 
-| Field | Value |
-|-------|-------|
-| Request ID | `DSAR-[YYYY]-[MM]-[NNN]` (assign on intake) |
-| Request Date | Date received (channel-dependent — email receipt, postmark, form timestamp) |
-| Legal Clock Start | Date organization became "aware" of request — this is the statutory trigger |
-| Delivery Channel | Email / Web Form / Postal / Phone / In-Person |
-| Requester Name (Claimed) | As stated |
-| Requester Contact | Email, address, or phone |
-| Claimed Relationship | Self / Agent / Attorney / Guardian / Executor / Other |
-| Stated Scope | What the requester is asking for |
-| Urgency Flags | Time-sensitive circumstances stated by requester |
-| Assigned Owner | Privacy team member responsible |
+| Field                    | Value                                                                       |
+| ------------------------ | --------------------------------------------------------------------------- |
+| Request ID               | `DSAR-[YYYY]-[MM]-[NNN]` (assign on intake)                                 |
+| Request Date             | Date received (channel-dependent — email receipt, postmark, form timestamp) |
+| Legal Clock Start        | Date organization became "aware" of request — this is the statutory trigger |
+| Delivery Channel         | Email / Web Form / Postal / Phone / In-Person                               |
+| Requester Name (Claimed) | As stated                                                                   |
+| Requester Contact        | Email, address, or phone                                                    |
+| Claimed Relationship     | Self / Agent / Attorney / Guardian / Executor / Other                       |
+| Stated Scope             | What the requester is asking for                                            |
+| Urgency Flags            | Time-sensitive circumstances stated by requester                            |
+| Assigned Owner           | Privacy team member responsible                                             |
 
 **CLARIFY** — Step 1: Request validity screening
 
 1. **Does the request on its face constitute a valid DSAR?**
    - Options: Clear DSAR (proceed), Ambiguous (treat as DSAR provisionally and clarify with requester), Not a DSAR (route to other process)
-   - *Why it matters*: Treating a non-DSAR inquiry as a DSAR wastes resources; failing to recognize a DSAR triggers the statutory clock and risks deadline miss.
+   - _Why it matters_: Treating a non-DSAR inquiry as a DSAR wastes resources; failing to recognize a DSAR triggers the statutory clock and risks deadline miss.
 
 2. **Is the request clearly manifestly unfounded or manifestly excessive?**
    - Options: No (proceed), Borderline (document and proceed while assessing), Yes — abuse pattern evident
-   - *Why it matters*: Manifestly unfounded/excessive requests may be refused or subject to fee (GDPR Art. 12(5), UK GDPR equivalent) — but the bar is high. Mis-classifying a legitimate request risks enforcement action.
+   - _Why it matters_: Manifestly unfounded/excessive requests may be refused or subject to fee (GDPR Art. 12(5), UK GDPR equivalent) — but the bar is high. Mis-classifying a legitimate request risks enforcement action.
 
 **Action items for Step 1:**
+
 - Assign Request ID
 - Log Legal Clock Start date
 - Acknowledge receipt to requester (in writing, within 24-48 hours)
@@ -168,34 +174,37 @@ Verify that the person submitting the request is (a) who they claim to be, and
 
 1. **What is the risk level of this request?**
    - Options: Low (individual known to us, data not sensitive), Medium (individual partially known, some sensitive data likely), High (individual unknown, sensitive data likely, or large-scale)
-   - *Why it matters*: Verification burden scales with risk. Requesting more information than necessary itself violates data minimization principles.
+   - _Why it matters_: Verification burden scales with risk. Requesting more information than necessary itself violates data minimization principles.
 
 2. **Is a third party claiming to act on behalf of the data subject?**
    - Options: No — request directly from data subject, Yes — attorney/agent, Yes — parent/guardian, Yes — executor/administrator of estate
-   - *Why it matters*: Third-party authority requires additional verification (power of attorney, guardianship order, letters of administration, signed authorization letter).
+   - _Why it matters_: Third-party authority requires additional verification (power of attorney, guardianship order, letters of administration, signed authorization letter).
 
 #### Identity Verification Matrix
 
-| Risk Level | Minimum Verification |
-|------------|---------------------|
-| **Low** | Email confirmation (reply from known account) or account-authenticated portal request |
-| **Medium** | Email confirmation + one additional factor: (a) answer to security question, (b) confirm last-4 of account number, or (c) date of last transaction/interaction |
-| **High** | Two independent factors including at least one government-document-based check: (a) government ID excerpt (last-4 of ID number + name), (b) live video or in-person check, or (c) notarized declaration |
-| **Special Category Data** | Treat as High + require written consent and destruction of verification materials post-check |
+| Risk Level                | Minimum Verification                                                                                                                                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Low**                   | Email confirmation (reply from known account) or account-authenticated portal request                                                                                                                   |
+| **Medium**                | Email confirmation + one additional factor: (a) answer to security question, (b) confirm last-4 of account number, or (c) date of last transaction/interaction                                          |
+| **High**                  | Two independent factors including at least one government-document-based check: (a) government ID excerpt (last-4 of ID number + name), (b) live video or in-person check, or (c) notarized declaration |
+| **Special Category Data** | Treat as High + require written consent and destruction of verification materials post-check                                                                                                            |
 
 **Third-party authority verification requirements:**
+
 - **Attorney**: signed engagement letter or bar-verified representation letter
 - **Agent**: signed written authorization from data subject (wet ink or qualified electronic signature)
 - **Parent/Guardian**: documentation of legal guardianship (birth certificate for minors; court order for incapacitated adults)
 - **Executor**: grant of probate, letters of administration, or equivalent
 
 **Verification evidence handling:**
+
 - Store verification materials in a designated secure folder, access-restricted to DSAR team
 - Delete verification artifacts within [30/90] days of response dispatch [JURISDICTION-SPECIFIC]
 - Never use verification data for any purpose other than identity check
 - Log: `verification_method`, `verification_date`, `verifier_name`, `verification_confidence`
 
 [JURISDICTION-SPECIFIC] Note:
+
 - GDPR/UK GDPR: Controllers "may" request additional information to verify identity but only when there are "reasonable doubts" (EDPB Guidelines 01/2022 §4)
 - CCPA/CPRA: "Verifiable consumer request" standard — verification method must be reasonably designed to confirm identity while minimizing collection
 - LGPD: Verification requirements not explicitly specified; proportionality principle applies
@@ -208,6 +217,7 @@ Verify that the person submitting the request is (a) who they claim to be, and
 Identify all applicable data protection regimes and calculate the binding response deadline.
 
 **Regime identification factors:**
+
 - Data subject's place of residence (primary trigger for EU GDPR, UK GDPR, LGPD, CCPA/CPRA)
 - Organization's establishment or targeting of individuals in-jurisdiction
 - Sector-specific overlays (HIPAA, FERPA, GLBA, DPA 2018 sector schedules)
@@ -224,19 +234,20 @@ Identify all applicable data protection regimes and calculate the binding respon
 
 **Deadline Reference Table:**
 
-| Regime | Base Deadline Formula | Extension Trigger | Extension Period |
-|--------|----------------------|-------------------|-----------------|
-| EU GDPR | Clock Start + 1 calendar month | Complex request or multiple requests | +2 calendar months |
-| UK GDPR | Clock Start + 1 calendar month | Complex request or multiple requests | +2 calendar months |
-| CCPA/CPRA | Clock Start + 45 calendar days | Good cause (notify requester within 45 days) | +45 calendar days |
-| LGPD | Clock Start + 15 calendar days | Justified (notify requester) | +15 calendar days |
-| PIPEDA | Clock Start + 30 days (OPC recommendation) | Reasonable justification (notify requester) | Reasonable |
+| Regime    | Base Deadline Formula                      | Extension Trigger                            | Extension Period   |
+| --------- | ------------------------------------------ | -------------------------------------------- | ------------------ |
+| EU GDPR   | Clock Start + 1 calendar month             | Complex request or multiple requests         | +2 calendar months |
+| UK GDPR   | Clock Start + 1 calendar month             | Complex request or multiple requests         | +2 calendar months |
+| CCPA/CPRA | Clock Start + 45 calendar days             | Good cause (notify requester within 45 days) | +45 calendar days  |
+| LGPD      | Clock Start + 15 calendar days             | Justified (notify requester)                 | +15 calendar days  |
+| PIPEDA    | Clock Start + 30 days (OPC recommendation) | Reasonable justification (notify requester)  | Reasonable         |
 
 **Extension notification requirement:** If extending, notify the requester in writing within the
 original deadline period. State the reason for the extension and the new deadline. Failure
 to notify is itself a compliance violation.
 
 **Output of Step 3:**
+
 ```
 Jurisdiction Applicability Matrix:
 - [Regime 1]: APPLICABLE / NOT APPLICABLE — Reason
@@ -257,13 +268,14 @@ Determine exactly what data the request covers and which organizational systems 
 
 1. **Is the request scope clear?**
    - Options: Clear ("all personal data you hold about me"), Ambiguous (subject used vague language), Scoped (subject specified categories or time periods)
-   - *Why it matters*: A clear all-data request triggers comprehensive discovery; an ambiguous request may require a scoping clarification letter (which may toll the deadline [JURISDICTION-SPECIFIC]).
+   - _Why it matters_: A clear all-data request triggers comprehensive discovery; an ambiguous request may require a scoping clarification letter (which may toll the deadline [JURISDICTION-SPECIFIC]).
 
 2. **Is the request potentially manifestly excessive?**
    - Options: No, Borderline (flag for assessment but proceed), Yes — genuinely excessive given volume or prior requests
-   - *Why it matters*: Excessive requests may justify extension or (in narrow circumstances) refusal.
+   - _Why it matters_: Excessive requests may justify extension or (in narrow circumstances) refusal.
 
 **Scope interpretation principles:**
+
 - Default to broad interpretation when scope is ambiguous (error on side of transparency)
 - "Personal data" includes all information that can identify the subject, directly or indirectly
 - Includes derived and inferred data, behavioral profiles, and automated decision-making outputs
@@ -271,27 +283,28 @@ Determine exactly what data the request covers and which organizational systems 
 - Does NOT include data that cannot reasonably be retrieved (disproportionate effort)
 
 [JURISDICTION-SPECIFIC] CCPA/CPRA distinguishes between:
+
 - Right to Know — Categories: broader, covers past 12 months by default
 - Right to Know — Specific Pieces: targeted, must be responded to with actual data
 - Confirm the request type before proceeding with discovery
 
 **System inventory checklist — identify all systems potentially holding personal data:**
 
-| System Category | Examples | In Scope? |
-|----------------|---------|-----------|
-| CRM | Salesforce, HubSpot, Dynamics | Assess |
-| Email | Outlook/Exchange, Gmail | Assess |
-| HR Systems | Workday, BambooHR, Personio | Assess if subject is/was employee |
-| ERP/Finance | SAP, NetSuite | Assess |
-| Marketing | Marketo, Mailchimp, Klaviyo | Assess |
-| Support Ticketing | Zendesk, ServiceNow, Intercom | Assess |
-| Analytics/BI | Google Analytics, Mixpanel, Amplitude | Assess |
-| Data Warehouse | Snowflake, BigQuery, Redshift | Assess |
-| File Storage | SharePoint, Dropbox, Google Drive | Assess |
-| Communication | Slack, Teams, Zoom records | Assess |
-| Product/App DB | Custom databases, event streams | Assess |
-| Third-Party Processors | SaaS vendors, cloud services, outsourced functions | Coordinate per Step 5b |
-| Archives & Backups | Legacy systems, tape/offline backups | Assess effort vs. obligation |
+| System Category        | Examples                                           | In Scope?                         |
+| ---------------------- | -------------------------------------------------- | --------------------------------- |
+| CRM                    | Salesforce, HubSpot, Dynamics                      | Assess                            |
+| Email                  | Outlook/Exchange, Gmail                            | Assess                            |
+| HR Systems             | Workday, BambooHR, Personio                        | Assess if subject is/was employee |
+| ERP/Finance            | SAP, NetSuite                                      | Assess                            |
+| Marketing              | Marketo, Mailchimp, Klaviyo                        | Assess                            |
+| Support Ticketing      | Zendesk, ServiceNow, Intercom                      | Assess                            |
+| Analytics/BI           | Google Analytics, Mixpanel, Amplitude              | Assess                            |
+| Data Warehouse         | Snowflake, BigQuery, Redshift                      | Assess                            |
+| File Storage           | SharePoint, Dropbox, Google Drive                  | Assess                            |
+| Communication          | Slack, Teams, Zoom records                         | Assess                            |
+| Product/App DB         | Custom databases, event streams                    | Assess                            |
+| Third-Party Processors | SaaS vendors, cloud services, outsourced functions | Coordinate per Step 5b            |
+| Archives & Backups     | Legacy systems, tape/offline backups               | Assess effort vs. obligation      |
 
 ---
 
@@ -302,6 +315,7 @@ Execute discovery across all in-scope systems identified in Step 4.
 #### Step 5a: Primary System Discovery
 
 For each in-scope system, execute search using the subject's known identifiers:
+
 - Primary email address
 - Username or customer ID
 - Name (with common spelling variants)
@@ -311,25 +325,25 @@ For each in-scope system, execute search using the subject's known identifiers:
 
 **Discovery protocol per system type:**
 
-| System Type | Discovery Method | Completeness Check |
-|-------------|-----------------|-------------------|
-| Relational DB | SQL query on all tables with FK to user ID | Run row count before and after extraction |
-| CRM | Export contact record + all related objects (activities, notes, opportunities) | Check "last modified" date to catch recent entries |
-| Email | Full-text search on all From/To/CC/BCC fields + body search on name/ID | Include sent, received, drafts, deleted (if accessible) |
-| File Storage | Metadata search on creator/editor + full-text search on name/ID | Check all folders including shared and archived |
-| Analytics | Query on user ID / cookie ID / device ID | Note: often only aggregate data available |
-| Backups | Only if data is not reasonably accessible elsewhere; document effort | Assess proportionality before executing |
+| System Type   | Discovery Method                                                               | Completeness Check                                      |
+| ------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------- |
+| Relational DB | SQL query on all tables with FK to user ID                                     | Run row count before and after extraction               |
+| CRM           | Export contact record + all related objects (activities, notes, opportunities) | Check "last modified" date to catch recent entries      |
+| Email         | Full-text search on all From/To/CC/BCC fields + body search on name/ID         | Include sent, received, drafts, deleted (if accessible) |
+| File Storage  | Metadata search on creator/editor + full-text search on name/ID                | Check all folders including shared and archived         |
+| Analytics     | Query on user ID / cookie ID / device ID                                       | Note: often only aggregate data available               |
+| Backups       | Only if data is not reasonably accessible elsewhere; document effort           | Assess proportionality before executing                 |
 
 **De-duplication:** After extracting from all systems, de-duplicate records appearing in
 multiple systems. Maintain cross-reference: which record appears in which system(s).
 
 **Discovery register format:**
 
-| Record ID | Source System | Category | Description | Responsive? | Exemption Flag |
-|-----------|--------------|----------|-------------|-------------|----------------|
-| REC-001 | CRM | Identity | Name, email, phone | YES | None |
-| REC-002 | Email | Communications | Support thread (subject + agents) | PARTIAL | Third-party names in agent replies |
-| REC-003 | Analytics | Behavioral | Click-stream profile | YES | De-identification possible |
+| Record ID | Source System | Category       | Description                       | Responsive? | Exemption Flag                     |
+| --------- | ------------- | -------------- | --------------------------------- | ----------- | ---------------------------------- |
+| REC-001   | CRM           | Identity       | Name, email, phone                | YES         | None                               |
+| REC-002   | Email         | Communications | Support thread (subject + agents) | PARTIAL     | Third-party names in agent replies |
+| REC-003   | Analytics     | Behavioral     | Click-stream profile              | YES         | De-identification possible         |
 
 #### Step 5b: Vendor and Processor Coordination
 
@@ -337,6 +351,7 @@ Personal data held by processors (SaaS vendors, outsourced functions, cloud prov
 must also be gathered. [JURISDICTION-SPECIFIC]
 
 **Processor coordination procedure:**
+
 1. Identify all data processors contractually engaged (check DPA register or data processing agreements)
 2. For each processor holding the subject's data:
    a. Submit a DSAR to the processor under the controller-processor agreement
@@ -469,6 +484,7 @@ Determine the format and delivery channel for the response data package.
 **Format requirements by regime:**
 
 [JURISDICTION-SPECIFIC]
+
 - **EU GDPR Art. 15(3)**: Provide a copy of the personal data in a "commonly used electronic
   format" where the request is made electronically. For portal/email requests, electronic
   format is default.
@@ -479,20 +495,20 @@ Determine the format and delivery channel for the response data package.
 
 **Format selection:**
 
-| Data Type | Recommended Format | Notes |
-|-----------|-------------------|-------|
-| Structured records (contact, transaction) | CSV or JSON | Machine-readable, portable |
-| Unstructured (emails, documents) | PDF | Human-readable; apply redactions before converting |
-| Mixed | Zip package with CSV + PDF | Include manifest/index file |
-| Special category | Encrypted download with one-time link | Extra security layer |
+| Data Type                                 | Recommended Format                    | Notes                                              |
+| ----------------------------------------- | ------------------------------------- | -------------------------------------------------- |
+| Structured records (contact, transaction) | CSV or JSON                           | Machine-readable, portable                         |
+| Unstructured (emails, documents)          | PDF                                   | Human-readable; apply redactions before converting |
+| Mixed                                     | Zip package with CSV + PDF            | Include manifest/index file                        |
+| Special category                          | Encrypted download with one-time link | Extra security layer                               |
 
 **Delivery channel selection:**
 
-| Preference | Channel | Security Requirement |
-|------------|---------|---------------------|
+| Preference           | Channel                                                | Security Requirement                                      |
+| -------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 | Electronic (default) | Secure download link (time-limited) or encrypted email | Do not send plaintext personal data via unencrypted email |
-| Postal | Certified/tracked mail to verified address | Confirm address matches verified identity |
-| In-person | In-person collection with ID check | Maintain attendance log |
+| Postal               | Certified/tracked mail to verified address             | Confirm address matches verified identity                 |
+| In-person            | In-person collection with ID check                     | Maintain attendance log                                   |
 
 ---
 
@@ -501,6 +517,7 @@ Determine the format and delivery channel for the response data package.
 Apply the redaction decisions from Step 6 and assemble the final data package.
 
 **Redaction standards:**
+
 - Use **permanent redaction** (not visual masking) — cover-text redactions that can be
   lifted have caused regulator enforcement actions
 - Apply redactions before format conversion (redact source, then export to PDF/CSV)
@@ -509,6 +526,7 @@ Apply the redaction decisions from Step 6 and assemble the final data package.
   exemption invoked
 
 **Post-redaction validation checklist:**
+
 - [ ] All redacted areas are permanently removed (not masked with a coloured bar over selectable text)
 - [ ] Redacted records are still coherent and useful to the data subject
 - [ ] No third-party identifiers remain visible (check PDF metadata as well as visible content)
@@ -517,6 +535,7 @@ Apply the redaction decisions from Step 6 and assemble the final data package.
 - [ ] Zip archive index correctly lists all included and withheld items
 
 **Package assembly checklist:**
+
 - [ ] Cover notice attached (see Step 9)
 - [ ] Data files correctly named and organized
 - [ ] Index/manifest included listing all data categories and file counts
@@ -531,21 +550,21 @@ Draft the cover notice that accompanies the data package.
 
 **Required notice elements [JURISDICTION-SPECIFIC]:**
 
-| Element | GDPR/UK GDPR | CCPA/CPRA | LGPD | PIPEDA |
-|---------|-------------|-----------|------|--------|
-| Identity confirmation | ✓ | ✓ | ✓ | ✓ |
-| Scope description | ✓ | ✓ | ✓ | ✓ |
-| Categories disclosed | ✓ | ✓ | ✓ | ✓ |
-| Exemptions/withholdings with basis | ✓ | ✓ | ✓ | ✓ |
-| Processing purposes | ✓ | ✓ | ✓ | Principle 4 |
-| Data sources | ✓ (Art. 15(1)(g)) | ✓ | ✓ | Principle 4 |
-| Retention period or criteria | ✓ (Art. 15(1)(d)) | — | ✓ | Principle 5 |
-| Recipient categories | ✓ (Art. 15(1)(c)) | ✓ | ✓ | — |
-| Automated decision-making info | ✓ (Art. 15(1)(h)) | — | Art. 20 | — |
-| Third-country transfer info | ✓ (Art. 15(2)) | — | Art. 33 | Principle 1 |
-| Right to lodge complaint | ✓ | ✓ (CPPA) | ✓ (ANPD) | ✓ (OPC) |
-| Appeal/correction rights | ✓ | ✓ | ✓ | ✓ |
-| Contact details | ✓ | ✓ | ✓ | ✓ |
+| Element                            | GDPR/UK GDPR      | CCPA/CPRA | LGPD     | PIPEDA      |
+| ---------------------------------- | ----------------- | --------- | -------- | ----------- |
+| Identity confirmation              | ✓                 | ✓         | ✓        | ✓           |
+| Scope description                  | ✓                 | ✓         | ✓        | ✓           |
+| Categories disclosed               | ✓                 | ✓         | ✓        | ✓           |
+| Exemptions/withholdings with basis | ✓                 | ✓         | ✓        | ✓           |
+| Processing purposes                | ✓                 | ✓         | ✓        | Principle 4 |
+| Data sources                       | ✓ (Art. 15(1)(g)) | ✓         | ✓        | Principle 4 |
+| Retention period or criteria       | ✓ (Art. 15(1)(d)) | —         | ✓        | Principle 5 |
+| Recipient categories               | ✓ (Art. 15(1)(c)) | ✓         | ✓        | —           |
+| Automated decision-making info     | ✓ (Art. 15(1)(h)) | —         | Art. 20  | —           |
+| Third-country transfer info        | ✓ (Art. 15(2))    | —         | Art. 33  | Principle 1 |
+| Right to lodge complaint           | ✓                 | ✓ (CPPA)  | ✓ (ANPD) | ✓ (OPC)     |
+| Appeal/correction rights           | ✓                 | ✓         | ✓        | ✓           |
+| Contact details                    | ✓                 | ✓         | ✓        | ✓           |
 
 **Notice template — fill all [PLACEHOLDER] values:**
 
@@ -646,13 +665,13 @@ Before dispatching the response, run all quality checks and complete the Glass B
 
 Run these five gates silently before delivering the final response. If any gate fails, revise.
 
-| Gate | Rule for DSAR | Fail Action |
-|------|---------------|-------------|
-| **Source** | Every deadline, exemption, or right-description cites a specific statute, regulation, or regulator guidance | Add statutory citation or mark "[UNVERIFIED — legal team to confirm]" |
-| **Format** | All citations use consistent format: [Regime Statute §Section] or [Regulator Guidance — URL] | Standardize format across notice and exemption register |
-| **Currency** | Every deadline, exemption, and regulator guidance reference checked for recent amendments or updated guidance (within past 24 months) | Flag "[CHECK CURRENCY — deadline or exemption may have changed — verify at [regulator URL]]" |
-| **Domain** | Analysis uses only the regime(s) applicable to this request. No concepts from GDPR bleeding into a CCPA-only request. | Remove or flag cross-regime contamination |
-| **Confidence** | Uncertainty about exemption applicability, deadline, or scope is explicitly stated, not hidden. Present both positions when uncertain. | Add confidence qualifier; surface for legal sign-off |
+| Gate           | Rule for DSAR                                                                                                                          | Fail Action                                                                                  |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Source**     | Every deadline, exemption, or right-description cites a specific statute, regulation, or regulator guidance                            | Add statutory citation or mark "[UNVERIFIED — legal team to confirm]"                        |
+| **Format**     | All citations use consistent format: [Regime Statute §Section] or [Regulator Guidance — URL]                                           | Standardize format across notice and exemption register                                      |
+| **Currency**   | Every deadline, exemption, and regulator guidance reference checked for recent amendments or updated guidance (within past 24 months)  | Flag "[CHECK CURRENCY — deadline or exemption may have changed — verify at [regulator URL]]" |
+| **Domain**     | Analysis uses only the regime(s) applicable to this request. No concepts from GDPR bleeding into a CCPA-only request.                  | Remove or flag cross-regime contamination                                                    |
+| **Confidence** | Uncertainty about exemption applicability, deadline, or scope is explicitly stated, not hidden. Present both positions when uncertain. | Add confidence qualifier; surface for legal sign-off                                         |
 
 #### Self-Interrogation for HIGH-STAKES Decisions
 
@@ -660,18 +679,21 @@ For any exemption claimed, or any decision not to disclose data, apply this thre
 review before the response is dispatched:
 
 **Pass 1 — Legal Basis Integrity:**
+
 - Is the exemption actually named in the applicable statute or binding regulator guidance?
 - Does the factual basis for claiming the exemption match the statutory language?
 - Would the applicable data protection regulator's recent enforcement guidance support this application?
 - What is the strongest counter-argument the data subject or their counsel would make?
 
 **Pass 2 — Completeness:**
+
 - Have all potentially applicable exemptions been considered, not just the most convenient?
 - Are there partial alternatives (redact rather than withhold; anonymize rather than redact)?
 - Have recent enforcement actions against similar exemption claims been reviewed?
 - Is there a duty to disclose under another legal regime that overrides this exemption?
 
 **Pass 3 — Proportionality:**
+
 - Is the exemption claim narrowly tailored, or are we over-withholding?
 - Would a proportionality-minded regulator agree that full withholding (vs. partial redaction)
   is justified?
@@ -682,13 +704,13 @@ Mark audit trail: `self_interrogation: [EXEMPTION_NAME]: PASS` or `REVISED — [
 
 #### Confidence Scoring for DSAR Decisions
 
-| Level | Range | Meaning | DSAR Action |
-|-------|-------|---------|-------------|
-| **Definite** | 0.95–1.0 | Settled law, clear regulator guidance, no ambiguity | Record decision; apply without caveat |
-| **High** | 0.80–0.94 | Strong authority, minor interpretation questions | Apply with brief caveat; note in Glass Box |
-| **Probable** | 0.60–0.79 | Good arguments but reasonable minds could differ; guidance mixed | Surface for DPO review before dispatch |
-| **Possible** | 0.40–0.59 | Genuinely uncertain; competing regulator interpretations | Escalate to legal counsel; present both positions |
-| **Unlikely** | 0.0–0.39 | Weak basis; speculative | Do not claim exemption; disclose data; flag "[UNCERTAIN — do not withhold without legal sign-off]" |
+| Level        | Range     | Meaning                                                          | DSAR Action                                                                                        |
+| ------------ | --------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Settled law, clear regulator guidance, no ambiguity              | Record decision; apply without caveat                                                              |
+| **High**     | 0.80–0.94 | Strong authority, minor interpretation questions                 | Apply with brief caveat; note in Glass Box                                                         |
+| **Probable** | 0.60–0.79 | Good arguments but reasonable minds could differ; guidance mixed | Surface for DPO review before dispatch                                                             |
+| **Possible** | 0.40–0.59 | Genuinely uncertain; competing regulator interpretations         | Escalate to legal counsel; present both positions                                                  |
+| **Unlikely** | 0.0–0.39  | Weak basis; speculative                                          | Do not claim exemption; disclose data; flag "[UNCERTAIN — do not withhold without legal sign-off]" |
 
 #### Glass Box Audit Trail
 
@@ -702,8 +724,8 @@ dsar_glass_box:
   legal_clock_start: "[ISO 8601 date of awareness]"
   response_date: "[ISO 8601 date dispatched]"
   deadline: "[ISO 8601 response deadline]"
-  deadline_met: true  # or false — document reason if false
-  extension_triggered: false  # if true, document reason and notice date
+  deadline_met: true # or false — document reason if false
+  extension_triggered: false # if true, document reason and notice date
   request_channel: "[Email / Web Form / Postal / Phone / In-Person]"
 
   # Subject Verification
@@ -757,29 +779,29 @@ dsar_glass_box:
     - exemption_name: "[Name]"
       statute_section: "[Citation]"
       records_withheld: 0
-      self_interrogation: "PASS"  # or "REVISED — [reason]"
+      self_interrogation: "PASS" # or "REVISED — [reason]"
       confidence: 0.90
       regulator_guidance_consulted: "[URL or legalcode-mcp ref]"
       escalated_to_counsel: false
 
   # Redactions
   redactions_summary: "[Brief description of what was redacted and why]"
-  redaction_permanent: true  # false = risk of recoverable masking
+  redaction_permanent: true # false = risk of recoverable masking
 
   # Delivery
   delivery_format: "[CSV / PDF / ZIP / Other]"
   delivery_channel: "[Secure download / Encrypted email / Postal]"
-  dispatch_confirmed: false  # to be set true at Step 12
+  dispatch_confirmed: false # to be set true at Step 12
 
   # QA
-  citation_gates_passed: true  # all 5 gates: source, format, currency, domain, confidence
+  citation_gates_passed: true # all 5 gates: source, format, currency, domain, confidence
   self_interrogation_summary: "[PASS / REVISED — details]"
   confidence_distribution:
-    definite: 0   # count of decisions at 0.95–1.0
-    high: 0       # 0.80–0.94
-    probable: 0   # 0.60–0.79
-    possible: 0   # 0.40–0.59
-    unlikely: 0   # 0.0–0.39
+    definite: 0 # count of decisions at 0.95–1.0
+    high: 0 # 0.80–0.94
+    probable: 0 # 0.60–0.79
+    possible: 0 # 0.40–0.59
+    unlikely: 0 # 0.0–0.39
 
   # Sign-off
   escalated_to_counsel: false
@@ -801,6 +823,7 @@ dsar_glass_box:
 Escalate to the Data Protection Officer (DPO) or qualified counsel before dispatch.
 
 **Mandatory escalation triggers:**
+
 - Any exemption with confidence < 0.80
 - Any exemption self-interrogation marked `REVISED`
 - Any decision to refuse to act (manifestly unfounded/excessive)
@@ -810,6 +833,7 @@ Escalate to the Data Protection Officer (DPO) or qualified counsel before dispat
 - Any request where the deadline extension has been triggered
 
 **Sign-off record:**
+
 ```
 Reviewed by: [DPO / Counsel name]
 Date reviewed: [Date]
@@ -826,6 +850,7 @@ Sign-off signature: [Electronic or wet ink per organizational policy]
 Execute the final delivery and lock the compliance record.
 
 **Dispatch checklist:**
+
 - [ ] Cover notice finalized and approved
 - [ ] Data package assembled with correct contents
 - [ ] Redactions verified as permanent (not recoverable masking)
@@ -835,6 +860,7 @@ Execute the final delivery and lock the compliance record.
 - [ ] Delivery confirmation mechanism active (read receipt, tracking number, portal confirmation)
 
 **Post-dispatch documentation:**
+
 - Lock the DSAR file (no modifications without documented change log)
 - Save: canonical request, verification record, discovery register, exemption register,
   redaction index, notice, Glass Box audit trail, sign-off record, dispatch log
@@ -842,6 +868,7 @@ Execute the final delivery and lock the compliance record.
 - Update DSAR register / data processing records with: request ID, date, regime, outcome, exemptions applied
 
 **Retention of DSAR records:** [JURISDICTION-SPECIFIC]
+
 - EU GDPR: ICO recommends 3 years minimum
 - UK GDPR: Organizational policy, minimum 1 year (ICO enforcement standard)
 - CCPA/CPRA: CPPA regulations require 24 months minimum
@@ -853,12 +880,14 @@ Execute the final delivery and lock the compliance record.
 ### Step 13 (Optional): Post-Dispatch Monitoring and Appeal Handling
 
 **Appeal and challenge triggers:**
+
 - Data subject disputes the completeness of the response
 - Data subject challenges a withheld record or exemption claim
 - Regulator opens investigation based on complaint
 - Data subject submits a supplemental request (additional data not covered by original scope)
 
 **Supplemental vs. Re-request distinction:**
+
 - **Supplemental**: Builds on original request; requests data discovered post-dispatch or
   corrects a recognized gap. Treat as continuation; clock restarts on the supplemental scope.
 - **Re-request**: Identical scope to a prior request within the statutory frequency limit.
@@ -866,6 +895,7 @@ Execute the final delivery and lock the compliance record.
   request without change in circumstances).
 
 **Appeal response procedure:**
+
 1. Review the specific challenge raised
 2. Re-apply exemption analysis to the challenged item (re-run three-pass self-interrogation)
 3. If exemption is upheld: provide a more detailed written explanation of the basis
@@ -873,6 +903,7 @@ Execute the final delivery and lock the compliance record.
 5. Document all appeal proceedings in the DSAR file
 
 **Regulator investigation procedure:**
+
 1. Appoint internal investigation lead
 2. Preserve all DSAR records (litigation hold)
 3. Engage qualified counsel immediately
@@ -885,15 +916,15 @@ Execute the final delivery and lock the compliance record.
 
 Apply this quick-reference matrix to each potentially exempt item before claiming exemption:
 
-| Exemption | Confidence Threshold to Apply | Proportionality Requirement | Escalation Required |
-|-----------|------------------------------|----------------------------|---------------------|
-| Manifestly Unfounded/Excessive | 0.95+ | N/A (full refusal permitted) | DPO sign-off always |
-| Third-Party Privacy | 0.80+ | Redact minimum; prefer partial disclosure | If borderline |
-| Legal Privilege | 0.85+ | Privilege must attach to specific document | Counsel always |
-| Trade Secrets | 0.80+ | Redact trade secret portion; disclose personal data | If borderline |
-| Ongoing Investigation | 0.85+ | Must be genuine ongoing proceeding | DPO always |
-| National Security | 0.95+ | Strict statutory compliance required | DPO + Counsel always |
-| Research / Archiving | 0.80+ | Safeguards must be in place | DPO sign-off |
+| Exemption                      | Confidence Threshold to Apply | Proportionality Requirement                         | Escalation Required  |
+| ------------------------------ | ----------------------------- | --------------------------------------------------- | -------------------- |
+| Manifestly Unfounded/Excessive | 0.95+                         | N/A (full refusal permitted)                        | DPO sign-off always  |
+| Third-Party Privacy            | 0.80+                         | Redact minimum; prefer partial disclosure           | If borderline        |
+| Legal Privilege                | 0.85+                         | Privilege must attach to specific document          | Counsel always       |
+| Trade Secrets                  | 0.80+                         | Redact trade secret portion; disclose personal data | If borderline        |
+| Ongoing Investigation          | 0.85+                         | Must be genuine ongoing proceeding                  | DPO always           |
+| National Security              | 0.95+                         | Strict statutory compliance required                | DPO + Counsel always |
+| Research / Archiving           | 0.80+                         | Safeguards must be in place                         | DPO sign-off         |
 
 ---
 
@@ -901,12 +932,12 @@ Apply this quick-reference matrix to each potentially exempt item before claimin
 
 When managing multiple open DSARs, prioritize using this four-tier framework:
 
-| Tier | Trigger | Action |
-|------|---------|--------|
+| Tier         | Trigger                                                                                                                              | Action                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
 | **Critical** | Less than 5 business days to statutory deadline; or regulator investigation active; or special category data + vulnerable individual | Immediate — all available resources; escalate to DPO and counsel same day |
-| **High** | 6–15 business days to deadline; or complex exemption decisions pending; or third-party processor delays | Priority assignment; daily status check; DPO check-in within 48 hours |
-| **Standard** | 16–30 business days to deadline; normal scope and exemption profile | Normal workflow; weekly status check |
-| **Low** | More than 30 business days to deadline; or clear de minimis data held; or clear single-system scope | Background processing; no rush, but do not allow deadlines to creep |
+| **High**     | 6–15 business days to deadline; or complex exemption decisions pending; or third-party processor delays                              | Priority assignment; daily status check; DPO check-in within 48 hours     |
+| **Standard** | 16–30 business days to deadline; normal scope and exemption profile                                                                  | Normal workflow; weekly status check                                      |
+| **Low**      | More than 30 business days to deadline; or clear de minimis data held; or clear single-system scope                                  | Background processing; no rush, but do not allow deadlines to creep       |
 
 ---
 
@@ -914,17 +945,17 @@ When managing multiple open DSARs, prioritize using this four-tier framework:
 
 DSAR responses require coordination across multiple internal stakeholders:
 
-| Stakeholder | Role | Involvement |
-|-------------|------|-------------|
-| Privacy Team | Process owner; coordinates discovery, exemptions, notice | All steps |
-| IT / Engineering | Executes data discovery in technical systems | Steps 5, 8 |
-| Legal / DPO | Reviews exemption decisions; signs off on response | Steps 6, 10, 11 |
-| HR | Searches HR systems for employee data | Step 5 (if employee DSAR) |
-| Finance / Revenue | Searches billing and transaction records | Step 5 |
-| Customer Support | Searches CRM and ticketing | Step 5 |
-| Vendor Management | Coordinates with third-party processors | Step 5b |
-| Security | Verifies secure delivery channel; approves redaction tools | Steps 7–8, 12 |
-| Communications | Reviews any externally visible statements (appeals, regulator) | Step 13 |
+| Stakeholder       | Role                                                           | Involvement               |
+| ----------------- | -------------------------------------------------------------- | ------------------------- |
+| Privacy Team      | Process owner; coordinates discovery, exemptions, notice       | All steps                 |
+| IT / Engineering  | Executes data discovery in technical systems                   | Steps 5, 8                |
+| Legal / DPO       | Reviews exemption decisions; signs off on response             | Steps 6, 10, 11           |
+| HR                | Searches HR systems for employee data                          | Step 5 (if employee DSAR) |
+| Finance / Revenue | Searches billing and transaction records                       | Step 5                    |
+| Customer Support  | Searches CRM and ticketing                                     | Step 5                    |
+| Vendor Management | Coordinates with third-party processors                        | Step 5b                   |
+| Security          | Verifies secure delivery channel; approves redaction tools     | Steps 7–8, 12             |
+| Communications    | Reviews any externally visible statements (appeals, regulator) | Step 13                   |
 
 ---
 
@@ -1014,6 +1045,7 @@ What NOT to do when handling DSARs:
 ## Writing Standards
 
 **For cover notices (externally visible):**
+
 - Plain language: a non-lawyer should understand every sentence
 - Active voice: "We hold the following data about you" not "Data about you is held by us"
 - Specific, not vague: cite the statute section when invoking an exemption
@@ -1022,12 +1054,14 @@ What NOT to do when handling DSARs:
 - Name your contact person, not just a generic inbox
 
 **For internal documentation (DSAR file, exemption register):**
+
 - Same plain-language standard, with more technical detail permitted
 - Confidence qualifiers where appropriate: "We believe this data is responsive because…"
 - Every legal claim followed by citation or [VERIFY]
 - Glass Box audit trail appended to every response file
 
 **Quality gates before dispatch:**
+
 1. Can the data subject understand the cover notice without legal assistance?
 2. Is every exemption basis cited with a specific statute section?
 3. Is every data category described in plain language?
@@ -1042,6 +1076,7 @@ What NOT to do when handling DSARs:
 ### With legalcode-mcp (preferred):
 
 Use legalcode-mcp to verify:
+
 - Current statutory deadline for each applicable regime (verify statute has not been amended)
 - Regulator guidance on exemption interpretation (check for recent guidance publications)
 - Enforcement actions involving similar fact patterns (validate exemption claims against
@@ -1051,12 +1086,18 @@ Use legalcode-mcp to verify:
 - International transfer adequacy decisions affecting disclosure obligations
 
 Save research to `/tmp/dsar-[request_id]-research.md` structured as:
+
 ```markdown
 # DSAR Legal Research — [Regime]
+
 ## Date: [date]
+
 ### Deadlines Verified: [Cite statute and regulator guidance]
+
 ### Exemptions Verified: [Cite for each exemption being applied]
+
 ### Enforcement References: [Relevant enforcement actions]
+
 ### Recent Developments: [Any changes in last 24 months]
 ```
 
@@ -1076,17 +1117,20 @@ Save research to `/tmp/dsar-[request_id]-research.md` structured as:
 When applying this skill to a specific jurisdiction, localize:
 
 **EU GDPR:**
+
 - Identify the competent Supervisory Authority (varies by Member State, lead authority for
   cross-border processing)
 - Check for Member State derogations under Art. 23 (national security, criminal law, etc.)
 - Apply EDPB Guidelines 01/2022 on the right of access
 
 **UK GDPR / DPA 2018:**
+
 - Apply DPA 2018 Schedule 2 exemption list in full
 - Check ICO guidance publications for current enforcement standards
 - Note: UK GDPR diverged from EU GDPR post-Brexit — do not assume full parity
 
 **CCPA/CPRA (California):**
+
 - Confirm the business meets the applicability threshold (>$25M revenue, OR >100K consumers'
   data per year, OR derives >50% revenue from selling personal information)
 - Distinguish Right to Know — Categories vs. Right to Know — Specific Pieces requests
@@ -1095,12 +1139,14 @@ When applying this skill to a specific jurisdiction, localize:
   etc.) — check which states apply
 
 **LGPD (Brazil):**
+
 - Note that ANPD enforcement has been increasing since 2022
 - Check ANPD's current guidance on data subject rights procedures
 - LGPD's 15-day deadline is very short by global standards — plan discovery to complete
   within 10 calendar days to maintain buffer
 
 **PIPEDA (Canada):**
+
 - Check whether provincial law applies (PIPA Alberta, PIPA British Columbia, LPRPSP Quebec)
   — these may have stricter requirements than PIPEDA
 - Note: Bill C-27 (Consumer Privacy Protection Act / CPPA) was tabled and, if enacted,
@@ -1111,6 +1157,7 @@ When applying this skill to a specific jurisdiction, localize:
 ## Provenance
 
 Created by Legalcode (2026-03-01). Original synthesis drawing on:
+
 - GDPR Article 15 and EDPB Guidelines 01/2022 on the right of access
 - UK GDPR Article 15 and ICO Subject Access guidance
 - CCPA California Civil Code § 1798.100–1798.199.100 and CPPA regulations
@@ -1125,7 +1172,8 @@ Created by Legalcode (2026-03-01). Original synthesis drawing on:
 
 ---
 
-*This skill is part of the Legalcode compliance skill suite. Related skills:*
-- *`legalcode-dpia-generator` — Data Protection Impact Assessments*
-- *`legalcode-privacy-policy-drafter` — Privacy policy drafting*
-- *`legalcode-breach-severity-assessment` — Data breach notification obligations*
+_This skill is part of the Legalcode compliance skill suite. Related skills:_
+
+- _`legalcode-dpia-generator` — Data Protection Impact Assessments_
+- _`legalcode-privacy-policy-drafter` — Privacy policy drafting_
+- _`legalcode-breach-severity-assessment` — Data breach notification obligations_

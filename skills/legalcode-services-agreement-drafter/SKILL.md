@@ -46,6 +46,7 @@ classifies deviations, and generates actionable redlines or draft language with 
 scoring.
 
 **Covers (dual-mode: Draft and Review):**
+
 - Standalone services agreements (consulting, IT delivery, creative, advisory, research,
   engineering, and other professional services)
 - Fixed-price, time-and-materials (T&M), milestone-based, retainer, and hybrid fee structures
@@ -64,6 +65,7 @@ scoring.
 - Quality-verified output with Glass Box audit trail and confidence scoring
 
 **Does not:**
+
 - Draft two-tier Master Services Agreement / Statement of Work frameworks (see
   `legalcode-master-services-agreement`)
 - Provide clause-by-clause review of any commercial agreement (see `legalcode-contract-review`)
@@ -75,6 +77,7 @@ scoring.
   markers throughout
 
 **Related skills:**
+
 - `legalcode-master-services-agreement` — two-tier MSA + SOW/Order Form framework for
   recurring, managed, or enterprise service lines
 - `legalcode-contract-review` — clause-by-clause review of any commercial agreement
@@ -95,6 +98,7 @@ and adapts analysis and draft language accordingly.
 [JURISDICTION-SPECIFIC] When localising, research and apply the following:
 
 **United States**
+
 - IP: Work-for-hire doctrine (17 U.S.C. § 101) — applies only to works within scope of
   employment or nine categories of specially commissioned works where parties agree in
   writing. For software and most deliverables, a written assignment is required; "work-for-hire"
@@ -110,6 +114,7 @@ and adapts analysis and draft language accordingly.
   generally enforceable in commercial B2B contexts [VERIFY]
 
 **United Kingdom**
+
 - IP: No work-for-hire doctrine for independent contractors. Copyright in contractor-created
   works belongs to the contractor by default unless validly assigned. Copyright assignment
   must be in writing signed by or on behalf of the assignor (CDPA 1988, s.90(3)). Design
@@ -127,6 +132,7 @@ and adapts analysis and draft language accordingly.
   deemed employment risk [VERIFY]
 
 **Australia**
+
 - IP: No work-for-hire doctrine for independent contractors. Copyright in contractor works
   belongs to the contractor unless assigned. Copyright assignment must be in writing
   (Copyright Act 1968, s.196(3)). Patent assignment requires writing and registration
@@ -139,6 +145,7 @@ and adapts analysis and draft language accordingly.
   confirmed primacy of contract terms (with caveats) [VERIFY]
 
 **European Union**
+
 - IP: Copyright transfer may require specifying fields of exploitation (varies by member
   state). Moral rights are often inalienable under civil law systems. Software-specific
   rules apply under Directive 2009/24/EC [VERIFY]
@@ -185,11 +192,13 @@ user can correct it.
 Accept input in any of these formats:
 
 **Draft mode:**
+
 - **Engagement brief**: key terms described in natural language (parties, scope, fees, IP, timeline)
 - **Term sheet or heads of terms**: agreed commercial terms to convert to contract language
 - **Prior draft**: an existing draft to complete or restructure
 
 **Review mode:**
+
 - **File**: PDF, DOCX, or other document
 - **URL**: link to the agreement in a CLM, cloud storage, or document system
 - **Pasted text**: contract text pasted directly into the conversation
@@ -208,14 +217,14 @@ If no input is provided, prompt the user to supply one.
 2. **Which side are you on?**
    - Options: **Service Provider / Supplier**, **Client / Customer**, **Neutral / Neither
      (advising both parties)**
-   - *Why this matters*: The entire analysis and drafting posture flips depending on which
+   - _Why this matters_: The entire analysis and drafting posture flips depending on which
      party you represent. IP defaults, liability caps, and termination rights that protect
      a provider burden a client and vice versa.
 
 3. **Contract structure preference** (Draft mode only):
-   - Options: **Fully integrated agreement** (scope embedded in the main body), **Agreement
-     + Schedule** (scope and pricing in a schedule), **Agreement + Exhibit / Annex** (terms
-     in the body, technical specs as an exhibit)
+   - Options: **Fully integrated agreement** (scope embedded in the main body), \*\*Agreement
+     - Schedule** (scope and pricing in a schedule), **Agreement + Exhibit / Annex\*\* (terms
+       in the body, technical specs as an exhibit)
 
 ### Step 3: Gather Engagement Context
 
@@ -224,7 +233,7 @@ If no input is provided, prompt the user to supply one.
 1. **Engagement type and scope**: What services are being provided?
    - Free text with examples: IT development, management consulting, creative design, research,
      engineering, advisory, outsourced function, training delivery
-   - *Why this matters*: Scope definition drives IP clause design (software vs. creative vs.
+   - _Why this matters_: Scope definition drives IP clause design (software vs. creative vs.
      advisory output), warranty standard (professional vs. fitness for purpose), and change
      control complexity.
 
@@ -233,7 +242,7 @@ If no input is provided, prompt the user to supply one.
      daily rates plus expenses), **Milestone payments** (payments tied to deliverable acceptance),
      **Retainer** (recurring fee for access to services), **Hybrid** (fixed fee for defined
      deliverables + T&M for extensions)
-   - *Why this matters*: Fee structure determines billing mechanics, change order pricing, and
+   - _Why this matters_: Fee structure determines billing mechanics, change order pricing, and
      risk allocation for scope growth.
 
 3. **IP outcome**: Who should own the work product?
@@ -241,14 +250,14 @@ If no input is provided, prompt the user to supply one.
      **Provider retains ownership, grants client a license**, **Client owns deliverables, provider
      retains license to pre-existing tools/methodologies**, **Jointly owned** (unusual — discuss
      drawbacks), **To be determined per category of output**
-   - *Why this matters*: IP ownership drives the assignment clause design, license-back scope,
+   - _Why this matters_: IP ownership drives the assignment clause design, license-back scope,
      and moral rights waiver requirements. "Full assignment" is more complex than it appears due
      to jurisdiction-specific formality requirements.
 
 4. **Data protection**: Will the provider process personal data on behalf of the client?
    - Options: **Yes — GDPR/UK GDPR processor relationship applies**, **No — provider does not
      process personal data**, **Uncertain — need to assess the scope**
-   - *Why this matters*: A GDPR Article 28 Data Processing Agreement/Addendum is legally
+   - _Why this matters_: A GDPR Article 28 Data Processing Agreement/Addendum is legally
      mandatory where personal data is processed. Absence is a critical compliance gap.
 
 5. **Governing law preference**:
@@ -259,7 +268,7 @@ If no input is provided, prompt the user to supply one.
 6. **Subcontracting**:
    - Options: **Provider may not subcontract without written consent**, **Provider may subcontract
      to approved or named subcontractors**, **Provider may subcontract freely (subject to notice)**
-   - *Why this matters*: Subcontracting consent requirements interact with liability (client
+   - _Why this matters_: Subcontracting consent requirements interact with liability (client
      cannot exclude liability for subcontractor acts in some jurisdictions) and security
      obligations (particularly for data processing subcontracts).
 
@@ -290,22 +299,29 @@ Identify the governing law from the input or the user's answer in Step 3. Then u
 
    ```markdown
    # Legal Authority Reference — Services Agreement
+
    ## Governing Law: [Jurisdiction]
+
    ## Date: [date]
 
    ### IP Formalities
+
    - [Statute, provision, formality requirement]
 
    ### Services Implied Terms
+
    - [Statute or common law principle]
 
    ### Liability Exclusion Rules
+
    - [Statute, case, principle]
 
    ### Data Protection Regime
+
    - [Applicable regime, key provisions]
 
    ### Penalty/LD Doctrine
+
    - [Case or statute]
    ```
 
@@ -313,6 +329,7 @@ Identify the governing law from the input or the user's answer in Step 3. Then u
    Glass Box audit trail.
 
 **Without legalcode-mcp:**
+
 - Mark all statutory and case law references with [VERIFY]
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected — manual verification required"`
 - Focus on structural quality, commercial risk, and workflow rather than legal authority depth
@@ -351,17 +368,18 @@ agreement — from change order battles to acceptance failures to IP ownership u
 
 **In Review mode — assess the scope clause:**
 
-| Element | REQUIRED | Common Gap |
-|---------|----------|------------|
-| Services bounded and specific | ✓ | Vague "services as agreed" language |
-| Deliverables listed with specifications | ✓ | No formal deliverable list |
-| Exclusions from scope | Recommended | Scope creep exposure without exclusions |
-| Client dependencies and delay mechanics | Recommended | Provider bears all delay risk |
-| Performance standard clearly specified | ✓ | Mixed or absent standard |
-| Conflict between scope and governing law | RED | Watch for SOW terms conflicting with main body |
+| Element                                  | REQUIRED    | Common Gap                                     |
+| ---------------------------------------- | ----------- | ---------------------------------------------- |
+| Services bounded and specific            | ✓           | Vague "services as agreed" language            |
+| Deliverables listed with specifications  | ✓           | No formal deliverable list                     |
+| Exclusions from scope                    | Recommended | Scope creep exposure without exclusions        |
+| Client dependencies and delay mechanics  | Recommended | Provider bears all delay risk                  |
+| Performance standard clearly specified   | ✓           | Mixed or absent standard                       |
+| Conflict between scope and governing law | RED         | Watch for SOW terms conflicting with main body |
 
 **⟁ CLARIFY** — When the scope is ambiguous and it would materially affect IP, acceptance, or
 change control, ask:
+
 - "The scope description is broad. Should I draft it narrowly (defined deliverables only, all
   else requires a change order) or broadly (all activities reasonably necessary to achieve the
   stated purpose)? Narrow scope protects the provider; broad scope protects the client."
@@ -371,6 +389,7 @@ change control, ask:
 **In Draft mode — draft the fee clause:**
 
 **Fixed-price structure:**
+
 ```
 Fees: The Client shall pay the Provider a fixed fee of [£/$/€ amount] ("Fee") for the
 Services, payable as follows:
@@ -380,6 +399,7 @@ Services, payable as follows:
 ```
 
 **Time and Materials structure:**
+
 ```
 Fees: The Client shall pay the Provider at the rates set out in Schedule [X] ("Rates")
 for time spent providing the Services, plus reimbursable expenses in accordance with
@@ -389,19 +409,20 @@ invoices shall be accompanied by time records in [daily / weekly] increments.
 
 **Key payment provisions to draft or review:**
 
-| Provision | REQUIRED | Guidance |
-|-----------|----------|---------|
-| Payment terms (e.g., Net 30) | ✓ | Net 30 is market standard for B2B; shorter for smaller providers |
-| Late payment interest | Recommended | UK: Late Payment of Commercial Debts Act 1998 (8% over BoE base) [VERIFY]; US: state-specific; AU: courts may imply |
-| Disputed invoice procedure | Recommended | "Undisputed amounts paid; disputed amounts notified within [10] days with written reasons" |
-| Expenses policy | As applicable | Define pre-approval threshold, categories, and documentation requirements |
-| Price escalation (multi-year) | As applicable | CPI/RPI index or fixed annual percentage |
-| Audit rights (T&M contracts) | Strongly recommended | Right to audit time records and expenses on [30] days' notice |
-| Set-off rights | Negotiate | Client: right to set off against disputed claims; Provider: exclude set-off rights |
-| Currency and payment method | ✓ | Specify to avoid FX disputes |
-| Taxes / VAT / GST | ✓ | Allocate who bears withholding taxes, sales taxes, VAT/GST |
+| Provision                     | REQUIRED             | Guidance                                                                                                            |
+| ----------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Payment terms (e.g., Net 30)  | ✓                    | Net 30 is market standard for B2B; shorter for smaller providers                                                    |
+| Late payment interest         | Recommended          | UK: Late Payment of Commercial Debts Act 1998 (8% over BoE base) [VERIFY]; US: state-specific; AU: courts may imply |
+| Disputed invoice procedure    | Recommended          | "Undisputed amounts paid; disputed amounts notified within [10] days with written reasons"                          |
+| Expenses policy               | As applicable        | Define pre-approval threshold, categories, and documentation requirements                                           |
+| Price escalation (multi-year) | As applicable        | CPI/RPI index or fixed annual percentage                                                                            |
+| Audit rights (T&M contracts)  | Strongly recommended | Right to audit time records and expenses on [30] days' notice                                                       |
+| Set-off rights                | Negotiate            | Client: right to set off against disputed claims; Provider: exclude set-off rights                                  |
+| Currency and payment method   | ✓                    | Specify to avoid FX disputes                                                                                        |
+| Taxes / VAT / GST             | ✓                    | Allocate who bears withholding taxes, sales taxes, VAT/GST                                                          |
 
 **In Review mode:**
+
 - Classify each payment provision as GREEN / YELLOW / RED using the Deviation Severity
   Classification section below.
 - Flag missing audit rights in T&M contracts as YELLOW.
@@ -433,16 +454,17 @@ change evaluation period.
 
 **Key design decisions:**
 
-| Issue | Provider-Favourable | Client-Favourable |
-|-------|--------------------|--------------------|
-| Who can initiate a change? | Both parties | Both parties (mutual) |
-| Is the provider obliged to implement client-requested changes? | No — at provider's discretion | Yes — mandatory within agreed price range |
-| What counts as a "change"? | Any deviation from Specification, however small | Only material changes exceeding [X%] of original scope |
-| Impact on timeline | All changes extend timeline by amount in Change Order | Client-requested changes may not extend timeline |
-| Oral change prohibition | Express: "No oral changes are effective" | — |
-| Rate for additional work | Rates in Schedule [X] | Agreed in each Change Order |
+| Issue                                                          | Provider-Favourable                                   | Client-Favourable                                      |
+| -------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------ |
+| Who can initiate a change?                                     | Both parties                                          | Both parties (mutual)                                  |
+| Is the provider obliged to implement client-requested changes? | No — at provider's discretion                         | Yes — mandatory within agreed price range              |
+| What counts as a "change"?                                     | Any deviation from Specification, however small       | Only material changes exceeding [X%] of original scope |
+| Impact on timeline                                             | All changes extend timeline by amount in Change Order | Client-requested changes may not extend timeline       |
+| Oral change prohibition                                        | Express: "No oral changes are effective"              | —                                                      |
+| Rate for additional work                                       | Rates in Schedule [X]                                 | Agreed in each Change Order                            |
 
 **⟁ CLARIFY** — If the client's team is known to request frequent informal changes, ask:
+
 - "Should I include a de minimis threshold (e.g., changes under [£5,000] or [20 hours] do
   not require a formal Change Order)? This speeds up small changes but creates a habit of
   informal requests."
@@ -479,14 +501,14 @@ Acceptance Testing:
 
 **Key design tensions:**
 
-| Element | Provider Priority | Client Priority |
-|---------|------------------|----------------|
-| Review period length | Shorter (5 BD) | Longer (15-20 BD) |
-| Acceptance criteria | Defined spec compliance | Fitness for purpose |
-| Deemed acceptance | Include (use = acceptance) | Exclude or narrow |
-| Rejection specificity | Client must itemise each defect | General rejection notice sufficient |
-| Number of cure cycles | Limited (2 cycles, then terminate) | Unlimited until conforming |
-| Partial use = acceptance | Include | Exclude |
+| Element                  | Provider Priority                  | Client Priority                     |
+| ------------------------ | ---------------------------------- | ----------------------------------- |
+| Review period length     | Shorter (5 BD)                     | Longer (15-20 BD)                   |
+| Acceptance criteria      | Defined spec compliance            | Fitness for purpose                 |
+| Deemed acceptance        | Include (use = acceptance)         | Exclude or narrow                   |
+| Rejection specificity    | Client must itemise each defect    | General rejection notice sufficient |
+| Number of cure cycles    | Limited (2 cycles, then terminate) | Unlimited until conforming          |
+| Partial use = acceptance | Include                            | Exclude                             |
 
 ### Step 9: Intellectual Property
 
@@ -558,18 +580,19 @@ Intellectual Property:
 
 **In Review mode — IP assessment checklist:**
 
-| Element | Classification if Absent/Deficient |
-|---------|-----------------------------------|
-| Background IP ownership preserved | RED (risk of inadvertent assignment) |
-| Foreground IP ownership clearly stated | RED (ownership dispute inevitable) |
-| Assignment formality compliant with governing law | RED (void assignment risk) |
-| License-back for provider tools | YELLOW if provider has no license to reuse methodology |
-| Moral rights waiver (where possible) | YELLOW |
-| Open source inventory obligation | YELLOW (copyleft taint risk) |
-| IP encumbrances representation | YELLOW (infringement indemnity without this is hollow) |
-| Feedback clause (does client grant IP in feedback?) | YELLOW if broad |
+| Element                                             | Classification if Absent/Deficient                     |
+| --------------------------------------------------- | ------------------------------------------------------ |
+| Background IP ownership preserved                   | RED (risk of inadvertent assignment)                   |
+| Foreground IP ownership clearly stated              | RED (ownership dispute inevitable)                     |
+| Assignment formality compliant with governing law   | RED (void assignment risk)                             |
+| License-back for provider tools                     | YELLOW if provider has no license to reuse methodology |
+| Moral rights waiver (where possible)                | YELLOW                                                 |
+| Open source inventory obligation                    | YELLOW (copyleft taint risk)                           |
+| IP encumbrances representation                      | YELLOW (infringement indemnity without this is hollow) |
+| Feedback clause (does client grant IP in feedback?) | YELLOW if broad                                        |
 
 **⟁ CLARIFY** — If the client wants full ownership but the provider has proprietary tools, ask:
+
 - "Should the provider retain a license-back to reuse their methodologies (Option C) rather
   than a full assignment without license-back? Full assignment without license-back prevents
   the provider from applying learned knowledge to future clients, which is commercially
@@ -644,25 +667,25 @@ Limitation of Liability:
 
 **Liability cap benchmarks (professional services):**
 
-| Cap Level | Characterisation | Typical Context |
-|-----------|-----------------|-----------------|
-| < 6 months' fees | AGGRESSIVE (provider) | Consumer-facing or low-margin services |
-| 6–12 months' fees | Provider-standard | Mid-market B2B professional services |
-| 12 months' fees | Market standard | Most B2B services agreements |
-| > 12 months' fees | Client-favourable | High-value, high-risk, regulated sector |
-| Uncapped specific heads | Unusual | IP infringement, fraud, data breach |
+| Cap Level               | Characterisation      | Typical Context                         |
+| ----------------------- | --------------------- | --------------------------------------- |
+| < 6 months' fees        | AGGRESSIVE (provider) | Consumer-facing or low-margin services  |
+| 6–12 months' fees       | Provider-standard     | Mid-market B2B professional services    |
+| 12 months' fees         | Market standard       | Most B2B services agreements            |
+| > 12 months' fees       | Client-favourable     | High-value, high-risk, regulated sector |
+| Uncapped specific heads | Unusual               | IP infringement, fraud, data breach     |
 
 **In Review mode:**
 
-| Issue | Classification |
-|-------|---------------|
-| No liability cap | RED — escalate |
-| Cap below 6 months' fees with no justification | RED |
-| Cap between 6-12 months | YELLOW — negotiate to 12 months |
-| No consequential damages exclusion for one party | YELLOW |
-| Carveouts that effectively eliminate the cap | YELLOW-RED (assess scope) |
-| No death/personal injury carveout | RED — void in many jurisdictions |
-| Asymmetric cap (provider capped, client uncapped) | YELLOW |
+| Issue                                             | Classification                   |
+| ------------------------------------------------- | -------------------------------- |
+| No liability cap                                  | RED — escalate                   |
+| Cap below 6 months' fees with no justification    | RED                              |
+| Cap between 6-12 months                           | YELLOW — negotiate to 12 months  |
+| No consequential damages exclusion for one party  | YELLOW                           |
+| Carveouts that effectively eliminate the cap      | YELLOW-RED (assess scope)        |
+| No death/personal injury carveout                 | RED — void in many jurisdictions |
+| Asymmetric cap (provider capped, client uncapped) | YELLOW                           |
 
 #### Indemnification
 
@@ -699,20 +722,21 @@ Indemnification:
 
 **In Review mode — indemnification assessment:**
 
-| Element | Issue if Absent or Deficient |
-|---------|------------------------------|
-| IP infringement indemnity | YELLOW — IP exposure uninsured |
-| Defence control right | YELLOW — provider/client exposed to uncontrolled settlement |
-| IP remedies waterfall (procure / modify / replace) | YELLOW — no resolution path if infringement found |
-| Sole remedy language for IP indemnity | Negotiate — limits other breach claims |
-| Data breach indemnity | YELLOW if GDPR applies |
-| Mutual vs. unilateral indemnity | Flag asymmetry as YELLOW |
+| Element                                            | Issue if Absent or Deficient                                |
+| -------------------------------------------------- | ----------------------------------------------------------- |
+| IP infringement indemnity                          | YELLOW — IP exposure uninsured                              |
+| Defence control right                              | YELLOW — provider/client exposed to uncontrolled settlement |
+| IP remedies waterfall (procure / modify / replace) | YELLOW — no resolution path if infringement found           |
+| Sole remedy language for IP indemnity              | Negotiate — limits other breach claims                      |
+| Data breach indemnity                              | YELLOW if GDPR applies                                      |
+| Mutual vs. unilateral indemnity                    | Flag asymmetry as YELLOW                                    |
 
 ### Step 11: Data Protection, Compliance, and Subcontracting
 
 #### Data Protection
 
 **⟁ CLARIFY** — Confirm whether personal data is processed:
+
 - "Confirm: will the provider access or process any personal data (e.g., employee records,
   customer data, health data) on behalf of the client under this engagement? If yes, a Data
   Processing Agreement or Addendum is legally required under GDPR/UK GDPR."
@@ -758,6 +782,7 @@ The EU Digital Operational Resilience Act (DORA, Regulation (EU) 2022/2554) mand
 contractual provisions in all ICT third-party service agreements where the client is a regulated
 financial entity (banks, insurers, investment firms, crypto-asset service providers, CCPs, etc.).
 The DPA clause alone is insufficient — DORA requires the contract itself to address [VERIFY]:
+
 - Full description of all ICT services, data locations (country of processing and storage),
   and data classification
 - ICT incident reporting obligations and minimum notification timelines
@@ -854,23 +879,23 @@ On termination or expiry:
 
 **Termination issue analysis:**
 
-| Issue | Provider Position | Client Position |
-|-------|------------------|----------------|
-| Termination for convenience: available? | No (or limited) | Yes — unrestricted |
-| Notice period | 90+ days | 30 days |
-| Fees on termination for convenience | Fees + cancellation fee | Fees pro-rated only |
-| Cure period for breach | Long (30 BD) | Short (10 BD) or none |
-| Insolvency trigger | Immediate | Cross-default from other agreements |
+| Issue                                   | Provider Position       | Client Position                     |
+| --------------------------------------- | ----------------------- | ----------------------------------- |
+| Termination for convenience: available? | No (or limited)         | Yes — unrestricted                  |
+| Notice period                           | 90+ days                | 30 days                             |
+| Fees on termination for convenience     | Fees + cancellation fee | Fees pro-rated only                 |
+| Cure period for breach                  | Long (30 BD)            | Short (10 BD) or none               |
+| Insolvency trigger                      | Immediate               | Cross-default from other agreements |
 
 **In Review mode — key classification triggers:**
 
-| Issue | Classification |
-|-------|---------------|
-| No termination for convenience in long-term engagement | YELLOW |
-| Termination fees disproportionate to actual losses | YELLOW (penalty doctrine risk) |
-| No insolvency termination trigger | YELLOW |
-| No cure period for breach | YELLOW (unfair surprise risk) |
-| Termination triggers payment of unearned fees | RED |
+| Issue                                                  | Classification                 |
+| ------------------------------------------------------ | ------------------------------ |
+| No termination for convenience in long-term engagement | YELLOW                         |
+| Termination fees disproportionate to actual losses     | YELLOW (penalty doctrine risk) |
+| No insolvency termination trigger                      | YELLOW                         |
+| No cure period for breach                              | YELLOW (unfair surprise risk)  |
+| Termination triggers payment of unearned fees          | RED                            |
 
 [JURISDICTION-SPECIFIC — UK] **Corporate Insolvency and Governance Act 2020 (CIGA 2020):**
 Since CIGA 2020, **ipso facto clauses** — contract terms that allow termination or modification
@@ -910,19 +935,21 @@ Transfer of Undertakings (Protection of Employment) Regulations 2006 (TUPE) may 
 transfer the employment of the provider's staff who were dedicated to the engagement to the
 incoming provider or the client. TUPE obligations are non-waivable and arise by operation of
 law. Services agreements should:
+
 - Require the outgoing provider to promptly disclose the identity, terms, and employment
   information of all assigned employees (under TUPE reg. 11)
 - Allocate TUPE liability (for ETO reasons, unfair dismissal, and any pre-transfer liabilities)
   between outgoing provider and incoming provider
 - Address employee liability indemnities in the transition provisions
-Equivalent obligations arise under the EU Acquired Rights Directive (2001/23/EC) across EU
-member states. [VERIFY]
+  Equivalent obligations arise under the EU Acquired Rights Directive (2001/23/EC) across EU
+  member states. [VERIFY]
 
 ### Step 13: Review Additional Provisions
 
 For the following standard provisions, apply a checklist review:
 
 **Confidentiality**
+
 - [ ] Scope of Confidential Information defined and reasonable
 - [ ] Term: typically 2-5 years post-termination (indefinite for trade secrets)
 - [ ] Standard carveouts: public domain, independent development, required by law
@@ -930,6 +957,7 @@ For the following standard provisions, apply a checklist review:
 - [ ] Permitted disclosures (affiliates, advisors, under NDA)
 
 **Insurance**
+
 - [ ] Professional Indemnity (Errors & Omissions): typically £/$/€1M per claim
 - [ ] Public / General Liability: typically £/$/€2M per occurrence
 - [ ] Cyber / Data and Privacy Liability: £/$/€1M or higher where data is processed
@@ -937,18 +965,21 @@ For the following standard provisions, apply a checklist review:
 - [ ] Evidence of coverage (certificates on request)
 
 **Assignment**
+
 - [ ] Neither party may assign without the other's written consent
 - [ ] Change-of-control provisions addressed (acquisition of provider = deemed assignment?)
 - [ ] Exceptions for affiliate transfers and corporate reorganisations
 - [ ] Assignment of benefit (receivables assignment) permitted
 
 **Force Majeure**
+
 - [ ] Events specifically enumerated (not just "acts of God")
 - [ ] Notification and mitigation obligations
 - [ ] Duration threshold for termination rights (typically 60-90 days)
 - [ ] Pandemic/epidemic explicitly addressed (post-2020 standard)
 
 **Governing Law and Disputes**
+
 - [ ] Governing law clause present and unambiguous
 - [ ] Dispute resolution: escalation to senior management, then arbitration or litigation
 - [ ] Venue and jurisdiction clear
@@ -956,6 +987,7 @@ For the following standard provisions, apply a checklist review:
 - [ ] No jurisdiction that is unusual or impractical for both parties
 
 **Boilerplate (Definitions and General)**
+
 - [ ] Key defined terms consistent throughout
 - [ ] Entire agreement / integration clause (prevents reliance on pre-contract statements)
 - [ ] Severability (preserves agreement if one clause void)
@@ -990,26 +1022,26 @@ Before delivering output, run the following checks:
 
 A complete standalone services agreement covers these 18 clause categories:
 
-| # | Clause Category | Depth | Key Issues |
-|---|----------------|-------|-----------|
-| 1 | Scope of Services and Deliverables | **Deep** | Specification completeness, exclusions, dependencies, performance standard |
-| 2 | Change Control | **Deep** | Change order mechanism, oral change prohibition, timeline impact |
-| 3 | Fees and Payment | **Deep** | Structure (fixed/T&M/milestone), payment terms, late interest, audit rights |
-| 4 | Acceptance Testing | **Deep** | Criteria, review period, deemed acceptance, cure cycles, partial use |
-| 5 | Intellectual Property | **Deep** | Background/foreground split, assignment formalities, license-back, moral rights, open source |
-| 6 | Warranties | **Deep** | Professional standard vs. spec compliance, warranty period, disclaimer, implied terms |
-| 7 | Limitation of Liability | **Deep** | Cap level, carveouts, consequential damages exclusion, jurisdiction enforceability |
-| 8 | Indemnification | **Deep** | IP, data breach, negligence, procedure, settlement control |
-| 9 | Data Protection | **Deep** | DPA obligation, Art. 28 compliance, sub-processors, breach notification, deletion |
-| 10 | Subcontracting | Standard | Consent, approved list, flow-down, provider retains liability |
-| 11 | Term and Termination | Standard | Cause, cure period, convenience, insolvency, effects |
-| 12 | Transition Assistance | Standard | Duration, cooperation obligations, data/documentation transfer |
-| 13 | Confidentiality | Standard | Scope, term, carveouts, return/destroy |
-| 14 | Insurance | Standard | PI/E&O, public liability, cyber, evidence of coverage |
-| 15 | Compliance | Standard | Anti-bribery, sanctions, modern slavery, audit rights |
-| 16 | Assignment | Standard | Consent, change of control, affiliate exceptions |
-| 17 | Governing Law and Disputes | Standard | Choice of law, escalation, arbitration/litigation |
-| 18 | Definitions and Boilerplate | Standard | Entire agreement, severability, notices, amendment, order of precedence |
+| #   | Clause Category                    | Depth    | Key Issues                                                                                   |
+| --- | ---------------------------------- | -------- | -------------------------------------------------------------------------------------------- |
+| 1   | Scope of Services and Deliverables | **Deep** | Specification completeness, exclusions, dependencies, performance standard                   |
+| 2   | Change Control                     | **Deep** | Change order mechanism, oral change prohibition, timeline impact                             |
+| 3   | Fees and Payment                   | **Deep** | Structure (fixed/T&M/milestone), payment terms, late interest, audit rights                  |
+| 4   | Acceptance Testing                 | **Deep** | Criteria, review period, deemed acceptance, cure cycles, partial use                         |
+| 5   | Intellectual Property              | **Deep** | Background/foreground split, assignment formalities, license-back, moral rights, open source |
+| 6   | Warranties                         | **Deep** | Professional standard vs. spec compliance, warranty period, disclaimer, implied terms        |
+| 7   | Limitation of Liability            | **Deep** | Cap level, carveouts, consequential damages exclusion, jurisdiction enforceability           |
+| 8   | Indemnification                    | **Deep** | IP, data breach, negligence, procedure, settlement control                                   |
+| 9   | Data Protection                    | **Deep** | DPA obligation, Art. 28 compliance, sub-processors, breach notification, deletion            |
+| 10  | Subcontracting                     | Standard | Consent, approved list, flow-down, provider retains liability                                |
+| 11  | Term and Termination               | Standard | Cause, cure period, convenience, insolvency, effects                                         |
+| 12  | Transition Assistance              | Standard | Duration, cooperation obligations, data/documentation transfer                               |
+| 13  | Confidentiality                    | Standard | Scope, term, carveouts, return/destroy                                                       |
+| 14  | Insurance                          | Standard | PI/E&O, public liability, cyber, evidence of coverage                                        |
+| 15  | Compliance                         | Standard | Anti-bribery, sanctions, modern slavery, audit rights                                        |
+| 16  | Assignment                         | Standard | Consent, change of control, affiliate exceptions                                             |
+| 17  | Governing Law and Disputes         | Standard | Choice of law, escalation, arbitration/litigation                                            |
+| 18  | Definitions and Boilerplate        | Standard | Entire agreement, severability, notices, amendment, order of precedence                      |
 
 ---
 
@@ -1017,35 +1049,41 @@ A complete standalone services agreement covers these 18 clause categories:
 
 ### Drafting Mode — Clause Classification
 
-| Status | Meaning | Action |
-|--------|---------|--------|
-| **REQUIRED** | Essential for an enforceable, market-standard services agreement | Draft; cannot be omitted |
-| **RECOMMENDED** | Strongly advisable; absence creates meaningful risk | Draft; explain risk if omitted |
-| **OPTIONAL** | Useful in specific contexts; not universally needed | Include if applicable; explain when |
+| Status          | Meaning                                                          | Action                              |
+| --------------- | ---------------------------------------------------------------- | ----------------------------------- |
+| **REQUIRED**    | Essential for an enforceable, market-standard services agreement | Draft; cannot be omitted            |
+| **RECOMMENDED** | Strongly advisable; absence creates meaningful risk              | Draft; explain risk if omitted      |
+| **OPTIONAL**    | Useful in specific contexts; not universally needed              | Include if applicable; explain when |
 
 ### Review Mode — Deviation Classification
 
 #### GREEN — Acceptable
+
 Clause aligns with or exceeds the standard position. No negotiation needed.
 
 **Examples:**
+
 - Liability cap at 18 months' fees (better than 12-month market standard)
 - Confidentiality term of 5 years (longer than 3-year standard — favours receiving party)
 - Mutual termination for convenience with 60-day notice
 
 #### YELLOW — Negotiate
+
 Outside standard position but negotiable. Generate specific redlines with fallback positions.
 
 **Examples:**
+
 - Liability cap at 6 months' fees (below market — negotiate to 12)
 - No audit rights in T&M contract (missing standard protection)
 - Acceptance deemed given after 5 Business Days (shorter than market 10-15 BD)
 - IP assignment without assignment formality language (void in UK without written assignment)
 
 #### RED — Escalate
+
 Outside acceptable range; requires senior counsel review or decision-maker sign-off.
 
 **Examples:**
+
 - No limitation of liability clause
 - Foreground IP assigned to provider (client gets no ownership of bespoke deliverables)
 - No DPA offered when personal data is clearly being processed
@@ -1078,6 +1116,7 @@ For each YELLOW or RED finding:
 ### Tier 1 — Must-Haves (Deal-Level Issues)
 
 Items where the agreement cannot proceed without resolution:
+
 - Absence of any liability limitation (risk of catastrophic exposure)
 - IP ownership provisions that assign client's pre-existing IP to the provider
 - Absence of a DPA where GDPR-regulated data is processed
@@ -1089,6 +1128,7 @@ Items where the agreement cannot proceed without resolution:
 ### Tier 2 — Should-Haves (Material Preferences)
 
 Items that materially affect risk but have negotiation room:
+
 - Liability cap amount adjustment (6 months → 12 months)
 - Consequential damages exclusion scope and carveouts
 - Acceptance testing timelines and deemed acceptance triggers
@@ -1100,6 +1140,7 @@ Items that materially affect risk but have negotiation room:
 ### Tier 3 — Nice-to-Haves (Concession Candidates)
 
 Items that improve the position but can be conceded strategically:
+
 - Insurance coverage minimums (within reasonable range)
 - Expense pre-approval thresholds
 - Governing law preferences (where the alternative is acceptable)
@@ -1119,24 +1160,26 @@ concede Tier 1 without escalation to senior counsel or decision-maker.
 Run these 5 gates silently before delivering any output. If any gate fails, revise before
 delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, regulation, or established principle | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **Format** | All citations follow a consistent, recognisable format for the jurisdiction | Fix format |
-| **Currency** | Every cited provision checked for amendments or repeal | Flag "[CHECK CURRENCY — may have been amended]" |
-| **Domain** | Analysis stays within the contract's governing law. No bleed from other jurisdictions | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated, not hidden | Add confidence qualifier |
+| Gate           | Rule                                                                                  | Fail Action                                              |
+| -------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, regulation, or established principle      | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
+| **Format**     | All citations follow a consistent, recognisable format for the jurisdiction           | Fix format                                               |
+| **Currency**   | Every cited provision checked for amendments or repeal                                | Flag "[CHECK CURRENCY — may have been amended]"          |
+| **Domain**     | Analysis stays within the contract's governing law. No bleed from other jurisdictions | Remove or flag jurisdictional bleed                      |
+| **Confidence** | Uncertainty explicitly stated, not hidden                                             | Add confidence qualifier                                 |
 
 ### Self-Interrogation for RED Items
 
 For any finding classified as RED, apply this 3-pass review before delivering:
 
 **Pass 1 — Legal Chain Integrity:**
+
 - Does the risk assessment follow logically from the statute or principle cited?
 - Would a court or regulator in this jurisdiction actually reach this conclusion on these facts?
 - What counter-argument will the counterparty's counsel make?
 
 **Pass 2 — Completeness:**
+
 - Have all relevant statutes, regulations, and principles been considered?
 - Are there regulatory dimensions not yet addressed (data protection, employment law, sector
   regulation)?
@@ -1144,6 +1187,7 @@ For any finding classified as RED, apply this 3-pass review before delivering:
   mitigated by limitation clause)?
 
 **Pass 3 — Challenge:**
+
 - What is the strongest argument that this provision IS acceptable?
 - Under what commercial circumstances might a reasonable lawyer accept this risk?
 - Is the RED classification proportionate, or is this actually a YELLOW with mitigants?
@@ -1155,13 +1199,13 @@ with `self_interrogation: PASS` or `self_interrogation: REVISED`.
 
 For each material clause analysis, assign a confidence level:
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95-1.0 | Settled law, clear statute, no ambiguity | State with confidence |
-| **High** | 0.80-0.94 | Strong authority, minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60-0.79 | Good arguments but reasonable minds could differ | State with explicit reasoning and contra-indicators |
-| **Possible** | 0.40-0.59 | Genuinely uncertain, competing authorities | Flag for counsel review with both sides |
-| **Unlikely** | 0.0-0.39 | Weak basis, speculative | Do not assert; flag as "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                          | Action                                                   |
+| ------------ | --------- | ------------------------------------------------ | -------------------------------------------------------- |
+| **Definite** | 0.95-1.0  | Settled law, clear statute, no ambiguity         | State with confidence                                    |
+| **High**     | 0.80-0.94 | Strong authority, minor interpretation questions | State with brief caveat                                  |
+| **Probable** | 0.60-0.79 | Good arguments but reasonable minds could differ | State with explicit reasoning and contra-indicators      |
+| **Possible** | 0.40-0.59 | Genuinely uncertain, competing authorities       | Flag for counsel review with both sides                  |
+| **Unlikely** | 0.0-0.39  | Weak basis, speculative                          | Do not assert; flag as "[UNCERTAIN — counsel to advise]" |
 
 ---
 
@@ -1204,16 +1248,16 @@ glass_box:
 
 Identify ALL affected stakeholders — not just the two contracting parties:
 
-| Stakeholder | Role | Affected Clauses | Impact | Action Required |
-|-------------|------|-----------------|--------|-----------------|
-| Service Provider | Primary party | All | Commercial and legal obligations | Negotiate / sign |
-| Client | Primary party | All | Commercial and legal obligations | Negotiate / sign |
-| Provider's employees / contractors | Performing work | IP, confidentiality | Indirect | Ensure employment / contractor agreements include IP assignment and confidentiality flow-down |
-| Subcontractors | Performing subset of work | Subcontracting, IP, data protection | Indirect | Flow-down agreements required |
-| Data subjects | If personal data processed | Data protection | Indirect | DPA required; GDPR Art. 28 compliance |
-| Supervisory authority | If GDPR applies | Data protection | Regulatory | Breach notification obligations |
-| Third-party IP holders | If open source or licensed IP used | IP | Indirect | Open source audit; licence compliance |
-| Successor provider | On termination | Transition assistance | Indirect | Transition cooperation obligations |
+| Stakeholder                        | Role                               | Affected Clauses                    | Impact                           | Action Required                                                                               |
+| ---------------------------------- | ---------------------------------- | ----------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------- |
+| Service Provider                   | Primary party                      | All                                 | Commercial and legal obligations | Negotiate / sign                                                                              |
+| Client                             | Primary party                      | All                                 | Commercial and legal obligations | Negotiate / sign                                                                              |
+| Provider's employees / contractors | Performing work                    | IP, confidentiality                 | Indirect                         | Ensure employment / contractor agreements include IP assignment and confidentiality flow-down |
+| Subcontractors                     | Performing subset of work          | Subcontracting, IP, data protection | Indirect                         | Flow-down agreements required                                                                 |
+| Data subjects                      | If personal data processed         | Data protection                     | Indirect                         | DPA required; GDPR Art. 28 compliance                                                         |
+| Supervisory authority              | If GDPR applies                    | Data protection                     | Regulatory                       | Breach notification obligations                                                               |
+| Third-party IP holders             | If open source or licensed IP used | IP                                  | Indirect                         | Open source audit; licence compliance                                                         |
+| Successor provider                 | On termination                     | Transition assistance               | Indirect                         | Transition cooperation obligations                                                            |
 
 ---
 
@@ -1255,8 +1299,8 @@ Explicit catalogue of what NOT to do when drafting or reviewing services agreeme
    = acceptance" is RED for clients. Absent any acceptance procedure, disputes arise over
    when the provider has earned milestone payments.
 
-8. **Ambiguous aggregate vs. per-claim liability cap language** — *TCS v. DBS Bank Ltd
-   [2024] EWHC 1185 (TCC)*: the High Court (Technology and Construction Court) held that
+8. **Ambiguous aggregate vs. per-claim liability cap language** — _TCS v. DBS Bank Ltd
+   [2024] EWHC 1185 (TCC)_: the High Court (Technology and Construction Court) held that
    ambiguous cap language ("aggregate liability...in respect of all other claims...shall in
    no event exceed £10m") constituted a single aggregate cap, not a series of per-claim caps.
    Following TCS v. DBS and earlier Drax cases, English courts now default to aggregate
@@ -1322,17 +1366,18 @@ Explicit catalogue of what NOT to do when drafting or reviewing services agreeme
 When drafting or reviewing under a specific governing law, adjust the analysis as follows:
 
 ### England and Wales
+
 - Verify UCTA 1977 reasonableness for all liability exclusions and caps [VERIFY]
 - Ensure IP assignment complies with CDPA 1988 s.90(3) (copyright), s.222(3) (design right),
   PA 1977 s.30(6) (patent)
 - Exclude third-party rights under Contracts (Rights of Third Parties) Act 1999 unless intentionally granted
 - Address IR35/off-payroll working rules if workers are engaged via PSC
-- **Liability cap — aggregate vs. per-claim**: Following *TCS v. DBS Bank Ltd [2024] EWHC
-  1185 (TCC)*, English courts default to a single aggregate cap where language is ambiguous.
+- **Liability cap — aggregate vs. per-claim**: Following _TCS v. DBS Bank Ltd [2024] EWHC
+  1185 (TCC)_, English courts default to a single aggregate cap where language is ambiguous.
   Draft expressly: "a single aggregate cap applying cumulatively to all claims" or "a separate
   cap applies per independent claim" — do not rely on inference [VERIFY]
-- **Consequential loss exclusion — substance over form**: *EE Ltd v. Virgin Mobile Telecoms
-  Ltd [2025] EWCA Civ 70* — courts look to the substance of what is excluded, not just the
+- **Consequential loss exclusion — substance over form**: _EE Ltd v. Virgin Mobile Telecoms
+  Ltd [2025] EWCA Civ 70_ — courts look to the substance of what is excluded, not just the
   label. "Lost charges" characterised as "anticipated profits" were barred by a loss-of-profits
   exclusion. Scope consequential loss exclusions carefully; do not rely on labels alone [VERIFY]
 - **Termination for insolvency**: CIGA 2020 restricts ipso facto clauses for essential supplier
@@ -1345,6 +1390,7 @@ When drafting or reviewing under a specific governing law, adjust the analysis a
 - Dispute resolution: no jury trials; "loser pays" default costs principle; LCIA/ICC for arbitration
 
 ### United States (Federal + State)
+
 - Work-for-hire: confirm the deliverable falls within one of the § 101 specially commissioned categories;
   otherwise, draft an express assignment
 - State unconscionability doctrine varies — check the specific state
@@ -1354,12 +1400,14 @@ When drafting or reviewing under a specific governing law, adjust the analysis a
 - State-specific data breach notification laws overlap with any federal obligations
 
 ### Australia
+
 - IP assignment must comply with Copyright Act 1968 s.196(3) (copyright) and Patents Act 1990 s.14 (patent)
 - Unfair contract terms: ACL small business protections (eff. November 2023) — financial threshold removed
 - Privacy Act 1988 and Australian Privacy Principles (APPs) apply if the provider is an APP entity
 - Competition and Consumer Act 2010 — implied guarantees for consumer contracts; check if ACL applies
 
 ### EU / Civil Law Jurisdictions
+
 - Copyright transfer may require specifying fields of exploitation (varies by member state) [VERIFY]
 - Moral rights generally inalienable — waiver language should be narrowly tailored and may not be effective
 - Exclusions of liability for intentional misconduct (dolus) or gross negligence are void in many member states [VERIFY]
@@ -1372,6 +1420,7 @@ When drafting or reviewing under a specific governing law, adjust the analysis a
 Apply plain-language discipline to all output:
 
 **For draft contract language:**
+
 - Precise and unambiguous — every defined term used consistently
 - Active voice where contract interpretation requires clarity about who bears the obligation
 - Short sentences — one obligation or condition per sentence
@@ -1381,6 +1430,7 @@ Apply plain-language discipline to all output:
 - Positive obligations before exceptions — state what must happen before carving out what does not
 
 **For analysis and redlines:**
+
 - Plain language, no jargon or filler
 - Active voice: "The clause excludes the provider's liability for negligence" not "Liability
   for negligence is excluded by the clause"
@@ -1389,6 +1439,7 @@ Apply plain-language discipline to all output:
 - Specific, not vague: cite the clause reference and the specific issue
 
 **Quality gates before delivery:**
+
 1. Can a non-lawyer business owner understand the scope, fees, and IP outcome from the draft?
 2. Can the counterparty's counsel understand and respond to each redline?
 3. Is every legal claim backed by a specific citation or flagged [VERIFY]?
@@ -1403,6 +1454,7 @@ Apply plain-language discipline to all output:
 This skill is designed to work with **legalcode-mcp** as its primary legal research tool.
 
 **With legalcode-mcp connected (preferred):**
+
 - In Step 4, search for IP formality requirements, services implied terms, liability exclusion
   rules, and data protection obligations for the governing law
 - Save results to `/tmp/legalcode-services-authority.md`
@@ -1412,6 +1464,7 @@ This skill is designed to work with **legalcode-mcp** as its primary legal resea
 - Mark all legalcode-mcp-sourced citations as VERIFIED in the Glass Box audit trail
 
 **Without legalcode-mcp:**
+
 - Mark all statutory and case law references with [VERIFY]
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected — manual verification required"`
 - Focus on structural quality, commercial risk, and workflow
@@ -1453,6 +1506,7 @@ Structure the final deliverable as:
 **Issue / Decision**: [description]
 **Business impact**: [practical consequence]
 **Redline / Draft language** (if YELLOW/RED or REQUIRED):
+
 > [Specific language]
 
 [Repeat for each clause category]

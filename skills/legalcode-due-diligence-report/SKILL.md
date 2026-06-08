@@ -37,6 +37,7 @@ review, interviews, and workstream reports — into executive-ready, audience-di
 reports that drive deal decisions.
 
 **Covers:**
+
 - Aggregation and classification of findings across all 12 legal due diligence workstreams
 - Three-tier severity classification: PASS / FLAG / DEAL-BREAKER
 - Audience-specific report generation: board/executive, legal/counsel, commercial/deal team
@@ -49,6 +50,7 @@ reports that drive deal decisions.
 - Quality-verified output with Glass Box audit trail
 
 **Does not:**
+
 - Generate the due diligence checklist (see `legalcode-ma-due-diligence-checklist`)
 - Review individual contracts clause by clause (see `legalcode-contract-review`)
 - Conduct financial or commercial due diligence (financial modeling, market analysis)
@@ -56,6 +58,7 @@ reports that drive deal decisions.
 - Apply to one jurisdiction exclusively — jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers
 
 **Related skills:**
+
 - `legalcode-ma-due-diligence-checklist` — generates the request list; this skill compiles
   the findings
 - `legalcode-contract-review` — deep clause-level analysis for material contracts
@@ -72,6 +75,7 @@ and report structure apply across legal systems; jurisdiction-specific content i
 [JURISDICTION-SPECIFIC] Research and apply when localizing:
 
 **United States:**
+
 - Representations and warranties insurance (RWI) underwriting standards and materiality thresholds
 - HSR Act pre-merger notification obligations (2026 threshold: USD 133.9M)
 - CFIUS review triggers for national security implications
@@ -81,6 +85,7 @@ and report structure apply across legal systems; jurisdiction-specific content i
 - Rep & warranty insurance gap between signing and closing
 
 **United Kingdom:**
+
 - Disclosure letter structure (general vs. specific disclosures; fair disclosure standard)
 - Locked box vs. completion accounts mechanism; leakage protection
 - Warranty and indemnity (W&I) insurance underwriting standards
@@ -90,6 +95,7 @@ and report structure apply across legal systems; jurisdiction-specific content i
 - Companies Act 2006 financial assistance restrictions
 
 **European Union:**
+
 - EU Merger Regulation (EUMR) notification thresholds and Phase I/II timelines
 - FDI screening obligations (25+ member state regimes; approximately 3,100 filings in 2024)
 - Works council consultation requirements (EU Directive 2009/38) and timeline impact
@@ -153,24 +159,24 @@ checklist with red flags populated as the primary input.
 1. **Audience mix**: Which report formats are needed?
    - Options: Board/executive only, Legal/counsel only, Commercial/deal team only,
      All three formats, Board + Legal (most common)
-   - *Why this matters*: Determines depth, terminology, and structure of each output
+   - _Why this matters_: Determines depth, terminology, and structure of each output
      section. A board report is 2-3 pages; a legal report may be 20+ pages.
 
 2. **Investigation scope**: What level of coverage is required?
    - Options: Full scope (all findings, all workstreams), Critical-issues-only (DEAL-BREAKER
      and FLAG items; skip PASS), Red-flag-only (DEAL-BREAKER items only)
-   - *Why this matters*: Affects report length and whether lower-risk findings are surfaced.
+   - _Why this matters_: Affects report length and whether lower-risk findings are surfaced.
 
 3. **Materiality threshold**: At what level does a finding become material?
    - Options: Conservative (flag anything above 1% of deal value), Standard (flag anything
      above 5% of deal value), Pragmatic (flag only issues affecting deal structure or closing),
      Provide specific threshold
-   - *Why this matters*: Determines how many FLAG items to surface vs. background-note.
+   - _Why this matters_: Determines how many FLAG items to surface vs. background-note.
 
 4. **Risk appetite**: How should borderline classifications be handled?
    - Options: Conservative (escalate borderline items to the higher tier), Balanced (classify
      at face value with explicit caveats), Pragmatic (classify at lower tier with mitigation)
-   - *Why this matters*: A conservative buyer in a competitive auction needs different
+   - _Why this matters_: A conservative buyer in a competitive auction needs different
      treatment than a strategic acquirer with a long diligence timeline.
 
 **Defaults for non-interactive use**: Board + Legal; Critical-issues-only; Standard (5%);
@@ -209,6 +215,7 @@ Identify the target's primary operating jurisdictions and the deal's governing l
 **legalcode-mcp** to gather legal authority relevant to the flagged findings.
 
 **Research process:**
+
 1. For each DEAL-BREAKER and major FLAG finding, identify the legal basis for the risk
    assessment (statute, regulation, case law principle).
 2. Search legalcode-mcp for jurisdiction-relevant authority, focusing on:
@@ -251,21 +258,21 @@ See the **Finding Severity Classification** section below for full definitions a
 Create the master findings register — the backbone of all three audience-specific reports.
 Each finding should capture:
 
-| Field | Content |
-|-------|---------|
-| **ID** | Sequential reference (e.g., F-001) |
-| **Workstream** | Legal domain (e.g., IP, Litigation, Employment) |
-| **Finding** | One-sentence description of the issue |
-| **Severity** | PASS / FLAG [sub-type] / DEAL-BREAKER |
-| **Evidence** | Source documents or data room references |
-| **Business impact** | Quantified or described impact on deal value or operations |
-| **Legal basis** | Statute, regulation, or principle — or "General commercial practice" |
-| **Confidence** | 0.00-1.00 score with level label |
-| **Negotiation lever** | What this finding justifies asking for |
-| **Remediation path** | What resolves this issue (pre- or post-close) |
-| **Owner** | Who should resolve it (seller, buyer, legal counsel, regulator) |
-| **Deadline** | Before signing, before closing, or post-close with timing |
-| **Status** | Open / Under Negotiation / Resolved / Accepted as-is |
+| Field                 | Content                                                              |
+| --------------------- | -------------------------------------------------------------------- |
+| **ID**                | Sequential reference (e.g., F-001)                                   |
+| **Workstream**        | Legal domain (e.g., IP, Litigation, Employment)                      |
+| **Finding**           | One-sentence description of the issue                                |
+| **Severity**          | PASS / FLAG [sub-type] / DEAL-BREAKER                                |
+| **Evidence**          | Source documents or data room references                             |
+| **Business impact**   | Quantified or described impact on deal value or operations           |
+| **Legal basis**       | Statute, regulation, or principle — or "General commercial practice" |
+| **Confidence**        | 0.00-1.00 score with level label                                     |
+| **Negotiation lever** | What this finding justifies asking for                               |
+| **Remediation path**  | What resolves this issue (pre- or post-close)                        |
+| **Owner**             | Who should resolve it (seller, buyer, legal counsel, regulator)      |
+| **Deadline**          | Before signing, before closing, or post-close with timing            |
+| **Status**            | Open / Under Negotiation / Resolved / Accepted as-is                 |
 
 ### Step 7: Generate the Risk Heat Map
 
@@ -290,6 +297,7 @@ Plot each finding: [F-001: Litigation exposure] → (High Prob., Material Impact
 ```
 
 For each zone:
+
 - **RED Zone**: DEAL-BREAKER escalation required; present to board immediately
 - **ORANGE Zone**: FLAG requiring deal structure adjustment; include in negotiation leverage
 - **YELLOW Zone**: FLAG for monitoring or disclosure schedule; note in legal report
@@ -300,15 +308,15 @@ For each zone:
 For each FLAG and DEAL-BREAKER finding, identify what the finding justifies requesting
 in the deal structure:
 
-| Finding | Negotiation Lever | Specifics |
-|---------|------------------|-----------|
-| Pension underfunding | Price reduction | Quantify unfunded liability; reduce price by actuarial shortfall |
-| Pending litigation (USD X) | Indemnity escrow | Seller escrow at least 1.5× the claimed exposure |
-| Non-transferable software licenses | Closing condition | Seller must obtain third-party consents before closing |
-| Environmental contamination | Specific indemnity | Unlimited-duration indemnity for pre-close contamination |
-| Key executive no non-compete | Closing condition or earnout | Seller obtains enforceable restrictive covenants at close |
-| Customer concentration (1 customer = 40% revenue) | Price adjustment or earnout | Earnout tied to customer retention post-close |
-| Outstanding tax audit | Indemnity escrow | Tax escrow until audit resolved; buyer controls audit cooperation |
+| Finding                                           | Negotiation Lever            | Specifics                                                         |
+| ------------------------------------------------- | ---------------------------- | ----------------------------------------------------------------- |
+| Pension underfunding                              | Price reduction              | Quantify unfunded liability; reduce price by actuarial shortfall  |
+| Pending litigation (USD X)                        | Indemnity escrow             | Seller escrow at least 1.5× the claimed exposure                  |
+| Non-transferable software licenses                | Closing condition            | Seller must obtain third-party consents before closing            |
+| Environmental contamination                       | Specific indemnity           | Unlimited-duration indemnity for pre-close contamination          |
+| Key executive no non-compete                      | Closing condition or earnout | Seller obtains enforceable restrictive covenants at close         |
+| Customer concentration (1 customer = 40% revenue) | Price adjustment or earnout  | Earnout tied to customer retention post-close                     |
+| Outstanding tax audit                             | Indemnity escrow             | Tax escrow until audit resolved; buyer controls audit cooperation |
 
 **Negotiation priority tiering:**
 
@@ -330,15 +338,15 @@ two organizations merging.
 
 **Key integration risk categories:**
 
-| Category | Specific Risk | Early Warning Signs | Day 1 Readiness |
-|----------|--------------|---------------------|-----------------|
-| Contract continuity | Customer/supplier change-of-control consents not obtained | More than 10% of revenue under contracts with COC clauses | Consent tracker; fallback plans |
-| Employment | Key employee flight risk post-announcement | Equity acceleration, no retention agreements, market demand | Retention packages; communication plan |
-| Regulatory | License transfers or new applications required | Licenses tied to current ownership structure | Pre-closing regulatory meetings |
-| Technology | Systems incompatibility (ERP, CRM, security) | Multiple legacy platforms; no API documentation | Integration timeline; IT workstream |
-| IP | Ownership disputes, missing registrations | Informal IP practices; open-source policy gaps | IP audit; clean-up assignments |
-| Data | GDPR/privacy notification requirements post-close | Joint controller issues; consent-based processing | Privacy counsel review; Day 1 notice |
-| Compliance | Successor liability for pre-close violations | Ongoing investigations, consent decrees | Compliance monitoring plan |
+| Category            | Specific Risk                                             | Early Warning Signs                                         | Day 1 Readiness                        |
+| ------------------- | --------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------- |
+| Contract continuity | Customer/supplier change-of-control consents not obtained | More than 10% of revenue under contracts with COC clauses   | Consent tracker; fallback plans        |
+| Employment          | Key employee flight risk post-announcement                | Equity acceleration, no retention agreements, market demand | Retention packages; communication plan |
+| Regulatory          | License transfers or new applications required            | Licenses tied to current ownership structure                | Pre-closing regulatory meetings        |
+| Technology          | Systems incompatibility (ERP, CRM, security)              | Multiple legacy platforms; no API documentation             | Integration timeline; IT workstream    |
+| IP                  | Ownership disputes, missing registrations                 | Informal IP practices; open-source policy gaps              | IP audit; clean-up assignments         |
+| Data                | GDPR/privacy notification requirements post-close         | Joint controller issues; consent-based processing           | Privacy counsel review; Day 1 notice   |
+| Compliance          | Successor liability for pre-close violations              | Ongoing investigations, consent decrees                     | Compliance monitoring plan             |
 
 **⟁ CLARIFY** — If the transaction involves significant post-closing integration complexity
 (e.g., cross-border merger, carve-out from a larger entity, regulated industry), ask:
@@ -376,6 +384,7 @@ risk assessment, generate the requested audience-specific reports.
 See the **Output Format Templates** section for the complete structure of each report.
 
 For each report:
+
 - Write in the appropriate register (board = strategic narrative; legal = precise and
   citation-dense; commercial = action-oriented and deal-focused)
 - Apply the **Writing Standards** section
@@ -405,6 +414,7 @@ No material issues found in this workstream or on this specific finding. Proceed
 structural adjustment to the deal.
 
 **Examples:**
+
 - IP ownership is clean; all registered IP is in the target's name with no gaps or third-
   party claims
 - Employment practices are compliant; no material pending claims
@@ -420,16 +430,17 @@ board report unless the workstream had initial concerns that were resolved.
 Issues present but can be addressed through one or more of the following mechanisms.
 Use the sub-type label to indicate which mechanism applies.
 
-| Sub-Type | Mechanism | When to Use |
-|----------|-----------|-------------|
-| **FLAG [PRICE]** | Purchase price reduction | Quantifiable liabilities or value impairment |
-| **FLAG [INDEMNITY]** | Specific indemnity provision | Contingent liabilities with uncertain timing |
-| **FLAG [ESCROW]** | Retention from purchase price in escrow | Exposures resolvable within 12-24 months |
-| **FLAG [CONDITION]** | Closing condition (must be resolved pre-close) | Issues where certainty is required before proceeding |
-| **FLAG [POST-CLOSE]** | Post-closing remediation or integration action | Issues addressable after closing without deal risk |
-| **FLAG [DISCLOSURE]** | Disclosure schedule exception | Known issue already reflected in reps; seller discloses |
+| Sub-Type              | Mechanism                                      | When to Use                                             |
+| --------------------- | ---------------------------------------------- | ------------------------------------------------------- |
+| **FLAG [PRICE]**      | Purchase price reduction                       | Quantifiable liabilities or value impairment            |
+| **FLAG [INDEMNITY]**  | Specific indemnity provision                   | Contingent liabilities with uncertain timing            |
+| **FLAG [ESCROW]**     | Retention from purchase price in escrow        | Exposures resolvable within 12-24 months                |
+| **FLAG [CONDITION]**  | Closing condition (must be resolved pre-close) | Issues where certainty is required before proceeding    |
+| **FLAG [POST-CLOSE]** | Post-closing remediation or integration action | Issues addressable after closing without deal risk      |
+| **FLAG [DISCLOSURE]** | Disclosure schedule exception                  | Known issue already reflected in reps; seller discloses |
 
 **Examples:**
+
 - Pending tax audit with estimated exposure of USD 2M on a USD 100M deal →
   FLAG [ESCROW] — tax-specific escrow of USD 3M with audit cooperation
 - Software licenses not assignable without third-party consent →
@@ -449,6 +460,7 @@ either (a) cannot be resolved by deal mechanics, (b) create regulatory or legal 
 to closing, or (c) fundamentally undermine the investment thesis.
 
 **Examples:**
+
 - Active government investigation for securities fraud with no resolution timeline
 - Core IP that the target does not own and cannot acquire; IP forms the basis of the deal
 - HSR or CMA merger control concern that is likely to result in a prohibition or require
@@ -468,20 +480,20 @@ not proceed to signing without explicit resolution strategy.
 Apply this framework across all 12 legal due diligence workstreams. For each workstream,
 identify findings, classify them, and apply the Finding Severity Classification.
 
-| # | Workstream | Key Risk Areas | Common FLAG Items | Common DEAL-BREAKER Items |
-|---|-----------|---------------|-------------------|--------------------------|
-| 1 | Corporate Structure | Ownership chain, authority, encumbrances | Missing board resolutions, undisclosed liens | Fraud, phantom shares, ownership disputes |
-| 2 | Material Contracts | Assignment, COC clauses, key relationships | Non-assignable contracts (< 20% revenue) | Non-assignable contracts (> 40% revenue) with no consent mechanism |
-| 3 | Intellectual Property | Ownership, registration, open source | Unregistered trademarks, assignment gaps | Core IP not owned; fundamental freedom-to-operate issue |
-| 4 | Litigation | Pending claims, regulatory enforcement | Quantifiable pending claims | Active government investigation; class action; uninsured liability |
-| 5 | Employment & Labor | Key persons, compensation, compliance | Underfunded pension, misclassified contractors | Works council blocking transaction; mandatory benefit plan wind-up |
-| 6 | Regulatory & Compliance | Licenses, permits, investigations | Non-transferable secondary licenses | Non-transferable primary license; material enforcement action |
-| 7 | Real Estate | Leases, COC consents, environmental | Lease COC clauses requiring consent | No consents obtainable for key facilities; EPA Superfund PRP status |
-| 8 | Environmental | Contamination, compliance, liability | Phase I concerns; prior incidents | Known contamination without remediation; CERCLA PRP status |
-| 9 | Tax | Open audits, attributes, structure | State nexus gaps, open audit < 5% | Tax fraud; structure that cannot close without major restructuring |
-| 10 | Data Privacy & Cybersecurity | GDPR, CCPA, data breaches | Prior breach (notified); consent gaps | Undisclosed material breach; massive PHI exposure without HIPAA compliance |
-| 11 | Antitrust & FDI | Merger control, foreign investment | Uncertain CFIUS timeline | EUMR Phase II; FDI prohibition risk; national security screening |
-| 12 | Insurance | Coverage adequacy, claims history | Coverage gaps in D&O, cyber | Uninsured catastrophic loss in litigation; no D&O coverage |
+| #   | Workstream                   | Key Risk Areas                             | Common FLAG Items                              | Common DEAL-BREAKER Items                                                  |
+| --- | ---------------------------- | ------------------------------------------ | ---------------------------------------------- | -------------------------------------------------------------------------- |
+| 1   | Corporate Structure          | Ownership chain, authority, encumbrances   | Missing board resolutions, undisclosed liens   | Fraud, phantom shares, ownership disputes                                  |
+| 2   | Material Contracts           | Assignment, COC clauses, key relationships | Non-assignable contracts (< 20% revenue)       | Non-assignable contracts (> 40% revenue) with no consent mechanism         |
+| 3   | Intellectual Property        | Ownership, registration, open source       | Unregistered trademarks, assignment gaps       | Core IP not owned; fundamental freedom-to-operate issue                    |
+| 4   | Litigation                   | Pending claims, regulatory enforcement     | Quantifiable pending claims                    | Active government investigation; class action; uninsured liability         |
+| 5   | Employment & Labor           | Key persons, compensation, compliance      | Underfunded pension, misclassified contractors | Works council blocking transaction; mandatory benefit plan wind-up         |
+| 6   | Regulatory & Compliance      | Licenses, permits, investigations          | Non-transferable secondary licenses            | Non-transferable primary license; material enforcement action              |
+| 7   | Real Estate                  | Leases, COC consents, environmental        | Lease COC clauses requiring consent            | No consents obtainable for key facilities; EPA Superfund PRP status        |
+| 8   | Environmental                | Contamination, compliance, liability       | Phase I concerns; prior incidents              | Known contamination without remediation; CERCLA PRP status                 |
+| 9   | Tax                          | Open audits, attributes, structure         | State nexus gaps, open audit < 5%              | Tax fraud; structure that cannot close without major restructuring         |
+| 10  | Data Privacy & Cybersecurity | GDPR, CCPA, data breaches                  | Prior breach (notified); consent gaps          | Undisclosed material breach; massive PHI exposure without HIPAA compliance |
+| 11  | Antitrust & FDI              | Merger control, foreign investment         | Uncertain CFIUS timeline                       | EUMR Phase II; FDI prohibition risk; national security screening           |
+| 12  | Insurance                    | Coverage adequacy, claims history          | Coverage gaps in D&O, cyber                    | Uninsured catastrophic loss in litigation; no D&O coverage                 |
 
 [JURISDICTION-SPECIFIC] Workstream 5 (Employment): Applies TUPE (UK), WARN Act (US),
 and works council consultation rights (EU) with different timelines and deal impact.
@@ -515,13 +527,13 @@ IP governance gaps) that suggest broader organizational risk beyond individual f
 
 Run these 5 gates silently before delivering any output. Revise failures before delivery.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal risk claim cites a specific statute, regulation, principle, or document | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **Format** | All citations follow consistent, recognizable format for the jurisdiction | Fix format |
-| **Currency** | Every cited provision checked for amendments or repeal | Flag "[CHECK CURRENCY]" |
-| **Domain** | Analysis stays within the deal's applicable jurisdictions; no cross-jurisdiction bleed | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated; not hidden beneath confident-sounding language | Add confidence qualifier; downgrade claim level |
+| Gate           | Rule                                                                                   | Fail Action                                              |
+| -------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Source**     | Every legal risk claim cites a specific statute, regulation, principle, or document    | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
+| **Format**     | All citations follow consistent, recognizable format for the jurisdiction              | Fix format                                               |
+| **Currency**   | Every cited provision checked for amendments or repeal                                 | Flag "[CHECK CURRENCY]"                                  |
+| **Domain**     | Analysis stays within the deal's applicable jurisdictions; no cross-jurisdiction bleed | Remove or flag jurisdictional bleed                      |
+| **Confidence** | Uncertainty explicitly stated; not hidden beneath confident-sounding language          | Add confidence qualifier; downgrade claim level          |
 
 ---
 
@@ -530,6 +542,7 @@ Run these 5 gates silently before delivering any output. Revise failures before 
 For any finding classified as DEAL-BREAKER, apply this 3-pass self-interrogation:
 
 **Pass 1 — Legal Chain Integrity**:
+
 - Does the risk assessment follow logically from the statute, regulation, or contractual
   provision cited?
 - Would a regulator or court in this jurisdiction actually reach this conclusion on these
@@ -537,6 +550,7 @@ For any finding classified as DEAL-BREAKER, apply this 3-pass self-interrogation
 - Is there a reasonable counter-argument that counsel for the other side will make?
 
 **Pass 2 — Completeness**:
+
 - Have all relevant statutes, regulations, and cases been considered?
 - Are there deal mechanics (indemnity, specific escrow, price adjustment, condition) that
   could adequately address this issue?
@@ -544,6 +558,7 @@ For any finding classified as DEAL-BREAKER, apply this 3-pass self-interrogation
   resolve the issue?
 
 **Pass 3 — Challenge**:
+
 - What is the strongest argument that this finding is a FLAG, not a DEAL-BREAKER?
 - Under what circumstances (e.g., different deal structure, pre-closing remediation,
   risk-acceptance by board) might a reasonable acquirer proceed?
@@ -558,13 +573,13 @@ Mark the audit trail: `self_interrogation: PASS` or `self_interrogation: REVISED
 
 Assign a confidence level to every material finding (FLAG or DEAL-BREAKER):
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95-1.0 | Clear legal rule, strong evidence, no reasonable counter | State with confidence |
-| **High** | 0.80-0.94 | Strong authority, minor factual or legal questions | State with brief caveat |
-| **Probable** | 0.60-0.79 | Good arguments; reasonable minds could differ | State with reasoning and contra-indicators |
-| **Possible** | 0.40-0.59 | Material uncertainty; competing interpretations | Flag for counsel review with both sides |
-| **Unlikely** | 0.0-0.39 | Weak evidentiary or legal basis | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                                  | Action                                                |
+| ------------ | --------- | -------------------------------------------------------- | ----------------------------------------------------- |
+| **Definite** | 0.95-1.0  | Clear legal rule, strong evidence, no reasonable counter | State with confidence                                 |
+| **High**     | 0.80-0.94 | Strong authority, minor factual or legal questions       | State with brief caveat                               |
+| **Probable** | 0.60-0.79 | Good arguments; reasonable minds could differ            | State with reasoning and contra-indicators            |
+| **Possible** | 0.40-0.59 | Material uncertainty; competing interpretations          | Flag for counsel review with both sides               |
+| **Unlikely** | 0.0-0.39  | Weak evidentiary or legal basis                          | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
 
 **Calibration rule for M&A DD**: Given the consequential nature of deal decisions,
 err toward flagging uncertainty rather than hiding it. A "Probable" finding presented as
@@ -614,15 +629,15 @@ glass_box:
 For every transaction, identify all parties affected by diligence findings beyond the
 buyer and seller:
 
-| Stakeholder | Role | Affected Workstreams | Impact | Action Required |
-|-------------|------|---------------------|--------|-----------------|
-| Target employees | Third party | Employment | Potential redundancy, change of terms | TUPE/WARN notice; retention packages |
-| Material customers | Third party | Contracts | COC termination rights | Consent campaign; relationship management |
-| Key suppliers | Third party | Contracts | Supply continuity risk | COC consent; supply alternatives |
-| Regulators | Regulator | Regulatory, antitrust, environmental | Approval/notification obligations | Filing strategy; regulatory counsel |
-| Data subjects | Third party | Data privacy | Privacy rights in acquisition | GDPR transparency; notification |
-| Lenders | Financial | Corporate structure | Consent to assignment of finance docs | Lender consent; change of control |
-| Works council | Representative body | Employment (EU) | Consultation right before closing | Initiate consultation; timeline planning |
+| Stakeholder        | Role                | Affected Workstreams                 | Impact                                | Action Required                           |
+| ------------------ | ------------------- | ------------------------------------ | ------------------------------------- | ----------------------------------------- |
+| Target employees   | Third party         | Employment                           | Potential redundancy, change of terms | TUPE/WARN notice; retention packages      |
+| Material customers | Third party         | Contracts                            | COC termination rights                | Consent campaign; relationship management |
+| Key suppliers      | Third party         | Contracts                            | Supply continuity risk                | COC consent; supply alternatives          |
+| Regulators         | Regulator           | Regulatory, antitrust, environmental | Approval/notification obligations     | Filing strategy; regulatory counsel       |
+| Data subjects      | Third party         | Data privacy                         | Privacy rights in acquisition         | GDPR transparency; notification           |
+| Lenders            | Financial           | Corporate structure                  | Consent to assignment of finance docs | Lender consent; change of control         |
+| Works council      | Representative body | Employment (EU)                      | Consultation right before closing     | Initiate consultation; timeline planning  |
 
 ---
 
@@ -707,6 +722,7 @@ Explicit catalogue of what NOT to do when generating due diligence reports:
 Apply plain-language discipline to all report sections:
 
 **For board/executive summaries** (read by non-lawyers):
+
 - Maximum 3 sentences per finding. Name the risk, quantify it if possible, state the
   recommended action.
 - Active voice: "The target owes USD 4M in unpaid sales tax" — not "Sales tax obligations
@@ -716,18 +732,21 @@ Apply plain-language discipline to all report sections:
 - Recommendation before detail: lead with the action, then the evidence.
 
 **For legal reports** (read by M&A counsel):
+
 - Technical precision: cite statutes and provisions; use jurisdiction-correct terminology.
 - Active voice still applies.
 - Confidence qualifiers required: state the legal basis and qualify uncertainty explicitly.
 - Cite the source document (data room reference, clause number) for every finding.
 
 **For commercial reports** (read by deal team and business stakeholders):
+
 - Business impact-first: open with what the finding means for the deal, revenue, or
   operations — then explain the legal basis.
 - Translate risk into dollars where possible.
 - Prioritize by deal impact, not by workstream.
 
 **Quality gates before delivery:**
+
 1. Can a non-lawyer board member understand the executive summary and make a decision?
 2. Can M&A counsel use the legal report to draft representations, indemnities, and
    closing conditions?
@@ -743,6 +762,7 @@ Apply plain-language discipline to all report sections:
 This skill is designed to work with **legalcode-mcp** as its primary legal research tool.
 
 **With legalcode-mcp connected:**
+
 - In Step 4, search for regulatory requirements, merger control thresholds, employment law,
   and enforcement precedents in the target's operating jurisdictions
 - Save results to `/tmp/legalcode-dd-authority.md`
@@ -751,6 +771,7 @@ This skill is designed to work with **legalcode-mcp** as its primary legal resea
 - Mark all legalcode-mcp-sourced citations as VERIFIED in the Glass Box
 
 **Without legalcode-mcp:**
+
 - Mark all statutory citations with [VERIFY]
 - Note in the Glass Box: `legalcode_mcp: "Not connected — manual verification required"`
 - Focus the report on commercial risk assessment and deal structure recommendations
@@ -792,12 +813,12 @@ Target length: 2-4 pages. Audience: board members, senior leadership, investment
 
 [2D grid: Probability × Impact, with findings plotted by ID]
 
-| Zone | Findings Count | Action |
-|------|---------------|--------|
-| RED (High Prob. × Severe Impact) | [n] | Escalate — DEAL-BREAKERs |
-| ORANGE (High/Med × Material) | [n] | Address in deal structure |
-| YELLOW (Med × Various) | [n] | Monitor; disclosure schedule |
-| GREEN (Low × Low/Material) | [n] | Note; no action needed |
+| Zone                             | Findings Count | Action                       |
+| -------------------------------- | -------------- | ---------------------------- |
+| RED (High Prob. × Severe Impact) | [n]            | Escalate — DEAL-BREAKERs     |
+| ORANGE (High/Med × Material)     | [n]            | Address in deal structure    |
+| YELLOW (Med × Various)           | [n]            | Monitor; disclosure schedule |
+| GREEN (Low × Low/Material)       | [n]            | Note; no action needed       |
 
 ---
 
@@ -806,12 +827,13 @@ Target length: 2-4 pages. Audience: board members, senior leadership, investment
 [List each DEAL-BREAKER with one-paragraph summary, evidence reference, and board options.]
 
 ### [Finding ID] — [One-line title]
+
 **Risk**: [What the issue is, quantified where possible]
 **Evidence**: [Document reference or interview source]
 **Options for Board**:
-  A. [Resolve pre-signing — how, timeline, cost]
-  B. [Restructure deal to accommodate — how]
-  C. [Walk away — rationale]
+A. [Resolve pre-signing — how, timeline, cost]
+B. [Restructure deal to accommodate — how]
+C. [Walk away — rationale]
 
 ---
 
@@ -819,9 +841,9 @@ Target length: 2-4 pages. Audience: board members, senior leadership, investment
 
 [Top FLAG items — those material to deal value or structure. Group by workstream.]
 
-| ID | Workstream | Finding | Severity Sub-Type | Negotiation Lever | Status |
-|----|-----------|---------|-------------------|-------------------|--------|
-| F-001 | [WS] | [Finding] | FLAG [CONDITION] | [What to request] | Open |
+| ID    | Workstream | Finding   | Severity Sub-Type | Negotiation Lever | Status |
+| ----- | ---------- | --------- | ----------------- | ----------------- | ------ |
+| F-001 | [WS]       | [Finding] | FLAG [CONDITION]  | [What to request] | Open   |
 
 ---
 
@@ -829,9 +851,9 @@ Target length: 2-4 pages. Audience: board members, senior leadership, investment
 
 [List workstreams or specific documents where diligence is incomplete.]
 
-| Workstream | What Is Missing | Deadline | Risk If Not Resolved |
-|-----------|----------------|----------|---------------------|
-| [WS] | [Document/analysis] | [Date] | [Conservative risk assessment] |
+| Workstream | What Is Missing     | Deadline | Risk If Not Resolved           |
+| ---------- | ------------------- | -------- | ------------------------------ |
+| [WS]       | [Document/analysis] | [Date]   | [Conservative risk assessment] |
 
 ---
 
@@ -846,9 +868,9 @@ Target length: 2-4 pages. Audience: board members, senior leadership, investment
 
 ## Next Steps
 
-| Action | Owner | Deadline |
-|--------|-------|---------|
-| [Action] | [Owner] | [Date] |
+| Action   | Owner   | Deadline |
+| -------- | ------- | -------- |
+| [Action] | [Owner] | [Date]   |
 ```
 
 ---
@@ -872,7 +894,7 @@ Target length: 10-30 pages. Audience: M&A counsel, outside counsel, legal team.
 ## Scope of Review
 
 [Workstreams reviewed; documents and data room folders accessed; diligence period;
- limitations on scope; outstanding requests]
+limitations on scope; outstanding requests]
 
 ---
 
@@ -903,12 +925,12 @@ the workstream section.]
 ## Representation & Warranty Analysis
 
 [Map each FLAG and DEAL-BREAKER to the representations in the purchase agreement. Identify:
- (a) which rep covers the risk, (b) whether the rep is qualified adequately, (c) whether
- a disclosure schedule exception is appropriate or required.]
+(a) which rep covers the risk, (b) whether the rep is qualified adequately, (c) whether
+a disclosure schedule exception is appropriate or required.]
 
-| Finding ID | Relevant Rep | Current Qualification | Gap | Recommended Fix |
-|-----------|-------------|----------------------|-----|----------------|
-| F-001 | Section [X] (Organization) | None | [Gap] | [Fix — specific language] |
+| Finding ID | Relevant Rep               | Current Qualification | Gap   | Recommended Fix           |
+| ---------- | -------------------------- | --------------------- | ----- | ------------------------- |
+| F-001      | Section [X] (Organization) | None                  | [Gap] | [Fix — specific language] |
 
 ---
 
@@ -921,7 +943,7 @@ the workstream section.]
 ## Post-Closing Integration Risks
 
 [Legal risks that arise after closing — contract execution, regulatory reporting, compliance
- integration, data migration obligations, employment integration.]
+integration, data migration obligations, employment integration.]
 
 ---
 
@@ -954,8 +976,8 @@ Target length: 3-6 pages. Audience: deal team, business development, investment 
 ## What the Findings Mean for the Deal
 
 [Narrative: How do the overall diligence findings affect the investment thesis? Are the
- core assumptions about the target (IP strength, revenue quality, growth potential)
- validated or challenged?]
+core assumptions about the target (IP strength, revenue quality, growth potential)
+validated or challenged?]
 
 ---
 
@@ -965,35 +987,36 @@ Target length: 3-6 pages. Audience: deal team, business development, investment 
 
 ### Price Reduction Opportunities
 
-| Finding | Estimated Value Impact | Negotiation Approach |
-|---------|----------------------|---------------------|
-| [Finding] | [USD amount or %] | [Specific ask] |
+| Finding   | Estimated Value Impact | Negotiation Approach |
+| --------- | ---------------------- | -------------------- |
+| [Finding] | [USD amount or %]      | [Specific ask]       |
 
 ### Indemnity and Escrow Opportunities
 
-| Finding | Recommended Provision | Escrow Amount / Period |
-|---------|----------------------|----------------------|
-| [Finding] | [Specific indemnity language] | [Amount / Period] |
+| Finding   | Recommended Provision         | Escrow Amount / Period |
+| --------- | ----------------------------- | ---------------------- |
+| [Finding] | [Specific indemnity language] | [Amount / Period]      |
 
 ### Closing Conditions
 
-| Finding | Condition Required | Seller Action |
-|---------|-------------------|--------------|
+| Finding   | Condition Required   | Seller Action         |
+| --------- | -------------------- | --------------------- |
 | [Finding] | [Specific condition] | [What seller must do] |
 
 ---
 
 ## Integration Risks to Manage Post-Closing
 
-| Risk | Business Impact | Day 1 Action | Owner |
-|------|----------------|-------------|-------|
-| [Risk] | [Impact] | [Action] | [Owner] |
+| Risk   | Business Impact | Day 1 Action | Owner   |
+| ------ | --------------- | ------------ | ------- |
+| [Risk] | [Impact]        | [Action]     | [Owner] |
 
 ---
 
 ## Contingency Planning
 
 [What to do if key issues remain unresolved at the time of signing:]
+
 - If [DEAL-BREAKER finding] is not resolved: [Recommended response — walk-away threshold,
   alternative structure, price adjustment formula]
 - If [FLAG finding] is not addressable in deal documents: [Minimum acceptable outcome]
@@ -1003,12 +1026,15 @@ Target length: 3-6 pages. Audience: deal team, business development, investment 
 ## Recommended Negotiation Playbook
 
 **Must-haves (Tier 1 — Walk-Away Conditions)**:
+
 - [List with rationale]
 
 **Required Structural Adjustments (Tier 2)**:
+
 - [List with specific mechanics]
 
 **Preferred Positions — Concession Candidates (Tier 3)**:
+
 - [List — these can be traded for Tier 1/2 wins]
 ```
 

@@ -40,6 +40,7 @@ metrics, data processing obligations, AI training restrictions, compliance certi
 portability, and exit assistance.
 
 **Covers:**
+
 - SaaS Master Service Agreements (B2B enterprise, B2B SMB/scale, B2C consumer, B2B2C platform)
 - Subscription and consumption-based pricing with tiered seats, usage limits, true-ups, and overages
 - Service Level Agreements: uptime metrics, measurement methodology, credit structures, and exclusions
@@ -56,12 +57,14 @@ portability, and exit assistance.
 - Quality-verified output with Glass Box audit trail and confidence scoring
 
 **Does not:**
+
 - Draft on-premises or perpetual software licenses (see `software-license-agreement`)
 - Review non-SaaS commercial agreements clause-by-clause (see `legalcode-contract-review`)
 - Replace specialized legal counsel for HIPAA BAA, sector-specific SaaS regulation (FERPA, GLBA, FedRAMP), or complex data localization arrangements
 - Apply to one jurisdiction exclusively — jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers throughout
 
 **Related skills**:
+
 - `legalcode-contract-review` — clause-by-clause review of any commercial agreement
 - `legalcode-dpa-review-and-negotiation` — specialized DPA clause analysis under GDPR/UK GDPR/CCPA/LGPD
 - `legalcode-nda-triage` — for screening standalone NDAs embedded in or ancillary to SaaS agreements
@@ -76,6 +79,7 @@ which legal framework applies. The drafting process identifies the governing law
 the analysis accordingly.
 
 [JURISDICTION-SPECIFIC] When localizing, research and apply:
+
 - **Data protection regime**: GDPR + SCCs (EU/EEA), UK GDPR + UK IDTA (UK), CCPA/CPRA service provider terms (US/California), PIPEDA/Law 25 (Canada/Quebec), LGPD (Brazil), PDPA (Singapore/Thailand), Privacy Act + APPs (AU)
 - **Cloud switching and portability**: EU Data Act (Regulation 2023/2854, fully applicable September 12, 2025) — mandatory switching rights, 30-day porting window, no switching fees from January 2027
 - **SaaS characterization**: UCC Article 2 applicability (US — courts split; most treat SaaS as services, not goods), UCITA (Virginia and Maryland only [VERIFY])
@@ -126,6 +130,7 @@ user can correct it.
 ### Step 1: Accept Input
 
 Accept one of these inputs:
+
 - **Existing SaaS agreement** (PDF, DOCX, URL, or pasted text) for review, analysis, and redlines
 - **Drafting request** ("Draft vendor-side SaaS MSA for B2B enterprise" or "Draft customer-friendly SaaS subscription terms")
 - **Clause request** ("Draft an SLA with 99.9% uptime and tiered service credits")
@@ -139,18 +144,18 @@ If no input is provided, prompt the user to supply one.
 
 1. **Which side are you on?**
    - Options: SaaS Vendor / Platform, Customer / Buyer, Both (analyzing for alignment or benchmarking)
-   - *Why this matters*: Vendor and customer positions on liability caps, uptime commitments, audit rights,
+   - _Why this matters_: Vendor and customer positions on liability caps, uptime commitments, audit rights,
      AI training restrictions, and IP ownership are fundamentally opposed. The entire analysis flips.
 
 2. **Business model?**
    - Options: B2B Enterprise (negotiated terms), B2B SMB / Scale (standard form), B2C Consumer (regulated), B2B2C Platform (intermediary liability), Hybrid
-   - *Why this matters*: B2C requires consumer protection compliance (auto-renewal, cancellation rights,
+   - _Why this matters_: B2C requires consumer protection compliance (auto-renewal, cancellation rights,
      unfair terms review); B2B2C adds downstream customer liability; enterprise B2B allows more negotiation.
 
 3. **Regulatory scope?**
    - Options: GDPR (EU/EEA customers), UK GDPR, CCPA/CPRA (US/California), HIPAA BAA (health data),
      PIPEDA / Quebec Law 25 (Canada), Australian Privacy Act, NIS2 (EU cloud provider obligations), None / Not yet assessed
-   - Allow multiple. *Why this matters*: Determines whether DPA / BAA addendum is required, data localization
+   - Allow multiple. _Why this matters_: Determines whether DPA / BAA addendum is required, data localization
      constraints, breach notification timelines, audit rights, and sub-processor controls.
 
 4. **Focus areas?** (allow multiple)
@@ -158,12 +163,12 @@ If no input is provided, prompt the user to supply one.
      AI training restrictions, Data portability / exit, Liability caps / indemnification,
      Compliance certifications (SOC 2, ISO 27001), Auto-renewal / termination, Change management,
      No specific focus — full review
-   - *Why this matters*: Allows analysis to lead with what the user cares about most.
+   - _Why this matters_: Allows analysis to lead with what the user cares about most.
 
 5. **Deal context?**
    - Free text with examples: "Strategic 5-year partnership," "$2M ARR enterprise deal — vendor has leverage,"
      "SMB standard-form contract — no negotiation expected," "Startup vendor — no SOC 2 yet"
-   - *Why this matters*: Deal size, strategic importance, and negotiation leverage determine how hard to push
+   - _Why this matters_: Deal size, strategic importance, and negotiation leverage determine how hard to push
      on each issue and what to concede.
 
 If partial context is provided, proceed with stated assumptions: "I'm assuming vendor-side, B2B enterprise,
@@ -174,6 +179,7 @@ GDPR and CCPA scope. Let me know if that's wrong and I'll re-run the analysis."
 Check for an organizational SaaS agreement playbook in local settings (e.g., `legal.local.md`).
 
 The playbook should define:
+
 - **Standard positions**: Preferred terms per clause (uptime commitment, liability cap formula, audit rights scope)
 - **Acceptable ranges**: Terms that can be agreed without escalation (uptime 99.5%-99.99%, cap 6-24 months of fees)
 - **Escalation triggers**: Terms requiring senior sign-off (uncapped liability, exclusivity grants, AI training on customer data, DPA carveouts)
@@ -182,6 +188,7 @@ The playbook should define:
 **If no playbook is configured:**
 
 **⟁ CLARIFY** — Inform the user and ask which approach:
+
 - **Option A: Set up playbook now** — Define standard positions for 8 key SaaS clauses (uptime target, liability cap formula, data security requirements, DPA / BAA scope, payment terms, term length, auto-renewal notice, AI training prohibition). More precise outputs; 10-15 minutes upfront.
 - **Option B: Proceed with B2B SaaS market standards** — Use widely-accepted enterprise SaaS market positions (99.9% uptime, 12-month liability cap, annual-fee-only for data breach carveout, standard DPA terms). Faster; may not reflect organizational preferences.
 - **Option C: Provide positions as we go** — Start the draft and I'll ask about your preferred position when it matters for each clause.
@@ -194,12 +201,14 @@ Identify the governing law (from the agreement or the user's drafting intent). T
 **legalcode-mcp** to build a working legal reference for this analysis.
 
 **⟁ CLARIFY** — If any of the following apply, ask the user:
+
 - No governing law clause found in a reviewed agreement → flag as RED and ask which jurisdiction applies
 - Multiple conflicting governing law references → ask which governs the main body
 - Unusual jurisdiction for the deal type → confirm intentional
 
 **With legalcode-mcp connected (preferred):**
 Search for jurisdiction-relevant authority covering:
+
 - Data protection statutes and mandatory DPA terms (GDPR Art. 28, CCPA Cal. Code Regs. §7051, HIPAA 45 CFR §164.504(e))
 - EU Data Act portability and switching obligations (Regulation 2023/2854 Arts. 23-31)
 - Auto-renewal notice requirements (California B&P §17600-17606, NY GBL §527-A, applicable state law)
@@ -213,10 +222,12 @@ Search for jurisdiction-relevant authority covering:
 Save results to `/tmp/legalcode-saas-authority.md`. Mark legalcode-mcp-sourced citations as VERIFIED in Glass Box.
 
 **Without legalcode-mcp:**
+
 - Mark all statutory and case law references with [VERIFY]
 - Note in Glass Box: `external_tools_used: "None — manual verification required"`
 
 [JURISDICTION-SPECIFIC] For each governing law, the research should cover at minimum:
+
 - Mandatory data protection terms that cannot be excluded by agreement
 - Limitation of liability enforceability tests and caps
 - Consumer protection / unfair terms rules (B2C or qualifying small business scope)
@@ -232,18 +243,19 @@ recourse for a major outage. Review holistically first, then clause-by-clause.
 Analyze systematically across all 15 SaaS-specific topic areas (see **SaaS Clause Architecture**
 section below). For each area, assess:
 
-| Criterion | What to Evaluate |
-|-----------|-----------------|
-| **Presence** | Is this topic covered in the agreement? Missing entirely? Addressed in a schedule or addendum? |
-| **Perspective** | Does current language favor vendor, customer, or is it balanced? |
-| **Market deviation** | How far is this from B2B SaaS market standard? |
-| **Classification** | GREEN (acceptable), YELLOW (negotiate), RED (escalate) |
-| **Compliance gap** | Does this clause create or cure a regulatory obligation? |
+| Criterion            | What to Evaluate                                                                               |
+| -------------------- | ---------------------------------------------------------------------------------------------- |
+| **Presence**         | Is this topic covered in the agreement? Missing entirely? Addressed in a schedule or addendum? |
+| **Perspective**      | Does current language favor vendor, customer, or is it balanced?                               |
+| **Market deviation** | How far is this from B2B SaaS market standard?                                                 |
+| **Classification**   | GREEN (acceptable), YELLOW (negotiate), RED (escalate)                                         |
+| **Compliance gap**   | Does this clause create or cure a regulatory obligation?                                       |
 
 For each topic area, produce both a **vendor-side assessment** and a **customer-side assessment**,
 noting where positions diverge.
 
 **⟁ CLARIFY** — For complex agreements (25+ pages, multiple schedules, or incorporated DPA/BAA/AUP):
+
 - Ask whether to perform full analysis (all 15 topic areas) or priority review (user's focus areas + all RED items)
 - If the agreement incorporates documents by reference (e.g., "Vendor's DPA at [URL]"), ask whether to include those
 
@@ -253,20 +265,21 @@ After analyzing clauses present, identify material topics entirely absent from t
 
 **Common SaaS missing-clause issues:**
 
-| Missing Clause | Customer Risk | Vendor Risk | Classification |
-|---------------|---------------|-------------|----------------|
-| No SLA / uptime commitment | No remedy for downtime | None | RED (customer), GREEN (vendor) |
-| No DPA when GDPR/CCPA data is processed | Regulatory fine, no sub-processor control | Regulatory fine | RED (both) |
-| No AI training restriction | Customer data used to train vendor's models | None | RED (customer) or YELLOW depending on sensitivity |
-| No data portability / exit assistance | Vendor lock-in; data loss risk at exit | None | RED (customer), YELLOW (vendor if EU Data Act applies) |
-| No HIPAA BAA for health data | Criminal HIPAA liability | Criminal HIPAA liability | RED (both if ePHI processed) |
-| No destruction certificate | Cannot evidence data deletion | None | YELLOW–RED (customer) |
-| No API deprecation notice period | Breaking changes without warning | Operational burden | YELLOW (customer) |
-| No uptime measurement methodology | SLA unenforceable | Disputes over availability | YELLOW (both) |
-| No seat reduction / downgrade rights | Locked into unused seats | Revenue certainty | YELLOW (customer), GREEN (vendor) |
-| No auto-renewal notice obligation | Consumer law risk if B2C | None | RED (B2C), YELLOW (B2B with CA/NY customers) |
+| Missing Clause                          | Customer Risk                               | Vendor Risk                | Classification                                         |
+| --------------------------------------- | ------------------------------------------- | -------------------------- | ------------------------------------------------------ |
+| No SLA / uptime commitment              | No remedy for downtime                      | None                       | RED (customer), GREEN (vendor)                         |
+| No DPA when GDPR/CCPA data is processed | Regulatory fine, no sub-processor control   | Regulatory fine            | RED (both)                                             |
+| No AI training restriction              | Customer data used to train vendor's models | None                       | RED (customer) or YELLOW depending on sensitivity      |
+| No data portability / exit assistance   | Vendor lock-in; data loss risk at exit      | None                       | RED (customer), YELLOW (vendor if EU Data Act applies) |
+| No HIPAA BAA for health data            | Criminal HIPAA liability                    | Criminal HIPAA liability   | RED (both if ePHI processed)                           |
+| No destruction certificate              | Cannot evidence data deletion               | None                       | YELLOW–RED (customer)                                  |
+| No API deprecation notice period        | Breaking changes without warning            | Operational burden         | YELLOW (customer)                                      |
+| No uptime measurement methodology       | SLA unenforceable                           | Disputes over availability | YELLOW (both)                                          |
+| No seat reduction / downgrade rights    | Locked into unused seats                    | Revenue certainty          | YELLOW (customer), GREEN (vendor)                      |
+| No auto-renewal notice obligation       | Consumer law risk if B2C                    | None                       | RED (B2C), YELLOW (B2B with CA/NY customers)           |
 
 **⟁ CLARIFY** — When missing clause severity depends on context:
+
 - "This agreement has no SLA. Is the vendor offering 'managed service' or 'best-efforts access'? If managed service, this is RED."
 - "No data portability clause. Is customer data critical to exit? If yes, RED. If ephemeral, acceptable."
 - "No AI training restriction. Does the vendor's platform use ML features that might train on customer content?"
@@ -280,6 +293,7 @@ For each deviation from playbook or market standard, classify using the **Deviat
 - **RED**: Explain the specific risk (with legal basis where verifiable), provide market-standard alternative language, estimate exposure, recommend escalation path.
 
 **⟁ CLARIFY** — For borderline classifications:
+
 - **YELLOW vs. RED**: "This liability cap is set at 3 months' fees. Market standard is 12 months. Should I classify as YELLOW (negotiate) or RED (escalate)? Depends on your risk tolerance for this deal."
 - **GREEN vs. YELLOW**: "The auto-renewal notice period is 15 days. For an enterprise customer in New York, the legal minimum is 15-45 days. At exactly 15 days this may be technically compliant but leaves no buffer. Is this a concern?"
 - **Risk tolerance check**: If multiple items trend in the same direction, ask whether to apply conservative (flag more) or pragmatic (flag only material items) classification.
@@ -290,6 +304,7 @@ For each YELLOW and RED deviation, generate guidance using the **Redline Format*
 Before generating redlines:
 
 **⟁ CLARIFY** — Ask about negotiation posture if not already clear:
+
 - **Relationship dynamic**: New vendor relationship, existing strategic partner, or must-have platform with leverage? Affects tone.
 - **Volume of redlines**: If many YELLOW items exist: "I've found [N] items worth negotiating. Do you want guidance on all of them, or focus on the top [X] highest-impact?"
 
@@ -307,16 +322,17 @@ This prevents the common failure of preparing a negotiation position without und
 
 For each material clause, assign a four-dimensional risk score:
 
-| Dimension | High | Medium | Low |
-|-----------|------|--------|-----|
-| **Business impact** | Catastrophic loss potential (data breach, platform unavailability, revenue loss) | Moderate financial exposure | Minor inconvenience |
-| **Enforceability risk** | Clause likely unenforceable under governing law | Contested enforceability | Well-established, enforceable |
-| **Negotiation difficulty** | Counterparty historically won't move | Some flexibility expected | Typically negotiable |
-| **Compliance risk** | Creates regulatory obligation vendor/customer cannot meet | Compliance gap that can be remediated | No compliance exposure |
+| Dimension                  | High                                                                             | Medium                                | Low                           |
+| -------------------------- | -------------------------------------------------------------------------------- | ------------------------------------- | ----------------------------- |
+| **Business impact**        | Catastrophic loss potential (data breach, platform unavailability, revenue loss) | Moderate financial exposure           | Minor inconvenience           |
+| **Enforceability risk**    | Clause likely unenforceable under governing law                                  | Contested enforceability              | Well-established, enforceable |
+| **Negotiation difficulty** | Counterparty historically won't move                                             | Some flexibility expected             | Typically negotiable          |
+| **Compliance risk**        | Creates regulatory obligation vendor/customer cannot meet                        | Compliance gap that can be remediated | No compliance exposure        |
 
 ### Step 11: Business Impact and Negotiation Strategy
 
 Provide a summary covering:
+
 - **Overall risk profile**: High-level SaaS-specific risk assessment across data security, compliance, exit, pricing escalation, and operational risk dimensions
 - **Top 3-5 issues**: Most important items, with severity, perspective (vendor/customer/both), and legal basis
 - **Negotiation sequencing**: Which issues to lead with, what to concede, how to trade-link (e.g., accept lower uptime SLA in exchange for uncapped data-breach indemnity)
@@ -324,6 +340,7 @@ Provide a summary covering:
 - **EU Data Act notice** (if EU customers): Flag whether the agreement embeds the mandatory switching rights from Regulation 2023/2854
 
 **⟁ CLARIFY** — If deal context unclear:
+
 - "Can you walk away from this deal, or is this platform essential?" — Determines whether strategy is assertive or accommodating.
 - "Who signs off internally? Legal only, or also product / finance / executive?" — Determines how to frame escalation recommendations.
 
@@ -342,6 +359,7 @@ Before delivery, run all quality checks (see **Quality Assurance Framework** sec
 ### Step 13: Regulatory Compliance Flag (if applicable)
 
 If GDPR, CCPA, HIPAA, NIS2, or other compliance obligations were identified in Step 2:
+
 - Cross-reference relevant agreement provisions against the compliance checklists in **Jurisdiction-Specific Compliance Obligations** section
 - Flag missing or inadequate compliance provisions with [COMPLIANCE-REQUIRED]
 - Recommend specific addenda (DPA, BAA, Data Security Addendum, NIS2 supply chain clause)
@@ -351,12 +369,12 @@ If GDPR, CCPA, HIPAA, NIS2, or other compliance obligations were identified in S
 
 Structure output per **Output Format Template** below. Route based on risk level:
 
-| Risk Level | Recommended Action |
-|---|---|
-| All GREEN | Approve and proceed to signature; no negotiation needed |
-| YELLOW items only | Flag for internal discussion; prepare negotiation talking points; legal review within 1-2 business days |
-| Any RED items | Escalate to senior counsel; prepare counterproposal; external counsel may be needed |
-| Regulatory gap (COMPLIANCE-REQUIRED) | Do not execute until gap remediated regardless of other risk levels |
+| Risk Level                           | Recommended Action                                                                                      |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| All GREEN                            | Approve and proceed to signature; no negotiation needed                                                 |
+| YELLOW items only                    | Flag for internal discussion; prepare negotiation talking points; legal review within 1-2 business days |
+| Any RED items                        | Escalate to senior counsel; prepare counterproposal; external counsel may be needed                     |
+| Regulatory gap (COMPLIANCE-REQUIRED) | Do not execute until gap remediated regardless of other risk levels                                     |
 
 ---
 
@@ -366,23 +384,23 @@ Analyze the SaaS agreement systematically across these 15 topic areas. Use **Dee
 most material and commercially contested clauses; **Standard** tier for important but less contested
 provisions.
 
-| # | Topic Area | Depth | Vendor Focal Points | Customer Focal Points |
-|---|------------|-------|--------------------|-----------------------|
-| 1 | **Subscription Terms** | Deep | Seat floors, true-up triggers, overage definitions, add-on pricing, volume discount protection | Seat reduction rights, downgrade paths, true-up frequency, overage caps, pricing change notice |
-| 2 | **Service Level Agreement** | Deep | Uptime definition (monthly vs. annual), excluded downtime categories, credit as sole remedy, cap on credits | Uptime commitment level (target: 99.9%+), measurement methodology, credit formula, cash refunds, termination right for sustained outages |
-| 3 | **Data Security and Processing** | Deep | Reasonable efforts standard, certification scope, audit rights limitation, breach notification period | Specific encryption standards (AES-256, TLS 1.2+), SOC 2 Type II report access, penetration testing scope, 72h breach notification, sub-processor controls |
-| 4 | **Intellectual Property** | Deep | Vendor retains all platform IP; broad right to use aggregated data; output ownership ambiguity | Customer owns all input data and outputs; AI training prohibition; no vendor rights to customer data beyond service delivery |
-| 5 | **AI Training Restrictions** | Deep | Right to use data for model improvement; opt-out option; aggregated / anonymized carveout | Explicit prohibition on training, fine-tuning, distillation; includes aggregated/anonymized outputs; no downstream use by vendor's AI suppliers |
-| 6 | **Acceptable Use Policy** | Deep | Broad AUP terms; unilateral enforcement rights; suspension without notice; content moderation discretion | Objective AUP standards; notice-before-suspension obligation; appeal / cure period; no liability for user-generated content beyond knowledge threshold |
-| 7 | **Data Portability and Exit Assistance** | Deep | No affirmative portability obligation; charge for data export; format at vendor's discretion | Machine-readable export format; 30-day post-termination data access; migration assistance; destruction certificate; EU Data Act compliance if applicable |
-| 8 | **Liability Caps and Exclusions** | Deep | Low cap (3-6 months fees); broad consequential damages exclusion; credits as sole SLA remedy | 12-month cap minimum; carveouts for data breach, IP indemnification, fraud; consequential damages carveout for data loss; uncapped willful misconduct |
-| 9 | **Indemnification** | Deep | Narrow indemnification scope; carve-outs for customer modifications; cross-indemnity for customer's infringement | Vendor indemnifies for platform IP claims; data-breach indemnity; vendor-caused compliance failures; customer indemnifies for misuse |
-| 10 | **Auto-Renewal and Termination** | Standard | Auto-renewal default with short notice window; no mid-term cancellation; termination fees for early exit | 60-day auto-renewal notice; no fees for non-renewal; termination for convenience (30-90 days); termination for cause (material breach + cure period); termination right for sustained SLA failure |
-| 11 | **Change Management** | Standard | Unilateral right to modify features, pricing, and API; reasonable notice; no compensation for breaking changes | Material change notice (90+ days); API deprecation notice (minimum 6 months); no unilateral price increase during committed term; termination right for material adverse changes |
-| 12 | **Payment Terms and Pricing** | Standard | Annual subscription pre-paid; no refunds; interest on late payments; price escalation right on renewal | Monthly or quarterly billing; disputed invoice process; CPI-cap on renewal increases; pro-rata refunds for early termination; no retroactive price changes |
-| 13 | **Compliance Certifications and Audit Rights** | Standard | SOC 2 Type I report only; audit by questionnaire or inspection of report; 30-day advance notice for on-site audit | SOC 2 Type II (annual audit report); ISO 27001; annual penetration test with summary report access; right to conduct or commission audit with reasonable notice |
-| 14 | **Governing Law, Disputes, and Notices** | Standard | Vendor's jurisdiction; binding arbitration; class action waiver; attorneys' fees waiver | Neutral jurisdiction; litigation option for injunctive relief; class action right preserved (B2C); jury trial right in contested jurisdictions |
-| 15 | **Representations, Warranties, and Disclaimers** | Standard | "As is" disclaimer; no implied warranties; narrow uptime warranty (already covered by SLA); no fitness for purpose | Warranty that platform complies with applicable law; SOC 2 / ISO 27001 compliance warranty; security posture warranty; warranty survival on termination |
+| #   | Topic Area                                       | Depth    | Vendor Focal Points                                                                                                | Customer Focal Points                                                                                                                                                                             |
+| --- | ------------------------------------------------ | -------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Subscription Terms**                           | Deep     | Seat floors, true-up triggers, overage definitions, add-on pricing, volume discount protection                     | Seat reduction rights, downgrade paths, true-up frequency, overage caps, pricing change notice                                                                                                    |
+| 2   | **Service Level Agreement**                      | Deep     | Uptime definition (monthly vs. annual), excluded downtime categories, credit as sole remedy, cap on credits        | Uptime commitment level (target: 99.9%+), measurement methodology, credit formula, cash refunds, termination right for sustained outages                                                          |
+| 3   | **Data Security and Processing**                 | Deep     | Reasonable efforts standard, certification scope, audit rights limitation, breach notification period              | Specific encryption standards (AES-256, TLS 1.2+), SOC 2 Type II report access, penetration testing scope, 72h breach notification, sub-processor controls                                        |
+| 4   | **Intellectual Property**                        | Deep     | Vendor retains all platform IP; broad right to use aggregated data; output ownership ambiguity                     | Customer owns all input data and outputs; AI training prohibition; no vendor rights to customer data beyond service delivery                                                                      |
+| 5   | **AI Training Restrictions**                     | Deep     | Right to use data for model improvement; opt-out option; aggregated / anonymized carveout                          | Explicit prohibition on training, fine-tuning, distillation; includes aggregated/anonymized outputs; no downstream use by vendor's AI suppliers                                                   |
+| 6   | **Acceptable Use Policy**                        | Deep     | Broad AUP terms; unilateral enforcement rights; suspension without notice; content moderation discretion           | Objective AUP standards; notice-before-suspension obligation; appeal / cure period; no liability for user-generated content beyond knowledge threshold                                            |
+| 7   | **Data Portability and Exit Assistance**         | Deep     | No affirmative portability obligation; charge for data export; format at vendor's discretion                       | Machine-readable export format; 30-day post-termination data access; migration assistance; destruction certificate; EU Data Act compliance if applicable                                          |
+| 8   | **Liability Caps and Exclusions**                | Deep     | Low cap (3-6 months fees); broad consequential damages exclusion; credits as sole SLA remedy                       | 12-month cap minimum; carveouts for data breach, IP indemnification, fraud; consequential damages carveout for data loss; uncapped willful misconduct                                             |
+| 9   | **Indemnification**                              | Deep     | Narrow indemnification scope; carve-outs for customer modifications; cross-indemnity for customer's infringement   | Vendor indemnifies for platform IP claims; data-breach indemnity; vendor-caused compliance failures; customer indemnifies for misuse                                                              |
+| 10  | **Auto-Renewal and Termination**                 | Standard | Auto-renewal default with short notice window; no mid-term cancellation; termination fees for early exit           | 60-day auto-renewal notice; no fees for non-renewal; termination for convenience (30-90 days); termination for cause (material breach + cure period); termination right for sustained SLA failure |
+| 11  | **Change Management**                            | Standard | Unilateral right to modify features, pricing, and API; reasonable notice; no compensation for breaking changes     | Material change notice (90+ days); API deprecation notice (minimum 6 months); no unilateral price increase during committed term; termination right for material adverse changes                  |
+| 12  | **Payment Terms and Pricing**                    | Standard | Annual subscription pre-paid; no refunds; interest on late payments; price escalation right on renewal             | Monthly or quarterly billing; disputed invoice process; CPI-cap on renewal increases; pro-rata refunds for early termination; no retroactive price changes                                        |
+| 13  | **Compliance Certifications and Audit Rights**   | Standard | SOC 2 Type I report only; audit by questionnaire or inspection of report; 30-day advance notice for on-site audit  | SOC 2 Type II (annual audit report); ISO 27001; annual penetration test with summary report access; right to conduct or commission audit with reasonable notice                                   |
+| 14  | **Governing Law, Disputes, and Notices**         | Standard | Vendor's jurisdiction; binding arbitration; class action waiver; attorneys' fees waiver                            | Neutral jurisdiction; litigation option for injunctive relief; class action right preserved (B2C); jury trial right in contested jurisdictions                                                    |
+| 15  | **Representations, Warranties, and Disclaimers** | Standard | "As is" disclaimer; no implied warranties; narrow uptime warranty (already covered by SLA); no fitness for purpose | Warranty that platform complies with applicable law; SOC 2 / ISO 27001 compliance warranty; security posture warranty; warranty survival on termination                                           |
 
 ---
 
@@ -394,6 +412,7 @@ The clause is within market-standard range or within the organizational playbook
 No redline needed. Note for awareness only.
 
 **All of the following must be true:**
+
 - Clause is present and unambiguous
 - Clause falls within the playbook's acceptable range or B2B SaaS market standard
 - Clause presents no material compliance risk
@@ -405,6 +424,7 @@ The clause deviates from market standard or organizational playbook in a materia
 risk is manageable and the clause is typically negotiable.
 
 **Any of the following triggers YELLOW:**
+
 - Liability cap below 12 months of annual fees (customer-side) or customer demands above 2x ARR (vendor-side)
 - SLA uptime below 99.5% without justification, or uptime calculation on an annual (not monthly) basis
 - Consequential damages exclusion without any carveout for data loss
@@ -422,6 +442,7 @@ The clause presents a material legal, financial, or compliance risk that cannot 
 senior legal sign-off. Do not proceed to signature until addressed.
 
 **Any of the following triggers RED:**
+
 - No liability limitation at all, creating unlimited exposure (vendor-side)
 - Liability cap below 1 month of fees, or sole remedy for data breach is SLA credit (customer-side)
 - No DPA executed or DPA terms missing mandatory elements (GDPR Art. 28, CCPA Cal. Code Regs. §7051) when personal data is processed
@@ -448,23 +469,27 @@ compliance gap must be remediated before signature regardless of other risk leve
 
 **Key drafting issues:**
 
-*True-up Mechanics:*
+_True-up Mechanics:_
+
 - Define the true-up measurement period (annual, semi-annual, or monthly)
 - Specify whether overages are billed at list price or at the contracted volume discount
 - Include a reconciliation process for disputed true-up calculations
 - Vendor-side: seek contractual minimum seats / minimum annual commitment
 - Customer-side: negotiate cap on overage rate (e.g., "not to exceed X% above contracted per-seat rate") and a downgrade path after each contract year
 
-*Seat and Usage Definitions:*
+_Seat and Usage Definitions:_
+
 - Define "active user" or "seat" precisely to prevent disputes about named vs. concurrent users
 - Specify how usage is measured for consumption-based models (API calls, data volume, compute hours)
 - Address multi-tenant / shared accounts (family plans, department licenses)
 
-*Pricing Changes:*
+_Pricing Changes:_
+
 - Vendor-side: seek right to increase pricing on renewal with reasonable notice (e.g., 90 days; cap at CPI + X%)
 - Customer-side: lock pricing for the committed term; require advance notice of renewal pricing before auto-renewal deadline; cap renewal increases at CPI or X% per year
 
-*Common YELLOW Issues:*
+_Common YELLOW Issues:_
+
 - True-up at list price (not contracted rate): vendor charges overages at full list price even when committed volume qualifies for discount. Customer-side redline: "Overage pricing shall not exceed [contracted per-seat rate] × 1.1."
 - No downgrade path: customer is locked into initial seat count for the entire term even if user count decreases. Customer-side redline: "Customer may reduce authorized users at each annual renewal with 90 days' notice."
 
@@ -472,24 +497,25 @@ compliance gap must be remediated before signature regardless of other risk leve
 
 **Key drafting issues:**
 
-*Uptime Commitment and Measurement Methodology:*
+_Uptime Commitment and Measurement Methodology:_
 
 Industry standard uptime metrics and downtime equivalents:
 
-| Uptime | Downtime/Year | Downtime/Month | Tier |
-|--------|--------------|----------------|------|
-| 99.0% | 87.6 hours | 7.3 hours | Basic |
-| 99.5% | 43.8 hours | 3.65 hours | Standard |
-| 99.9% | 8.76 hours | 43.8 minutes | Enterprise minimum |
-| 99.95% | 4.38 hours | 21.9 minutes | High-availability |
-| 99.99% | 52.6 minutes | 4.38 minutes | Mission-critical |
+| Uptime | Downtime/Year | Downtime/Month | Tier               |
+| ------ | ------------- | -------------- | ------------------ |
+| 99.0%  | 87.6 hours    | 7.3 hours      | Basic              |
+| 99.5%  | 43.8 hours    | 3.65 hours     | Standard           |
+| 99.9%  | 8.76 hours    | 43.8 minutes   | Enterprise minimum |
+| 99.95% | 4.38 hours    | 21.9 minutes   | High-availability  |
+| 99.99% | 52.6 minutes  | 4.38 minutes   | Mission-critical   |
 
 - **Measurement window**: Monthly calculation is more protective for customers than annual (monthly 99.9% = max 43.8 min/month; annual allows front-loading downtime)
 - **Availability definition**: "Service is available" must be defined precisely — vendor should specify what endpoint or capability is being measured
 
-*Service Credit Structures:*
+_Service Credit Structures:_
 
 Standard tiered credit formula (enterprise B2B SaaS):
+
 ```
 Actual Uptime 99.0%-99.9%:  10% credit of monthly fee
 Actual Uptime 95.0%-99.0%:  25% credit of monthly fee
@@ -502,7 +528,8 @@ Actual Uptime < 90.0%:     100% credit of monthly fee (monthly fee cap)
 - **Credit claim deadline**: Most SaaS SLAs require credit claims within 30 days; track and claim or credits are forfeited
 - **Termination right**: Customer-side: add right to terminate for cause if uptime falls below threshold (e.g., 95%) for three consecutive months
 
-*Standard SLA Exclusions (vendor-side; review each for customer):*
+_Standard SLA Exclusions (vendor-side; review each for customer):_
+
 - Scheduled maintenance (negotiate: maximum hours/month; must be outside business hours or during agreed maintenance window)
 - Customer-caused outages (customer's misuse, misconfiguration, or use beyond permitted scope)
 - Force majeure events
@@ -512,12 +539,14 @@ Actual Uptime < 90.0%:     100% credit of monthly fee (monthly fee cap)
 ### 3. Data Security and Processing
 
 **Encryption standards (minimum accepted in enterprise SaaS):**
+
 - Encryption at rest: AES-256 (or equivalent)
 - Encryption in transit: TLS 1.2+ (prefer TLS 1.3)
 - Key management: Customer-controlled keys (BYOK) for high-sensitivity deployments
 - Database-level field encryption for PII columns in multi-tenant environments
 
 **Compliance certifications:**
+
 - **SOC 2 Type II** (preferred over Type I): Covers operating effectiveness over minimum 6-month period (vs. point-in-time Type I); request annual current report
 - **ISO 27001**: Third-party certification of information security management system; verify scope covers production environment
 - **ISO 27701**: Privacy information management extension to ISO 27001 — increasingly expected for GDPR-regulated services
@@ -525,6 +554,7 @@ Actual Uptime < 90.0%:     100% credit of monthly fee (monthly fee cap)
 - **Vulnerability management**: Patching SLA (e.g., critical within 24h, high within 7 days)
 
 **GDPR / EU Data Protection Compliance (mandatory DPA elements — GDPR Art. 28(3)):**
+
 1. Subject matter, duration, nature, and purpose of processing
 2. Types of personal data and categories of data subjects
 3. Processing only on documented controller instructions
@@ -540,6 +570,7 @@ Actual Uptime < 90.0%:     100% credit of monthly fee (monthly fee cap)
 Any SaaS vendor creating, receiving, maintaining, or transmitting electronic protected health
 information (ePHI) on behalf of a HIPAA-covered entity must execute a Business Associate Agreement
 (BAA) per 45 CFR §164.504(e). Mandatory BAA terms:
+
 - Limited uses and disclosures of ePHI to those specified in the BAA
 - Appropriate safeguards under the HIPAA Security Rule (administrative, physical, technical)
 - Breach reporting without unreasonable delay and within 60 days of discovery
@@ -552,6 +583,7 @@ HIPAA BAA breach notification obligations should be carved out from the general 
 liability cap — HIPAA violations generate separate regulatory penalties.
 
 **NIS2 Directive obligations (EU — applicable to qualifying cloud providers, October 2024):**
+
 - Risk management measures covering: incident handling, business continuity, supply chain security, access control, cryptography, multi-factor authentication, vulnerability management
 - Significant incident reporting: 24h early warning → 72h incident notification → 1-month final report
 - Supply chain security provisions requiring verification of sub-processor security posture
@@ -561,14 +593,14 @@ liability cap — HIPAA violations generate separate regulatory penalties.
 
 **Core IP allocation matrix:**
 
-| Content Type | Vendor-Side Default | Customer-Side Standard | Balanced Position |
-|-------------|--------------------|-----------------------|-------------------|
-| Pre-existing vendor IP (platform, code, technology) | Vendor retains all | Vendor retains all | Vendor retains all |
-| Customer data (input) | Vendor licensed to process | Customer owns; vendor licensed only for service delivery | Customer owns; vendor has narrow processing license |
-| Customer-created outputs / exports | Customer owns | Customer owns | Customer owns |
-| AI-generated outputs using customer prompts | Ambiguous; vendor claims rights | Customer owns | Customer owns |
-| Platform improvements from aggregated data | Vendor retains | Customer retains if attributable to customer data | Vendor retains if anonymized and non-attributable |
-| Developments specifically commissioned by customer | Negotiated | Customer owns (work-for-hire) | IP ownership per SOW; vendor retains background IP |
+| Content Type                                        | Vendor-Side Default             | Customer-Side Standard                                   | Balanced Position                                   |
+| --------------------------------------------------- | ------------------------------- | -------------------------------------------------------- | --------------------------------------------------- |
+| Pre-existing vendor IP (platform, code, technology) | Vendor retains all              | Vendor retains all                                       | Vendor retains all                                  |
+| Customer data (input)                               | Vendor licensed to process      | Customer owns; vendor licensed only for service delivery | Customer owns; vendor has narrow processing license |
+| Customer-created outputs / exports                  | Customer owns                   | Customer owns                                            | Customer owns                                       |
+| AI-generated outputs using customer prompts         | Ambiguous; vendor claims rights | Customer owns                                            | Customer owns                                       |
+| Platform improvements from aggregated data          | Vendor retains                  | Customer retains if attributable to customer data        | Vendor retains if anonymized and non-attributable   |
+| Developments specifically commissioned by customer  | Negotiated                      | Customer owns (work-for-hire)                            | IP ownership per SOW; vendor retains background IP  |
 
 **Moral rights note** [JURISDICTION-SPECIFIC]: In EU and UK jurisdictions, moral rights (attribution,
 integrity) cannot be fully waived by the original creator and may attach to certain vendor-created
@@ -579,6 +611,7 @@ materials. In US work-for-hire arrangements, moral rights in most works do not a
 This is a critical and rapidly evolving clause category. Standard market practice as of 2025-2026:
 
 **What customers should require (minimum):**
+
 - Explicit prohibition: "Vendor shall not use Customer Data, or any output, derivative, or
   processed form thereof, to train, fine-tune, evaluate, or otherwise improve any machine learning
   or artificial intelligence model, including without limitation any generative AI model, without
@@ -589,11 +622,13 @@ This is a critical and rapidly evolving clause category. Standard market practic
 - Audit right: Customer right to request confirmation of compliance with AI training restriction
 
 **What vendors typically resist:**
+
 - Absolute prohibition including anonymized/aggregated data (impedes product improvement)
 - Flowing restriction to all sub-processors (affects vendor's AI tooling stack)
 - Audit rights on AI training practices (operational complexity)
 
 **Vendor-side minimum acceptable:**
+
 - Train only on vendor-owned data, public data, or data from customers who have opted in
 - Provide opt-out mechanism for customers who object to aggregated / anonymized use
 - Restrict restriction scope to identifiable customer data, not truly anonymized derivatives
@@ -607,6 +642,7 @@ Emerging EU guidance on output ownership and AI training data rights. [VERIFY cu
 **EU Data Act (Regulation 2023/2854) — Mandatory for EU Customers (applicable September 12, 2025):**
 
 Key obligations for cloud/SaaS providers with EU customers:
+
 1. **Termination right**: Customer may terminate for convenience with maximum 2-month notice regardless of original contract term; early termination penalties must be proportionate
 2. **Switching initiation**: Provider must initiate switching process within the notice period
 3. **30-day porting window**: Data transfer must be completed within 30 calendar days of termination notice (extendable to 7 months maximum for genuine technical complexity)
@@ -619,6 +655,7 @@ Key obligations for cloud/SaaS providers with EU customers:
 [VERIFY: Whether EUCS interoperability standards have been published for any SaaS category as of 2026]
 
 **Market-standard data portability provisions (non-EU):**
+
 - Post-termination data access: 30-90 days (30 days is common market minimum)
 - Export format: Machine-readable (CSV, JSON, XML); documented schema
 - Migration assistance: Reasonable assistance for 30-90 days post-termination at professional services rates
@@ -629,21 +666,23 @@ Key obligations for cloud/SaaS providers with EU customers:
 
 **Market standard for B2B enterprise SaaS:**
 
-| Liability Cap Position | Vendor-Side | Customer-Side | Balanced Enterprise |
-|----------------------|-------------|---------------|---------------------|
-| Annual subscription fees cap | 3-6 months | 24+ months | 12 months |
-| Data breach carveout | Capped at annual fees | Uncapped | 2x annual fees (or insurance coverage limit) |
-| IP indemnification carveout | Capped | Uncapped | Uncapped (vendor controls the risk) |
-| Fraud/gross negligence | Capped | Uncapped | Uncapped |
-| Willful misconduct | Capped | Uncapped | Uncapped |
-| SLA credits as sole remedy | Vendor preference | Resist; retain damages right | SLA credits as primary remedy; damages preserved for prolonged failure |
+| Liability Cap Position       | Vendor-Side           | Customer-Side                | Balanced Enterprise                                                    |
+| ---------------------------- | --------------------- | ---------------------------- | ---------------------------------------------------------------------- |
+| Annual subscription fees cap | 3-6 months            | 24+ months                   | 12 months                                                              |
+| Data breach carveout         | Capped at annual fees | Uncapped                     | 2x annual fees (or insurance coverage limit)                           |
+| IP indemnification carveout  | Capped                | Uncapped                     | Uncapped (vendor controls the risk)                                    |
+| Fraud/gross negligence       | Capped                | Uncapped                     | Uncapped                                                               |
+| Willful misconduct           | Capped                | Uncapped                     | Uncapped                                                               |
+| SLA credits as sole remedy   | Vendor preference     | Resist; retain damages right | SLA credits as primary remedy; damages preserved for prolonged failure |
 
 **Consequential damages exclusion carveouts (customer-side must negotiate):**
+
 - Carve out data loss damages from the consequential damages exclusion (data reconstruction cost is direct, not consequential)
 - Carve out compliance fines and penalties arising from vendor's breach of data security obligations
 - Carve out customer's revenue losses directly flowing from prolonged SaaS unavailability (especially for SaaS that is a critical business-enabling service)
 
 **[JURISDICTION-SPECIFIC] Enforceability:**
+
 - **UK B2B (UCTA s.2/s.3)**: Limitation must satisfy reasonableness test. Caps grossly disproportionate to foreseeable risk may fail; vendors on standard forms face higher scrutiny
 - **AU (ACL)**: Small business contracts subject to unfair terms regime from November 2023; very low caps may constitute unfair terms
 - **US**: No federal enforceability rule; state law varies; contract of adhesion doctrine applies to standard-form SaaS terms
@@ -653,24 +692,28 @@ Key obligations for cloud/SaaS providers with EU customers:
 ## Jurisdiction-Specific Compliance Obligations
 
 ### EU / EEA
+
 - **GDPR Art. 28 DPA**: Execute before personal data processing; include all mandatory terms [see Section 3]
 - **EU Data Act**: Embed switching rights in any agreement with EU customers after September 12, 2025
 - **NIS2**: Verify whether vendor qualifies as essential/important entity; include supply chain security obligations
 - **AI Act (EU) 2024/1689**: Vendors deploying high-risk AI systems must satisfy Art. 9-15 requirements; B2C general-purpose AI transparency obligations apply from August 2025
 
 ### United Kingdom
+
 - **UK GDPR**: Execute UK-compliant DPA; use UK IDTA or EU SCCs + UK Addendum for international transfers
 - **UK-US Data Bridge**: Verify US vendor certification before relying on Data Bridge (effective October 2023)
 - **UCTA 1977**: Limitation clause must satisfy reasonableness test for B2B standard-form SaaS agreements
 - **CRA 2015**: B2C SaaS — unfair terms are void; services must be performed with reasonable care and skill
 
 ### United States
+
 - **HIPAA BAA**: Mandatory before ePHI processing; cannot be waived by agreement
 - **CCPA/CPRA Service Provider Terms**: Cal. Code Regs. §7051 mandatory provisions for California personal data
 - **Auto-renewal compliance**: California B&P §17600-17606 (amended July 2025), NY GBL §527-A (amended November 2025), other state-specific laws for B2C and applicable B2B
 - **State attorney general enforcement**: FTC, California, New York active enforcers of SaaS unfair practices
 
 ### Australia
+
 - **Privacy Act 1988 + APPs**: Mandatory contractual privacy obligations for offshore processing; NDB scheme breach notification flows through to SaaS vendor
 - **ACL unfair terms (post-November 2023)**: Standard-form B2C and small-business SaaS agreements subject to civil penalties for unfair terms; AUD $50M maximum per contravention
 - **ACL consumer guarantees**: Cannot be excluded for consumer services; services must be rendered with reasonable care and skill
@@ -726,13 +769,13 @@ These items are beneficial but not essential. Concede to achieve Tier 1 and Tier
 
 Run these 5 gates silently before delivering any output. If any gate fails, revise before delivery.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, regulation, case, or established market practice | Add citation or mark [VERIFY] |
-| **Format** | All citations follow a consistent, recognizable format for the jurisdiction | Fix format |
-| **Currency** | Every cited provision verified for amendments or repeal (SaaS law changes fast: EU Data Act, auto-renewal statutes, AI Act) | Flag [CHECK CURRENCY] |
-| **Domain** | Analysis stays within the skill's governing law scope; no jurisdiction bleed | Remove or flag out-of-scope references |
-| **Confidence** | Uncertainty explicitly stated, not buried | Add confidence qualifier |
+| Gate           | Rule                                                                                                                        | Fail Action                            |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, regulation, case, or established market practice                                | Add citation or mark [VERIFY]          |
+| **Format**     | All citations follow a consistent, recognizable format for the jurisdiction                                                 | Fix format                             |
+| **Currency**   | Every cited provision verified for amendments or repeal (SaaS law changes fast: EU Data Act, auto-renewal statutes, AI Act) | Flag [CHECK CURRENCY]                  |
+| **Domain**     | Analysis stays within the skill's governing law scope; no jurisdiction bleed                                                | Remove or flag out-of-scope references |
+| **Confidence** | Uncertainty explicitly stated, not buried                                                                                   | Add confidence qualifier               |
 
 ### Self-Interrogation for RED Items
 
@@ -755,13 +798,13 @@ escrow arrangement mitigate the risk without changing the contract term?
 
 ### Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95-1.0 | Settled law or clear market standard | State with confidence |
-| **High** | 0.80-0.94 | Strong authority, minor interpretive questions | State with brief caveat |
-| **Probable** | 0.60-0.79 | Good arguments, could differ in jurisdiction or context | State with reasoning and contra-indicators |
+| Level        | Range     | Meaning                                                                 | Action                                           |
+| ------------ | --------- | ----------------------------------------------------------------------- | ------------------------------------------------ |
+| **Definite** | 0.95-1.0  | Settled law or clear market standard                                    | State with confidence                            |
+| **High**     | 0.80-0.94 | Strong authority, minor interpretive questions                          | State with brief caveat                          |
+| **Probable** | 0.60-0.79 | Good arguments, could differ in jurisdiction or context                 | State with reasoning and contra-indicators       |
 | **Possible** | 0.40-0.59 | Genuinely uncertain (e.g., AI output ownership, EU Data Act edge cases) | Flag for professional review; present both sides |
-| **Unlikely** | 0.0-0.39 | Weak basis, speculative | Do not assert; flag [UNCERTAIN] |
+| **Unlikely** | 0.0-0.39  | Weak basis, speculative                                                 | Do not assert; flag [UNCERTAIN]                  |
 
 ---
 
@@ -905,6 +948,7 @@ Before delivering any output, apply these quality gates:
 ### With legalcode-mcp Connected (Preferred)
 
 Use legalcode-mcp at Step 4 to gather jurisdiction-specific legal authority. Search for:
+
 - GDPR Art. 28 mandatory DPA terms and EDPB guidance (especially EDPB Opinion 22/2024 on sub-processor verification)
 - EU Data Act (Regulation 2023/2854) Article 23-31 switching rights obligations
 - Auto-renewal state statutes for California, New York, and other applicable US states
@@ -970,15 +1014,19 @@ Structure every analysis output as follows:
 **Legal basis**: "[Statute, regulation, or market practice — or [VERIFY]]" [Confidence: X.XX]
 
 **Vendor-side redline** (if current language favors customer):
+
 > [Specific alternative language]
 
 **Customer-side redline** (if current language favors vendor):
+
 > [Specific alternative language]
 
 **Fallback position** (if primary redline is rejected):
+
 > [Compromise language both sides can accept]
 
 **Risk Scoring**:
+
 - Business impact: [HIGH / MEDIUM / LOW]
 - Enforceability risk: [HIGH / MEDIUM / LOW]
 - Negotiation difficulty: [HIGH / MEDIUM / LOW]
@@ -994,13 +1042,13 @@ Structure every analysis output as follows:
 
 [If any compliance obligations identified]
 
-| Obligation | Clause Status | Gap | Classification |
-|-----------|--------------|-----|----------------|
-| GDPR Art. 28 DPA | [Present / Absent] | [Description] | [GREEN / COMPLIANCE-REQUIRED] |
-| HIPAA BAA | [Present / Absent / N/A] | [Description] | [GREEN / COMPLIANCE-REQUIRED / N/A] |
-| EU Data Act switching rights | [Embedded / Absent / N/A] | [Description] | [GREEN / COMPLIANCE-REQUIRED / N/A] |
-| CCPA service provider terms | [Present / Absent / N/A] | [Description] | [GREEN / COMPLIANCE-REQUIRED / N/A] |
-| Auto-renewal consumer law | [Compliant / Non-compliant / N/A] | [Description] | [GREEN / RED / N/A] |
+| Obligation                   | Clause Status                     | Gap           | Classification                      |
+| ---------------------------- | --------------------------------- | ------------- | ----------------------------------- |
+| GDPR Art. 28 DPA             | [Present / Absent]                | [Description] | [GREEN / COMPLIANCE-REQUIRED]       |
+| HIPAA BAA                    | [Present / Absent / N/A]          | [Description] | [GREEN / COMPLIANCE-REQUIRED / N/A] |
+| EU Data Act switching rights | [Embedded / Absent / N/A]         | [Description] | [GREEN / COMPLIANCE-REQUIRED / N/A] |
+| CCPA service provider terms  | [Present / Absent / N/A]          | [Description] | [GREEN / COMPLIANCE-REQUIRED / N/A] |
+| Auto-renewal consumer law    | [Compliant / Non-compliant / N/A] | [Description] | [GREEN / RED / N/A]                 |
 
 ---
 
@@ -1050,6 +1098,7 @@ for specific jurisdictions:
 ## Provenance
 
 Created by Legalcode (2026-03-01). Original synthesis incorporating:
+
 - Structural patterns from `legalcode-contract-review` (Legalcode gold standard)
 - 2-agent research pipeline: Agent 1 (structural analysis of reference skills, 15-clause SaaS architecture, dual-perspective framework, 14-step workflow, 20 anti-patterns, Glass Box YAML) + Agent 2 (deep legal research: EU Data Act 2023/2854 switching rights, NIS2 Directive 2022/2555, GDPR Art. 28/CCPA Cal. Code Regs. §7051, HIPAA 45 CFR §164.504(e), UK UCTA/CRA, ACL AU post-2023 reform, California B&P §17600-17606 amended July 2025, NY GBL §527-A amended November 2025, SLA market standards, AI training restriction emerging practice, UCC/UCITA SaaS characterization debate)
 - Jurisdictions covered: US (50 states + federal overlays), EU/EEA (GDPR, EU Data Act, NIS2, DSA, AI Act), UK (UK GDPR, UCTA, CRA), AU (Privacy Act, ACL)

@@ -54,6 +54,7 @@ classification, secondary sanctions risk assessment, and red flag analysis, prod
 a five-tier risk determination with a complete Glass Box audit trail.
 
 **Covers:**
+
 - OFAC SDN List, Consolidated Sanctions List (all 26+ programs), and SSI Directives 1-4
 - OFAC 50% Rule: UBO screening and beneficial ownership look-through
 - EU Consolidated Sanctions List (EEAS); Russia 14-package sanctions regime; all EU thematic programs
@@ -71,6 +72,7 @@ a five-tier risk determination with a complete Glass Box audit trail.
 - Voluntary self-disclosure (VSD) guidance for OFAC, BIS, and DDTC programs
 
 **Does not:**
+
 - Constitute legal advice or replace qualified trade compliance counsel
 - Screen in real time against live list versions — all findings must be verified against current official list versions before a transaction proceeds
 - Provide a complete AML/KYC program assessment (see `legalcode-aml-kyc-compliance`)
@@ -88,14 +90,14 @@ persons, currency, and subject matter determines applicability simultaneously.
 
 ### Nexus Matrix
 
-| Regime | Nexus Trigger (any one suffices) | Primary Citation |
-|--------|----------------------------------|-----------------|
-| **OFAC (US)** | US person (citizen/PR/US-incorporated entity) is party or intermediary; USD or US correspondent bank in payment chain; US-origin goods/technology | 50 U.S.C. §§ 1701-1707 (IEEPA); 31 C.F.R. Chapter V [VERIFY applicable program part] |
-| **EAR (US)** | Item "subject to the EAR": US-origin; manufactured using US technology (FDPR); on CCL anywhere in world with US-controlled content | 50 U.S.C. §§ 4801-4852 (ECRA); 15 C.F.R. Parts 730-774 |
-| **ITAR (US)** | Item is a defense article/service/technical data on USML; exported, re-exported, or released to a foreign national (including inside the US) | 22 U.S.C. § 2778 (AECA); 22 C.F.R. Parts 120-130 |
-| **EU Sanctions** | EU-incorporated entity or EU national is party; EUR or EU banking in payment chain; goods originate in or transit through the EU | TFEU Art. 215; Council Reg. 269/2014; Council Reg. 833/2014 [VERIFY current applicable regulation] |
-| **UK OFSI** | UK-incorporated entity; UK national or UK-resident involved; GBP or UK banking; goods transit UK | SAMLA 2018; SI 2019/855 (Russia); penalties: 14 years/£1M or 50% of value [VERIFY current provisions] |
-| **UN Sanctions** | All UN member states; universal mandatory baseline | UN Charter Chapter VII; Art. 25; UNSCR 1267, 1988, 1718, 1970 [VERIFY applicable resolution] |
+| Regime           | Nexus Trigger (any one suffices)                                                                                                                  | Primary Citation                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **OFAC (US)**    | US person (citizen/PR/US-incorporated entity) is party or intermediary; USD or US correspondent bank in payment chain; US-origin goods/technology | 50 U.S.C. §§ 1701-1707 (IEEPA); 31 C.F.R. Chapter V [VERIFY applicable program part]                  |
+| **EAR (US)**     | Item "subject to the EAR": US-origin; manufactured using US technology (FDPR); on CCL anywhere in world with US-controlled content                | 50 U.S.C. §§ 4801-4852 (ECRA); 15 C.F.R. Parts 730-774                                                |
+| **ITAR (US)**    | Item is a defense article/service/technical data on USML; exported, re-exported, or released to a foreign national (including inside the US)      | 22 U.S.C. § 2778 (AECA); 22 C.F.R. Parts 120-130                                                      |
+| **EU Sanctions** | EU-incorporated entity or EU national is party; EUR or EU banking in payment chain; goods originate in or transit through the EU                  | TFEU Art. 215; Council Reg. 269/2014; Council Reg. 833/2014 [VERIFY current applicable regulation]    |
+| **UK OFSI**      | UK-incorporated entity; UK national or UK-resident involved; GBP or UK banking; goods transit UK                                                  | SAMLA 2018; SI 2019/855 (Russia); penalties: 14 years/£1M or 50% of value [VERIFY current provisions] |
+| **UN Sanctions** | All UN member states; universal mandatory baseline                                                                                                | UN Charter Chapter VII; Art. 25; UNSCR 1267, 1988, 1718, 1970 [VERIFY applicable resolution]          |
 
 [JURISDICTION-SPECIFIC] Secondary sanctions (CAATSA, CISADA, PEESA) extend US
 jurisdiction to non-US persons conducting transactions outside the US in designated
@@ -126,6 +128,7 @@ below. If the user has already provided the information, skip that question and 
 ### Step 1: Accept Input
 
 Accept transaction information in any of these formats:
+
 - **Transaction description**: Counterparty names, transaction type, goods/services, jurisdictions, payment routing
 - **Contract or order document**: PDF/DOCX containing party names, product descriptions, Incoterms, delivery terms
 - **Counterparty data file**: CSV or list of names for batch pre-screening
@@ -143,6 +146,7 @@ If no information is provided, proceed directly to Step 2 and construct the scre
 **Q1 — Transaction Type**
 
 What type of transaction is being screened?
+
 - **Financial transfer / payment**: Wire, ACH, SWIFT, trade finance (LC/documentary collection) — no goods component
 - **Goods export or import**: Physical goods crossing a border — determines EAR/ITAR applicability
 - **Technology transfer or deemed export**: Sharing technical data, software, or know-how with a foreign person (including foreign nationals inside the US)
@@ -151,56 +155,60 @@ What type of transaction is being screened?
 - **Investment or acquisition**: Equity investment, joint venture — ownership-level 50% Rule analysis required
 - **Mixed transaction**: Combination of the above
 
-*Why this matters*: Transaction type determines which regimes apply. A pure financial transfer does not trigger EAR; a technology transfer may trigger both EAR and ITAR; investment transactions require ownership analysis distinct from transactional screening.
+_Why this matters_: Transaction type determines which regimes apply. A pure financial transfer does not trigger EAR; a technology transfer may trigger both EAR and ITAR; investment transactions require ownership analysis distinct from transactional screening.
 
 ---
 
 **Q2 — Primary Counterparty**
 
 Who is the primary counterparty? Provide:
+
 - **Full legal name** (Latin script AND local script: Arabic, Cyrillic, Chinese, Farsi as applicable)
 - **Country of incorporation / registration**
 - **Country where counterparty physically operates** (may differ from incorporation jurisdiction)
 - **Known aliases, trading names, or former legal names**
 - **Entity type**: Natural person / Private company / State-owned enterprise (SOE) / Financial institution / Government agency / NGO
 
-*Follow-up if entity*: Are the beneficial owners (UBOs) known? Provide name(s), nationality, and ownership percentage if available.
+_Follow-up if entity_: Are the beneficial owners (UBOs) known? Provide name(s), nationality, and ownership percentage if available.
 
-*Follow-up if individual*: Date of birth, nationality, country of residence?
+_Follow-up if individual_: Date of birth, nationality, country of residence?
 
-*Why this matters*: OFAC's 50% Rule means an entity may be blocked even if not itself listed, if ≥50% is owned (in aggregate) by SDN-designated persons. SOEs present heightened risk under SSI sectoral sanctions. Common names require additional identifiers for accurate screening.
+_Why this matters_: OFAC's 50% Rule means an entity may be blocked even if not itself listed, if ≥50% is owned (in aggregate) by SDN-designated persons. SOEs present heightened risk under SSI sectoral sanctions. Common names require additional identifiers for accurate screening.
 
 ---
 
 **Q3 — Additional Parties**
 
 Who else is involved in this transaction?
+
 - **Intermediaries**: Agents, brokers, distributors, trading companies, freight forwarders, customs brokers
 - **Financial institutions**: Banks in the payment chain, correspondent banks (if known)
 - **Shipping and logistics**: Carrier, shipping agent, vessel name (for maritime transport)
 - **End user** (if different from buyer): Who will ultimately receive or use the goods/services?
 - **Guarantors or sureties**: Financial backing parties
 
-*Why this matters*: Violations frequently occur at intermediary nodes. BIS enforcement actions consistently involve cases where the direct counterparty is clean but an intermediary routes goods to a prohibited end user. Every party in the chain should be screened.
+_Why this matters_: Violations frequently occur at intermediary nodes. BIS enforcement actions consistently involve cases where the direct counterparty is clean but an intermediary routes goods to a prohibited end user. Every party in the chain should be screened.
 
 ---
 
 **Q4 — Jurisdictions**
 
 List all countries involved:
+
 - **Origin**: Where goods, services, or technology originate
 - **Destination**: Where they will ultimately be delivered or used
 - **Transit / transshipment**: Countries through which goods will pass
 - **Payment routing**: Countries through which funds will be routed (correspondent banking)
 - **Counterparty incorporation**: Where each entity in the chain is incorporated
 
-*Flag*: If UAE, Turkey, Georgia, Kazakhstan, Armenia, or Serbia appear as transit or destination points for goods related to Russia or Belarus — flag as known transshipment risk pathways requiring enhanced analysis. [VERIFY current BIS/OFAC guidance on transshipment jurisdictions]
+_Flag_: If UAE, Turkey, Georgia, Kazakhstan, Armenia, or Serbia appear as transit or destination points for goods related to Russia or Belarus — flag as known transshipment risk pathways requiring enhanced analysis. [VERIFY current BIS/OFAC guidance on transshipment jurisdictions]
 
 ---
 
 **Q5 — Product / Technology / Services**
 
 If the transaction involves goods, technology, software, or services:
+
 - **What is the product or technology?** (Technical description, model number, commercial name)
 - **Primary commercial or industrial application**
 - **Any military, dual-use, or specialized applications?**
@@ -209,6 +217,7 @@ If the transaction involves goods, technology, software, or services:
 - **Country of origin or manufacture**
 
 Classification status options:
+
 - I believe it is **EAR99** (no ECCN — not on the CCL)
 - I believe it has an **ECCN but I don't know the number** (flag for Step 6B classification)
 - I believe it may be **ITAR-controlled** (flag for Step 6D)
@@ -219,18 +228,20 @@ Classification status options:
 **Q6 — End Use and End User**
 
 If goods, technology, or services are involved:
+
 - **Stated end use**: What will the goods/technology be used for specifically?
 - **Ultimate end user** (if different from buyer): Who receives and operates the item?
 - **Military, government, or WMD connection?**: Is the end user or use related to military programs, weapons development, or government defense programs?
 - **End-use certificate**: Has the counterparty provided one? If so, what does it state?
 
-*Red flag triggers*: Vague end-use description ("commercial", "industrial", "general use") for dual-use technology; end user is a military entity, ministry of defense, or defense contractor in a country of concern; counterparty declines to specify end use or end user.
+_Red flag triggers_: Vague end-use description ("commercial", "industrial", "general use") for dual-use technology; end user is a military entity, ministry of defense, or defense contractor in a country of concern; counterparty declines to specify end use or end user.
 
 ---
 
 **Q7 — Applicable Jurisdiction Nexus**
 
 Which of the following applies to your organization? (Select all that apply)
+
 - **US nexus**: US-incorporated entity, US citizen/permanent resident, USD or US correspondent bank, US-origin goods
 - **EU nexus**: EU member state incorporation, EUR or EU banking, goods originate in or transit EU
 - **UK nexus**: UK incorporation, UK national or UK-resident involved, GBP or UK banking
@@ -260,13 +271,14 @@ Which of the following applies to your organization? (Select all that apply)
 - **Frequency**: One-time / Recurring (specify interval) / Ongoing relationship
 - **Payment structure**: Advance payment / Letter of credit / Open account / Installment / Milestone / Other
 
-*Why this matters*: Value affects which reporting thresholds may apply. Frequency determines whether one-time or periodic re-screening is appropriate. Unusual payment structures (installments to third countries, advance payments to unfamiliar parties) are independent red flags.
+_Why this matters_: Value affects which reporting thresholds may apply. Frequency determines whether one-time or periodic re-screening is appropriate. Unusual payment structures (installments to third countries, advance payments to unfamiliar parties) are independent red flags.
 
 ---
 
 **Q10 — Risk Tolerance and Output Mode**
 
 Purpose of this screening:
+
 - **Transaction approval decision**: Specific transaction needs a CLEAR / HOLD / ESCALATE / DECLINE determination
 - **Due diligence report**: Written report needed for onboarding file or counterparty compliance record
 - **Batch pre-screening**: Multiple counterparties to screen (high-volume, lower detail per counterparty)
@@ -274,6 +286,7 @@ Purpose of this screening:
 - **Incident response**: A potential violation has been identified; need facts analysis and next steps
 
 Risk tolerance calibration:
+
 - **Conservative**: Flag all potential matches and borderline country risks; prefer false positives over false negatives
 - **Pragmatic**: Flag credible matches and material risks; apply reasonable industry-standard thresholds
 - **Streamlined**: Flag only clear matches or prohibited transactions; minimize false positives for high-volume screening
@@ -285,6 +298,7 @@ Risk tolerance calibration:
 Based on Step 2 answers, construct the **Applicable Programs Matrix** — the set of regimes requiring active screening. Apply the nexus decision trees from the Nexus Matrix above.
 
 For every transaction, assess:
+
 1. **US nexus?** → Apply OFAC programs + EAR/ITAR (if goods/tech involved)
 2. **EU nexus?** → Apply EU Consolidated Sanctions List
 3. **UK nexus?** → Apply UK OFSI Consolidated List
@@ -300,27 +314,33 @@ For each party identified in Step 2 (including all intermediaries, end users, fi
 #### Lists to Screen Against
 
 **US Lists (OFAC)**
+
 - SDN List (Specially Designated Nationals and Blocked Persons)
 - SSI List (Sectoral Sanctions Identifications — Russia Directives 1-4)
 - Non-SDN Consolidated Sanctions List (NS-MBS, NS-CMIC, NS-PLC, and others)
 - Foreign Sanctions Evaders (FSE) List
 
 **US Lists (BIS)**
+
 - Entity List (Supplement 1 to 15 C.F.R. Part 744) — license required; often policy of denial
 - Denied Persons List (15 C.F.R. Part 764) — absolute prohibition; US persons cannot participate in any export transaction involving listed persons
 - Unverified List (Supplement 6 to Part 744) — triggers enhanced due diligence; BIS unable to verify bona fides; not a hard prohibition but significant compliance flag
 - Military End-User (MEU) List (Supplement 7 to Part 744) — military/intelligence end users in China, Russia, Venezuela
 
 **US Lists (DDTC)**
+
 - Debarred Parties List — cannot receive defense articles/services; US persons cannot participate
 
 **EU Lists**
+
 - EU Consolidated Financial Sanctions List (European External Action Service — eeas.europa.eu) [VERIFY current source URL]
 
 **UK Lists**
+
 - UK Consolidated List (OFSI / HM Treasury) [VERIFY current source]
 
 **UN Lists**
+
 - UN Security Council Consolidated Sanctions List: 1267/ISIL/Al-Qaeda; 1988/Taliban; 1718/DPRK; 1970/Libya; and all applicable subsidiary committees [VERIFY current resolution scope at un.org/securitycouncil]
 
 #### OFAC 50% Rule Application (Mandatory for All Entity Counterparties)
@@ -334,7 +354,7 @@ For every entity (non-individual) counterparty, apply the 50% Rule:
 5. If SDN person(s) hold ≥50% aggregate ownership (direct or indirect): **the entity is blocked as a matter of US sanctions law even if not itself listed**
 6. If ownership structure is opaque, undisclosed, or runs through secrecy jurisdictions: flag as **OWNERSHIP RISK — ENHANCED DUE DILIGENCE REQUIRED** (TIER 3 minimum)
 
-*Important*: OFAC does not publish a list of 50%-rule-blocked entities. The obligation to trace ownership rests entirely with the screener. [VERIFY current OFAC FAQ guidance on 50% Rule application, particularly for complex ownership structures]
+_Important_: OFAC does not publish a list of 50%-rule-blocked entities. The obligation to trace ownership rests entirely with the screener. [VERIFY current OFAC FAQ guidance on 50% Rule application, particularly for complex ownership structures]
 
 #### Name Matching Protocol
 
@@ -354,13 +374,13 @@ Assess country-level sanctions risk independent of named-party screening.
 
 Most transactions are prohibited absent a specific OFAC license or applicable general license. [VERIFY current program scope against OFAC publications before each screening]
 
-| Jurisdiction | OFAC Program | Key Citation | Key Note |
-|-------------|-------------|-------------|---------|
-| Cuba | Cuban Assets Control Regulations | 31 C.F.R. Part 515; TWEA | Near-total embargo; broad GL exceptions for humanitarian, remittances, journalism |
-| Iran | Iranian Transactions and Sanctions Regulations | 31 C.F.R. Part 560; IEEPA; ISA | Most comprehensive; secondary sanctions on foreign persons in key sectors (finance, energy, shipping) |
-| North Korea (DPRK) | North Korea Sanctions Regulations | 31 C.F.R. Part 510; IEEPA; UNSCR 1718 | Near-total embargo; secondary sanctions; maritime evasion and SWIFT circumvention are highest-risk patterns |
-| Syria | Syrian Sanctions Regulations | 31 C.F.R. Part 542 | Comprehensive; reconstruction-sector GL available [VERIFY]; IRGC/Hezbollah presence |
-| Russia (occupied territories) | Ukraine-/Russia-Related Sanctions | 31 C.F.R. Part 589; E.O. 14065 | Specific geographic prohibitions in Donetsk, Luhansk, Zaporizhzhia, Kherson regions |
+| Jurisdiction                  | OFAC Program                                   | Key Citation                          | Key Note                                                                                                    |
+| ----------------------------- | ---------------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Cuba                          | Cuban Assets Control Regulations               | 31 C.F.R. Part 515; TWEA              | Near-total embargo; broad GL exceptions for humanitarian, remittances, journalism                           |
+| Iran                          | Iranian Transactions and Sanctions Regulations | 31 C.F.R. Part 560; IEEPA; ISA        | Most comprehensive; secondary sanctions on foreign persons in key sectors (finance, energy, shipping)       |
+| North Korea (DPRK)            | North Korea Sanctions Regulations              | 31 C.F.R. Part 510; IEEPA; UNSCR 1718 | Near-total embargo; secondary sanctions; maritime evasion and SWIFT circumvention are highest-risk patterns |
+| Syria                         | Syrian Sanctions Regulations                   | 31 C.F.R. Part 542                    | Comprehensive; reconstruction-sector GL available [VERIFY]; IRGC/Hezbollah presence                         |
+| Russia (occupied territories) | Ukraine-/Russia-Related Sanctions              | 31 C.F.R. Part 589; E.O. 14065        | Specific geographic prohibitions in Donetsk, Luhansk, Zaporizhzhia, Kherson regions                         |
 
 #### Targeted Sanctions Programs (Transaction-Specific Analysis Required)
 
@@ -387,9 +407,10 @@ Most transactions are prohibited absent a specific OFAC license or applicable ge
 #### Step 6A — Is the Item Subject to the EAR?
 
 Under 15 C.F.R. Part 734, an item is "subject to the EAR" if it is:
+
 - In the United States (all items physically in the US are subject to EAR)
 - US-origin (manufactured in the US, even if currently located abroad)
-- Foreign-made and incorporates more than the *de minimis* threshold of US-controlled content [VERIFY current de minimis thresholds: generally 25% for most destinations; 10% for E:1 countries and certain Entity List/SSI parties]
+- Foreign-made and incorporates more than the _de minimis_ threshold of US-controlled content [VERIFY current de minimis thresholds: generally 25% for most destinations; 10% for E:1 countries and certain Entity List/SSI parties]
 - Foreign-made as the direct product of US-origin technology or US-origin equipment (FDPR) [VERIFY current FDPR scope — significantly expanded in April 2022 for Russia/Belarus military end users]
 
 If the item is not subject to the EAR, flag as potentially outside US export control jurisdiction and assess under other applicable national control regimes.
@@ -412,6 +433,7 @@ If the item is not subject to the EAR, flag as potentially outside US export con
 4. If not on CCL: classify as **EAR99** — note that EAR99 items still cannot be exported to comprehensive embargo destinations or for prohibited end uses, and cannot go to denied parties
 
 **⟁ CLARIFY** — If ECCN is unknown or uncertain, determine classification basis:
+
 - **Self-classification confirmed**: Proceed; note as [SELF-CLASSIFIED] in audit trail
 - **Manufacturer's binding classification available**: Most reliable; document in audit trail
 - **BIS Commodity Classification Request required**: Advise; required before export when uncertainty is material [VERIFY current BIS classification request procedure and timeline]
@@ -451,17 +473,17 @@ Beyond named-party screening and country analysis, assess the following red flag
 
 #### Red Flag Matrix
 
-| Category | Indicator | Escalation Level |
-|----------|-----------|-----------------|
-| **Payment routing anomalies** | Payment from a third country with no nexus to the transaction; correspondent bank in a sanctioned jurisdiction; cryptocurrency for high-value commercial transactions with no clear rationale | TIER 2-3 |
-| **Beneficial ownership opacity** | Refusal to disclose UBOs; ownership chain through multiple shell companies in secrecy jurisdictions; jurisdiction with no public ownership registry | TIER 2-3 |
-| **End-user mismatch** | Stated end user is in Country A but delivery is Country B; small trading company buying military-grade technology; end user has no plausible use for the product quantity or type | TIER 2-3 |
-| **Transshipment risk** | Routing through UAE, Turkey, Georgia, Kazakhstan, Armenia, Serbia for goods with Russia/Belarus nexus; multiple re-routing requests after initial order; shipping agent with no track record | TIER 2-3 |
-| **Product-buyer mismatch** | Buyer lacks technical expertise, storage/handling capacity, or business rationale for the quantity or type of goods | TIER 3 |
-| **Documentation gaps** | Refusal to provide an end-use certificate; unusual vagueness about intended use; inconsistent documentation (different names, addresses) across transaction documents | TIER 2-3 |
-| **Pricing anomaly** | Transaction price significantly above or below market value for the goods; pricing inconsistent with the stated commercial relationship | TIER 3 |
-| **Urgency or secrecy** | Pressure to complete without normal due diligence; request to omit certain parties from documentation; request for unusual payment methods or currency | TIER 2 |
-| **Prior compliance concerns** | Counterparty previously screened with red flags unresolved; prior violations in same jurisdiction or sector | TIER 2-3 |
+| Category                         | Indicator                                                                                                                                                                                     | Escalation Level |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **Payment routing anomalies**    | Payment from a third country with no nexus to the transaction; correspondent bank in a sanctioned jurisdiction; cryptocurrency for high-value commercial transactions with no clear rationale | TIER 2-3         |
+| **Beneficial ownership opacity** | Refusal to disclose UBOs; ownership chain through multiple shell companies in secrecy jurisdictions; jurisdiction with no public ownership registry                                           | TIER 2-3         |
+| **End-user mismatch**            | Stated end user is in Country A but delivery is Country B; small trading company buying military-grade technology; end user has no plausible use for the product quantity or type             | TIER 2-3         |
+| **Transshipment risk**           | Routing through UAE, Turkey, Georgia, Kazakhstan, Armenia, Serbia for goods with Russia/Belarus nexus; multiple re-routing requests after initial order; shipping agent with no track record  | TIER 2-3         |
+| **Product-buyer mismatch**       | Buyer lacks technical expertise, storage/handling capacity, or business rationale for the quantity or type of goods                                                                           | TIER 3           |
+| **Documentation gaps**           | Refusal to provide an end-use certificate; unusual vagueness about intended use; inconsistent documentation (different names, addresses) across transaction documents                         | TIER 2-3         |
+| **Pricing anomaly**              | Transaction price significantly above or below market value for the goods; pricing inconsistent with the stated commercial relationship                                                       | TIER 3           |
+| **Urgency or secrecy**           | Pressure to complete without normal due diligence; request to omit certain parties from documentation; request for unusual payment methods or currency                                        | TIER 2           |
+| **Prior compliance concerns**    | Counterparty previously screened with red flags unresolved; prior violations in same jurisdiction or sector                                                                                   | TIER 2-3         |
 
 ### Step 8: Classify All Findings Using the Five-Tier Severity System
 
@@ -472,6 +494,7 @@ For every TIER 1 (BLOCKED) or TIER 2 (HIGH RISK) finding, apply the **Self-Inter
 ### Step 9: Quality Verification
 
 Before delivering the screening report:
+
 1. Run all five **Citation Quality Gates** (Sanctions-Adapted) — see Quality Frameworks section
 2. Run all four **Additional Quality Gates** unique to sanctions screening (Temporal Validity, List Version Integrity, Program Scope Verification, Escalation Confirmation)
 3. Apply **Confidence Scoring** (Dual Scale A/B) to all findings
@@ -484,9 +507,10 @@ Produce output using the **Output Format Template** at the end of this skill. Th
 For TIER 1 or TIER 2 determinations, include a prominent standalone notice:
 
 > "**COUNSEL REVIEW REQUIRED**: This determination has been classified [TIER 1 BLOCKED /
-> TIER 2 HIGH RISK]. This AI-assisted finding must be reviewed by qualified trade
-> sanctions counsel before the organization acts on it. Do not process, block, reject,
-> or report this transaction based solely on this AI output."
+>
+> > TIER 2 HIGH RISK]. This AI-assisted finding must be reviewed by qualified trade
+> > sanctions counsel before the organization acts on it. Do not process, block, reject,
+> > or report this transaction based solely on this AI output."
 
 ---
 
@@ -505,6 +529,7 @@ governmental authorization. No further analysis changes this outcome until autho
 is obtained.
 
 **Triggers:**
+
 - Confirmed SDN match: match score ≥95%, or exact name match with ≥1 corroborating identifier (DOB, country of incorporation, registration number, or address)
 - Confirmed match on EU Consolidated List, UK OFSI Consolidated List, or UN Consolidated List
 - Transaction falls within a comprehensive sanctions program (Cuba, Iran, DPRK, Syria) without an applicable OFAC general license or specific license
@@ -525,6 +550,7 @@ adjudication, the program application is novel, or aggregate risk factors exceed
 routine compliance officer authority.
 
 **Triggers:**
+
 - Match score 75-94% against SDN, EU, or UK list — credible potential match but insufficient identifiers to confirm
 - 50% Rule: ownership structure is opaque and partial evidence suggests SDN ownership may be present
 - Transaction involves Russia SSI sectoral sanctions — counterparty is SSI-listed and the proposed transaction type may fall within a Directive prohibition
@@ -545,6 +571,7 @@ thresholds, but no confirmed match or clear legal prohibition has been identifie
 Enhanced due diligence can resolve the question.
 
 **Triggers:**
+
 - Match score 50-74% — possible match requiring additional identifying information
 - Counterparty in a jurisdiction with targeted sanctions; in a sector targeted by that program; not itself listed
 - Transaction routes through a known transshipment hub with no clear explanation
@@ -565,6 +592,7 @@ documenting, monitoring, and ensuring standard controls are fully applied.
 Transaction can proceed subject to conditions.
 
 **Triggers:**
+
 - Match score below 50% — unlikely match; name similarity noted and documented
 - Counterparty in a country with elevated sanctions risk but not itself in a sanctioned sector or on any list (e.g., private Russian company not otherwise designated)
 - One or two isolated red flags present without corroboration
@@ -583,6 +611,7 @@ party list; no prohibited country nexus; no applicable export control bar; no ma
 red flags present.
 
 **Triggers:**
+
 - All screened parties return NO MATCH on all applicable lists
 - Destination is not subject to any comprehensive or targeted sanctions program applicable to this transaction type
 - Item is EAR99 and destination is not sanctioned; or a specific license exception has been confirmed
@@ -596,56 +625,56 @@ red flags present.
 
 ### OFAC: Key Programs
 
-| Program | CFR Part | Primary Statute | Key Prohibition |
-|---------|----------|----------------|----------------|
-| Russian Harmful Foreign Activities | 31 C.F.R. Part 578 | IEEPA; E.O. 14024 | Asset freeze; all transactions with designated persons |
-| Ukraine-/Russia-Related | 31 C.F.R. Part 589 | IEEPA; E.O.s 13660/13661/13662/13685/14065 | Geographic prohibition (occupied territories); SDN designations |
-| Iran | 31 C.F.R. Part 560 | IEEPA; ISA; CISADA | Near-comprehensive embargo; secondary sanctions on foreign persons in key sectors |
-| North Korea | 31 C.F.R. Part 510 | IEEPA; UNPA; CAATSA | Near-total embargo; secondary sanctions; maritime evasion highest-risk pattern |
-| Cuba | 31 C.F.R. Part 515 | TWEA | Comprehensive embargo (TWEA-based); broad general license exceptions |
-| Syria | 31 C.F.R. Part 542 | IEEPA | Comprehensive; reconstruction-sector GL available [VERIFY] |
-| Venezuela | 31 C.F.R. Part 591 | IEEPA; E.O.s 13808/13850/13884 | Government entity/PDVSA restrictions; secondary sanctions risk |
-| Narcotics Trafficking | 31 C.F.R. Part 598 | IEEPA; Narcotics Kingpin Act | SDN designations |
-| Terrorism (SDGT) | 31 C.F.R. Part 594 | IEEPA; E.O. 13224 | SDN designations; UN 1267 implementation |
+| Program                            | CFR Part           | Primary Statute                            | Key Prohibition                                                                   |
+| ---------------------------------- | ------------------ | ------------------------------------------ | --------------------------------------------------------------------------------- |
+| Russian Harmful Foreign Activities | 31 C.F.R. Part 578 | IEEPA; E.O. 14024                          | Asset freeze; all transactions with designated persons                            |
+| Ukraine-/Russia-Related            | 31 C.F.R. Part 589 | IEEPA; E.O.s 13660/13661/13662/13685/14065 | Geographic prohibition (occupied territories); SDN designations                   |
+| Iran                               | 31 C.F.R. Part 560 | IEEPA; ISA; CISADA                         | Near-comprehensive embargo; secondary sanctions on foreign persons in key sectors |
+| North Korea                        | 31 C.F.R. Part 510 | IEEPA; UNPA; CAATSA                        | Near-total embargo; secondary sanctions; maritime evasion highest-risk pattern    |
+| Cuba                               | 31 C.F.R. Part 515 | TWEA                                       | Comprehensive embargo (TWEA-based); broad general license exceptions              |
+| Syria                              | 31 C.F.R. Part 542 | IEEPA                                      | Comprehensive; reconstruction-sector GL available [VERIFY]                        |
+| Venezuela                          | 31 C.F.R. Part 591 | IEEPA; E.O.s 13808/13850/13884             | Government entity/PDVSA restrictions; secondary sanctions risk                    |
+| Narcotics Trafficking              | 31 C.F.R. Part 598 | IEEPA; Narcotics Kingpin Act               | SDN designations                                                                  |
+| Terrorism (SDGT)                   | 31 C.F.R. Part 594 | IEEPA; E.O. 13224                          | SDN designations; UN 1267 implementation                                          |
 
 [VERIFY all program citations against current OFAC publications — programs change]
 
 ### SSI Directives 1-4 (Russia Sectoral Sanctions)
 
-| Directive | Targeted Sector | Core Prohibition |
-|-----------|----------------|-----------------|
-| Directive 1 (amended) | Russian financial sector entities | New debt >14 days maturity; new equity; US person dealings with listed entities |
-| Directive 2 | Russian energy sector entities | New debt >60 days maturity |
-| Directive 3 | Russian defense/related materiel | New debt (any maturity); new equity transactions |
-| Directive 4 | Deep-water, Arctic offshore, shale projects | Goods, services, and technology for specific project types |
+| Directive             | Targeted Sector                             | Core Prohibition                                                                |
+| --------------------- | ------------------------------------------- | ------------------------------------------------------------------------------- |
+| Directive 1 (amended) | Russian financial sector entities           | New debt >14 days maturity; new equity; US person dealings with listed entities |
+| Directive 2           | Russian energy sector entities              | New debt >60 days maturity                                                      |
+| Directive 3           | Russian defense/related materiel            | New debt (any maturity); new equity transactions                                |
+| Directive 4           | Deep-water, Arctic offshore, shale projects | Goods, services, and technology for specific project types                      |
 
 [VERIFY current Directive lists and scope at ofac.treas.gov]
 
 ### CAATSA Secondary Sanctions Key Sections
 
-| Section | Target | Trigger |
-|---------|--------|---------|
+| Section     | Target                                                                                           | Trigger                                                                |
+| ----------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
 | Section 228 | Persons providing significant support to OFAC-designated persons under Iran/DPRK/Russia programs | "Significant" — facts-and-circumstances; no minimum publicly disclosed |
-| Section 231 | Persons conducting significant transactions with Russian defense/intelligence sector | Tier 1 (mandatory) / Tier 2 (discretionary); no bright-line threshold |
-| Section 232 | Persons investing in/providing goods-services for Russian energy export pipelines | >$1M single transaction or $5M aggregate in 12 months |
-| Section 233 | Foreign persons facilitating significant financial transaction for Russia energy sector SDN | Facts-and-circumstances; no bright-line threshold |
+| Section 231 | Persons conducting significant transactions with Russian defense/intelligence sector             | Tier 1 (mandatory) / Tier 2 (discretionary); no bright-line threshold  |
+| Section 232 | Persons investing in/providing goods-services for Russian energy export pipelines                | >$1M single transaction or $5M aggregate in 12 months                  |
+| Section 233 | Foreign persons facilitating significant financial transaction for Russia energy sector SDN      | Facts-and-circumstances; no bright-line threshold                      |
 
 ### OFAC Penalties (Reference)
 
-| Category | Benchmark |
-|----------|-----------|
-| Civil maximum (most IEEPA programs) | Up to $368,136 per count [VERIFY current inflation-adjusted figure] or 2× transaction value, whichever is greater |
-| Civil (certain IEEPA programs) | Statutory maximum up to $20M+ per violation under specific program provisions |
-| Criminal | Up to 20 years imprisonment + $1M per violation |
-| Egregious non-voluntary-disclosure reference | Binance (Nov. 2023): $968,618,825; 1,667,153 violations; 5-year external compliance monitor |
+| Category                                     | Benchmark                                                                                                         |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Civil maximum (most IEEPA programs)          | Up to $368,136 per count [VERIFY current inflation-adjusted figure] or 2× transaction value, whichever is greater |
+| Civil (certain IEEPA programs)               | Statutory maximum up to $20M+ per violation under specific program provisions                                     |
+| Criminal                                     | Up to 20 years imprisonment + $1M per violation                                                                   |
+| Egregious non-voluntary-disclosure reference | Binance (Nov. 2023): $968,618,825; 1,667,153 violations; 5-year external compliance monitor                       |
 
 ### BIS Penalties (Reference)
 
-| Category | Benchmark |
-|----------|-----------|
-| Administrative maximum | $374,474 per violation [VERIFY current inflation-adjusted figure as of Jan. 2025] or 2× transaction value |
-| Criminal (ECRA) | Up to 20 years imprisonment + $1M per violation |
-| Landmark settlements | Applied Materials (Feb. 2026): $252M — largest BIS administrative settlement; Seagate Technology (2023): ~$300M |
+| Category               | Benchmark                                                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Administrative maximum | $374,474 per violation [VERIFY current inflation-adjusted figure as of Jan. 2025] or 2× transaction value       |
+| Criminal (ECRA)        | Up to 20 years imprisonment + $1M per violation                                                                 |
+| Landmark settlements   | Applied Materials (Feb. 2026): $252M — largest BIS administrative settlement; Seagate Technology (2023): ~$300M |
 
 ### UK OFSI: Key Penalty Provisions (SI 2019/855; SAMLA 2018)
 
@@ -662,19 +691,20 @@ red flags present.
 
 Run these five gates silently before delivering any output. If any gate fails, revise before delivery.
 
-| Gate | Rule (Sanctions/Export Control Adapted) | Fail Action |
-|------|----------------------------------------|-------------|
-| **Source** | Every sanctions program citation must reference a specific OFAC program regulation (31 C.F.R. Part XXX), EU Council Regulation number, UK Statutory Instrument number, or UNSC Resolution number. Every EAR citation: 15 C.F.R. Part. Every ITAR citation: 22 C.F.R. Part 120-130. Do not cite "OFAC sanctions" without naming the specific program. | Add specific citation or mark "[UNVERIFIED — confirm program regulation with sanctions counsel]" |
-| **Format** | OFAC: "31 C.F.R. Part [XXX]". EAR: "15 C.F.R. Part [XXX]". ITAR: "22 C.F.R. Part [XXX]". EU: "Council Regulation (EU) No [XXX/YYYY]". UK: "SI [YYYY/NNNN]". License exceptions: cite full exception name and CFR section. | Fix format |
-| **Currency** | Sanctions programs change without predictable schedule. OFAC SDN list updates multiple times per week. Every program citation and list version must be flagged as potentially outdated if not verified against current official sources. Never state a party is "designated" without noting that live-list re-verification is required before transaction proceeds. | Flag "[VERIFY CURRENT STATUS — lists updated continuously]" |
-| **Domain** | Sanctions rules must not bleed across jurisdictions. OFAC clearance ≠ EU/UK clearance. OFAC general licenses do not apply to EU or UK transactions. ITAR and EAR are distinct regimes. Comprehensive program analysis (Iran, Cuba) must not be applied to targeted program analysis (Russia SSI) without qualification. | Flag and correct all jurisdiction bleed |
-| **Confidence** | Consequences of both false-positive BLOCKED (blocking a legitimate transaction) and false-negative BLOCKED (missing a genuine violation) are serious. Confidence must be explicit — a 75% match score is not CLEAR; a 50% match score is not BLOCKED. Uncertainty about ECCN classification must be stated and scored, not papered over with a default. | Assign explicit confidence score; recommend action proportionate to confidence level |
+| Gate           | Rule (Sanctions/Export Control Adapted)                                                                                                                                                                                                                                                                                                                             | Fail Action                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Source**     | Every sanctions program citation must reference a specific OFAC program regulation (31 C.F.R. Part XXX), EU Council Regulation number, UK Statutory Instrument number, or UNSC Resolution number. Every EAR citation: 15 C.F.R. Part. Every ITAR citation: 22 C.F.R. Part 120-130. Do not cite "OFAC sanctions" without naming the specific program.                | Add specific citation or mark "[UNVERIFIED — confirm program regulation with sanctions counsel]" |
+| **Format**     | OFAC: "31 C.F.R. Part [XXX]". EAR: "15 C.F.R. Part [XXX]". ITAR: "22 C.F.R. Part [XXX]". EU: "Council Regulation (EU) No [XXX/YYYY]". UK: "SI [YYYY/NNNN]". License exceptions: cite full exception name and CFR section.                                                                                                                                           | Fix format                                                                                       |
+| **Currency**   | Sanctions programs change without predictable schedule. OFAC SDN list updates multiple times per week. Every program citation and list version must be flagged as potentially outdated if not verified against current official sources. Never state a party is "designated" without noting that live-list re-verification is required before transaction proceeds. | Flag "[VERIFY CURRENT STATUS — lists updated continuously]"                                      |
+| **Domain**     | Sanctions rules must not bleed across jurisdictions. OFAC clearance ≠ EU/UK clearance. OFAC general licenses do not apply to EU or UK transactions. ITAR and EAR are distinct regimes. Comprehensive program analysis (Iran, Cuba) must not be applied to targeted program analysis (Russia SSI) without qualification.                                             | Flag and correct all jurisdiction bleed                                                          |
+| **Confidence** | Consequences of both false-positive BLOCKED (blocking a legitimate transaction) and false-negative BLOCKED (missing a genuine violation) are serious. Confidence must be explicit — a 75% match score is not CLEAR; a 50% match score is not BLOCKED. Uncertainty about ECCN classification must be stated and scored, not papered over with a default.             | Assign explicit confidence score; recommend action proportionate to confidence level             |
 
 ### Self-Interrogation for TIER 1 and TIER 2 Findings
 
 For any finding classified at TIER 1 (BLOCKED) or TIER 2 (HIGH RISK), apply this mandatory 3-pass review before finalizing.
 
 **Pass 1 — Match Quality Chain**
+
 - Is the classification based on a confirmed list match or a potential match requiring adjudication?
 - Has the full set of identifying information been compared? (Name, DOB, nationality, country, registration number, address — not just name alone)
 - Have transliteration variants, aliases, and alternative spellings been searched?
@@ -683,6 +713,7 @@ For any finding classified at TIER 1 (BLOCKED) or TIER 2 (HIGH RISK), apply this
 - Could this be a common-name false positive? What corroborating identifiers are available?
 
 **Pass 2 — Regulatory Authorization Path**
+
 - Is there an applicable OFAC general license that would permit this transaction despite the match? [VERIFY current GLs for the applicable program — review ofac.treas.gov before finalizing BLOCKED status]
 - Is there an available EAR license exception under 15 C.F.R. Part 740?
 - Does a humanitarian exception, NGO exception, or personal remittance exception apply?
@@ -690,6 +721,7 @@ For any finding classified at TIER 1 (BLOCKED) or TIER 2 (HIGH RISK), apply this
 - Is there a specific OFAC license, BIS license application, or DDTC authorization that could authorize the transaction?
 
 **Pass 3 — Consequence Proportionality**
+
 - Is a TIER 1/TIER 2 determination proportionate to the quality of the match and the available evidence?
 - What is the cost of a false positive (blocking a legitimate transaction) versus a false negative (missing a genuine violation)?
 - Under what circumstances would a qualified sanctions attorney reviewing the same screen reach a different conclusion?
@@ -701,23 +733,23 @@ If any pass reveals a weakness in the TIER 1/TIER 2 classification, revise to TI
 
 **Scale A: Match Confidence** (Is this party actually the listed person/entity?)
 
-| Level | Score | Meaning | Required Action |
-|-------|-------|---------|----------------|
-| **Definite Match** | 0.95-1.0 | Exact name + ≥2 corroborating identifiers (DOB, country, registration number, address) | TIER 1 — BLOCKED |
-| **High Confidence** | 0.80-0.94 | Strong name match + ≥1 corroborating identifier, or exact match with no identifiers available on either side | TIER 2 — Escalate before processing |
-| **Possible Match** | 0.60-0.79 | Plausible name similarity; identifiers missing or ambiguous | TIER 3 — Hold; obtain additional identifiers |
-| **Low Probability** | 0.40-0.59 | Name similarity but significant distinguishing identifiers that do not match | TIER 4 — Document; compliance officer review; may proceed |
-| **False Positive** | 0.0-0.39 | Incidental name similarity; sufficient distinguishing identifiers confirm this is NOT the listed party | TIER 5 — Document false positive reasoning; proceed |
+| Level               | Score     | Meaning                                                                                                      | Required Action                                           |
+| ------------------- | --------- | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| **Definite Match**  | 0.95-1.0  | Exact name + ≥2 corroborating identifiers (DOB, country, registration number, address)                       | TIER 1 — BLOCKED                                          |
+| **High Confidence** | 0.80-0.94 | Strong name match + ≥1 corroborating identifier, or exact match with no identifiers available on either side | TIER 2 — Escalate before processing                       |
+| **Possible Match**  | 0.60-0.79 | Plausible name similarity; identifiers missing or ambiguous                                                  | TIER 3 — Hold; obtain additional identifiers              |
+| **Low Probability** | 0.40-0.59 | Name similarity but significant distinguishing identifiers that do not match                                 | TIER 4 — Document; compliance officer review; may proceed |
+| **False Positive**  | 0.0-0.39  | Incidental name similarity; sufficient distinguishing identifiers confirm this is NOT the listed party       | TIER 5 — Document false positive reasoning; proceed       |
 
 **Scale B: Export Classification Confidence** (Is this item controlled as classified?)
 
-| Level | Score | Meaning | Action |
-|-------|-------|---------|--------|
-| **Confirmed** | 0.90-1.0 | BIS Commodity Jurisdiction ruling or manufacturer's binding classification with supporting technical documentation | Use confirmed ECCN for license determination |
-| **Probable** | 0.70-0.89 | Self-classified by compliance/legal team based on CCL review with documented technical analysis | Use; flag [SELF-CLASSIFIED]; periodic review |
-| **Uncertain** | 0.50-0.69 | Classification disputed or ambiguous; item could fall under multiple ECCNs or under ITAR | Do not export until confirmed; consider BIS CJ ruling request |
-| **EAR99 by Elimination** | 0.40-0.69 | Appears EAR99 based on CCL review but no positive determination obtained | Acceptable for low-risk destinations; for sensitive destinations or end users, obtain positive confirmation |
-| **Unclassified** | 0.0-0.39 | No classification analysis has been conducted | Do not export without classification determination |
+| Level                    | Score     | Meaning                                                                                                            | Action                                                                                                      |
+| ------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| **Confirmed**            | 0.90-1.0  | BIS Commodity Jurisdiction ruling or manufacturer's binding classification with supporting technical documentation | Use confirmed ECCN for license determination                                                                |
+| **Probable**             | 0.70-0.89 | Self-classified by compliance/legal team based on CCL review with documented technical analysis                    | Use; flag [SELF-CLASSIFIED]; periodic review                                                                |
+| **Uncertain**            | 0.50-0.69 | Classification disputed or ambiguous; item could fall under multiple ECCNs or under ITAR                           | Do not export until confirmed; consider BIS CJ ruling request                                               |
+| **EAR99 by Elimination** | 0.40-0.69 | Appears EAR99 based on CCL review but no positive determination obtained                                           | Acceptable for low-risk destinations; for sensitive destinations or end users, obtain positive confirmation |
+| **Unclassified**         | 0.0-0.39  | No classification analysis has been conducted                                                                      | Do not export without classification determination                                                          |
 
 ### Four Additional Quality Gates Unique to Sanctions Screening
 
@@ -730,8 +762,9 @@ Every screening result has a defined validity period. A screen conducted more th
 Every list consulted must be logged with its publication date. If the screening is based on training-data list knowledge rather than live list access, flag prominently:
 
 > "[LIST VERSION ALERT — OFAC SDN list updates multiple times per week; EU and UK lists
-> update frequently. Re-screen against current live list versions at ofac.treas.gov,
-> eur-lex.europa.eu, and hmtreasury.gov.uk/ofsi before finalizing any determination.]"
+>
+> > update frequently. Re-screen against current live list versions at ofac.treas.gov,
+> > eur-lex.europa.eu, and hmtreasury.gov.uk/ofsi before finalizing any determination.]"
 
 **Program Scope Verification Gate**
 
@@ -803,6 +836,7 @@ Before delivering any screening report:
 ## External Tool Integration
 
 **With legalcode-mcp connected (preferred):**
+
 - In Step 4, verify current OFAC program regulations, EU Council Regulation texts, and applicable UNSC Resolutions
 - In Step 6, verify current EAR Country Chart status, applicable ECCN controls, and recent BIS rulemakings (especially Russia/Belarus enhanced controls)
 - Search for recent enforcement actions involving similar transaction types, industries, or counterparty jurisdictions to calibrate risk
@@ -810,6 +844,7 @@ Before delivering any screening report:
 - Mark all legalcode-mcp-sourced citations as VERIFIED in the Glass Box audit trail
 
 **Without legalcode-mcp:**
+
 - Mark all regulatory citations [VERIFY] — particularly CFR part numbers, EU Regulation numbers, and UK SI numbers
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Emphasize live list verification against official sources: ofac.treas.gov, bis.doc.gov, ddtc.state.gov, eur-lex.europa.eu, hmtreasury.gov.uk/ofsi, un.org/securitycouncil/sanctions/un-sc-consolidated-list
@@ -1010,14 +1045,33 @@ glass_box:
   report_id: "[Unique identifier]"
   legalcode_mcp: "[Connected — citations verified / Not connected — [VERIFY] tags applied throughout]"
 
-  applicable_programs: ["OFAC", "EU", "UK OFSI", "UN", "EAR", "ITAR"]  # list applicable only
+  applicable_programs: ["OFAC", "EU", "UK OFSI", "UN", "EAR", "ITAR"] # list applicable only
 
   parties_screened:
     - name: "[Name as submitted]"
       role: "[Counterparty / Intermediary / End User / Vessel / etc.]"
-      variants_searched: ["[variant 1]", "[variant 2 — transliteration]", "[alias]"]
-      lists_consulted: ["OFAC SDN", "OFAC Consolidated", "EU", "UK OFSI", "UN", "BIS EL", "BIS DPL", "BIS UVL", "DDTC"]
-      list_versions: {ofac_sdn: "[date — VERIFY]", eu: "[date — VERIFY]", uk_ofsi: "[date — VERIFY]", un: "[date — VERIFY]", bis_el: "[date — VERIFY]"}
+      variants_searched:
+        ["[variant 1]", "[variant 2 — transliteration]", "[alias]"]
+      lists_consulted:
+        [
+          "OFAC SDN",
+          "OFAC Consolidated",
+          "EU",
+          "UK OFSI",
+          "UN",
+          "BIS EL",
+          "BIS DPL",
+          "BIS UVL",
+          "DDTC",
+        ]
+      list_versions:
+        {
+          ofac_sdn: "[date — VERIFY]",
+          eu: "[date — VERIFY]",
+          uk_ofsi: "[date — VERIFY]",
+          un: "[date — VERIFY]",
+          bis_el: "[date — VERIFY]",
+        }
       match_result: "[NO MATCH / POTENTIAL / CONFIRMED / 50% RULE CONCERN]"
       match_confidence_scale_a: "[0.XX or null]"
       fifty_percent_rule:

@@ -13,13 +13,13 @@ response and resolution targets).
 
 ## Documents
 
-| File | Document Type | Use when |
-|------|--------------|----------|
-| `core.md` | Jurisdiction-neutral baseline (dual-perspective: customer / vendor / market-standard) | You operate in a jurisdiction not covered below, or you want the master before specialising. |
-| `us.md` | US — state breach-notification + insurance defaults + arbitration | Either party is US-based; covers state-by-state breach notification timing influencing incident SLAs. |
-| `eu.md` | EU/EEA — DORA + NIS2 + Cyber Resilience Act + Data Act incident reporting | Either party is EU/EEA-based. Includes German overlay (BfDI / BSI-KritisV cross-references). |
-| `uk.md` | UK — NIS Regulations 2018 + NCSC Cyber Essentials + DUAA 2025 | Either party is UK-based. |
-| `is.md` | Iceland — Persónuvernd 72-hour breach SLA + EEA-imported NIS2/DORA | Either party is Iceland-based. |
+| File      | Document Type                                                                         | Use when                                                                                              |
+| --------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `core.md` | Jurisdiction-neutral baseline (dual-perspective: customer / vendor / market-standard) | You operate in a jurisdiction not covered below, or you want the master before specialising.          |
+| `us.md`   | US — state breach-notification + insurance defaults + arbitration                     | Either party is US-based; covers state-by-state breach notification timing influencing incident SLAs. |
+| `eu.md`   | EU/EEA — DORA + NIS2 + Cyber Resilience Act + Data Act incident reporting             | Either party is EU/EEA-based. Includes German overlay (BfDI / BSI-KritisV cross-references).          |
+| `uk.md`   | UK — NIS Regulations 2018 + NCSC Cyber Essentials + DUAA 2025                         | Either party is UK-based.                                                                             |
+| `is.md`   | Iceland — Persónuvernd 72-hour breach SLA + EEA-imported NIS2/DORA                    | Either party is Iceland-based.                                                                        |
 
 ## How to use
 

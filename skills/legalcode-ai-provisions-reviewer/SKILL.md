@@ -40,6 +40,7 @@ governance coverage, classifies deviations by severity, generates actionable red
 produces a confidence-scored, auditable analysis.
 
 **Covers:**
+
 - IP ownership of AI-generated outputs and AI-assisted work product
 - AI usage restrictions, acceptable-use policies, and tool prohibitions
 - Training data rights: using inputs, outputs, or data to train, fine-tune, or improve AI models
@@ -53,6 +54,7 @@ produces a confidence-scored, auditable analysis.
 - Missing AI governance terms: flagging contracts that are silent on AI entirely
 
 **Does not:**
+
 - Draft new AI contracts (use a drafting-specific skill)
 - Provide legal advice or replace qualified counsel
 - Apply exclusively to one jurisdiction — jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers
@@ -120,6 +122,7 @@ user can correct it.
 ### Step 1: Accept the Contract
 
 Accept the contract in any of these formats:
+
 - **File**: PDF, DOCX, or other document format
 - **URL**: Link to a contract in a CLM, cloud storage, or document system
 - **Pasted text**: Contract text pasted directly into the conversation
@@ -134,7 +137,7 @@ If no contract is provided, prompt the user to supply one.
 1. **Which side are you on?**
    - Options: AI Vendor/Provider, Customer/Buyer/Deployer, Employer (AI used internally),
      Employee (reviewing AI-related employment terms), Partner, Other
-   - *Why this matters*: The analysis reverses depending on which party bears the AI governance
+   - _Why this matters_: The analysis reverses depending on which party bears the AI governance
      obligations and which party benefits from AI usage restrictions.
 
 2. **What AI is involved in this contract?** (Select all that apply)
@@ -142,7 +145,7 @@ If no contract is provided, prompt the user to supply one.
      Automated employment decisions (hiring, performance, termination), AI in professional
      services delivery, AI in regulated sectors (healthcare, finance, legal), General/unclear AI use
    - Allow multiple selections.
-   - *Why this matters*: Generative AI triggers IP ownership and training data concerns;
+   - _Why this matters_: Generative AI triggers IP ownership and training data concerns;
      decision-making AI triggers transparency, bias, and human oversight requirements;
      regulated-sector AI triggers heightened compliance obligations.
 
@@ -151,23 +154,24 @@ If no contract is provided, prompt the user to supply one.
      (personal data processed), US employment AI laws (Colorado, NYC, Illinois), All of the
      above, Uncertain — help me assess, None obvious
    - Allow multiple.
-   - *Why this matters*: Determines which mandatory compliance requirements are non-negotiable
+   - _Why this matters_: Determines which mandatory compliance requirements are non-negotiable
      versus aspirational.
 
 4. **What is the deal context?**
    - Free text. Prompt with examples: procurement of AI-enabled software, engaging a
      professional services firm that uses AI tools, deploying AI for internal HR decisions,
      AI-generated deliverables under a services contract, joint AI development.
-   - *Why this matters*: Shapes which AI provision categories are most material for this deal.
+   - _Why this matters_: Shapes which AI provision categories are most material for this deal.
 
 5. **Does an AI addendum, schedule, or policy exist?**
    - Options: Yes (attach it), No, Unclear
-   - *Why this matters*: Many counterparties now incorporate AI usage policies or addenda by
+   - _Why this matters_: Many counterparties now incorporate AI usage policies or addenda by
      reference. Reviewing only the main agreement may miss critical AI terms.
 
 ### Step 3: Identify Governing Law and Regulatory Scope
 
 Read the contract's governing law clause and identify:
+
 1. **Governing jurisdiction(s)** — note if multiple schedules reference different laws
 2. **Applicable AI regulatory regime** — EU AI Act, US state laws, UK principles-based regime, etc.
 3. **Data protection regime** — GDPR, UK GDPR, CCPA/CPRA, etc. (relevant to AI personal data processing)
@@ -182,6 +186,7 @@ Use **legalcode-mcp** to gather current legal authority for the identified juris
 before analyzing AI provisions.
 
 **Search for:**
+
 - AI Act provisions applicable to the contract's AI use case (risk tier, obligations)
 - Current GDPR/UK GDPR guidance on automated decision-making and AI data processing
 - Applicable national/state AI laws (Colorado SB 205, NYC LL144, etc.)
@@ -191,6 +196,7 @@ before analyzing AI provisions.
 Save results to `/tmp/legalcode-ai-provisions-authority.md`.
 
 **If legalcode-mcp is not connected:**
+
 - Mark all statutory and case law references with [VERIFY]
 - Note in Glass Box: `legalcode_mcp: "Not connected — manual verification required"`
 - Proceed using general knowledge; flag that legal authority has not been independently verified
@@ -210,6 +216,7 @@ decisions", "intelligent automation", "computer-generated", "system-generated ou
 **⟁ CLARIFY** — If the contract is entirely silent on AI but the deal clearly involves AI
 systems (e.g., the software being procured is AI-enabled), flag this as a potential
 [AI-GOVERNANCE-GAP] and ask:
+
 - "This contract appears silent on AI. Given the AI-enabled nature of this service, should
   I review what AI governance provisions are missing?"
 
@@ -220,6 +227,7 @@ For each area, assess: (a) whether the contract addresses it, (b) if addressed, 
 deviates from standard positions, and (c) if absent, whether the gap is material.
 
 **⟁ CLARIFY** — For contracts with no AI-specific provisions at all, ask before classifying:
+
 - "This contract has no AI-specific provisions. Given the deal context, should I assess
   only what is missing (gap analysis), or also analyze whether general IP/liability/data
   clauses adequately cover AI scenarios without amendment?"
@@ -228,6 +236,7 @@ deviates from standard positions, and (c) if absent, whether the gap is material
 
 Classify each AI governance finding using the severity system in **AI Governance Severity
 Classification** below:
+
 - **GREEN**: Adequate AI governance provision present
 - **YELLOW**: Present but insufficient, one-sided, or below market standard — negotiate
 - **RED**: Material AI governance risk, likely void/non-compliant provision, or creates
@@ -244,12 +253,14 @@ For each YELLOW and RED finding, generate a specific redline using the **Redline
 below. For each [AI-GOVERNANCE-GAP], provide draft language to insert.
 
 **⟁ CLARIFY** — Before generating redlines:
+
 - "I've found [N] AI governance issues. Should I generate redlines for all, or focus on
   Tier 1 (must-resolve) and Tier 2 (strong preference) items only?"
 
 ### Step 9: AI Governance Summary
 
 Produce an overall AI governance assessment covering:
+
 - **AI governance maturity score**: Proportion of applicable AI governance areas addressed
 - **Top 3 AI risks**: Most critical issues with severity and recommended action
 - **Regulatory compliance gaps**: Any non-negotiable regulatory requirements missing
@@ -258,6 +269,7 @@ Produce an overall AI governance assessment covering:
 ### Step 10: Quality Verification
 
 Before delivering:
+
 1. Run the 5 Citation Quality Gates silently — revise failures before delivery
 2. For every RED or [AI-GOVERNANCE-GAP] item, run the 3-pass Self-Interrogation
 3. Assign Confidence Scores to each material AI provision analysis
@@ -271,6 +283,7 @@ Before delivering:
 ### 1. IP Ownership of AI-Generated Outputs
 
 **Key elements to review:**
+
 - Whether the contract addresses ownership of AI-generated works, outputs, or deliverables
 - Which party retains IP rights in works created using AI tools
 - Whether "work-for-hire" or assignment provisions contemplate AI-assisted creation
@@ -279,6 +292,7 @@ Before delivering:
   third-party rights (open-weight model licenses, training data copyright claims)
 
 **Common issues:**
+
 - Contract assigns all deliverables as "work-for-hire" or by assignment without addressing
   that AI-generated content may not qualify for copyright protection [JURISDICTION-SPECIFIC]
 - Vendor retains broad background IP rights that could encompass AI-generated outputs
@@ -289,12 +303,14 @@ Before delivering:
 - "Human authorship" assumption in IP clauses that may not hold for AI-heavy workflows
 
 **Standard positions:**
+
 - Customer/deployer: Explicit assignment or exclusive license of all AI-generated work
   product; representation that deliverables do not infringe third-party rights
 - AI vendor: AI outputs provided "as-is" for IP purposes; no warranty that AI outputs
   are copyrightable; ownership of underlying model and training data
 
 **[JURISDICTION-SPECIFIC] Key variations:**
+
 - **US**: US Copyright Office policy (January 2025 AI Copyright Study Part 2): prompts
   alone do not confer copyright; human-perceptible authorship must survive the AI process;
   AI-only outputs are not copyrightable. Work-for-hire categories in 17 U.S.C. §101 do
@@ -312,6 +328,7 @@ Before delivering:
 ### 2. AI Usage Restrictions and Acceptable-Use Policies
 
 **Key elements to review:**
+
 - Whether the contract restricts or prohibits the use of AI tools in performing services
 - Whether specific AI tools or categories are named or prohibited
 - Acceptable-use policies incorporated by reference (are they current and accessible?)
@@ -319,6 +336,7 @@ Before delivering:
 - Whether AI tool restrictions apply to subcontractors and employees
 
 **Common issues:**
+
 - Blanket prohibition on AI use incorporated by reference to a policy not provided or
   that can be unilaterally updated by one party
 - AI restrictions that would make the contract unperformable given the service provider's
@@ -329,6 +347,7 @@ Before delivering:
 - No definition of what constitutes "AI use" (ambiguous scope)
 
 **Standard positions:**
+
 - Customer/deployer: Right to approve AI tools used in service delivery; transparency
   about AI use in deliverables; prohibition on using proprietary data as training material
 - Service provider: Ability to use market-standard AI tools as productivity aids; carve-out
@@ -339,6 +358,7 @@ Before delivering:
 ### 3. Training Data Rights
 
 **Key elements to review:**
+
 - Whether the vendor can use customer inputs, outputs, or data to train, fine-tune,
   improve, or evaluate AI models
 - Whether there is an opt-out mechanism for AI training
@@ -348,6 +368,7 @@ Before delivering:
 - Whether restrictions apply to foundation model training vs. customer-specific fine-tuning
 
 **Common issues:**
+
 - Broad "product improvement" or "service improvement" license that implicitly permits
   AI training without explicit disclosure
 - Opt-out buried in privacy settings or acceptable-use policy rather than in the contract
@@ -360,6 +381,7 @@ Before delivering:
   royalty-free license — effectively enabling training on any customer content
 
 **Standard positions:**
+
 - Customer: Explicit prohibition on using customer data (inputs, outputs, metadata) to
   train AI models without written consent; opt-in rather than opt-out; extends to all
   sub-processors and model providers
@@ -367,6 +389,7 @@ Before delivering:
   fine-tuning requires separate agreement and customer controls
 
 **[JURISDICTION-SPECIFIC] Key variations:**
+
 - **EU**: GDPR Art. 6 legal basis required for AI training on personal data; purpose
   limitation principle limits repurposing; EU AI Act Art. 10 data governance requirements
   for high-risk AI training datasets. [VERIFY currency]
@@ -381,6 +404,7 @@ Before delivering:
 ### 4. Liability for AI Errors and Hallucinations
 
 **Key elements to review:**
+
 - Whether liability for AI-generated errors (hallucinations, inaccuracies, outdated
   information) is addressed
 - Whether AI error liability is capped at a lower level than other liability
@@ -389,6 +413,7 @@ Before delivering:
 - Whether the contract allocates liability for decisions made in reliance on AI outputs
 
 **Common issues:**
+
 - Broad disclaimer for AI outputs ("results provided as-is, no warranty of accuracy")
   that eliminates the vendor's responsibility for foreseeable AI failures in high-stakes contexts
 - No allocation of liability for consequential damages arising from AI hallucinations in
@@ -402,6 +427,7 @@ Before delivering:
   service delivery model (human rubber-stamp without genuine review)
 
 **Standard positions:**
+
 - Customer: Vendor liable for AI errors in proportion to reliance foreseen at contract
   formation; professional indemnity covers AI-assisted professional services; AI error
   damages carved out of overall liability cap for regulated-sector use cases
@@ -409,6 +435,7 @@ Before delivering:
   customer decisions made without following vendor's prescribed review process
 
 **[JURISDICTION-SPECIFIC] Key variations:**
+
 - **EU**: EU AI Act Art. 22 and Annex III high-risk AI systems require human oversight
   before consequential decisions; Product Liability Directive 2024/2853 (in force Nov 2024,
   transposition Dec 2026) extends product liability to AI systems and software. [VERIFY]
@@ -423,6 +450,7 @@ Before delivering:
 ### 5. Transparency and Explainability Requirements
 
 **Key elements to review:**
+
 - Whether the contract requires disclosure that AI is being used
 - Whether the customer has the right to explanations of AI outputs or decisions
 - Whether explainability requirements apply to automated decisions affecting individuals
@@ -431,6 +459,7 @@ Before delivering:
 - Whether AI-generated content must be labeled or disclosed to end users
 
 **Common issues:**
+
 - No disclosure obligation for AI use in service delivery (customer receives AI-generated
   deliverables without knowing)
 - Explainability requirements limited to "meaningful information" without specifying what
@@ -443,6 +472,7 @@ Before delivering:
 - No update obligation when AI model is changed, retrained, or replaced
 
 **Standard positions:**
+
 - Customer: Right to know AI is being used; right to explanation of AI outputs used in
   decisions affecting the customer or its users; annual AI system disclosure; right to
   object to AI-only decisions on significant matters
@@ -450,6 +480,7 @@ Before delivering:
   system-level explanations rather than per-decision mechanistic explanations
 
 **[JURISDICTION-SPECIFIC] Key variations:**
+
 - **EU (GDPR Art. 22)**: Right not to be subject to solely automated decisions producing
   significant legal or similarly significant effects; right to explanation and human review.
   [VERIFY]
@@ -466,6 +497,7 @@ Before delivering:
 ### 6. Bias Monitoring and Disparate Impact Obligations
 
 **Key elements to review:**
+
 - Whether the contract requires the AI vendor to conduct bias audits or assessments
 - Whether disparate impact or discriminatory outcomes from AI are addressed
 - Whether bias testing results are disclosed to the customer
@@ -473,6 +505,7 @@ Before delivering:
 - Whether anti-discrimination representations extend to AI-driven decisions
 
 **Common issues:**
+
 - Anti-discrimination representations and warranties do not contemplate AI-driven
   discrimination (clause drafted for human decision-making only)
 - No contractual basis for demanding bias audit results from AI vendor
@@ -482,6 +515,7 @@ Before delivering:
   caused by the vendor's AI system
 
 **Standard positions:**
+
 - Customer: Annual independent bias audit using methodology at least equivalent to NYC LL
   144 standard; bias audit results disclosed to customer; remediation plan required if
   audit reveals material disparate impact; vendor liable for regulatory fines resulting
@@ -491,6 +525,7 @@ Before delivering:
   specific deployment
 
 **[JURISDICTION-SPECIFIC] Key variations:**
+
 - **US — NYC Local Law 144** (effective July 2023): Employers and employment agencies
   using AEDTs for NYC hiring/promotion decisions must conduct annual independent bias
   audits and publish results. [VERIFY currency]
@@ -508,6 +543,7 @@ Before delivering:
 ### 7. Human Oversight and Human-in-the-Loop Requirements
 
 **Key elements to review:**
+
 - Whether the contract requires human review or approval of AI outputs before they are
   acted upon or delivered
 - Whether human oversight obligations are specific and measurable or aspirational
@@ -518,6 +554,7 @@ Before delivering:
 - Whether human oversight requirements can be waived by the customer
 
 **Common issues:**
+
 - Human oversight provision is aspirational ("vendor will use reasonable efforts to ensure
   human review") rather than a binding obligation
 - Human oversight requirement satisfied by a cursory review process that does not
@@ -528,6 +565,7 @@ Before delivering:
 - No override or escalation mechanism when human reviewer disagrees with AI output
 
 **Standard positions:**
+
 - Customer: Human review required before any AI output is used in a consequential decision
   or delivered to an end user; human reviewer must have access to sufficient context to
   exercise genuine oversight; customer retains right to override AI output in all cases
@@ -536,6 +574,7 @@ Before delivering:
   customer's failure to implement prescribed oversight process
 
 **[JURISDICTION-SPECIFIC] Key variations:**
+
 - **EU AI Act Art. 14**: Deployers of high-risk AI must ensure oversight by competent
   natural persons able to: understand the system's capabilities and limitations, monitor
   for anomalies, intervene and override, and not excessively rely on the system. [VERIFY]
@@ -549,6 +588,7 @@ Before delivering:
 ### 8. AI Governance: Responsible AI, Incident Reporting, and Model Cards
 
 **Key elements to review:**
+
 - Whether the vendor has a published Responsible AI policy incorporated into the contract
 - Whether AI incident reporting obligations are defined (what constitutes an "AI incident,"
   reporting timeline, notification obligations)
@@ -558,6 +598,7 @@ Before delivering:
 - Whether there are AI ethical standards or principles by reference
 
 **Common issues:**
+
 - Responsible AI policy incorporated by reference but vendor can unilaterally amend it
   without notice
 - No definition of "AI incident" — in practice, this means vendor determines unilaterally
@@ -568,6 +609,7 @@ Before delivering:
 - No right to audit compliance with stated Responsible AI commitments
 
 **Standard positions:**
+
 - Customer: Contractual incorporation of vendor's Responsible AI policy with material
   amendment notification rights; defined AI incident reporting (48-72 hours for material
   incidents); model card or equivalent provided and kept current; annual AI governance
@@ -580,6 +622,7 @@ Before delivering:
 ### 9. Data Protection Overlays for AI Processing
 
 **Key elements to review:**
+
 - Whether the contract and DPA address AI-specific data processing risks
 - Whether automated decision-making using personal data is covered by GDPR Art. 22
   or equivalent national provisions
@@ -590,6 +633,7 @@ Before delivering:
 - Whether GDPR Art. 25 (privacy by design) standards are applied to AI system design
 
 **Common issues:**
+
 - DPA addresses data processing generally but omits AI-specific obligations (no mention of
   automated decision-making rights, no DPIA trigger for high-risk AI)
 - AI-generated inferences (e.g., sentiment scores, credit risk predictions) not classified
@@ -600,6 +644,7 @@ Before delivering:
 - No right to object to automated profiling under GDPR Art. 21 built into the service
 
 **Standard positions:**
+
 - Customer: Vendor must support DPIA requirements; GDPR Art. 22 rights explicitly
   preserved; no automated decisions on special category data without explicit consent or
   legal basis; vendor provides privacy impact information for AI system components
@@ -616,6 +661,7 @@ DPIA-equivalent requirements. [VERIFY applicable regime]**
 ### 10. Vendor AI Supply Chain: Sub-Processors and Model Dependencies
 
 **Key elements to review:**
+
 - Whether the contract discloses the AI models and providers used in service delivery
 - Whether sub-processor AI usage is subject to the same restrictions as the primary vendor
 - Whether the customer has approval rights over material changes to the AI models used
@@ -625,6 +671,7 @@ DPIA-equivalent requirements. [VERIFY applicable regime]**
   model portability, migration assistance)
 
 **Common issues:**
+
 - AI vendor uses GPT-4, Claude, Gemini, or other third-party foundation models but the
   customer contract imposes training data restrictions only on the vendor (not flowing
   down to model providers)
@@ -637,6 +684,7 @@ DPIA-equivalent requirements. [VERIFY applicable regime]**
   not portable on termination
 
 **Standard positions:**
+
 - Customer: Full disclosure of AI model providers used in service delivery; flow-down of
   training data restrictions to all sub-processors; notification (30 days) before material
   change to AI model used in service delivery; data portability on termination includes
@@ -650,6 +698,7 @@ DPIA-equivalent requirements. [VERIFY applicable regime]**
 ### 11. AI in Employment and HR Decisions
 
 **Key elements to review:**
+
 - Whether AI is used in any employment decisions covered by the contract (hiring, screening,
   performance assessment, compensation, termination)
 - Whether AI employment decision obligations (bias audit, notice, explanation) are met
@@ -657,6 +706,7 @@ DPIA-equivalent requirements. [VERIFY applicable regime]**
 - Whether the employer/HR platform vendor has allocated regulatory compliance obligations
 
 **Common issues:**
+
 - SaaS HR platform uses AI for candidate screening or performance analytics without
   disclosing applicable bias audit obligations to the employer-customer
 - Contract is silent on NYC Local Law 144 compliance obligations despite the customer's
@@ -667,6 +717,7 @@ DPIA-equivalent requirements. [VERIFY applicable regime]**
   AEDT implications
 
 **[JURISDICTION-SPECIFIC] Key variations:**
+
 - **US — NYC Local Law 144** (effective July 2023): Annual bias audit; public notice on
   job posting that AEDT is used; notify NYC candidates/employees at least 10 business days
   before use; accommodation request right. [VERIFY currency]
@@ -687,6 +738,7 @@ When the contract is silent on AI, evaluate whether the absence creates material
 given the deal context.
 
 **Always material gaps (flag as [AI-GOVERNANCE-GAP]):**
+
 - No IP ownership provision when AI-generated content is a core deliverable
 - No training data restriction when personal data or trade secrets will be processed
 - No bias audit obligation when AI is used in regulated employment or credit decisions
@@ -694,6 +746,7 @@ given the deal context.
 - No liability allocation for AI errors when AI outputs are used in high-stakes decisions
 
 **Context-dependent gaps (assess based on deal context):**
+
 - No AI disclosure obligation (material if customer or their end users do not know AI is used)
 - No model change notification (material if specific AI model performance was a procurement factor)
 - No human oversight requirement (material if AI used for professional advice delivery)
@@ -718,6 +771,7 @@ can be unilaterally modified by one party, or falls below market standard for th
 type without reaching an unacceptable risk level.
 
 **Examples:**
+
 - Training data opt-out exists but is buried in privacy settings rather than in the contract
 - Bias audit obligation present but no disclosure of results to customer
 - Human oversight required but no definition of what constitutes genuine oversight
@@ -733,6 +787,7 @@ regulatory exposure, or unacceptable business harm. Requires senior counsel revi
 deal escalation.
 
 **Examples:**
+
 - Vendor retains unlimited right to use customer data (including personal data) to train AI models
 - No limitation of liability carve-out for AI errors in regulated-sector high-stakes decisions
 - AI-generated professional deliverables warranted as original human work product
@@ -749,6 +804,7 @@ absent from the contract. Not a matter of negotiating better terms — the provi
 be added before execution.
 
 **Examples:**
+
 - Contract silent on IP ownership of AI-generated deliverables when AI content is the
   core service output
 - No training data restriction despite sensitive personal data and trade secrets being
@@ -785,6 +841,7 @@ For each AI governance redline:
 ### Tier 1 — Must Resolve Before Signature
 
 AI governance issues where execution without resolution is unacceptable:
+
 - Missing or fatally deficient training data restriction for personal data or trade secrets
 - Missing IP ownership provision when AI-generated deliverables are the core subject matter
 - Regulatory compliance gap: missing bias audit for NYC LL144-covered employment AI;
@@ -795,6 +852,7 @@ AI governance issues where execution without resolution is unacceptable:
 ### Tier 2 — Prioritize in Negotiation
 
 AI governance issues that materially affect risk but have room to negotiate:
+
 - AI incident reporting timeline and scope
 - Bias audit disclosure — aggregate results vs. granular disclosure
 - Human oversight requirement specificity
@@ -805,6 +863,7 @@ AI governance issues that materially affect risk but have room to negotiate:
 ### Tier 3 — Concede Under Pressure
 
 AI governance issues that improve the position but can be strategically conceded:
+
 - Specific AI tool disclosure (vs. category-level disclosure)
 - System card or model card update frequency
 - Annual AI governance attestation format
@@ -822,13 +881,13 @@ Never concede on Tier 1 without escalation and documented decision-maker sign-of
 Run these 5 gates silently before delivering any output. If any gate fails, revise before
 delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, regulation, or established AI governance principle | Add citation or mark [VERIFY] |
-| **Format** | All citations follow a consistent, recognizable format for the jurisdiction | Fix format |
-| **Currency** | Every cited AI law/regulation checked for amendments, repeal, or implementation stage — AI regulation is changing rapidly | Flag [CHECK CURRENCY — AI law evolves fast] |
-| **Domain** | Analysis stays within the contract's governing law scope — no AI regulatory assumptions from other jurisdictions bleeding in | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated, not hidden — especially for unsettled AI copyright and liability questions | Add confidence qualifier |
+| Gate           | Rule                                                                                                                         | Fail Action                                 |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, regulation, or established AI governance principle                               | Add citation or mark [VERIFY]               |
+| **Format**     | All citations follow a consistent, recognizable format for the jurisdiction                                                  | Fix format                                  |
+| **Currency**   | Every cited AI law/regulation checked for amendments, repeal, or implementation stage — AI regulation is changing rapidly    | Flag [CHECK CURRENCY — AI law evolves fast] |
+| **Domain**     | Analysis stays within the contract's governing law scope — no AI regulatory assumptions from other jurisdictions bleeding in | Remove or flag jurisdictional bleed         |
+| **Confidence** | Uncertainty explicitly stated, not hidden — especially for unsettled AI copyright and liability questions                    | Add confidence qualifier                    |
 
 ### Self-Interrogation for RED and [AI-GOVERNANCE-GAP] Items
 
@@ -853,13 +912,13 @@ If any pass reveals a weakness, revise the analysis before delivery.
 
 ### Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95-1.0 | Settled AI law, clear in-force statute, no ambiguity | State with confidence |
-| **High** | 0.80-0.94 | Strong authority with minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60-0.79 | Good arguments but AI law is developing rapidly; reasonable minds could differ | State with reasoning and contra-indicators |
-| **Possible** | 0.40-0.59 | Genuinely uncertain (e.g., AI copyright ownership, liability for hallucinations in new use cases) | Flag for professional review; present both sides |
-| **Unlikely** | 0.0-0.39 | Weak basis, speculative, or AI regulation not yet in force | Do not assert; flag [UNCERTAIN — AI law not yet settled] |
+| Level        | Range     | Meaning                                                                                           | Action                                                   |
+| ------------ | --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Definite** | 0.95-1.0  | Settled AI law, clear in-force statute, no ambiguity                                              | State with confidence                                    |
+| **High**     | 0.80-0.94 | Strong authority with minor interpretation questions                                              | State with brief caveat                                  |
+| **Probable** | 0.60-0.79 | Good arguments but AI law is developing rapidly; reasonable minds could differ                    | State with reasoning and contra-indicators               |
+| **Possible** | 0.40-0.59 | Genuinely uncertain (e.g., AI copyright ownership, liability for hallucinations in new use cases) | Flag for professional review; present both sides         |
+| **Unlikely** | 0.0-0.39  | Weak basis, speculative, or AI regulation not yet in force                                        | Do not assert; flag [UNCERTAIN — AI law not yet settled] |
 
 ---
 
@@ -1066,6 +1125,7 @@ Apply plain-language discipline to all AI provisions review output:
 This skill integrates with **legalcode-mcp** for AI law and regulatory research.
 
 **With legalcode-mcp connected (preferred):**
+
 - Search for current EU AI Act implementation status and guidance for the applicable
   risk tier
 - Verify current text of GDPR Art. 22 and applicable supervisory authority guidance on
@@ -1079,6 +1139,7 @@ This skill integrates with **legalcode-mcp** for AI law and regulatory research.
 - Mark all legalcode-mcp citations as VERIFIED in the Glass Box audit trail
 
 **Without legalcode-mcp:**
+
 - Mark all AI regulatory citations with [VERIFY] and [CHECK CURRENCY — AI law evolves fast]
 - Note in Glass Box: `legalcode_mcp: "Not connected — manual verification required"`
 - Proceed using general AI governance knowledge; focus enhancement on structural quality,
@@ -1114,6 +1175,7 @@ Structure every AI provisions review as follows:
 **Immediate Action Required**: [Yes — [specific reason] / No]
 
 **Top 3 AI Governance Issues**:
+
 1. [Most critical issue — severity — brief description]
 2. [Second issue — severity — brief description]
 3. [Third issue — severity — brief description]
@@ -1138,12 +1200,12 @@ Structure every AI provisions review as follows:
 
 ## Regulatory Compliance Matrix
 
-| Regulation | Applicable? | Clause Present? | Gap | Classification |
-|-----------|------------|----------------|-----|----------------|
-| EU AI Act (high-risk) | [Yes/No/Uncertain] | [Yes/No/Partial] | [Description] | [GREEN/YELLOW/RED/GAP] |
-| GDPR Art. 22 | [Yes/No/Uncertain] | [Yes/No/Partial] | [Description] | [GREEN/YELLOW/RED/GAP] |
-| NYC Local Law 144 | [Yes/No/Uncertain] | [Yes/No/Partial] | [Description] | [GREEN/YELLOW/RED/GAP] |
-| Colorado SB 205 | [Yes/No/Uncertain] | [Yes/No/Partial] | [Description] | [GREEN/YELLOW/RED/GAP] |
+| Regulation                      | Applicable?        | Clause Present?  | Gap           | Classification         |
+| ------------------------------- | ------------------ | ---------------- | ------------- | ---------------------- |
+| EU AI Act (high-risk)           | [Yes/No/Uncertain] | [Yes/No/Partial] | [Description] | [GREEN/YELLOW/RED/GAP] |
+| GDPR Art. 22                    | [Yes/No/Uncertain] | [Yes/No/Partial] | [Description] | [GREEN/YELLOW/RED/GAP] |
+| NYC Local Law 144               | [Yes/No/Uncertain] | [Yes/No/Partial] | [Description] | [GREEN/YELLOW/RED/GAP] |
+| Colorado SB 205                 | [Yes/No/Uncertain] | [Yes/No/Partial] | [Description] | [GREEN/YELLOW/RED/GAP] |
 | US Copyright Office AI guidance | [Yes/No/Uncertain] | [Yes/No/Partial] | [Description] | [GREEN/YELLOW/RED/GAP] |
 | [Sector-specific AI regulation] | [Yes/No/Uncertain] | [Yes/No/Partial] | [Description] | [GREEN/YELLOW/RED/GAP] |
 
@@ -1152,17 +1214,21 @@ Structure every AI provisions review as follows:
 ## AI Governance Negotiation Strategy
 
 **Tier 1 — Must Resolve Before Signature:**
+
 - [Issue 1 with brief justification]
 - [Issue 2]
 
 **Tier 2 — Prioritize in Negotiation:**
+
 - [Issue 1]
 - [Issue 2]
 
 **Tier 3 — Concede Under Pressure:**
+
 - [Issue 1]
 
 **Trade-link opportunities:**
+
 - [Concede X to secure Y]
 
 **Recommended AI addendum/schedule**: [Yes — suggested scope / Not necessary / Consider for renewal]
@@ -1172,8 +1238,7 @@ Structure every AI provisions review as follows:
 ## Glass Box Audit Trail
 
 ```yaml
-glass_box:
-  [YAML template populated with actual analysis values]
+glass_box: [YAML template populated with actual analysis values]
 ```
 
 ---

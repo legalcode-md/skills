@@ -31,6 +31,7 @@ actionable findings with suggested fixes, and produces a confidence-scored, audi
 report with routing recommendations.
 
 **Covers:**
+
 - Mutual and unilateral NDAs (standalone agreements)
 - Confidentiality sections embedded in larger commercial agreements (with caveats)
 - NDAs in any jurisdiction (jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers)
@@ -38,6 +39,7 @@ report with routing recommendations.
 - Quality-verified output with Glass Box audit trail
 
 **Does not:**
+
 - Draft new NDAs (see the `nda-mutual` skill for drafting)
 - Perform full contract review (see `legalcode-contract-review` for comprehensive review)
 - Provide legal advice or replace qualified counsel
@@ -50,6 +52,7 @@ legal framework applies. The triage identifies the governing law early and adapt
 analysis accordingly.
 
 [JURISDICTION-SPECIFIC] When localizing, research and apply:
+
 - Enforceability of injunctive relief / equitable remedy language under local law
 - Treatment of residual knowledge clauses
 - Confidentiality duration limits for trade secrets vs. other information
@@ -94,6 +97,7 @@ user can correct it.
 ### Step 1: Accept the NDA
 
 Accept the NDA in any of these formats:
+
 - **File**: PDF, DOCX, or other document format
 - **URL**: Link to the NDA in a document system
 - **Pasted text**: NDA text pasted directly into the conversation
@@ -107,26 +111,26 @@ structured options:
 
 1. **Which side are you on?**
    - Options: Receiving party, Disclosing party, Both (mutual NDA), Not sure
-   - *Why this matters*: Determines which protections to scrutinize — a receiving party
+   - _Why this matters_: Determines which protections to scrutinize — a receiving party
      needs strong carveouts and reasonable obligations; a disclosing party needs broad
      protection scope and strong remedies.
 
 2. **Business context**: What is the purpose of this NDA?
    - Options: Exploratory / pre-sales discussions, Vendor evaluation, M&A due diligence,
      Technology evaluation / proof of concept, Employment / contractor, Other
-   - *Why this matters*: An M&A NDA may legitimately include standstill provisions; a
+   - _Why this matters_: An M&A NDA may legitimately include standstill provisions; a
      sales-stage NDA should not. Context determines whether unusual clauses are appropriate.
 
 3. **Jurisdiction**: Do you know the governing law of this NDA?
    - Options: I know it (specify), Not sure — I'll let you identify it, I want analysis
      under [specific jurisdiction]
-   - *Why this matters*: Determines which legal framework to apply and which
+   - _Why this matters_: Determines which legal framework to apply and which
      [JURISDICTION-SPECIFIC] issues to flag.
 
 4. **Risk tolerance**: How should borderline items be classified?
    - Options: Conservative (flag more, safer), Pragmatic (flag only material items),
      Let me decide case by case
-   - *Why this matters*: A liability cap that is RED for a risk-averse enterprise may be
+   - _Why this matters_: A liability cap that is RED for a risk-averse enterprise may be
      YELLOW for a startup that needs the deal.
 
 If the user provides partial context, proceed with reasonable defaults but **state
@@ -139,6 +143,7 @@ Check for the organization's NDA screening criteria in local settings (e.g.,
 `legal.local.md` or similar configuration files).
 
 The NDA playbook should define:
+
 - Mutual vs. unilateral requirements
 - Acceptable term lengths
 - Required carveouts
@@ -159,6 +164,7 @@ The NDA playbook should define:
   your preferred position matters.
 
 **Default Standards** (when no playbook is configured):
+
 - Mutual obligations required unless the organization is only disclosing
 - Term: 1-3 years standard; confidentiality survival: 2-5 years
 - All 5 standard carveouts required (public knowledge, prior possession, independent
@@ -177,6 +183,7 @@ organizational playbook positions."
 Read the NDA's governing law clause and identify the applicable jurisdiction.
 
 **CLARIFY** — If any of the following are true, ask the user before proceeding:
+
 - **No governing law clause found**: Ask which jurisdiction the user expects to apply,
   and flag the absence as a RED item.
 - **Governing law is unusual or unexpected** for the business relationship (e.g., a
@@ -184,6 +191,7 @@ Read the NDA's governing law clause and identify the applicable jurisdiction.
   to analyze under the stated law or flag as an issue.
 
 **With legalcode-mcp connected (preferred):**
+
 - Search for jurisdiction-relevant statutes governing: trade secret protection,
   confidentiality obligations, penalty/liquidated damages enforceability, injunctive
   relief standards, non-compete/non-solicitation enforceability in NDAs
@@ -192,6 +200,7 @@ Read the NDA's governing law clause and identify the applicable jurisdiction.
 - Mark all legalcode-mcp-sourced citations as VERIFIED in the Glass Box audit trail
 
 **Without legalcode-mcp:**
+
 - Mark every statutory and case law reference with [VERIFY]
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Proceed with general commercial knowledge, but flag that legal authority has not been
@@ -207,24 +216,26 @@ may be offset by a trade secret exception).
 Evaluate the NDA against each of the 10 screening criteria systematically:
 
 #### Criterion 1: Agreement Structure
+
 - [ ] **Type identified**: Mutual NDA, Unilateral (disclosing party), or Unilateral
-  (receiving party)
+      (receiving party)
 - [ ] **Appropriate for context**: Is the NDA type appropriate for the business
-  relationship? (e.g., mutual for exploratory discussions, unilateral for one-way
-  disclosures)
+      relationship? (e.g., mutual for exploratory discussions, unilateral for one-way
+      disclosures)
 - [ ] **Standalone agreement**: Confirm the NDA is a standalone agreement, not a
-  confidentiality section embedded in a larger commercial agreement
+      confidentiality section embedded in a larger commercial agreement
 - [ ] **Party identification**: Are parties correctly identified (full legal names,
-  registration numbers where applicable, authorized signatories)?
+      registration numbers where applicable, authorized signatories)?
 
 #### Criterion 2: Definition of Confidential Information
+
 - [ ] **Reasonable scope**: Not overbroad (avoid "all information of any kind whether or
-  not marked as confidential")
+      not marked as confidential")
 - [ ] **Marking requirements**: If marking is required, is it workable? (Written marking
-  within 30 days of oral disclosure is standard)
+      within 30 days of oral disclosure is standard)
 - [ ] **Exclusions present**: Standard exclusions defined (see Criterion 4)
 - [ ] **No problematic inclusions**: Does not define publicly available information or
-  independently developed materials as confidential
+      independently developed materials as confidential
 - [ ] **Alignment with purpose**: Definition is tied to the stated purpose, not unlimited
 
 [JURISDICTION-SPECIFIC] Check whether the definition aligns with the local trade secret
@@ -233,47 +244,52 @@ Poland; DTSA in the US). Where local law provides a statutory definition of trad
 note whether the NDA's definition is broader, narrower, or aligned.
 
 #### Criterion 3: Obligations of Receiving Party
+
 - [ ] **Standard of care**: Reasonable care or at least the same care as for own
-  confidential information
+      confidential information
 - [ ] **Use restriction**: Limited to the stated purpose
 - [ ] **Disclosure restriction**: Limited to those with need to know who are bound by
-  similar obligations
+      similar obligations
 - [ ] **No onerous obligations**: No impractical requirements (e.g., encrypting all
-  communications, maintaining physical logs of every disclosure)
+      communications, maintaining physical logs of every disclosure)
 - [ ] **Incident reporting**: Reasonable breach notification obligation (if included)
 
 #### Criterion 4: Standard Carveouts
+
 All of the following carveouts should be present:
+
 - [ ] **Public knowledge**: Information that is or becomes publicly available through no
-  fault of the receiving party
+      fault of the receiving party
 - [ ] **Prior possession**: Information already known to the receiving party before
-  disclosure
+      disclosure
 - [ ] **Independent development**: Information independently developed without use of or
-  reference to confidential information
+      reference to confidential information
 - [ ] **Third-party receipt**: Information rightfully received from a third party without
-  restriction
+      restriction
 - [ ] **Legal compulsion**: Right to disclose when required by law, regulation, or legal
-  process (with notice to the disclosing party where legally permitted)
+      process (with notice to the disclosing party where legally permitted)
 
 #### Criterion 5: Permitted Disclosures
+
 - [ ] **Employees**: Can share with employees who need to know
 - [ ] **Contractors/advisors**: Can share with contractors, advisors, and professional
-  consultants under similar confidentiality obligations
+      consultants under similar confidentiality obligations
 - [ ] **Affiliates**: Can share with affiliates / group companies (if needed for the
-  business purpose)
+      business purpose)
 - [ ] **Legal/regulatory**: Can disclose as required by law, regulation, or regulatory
-  authority
+      authority
 - [ ] **Professional advisors**: Can share with legal counsel, auditors, and accountants
-  under professional duties of confidence
+      under professional duties of confidence
 
 #### Criterion 6: Term and Duration
+
 - [ ] **Agreement term**: Reasonable period for the business relationship (1-3 years is
-  standard)
+      standard)
 - [ ] **Confidentiality survival**: Obligations survive for a reasonable period after
-  termination (2-5 years is standard; trade secrets may be longer)
+      termination (2-5 years is standard; trade secrets may be longer)
 - [ ] **Not perpetual**: Avoid indefinite or perpetual confidentiality obligations
-  (exception: trade secrets, which may warrant protection for as long as they remain
-  trade secrets)
+      (exception: trade secrets, which may warrant protection for as long as they remain
+      trade secrets)
 
 [JURISDICTION-SPECIFIC] Check whether the jurisdiction imposes limits on confidentiality
 duration. In some civil law jurisdictions, perpetual obligations may be unenforceable
@@ -282,20 +298,22 @@ protection, the NDA's survival clause should align with (not undermine) statutor
 protection.
 
 #### Criterion 7: Return and Destruction
+
 - [ ] **Obligation triggered**: On termination or upon request
 - [ ] **Reasonable scope**: Return or destroy confidential information and all copies
 - [ ] **Retention exception**: Allows retention of copies required by law, regulation,
-  or internal compliance/backup policies (including regulatory record-keeping)
+      or internal compliance/backup policies (including regulatory record-keeping)
 - [ ] **Certification**: Certification of destruction is reasonable; sworn affidavit or
-  statutory declaration is onerous
+      statutory declaration is onerous
 
 #### Criterion 8: Remedies
+
 - [ ] **Injunctive relief**: Acknowledgment that breach may cause irreparable harm and
-  equitable relief may be appropriate is standard
+      equitable relief may be appropriate is standard
 - [ ] **No pre-determined damages**: Avoid liquidated damages clauses in NDAs (unusual
-  and potentially problematic)
+      and potentially problematic)
 - [ ] **Not one-sided**: Remedies provisions apply equally to both parties (in mutual
-  NDAs)
+      NDAs)
 
 [JURISDICTION-SPECIFIC] The standard for interim injunctions varies significantly by
 jurisdiction. Common law jurisdictions use different tests (American Cyanamid in England,
@@ -305,18 +323,19 @@ England per Cavendish Square v Makdessi; miarkowanie per art. 484 s.2 KC in Pola
 unconscionability in the US). [VERIFY] specific standards for the governing law.
 
 #### Criterion 9: Problematic Provisions to Flag
+
 - [ ] **No non-solicitation**: NDA should not contain employee non-solicitation
-  provisions
+      provisions
 - [ ] **No non-compete**: NDA should not contain non-compete provisions
 - [ ] **No exclusivity**: NDA should not restrict either party from entering similar
-  discussions with others
+      discussions with others
 - [ ] **No standstill**: NDA should not contain standstill or similar restrictive
-  provisions (unless M&A context — ask if unclear)
+      provisions (unless M&A context — ask if unclear)
 - [ ] **No residuals clause** (or narrowly scoped): If present, must be limited to
-  information retained in unaided memory of individuals who had authorized access; must
-  not apply to trade secrets or patentable information; must not grant an IP license
+      information retained in unaided memory of individuals who had authorized access; must
+      not apply to trade secrets or patentable information; must not grant an IP license
 - [ ] **No IP assignment or license**: NDA should not grant any intellectual property
-  rights
+      rights
 - [ ] **No audit rights**: Unusual in standard NDAs; flag if present
 
 [JURISDICTION-SPECIFIC] Non-solicitation and non-compete provisions embedded in NDAs may
@@ -327,12 +346,13 @@ the US, enforceability varies by state (some states ban non-competes entirely). 
 for the governing law.
 
 #### Criterion 10: Governing Law and Jurisdiction
+
 - [ ] **Reasonable jurisdiction**: A well-established commercial jurisdiction
 - [ ] **Consistent**: Governing law and jurisdiction should be aligned
 - [ ] **Dispute resolution**: Litigation is generally preferred for NDA disputes;
-  arbitration may be appropriate for international NDAs (New York Convention enforcement)
+      arbitration may be appropriate for international NDAs (New York Convention enforcement)
 - [ ] **Exclusive vs. non-exclusive**: Exclusive jurisdiction is generally preferred
-  (prevents parallel proceedings)
+      (prevents parallel proceedings)
 
 ### Step 6: Classify
 
@@ -341,6 +361,7 @@ Based on the screening results, assign a classification using the rules below:
 #### GREEN -- Standard Approval
 
 **All** of the following must be true:
+
 - NDA is mutual (or unilateral in the appropriate direction for the relationship)
 - All 5 standard carveouts are present
 - Term is within standard range (1-3 years, survival 2-5 years)
@@ -362,6 +383,7 @@ Same-day turnaround.
 
 **One or more** of the following are present, but the NDA is not fundamentally
 problematic:
+
 - Definition of confidential information is broader than preferred but not unreasonable
 - Term is longer than standard but within market range (e.g., 5 years agreement term,
   7 years survival)
@@ -386,6 +408,7 @@ minor redlines in a single review pass. Target: 1-2 business days.
 #### RED -- Significant Issues
 
 **One or more** of the following are present:
+
 - **Unilateral when mutual is required** (or wrong direction for the relationship)
 - **Missing critical carveouts** (especially independent development or legal compulsion)
 - **Non-solicitation or non-compete provisions** embedded in the NDA
@@ -419,6 +442,7 @@ For each YELLOW or RED finding, provide actionable analysis:
 #### Common NDA Issues and Standard Positions
 
 **Issue: Overbroad Definition of Confidential Information**
+
 - **Standard position**: Confidential information should be limited to non-public
   information disclosed in connection with the stated purpose, with clear exclusions.
 - **Redline approach**: Narrow the definition to information that is marked or identified
@@ -427,6 +451,7 @@ For each YELLOW or RED finding, provide actionable analysis:
 - **Priority**: Tier 2 (Should-Have)
 
 **Issue: Missing Independent Development Carveout**
+
 - **Standard position**: Must include a carveout for information independently developed
   without reference to or use of the disclosing party's confidential information.
 - **Risk if missing**: Could create claims that internally-developed products or features
@@ -435,6 +460,7 @@ For each YELLOW or RED finding, provide actionable analysis:
 - **Priority**: Tier 1 (Must-Have) — Missing this carveout is RED.
 
 **Issue: Non-Solicitation of Employees**
+
 - **Standard position**: Non-solicitation provisions do not belong in NDAs. They are
   appropriate in employment agreements, M&A agreements, or specific commercial agreements.
 - **Redline approach**: Delete the provision entirely. If the counterparty insists, limit
@@ -445,6 +471,7 @@ For each YELLOW or RED finding, provide actionable analysis:
   context is vulnerable to challenge as an unreasonable restraint of trade. [VERIFY]
 
 **Issue: Broad Residuals Clause**
+
 - **Standard position**: Resist residuals clauses. If required, limit to: (a) general
   ideas, concepts, know-how, or techniques retained in the unaided memory of individuals
   who had authorized access; (b) explicitly exclude trade secrets and patentable
@@ -455,6 +482,7 @@ For each YELLOW or RED finding, provide actionable analysis:
 - **Priority**: Tier 1 if broad (RED), Tier 2 if narrowly scoped (YELLOW).
 
 **Issue: Perpetual Confidentiality Obligation**
+
 - **Standard position**: 2-5 years from disclosure or termination, whichever is later.
   Trade secrets may warrant protection for as long as they remain trade secrets.
 - **Redline approach**: Replace perpetual obligation with a defined term. Offer a trade
@@ -464,6 +492,7 @@ For each YELLOW or RED finding, provide actionable analysis:
   NDA's duration clause should complement (not replace) statutory protection. [VERIFY]
 
 **Issue: Liquidated Damages / Penalty Clauses**
+
 - **Standard position**: Liquidated damages clauses are unusual in NDAs and should be
   flagged. The difficulty of pre-estimating loss from a confidentiality breach makes
   such clauses harder to justify.
@@ -479,7 +508,9 @@ For each YELLOW or RED finding, provide actionable analysis:
 Organize findings by negotiation priority:
 
 #### Tier 1 -- Must-Haves (Deal Blockers)
+
 Issues where the organization cannot proceed without resolution:
+
 - Missing critical carveouts (independent development, legal compulsion)
 - Non-solicitation or non-compete provisions in an NDA
 - Broad residuals clause that creates an effective IP license
@@ -487,7 +518,9 @@ Issues where the organization cannot proceed without resolution:
 - Document is not actually an NDA (embedded commercial terms)
 
 #### Tier 2 -- Should-Haves (Strong Preferences)
+
 Issues that materially affect risk but have negotiation room:
+
 - Overbroad confidential information definition
 - Term adjustments (longer than standard but negotiable)
 - Missing retention exception in return/destruction
@@ -496,7 +529,9 @@ Issues that materially affect risk but have negotiation room:
 - Certification of destruction scope
 
 #### Tier 3 -- Nice-to-Haves (Concession Candidates)
+
 Issues that improve the position but can be conceded strategically:
+
 - Preferred governing law (if alternative is acceptable)
 - Minor asymmetries in mutual NDA
 - Notification obligations (unusual but not harmful)
@@ -521,13 +556,14 @@ Before delivering the triage report, run the quality checks:
 
 Based on the classification, recommend the appropriate next step:
 
-| Classification | Recommended Action | Typical Timeline |
-|---|---|---|
-| GREEN | Approve and route for signature per delegation of authority | Same day |
-| YELLOW | Send to designated reviewer with specific issues flagged | 1-2 business days |
-| RED | Engage counsel for full review; prepare counterproposal or standard form | 3-5 business days |
+| Classification | Recommended Action                                                       | Typical Timeline  |
+| -------------- | ------------------------------------------------------------------------ | ----------------- |
+| GREEN          | Approve and route for signature per delegation of authority              | Same day          |
+| YELLOW         | Send to designated reviewer with specific issues flagged                 | 1-2 business days |
+| RED            | Engage counsel for full review; prepare counterproposal or standard form | 3-5 business days |
 
 For YELLOW and RED classifications:
+
 - Identify the specific person or role that should review (if the organization has defined
   routing rules in the playbook)
 - Include a brief summary of issues suitable for the reviewer to quickly understand the
@@ -541,21 +577,21 @@ For YELLOW and RED classifications:
 
 ## Severity / Status Classification
 
-| Finding Status | Meaning | Action |
-|---------------|---------|--------|
-| **PASS** | Criterion met; no issues | No action needed |
-| **FLAG** | Minor deviation; YELLOW | Generate redline with fallback position |
-| **FAIL** | Material deviation; RED | Escalate with risk explanation and legal basis |
+| Finding Status | Meaning                  | Action                                         |
+| -------------- | ------------------------ | ---------------------------------------------- |
+| **PASS**       | Criterion met; no issues | No action needed                               |
+| **FLAG**       | Minor deviation; YELLOW  | Generate redline with fallback position        |
+| **FAIL**       | Material deviation; RED  | Escalate with risk explanation and legal basis |
 
 ---
 
 ## Prioritization Framework Summary
 
-| Priority | Category | Examples | Negotiation Posture |
-|----------|----------|----------|---------------------|
-| **Tier 1** | Must-Haves | Missing carveouts, non-compete, IP assignment, broad residuals | Non-negotiable; escalate if rejected |
-| **Tier 2** | Should-Haves | Overbroad definition, term adjustments, retention exception | Push firmly; accept fallback |
-| **Tier 3** | Nice-to-Haves | Governing law preference, minor asymmetries | Concede strategically for Tier 2 wins |
+| Priority   | Category      | Examples                                                       | Negotiation Posture                   |
+| ---------- | ------------- | -------------------------------------------------------------- | ------------------------------------- |
+| **Tier 1** | Must-Haves    | Missing carveouts, non-compete, IP assignment, broad residuals | Non-negotiable; escalate if rejected  |
+| **Tier 2** | Should-Haves  | Overbroad definition, term adjustments, retention exception    | Push firmly; accept fallback          |
+| **Tier 3** | Nice-to-Haves | Governing law preference, minor asymmetries                    | Concede strategically for Tier 2 wins |
 
 ---
 
@@ -582,13 +618,13 @@ missing a protection that this NDA exposed, flag for standard form revision.
 Run these 5 gates silently before delivering any output. If any gate fails, revise before
 delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, regulation, or established principle | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **Format** | All citations follow a consistent, recognizable format for the jurisdiction | Fix format |
-| **Currency** | Every cited provision checked for amendments or repeal against authoritative sources where accessible | Flag "[CHECK CURRENCY — may have been amended]" |
-| **Domain** | Analysis stays within the NDA's governing law. No assumptions from other jurisdictions leaking in | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated, not hidden. If uncertain, say so | Add confidence qualifier |
+| Gate           | Rule                                                                                                  | Fail Action                                              |
+| -------------- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, regulation, or established principle                      | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
+| **Format**     | All citations follow a consistent, recognizable format for the jurisdiction                           | Fix format                                               |
+| **Currency**   | Every cited provision checked for amendments or repeal against authoritative sources where accessible | Flag "[CHECK CURRENCY — may have been amended]"          |
+| **Domain**     | Analysis stays within the NDA's governing law. No assumptions from other jurisdictions leaking in     | Remove or flag jurisdictional bleed                      |
+| **Confidence** | Uncertainty explicitly stated, not hidden. If uncertain, say so                                       | Add confidence qualifier                                 |
 
 ### Self-Interrogation for RED Items
 
@@ -615,13 +651,13 @@ with `self_interrogation: PASS` or `self_interrogation: REVISED`.
 
 For the overall classification and each material finding, assign a confidence level:
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95-1.0 | Settled law, clear contractual provision, no ambiguity | State with confidence |
-| **High** | 0.80-0.94 | Strong basis, minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60-0.79 | Good arguments but reasonable minds could differ | State with reasoning and contra-indicators |
-| **Possible** | 0.40-0.59 | Genuinely uncertain, competing interpretations | Flag for counsel review with both sides |
-| **Unlikely** | 0.0-0.39 | Weak basis, speculative | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                                | Action                                                |
+| ------------ | --------- | ------------------------------------------------------ | ----------------------------------------------------- |
+| **Definite** | 0.95-1.0  | Settled law, clear contractual provision, no ambiguity | State with confidence                                 |
+| **High**     | 0.80-0.94 | Strong basis, minor interpretation questions           | State with brief caveat                               |
+| **Probable** | 0.60-0.79 | Good arguments but reasonable minds could differ       | State with reasoning and contra-indicators            |
+| **Possible** | 0.40-0.59 | Genuinely uncertain, competing interpretations         | Flag for counsel review with both sides               |
+| **Unlikely** | 0.0-0.39  | Weak basis, speculative                                | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
 
 ---
 
@@ -740,6 +776,7 @@ What NOT to do in NDA triage:
 Apply plain-language discipline to all triage output:
 
 **For the triage report**:
+
 - Plain language. No jargon or filler.
 - Active voice: "This NDA contains a non-compete clause (Section 8.2)" not "A non-
   compete clause was identified"
@@ -749,12 +786,14 @@ Apply plain-language discipline to all triage output:
   non-solicitation provision"
 
 **For each finding**:
+
 - State what the NDA says (with section reference)
 - State what the standard position is
 - State the risk of accepting the current language
 - State the suggested fix (specific language or approach)
 
 **Quality gates before delivery**:
+
 1. Is the classification (GREEN/YELLOW/RED) clearly stated at the top?
 2. Is every FLAG/FAIL supported by a specific section reference in the NDA?
 3. Can the routing recipient understand the issues without reading the full NDA?
@@ -770,6 +809,7 @@ legalcode-mcp is a law, regulatory, and case law database with powerful search a
 jurisdictions.
 
 **With legalcode-mcp connected (preferred):**
+
 - In Step 4, search for jurisdiction-relevant statutes governing trade secrets,
   confidentiality, penalties, injunctions, and restrictive covenants
 - Save the most relevant results to `/tmp/legalcode-nda-triage-authority.md`
@@ -778,6 +818,7 @@ jurisdictions.
 - Mark all legalcode-mcp-sourced citations as VERIFIED in the Glass Box audit trail
 
 **Without legalcode-mcp:**
+
 - Mark all statutory and case law references with [VERIFY]
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Include a notice that legal citations require independent verification
@@ -805,24 +846,25 @@ Structure the triage deliverable as:
 
 ## Screening Results
 
-| # | Criterion | Status | Notes |
-|---|-----------|--------|-------|
-| 1 | Agreement Structure | [PASS/FLAG/FAIL] | [details] |
-| 2 | Definition Scope | [PASS/FLAG/FAIL] | [details] |
-| 3 | Receiving Party Obligations | [PASS/FLAG/FAIL] | [details] |
-| 4 | Standard Carveouts | [PASS/FLAG/FAIL] | [details] |
-| 5 | Permitted Disclosures | [PASS/FLAG/FAIL] | [details] |
-| 6 | Term and Duration | [PASS/FLAG/FAIL] | [details] |
-| 7 | Return/Destruction | [PASS/FLAG/FAIL] | [details] |
-| 8 | Remedies | [PASS/FLAG/FAIL] | [details] |
-| 9 | Problematic Provisions | [PASS/FLAG/FAIL] | [details] |
-| 10 | Governing Law/Jurisdiction | [PASS/FLAG/FAIL] | [details] |
+| #   | Criterion                   | Status           | Notes     |
+| --- | --------------------------- | ---------------- | --------- |
+| 1   | Agreement Structure         | [PASS/FLAG/FAIL] | [details] |
+| 2   | Definition Scope            | [PASS/FLAG/FAIL] | [details] |
+| 3   | Receiving Party Obligations | [PASS/FLAG/FAIL] | [details] |
+| 4   | Standard Carveouts          | [PASS/FLAG/FAIL] | [details] |
+| 5   | Permitted Disclosures       | [PASS/FLAG/FAIL] | [details] |
+| 6   | Term and Duration           | [PASS/FLAG/FAIL] | [details] |
+| 7   | Return/Destruction          | [PASS/FLAG/FAIL] | [details] |
+| 8   | Remedies                    | [PASS/FLAG/FAIL] | [details] |
+| 9   | Problematic Provisions      | [PASS/FLAG/FAIL] | [details] |
+| 10  | Governing Law/Jurisdiction  | [PASS/FLAG/FAIL] | [details] |
 
 ---
 
 ## Issues Found
 
 ### [Issue 1 — YELLOW/RED] | Section [X.X] | Priority: Tier [1/2/3]
+
 **NDA says**: "[exact quote or summary from the NDA]"
 **Standard position**: [what it should say]
 **Risk**: [what could go wrong if accepted]
@@ -877,6 +919,7 @@ This skill is jurisdiction-agnostic by design. To create a jurisdiction-specific
 6. Add relevant case law citations
 
 Existing jurisdiction-specific resources that can inform localization:
+
 - **England & Wales**: `imported-uk-legal-plugins--skills-uk-legal-nda-triage/SKILL.md`
   — includes American Cyanamid test, Cavendish Square penalty doctrine, Trade Secrets
   Regulations 2018, restraint of trade analysis
@@ -884,6 +927,7 @@ Existing jurisdiction-specific resources that can inform localization:
   articles, UZNK trade secret framework, kary umowne analysis, IURA MCP integration
 
 Localization Checklist:
+
 - [ ] Select governing law and verify jurisdiction-specific screening adjustments
 - [ ] Validate injunctive relief / equitable remedy language for the jurisdiction
 - [ ] Validate confidentiality duration legality and trade secret protection regime
@@ -891,7 +935,7 @@ Localization Checklist:
 - [ ] Verify penalty/liquidated damages doctrine for the jurisdiction
 - [ ] Confirm evidentiary and signature formalities
 - [ ] Add local legal terminology alongside English translations (if non-English
-  jurisdiction)
+      jurisdiction)
 
 ---
 
@@ -899,6 +943,7 @@ Localization Checklist:
 
 Created by Legalcode (2026-02-27). Original synthesis merging best elements from 8
 NDA-triage skills across 4 source repositories:
+
 - **Anthropic knowledge-work-plugins** (`nda-triage` skill and `triage-nda` command) —
   comprehensive 10-criteria checklist and structured report template
 - **45black/uk-legal-plugins** (`uk-legal-nda-triage`) — quality frameworks (PDCA, Glass

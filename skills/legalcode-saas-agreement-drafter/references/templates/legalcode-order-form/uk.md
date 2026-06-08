@@ -1,7 +1,16 @@
 ---
 title: Order Form — United Kingdom (DMCCA 2024 + UK CRA + Late Payment)
 jurisdictions: [uk, gb]
-statutes: [DMCCA-2024, UK-CRA-2015, DUAA-2025, UK-GDPR, DPA-2018, Late-Payment-Act-1998, Modern-Slavery-2015]
+statutes:
+  [
+    DMCCA-2024,
+    UK-CRA-2015,
+    DUAA-2025,
+    UK-GDPR,
+    DPA-2018,
+    Late-Payment-Act-1998,
+    Modern-Slavery-2015,
+  ]
 audience: [B2B]
 license: MIT
 last_updated: 2026-04-29
@@ -26,18 +35,18 @@ If a term here conflicts with the CSA, the CSA prevails save where Section 8 exp
 
 Companies House registrations, ICO registration details (for UK GDPR purposes), and contact channels are listed below.
 
-| Field | Vendor | Customer |
-|---|---|---|
-| Legal name | `{{Vendor Legal Name}}` | `{{Customer Legal Name}}` |
-| Company number (Companies House) | `{{Vendor Company Number}}` | `{{Customer Company Number}}` |
-| Registered office | `{{Vendor Address}}` | `{{Customer Address}}` |
-| ICO registration number (where applicable) | `{{Vendor ICO Reg No}}` | `{{Customer ICO Reg No}}` |
-| Signatory name | `{{Vendor Signatory Name}}` | `{{Customer Signatory Name}}` |
-| Signatory title | `{{Vendor Signatory Title}}` | `{{Customer Signatory Title}}` |
-| Notice email (legal) | `{{Vendor Notice Email}}` | `{{Customer Notice Email}}` |
-| Billing / AR email | `{{Vendor AR Email}}` | `{{Customer Billing Email}}` |
-| Operational contact | `{{Vendor Ops Contact}}` | `{{Customer Ops Contact}}` |
-| Purchase order reference | n/a | `{{Customer PO Number}}` *(OPTIONAL — only if Customer requires a PO reference)* |
+| Field                                      | Vendor                       | Customer                                                                         |
+| ------------------------------------------ | ---------------------------- | -------------------------------------------------------------------------------- |
+| Legal name                                 | `{{Vendor Legal Name}}`      | `{{Customer Legal Name}}`                                                        |
+| Company number (Companies House)           | `{{Vendor Company Number}}`  | `{{Customer Company Number}}`                                                    |
+| Registered office                          | `{{Vendor Address}}`         | `{{Customer Address}}`                                                           |
+| ICO registration number (where applicable) | `{{Vendor ICO Reg No}}`      | `{{Customer ICO Reg No}}`                                                        |
+| Signatory name                             | `{{Vendor Signatory Name}}`  | `{{Customer Signatory Name}}`                                                    |
+| Signatory title                            | `{{Vendor Signatory Title}}` | `{{Customer Signatory Title}}`                                                   |
+| Notice email (legal)                       | `{{Vendor Notice Email}}`    | `{{Customer Notice Email}}`                                                      |
+| Billing / AR email                         | `{{Vendor AR Email}}`        | `{{Customer Billing Email}}`                                                     |
+| Operational contact                        | `{{Vendor Ops Contact}}`     | `{{Customer Ops Contact}}`                                                       |
+| Purchase order reference                   | n/a                          | `{{Customer PO Number}}` _(OPTIONAL — only if Customer requires a PO reference)_ |
 
 ICO registration numbers cross-reference the Data Protection Act 2018 controller-registration regime and feed into CSA Exhibit C (the UK GDPR DPA). A contact change takes effect on written notice via CSA §17 (Notices) or Section 9.
 
@@ -52,7 +61,7 @@ Headline subscription details below; SKU breakdown in Schedule 1.
 - **Subscribed Quantity / Unit:** `{{Subscribed Quantity}}` `{{Unit}}` (e.g., "100 user seats")
 - **Overage Rate:** `{{Overage Rate}}` (e.g., "GBP 12 per additional user / month")
 - **True-Up Frequency:** `{{True-Up Frequency}}` (default "quarterly")
-- **Provisioning Date:** `{{Provisioning Date}}` *(OPTIONAL — if different from Initial Term Start)*
+- **Provisioning Date:** `{{Provisioning Date}}` _(OPTIONAL — if different from Initial Term Start)_
 
 ---
 
@@ -116,7 +125,7 @@ If Auto-Renewal is "No", the Order ends at the close of the Initial Term. Pure B
 Governed by CSA Exhibit B (the `legalcode-sla` UK variant); this section records Order-specific upgrades only.
 
 - **Order-specific uptime tier:** `{{Uptime Tier}}` (default "as set in CSA Exhibit B").
-- **Premium support tier:** `{{Premium Support Tier}}` *(OPTIONAL)*.
+- **Premium support tier:** `{{Premium Support Tier}}` _(OPTIONAL)_.
 - **Service credit cap:** per CSA Exhibit B unless varied in Section 8.
 - **Operational-resilience reporting (FCA / PRA Customers):** see §7.7 and CSA SLA UK §11.10–11.11.
 
@@ -130,7 +139,7 @@ Deal-specific elections anchored in the UK GDPR / DPA 2018 framework.
 
 ### 7.1 Data residency
 
-`{{Data Residency}}` (default "United Kingdom" or "EEA + UK under the UK adequacy regulations"). Region pinning premium: `{{Region Pinning Premium}}` *(OPTIONAL)*.
+`{{Data Residency}}` (default "United Kingdom" or "EEA + UK under the UK adequacy regulations"). Region pinning premium: `{{Region Pinning Premium}}` _(OPTIONAL)_.
 
 ### 7.2 UK GDPR and DPA 2018
 
@@ -168,9 +177,9 @@ Where this section conflicts with the CSA's data-protection terms, the CSA contr
 
 Default: **None — all CSA terms apply unchanged.** Only items expressly listed below override the CSA; everything else continues to apply.
 
-- Override 1: `{{Override 1}}` *(OPTIONAL — e.g., "Liability cap raised to 2× fees paid in prior 12 months")*
-- Override 2: `{{Override 2}}` *(OPTIONAL — e.g., "Indemnity carve-out for `{{Carve-Out Topic}}`")*
-- Override 3: `{{Override 3}}` *(OPTIONAL)*
+- Override 1: `{{Override 1}}` _(OPTIONAL — e.g., "Liability cap raised to 2× fees paid in prior 12 months")_
+- Override 2: `{{Override 2}}` _(OPTIONAL — e.g., "Indemnity carve-out for `{{Carve-Out Topic}}`")_
+- Override 3: `{{Override 3}}` _(OPTIONAL)_
 
 ### 8.1 Sector-specific flow-downs
 
@@ -184,7 +193,7 @@ Where applicable, the corresponding flow-down terms in the CSA Annex (UK Sector 
 
 ### 8.2 DUAA-specific overrides
 
-Additional measures required by Customer's reliance on a DUAA-introduced legitimate interest, beyond CSA Exhibit C: `{{DUAA Override}}` *(OPTIONAL)*.
+Additional measures required by Customer's reliance on a DUAA-introduced legitimate interest, beyond CSA Exhibit C: `{{DUAA Override}}` _(OPTIONAL)_.
 
 Order-Form overrides control over CSA terms only where this Order Form expressly says so (cross-reference CSA §2 and §18).
 
@@ -208,16 +217,16 @@ Operational-channel notices do not satisfy CSA §17 unless the CSA expressly per
 Each Party signs below; counterparts and electronic signatures are valid per CSA §18.
 
 > **{{Vendor Legal Name}}** (Company No. `{{Vendor Company Number}}`)
-> By: ___________________________  
+> By: \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***  
 > Name: `{{Vendor Signatory Name}}`  
 > Title: `{{Vendor Signatory Title}}`  
-> Date: ___________________________
+> Date: \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
 >
 > **{{Customer Legal Name}}** (Company No. `{{Customer Company Number}}`)
-> By: ___________________________  
+> By: \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***  
 > Name: `{{Customer Signatory Name}}`  
 > Title: `{{Customer Signatory Title}}`  
-> Date: ___________________________
+> Date: \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
 
 Counterparts and electronic signatures executed under retained eIDAS, the Electronic Communications Act 2000, and SI 2016/696 (as updated) are valid `[VERIFY post-REUL retention]`. The **Contracts (Rights of Third Parties) Act 1999** is excluded save where a benefit is expressly granted (see CSA §18.11).
 
@@ -225,11 +234,11 @@ Counterparts and electronic signatures executed under retained eIDAS, the Electr
 
 ## Schedule 1 — Subscribed Services & Quantities
 
-| Service / SKU | Description | Quantity | Unit | Initial Term Fee | Overage | Notes |
-|---|---|---|---|---|---|---|
-| `{{Service Name}}` | `{{Service Description}}` | `{{Subscribed Quantity}}` | `{{Unit}}` | `{{Annual Fee}}` `{{Currency}}` | `{{Overage Rate}}` | `{{Schedule 1 Notes}}` |
-| `{{Add-On SKU}}` | `{{Add-On Description}}` | `{{Add-On Quantity}}` | `{{Add-On Unit}}` | `{{Add-On Fee}}` `{{Currency}}` | `{{Add-On Overage}}` | *(OPTIONAL)* |
-| `{{Add-On SKU 2}}` | `{{Add-On Description 2}}` | `{{Add-On Quantity 2}}` | `{{Add-On Unit 2}}` | `{{Add-On Fee 2}}` `{{Currency}}` | `{{Add-On Overage 2}}` | *(OPTIONAL)* |
+| Service / SKU      | Description                | Quantity                  | Unit                | Initial Term Fee                  | Overage                | Notes                  |
+| ------------------ | -------------------------- | ------------------------- | ------------------- | --------------------------------- | ---------------------- | ---------------------- |
+| `{{Service Name}}` | `{{Service Description}}`  | `{{Subscribed Quantity}}` | `{{Unit}}`          | `{{Annual Fee}}` `{{Currency}}`   | `{{Overage Rate}}`     | `{{Schedule 1 Notes}}` |
+| `{{Add-On SKU}}`   | `{{Add-On Description}}`   | `{{Add-On Quantity}}`     | `{{Add-On Unit}}`   | `{{Add-On Fee}}` `{{Currency}}`   | `{{Add-On Overage}}`   | _(OPTIONAL)_           |
+| `{{Add-On SKU 2}}` | `{{Add-On Description 2}}` | `{{Add-On Quantity 2}}`   | `{{Add-On Unit 2}}` | `{{Add-On Fee 2}}` `{{Currency}}` | `{{Add-On Overage 2}}` | _(OPTIONAL)_           |
 
 Add rows as needed. Quantities are measured per the Documentation; true-ups follow Section 3.
 
@@ -237,13 +246,13 @@ Add rows as needed. Quantities are measured per the Documentation; true-ups foll
 
 ## Schedule 2 — Fees & Payment Schedule
 
-| Invoice Date | Invoice Period | Amount | Currency | Payment Due | Description |
-|---|---|---|---|---|---|
-| `{{Initial Term Start}}` | Year 1 | `{{Annual Fee}}` | `{{Currency}}` | Net 30 | Initial Term annual fee |
-| `{{Year 2 Invoice Date}}` | Year 2 | `{{Year 2 Fee}}` | `{{Currency}}` | Net 30 | *(OPTIONAL — multi-year)* |
-| `{{Year 3 Invoice Date}}` | Year 3 | `{{Year 3 Fee}}` | `{{Currency}}` | Net 30 | *(OPTIONAL — multi-year)* |
-| `{{True-Up Invoice Date}}` | True-up | as measured | `{{Currency}}` | Net 30 | True-up against Schedule 1 |
-| `{{Milestone Invoice Date}}` | Milestone | `{{Milestone Amount}}` | `{{Currency}}` | Net 30 | *(OPTIONAL — milestone billing)* |
+| Invoice Date                 | Invoice Period | Amount                 | Currency       | Payment Due | Description                      |
+| ---------------------------- | -------------- | ---------------------- | -------------- | ----------- | -------------------------------- |
+| `{{Initial Term Start}}`     | Year 1         | `{{Annual Fee}}`       | `{{Currency}}` | Net 30      | Initial Term annual fee          |
+| `{{Year 2 Invoice Date}}`    | Year 2         | `{{Year 2 Fee}}`       | `{{Currency}}` | Net 30      | _(OPTIONAL — multi-year)_        |
+| `{{Year 3 Invoice Date}}`    | Year 3         | `{{Year 3 Fee}}`       | `{{Currency}}` | Net 30      | _(OPTIONAL — multi-year)_        |
+| `{{True-Up Invoice Date}}`   | True-up        | as measured            | `{{Currency}}` | Net 30      | True-up against Schedule 1       |
+| `{{Milestone Invoice Date}}` | Milestone      | `{{Milestone Amount}}` | `{{Currency}}` | Net 30      | _(OPTIONAL — milestone billing)_ |
 
 Currency and payment terms default to Section 4 unless this schedule states otherwise. Statutory interest and fixed-sum recovery costs apply on overdue invoices per Sections 4.5–4.6.
 
@@ -253,16 +262,16 @@ Currency and payment terms default to Section 4 unless this schedule states othe
 
 Tick each addendum that applies. An unticked addendum is not part of this Order.
 
-- [ ] **UK GDPR Article 28 DPA** — execute the companion `legalcode-dpa` UK variant. *(OPTIONAL — personal data only.)*
+- [ ] **UK GDPR Article 28 DPA** — execute the companion `legalcode-dpa` UK variant. _(OPTIONAL — personal data only.)_
 - [ ] **UK GDPR Article 28(3)(g) return / deletion on termination** — Customer's election (return or delete) under the DPA UK variant.
 - [ ] **DMCCA Pt 4 confirmation** — Customer band: ☐ consumer, ☐ SME-treated-as-consumer, ☐ pure business. The first two bands trigger Section 5.1 reminder rules `[VERIFY DMCCA Pt 4 commencement]`.
 - [ ] **Online Safety Act 2023** — Customer is an in-scope user-to-user / search service; Vendor supports OSA obligations per CSA §6 (UGC) and the `legalcode-tos` UK variant.
 - [ ] **NCSC Cyber Essentials / Cyber Essentials Plus** — Vendor certified at `{{Security Tier}}`, valid through `{{CE Expiry Date}}`.
 - [ ] **NIS Regulations 2018** — NIS class `{{NIS Entity Class}}`; cooperation per SLA UK §17.2.
-- [ ] **FCA / PRA operational resilience** — cross-reference SLA UK §11.10. *(OPTIONAL.)*
+- [ ] **FCA / PRA operational resilience** — cross-reference SLA UK §11.10. _(OPTIONAL.)_
 - [ ] **Modern Slavery Act 2015 §54 statement** — published at `{{Modern Slavery Statement URL}}` `[VERIFY current Modern Slavery Act threshold]`.
-- [ ] **Custom security questionnaire** — completed `{{Security Questionnaire Date}}`. *(OPTIONAL.)*
-- [ ] **Other** — `{{Other Addendum}}`. *(OPTIONAL.)*
+- [ ] **Custom security questionnaire** — completed `{{Security Questionnaire Date}}`. _(OPTIONAL.)_
+- [ ] **Other** — `{{Other Addendum}}`. _(OPTIONAL.)_
 
 Each ticked addendum is incorporated into this Order; conflicts with the CSA are resolved per CSA §18 save as Section 8 expressly says otherwise.
 
@@ -294,7 +303,7 @@ Add-on / multi-year fields: `{{Add-On SKU}}`/`{{Add-On Description}}`/`{{Add-On 
 
 Permissively licensed baselines and primary-source materials consulted; no consecutive run of five or more words is traceable to any of them.
 
-- Common Paper — Order Form `[CC-BY-4.0]` *(primary baseline)*; CSA v2.1 Order Form exhibit `[CC-BY-4.0]`
+- Common Paper — Order Form `[CC-BY-4.0]` _(primary baseline)_; CSA v2.1 Order Form exhibit `[CC-BY-4.0]`
 - Bonterms — Cloud Terms Order Form attachments `[CC-BY-4.0]`
 - GitHub `site-policy` `[CC0]`; Mozilla public legal templates `[MPL-2.0]`
 - legislation.gov.uk `[OGL]`: DMCCA 2024 `[VERIFY commencement]`; UK CRA 2015; DUAA 2025 `[VERIFY commencement]`; UK GDPR (retained) and DPA 2018 `[VERIFY post-REUL retention]`; Late Payment of Commercial Debts (Interest) Act 1998; Late Payment Regulations 2013; NIS Regulations 2018; Online Safety Act 2023; Modern Slavery Act 2015 `[VERIFY threshold]`; Bribery Act 2010; Contracts (Rights of Third Parties) Act 1999; Electronic Communications Act 2000 and SI 2016/696 `[VERIFY post-REUL retention]`

@@ -67,6 +67,7 @@ three questions of every program: Is it well-designed? Is it adequately resource
 empowered? Does it work in practice? This skill addresses all three.
 
 **Covers:**
+
 - Complete policy inventory development and gap identification across 8 regulatory domains
 - Regulatory obligation mapping: required policies per applicable framework and jurisdiction
 - Seven-dimension policy adequacy assessment (existence, currency, completeness, specificity,
@@ -83,6 +84,7 @@ empowered? Does it work in practice? This skill addresses all three.
 - Glass Box audit trail for regulator and auditor traceability
 
 **Does not:**
+
 - Design or build compliance program architecture (see `legalcode-compliance-program-builder`)
 - Conduct deep domain-specific compliance assessments — use domain specialists:
   - AML/KYC: `legalcode-aml-kyc-compliance`
@@ -97,6 +99,7 @@ empowered? Does it work in practice? This skill addresses all three.
 - Replace a formal audit or examination conducted by a licensed professional
 
 **Related skills:**
+
 - `legalcode-compliance-risk-assessment` — enterprise risk assessment; complements this
   skill by quantifying residual risk across compliance domains (not policy-specific)
 - `legalcode-compliance-program-builder` — builds the full compliance program framework
@@ -123,7 +126,7 @@ CDD Final Rule 31 C.F.R. §1010.230; SAR 31 C.F.R. §1020.320. Cybersecurity: NY
 23 NYCRR Part 500 (updated Nov 2023 for Class A companies); SEC cybersecurity incident
 disclosure rules (effective Dec 2023). Employment: NLRA Section 7 rights; FLSA;
 Title VII/ADA/ADEA; FTC non-compete landscape (vacatur Aug 2024 in Texas but Section 5
-unfair method enforcement continues per *Gateway Services* Sept 2025). Anti-corruption:
+unfair method enforcement continues per _Gateway Services_ Sept 2025). Anti-corruption:
 FCPA 15 U.S.C. §78dd-1 et seq. ESG: SEC climate disclosure rules [VERIFY current
 status after litigation challenges].
 
@@ -145,7 +148,8 @@ note: no facilitation payments exception (unlike US FCPA). Financial crime: POCA
 MLR 2017 SI 2017/692; ECCTA 2023 (Companies House reforms, failure to prevent fraud
 Pt.4). ESG: UK Modern Slavery Act 2015 s.54 transparency statement. Employment:
 Employment Rights Act 1996 + ERA 2025. Cybersecurity: NIS Regulations 2018 (SI 2018/506)
-+ NIS2 [VERIFY UK NIS2-equivalent status post-Brexit].
+
+- NIS2 [VERIFY UK NIS2-equivalent status post-Brexit].
 
 [JURISDICTION-SPECIFIC: Australia] Privacy Act 1988 (Cth) + Privacy and Other Legislation
 Amendment Act 2024 (mandatory DPO for large organizations; civil penalties up to AUD 50M);
@@ -197,6 +201,7 @@ conversation. When you proceed with partial context, state every assumption expl
 user can correct it.
 
 For batch/non-interactive runs, use these defaults:
+
 - Operating mode: Annual Enterprise Assessment
 - Risk profile: Regulated (tech/energy/manufacturing)
 - Geographic footprint: Multi-jurisdiction (EU + US at minimum)
@@ -218,6 +223,7 @@ Accept input in any of these formats:
 - **M&A / integration scenario**: A description of an acquisition requiring policy diligence
 
 Minimum required context to proceed:
+
 - Organization sector (financial, healthcare, technology, manufacturing, professional services, etc.)
 - Approximate size (headcount or revenue tier)
 - Primary operational jurisdiction(s)
@@ -239,13 +245,13 @@ use defaults for batch runs):
    - Post-Incident Root Cause Analysis — trace incident to underlying policy failure
    - Board Governance Review — board-ready policy accountability report
    - Regulatory Change Impact Assessment — specific regulation change → policy update map
-   - *Why this matters*: Each mode produces different outputs and focuses on different domains.
+   - _Why this matters_: Each mode produces different outputs and focuses on different domains.
 
 2. **Organization Risk Profile** (determines regulatory obligation depth):
    - Highly-regulated (financial services, healthcare, defense, pharma, energy utilities)
    - Regulated (technology, professional services, manufacturing, retail/e-commerce)
    - General business (professional/creative services, non-profit, startup pre-scale)
-   - *Why this matters*: Regulatory risk profile drives the policy requirement scope.
+   - _Why this matters_: Regulatory risk profile drives the policy requirement scope.
      A bank requires AML, GLBA, SOX, and SEC policies; a SaaS startup primarily needs
      privacy, cybersecurity, and employment policies.
 
@@ -253,7 +259,7 @@ use defaults for batch runs):
    - Single country — specify which
    - Multi-jurisdiction, 2–5 countries — specify primary
    - Multi-jurisdiction, 5+ countries / global operations
-   - *Why this matters*: Multi-jurisdiction operations require policy harmonization analysis
+   - _Why this matters_: Multi-jurisdiction operations require policy harmonization analysis
      and jurisdiction-specific overlays at each [JURISDICTION-SPECIFIC] marker.
 
 4. **Policy Library Status** (determines starting point):
@@ -261,7 +267,7 @@ use defaults for batch runs):
    - Partial policies — existing policies provided for gap analysis
    - Full policies — existing library; assess currency and adequacy
    - Unknown — help identify what should exist before assessing gaps
-   - *Why this matters*: Determines whether the output is a "what's missing" list vs.
+   - _Why this matters_: Determines whether the output is a "what's missing" list vs.
      a "what needs updating" analysis vs. both.
 
 5. **Assessment Trigger** (provides enforcement context):
@@ -272,7 +278,7 @@ use defaults for batch runs):
    - Certification preparation (specify standard)
    - Post-incident remediation
    - Board mandate or investor requirement
-   - *Why this matters*: Regulatory examinations and board mandates require different
+   - _Why this matters_: Regulatory examinations and board mandates require different
      output confidence levels and documentation standards.
 
 If the user provides partial context, proceed with stated defaults and note assumptions.
@@ -283,6 +289,7 @@ Create or validate the organization's policy inventory. For each policy identifi
 provided:
 
 **3a. Assign a Policy Reference ID** (format: `POL-[DOMAIN]-[NUMBER]`):
+
 - POL-PRV = Privacy and Data Protection
 - POL-SEC = Information Security and Cybersecurity
 - POL-FIN = Financial Crime (AML/KYC/Sanctions)
@@ -294,26 +301,28 @@ provided:
 
 **3b. Capture policy metadata** for each policy:
 
-| Field | Description |
-|-------|-------------|
-| Policy ID | POL-[DOMAIN]-[N] |
-| Policy Name | Full name as titled |
-| Version | Version number if documented |
-| Last Review Date | Date of last substantive review (not just re-approval) |
-| Next Scheduled Review | If documented |
-| Policy Owner | Named individual (role + name if available) |
-| Approval Authority | Who approves (CEO, Board, CCO, etc.) |
-| Distribution | Who has access (all staff, specific roles, publicly available) |
-| Training Program | Whether staff training exists (yes, partial, no) |
-| Attestation Program | Whether staff attest to compliance (yes, partial, no) |
+| Field                 | Description                                                    |
+| --------------------- | -------------------------------------------------------------- |
+| Policy ID             | POL-[DOMAIN]-[N]                                               |
+| Policy Name           | Full name as titled                                            |
+| Version               | Version number if documented                                   |
+| Last Review Date      | Date of last substantive review (not just re-approval)         |
+| Next Scheduled Review | If documented                                                  |
+| Policy Owner          | Named individual (role + name if available)                    |
+| Approval Authority    | Who approves (CEO, Board, CCO, etc.)                           |
+| Distribution          | Who has access (all staff, specific roles, publicly available) |
+| Training Program      | Whether staff training exists (yes, partial, no)               |
+| Attestation Program   | Whether staff attest to compliance (yes, partial, no)          |
 
 **3c. Identify missing policies** by comparing the inventory against the Required Policy
 Library (Section: Policy Requirements Reference Library below). For each identified gap:
+
 - Mark as Gap Type 1 (entirely absent)
 - Note the triggering regulatory framework
 - Note the applicable jurisdiction(s)
 
 **⟁ CLARIFY** — If the policy library is large (20+ policies), ask:
+
 - Should I assess all policies comprehensively, or focus on the highest-risk domains first?
 - Default: Prioritize by inherent risk score (Step 5) — domains with highest inherent risk
   receive deepest assessment.
@@ -326,23 +335,24 @@ baseline. For each obligation:
 
 **4a. Determine applicability** using this screening:
 
-| Factor | MANDATORY | CONDITIONAL | NOT APPLICABLE |
-|--------|-----------|-------------|----------------|
-| Statutory requirement | Law explicitly requires policy | Regulation recommends or implies | Jurisdiction not applicable |
-| Regulatory expectation | Regulators expect in examination | Frequently examined | Not an enforcement focus |
-| Certification requirement | Required for certification | Recommended | Certification not sought |
-| Contractual requirement | Customer/partner contract requires | Often required | No contractual obligation |
+| Factor                    | MANDATORY                          | CONDITIONAL                      | NOT APPLICABLE              |
+| ------------------------- | ---------------------------------- | -------------------------------- | --------------------------- |
+| Statutory requirement     | Law explicitly requires policy     | Regulation recommends or implies | Jurisdiction not applicable |
+| Regulatory expectation    | Regulators expect in examination   | Frequently examined              | Not an enforcement focus    |
+| Certification requirement | Required for certification         | Recommended                      | Certification not sought    |
+| Contractual requirement   | Customer/partner contract requires | Often required                   | No contractual obligation   |
 
 **4b. Produce a Regulatory Obligation Matrix** for the organization:
 
-| Policy Domain | Policy Name | Required By | Applicability | Highest-Penalty Provision | Current Enforcement Focus | Last Updated |
-|---------------|-------------|-------------|---------------|--------------------------|--------------------------|--------------|
-| Privacy | Data Privacy Policy | GDPR Art. 24 | MANDATORY | €20M or 4% turnover | Consent + cross-border transfers 2024–2025 | [VERIFY] |
-| Privacy | DPIA Procedure | GDPR Art. 35 | MANDATORY (high-risk) | Same as above | AI automated decisions, profiling | [VERIFY] |
-| Cybersecurity | Incident Response Policy | NIS2 Art. 21(2)(b) | MANDATORY (essential/important) | €10M or 2% turnover | 24h/72h/1-month reporting chain | Oct 2024 |
-| [Continue for all applicable rows] | | | | | | |
+| Policy Domain                      | Policy Name              | Required By        | Applicability                   | Highest-Penalty Provision | Current Enforcement Focus                  | Last Updated |
+| ---------------------------------- | ------------------------ | ------------------ | ------------------------------- | ------------------------- | ------------------------------------------ | ------------ |
+| Privacy                            | Data Privacy Policy      | GDPR Art. 24       | MANDATORY                       | €20M or 4% turnover       | Consent + cross-border transfers 2024–2025 | [VERIFY]     |
+| Privacy                            | DPIA Procedure           | GDPR Art. 35       | MANDATORY (high-risk)           | Same as above             | AI automated decisions, profiling          | [VERIFY]     |
+| Cybersecurity                      | Incident Response Policy | NIS2 Art. 21(2)(b) | MANDATORY (essential/important) | €10M or 2% turnover       | 24h/72h/1-month reporting chain            | Oct 2024     |
+| [Continue for all applicable rows] |                          |                    |                                 |                           |                                            |              |
 
 **4c. Identify conflicts** — compare existing policies against current regulatory requirements:
+
 - Mark as Gap Type 3 (conflicting) where existing policy language contradicts applicable law
 - Note the specific conflict (e.g., "Policy states 5-year retention; GDPR storage limitation
   principle requires minimum necessary retention — conflict with Art. 5(1)(e)")
@@ -355,33 +365,35 @@ policies. This measures the exposure if no effective policy existed for this dom
 
 **5a. Likelihood scale (1–5):**
 
-| Score | Label | Definition |
-|-------|-------|-----------|
-| 1 | Rare | Domain presents negligible regulatory risk; no material penalties possible |
-| 2 | Unlikely | Domain regulated; organization profile creates low exposure |
-| 3 | Possible | Domain regulated; exposure if gaps found is moderate; enforcement periodic |
-| 4 | Likely | Domain actively enforced; organization has characteristics regulators target |
-| 5 | Almost Certain | High-profile enforcement area; organization is a likely examination target |
+| Score | Label          | Definition                                                                   |
+| ----- | -------------- | ---------------------------------------------------------------------------- |
+| 1     | Rare           | Domain presents negligible regulatory risk; no material penalties possible   |
+| 2     | Unlikely       | Domain regulated; organization profile creates low exposure                  |
+| 3     | Possible       | Domain regulated; exposure if gaps found is moderate; enforcement periodic   |
+| 4     | Likely         | Domain actively enforced; organization has characteristics regulators target |
+| 5     | Almost Certain | High-profile enforcement area; organization is a likely examination target   |
 
 **5b. Impact scale (1–5):**
 
-| Score | Label | Definition |
-|-------|-------|-----------|
-| 1 | Negligible | No regulatory consequence; administrative cleanup only |
-| 2 | Minor | Enforcement notice; minor fine; limited operational disruption |
-| 3 | Moderate | Regulatory warning; moderate fine (up to 1% revenue); short-term disruption |
-| 4 | Major | Significant fine (1–5% revenue); operations disrupted; reputational exposure |
-| 5 | Catastrophic | Criminal exposure; license revocation; existential fine; personal liability |
+| Score | Label        | Definition                                                                   |
+| ----- | ------------ | ---------------------------------------------------------------------------- |
+| 1     | Negligible   | No regulatory consequence; administrative cleanup only                       |
+| 2     | Minor        | Enforcement notice; minor fine; limited operational disruption               |
+| 3     | Moderate     | Regulatory warning; moderate fine (up to 1% revenue); short-term disruption  |
+| 4     | Major        | Significant fine (1–5% revenue); operations disrupted; reputational exposure |
+| 5     | Catastrophic | Criminal exposure; license revocation; existential fine; personal liability  |
 
 **Inherent Risk Score = Likelihood × Impact (range: 1–25)**
 
 **5c. Written rationale requirement** — every score must include:
+
 - The specific regulatory provision driving the likelihood score
 - The enforcement data or precedent supporting the impact score
 - A [VERIFY] marker where the rationale relies on unconfirmed assumptions
 - Confidence level (VERIFIED / LIKELY / POSSIBLE / VERIFY / ASSUMED)
 
 **Example:**
+
 ```
 Policy Domain: Data Privacy Policy (GDPR compliance)
 Jurisdiction: EU operations — 40,000+ data subjects
@@ -412,15 +424,15 @@ a shallow "does it exist?" check from a professional adequacy assessment.
 
 #### The 7 Adequacy Dimensions
 
-| # | Dimension | What to Assess | Key Questions |
-|---|-----------|----------------|---------------|
-| 1 | **Existence** | Does the policy exist as a standalone document or in a code of conduct? | Is the policy named, findable, and officially adopted? |
-| 2 | **Currency** | When was it last substantively reviewed? Is it current with applicable regulations? | Does it reference current regulatory versions? Does it predate major regulatory changes? |
-| 3 | **Completeness** | Does it cover all required elements under applicable regulations? | Which required elements are missing? Are there placeholder sections? |
-| 4 | **Specificity** | Is it specific enough to guide action, or just a vague statement of intent? | Can an employee make a compliant decision using this policy alone? |
-| 5 | **Accessibility** | Is it available to the personnel who need it? In the required languages? | Is it posted on intranet, LMS, or equivalent? Translated? |
-| 6 | **Training Integration** | Have affected personnel been trained on the policy? Evidence of training? | Is there an LMS completion record? Is training current (annual)? |
-| 7 | **Enforcement / Attestation** | Is there a mechanism to monitor compliance and attest to adherence? | Annual attestation? Policy exception process? Consequence framework? |
+| #   | Dimension                     | What to Assess                                                                      | Key Questions                                                                            |
+| --- | ----------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| 1   | **Existence**                 | Does the policy exist as a standalone document or in a code of conduct?             | Is the policy named, findable, and officially adopted?                                   |
+| 2   | **Currency**                  | When was it last substantively reviewed? Is it current with applicable regulations? | Does it reference current regulatory versions? Does it predate major regulatory changes? |
+| 3   | **Completeness**              | Does it cover all required elements under applicable regulations?                   | Which required elements are missing? Are there placeholder sections?                     |
+| 4   | **Specificity**               | Is it specific enough to guide action, or just a vague statement of intent?         | Can an employee make a compliant decision using this policy alone?                       |
+| 5   | **Accessibility**             | Is it available to the personnel who need it? In the required languages?            | Is it posted on intranet, LMS, or equivalent? Translated?                                |
+| 6   | **Training Integration**      | Have affected personnel been trained on the policy? Evidence of training?           | Is there an LMS completion record? Is training current (annual)?                         |
+| 7   | **Enforcement / Attestation** | Is there a mechanism to monitor compliance and attest to adherence?                 | Annual attestation? Policy exception process? Consequence framework?                     |
 
 #### Design Effectiveness (DE) vs. Operational Effectiveness (OE)
 
@@ -432,13 +444,13 @@ Is it fit-for-purpose on paper?
 **Operational Effectiveness (OE):** Is the policy actually implemented? Is there evidence of
 consistent execution (training completion, attestations, monitoring data, exception records)?
 
-| Level | Design Effectiveness | Operational Effectiveness |
-|-------|---------------------|--------------------------|
-| 1 | Policy absent — no document exists | No evidence of awareness, communication, or training |
-| 2 | Policy exists but materially incomplete; fundamental provisions missing | Policy communicated (published); no training program; no attestation evidence |
-| 3 | Policy covers requirements partially; notable gaps or outdated provisions | Staff trained via periodic sessions; inconsistent attestation; exception rate unknown |
-| 4 | Policy well-designed; addresses regulatory requirements; regularly reviewed | Staff trained annually; formal attestation program; exception tracking; <5% violation rate |
-| 5 | Policy exceeds requirements; integrates with workflows; best-in-class | Continuous monitoring; zero-tolerance consequence model; policy integrated into hiring/procurement/performance; <1% exception rate |
+| Level | Design Effectiveness                                                        | Operational Effectiveness                                                                                                          |
+| ----- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | Policy absent — no document exists                                          | No evidence of awareness, communication, or training                                                                               |
+| 2     | Policy exists but materially incomplete; fundamental provisions missing     | Policy communicated (published); no training program; no attestation evidence                                                      |
+| 3     | Policy covers requirements partially; notable gaps or outdated provisions   | Staff trained via periodic sessions; inconsistent attestation; exception rate unknown                                              |
+| 4     | Policy well-designed; addresses regulatory requirements; regularly reviewed | Staff trained annually; formal attestation program; exception tracking; <5% violation rate                                         |
+| 5     | Policy exceeds requirements; integrates with workflows; best-in-class       | Continuous monitoring; zero-tolerance consequence model; policy integrated into hiring/procurement/performance; <1% exception rate |
 
 #### MINIMUM Policy Adequacy Score
 
@@ -462,6 +474,7 @@ Apply the **Design-Execution Gap Multiplier** to residual risk: × 1.25 if DE �
 
 **⟁ CLARIFY** — For policies where Design or Operational Effectiveness cannot be assessed
 from available materials, ask:
+
 - "I cannot assess operational effectiveness for [Policy Name] without evidence of
   training records, attestation programs, or monitoring data. Can you provide this, or
   should I flag as [VERIFY] with ASSUMED OE=2 (Initial/Ad Hoc)?"
@@ -474,6 +487,7 @@ Combine inherent risk and policy adequacy to calculate residual policy gap risk.
 **Residual Policy Gap Risk = Inherent Risk Score × (1 − OE/5) × Gap Multiplier**
 
 Where:
+
 - Inherent Risk Score = L × I from Step 5 (1–25)
 - OE = Operational Effectiveness (1–5) from Step 6
 - Gap Multiplier = 1.25 if DE − OE ≥ 2; otherwise 1.00
@@ -498,14 +512,15 @@ Residual: 12 × (1 − 4/5) × 1.00 = 12 × 0.2 × 1.00 = 2.4 (LOW)
 
 **Residual Gap Risk Classification:**
 
-| Score Range | Tier | Meaning | Regulatory Analogy |
-|-------------|------|---------|-------------------|
-| ≥ 15 | **CRITICAL** | Immediate enforcement-ready deficiency; regulators could act now | "Significant weakness" in examination; voluntary disclosure risk |
-| 9–14 | **HIGH** | Material gap requiring near-term remediation; elevated enforcement exposure | "Identified deficiency" requiring remediation plan |
-| 5–8 | **MEDIUM** | Notable gap; tolerable with enhanced monitoring and 90-day remediation | "Observation" in regulatory examination; low likelihood of immediate action |
-| 1–4 | **LOW** | Minor gap; routine remediation acceptable; minimal regulatory risk | Housekeeping item; acceptable risk given other controls |
+| Score Range | Tier         | Meaning                                                                     | Regulatory Analogy                                                          |
+| ----------- | ------------ | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| ≥ 15        | **CRITICAL** | Immediate enforcement-ready deficiency; regulators could act now            | "Significant weakness" in examination; voluntary disclosure risk            |
+| 9–14        | **HIGH**     | Material gap requiring near-term remediation; elevated enforcement exposure | "Identified deficiency" requiring remediation plan                          |
+| 5–8         | **MEDIUM**   | Notable gap; tolerable with enhanced monitoring and 90-day remediation      | "Observation" in regulatory examination; low likelihood of immediate action |
+| 1–4         | **LOW**      | Minor gap; routine remediation acceptable; minimal regulatory risk          | Housekeeping item; acceptable risk given other controls                     |
 
 **Aggregation Rule:**
+
 - Overall domain policy tier = LOWEST residual risk tier across all policies in domain
 - This prevents a well-rated policy from masking a critical gap elsewhere in the same domain
 - Example: AML domain has 5 required policies; 4 score LOW but SAR Procedure is CRITICAL
@@ -521,7 +536,7 @@ in enforcement reality.
 Does the CRITICAL/HIGH classification follow logically from the inherent risk score and
 adequacy evidence? Is the scoring based on verified evidence or primarily assumptions?
 
-*Single-weakest-evidence test*: State the single piece of evidence most critical to this
+_Single-weakest-evidence test_: State the single piece of evidence most critical to this
 classification. If it is ASSUMED rather than VERIFIED, what would the score be under the
 opposite assumption? If the classification changes significantly, lower confidence.
 
@@ -530,6 +545,7 @@ Have all relevant policies and governance controls been considered? Is there a c
 policy, process, or governance mechanism that could lower the residual score?
 
 Examples of compensating controls:
+
 - A Privacy Policy may be outdated, but a strong DPO function with quarterly EDPB guidance
   reviews may compensate for limited currency
 - An Anti-Corruption Policy may be OE=2, but a robust expense approval workflow with
@@ -551,26 +567,26 @@ classification?
 
 Compile all findings into a structured Policy Gap Register. For each gap identified:
 
-| Field | Description |
-|-------|-------------|
-| Gap ID | GAP-[DOMAIN]-[N] (sequential) |
-| Gap Type | 1 = Absent; 2 = Inadequate; 3 = Conflicting |
-| Policy Domain | Domain from policy reference ID |
-| Policy Name | Name of the affected/missing policy |
-| Required By | Regulatory framework(s) requiring this policy |
-| Jurisdiction(s) | Applicable jurisdictions |
-| Gap Description | Specific description of what is missing or inadequate |
-| Inherent Risk Score | L × I |
-| Policy Adequacy Score | MINIMUM(DE, OE) |
-| Design-Execution Gap | DE − OE |
-| Residual Risk Score | Calculated per formula |
-| Gap Tier | CRITICAL / HIGH / MEDIUM / LOW |
-| Confidence Level | VERIFIED / LIKELY / POSSIBLE / VERIFY / ASSUMED |
-| Remediation Action | Specific action required |
-| Recommended Owner | Named role (CCO, DPO, CISO, General Counsel, etc.) |
-| Target Timeline | Days from assessment date |
-| Success Metric | How completion will be verified |
-| 3-Pass Result | Summary of self-interrogation findings |
+| Field                 | Description                                           |
+| --------------------- | ----------------------------------------------------- |
+| Gap ID                | GAP-[DOMAIN]-[N] (sequential)                         |
+| Gap Type              | 1 = Absent; 2 = Inadequate; 3 = Conflicting           |
+| Policy Domain         | Domain from policy reference ID                       |
+| Policy Name           | Name of the affected/missing policy                   |
+| Required By           | Regulatory framework(s) requiring this policy         |
+| Jurisdiction(s)       | Applicable jurisdictions                              |
+| Gap Description       | Specific description of what is missing or inadequate |
+| Inherent Risk Score   | L × I                                                 |
+| Policy Adequacy Score | MINIMUM(DE, OE)                                       |
+| Design-Execution Gap  | DE − OE                                               |
+| Residual Risk Score   | Calculated per formula                                |
+| Gap Tier              | CRITICAL / HIGH / MEDIUM / LOW                        |
+| Confidence Level      | VERIFIED / LIKELY / POSSIBLE / VERIFY / ASSUMED       |
+| Remediation Action    | Specific action required                              |
+| Recommended Owner     | Named role (CCO, DPO, CISO, General Counsel, etc.)    |
+| Target Timeline       | Days from assessment date                             |
+| Success Metric        | How completion will be verified                       |
+| 3-Pass Result         | Summary of self-interrogation findings                |
 
 **Gap Type Definitions:**
 
@@ -582,6 +598,7 @@ risk — no protection at all.
 **Gap Type 2 — Inadequate Policy:**
 A policy exists but is materially deficient in one or more of the 7 adequacy dimensions.
 Common inadequacies:
+
 - Currency: Predates regulatory changes > 18 months (for fast-moving areas like privacy, AI)
 - Completeness: Missing required elements (e.g., data retention schedule absent from privacy policy)
 - Specificity: Policy is aspirational but provides no operational guidance
@@ -590,6 +607,7 @@ Common inadequacies:
 
 **Gap Type 3 — Conflicting Policy:**
 Existing policy language directly contradicts current regulatory requirements. Examples:
+
 - Policy permits retention of personal data for 10 years as a standard; GDPR storage
   limitation principle requires deletion when purpose served (conflict with Art. 5(1)(e))
 - Policy prohibits employees from reporting externally; conflicts with SEC whistleblower
@@ -605,6 +623,7 @@ policy lifecycle failure.
 **10a. Regulatory Change Drivers:**
 
 For each CRITICAL or HIGH gap, identify the triggering regulatory event:
+
 - New law or regulation (cite: name + effective date + [VERIFY] if uncertain)
 - Amended regulation (cite: original + amendment + effective date)
 - New regulatory guidance (cite: regulator + guidance + date)
@@ -617,6 +636,7 @@ applicable law by years face greater scrutiny.
 **10b. Organizational Change Drivers:**
 
 Identify whether organizational changes created policy gaps:
+
 - Merger or acquisition (acquired company policies not yet integrated)
 - New business line or product (existing policy didn't contemplate new activity)
 - Geographic expansion (existing policy doesn't cover new jurisdiction)
@@ -626,6 +646,7 @@ Identify whether organizational changes created policy gaps:
 **10c. Policy Lifecycle Failure:**
 
 Identify gaps from inadequate policy management:
+
 - No scheduled review cadence (most dangerous — regulatory changes go unnoticed)
 - Policy owner turnover without handoff (orphaned policies deteriorate)
 - No version control (unclear which version is current)
@@ -637,12 +658,12 @@ Translate the Policy Gap Register into an actionable remediation roadmap.
 
 **Priority Tiers:**
 
-| Tier | Score / Criteria | Timeline | Example |
-|------|------------------|----------|---------|
-| **IMMEDIATE** | Residual ≥ 15 (CRITICAL) OR policy directly required by active enforcement focus | 0–30 days | SAR procedure absent; active FinCEN examination scheduled |
-| **NEAR-TERM** | Residual 9–14 (HIGH) OR policy cited in prior audit finding or enforcement notice | 31–90 days | Data Retention Policy 5 years old; GDPR storage limitation changes since adoption |
-| **BACKGROUND** | Residual 5–8 (MEDIUM) OR policy exists but adequacy improvements needed | 91–180 days | Travel & Expense Policy currency improvement; AML training refresh |
-| **WATCH** | Residual 1–4 (LOW) OR future regulatory change will require update | Next annual review cycle | UK GDPR policy update for DUA Act 2025; CSRD applicability in 2–3 years |
+| Tier           | Score / Criteria                                                                  | Timeline                 | Example                                                                           |
+| -------------- | --------------------------------------------------------------------------------- | ------------------------ | --------------------------------------------------------------------------------- |
+| **IMMEDIATE**  | Residual ≥ 15 (CRITICAL) OR policy directly required by active enforcement focus  | 0–30 days                | SAR procedure absent; active FinCEN examination scheduled                         |
+| **NEAR-TERM**  | Residual 9–14 (HIGH) OR policy cited in prior audit finding or enforcement notice | 31–90 days               | Data Retention Policy 5 years old; GDPR storage limitation changes since adoption |
+| **BACKGROUND** | Residual 5–8 (MEDIUM) OR policy exists but adequacy improvements needed           | 91–180 days              | Travel & Expense Policy currency improvement; AML training refresh                |
+| **WATCH**      | Residual 1–4 (LOW) OR future regulatory change will require update                | Next annual review cycle | UK GDPR policy update for DUA Act 2025; CSRD applicability in 2–3 years           |
 
 **Remediation roadmap format for each gap:**
 
@@ -669,14 +690,15 @@ Dependencies: Legal counsel (CPRA expertise), operations team (intake system)
 
 For board presentation, aggregate the remediation roadmap into an investment case:
 
-| Tier | Number of Gaps | Total Effort Est. | Estimated Timeline | Risk Reduction |
-|------|----------------|-------------------|--------------------|---------------|
-| IMMEDIATE | [N] | [hours] | 30 days | CRITICAL → MEDIUM |
-| NEAR-TERM | [N] | [hours] | 90 days | HIGH → LOW |
-| BACKGROUND | [N] | [hours] | 180 days | MEDIUM → LOW |
-| **Total** | **[N]** | **[hours]** | **180 days** | **[Overall risk tier]** |
+| Tier       | Number of Gaps | Total Effort Est. | Estimated Timeline | Risk Reduction          |
+| ---------- | -------------- | ----------------- | ------------------ | ----------------------- |
+| IMMEDIATE  | [N]            | [hours]           | 30 days            | CRITICAL → MEDIUM       |
+| NEAR-TERM  | [N]            | [hours]           | 90 days            | HIGH → LOW              |
+| BACKGROUND | [N]            | [hours]           | 180 days           | MEDIUM → LOW            |
+| **Total**  | **[N]**        | **[hours]**       | **180 days**       | **[Overall risk tier]** |
 
 Include:
+
 - External counsel cost estimate (if specialist engagement required)
 - Internal resource hours (legal, compliance, HR, IT, operations)
 - Technology/tooling costs (LMS platform, policy management software)
@@ -688,18 +710,19 @@ Assess the policy governance framework itself — not just individual policy con
 
 **12a. Board/Leadership Accountability:**
 
-| Element | Present | Quality | Evidence |
-|---------|---------|---------|---------|
-| Board-approved policy governance framework | | 1–5 | |
-| Named policy owner for each domain | | 1–5 | |
-| Regular CCO/DPO/CISO reporting to board | | 1–5 | |
-| Board review of policy gap register | | 1–5 | |
-| Board-approved policy review schedule | | 1–5 | |
-| Documented risk appetite for policy gaps | | 1–5 | |
+| Element                                    | Present | Quality | Evidence |
+| ------------------------------------------ | ------- | ------- | -------- |
+| Board-approved policy governance framework |         | 1–5     |          |
+| Named policy owner for each domain         |         | 1–5     |          |
+| Regular CCO/DPO/CISO reporting to board    |         | 1–5     |          |
+| Board review of policy gap register        |         | 1–5     |          |
+| Board-approved policy review schedule      |         | 1–5     |          |
+| Documented risk appetite for policy gaps   |         | 1–5     |          |
 
 **12b. Policy Lifecycle Management:**
 
 Assess whether the organization has a functioning policy lifecycle:
+
 - Policy inventory maintained and current (yes / partial / no)
 - Defined review cadence per policy (all / some / none)
 - Trigger-based review process for regulatory changes (yes / partial / no)
@@ -709,6 +732,7 @@ Assess whether the organization has a functioning policy lifecycle:
 **12c. Board Decisions Required:**
 
 Present the following for board decision (adapt to specific findings):
+
 1. Accept CRITICAL residual policy risk in [Domain] until [Date], OR authorize
    immediate remediation budget of [$X] and [N] hours internal resources?
 2. Approve new policy governance framework with named domain owners and quarterly
@@ -727,111 +751,111 @@ This reference library maps required policies to applicable regulatory framework
 
 ### Domain 1: Privacy and Data Protection
 
-| Policy Name | Required/Recommended By | Jurisdiction Trigger | Key Requirements | [JURISDICTION-SPECIFIC] Notes |
-|-------------|------------------------|---------------------|-----------------|-------------------------------|
-| Privacy Policy / Privacy Notice | GDPR Art. 13/14; CCPA §1798.100; LGPD Art. 9; DPDP Act 2023 | Any personal data processing | Data types collected, purpose, legal basis, rights, retention, contact | [EU] Layered privacy notice required (EDPB Guidelines 2018); [CA] "Do Not Sell" / "Do Not Share" link mandatory |
-| Data Retention and Deletion Policy | GDPR Art. 5(1)(e); CCPA §1798.105; LGPD Art. 16; HIPAA §164.530(j) | Any personal data processing | Retention schedule per data category; deletion triggers; legal hold exceptions | [EU] "Storage limitation" principle; specific hold cannot exceed purpose; [US-Health] HIPAA 6-year retention for PHI |
-| Data Subject Rights Procedure | GDPR Arts. 15–22; CCPA §§1798.100–115; CPRA Arts. 1798.110–135 | EU/UK/CA/BR personal data | Access, rectification, erasure, portability, objection, automated decision opt-out | [EU] 30-day + 2-month extension SLA; [CA] 45-day + 45-day extension; [VERIFY CA timeline] |
-| Data Protection Impact Assessment (DPIA) Procedure | GDPR Art. 35; UK GDPR Art. 35; EDPB Guidelines 09/2022 | High-risk processing, new technology, profiling, special categories | DPIA trigger criteria; methodology (consultation, risk assessment); DPO involvement | [EU] Prior consultation with supervisory authority if high residual risk (Art. 36) |
-| Cross-Border Data Transfer Policy | GDPR Chapter V; UK GDPR Chapter V; LGPD Chapter V; PIPL Arts. 38–43 | Any international personal data transfer | Transfer mechanism selection (SCCs, BCRs, adequacy decision); TIA requirement | [EU] SCCs 2021 Modules 1–4; Schrems II TIA required; [UK] IDTA March 2022; [CN] PIPL Art. 38 government approval for key sectors |
-| Data Breach Incident Response Procedure | GDPR Arts. 33–34; UK GDPR; CCPA §1798.150; LGPD Art. 48; AU Privacy Act NDB | Any breach of personal data | Breach detection, severity assessment, notification timelines, regulator reporting | [EU] 72-hour DPA notification; [AU] 30 days; [CA] CCPA: "expedient" = 72 hours in practice; [VERIFY] |
-| Cookie and Tracking Technology Policy | ePrivacy Directive Art. 5(3); GDPR consent; CCPA GPC signal; CPRA | Any website with EU/CA users | Cookie categories; consent mechanism; GPC signal compliance | [EU] Prior consent for non-essential; [CA] GPC signal = opt-out right; CNIL analytics exemption July 2025 |
-| Data Processing Agreements / Vendor Assessment Policy | GDPR Art. 28; CCPA §1798.140(ag) contractor requirements | Any third-party data processor | DPA requirements; processor screening; sub-processor clause; audit rights | [EU] GDPR Art. 28(3) mandatory 10 provisions; [VERIFY latest EDPB guidance on DPA adequacy] |
-| Record of Processing Activities (ROPA) Procedure | GDPR Art. 30; UK GDPR Art. 30 | Organizations >250 employees OR high-risk processing | Maintain ROPA; review cadence; DPO involvement | [EU] Supervisory authority may request ROPA on demand; [UK] ICO expects ROPA even for smaller orgs |
-| AI and Automated Decision-Making Policy | GDPR Art. 22; EU AI Act 2024/1689; NYC Local Law 144; CO SB 24-205 | Any automated/AI-assisted decisions affecting individuals | Opt-out rights; human review process; bias audit (NYC); meaningful explanation | [EU] AI Act requires high-risk system documentation + conformity assessment by Aug 2026; [US-NYC] Annual bias audit mandatory for AEDT |
+| Policy Name                                           | Required/Recommended By                                                     | Jurisdiction Trigger                                                | Key Requirements                                                                    | [JURISDICTION-SPECIFIC] Notes                                                                                                          |
+| ----------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Privacy Policy / Privacy Notice                       | GDPR Art. 13/14; CCPA §1798.100; LGPD Art. 9; DPDP Act 2023                 | Any personal data processing                                        | Data types collected, purpose, legal basis, rights, retention, contact              | [EU] Layered privacy notice required (EDPB Guidelines 2018); [CA] "Do Not Sell" / "Do Not Share" link mandatory                        |
+| Data Retention and Deletion Policy                    | GDPR Art. 5(1)(e); CCPA §1798.105; LGPD Art. 16; HIPAA §164.530(j)          | Any personal data processing                                        | Retention schedule per data category; deletion triggers; legal hold exceptions      | [EU] "Storage limitation" principle; specific hold cannot exceed purpose; [US-Health] HIPAA 6-year retention for PHI                   |
+| Data Subject Rights Procedure                         | GDPR Arts. 15–22; CCPA §§1798.100–115; CPRA Arts. 1798.110–135              | EU/UK/CA/BR personal data                                           | Access, rectification, erasure, portability, objection, automated decision opt-out  | [EU] 30-day + 2-month extension SLA; [CA] 45-day + 45-day extension; [VERIFY CA timeline]                                              |
+| Data Protection Impact Assessment (DPIA) Procedure    | GDPR Art. 35; UK GDPR Art. 35; EDPB Guidelines 09/2022                      | High-risk processing, new technology, profiling, special categories | DPIA trigger criteria; methodology (consultation, risk assessment); DPO involvement | [EU] Prior consultation with supervisory authority if high residual risk (Art. 36)                                                     |
+| Cross-Border Data Transfer Policy                     | GDPR Chapter V; UK GDPR Chapter V; LGPD Chapter V; PIPL Arts. 38–43         | Any international personal data transfer                            | Transfer mechanism selection (SCCs, BCRs, adequacy decision); TIA requirement       | [EU] SCCs 2021 Modules 1–4; Schrems II TIA required; [UK] IDTA March 2022; [CN] PIPL Art. 38 government approval for key sectors       |
+| Data Breach Incident Response Procedure               | GDPR Arts. 33–34; UK GDPR; CCPA §1798.150; LGPD Art. 48; AU Privacy Act NDB | Any breach of personal data                                         | Breach detection, severity assessment, notification timelines, regulator reporting  | [EU] 72-hour DPA notification; [AU] 30 days; [CA] CCPA: "expedient" = 72 hours in practice; [VERIFY]                                   |
+| Cookie and Tracking Technology Policy                 | ePrivacy Directive Art. 5(3); GDPR consent; CCPA GPC signal; CPRA           | Any website with EU/CA users                                        | Cookie categories; consent mechanism; GPC signal compliance                         | [EU] Prior consent for non-essential; [CA] GPC signal = opt-out right; CNIL analytics exemption July 2025                              |
+| Data Processing Agreements / Vendor Assessment Policy | GDPR Art. 28; CCPA §1798.140(ag) contractor requirements                    | Any third-party data processor                                      | DPA requirements; processor screening; sub-processor clause; audit rights           | [EU] GDPR Art. 28(3) mandatory 10 provisions; [VERIFY latest EDPB guidance on DPA adequacy]                                            |
+| Record of Processing Activities (ROPA) Procedure      | GDPR Art. 30; UK GDPR Art. 30                                               | Organizations >250 employees OR high-risk processing                | Maintain ROPA; review cadence; DPO involvement                                      | [EU] Supervisory authority may request ROPA on demand; [UK] ICO expects ROPA even for smaller orgs                                     |
+| AI and Automated Decision-Making Policy               | GDPR Art. 22; EU AI Act 2024/1689; NYC Local Law 144; CO SB 24-205          | Any automated/AI-assisted decisions affecting individuals           | Opt-out rights; human review process; bias audit (NYC); meaningful explanation      | [EU] AI Act requires high-risk system documentation + conformity assessment by Aug 2026; [US-NYC] Annual bias audit mandatory for AEDT |
 
 ### Domain 2: Information Security and Cybersecurity
 
-| Policy Name | Required/Recommended By | Jurisdiction Trigger | Key Requirements |
-|-------------|------------------------|---------------------|-----------------|
-| Information Security Policy | ISO 27001:2022 Clause 5.2; NIS2 Art. 21(2)(a); HIPAA §164.308(a)(1) | Any organization with IT systems | Scope, objectives, risk management approach, roles, review cadence |
-| Access Control Policy | ISO 27001:2022 A.5.15–5.18; NIS2 Art. 21(2)(j); HIPAA §164.312(a) | Any organization with IT systems | Least-privilege principle; role-based access; privileged access controls; review frequency |
-| Vulnerability Management Policy | NIS2 Art. 21(2)(e); NIST CSF PR.IP-12; HIPAA §164.308(a)(1) | Any organization with external-facing systems | Scanning cadence; CVSS severity thresholds; patching SLAs; zero-day response |
-| Incident Response Policy | NIS2 Art. 21(2)(b); ISO 27001:2022 A.5.25–5.26; HIPAA §164.308(a)(6) | Any organization (mandatory for NIS2-scope) | Incident classification; response team; escalation; regulator notification timelines |
-| Cryptography Policy | NIS2 Art. 21(2)(f); ISO 27001:2022 A.8.24; HIPAA §164.312(a)(2)(iv) | Any organization encrypting personal or sensitive data | Approved algorithms (AES-256, TLS 1.3+, RSA-2048+); key management; prohibited algorithms (MD5, SHA-1, RC4) |
-| Business Continuity / Disaster Recovery Policy | NIS2 Art. 21(2)(b); ISO 22301; HIPAA §164.308(a)(7); DORA Art. 11 | Any regulated entity; NIS2 essential/important entities | RTO/RPO targets; backup requirements; BCP testing cadence; succession planning |
-| Third-Party / Supplier Security Policy | NIS2 Art. 21(2)(d); ISO 27001:2022 A.5.19–5.22; NIST CSF GV.SC | Any organization using third-party IT services | Vendor risk tier; security questionnaire; contractual security requirements; incident notification; right to audit |
-| Change Management Policy | NIS2 Art. 21; ISO 27001:2022 A.8.32; SOX ITGC | IT systems affecting financial reporting or critical services | Change classification; approval workflow; testing requirements; rollback plan |
-| Penetration Testing Policy | NIS2 Art. 21(2)(e); PCI DSS Req. 11; NYDFS 23 NYCRR §500.5 | Financial, healthcare, NIS2 entities; PCI scope | Testing frequency; scope; use of qualified testers; remediation tracking |
-| Security Awareness and Training Policy | NIS2 Art. 21(2)(g); HIPAA §164.308(a)(5); ISO 27001:2022 A.6.3 | Any organization with IT systems | Minimum training requirements; frequency; phishing simulation; role-based depth |
-| Physical and Environmental Security Policy | ISO 27001:2022 A.7.1–7.14; NIS2 Art. 21 | Any organization with physical infrastructure | Clean desk; visitor access; CCTV retention; data center physical controls |
-| Network Security Policy | NIS2 Art. 21; ISO 27001:2022 A.8.20–8.23; NIST CSF PR.AC | Organizations with network infrastructure | Segmentation; firewall rules; remote access (VPN/Zero Trust); Wi-Fi security |
+| Policy Name                                    | Required/Recommended By                                              | Jurisdiction Trigger                                          | Key Requirements                                                                                                   |
+| ---------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Information Security Policy                    | ISO 27001:2022 Clause 5.2; NIS2 Art. 21(2)(a); HIPAA §164.308(a)(1)  | Any organization with IT systems                              | Scope, objectives, risk management approach, roles, review cadence                                                 |
+| Access Control Policy                          | ISO 27001:2022 A.5.15–5.18; NIS2 Art. 21(2)(j); HIPAA §164.312(a)    | Any organization with IT systems                              | Least-privilege principle; role-based access; privileged access controls; review frequency                         |
+| Vulnerability Management Policy                | NIS2 Art. 21(2)(e); NIST CSF PR.IP-12; HIPAA §164.308(a)(1)          | Any organization with external-facing systems                 | Scanning cadence; CVSS severity thresholds; patching SLAs; zero-day response                                       |
+| Incident Response Policy                       | NIS2 Art. 21(2)(b); ISO 27001:2022 A.5.25–5.26; HIPAA §164.308(a)(6) | Any organization (mandatory for NIS2-scope)                   | Incident classification; response team; escalation; regulator notification timelines                               |
+| Cryptography Policy                            | NIS2 Art. 21(2)(f); ISO 27001:2022 A.8.24; HIPAA §164.312(a)(2)(iv)  | Any organization encrypting personal or sensitive data        | Approved algorithms (AES-256, TLS 1.3+, RSA-2048+); key management; prohibited algorithms (MD5, SHA-1, RC4)        |
+| Business Continuity / Disaster Recovery Policy | NIS2 Art. 21(2)(b); ISO 22301; HIPAA §164.308(a)(7); DORA Art. 11    | Any regulated entity; NIS2 essential/important entities       | RTO/RPO targets; backup requirements; BCP testing cadence; succession planning                                     |
+| Third-Party / Supplier Security Policy         | NIS2 Art. 21(2)(d); ISO 27001:2022 A.5.19–5.22; NIST CSF GV.SC       | Any organization using third-party IT services                | Vendor risk tier; security questionnaire; contractual security requirements; incident notification; right to audit |
+| Change Management Policy                       | NIS2 Art. 21; ISO 27001:2022 A.8.32; SOX ITGC                        | IT systems affecting financial reporting or critical services | Change classification; approval workflow; testing requirements; rollback plan                                      |
+| Penetration Testing Policy                     | NIS2 Art. 21(2)(e); PCI DSS Req. 11; NYDFS 23 NYCRR §500.5           | Financial, healthcare, NIS2 entities; PCI scope               | Testing frequency; scope; use of qualified testers; remediation tracking                                           |
+| Security Awareness and Training Policy         | NIS2 Art. 21(2)(g); HIPAA §164.308(a)(5); ISO 27001:2022 A.6.3       | Any organization with IT systems                              | Minimum training requirements; frequency; phishing simulation; role-based depth                                    |
+| Physical and Environmental Security Policy     | ISO 27001:2022 A.7.1–7.14; NIS2 Art. 21                              | Any organization with physical infrastructure                 | Clean desk; visitor access; CCTV retention; data center physical controls                                          |
+| Network Security Policy                        | NIS2 Art. 21; ISO 27001:2022 A.8.20–8.23; NIST CSF PR.AC             | Organizations with network infrastructure                     | Segmentation; firewall rules; remote access (VPN/Zero Trust); Wi-Fi security                                       |
 
 ### Domain 3: Anti-Corruption and Ethical Conduct
 
-| Policy Name | Required/Recommended By | Jurisdiction Trigger | Key Requirements |
-|-------------|------------------------|---------------------|-----------------|
-| Anti-Corruption and Anti-Bribery Policy | FCPA 15 U.S.C. §78dd-1; UK Bribery Act 2010 s.7; OECD Convention; Brazilian Clean Company Act | Any organization with international operations or UK nexus | Prohibition on improper payments; government official definition; agent/third-party obligations; facilitation payments position |
-| Code of Conduct / Code of Ethics | DOJ ECCP Sept 2024; US Sentencing Guidelines §8B2.1; ISO 37301:2021 Clause 8.1 | All organizations | Expected standards of behavior; conflict of interest; confidentiality; reporting obligations |
-| Gifts, Entertainment, and Hospitality Policy | FCPA; UK Bribery Act; EU member state implementations | Any organization with government or commercial relationships | Per-gift and annual thresholds; pre-approval requirements; government official restrictions; hospitality documentation |
-| Third-Party Due Diligence Policy | DOJ FCPA guidance; UK MoJ Bribery Act guidance; ISO 37301:2021 Clause 8.3 | Any organization using agents, intermediaries, or JV partners in high-risk markets | Risk-based tiering (Level 1/2/3); questionnaire requirements; adverse news search; renewal cadence |
-| Whistleblower / Ethics Reporting Policy | EU Whistleblower Protection Directive 2019/1937; SOX §806; Dodd-Frank Rule 21F; UK PIDA 1998 | All organizations (EU: organizations with 50+ employees mandatory channel) | Reporting channels; anonymity options; non-retaliation prohibition; investigation process | [EU] Organizations 50–249 employees: Dec 2023 deadline; 250+ employees: Dec 2021 [VERIFY national transpositions] |
-| Political Contributions Policy | FCPA; various state campaign finance laws; UK Political Parties, Elections and Referendums Act 2000 | Organizations with any political activity | Prohibition or process for corporate political contributions; PAC separation |
-| Conflict of Interest Policy | DOJ ECCP; ISO 37301:2021; state fiduciary duties | All organizations | Disclosure process; recusal requirements; annual declaration; outside employment / board seat conflicts |
-| Government Official Interaction Policy | FCPA §§78dd-1 to 78dd-3; UK Bribery Act ss.1–6; local anti-corruption laws | Any organization with government contracts or regulated operations | Definition of "foreign official"; permissible vs. prohibited interactions; pre-approval workflow; documentation requirements |
+| Policy Name                                  | Required/Recommended By                                                                             | Jurisdiction Trigger                                                               | Key Requirements                                                                                                                |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Anti-Corruption and Anti-Bribery Policy      | FCPA 15 U.S.C. §78dd-1; UK Bribery Act 2010 s.7; OECD Convention; Brazilian Clean Company Act       | Any organization with international operations or UK nexus                         | Prohibition on improper payments; government official definition; agent/third-party obligations; facilitation payments position |
+| Code of Conduct / Code of Ethics             | DOJ ECCP Sept 2024; US Sentencing Guidelines §8B2.1; ISO 37301:2021 Clause 8.1                      | All organizations                                                                  | Expected standards of behavior; conflict of interest; confidentiality; reporting obligations                                    |
+| Gifts, Entertainment, and Hospitality Policy | FCPA; UK Bribery Act; EU member state implementations                                               | Any organization with government or commercial relationships                       | Per-gift and annual thresholds; pre-approval requirements; government official restrictions; hospitality documentation          |
+| Third-Party Due Diligence Policy             | DOJ FCPA guidance; UK MoJ Bribery Act guidance; ISO 37301:2021 Clause 8.3                           | Any organization using agents, intermediaries, or JV partners in high-risk markets | Risk-based tiering (Level 1/2/3); questionnaire requirements; adverse news search; renewal cadence                              |
+| Whistleblower / Ethics Reporting Policy      | EU Whistleblower Protection Directive 2019/1937; SOX §806; Dodd-Frank Rule 21F; UK PIDA 1998        | All organizations (EU: organizations with 50+ employees mandatory channel)         | Reporting channels; anonymity options; non-retaliation prohibition; investigation process                                       | [EU] Organizations 50–249 employees: Dec 2023 deadline; 250+ employees: Dec 2021 [VERIFY national transpositions] |
+| Political Contributions Policy               | FCPA; various state campaign finance laws; UK Political Parties, Elections and Referendums Act 2000 | Organizations with any political activity                                          | Prohibition or process for corporate political contributions; PAC separation                                                    |
+| Conflict of Interest Policy                  | DOJ ECCP; ISO 37301:2021; state fiduciary duties                                                    | All organizations                                                                  | Disclosure process; recusal requirements; annual declaration; outside employment / board seat conflicts                         |
+| Government Official Interaction Policy       | FCPA §§78dd-1 to 78dd-3; UK Bribery Act ss.1–6; local anti-corruption laws                          | Any organization with government contracts or regulated operations                 | Definition of "foreign official"; permissible vs. prohibited interactions; pre-approval workflow; documentation requirements    |
 
 ### Domain 4: Financial Crime (AML / KYC / Sanctions)
 
-| Policy Name | Required/Recommended By | Jurisdiction Trigger | Key Requirements |
-|-------------|------------------------|---------------------|-----------------|
-| Anti-Money Laundering (AML) Program Policy | BSA 31 U.S.C. §5318(h); EU AMLR 2024/1624; UK MLR 2017 SI 2017/692 | Banks, MSBs, broker-dealers, investment advisers (US); all AMLR-covered entities | Four pillars (written program, BSA officer, training, independent testing); risk-based approach |
-| Customer Due Diligence (CDD) / Know Your Customer (KYC) Policy | BSA 31 C.F.R. §1010.230; FATF R.10; EU AMLR Ch. 3; UK MLR 2017 Reg. 28 | All AML-covered entities | Customer identification; beneficial ownership (25% threshold); risk rating; ongoing monitoring |
-| Enhanced Due Diligence (EDD) Policy | FATF R.12 (PEPs); BSA §1010.230(e); EU AMLR Arts. 29–30 | Entities with PEPs, high-risk countries, complex structures | PEP identification; three-tier EDD (domestic/foreign/international); de-PEPing process |
-| Suspicious Activity Reporting (SAR) Procedure | BSA 31 C.F.R. §1020.320; FinCEN Form 111; EU AMLR Art. 69 | All BSA-covered entities | SAR trigger criteria; 30-day (initial) / 60-day (extended) filing deadlines; tipping-off prohibition; documentation |
-| Currency Transaction Reporting (CTR) Procedure | BSA 31 C.F.R. §1010.311; FinCEN Form 112 | US banks and MSBs | $10K threshold; aggregation rules; structure detection; CTR completion requirements |
-| OFAC / Sanctions Screening Policy | OFAC SDN list; Executive Orders; EU restrictive measures; UK Financial Sanctions | Any entity conducting business / financial transactions | Real-time screening at onboarding + transaction; 50% rule (indirect ownership through designated persons); blocked asset procedures |
-| Politically Exposed Person (PEP) Policy | FATF R.12; EU AMLR Arts. 29–30; UK MLR 2017 Reg. 35 | Any AML-covered entity | PEP definition (domestic + foreign + international); risk management; enhanced monitoring; de-PEPing timeline (12–18 months post-role) |
-| Record Retention Policy (BSA) | BSA 31 C.F.R. §1010.430 | US BSA-covered entities | 5-year retention for CDD records, SARs, and supporting documentation |
+| Policy Name                                                    | Required/Recommended By                                                          | Jurisdiction Trigger                                                             | Key Requirements                                                                                                                       |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Anti-Money Laundering (AML) Program Policy                     | BSA 31 U.S.C. §5318(h); EU AMLR 2024/1624; UK MLR 2017 SI 2017/692               | Banks, MSBs, broker-dealers, investment advisers (US); all AMLR-covered entities | Four pillars (written program, BSA officer, training, independent testing); risk-based approach                                        |
+| Customer Due Diligence (CDD) / Know Your Customer (KYC) Policy | BSA 31 C.F.R. §1010.230; FATF R.10; EU AMLR Ch. 3; UK MLR 2017 Reg. 28           | All AML-covered entities                                                         | Customer identification; beneficial ownership (25% threshold); risk rating; ongoing monitoring                                         |
+| Enhanced Due Diligence (EDD) Policy                            | FATF R.12 (PEPs); BSA §1010.230(e); EU AMLR Arts. 29–30                          | Entities with PEPs, high-risk countries, complex structures                      | PEP identification; three-tier EDD (domestic/foreign/international); de-PEPing process                                                 |
+| Suspicious Activity Reporting (SAR) Procedure                  | BSA 31 C.F.R. §1020.320; FinCEN Form 111; EU AMLR Art. 69                        | All BSA-covered entities                                                         | SAR trigger criteria; 30-day (initial) / 60-day (extended) filing deadlines; tipping-off prohibition; documentation                    |
+| Currency Transaction Reporting (CTR) Procedure                 | BSA 31 C.F.R. §1010.311; FinCEN Form 112                                         | US banks and MSBs                                                                | $10K threshold; aggregation rules; structure detection; CTR completion requirements                                                    |
+| OFAC / Sanctions Screening Policy                              | OFAC SDN list; Executive Orders; EU restrictive measures; UK Financial Sanctions | Any entity conducting business / financial transactions                          | Real-time screening at onboarding + transaction; 50% rule (indirect ownership through designated persons); blocked asset procedures    |
+| Politically Exposed Person (PEP) Policy                        | FATF R.12; EU AMLR Arts. 29–30; UK MLR 2017 Reg. 35                              | Any AML-covered entity                                                           | PEP definition (domestic + foreign + international); risk management; enhanced monitoring; de-PEPing timeline (12–18 months post-role) |
+| Record Retention Policy (BSA)                                  | BSA 31 C.F.R. §1010.430                                                          | US BSA-covered entities                                                          | 5-year retention for CDD records, SARs, and supporting documentation                                                                   |
 
 ### Domain 5: Employment and Labor
 
-| Policy Name | Required/Recommended By | Jurisdiction Trigger | Key Requirements |
-|-------------|------------------------|---------------------|-----------------|
-| Equal Employment Opportunity (EEO) Policy | Title VII (42 U.S.C. §2000e); ADA 42 U.S.C. §12101; ADEA 29 U.S.C. §621; EU Equal Treatment Directive | Organizations with employees in applicable jurisdictions | Protected characteristics; complaint procedure; investigation process; poster requirements |
-| Harassment and Discrimination Prevention Policy | EEOC guidance; Title VII; state equivalents (CA FEHA; NY HRL); EU Directive 2000/78/EC | All employers | Definition of harassment; prohibited conduct examples; reporting process; investigation; non-retaliation |
-| Whistleblower / Non-Retaliation Policy | SOX §806; Dodd-Frank Rule 21F; OSHA Section 11(c); EU Directive 2019/1937 | All employers (especially SEC reporters) | Channels; non-retaliation; anonymity; investigation; escalation to board audit committee |
-| Worker Classification Policy (Employee vs. Contractor) | IRS Rev. Rul. 87-41; California AB 5 / ABC test; FLSA economic reality test; EU Platform Work Directive 2024 | Employers using independent contractors | Classification criteria (behavioral, financial, type of relationship); misclassification risk scoring; reclassification protocol |
-| Wage and Hour / Working Time Policy | FLSA 29 U.S.C. §§201–219; state wage laws; EU Working Time Directive 2003/88/EC | All employers | Overtime eligibility (FLSA $684/week salary threshold [VERIFY current FLSA threshold post-litigation]); recordkeeping; break requirements |
-| Workplace Health and Safety Policy | OSHA 29 U.S.C. §654; UK Health and Safety at Work Act 1974; EU Framework Directive 89/391/EEC | All employers with physical workplaces | General duty clause compliance; hazard identification; incident reporting (OSHA 300 log); training |
-| Employee Data Privacy Policy | GDPR Arts. 6(1)(b)/9 (employment); UK GDPR; CCPA employee notices | Any employer processing employee personal data | Employee personal data scope; basis for processing; monitoring disclosure; records retention |
-| AI-Assisted Hiring Policy | NYC Local Law 144 (AEDT bias audit); CO SB 24-205 (effective June 2026); EU AI Act Annex III | NYC employers using automated hiring tools; CO employers (2026+) | Annual bias audit (NYC); data notice to candidates; opt-out rights; impact ratio reporting |
-| Remote Work / Flexible Working Policy | FLSA off-duty connectivity; EU telework framework; UK ERA 2023 flexible working right | Employers with remote workers | Working hours; expense reimbursement; equipment policy; data security for remote access; eligibility |
+| Policy Name                                            | Required/Recommended By                                                                                      | Jurisdiction Trigger                                             | Key Requirements                                                                                                                          |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Equal Employment Opportunity (EEO) Policy              | Title VII (42 U.S.C. §2000e); ADA 42 U.S.C. §12101; ADEA 29 U.S.C. §621; EU Equal Treatment Directive        | Organizations with employees in applicable jurisdictions         | Protected characteristics; complaint procedure; investigation process; poster requirements                                                |
+| Harassment and Discrimination Prevention Policy        | EEOC guidance; Title VII; state equivalents (CA FEHA; NY HRL); EU Directive 2000/78/EC                       | All employers                                                    | Definition of harassment; prohibited conduct examples; reporting process; investigation; non-retaliation                                  |
+| Whistleblower / Non-Retaliation Policy                 | SOX §806; Dodd-Frank Rule 21F; OSHA Section 11(c); EU Directive 2019/1937                                    | All employers (especially SEC reporters)                         | Channels; non-retaliation; anonymity; investigation; escalation to board audit committee                                                  |
+| Worker Classification Policy (Employee vs. Contractor) | IRS Rev. Rul. 87-41; California AB 5 / ABC test; FLSA economic reality test; EU Platform Work Directive 2024 | Employers using independent contractors                          | Classification criteria (behavioral, financial, type of relationship); misclassification risk scoring; reclassification protocol          |
+| Wage and Hour / Working Time Policy                    | FLSA 29 U.S.C. §§201–219; state wage laws; EU Working Time Directive 2003/88/EC                              | All employers                                                    | Overtime eligibility (FLSA $684/week salary threshold [VERIFY current FLSA threshold post-litigation]); recordkeeping; break requirements |
+| Workplace Health and Safety Policy                     | OSHA 29 U.S.C. §654; UK Health and Safety at Work Act 1974; EU Framework Directive 89/391/EEC                | All employers with physical workplaces                           | General duty clause compliance; hazard identification; incident reporting (OSHA 300 log); training                                        |
+| Employee Data Privacy Policy                           | GDPR Arts. 6(1)(b)/9 (employment); UK GDPR; CCPA employee notices                                            | Any employer processing employee personal data                   | Employee personal data scope; basis for processing; monitoring disclosure; records retention                                              |
+| AI-Assisted Hiring Policy                              | NYC Local Law 144 (AEDT bias audit); CO SB 24-205 (effective June 2026); EU AI Act Annex III                 | NYC employers using automated hiring tools; CO employers (2026+) | Annual bias audit (NYC); data notice to candidates; opt-out rights; impact ratio reporting                                                |
+| Remote Work / Flexible Working Policy                  | FLSA off-duty connectivity; EU telework framework; UK ERA 2023 flexible working right                        | Employers with remote workers                                    | Working hours; expense reimbursement; equipment policy; data security for remote access; eligibility                                      |
 
 ### Domain 6: Financial Reporting and Internal Controls
 
-| Policy Name | Required/Recommended By | Jurisdiction Trigger | Key Requirements |
-|-------------|------------------------|---------------------|-----------------|
-| Records Retention and Destruction Policy | SOX §802 (7-year for audit work papers); FLSA (3 years payroll); IRS (3–7 years); SEC Rule 17a-4 | SEC registrants; all organizations with tax / audit obligations | Retention schedules by record type; litigation hold process; authorized destruction; metadata retention |
-| Conflict of Interest and Related Party Policy | SOX §406 (Code of Ethics disclosure); SEC Form 8-K disclosure; NYSE/NASDAQ listing requirements | SEC registrants; listed companies | Board + executive disclosure; related-party transaction approval; audit committee review |
-| Insider Trading Policy | SEC §10(b) and Rule 10b-5; SEC Rule 10b5-1; FINRA rules | Any organization with material non-public information | Trading blackout windows; pre-clearance for executives; 10b5-1 plan requirements; training |
-| Expense and Travel Reimbursement Policy | FCPA (proper accounting provisions); SOX internal controls; IRS accountable plan rules | All organizations | Documented business purpose; approval thresholds; prohibited expense categories; non-reimbursable items |
-| Anti-Fraud Policy | COSO ERM; SOX §301 (audit committee whistleblower); Fraud Act 2006 (UK) | All organizations | Definition of fraud; reporting channel; investigation; board audit committee escalation; clawback provisions (SOX §304, Dodd-Frank §954) |
-| Financial Disclosure / Certification Procedure | SOX §302 (quarterly/annual CEO/CFO certification); SOX §906 (criminal certification) | SEC registrants | Internal disclosure controls documentation; sub-certifications; ICFR testing scope |
-| Clawback / Compensation Recovery Policy | SEC Rule 10D-1 (clawback rule, effective Oct 2023); Dodd-Frank §954; NASDAQ/NYSE listing requirements | NASDAQ/NYSE listed companies (mandatory as of Oct 2023) | Recovery trigger (material restatement); 3-year lookback; covered officers; no indemnification |
+| Policy Name                                    | Required/Recommended By                                                                               | Jurisdiction Trigger                                            | Key Requirements                                                                                                                         |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Records Retention and Destruction Policy       | SOX §802 (7-year for audit work papers); FLSA (3 years payroll); IRS (3–7 years); SEC Rule 17a-4      | SEC registrants; all organizations with tax / audit obligations | Retention schedules by record type; litigation hold process; authorized destruction; metadata retention                                  |
+| Conflict of Interest and Related Party Policy  | SOX §406 (Code of Ethics disclosure); SEC Form 8-K disclosure; NYSE/NASDAQ listing requirements       | SEC registrants; listed companies                               | Board + executive disclosure; related-party transaction approval; audit committee review                                                 |
+| Insider Trading Policy                         | SEC §10(b) and Rule 10b-5; SEC Rule 10b5-1; FINRA rules                                               | Any organization with material non-public information           | Trading blackout windows; pre-clearance for executives; 10b5-1 plan requirements; training                                               |
+| Expense and Travel Reimbursement Policy        | FCPA (proper accounting provisions); SOX internal controls; IRS accountable plan rules                | All organizations                                               | Documented business purpose; approval thresholds; prohibited expense categories; non-reimbursable items                                  |
+| Anti-Fraud Policy                              | COSO ERM; SOX §301 (audit committee whistleblower); Fraud Act 2006 (UK)                               | All organizations                                               | Definition of fraud; reporting channel; investigation; board audit committee escalation; clawback provisions (SOX §304, Dodd-Frank §954) |
+| Financial Disclosure / Certification Procedure | SOX §302 (quarterly/annual CEO/CFO certification); SOX §906 (criminal certification)                  | SEC registrants                                                 | Internal disclosure controls documentation; sub-certifications; ICFR testing scope                                                       |
+| Clawback / Compensation Recovery Policy        | SEC Rule 10D-1 (clawback rule, effective Oct 2023); Dodd-Frank §954; NASDAQ/NYSE listing requirements | NASDAQ/NYSE listed companies (mandatory as of Oct 2023)         | Recovery trigger (material restatement); 3-year lookback; covered officers; no indemnification                                           |
 
 ### Domain 7: ESG, Supply Chain, and Sustainability
 
-| Policy Name | Required/Recommended By | Jurisdiction Trigger | Key Requirements |
-|-------------|------------------------|---------------------|-----------------|
-| Modern Slavery and Human Trafficking Statement | UK Modern Slavery Act 2015 s.54; Australia Modern Slavery Act 2018 (Cth); CA SB 657 | UK/AU organizations >£36M/AUD 100M turnover or CA suppliers | Annual statement; 6 topic areas (structure, business, supply chains, due diligence, risk indicators, training); board approval and sign-off |
-| Supply Chain Due Diligence Policy | German LkSG (effective Jan 2023, ≥1,000 employees from June 2024); EU CSDDD Directive 2024/1760 (phased 2027–2029); Norwegian Transparency Act 2021 | German companies at thresholds; EU companies (phased by size) | Risk analysis; preventive measures; grievance mechanism; reporting; remediation | [DE] LkSG requires public annual report; grievance mechanism established; [EU] CSDDD: Tier 1 direct suppliers and selected Tier 2 |
-| Environmental and Climate Policy | EU Taxonomy Regulation 2020/852; CSRD Directive 2022/2464 (ESRS E1–E5); SEC Climate Disclosure Rules [VERIFY current status] | Large EU companies (CSRD); SEC registrants | GHG scope 1/2/3 accounting; climate targets; transition plan; TCFD-aligned disclosure |
-| Responsible AI / Ethical Technology Policy | EU AI Act 2024/1689; NIST AI RMF 1.0; ISO/IEC 42001:2023 | Organizations deploying AI systems | AI system inventory; risk classification; prohibited use cases; human oversight; bias testing |
-| Diversity, Equity, and Inclusion Policy | EU Pay Transparency Directive 2023/970; CA pay data reporting SB 1162; Norway gender balance reporting | EU employers (250+ employees from June 2026); large CA employers; certain NO employers | Pay gap reporting; diversity targets; board gender balance requirements |
+| Policy Name                                    | Required/Recommended By                                                                                                                             | Jurisdiction Trigger                                                                   | Key Requirements                                                                                                                            |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Modern Slavery and Human Trafficking Statement | UK Modern Slavery Act 2015 s.54; Australia Modern Slavery Act 2018 (Cth); CA SB 657                                                                 | UK/AU organizations >£36M/AUD 100M turnover or CA suppliers                            | Annual statement; 6 topic areas (structure, business, supply chains, due diligence, risk indicators, training); board approval and sign-off |
+| Supply Chain Due Diligence Policy              | German LkSG (effective Jan 2023, ≥1,000 employees from June 2024); EU CSDDD Directive 2024/1760 (phased 2027–2029); Norwegian Transparency Act 2021 | German companies at thresholds; EU companies (phased by size)                          | Risk analysis; preventive measures; grievance mechanism; reporting; remediation                                                             | [DE] LkSG requires public annual report; grievance mechanism established; [EU] CSDDD: Tier 1 direct suppliers and selected Tier 2 |
+| Environmental and Climate Policy               | EU Taxonomy Regulation 2020/852; CSRD Directive 2022/2464 (ESRS E1–E5); SEC Climate Disclosure Rules [VERIFY current status]                        | Large EU companies (CSRD); SEC registrants                                             | GHG scope 1/2/3 accounting; climate targets; transition plan; TCFD-aligned disclosure                                                       |
+| Responsible AI / Ethical Technology Policy     | EU AI Act 2024/1689; NIST AI RMF 1.0; ISO/IEC 42001:2023                                                                                            | Organizations deploying AI systems                                                     | AI system inventory; risk classification; prohibited use cases; human oversight; bias testing                                               |
+| Diversity, Equity, and Inclusion Policy        | EU Pay Transparency Directive 2023/970; CA pay data reporting SB 1162; Norway gender balance reporting                                              | EU employers (250+ employees from June 2026); large CA employers; certain NO employers | Pay gap reporting; diversity targets; board gender balance requirements                                                                     |
 
 ### Domain 8: Sector-Specific Policy Requirements
 
-| Sector | Policy Name | Required By | Key Requirements |
-|--------|-------------|-------------|-----------------|
-| **Healthcare (US)** | HIPAA Privacy Rule Policy | 45 C.F.R. Part 164 Subpart E | Minimum necessary standard; PHI uses and disclosures; patient rights; Notice of Privacy Practices |
-| **Healthcare (US)** | HIPAA Security Rule Policies | 45 C.F.R. §§164.308–316 | Administrative safeguards (10 required + addressable); physical safeguards; technical safeguards; policies required for each standard |
-| **Healthcare (US)** | HIPAA Breach Notification Procedure | 45 C.F.R. §§164.400–414 | 60-day notification to HHS; business associate breach notification; media notice for >500 in state |
-| **Financial Services (US)** | GLBA Information Security Program (Written ISP) | GLBA Safeguards Rule 16 C.F.R. §314.4 | Qualified individual; risk assessment; 9 administrative/technical/physical safeguard categories; annual board reporting |
-| **Financial Services (EU)** | ICT Risk Management Policy | DORA Reg. 2022/2554 Arts. 5–16 | ICT risk management framework; internal audit function; business continuity testing; ICT incident classification |
-| **Defense (US)** | Cybersecurity Maturity Model Certification Policies | CMMC 2.0 (32 C.F.R. Part 170); NIST SP 800-171 | 110 security requirements; System Security Plan (SSP) required; Plan of Action & Milestones (POAM) |
-| **Financial Services (US)** | NYDFS Cybersecurity Policy | 23 NYCRR Part 500 (Nov 2023 amendments) | Penetration testing; vulnerability scanning; asset management; CISO designation; board reporting; Class A company requirements |
-| **Payment Card** | PCI DSS Information Security Policy | PCI DSS v4.0 Req. 12 | Comprehensive information security policy; annual review; awareness program; all 12 requirements documented |
-| **Energy/Utilities (EU)** | NIS2 Sector-Specific Policies | NIS2 Directive 2022/2555 Annex I; ACER sector guidance | All 10 Art. 21 measures; essential entity obligations; cross-border coordination with national CSIRT |
+| Sector                      | Policy Name                                         | Required By                                            | Key Requirements                                                                                                                      |
+| --------------------------- | --------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Healthcare (US)**         | HIPAA Privacy Rule Policy                           | 45 C.F.R. Part 164 Subpart E                           | Minimum necessary standard; PHI uses and disclosures; patient rights; Notice of Privacy Practices                                     |
+| **Healthcare (US)**         | HIPAA Security Rule Policies                        | 45 C.F.R. §§164.308–316                                | Administrative safeguards (10 required + addressable); physical safeguards; technical safeguards; policies required for each standard |
+| **Healthcare (US)**         | HIPAA Breach Notification Procedure                 | 45 C.F.R. §§164.400–414                                | 60-day notification to HHS; business associate breach notification; media notice for >500 in state                                    |
+| **Financial Services (US)** | GLBA Information Security Program (Written ISP)     | GLBA Safeguards Rule 16 C.F.R. §314.4                  | Qualified individual; risk assessment; 9 administrative/technical/physical safeguard categories; annual board reporting               |
+| **Financial Services (EU)** | ICT Risk Management Policy                          | DORA Reg. 2022/2554 Arts. 5–16                         | ICT risk management framework; internal audit function; business continuity testing; ICT incident classification                      |
+| **Defense (US)**            | Cybersecurity Maturity Model Certification Policies | CMMC 2.0 (32 C.F.R. Part 170); NIST SP 800-171         | 110 security requirements; System Security Plan (SSP) required; Plan of Action & Milestones (POAM)                                    |
+| **Financial Services (US)** | NYDFS Cybersecurity Policy                          | 23 NYCRR Part 500 (Nov 2023 amendments)                | Penetration testing; vulnerability scanning; asset management; CISO designation; board reporting; Class A company requirements        |
+| **Payment Card**            | PCI DSS Information Security Policy                 | PCI DSS v4.0 Req. 12                                   | Comprehensive information security policy; annual review; awareness program; all 12 requirements documented                           |
+| **Energy/Utilities (EU)**   | NIS2 Sector-Specific Policies                       | NIS2 Directive 2022/2555 Annex I; ACER sector guidance | All 10 Art. 21 measures; essential entity obligations; cross-border coordination with national CSIRT                                  |
 
 ---
 
@@ -843,6 +867,7 @@ This reference library maps required policies to applicable regulatory framework
 would find an enforcement-ready deficiency. Immediate action required.
 
 **Characteristics:**
+
 - Regulatory framework explicitly requires this policy AND it is absent (Gap Type 1)
 - OR Policy exists but conflicts with current law in a way creating immediate legal exposure
   (Gap Type 3)
@@ -861,6 +886,7 @@ interim remediation plan within 7 days; substantive remediation within 30 days.
 exposure. Near-term remediation required.
 
 **Characteristics:**
+
 - Policy exists but missing fundamental provisions required under applicable regulation
 - Policy predates material regulatory changes by > 18 months (fast-moving areas: privacy,
   AI, cybersecurity, financial crime)
@@ -879,6 +905,7 @@ monitoring measures while remediating.
 specificity, or operational effectiveness.
 
 **Characteristics:**
+
 - Policy covers the required topic but missing supporting elements (e.g., retention
   schedule absent from privacy policy; training program exists but no attestation)
 - Policy modestly outdated (12–18 months since last review) in a moderately active area
@@ -895,6 +922,7 @@ required.
 **Definition:** Policy substantially complete; minor improvements needed.
 
 **Characteristics:**
+
 - Policy well-designed and operationally effective; minor drafting improvements possible
 - Slight currency gap (6–12 months since review in stable regulatory area)
 - No active regulatory enforcement focus
@@ -911,43 +939,47 @@ risk given other controls.
 ### IMMEDIATE (0–30 Days)
 
 Applicable when:
+
 - Residual score ≥ 15 (CRITICAL) in any domain
 - Active regulatory examination, audit, or investigation underway
 - Policy gap directly cited in prior audit finding or enforcement notice
 - Regulatory effective date has passed and policy remains non-compliant
 - Criminal exposure identified (AML/FCPA/sanctions)
 
-*Board-level decision required to proceed or accept risk.*
+_Board-level decision required to proceed or accept risk._
 
 ### NEAR-TERM (31–90 Days)
 
 Applicable when:
+
 - Residual score 9–14 (HIGH)
 - Policy gap creates material enforcement exposure in an active enforcement domain
 - Regulatory effective date approaching within 90 days
 - M&A integration requires policy harmonization before close or within integration period
 - Certification deadline requires policy documentation within 90 days
 
-*CCO/GC decision; board notification recommended.*
+_CCO/GC decision; board notification recommended._
 
 ### BACKGROUND (91–180 Days)
 
 Applicable when:
+
 - Residual score 5–8 (MEDIUM)
 - Policy improvement needed but no immediate enforcement trigger
 - Regulatory change in future (6–18 months) will require update
 - Training / attestation improvements required but current compliance demonstrated
 
-*CCO/compliance team ownership; periodic progress reporting.*
+_CCO/compliance team ownership; periodic progress reporting._
 
 ### WATCH (Next Annual Review)
 
 Applicable when:
+
 - Residual score 1–4 (LOW)
 - Future regulatory development will require update (monitor regulatory change tracker)
 - Policy is effective; currency check sufficient in annual review cycle
 
-*Compliance team monitoring; no escalation needed.*
+_Compliance team monitoring; no escalation needed._
 
 ---
 
@@ -956,13 +988,13 @@ Applicable when:
 Run these five gates silently before delivering any finding in the policy gap register.
 If any gate fails, revise before delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **1. Source Gate** | Every policy gap finding cites a specific regulatory provision, guidance document, or recognized standard requiring the policy | Add citation or mark "[UNVERIFIED — policy requirement not traced to specific authority]" |
-| **2. Currency Gate** | Every cited provision checked for amendments, repeal, or supersession since the date cited | Flag "[CHECK CURRENCY — verify this provision was not amended]" with effective date |
-| **3. Jurisdiction Gate** | Policy requirement applies to this organization given its jurisdiction, size, sector, and activities | Flag "[JURISDICTION-SPECIFIC — verify applicability to this organization]" |
-| **4. Adequacy Gate** | Assessment of policy adequacy is based on documented evidence (policy text, training records, attestation data) not assumption | Where evidence is absent, mark "[VERIFY — assumed adequacy level; requires confirmation]" |
-| **5. Confidence Gate** | Confidence scoring explicitly states evidence basis; uncertainty is surfaced, not hidden | Add confidence qualifier (VERIFIED / LIKELY / POSSIBLE / VERIFY / ASSUMED) to every finding |
+| Gate                     | Rule                                                                                                                           | Fail Action                                                                                 |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| **1. Source Gate**       | Every policy gap finding cites a specific regulatory provision, guidance document, or recognized standard requiring the policy | Add citation or mark "[UNVERIFIED — policy requirement not traced to specific authority]"   |
+| **2. Currency Gate**     | Every cited provision checked for amendments, repeal, or supersession since the date cited                                     | Flag "[CHECK CURRENCY — verify this provision was not amended]" with effective date         |
+| **3. Jurisdiction Gate** | Policy requirement applies to this organization given its jurisdiction, size, sector, and activities                           | Flag "[JURISDICTION-SPECIFIC — verify applicability to this organization]"                  |
+| **4. Adequacy Gate**     | Assessment of policy adequacy is based on documented evidence (policy text, training records, attestation data) not assumption | Where evidence is absent, mark "[VERIFY — assumed adequacy level; requires confirmation]"   |
+| **5. Confidence Gate**   | Confidence scoring explicitly states evidence basis; uncertainty is surfaced, not hidden                                       | Add confidence qualifier (VERIFIED / LIKELY / POSSIBLE / VERIFY / ASSUMED) to every finding |
 
 ---
 
@@ -975,7 +1007,7 @@ For every CRITICAL or HIGH gap, apply this 3-pass adversarial review (per Step 8
 Does the CRITICAL/HIGH classification follow logically from the inherent risk score and
 policy adequacy evidence?
 
-> *Ask:* What is the strongest argument that this gap is actually MEDIUM, not CRITICAL/HIGH?
+> _Ask:_ What is the strongest argument that this gap is actually MEDIUM, not CRITICAL/HIGH?
 > If no good counter-argument exists, the classification holds.
 > If a plausible counter-argument exists, lower the confidence level and note it.
 
@@ -985,22 +1017,24 @@ Are there any policies, processes, or governance mechanisms that compensate for 
 and should lower the residual score?
 
 Common compensating factors:
+
 - Strong DPO function (compensates for minor privacy policy currency gaps)
 - Robust third-party vendor contracts (compensates for weak internal supply chain policy)
 - Active audit committee with quarterly CCO briefings (compensates for whistleblower policy gaps)
 - Manual approval workflows (compensates for absent formal policy if documented and consistent)
 
-> *Ask:* Would a regulator examining this gap accept [specific compensating control] as
+> _Ask:_ Would a regulator examining this gap accept [specific compensating control] as
 > partial mitigation? If yes, lower OE by 1 level and recalculate.
 
 **Pass 3 — Enforcement Reality Check**
 
 Is this gap a documented regulatory enforcement priority for this industry and jurisdiction?
 
-> *Evidence required:* Cite at least one enforcement action, regulatory guidance, or public
+> _Evidence required:_ Cite at least one enforcement action, regulatory guidance, or public
 > examination finding supporting the CRITICAL classification in this domain and jurisdiction.
 > If no enforcement precedent exists, lower from CRITICAL to HIGH and note "[VERIFY
-> enforcement pattern — no specific precedent found]".
+>
+> > enforcement pattern — no specific precedent found]".
 
 ---
 
@@ -1009,15 +1043,16 @@ Is this gap a documented regulatory enforcement priority for this industry and j
 Assign a confidence level to every policy gap assessment based on the quality of underlying
 evidence.
 
-| Level | Score Range | Definition | Prescribed Action |
-|-------|-------------|-----------|-------------------|
-| **VERIFIED** | 0.90–1.00 | Evidence independently confirmed: policy text reviewed, training records inspected, attestation data obtained | State with confidence; no qualification needed |
-| **LIKELY** | 0.70–0.89 | Evidence from reliable source (prior audit, compliance memo, documented review) but not independently verified | State with brief caveat: "Based on [source]; recommend verification" |
-| **POSSIBLE** | 0.50–0.69 | Good-faith inference from available indicators; not fully confirmed | State with explicit reasoning and contra-indicators; flag for verification |
-| **VERIFY** | 0.30–0.49 | Assumption made; placeholder pending information gathering | Flag prominently as "[VERIFY]" before board presentation |
-| **ASSUMED** | < 0.30 | No evidence; placeholder based on organizational profile defaults | Do not include in board presentation without verification; internal working assumption only |
+| Level        | Score Range | Definition                                                                                                     | Prescribed Action                                                                           |
+| ------------ | ----------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **VERIFIED** | 0.90–1.00   | Evidence independently confirmed: policy text reviewed, training records inspected, attestation data obtained  | State with confidence; no qualification needed                                              |
+| **LIKELY**   | 0.70–0.89   | Evidence from reliable source (prior audit, compliance memo, documented review) but not independently verified | State with brief caveat: "Based on [source]; recommend verification"                        |
+| **POSSIBLE** | 0.50–0.69   | Good-faith inference from available indicators; not fully confirmed                                            | State with explicit reasoning and contra-indicators; flag for verification                  |
+| **VERIFY**   | 0.30–0.49   | Assumption made; placeholder pending information gathering                                                     | Flag prominently as "[VERIFY]" before board presentation                                    |
+| **ASSUMED**  | < 0.30      | No evidence; placeholder based on organizational profile defaults                                              | Do not include in board presentation without verification; internal working assumption only |
 
 **Default Confidence Levels by Evidence Source:**
+
 - Policy text reviewed by AI during session: LIKELY (0.75)
 - Policy existence confirmed by inventory list without review: POSSIBLE (0.55)
 - Policy reported by client without documentation: VERIFY (0.40)
@@ -1088,7 +1123,8 @@ glass_box:
     - "[Scope limitation 1]"
     - "[What was not assessed]"
 
-  reviewer_note: "AI-assisted — all CRITICAL and HIGH findings require validation
+  reviewer_note:
+    "AI-assisted — all CRITICAL and HIGH findings require validation
     by qualified legal counsel and compliance professionals before board presentation."
 ```
 
@@ -1270,21 +1306,22 @@ statutory references with [VERIFY]. Note in Glass Box:
 `legalcode_mcp: "Not connected — references require independent verification"`
 
 Apply downward confidence adjustments:
+
 - Statutory citations: LIKELY → POSSIBLE
 - Penalty amounts: LIKELY → VERIFY
 - Enforcement trend data: POSSIBLE → VERIFY
 
 ### Related Skills Integration
 
-| Trigger | Invoke This Skill |
-|---------|------------------|
-| AML policy gaps identified | `legalcode-aml-kyc-compliance` for deep AML assessment |
-| HIPAA policy gaps identified | `legalcode-hipaa-compliance-assessment` for HIPAA deep dive |
-| NIS2 policy gaps identified | `legalcode-nis2-compliance-assessment` for Art. 21 assessment |
-| GDPR policy gaps identified | `legalcode-dpia-generator` or `legalcode-gdpr-legal-basis-assessment` |
-| Compliance program rebuild needed | `legalcode-compliance-program-builder` |
-| Regulatory changes need monitoring | `legalcode-regulatory-change-tracker` |
-| Risk heat map + enterprise risk view | `legalcode-compliance-risk-assessment` |
+| Trigger                              | Invoke This Skill                                                     |
+| ------------------------------------ | --------------------------------------------------------------------- |
+| AML policy gaps identified           | `legalcode-aml-kyc-compliance` for deep AML assessment                |
+| HIPAA policy gaps identified         | `legalcode-hipaa-compliance-assessment` for HIPAA deep dive           |
+| NIS2 policy gaps identified          | `legalcode-nis2-compliance-assessment` for Art. 21 assessment         |
+| GDPR policy gaps identified          | `legalcode-dpia-generator` or `legalcode-gdpr-legal-basis-assessment` |
+| Compliance program rebuild needed    | `legalcode-compliance-program-builder`                                |
+| Regulatory changes need monitoring   | `legalcode-regulatory-change-tracker`                                 |
+| Risk heat map + enterprise risk view | `legalcode-compliance-risk-assessment`                                |
 
 ---
 
@@ -1392,6 +1429,7 @@ When adapting this skill for a specific jurisdiction:
 ## Provenance
 
 Created by Legalcode (2026-03-02). Original synthesis based on:
+
 - 2-agent structural and legal research pipeline
 - Agent 1 structural analysis of `legalcode-nist-csf-mapping`, `legalcode-compliance-risk-assessment`,
   `legalcode-compliance-program-builder`, and `legalcode-nis2-compliance-assessment` reference skills

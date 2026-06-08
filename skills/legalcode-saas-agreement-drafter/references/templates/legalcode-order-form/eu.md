@@ -1,7 +1,15 @@
 ---
 title: Order Form — EU/EEA (Data Act + GDPR + Late Payment + DE-AGB)
 jurisdictions: [eu, eea, de]
-statutes: [Data-Act-2023/2854, GDPR, Late-Payment-2011/7, AI-Act-2024/1689, BGB, GeschGehG]
+statutes:
+  [
+    Data-Act-2023/2854,
+    GDPR,
+    Late-Payment-2011/7,
+    AI-Act-2024/1689,
+    BGB,
+    GeschGehG,
+  ]
 audience: [B2B]
 license: MIT
 last_updated: 2026-04-29
@@ -33,28 +41,28 @@ This section identifies who is signing and where notices go.
 
 ### 2.1 Vendor
 
-| Field | Value |
-|---|---|
-| Legal name | `{{Vendor Legal Name}}` |
-| Legal-entity number | `{{Vendor Legal Entity Number}}` (e.g., Handelsregister-Nr., SIRET, RCS, KvK-nr., VAT-id) |
-| Registered address | `{{Vendor Address}}` |
-| Country of incorporation | `{{Vendor Country}}` |
-| Notice email (legal) | `{{Vendor Notice Email}}` |
-| Accounts-receivable email | `{{Vendor AR Email}}` |
-| Signatory | `{{Vendor Signatory Name}}`, `{{Vendor Signatory Title}}` |
+| Field                     | Value                                                                                     |
+| ------------------------- | ----------------------------------------------------------------------------------------- |
+| Legal name                | `{{Vendor Legal Name}}`                                                                   |
+| Legal-entity number       | `{{Vendor Legal Entity Number}}` (e.g., Handelsregister-Nr., SIRET, RCS, KvK-nr., VAT-id) |
+| Registered address        | `{{Vendor Address}}`                                                                      |
+| Country of incorporation  | `{{Vendor Country}}`                                                                      |
+| Notice email (legal)      | `{{Vendor Notice Email}}`                                                                 |
+| Accounts-receivable email | `{{Vendor AR Email}}`                                                                     |
+| Signatory                 | `{{Vendor Signatory Name}}`, `{{Vendor Signatory Title}}`                                 |
 
 ### 2.2 Customer
 
-| Field | Value |
-|---|---|
-| Legal name | `{{Customer Legal Name}}` |
-| Legal-entity number | `{{Customer Legal Entity Number}}` (e.g., Handelsregister-Nr., SIRET, RCS, KvK-nr., VAT-id) |
-| Registered address | `{{Customer Address}}` |
-| Country of incorporation | `{{Customer Country}}` |
-| Notice email (legal) | `{{Customer Notice Email}}` |
-| Billing email (AP) | `{{Customer Billing Email}}` |
-| Purchase-order number (OPTIONAL) | `{{Customer PO Number}}` |
-| Signatory | `{{Customer Signatory Name}}`, `{{Customer Signatory Title}}` |
+| Field                            | Value                                                                                       |
+| -------------------------------- | ------------------------------------------------------------------------------------------- |
+| Legal name                       | `{{Customer Legal Name}}`                                                                   |
+| Legal-entity number              | `{{Customer Legal Entity Number}}` (e.g., Handelsregister-Nr., SIRET, RCS, KvK-nr., VAT-id) |
+| Registered address               | `{{Customer Address}}`                                                                      |
+| Country of incorporation         | `{{Customer Country}}`                                                                      |
+| Notice email (legal)             | `{{Customer Notice Email}}`                                                                 |
+| Billing email (AP)               | `{{Customer Billing Email}}`                                                                |
+| Purchase-order number (OPTIONAL) | `{{Customer PO Number}}`                                                                    |
+| Signatory                        | `{{Customer Signatory Name}}`, `{{Customer Signatory Title}}`                               |
 
 ### 2.3 Schriftform note (DE Customers)
 
@@ -80,11 +88,11 @@ Subscribed quantity: `{{Subscribed Quantity}}` (units in Schedule 1: seats, API 
 
 ### 3.3 Initial Term
 
-| Field | Value |
-|---|---|
+| Field               | Value                     |
+| ------------------- | ------------------------- |
 | Initial Term length | `{{Initial Term Length}}` |
-| Initial Term start | `{{Initial Term Start}}` |
-| Initial Term end | `{{Initial Term End}}` |
+| Initial Term start  | `{{Initial Term Start}}`  |
+| Initial Term end    | `{{Initial Term End}}`    |
 
 ### 3.4 Permitted Affiliates
 
@@ -286,18 +294,18 @@ This Order Form may be executed in counterparts (electronic or wet-ink), each an
 The persons below sign on behalf of the Parties and warrant authority to bind.
 
 > **{{Vendor Legal Name}}** ({{Vendor Legal Entity Number}})
-> By: ___________________________
+> By: \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
 > Name: `{{Vendor Signatory Name}}`
 > Title: `{{Vendor Signatory Title}}`
-> Date: ___________________________
-> Place: ___________________________
+> Date: \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
+> Place: \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
 >
 > **{{Customer Legal Name}}** ({{Customer Legal Entity Number}})
-> By: ___________________________
+> By: \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
 > Name: `{{Customer Signatory Name}}`
 > Title: `{{Customer Signatory Title}}`
-> Date: ___________________________
-> Place: ___________________________
+> Date: \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
+> Place: \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
 
 Counterparts and electronic signatures are valid per CSA §18 and §9.2. For German Customers, a QTS signature under § 126a BGB is recommended for Order Forms over `{{German Schriftform Threshold}}` (default EUR 50,000) or where § 126 BGB Schriftform applies.
 
@@ -307,13 +315,13 @@ Counterparts and electronic signatures are valid per CSA §18 and §9.2. For Ger
 
 A short, structured list of what is being bought and at what quantity.
 
-| Line | Service / Module | Unit | Subscribed Quantity | Overage Rate (`{{Currency}}` per unit) | Notes |
-|---|---|---|---|---|---|
-| 1.1 | `{{Service Name}}` (base) | `{{Unit}}` | `{{Subscribed Quantity}}` | `{{Overage Rate}}` | |
-| 1.2 | [add-on, if any] | | | | |
-| 1.3 | [uptime upgrade] | tier | `{{Uptime Tier}}` | n/a | upgrades default SLA |
-| 1.4 | [data-residency pin] | region | `{{Data Residency}}` | n/a | EEA / Member State / city |
-| 1.5 | [sub-region permits] | region(s) | [list] | n/a | |
+| Line | Service / Module          | Unit       | Subscribed Quantity       | Overage Rate (`{{Currency}}` per unit) | Notes                     |
+| ---- | ------------------------- | ---------- | ------------------------- | -------------------------------------- | ------------------------- |
+| 1.1  | `{{Service Name}}` (base) | `{{Unit}}` | `{{Subscribed Quantity}}` | `{{Overage Rate}}`                     |                           |
+| 1.2  | [add-on, if any]          |            |                           |                                        |                           |
+| 1.3  | [uptime upgrade]          | tier       | `{{Uptime Tier}}`         | n/a                                    | upgrades default SLA      |
+| 1.4  | [data-residency pin]      | region     | `{{Data Residency}}`      | n/a                                    | EEA / Member State / city |
+| 1.5  | [sub-region permits]      | region(s)  | [list]                    | n/a                                    |                           |
 
 True-up cadence: `{{True-Up Frequency}}`.
 
@@ -323,12 +331,12 @@ True-up cadence: `{{True-Up Frequency}}`.
 
 A short, structured list of when invoices issue and for what amount.
 
-| Invoice # | Period covered | Issue date | Amount (`{{Currency}}`) | Notes |
-|---|---|---|---|---|
-| 1 | `{{Initial Term Start}}` – [period end] | `{{Initial Term Start}}` | [amount] | first invoice |
-| 2 | [period] | [issue date] | [amount] | |
-| ... | | | | |
-| n | [period end] | `{{Initial Term End}}` | [amount] | final Initial-Term invoice |
+| Invoice # | Period covered                          | Issue date               | Amount (`{{Currency}}`) | Notes                      |
+| --------- | --------------------------------------- | ------------------------ | ----------------------- | -------------------------- |
+| 1         | `{{Initial Term Start}}` – [period end] | `{{Initial Term Start}}` | [amount]                | first invoice              |
+| 2         | [period]                                | [issue date]             | [amount]                |                            |
+| ...       |                                         |                          |                         |                            |
+| n         | [period end]                            | `{{Initial Term End}}`   | [amount]                | final Initial-Term invoice |
 
 Payment terms: `{{Payment Terms}}` (default Net 30). Invoice currency: `{{Currency}}` (default EUR). VAT: handled per §4.7. Late-payment interest under §4.5 from the day after due date for undisputed amounts. Recovery costs under §4.6.
 

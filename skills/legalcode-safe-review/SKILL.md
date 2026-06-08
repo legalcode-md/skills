@@ -51,6 +51,7 @@ term against current market standards, and generates prioritized findings with d
 framing (founder view and investor view) and actionable redlines.
 
 **Covers:**
+
 - Template identification and modification detection (standard vs. modified form; 2023 non-modification representation)
 - Variant classification: cap-only (v1.1), discount-only, uncapped MFN (v1.2), or non-standard cap+discount
 - Valuation cap mechanics: Safe Price formula, Company Capitalization denominator composition and negotiation
@@ -69,6 +70,7 @@ framing (founder view and investor view) and actionable redlines.
 - Market benchmarking against YC template current versions and Carta Q3 2024 market data
 
 **Does not:**
+
 - Draft a SAFE from scratch — use a drafting-specific skill or the YC template directly
 - Select among financing instruments (SAFE vs. convertible note vs. priced round) — route to `legalcode-venture-financing-suite`
 - Review a convertible note — route to `legalcode-convertible-note-review`
@@ -78,14 +80,14 @@ framing (founder view and investor view) and actionable redlines.
 
 **Relationship to other skills:**
 
-| Task | Use This Skill | Route To |
-|------|---------------|---------|
-| SAFE clause-by-clause review + redlines | ✅ This skill | — |
-| Instrument selection (SAFE vs. note vs. priced round) | Summary flag only | `legalcode-venture-financing-suite` |
-| Convertible note review | ✗ | `legalcode-convertible-note-review` |
-| Series A term sheet review at conversion | Flag hand-off | `legalcode-term-sheet-analysis` |
-| PPM / Reg D securities compliance | Cross-reference flag | `legalcode-private-placement-memo-review` |
-| Equity incentive plan interaction at conversion | Flag only | `legalcode-equity-incentive-plan-review` |
+| Task                                                  | Use This Skill       | Route To                                  |
+| ----------------------------------------------------- | -------------------- | ----------------------------------------- |
+| SAFE clause-by-clause review + redlines               | ✅ This skill        | —                                         |
+| Instrument selection (SAFE vs. note vs. priced round) | Summary flag only    | `legalcode-venture-financing-suite`       |
+| Convertible note review                               | ✗                    | `legalcode-convertible-note-review`       |
+| Series A term sheet review at conversion              | Flag hand-off        | `legalcode-term-sheet-analysis`           |
+| PPM / Reg D securities compliance                     | Cross-reference flag | `legalcode-private-placement-memo-review` |
+| Equity incentive plan interaction at conversion       | Flag only            | `legalcode-equity-incentive-plan-review`  |
 
 ---
 
@@ -103,6 +105,7 @@ provisions thereof." Flag any SAFE governed by non-US law as requiring jurisdict
 counsel.
 
 [JURISDICTION-SPECIFIC] For non-US companies using YC-form SAFEs or local equivalents:
+
 - **Cayman Islands**: YC provides a Cayman variant. Analyze under Cayman company law; tax and
   securities implications differ materially from US-form. [VERIFY]
 - **Singapore**: YC provides a Singapore variant. MAS regulations govern securities offerings;
@@ -147,6 +150,7 @@ user can correct it.
 ### Step 1: Accept the SAFE
 
 Accept the SAFE (and any accompanying side letters) in any of these formats:
+
 - **File**: PDF, DOCX, or other document format
 - **Pasted text**: Full SAFE text pasted into the conversation
 - **URL**: Link to a document in a cloud storage or document system
@@ -162,7 +166,7 @@ not provided, note this and proceed with the instruments provided. Flag the gap.
    - Options: **Founder / Company** (flag investor-favorable deviations), **Investor** (flag
      company-favorable deviations), **Neutral / Counsel** (dual perspective, flag both sides),
      **Investor due diligence** (focus on completeness of investor protections)
-   - *Why this matters*: The same term (e.g., broad MFN scope) is favorable for the investor
+   - _Why this matters_: The same term (e.g., broad MFN scope) is favorable for the investor
      and adverse for the founder. The framing of findings flips entirely.
 
 2. **Company stage and deal context**:
@@ -170,18 +174,18 @@ not provided, note this and proceed with the instruments provided. Flag the gap.
      Bridge (between priced rounds), Other
    - Deal size: total SAFE round size and this investor's check
    - Cumulative SAFE position: are there prior SAFEs outstanding? How many? At what caps?
-   - *Why this matters*: Stacked SAFEs at multiple caps create compounding dilution. Severity
+   - _Why this matters_: Stacked SAFEs at multiple caps create compounding dilution. Severity
      of findings depends on total SAFE loading.
 
 3. **Investor type**:
    - Options: Individual angel, Seed fund, Accelerator (non-YC), Strategic / corporate, YC batch,
      Crowdfunding, Other
-   - *Why this matters*: Market standard terms vary by investor type. Consent rights that are
+   - _Why this matters_: Market standard terms vary by investor type. Consent rights that are
      unusual from an angel are standard from a lead seed fund.
 
 4. **Has a pro rata side letter been provided?**
    - Yes / No / Pending (will be provided)
-   - *Why this matters*: The standard YC post-money SAFE does not include pro rata rights.
+   - _Why this matters_: The standard YC post-money SAFE does not include pro rata rights.
      Missing side letter = no pro rata right, which is the default. If the user expects pro rata
      to exist but has not provided the side letter, this must be flagged.
 
@@ -192,6 +196,7 @@ If partial context is provided, state assumptions explicitly and proceed. Do not
 Before analyzing terms, determine whether this SAFE uses a standard YC form.
 
 **Identify the template version:**
+
 - Check the document header/footer for: "Postmoney Safe — Valuation Cap Only v1.1",
   "Postmoney Safe — Discount, No Valuation Cap", "Postmoney Safe — MFN Only v1.2", or
   similar YC version designations
@@ -203,6 +208,7 @@ Before analyzing terms, determine whether this SAFE uses a standard YC form.
   potential representation breach.
 
 **Detect modifications beyond blank-filling:**
+
 - Compare operative provisions against the known standard YC form
 - Flag any substantive changes to: conversion mechanics, Company Capitalization definition,
   Equity Financing definition, Liquidity Event definition, amendment provisions, MFN mechanics
@@ -210,6 +216,7 @@ Before analyzing terms, determine whether this SAFE uses a standard YC form.
   requirements are modifications — not blank-filling. These trigger the RED FLAG classification.
 
 **⟁ CLARIFY** — If the template version cannot be identified from the document:
+
 - Ask the user: "I cannot identify a YC version designation on this document. Do you know
   whether this is a standard YC post-money SAFE, a modified YC SAFE, or a non-YC SAFE?
   This affects whether I benchmark against the YC standard or treat the whole document as custom."
@@ -218,13 +225,13 @@ Before analyzing terms, determine whether this SAFE uses a standard YC form.
 
 Classify the SAFE into one of the following variants. This determines which analysis tracks apply.
 
-| Variant | Cap? | Discount? | MFN? | Market Share | Analysis Track |
-|---------|------|-----------|------|-------------|----------------|
-| **Cap-only (v1.1)** | Yes | No | No | ~62% | Cap mechanics + Conversion |
-| **Discount-only** | No | Yes | No | ~9% | Discount mechanics + Conversion |
-| **Uncapped MFN (v1.2)** | No | No | Yes | ~1% | MFN mechanics + Conversion |
-| **Cap + Discount** | Yes | Yes | No | ~29% | Both mechanics + Conversion; flag as non-standard |
-| **Other / Hybrid** | Varies | Varies | Varies | — | Full custom review; RED FLAG |
+| Variant                 | Cap?   | Discount? | MFN?   | Market Share | Analysis Track                                    |
+| ----------------------- | ------ | --------- | ------ | ------------ | ------------------------------------------------- |
+| **Cap-only (v1.1)**     | Yes    | No        | No     | ~62%         | Cap mechanics + Conversion                        |
+| **Discount-only**       | No     | Yes       | No     | ~9%          | Discount mechanics + Conversion                   |
+| **Uncapped MFN (v1.2)** | No     | No        | Yes    | ~1%          | MFN mechanics + Conversion                        |
+| **Cap + Discount**      | Yes    | Yes       | No     | ~29%         | Both mechanics + Conversion; flag as non-standard |
+| **Other / Hybrid**      | Varies | Varies    | Varies | —            | Full custom review; RED FLAG                      |
 
 **Flag**: If Cap + Discount is present, note that YC removed this variant from official templates
 in August 2021. While still common in the market (~29% per Carta), the combination provides more
@@ -238,20 +245,22 @@ Analyze the core economic terms for the identified variant. Apply the classifica
 #### 5a. Valuation Cap (Cap-Only or Cap+Discount variants)
 
 **Extract and record:**
+
 - Post-Money Valuation Cap (dollar amount)
 - Purchase Amount (investor's check size)
 - Calculated ownership percentage: Purchase Amount ÷ Post-Money Valuation Cap
 
 **Benchmark against market data (Carta Q3 2024):**
 
-| Stage | Typical Cap Range | Median Check | Expected Ownership |
-|-------|------------------|-------------|-------------------|
-| Pre-pre-seed | $3M–$8M | $100K–$250K | 2–8% |
-| Pre-seed | $5M–$15M | $250K–$750K | 3–10% |
-| Seed | $10M–$30M | $500K–$2M | 3–8% |
-| Seed (AI / high-traction) | $15M–$50M+ | $1M–$5M | 3–10% |
+| Stage                     | Typical Cap Range | Median Check | Expected Ownership |
+| ------------------------- | ----------------- | ------------ | ------------------ |
+| Pre-pre-seed              | $3M–$8M           | $100K–$250K  | 2–8%               |
+| Pre-seed                  | $5M–$15M          | $250K–$750K  | 3–10%              |
+| Seed                      | $10M–$30M         | $500K–$2M    | 3–8%               |
+| Seed (AI / high-traction) | $15M–$50M+        | $1M–$5M      | 3–10%              |
 
 **Review points:**
+
 - Is the cap reasonable relative to current market benchmarks for the company's stage?
 - Does the implied ownership percentage (Purchase Amount ÷ Cap) appear appropriate?
 - Are there multiple SAFEs outstanding with different caps? Model cumulative dilution.
@@ -262,6 +271,7 @@ Analyze the core economic terms for the identified variant. Apply the classifica
 
 Review the Company Capitalization definition. Standard YC post-money form includes, immediately
 prior to the equity financing:
+
 - All issued and outstanding capital stock (on an as-converted basis)
 - All issued and outstanding options, warrants, and other convertible securities
 - All SAFEs and convertible notes converting at the same time
@@ -275,10 +285,12 @@ changes the Safe Price materially and shifts dilution between parties.
 #### 5b. Discount Rate (Discount-Only or Cap+Discount variants)
 
 **Extract and record:**
+
 - Discount rate percentage
 - Safe Price formula: Series A Price Per Share × (1 − Discount Rate)
 
 **Benchmark:**
+
 - Market standard: 20% discount
 - Aggressive (investor-favorable): >20% (25% is unusual; >25% is non-standard)
 - Below standard (founder-favorable): <20% (15% acceptable; <15% requires justification)
@@ -290,6 +302,7 @@ the cap only if the Series A valuation is less than 1.25× the cap. Above that, 
 #### 5c. MFN Provision (Uncapped MFN variant)
 
 **Extract and record:**
+
 - MFN notification trigger definition: what instruments trigger the obligation?
 - Notification mechanism: who notifies, in what form, to what address?
 - Election window: how many days does the investor have to elect to adopt better terms?
@@ -297,6 +310,7 @@ the cap only if the Series A valuation is less than 1.25× the cap. Above that, 
 - Scope of "more favorable terms": limited to cap/discount or broader?
 
 **Review points:**
+
 - Does MFN cover only convertible instruments (SAFEs, convertible notes), or all financing?
 - Is YC's own batch investment SAFE carved out? (Founders often negotiate this exclusion.)
 - Does MFN automatically extend to side letter terms (pro rata, information rights)?
@@ -311,11 +325,13 @@ Review the conversion mechanics for each trigger event. The SAFE should cover al
 #### 6a. Equity Financing Conversion
 
 **Extract:**
+
 - "Equity Financing" definition: what constitutes a qualifying trigger?
 - Minimum aggregate consideration threshold (if any — standard YC form has none)
 - Conversion is automatic at Safe Price upon the closing of the equity financing
 
 **Review points:**
+
 - Is there a minimum financing size threshold? (Absence is standard but creates risk —
   any bona fide preferred stock sale could trigger conversion at an inopportune time.)
   Flag absence as STANDARD but note the risk if the company might do small strategic investments.
@@ -340,12 +356,14 @@ voting rights under DGCL §242(b)(2) in future charter amendments. Advise compan
 #### 6b. Liquidity Event
 
 **Extract:**
+
 - "Liquidity Event" definition: what triggers it?
 - "Liquidity Capitalization" definition: how does it differ from Company Capitalization?
 - Investor's choice: greater of (i) Purchase Amount or (ii) as-converted proceeds at Liquidity Price
 - Liquidity Price formula: Post-Money Valuation Cap ÷ Liquidity Capitalization
 
 **Review points:**
+
 - Does "Liquidity Event" include both M&A / change of control and IPO / direct listing?
   If IPO is excluded, SAFE holders may be left in an ambiguous position at public offering.
 - Does Liquidity Capitalization correctly exclude the unissued option pool and securities
@@ -358,11 +376,13 @@ voting rights under DGCL §242(b)(2) in future charter amendments. Advise compan
 #### 6c. Dissolution Event
 
 **Extract:**
+
 - Dissolution Event definition: corporate dissolution, liquidation, winding up
 - Payment: SAFE holder receives Purchase Amount from remaining assets
 - Priority: after creditors, pari passu with preferred, senior to common
 
 **Review points:**
+
 - Is priority correctly stated? SAFE holders are unsecured — they receive nothing if there
   are insufficient assets after satisfying creditors.
 - Does the SAFE characterize itself as equity (not debt) for dissolution priority? (Standard
@@ -373,6 +393,7 @@ voting rights under DGCL §242(b)(2) in future charter amendments. Advise compan
 ### Step 7: Amendment and Majority-in-Interest Provisions
 
 **Extract:**
+
 - Amendment mechanism: individual consent, majority-in-interest, or other
 - Definition of "majority": what percentage and of which group?
 - Which SAFE holders are counted in the majority: same cap and discount class only, or all SAFEs?
@@ -381,6 +402,7 @@ voting rights under DGCL §242(b)(2) in future charter amendments. Advise compan
 - Solicitation requirement: must all holders be solicited even if not consented?
 
 **Review points:**
+
 - Does the amendment provision match the YC standard post-money form (majority of same
   cap/discount class, with solicitation but not individual consent required for non-Purchase
   Amount terms)?
@@ -398,23 +420,23 @@ below is a RED FLAG unless specifically noted otherwise.
 
 **Checklist — scan the entire SAFE for these provisions:**
 
-| # | Non-Standard Provision | Classification | Rationale |
-|---|----------------------|----------------|-----------|
-| 1 | **Interest rate / accrual** | 🔴 RED FLAG | Transforms SAFE into debt; OID tax issues; potential re-characterization |
-| 2 | **Maturity date** | 🔴 RED FLAG | Creates repayment obligation; removes indefinite-duration feature; debt-like |
-| 3 | **Warrant coverage** | 🔴 RED FLAG | Adds separate security; cap table complexity; potential §409A issue |
-| 4 | **Board seat / board observer** | 🔴 RED FLAG | Governance entanglement before equity; pre-conversion board rights are unusual |
-| 5 | **Consent rights over M&A / fundraising** | 🔴 RED FLAG | Transforms SAFE into control instrument; severe founder constraint |
-| 6 | **Anti-dilution provisions** | 🔴 RED FLAG | Duplicates / augments conversion protection already built into SAFE |
-| 7 | **Voting rights before conversion** | 🔴 RED FLAG | SAFEs confer no voting rights pre-conversion; any voting right is highly unusual |
-| 8 | **Information rights in main SAFE body** | ⚠️ FLAG | Standard form has none; acceptable in side letter for large investors only |
-| 9 | **Full-ratchet or ratchet anti-dilution** | 🔴 RED FLAG | Reprices conversion at any subsequent lower-cap issuance; highly dilutive |
-| 10 | **Guaranteed minimum ownership** | 🔴 RED FLAG | Super pro rata in disguise; inflates round structure |
-| 11 | **Drag-along rights** | 🔴 RED FLAG | Pre-conversion drag-along on a SAFE holder is structurally inappropriate |
-| 12 | **Liquidation preference above 1x** | 🔴 RED FLAG | Standard dissolution right is 1x; any premium is non-standard |
-| 13 | **Non-compete / exclusivity obligations** | 🔴 RED FLAG | Inappropriate in a convertible instrument; should be in a separate agreement |
-| 14 | **Representations and warranties on financials** | ⚠️ FLAG | Standard SAFE has no financial reps; any substantive reps warrant scrutiny |
-| 15 | **Most Favored Nation extending to governance** | 🔴 RED FLAG | MFN should cover economic terms only (cap/discount); extending to governance cascades control rights to all MFN holders |
+| #   | Non-Standard Provision                           | Classification | Rationale                                                                                                               |
+| --- | ------------------------------------------------ | -------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Interest rate / accrual**                      | 🔴 RED FLAG    | Transforms SAFE into debt; OID tax issues; potential re-characterization                                                |
+| 2   | **Maturity date**                                | 🔴 RED FLAG    | Creates repayment obligation; removes indefinite-duration feature; debt-like                                            |
+| 3   | **Warrant coverage**                             | 🔴 RED FLAG    | Adds separate security; cap table complexity; potential §409A issue                                                     |
+| 4   | **Board seat / board observer**                  | 🔴 RED FLAG    | Governance entanglement before equity; pre-conversion board rights are unusual                                          |
+| 5   | **Consent rights over M&A / fundraising**        | 🔴 RED FLAG    | Transforms SAFE into control instrument; severe founder constraint                                                      |
+| 6   | **Anti-dilution provisions**                     | 🔴 RED FLAG    | Duplicates / augments conversion protection already built into SAFE                                                     |
+| 7   | **Voting rights before conversion**              | 🔴 RED FLAG    | SAFEs confer no voting rights pre-conversion; any voting right is highly unusual                                        |
+| 8   | **Information rights in main SAFE body**         | ⚠️ FLAG        | Standard form has none; acceptable in side letter for large investors only                                              |
+| 9   | **Full-ratchet or ratchet anti-dilution**        | 🔴 RED FLAG    | Reprices conversion at any subsequent lower-cap issuance; highly dilutive                                               |
+| 10  | **Guaranteed minimum ownership**                 | 🔴 RED FLAG    | Super pro rata in disguise; inflates round structure                                                                    |
+| 11  | **Drag-along rights**                            | 🔴 RED FLAG    | Pre-conversion drag-along on a SAFE holder is structurally inappropriate                                                |
+| 12  | **Liquidation preference above 1x**              | 🔴 RED FLAG    | Standard dissolution right is 1x; any premium is non-standard                                                           |
+| 13  | **Non-compete / exclusivity obligations**        | 🔴 RED FLAG    | Inappropriate in a convertible instrument; should be in a separate agreement                                            |
+| 14  | **Representations and warranties on financials** | ⚠️ FLAG        | Standard SAFE has no financial reps; any substantive reps warrant scrutiny                                              |
+| 15  | **Most Favored Nation extending to governance**  | 🔴 RED FLAG    | MFN should cover economic terms only (cap/discount); extending to governance cascades control rights to all MFN holders |
 
 For each red flag found: state the specific provision, explain the risk from the founder's and
 investor's perspectives, and provide a recommended resolution.
@@ -427,6 +449,7 @@ review it against these standards.
 #### 9a. Pro Rata Side Letter
 
 **Extract:**
+
 - Formula: ratio-based (standard) or hard percentage / dollar amount (non-standard)
 - Scope: which rounds trigger the right? Next round only (standard) or perpetual (non-standard)?
 - Threshold: any minimum investment size required to exercise pro rata?
@@ -435,13 +458,13 @@ review it against these standards.
 
 **Review points:**
 
-| Term | Standard | Investor-Favorable (Flag) | Highly Non-Standard (Red Flag) |
-|------|----------|--------------------------|-------------------------------|
-| Formula | Ratio-based (ownership %) | Hard dollar amount | Guaranteed ownership regardless of round |
-| Scope | Next qualifying round only | 2 rounds forward | Perpetual / all future rounds |
-| Threshold | None (any conversion) | >$500K minimum | Triggered even without conversion |
-| Termination | Upon Equity Financing closing | Extended to Series B | Never expires |
-| Transfer | Affiliates only | Any person | Freely assignable |
+| Term        | Standard                      | Investor-Favorable (Flag) | Highly Non-Standard (Red Flag)           |
+| ----------- | ----------------------------- | ------------------------- | ---------------------------------------- |
+| Formula     | Ratio-based (ownership %)     | Hard dollar amount        | Guaranteed ownership regardless of round |
+| Scope       | Next qualifying round only    | 2 rounds forward          | Perpetual / all future rounds            |
+| Threshold   | None (any conversion)         | >$500K minimum            | Triggered even without conversion        |
+| Termination | Upon Equity Financing closing | Extended to Series B      | Never expires                            |
+| Transfer    | Affiliates only               | Any person                | Freely assignable                        |
 
 Flag: Confirm that the aggregate pro rata rights across all outstanding investors do not crowd
 out new lead investors. If total pro rata allocation demand could consume more than ~30% of the
@@ -450,6 +473,7 @@ proposed round, flag as a future fundraising risk.
 #### 9b. Information Rights Letter
 
 **Extract:**
+
 - Financial statements required: type (unaudited, audited, reviewed), frequency, and deadline
 - Budget / financial projections: annual budget or projections
 - Access rights: any right to inspect books, records, or premises?
@@ -457,16 +481,19 @@ proposed round, flag as a future fundraising risk.
 - Cap table access: any right to view the cap table on demand?
 
 **Market standard (acceptable):**
+
 - Quarterly unaudited financials (P&L, balance sheet), within 30-45 days of quarter end
 - Annual audited or reviewed financials, within 90-120 days of fiscal year end
 - Annual operating budget
 
 **Flag as investor-favorable:**
+
 - Monthly financials (burdensome for small teams)
 - Board minutes access (non-standard before conversion)
 - Detailed cap table on demand (can expose sensitive investor information to competitors)
 
 **Flag as RED FLAG:**
+
 - Inspection rights (right to visit premises and review books and records)
 - Access to individual management or technical staff
 - Any information provided to all other investors (creates MFN-like cascade on information rights)
@@ -475,6 +502,7 @@ proposed round, flag as a future fundraising risk.
 #### 9c. Board Observer Letter
 
 **Extract:**
+
 - Scope: which investor (lead? all?) receives observer rights?
 - Duration: until Series A closing? Indefinitely?
 - Meetings covered: board meetings only, or committees too?
@@ -482,6 +510,7 @@ proposed round, flag as a future fundraising risk.
 - Termination triggers: ownership threshold below which observer rights terminate?
 
 **Market standard (acceptable for lead investor only):**
+
 - One observer right for the lead investor writing the largest check
 - Terminates upon Series A board restructuring
 - Company retains right to exclude observer from portions involving conflicts of interest
@@ -497,15 +526,16 @@ legal advice; route to `legalcode-private-placement-memo-review` for full analys
 
 **Regulation D (primary federal exemption):**
 
-| Requirement | Standard Practice | Flag |
-|-------------|------------------|------|
-| Exemption used | Rule 506(b) (most common) or 506(c) | Neither stated in SAFE; confirm separate compliance memo |
-| General solicitation | None permitted under 506(b) | Any public offering, AngelList, or demo day pitch may implicate 506(c) |
-| Investor accreditation | Self-certification under 506(b); verified under 506(c) | No verification language in side letter or subscription docs |
-| Form D filing | Within 15 days of first sale | Confirm filing has been or will be made |
-| Blue Sky | State notice filings in investor's home state | Multi-state investor base requires multi-state compliance |
+| Requirement            | Standard Practice                                      | Flag                                                                   |
+| ---------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------- |
+| Exemption used         | Rule 506(b) (most common) or 506(c)                    | Neither stated in SAFE; confirm separate compliance memo               |
+| General solicitation   | None permitted under 506(b)                            | Any public offering, AngelList, or demo day pitch may implicate 506(c) |
+| Investor accreditation | Self-certification under 506(b); verified under 506(c) | No verification language in side letter or subscription docs           |
+| Form D filing          | Within 15 days of first sale                           | Confirm filing has been or will be made                                |
+| Blue Sky               | State notice filings in investor's home state          | Multi-state investor base requires multi-state compliance              |
 
 **Foreign investor flags:**
+
 - Non-US investors may implicate Regulation S (offshore transaction) or US securities law
   even if resident abroad. Confirm offshore analysis has been completed.
 - CFIUS: Investment from investors in covered countries (China, Russia, or other) into US
@@ -538,17 +568,20 @@ Check: Does the SAFE include YC's §1202 tax characterization language? If the S
 include this language, flag as a potential QSBS risk for investors.
 
 **§ 409A Timing:**
+
 - SAFEs issued to employees, consultants, or service providers (rather than investors) can
   create § 409A deferred compensation issues. Flag any SAFE issued to a service provider.
 - The conversion of a SAFE at a discount or below-market cap into common stock could create
   § 409A issues depending on when and how the conversion is structured. [VERIFY]
 
 **LLC Issuer Risk:**
+
 - If the issuing entity is an LLC (rather than a C-corporation), SAFE treatment under
   partnership tax law is uncertain. Flag any LLC-structured issuer.
 - Most VC-backed companies are Delaware C-corps; flag if otherwise.
 
 **No OID / interest income:**
+
 - Standard SAFEs bear no interest, creating no OID complications. If an interest rate has been
   added (already flagged as a RED FLAG in Step 8), separately flag the OID tax risk.
 
@@ -557,16 +590,19 @@ include this language, flag as a potential QSBS risk for investors.
 Model the investor's ownership percentage at conversion under reasonable scenarios.
 
 **Basic ownership calculation (cap-only SAFE):**
+
 - Ownership % = Purchase Amount ÷ Post-Money Valuation Cap
 - Example: $500K at $10M cap = 5.00% ownership at conversion
 
 **Cumulative stacking (if multiple SAFEs outstanding):**
 Sum all SAFE ownership percentages to determine total SAFE dilution to founders:
+
 - Each post-money SAFE's guaranteed ownership % comes entirely from founders
 - Total founder dilution from SAFEs = Σ(each SAFE's Purchase Amount ÷ its Post-Money Cap)
 - Remaining founder ownership (pre-Series A, post-SAFE conversion) = 100% − total SAFE % − option pool %
 
 Model these scenarios:
+
 1. Series A at 2× the cap (favorable exit for investor — cap beats discount)
 2. Series A at 1× the cap (cap provides no benefit; conversion at Series A price)
 3. Series A at 0.5× the cap (down round; no cap benefit; discount if present provides some protection)
@@ -597,6 +633,7 @@ The provision matches or closely follows the current YC post-money SAFE standard
 identified variant. No negotiation needed for this item.
 
 **Examples:**
+
 - Conversion mechanics matching the v1.1 or v1.2 standard formula exactly
 - Amendment provision using standard majority-in-interest language
 - Dissolution payment at 1x Purchase Amount, pari passu with preferred
@@ -611,6 +648,7 @@ that is investor-favorable or founder-unfavorable (or vice versa). Requires atte
 likely negotiation, but does not fundamentally alter the SAFE structure.
 
 **Examples:**
+
 - Cap at materially above or below market range for the company's stage
 - Discount rate above 20% (investor-favorable) or below 15% (founder-favorable)
 - MFN scope extending to side letter terms beyond cap/discount
@@ -629,6 +667,7 @@ unusual rights, or creates material legal/tax/compliance risks. Requires negotia
 before signing.
 
 **Examples:**
+
 - Interest rate or maturity date added to a SAFE
 - Board seat or governance control provisions
 - Consent rights over future M&A, financing, or strategic decisions
@@ -714,31 +753,34 @@ secure Tier 2 wins. Never sign with unresolved Tier 1 issues.
 Run these 5 gates silently before delivering any output. If any gate fails, revise before
 delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim (YC template mechanics, securities rule, tax provision) cites a specific source — YC template version, IRC section, Regulation D rule, or market benchmark (Carta/Fenwick) | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **Format** | All citations follow a consistent format: YC form version, IRC §, 17 CFR Part 230, or "Carta Q3 2024 market data" | Fix format |
-| **Currency** | Template version references verified as current (check ycombinator.com/documents). Regulatory citations checked for amendments or updates. | Flag "[CHECK CURRENCY — verify against current YC documents page]" |
-| **Domain** | Analysis stays within the SAFE's governing law (Delaware / federal). No assumptions from civil law or non-US jurisdiction leaking into the analysis. | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated. Do not state the IRS position on QSBS / SAFE characterization as settled — it is not. | Add "[UNCERTAIN — tax counsel to advise]" for unresolved IRS positions |
+| Gate           | Rule                                                                                                                                                                                         | Fail Action                                                            |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Source**     | Every legal claim (YC template mechanics, securities rule, tax provision) cites a specific source — YC template version, IRC section, Regulation D rule, or market benchmark (Carta/Fenwick) | Add citation or mark "[UNVERIFIED — counsel to confirm]"               |
+| **Format**     | All citations follow a consistent format: YC form version, IRC §, 17 CFR Part 230, or "Carta Q3 2024 market data"                                                                            | Fix format                                                             |
+| **Currency**   | Template version references verified as current (check ycombinator.com/documents). Regulatory citations checked for amendments or updates.                                                   | Flag "[CHECK CURRENCY — verify against current YC documents page]"     |
+| **Domain**     | Analysis stays within the SAFE's governing law (Delaware / federal). No assumptions from civil law or non-US jurisdiction leaking into the analysis.                                         | Remove or flag jurisdictional bleed                                    |
+| **Confidence** | Uncertainty explicitly stated. Do not state the IRS position on QSBS / SAFE characterization as settled — it is not.                                                                         | Add "[UNCERTAIN — tax counsel to advise]" for unresolved IRS positions |
 
 ### Self-Interrogation for RED FLAG Items
 
 For any item classified as RED FLAG, apply this 3-pass review before delivering:
 
 **Pass 1 — Structural Chain Integrity**:
+
 - Does the red flag assessment follow logically from the standard SAFE structure?
 - Would a Delaware court or the SEC actually treat this term as problematic, or is there a
   defensible rationale for including it?
 - What is the counterparty's likely defense of this term?
 
 **Pass 2 — Completeness**:
+
 - Have all relevant implications been considered: tax, securities law, future financing,
   corporate governance?
 - Are there other provisions in the SAFE that mitigate or amplify this flag?
 - Could cumulative effect of multiple non-standard terms compound the risk?
 
 **Pass 3 — Challenge**:
+
 - What is the strongest argument that this provision is commercially reasonable?
 - Under what investment thesis or deal structure might a sophisticated investor demand this term?
 - Is the RED FLAG classification proportionate, or is this actually a FLAG with conditions?
@@ -750,13 +792,13 @@ If any pass reveals a weakness, revise before delivery. Mark the audit trail wit
 
 For each material finding, assign a confidence level:
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Clear departure from YC standard form; no ambiguity | State with confidence |
-| **High** | 0.80–0.94 | Strong basis in YC template and market data; minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60–0.79 | Good basis but reasonable practitioners could differ | State with explicit reasoning and contra-indicators |
-| **Possible** | 0.40–0.59 | Genuinely uncertain (e.g., QSBS tax characterization, novel provision) | Flag for counsel review with both sides of the argument |
-| **Unlikely** | 0.0–0.39 | Weak basis, speculative, or unverifiable without external information | Do not assert; flag as "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                                                     | Action                                                   |
+| ------------ | --------- | --------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Clear departure from YC standard form; no ambiguity                         | State with confidence                                    |
+| **High**     | 0.80–0.94 | Strong basis in YC template and market data; minor interpretation questions | State with brief caveat                                  |
+| **Probable** | 0.60–0.79 | Good basis but reasonable practitioners could differ                        | State with explicit reasoning and contra-indicators      |
+| **Possible** | 0.40–0.59 | Genuinely uncertain (e.g., QSBS tax characterization, novel provision)      | Flag for counsel review with both sides of the argument  |
+| **Unlikely** | 0.0–0.39  | Weak basis, speculative, or unverifiable without external information       | Do not assert; flag as "[UNCERTAIN — counsel to advise]" |
 
 ---
 
@@ -892,6 +934,7 @@ What NOT to do when reviewing or drafting SAFEs:
 ### Dual-Perspective Discipline
 
 For every FLAG and RED FLAG finding, provide both perspectives:
+
 - **Founder / Company perspective**: Why this term disadvantages the company or creates risk
 - **Investor perspective**: Why the investor may have asked for this, and what protection it
   provides to them
@@ -903,11 +946,11 @@ founders should understand to negotiate effectively.
 
 After every technical explanation, add a one-sentence plain-language summary. Example:
 
-*Technical*: "The Equity Financing definition does not include a minimum aggregate consideration
+_Technical_: "The Equity Financing definition does not include a minimum aggregate consideration
 threshold, meaning any bona fide sale of preferred stock for cash consideration could trigger
 automatic conversion of all outstanding SAFEs under Section 1(a)."
 
-*Plain language*: "There's no minimum deal size required to trigger conversion — even a small
+_Plain language_: "There's no minimum deal size required to trigger conversion — even a small
 strategic preferred investment could force all your SAFEs to convert."
 
 ### Quality Gates Before Delivery
@@ -928,6 +971,7 @@ strategic preferred investment could force all your SAFEs to convert."
 ### With legalcode-mcp Connected (Preferred)
 
 Search for:
+
 - Current Regulation D rules and Form D requirements (17 CFR §§ 230.501–230.508)
 - Delaware DGCL § 242 class voting rights — relevance to shadow preferred
 - Current SEC no-action letters or guidance relevant to SAFE securities treatment
@@ -950,13 +994,13 @@ especially important given unverified citations.
 
 This skill covers US-form YC SAFEs governed by Delaware law. For international SAFE variants:
 
-| Jurisdiction | Local Equivalent | Key Differences | Route |
-|-------------|-----------------|-----------------|-------|
-| **UK / Ireland** | Advanced Subscription Agreement (ASA) | EIS/SEIS incompatibility; Companies Act 2006 restrictions; no shadow preferred concept | Refer to UK ASA skill [if available] |
-| **Australia** | SAFE / KISS | Different conversion mechanics; ASIC compliance requirements | [VERIFY] |
-| **Canada** | YC Canada form (less relevant post-2026) | Similar to US form but different securities law | [VERIFY] |
-| **Cayman Islands** | YC Cayman form | Used for YC-backed Cayman holdcos; substantially similar to US form | [VERIFY] |
-| **Singapore** | YC Singapore form | MAS accredited investor rules; substantially similar mechanics | [VERIFY] |
+| Jurisdiction       | Local Equivalent                         | Key Differences                                                                        | Route                                |
+| ------------------ | ---------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------ |
+| **UK / Ireland**   | Advanced Subscription Agreement (ASA)    | EIS/SEIS incompatibility; Companies Act 2006 restrictions; no shadow preferred concept | Refer to UK ASA skill [if available] |
+| **Australia**      | SAFE / KISS                              | Different conversion mechanics; ASIC compliance requirements                           | [VERIFY]                             |
+| **Canada**         | YC Canada form (less relevant post-2026) | Similar to US form but different securities law                                        | [VERIFY]                             |
+| **Cayman Islands** | YC Cayman form                           | Used for YC-backed Cayman holdcos; substantially similar to US form                    | [VERIFY]                             |
+| **Singapore**      | YC Singapore form                        | MAS accredited investor rules; substantially similar mechanics                         | [VERIFY]                             |
 
 For any non-US form SAFE, note that mechanics may appear similar to the YC post-money form
 but underlying legal consequences differ materially. Do not apply US-form analysis to a
@@ -968,7 +1012,7 @@ non-US-form SAFE without jurisdiction-specific counsel review.
 
 Structure the final deliverable as follows:
 
-```markdown
+````markdown
 # SAFE Review — [Company Name] / [Investor Name]
 
 > AI-assisted analysis. Requires review by qualified legal and securities counsel.
@@ -989,10 +1033,10 @@ Structure the final deliverable as follows:
 **Overall Assessment**: [1-2 sentence plain-language summary]
 
 | Classification | Count |
-|----------------|-------|
-| ✅ STANDARD | [n] |
-| ⚠️ FLAG | [n] |
-| 🔴 RED FLAG | [n] |
+| -------------- | ----- |
+| ✅ STANDARD    | [n]   |
+| ⚠️ FLAG        | [n]   |
+| 🔴 RED FLAG    | [n]   |
 
 **Top Issues**: [Bullet list of Tier 1 and key Tier 2 items]
 
@@ -1071,9 +1115,9 @@ Structure the final deliverable as follows:
 ## Glass Box Audit Trail
 
 ```yaml
-glass_box:
-  ...
+glass_box: ...
 ```
+````
 
 ```
 
@@ -1096,3 +1140,4 @@ Created by Legalcode (2026-03-22). Original synthesis based on:
   `legalcode-convertible-note-review` reference standards
 - All statutory and regulatory references marked [VERIFY] where not independently confirmed
   via authoritative sources at time of drafting
+```

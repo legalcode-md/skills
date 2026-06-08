@@ -1,7 +1,15 @@
 ---
 title: Service Level Agreement — Iceland
 jurisdictions: [is]
-statutes: [Lög-90/2018-Persónuverndarlög, Lög-78/2019-Netöryggislög, Lög-70/2022-Fjarskiptalög, NIS2-via-EEA, DORA-via-EEA, GDPR-via-EEA]
+statutes:
+  [
+    Lög-90/2018-Persónuverndarlög,
+    Lög-78/2019-Netöryggislög,
+    Lög-70/2022-Fjarskiptalög,
+    NIS2-via-EEA,
+    DORA-via-EEA,
+    GDPR-via-EEA,
+  ]
 supervisory_authority: Persónuvernd / FME / CERT-IS
 audience: [B2B]
 license: MIT
@@ -352,12 +360,12 @@ Confirms governing law and preserves Icelandic supervisory powers.
 
 Severity is assigned by the Customer at ticket creation, subject to reclassification per §6.1.
 
-| Band | Description | Response | Resolution | Coverage |
-|------|------------|----------|------------|----------|
-| **P1 — Critical** | Service unavailable; loss of core function for all or substantially all users; data integrity at risk; active personal-data breach within GDPR Art. 33 / Lög nr. 90/2018 | `{{P1 Response Target}}` (default 15 min) | `{{P1 Resolution Target}}` (default 4 hr) — fix or Workaround | 24×7 |
-| **P2 — High** | Major function degraded; significant business impact; no practical workaround | `{{P2 Response Target}}` (default 1 hr) | 1 business day | 24×7 |
-| **P3 — Medium** | Non-critical; functional workaround exists; limited business impact | `{{P3 Response Target}}` (default 4 business hr) | 5 business days | Business hours |
-| **P4 — Low** | Minor; cosmetic; documentation gap; feature request | `{{P4 Response Target}}` (default 1 business day) | Next regularly scheduled release | Business hours |
+| Band              | Description                                                                                                                                                              | Response                                          | Resolution                                                    | Coverage       |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------- | -------------- |
+| **P1 — Critical** | Service unavailable; loss of core function for all or substantially all users; data integrity at risk; active personal-data breach within GDPR Art. 33 / Lög nr. 90/2018 | `{{P1 Response Target}}` (default 15 min)         | `{{P1 Resolution Target}}` (default 4 hr) — fix or Workaround | 24×7           |
+| **P2 — High**     | Major function degraded; significant business impact; no practical workaround                                                                                            | `{{P2 Response Target}}` (default 1 hr)           | 1 business day                                                | 24×7           |
+| **P3 — Medium**   | Non-critical; functional workaround exists; limited business impact                                                                                                      | `{{P3 Response Target}}` (default 4 business hr)  | 5 business days                                               | Business hours |
+| **P4 — Low**      | Minor; cosmetic; documentation gap; feature request                                                                                                                      | `{{P4 Response Target}}` (default 1 business day) | Next regularly scheduled release                              | Business hours |
 
 Customer-favoured tightening per §6.4; reclassification disputes per §6.1.
 

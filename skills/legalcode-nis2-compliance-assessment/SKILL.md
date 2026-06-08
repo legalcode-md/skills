@@ -45,6 +45,7 @@ incident reporting, board accountability, supply chain security, cross-border co
 and cross-directive alignment.
 
 **Covers:**
+
 - Entity classification assessment (essential vs. important entity determination; size thresholds;
   sectoral criteria; self-identification obligations under Article 3)
 - Article 21 ten minimum security measures — all ten, with implementation checklists, evidence
@@ -66,6 +67,7 @@ and cross-directive alignment.
 - Remediation roadmap: IMMEDIATE / NEAR-TERM / BACKGROUND prioritization tiers
 
 **Does not:**
+
 - Certify NIS2 compliance (compliance certifications require accredited audit)
 - Provide jurisdiction-by-jurisdiction legal opinions on national transpositions
 - Replace the supervisory examination process of any national competent authority
@@ -74,6 +76,7 @@ and cross-directive alignment.
 - Provide legal advice on sanctions exposure or litigation strategy
 
 **Related skills:**
+
 - `legalcode-dpia-generator` — GDPR Article 35 DPIA; required for high-risk processing; integrates with NIS2 Art. 21 security measures
 - `legalcode-breach-regulatory-notification-drafter` — multi-regime breach notification including NIS2 Art. 23 draft templates
 - `legalcode-eu-ai-act-high-risk-compliance` — EU AI Act compliance for AI systems deployed within NIS2-covered networks
@@ -88,6 +91,7 @@ and cross-directive alignment.
 transposition deadline for member states: 17 October 2024.
 
 **Key articles for this skill:**
+
 - Article 2 — Scope and entity coverage
 - Article 3 — Essential and important entity classification
 - Article 4 — Annex I and II sector lists
@@ -100,6 +104,7 @@ transposition deadline for member states: 17 October 2024.
 - Annexes I and II — Sector lists determining entity classification
 
 **Important national transpositions** [JURISDICTION-SPECIFIC]:
+
 - **Germany (DE)**: NIS2UmsuCG enacted December 5, 2025; in force December 6, 2025. Amends
   BSI Act (BSIG). BSI (Federal Office for Information Security) is competent authority.
   KRITIS threshold retained for third entity category. Registration deadline: April 2026.
@@ -130,6 +135,7 @@ pan-EU NIS2 supervisor. For cross-border incidents, the member state where the e
 its main establishment leads.
 
 **Penalties** [JURISDICTION-SPECIFIC]:
+
 - **Essential entities**: Up to €10,000,000 or 2% of total worldwide annual turnover,
   whichever is higher.
 - **Important entities**: Up to €7,000,000 or 1.4% of total worldwide annual turnover,
@@ -148,6 +154,7 @@ change the analysis direction. If context has already been provided, skip that q
 proceed.
 
 **Standard clarification format:**
+
 ```
 ⟁ CLARIFY — [Decision point name]
 
@@ -167,6 +174,7 @@ proceed.
 ### Step 1: Accept Input
 
 Accept input in any of these formats:
+
 - **System description**: Organization overview, sector, size, geographic presence, and
   existing security documentation (risk assessments, incident response plans, policies)
 - **Document set**: Uploaded security policies, risk registers, supplier agreements,
@@ -182,41 +190,41 @@ state(s) of main establishment, and approximate organization size (revenue + emp
 **⟁ CLARIFY** — Gather context before beginning the assessment. Ask (skip questions already answered):
 
 1. **Assessment mode**: What is the primary objective?
-   - *Readiness assessment*: Full gap analysis of current state against all NIS2 requirements
-   - *Incident reporting preparation*: Focus on Art. 23 timelines, thresholds, and CSIRT contacts
-   - *Supervisory examination preparation*: Document readiness for imminent inspection
-   - *Implementation roadmap*: Building NIS2 compliance from greenfield
+   - _Readiness assessment_: Full gap analysis of current state against all NIS2 requirements
+   - _Incident reporting preparation_: Focus on Art. 23 timelines, thresholds, and CSIRT contacts
+   - _Supervisory examination preparation_: Document readiness for imminent inspection
+   - _Implementation roadmap_: Building NIS2 compliance from greenfield
    - **Why this matters**: Determines output focus and depth of assessment.
 
 2. **Entity classification confidence**: Has the organization performed entity self-identification?
-   - *Yes — classified as essential entity*: Proceed to full assessment
-   - *Yes — classified as important entity*: Note proportionality provisions in Step 4
-   - *Not yet performed*: Classification gate is Step 4; perform classification first
+   - _Yes — classified as essential entity_: Proceed to full assessment
+   - _Yes — classified as important entity_: Note proportionality provisions in Step 4
+   - _Not yet performed_: Classification gate is Step 4; perform classification first
    - **Why this matters**: Essential and important entities have different obligation intensities and supervisory regimes.
 
 3. **Member state(s)**: Which member state(s) is this assessment for?
-   - *Single member state*: [Specify which — applies national transposition]
-   - *Multiple member states*: [List — multi-jurisdiction assessment required]
-   - *Unknown/pre-assessment*: Jurisdiction-agnostic assessment; national transposition TBD
+   - _Single member state_: [Specify which — applies national transposition]
+   - _Multiple member states_: [List — multi-jurisdiction assessment required]
+   - _Unknown/pre-assessment_: Jurisdiction-agnostic assessment; national transposition TBD
    - **Why this matters**: National transpositions differ significantly; competent authority, timeline, and specific national requirements vary.
 
 4. **Sector and overlap**: What sector(s) does the organization operate in?
-   - *Annex I sector (highly critical)*: Energy, transport, banking, financial market infrastructure, health, water, digital infrastructure, ICT B2B, public administration, space
-   - *Annex II sector (other critical)*: Postal, waste, chemicals, food, manufacturing, digital providers
-   - *Multiple sectors or vertical integration*: Identify primary sector; note sector-specific overlays
+   - _Annex I sector (highly critical)_: Energy, transport, banking, financial market infrastructure, health, water, digital infrastructure, ICT B2B, public administration, space
+   - _Annex II sector (other critical)_: Postal, waste, chemicals, food, manufacturing, digital providers
+   - _Multiple sectors or vertical integration_: Identify primary sector; note sector-specific overlays
    - **Why this matters**: Sector determines applicable sectoral regulations (DORA for finance, EECC for telecom, etc.) and sector-specific ENISA technical guidelines.
 
 5. **Existing security framework**: Does the organization currently operate under any security framework?
-   - *ISO 27001 certified*: Use existing controls as baseline; identify NIS2-specific gaps
-   - *NIST CSF implemented*: Map NIST functions to Art. 21 measures
-   - *No formal framework*: Begin from first principles; longer assessment
-   - *NIS1 compliant*: Identify delta changes under NIS2 (expanded scope, stricter measures)
+   - _ISO 27001 certified_: Use existing controls as baseline; identify NIS2-specific gaps
+   - _NIST CSF implemented_: Map NIST functions to Art. 21 measures
+   - _No formal framework_: Begin from first principles; longer assessment
+   - _NIS1 compliant_: Identify delta changes under NIS2 (expanded scope, stricter measures)
    - **Why this matters**: Existing frameworks accelerate assessment; NIS2 gaps are identifiable rather than building from zero.
 
 6. **Compliance maturity**: What is the current compliance posture?
-   - *Greenfield (no controls)*: Full implementation roadmap required
-   - *Partial (some controls in place)*: Gap analysis and remediation roadmap
-   - *Mature (most controls in place)*: Verification and documentation assessment
+   - _Greenfield (no controls)_: Full implementation roadmap required
+   - _Partial (some controls in place)_: Gap analysis and remediation roadmap
+   - _Mature (most controls in place)_: Verification and documentation assessment
    - **Why this matters**: Calibrates assessment depth and output focus (build vs. verify vs. remediate).
 
 ### Step 3: Gather Legal Authority
@@ -224,6 +232,7 @@ state(s) of main establishment, and approximate organization size (revenue + emp
 Before assessing, gather current legal authority for the assessment:
 
 **With legalcode-mcp connected:**
+
 - Search: "NIS2 Directive 2022/2555 [Article N]" — verify current text and ENISA guidance
 - Search: "[Member State] NIS2 transposition [national act name]" — verify national implementation
 - Search: "ENISA NIS2 [sector] guidelines [year]" — verify sector-specific guidance currency
@@ -232,6 +241,7 @@ Before assessing, gather current legal authority for the assessment:
 - Mark all verified citations as VERIFIED in Glass Box
 
 **Without legalcode-mcp:**
+
 - Proceed with Directive text from training data
 - Mark all citations [VERIFY] — particularly national transpositions (evolving as of March 2026)
 - Note in Glass Box: `legalcode_mcp: "Not connected"`
@@ -248,6 +258,7 @@ If in scope, identify entity tier (essential or important) and proceed to Step 5
 #### 4a. Scope Determination (Article 2)
 
 NIS2 applies when the entity:
+
 1. **Sector test**: Operates in a sector listed in Annex I or Annex II (see Jurisdiction section)
 2. **Size test**: Qualifies as medium-sized or large enterprise:
    - Medium: 50+ employees AND/OR €10M+ annual turnover/balance sheet
@@ -257,6 +268,7 @@ NIS2 applies when the entity:
 3. **Establishment test**: Provides services in the EU or is established in the EU
 
 **Entities excluded regardless of size** (certain categories are essential by law):
+
 - Qualified trust service providers
 - TLD name registries and DNS service providers
 - Internet exchange points
@@ -269,14 +281,14 @@ if scope is uncertain."
 
 #### 4b. Essential vs. Important Entity Determination (Article 3)
 
-| Criterion | Essential Entity | Important Entity |
-|-----------|-----------------|-----------------|
-| Sector | Annex I | Annex II |
-| Size | Large enterprise (250+ employees / €50M+ turnover) | Medium or large enterprise |
-| Designation | Designated essential by national authority | Annex II by default (if size met) |
-| Supervisory model | **Proactive supervision** — ex ante inspections, regular audits | **Reactive supervision** — ex post inspections triggered by incidents or complaints |
-| Fines | Up to €10M or 2% global turnover | Up to €7M or 1.4% global turnover |
-| Special rules | Annex I entities regardless of size: trust service providers, TLD, DNS, IXPs, telecom providers | Annex II medium-large entities; some sectors designated at national discretion |
+| Criterion         | Essential Entity                                                                                | Important Entity                                                                    |
+| ----------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Sector            | Annex I                                                                                         | Annex II                                                                            |
+| Size              | Large enterprise (250+ employees / €50M+ turnover)                                              | Medium or large enterprise                                                          |
+| Designation       | Designated essential by national authority                                                      | Annex II by default (if size met)                                                   |
+| Supervisory model | **Proactive supervision** — ex ante inspections, regular audits                                 | **Reactive supervision** — ex post inspections triggered by incidents or complaints |
+| Fines             | Up to €10M or 2% global turnover                                                                | Up to €7M or 1.4% global turnover                                                   |
+| Special rules     | Annex I entities regardless of size: trust service providers, TLD, DNS, IXPs, telecom providers | Annex II medium-large entities; some sectors designated at national discretion      |
 
 **Note on proportionality**: Essential entities cannot claim blanket proportionality
 exemptions on Art. 21 measures. Important entities have limited proportionality under
@@ -286,6 +298,7 @@ Consult national competent authority guidance.
 ### Step 5: Legal Authority Research
 
 Gather sector-specific and member state-specific guidance:
+
 - Identify the competent authority for the entity's sector and member state [JURISDICTION-SPECIFIC]
 - Locate ENISA sector-specific guidelines (ENISA publishes implementation guidance for
   each sector category; check enisa.europa.eu for current versions)
@@ -298,6 +311,7 @@ Gather sector-specific and member state-specific guidance:
 **Article 21(2)(a)**: Policies on risk analysis and information system security.
 
 **Implementation requirements:**
+
 - [ ] Formal cybersecurity risk assessment conducted and documented
 - [ ] Risk assessment methodology defined (asset identification → threat assessment → vulnerability assessment → likelihood/impact scoring → risk ranking)
 - [ ] Risk assessment updated at least annually and after significant changes
@@ -319,6 +333,7 @@ must conduct comprehensive risk assessments with no proportionality exceptions.*
 **Article 21(2)(b)**: Incident handling.
 
 **Implementation requirements:**
+
 - [ ] Incident response plan (IRP) documented and approved by management
 - [ ] Incident classification criteria defined (including NIS2 "significant incident" threshold — see Step 14)
 - [ ] Incident detection capabilities operational (SIEM, alerting, or equivalent)
@@ -336,6 +351,7 @@ must conduct comprehensive risk assessments with no proportionality exceptions.*
 **Article 21(2)(c)**: Business continuity, backup management, disaster recovery, and crisis management.
 
 **Implementation requirements:**
+
 - [ ] Business continuity plan (BCP) documented covering service disruption scenarios
 - [ ] Disaster recovery plan (DRP) with defined RTO and RPO targets
 - [ ] Backup strategy documented: backup frequency, retention, offsite/immutable storage
@@ -355,6 +371,7 @@ must conduct comprehensive risk assessments with no proportionality exceptions.*
 the relationships between each entity and its direct suppliers or service providers.
 
 **Implementation requirements:**
+
 - [ ] Supplier/vendor inventory maintained (all third parties with system access or data access)
 - [ ] Supplier risk classification criteria defined (criticality tiers: critical, high, standard)
 - [ ] Security due diligence process for new suppliers documented
@@ -366,9 +383,10 @@ the relationships between each entity and its direct suppliers or service provid
 **Evidence required**: Vendor register; supplier risk tiers; standard contractual security clauses; due diligence questionnaire; monitoring records.
 
 **⟁ CLARIFY** — Supply chain complexity:
-1. *Simple (few suppliers, limited system access)*: Basic due diligence and contractual clauses sufficient
-2. *Complex (many critical suppliers, shared infrastructure)*: Full supplier risk management program required
-3. *Critical service provider status*: Organization may itself be a supplier to other essential entities — assess circular dependency
+
+1. _Simple (few suppliers, limited system access)_: Basic due diligence and contractual clauses sufficient
+2. _Complex (many critical suppliers, shared infrastructure)_: Full supplier risk management program required
+3. _Critical service provider status_: Organization may itself be a supplier to other essential entities — assess circular dependency
 
 **Classification**: ✅ COMPLIANT / ⚠️ PARTIAL / ❌ NON-COMPLIANT / 🚨 CRITICAL
 
@@ -378,6 +396,7 @@ the relationships between each entity and its direct suppliers or service provid
 and maintenance, including vulnerability handling and disclosure.
 
 **Implementation requirements:**
+
 - [ ] Secure development lifecycle (SDLC) policy documented (if software is developed internally)
 - [ ] Security requirements defined at acquisition phase for all new systems/services
 - [ ] Patch and vulnerability management policy: assessment, prioritization, remediation timelines
@@ -396,6 +415,7 @@ and maintenance, including vulnerability handling and disclosure.
 risk management measures.
 
 **Implementation requirements:**
+
 - [ ] Internal audit or review program for cybersecurity controls defined
 - [ ] Key performance indicators (KPIs) or metrics for cybersecurity effectiveness documented
 - [ ] Management review of cybersecurity posture at defined intervals
@@ -412,6 +432,7 @@ risk management measures.
 **Article 21(2)(g)**: Basic cyber hygiene practices and cybersecurity training.
 
 **Implementation requirements:**
+
 - [ ] Cybersecurity awareness training program documented and operationalized
 - [ ] Training covers: phishing, social engineering, password security, data handling, device security
 - [ ] All employees receive training at least annually; new starters at onboarding
@@ -433,6 +454,7 @@ cybersecurity. This is a mandatory separate requirement from general employee aw
 where appropriate, encryption.
 
 **Implementation requirements:**
+
 - [ ] Cryptography policy documented: approved algorithms, key lengths, key management
 - [ ] Data classification scheme drives encryption requirements (at rest + in transit)
 - [ ] Encryption of sensitive data at rest (AES-256 or equivalent)
@@ -450,6 +472,7 @@ where appropriate, encryption.
 **Article 21(2)(i)**: Human resources security, access control policies, and asset management.
 
 **Implementation requirements:**
+
 - [ ] Access control policy documented (need-to-know, least-privilege principles)
 - [ ] Identity and access management (IAM): user provisioning, access reviews, offboarding
 - [ ] Multi-factor authentication (MFA) required for remote access and admin accounts
@@ -469,6 +492,7 @@ where appropriate, encryption.
 solutions, secure voice, video, and text communications, and secure emergency communications.
 
 **Implementation requirements:**
+
 - [ ] MFA implemented for: all remote access, all administrative access, all cloud service access, email access for privileged roles
 - [ ] Continuous authentication mechanisms considered for high-risk systems (behavioral analytics, zero-trust)
 - [ ] Secure communications policy: approved channels for sensitive communications
@@ -479,8 +503,7 @@ solutions, secure voice, video, and text communications, and secure emergency co
 **Evidence required**: MFA deployment records; secure communications policy; emergency communication system documentation; MFA coverage scope.
 
 **Note**: Measures 9 and 10 overlap in access control and MFA. Assess together but score
-separately — many organizations have MFA deployed but lack the access control policy (measure
-9) or lack secure emergency communications (measure 10).
+separately — many organizations have MFA deployed but lack the access control policy (measure 9) or lack secure emergency communications (measure 10).
 
 **Classification**: ✅ COMPLIANT / ⚠️ PARTIAL / ❌ NON-COMPLIANT / 🚨 CRITICAL
 
@@ -499,6 +522,7 @@ significant if it meets any of these criteria:
 or 5% of total annual turnover in the previous financial year, whichever is lower.
 
 **Service disruption criteria** (from Article 23 and Recitals):
+
 - Has caused or is capable of causing severe operational disruption of services
 - Affects a large number of users
 - Causes geographical spread (cross-border impact)
@@ -518,18 +542,20 @@ expire before a reporting decision is made.
 
 #### 16b. Three-Stage Reporting Timeline
 
-| Stage | Deadline | Recipient | Content |
-|-------|----------|-----------|---------|
-| **Early Warning** (Art. 23.1) | **24 hours** from detecting a significant incident | CSIRT or national competent authority | Brief alert: occurrence, nature of incident (if known), any cross-border impact indicator |
-| **Incident Notification** (Art. 23.4) | **72 hours** from detecting a significant incident | CSIRT or national competent authority | Initial assessment: severity, impact assessment, indicators of compromise (if known), status of incident |
-| **Final Report** (Art. 23.4(c)) | **One month** from submitting notification | CSIRT or national competent authority | Detailed description, threat type, root cause analysis, impact summary, mitigation measures applied, cross-border impact assessment |
+| Stage                                 | Deadline                                           | Recipient                             | Content                                                                                                                             |
+| ------------------------------------- | -------------------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Early Warning** (Art. 23.1)         | **24 hours** from detecting a significant incident | CSIRT or national competent authority | Brief alert: occurrence, nature of incident (if known), any cross-border impact indicator                                           |
+| **Incident Notification** (Art. 23.4) | **72 hours** from detecting a significant incident | CSIRT or national competent authority | Initial assessment: severity, impact assessment, indicators of compromise (if known), status of incident                            |
+| **Final Report** (Art. 23.4(c))       | **One month** from submitting notification         | CSIRT or national competent authority | Detailed description, threat type, root cause analysis, impact summary, mitigation measures applied, cross-border impact assessment |
 
 **Additional timing notes**:
+
 - If incident still ongoing at one-month mark: submit progress report; final report upon resolution
 - For incidents affecting multiple member states: report to each national CSIRT/CA; lead authority is member state of main establishment
 - Early warning (24h) does NOT require root cause analysis — it is an alert, not an investigation report
 
 **Assessment checklist**:
+
 - [ ] 24-hour early warning procedure documented and assigned to identified role
 - [ ] 72-hour notification template prepared with required content fields
 - [ ] One-month final report template prepared
@@ -546,6 +572,7 @@ Article 20 requires management bodies to approve cybersecurity risk management m
 and oversee their implementation. Board members face personal liability in many member states.
 
 **Assessment requirements:**
+
 - [ ] Management body has formally approved the organization's NIS2 risk management framework (documented approval, board minutes, or equivalent)
 - [ ] Management body receives regular cybersecurity briefings (at defined intervals — recommended quarterly)
 - [ ] Management body members have completed NIS2-specific cybersecurity training (Art. 20(2) requirement — mandatory, not optional)
@@ -555,6 +582,7 @@ and oversee their implementation. Board members face personal liability in many 
 - [ ] Management body reviewed and approved the incident response policy (Measure 2)
 
 **Assessment of board cybersecurity competence:**
+
 - Does the board understand the distinction between essential and important entity obligations?
 - Can the board articulate the 24-hour early warning obligation and who is responsible?
 - Has the board discussed supply chain risk at the governance level?
@@ -565,10 +593,11 @@ and oversee their implementation. Board members face personal liability in many 
 ### Step 18: Cross-Directive Alignment Assessment
 
 **⟁ CLARIFY** — Cross-directive scope:
-1. *General organization*: Assess GDPR Art. 32 overlap only
-2. *Financial sector*: Assess GDPR + DORA (Regulation 2022/2554) intersection
-3. *Telecom provider*: Assess GDPR + EECC (Directive 2018/1972) intersection
-4. *Health sector*: Assess GDPR + NIS2 + national health data regulations
+
+1. _General organization_: Assess GDPR Art. 32 overlap only
+2. _Financial sector_: Assess GDPR + DORA (Regulation 2022/2554) intersection
+3. _Telecom provider_: Assess GDPR + EECC (Directive 2018/1972) intersection
+4. _Health sector_: Assess GDPR + NIS2 + national health data regulations
 5. **Why this matters**: Different sectors have layered obligations that create both overlapping requirements (where NIS2 compliance satisfies GDPR Art. 32) and divergent requirements (where DORA creates stricter standards not fully captured by NIS2).
 
 #### 18a. GDPR Article 32 Alignment
@@ -595,6 +624,7 @@ just personal data systems).
 
 For entities subject to DORA (Regulation 2022/2554) — credit institutions, investment
 firms, payment institutions, insurance companies, crypto-asset service providers:
+
 - DORA's ICT risk framework (Chapter II) partially overlaps NIS2 Art. 21
 - DORA incident reporting (Chapter III) has different thresholds and timelines than NIS2 Art. 23
 - DORA's digital operational resilience testing (Chapter IV) goes beyond NIS2 effectiveness assessment (Measure 6)
@@ -604,13 +634,13 @@ firms, payment institutions, insurance companies, crypto-asset service providers
 
 #### 18c. Sector-Specific Overlays [JURISDICTION-SPECIFIC]
 
-| Sector | Applicable Overlay | Interaction with NIS2 |
-|--------|-------------------|-----------------------|
+| Sector  | Applicable Overlay       | Interaction with NIS2                                                                   |
+| ------- | ------------------------ | --------------------------------------------------------------------------------------- |
 | Telecom | EECC Directive 2018/1972 | Security measures + incident reporting pre-dated NIS2; review for stricter requirements |
-| Energy | ACER/TSO sector rules | Energy sector NIS2 Annex I entities; additional sector-specific ENISA guidelines |
-| Finance | DORA + EBA guidelines | See 18b above; DORA generally stricter; apply DORA standard |
-| Health | National health data law | Personal health data adds GDPR sensitivity + sector-specific confidentiality rules |
-| Water | National water authority | Infrastructure protection laws may add physical security requirements |
+| Energy  | ACER/TSO sector rules    | Energy sector NIS2 Annex I entities; additional sector-specific ENISA guidelines        |
+| Finance | DORA + EBA guidelines    | See 18b above; DORA generally stricter; apply DORA standard                             |
+| Health  | National health data law | Personal health data adds GDPR sensitivity + sector-specific confidentiality rules      |
+| Water   | National water authority | Infrastructure protection laws may add physical security requirements                   |
 
 ### Step 19: Generate Assessment Output
 
@@ -622,32 +652,32 @@ Apply the classification system and generate the output using the Output Format 
 
 ### Four-Tier Compliance Classification
 
-| Tier | Symbol | Definition | Required Action |
-|------|--------|-----------|----------------|
-| **COMPLIANT** | ✅ | Measure fully implemented, documented, tested, and demonstrably operationalized. Evidence available. No material gaps. | No immediate action required. Maintain and monitor. |
-| **PARTIAL** | ⚠️ | Measure exists but with identifiable gaps. Implementation incomplete. Documentation missing or outdated. Policy exists but not operationalized. | Action within 90 days. Address gaps, update documentation, test operationalization. |
-| **NON-COMPLIANT** | ❌ | Measure not meaningfully implemented or fundamentally deficient. Significant deviation from NIS2 requirements. | Near-term remediation (30-90 days). Priority action with ownership and deadline. |
-| **CRITICAL** | 🚨 | Measure entirely absent, non-functional, or creates immediate cybersecurity risk to the organization's core services. Supervisory enforcement risk if incident occurs. | Immediate remediation (0-30 days). Escalate to management. No delay acceptable. |
+| Tier              | Symbol | Definition                                                                                                                                                             | Required Action                                                                     |
+| ----------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **COMPLIANT**     | ✅     | Measure fully implemented, documented, tested, and demonstrably operationalized. Evidence available. No material gaps.                                                 | No immediate action required. Maintain and monitor.                                 |
+| **PARTIAL**       | ⚠️     | Measure exists but with identifiable gaps. Implementation incomplete. Documentation missing or outdated. Policy exists but not operationalized.                        | Action within 90 days. Address gaps, update documentation, test operationalization. |
+| **NON-COMPLIANT** | ❌     | Measure not meaningfully implemented or fundamentally deficient. Significant deviation from NIS2 requirements.                                                         | Near-term remediation (30-90 days). Priority action with ownership and deadline.    |
+| **CRITICAL**      | 🚨     | Measure entirely absent, non-functional, or creates immediate cybersecurity risk to the organization's core services. Supervisory enforcement risk if incident occurs. | Immediate remediation (0-30 days). Escalate to management. No delay acceptable.     |
 
 ### Prioritization Framework
 
-| Priority | Timeframe | Triggers |
-|----------|-----------|---------|
-| **IMMEDIATE** | 0–30 days | Any CRITICAL finding; any incident reporting gap (Art. 23 cannot be remediated after an incident occurs); any active cybersecurity incident |
-| **NEAR-TERM** | 30–90 days | NON-COMPLIANT findings; measures with no implementation; absent documentation for operable controls |
-| **BACKGROUND** | 90–180 days | PARTIAL findings; enhancement actions; documentation improvements; optimization |
+| Priority       | Timeframe   | Triggers                                                                                                                                    |
+| -------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **IMMEDIATE**  | 0–30 days   | Any CRITICAL finding; any incident reporting gap (Art. 23 cannot be remediated after an incident occurs); any active cybersecurity incident |
+| **NEAR-TERM**  | 30–90 days  | NON-COMPLIANT findings; measures with no implementation; absent documentation for operable controls                                         |
+| **BACKGROUND** | 90–180 days | PARTIAL findings; enhancement actions; documentation improvements; optimization                                                             |
 
 ### Confidence Scoring
 
 Apply to each finding before delivering output:
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | NIS2 Directive text is explicit; requirement unambiguous; no national variation expected | State with confidence |
-| **High** | 0.80–0.94 | ENISA guidelines provide clear guidance; minor interpretive uncertainty; most member states align | State with brief caveat |
-| **Probable** | 0.60–0.79 | ENISA guidance exists but national implementations vary; reasonable interpretation; flag for legal review | State with reasoning and caveats |
-| **Possible** | 0.40–0.59 | Genuine uncertainty on measure interpretation or national scope; supervisory interpretation may differ | Flag for regulator consultation; present both interpretations |
-| **Unlikely** | 0.0–0.39 | Speculative interpretation; weak basis; do not assert | Do not state as requirement; flag as [UNCERTAIN] |
+| Level        | Range     | Meaning                                                                                                   | Action                                                        |
+| ------------ | --------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| **Definite** | 0.95–1.0  | NIS2 Directive text is explicit; requirement unambiguous; no national variation expected                  | State with confidence                                         |
+| **High**     | 0.80–0.94 | ENISA guidelines provide clear guidance; minor interpretive uncertainty; most member states align         | State with brief caveat                                       |
+| **Probable** | 0.60–0.79 | ENISA guidance exists but national implementations vary; reasonable interpretation; flag for legal review | State with reasoning and caveats                              |
+| **Possible** | 0.40–0.59 | Genuine uncertainty on measure interpretation or national scope; supervisory interpretation may differ    | Flag for regulator consultation; present both interpretations |
+| **Unlikely** | 0.0–0.39  | Speculative interpretation; weak basis; do not assert                                                     | Do not state as requirement; flag as [UNCERTAIN]              |
 
 ---
 
@@ -655,13 +685,13 @@ Apply to each finding before delivering output:
 
 Run these five gates silently before delivering any finding. If any gate fails, revise before delivery.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every regulatory claim cites specific NIS2 article, recital, ENISA guideline section, or national transposition provision | Add citation or mark [UNVERIFIED] |
-| **Format** | All citations use consistent format: Art. 21(2)(a), Recital 74, Annex I, NIS2UmsuCG §X | Fix format |
-| **Currency** | Every cited provision checked for amendments; national transposition acts marked [VERIFY] for evolving implementations | Flag [CHECK CURRENCY] |
-| **Domain** | Analysis stays within NIS2 scope; any GDPR or DORA claims explicitly labeled [GDPR] or [DORA] | Remove or label jurisdictional bleed |
-| **Confidence** | Any interpretive uncertainty explicitly stated with confidence level; pre-enforcement interpretations clearly flagged | Add confidence qualifier |
+| Gate           | Rule                                                                                                                      | Fail Action                          |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| **Source**     | Every regulatory claim cites specific NIS2 article, recital, ENISA guideline section, or national transposition provision | Add citation or mark [UNVERIFIED]    |
+| **Format**     | All citations use consistent format: Art. 21(2)(a), Recital 74, Annex I, NIS2UmsuCG §X                                    | Fix format                           |
+| **Currency**   | Every cited provision checked for amendments; national transposition acts marked [VERIFY] for evolving implementations    | Flag [CHECK CURRENCY]                |
+| **Domain**     | Analysis stays within NIS2 scope; any GDPR or DORA claims explicitly labeled [GDPR] or [DORA]                             | Remove or label jurisdictional bleed |
+| **Confidence** | Any interpretive uncertainty explicitly stated with confidence level; pre-enforcement interpretations clearly flagged     | Add confidence qualifier             |
 
 ---
 
@@ -754,6 +784,7 @@ What NOT to do when assessing or implementing NIS2 compliance:
 ## External Tool Integration
 
 **With legalcode-mcp connected (preferred)**:
+
 - Search for current ENISA NIS2 implementation guidelines by sector
 - Verify national transposition legislation status for each member state
 - Search for competent authority guidance and supervisory expectations
@@ -761,6 +792,7 @@ What NOT to do when assessing or implementing NIS2 compliance:
 - Mark all legalcode-mcp-verified citations as VERIFIED in Glass Box
 
 **Without legalcode-mcp**:
+
 - Proceed with Directive text and published ENISA guidelines from training knowledge
 - Mark all national transposition references as [VERIFY]
 - Mark ENISA guideline version references as [VERIFY — check current version at enisa.europa.eu]
@@ -771,7 +803,7 @@ What NOT to do when assessing or implementing NIS2 compliance:
 
 ## Output Format Template
 
-```markdown
+````markdown
 # NIS2 Compliance Assessment — [Organization Name]
 
 **Assessment Date**: [YYYY-MM-DD]
@@ -792,14 +824,15 @@ What NOT to do when assessing or implementing NIS2 compliance:
 **Overall Compliance Classification**: [COMPLIANT / PARTIAL / NON-COMPLIANT / CRITICAL]
 **Summary**: [2–3 sentences on overall posture, most material gaps, and key risks]
 
-| Classification | Count | Priority |
-|---------------|-------|----------|
-| 🚨 CRITICAL | [N] | IMMEDIATE (0–30 days) |
-| ❌ NON-COMPLIANT | [N] | NEAR-TERM (30–90 days) |
-| ⚠️ PARTIAL | [N] | BACKGROUND (90–180 days) |
-| ✅ COMPLIANT | [N] | Maintain and monitor |
+| Classification   | Count | Priority                 |
+| ---------------- | ----- | ------------------------ |
+| 🚨 CRITICAL      | [N]   | IMMEDIATE (0–30 days)    |
+| ❌ NON-COMPLIANT | [N]   | NEAR-TERM (30–90 days)   |
+| ⚠️ PARTIAL       | [N]   | BACKGROUND (90–180 days) |
+| ✅ COMPLIANT     | [N]   | Maintain and monitor     |
 
 ### Top 3 Priority Actions
+
 1. **[Measure/Article]**: [Specific required action] — Owner: [Role] — Deadline: [Date]
 2. **[Measure/Article]**: [Specific required action] — Owner: [Role] — Deadline: [Date]
 3. **[Measure/Article]**: [Specific required action] — Owner: [Role] — Deadline: [Date]
@@ -808,13 +841,13 @@ What NOT to do when assessing or implementing NIS2 compliance:
 
 ## Applicable Regulatory Framework
 
-| Element | Applicable Standard |
-|---------|-------------------|
-| Primary legislation | NIS2 Directive (EU) 2022/2555 |
-| National implementation | [Act name + citation] [VERIFY] |
-| National competent authority | [Authority + enforcement model (proactive/reactive)] |
-| Sector-specific overlay | [DORA / EECC / ACER / None] |
-| GDPR interaction | GDPR Art. 32 (security measures overlap with NIS2 Art. 21) |
+| Element                      | Applicable Standard                                        |
+| ---------------------------- | ---------------------------------------------------------- |
+| Primary legislation          | NIS2 Directive (EU) 2022/2555                              |
+| National implementation      | [Act name + citation] [VERIFY]                             |
+| National competent authority | [Authority + enforcement model (proactive/reactive)]       |
+| Sector-specific overlay      | [DORA / EECC / ACER / None]                                |
+| GDPR interaction             | GDPR Art. 32 (security measures overlap with NIS2 Art. 21) |
 
 ---
 
@@ -825,27 +858,28 @@ What NOT to do when assessing or implementing NIS2 compliance:
 **Regulatory basis**: [Article 3 + specific Annex I/II sector point]
 **Supervisory model**: [Proactive (essential) / Reactive (important)]
 
-| Classification Criterion | Status | Finding |
-|--------------------------|--------|---------|
-| Sector (Annex I or II) | [CONFIRMED / UNCLEAR / NOT APPLICABLE] | [Finding] |
-| Size threshold (employees/turnover) | [CONFIRMED / UNCLEAR / EXEMPT] | [Finding] |
-| Member state designation | [CONFIRMED / PENDING] [VERIFY] | [Finding] |
+| Classification Criterion            | Status                                 | Finding   |
+| ----------------------------------- | -------------------------------------- | --------- |
+| Sector (Annex I or II)              | [CONFIRMED / UNCLEAR / NOT APPLICABLE] | [Finding] |
+| Size threshold (employees/turnover) | [CONFIRMED / UNCLEAR / EXEMPT]         | [Finding] |
+| Member state designation            | [CONFIRMED / PENDING] [VERIFY]         | [Finding] |
 
 ---
 
 ## Article 21 Risk Management Measures Assessment
 
 ### Measure 1: Risk Assessment and Risk Management
+
 **Status**: [COMPLIANT / PARTIAL / NON-COMPLIANT / CRITICAL]
 **Confidence**: [Definite / High / Probable / Possible]
 **Regulatory basis**: Art. 21(2)(a)
 
-| Control Element | Status | Finding | Recommended Action | Owner | Deadline |
-|----------------|--------|---------|-------------------|-------|----------|
-| Risk assessment documented | [✅/⚠️/❌/🚨] | [Finding] | [Action] | [Role] | [Date] |
-| Annual update | [✅/⚠️/❌/🚨] | [Finding] | [Action] | [Role] | [Date] |
-| Management approval | [✅/⚠️/❌/🚨] | [Finding] | [Action] | [Role] | [Date] |
-| Risk treatment plan | [✅/⚠️/❌/🚨] | [Finding] | [Action] | [Role] | [Date] |
+| Control Element            | Status        | Finding   | Recommended Action | Owner  | Deadline |
+| -------------------------- | ------------- | --------- | ------------------ | ------ | -------- |
+| Risk assessment documented | [✅/⚠️/❌/🚨] | [Finding] | [Action]           | [Role] | [Date]   |
+| Annual update              | [✅/⚠️/❌/🚨] | [Finding] | [Action]           | [Role] | [Date]   |
+| Management approval        | [✅/⚠️/❌/🚨] | [Finding] | [Action]           | [Role] | [Date]   |
+| Risk treatment plan        | [✅/⚠️/❌/🚨] | [Finding] | [Action]           | [Role] | [Date]   |
 
 [Repeat table format for Measures 2–10]
 
@@ -855,18 +889,20 @@ What NOT to do when assessing or implementing NIS2 compliance:
 
 ### Timeline Capability
 
-| Stage | Requirement | Current Capability | Status |
-|-------|-------------|-------------------|--------|
-| Early Warning | 24h to CSIRT/CA | [Assessment] | [✅/⚠️/❌/🚨] |
-| Notification | 72h to CSIRT/CA | [Assessment] | [✅/⚠️/❌/🚨] |
-| Final Report | 1 month from notification | [Assessment] | [✅/⚠️/❌/🚨] |
+| Stage         | Requirement               | Current Capability | Status        |
+| ------------- | ------------------------- | ------------------ | ------------- |
+| Early Warning | 24h to CSIRT/CA           | [Assessment]       | [✅/⚠️/❌/🚨] |
+| Notification  | 72h to CSIRT/CA           | [Assessment]       | [✅/⚠️/❌/🚨] |
+| Final Report  | 1 month from notification | [Assessment]       | [✅/⚠️/❌/🚨] |
 
 ### Incident Significance Thresholds
+
 **Defined thresholds**: [Yes / No / Partially]
 **Financial threshold documented**: [€500K / 5% turnover criterion acknowledged: Yes / No]
 **Decision-maker identified for significance classification**: [Yes / No / Partially]
 
 ### Competent Authority Contact
+
 **CSIRT/CA name**: [Name] [VERIFY]
 **Contact method**: [Email / Portal / Phone]
 **Contact information current**: [Yes / No / Unknown]
@@ -877,12 +913,12 @@ What NOT to do when assessing or implementing NIS2 compliance:
 
 **Status**: [COMPLIANT / PARTIAL / NON-COMPLIANT / CRITICAL]
 
-| Governance Element | Status | Finding |
-|-------------------|--------|---------|
+| Governance Element                               | Status        | Finding   |
+| ------------------------------------------------ | ------------- | --------- |
 | Board approval of NIS2 risk management framework | [✅/⚠️/❌/🚨] | [Finding] |
-| Art. 20(2) board-level cybersecurity training | [✅/⚠️/❌/🚨] | [Finding] |
-| Named senior officer accountable for NIS2 | [✅/⚠️/❌/🚨] | [Finding] |
-| Regular board cybersecurity reporting | [✅/⚠️/❌/🚨] | [Finding] |
+| Art. 20(2) board-level cybersecurity training    | [✅/⚠️/❌/🚨] | [Finding] |
+| Named senior officer accountable for NIS2        | [✅/⚠️/❌/🚨] | [Finding] |
+| Regular board cybersecurity reporting            | [✅/⚠️/❌/🚨] | [Finding] |
 | Board awareness of personal liability provisions | [✅/⚠️/❌/🚨] | [Finding] |
 
 ---
@@ -890,14 +926,17 @@ What NOT to do when assessing or implementing NIS2 compliance:
 ## Cross-Directive Compliance
 
 ### GDPR Article 32 Alignment
+
 **Status**: [ALIGNED / PARTIAL OVERLAP / DIVERGENT]
 [Brief analysis: where NIS2 Art. 21 satisfies GDPR Art. 32, and where NIS2 requires additional scope]
 
 ### DORA (Financial Sector Only)
+
 **Status**: [NOT APPLICABLE / COMPLIANT / PARTIAL / NON-COMPLIANT]
 [Brief analysis of DORA/NIS2 interaction; identify any reporting timeline conflicts]
 
 ### Sector-Specific Overlay
+
 [Analysis of applicable sector regulation]
 
 ---
@@ -905,25 +944,29 @@ What NOT to do when assessing or implementing NIS2 compliance:
 ## Remediation Roadmap
 
 ### IMMEDIATE (0–30 days)
-| Finding ID | Measure/Article | Finding | Required Action | Owner | Deadline |
-|-----------|----------------|---------|----------------|-------|----------|
-| [ID] | [Art. 21(X) / Art. 23] | [Finding] | [Action] | [Role] | [Date] |
+
+| Finding ID | Measure/Article        | Finding   | Required Action | Owner  | Deadline |
+| ---------- | ---------------------- | --------- | --------------- | ------ | -------- |
+| [ID]       | [Art. 21(X) / Art. 23] | [Finding] | [Action]        | [Role] | [Date]   |
 
 ### NEAR-TERM (30–90 days)
-| Finding ID | Measure/Article | Finding | Required Action | Owner | Deadline |
-|-----------|----------------|---------|----------------|-------|----------|
-| [ID] | [Art. 21(X)] | [Finding] | [Action] | [Role] | [Date] |
+
+| Finding ID | Measure/Article | Finding   | Required Action | Owner  | Deadline |
+| ---------- | --------------- | --------- | --------------- | ------ | -------- |
+| [ID]       | [Art. 21(X)]    | [Finding] | [Action]        | [Role] | [Date]   |
 
 ### BACKGROUND (90–180 days)
-| Finding ID | Measure/Article | Finding | Required Action | Owner | Deadline |
-|-----------|----------------|---------|----------------|-------|----------|
-| [ID] | [Art. 21(X)] | [Finding] | [Action] | [Role] | [Date] |
+
+| Finding ID | Measure/Article | Finding   | Required Action | Owner  | Deadline |
+| ---------- | --------------- | --------- | --------------- | ------ | -------- |
+| [ID]       | [Art. 21(X)]    | [Finding] | [Action]        | [Role] | [Date]   |
 
 ---
 
 ## Regulatory Readiness Checklist
 
 **Pre-Examination Documentation:**
+
 - [ ] Risk assessment (current, signed, dated within 12 months)
 - [ ] Incident response plan (tested within 12 months)
 - [ ] Business continuity plan (tested within 12 months)
@@ -980,6 +1023,7 @@ glass_box:
     - "ENISA guidelines are not legally binding unless adopted by national CA; [VERIFY] guidance status"
   reviewer: "AI-assisted — requires review by qualified information security legal professional and senior security officer"
 ```
+````
 
 ---
 
@@ -990,6 +1034,7 @@ ENISA guidelines. For production assessments, adapt each [JURISDICTION-SPECIFIC]
 using national authority guidance:
 
 **Germany (DE)** [JURISDICTION-SPECIFIC]:
+
 - NIS2UmsuCG (in force December 6, 2025) amends the BSI Act (BSIG)
 - BSI is competent authority; registration deadline April 2026 via BSI portal
 - KRITIS framework retained for critical facilities; KRITIS operators designated essential by law
@@ -997,19 +1042,24 @@ using national authority guidance:
 - Registration: two-step process (Mein Unternehmenskonto → BSI portal from January 6, 2026)
 
 **France (FR)** [JURISDICTION-SPECIFIC]:
+
 - ANSSI (Agence nationale de la sécurité des systèmes d'information) is lead authority
 - [VERIFY: current status of NIS2 transposition legislation and specific French national requirements]
 
 **Netherlands (NL)** [JURISDICTION-SPECIFIC]:
+
 - [VERIFY: Cybersecuritywet or equivalent NIS2 transposition act; NCSC/RDI authority scope]
 
 **Poland (PL)** [JURISDICTION-SPECIFIC]:
+
 - [VERIFY: amendment to the Act on the National Cybersecurity System; CSIRT Poland + CERT.PL authorities]
 
 **Ireland (IE)** [JURISDICTION-SPECIFIC]:
+
 - [VERIFY: NIS2 Regulations SI (Statutory Instrument) status; National Cyber Security Centre (NCSC) authority]
 
 **Sweden (SE)** [JURISDICTION-SPECIFIC]:
+
 - [VERIFY: NIS2 transposition legislation; NCSC-SE authority scope]
 
 **For all member states**: Consult ENISA's NIS2 transposition tracker (enisa.europa.eu)
@@ -1063,6 +1113,7 @@ sector; predates NIS2; some security measures overlap.
 Created: 2026-03-02. Legalcode original synthesis.
 
 Primary sources:
+
 - EU Directive 2022/2555 (NIS2) — full Directive text and Annexes I and II
 - ENISA NIS2 Technical Implementation Guidance (Version 1.0, 2025)
 - European Commission Implementing Regulations on NIS2 significant incident thresholds
@@ -1077,4 +1128,7 @@ Research methodology: 2-agent research pipeline (Agent 1: structural analysis of
 All national transposition references marked [VERIFY] — as of March 2026, national implementations are evolving. Verify against current national authority guidance.
 
 Legal review required: This skill requires review by a qualified information security legal professional in the relevant member state before use in production compliance assessments.
+
+```
+
 ```

@@ -78,8 +78,9 @@ deliverables for each persona, and the register's row-level granularity is what 
 that branching possible without re-parsing the directive every time.
 
 **Covers:**
+
 - CELEX → ELI → 24 authentic language version identifier resolution.
-- Structural classification: recitals (interpretive — *Roquette Frères* C-110/03),
+- Structural classification: recitals (interpretive — _Roquette Frères_ C-110/03),
   definitions, operative articles (the source of obligations), and final
   provisions (transposition deadline, entry into force, addressees, repeal).
 - One register row per operative obligation: deontic operator, addressee,
@@ -92,7 +93,7 @@ that branching possible without re-parsing the directive every time.
 - Cross-reference mapping (recitals ↔ articles; article ↔ article; directive ↔
   external acts).
 - Reconciliation across the 24 authentic language versions using IATE; divergences
-  flagged per *CILFIT* (C-283/81), *Codan* (C-236/97), *EMU Tabac* (C-296/95).
+  flagged per _CILFIT_ (C-283/81), _Codan_ (C-236/97), _EMU Tabac_ (C-296/95).
 - EEA-relevance assessment per Art. 7 EEA (OJ flag + subject-matter scoping).
 - Deterministic source-validation: every operative provision produces exactly one
   register row or carries a documented exclusion reason.
@@ -102,6 +103,7 @@ that branching possible without re-parsing the directive every time.
   decisions, and exclusion reasons.
 
 **Does not:**
+
 - Track per-MS transposition status (`legalcode-eu-transposition-tracker`).
 - Build the two-column correlation table (`legalcode-eu-correlation-table-builder`).
 - Issue per-article conformity verdicts (`legalcode-eu-conformity-assessment`).
@@ -179,23 +181,23 @@ The transposition obligation flows from TFEU Art. 4(3) (sincere cooperation):
 > register and the audit trail must use the correct treaty reference)
 
 The penalty regime for non-transposition of legislative directives sits in TFEU
-Art. 260(3) (Lisbon innovation; first applied in *Commission v Belgium*,
+Art. 260(3) (Lisbon innovation; first applied in _Commission v Belgium_,
 Case C-543/17, ECLI:EU:C:2019:573).
 
 Direct-effect doctrine governs whether private parties can rely on an un-transposed
-directive against a Member State (vertical direct effect, *Becker*, Case C-8/81,
+directive against a Member State (vertical direct effect, _Becker_, Case C-8/81,
 ECLI:EU:C:1982:7) and confirms that directives have **no horizontal direct effect**
-between private parties (*Marshall*, Case C-152/84, ECLI:EU:C:1986:84; reaffirmed in
-*Faccini Dori*, Case C-91/92, ECLI:EU:C:1994:292). The interpretive obligation —
+between private parties (_Marshall_, Case C-152/84, ECLI:EU:C:1986:84; reaffirmed in
+_Faccini Dori_, Case C-91/92, ECLI:EU:C:1994:292). The interpretive obligation —
 that national courts must construe national law in conformity with the directive
-"so far as possible" — was established in *Von Colson* (Case C-14/83,
-ECLI:EU:C:1984:153) and extended in *Marleasing* (Case C-106/89, ECLI:EU:C:1990:395).
+"so far as possible" — was established in _Von Colson_ (Case C-14/83,
+ECLI:EU:C:1984:153) and extended in _Marleasing_ (Case C-106/89, ECLI:EU:C:1990:395).
 
 Multilingualism is governed by Council Regulation No 1 of 1958
 (`https://eur-lex.europa.eu/eli/reg/1958/1(1)/oj/eng`), which establishes the 24
 official languages. All language versions of an act published in the OJ are equally
-authentic. Where they diverge, *CILFIT* (Case C-283/81, ECLI:EU:C:1982:335),
-*Codan* (Case C-236/97, ECLI:EU:C:1998:208), and *EMU Tabac* (Case C-296/95,
+authentic. Where they diverge, _CILFIT_ (Case C-283/81, ECLI:EU:C:1982:335),
+_Codan_ (Case C-236/97, ECLI:EU:C:1998:208), and _EMU Tabac_ (Case C-296/95,
 ECLI:EU:C:1998:152) require that the provision be interpreted by reference to
 purpose and general scheme rather than by privileging a single language.
 
@@ -259,6 +261,7 @@ correct it.
 ```
 
 For batch / non-interactive runs, use these defaults:
+
 - Persona: Company (most general; least optimised but always-correct)
 - Operating mode: Fresh-extract
 - Working language: English (`eng`) for the directive parse; reconcile divergence
@@ -298,6 +301,7 @@ Accept input in any of these forms:
   incremental merge and flags every changed row.
 
 Minimum required context to proceed:
+
 - One of the four identifier forms above, **or** the pasted directive text.
 - The persona (next step), unless the user has already declared one.
 - The operating mode (next step), unless the user has already declared one.
@@ -332,12 +336,12 @@ federation position needs comparative scoreboarding across MS.
 
 **Persona-driven branches in the workflow:**
 
-| Persona | Filter applied to register | Output emphasis |
-|---|---|---|
-| Government / EU institution | All addressees retained; MS-option column populated with `national_discretion_zone` flag for transposition drafting | Markdown register + AKN4EU XML (LEOS round-trip); LegalRuleML for downstream NIM-as-code |
-| Legal firm | All addressees retained; the `addressee_class` filter is exposed in JSON for client-specific filtering downstream | Markdown register with deep recital cross-references; JSON for client-side spreadsheet workflows |
-| Company | Filter to `addressee_class ∈ {private_actor, individual}`; MS Member State and EU institution rows are summarised, not row-by-row | Markdown register filtered to private-actor obligations, with operational impact column |
-| Trade federation | All addressees retained; per-row `national_discretion_zone` flag highlighted to identify lobbying surface | Markdown register foregrounding MS-option rows; JSON for cross-MS scoreboarding |
+| Persona                     | Filter applied to register                                                                                                        | Output emphasis                                                                                  |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Government / EU institution | All addressees retained; MS-option column populated with `national_discretion_zone` flag for transposition drafting               | Markdown register + AKN4EU XML (LEOS round-trip); LegalRuleML for downstream NIM-as-code         |
+| Legal firm                  | All addressees retained; the `addressee_class` filter is exposed in JSON for client-specific filtering downstream                 | Markdown register with deep recital cross-references; JSON for client-side spreadsheet workflows |
+| Company                     | Filter to `addressee_class ∈ {private_actor, individual}`; MS Member State and EU institution rows are summarised, not row-by-row | Markdown register filtered to private-actor obligations, with operational impact column          |
+| Trade federation            | All addressees retained; per-row `national_discretion_zone` flag highlighted to identify lobbying surface                         | Markdown register foregrounding MS-option rows; JSON for cross-MS scoreboarding                  |
 
 ⟁ CLARIFY — Operating Mode
 
@@ -357,7 +361,7 @@ outputs are emitted.
 4. **Contested-language-version**: A specific language-version divergence has been
    raised (typically by counsel or a national parliament). Steps 3–7 execute
    normally; Step 8 expands into a multi-language reconciliation table with
-   *CILFIT* methodology applied to every contested term.
+   _CILFIT_ methodology applied to every contested term.
 
 **Why this matters**: Modes 2–4 trim or expand the workflow. Running fresh-extract on
 an update wastes effort; running update-existing on a fresh case under-validates the
@@ -371,15 +375,15 @@ Map the input onto the complete identifier triple **CELEX → ELI → 24 languag
   `6` for case law. Directive type letter is `L`; regulation `R`; decision `D`.
   Worked-example CELEX values used throughout this skill:
 
-  | Input | CELEX | Type | Note |
-  |---|---|---|---|
-  | NIS2 | `32022L2555` | Directive | Transposition deadline 17 October 2024 |
-  | AI Act | `32024R1689` | Regulation | Directly applicable; flag inapplicable columns |
-  | CSRD | `32022L2464` | Directive | Phased application by undertaking size |
-  | CSDDD | `32024L1760` | Directive | Transposition deadline 26 July 2026 |
-  | GDPR | `32016R0679` | Regulation | Contrast |
-  | DORA | `32022R2554` | Regulation | Contrast |
-  | Whistleblower Directive | `32019L1937` | Directive | Transposed by 17 December 2021 |
+  | Input                   | CELEX        | Type       | Note                                           |
+  | ----------------------- | ------------ | ---------- | ---------------------------------------------- |
+  | NIS2                    | `32022L2555` | Directive  | Transposition deadline 17 October 2024         |
+  | AI Act                  | `32024R1689` | Regulation | Directly applicable; flag inapplicable columns |
+  | CSRD                    | `32022L2464` | Directive  | Phased application by undertaking size         |
+  | CSDDD                   | `32024L1760` | Directive  | Transposition deadline 26 July 2026            |
+  | GDPR                    | `32016R0679` | Regulation | Contrast                                       |
+  | DORA                    | `32022R2554` | Regulation | Contrast                                       |
+  | Whistleblower Directive | `32019L1937` | Directive  | Transposed by 17 December 2021                 |
 
 - **3b. ELI URI.** Template:
   `https://eur-lex.europa.eu/eli/dir/{year}/{number}/oj/{lang_token}` (replace
@@ -390,7 +394,7 @@ Map the input onto the complete identifier triple **CELEX → ELI → 24 languag
 - **3c. 24 language tokens** (ISO 639-3): `bul`, `ces`, `dan`, `deu`, `ell`,
   `eng`, `est`, `fin`, `fra`, `gle`, `hrv`, `hun`, `ita`, `lav`, `lit`, `mlt`,
   `nld`, `pol`, `por`, `ron`, `slk`, `slv`, `spa`, `swe`. All 24 equally
-  authentic (Reg. 1/1958; *CILFIT* C-283/81). Missing versions: record in Glass
+  authentic (Reg. 1/1958; _CILFIT_ C-283/81). Missing versions: record in Glass
   Box; set `language_coverage` accordingly.
 
 - **3d. EEA-relevance.** The OJ marker "(Text with EEA relevance)" sits
@@ -407,13 +411,13 @@ Map the input onto the complete identifier triple **CELEX → ELI → 24 languag
 
 Distinguish four structural zones; each is treated differently:
 
-| Zone | Treatment |
-|---|---|
-| **Preamble / citations** ("Having regard to …") | Metadata (legal basis, procedure, opinions). Not obligation rows. |
-| **Recitals (numbered "Whereas …")** | NIS2 has 142. Captured for purposive interpretation; cross-referenced from operative articles. **Not** themselves a source of obligation (*Roquette Frères* C-110/03). |
-| **Definitions article(s)** | Glossary; disambiguates addressees. Not obligation rows. |
-| **Operative articles** | Source of register rows. One operative provision → one row. |
-| **Final provisions** | Transposition; entry into force; addressees; repeal. Populate `transposition_deadline` and `entry_into_force_date`. |
+| Zone                                            | Treatment                                                                                                                                                              |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Preamble / citations** ("Having regard to …") | Metadata (legal basis, procedure, opinions). Not obligation rows.                                                                                                      |
+| **Recitals (numbered "Whereas …")**             | NIS2 has 142. Captured for purposive interpretation; cross-referenced from operative articles. **Not** themselves a source of obligation (_Roquette Frères_ C-110/03). |
+| **Definitions article(s)**                      | Glossary; disambiguates addressees. Not obligation rows.                                                                                                               |
+| **Operative articles**                          | Source of register rows. One operative provision → one row.                                                                                                            |
+| **Final provisions**                            | Transposition; entry into force; addressees; repeal. Populate `transposition_deadline` and `entry_into_force_date`.                                                    |
 
 - **4a. Article-boundary detection.** Rigid structure: arabic numerals for
   articles; parenthesised arabic for paragraphs; letters for points; roman or
@@ -494,16 +498,16 @@ A focused second pass enumerating the directive's Member-State flexibility surfa
 
 ### Step 8: Reconcile Across Language Versions
 
-All 24 language versions are equally authentic (Reg. 1/1958; *CILFIT* C-283/81).
+All 24 language versions are equally authentic (Reg. 1/1958; _CILFIT_ C-283/81).
 Cross-check the English extraction against at least French (frequent drafting
 language) and German (large-economy MS), and ideally all 24.
 
 - **8a. IATE-aligned key-term reconciliation.** Retrieve IATE entries
   (`https://iate.europa.eu/`) for every defined term. Where IATE conflicts with
-  the directive's defined term, prefer the directive (*lex specialis*) and note
+  the directive's defined term, prefer the directive (_lex specialis_) and note
   the IATE divergence.
 - **8b. Apply CILFIT methodology to divergence.** Where language versions
-  diverge, *CILFIT* (C-283/81), *Codan* (C-236/97), and *EMU Tabac* (C-296/95)
+  diverge, _CILFIT_ (C-283/81), _Codan_ (C-236/97), and _EMU Tabac_ (C-296/95)
   require interpretation "in the light of the versions in all the other
   [official] languages" and "by reference to the purpose and general scheme".
   Record the divergence in `language_divergence`, capture candidate
@@ -674,20 +678,20 @@ must be versioned via `schema_version`.
 
 **Field-level contract:**
 
-| Field | Type | Notes |
-|---|---|---|
-| `schema_version` | semver string | Bump major on breaking change to register row shape |
-| `directive.celex` | 11-char string | Sector + year + type letter + running number |
-| `directive.eli` | URI | Canonical OJ-as-published ELI |
-| `directive.transposition_deadline` | ISO 8601 date | Empty for regulations |
-| `directive.eea_relevance` | enum | `declared` / `not_declared` / `unknown` |
-| `directive.language_coverage` | string | `N/24` where N is languages reconciled |
-| `register[*].row_id` | string | `OBL-{celex}-{article}-{paragraph}-{seq}` |
-| `register[*].deontic_operator` | enum | `shall` / `must` / `may` / `shall_not` / `should` |
-| `register[*].addressee_class` | enum | `member_state` / `national_competent_authority` / `private_actor` / `eu_institution` / `individual` |
-| `register[*].ms_option_flag` | boolean | True when paragraph grants MS discretion |
-| `register[*].recital_xrefs` | array of integers | Recital numbers cited or substantively linked |
-| `register[*].confidence` | enum | `VERIFIED` / `LIKELY` / `POSSIBLE` / `VERIFY` / `ASSUMED` |
+| Field                              | Type              | Notes                                                                                               |
+| ---------------------------------- | ----------------- | --------------------------------------------------------------------------------------------------- |
+| `schema_version`                   | semver string     | Bump major on breaking change to register row shape                                                 |
+| `directive.celex`                  | 11-char string    | Sector + year + type letter + running number                                                        |
+| `directive.eli`                    | URI               | Canonical OJ-as-published ELI                                                                       |
+| `directive.transposition_deadline` | ISO 8601 date     | Empty for regulations                                                                               |
+| `directive.eea_relevance`          | enum              | `declared` / `not_declared` / `unknown`                                                             |
+| `directive.language_coverage`      | string            | `N/24` where N is languages reconciled                                                              |
+| `register[*].row_id`               | string            | `OBL-{celex}-{article}-{paragraph}-{seq}`                                                           |
+| `register[*].deontic_operator`     | enum              | `shall` / `must` / `may` / `shall_not` / `should`                                                   |
+| `register[*].addressee_class`      | enum              | `member_state` / `national_competent_authority` / `private_actor` / `eu_institution` / `individual` |
+| `register[*].ms_option_flag`       | boolean           | True when paragraph grants MS discretion                                                            |
+| `register[*].recital_xrefs`        | array of integers | Recital numbers cited or substantively linked                                                       |
+| `register[*].confidence`           | enum              | `VERIFIED` / `LIKELY` / `POSSIBLE` / `VERIFY` / `ASSUMED`                                           |
 
 ---
 
@@ -697,15 +701,15 @@ EU directives use a small set of deontic operators. Disambiguation is critical
 because the operator drives the LegalRuleML rule type emitted in Step 11 and the
 conformity verdict in `legalcode-eu-conformity-assessment`.
 
-| Operator | English cue | French cue | German cue | LegalRuleML | Notes |
-|---|---|---|---|---|---|
-| **shall** | "shall", "is/are required to" | "doit", "doivent" | "muss", "müssen", "haben zu" | `<lrml:Obligation>` | The standard mandatory operator. In EU drafting, `shall` is used uniformly; `must` is rare and treated as a synonym of `shall`. |
-| **must** | "must" | "doit" | "muss" | `<lrml:Obligation>` | Treated as synonymous with `shall` in EU directives. Modern Commission drafting prefers `shall`. |
-| **may** | "may", "is/are entitled to" | "peut", "peuvent" | "kann", "können", "darf" | `<lrml:Permission>` | Permissive. Where addressed to Member States, almost always indicates a national-discretion zone (see **Addressee Taxonomy**). |
-| **shall not** | "shall not", "is/are prohibited from" | "ne doit/peut pas" | "darf nicht", "dürfen nicht" | `<lrml:Prohibition>` | Mandatory negative. Distinct from absence of permission; the directive expressly forbids the conduct. |
-| **should** | "should" | "devrait" | "sollte" | (no rule emitted) | Recital-level; **not operative**. Where `should` appears in an operative article (very rare; usually a drafting error subject to corrigendum), flag for verification. |
-| **shall ensure that** | "shall ensure that …", "shall require …" | "veille à ce que" | "stellt sicher, dass", "sorgt dafür, dass" | `<lrml:Obligation>` with nested `<lrml:Obligation>` | Result-obligation pattern. The Member State has a duty of result; the addressee of the nested obligation is typically a private actor. Common in NIS2, GDPR-derived directives, and consumer-protection directives. |
-| **shall be deemed** | "shall be deemed", "is to be regarded as" | "est réputé", "doit être considéré comme" | "gilt als" | `<lrml:Constitutive>` | Constitutive (definitional) rather than prescriptive. Records a legal fact rather than imposing a duty. |
+| Operator              | English cue                               | French cue                                | German cue                                 | LegalRuleML                                         | Notes                                                                                                                                                                                                               |
+| --------------------- | ----------------------------------------- | ----------------------------------------- | ------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **shall**             | "shall", "is/are required to"             | "doit", "doivent"                         | "muss", "müssen", "haben zu"               | `<lrml:Obligation>`                                 | The standard mandatory operator. In EU drafting, `shall` is used uniformly; `must` is rare and treated as a synonym of `shall`.                                                                                     |
+| **must**              | "must"                                    | "doit"                                    | "muss"                                     | `<lrml:Obligation>`                                 | Treated as synonymous with `shall` in EU directives. Modern Commission drafting prefers `shall`.                                                                                                                    |
+| **may**               | "may", "is/are entitled to"               | "peut", "peuvent"                         | "kann", "können", "darf"                   | `<lrml:Permission>`                                 | Permissive. Where addressed to Member States, almost always indicates a national-discretion zone (see **Addressee Taxonomy**).                                                                                      |
+| **shall not**         | "shall not", "is/are prohibited from"     | "ne doit/peut pas"                        | "darf nicht", "dürfen nicht"               | `<lrml:Prohibition>`                                | Mandatory negative. Distinct from absence of permission; the directive expressly forbids the conduct.                                                                                                               |
+| **should**            | "should"                                  | "devrait"                                 | "sollte"                                   | (no rule emitted)                                   | Recital-level; **not operative**. Where `should` appears in an operative article (very rare; usually a drafting error subject to corrigendum), flag for verification.                                               |
+| **shall ensure that** | "shall ensure that …", "shall require …"  | "veille à ce que"                         | "stellt sicher, dass", "sorgt dafür, dass" | `<lrml:Obligation>` with nested `<lrml:Obligation>` | Result-obligation pattern. The Member State has a duty of result; the addressee of the nested obligation is typically a private actor. Common in NIS2, GDPR-derived directives, and consumer-protection directives. |
+| **shall be deemed**   | "shall be deemed", "is to be regarded as" | "est réputé", "doit être considéré comme" | "gilt als"                                 | `<lrml:Constitutive>`                               | Constitutive (definitional) rather than prescriptive. Records a legal fact rather than imposing a duty.                                                                                                             |
 
 **Disambiguation rules:**
 
@@ -746,13 +750,13 @@ Five canonical addressee classes. The taxonomy drives the persona filter in Step
 the LegalRuleML `<lrml:Party>` element in Step 11, and downstream conformity
 assessment.
 
-| Class | Definition | Example | Citation chain implication |
-|---|---|---|---|
-| **`member_state`** | The Member State as a legal person; Treaty-level addressee. | "Member States shall bring into force the laws, regulations and administrative provisions necessary to comply with this Directive by 17 October 2024" (NIS2 Art. 41(1)) | Transposition deadline applies; non-notification triggers TFEU Art. 260(3) exposure. |
-| **`national_competent_authority`** | A specific authority designated by the Member State; sub-state. | "Member States shall designate one or more competent authorities responsible for cybersecurity and the supervisory tasks referred to in Chapter VII" (NIS2 Art. 8(1)) | Authority is the operative actor; failure to designate is a transposition gap. |
-| **`private_actor`** | A natural or legal person within the directive's substantive scope. | "Essential and important entities shall take appropriate and proportionate technical, operational and organisational measures …" (NIS2 Art. 21(1)) | No direct horizontal effect (Marshall, Faccini Dori); enforceable only via NIM. |
-| **`eu_institution`** | The Commission, the Council, the Parliament, an EU agency (ENISA, EBA, ESMA, EIOPA, EU-LISA, EUIPO), the EDPS, the CJEU. | "By 17 October 2027, the Commission shall review the functioning of this Directive and report to the European Parliament and to the Council" (NIS2 Art. 40) | EU-internal obligation; not a transposition obligation. |
-| **`individual`** | A natural person to whom the directive grants rights. | Data-subject rights in GDPR Art. 15; consumer rights in consumer-protection directives. | Vertical direct effect available against the State (Becker); horizontal effect requires national transposition (Marshall). |
+| Class                              | Definition                                                                                                               | Example                                                                                                                                                                 | Citation chain implication                                                                                                 |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **`member_state`**                 | The Member State as a legal person; Treaty-level addressee.                                                              | "Member States shall bring into force the laws, regulations and administrative provisions necessary to comply with this Directive by 17 October 2024" (NIS2 Art. 41(1)) | Transposition deadline applies; non-notification triggers TFEU Art. 260(3) exposure.                                       |
+| **`national_competent_authority`** | A specific authority designated by the Member State; sub-state.                                                          | "Member States shall designate one or more competent authorities responsible for cybersecurity and the supervisory tasks referred to in Chapter VII" (NIS2 Art. 8(1))   | Authority is the operative actor; failure to designate is a transposition gap.                                             |
+| **`private_actor`**                | A natural or legal person within the directive's substantive scope.                                                      | "Essential and important entities shall take appropriate and proportionate technical, operational and organisational measures …" (NIS2 Art. 21(1))                      | No direct horizontal effect (Marshall, Faccini Dori); enforceable only via NIM.                                            |
+| **`eu_institution`**               | The Commission, the Council, the Parliament, an EU agency (ENISA, EBA, ESMA, EIOPA, EU-LISA, EUIPO), the EDPS, the CJEU. | "By 17 October 2027, the Commission shall review the functioning of this Directive and report to the European Parliament and to the Council" (NIS2 Art. 40)             | EU-internal obligation; not a transposition obligation.                                                                    |
+| **`individual`**                   | A natural person to whom the directive grants rights.                                                                    | Data-subject rights in GDPR Art. 15; consumer rights in consumer-protection directives.                                                                                 | Vertical direct effect available against the State (Becker); horizontal effect requires national transposition (Marshall). |
 
 **Disambiguation rules:**
 
@@ -792,10 +796,10 @@ has 142). They are **interpretive**, not operative: they explain why the operati
 articles exist, what mischief they aim to remedy, and how they relate to the rest
 of EU law.
 
-The CJEU position is settled. *Roquette Frères* (Case C-110/03,
+The CJEU position is settled. _Roquette Frères_ (Case C-110/03,
 ECLI:EU:C:2005:430) is one of many authorities holding that recitals do not have
 binding legal force on their own, but they inform purposive interpretation under
-*CILFIT* methodology. The skill follows this position rigorously:
+_CILFIT_ methodology. The skill follows this position rigorously:
 
 1. **Recitals are not register rows.** A directive with 142 recitals does not produce
    142 obligation rows. Recitals appear only in the `recital_xrefs` array of
@@ -803,7 +807,7 @@ binding legal force on their own, but they inform purposive interpretation under
 
 2. **Recitals inform purposive interpretation.** Where a register row's substantive
    meaning is contested (Step 8 language reconciliation), the cross-referenced
-   recital is the primary source for purposive interpretation. *CILFIT* directs the
+   recital is the primary source for purposive interpretation. _CILFIT_ directs the
    interpreter to "the purpose and general scheme" — that purpose is most often
    stated in the recitals.
 
@@ -855,8 +859,8 @@ status, Art. 103 reservations, and ESA Art. 31 SCA monitoring is the remit of
    - Annex XI — Electronic communications, audiovisual services, information society
    - Annex XX — Environment
    - Annex XXI — Statistics
-   Where the directive's primary substantive scope falls within an EEA Annex,
-   set `eea_relevance: probable_undeclared` and flag for the EEA tracker.
+     Where the directive's primary substantive scope falls within an EEA Annex,
+     set `eea_relevance: probable_undeclared` and flag for the EEA tracker.
 
 3. **Pure-EU-competence carve-outs.** Some areas of EU law are explicitly outside
    the EEA: Common Agricultural Policy, Common Foreign and Security Policy,
@@ -918,11 +922,11 @@ it.
 **Source provision** (NIS2, Directive (EU) 2022/2555, Art. 21(1), OJ L 333/107):
 
 > 1. Member States shall ensure that essential and important entities take appropriate
-> and proportionate technical, operational and organisational measures to manage the
-> risks posed to the security of network and information systems which those entities
-> use for their operations or for the provision of their services, and to prevent or
-> minimise the impact of incidents on recipients of their services and on other
-> services.
+>    and proportionate technical, operational and organisational measures to manage the
+>    risks posed to the security of network and information systems which those entities
+>    use for their operations or for the provision of their services, and to prevent or
+>    minimise the impact of incidents on recipients of their services and on other
+>    services.
 
 **Extraction logic:**
 
@@ -945,10 +949,10 @@ application date 18 October 2024. Recital cross-references include Recitals (49)
 ### Markdown rendering
 
 ```markdown
-| Row ID | Article | Deontic | Addressee | Obligation | Deadline | MS Option | Recitals |
-|---|---|---|---|---|---|---|---|
-| OBL-32022L2555-021-001-A | Art. 21(1) | shall | member_state | Member States shall ensure that essential and important entities take appropriate and proportionate technical, operational and organisational measures to manage cybersecurity risk. | 2024-10-17 (transposition) | No | (49), (77), (78), (79) |
-| OBL-32022L2555-021-001-B | Art. 21(1) | shall | private_actor (essential and important entities) | Essential and important entities shall take appropriate and proportionate technical, operational and organisational measures to manage cybersecurity risk. | 2024-10-18 (application) | No | (49), (77), (78), (79) |
+| Row ID                   | Article    | Deontic | Addressee                                        | Obligation                                                                                                                                                                           | Deadline                   | MS Option | Recitals               |
+| ------------------------ | ---------- | ------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | --------- | ---------------------- |
+| OBL-32022L2555-021-001-A | Art. 21(1) | shall   | member_state                                     | Member States shall ensure that essential and important entities take appropriate and proportionate technical, operational and organisational measures to manage cybersecurity risk. | 2024-10-17 (transposition) | No        | (49), (77), (78), (79) |
+| OBL-32022L2555-021-001-B | Art. 21(1) | shall   | private_actor (essential and important entities) | Essential and important entities shall take appropriate and proportionate technical, operational and organisational measures to manage cybersecurity risk.                           | 2024-10-18 (application)   | No        | (49), (77), (78), (79) |
 
 Cross-references: Annex I (essential-entity sectors); Annex II (important-entity sectors); Art. 21(2)(a)–(j) (granular control list); Art. 3 (definitions).
 
@@ -963,7 +967,9 @@ OJ L 333, 27.12.2022, p. 107.
   "register": [
     {
       "row_id": "OBL-32022L2555-021-001-A",
-      "article": "21", "paragraph": "1", "sentence_no": 1,
+      "article": "21",
+      "paragraph": "1",
+      "sentence_no": 1,
       "deontic_operator": "shall",
       "addressee_class": "member_state",
       "addressee_specific": "Member States",
@@ -974,19 +980,31 @@ OJ L 333, 27.12.2022, p. 107.
       "recital_xrefs": [49, 77, 78, 79],
       "internal_xrefs": ["Art. 3", "Art. 21(2)", "Annex I", "Annex II"],
       "iate_terms": [
-        {"term_eng": "essential entities", "term_fra": "entités essentielles", "term_deu": "wesentliche Einrichtungen", "iate_id": "3622139"},
-        {"term_eng": "important entities", "term_fra": "entités importantes", "term_deu": "wichtige Einrichtungen", "iate_id": "3622140"}
+        {
+          "term_eng": "essential entities",
+          "term_fra": "entités essentielles",
+          "term_deu": "wesentliche Einrichtungen",
+          "iate_id": "3622139"
+        },
+        {
+          "term_eng": "important entities",
+          "term_fra": "entités importantes",
+          "term_deu": "wichtige Einrichtungen",
+          "iate_id": "3622140"
+        }
       ],
       "citation_chain": {
         "celex": "32022L2555",
         "eli": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng",
-        "article": "Art. 21(1)", "oj_page": "L 333/107"
+        "article": "Art. 21(1)",
+        "oj_page": "L 333/107"
       },
       "confidence": "VERIFIED"
     },
     {
       "row_id": "OBL-32022L2555-021-001-B",
-      "article": "21", "paragraph": "1",
+      "article": "21",
+      "paragraph": "1",
       "deontic_operator": "shall",
       "addressee_class": "private_actor",
       "addressee_specific": "essential and important entities (NIS2 Art. 3, Annexes I and II)",
@@ -999,7 +1017,8 @@ OJ L 333, 27.12.2022, p. 107.
       "citation_chain": {
         "celex": "32022L2555",
         "eli": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng",
-        "article": "Art. 21(1)", "oj_page": "L 333/107"
+        "article": "Art. 21(1)",
+        "oj_page": "L 333/107"
       },
       "confidence": "VERIFIED"
     }
@@ -1107,7 +1126,7 @@ What NOT to do when extracting an obligation register from an EU directive:
 
 1. **Treating recitals as operative.** The most common failure mode. Recitals
    explain why operative articles exist; they are not themselves a source of
-   obligation (*Roquette Frères* C-110/03). A register that produces 142 rows from
+   obligation (_Roquette Frères_ C-110/03). A register that produces 142 rows from
    142 NIS2 recitals is wrong — recitals appear as `recital_xrefs` on operative rows,
    never as standalone rows. What to do instead: enumerate operative articles only;
    use the recital cross-reference matrix (Step 7a) to capture interpretive context.
@@ -1122,11 +1141,11 @@ What NOT to do when extracting an obligation register from an EU directive:
 
 3. **Ignoring the 24-language equal-authenticity rule.** Extracting solely from the
    English version and treating divergence as a translator's error rather than as a
-   *CILFIT*-grade reconciliation problem. Where a French or German version uses a
+   _CILFIT_-grade reconciliation problem. Where a French or German version uses a
    stronger or weaker deontic operator, the divergence is operatively significant.
    What to do instead: in Step 8, retrieve at least the English, French, German
    versions for cross-check; flag every divergence in `language_divergence`; apply
-   purposive interpretation under *CILFIT*.
+   purposive interpretation under _CILFIT_.
 
 4. **Inventing CELEX or ECLI identifiers.** Hallucinating identifiers that look
    plausible but do not resolve on EUR-Lex or CURIA. The CELEX format constraints
@@ -1145,7 +1164,7 @@ What NOT to do when extracting an obligation register from an EU directive:
 
 6. **Missing the `shall ensure that` two-level pattern.** "Member States shall ensure
    that essential and important entities take appropriate measures" is a result
-   obligation on the Member State *and* an operational obligation on the entity. A
+   obligation on the Member State _and_ an operational obligation on the entity. A
    register that produces only one row loses the addressee distinction. What to do
    instead: emit two rows per the **Deontic Operator Taxonomy** disambiguation rule
    (Row A on the Member State; Row B on the substantive addressee).
@@ -1169,7 +1188,7 @@ What NOT to do when extracting an obligation register from an EU directive:
    is predominantly anglophone, but the French version often carries historical
    precedence and the German version reflects large-economy MS perspective. Taking
    English as authoritative and ignoring divergence with French and German violates
-   *CILFIT* and *Codan*. What to do instead: in Step 8, treat all 24 languages as
+   _CILFIT_ and _Codan_. What to do instead: in Step 8, treat all 24 languages as
    equally authentic; document the interpretive process for any divergence.
 
 10. **Misidentifying the transposition deadline.** The transposition article is
@@ -1250,10 +1269,10 @@ What NOT to do when extracting an obligation register from an EU directive:
     emission with skill version, operating mode, language-reconciliation
     decisions, exclusion counts, and assumptions.
 
-21. **Treating IATE as authoritative against the directive's defined term, or
+19. **Treating IATE as authoritative against the directive's defined term, or
     emitting only one output format.** IATE is the Commission's terminology
     database, authoritative for general EU terminology — but the directive's own
-    definitions article prevails as *lex specialis*; where they conflict, the
+    definitions article prevails as _lex specialis_; where they conflict, the
     directive wins. Likewise, downstream skills consume different formats
     (conformity assessment reads JSON; LEOS round-trip needs AKN4EU; policy-
     as-code needs LegalRuleML; counsel needs Markdown); emitting only one
@@ -1261,7 +1280,7 @@ What NOT to do when extracting an obligation register from an EU directive:
     directive over IATE on conflict, noting the divergence; emit all four
     formats per Step 11; bump `schema_version` (semver) on breaking change.
 
-22. **Treating "without prejudice to" as a deontic operator, or conflating
+20. **Treating "without prejudice to" as a deontic operator, or conflating
     entry-into-force with application date.** "Without prejudice to Regulation
     (EU) 2016/679" is a connector that subordinates the current rule to another
     act; it is not itself deontic. A directive's entry into force (typically 20
@@ -1309,17 +1328,17 @@ What NOT to do when extracting an obligation register from an EU directive:
     `confidence: VERIFY` or below.
 13. **No false precision in deadlines.** "By 17 October 2024" → `2024-10-17`.
     "Within three years of entry into force" → compute and flag `[VERIFY
-    computed deadline]`.
+computed deadline]`.
 14. **AKN4EU validation.** Every emitted XML must validate against the AKN4EU
     subschema. Where validation cannot be performed in-session, mark
     `<!-- VALIDATION: pending -->` and flag in Glass Box.
 15. **LegalRuleML completeness.** Every `<lrml:Prescriptive>` has `<lrml:Party
-    type="bearer">` and `<lrml:hasSource>` referencing the ELI URI.
+type="bearer">` and `<lrml:hasSource>` referencing the ELI URI.
 16. **Schema version bump policy.** Major for breaking changes; minor for
     additive; patch for docs. Sibling skills declare the schema version they
     consume.
-17. **No invented enforcement actions.** Cite only real cases (*Becker*,
-    *Marshall*, *Faccini Dori*, *Von Colson*, *Marleasing*, *CILFIT*). Never
+17. **No invented enforcement actions.** Cite only real cases (_Becker_,
+    _Marshall_, _Faccini Dori_, _Von Colson_, _Marleasing_, _CILFIT_). Never
     invent ECLI identifiers.
 
 ---
@@ -1338,9 +1357,9 @@ than calling `mcp__legalcode__*` directly. Use in Step 3 and Step 8 to:
    910/2014 and Dir. 2018/1972, for example).
 4. Pull IATE entries for defined terms.
 5. Confirm the OJ "(Text with EEA relevance)" flag against the published PDF.
-6. Cross-check ECLI references for cited case law (*Becker*, *Marshall*,
-   *Faccini Dori*, *Von Colson*, *Marleasing*, *CILFIT*, *Codan*, *EMU Tabac*,
-   *Roquette Frères*) against CURIA / InfoCuria.
+6. Cross-check ECLI references for cited case law (_Becker_, _Marshall_,
+   _Faccini Dori_, _Von Colson_, _Marleasing_, _CILFIT_, _Codan_, _EMU Tabac_,
+   _Roquette Frères_) against CURIA / InfoCuria.
 
 Save research to `/tmp/legalcode-eu-directive-research.md`; note in Glass Box:
 `legalcode_mcp: "Connected — research file at [path]"`.
@@ -1358,16 +1377,16 @@ Confidence adjustments: CELEX/ELI `LIKELY` → `POSSIBLE`; language reconciliati
 
 ### Related Skills Integration
 
-| Trigger | Invoke this skill |
-|---|---|
-| Per-MS implementation matrix needed | `legalcode-eu-transposition-tracker` |
-| Commission-format correlation table needed | `legalcode-eu-correlation-table-builder` |
-| Per-article transposition verdict needed | `legalcode-eu-conformity-assessment` |
-| National over-implementation analysis | `legalcode-eu-gold-plating-detector` |
-| EEA Joint Committee Decision tracking | `legalcode-eea-incorporation-tracker` |
-| Infringement procedure timeline | `legalcode-eu-infringement-procedure-tracker` |
-| General EU/UK/multi-MS comparison | `legalcode-multi-jurisdiction-privacy-comparison` (where privacy-domain) or relevant domain skill |
-| Policy-gap-style adequacy assessment of national policies | `legalcode-policy-gap-analysis` |
+| Trigger                                                   | Invoke this skill                                                                                 |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Per-MS implementation matrix needed                       | `legalcode-eu-transposition-tracker`                                                              |
+| Commission-format correlation table needed                | `legalcode-eu-correlation-table-builder`                                                          |
+| Per-article transposition verdict needed                  | `legalcode-eu-conformity-assessment`                                                              |
+| National over-implementation analysis                     | `legalcode-eu-gold-plating-detector`                                                              |
+| EEA Joint Committee Decision tracking                     | `legalcode-eea-incorporation-tracker`                                                             |
+| Infringement procedure timeline                           | `legalcode-eu-infringement-procedure-tracker`                                                     |
+| General EU/UK/multi-MS comparison                         | `legalcode-multi-jurisdiction-privacy-comparison` (where privacy-domain) or relevant domain skill |
+| Policy-gap-style adequacy assessment of national policies | `legalcode-policy-gap-analysis`                                                                   |
 
 ---
 
@@ -1519,6 +1538,7 @@ Legislative Compliance suite, drafted per the suite design brief at
 `skills/general/compliance/_eu-suite-design-brief.md`.
 
 **Primary EU/EEA law cited in this skill:**
+
 - TFEU Art. 288 (instrument hierarchy) —
   `https://eur-lex.europa.eu/eli/treaty/tfeu_2008/art_288/oj/eng`
 - TEU Art. 4(3) (sincere cooperation — basis of transposition obligation)
@@ -1529,23 +1549,26 @@ Legislative Compliance suite, drafted per the suite design brief at
   `https://eur-lex.europa.eu/eli/reg/1958/1(1)/oj/eng`
 
 **Case law cited:**
-- *CILFIT*, C-283/81, ECLI:EU:C:1982:335
-- *Codan*, C-236/97, ECLI:EU:C:1998:208
-- *EMU Tabac*, C-296/95, ECLI:EU:C:1998:152
-- *Becker*, C-8/81, ECLI:EU:C:1982:7
-- *Marshall*, C-152/84, ECLI:EU:C:1986:84
-- *Faccini Dori*, C-91/92, ECLI:EU:C:1994:292
-- *Von Colson*, C-14/83, ECLI:EU:C:1984:153
-- *Marleasing*, C-106/89, ECLI:EU:C:1990:395
-- *Roquette Frères*, C-110/03, ECLI:EU:C:2005:430
-- *Commission v Belgium*, C-543/17, ECLI:EU:C:2019:573
+
+- _CILFIT_, C-283/81, ECLI:EU:C:1982:335
+- _Codan_, C-236/97, ECLI:EU:C:1998:208
+- _EMU Tabac_, C-296/95, ECLI:EU:C:1998:152
+- _Becker_, C-8/81, ECLI:EU:C:1982:7
+- _Marshall_, C-152/84, ECLI:EU:C:1986:84
+- _Faccini Dori_, C-91/92, ECLI:EU:C:1994:292
+- _Von Colson_, C-14/83, ECLI:EU:C:1984:153
+- _Marleasing_, C-106/89, ECLI:EU:C:1990:395
+- _Roquette Frères_, C-110/03, ECLI:EU:C:2005:430
+- _Commission v Belgium_, C-543/17, ECLI:EU:C:2019:573
 
 **Methodology:**
+
 - Better Regulation Toolbox 2023, Chapter 4 —
   `https://commission.europa.eu/document/download/a21336e2-2a7c-43d2-bb35-d4eee7aa4cd3_en?filename=BRT-2023-Chapter+4-Compliance+implementation+and+preparing+proposals_0.pdf`
 - Inter-institutional Style Guide (Publications Office)
 
 **Standards:**
+
 - Akoma Ntoso (OASIS LegalDocML 1.0, 2018), AKN4EU subschema
 - ELI (European Legislation Identifier) —
   `https://eur-lex.europa.eu/eli-register/technical_information.html`
@@ -1553,6 +1576,7 @@ Legislative Compliance suite, drafted per the suite design brief at
   `https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/`
 
 **Worked-example sources:**
+
 - NIS2 (Directive (EU) 2022/2555, CELEX 32022L2555, OJ L 333, 27.12.2022, p. 80)
 - AI Act (Regulation (EU) 2024/1689, CELEX 32024R1689) — contrast
 - CSRD (Directive (EU) 2022/2464, CELEX 32022L2464)
@@ -1570,6 +1594,7 @@ EEA-Lex, Single Market Scoreboard.
 — co-located; cross-referenced by sibling skills.
 
 **Citations flagged for verification before regulatory or board use:**
+
 - The IATE entry IDs in the worked-example JSON (`3622139`, `3622140`) are
   illustrative placeholders; verify against IATE before consumption.
 - The OJ page reference `L 333/107` for NIS2 Art. 21 — cross-check against the

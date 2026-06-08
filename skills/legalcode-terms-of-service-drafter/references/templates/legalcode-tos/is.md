@@ -1,7 +1,13 @@
 ---
 title: Terms of Service — Iceland (Lög nr. 16/2016 + EEA-imported DSA)
 jurisdictions: [is]
-statutes: [Lög-16/2016-um-neytendasamninga, Lög-30/2002-um-rafræn-viðskipti, Lög-57/2005, DSA-via-EEA]
+statutes:
+  [
+    Lög-16/2016-um-neytendasamninga,
+    Lög-30/2002-um-rafræn-viðskipti,
+    Lög-57/2005,
+    DSA-via-EEA,
+  ]
 supervisory_authority: Neytendastofa / Persónuvernd
 license: MIT
 last_updated: 2026-04-28
@@ -20,15 +26,15 @@ last_updated: 2026-04-28
 
 ## 1. Plain-language summary
 
-In short: this section explains what the rest of the document does without legal jargon. {{Company Legal Name}} ("we", "us", the **service provider** / *þjónustuveitandi*) operates {{Service Name}} (the "Service"). By using the Service you accept these Terms, the Acceptable Use Policy in Annex A, and any subscription disclosures in Annex C.
+In short: this section explains what the rest of the document does without legal jargon. {{Company Legal Name}} ("we", "us", the **service provider** / _þjónustuveitandi_) operates {{Service Name}} (the "Service"). By using the Service you accept these Terms, the Acceptable Use Policy in Annex A, and any subscription disclosures in Annex C.
 
 Key points:
 
 - **You agree to follow the rules.** When you create an account, browse, or pay for the Service, you are entering a contract with us.
-- **You keep your content.** You own what you upload (*notendaefni*); you grant us a limited licence so we can run the Service.
+- **You keep your content.** You own what you upload (_notendaefni_); you grant us a limited licence so we can run the Service.
 - **You can leave.** You may close your account at any time. Paid subscriptions follow Annex C.
-- **Consumers (*neytendur*) keep statutory rights.** If you are a consumer in Iceland or the European Economic Area, you have rights under **Lög nr. 16/2016 um neytendasamninga** (the Consumer Contracts Act) — including a 14-day right of withdrawal for distance contracts — and these Terms do not reduce them.
-- **Illegal content (*ólöglegt efni*) gets removed.** Anyone may file a notice using the procedure in Annex B; we will act under the framework imported into Iceland through the EEA Joint Committee.
+- **Consumers (_neytendur_) keep statutory rights.** If you are a consumer in Iceland or the European Economic Area, you have rights under **Lög nr. 16/2016 um neytendasamninga** (the Consumer Contracts Act) — including a 14-day right of withdrawal for distance contracts — and these Terms do not reduce them.
+- **Illegal content (_ólöglegt efni_) gets removed.** Anyone may file a notice using the procedure in Annex B; we will act under the framework imported into Iceland through the EEA Joint Committee.
 - **You can complain.** You may complain to **Neytendastofa** (the Consumer Agency, at neytendastofa.is) for consumer-protection issues, to **Persónuvernd** (the Data Protection Authority, at personuvernd.is) for privacy issues, or to **kærunefnd vöru- og þjónustukaupa** (the Goods and Services Complaints Committee) for out-of-court dispute resolution `[VERIFY]`.
 
 If anything in these Terms conflicts with a mandatory consumer-protection rule, the mandatory rule wins.
@@ -43,7 +49,7 @@ In short: you must be old enough and have legal capacity to accept these Terms. 
 
 2.2 **Minimum age.** You must be at least the higher of (i) the age at which you can validly enter into a contract under Icelandic civil-capacity rules, and (ii) the digital-consent age. The digital-consent age in Iceland is **13 years** under Act nr. 90/2018 um persónuvernd og vinnslu persónuupplýsinga, Article 17 `[VERIFY]`. Where a parent or guardian's consent is required for processing of a minor's personal data, we may require evidence of that consent before activating the account.
 
-2.3 **Capacity.** You confirm that you have legal capacity (*lögræði*) to enter into these Terms. Persons under guardianship may use the Service only with the consent of their legal guardian.
+2.3 **Capacity.** You confirm that you have legal capacity (_lögræði_) to enter into these Terms. Persons under guardianship may use the Service only with the consent of their legal guardian.
 
 2.4 **Sanctions and export controls.** You confirm you are not located in, or ordinarily resident in, a jurisdiction subject to comprehensive sanctions under Icelandic law (Lög nr. 68/2023 um framkvæmd alþjóðlegra þvingunaraðgerða og frystingu fjármuna), EU restrictive measures imported through the EEA, or applicable export-control regimes.
 
@@ -60,21 +66,21 @@ For clarity, the following terms have the meanings given below:
 - **Account** — the credentialled space through which you access the Service.
 - **Affiliate** — an entity that controls, is controlled by, or is under common control with a party.
 - **Confidential Information** — non-public information disclosed by one party to the other and marked or reasonably understood as confidential.
-- **Consumer** (*neytandi*) — a natural person acting outside the scope of trade, business, craft or profession, per Lög nr. 16/2016.
+- **Consumer** (_neytandi_) — a natural person acting outside the scope of trade, business, craft or profession, per Lög nr. 16/2016.
 - **Customer Data** — content and data you submit, transmit, or generate through the Service.
 - **Documentation** — the operating documentation we make generally available for the Service.
-- **Distance Contract** (*fjarsölusamningur*) — a contract concluded under an organised distance-sales scheme, without simultaneous physical presence.
+- **Distance Contract** (_fjarsölusamningur_) — a contract concluded under an organised distance-sales scheme, without simultaneous physical presence.
 - **EEA** — the European Economic Area.
 - **Fees** — the charges for the Service set out in Annex C or the Order.
-- **Illegal Content** (*ólöglegt efni*) — information that is itself unlawful, or relates to unlawful activity, under EEA-imported rules (including Reg. (EU) 2022/2065) and under Icelandic law.
+- **Illegal Content** (_ólöglegt efni_) — information that is itself unlawful, or relates to unlawful activity, under EEA-imported rules (including Reg. (EU) 2022/2065) and under Icelandic law.
 - **Intermediary Service** — a "mere conduit", "caching" or "hosting" service within Lög nr. 30/2002 and the EEA-imported DSA.
 - **Order** — the order form, online checkout, or written agreement under which you subscribe to a paid plan.
 - **Service** — {{Service Name}} and any related websites, applications, APIs, and content provided by us.
-- **Service Provider** (*þjónustuveitandi*) — {{Company Legal Name}}.
+- **Service Provider** (_þjónustuveitandi_) — {{Company Legal Name}}.
 - **Subscription Term** — the period of paid access set out in your Order or plan.
-- **Trader / Seller** (*seljandi*) — a person acting in the course of a trade, business, craft or profession.
-- **User** (*notandi*) — a person who accesses or uses the Service, whether or not registered.
-- **User Content** (*notendaefni*) — content a User submits, posts, or transmits through the Service.
+- **Trader / Seller** (_seljandi_) — a person acting in the course of a trade, business, craft or profession.
+- **User** (_notandi_) — a person who accesses or uses the Service, whether or not registered.
+- **User Content** (_notendaefni_) — content a User submits, posts, or transmits through the Service.
 - **You / your** — the individual or entity entering into these Terms.
 
 Singulars include plurals; "including" means "including without limitation"; statute references include amending and replacement instruments.
@@ -125,7 +131,7 @@ In short: we let you use the Service while these Terms are in force. We do not t
 
 ## 6. User-generated content (UGC)
 
-In short: you keep ownership of what you post (*notendaefni*); you grant us a licence so we can run the Service; we may act on illegal content under the framework imported through the EEA.
+In short: you keep ownership of what you post (_notendaefni_); you grant us a licence so we can run the Service; we may act on illegal content under the framework imported through the EEA.
 
 6.1 **Ownership.** As between you and us, you own your User Content. We do not claim ownership of your User Content.
 
@@ -195,7 +201,7 @@ In short: the Service may connect to third-party services. We do not control the
 
 In short: this section sets out paid-plan rules, your statutory 14-day withdrawal right (where applicable), and how we handle refunds. Detailed disclosures are in **Annex C**.
 
-10.1 **Plans and Fees.** Available plans, Fees, billing periods, and included features are set out at {{Pricing URL}} and in your Order. Fees are stated in {{Currency}} and, where you are a consumer, include VAT (*virðisaukaskattur*) at the applicable Icelandic rate.
+10.1 **Plans and Fees.** Available plans, Fees, billing periods, and included features are set out at {{Pricing URL}} and in your Order. Fees are stated in {{Currency}} and, where you are a consumer, include VAT (_virðisaukaskattur_) at the applicable Icelandic rate.
 
 10.2 **Pre-contract information (consumer / distance contracts).** Before you commit to a paid plan, we provide the information required by **Lög nr. 16/2016 um neytendasamninga** (mirroring Articles 6 and 8 of Dir. 2011/83/EU). This includes the main characteristics of the Service, our identity and contact details, total price (including taxes), duration and termination conditions, minimum duration of obligations, the right of withdrawal, and the statutory guarantee of conformity. The standard pre-contract notice and the model withdrawal form are reproduced in **Annex C**.
 
@@ -223,15 +229,15 @@ In short: this section sets out paid-plan rules, your statutory 14-day withdrawa
 
 ## 11. Trials, free tier & beta
 
-In short: free, trial, and beta features are provided "as is" (*innan ábyrgðar*); consumer warranties still apply where mandatory.
+In short: free, trial, and beta features are provided "as is" (_innan ábyrgðar_); consumer warranties still apply where mandatory.
 
 11.1 **Free tier.** We may offer a free tier with reduced features, capacity, or support. We may modify or discontinue the free tier on reasonable notice.
 
 11.2 **Trials.** Trials run for the period stated at sign-up. At the end of the trial, the account either reverts to a free tier or — only where you have expressly chosen a paid plan and consented to billing — converts to a paid Subscription Term in accordance with §10.
 
-11.3 **Beta features.** Features identified as "beta", "preview", "alpha", or similar are made available for evaluation and may be changed, suspended, or discontinued without notice. To the maximum extent permitted by law and **subject to §13**, beta features are provided **AS IS** (*innan ábyrgðar*) and **AS AVAILABLE**, with no warranty of any kind.
+11.3 **Beta features.** Features identified as "beta", "preview", "alpha", or similar are made available for evaluation and may be changed, suspended, or discontinued without notice. To the maximum extent permitted by law and **subject to §13**, beta features are provided **AS IS** (_innan ábyrgðar_) and **AS AVAILABLE**, with no warranty of any kind.
 
-11.4 **Consumer carve-out.** Where you are a consumer, the **AS IS** and **AS AVAILABLE** language in §11.3 does not exclude or limit the mandatory statutory warranties under Lög nr. 16/2016 or the conformity rules implementing Directive (EU) 2019/770 in Iceland. *Þetta hefur ekki áhrif á réttindi neytanda samkvæmt lögum nr. 16/2016.*
+11.4 **Consumer carve-out.** Where you are a consumer, the **AS IS** and **AS AVAILABLE** language in §11.3 does not exclude or limit the mandatory statutory warranties under Lög nr. 16/2016 or the conformity rules implementing Directive (EU) 2019/770 in Iceland. _Þetta hefur ekki áhrif á réttindi neytanda samkvæmt lögum nr. 16/2016._
 
 11.5 **Confidentiality of beta features.** Information about non-public beta features is Confidential Information.
 
@@ -263,7 +269,7 @@ In short: outside mandatory consumer-protection law, the Service is provided as 
 
 13.1 **B2B disclaimer.** **Where you use the Service in the course of a trade, business, craft or profession**, and to the maximum extent permitted by Icelandic and EEA law, the Service is provided **AS IS** and **AS AVAILABLE**, without any warranty, condition, or representation of any kind, whether express or implied, including any implied warranties of merchantability, satisfactory quality, fitness for a particular purpose, accuracy, non-infringement, uninterrupted operation, security, or freedom from error or malicious code. We do not warrant that the Service will meet your requirements or operate in any combination you may select.
 
-13.2 **B2C carve-out — mandatory consumer warranties cannot be excluded.** **If you are a consumer (*neytandi*) within the meaning of Lög nr. 16/2016, the disclaimers in §13.1 do not apply to you to the extent they would exclude or limit rights that cannot lawfully be excluded or limited.** In particular, the conformity-of-digital-content rights implementing Directive (EU) 2019/770 in Iceland, the unfair-terms protections under Lög nr. 16/2016, and the fair-trading protections under Lög nr. 57/2005, all continue to apply. *Þetta hefur ekki áhrif á réttindi neytanda samkvæmt lögum nr. 16/2016.*
+13.2 **B2C carve-out — mandatory consumer warranties cannot be excluded.** **If you are a consumer (_neytandi_) within the meaning of Lög nr. 16/2016, the disclaimers in §13.1 do not apply to you to the extent they would exclude or limit rights that cannot lawfully be excluded or limited.** In particular, the conformity-of-digital-content rights implementing Directive (EU) 2019/770 in Iceland, the unfair-terms protections under Lög nr. 16/2016, and the fair-trading protections under Lög nr. 57/2005, all continue to apply. _Þetta hefur ekki áhrif á réttindi neytanda samkvæmt lögum nr. 16/2016._
 
 13.3 **Third-party content.** We do not warrant the accuracy, completeness, or reliability of third-party content made available through the Service.
 
@@ -279,17 +285,17 @@ In short: outside mandatory law, our liability is capped. Personal injury, death
 
 - death or personal injury caused by our negligence;
 - fraud or fraudulent misrepresentation;
-- gross negligence (*stórfellt gáleysi*) or wilful misconduct, where Icelandic law prohibits limitation;
+- gross negligence (_stórfellt gáleysi_) or wilful misconduct, where Icelandic law prohibits limitation;
 - breach of mandatory consumer-protection rules under Lög nr. 16/2016 and Lög nr. 57/2005; or
 - any other liability that cannot lawfully be excluded or limited.
 
-14.2 **Cap on liability (B2B).** Subject to §14.1, where you use the Service in the course of trade, business, craft or profession, our aggregate liability arising out of or in connection with these Terms — whether in contract, tort (including negligence), statutory duty, restitution, or otherwise — is limited to the **greater of (a) the Fees paid or payable by you in the twelve (12) months preceding the event giving rise to the claim, and (b) {{B2B Liability Floor}}**.
+  14.2 **Cap on liability (B2B).** Subject to §14.1, where you use the Service in the course of trade, business, craft or profession, our aggregate liability arising out of or in connection with these Terms — whether in contract, tort (including negligence), statutory duty, restitution, or otherwise — is limited to the **greater of (a) the Fees paid or payable by you in the twelve (12) months preceding the event giving rise to the claim, and (b) {{B2B Liability Floor}}**.
 
-14.3 **Cap on liability (B2C).** Subject to §14.1, where you are a consumer, our liability is limited only to the extent permitted by mandatory Icelandic and EEA-imported consumer-protection law. Any contractual limitation is subject to the fairness review under Lög nr. 16/2016 (unfair terms) and to the supervisory powers of **Neytendastofa** under Lög nr. 57/2005. We will not seek to enforce a contractual cap that would be void under those rules.
+  14.3 **Cap on liability (B2C).** Subject to §14.1, where you are a consumer, our liability is limited only to the extent permitted by mandatory Icelandic and EEA-imported consumer-protection law. Any contractual limitation is subject to the fairness review under Lög nr. 16/2016 (unfair terms) and to the supervisory powers of **Neytendastofa** under Lög nr. 57/2005. We will not seek to enforce a contractual cap that would be void under those rules.
 
-14.4 **Excluded losses.** Subject to §14.1 and §14.3, neither party is liable for indirect, special, incidental, consequential, or punitive damages, or for lost profits, lost revenues, lost goodwill, or loss or corruption of data, even if advised of the possibility.
+  14.4 **Excluded losses.** Subject to §14.1 and §14.3, neither party is liable for indirect, special, incidental, consequential, or punitive damages, or for lost profits, lost revenues, lost goodwill, or loss or corruption of data, even if advised of the possibility.
 
-14.5 **Time bar.** Claims arising out of or in connection with these Terms must be brought within the limitation periods set by Icelandic law; where you are a consumer, statutory limitation periods apply unmodified.
+  14.5 **Time bar.** Claims arising out of or in connection with these Terms must be brought within the limitation periods set by Icelandic law; where you are a consumer, statutory limitation periods apply unmodified.
 
 ---
 
@@ -387,23 +393,23 @@ In short: closing legal mechanics.
 - Supervisory authority for data protection: Persónuvernd (personuvernd.is)
 - Neytendastofa case reference: {{Neytendastofa Reference}} `[OPTIONAL]`
 
-20.2 **Accessibility.** We aim to make the Service accessible. Where applicable, we comply with accessibility duties under EEA-imported Directive (EU) 2019/882 (European Accessibility Act) as transposed in Iceland, and, where relevant, **Lög nr. 38/2018 um þjónustu við fatlað fólk með langvarandi stuðningsþarfir** `[VERIFY]`.
+  20.2 **Accessibility.** We aim to make the Service accessible. Where applicable, we comply with accessibility duties under EEA-imported Directive (EU) 2019/882 (European Accessibility Act) as transposed in Iceland, and, where relevant, **Lög nr. 38/2018 um þjónustu við fatlað fólk með langvarandi stuðningsþarfir** `[VERIFY]`.
 
-20.3 **Force majeure.** Neither party is liable for delay or failure to perform caused by circumstances beyond its reasonable control, except for payment obligations.
+  20.3 **Force majeure.** Neither party is liable for delay or failure to perform caused by circumstances beyond its reasonable control, except for payment obligations.
 
-20.4 **Assignment.** You may not assign or transfer these Terms without our prior written consent. We may assign these Terms in connection with a corporate reorganisation, merger, or sale of substantially all assets, without your consent, provided that the assignee assumes our obligations.
+  20.4 **Assignment.** You may not assign or transfer these Terms without our prior written consent. We may assign these Terms in connection with a corporate reorganisation, merger, or sale of substantially all assets, without your consent, provided that the assignee assumes our obligations.
 
-20.5 **Subcontractors.** We may use subcontractors to perform our obligations, but we remain responsible for their acts and omissions as if they were our own.
+  20.5 **Subcontractors.** We may use subcontractors to perform our obligations, but we remain responsible for their acts and omissions as if they were our own.
 
-20.6 **Severability.** If any provision is held unenforceable, the remaining provisions continue in effect. Where the unenforceable provision is one that would have allocated risk to a consumer in a way prohibited by Icelandic law, the consumer-protective rule applies instead.
+  20.6 **Severability.** If any provision is held unenforceable, the remaining provisions continue in effect. Where the unenforceable provision is one that would have allocated risk to a consumer in a way prohibited by Icelandic law, the consumer-protective rule applies instead.
 
-20.7 **Waiver.** A failure or delay in exercising a right is not a waiver. A single or partial exercise does not preclude further exercise.
+  20.7 **Waiver.** A failure or delay in exercising a right is not a waiver. A single or partial exercise does not preclude further exercise.
 
-20.8 **No third-party beneficiaries.** These Terms do not create rights for any person other than the parties, except as expressly provided.
+  20.8 **No third-party beneficiaries.** These Terms do not create rights for any person other than the parties, except as expressly provided.
 
-20.9 **Entire agreement.** These Terms, the Annexes, the Order, and any policies referenced (including the Privacy Notice) form the entire agreement between you and us about the Service. They supersede prior or contemporaneous understandings on the same subject. Where you are a consumer, this clause does not exclude liability for misrepresentation or limit any rights that cannot lawfully be excluded.
+  20.9 **Entire agreement.** These Terms, the Annexes, the Order, and any policies referenced (including the Privacy Notice) form the entire agreement between you and us about the Service. They supersede prior or contemporaneous understandings on the same subject. Where you are a consumer, this clause does not exclude liability for misrepresentation or limit any rights that cannot lawfully be excluded.
 
-20.10 **Language and interpretation.** Headings are for convenience only. References to time are to Icelandic local time unless stated otherwise. The bilingual rule in the introductory call-out applies.
+  20.10 **Language and interpretation.** Headings are for convenience only. References to time are to Icelandic local time unless stated otherwise. The bilingual rule in the introductory call-out applies.
 
 ---
 
@@ -413,7 +419,7 @@ In short: do not break the law, harm others, or attack the Service.
 
 You must not use the Service to:
 
-**A.1 Illegal Content (*ólöglegt efni*).** Upload, transmit, or make available content that is itself unlawful, or that relates to unlawful activity, under Icelandic law, EEA-imported law, or the law of any jurisdiction where the content is accessible.
+**A.1 Illegal Content (_ólöglegt efni_).** Upload, transmit, or make available content that is itself unlawful, or that relates to unlawful activity, under Icelandic law, EEA-imported law, or the law of any jurisdiction where the content is accessible.
 
 **A.2 Rights of others.** Infringe intellectual-property rights, privacy rights, personality rights, trade secrets, or any other rights of others, including under Höfundalög nr. 73/1972.
 
@@ -423,7 +429,7 @@ You must not use the Service to:
 
 **A.5 Security and integrity.** Attack, probe, scan, or test the security of the Service or any other system without authorisation; bypass authentication or rate limits; deploy malware, ransomware, or similar code; circumvent technical protection measures.
 
-**A.6 System abuse.** Send unsolicited bulk communications (*ruslpóstur*) in breach of Lög nr. 70/2022; scrape or extract data in breach of these Terms; overload the Service through automated traffic; reverse engineer beyond what mandatory law permits.
+**A.6 System abuse.** Send unsolicited bulk communications (_ruslpóstur_) in breach of Lög nr. 70/2022; scrape or extract data in breach of these Terms; overload the Service through automated traffic; reverse engineer beyond what mandatory law permits.
 
 **A.7 Misuse of the moderation system.** Submit knowingly false notices under Annex B; submit complaints in bad faith; use trusted-flagger or reporting tools to harass.
 
@@ -482,20 +488,20 @@ In short: pre-contract disclosures, the 14-day withdrawal right, the model withd
 
 **C.1 Pre-contract information (mirror Lög nr. 16/2016 / Directive 2011/83/EU Art. 6).**
 
-| Item | Disclosure |
-| --- | --- |
-| Main characteristics of the Service | {{Service Description}} |
-| Trader identity | {{Company Legal Name}}, kennitala {{Company Kennitala}} |
-| Geographic address | {{Company Registered Address}}, {{Country}} |
-| Contact details | {{Support Email}}, {{Support Phone}} |
-| Total price (incl. VAT) | {{Plan Price}} per {{Billing Period}} |
-| Additional charges | {{Additional Charges Or None}} |
-| Payment, performance, complaint handling | See §10 and §16 of the Terms |
-| Duration and termination | {{Subscription Term}}; auto-renewal as in §10.6; cancellation as in §10.7 |
-| Minimum duration of consumer obligations | {{Minimum Duration Or None}} |
-| Existence of right of withdrawal | Yes — see §C.2 below; exceptions in §10.4 and §10.5 |
-| Statutory guarantee of conformity | Yes — implementing Directive (EU) 2019/770 in Iceland `[VERIFY transposition]` |
-| Out-of-court dispute resolution | kærunefnd vöru- og þjónustukaupa `[VERIFY]`; EU ODR platform |
+| Item                                     | Disclosure                                                                     |
+| ---------------------------------------- | ------------------------------------------------------------------------------ |
+| Main characteristics of the Service      | {{Service Description}}                                                        |
+| Trader identity                          | {{Company Legal Name}}, kennitala {{Company Kennitala}}                        |
+| Geographic address                       | {{Company Registered Address}}, {{Country}}                                    |
+| Contact details                          | {{Support Email}}, {{Support Phone}}                                           |
+| Total price (incl. VAT)                  | {{Plan Price}} per {{Billing Period}}                                          |
+| Additional charges                       | {{Additional Charges Or None}}                                                 |
+| Payment, performance, complaint handling | See §10 and §16 of the Terms                                                   |
+| Duration and termination                 | {{Subscription Term}}; auto-renewal as in §10.6; cancellation as in §10.7      |
+| Minimum duration of consumer obligations | {{Minimum Duration Or None}}                                                   |
+| Existence of right of withdrawal         | Yes — see §C.2 below; exceptions in §10.4 and §10.5                            |
+| Statutory guarantee of conformity        | Yes — implementing Directive (EU) 2019/770 in Iceland `[VERIFY transposition]` |
+| Out-of-court dispute resolution          | kærunefnd vöru- og þjónustukaupa `[VERIFY]`; EU ODR platform                   |
 
 **C.2 Right of withdrawal — 14 days.** You have the right to withdraw from the contract within **14 days** without giving any reason. The 14-day period runs from the day the contract is concluded. To exercise the right, send a clear statement to {{Support Email}} or use the model form below.
 
@@ -507,17 +513,17 @@ In short: pre-contract disclosures, the 14-day withdrawal right, the model withd
 
 > **To:** {{Company Legal Name}}, {{Company Registered Address}}, {{Country}}, {{Support Email}}
 >
-> I/We hereby give notice that I/we withdraw from my/our contract for the supply of the following service / digital content: ____________________________________________________
+> I/We hereby give notice that I/we withdraw from my/our contract for the supply of the following service / digital content: ****\*\*****\*\*\*\*****\*\*****\_\_\_\_****\*\*****\*\*\*\*****\*\*****
 >
-> Ordered on: ____________________________________________________
+> Ordered on: ****\*\*****\*\*\*\*****\*\*****\_\_\_\_****\*\*****\*\*\*\*****\*\*****
 >
-> Name of consumer(s): ____________________________________________________
+> Name of consumer(s): ****\*\*****\*\*\*\*****\*\*****\_\_\_\_****\*\*****\*\*\*\*****\*\*****
 >
-> Address of consumer(s): ____________________________________________________
+> Address of consumer(s): ****\*\*****\*\*\*\*****\*\*****\_\_\_\_****\*\*****\*\*\*\*****\*\*****
 >
-> Signature of consumer(s) (only if this form is notified on paper): ____________________
+> Signature of consumer(s) (only if this form is notified on paper): **\*\*\*\***\_\_\_\_**\*\*\*\***
 >
-> Date: ____________________________________________________
+> Date: ****\*\*****\*\*\*\*****\*\*****\_\_\_\_****\*\*****\*\*\*\*****\*\*****
 
 **C.6 Cancellation mechanism.** You can cancel an auto-renewing subscription:
 

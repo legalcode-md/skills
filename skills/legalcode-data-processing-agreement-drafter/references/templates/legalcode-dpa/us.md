@@ -496,24 +496,24 @@ For the Personal Data of Oregon consumers under the Oregon Consumer Privacy Act,
 
 ## Annex 1 — Description of processing
 
-| Field | Value |
-|---|---|
-| Business | {{Controller Legal Name}} ({{Controller Short Name}}), {{Controller Address}}, {{Controller Country}} |
-| {{Service Provider Designation}} | {{Processor Legal Name}} ({{Processor Short Name}}), {{Processor Address}}, {{Processor Country}} |
-| Service Provider Designation election | [ ] Service Provider (§1798.140(ag)) [ ] Contractor (§1798.140(j)) |
-| Service | {{Service Name}} ({{Service URL}}) |
-| Effective date | {{Effective Date}} |
-| Subject matter | Processing of Personal Information necessary to provide the Service. |
-| Duration | Term of the Agreement plus the wind-down period for return or deletion under §16. |
-| Nature | Hosting, transmission, storage, indexing, retrieval, support, monitoring, and incident response operations carried out as part of the Service. |
-| {{Business Purposes}} | [List the limited and specified business purposes — for example: providing the contracted Service; ensuring the integrity and security of the Service; preventing fraud; complying with law; performing internal operations reasonably aligned with consumer expectations.] |
-| Categories of Consumers | [For example: customers and end-users of {{Controller Short Name}}; employees, applicants, and contractors; website visitors; B2B account contacts.] |
-| Categories of Personal Information | [For example: identifiers; commercial information; internet/network activity; geolocation (general); audio/video; professional/employment information; education information; inferences.] |
-| Sensitive PI in scope? | [ ] Yes — categories: ___ [ ] No |
-| ADMT involved? | [ ] Yes — describe: ___ [ ] No |
-| Cross-border transfers in scope? | [ ] Inbound EEA/UK/CH/IS — see §14.2 [ ] Outbound from US to: ___ [ ] None |
-| Breach notification SLA | [ ] 24h [ ] 48h (default) [ ] 72h |
-| Universal Opt-Out Signal recognition | [ ] Enabled at {{Do Not Sell URL}} [ ] N/A — no Sale/Sharing |
+| Field                                 | Value                                                                                                                                                                                                                                                                       |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Business                              | {{Controller Legal Name}} ({{Controller Short Name}}), {{Controller Address}}, {{Controller Country}}                                                                                                                                                                       |
+| {{Service Provider Designation}}      | {{Processor Legal Name}} ({{Processor Short Name}}), {{Processor Address}}, {{Processor Country}}                                                                                                                                                                           |
+| Service Provider Designation election | [ ] Service Provider (§1798.140(ag)) [ ] Contractor (§1798.140(j))                                                                                                                                                                                                          |
+| Service                               | {{Service Name}} ({{Service URL}})                                                                                                                                                                                                                                          |
+| Effective date                        | {{Effective Date}}                                                                                                                                                                                                                                                          |
+| Subject matter                        | Processing of Personal Information necessary to provide the Service.                                                                                                                                                                                                        |
+| Duration                              | Term of the Agreement plus the wind-down period for return or deletion under §16.                                                                                                                                                                                           |
+| Nature                                | Hosting, transmission, storage, indexing, retrieval, support, monitoring, and incident response operations carried out as part of the Service.                                                                                                                              |
+| {{Business Purposes}}                 | [List the limited and specified business purposes — for example: providing the contracted Service; ensuring the integrity and security of the Service; preventing fraud; complying with law; performing internal operations reasonably aligned with consumer expectations.] |
+| Categories of Consumers               | [For example: customers and end-users of {{Controller Short Name}}; employees, applicants, and contractors; website visitors; B2B account contacts.]                                                                                                                        |
+| Categories of Personal Information    | [For example: identifiers; commercial information; internet/network activity; geolocation (general); audio/video; professional/employment information; education information; inferences.]                                                                                  |
+| Sensitive PI in scope?                | [ ] Yes — categories: \_\_\_ [ ] No                                                                                                                                                                                                                                         |
+| ADMT involved?                        | [ ] Yes — describe: \_\_\_ [ ] No                                                                                                                                                                                                                                           |
+| Cross-border transfers in scope?      | [ ] Inbound EEA/UK/CH/IS — see §14.2 [ ] Outbound from US to: \_\_\_ [ ] None                                                                                                                                                                                               |
+| Breach notification SLA               | [ ] 24h [ ] 48h (default) [ ] 72h                                                                                                                                                                                                                                           |
+| Universal Opt-Out Signal recognition  | [ ] Enabled at {{Do Not Sell URL}} [ ] N/A — no Sale/Sharing                                                                                                                                                                                                                |
 
 ---
 
@@ -521,23 +521,23 @@ For the Personal Data of Oregon consumers under the Oregon Consumer Privacy Act,
 
 The TOMs below implement Reasonable Security under Cal. Civ. Code §1798.81.5. They are mapped to the CIS Critical Security Controls (current version) and the NIST Cybersecurity Framework Functions (Identify, Protect, Detect, Respond, Recover, Govern). {{Processor Short Name}} shall keep this Annex up to date.
 
-| Control area | CIS Control / NIST CSF Function | Description |
-|---|---|---|
-| Asset & data inventory | CIS 1, 3 / Identify | Inventory of authorized devices, software, and Personal Information assets; data classification and labeling. |
-| Access control | CIS 5, 6 / Protect | Role-based access; least privilege; SSO + MFA for administrative access; periodic access reviews; joiner-mover-leaver process. |
-| Encryption | CIS 3 / Protect | Encryption in transit (TLS ≥1.2) and at rest (AES-256 or equivalent); secure key management with rotation; cryptographic erasure on deletion. |
-| Secure development | CIS 16 / Protect | Secure SDLC; code review; dependency scanning; secrets management; segregation of duties; deployment approvals. |
-| Vulnerability management | CIS 7 / Protect, Detect | Continuous vulnerability scanning; patch SLAs aligned to severity; annual third-party penetration test. |
-| Logging & monitoring | CIS 8 / Detect | Centralized log collection; anomaly detection; alert tuning; log integrity and retention. |
-| Network defense | CIS 12, 13 / Protect | Segmented network; firewalling and egress control; DDoS protection; intrusion detection. |
-| Endpoint defense | CIS 10 / Protect | EDR on endpoints; hardened images; device management. |
-| Incident response | CIS 17 / Respond | Documented IR plan; on-call rotation; tabletop exercises; coordination with the Business under §12. |
-| Backup & recovery | CIS 11 / Recover | Backups with offsite/region redundancy; periodic restore tests; RPO/RTO targets stated for the Service. |
-| Personnel security | CIS 14 / Govern | Background checks where lawful; confidentiality undertakings; security training at hire and annually. |
-| Vendor risk | CIS 15 / Govern | Sub-processor due diligence; flow-down per §9; ongoing monitoring. |
-| Physical security | CIS 12 / Protect | Controlled facility access; environmental controls; visitor management. |
-| Audit & assurance | / Govern | SOC 2 Type II / ISO 27001 (or equivalent) maintained; report-sharing under §15.2. |
-| Sensitive PI controls | CIS 3 / Protect | Enhanced encryption, segregation, access logging, and reduced retention as per §8.4. |
+| Control area             | CIS Control / NIST CSF Function | Description                                                                                                                                   |
+| ------------------------ | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Asset & data inventory   | CIS 1, 3 / Identify             | Inventory of authorized devices, software, and Personal Information assets; data classification and labeling.                                 |
+| Access control           | CIS 5, 6 / Protect              | Role-based access; least privilege; SSO + MFA for administrative access; periodic access reviews; joiner-mover-leaver process.                |
+| Encryption               | CIS 3 / Protect                 | Encryption in transit (TLS ≥1.2) and at rest (AES-256 or equivalent); secure key management with rotation; cryptographic erasure on deletion. |
+| Secure development       | CIS 16 / Protect                | Secure SDLC; code review; dependency scanning; secrets management; segregation of duties; deployment approvals.                               |
+| Vulnerability management | CIS 7 / Protect, Detect         | Continuous vulnerability scanning; patch SLAs aligned to severity; annual third-party penetration test.                                       |
+| Logging & monitoring     | CIS 8 / Detect                  | Centralized log collection; anomaly detection; alert tuning; log integrity and retention.                                                     |
+| Network defense          | CIS 12, 13 / Protect            | Segmented network; firewalling and egress control; DDoS protection; intrusion detection.                                                      |
+| Endpoint defense         | CIS 10 / Protect                | EDR on endpoints; hardened images; device management.                                                                                         |
+| Incident response        | CIS 17 / Respond                | Documented IR plan; on-call rotation; tabletop exercises; coordination with the Business under §12.                                           |
+| Backup & recovery        | CIS 11 / Recover                | Backups with offsite/region redundancy; periodic restore tests; RPO/RTO targets stated for the Service.                                       |
+| Personnel security       | CIS 14 / Govern                 | Background checks where lawful; confidentiality undertakings; security training at hire and annually.                                         |
+| Vendor risk              | CIS 15 / Govern                 | Sub-processor due diligence; flow-down per §9; ongoing monitoring.                                                                            |
+| Physical security        | CIS 12 / Protect                | Controlled facility access; environmental controls; visitor management.                                                                       |
+| Audit & assurance        | / Govern                        | SOC 2 Type II / ISO 27001 (or equivalent) maintained; report-sharing under §15.2.                                                             |
+| Sensitive PI controls    | CIS 3 / Protect                 | Enhanced encryption, segregation, access logging, and reduced retention as per §8.4.                                                          |
 
 `[VERIFY]` Where the CPPA Cybersecurity Audit Regulations (Cal. Code Regs. tit. 11 §§ 7120–7129) are final and apply to the Business, {{Processor Short Name}} shall additionally maintain auditor-ready documentation aligned to the regulations' enumerated elements.
 
@@ -545,10 +545,10 @@ The TOMs below implement Reasonable Security under Cal. Civ. Code §1798.81.5. T
 
 ## Annex 3 — Sub-processor list
 
-| Sub-processor (entity name) | Role / function | Processing locations | Sensitive PI? | Onboarded |
-|---|---|---|---|---|
-| [name] | [hosting / email / payments / etc.] | [country/region] | [Y/N] | [YYYY-MM-DD] |
-| [name] | […] | […] | [Y/N] | [YYYY-MM-DD] |
+| Sub-processor (entity name) | Role / function                     | Processing locations | Sensitive PI? | Onboarded    |
+| --------------------------- | ----------------------------------- | -------------------- | ------------- | ------------ |
+| [name]                      | [hosting / email / payments / etc.] | [country/region]     | [Y/N]         | [YYYY-MM-DD] |
+| [name]                      | […]                                 | […]                  | [Y/N]         | [YYYY-MM-DD] |
 
 The current list is also published at {{Subprocessor List URL}}. Notice of new or replacement Sub-processors is provided as set out in §9 with at least {{Notification Window}} prior notice.
 
@@ -558,14 +558,14 @@ The current list is also published at {{Subprocessor List URL}}. Notice of new o
 
 The CCPA and the parallel state laws listed in §20 do not currently mandate a Standard Contractual Clauses–equivalent transfer mechanism for outbound transfers from the United States. Where the Personal Information Processed under this DPA includes personal data originating in the European Economic Area, the United Kingdom, Switzerland, or Iceland, the transfer is governed by the corresponding controller-side DPA — `eu.md`, `uk.md`, or `is.md` — and the transfer mechanism it embeds (SCCs Modules 1–4, the UK IDTA, the UK Addendum, EEA-framed Article 46 mechanisms). This Annex serves as a routing reference rather than as an embedded transfer instrument.
 
-| Direction | Governing instrument | Where embedded |
-|---|---|---|
-| US → US (intra-US) | Not applicable — no cross-border transfer | — |
-| US → third country | Sectoral law and contract; no SCC-equivalent | This Annex 4 |
-| EEA → US | EU SCCs (Modules 1–4) and US recipient commitments | `eu.md` Annex 4 |
-| UK → US | UK IDTA or UK Addendum to the EU SCCs | `uk.md` Annex 4 |
-| Switzerland → US | EU SCCs adapted for Switzerland under FDPIC guidance | `eu.md` Annex 4 |
-| Iceland → US | EU SCCs as applied via the EEA framework | `is.md` Annex 4 |
+| Direction          | Governing instrument                                 | Where embedded  |
+| ------------------ | ---------------------------------------------------- | --------------- |
+| US → US (intra-US) | Not applicable — no cross-border transfer            | —               |
+| US → third country | Sectoral law and contract; no SCC-equivalent         | This Annex 4    |
+| EEA → US           | EU SCCs (Modules 1–4) and US recipient commitments   | `eu.md` Annex 4 |
+| UK → US            | UK IDTA or UK Addendum to the EU SCCs                | `uk.md` Annex 4 |
+| Switzerland → US   | EU SCCs adapted for Switzerland under FDPIC guidance | `eu.md` Annex 4 |
+| Iceland → US       | EU SCCs as applied via the EEA framework             | `is.md` Annex 4 |
 
 OPTIONAL — only if {{Processor Short Name}} is a US "electronic communications service" or "remote computing service" provider potentially subject to FISA §702, EO 14086, or the CLOUD Act `[VERIFY]`. {{Processor Short Name}} represents that it has implemented the technical, legal, and organizational measures referenced in §14.3 designed to limit disclosure to government authorities to the minimum legally required and to support controller-side Transfer Impact Assessments.
 

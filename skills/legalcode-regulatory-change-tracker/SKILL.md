@@ -43,6 +43,7 @@ Capability Model (Red Book 3.5), ISO 31000:2018, US Sentencing Guidelines Chapte
 DOJ Evaluation of Corporate Compliance Programs (September 2024).
 
 **Covers:**
+
 - Regulatory horizon scanning and intake triage with structured Regulatory Change Records
 - Applicability determination against organizational footprint (jurisdictions, activities,
   thresholds, sector overlays)
@@ -59,6 +60,7 @@ DOJ Evaluation of Corporate Compliance Programs (September 2024).
   structured markdown board summaries)
 
 **Does not:**
+
 - Draft regulatory submissions, comment letters, or filings to regulators
 - Provide definitive legal interpretations of genuinely ambiguous regulatory text —
   surfaces reasonable alternatives with confidence scores and flags for counsel
@@ -68,6 +70,7 @@ DOJ Evaluation of Corporate Compliance Programs (September 2024).
   markers throughout; see Localization Notes for jurisdiction-specific depth
 
 **Related skills:**
+
 - `legalcode-dsar-workflow-builder` — for data subject access request management
 - `legalcode-dpia-generator` — for privacy impact assessments triggered by regulatory change
 - `legalcode-breach-regulatory-notification-drafter` — for post-breach regulatory notification
@@ -92,15 +95,15 @@ analysis runs.
 
 **Primary regulatory families tracked:**
 
-| Family | Key Regulations | Monitoring Cadence |
-|--------|----------------|-------------------|
-| **Privacy / Data** | GDPR, CCPA/CPRA, US state privacy (20+ laws), LGPD, PIPL, APPI, PDPA variants, DOJ Bulk Data Rule | Weekly |
-| **AI Regulation** | EU AI Act, NIST AI RMF, US state AI laws (CA, CO, IL, others), UK AI framework, China Generative AI Measures | Weekly |
-| **Financial Services** | SEC Reg S-P, FINRA, Basel III, MiFID II, Dodd-Frank, EU AML/AMLA | Weekly |
-| **Employment** | FMLA, ADA, ADEA, NLRA, FLSA, OSHA, UK ERA, EU Directives, US state non-compete, pay transparency, PFML | Monthly |
-| **Healthcare** | HIPAA Security Rule (2026 overhaul), 42 CFR Part 2, FDA AI/ML-SaMD | Monthly |
-| **Environmental / ESG** | EU CSRD/ESRS, SEC Climate Rule, CA SB 253/261, ISSB S1/S2, EU Taxonomy | Monthly |
-| **Sector-specific** | DORA (financial digital resilience), NIS2, CIRCIA, PCI-DSS, FCA/SM&CR | As applicable |
+| Family                  | Key Regulations                                                                                              | Monitoring Cadence |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------ |
+| **Privacy / Data**      | GDPR, CCPA/CPRA, US state privacy (20+ laws), LGPD, PIPL, APPI, PDPA variants, DOJ Bulk Data Rule            | Weekly             |
+| **AI Regulation**       | EU AI Act, NIST AI RMF, US state AI laws (CA, CO, IL, others), UK AI framework, China Generative AI Measures | Weekly             |
+| **Financial Services**  | SEC Reg S-P, FINRA, Basel III, MiFID II, Dodd-Frank, EU AML/AMLA                                             | Weekly             |
+| **Employment**          | FMLA, ADA, ADEA, NLRA, FLSA, OSHA, UK ERA, EU Directives, US state non-compete, pay transparency, PFML       | Monthly            |
+| **Healthcare**          | HIPAA Security Rule (2026 overhaul), 42 CFR Part 2, FDA AI/ML-SaMD                                           | Monthly            |
+| **Environmental / ESG** | EU CSRD/ESRS, SEC Climate Rule, CA SB 253/261, ISSB S1/S2, EU Taxonomy                                       | Monthly            |
+| **Sector-specific**     | DORA (financial digital resilience), NIS2, CIRCIA, PCI-DSS, FCA/SM&CR                                        | As applicable      |
 
 [JURISDICTION-SPECIFIC] For depth in any specific jurisdiction, legalcode-mcp or
 perplexity-search research should supplement this skill's framework with current statutory
@@ -124,6 +127,7 @@ If the user has already provided the information, skip the question and proceed,
 assumptions explicitly.
 
 For batch or automated runs, apply these defaults:
+
 - Jurisdiction scope: All jurisdictions user operates in (assume global if not specified)
 - Baseline: Assume no existing compliance posture (worst-case gap analysis)
 - Sector overlays: None (assess general applicability only; flag sector-specific question)
@@ -163,21 +167,25 @@ providing a structured Regulatory Change Record (RCR) at the end of Step 4.
 Accept regulatory change information in any of these formats:
 
 **Structured input:**
+
 - Regulation name, jurisdiction, effective date, and summary of what changed
 - Official URL to the regulation, amendment, or guidance document
 - Regulatory agency press release or announcement
 
 **Unstructured input:**
+
 - Natural language description of a regulatory change ("California passed a new AI bias
   audit law effective January 2026")
 - Regulatory intelligence newsletter excerpt or alert email
 - Internal memo or legal counsel summary describing an upcoming change
 
 **Batch input:**
+
 - A list of multiple regulatory changes to triage simultaneously
 - A regulatory calendar exported from a GRC platform or compliance newsletter
 
 If the regulatory change source is ambiguous, ask the user to confirm:
+
 1. The name and citation of the regulation or amendment
 2. The issuing authority (federal statute, state law, regulatory rule, guidance, etc.)
 3. The effective date (not publication date — these often differ)
@@ -192,6 +200,7 @@ Ask the user to identify their organization's operational presence. This is the 
 most important context input — it determines which regulations even reach Step 4.
 
 Options: Present a checklist of major jurisdiction groups:
+
 - **United States** (select regions: federal only, specify states)
 - **European Union / EEA** (GDPR, EU AI Act, CSRD in scope)
 - **United Kingdom** (UK GDPR, SM&CR, Employment Rights Bill in scope)
@@ -203,7 +212,7 @@ Options: Present a checklist of major jurisdiction groups:
 - **Singapore** (PDPA in scope)
 - **Global / Uncertain** (apply broadest applicability; flag all potentially relevant)
 
-*Why this matters*: GDPR applies based on where data subjects are located, not where your
+_Why this matters_: GDPR applies based on where data subjects are located, not where your
 organization is incorporated. A US-headquartered company with EU customers is fully in
 scope. Answering "US only" may miss material obligations. When in doubt, assume broader
 scope and refine downward.
@@ -221,7 +230,7 @@ supplement general regulations:
 - **None of the above — general commercial organization**
 - **Multiple** (select all that apply)
 
-*Why this matters*: Sector-specific regulations often impose stricter standards than
+_Why this matters_: Sector-specific regulations often impose stricter standards than
 general rules. A healthcare organization subject to HIPAA faces different data breach
 timelines and obligations than a general commercial company under state breach laws.
 
@@ -235,7 +244,7 @@ What is the organization's current compliance status relevant to this regulatory
 - **No baseline**: No current policies or compliance program in this area; build from zero
 - **Unknown**: Use the skill to establish baseline before assessing the regulatory change
 
-*Why this matters*: Determines whether the gap analysis measures delta or starts from
+_Why this matters_: Determines whether the gap analysis measures delta or starts from
 scratch. A CRITICAL regulatory change against a strong baseline may be LOW effort to
 remediate; the same change against no baseline may require months of program-building.
 
@@ -243,20 +252,20 @@ remediate; the same change against no baseline may require months of program-bui
 
 Which business units should the impact matrix cover? Select all that apply:
 
-| Business Unit | Common Regulatory Exposure |
-|---|---|
-| Legal / Compliance | All regulations; primary owner for most |
-| Privacy / Data Protection / DPO | Privacy, AI, data regulation |
-| Human Resources | Employment, pay transparency, AI in hiring |
-| IT / Information Security / CISO | Cybersecurity, HIPAA Security Rule, NIS2, DORA |
-| Finance / Treasury | Financial regulation, ESG/CSRD disclosure |
-| Procurement / Supply Chain | Third-party risk, AML, sanctions |
-| Product / Engineering | AI Act, consumer protection, product liability |
-| Sales / Customer Success | CCPA/CPRA, consumer rights, marketing regulations |
-| Operations / Facilities | Environmental, health & safety |
-| Board / Executive / Audit Committee | All material risks; oversight obligations |
+| Business Unit                       | Common Regulatory Exposure                        |
+| ----------------------------------- | ------------------------------------------------- |
+| Legal / Compliance                  | All regulations; primary owner for most           |
+| Privacy / Data Protection / DPO     | Privacy, AI, data regulation                      |
+| Human Resources                     | Employment, pay transparency, AI in hiring        |
+| IT / Information Security / CISO    | Cybersecurity, HIPAA Security Rule, NIS2, DORA    |
+| Finance / Treasury                  | Financial regulation, ESG/CSRD disclosure         |
+| Procurement / Supply Chain          | Third-party risk, AML, sanctions                  |
+| Product / Engineering               | AI Act, consumer protection, product liability    |
+| Sales / Customer Success            | CCPA/CPRA, consumer rights, marketing regulations |
+| Operations / Facilities             | Environmental, health & safety                    |
+| Board / Executive / Audit Committee | All material risks; oversight obligations         |
 
-*Why this matters*: A regulatory change with no procurement impact does not need to trigger
+_Why this matters_: A regulatory change with no procurement impact does not need to trigger
 a procurement workflow. Focused impact assessment prevents triage fatigue.
 
 **⟁ CLARIFY 5 — Risk Tolerance and Escalation Threshold**
@@ -271,7 +280,7 @@ What is the organization's risk tolerance for regulatory compliance?
   Escalate only CRITICAL; schedule HIGH; monitor MEDIUM; ignore LOW
 - **Board-prescribed** (board has set a specific compliance posture — describe it)
 
-*Why this matters*: Risk tolerance calibrates how many regulatory changes require active
+_Why this matters_: Risk tolerance calibrates how many regulatory changes require active
 remediation vs. monitoring-only. An organization under active regulatory scrutiny should
 use Conservative. An early-stage company with limited resources may use Aggressive with
 explicit awareness of the trade-offs.
@@ -284,6 +293,7 @@ state this assumption explicitly.
 ### Step 3: Load or Configure Regulatory Tracking Playbook
 
 A **Regulatory Tracking Playbook** defines the organization's standing positions on:
+
 - Which regulatory families are in scope for active monitoring
 - Minimum composite score thresholds for escalation vs. monitoring
 - Named owners for each regulatory area (Privacy Counsel, Employment Counsel, CISO, etc.)
@@ -322,17 +332,18 @@ impact assessment.
 
 #### Applicability Checklist
 
-| Question | Assessment | Notes |
-|----------|-----------|-------|
-| **Regulatory Status**: Is this regulation currently in force, proposed, adopted-but-not-yet-effective, or superseded? | [In Force / Proposed / Pending Effective Date: DATE / Superseded] | Proposed regulations warrant horizon tracking, not full impact assessment |
-| **Jurisdictional Nexus**: Does the organization operate in, sell to, employ workers in, or process data of residents in the affected jurisdiction? | [Yes / No / Partial — specify] | Remember: nexus is based on customer/employee/data subject location, not HQ |
-| **Entity Definition**: Does the organization fall within the regulated entity definition? (e.g., "covered entity," "controller," "operator," "large enterprise") | [Yes / No / Uncertain — flag for counsel] | Check definitions carefully; many regulations have size/activity thresholds |
-| **Threshold Exemptions**: Are there size, revenue, employee count, or data volume thresholds that might exempt the organization? | [No exemption / Exempt: [basis] / Uncertain — needs calculation] | Always show the threshold check math (e.g., "10M records threshold: org processes 15M — in scope") |
-| **Sector Carveouts**: Does the regulation carve out the organization's sector or regulated activity? | [No carveout / Carveout applies: [basis] / Sector overlay supersedes: [identify overlay]] | Sector-specific regulations often exempt or modify general rules |
-| **Transition / Grace Period**: Is there a transition period before the regulation is enforceable? | [No grace period / Grace period until: DATE / Interim obligations apply during transition] | Always distinguish effective date from enforcement date — these differ in many regulations |
-| **Grandfathering**: Are existing contracts, systems, or processes grandfathered? | [No / Yes: [scope and duration] / Unclear] | Grandfathering provisions can materially reduce remediation scope |
+| Question                                                                                                                                                         | Assessment                                                                                 | Notes                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| **Regulatory Status**: Is this regulation currently in force, proposed, adopted-but-not-yet-effective, or superseded?                                            | [In Force / Proposed / Pending Effective Date: DATE / Superseded]                          | Proposed regulations warrant horizon tracking, not full impact assessment                          |
+| **Jurisdictional Nexus**: Does the organization operate in, sell to, employ workers in, or process data of residents in the affected jurisdiction?               | [Yes / No / Partial — specify]                                                             | Remember: nexus is based on customer/employee/data subject location, not HQ                        |
+| **Entity Definition**: Does the organization fall within the regulated entity definition? (e.g., "covered entity," "controller," "operator," "large enterprise") | [Yes / No / Uncertain — flag for counsel]                                                  | Check definitions carefully; many regulations have size/activity thresholds                        |
+| **Threshold Exemptions**: Are there size, revenue, employee count, or data volume thresholds that might exempt the organization?                                 | [No exemption / Exempt: [basis] / Uncertain — needs calculation]                           | Always show the threshold check math (e.g., "10M records threshold: org processes 15M — in scope") |
+| **Sector Carveouts**: Does the regulation carve out the organization's sector or regulated activity?                                                             | [No carveout / Carveout applies: [basis] / Sector overlay supersedes: [identify overlay]]  | Sector-specific regulations often exempt or modify general rules                                   |
+| **Transition / Grace Period**: Is there a transition period before the regulation is enforceable?                                                                | [No grace period / Grace period until: DATE / Interim obligations apply during transition] | Always distinguish effective date from enforcement date — these differ in many regulations         |
+| **Grandfathering**: Are existing contracts, systems, or processes grandfathered?                                                                                 | [No / Yes: [scope and duration] / Unclear]                                                 | Grandfathering provisions can materially reduce remediation scope                                  |
 
 **Applicability Determination:**
+
 - **Confirmed Applicable** → Proceed to Step 5 (full impact assessment)
 - **Possibly Applicable** → Conduct a focused impact assessment; flag Uncertain items for counsel
 - **Confirmed Not Applicable** → Log in Regulatory Change Log as LOW with basis for
@@ -347,6 +358,7 @@ explicitly to the user:
 
 > "The regulation's entity definition is ambiguous as applied to your organization.
 > Two reasonable readings exist:
+>
 > - **Reading A** [describe]: Under this reading, your organization is [in scope / exempt].
 >   Confidence: [POSSIBLE / PROBABLE].
 > - **Reading B** [describe]: Under this reading, your organization is [in scope / exempt].
@@ -387,20 +399,20 @@ Score each regulatory change on two dimensions:
 
 **Composite Score = Applicability Score × Severity Score**
 
-| Composite Score | Classification | Response SLA |
-|-----------------|----------------|-------------|
-| 1–2 | **LOW** | Log; review in 60-day batch cycle |
-| 3–4 | **MEDIUM** | Assign owner; complete assessment within 20 business days; schedule in compliance calendar |
-| 6–9 | **HIGH** | Senior compliance officer review; complete assessment within 10 business days; begin remediation planning |
-| 12–16 | **CRITICAL** | Immediate escalation within 48 hours; C-suite and board notification; external counsel engagement; emergency workflow initiation |
+| Composite Score | Classification | Response SLA                                                                                                                     |
+| --------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| 1–2             | **LOW**        | Log; review in 60-day batch cycle                                                                                                |
+| 3–4             | **MEDIUM**     | Assign owner; complete assessment within 20 business days; schedule in compliance calendar                                       |
+| 6–9             | **HIGH**       | Senior compliance officer review; complete assessment within 10 business days; begin remediation planning                        |
+| 12–16           | **CRITICAL**   | Immediate escalation within 48 hours; C-suite and board notification; external counsel engagement; emergency workflow initiation |
 
 #### 5b. Business Unit Impact Matrix
 
 For each applicable regulatory change, assess impact across each relevant business unit:
 
-| Business Unit | Process Impact | Data Flow Impact | Contract Impact | Policy Impact | Technology Impact | Overall BU Score | Owner |
-|---|---|---|---|---|---|---|---|
-| [BU Name] | [H/M/L/None] | [H/M/L/None] | [H/M/L/None] | [H/M/L/None] | [H/M/L/None] | [H/M/L] | [Name/TBD] |
+| Business Unit | Process Impact | Data Flow Impact | Contract Impact | Policy Impact | Technology Impact | Overall BU Score | Owner      |
+| ------------- | -------------- | ---------------- | --------------- | ------------- | ----------------- | ---------------- | ---------- |
+| [BU Name]     | [H/M/L/None]   | [H/M/L/None]     | [H/M/L/None]    | [H/M/L/None]  | [H/M/L/None]      | [H/M/L]          | [Name/TBD] |
 
 **Process Impact**: Does the regulation change how a core business process must operate?
 (e.g., new consent requirements change how Sales captures customer consent)
@@ -442,12 +454,12 @@ When triggered, cross-reference with `legalcode-contract-review` for clause-leve
 
 For CRITICAL and HIGH impact changes, estimate:
 
-| Exposure Category | Basis | Estimate |
-|---|---|---|
-| **Maximum regulatory penalty** | Cite statutory maximum; note typical penalty range vs. maximum | [$ amount or formula] |
-| **Remediation cost** | FTE hours + technology + external counsel + training | [$50K–$500K for most; >$1M for major overhauls] |
-| **Business disruption** | Revenue at risk if operations must change; customer attrition if consumer-facing | [Scenario narrative] |
-| **D&O liability** | Board member/officer personal liability exposure (SEC, UK SM&CR, MiFID II) | [Flag if applicable] |
+| Exposure Category              | Basis                                                                            | Estimate                                        |
+| ------------------------------ | -------------------------------------------------------------------------------- | ----------------------------------------------- |
+| **Maximum regulatory penalty** | Cite statutory maximum; note typical penalty range vs. maximum                   | [$ amount or formula]                           |
+| **Remediation cost**           | FTE hours + technology + external counsel + training                             | [$50K–$500K for most; >$1M for major overhauls] |
+| **Business disruption**        | Revenue at risk if operations must change; customer attrition if consumer-facing | [Scenario narrative]                            |
+| **D&O liability**              | Board member/officer personal liability exposure (SEC, UK SM&CR, MiFID II)       | [Flag if applicable]                            |
 
 Confidence: [Definite / High / Probable / Possible / Unlikely] — cite basis for any estimate.
 
@@ -462,16 +474,16 @@ to identify gaps.
 
 Classify each identified gap into one of three types:
 
-| Gap Type | Definition | Example |
-|---|---|---|
-| **Absent** | Required control, policy, or procedure does not exist | No AI bias audit procedure exists, but Colorado AI Act requires one for deployers of high-risk AI |
-| **Insufficient** | Control exists but does not fully satisfy the requirement | Encryption policy exists but does not cover all transmission scenarios now mandatory under proposed HIPAA Security Rule |
-| **Outdated** | Control was compliant with a prior version of the regulation but the new version requires updating | Data retention policy complies with GDPR but does not address new CPPA requirements for sensitive data retention |
+| Gap Type         | Definition                                                                                         | Example                                                                                                                 |
+| ---------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Absent**       | Required control, policy, or procedure does not exist                                              | No AI bias audit procedure exists, but Colorado AI Act requires one for deployers of high-risk AI                       |
+| **Insufficient** | Control exists but does not fully satisfy the requirement                                          | Encryption policy exists but does not cover all transmission scenarios now mandatory under proposed HIPAA Security Rule |
+| **Outdated**     | Control was compliant with a prior version of the regulation but the new version requires updating | Data retention policy complies with GDPR but does not address new CPPA requirements for sensitive data retention        |
 
 #### Gap Analysis Report Structure
 
-| Requirement | Current Control | Gap Type | Risk Description | Severity | Remediation Action | Owner | Deadline | Evidence Required |
-|---|---|---|---|---|---|---|---|---|
+| Requirement                                             | Current Control   | Gap Type                           | Risk Description            | Severity                | Remediation Action             | Owner                         | Deadline                               | Evidence Required                                 |
+| ------------------------------------------------------- | ----------------- | ---------------------------------- | --------------------------- | ----------------------- | ------------------------------ | ----------------------------- | -------------------------------------- | ------------------------------------------------- |
 | [Specific regulatory requirement, cite article/section] | [What exists now] | [Absent / Insufficient / Outdated] | [What risk the gap creates] | [CRITICAL/HIGH/MED/LOW] | [Specific action to close gap] | [Business unit / Named owner] | [Date, calculated from effective date] | [What must be produced to demonstrate compliance] |
 
 #### Prioritization of Gap Remediation
@@ -506,19 +518,19 @@ For all CRITICAL, HIGH, and MEDIUM gaps, generate a milestone-based remediation 
 
 #### Workflow Template
 
-| # | Milestone | Responsible Owner | Start Date | Deadline | Deliverable | Dependencies | Status |
-|---|---|---|---|---|---|---|---|
-| 1 | Regulatory applicability confirmed by counsel | External / Internal Counsel | [TODAY] | [T+5 business days] | Written legal opinion on applicability | None | ☐ Pending |
-| 2 | Current state assessment complete | Compliance Lead + BU owners | [T+1] | [T+10 business days] | Gap Analysis Report (this document) | Milestone 1 | ☐ Pending |
-| 3 | Remediation plan approved by senior leadership | CISO / CPO / CLO | [T+10] | [T+15 business days] | Signed remediation plan with resources allocated | Milestone 2 | ☐ Pending |
-| 4 | Policy / procedure updates drafted | BU Owner + Legal | [T+15] | [T-90 days from effective date] | Draft policy/procedure documents | Milestone 3 | ☐ Pending |
-| 5 | Policy / procedure updates reviewed and approved | Senior Leadership / Board if CRITICAL | [draft +5 days] | [T-60 days from effective date] | Approved policy/procedure | Milestone 4 | ☐ Pending |
-| 6 | Technology changes implemented and tested | IT / Engineering | [T+15] | [T-45 days from effective date] | UAT sign-off; penetration test (if applicable) | Milestone 3 | ☐ Pending |
-| 7 | Training delivered to affected personnel | HR / L&D + Compliance | [T-45 days] | [T-14 days from effective date] | Training completion records (by employee) | Milestone 5 | ☐ Pending |
-| 8 | Contract review and updates complete | Legal / Contract Management | [T+15] | [T-30 days from effective date] | Updated contract templates; counterparty notifications sent | Milestones 3, 4 | ☐ Pending |
-| 9 | Vendor / third-party notifications complete | Procurement / Legal | [T+15] | [T-14 days from effective date] | Vendor notification log; amended DPAs/BAAs/agreements | Milestone 8 | ☐ Pending |
-| 10 | Compliance readiness assessment | Internal Audit / Compliance | [T-14 days] | [T-7 days from effective date] | Compliance readiness attestation | All prior milestones | ☐ Pending |
-| 11 | Board / Executive notification | CLO / CPO / CEO | [When CRITICAL determined] | [Within 48 hours of CRITICAL classification] | Board briefing memo | Milestone 2 | ☐ Pending (CRITICAL only) |
+| #   | Milestone                                        | Responsible Owner                     | Start Date                 | Deadline                                     | Deliverable                                                 | Dependencies         | Status                    |
+| --- | ------------------------------------------------ | ------------------------------------- | -------------------------- | -------------------------------------------- | ----------------------------------------------------------- | -------------------- | ------------------------- |
+| 1   | Regulatory applicability confirmed by counsel    | External / Internal Counsel           | [TODAY]                    | [T+5 business days]                          | Written legal opinion on applicability                      | None                 | ☐ Pending                 |
+| 2   | Current state assessment complete                | Compliance Lead + BU owners           | [T+1]                      | [T+10 business days]                         | Gap Analysis Report (this document)                         | Milestone 1          | ☐ Pending                 |
+| 3   | Remediation plan approved by senior leadership   | CISO / CPO / CLO                      | [T+10]                     | [T+15 business days]                         | Signed remediation plan with resources allocated            | Milestone 2          | ☐ Pending                 |
+| 4   | Policy / procedure updates drafted               | BU Owner + Legal                      | [T+15]                     | [T-90 days from effective date]              | Draft policy/procedure documents                            | Milestone 3          | ☐ Pending                 |
+| 5   | Policy / procedure updates reviewed and approved | Senior Leadership / Board if CRITICAL | [draft +5 days]            | [T-60 days from effective date]              | Approved policy/procedure                                   | Milestone 4          | ☐ Pending                 |
+| 6   | Technology changes implemented and tested        | IT / Engineering                      | [T+15]                     | [T-45 days from effective date]              | UAT sign-off; penetration test (if applicable)              | Milestone 3          | ☐ Pending                 |
+| 7   | Training delivered to affected personnel         | HR / L&D + Compliance                 | [T-45 days]                | [T-14 days from effective date]              | Training completion records (by employee)                   | Milestone 5          | ☐ Pending                 |
+| 8   | Contract review and updates complete             | Legal / Contract Management           | [T+15]                     | [T-30 days from effective date]              | Updated contract templates; counterparty notifications sent | Milestones 3, 4      | ☐ Pending                 |
+| 9   | Vendor / third-party notifications complete      | Procurement / Legal                   | [T+15]                     | [T-14 days from effective date]              | Vendor notification log; amended DPAs/BAAs/agreements       | Milestone 8          | ☐ Pending                 |
+| 10  | Compliance readiness assessment                  | Internal Audit / Compliance           | [T-14 days]                | [T-7 days from effective date]               | Compliance readiness attestation                            | All prior milestones | ☐ Pending                 |
+| 11  | Board / Executive notification                   | CLO / CPO / CEO                       | [When CRITICAL determined] | [Within 48 hours of CRITICAL classification] | Board briefing memo                                         | Milestone 2          | ☐ Pending (CRITICAL only) |
 
 Adapt this template to the specific regulation. Not all milestones apply to every change.
 
@@ -618,9 +630,9 @@ reporting requirements):
 ---
 
 **REGULATORY ALERT — [CLASSIFICATION]**
-*[Regulation Name] | [Jurisdiction] | Effective: [Date]*
-*Prepared for: [Board / Audit Committee / Executive Team]*
-*Date: [Today]*
+_[Regulation Name] | [Jurisdiction] | Effective: [Date]_
+_Prepared for: [Board / Audit Committee / Executive Team]_
+_Date: [Today]_
 
 **What Changed**
 [2-3 sentences in plain English — no regulatory jargon. What is the new requirement?
@@ -638,6 +650,7 @@ Maximum penalty: [$ or €], typical enforcement range: [range].
 Estimated remediation cost: [estimate].
 
 **Required Board Actions**
+
 - [ ] [Specific decision or authorization required from the board — be precise]
 - [ ] [Resource allocation approval if needed]
 - [ ] [Any SM&CR / SEC / MiFID II board member personal accountability obligations]
@@ -660,13 +673,13 @@ this process — execute it and revise the output as needed.
 
 #### 9a. Citation Quality Gates (6 Gates)
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **1 — Source** | Every regulatory requirement claim cites a specific statute, article, section, or regulation | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **2 — Format** | All citations follow a recognizable format for the jurisdiction (e.g., "GDPR Art. 28(1)"; "Cal. Civ. Code § 1798.100"; "29 C.F.R. Part 1630") | Fix citation format |
-| **3 — Currency** | Every cited provision checked for amendments, repeal, or supersession — regulations change more frequently than statutes | Flag "[CHECK CURRENCY — may have been amended]" |
-| **4 — Domain** | Analysis stays within the regulation's geographic and subject-matter scope. No assumptions from other jurisdictions leaking into the analysis | Remove or flag jurisdictional bleed |
-| **5 — Confidence** | Uncertainty explicitly stated. If a regulatory interpretation is genuinely contested or evolving, say so with confidence score | Add confidence qualifier; surface both readings |
+| Gate                      | Rule                                                                                                                                                    | Fail Action                                                  |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| **1 — Source**            | Every regulatory requirement claim cites a specific statute, article, section, or regulation                                                            | Add citation or mark "[UNVERIFIED — counsel to confirm]"     |
+| **2 — Format**            | All citations follow a recognizable format for the jurisdiction (e.g., "GDPR Art. 28(1)"; "Cal. Civ. Code § 1798.100"; "29 C.F.R. Part 1630")           | Fix citation format                                          |
+| **3 — Currency**          | Every cited provision checked for amendments, repeal, or supersession — regulations change more frequently than statutes                                | Flag "[CHECK CURRENCY — may have been amended]"              |
+| **4 — Domain**            | Analysis stays within the regulation's geographic and subject-matter scope. No assumptions from other jurisdictions leaking into the analysis           | Remove or flag jurisdictional bleed                          |
+| **5 — Confidence**        | Uncertainty explicitly stated. If a regulatory interpretation is genuinely contested or evolving, say so with confidence score                          | Add confidence qualifier; surface both readings              |
 | **6 — Regulatory Status** | Confirm the regulation is currently in force, not proposed, withdrawn, stayed, or superseded. Enforcement dates and transition periods explicitly noted | Flag "[REGULATORY STATUS UNCERTAIN — confirm before acting]" |
 
 #### 9b. Self-Interrogation for CRITICAL Classifications
@@ -675,17 +688,20 @@ For any regulatory change classified as CRITICAL, apply this 3-pass adversarial 
 before delivering the output:
 
 **Pass 1 — Applicability Chain Integrity**
+
 - Does the applicability determination follow logically from the statutory definition?
 - Would a regulator in this jurisdiction actually assert jurisdiction on these facts?
 - Is there a credible exemption or carveout the analysis may have missed?
 
 **Pass 2 — Completeness**
+
 - Have all related regulations and sector-specific overlays been considered?
 - Have all pending amendments or proposed changes that could modify the requirement been
   noted in the horizon tracking section?
 - Have all business units that could be affected been captured in the impact matrix?
 
 **Pass 3 — Challenge**
+
 - What is the strongest argument that the organization is NOT subject to this regulation?
 - Under what interpretation of the regulatory text would the compliance gap be smaller
   or non-existent?
@@ -701,17 +717,18 @@ Apply a confidence score to: (1) each jurisdiction applicability determination;
 (2) each impact severity score; (3) each regulatory interpretation cited as basis for a
 gap finding.
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Settled requirement, clear statutory text, confirmed applicability | State with confidence |
-| **High** | 0.80–0.94 | Strong basis, minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60–0.79 | Good arguments but regulatory guidance is limited or evolving | State with explicit reasoning and contra-indicators |
-| **Possible** | 0.40–0.59 | Genuinely uncertain — ambiguous text, no settled guidance, competing readings | Flag for counsel review with both sides presented |
-| **Unlikely** | 0.0–0.39 | Weak basis, speculative | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                                                       | Action                                                |
+| ------------ | --------- | ----------------------------------------------------------------------------- | ----------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Settled requirement, clear statutory text, confirmed applicability            | State with confidence                                 |
+| **High**     | 0.80–0.94 | Strong basis, minor interpretation questions                                  | State with brief caveat                               |
+| **Probable** | 0.60–0.79 | Good arguments but regulatory guidance is limited or evolving                 | State with explicit reasoning and contra-indicators   |
+| **Possible** | 0.40–0.59 | Genuinely uncertain — ambiguous text, no settled guidance, competing readings | Flag for counsel review with both sides presented     |
+| **Unlikely** | 0.0–0.39  | Weak basis, speculative                                                       | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
 
 #### 9d. [JURISDICTION-SPECIFIC] Marker Audit
 
 Before delivery, verify:
+
 - All regulatory requirements stated as universal are indeed universal and not
   jurisdiction-specific (e.g., not all jurisdictions require data minimization as
   strictly as GDPR)
@@ -729,27 +746,27 @@ Organize monitoring by velocity (how frequently the regulatory area changes):
 
 #### High Velocity (Daily / Weekly Monitoring)
 
-| Source | Coverage | URL |
-|--------|----------|-----|
-| Federal Register | All US federal regulations and proposed rules | federalregister.gov |
-| EUR-Lex | All EU legislation, delegated acts, implementing regulations | eur-lex.europa.eu |
-| EDPB Publications | GDPR guidance, adequacy decisions, enforcement opinions | edpb.europa.eu |
-| CPPA | California Privacy Protection Agency regulations | cppa.ca.gov |
-| IAPP US State AI Governance Tracker | US state AI legislation status | iapp.org |
-| Orrick US AI Law Tracker | All US state AI bills and enacted laws | ai-law-center.orrick.com |
-| SEC EDGAR / Rules | US securities regulations and interpretive releases | sec.gov/rules |
+| Source                              | Coverage                                                     | URL                      |
+| ----------------------------------- | ------------------------------------------------------------ | ------------------------ |
+| Federal Register                    | All US federal regulations and proposed rules                | federalregister.gov      |
+| EUR-Lex                             | All EU legislation, delegated acts, implementing regulations | eur-lex.europa.eu        |
+| EDPB Publications                   | GDPR guidance, adequacy decisions, enforcement opinions      | edpb.europa.eu           |
+| CPPA                                | California Privacy Protection Agency regulations             | cppa.ca.gov              |
+| IAPP US State AI Governance Tracker | US state AI legislation status                               | iapp.org                 |
+| Orrick US AI Law Tracker            | All US state AI bills and enacted laws                       | ai-law-center.orrick.com |
+| SEC EDGAR / Rules                   | US securities regulations and interpretive releases          | sec.gov/rules            |
 
 #### Moderate Velocity (Monthly Monitoring)
 
-| Source | Coverage | URL |
-|--------|----------|-----|
-| DLA Piper Data Protection World Map | Global privacy law comparison (100+ jurisdictions) | dlapiperdataprotection.com |
-| FINRA Annual Oversight Report | Current FINRA regulatory priorities (issued December annually) | finra.org |
-| FCA.org.uk | UK financial services regulation | fca.org.uk |
-| HIPAA Journal | HIPAA updates and enforcement | hipaajournal.com |
-| White & Case Global Non-Compete Resource Center | Non-compete law globally | whitecase.com |
-| Key ESG | ESG compliance tracking | keyesg.com |
-| Seyfarth Employment Law Horizon Report | US employment law changes | seyfarth.com |
+| Source                                          | Coverage                                                       | URL                        |
+| ----------------------------------------------- | -------------------------------------------------------------- | -------------------------- |
+| DLA Piper Data Protection World Map             | Global privacy law comparison (100+ jurisdictions)             | dlapiperdataprotection.com |
+| FINRA Annual Oversight Report                   | Current FINRA regulatory priorities (issued December annually) | finra.org                  |
+| FCA.org.uk                                      | UK financial services regulation                               | fca.org.uk                 |
+| HIPAA Journal                                   | HIPAA updates and enforcement                                  | hipaajournal.com           |
+| White & Case Global Non-Compete Resource Center | Non-compete law globally                                       | whitecase.com              |
+| Key ESG                                         | ESG compliance tracking                                        | keyesg.com                 |
+| Seyfarth Employment Law Horizon Report          | US employment law changes                                      | seyfarth.com               |
 
 #### Lower Velocity (Quarterly Monitoring)
 
@@ -777,45 +794,45 @@ table alone as regulations change rapidly.
 
 ### Privacy and Data Protection
 
-| Regulation | Status (as of 2026-03-01) | Key Deadline | Priority |
-|---|---|---|---|
-| **EU AI Act — GPAI** (Reg. 2024/1689, Chapter V) | **In force** | Aug 2, 2025 — GPAI providers must comply | CRITICAL for AI developers |
-| **EU AI Act — High-Risk Systems** (Annex III) | **Pending** | Aug 2, 2026 — conformity assessment required | HIGH for AI deployers in regulated sectors |
-| **California CPPA ADMT/Risk Assessment rules** | **Adopted (Sept 2025)** | Three compliance waves; first effective Jan 1, 2026 | CRITICAL for CA-facing organizations |
-| **DOJ Bulk Data Rule** (28 CFR Part 202) | **In force** | Effective April 8, 2025 | HIGH for any org with US gov't-related data or bulk personal data transferred to foreign persons |
-| **US State Privacy Laws** (20+ states) | **Various — ongoing** | Multiple deadlines 2025-2026 | HIGH — requires state-by-state matrix |
-| **Global Privacy Control (GPC)** compliance | **Enforced** (CA, CO, CT joint Sept 2025 sweep) | Immediate | HIGH for consumer-facing websites |
+| Regulation                                       | Status (as of 2026-03-01)                       | Key Deadline                                        | Priority                                                                                         |
+| ------------------------------------------------ | ----------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **EU AI Act — GPAI** (Reg. 2024/1689, Chapter V) | **In force**                                    | Aug 2, 2025 — GPAI providers must comply            | CRITICAL for AI developers                                                                       |
+| **EU AI Act — High-Risk Systems** (Annex III)    | **Pending**                                     | Aug 2, 2026 — conformity assessment required        | HIGH for AI deployers in regulated sectors                                                       |
+| **California CPPA ADMT/Risk Assessment rules**   | **Adopted (Sept 2025)**                         | Three compliance waves; first effective Jan 1, 2026 | CRITICAL for CA-facing organizations                                                             |
+| **DOJ Bulk Data Rule** (28 CFR Part 202)         | **In force**                                    | Effective April 8, 2025                             | HIGH for any org with US gov't-related data or bulk personal data transferred to foreign persons |
+| **US State Privacy Laws** (20+ states)           | **Various — ongoing**                           | Multiple deadlines 2025-2026                        | HIGH — requires state-by-state matrix                                                            |
+| **Global Privacy Control (GPC)** compliance      | **Enforced** (CA, CO, CT joint Sept 2025 sweep) | Immediate                                           | HIGH for consumer-facing websites                                                                |
 
 ### AI Regulation
 
-| Regulation | Status | Key Deadline | Priority |
-|---|---|---|---|
-| **EU AI Act — Prohibited Practices** (Title II) | **In force** | Feb 2, 2025 — already effective | CRITICAL for any EU-market AI developer/deployer |
-| **California SB 53** (Frontier AI Transparency) | **In force** | Jan 1, 2026 | CRITICAL for frontier AI developers (>10²⁶ FLOPS) |
-| **Colorado SB 24-205** (AI Act) | **Pending** | June 30, 2026 — deployers of high-risk AI | HIGH for CO-market AI deployers |
-| **Illinois IHRA AI Amendment** | **In force** | Jan 1, 2026 — AI video interview disclosure | HIGH for IL employers using AI hiring tools |
-| **NIST AI RMF** (March 2025 update) | **Published** | Voluntary; increasing regulatory incorporation | MEDIUM (voluntary; HIGH if incorporated by sector regulator) |
+| Regulation                                      | Status        | Key Deadline                                   | Priority                                                     |
+| ----------------------------------------------- | ------------- | ---------------------------------------------- | ------------------------------------------------------------ |
+| **EU AI Act — Prohibited Practices** (Title II) | **In force**  | Feb 2, 2025 — already effective                | CRITICAL for any EU-market AI developer/deployer             |
+| **California SB 53** (Frontier AI Transparency) | **In force**  | Jan 1, 2026                                    | CRITICAL for frontier AI developers (>10²⁶ FLOPS)            |
+| **Colorado SB 24-205** (AI Act)                 | **Pending**   | June 30, 2026 — deployers of high-risk AI      | HIGH for CO-market AI deployers                              |
+| **Illinois IHRA AI Amendment**                  | **In force**  | Jan 1, 2026 — AI video interview disclosure    | HIGH for IL employers using AI hiring tools                  |
+| **NIST AI RMF** (March 2025 update)             | **Published** | Voluntary; increasing regulatory incorporation | MEDIUM (voluntary; HIGH if incorporated by sector regulator) |
 
 ### Financial Services
 
-| Regulation | Status | Key Deadline | Priority |
-|---|---|---|---|
-| **SEC Reg S-P** (amended 2024) | **In force** | Larger firms: Dec 3, 2025; Smaller: June 3, 2026 | CRITICAL for SEC-registered entities |
-| **EU AMLA** (Anti-Money Laundering Authority) | **Established** | Ongoing enforcement expansion | HIGH for EU financial services |
+| Regulation                                    | Status          | Key Deadline                                     | Priority                             |
+| --------------------------------------------- | --------------- | ------------------------------------------------ | ------------------------------------ |
+| **SEC Reg S-P** (amended 2024)                | **In force**    | Larger firms: Dec 3, 2025; Smaller: June 3, 2026 | CRITICAL for SEC-registered entities |
+| **EU AMLA** (Anti-Money Laundering Authority) | **Established** | Ongoing enforcement expansion                    | HIGH for EU financial services       |
 
 ### Healthcare
 
-| Regulation | Status | Key Deadline | Priority |
-|---|---|---|---|
+| Regulation                                            | Status                      | Key Deadline                                             | Priority                                                                                 |
+| ----------------------------------------------------- | --------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | **Proposed HIPAA Security Rule** (89 Fed. Reg. 90414) | **Proposed** (Dec 27, 2024) | Final rule expected ~May 2026; 240-day compliance window | CRITICAL for HIPAA covered entities — begin gap analysis now [VERIFY: final rule status] |
-| **42 CFR Part 2** (substance use records) | **In force** | Full compliance Feb 16, 2026 | HIGH for substance use disorder treatment providers |
+| **42 CFR Part 2** (substance use records)             | **In force**                | Full compliance Feb 16, 2026                             | HIGH for substance use disorder treatment providers                                      |
 
 ### Environmental / ESG
 
-| Regulation | Status | Key Deadline | Priority |
-|---|---|---|---|
-| **EU CSRD** (Directive 2022/2464/EU) | **In force** | Wave 1 filed FY2024 (2025); Wave 2: FY2025 (2026) | CRITICAL for large EU PIEs and Wave 2 companies |
-| **California SB 253** (GHG disclosure) | **In force** | Scope 1+2: 2026; Scope 3: 2027 | HIGH for >$1B revenue companies doing business in CA |
+| Regulation                             | Status       | Key Deadline                                      | Priority                                             |
+| -------------------------------------- | ------------ | ------------------------------------------------- | ---------------------------------------------------- |
+| **EU CSRD** (Directive 2022/2464/EU)   | **In force** | Wave 1 filed FY2024 (2025); Wave 2: FY2025 (2026) | CRITICAL for large EU PIEs and Wave 2 companies      |
+| **California SB 253** (GHG disclosure) | **In force** | Scope 1+2: 2026; Scope 3: 2027                    | HIGH for >$1B revenue companies doing business in CA |
 
 [VERIFY all entries above against current official sources before acting. This table
 reflects conditions as of 2026-03-01 and will be outdated by the time of use.]
@@ -829,10 +846,12 @@ Use this reference when scoring the impact dimension of the composite scoring ma
 ### CRITICAL — Immediate Action (48-Hour Escalation)
 
 A regulatory change is CRITICAL when ALL of the following apply:
+
 - Confirmed applicable (Applicability Score 4) or probably applicable (Score 3) AND
 - Structural program change required (Severity Score 4)
 
 Indicators:
+
 - Effective date within 90 days
 - Criminal liability, mandatory reporting obligations, or license revocation risk
 - Affects core revenue-generating operations or customer relationships
@@ -841,6 +860,7 @@ Indicators:
 - Board personal liability exposure (SEC, UK SM&CR, MiFID II senior manager functions)
 
 **Action protocol**:
+
 1. Notify C-suite and board within 48 hours
 2. Engage external regulatory counsel immediately
 3. Initiate emergency remediation plan with daily status tracking
@@ -850,11 +870,13 @@ Indicators:
 ### HIGH — Priority Response (15 Business Days)
 
 A regulatory change is HIGH when:
+
 - Composite score 6–9 (usually Applicability 3–4 × Severity 2–3)
 - Effective date within 90–180 days, OR
 - Already effective (late notification) with enforcement actively occurring
 
 **Action protocol**:
+
 1. Notify senior compliance officer and relevant business unit leads within 5 business days
 2. Complete applicability assessment within 10 business days
 3. Complete gap analysis within 15 business days
@@ -864,11 +886,13 @@ A regulatory change is HIGH when:
 ### MEDIUM — Scheduled Response (20 Business Days)
 
 A regulatory change is MEDIUM when:
+
 - Composite score 3–4
 - Effective date 180+ days out, OR
 - Already effective with low enforcement probability / grace period in effect / safe harbor available
 
 **Action protocol**:
+
 1. Assign to named compliance owner
 2. Schedule in compliance calendar with 90/60/30/14-day advance reminders
 3. Complete assessment within 20 business days
@@ -877,12 +901,14 @@ A regulatory change is MEDIUM when:
 ### LOW — Monitor and Log
 
 A regulatory change is LOW when:
+
 - Does not apply (Applicability Score 1), OR
 - Composite score 1–2, OR
 - Guidance-only with no binding enforcement, OR
 - Organization already compliant
 
 **Action protocol**:
+
 1. Log in Regulatory Change Log with basis for LOW classification
 2. Archive in regulatory intelligence database
 3. Set 12-month re-evaluation trigger (organizational circumstances change)
@@ -895,6 +921,7 @@ When multiple regulatory changes require simultaneous attention, prioritize usin
 three-tier framework:
 
 ### Tier 1 — Must Address (All CRITICAL changes)
+
 - Effective date < 90 days
 - Criminal liability or license revocation risk
 - Board personal liability exposure
@@ -902,18 +929,21 @@ three-tier framework:
 - Joint enforcement sweep already underway (peer companies receiving fines)
 
 ### Tier 2 — Should Address (HIGH changes and Material MEDIUM changes)
+
 - Effective date 90–180 days
 - Significant financial exposure ($50K–$1M)
 - Cross-functional coordination required
 - Sector regulator attention (enforcement actions against peers increasing)
 
 ### Tier 3 — Schedule (Remaining MEDIUM and tracked LOW changes)
+
 - Effective date 180+ days
 - Limited operational impact
 - Monitoring-only pending further regulatory developments
 - Proposed rules not yet adopted
 
 **When Tier 1 items compete for resources**, sequence by:
+
 1. Effective date (earliest first)
 2. Enforcement probability (regulators actively issuing fines > regulators publishing guidance)
 3. Business criticality (core operations > support functions)
@@ -959,6 +989,7 @@ three-tier framework:
 ### Manual / Spreadsheet
 
 For organizations without GRC platforms, provide:
+
 - A structured Excel/Google Sheets Regulatory Change Log template
 - A compliance calendar CSV for import into Outlook / Google Calendar
 - A board reporting template in structured Markdown
@@ -1063,6 +1094,7 @@ monitoring research.
 ### Quality Gates Before Delivery
 
 Before delivering any output, verify:
+
 - [ ] Can a non-lawyer business stakeholder understand the executive summary in 2 minutes?
 - [ ] Can each assigned owner understand their specific task, deadline, and deliverable?
 - [ ] Is every regulatory requirement backed by a specific citation (or marked [VERIFY])?
@@ -1078,6 +1110,7 @@ Before delivering any output, verify:
 ### legalcode-mcp (Preferred for Legal Research)
 
 When legalcode-mcp is connected:
+
 - Search for current statutory text of the identified regulation
 - Verify effective dates, transition periods, and any pending amendments
 - Retrieve relevant enforcement decisions and regulatory guidance
@@ -1087,27 +1120,34 @@ Save research output to `/tmp/legalcode-regulatory-change-authority.md`:
 
 ```markdown
 # Regulatory Authority Research — [Regulation Name]
+
 ## Research Date: [date]
 
 ### Primary Statutory Text
+
 - [Regulation, article/section, key provision text — VERIFIED via legalcode-mcp]
 
 ### Regulatory Guidance
+
 - [Regulator, guidance name, date, key interpretive positions — VERIFIED]
 
 ### Enforcement Decisions
+
 - [Enforcing authority, case reference, penalty, key compliance factor — VERIFIED]
 
 ### Pending Amendments / Proposed Changes
+
 - [Amendment, publication date, expected adoption — VERIFIED]
 
 ### Related Regulations / Sector Overlays
+
 - [Cross-reference to related regulation — VERIFIED]
 ```
 
 Mark all legalcode-mcp-sourced citations as `VERIFIED` in the Glass Box audit trail.
 
 **Without legalcode-mcp:**
+
 - Proceed with perplexity-search or web research and repository analysis
 - Mark all regulatory references in the output with [VERIFY]
 - Note in Glass Box: `legalcode_mcp: "Not connected"`
@@ -1117,6 +1157,7 @@ Mark all legalcode-mcp-sourced citations as `VERIFIED` in the Glass Box audit tr
 ### GRC Platform MCP
 
 If a GRC platform MCP server is available (ServiceNow, MetricStream, Archer, OneTrust):
+
 - Push the completed Regulatory Change Record directly to the GRC platform
 - Query existing control inventory to inform the gap analysis
 - Retrieve current compliance calendar to identify deadline conflicts
@@ -1129,7 +1170,7 @@ Step 7 for manual import.
 
 ## Output Format Template
 
-```markdown
+````markdown
 ## Regulatory Change Impact Assessment
 
 **Regulation**: [Full name, citation, and issuing authority]
@@ -1154,31 +1195,31 @@ business impact is for this specific organization. Lead with business impact.]
 **Overall Applicability**: [Confirmed / Possible / Not Applicable / Pending Counsel]
 **Confidence**: [Definite / High / Probable / Possible / Unlikely] — [rationale]
 
-| Question | Assessment | Confidence | Notes |
-|----------|-----------|-----------|-------|
-| Regulatory Status | [In Force / Pending / Proposed] | [level] | [notes] |
-| Jurisdictional Nexus | [Yes / No / Partial] | [level] | [notes] |
-| Entity Definition | [In scope / Exempt / Uncertain] | [level] | [notes] |
-| Threshold Exemptions | [No exemption / Exempt / Uncertain] | [level] | [notes] |
-| Sector Carveouts | [No carveout / Carveout applies] | [level] | [notes] |
-| Transition / Grace Period | [None / Until DATE] | [level] | [notes] |
-| Grandfathering | [No / Yes: scope and duration] | [level] | [notes] |
+| Question                  | Assessment                          | Confidence | Notes   |
+| ------------------------- | ----------------------------------- | ---------- | ------- |
+| Regulatory Status         | [In Force / Pending / Proposed]     | [level]    | [notes] |
+| Jurisdictional Nexus      | [Yes / No / Partial]                | [level]    | [notes] |
+| Entity Definition         | [In scope / Exempt / Uncertain]     | [level]    | [notes] |
+| Threshold Exemptions      | [No exemption / Exempt / Uncertain] | [level]    | [notes] |
+| Sector Carveouts          | [No carveout / Carveout applies]    | [level]    | [notes] |
+| Transition / Grace Period | [None / Until DATE]                 | [level]    | [notes] |
+| Grandfathering            | [No / Yes: scope and duration]      | [level]    | [notes] |
 
 ---
 
 ## Composite Impact Score
 
-| | Applicability Score | Severity Score | Composite Score | Classification |
-|---|---|---|---|---|
-| **This Regulation** | [1–4] | [1–4] | [1–16] | **[CRITICAL / HIGH / MEDIUM / LOW]** |
+|                     | Applicability Score | Severity Score | Composite Score | Classification                       |
+| ------------------- | ------------------- | -------------- | --------------- | ------------------------------------ |
+| **This Regulation** | [1–4]               | [1–4]          | [1–16]          | **[CRITICAL / HIGH / MEDIUM / LOW]** |
 
 ---
 
 ## Business Unit Impact Matrix
 
-| Business Unit | Process | Data Flow | Contract | Policy | Technology | BU Score | Owner |
-|---|---|---|---|---|---|---|---|
-| [BU] | [H/M/L/—] | [H/M/L/—] | [H/M/L/—] | [H/M/L/—] | [H/M/L/—] | [H/M/L] | [Name/TBD] |
+| Business Unit | Process   | Data Flow | Contract  | Policy    | Technology | BU Score | Owner      |
+| ------------- | --------- | --------- | --------- | --------- | ---------- | -------- | ---------- |
+| [BU]          | [H/M/L/—] | [H/M/L/—] | [H/M/L/—] | [H/M/L/—] | [H/M/L/—]  | [H/M/L]  | [Name/TBD] |
 
 **Contract Review Triggered**: [YES / NO]
 
@@ -1186,19 +1227,19 @@ business impact is for this specific organization. Lead with business impact.]
 
 ## Gap Analysis
 
-| Requirement | Current State | Gap Type | Risk | Severity | Action | Owner | Deadline | Evidence |
-|---|---|---|---|---|---|---|---|---|
-| [Cite art./section] | [Current control] | [Absent/Insuf./Outdated] | [Risk] | [H/M/L] | [Action] | [Owner] | [Date] | [Evidence] |
+| Requirement         | Current State     | Gap Type                 | Risk   | Severity | Action   | Owner   | Deadline | Evidence   |
+| ------------------- | ----------------- | ------------------------ | ------ | -------- | -------- | ------- | -------- | ---------- |
+| [Cite art./section] | [Current control] | [Absent/Insuf./Outdated] | [Risk] | [H/M/L]  | [Action] | [Owner] | [Date]   | [Evidence] |
 
 ---
 
 ## Financial Exposure
 
-| Exposure Category | Estimate | Confidence | Basis |
-|---|---|---|---|
-| Maximum penalty | [$ amount] | [level] | [statutory cite] |
-| Remediation cost | [$ range] | [level] | [basis] |
-| Business disruption | [scenario] | [level] | [basis] |
+| Exposure Category   | Estimate   | Confidence | Basis            |
+| ------------------- | ---------- | ---------- | ---------------- |
+| Maximum penalty     | [$ amount] | [level]    | [statutory cite] |
+| Remediation cost    | [$ range]  | [level]    | [basis]          |
+| Business disruption | [scenario] | [level]    | [basis]          |
 
 ---
 
@@ -1271,6 +1312,8 @@ glass_box:
     - "[Any jurisdiction-specific caveats]"
   reviewer: "AI-assisted compliance analysis — requires qualified legal review before implementation"
 ```
+````
+
 ```
 
 ---
@@ -1321,3 +1364,4 @@ Created by Legalcode (2026-03-01). Original synthesis built from:
 
 All legal references carry [VERIFY] status unless verified via legalcode-mcp. This skill
 was created using the `legalcode-skill-enhancement` methodology.
+```

@@ -1,7 +1,16 @@
 ---
 title: Service Level Agreement — EU/EEA (DORA + NIS2 + CRA + Data Act)
 jurisdictions: [eu, eea, de]
-statutes: [DORA-2022/2554, NIS2-2022/2555, CRA-2024/2847, Data-Act-2023/2854, GDPR, ePrivacy-2002/58/EC, BSI-KritisV]
+statutes:
+  [
+    DORA-2022/2554,
+    NIS2-2022/2555,
+    CRA-2024/2847,
+    Data-Act-2023/2854,
+    GDPR,
+    ePrivacy-2002/58/EC,
+    BSI-KritisV,
+  ]
 audience: [B2B]
 license: MIT
 last_updated: 2026-04-28
@@ -159,12 +168,12 @@ This Section sets out how quickly Vendor will respond to and resolve support req
 
 **Severity matrix.** Severity classification, response targets and resolution targets are set out in Annex A. By default:
 
-| Severity | First response | Update cadence | Resolution / workaround |
-|----------|----------------|----------------|--------------------------|
-| Severity 1 (production outage) | `{{P1 Response Target}}` (default: 15 minutes) | Every 60 minutes | `{{P1 Resolution Target}}` (default: 4 hours) |
-| Severity 2 (major degradation) | `{{P2 Response Target}}` (default: 1 hour) | Every 4 hours | 1 Working Day |
-| Severity 3 (minor issue) | `{{P3 Response Target}}` (default: 4 Business Hours) | Daily | 5 Working Days |
-| Severity 4 (question / cosmetic) | `{{P4 Response Target}}` (default: 1 Working Day) | Weekly | Best effort |
+| Severity                         | First response                                       | Update cadence   | Resolution / workaround                       |
+| -------------------------------- | ---------------------------------------------------- | ---------------- | --------------------------------------------- |
+| Severity 1 (production outage)   | `{{P1 Response Target}}` (default: 15 minutes)       | Every 60 minutes | `{{P1 Resolution Target}}` (default: 4 hours) |
+| Severity 2 (major degradation)   | `{{P2 Response Target}}` (default: 1 hour)           | Every 4 hours    | 1 Working Day                                 |
+| Severity 3 (minor issue)         | `{{P3 Response Target}}` (default: 4 Business Hours) | Daily            | 5 Working Days                                |
+| Severity 4 (question / cosmetic) | `{{P4 Response Target}}` (default: 1 Working Day)    | Weekly           | Best effort                                   |
 
 **Resolution vs. workaround.** A target is met when Vendor delivers either a permanent fix or a documented workaround that materially restores the affected functionality. Vendor will not knowingly close a ticket on a workaround basis without informing Customer.
 
@@ -183,10 +192,10 @@ This Section sets out the credits Customer receives if Monthly Uptime Percentage
 **Tiered credits.** Service Credits are calculated as a percentage of the Monthly Service Fees for the affected Covered Service in the Calendar Month in which the Availability Target was missed. The default tiered table is set out in Annex B and reproduced below for reference at the 99.9% Availability Target:
 
 | Monthly Uptime Percentage | Service Credit |
-|---------------------------|----------------|
-| < 99.9% but ≥ 99.0% | 10% |
-| < 99.0% but ≥ 95.0% | 25% |
-| < 95.0% | 50% |
+| ------------------------- | -------------- |
+| < 99.9% but ≥ 99.0%       | 10%            |
+| < 99.0% but ≥ 95.0%       | 25%            |
+| < 95.0%                   | 50%            |
 
 Higher Availability Targets use a steeper schedule; lower targets use a shallower schedule. The full schedules for 99.5%, 99.9%, 99.95% and 99.99% targets are set out in Annex B.
 
@@ -426,12 +435,12 @@ This Section adds Germany-specific overlays where Customer or Vendor is establis
 
 This Annex defines the four Severity levels referenced in Section 6 and Annex B.
 
-| Severity | Definition | First response | Update cadence | Resolution / workaround |
-|----------|------------|----------------|----------------|--------------------------|
-| Severity 1 | Production outage of a Covered Service or critical-feature loss preventing Customer's normal use; no available workaround. Includes events likely to be classified as a Significant Incident under NIS2 Article 23, a Major ICT-related Incident under DORA Article 18, or a severe incident under CRA Article 14. | `{{P1 Response Target}}` (default: 15 minutes) | Every 60 minutes | `{{P1 Resolution Target}}` (default: 4 hours) |
-| Severity 2 | Major degradation or non-critical feature outage materially affecting Customer's use; a partial workaround may exist. | `{{P2 Response Target}}` (default: 1 hour) | Every 4 hours | 1 Working Day |
-| Severity 3 | Minor issue not materially affecting Customer's use; workaround available; cosmetic or low-impact functional issue. | `{{P3 Response Target}}` (default: 4 Business Hours) | Daily | 5 Working Days |
-| Severity 4 | Question, configuration request, documentation issue, or feature request. | `{{P4 Response Target}}` (default: 1 Working Day) | Weekly | Best effort |
+| Severity   | Definition                                                                                                                                                                                                                                                                                                         | First response                                       | Update cadence   | Resolution / workaround                       |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- | ---------------- | --------------------------------------------- |
+| Severity 1 | Production outage of a Covered Service or critical-feature loss preventing Customer's normal use; no available workaround. Includes events likely to be classified as a Significant Incident under NIS2 Article 23, a Major ICT-related Incident under DORA Article 18, or a severe incident under CRA Article 14. | `{{P1 Response Target}}` (default: 15 minutes)       | Every 60 minutes | `{{P1 Resolution Target}}` (default: 4 hours) |
+| Severity 2 | Major degradation or non-critical feature outage materially affecting Customer's use; a partial workaround may exist.                                                                                                                                                                                              | `{{P2 Response Target}}` (default: 1 hour)           | Every 4 hours    | 1 Working Day                                 |
+| Severity 3 | Minor issue not materially affecting Customer's use; workaround available; cosmetic or low-impact functional issue.                                                                                                                                                                                                | `{{P3 Response Target}}` (default: 4 Business Hours) | Daily            | 5 Working Days                                |
+| Severity 4 | Question, configuration request, documentation issue, or feature request.                                                                                                                                                                                                                                          | `{{P4 Response Target}}` (default: 1 Working Day)    | Weekly           | Best effort                                   |
 
 **Severity assignment.** Severity is initially assigned by Customer when raising the ticket and may be re-assigned by Vendor with prompt notification to Customer if Vendor reasonably considers a different Severity is warranted. Disputes about Severity are escalated under the dispute-resolution clause of the CSA.
 
@@ -443,12 +452,12 @@ This Annex sets out the Service Credit schedule referenced in Section 7.
 
 **Combined schedule by Availability Target.**
 
-| Tier | Sub-target band 1 | Credit | Band 2 | Credit | Band 3 | Credit |
-|------|-------------------|--------|--------|--------|--------|--------|
-| 99.5% (Vendor-favourable) | <99.5% ≥99.0% | 5% | <99.0% ≥95.0% | 10% | <95.0% | 25% |
-| 99.9% (market-standard) | <99.9% ≥99.0% | 10% | <99.0% ≥95.0% | 25% | <95.0% | 50% |
-| 99.95% (Customer-favourable) | <99.95% ≥99.5% | 15% | <99.5% ≥99.0% | 30% | <99.0% | 50% |
-| 99.99% (Financial-Entity) | <99.99% ≥99.9% | 20% | <99.9% ≥99.0% | 40% | <99.0% | 75%* |
+| Tier                         | Sub-target band 1 | Credit | Band 2        | Credit | Band 3 | Credit |
+| ---------------------------- | ----------------- | ------ | ------------- | ------ | ------ | ------ |
+| 99.5% (Vendor-favourable)    | <99.5% ≥99.0%     | 5%     | <99.0% ≥95.0% | 10%    | <95.0% | 25%    |
+| 99.9% (market-standard)      | <99.9% ≥99.0%     | 10%    | <99.0% ≥95.0% | 25%    | <95.0% | 50%    |
+| 99.95% (Customer-favourable) | <99.95% ≥99.5%    | 15%    | <99.5% ≥99.0% | 30%    | <99.0% | 50%    |
+| 99.99% (Financial-Entity)    | <99.99% ≥99.9%    | 20%    | <99.9% ≥99.0% | 40%    | <99.0% | 75%\*  |
 
 \* Cap removed for outages exceeding `{{Major Outage Hours}}` at the 99.99% tier.
 

@@ -1,7 +1,16 @@
 ---
 title: Order Form — United States
 jurisdictions: [us, us-ca, us-ny, us-il, us-tx, us-de]
-statutes: [CCPA, ARLDA-CA, GBL-527-a-NY, ARLDA-IL, ROSCA, FTC-Click-to-Cancel, UCC-2-201]
+statutes:
+  [
+    CCPA,
+    ARLDA-CA,
+    GBL-527-a-NY,
+    ARLDA-IL,
+    ROSCA,
+    FTC-Click-to-Cancel,
+    UCC-2-201,
+  ]
 audience: [B2B]
 license: MIT
 last_updated: 2026-04-29
@@ -24,6 +33,7 @@ This Order Form sets out what `{{Customer Legal Name}}` is buying from `{{Vendor
 This section identifies the contracting parties and the people who receive operational notices.
 
 **Vendor (Provider).**
+
 - Legal name: `{{Vendor Legal Name}}`
 - Form of entity / state of formation: `{{Vendor Entity Form}}` / `{{Vendor State of Formation}}`
 - Principal place of business: `{{Vendor Address}}`
@@ -33,6 +43,7 @@ This section identifies the contracting parties and the people who receive opera
 - Security / incident contact: `{{Vendor Security Email}}`
 
 **Customer.**
+
 - Legal name: `{{Customer Legal Name}}`
 - Form of entity / state of formation: `{{Customer Entity Form}}` / `{{Customer State of Formation}}`
 - Billing address: `{{Customer Billing Address}}`
@@ -148,11 +159,13 @@ This section says where to send legal notices about this Order Form specifically
 Notices (renewal, non-renewal, suspension, breach, termination) are validly given by (a) overnight courier with tracking and signature, (b) US certified mail, return receipt requested, or (c) email with delivery confirmation. A notice is effective on the earlier of actual receipt, two business days after courier dispatch, or three business days after USPS deposit. Email notices are effective on confirmed delivery if a courier or postal copy is dispatched within 48 hours.
 
 **To Vendor:**
+
 - Postal: `{{Vendor Notice Postal Address}}`
 - Attn: `{{Vendor Notice Attn}}`
 - Email: `{{Vendor Notice Email}}`
 
 **To Customer:**
+
 - Postal: `{{Customer Notice Postal Address}}`
 - Attn: `{{Customer Notice Attn}}`
 - Email: `{{Customer Notice Email}}`
@@ -169,35 +182,35 @@ Signatures may be handwritten, facsimile, scanned PDF, or via a compliant e-sign
 
 Each signatory represents that they have corporate authority to bind their party. For orders with TCV at or above USD 100,000, Customer's signatory must hold Vice President or higher office (or, for non-corporate entities, a comparable executive position).
 
-| Vendor | Customer |
-|---|---|
-| `{{Vendor Legal Name}}` | `{{Customer Legal Name}}` |
-| Signature: ______________________ | Signature: ______________________ |
-| Name: `{{Vendor Signatory Name}}` | Name: `{{Customer Signatory Name}}` |
-| Title: `{{Vendor Signatory Title}}` | Title: `{{Customer Signatory Title}}` |
-| Date: `{{Vendor Signature Date}}` | Date: `{{Customer Signature Date}}` |
+| Vendor                                          | Customer                                        |
+| ----------------------------------------------- | ----------------------------------------------- |
+| `{{Vendor Legal Name}}`                         | `{{Customer Legal Name}}`                       |
+| Signature: \***\*\*\*\*\***\_\_\***\*\*\*\*\*** | Signature: \***\*\*\*\*\***\_\_\***\*\*\*\*\*** |
+| Name: `{{Vendor Signatory Name}}`               | Name: `{{Customer Signatory Name}}`             |
+| Title: `{{Vendor Signatory Title}}`             | Title: `{{Customer Signatory Title}}`           |
+| Date: `{{Vendor Signature Date}}`               | Date: `{{Customer Signature Date}}`             |
 
 ---
 
 ## Schedule 1 — Line items, quantities, and pricing
 
-| # | Service / SKU | Quantity | Unit | Unit price `{{Currency}}` | Term | Line total `{{Currency}}` |
-|---|---|---|---|---|---|---|
-| 1 | `{{SKU 1}}` | `{{Qty 1}}` | `{{Unit 1}}` | `{{Unit Price 1}}` | `{{Term 1}}` | `{{Line Total 1}}` |
-| 2 | `{{SKU 2}}` | `{{Qty 2}}` | `{{Unit 2}}` | `{{Unit Price 2}}` | `{{Term 2}}` | `{{Line Total 2}}` |
-| 3 | `{{SKU 3}}` | `{{Qty 3}}` | `{{Unit 3}}` | `{{Unit Price 3}}` | `{{Term 3}}` | `{{Line Total 3}}` |
-| | | | | **Subtotal:** | | `{{Subtotal}}` |
-| | | | | **Discount:** | | `{{Discount Amount}}` |
-| | | | | **Total Contract Value (excl. tax):** | | `{{TCV}}` |
+| #   | Service / SKU | Quantity    | Unit         | Unit price `{{Currency}}`             | Term         | Line total `{{Currency}}` |
+| --- | ------------- | ----------- | ------------ | ------------------------------------- | ------------ | ------------------------- |
+| 1   | `{{SKU 1}}`   | `{{Qty 1}}` | `{{Unit 1}}` | `{{Unit Price 1}}`                    | `{{Term 1}}` | `{{Line Total 1}}`        |
+| 2   | `{{SKU 2}}`   | `{{Qty 2}}` | `{{Unit 2}}` | `{{Unit Price 2}}`                    | `{{Term 2}}` | `{{Line Total 2}}`        |
+| 3   | `{{SKU 3}}`   | `{{Qty 3}}` | `{{Unit 3}}` | `{{Unit Price 3}}`                    | `{{Term 3}}` | `{{Line Total 3}}`        |
+|     |               |             |              | **Subtotal:**                         |              | `{{Subtotal}}`            |
+|     |               |             |              | **Discount:**                         |              | `{{Discount Amount}}`     |
+|     |               |             |              | **Total Contract Value (excl. tax):** |              | `{{TCV}}`                 |
 
 ## Schedule 2 — Permitted affiliates
 
 Customer Affiliates entitled to use the Services. Each Affiliate's use is on the same terms and counts against Customer's Quantity.
 
-| Affiliate legal name | State of formation | Relationship to Customer | Effective date |
-|---|---|---|---|
-| `{{Affiliate 1}}` | `{{Affiliate 1 State}}` | `{{Affiliate 1 Relationship}}` | `{{Affiliate 1 Effective Date}}` |
-| `{{Affiliate 2}}` | `{{Affiliate 2 State}}` | `{{Affiliate 2 Relationship}}` | `{{Affiliate 2 Effective Date}}` |
+| Affiliate legal name | State of formation      | Relationship to Customer       | Effective date                   |
+| -------------------- | ----------------------- | ------------------------------ | -------------------------------- |
+| `{{Affiliate 1}}`    | `{{Affiliate 1 State}}` | `{{Affiliate 1 Relationship}}` | `{{Affiliate 1 Effective Date}}` |
+| `{{Affiliate 2}}`    | `{{Affiliate 2 State}}` | `{{Affiliate 2 Relationship}}` | `{{Affiliate 2 Effective Date}}` |
 
 ## Schedule 3 — Compliance addenda checklist
 

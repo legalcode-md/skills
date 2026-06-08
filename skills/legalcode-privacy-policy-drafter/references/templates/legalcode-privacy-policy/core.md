@@ -59,9 +59,9 @@ Where regional law uses different wording for these concepts (for example "busin
 - **Registered address:** {{Company Address}}, {{Company Country}}
 - **Privacy contact:** {{Company Email Privacy}}
 
-*OPTIONAL — only if you have appointed a data protection officer.* Our Data Protection Officer can be reached at {{Company Email DPO}}.
+_OPTIONAL — only if you have appointed a data protection officer._ Our Data Protection Officer can be reached at {{Company Email DPO}}.
 
-*OPTIONAL — only if you are established outside the EU/UK and offer the Service to EU/UK residents.* Our representative for the purposes of regional data-protection law is {{Company DPA Representative}}.
+_OPTIONAL — only if you are established outside the EU/UK and offer the Service to EU/UK residents._ Our representative for the purposes of regional data-protection law is {{Company DPA Representative}}.
 
 If you have a question about who controls a particular dataset — for example because your employer or another organisation gave you access to the Service — see Section 2 above and, where relevant, the agreement between us and that organisation.
 
@@ -72,10 +72,10 @@ We collect personal data in three ways: you give it to us, the Service collects 
 ### 4.1 Information you provide
 
 - **Account data** — name, email address, password (stored hashed), and any profile information you choose to add.
-- **Billing data** — *OPTIONAL — only if you sell paid subscriptions.* Where you purchase a paid plan, we receive a billing record from our payment processor. We do not store full card numbers.
+- **Billing data** — _OPTIONAL — only if you sell paid subscriptions._ Where you purchase a paid plan, we receive a billing record from our payment processor. We do not store full card numbers.
 - **Content** — text, files, images, code, or other material you upload, create, or send through the Service.
 - **Communications** — messages you send to support, feedback you submit, survey responses, and any correspondence with us.
-- **Identity verification material** — *OPTIONAL — only if you carry out KYC, age verification, or similar checks.* Documents or attestations you provide when we have to verify who you are.
+- **Identity verification material** — _OPTIONAL — only if you carry out KYC, age verification, or similar checks._ Documents or attestations you provide when we have to verify who you are.
 
 ### 4.2 Information collected automatically
 
@@ -86,7 +86,7 @@ We collect personal data in three ways: you give it to us, the Service collects 
 
 ### 4.3 Information from other sources
 
-- **Authentication providers** — *OPTIONAL — only if you offer SSO/OAuth login.* Where you sign in with a third-party identity provider, we receive the profile fields you authorise that provider to share.
+- **Authentication providers** — _OPTIONAL — only if you offer SSO/OAuth login._ Where you sign in with a third-party identity provider, we receive the profile fields you authorise that provider to share.
 - **Service partners** — vendors and integrators that help us deliver the Service may share data with us within the scope of their engagement.
 - **Public sources** — we may receive personal data from publicly accessible sources (for example, business contact information for sales outreach).
 - **Other users** — other users may share information about you when they refer you, mention you, or include your data in content they submit.
@@ -113,20 +113,20 @@ Where a regional law requires a per-category breakdown of sources (for example, 
 We process personal data only for purposes we can justify. The main purposes are:
 
 - **Providing the Service** — creating and authenticating your account, delivering features you request, and keeping the Service operational.
-- **Account administration** — billing, invoicing, subscription management, and related record-keeping. *OPTIONAL — only if you sell paid services.*
+- **Account administration** — billing, invoicing, subscription management, and related record-keeping. _OPTIONAL — only if you sell paid services._
 - **Support** — answering your questions, troubleshooting issues, and following up on incidents you report.
 - **Security and abuse prevention** — detecting, investigating, and stopping fraud, abuse, account takeover, spam, malicious traffic, and violations of our terms.
 - **Service improvement** — understanding how the Service is used so we can fix bugs, prioritise features, and improve performance and reliability.
 - **Communications** — sending transactional messages (account notices, security alerts, service updates) and, where you have opted in or where the law allows, marketing or product news.
 - **Legal compliance** — meeting tax, accounting, anti-money-laundering, dispute-resolution, and other obligations imposed on us.
 - **Analytics and aggregation** — generating aggregated, de-identified statistics about usage. Once data is reduced to a form that no longer identifies any individual, this policy no longer constrains its use.
-- **Research and development** — *OPTIONAL — only if you use de-identified or pseudonymised data for R&D.* Improving existing features and developing new ones, using de-identified or pseudonymised data wherever possible.
+- **Research and development** — _OPTIONAL — only if you use de-identified or pseudonymised data for R&D._ Improving existing features and developing new ones, using de-identified or pseudonymised data wherever possible.
 
 We do not use personal data for purposes that are incompatible with the ones listed here without first telling you and, where required, obtaining your consent.
 
 ## 7. How we explain why we process your data
 
-> *This section becomes "Legal bases for processing" under GDPR-family laws (EU, UK, Iceland, and others modelled on the GDPR) and "Categories of disclosure" or "Notice at collection" under US state privacy laws — see the jurisdictional variant for your jurisdiction.*
+> _This section becomes "Legal bases for processing" under GDPR-family laws (EU, UK, Iceland, and others modelled on the GDPR) and "Categories of disclosure" or "Notice at collection" under US state privacy laws — see the jurisdictional variant for your jurisdiction._
 
 Different legal regimes ask us to justify processing in different ways. Two patterns dominate worldwide:
 
@@ -135,19 +135,19 @@ Different legal regimes ask us to justify processing in different ways. Two patt
 
 Wherever you live, our actual processing activities are the same: what differs is the framework we use to describe them. The summary below maps our purposes to a generic framing that both regimes can be specialised from.
 
-| Purpose (from Section 6) | Generic justification |
-|---|---|
-| Providing the Service, account administration | Necessary to deliver what you have asked for. |
-| Support | Necessary to respond to a request from you. |
-| Security and abuse prevention | Necessary to keep the Service and other users safe; required by law in some cases. |
-| Service improvement, analytics | Reasonably expected use of usage data; we minimise and aggregate where we can. |
-| Marketing communications | Where you have opted in, or where soft opt-in for similar products is permitted. |
-| Legal compliance | Required by statute, regulation, or lawful order. |
-| R&D | Reasonably expected internal use; conducted on de-identified or pseudonymised data wherever possible. |
+| Purpose (from Section 6)                      | Generic justification                                                                                 |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Providing the Service, account administration | Necessary to deliver what you have asked for.                                                         |
+| Support                                       | Necessary to respond to a request from you.                                                           |
+| Security and abuse prevention                 | Necessary to keep the Service and other users safe; required by law in some cases.                    |
+| Service improvement, analytics                | Reasonably expected use of usage data; we minimise and aggregate where we can.                        |
+| Marketing communications                      | Where you have opted in, or where soft opt-in for similar products is permitted.                      |
+| Legal compliance                              | Required by statute, regulation, or lawful order.                                                     |
+| R&D                                           | Reasonably expected internal use; conducted on de-identified or pseudonymised data wherever possible. |
 
 If you want to know the precise legal grounds we rely on for a particular activity in your jurisdiction, contact us at {{Company Email Privacy}} and we will explain.
 
-*[REPLACE with the relevant statutory cite for your jurisdiction]* — your jurisdictional variant fills this in.
+_[REPLACE with the relevant statutory cite for your jurisdiction]_ — your jurisdictional variant fills this in.
 
 ## 8. Recipients & subprocessors
 
@@ -156,16 +156,16 @@ We share personal data only where it is necessary, with parties that have commit
 ### 8.1 Categories of recipients
 
 - **Subprocessors and service providers** — hosting, storage, content delivery, email delivery, payment processing, analytics, customer support tooling, error reporting, and similar infrastructure vendors. Each is bound by a written contract requiring confidentiality and appropriate safeguards.
-- **Affiliates** — *OPTIONAL — only if you have group companies.* Other entities under common control with {{Company Legal Name}}, for shared services such as engineering, finance, and security.
+- **Affiliates** — _OPTIONAL — only if you have group companies._ Other entities under common control with {{Company Legal Name}}, for shared services such as engineering, finance, and security.
 - **Authorities** — courts, regulators, law enforcement, and other public authorities, where we are legally compelled or where disclosure is permitted to protect rights, safety, or property.
 - **Professional advisors** — auditors, lawyers, and other advisors bound by professional confidentiality.
-- **Successors** — *OPTIONAL — only relevant if you describe corporate transactions.* Where we undergo a merger, acquisition, financing, reorganisation, or asset sale, the counterparty as part of due diligence and any closing transfer.
+- **Successors** — _OPTIONAL — only relevant if you describe corporate transactions._ Where we undergo a merger, acquisition, financing, reorganisation, or asset sale, the counterparty as part of due diligence and any closing transfer.
 - **Other users** — only as you have configured the Service; for example, content you have shared in a workspace becomes visible to others in that workspace.
 - **At your direction** — anyone else you ask us to share with, including third-party applications you authorise.
 
 ### 8.2 Subprocessor list
 
-A current list of our subprocessors is available at *[REPLACE with the URL where you publish your subprocessor list]*. We update it when we add, remove, or replace a subprocessor and, where required by contract, give business customers advance notice so they can object.
+A current list of our subprocessors is available at _[REPLACE with the URL where you publish your subprocessor list]_. We update it when we add, remove, or replace a subprocessor and, where required by contract, give business customers advance notice so they can object.
 
 We do not sell personal data, and we do not share it for cross-context behavioural advertising, except where you have opted in.
 
@@ -178,7 +178,7 @@ When we transfer personal data out of your home jurisdiction, we rely on one or 
 - **Adequacy decisions** — where a recognised authority has determined that the destination country provides an adequate level of protection.
 - **Standard contractual clauses (SCCs)** — model contracts approved by data-protection authorities that bind the importer to specific protections.
 - **International Data Transfer Agreement (IDTA) or equivalent** — used where SCCs are not the applicable instrument (for example, certain UK transfers).
-- **Binding corporate rules** — *OPTIONAL — only if you have approved BCRs.* Internal rules approved by competent authorities for transfers within our corporate group.
+- **Binding corporate rules** — _OPTIONAL — only if you have approved BCRs._ Internal rules approved by competent authorities for transfers within our corporate group.
 - **Your explicit, informed consent** — used only where another safeguard is not available.
 - **Other derogations** — narrow, statute-specific exceptions used sparingly and only where the law permits.
 
@@ -197,14 +197,14 @@ The actual retention period for a given record depends on:
 
 As a guide:
 
-| Data | Indicative retention |
-|---|---|
-| Account record | Lifetime of the account, plus a short tail for closure and legal limitation periods. |
+| Data                         | Indicative retention                                                                    |
+| ---------------------------- | --------------------------------------------------------------------------------------- |
+| Account record               | Lifetime of the account, plus a short tail for closure and legal limitation periods.    |
 | Content you create or upload | Until you delete it, or until your account is closed and the closure grace period ends. |
-| Billing and tax records | The period required by applicable tax and accounting law (commonly 5–10 years). |
-| Server and security logs | Short retention windows (typically 30–365 days) unless an incident requires longer. |
-| Marketing preferences | Until you opt out, plus a suppression record so we honour your opt-out going forward. |
-| Support tickets | A few years after closure of the ticket. |
+| Billing and tax records      | The period required by applicable tax and accounting law (commonly 5–10 years).         |
+| Server and security logs     | Short retention windows (typically 30–365 days) unless an incident requires longer.     |
+| Marketing preferences        | Until you opt out, plus a suppression record so we honour your opt-out going forward.   |
+| Support tickets              | A few years after closure of the ticket.                                                |
 
 When we no longer need personal data, we delete it or convert it into a form that no longer identifies you. Backups are overwritten on rolling cycles; data we cannot immediately purge from a backup is isolated and deleted at the next cycle.
 
@@ -232,7 +232,7 @@ The Service uses cookies and similar technologies (local storage, session storag
 - **Strictly necessary** — sign-in, session management, security, and load balancing. The Service cannot function without these.
 - **Functional** — remembering preferences such as language or display settings.
 - **Analytics** — understanding how the Service is used, so we can improve it. Where required, this category runs only after you opt in.
-- **Marketing** — *OPTIONAL — only if you run advertising.* Measuring the effectiveness of advertising campaigns. Runs only after you opt in where consent is required.
+- **Marketing** — _OPTIONAL — only if you run advertising._ Measuring the effectiveness of advertising campaigns. Runs only after you opt in where consent is required.
 
 You can manage your preferences in your browser, in your device settings, or through any cookie banner the Service shows you. You can also send an opt-out signal (for example Global Privacy Control) and we will honour it where the law treats it as a valid opt-out.
 
@@ -244,7 +244,7 @@ The Service is not directed to children, and we do not knowingly collect persona
 
 If you believe a child has given us personal data, contact {{Company Email Privacy}} and we will investigate and, where appropriate, delete the data.
 
-*OPTIONAL — only if you offer a youth-facing or education-tier product.* Where the Service is offered to children with verifiable parental or school consent, we describe the additional safeguards we apply in a separate notice.
+_OPTIONAL — only if you offer a youth-facing or education-tier product._ Where the Service is offered to children with verifiable parental or school consent, we describe the additional safeguards we apply in a separate notice.
 
 ## 14. Your rights & how to exercise them
 
@@ -287,7 +287,7 @@ We do use automated processing for:
 - Spam and abuse detection.
 - Security and fraud signals (for example, detecting suspicious sign-in attempts).
 - Service-improvement analytics described in Section 6.
-- *OPTIONAL — only if you do this.* Personalising content or recommendations within the Service.
+- _OPTIONAL — only if you do this._ Personalising content or recommendations within the Service.
 
 Where any automated process could, in your jurisdiction, qualify as automated decision-making with significant effects, we will tell you at the point of collection, give you a way to ask for human review, and explain the logic involved at a level you can understand.
 
@@ -312,7 +312,7 @@ For any privacy question, request, or complaint, contact us first:
 - **Email:** {{Company Email Privacy}}
 - **Postal address:** {{Company Legal Name}}, {{Company Address}}, {{Company Country}}
 
-*OPTIONAL — only if you have appointed a DPO.* Data Protection Officer: {{Company Email DPO}}.
+_OPTIONAL — only if you have appointed a DPO._ Data Protection Officer: {{Company Email DPO}}.
 
 We will acknowledge your message and aim to resolve the matter directly. If you are not satisfied with our response, you have the right to lodge a complaint with the data-protection or consumer-protection authority in your jurisdiction.
 
@@ -332,13 +332,13 @@ The following Mustache placeholders appear in this document. Replace each with a
 - `{{Company Address}}`
 - `{{Company Country}}`
 - `{{Company Email Privacy}}`
-- `{{Company Email DPO}}` — *optional*
-- `{{Company DPA Representative}}` — *optional*
+- `{{Company Email DPO}}` — _optional_
+- `{{Company DPA Representative}}` — _optional_
 - `{{Service Name}}`
 - `{{Service URL}}`
 - `{{Effective Date}}`
 - `{{Last Updated Date}}`
-- `{{Supervisory Authority}}` — *optional, set by jurisdictional variant*
+- `{{Supervisory Authority}}` — _optional, set by jurisdictional variant_
 
 You will also find one inline placeholder marker:
 
@@ -347,4 +347,4 @@ You will also find one inline placeholder marker:
 
 ---
 
-*This document is informational only and is not legal advice. It is a starting point for drafting, not a finished privacy policy. Have it reviewed by qualified counsel for your jurisdiction before publishing, and verify that any statutory references you add are still accurate at the time of adoption.*
+_This document is informational only and is not legal advice. It is a starting point for drafting, not a finished privacy policy. Have it reviewed by qualified counsel for your jurisdiction before publishing, and verify that any statutory references you add are still accurate at the time of adoption._

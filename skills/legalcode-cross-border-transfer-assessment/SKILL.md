@@ -36,6 +36,7 @@ This skill performs a structured, end-to-end assessment of international persona
 transfers for lawfulness under the three primary European transfer regimes.
 
 **This skill covers:**
+
 - Transfer trigger analysis — whether GDPR Chapter V applies to a given data flow
 - Mechanism selection decision tree — adequacy → SCCs → BCRs → derogations, with UK and
   Swiss parallel tracks
@@ -58,6 +59,7 @@ transfers for lawfulness under the three primary European transfer regimes.
 - Documentation package — TIA record, ROPA update, DPA schedule, Glass Box audit trail
 
 **This skill does not:**
+
 - Provide legal advice or replace qualified privacy counsel
 - Guarantee regulatory approval or protect against enforcement
 - Cover non-GDPR transfer regimes (CCPA, LGPD, PIPEDA, PDPA Singapore) — see dedicated
@@ -66,6 +68,7 @@ transfers for lawfulness under the three primary European transfer regimes.
   and SCC drafting and review
 
 **Complementary skills:**
+
 - `legalcode-dpia-generator` — DPIA for high-risk processing (often required alongside TIA)
 - `legalcode-dsar-workflow-builder` — DSAR operations
 - `legalcode-contract-review` — full contract review including DPA/SCC clauses
@@ -80,11 +83,11 @@ regimes that share common origins but diverge in important ways.
 
 ### Primary Regimes Covered
 
-| Regime | Legal Basis | Supervisory Authority | Transfer Tools |
-|--------|-------------|----------------------|----------------|
-| **EU GDPR** | Regulation (EU) 2016/679, Chapter V (Art. 44-49) | Lead SA + EDPB | Adequacy decisions, SCCs (2021), BCRs, Art. 49 derogations, Art. 46 ad hoc clauses, approved codes |
-| **UK GDPR** | UK GDPR + DPA 2018, Part 3 Chapter V | ICO | UK adequacy regulations, IDTA (21 March 2022), UK Addendum to EU SCCs, BCRs, UK derogations |
-| **Swiss nDSG** | Federal Act on Data Protection (revised), effective 1 Sep 2023 | FDPIC | FDPIC adequacy list, SCCs (EU SCCs with Swiss amendments), BCRs, derogations |
+| Regime         | Legal Basis                                                    | Supervisory Authority | Transfer Tools                                                                                     |
+| -------------- | -------------------------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------------------- |
+| **EU GDPR**    | Regulation (EU) 2016/679, Chapter V (Art. 44-49)               | Lead SA + EDPB        | Adequacy decisions, SCCs (2021), BCRs, Art. 49 derogations, Art. 46 ad hoc clauses, approved codes |
+| **UK GDPR**    | UK GDPR + DPA 2018, Part 3 Chapter V                           | ICO                   | UK adequacy regulations, IDTA (21 March 2022), UK Addendum to EU SCCs, BCRs, UK derogations        |
+| **Swiss nDSG** | Federal Act on Data Protection (revised), effective 1 Sep 2023 | FDPIC                 | FDPIC adequacy list, SCCs (EU SCCs with Swiss amendments), BCRs, derogations                       |
 
 ### Key Principle: Essential Equivalence
 
@@ -94,6 +97,7 @@ a level of protection essentially equivalent to that guaranteed in the exporting
 This is not a requirement for identical protection — but it must be substantively equivalent.
 
 [JURISDICTION-SPECIFIC] Before finalising any transfer assessment, identify and apply:
+
 - Sector-specific transfer restrictions (health data, financial data, children's data,
   national security data — these may impose stricter requirements than GDPR Chapter V alone)
 - National derogations to GDPR that affect the transfer analysis in the exporting Member State
@@ -125,6 +129,7 @@ information, skip the question and proceed, stating any assumptions explicitly.
 ### Step 1: Accept the Transfer Description
 
 Accept input in any format:
+
 - **Transfer description**: Source entity, destination entity, destination country, data
   categories, data subjects, processing purpose, transfer mechanism (if already chosen)
 - **Existing TIA or transfer record**: Document to review for completeness and accuracy
@@ -143,12 +148,12 @@ provided. Present as structured options:
 1. **Exporting regime(s)**: Which regulatory framework(s) govern the export?
    - Options: EU GDPR only, UK GDPR only, Swiss nDSG only, EU + UK (dual analysis required),
      EU + Swiss, All three, Not sure — I'll identify from the description
-   - *Why this matters*: Determines which transfer tools are available and which authorities
+   - _Why this matters_: Determines which transfer tools are available and which authorities
      have oversight.
 
 2. **Destination country / countries**: Where is the data going?
    - Free text — enter the destination country or countries.
-   - *Why this matters*: Whether the destination has an adequacy decision entirely determines
+   - _Why this matters_: Whether the destination has an adequacy decision entirely determines
      whether a TIA is needed. US-bound transfers require DPF analysis; China-bound require
      PIPL/MLPS analysis; India-bound require DPDP analysis.
 
@@ -156,26 +161,26 @@ provided. Present as structured options:
    - Options: Controller → Controller (Art. 46 Module 1 SCCs), Controller → Processor
      (Module 2), Processor → Processor (Module 3), Processor → Controller (Module 4),
      Intra-group (BCRs may apply), Mixed or unclear
-   - *Why this matters*: Determines which SCC module applies and whether BCRs are a viable
+   - _Why this matters_: Determines which SCC module applies and whether BCRs are a viable
      option.
 
 4. **Data categories**: What types of personal data are involved?
    - Options: Ordinary personal data only, Special-category data (health, biometric, racial/
      ethnic origin, criminal records, etc.), Children's data, Employee/HR data, Mix of
      ordinary and special category
-   - *Why this matters*: Special-category data in transit demands more protective technical
+   - _Why this matters_: Special-category data in transit demands more protective technical
      measures and a higher TIA standard.
 
 5. **Transfer scale and frequency**: What is the volume and regularity?
    - Options: Occasional / one-time (potential Art. 49 derogation territory), Regular ongoing
      transfers (systematic), Large-scale transfers (millions of data subjects or records)
-   - *Why this matters*: "Occasional" is the key limiter on Art. 49 derogations. Large-scale
+   - _Why this matters_: "Occasional" is the key limiter on Art. 49 derogations. Large-scale
      systematic transfers to high-risk countries attract highest regulatory scrutiny.
 
 6. **Existing transfer mechanism**: Does one already exist?
    - Options: Yes — adequacy decision (specify), Yes — SCCs (which version?), Yes — BCRs,
      Yes — Art. 49 derogation, None in place (needs selection), Unclear / need to verify
-   - *Why this matters*: Determines whether to do mechanism selection vs. mechanism review.
+   - _Why this matters_: Determines whether to do mechanism selection vs. mechanism review.
 
 If the user provides partial context, proceed with what is available, stating assumptions
 explicitly (e.g., "Assuming controller-to-processor relationship — confirm if different").
@@ -188,6 +193,7 @@ involving a non-EU entity are "transfers" in the GDPR sense.
 **The two-step test:**
 
 **Step 3a — Is there personal data processing?**
+
 - Confirm that personal data (as defined in Art. 4(1) GDPR) is involved
 - If anonymised data only → not personal data → Chapter V does not apply
 - If pseudonymised data → still personal data (GDPR Recital 26) → Chapter V applies
@@ -195,12 +201,14 @@ involving a non-EU entity are "transfers" in the GDPR sense.
 **Step 3b — Is it a "transfer" to a third country?**
 
 Apply the EDPB definition (Recommendation 01/2020, §13):
+
 1. A controller or processor is **subject to GDPR** for the processing
 2. That controller/processor **"makes available"** personal data
 3. **To another controller, joint controller, or processor** in a third country or
    international organisation
 
 **Not transfers:**
+
 - Transmission between entities both established in the EEA (EEA-to-EEA flows)
 - An EEA controller accessing data stored in a third-country cloud, where the cloud
   provider is acting as a processor without accessing the data (data physically in EEA)
@@ -214,6 +222,7 @@ onward-transfers to Country B, the onward transfer is also subject to Chapter V 
 be covered by a chain of appropriate safeguards (see Module 1/2 SCC Clause 8.7 and 8.8).
 
 **Output:**
+
 - TRANSFERS: List each identified transfer with source, destination country, parties, data
   categories
 - NOT TRANSFERS: Identify any data flows excluded from Chapter V analysis (with rationale)
@@ -228,24 +237,24 @@ is mandated: adequacy first, then appropriate safeguards, then derogations as la
 
 **EU adequacy decisions (as of March 2026):**
 
-| Country/Territory | Decision | Key Notes |
-|-------------------|----------|-----------|
-| Andorra | ✅ Adequate | |
-| Argentina | ✅ Adequate | Under Commission review for currency [VERIFY] |
-| Canada (PIPEDA) | ✅ Adequate | Commercial sector only; public sector excluded |
-| Faroe Islands | ✅ Adequate | |
-| Guernsey | ✅ Adequate | |
-| Israel | ✅ Adequate | |
-| Isle of Man | ✅ Adequate | |
-| Japan | ✅ Adequate | Supplementary rules with APPI apply |
-| Jersey | ✅ Adequate | |
-| New Zealand | ✅ Adequate | |
-| Republic of Korea | ✅ Adequate | Sectors covered by PIPA only |
-| Switzerland | ✅ Adequate | EU→CH transfers; CH is not EEA |
-| United Kingdom | ✅ Adequate | EU→UK; under Commission review — extension proposed in 2025 |
+| Country/Territory   | Decision       | Key Notes                                                                               |
+| ------------------- | -------------- | --------------------------------------------------------------------------------------- |
+| Andorra             | ✅ Adequate    |                                                                                         |
+| Argentina           | ✅ Adequate    | Under Commission review for currency [VERIFY]                                           |
+| Canada (PIPEDA)     | ✅ Adequate    | Commercial sector only; public sector excluded                                          |
+| Faroe Islands       | ✅ Adequate    |                                                                                         |
+| Guernsey            | ✅ Adequate    |                                                                                         |
+| Israel              | ✅ Adequate    |                                                                                         |
+| Isle of Man         | ✅ Adequate    |                                                                                         |
+| Japan               | ✅ Adequate    | Supplementary rules with APPI apply                                                     |
+| Jersey              | ✅ Adequate    |                                                                                         |
+| New Zealand         | ✅ Adequate    |                                                                                         |
+| Republic of Korea   | ✅ Adequate    | Sectors covered by PIPA only                                                            |
+| Switzerland         | ✅ Adequate    | EU→CH transfers; CH is not EEA                                                          |
+| United Kingdom      | ✅ Adequate    | EU→UK; under Commission review — extension proposed in 2025                             |
 | United States (DPF) | ⚠️ Conditional | DPF certified organisations only; significant legal uncertainty (see TIA Section below) |
-| Uruguay | ✅ Adequate | |
-| Brazil | 🔄 Pending | EDPB Opinion 28/2025 adopted; awaiting Commission decision [VERIFY] |
+| Uruguay             | ✅ Adequate    |                                                                                         |
+| Brazil              | 🔄 Pending     | EDPB Opinion 28/2025 adopted; awaiting Commission decision [VERIFY]                     |
 
 [JURISDICTION-SPECIFIC] Check the Commission's current adequacy list at the time of
 assessment — decisions are reviewed, amended, and occasionally invalidated (Privacy Shield:
@@ -264,9 +273,9 @@ check the FDPIC list independently. [VERIFY]
 **If adequacy applies:**
 → Transfer is LAWFUL without further mechanism requirements.
 → Document: the adequacy decision relied upon, the decision date, and the GDPR Art. 45
-  legal basis in the RoPA.
+legal basis in the RoPA.
 → Monitor: Set calendar reminder to check adequacy decision status annually — decisions are
-  time-limited, reviewed, and can be invalidated.
+time-limited, reviewed, and can be invalidated.
 
 **If adequacy does not apply:**
 → Proceed to Level 2.
@@ -278,12 +287,12 @@ check the FDPIC list independently. [VERIFY]
 The 2021 SCCs (effective 27 June 2021; mandatory for new contracts after 27 September 2021)
 have four modules:
 
-| Module | Use case | Parties |
-|--------|----------|---------|
-| **Module 1** | Controller → Controller (C2C) | EEA controller exports to non-EEA controller |
-| **Module 2** | Controller → Processor (C2P) | EEA controller exports to non-EEA processor |
-| **Module 3** | Processor → Processor (P2P) | EEA processor exports to non-EEA sub-processor |
-| **Module 4** | Processor → Controller (P2C) | EEA processor exports back to non-EEA controller |
+| Module       | Use case                      | Parties                                          |
+| ------------ | ----------------------------- | ------------------------------------------------ |
+| **Module 1** | Controller → Controller (C2C) | EEA controller exports to non-EEA controller     |
+| **Module 2** | Controller → Processor (C2P)  | EEA controller exports to non-EEA processor      |
+| **Module 3** | Processor → Processor (P2P)   | EEA processor exports to non-EEA sub-processor   |
+| **Module 4** | Processor → Controller (P2C)  | EEA processor exports back to non-EEA controller |
 
 **Module selection decision:**
 
@@ -292,9 +301,10 @@ acting under instructions from the sender (processor) or independently determini
 purpose and means of processing (controller)?" Classify before proceeding.
 
 **SCC implementation checklist:**
+
 - [ ] Correct module selected for the transfer relationship
 - [ ] Annex I (A): Description of transfer (parties, data subjects, categories, purposes,
-  retention, transfers to third parties)
+      retention, transfers to third parties)
 - [ ] Annex I (B): Competent supervisory authority identified
 - [ ] Annex I (C): Local representative identified (if applicable)
 - [ ] Annex II: Technical and organisational measures (TOMs) — must be specific and up-to-date
@@ -336,26 +346,29 @@ BCRs are intra-group policies approved by a Lead Supervisory Authority (via the 
 consistency mechanism) that authorise transfers within a corporate group.
 
 **When BCRs are appropriate:**
+
 - Large multinational group with frequent intra-group transfers across multiple third countries
 - Willing to invest 18-36 months in the approval process
 - Resources to maintain and annually update the BCRs
 
 **2024 BCR update obligation:**
 All existing BCR holders were required to update their BCRs by end of 2024 to incorporate:
+
 - Schrems II TIA requirements (documented ability to comply despite government access requests)
 - Expanded third-party beneficiary rights
 - More granular audit programme information
 - Exhaustive list of legal bases for processing
-[VERIFY current EDPB BCR requirements — EDPB Document March 2025]
+  [VERIFY current EDPB BCR requirements — EDPB Document March 2025]
 
 **BCR compliance checklist:**
+
 - [ ] BCRs cover all entities and countries to which data is transferred
 - [ ] Schrems II / TIA documentation incorporated into BCRs (2024 update)
 - [ ] Annual update cycle on track
 - [ ] Complaints mechanism operational
 - [ ] Third-party beneficiary rights documented and accessible to data subjects
 - [ ] EDPB consistency mechanism approval still valid (re-approval may be needed for
-  material changes)
+      material changes)
 
 **2d. Ad hoc Contractual Clauses (Art. 46(3))**
 
@@ -371,14 +384,14 @@ Emerging mechanisms — check for approved codes in relevant sectors. [VERIFY]
 Derogations are **not alternative mechanisms** — they are narrow exceptions for specific,
 non-systematic situations. The EDPB has made clear they must be interpreted strictly.
 
-| Derogation | Key Conditions | Limitations |
-|------------|---------------|-------------|
-| **Consent** (Art. 49(1)(a)) | Explicit, informed consent after being told of risks of transferring to non-adequate country | Cannot be used for systematic / repeated transfers; consent burden is high |
-| **Contract performance** (Art. 49(1)(b)) | Transfer necessary for contract between data subject and controller | "Necessary" is narrow — not "useful" or "convenient" |
-| **Public interest** (Art. 49(1)(d)) | Transfer necessary for important public interest recognised in EU or Member State law | Must be recognised by law — organisational self-interest does not qualify |
-| **Legal claims** (Art. 49(1)(e)) | Transfer necessary for establishment, exercise, or defence of legal claims | Must be actually needed for litigation/regulatory proceedings |
-| **Vital interests** (Art. 49(1)(f)) | Data subject or others physically at risk; data subject incapable of giving consent | Last resort — narrow life-or-death situations |
-| **Compelling legitimate interests** (Art. 49(1) last para) | Exceptional circumstances; not repetitive; overriding legitimate interest not outweighed by subject's interests; supervisor notified | High bar — must notify the supervisory authority; rarely sustainable |
+| Derogation                                                 | Key Conditions                                                                                                                       | Limitations                                                                |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| **Consent** (Art. 49(1)(a))                                | Explicit, informed consent after being told of risks of transferring to non-adequate country                                         | Cannot be used for systematic / repeated transfers; consent burden is high |
+| **Contract performance** (Art. 49(1)(b))                   | Transfer necessary for contract between data subject and controller                                                                  | "Necessary" is narrow — not "useful" or "convenient"                       |
+| **Public interest** (Art. 49(1)(d))                        | Transfer necessary for important public interest recognised in EU or Member State law                                                | Must be recognised by law — organisational self-interest does not qualify  |
+| **Legal claims** (Art. 49(1)(e))                           | Transfer necessary for establishment, exercise, or defence of legal claims                                                           | Must be actually needed for litigation/regulatory proceedings              |
+| **Vital interests** (Art. 49(1)(f))                        | Data subject or others physically at risk; data subject incapable of giving consent                                                  | Last resort — narrow life-or-death situations                              |
+| **Compelling legitimate interests** (Art. 49(1) last para) | Exceptional circumstances; not repetitive; overriding legitimate interest not outweighed by subject's interests; supervisor notified | High bar — must notify the supervisory authority; rarely sustainable       |
 
 **⟁ CLARIFY** — If derogations are being considered, confirm: "Is this transfer occasional
 and truly exceptional, or does it happen regularly?" Regular reliance on Art. 49 derogations
@@ -392,6 +405,7 @@ Perform the six-step EDPB methodology from Recommendations 01/2020, incorporatin
 CNIL Practical TIA Guide (January 2025).
 
 **Trigger for TIA:**
+
 - Transfers using SCCs, BCRs, ad hoc clauses, or derogations → TIA required
 - Transfers using adequacy decisions → TIA not required (adequacy already assessed by
   Commission), but monitor adequacy decision status
@@ -399,6 +413,7 @@ CNIL Practical TIA Guide (January 2025).
 #### TIA Step 1 — Know Your Transfer
 
 Map the transfer with precision:
+
 - **Data categories**: Enumerate specific categories and fields transferred
 - **Data subjects**: Who — employees, customers, trial participants, minors?
 - **Processing purpose**: What is the importer doing with the data?
@@ -411,6 +426,7 @@ Map the transfer with precision:
 #### TIA Step 2 — Verify the Transfer Tool
 
 Confirm the transfer mechanism to be relied upon is valid and correctly implemented:
+
 - For SCCs: Verify module selection, execution, Annex I completion, and currency (using
   2021 SCCs, not the invalidated 2001/2004 versions)
 - For BCRs: Verify current approval status, coverage of the importer entity, and 2024 update
@@ -423,13 +439,13 @@ to determine whether it provides essential equivalence.
 
 **Assessment criteria (per EDPB Rec. 01/2020 and CNIL TIA Guide):**
 
-| Criterion | Assessment Questions |
-|-----------|---------------------|
-| **Data protection law** | Does the country have a comprehensive data protection law? Is it enforced? Does it apply to the importer? |
-| **Government access — surveillance law** | What laws allow government authorities to compel access to data? Are they proportionate? Subject to independent oversight? |
-| **Judicial redress** | Can data subjects obtain effective redress against government access? Is there an independent court or authority with binding powers? |
-| **Rule of law** | Is there an independent judiciary? Does the government respect court orders? |
-| **Practical application** | Beyond the text of the law, is there evidence of broad/disproportionate access in practice? Published government reports, court decisions, academic analysis? |
+| Criterion                                | Assessment Questions                                                                                                                                          |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Data protection law**                  | Does the country have a comprehensive data protection law? Is it enforced? Does it apply to the importer?                                                     |
+| **Government access — surveillance law** | What laws allow government authorities to compel access to data? Are they proportionate? Subject to independent oversight?                                    |
+| **Judicial redress**                     | Can data subjects obtain effective redress against government access? Is there an independent court or authority with binding powers?                         |
+| **Rule of law**                          | Is there an independent judiciary? Does the government respect court orders?                                                                                  |
+| **Practical application**                | Beyond the text of the law, is there evidence of broad/disproportionate access in practice? Published government reports, court decisions, academic analysis? |
 
 **Country-specific legal surveys:**
 
@@ -442,13 +458,14 @@ surveillance authority.
 
 **Key US surveillance laws:**
 
-| Law | Scope | Key Points for TIA |
-|-----|-------|-------------------|
-| **FISA Section 702** (50 U.S.C. § 1881a) | Compels disclosure of non-US persons' data held by electronic communication service providers for foreign intelligence | Applies to US-based cloud providers, telecoms, and large tech platforms; no probable cause requirement; secret FISC court |
-| **Executive Order 12333** | Authorises collection of intelligence outside the US | Does not compel US companies directly, but authorises NSA/CIA bulk collection from foreign infrastructure; no judicial oversight |
-| **CLOUD Act** (18 U.S.C. § 2523) | Allows US government to compel US providers to disclose data regardless of storage location | Criminal investigations only; requires court-approved warrant; cannot be used for national security/intelligence purposes |
+| Law                                      | Scope                                                                                                                  | Key Points for TIA                                                                                                               |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **FISA Section 702** (50 U.S.C. § 1881a) | Compels disclosure of non-US persons' data held by electronic communication service providers for foreign intelligence | Applies to US-based cloud providers, telecoms, and large tech platforms; no probable cause requirement; secret FISC court        |
+| **Executive Order 12333**                | Authorises collection of intelligence outside the US                                                                   | Does not compel US companies directly, but authorises NSA/CIA bulk collection from foreign infrastructure; no judicial oversight |
+| **CLOUD Act** (18 U.S.C. § 2523)         | Allows US government to compel US providers to disclose data regardless of storage location                            | Criminal investigations only; requires court-approved warrant; cannot be used for national security/intelligence purposes        |
 
 **EU-US Data Privacy Framework (DPF) — Current Status (March 2026):**
+
 - The Commission adopted the DPF adequacy decision on 10 July 2023
 - DPF certified organisations: data transferred to them does not require SCCs or TIA
 - **Risk factors as of March 2026**:
@@ -460,6 +477,7 @@ surveillance authority.
   - EDPB issued first DPF review report (November 2024) noting concerns
 
 **TIA conclusion for US transfers:**
+
 - Transfers to **DPF-certified organisations**: Currently LAWFUL under adequacy decision,
   but flag the PCLOB risk and monitor for changes
 - Transfers to **non-DPF-certified organisations**: Full TIA required; FISA 702 exposure is
@@ -471,14 +489,15 @@ surveillance authority.
 
 ##### China Surveillance Law Analysis
 
-| Law | Scope | Key TIA Risk |
-|-----|-------|-------------|
-| **Personal Information Protection Law (PIPL)** (effective Nov 2021) | Comprehensive data protection with transfer restrictions | Art. 38-43 require CAC standard contracts, PIIA, or certification for China exports |
-| **Multi-Level Protection Scheme (MLPS) / Cybersecurity Law** (2017) | Security review of "important data" and "critical information infrastructure" | Data held in China by operators may be subject to government inspection |
-| **National Intelligence Law** (2017, Art. 7) | Requires any Chinese organisation/citizen to "support, assist, and cooperate" with state intelligence work | No judicial oversight; no published limits; broad in text |
-| **Data Security Law** (2021) | "Important data" must be stored in China; export requires CAC security assessment | Government can require data localisation for "national security" data |
+| Law                                                                 | Scope                                                                                                      | Key TIA Risk                                                                        |
+| ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Personal Information Protection Law (PIPL)** (effective Nov 2021) | Comprehensive data protection with transfer restrictions                                                   | Art. 38-43 require CAC standard contracts, PIIA, or certification for China exports |
+| **Multi-Level Protection Scheme (MLPS) / Cybersecurity Law** (2017) | Security review of "important data" and "critical information infrastructure"                              | Data held in China by operators may be subject to government inspection             |
+| **National Intelligence Law** (2017, Art. 7)                        | Requires any Chinese organisation/citizen to "support, assist, and cooperate" with state intelligence work | No judicial oversight; no published limits; broad in text                           |
+| **Data Security Law** (2021)                                        | "Important data" must be stored in China; export requires CAC security assessment                          | Government can require data localisation for "national security" data               |
 
 **TIA conclusion for China transfers:**
+
 - **HIGH RISK** — China transfers typically cannot achieve essential equivalence without
   very strong technical measures (EU-controlled encryption, splitting of re-identifiable
   data) and even then may be RESTRICTED or UNLAWFUL for special-category data
@@ -489,12 +508,13 @@ surveillance authority.
 
 ##### India Transfers Analysis
 
-| Law | Status | TIA Relevance |
-|-----|--------|--------------|
+| Law                                                    | Status                                             | TIA Relevance                                                                                                                                  |
+| ------------------------------------------------------ | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Digital Personal Data Protection Act (DPDP)** (2023) | Enacted Aug 2023; rules pending (as of March 2026) | India→outbound transfers may be restricted by Data Protection Board if India restricts; EU→India transfers still require EU transfer mechanism |
-| **Information Technology Act** (2000) + Rules | Legacy framework, still operative | Section 43A: compensation for negligent data protection; Rules 2011: reasonable security practices |
+| **Information Technology Act** (2000) + Rules          | Legacy framework, still operative                  | Section 43A: compensation for negligent data protection; Rules 2011: reasonable security practices                                             |
 
 **TIA conclusion for India transfers:**
+
 - India does not have EU adequacy decision
 - SCCs + TIA required
 - TIA risk: moderate — India IT Act provides some protections; government access powers exist
@@ -529,6 +549,7 @@ documented. If no effective measure can bridge the gap, the transfer must not pr
 #### TIA Step 5 — Procedural Steps if No Measures Found
 
 If effective supplementary measures cannot be identified:
+
 - **Suspend the transfer** — the transfer must not proceed
 - **Notify the supervisory authority** if required (varies by Member State; some require
   proactive notification; others allow post-suspension notification)
@@ -561,62 +582,65 @@ on Pseudonymisation.
 
 #### Technical Measures
 
-| Measure | Conditions for Effectiveness | When Effective | Limitations |
-|---------|------------------------------|---------------|-------------|
-| **End-to-end encryption** | State-of-the-art encryption; key management exclusively in EEA; importer never holds plaintext | Effective where importer only stores/transmits encrypted data without needing to access it | Not effective where importer must access plaintext to perform the processing |
-| **Pseudonymisation (EDPB Guidelines 01/2025)** | EEA entity retains additional information (key); pseudonymised data sent without key; re-identification not possible by importer or foreign authorities | Effective where importer processes pseudonymised data without needing re-identification | Not effective if importer needs the actual personal data to perform its function |
-| **Split / dual-server processing** | Processing split between EEA and third-country servers; re-identifiable data stays in EEA; third-country server processes only aggregate or non-identifiable data | Effective for analytics and AI training use cases that can be architecturally split | Requires system re-architecture; not applicable to all processing purposes |
-| **Anonymisation** | True anonymisation meeting the Breyer test (EU Court, C-582/14) — no reasonable means of re-identification | Effective — anonymised data is not personal data; Chapter V does not apply | High bar — must be truly irreversible; pseudonymisation is not anonymisation |
-| **Homomorphic encryption / secure computation** | Processing occurs on encrypted data without decryption | Effective in principle — importer cannot access plaintext | Computationally expensive; limited to specific processing types |
+| Measure                                         | Conditions for Effectiveness                                                                                                                                      | When Effective                                                                             | Limitations                                                                      |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| **End-to-end encryption**                       | State-of-the-art encryption; key management exclusively in EEA; importer never holds plaintext                                                                    | Effective where importer only stores/transmits encrypted data without needing to access it | Not effective where importer must access plaintext to perform the processing     |
+| **Pseudonymisation (EDPB Guidelines 01/2025)**  | EEA entity retains additional information (key); pseudonymised data sent without key; re-identification not possible by importer or foreign authorities           | Effective where importer processes pseudonymised data without needing re-identification    | Not effective if importer needs the actual personal data to perform its function |
+| **Split / dual-server processing**              | Processing split between EEA and third-country servers; re-identifiable data stays in EEA; third-country server processes only aggregate or non-identifiable data | Effective for analytics and AI training use cases that can be architecturally split        | Requires system re-architecture; not applicable to all processing purposes       |
+| **Anonymisation**                               | True anonymisation meeting the Breyer test (EU Court, C-582/14) — no reasonable means of re-identification                                                        | Effective — anonymised data is not personal data; Chapter V does not apply                 | High bar — must be truly irreversible; pseudonymisation is not anonymisation     |
+| **Homomorphic encryption / secure computation** | Processing occurs on encrypted data without decryption                                                                                                            | Effective in principle — importer cannot access plaintext                                  | Computationally expensive; limited to specific processing types                  |
 
 **Key test for technical measure effectiveness**: Would the measure remain effective even
 if the data importer were compelled by the third-country government to disclose data?
+
 - If the importer holds the keys → no, measure is not effective against state-compelled disclosure
 - If the EEA exporter holds the keys → yes, effective even against a court order to the importer
 
 #### Organisational Measures
 
-| Measure | Effectiveness | Notes |
-|---------|--------------|-------|
-| **Government access transparency** | Supplementary — not standalone | Importer commits to notify exporter of government requests and challenge them where possible; cannot override a legal compulsion order |
-| **Contractual challenge obligation** | Supplementary — not standalone | Importer must challenge government access requests; maximises chances of proportionality review; but cannot guarantee success |
-| **Minimisation protocols** | Always apply | Transfer only the minimum data necessary; reduces exposure surface |
-| **Retention limits** | Always apply | Shortest retention period feasible; reduces the window of vulnerability |
-| **Regular audits** | Supplementary | Exporter audit rights over importer's security and access records |
-| **Employee access controls** | Supplementary | Restrict importer employee access to personal data to need-to-know basis; documented access logging |
+| Measure                              | Effectiveness                  | Notes                                                                                                                                  |
+| ------------------------------------ | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Government access transparency**   | Supplementary — not standalone | Importer commits to notify exporter of government requests and challenge them where possible; cannot override a legal compulsion order |
+| **Contractual challenge obligation** | Supplementary — not standalone | Importer must challenge government access requests; maximises chances of proportionality review; but cannot guarantee success          |
+| **Minimisation protocols**           | Always apply                   | Transfer only the minimum data necessary; reduces exposure surface                                                                     |
+| **Retention limits**                 | Always apply                   | Shortest retention period feasible; reduces the window of vulnerability                                                                |
+| **Regular audits**                   | Supplementary                  | Exporter audit rights over importer's security and access records                                                                      |
+| **Employee access controls**         | Supplementary                  | Restrict importer employee access to personal data to need-to-know basis; documented access logging                                    |
 
 #### Contractual Measures
 
-| Measure | Content | Effectiveness |
-|---------|---------|--------------|
-| **Enhanced SCCs** | Adding additional protections in Annex II (TOMs) or via additional clauses | Effective where they impose real obligations; not effective if they are generic boilerplate |
-| **Sub-processor restrictions** | Limiting the importer's ability to onward transfer | Essential — without onward transfer restriction, the TIA only covers the first hop |
+| Measure                                    | Content                                                                                        | Effectiveness                                                                                 |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Enhanced SCCs**                          | Adding additional protections in Annex II (TOMs) or via additional clauses                     | Effective where they impose real obligations; not effective if they are generic boilerplate   |
+| **Sub-processor restrictions**             | Limiting the importer's ability to onward transfer                                             | Essential — without onward transfer restriction, the TIA only covers the first hop            |
 | **Government request notification clause** | Importer must notify exporter of any government access request to the extent legally permitted | Supplementary — cannot override legal prohibition on notification (e.g., FISA 702 gag orders) |
-| **Data deletion on government request** | Importer must delete data rather than comply with an unlawful order | Contractual — effectiveness depends on importer's practical ability to comply |
-| **Right to audit** | Exporter has right to audit importer's compliance | Operational value; does not prevent illegal access by third-country authorities |
+| **Data deletion on government request**    | Importer must delete data rather than comply with an unlawful order                            | Contractual — effectiveness depends on importer's practical ability to comply                 |
+| **Right to audit**                         | Exporter has right to audit importer's compliance                                              | Operational value; does not prevent illegal access by third-country authorities               |
 
 #### Supplementary Measures Decision Matrix
 
-| TIA Risk Level | Data Sensitivity | Recommended Supplementary Measures | Classification |
-|----------------|-----------------|-----------------------------------|----------------|
-| LOW (e.g., rule-of-law country, limited surveillance) | Ordinary | Standard SCCs + TOMs | LAWFUL |
-| MEDIUM (e.g., broad but judicially supervised surveillance) | Ordinary | SCCs + enhanced TOMs + notification clause | LAWFUL with conditions |
-| MEDIUM | Special category | SCCs + strong encryption (EU key control) + minimisation | RESTRICTED — conditional on measure effectiveness |
-| HIGH (e.g., FISA 702 exposure, no judicial oversight) | Ordinary | SCCs + EU-controlled encryption + pseudonymisation | RESTRICTED — requires technical architecture verification |
-| HIGH | Special category | EU-controlled encryption + split processing OR suspend | RESTRICTED → UNLAWFUL if technical measures not feasible |
-| CRITICAL (e.g., China, broad state access laws) | Any | EU-controlled encryption + no importer plaintext access OR suspend | UNLAWFUL if importer needs plaintext access |
+| TIA Risk Level                                              | Data Sensitivity | Recommended Supplementary Measures                                 | Classification                                            |
+| ----------------------------------------------------------- | ---------------- | ------------------------------------------------------------------ | --------------------------------------------------------- |
+| LOW (e.g., rule-of-law country, limited surveillance)       | Ordinary         | Standard SCCs + TOMs                                               | LAWFUL                                                    |
+| MEDIUM (e.g., broad but judicially supervised surveillance) | Ordinary         | SCCs + enhanced TOMs + notification clause                         | LAWFUL with conditions                                    |
+| MEDIUM                                                      | Special category | SCCs + strong encryption (EU key control) + minimisation           | RESTRICTED — conditional on measure effectiveness         |
+| HIGH (e.g., FISA 702 exposure, no judicial oversight)       | Ordinary         | SCCs + EU-controlled encryption + pseudonymisation                 | RESTRICTED — requires technical architecture verification |
+| HIGH                                                        | Special category | EU-controlled encryption + split processing OR suspend             | RESTRICTED → UNLAWFUL if technical measures not feasible  |
+| CRITICAL (e.g., China, broad state access laws)             | Any              | EU-controlled encryption + no importer plaintext access OR suspend | UNLAWFUL if importer needs plaintext access               |
 
 ### Step 7: UK GDPR Parallel Analysis
 
 If the transfer is also regulated by UK GDPR, perform a parallel analysis:
 
 **UK adequacy assessment:**
+
 - Confirm whether the destination country is on the UK's adequacy list (separate from EU list)
 - EU-UK: the UK has adequacy from the EU side; EU → UK transfers are permitted under EU
   adequacy decision (with ongoing review)
 - UK → third countries: UK maintains separate adequacy regulations
 
 **UK transfer tool selection:**
+
 - If destination lacks UK adequacy: use IDTA or UK Addendum to EU SCCs
 - Both the IDTA and UK Addendum require a Transfer Risk Assessment (TRA) — the UK equivalent
   of a TIA, with a three-part test: (1) destination country assessment, (2) exporter assessment,
@@ -625,10 +649,12 @@ If the transfer is also regulated by UK GDPR, perform a parallel analysis:
   2026 guidance details]
 
 **UK BCRs:**
+
 - UK BCRs (approved by ICO) are required for transfers within multinational groups subject to
   UK GDPR; EU BCR approval does not automatically cover UK-regulated transfers
 
 **Key UK divergence points:**
+
 - The UK does not apply the EDPB's six-step TIA methodology (it uses a TRA approach)
 - The UK Addendum modifies specific clauses (e.g., liability cap, supervisory authority,
   jurisdiction for disputes)
@@ -640,17 +666,20 @@ If the transfer is also regulated by UK GDPR, perform a parallel analysis:
 If the transfer is regulated by Swiss DPA (nDSG, effective 1 September 2023):
 
 **FDPIC adequacy list:**
+
 - Transfers to countries on the FDPIC adequacy list are permitted without further safeguards
 - The list largely mirrors EU adequacy but with some differences [VERIFY FDPIC list]
 - EU Member States are adequate for Swiss purposes
 
 **Swiss transfer tools:**
+
 - For non-adequate countries: use EU SCCs with the Swiss Addendum/Annex, OR bilateral Swiss
   standard data protection clauses
 - BCRs approved under EU GDPR may be recognised — FDPIC notification may be required
 - FDPIC guidance on TIAs largely follows EDPB recommendations [VERIFY]
 
 **Swiss-specific notes:**
+
 - The FDPIC has stronger enforcement powers under nDSG compared to old FADP
 - Swiss data subjects have rights similar to GDPR Art. 15-22
 - Cross-border transfer documentation should reference nDSG Art. 16-17 in parallel with GDPR
@@ -664,6 +693,7 @@ Classify each transfer using the three-tier system after completing Steps 4-8:
 The transfer is authorised by a valid mechanism that provides essential equivalence.
 
 **Conditions (all must be met):**
+
 - A valid transfer mechanism is in place and properly implemented
 - For SCCs: all Annexes complete, module correct, executed
 - TIA completed (where required) and no material unmitigated risk identified
@@ -678,6 +708,7 @@ The transfer has a valid mechanism, but unresolved risk factors require monitori
 additional safeguards, or imminent remediation.
 
 **Conditions (any may apply):**
+
 - Valid mechanism in place, but TIA reveals residual risk not fully mitigated
 - Adequacy decision in place but subject to legal challenge or Commission review
 - SCCs used, but technical supplementary measures not yet fully implemented
@@ -694,6 +725,7 @@ The transfer lacks a valid mechanism, or the TIA reveals that essential equivale
 be achieved even with supplementary measures.
 
 **Conditions (any may apply):**
+
 - No valid transfer mechanism in place
 - Transfer relies on invalidated mechanism (pre-2021 SCCs without conversion)
 - Art. 49 derogation relied upon for systematic transfers (non-compliant by definition)
@@ -764,13 +796,13 @@ Verification: How will completion be verified?
 - [ ] Governing law clause in main contract does not conflict with SCCs
 - [ ] SCCs signed or agreed electronically with equal authority to main contract
 - [ ] Annex I(A): All required fields completed (data exporter, importer, description of
-  transfer, categories of data subjects, categories of personal data, sensitive data,
-  frequency, nature of processing, purposes, retention periods, onward transfer)
+      transfer, categories of data subjects, categories of personal data, sensitive data,
+      frequency, nature of processing, purposes, retention periods, onward transfer)
 - [ ] Annex I(B): Competent supervisory authority identified (exporter's lead SA)
 - [ ] Annex I(C): Local representative identified if applicable
 - [ ] Annex II: TOMs are specific, current, and reflect actual security practices (not generic)
 - [ ] Annex III (Module 2/3): Sub-processor list complete with names, countries, and processing
-  descriptions
+      descriptions
 - [ ] Clause 14 (Local Law Assessment): TIA referenced and completed
 - [ ] Docking clause: completed if multiple data importers or exporters
 
@@ -788,7 +820,7 @@ Verification: How will completion be verified?
 - [ ] BCRs cover all entities involved in the transfer
 - [ ] BCRs are approved by the Lead SA (no material lapses since approval)
 - [ ] 2024 update requirements incorporated (Schrems II TIA documentation, expanded audit
-  programme, third-party beneficiary rights)
+      programme, third-party beneficiary rights)
 - [ ] Annual update submitted on time
 - [ ] Internal training on BCR obligations conducted
 - [ ] Complaints mechanism available and operational for data subjects
@@ -800,6 +832,7 @@ Verification: How will completion be verified?
 ### LAWFUL — No Material Gap
 
 All of the following apply:
+
 - Valid transfer mechanism in place and correctly implemented
 - TIA completed (where required) and essential equivalence confirmed or adequacy applies
 - Supplementary measures implemented where required by TIA
@@ -809,6 +842,7 @@ All of the following apply:
 ### RESTRICTED — Monitor and Remediate
 
 One or more of the following apply:
+
 - Valid mechanism but TIA reveals residual risk requiring monitoring or enhancement
 - Adequacy decision under review/challenge — status uncertain
 - Mechanism documentation incomplete but mechanism itself valid
@@ -818,6 +852,7 @@ One or more of the following apply:
 ### UNLAWFUL — Suspend and Remediate
 
 One or more of the following apply:
+
 - No valid transfer mechanism
 - Mechanism invalidated or expired
 - TIA reveals lack of essential equivalence with no effective supplementary measures
@@ -865,31 +900,34 @@ When multiple transfers are assessed simultaneously, prioritise by:
 
 Run these 5 gates silently before delivering any output. Revise before delivering if any gate fails.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim about GDPR, UK GDPR, Swiss DPA, or surveillance law cites a specific article, decision, or established principle | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **Format** | Citations follow a consistent, recognisable format (GDPR Art. 45(1), C-311/18, Commission Decision 2021/914, ICO IDTA 2022) | Fix format |
-| **Currency** | Every cited provision, adequacy decision, and regulatory guidance checked for amendments, repeal, or superseding instrument | Flag "[CHECK CURRENCY — may have changed]" |
-| **Domain** | Analysis stays within the applicable regime (EU GDPR, UK GDPR, Swiss nDSG) — no bleed of one regime's rules into another's analysis without explicit cross-reference | Remove or flag as jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated, not hidden — especially for DPF status, evolving enforcement guidance, and pending legal challenges | Add explicit confidence qualifier |
+| Gate           | Rule                                                                                                                                                                 | Fail Action                                              |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Source**     | Every legal claim about GDPR, UK GDPR, Swiss DPA, or surveillance law cites a specific article, decision, or established principle                                   | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
+| **Format**     | Citations follow a consistent, recognisable format (GDPR Art. 45(1), C-311/18, Commission Decision 2021/914, ICO IDTA 2022)                                          | Fix format                                               |
+| **Currency**   | Every cited provision, adequacy decision, and regulatory guidance checked for amendments, repeal, or superseding instrument                                          | Flag "[CHECK CURRENCY — may have changed]"               |
+| **Domain**     | Analysis stays within the applicable regime (EU GDPR, UK GDPR, Swiss nDSG) — no bleed of one regime's rules into another's analysis without explicit cross-reference | Remove or flag as jurisdictional bleed                   |
+| **Confidence** | Uncertainty explicitly stated, not hidden — especially for DPF status, evolving enforcement guidance, and pending legal challenges                                   | Add explicit confidence qualifier                        |
 
 ### Self-Interrogation for UNLAWFUL Classifications
 
 For any transfer classified as UNLAWFUL, apply this 3-pass review before delivering:
 
 **Pass 1 — Legal Chain Integrity**
+
 - Does the UNLAWFUL classification follow from a specific legal gap (no mechanism, invalidated
   mechanism, TIA failure)?
 - Would a supervisory authority reviewing this transfer reach the same conclusion?
 - Is there a supplementary measure that has been overlooked?
 
 **Pass 2 — Completeness**
+
 - Have all available transfer mechanisms been considered (adequacy — EU, UK, Swiss separately;
   SCCs with all modules; BCRs; derogations)?
 - Has the TIA considered the actual practice in the destination country, not just the law on paper?
 - Have all supplementary measures been evaluated, including technical architecture options?
 
 **Pass 3 — Challenge**
+
 - What is the strongest argument that this transfer could be made LAWFUL?
 - Under what circumstances would an experienced privacy counsel accept the transfer?
 - Is the UNLAWFUL classification proportionate, or could this be RESTRICTED with a clear
@@ -899,13 +937,13 @@ Mark the audit trail with `self_interrogation: PASS` or `self_interrogation: REV
 
 ### Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95-1.0 | Settled law/enforcement — e.g., pre-2021 SCCs are clearly invalid | State with confidence |
-| **High** | 0.80-0.94 | Strong authority, minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60-0.79 | Good arguments but developing law or pending review | State with explicit reasoning and contra-indicators |
-| **Possible** | 0.40-0.59 | Genuinely uncertain — e.g., DPF legal status, novel transfer scenarios | Flag for counsel review with both sides of argument |
-| **Unlikely** | 0.0-0.39 | Weak basis, speculative | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                                                | Action                                                |
+| ------------ | --------- | ---------------------------------------------------------------------- | ----------------------------------------------------- |
+| **Definite** | 0.95-1.0  | Settled law/enforcement — e.g., pre-2021 SCCs are clearly invalid      | State with confidence                                 |
+| **High**     | 0.80-0.94 | Strong authority, minor interpretation questions                       | State with brief caveat                               |
+| **Probable** | 0.60-0.79 | Good arguments but developing law or pending review                    | State with explicit reasoning and contra-indicators   |
+| **Possible** | 0.40-0.59 | Genuinely uncertain — e.g., DPF legal status, novel transfer scenarios | Flag for counsel review with both sides of argument   |
+| **Unlikely** | 0.0-0.39  | Weak basis, speculative                                                | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
 
 ---
 
@@ -1054,6 +1092,7 @@ Explicit catalogue of what NOT to do when assessing cross-border data transfers:
 Apply plain-language discipline to all assessment outputs:
 
 **For TIA conclusions and classifications:**
+
 - Plain language — avoid GDPR jargon without explanation
 - Active voice: "The transfer lacks a valid mechanism" not "A valid mechanism has not been
   identified for the transfer"
@@ -1061,6 +1100,7 @@ Apply plain-language discipline to all assessment outputs:
 - Actionable: every RESTRICTED and UNLAWFUL classification must have a clear next action
 
 **Quality gates before delivery:**
+
 1. Can the DPO and business stakeholder both understand the summary findings?
 2. Does every UNLAWFUL/RESTRICTED classification have a specific root cause and a named owner?
 3. Is every legal claim backed by a specific citation (or flagged [VERIFY])?
@@ -1075,6 +1115,7 @@ Apply plain-language discipline to all assessment outputs:
 This skill is designed to work with **legalcode-mcp** as its primary legal research tool.
 
 **With legalcode-mcp connected (preferred):**
+
 - Search for current adequacy decision status (destination country-specific)
 - Retrieve current text of GDPR Art. 44-49, UK GDPR equivalent provisions, Swiss nDSG
 - Search for regulatory guidance: EDPB recommendations, ICO guidance, FDPIC guidance
@@ -1083,6 +1124,7 @@ This skill is designed to work with **legalcode-mcp** as its primary legal resea
 - Mark all legalcode-mcp-sourced citations as VERIFIED in the Glass Box audit trail
 
 **Without legalcode-mcp:**
+
 - Mark all adequacy decision references with [VERIFY]
 - Mark all surveillance law analysis with [VERIFY — verify against current country legal sources]
 - Mark DPF status analysis with [VERIFY — status may have changed]
@@ -1118,10 +1160,10 @@ immediate actions]
 
 ## Transfer Inventory
 
-| Transfer # | From → To | Country | Data Categories | Mechanism | TIA Required | Classification |
-|------------|-----------|---------|----------------|-----------|-------------|----------------|
-| 1 | [Entity A → Entity B] | [Country] | [Categories] | [SCCs M2] | Yes | LAWFUL |
-| 2 | [Entity A → Entity C] | [Country] | [Categories] | [None] | N/A | UNLAWFUL |
+| Transfer # | From → To             | Country   | Data Categories | Mechanism | TIA Required | Classification |
+| ---------- | --------------------- | --------- | --------------- | --------- | ------------ | -------------- |
+| 1          | [Entity A → Entity B] | [Country] | [Categories]    | [SCCs M2] | Yes          | LAWFUL         |
+| 2          | [Entity A → Entity C] | [Country] | [Categories]    | [None]    | N/A          | UNLAWFUL       |
 
 ---
 
@@ -1142,12 +1184,15 @@ immediate actions]
 ## Remediation Plan
 
 ### Priority 1 — Critical (Act within 48 hours)
+
 [Item, owner, deadline, verification method]
 
 ### Priority 2 — High (Act within 30 days)
+
 [Item, owner, deadline, verification method]
 
 ### Priority 3 — Medium (Act within 60-90 days)
+
 [Item, owner, deadline, verification method]
 
 ---
@@ -1176,16 +1221,19 @@ This skill uses EU GDPR as its primary reference with parallel UK GDPR and Swiss
 tracks. When the transfer involves only one regime, the other tracks can be skipped.
 
 **For EU-only transfers:**
+
 - Omit UK GDPR Step 7 and Swiss nDSG Step 8
 - Reference only the EU adequacy list and EU SCCs
 
 **For UK-only transfers (no EU GDPR involvement):**
+
 - Use IDTA (not EU SCCs) as the primary transfer tool
 - Reference ICO adequacy regulations (not EU Commission decisions)
 - Apply TRA methodology (not EDPB six-step TIA) per ICO guidance
 - Reference UK DPA 2018 Part 3 Chapter 5, not GDPR Chapter V directly
 
 **For Swiss-only transfers (no EU GDPR involvement):**
+
 - Reference FDPIC adequacy list
 - Apply nDSG Art. 16-17
 - EU SCCs may be adapted with Swiss annexes per FDPIC guidance
@@ -1195,6 +1243,7 @@ tracks. When the transfer involves only one regime, the other tracks can be skip
 ## Provenance
 
 Created by Legalcode as a new original skill (2026-03-01). Synthesised from:
+
 - GDPR Chapter V (Art. 44-49)
 - EDPB Recommendations 01/2020 on supplementary measures (v2.0, June 2021)
 - EDPB Guidelines 01/2025 on Pseudonymisation (January 2025)

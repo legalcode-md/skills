@@ -39,6 +39,7 @@ severity, generates exact proposed corrections, and produces a prioritized corre
 report ready to implement.
 
 **Covers:**
+
 - Defined term audit (undefined, orphaned, duplicate, and miscapitalized terms)
 - Cross-reference integrity (stale references, nonexistent sections)
 - Party name consistency (synonym drift, signature block mismatches)
@@ -50,6 +51,7 @@ report ready to implement.
 - Substance completeness gaps (missing essential provisions, undefined relative standards)
 
 **Does not:**
+
 - Assess substantive legal risk, commercial adequacy, or negotiation positions
   (see `legalcode-contract-review` for that analysis)
 - Provide legal advice or replace qualified counsel
@@ -62,6 +64,7 @@ This skill is jurisdiction-agnostic. Document QA checks — defined term consist
 cross-reference accuracy, formatting standards — apply regardless of governing law.
 
 [JURISDICTION-SPECIFIC] When the document is governed by a specific jurisdiction, note:
+
 - Signature block formality requirements (witnesses, notarization, seals) vary widely
 - Some jurisdictions require documents in the local language or bilingual format
 - Execution requirements for deeds, security instruments, and statutory filings differ
@@ -101,6 +104,7 @@ user can correct it.
 ### Step 1: Accept the Document
 
 Accept the document in any of these formats:
+
 - **File**: DOCX, PDF, or plain text
 - **Pasted text**: Document content pasted directly into the conversation
 - **URL**: Link to a document in a document management system or cloud storage
@@ -116,7 +120,7 @@ already answered in the initial prompt:
    - Options: Commercial contract / agreement, Employment document, Real estate instrument,
      Corporate governance document (board resolution, articles, minutes), Court filing,
      Regulatory submission, Policy or procedure, Other
-   - *Why this matters*: Different document types have different essential provisions and
+   - _Why this matters_: Different document types have different essential provisions and
      signature block requirements. A deed requires witnesses; a board resolution requires
      specific recitals; a court filing has strict formatting rules.
 
@@ -124,20 +128,20 @@ already answered in the initial prompt:
    - Options: Initial draft (pre-negotiation), Redlined draft (mid-negotiation), Near-final
      (pre-execution), Final (ready to execute/file), Template audit (quality check a
      reusable template)
-   - *Why this matters*: Near-final documents warrant the strictest QA pass. Templates need
+   - _Why this matters_: Near-final documents warrant the strictest QA pass. Templates need
      checks for leftover placeholders. Mid-negotiation redlines need a check that tracked
      changes are clean.
 
 3. **Scope**: Should this be a full nine-dimension audit or a targeted check?
    - Options: Full audit (all nine dimensions), Defined terms only, Cross-references only,
      Custom focus (specify which dimensions)
-   - *Why this matters*: A full audit is appropriate for near-final documents. Targeted
+   - _Why this matters_: A full audit is appropriate for near-final documents. Targeted
      checks are faster when the user knows the problem area.
 
 4. **Known issues**: Are there any known problem areas to prioritize?
    - Free text. E.g., "The numbering went wrong after we moved sections around" or
      "Not sure if all the cross-references updated correctly."
-   - *Why this matters*: Known issues get checked first and flagged prominently.
+   - _Why this matters_: Known issues get checked first and flagged prominently.
 
 Proceed with reasonable defaults if the user provides partial context.
 
@@ -169,17 +173,18 @@ using the format specified in the **Correction Entry Format** section.
 
 **What to check:**
 
-| Check | Description | Default Severity |
-|-------|-------------|-----------------|
-| **UNDEF** | Capitalized term used in the operative provisions but not defined anywhere | CRITICAL |
-| **ORPHAN** | Term defined but never used in the operative provisions | MEDIUM |
-| **DUPLICATE** | Same term defined in more than one location with potentially different scope | HIGH |
-| **MISCAP** | A defined term appears in lower case (or inconsistent case) in at least one location | HIGH |
-| **SYNONYM** | Two or more different terms appear to mean the same thing (e.g., "Purchaser" and "Buyer" for the same party) | HIGH |
-| **CIRCULAR** | A defined term's definition relies on another term that directly or indirectly relies on it | HIGH |
-| **NEVER-NEEDED** | A term is defined with extensive qualification but could have been left as plain English | LOW |
+| Check            | Description                                                                                                  | Default Severity |
+| ---------------- | ------------------------------------------------------------------------------------------------------------ | ---------------- |
+| **UNDEF**        | Capitalized term used in the operative provisions but not defined anywhere                                   | CRITICAL         |
+| **ORPHAN**       | Term defined but never used in the operative provisions                                                      | MEDIUM           |
+| **DUPLICATE**    | Same term defined in more than one location with potentially different scope                                 | HIGH             |
+| **MISCAP**       | A defined term appears in lower case (or inconsistent case) in at least one location                         | HIGH             |
+| **SYNONYM**      | Two or more different terms appear to mean the same thing (e.g., "Purchaser" and "Buyer" for the same party) | HIGH             |
+| **CIRCULAR**     | A defined term's definition relies on another term that directly or indirectly relies on it                  | HIGH             |
+| **NEVER-NEEDED** | A term is defined with extensive qualification but could have been left as plain English                     | LOW              |
 
 **How to check:**
+
 1. Build a complete list of all capitalized terms in the document.
 2. Cross-reference each against the definitions register built in Step 3.
 3. For every instance in the operative provisions, verify the capitalization matches the
@@ -195,15 +200,16 @@ ask the user whether this is intentional before classifying as UNDEF.
 
 **What to check:**
 
-| Check | Description | Default Severity |
-|-------|-------------|-----------------|
-| **MISSING-TARGET** | Cross-reference points to a section, clause, exhibit, or schedule that does not exist in the document | CRITICAL |
-| **WRONG-NUMBER** | Cross-reference appears to point to a real section but the number is wrong (e.g., "Section 4.2" exists but the reference should be "Section 4.3" based on context) | HIGH |
-| **SUBJECT-MISMATCH** | The referenced section does not cover the subject matter stated in the cross-reference ("as defined in Section 2.1" but Section 2.1 doesn't define that term) | HIGH |
-| **MISSING-HEADING** | Cross-reference uses a section number only, without the heading name — making errors invisible | LOW |
-| **STALE-AFTER-DELETION** | The referenced section was deleted in a prior draft and no longer exists | CRITICAL |
+| Check                    | Description                                                                                                                                                        | Default Severity |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| **MISSING-TARGET**       | Cross-reference points to a section, clause, exhibit, or schedule that does not exist in the document                                                              | CRITICAL         |
+| **WRONG-NUMBER**         | Cross-reference appears to point to a real section but the number is wrong (e.g., "Section 4.2" exists but the reference should be "Section 4.3" based on context) | HIGH             |
+| **SUBJECT-MISMATCH**     | The referenced section does not cover the subject matter stated in the cross-reference ("as defined in Section 2.1" but Section 2.1 doesn't define that term)      | HIGH             |
+| **MISSING-HEADING**      | Cross-reference uses a section number only, without the heading name — making errors invisible                                                                     | LOW              |
+| **STALE-AFTER-DELETION** | The referenced section was deleted in a prior draft and no longer exists                                                                                           | CRITICAL         |
 
 **How to check:**
+
 1. Extract every cross-reference in the document (search for "Section," "Clause," "Schedule,"
    "Exhibit," "Annex," "Appendix" followed by a number or letter).
 2. Validate each reference against the section map built in Step 3.
@@ -214,16 +220,17 @@ ask the user whether this is intentional before classifying as UNDEF.
 
 **What to check:**
 
-| Check | Description | Default Severity |
-|-------|-------------|-----------------|
-| **INTRO-BODY-MISMATCH** | A party's defined term in the Introduction differs from the term used in the body | CRITICAL |
-| **SYNONYM-DRIFT** | A party is referred to by different terms in different parts of the document (e.g., "Buyer" in clauses 1–5, "Purchaser" in clauses 6–12) | HIGH |
-| **SIG-BLOCK-MISMATCH** | The entity name in the signature block differs from the entity name in the Introduction or Parties clause | CRITICAL |
-| **FULL-NAME-USAGE** | Party's full legal name is used in body clauses instead of the defined short-form term | MEDIUM |
-| **PRECEDENT-BLEED** | A party name from a prior contract has been left in the document (copy-paste error) | CRITICAL |
-| **WRONG-PARTY** | An obligation or right is attributed to the wrong party | HIGH |
+| Check                   | Description                                                                                                                              | Default Severity |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **INTRO-BODY-MISMATCH** | A party's defined term in the Introduction differs from the term used in the body                                                        | CRITICAL         |
+| **SYNONYM-DRIFT**       | A party is referred to by different terms in different parts of the document (e.g., "Buyer" in clauses 1–5, "Purchaser" in clauses 6–12) | HIGH             |
+| **SIG-BLOCK-MISMATCH**  | The entity name in the signature block differs from the entity name in the Introduction or Parties clause                                | CRITICAL         |
+| **FULL-NAME-USAGE**     | Party's full legal name is used in body clauses instead of the defined short-form term                                                   | MEDIUM           |
+| **PRECEDENT-BLEED**     | A party name from a prior contract has been left in the document (copy-paste error)                                                      | CRITICAL         |
+| **WRONG-PARTY**         | An obligation or right is attributed to the wrong party                                                                                  | HIGH             |
 
 **How to check:**
+
 1. Extract every occurrence of party names and defined party terms.
 2. Build a party name map: legal name → defined term → signature block name.
 3. Flag any inconsistency in any of the three layers.
@@ -234,17 +241,18 @@ ask the user whether this is intentional before classifying as UNDEF.
 
 **What to check:**
 
-| Check | Description | Default Severity |
-|-------|-------------|-----------------|
-| **NO-EFFECTIVE-DATE** | Document does not explicitly state an effective date (relying only on execution date) | HIGH |
-| **DATE-ARITHMETIC** | A deadline calculated from the effective date or execution date does not match the stated date (e.g., "30 days from the Effective Date" but the stated deadline is wrong) | HIGH |
-| **IMPOSSIBLE-DATE** | A date that cannot exist (February 29 in a non-leap year, day-of-week mismatch, dates before 1900) | CRITICAL |
-| **DATE-INCONSISTENCY** | The same event has different dates in different parts of the document | CRITICAL |
-| **RETROACTIVE-AMBIGUITY** | Effective date is earlier than the execution date with no provision addressing the retroactive period's obligations | MEDIUM |
-| **NOTICE-ARITHMETIC** | Notice period stated in one clause is inconsistent with the termination/renewal logic in another clause | HIGH |
-| **FORMAT-INCONSISTENCY** | Dates use different formats in different places (e.g., "March 15, 2025" in one clause and "15/03/2025" in another) | LOW |
+| Check                     | Description                                                                                                                                                               | Default Severity |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **NO-EFFECTIVE-DATE**     | Document does not explicitly state an effective date (relying only on execution date)                                                                                     | HIGH             |
+| **DATE-ARITHMETIC**       | A deadline calculated from the effective date or execution date does not match the stated date (e.g., "30 days from the Effective Date" but the stated deadline is wrong) | HIGH             |
+| **IMPOSSIBLE-DATE**       | A date that cannot exist (February 29 in a non-leap year, day-of-week mismatch, dates before 1900)                                                                        | CRITICAL         |
+| **DATE-INCONSISTENCY**    | The same event has different dates in different parts of the document                                                                                                     | CRITICAL         |
+| **RETROACTIVE-AMBIGUITY** | Effective date is earlier than the execution date with no provision addressing the retroactive period's obligations                                                       | MEDIUM           |
+| **NOTICE-ARITHMETIC**     | Notice period stated in one clause is inconsistent with the termination/renewal logic in another clause                                                                   | HIGH             |
+| **FORMAT-INCONSISTENCY**  | Dates use different formats in different places (e.g., "March 15, 2025" in one clause and "15/03/2025" in another)                                                        | LOW              |
 
 **How to check:**
+
 1. Extract every date mentioned in the document with its location and purpose.
 2. Check each against the leap-year calendar and day-of-week calendar.
 3. Trace the notice period arithmetic: identify the governing term length, renewal cycle, and
@@ -255,17 +263,18 @@ ask the user whether this is intentional before classifying as UNDEF.
 
 **What to check:**
 
-| Check | Description | Default Severity |
-|-------|-------------|-----------------|
-| **SKIPPED-NUMBER** | A list or section sequence skips a number (e.g., items 1, 2, 4, 5 — 3 is missing) | MEDIUM |
-| **DUPLICATE-NUMBER** | Two different items share the same number | HIGH |
-| **HIERARCHY-INCONSISTENCY** | Heading levels are applied inconsistently (e.g., some third-level headings use bold, others use indented plain text) | MEDIUM |
-| **NON-PARALLEL-STRUCTURE** | Items in the same list use inconsistent grammatical structure | MEDIUM |
-| **NUMERAL-WORD-INCONSISTENCY** | Numbers are sometimes spelled out ("fifteen") and sometimes in numerals ("15") for the same category | LOW |
-| **ORDINAL-INCONSISTENCY** | Ordinals switch between "1st" and "first" form | LOW |
-| **POST-EDIT-DRIFT** | Numbering was not updated after a section was moved, added, or deleted | HIGH |
+| Check                          | Description                                                                                                          | Default Severity |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **SKIPPED-NUMBER**             | A list or section sequence skips a number (e.g., items 1, 2, 4, 5 — 3 is missing)                                    | MEDIUM           |
+| **DUPLICATE-NUMBER**           | Two different items share the same number                                                                            | HIGH             |
+| **HIERARCHY-INCONSISTENCY**    | Heading levels are applied inconsistently (e.g., some third-level headings use bold, others use indented plain text) | MEDIUM           |
+| **NON-PARALLEL-STRUCTURE**     | Items in the same list use inconsistent grammatical structure                                                        | MEDIUM           |
+| **NUMERAL-WORD-INCONSISTENCY** | Numbers are sometimes spelled out ("fifteen") and sometimes in numerals ("15") for the same category                 | LOW              |
+| **ORDINAL-INCONSISTENCY**      | Ordinals switch between "1st" and "first" form                                                                       | LOW              |
+| **POST-EDIT-DRIFT**            | Numbering was not updated after a section was moved, added, or deleted                                               | HIGH             |
 
 **How to check:**
+
 1. Walk through every numbered list and heading to verify the sequence is complete and correct.
 2. Check that headings at the same level follow a consistent visual and structural pattern.
 3. Check grammatical parallelism within each list (all items should complete the same stem).
@@ -275,15 +284,16 @@ ask the user whether this is intentional before classifying as UNDEF.
 
 **What to check:**
 
-| Check | Description | Default Severity |
-|-------|-------------|-----------------|
-| **MIXED-GENDERED** | Document uses "he" in some clauses and "she" or "they" in others for the same role | HIGH |
-| **GENDERED-FOR-ENTITY** | A corporate entity is referred to as "he" or "she" instead of "it" | MEDIUM |
-| **ORPHANED-PRONOUN** | A pronoun ("it," "they," "he," "she") appears without a clear antecedent — ambiguous referent | HIGH |
-| **RESIDUAL-GENDERED** | Gendered pronouns remain from a precedent document that were intended to be replaced | MEDIUM |
-| **INCONSISTENT-APPROACH** | Document adopts different gender-neutrality techniques in different clauses (e.g., role-based terms in Section 1, singular "they" in Section 2, noun repetition in Section 3) | LOW |
+| Check                     | Description                                                                                                                                                                   | Default Severity |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **MIXED-GENDERED**        | Document uses "he" in some clauses and "she" or "they" in others for the same role                                                                                            | HIGH             |
+| **GENDERED-FOR-ENTITY**   | A corporate entity is referred to as "he" or "she" instead of "it"                                                                                                            | MEDIUM           |
+| **ORPHANED-PRONOUN**      | A pronoun ("it," "they," "he," "she") appears without a clear antecedent — ambiguous referent                                                                                 | HIGH             |
+| **RESIDUAL-GENDERED**     | Gendered pronouns remain from a precedent document that were intended to be replaced                                                                                          | MEDIUM           |
+| **INCONSISTENT-APPROACH** | Document adopts different gender-neutrality techniques in different clauses (e.g., role-based terms in Section 1, singular "they" in Section 2, noun repetition in Section 3) | LOW              |
 
 **How to check:**
+
 1. Search for "he," "she," "his," "her," "him," "himself," "herself" throughout the document.
 2. For each occurrence, identify whether it is intentional (referencing a specific named
    individual) or a drafting residue.
@@ -295,19 +305,20 @@ ask the user whether this is intentional before classifying as UNDEF.
 
 **What to check:**
 
-| Check | Description | Default Severity |
-|-------|-------------|-----------------|
-| **TRACKED-CHANGES** | Document contains accepted or unaccepted tracked changes in the final version | HIGH |
-| **RESIDUAL-COMMENTS** | Document contains comment bubbles or review annotations | HIGH |
-| **PLACEHOLDER-TEXT** | Document contains "[INSERT]", "TBD," "DRAFT," or similar placeholder text | CRITICAL |
-| **FONT-INCONSISTENCY** | Body text uses inconsistent fonts, sizes, or weights | MEDIUM |
-| **SPACING-INCONSISTENCY** | Line spacing or paragraph spacing is inconsistent within sections | LOW |
-| **PAGE-NUMBERING** | Page numbers are missing, restarted mid-document, or formatted inconsistently | MEDIUM |
-| **HIDDEN-METADATA** | Prior party names, author information, or document history carried in metadata | MEDIUM |
-| **BLANK-FIELDS** | Date lines, party address blocks, or other fill-in fields are left blank | HIGH |
-| **WRONG-DOCUMENT-TITLE** | Document title or header carries the name of a prior document | HIGH |
+| Check                     | Description                                                                    | Default Severity |
+| ------------------------- | ------------------------------------------------------------------------------ | ---------------- |
+| **TRACKED-CHANGES**       | Document contains accepted or unaccepted tracked changes in the final version  | HIGH             |
+| **RESIDUAL-COMMENTS**     | Document contains comment bubbles or review annotations                        | HIGH             |
+| **PLACEHOLDER-TEXT**      | Document contains "[INSERT]", "TBD," "DRAFT," or similar placeholder text      | CRITICAL         |
+| **FONT-INCONSISTENCY**    | Body text uses inconsistent fonts, sizes, or weights                           | MEDIUM           |
+| **SPACING-INCONSISTENCY** | Line spacing or paragraph spacing is inconsistent within sections              | LOW              |
+| **PAGE-NUMBERING**        | Page numbers are missing, restarted mid-document, or formatted inconsistently  | MEDIUM           |
+| **HIDDEN-METADATA**       | Prior party names, author information, or document history carried in metadata | MEDIUM           |
+| **BLANK-FIELDS**          | Date lines, party address blocks, or other fill-in fields are left blank       | HIGH             |
+| **WRONG-DOCUMENT-TITLE**  | Document title or header carries the name of a prior document                  | HIGH             |
 
 **How to check:**
+
 1. Scan for tracked change markup and comment annotations.
 2. Search for placeholder strings: "[INSERT," "[ADD," "[TBD," "[DATE," "[NAME," "DRAFT," "XX."
 3. Review page numbering sequence across the full document.
@@ -318,18 +329,19 @@ ask the user whether this is intentional before classifying as UNDEF.
 
 **What to check:**
 
-| Check | Description | Default Severity |
-|-------|-------------|-----------------|
-| **MISSING-DATE-LINE** | A party's signature block does not include a date line | HIGH |
-| **MISSING-TITLE** | A corporate signatory's signature block does not include a title line | HIGH |
-| **ENTITY-MISMATCH** | The entity name in the signature block differs from the entity name in the Introduction | CRITICAL |
-| **MISSING-WITNESS** | A signature block that requires a witness (deed, statutory form) has no witness block | CRITICAL |
-| **MISSING-NOTARY** | A signature block that requires notarization has no notarial certificate block | CRITICAL |
-| **COUNTERPARTS-MISSING** | A multi-party document has no counterparts clause permitting separate execution | MEDIUM |
-| **WRONG-PARTY-COUNT** | Fewer signature blocks than contracting parties, or additional signature blocks for non-parties | HIGH |
-| **AUTHORITY-RECITAL** | No "duly authorized" or equivalent authority recital for corporate signatories | MEDIUM |
+| Check                    | Description                                                                                     | Default Severity |
+| ------------------------ | ----------------------------------------------------------------------------------------------- | ---------------- |
+| **MISSING-DATE-LINE**    | A party's signature block does not include a date line                                          | HIGH             |
+| **MISSING-TITLE**        | A corporate signatory's signature block does not include a title line                           | HIGH             |
+| **ENTITY-MISMATCH**      | The entity name in the signature block differs from the entity name in the Introduction         | CRITICAL         |
+| **MISSING-WITNESS**      | A signature block that requires a witness (deed, statutory form) has no witness block           | CRITICAL         |
+| **MISSING-NOTARY**       | A signature block that requires notarization has no notarial certificate block                  | CRITICAL         |
+| **COUNTERPARTS-MISSING** | A multi-party document has no counterparts clause permitting separate execution                 | MEDIUM           |
+| **WRONG-PARTY-COUNT**    | Fewer signature blocks than contracting parties, or additional signature blocks for non-parties | HIGH             |
+| **AUTHORITY-RECITAL**    | No "duly authorized" or equivalent authority recital for corporate signatories                  | MEDIUM           |
 
 **How to check:**
+
 1. Count the signature blocks and compare to the number of named contracting parties.
 2. For each signature block, verify: entity name matches Introduction clause, date line present,
    title line present for corporate signatories.
@@ -349,17 +361,18 @@ their substantive quality (which is the domain of contract review skills).
 
 **What to check:**
 
-| Check | Description | Default Severity |
-|-------|-------------|-----------------|
-| **NO-PARTIES** | Document does not identify the contracting parties | CRITICAL |
-| **NO-GOVERNING-LAW** | Document has no governing law or jurisdiction clause | HIGH |
-| **NO-TERM** | Document has no stated term, commencement date, or duration | HIGH |
-| **NO-DISPUTE-RESOLUTION** | Document has no dispute resolution mechanism | HIGH |
-| **UNDEFINED-STANDARD** | Document uses undefined relative standards ("promptly," "reasonable efforts," "materially") without qualification or context | MEDIUM |
-| **AMBIGUOUS-OBLIGATION** | An operative clause cannot be determined to impose an obligation ("shall") or grant discretion ("may") from its language | HIGH |
-| **INCOMPLETE-PROVISION** | A provision appears incomplete — stops mid-sentence, references a section not yet drafted | CRITICAL |
+| Check                     | Description                                                                                                                  | Default Severity |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **NO-PARTIES**            | Document does not identify the contracting parties                                                                           | CRITICAL         |
+| **NO-GOVERNING-LAW**      | Document has no governing law or jurisdiction clause                                                                         | HIGH             |
+| **NO-TERM**               | Document has no stated term, commencement date, or duration                                                                  | HIGH             |
+| **NO-DISPUTE-RESOLUTION** | Document has no dispute resolution mechanism                                                                                 | HIGH             |
+| **UNDEFINED-STANDARD**    | Document uses undefined relative standards ("promptly," "reasonable efforts," "materially") without qualification or context | MEDIUM           |
+| **AMBIGUOUS-OBLIGATION**  | An operative clause cannot be determined to impose an obligation ("shall") or grant discretion ("may") from its language     | HIGH             |
+| **INCOMPLETE-PROVISION**  | A provision appears incomplete — stops mid-sentence, references a section not yet drafted                                    | CRITICAL         |
 
 **How to check:**
+
 1. Verify the document identifies all contracting parties with their legal names and roles.
 2. Check for governing law and dispute resolution clauses.
 3. Check for any defined commencement date or term duration.
@@ -411,6 +424,7 @@ Before delivering the correction report, run these checks:
 Deliver the output using the **Output Format Template** below.
 
 **⟁ CLARIFY** — For large documents with many findings, ask the user whether to:
+
 - Deliver the **full correction report** (all findings with corrections)
 - Deliver an **executive summary first** (counts by severity, top issues) followed by the
   full report on request
@@ -426,6 +440,7 @@ Errors that create legal ambiguity, could void or misapply provisions, or will c
 material problems at execution or in dispute resolution.
 
 **Examples:**
+
 - Capitalized term used in operative provision with no definition
 - Cross-reference to a section that does not exist
 - Party name in signature block differs from Introduction clause
@@ -443,6 +458,7 @@ Errors that materially affect the document's quality, create interpretive risk, 
 likely to be challenged by a counterparty or court.
 
 **Examples:**
+
 - Duplicate definitions for the same term
 - Wrong section number in a cross-reference (right concept, wrong number)
 - Party name synonym drift ("Buyer" / "Purchaser")
@@ -460,6 +476,7 @@ Errors that reduce document quality and may create minor interpretive issues, bu
 create immediate legal risk.
 
 **Examples:**
+
 - Orphaned (unused) definitions
 - Inconsistent pronoun use within the same document
 - Non-parallel list structure
@@ -475,6 +492,7 @@ document.
 Minor editorial or stylistic inconsistencies that do not affect legal meaning.
 
 **Examples:**
+
 - Date format inconsistency across clauses
 - Ordinal inconsistency ("1st" / "first")
 - Numeral/word inconsistency for the same category of numbers
@@ -548,13 +566,13 @@ the next scheduled revision rather than holding up execution.
 Run these 5 gates silently before delivering any output. Revise before delivering if any
 gate fails.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every classification as CRITICAL is based on an identifiable error in the document, not speculation | Add specific location reference or downgrade to HIGH |
-| **Format** | Every proposed correction is in exact, ready-to-insert form | Provide specific language rather than vague guidance |
-| **Currency** | Every check for jurisdiction-specific requirements is marked [JURISDICTION-SPECIFIC] when not universally applicable | Add marker and clarifying note |
-| **Domain** | Analysis stays within the document QA scope — do not venture into substantive legal risk analysis | Remove or mark [OUT OF SCOPE FOR QA] |
-| **Confidence** | Uncertainty explicitly stated — do not classify an error as CRITICAL if the intent is ambiguous | Add confidence qualifier or downgrade severity |
+| Gate           | Rule                                                                                                                 | Fail Action                                          |
+| -------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| **Source**     | Every classification as CRITICAL is based on an identifiable error in the document, not speculation                  | Add specific location reference or downgrade to HIGH |
+| **Format**     | Every proposed correction is in exact, ready-to-insert form                                                          | Provide specific language rather than vague guidance |
+| **Currency**   | Every check for jurisdiction-specific requirements is marked [JURISDICTION-SPECIFIC] when not universally applicable | Add marker and clarifying note                       |
+| **Domain**     | Analysis stays within the document QA scope — do not venture into substantive legal risk analysis                    | Remove or mark [OUT OF SCOPE FOR QA]                 |
+| **Confidence** | Uncertainty explicitly stated — do not classify an error as CRITICAL if the intent is ambiguous                      | Add confidence qualifier or downgrade severity       |
 
 ### Self-Interrogation for CRITICAL Items
 
@@ -572,13 +590,13 @@ If either pass reveals a weakness, revise the finding before delivery.
 
 ### Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95-1.0 | Error is unambiguous and verifiable from the text alone | State with confidence |
-| **High** | 0.80-0.94 | Strong evidence of an error, minor ambiguity possible | State with brief caveat |
-| **Probable** | 0.60-0.79 | Likely an error, but could be intentional | Flag with note: "[Verify intent with drafter]" |
-| **Possible** | 0.40-0.59 | Possible error, genuinely uncertain | Flag for human review rather than correcting |
-| **Unlikely** | 0.0-0.39 | Weak basis — may not be an error | Do not flag as an error; note as an observation |
+| Level        | Range     | Meaning                                                 | Action                                          |
+| ------------ | --------- | ------------------------------------------------------- | ----------------------------------------------- |
+| **Definite** | 0.95-1.0  | Error is unambiguous and verifiable from the text alone | State with confidence                           |
+| **High**     | 0.80-0.94 | Strong evidence of an error, minor ambiguity possible   | State with brief caveat                         |
+| **Probable** | 0.60-0.79 | Likely an error, but could be intentional               | Flag with note: "[Verify intent with drafter]"  |
+| **Possible** | 0.40-0.59 | Possible error, genuinely uncertain                     | Flag for human review rather than correcting    |
+| **Unlikely** | 0.0-0.39  | Weak basis — may not be an error                        | Do not flag as an error; note as an observation |
 
 ---
 
@@ -706,6 +724,7 @@ Explicit catalogue of what NOT to do when running a document QA audit:
 Apply plain-language discipline to all output:
 
 **For correction descriptions** (may be shared with the drafting team):
+
 - State the error and its potential impact in one sentence
 - Active voice: "Section 4.2 references 'Section 7.5' which does not exist" not "Section
   7.5 is referenced by Section 4.2 but cannot be found"
@@ -713,12 +732,14 @@ Apply plain-language discipline to all output:
 - Name the location precisely: clause number, sentence position, or quoted text
 
 **For proposed corrections**:
+
 - Provide exact replacement text in quotation marks
 - If deletion is required, state: "Delete '[quoted text]' in its entirety"
 - If addition is required, state: "Insert '[text]' after '[anchor text]'"
 - Never say "update the reference" without specifying the exact update
 
 **Quality gates before delivery**:
+
 1. Does every CRITICAL finding include an exact proposed correction?
 2. Is every location reference specific enough for a drafter to find without searching?
 3. Is the executive summary accurate (does the finding count match the corrections listed)?
@@ -731,6 +752,7 @@ Apply plain-language discipline to all output:
 ## External Tool Integration
 
 **With legalcode-mcp connected (preferred):**
+
 - Verify jurisdiction-specific signature block requirements (witness, notarization,
   seal requirements) for the document's governing law
 - Check whether specific document types require mandatory provisions under the applicable
@@ -740,6 +762,7 @@ Apply plain-language discipline to all output:
 - Mark all legalcode-mcp-sourced legal requirements as VERIFIED in the Glass Box audit trail
 
 **Without legalcode-mcp:**
+
 - Mark all jurisdiction-specific checks with [JURISDICTION-SPECIFIC] and [VERIFY]
 - Note in the Glass Box: `legalcode_mcp: "Not connected"`
 - Flag signature block completeness checks as "requires jurisdiction-specific
@@ -755,6 +778,7 @@ The nine QA dimensions are largely universal, but several jurisdiction-specific 
 apply:
 
 **Signature block requirements:**
+
 - **England & Wales**: Deeds require two witnesses OR a company execution under s.44 CA 2006
   ("executed as a deed" wording + two authorized signatories or one authorized signatory
   and a witness) [VERIFY current requirements]
@@ -766,12 +790,14 @@ apply:
   execution under s.127 Corporations Act 2001 or by an attorney [VERIFY]
 
 **Language requirements:**
+
 - Several jurisdictions require contracts to be in the local language or in bilingual form
   (France — Law No. 94-665, Belgium, Quebec) [VERIFY current requirements]. A QA audit of
   a document intended for use in such jurisdictions should flag if only an English version
   is present.
 
 **Date format conventions:**
+
 - Day-month-year format is standard in most of the world; month-day-year is standard in
   the US. A date written "3/4/2025" is ambiguous cross-jurisdictionally. Flag any
   date not written in unambiguous long-form (e.g., "March 4, 2025" or "4 March 2025").
@@ -795,12 +821,12 @@ Structure the final deliverable as:
 
 ## Executive Summary
 
-| Severity | Count |
-|----------|-------|
-| CRITICAL | [N]   |
-| HIGH     | [N]   |
-| MEDIUM   | [N]   |
-| LOW      | [N]   |
+| Severity  | Count   |
+| --------- | ------- |
+| CRITICAL  | [N]     |
+| HIGH      | [N]     |
+| MEDIUM    | [N]     |
+| LOW       | [N]     |
 | **Total** | **[N]** |
 
 **Assessment**: [1-2 sentence assessment of the document's overall QA status, e.g.,
@@ -834,17 +860,17 @@ items should be resolved / CLEAR FOR EXECUTION — only MEDIUM/LOW items remain]
 
 ## Dimensions Audited — Summary by Category
 
-| Dimension | Status | Findings |
-|-----------|--------|----------|
-| 1. Defined Term Audit | PASS / ISSUES | [N] findings |
-| 2. Cross-Reference Integrity | PASS / ISSUES | [N] findings |
-| 3. Party Name Consistency | PASS / ISSUES | [N] findings |
-| 4. Date and Deadline Logic | PASS / ISSUES | [N] findings |
-| 5. Numbering and Hierarchy | PASS / ISSUES | [N] findings |
+| Dimension                         | Status        | Findings     |
+| --------------------------------- | ------------- | ------------ |
+| 1. Defined Term Audit             | PASS / ISSUES | [N] findings |
+| 2. Cross-Reference Integrity      | PASS / ISSUES | [N] findings |
+| 3. Party Name Consistency         | PASS / ISSUES | [N] findings |
+| 4. Date and Deadline Logic        | PASS / ISSUES | [N] findings |
+| 5. Numbering and Hierarchy        | PASS / ISSUES | [N] findings |
 | 6. Gender and Pronoun Consistency | PASS / ISSUES | [N] findings |
-| 7. Formatting and Layout | PASS / ISSUES | [N] findings |
-| 8. Signature Block Validation | PASS / ISSUES | [N] findings |
-| 9. Substance Completeness Gaps | PASS / ISSUES | [N] findings |
+| 7. Formatting and Layout          | PASS / ISSUES | [N] findings |
+| 8. Signature Block Validation     | PASS / ISSUES | [N] findings |
+| 9. Substance Completeness Gaps    | PASS / ISSUES | [N] findings |
 
 ---
 
@@ -856,14 +882,15 @@ items should be resolved / CLEAR FOR EXECUTION — only MEDIUM/LOW items remain]
 ## Provenance
 
 Created by Legalcode (2026-03-21). Original synthesis drawing on:
-- Ken Adams, *A Manual of Style for Contract Drafting* (5th ed., ABA Publishing) — the
+
+- Ken Adams, _A Manual of Style for Contract Drafting_ (5th ed., ABA Publishing) — the
   leading reference on defined term precision, obligation/discretion distinction, and
   language consistency in commercial contracts [VERIFY current edition]
 - ABA Business Law Today (November 2024) — analysis of busted cross-references and their
   legal consequences
 - PerfectIt, LexCheck, Litera Contract Companion, and CrossCheck feature documentation —
   representing industry consensus on the most important automated QA checks
-- BC Law Institute, *Gender Diversity in Legal Writing* (2021)
+- BC Law Institute, _Gender Diversity in Legal Writing_ (2021)
 - Thomson Reuters research on the frequency and cost of legal document drafting errors
 - Definely analysis: "Document and contract errors could lead to claims against your firm"
 - Weagree contract drafting principles (date and consistency guidance)

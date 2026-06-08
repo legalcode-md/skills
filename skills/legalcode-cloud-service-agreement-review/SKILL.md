@@ -38,6 +38,7 @@ actionable redline suggestions, and produces a confidence-scored, auditable anal
 calibrated to the specific risks of cloud and hosted-service procurement.
 
 **Covers:**
+
 - Clause-by-clause analysis across 16 CSA-specific categories plus 6 standard categories
 - Deviation classification (GREEN / YELLOW / RED) adapted to cloud procurement risk
 - SLA uptime credit mechanics and carveout analysis
@@ -52,6 +53,7 @@ calibrated to the specific risks of cloud and hosted-service procurement.
 - Glass Box audit trail
 
 **Does not:**
+
 - Draft new cloud agreements (see legalcode-technology-license-agreement for drafting)
 - Replace qualified legal counsel or provide legal advice
 - Apply exclusively to one jurisdiction — jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers
@@ -112,6 +114,7 @@ user can correct it.
 ### Step 1: Accept the Agreement
 
 Accept the cloud service agreement in any of these formats:
+
 - **File**: PDF, DOCX, or other document format
 - **URL**: Link to cloud provider terms page, CLM, or document system
 - **Pasted text**: Agreement text pasted directly into the conversation
@@ -126,13 +129,13 @@ structured options where possible:
 
 1. **Which side are you on?**
    - Options: Customer / Cloud Consumer, Provider / Cloud Vendor, Both (reviewing own standard terms)
-   - *Why this matters*: What protects a customer harms a provider and vice versa. The
+   - _Why this matters_: What protects a customer harms a provider and vice versa. The
      analysis of SLA exclusions, liability caps, and data use rights flips completely.
 
 2. **Industry / regulatory status**: Is the customer subject to regulated-industry rules?
    - Options: Financial services (DORA / OCC / FCA applies), Healthcare (HIPAA applies),
      Government / Public sector (FedRAMP / sovereignty concerns), General commercial, Other
-   - *Why this matters*: DORA requires mandatory contract terms; HIPAA requires a BAA;
+   - _Why this matters_: DORA requires mandatory contract terms; HIPAA requires a BAA;
      government procurement triggers specific security and data sovereignty requirements.
 
 3. **Data sensitivity**: What types of data will be processed under this agreement?
@@ -141,14 +144,14 @@ structured options where possible:
      data (PCI DSS), Classified / government data (sovereignty rules), Non-personal / no
      regulated data
    - Allow multiple selections.
-   - *Why this matters*: Determines whether DPA, BAA, PCI Responsibility Matrix, and
+   - _Why this matters_: Determines whether DPA, BAA, PCI Responsibility Matrix, and
      data transfer mechanism review are mandatory vs. advisory.
 
 4. **Deal context**: Relevant commercial context?
    - Free text. Prompt with examples: annual contract value, strategic importance of the
      service, whether this is the provider's standard click-through or a negotiated
      enterprise agreement, existing relationship, whether there is a competitive process.
-   - *Why this matters*: A $15K/year SaaS tool gets different treatment than a $5M/year
+   - _Why this matters_: A $15K/year SaaS tool gets different treatment than a $5M/year
      infrastructure migration. Negotiation leverage differs significantly.
 
 5. **Focus areas**: Any specific concerns?
@@ -212,6 +215,7 @@ legal reference file before analyzing clauses.
    - Industry-specific mandatory requirements (HIPAA BAA, PCI DSS, FedRAMP)
 
 3. **Save results** to `/tmp/legalcode-csa-authority.md` structured as:
+
    ```
    # CSA Legal Authority — [Contract Name]
    ## Governing Law: [Jurisdiction]
@@ -227,6 +231,7 @@ legal reference file before analyzing clauses.
    legalcode-mcp as VERIFIED in the Glass Box audit trail.
 
 **If legalcode-mcp is not connected:**
+
 - Mark all statutory and case law references with [VERIFY]
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Proceed with general market knowledge but flag that legal authority is unverified
@@ -241,6 +246,7 @@ Before clause analysis, map the full agreement architecture:
 - Identify the **Order of Precedence** clause. Note which documents govern in conflict.
 
 **⟁ CLARIFY** — For multi-document agreements:
+
 - Ask whether to perform a **full review** of all documents or a **priority review**
   focused on the MSA, DPA, and SLA Schedule only
 - If external documents are incorporated by reference (e.g., "Provider's current Security
@@ -254,36 +260,37 @@ clauses interact (e.g., an SLA credits-as-exclusive-remedy clause may limit brea
 contract claims, not just SLA remedies).
 
 **⟁ CLARIFY** — For long or complex agreements (50+ pages, or with multiple schedules):
+
 - Ask whether to perform a full review of all 16 CSA-specific categories and 6 standard
   categories, or a priority review focused on the user's stated focus areas.
 
 Cover all categories below. For each, assess against the playbook (or market standards)
 and note whether the clause is present, absent, or unusual.
 
-| # | Clause Category | Depth | Key Review Points |
-|---|----------------|-------|-------------------|
-| 1 | Service Description and Scope | Deep | Service definition precision, exclusions, change of scope, benchmarking restrictions |
-| 2 | SLA and Uptime Credits | Deep | Uptime %, credit %, measurement method, carveouts, exclusive remedy, downtime definition |
-| 3 | Security Commitments | Deep | Security standards, pen testing, incident notification, access controls, vulnerability management |
-| 4 | Data Processing Agreement | Deep | GDPR Art. 28 compliance, DPA structure, processing purpose limitation, data subject rights |
-| 5 | Sub-Processors | Deep | Approval model, notification windows, objection rights, flow-down obligations, liability |
-| 6 | Audit Rights and Certifications | Deep | Direct audit, SOC 2 substitution, DORA oversight rights, frequency, scope, cost |
-| 7 | Customer Data Ownership and IP | Deep | Data ownership, provider license scope, pre-existing IP, customer-developed configurations |
-| 8 | Provider Use of Customer Data (AI) | Deep | Service improvement rights, AI/ML training rights, anonymization, aggregation, restrictions |
-| 9 | Limitation of Liability | Deep | Cap level, data breach super-cap, mutual exclusion of consequential damages, uncapped items |
-| 10 | Indemnification | Deep | IP infringement, data breach indemnity, scope, mutual vs. unilateral, procedure, cap |
-| 11 | Business Continuity and DR | Deep | RTO/RPO commitments, geographic redundancy, backup, DR testing, DORA resilience |
-| 12 | Exit Assistance and Data Portability | Deep | Transition period, data export format, deletion certification, EU Data Act compliance, fees |
-| 13 | Regulatory Compliance Allocation | Deep | Industry-specific obligations (HIPAA BAA, PCI DSS, DORA Art. 30, FedRAMP), government access |
-| 14 | Unilateral Modification Rights | Deep | Price changes, feature changes, policy changes, notice periods, termination rights on change |
-| 15 | Term, Termination, and Auto-Renewal | Standard | Duration, renewal notice windows, convenience termination, cause cure periods, wind-down |
-| 16 | Governing Law and Disputes | Standard | Jurisdiction, arbitration vs. litigation, venue, escalation |
-| 17 | Payment and Fees | Standard | Payment terms, price escalation, disputed invoices, taxes, egress fees, overage charges |
-| 18 | Confidentiality | Standard | Scope, term, carveouts, provider use of customer information |
-| 19 | Assignment and Change of Control | Standard | Consent requirements, change-of-control triggers, service continuity |
-| 20 | Force Majeure | Standard | Scope, notification, duration thresholds, cloud-provider-caused outages distinction |
-| 21 | Compliance and Regulatory (General) | Standard | Anti-bribery, sanctions, modern slavery, regulatory approvals |
-| 22 | Definitions and Boilerplate | Standard | Order of precedence, entire agreement, notices, amendments |
+| #   | Clause Category                      | Depth    | Key Review Points                                                                                 |
+| --- | ------------------------------------ | -------- | ------------------------------------------------------------------------------------------------- |
+| 1   | Service Description and Scope        | Deep     | Service definition precision, exclusions, change of scope, benchmarking restrictions              |
+| 2   | SLA and Uptime Credits               | Deep     | Uptime %, credit %, measurement method, carveouts, exclusive remedy, downtime definition          |
+| 3   | Security Commitments                 | Deep     | Security standards, pen testing, incident notification, access controls, vulnerability management |
+| 4   | Data Processing Agreement            | Deep     | GDPR Art. 28 compliance, DPA structure, processing purpose limitation, data subject rights        |
+| 5   | Sub-Processors                       | Deep     | Approval model, notification windows, objection rights, flow-down obligations, liability          |
+| 6   | Audit Rights and Certifications      | Deep     | Direct audit, SOC 2 substitution, DORA oversight rights, frequency, scope, cost                   |
+| 7   | Customer Data Ownership and IP       | Deep     | Data ownership, provider license scope, pre-existing IP, customer-developed configurations        |
+| 8   | Provider Use of Customer Data (AI)   | Deep     | Service improvement rights, AI/ML training rights, anonymization, aggregation, restrictions       |
+| 9   | Limitation of Liability              | Deep     | Cap level, data breach super-cap, mutual exclusion of consequential damages, uncapped items       |
+| 10  | Indemnification                      | Deep     | IP infringement, data breach indemnity, scope, mutual vs. unilateral, procedure, cap              |
+| 11  | Business Continuity and DR           | Deep     | RTO/RPO commitments, geographic redundancy, backup, DR testing, DORA resilience                   |
+| 12  | Exit Assistance and Data Portability | Deep     | Transition period, data export format, deletion certification, EU Data Act compliance, fees       |
+| 13  | Regulatory Compliance Allocation     | Deep     | Industry-specific obligations (HIPAA BAA, PCI DSS, DORA Art. 30, FedRAMP), government access      |
+| 14  | Unilateral Modification Rights       | Deep     | Price changes, feature changes, policy changes, notice periods, termination rights on change      |
+| 15  | Term, Termination, and Auto-Renewal  | Standard | Duration, renewal notice windows, convenience termination, cause cure periods, wind-down          |
+| 16  | Governing Law and Disputes           | Standard | Jurisdiction, arbitration vs. litigation, venue, escalation                                       |
+| 17  | Payment and Fees                     | Standard | Payment terms, price escalation, disputed invoices, taxes, egress fees, overage charges           |
+| 18  | Confidentiality                      | Standard | Scope, term, carveouts, provider use of customer information                                      |
+| 19  | Assignment and Change of Control     | Standard | Consent requirements, change-of-control triggers, service continuity                              |
+| 20  | Force Majeure                        | Standard | Scope, notification, duration thresholds, cloud-provider-caused outages distinction               |
+| 21  | Compliance and Regulatory (General)  | Standard | Anti-bribery, sanctions, modern slavery, regulatory approvals                                     |
+| 22  | Definitions and Boilerplate          | Standard | Order of precedence, entire agreement, notices, amendments                                        |
 
 ### Step 7: Missing Clause Detection
 
@@ -292,26 +299,27 @@ cloud service agreement, absence can be as significant as a problematic clause.
 
 Critical missing clause flags:
 
-| Missing Clause | Severity | Rationale |
-|---------------|----------|-----------|
-| No DPA when personal data processed | RED | GDPR Art. 28 mandatory; regulatory fine risk |
-| No limitation of liability | RED | Provider or customer exposed to unlimited claims |
-| No SLA / all "commercially reasonable efforts" | RED | No enforceable uptime floor; credits meaningless |
-| No exit assistance obligations | RED | Vendor lock-in risk; EU Data Act compliance failure if EU-connected |
-| No data deletion certification on termination | RED | GDPR / CCPA retention obligations; data sovereignty risk |
-| No security incident notification timeline | RED | GDPR 72-hour obligation; CA SB 446 (30 days from 1 Jan 2026) |
-| No DPA sub-processor provisions | RED | GDPR Art. 28(4) mandatory sub-processor flow-down |
-| No DORA mandatory provisions (financial sector) | RED | Regulatory violation; DORA Art. 30 minimum terms |
-| No data ownership clause | YELLOW | Ambiguity about who owns customer data; training use risk |
-| No DR / business continuity provisions | YELLOW | Material gap for business-critical services |
-| No audit rights or SOC 2 substitution | YELLOW | No assurance mechanism for security commitments |
-| No AI training prohibition / restriction | YELLOW | Risk of customer data used to train provider's AI models |
-| No benchmark restriction carveout | YELLOW | Customer unable to test own environment |
-| No change-of-control provision | YELLOW | Provider may be acquired by competitor with no customer right |
-| Missing HIPAA BAA (if PHI involved) | RED | HIPAA violation without BAA; civil and criminal penalties |
-| Missing PCI DSS Responsibility Matrix | YELLOW | Shared-responsibility gaps for cardholder data environments |
+| Missing Clause                                  | Severity | Rationale                                                           |
+| ----------------------------------------------- | -------- | ------------------------------------------------------------------- |
+| No DPA when personal data processed             | RED      | GDPR Art. 28 mandatory; regulatory fine risk                        |
+| No limitation of liability                      | RED      | Provider or customer exposed to unlimited claims                    |
+| No SLA / all "commercially reasonable efforts"  | RED      | No enforceable uptime floor; credits meaningless                    |
+| No exit assistance obligations                  | RED      | Vendor lock-in risk; EU Data Act compliance failure if EU-connected |
+| No data deletion certification on termination   | RED      | GDPR / CCPA retention obligations; data sovereignty risk            |
+| No security incident notification timeline      | RED      | GDPR 72-hour obligation; CA SB 446 (30 days from 1 Jan 2026)        |
+| No DPA sub-processor provisions                 | RED      | GDPR Art. 28(4) mandatory sub-processor flow-down                   |
+| No DORA mandatory provisions (financial sector) | RED      | Regulatory violation; DORA Art. 30 minimum terms                    |
+| No data ownership clause                        | YELLOW   | Ambiguity about who owns customer data; training use risk           |
+| No DR / business continuity provisions          | YELLOW   | Material gap for business-critical services                         |
+| No audit rights or SOC 2 substitution           | YELLOW   | No assurance mechanism for security commitments                     |
+| No AI training prohibition / restriction        | YELLOW   | Risk of customer data used to train provider's AI models            |
+| No benchmark restriction carveout               | YELLOW   | Customer unable to test own environment                             |
+| No change-of-control provision                  | YELLOW   | Provider may be acquired by competitor with no customer right       |
+| Missing HIPAA BAA (if PHI involved)             | RED      | HIPAA violation without BAA; civil and criminal penalties           |
+| Missing PCI DSS Responsibility Matrix           | YELLOW   | Shared-responsibility gaps for cardholder data environments         |
 
 **⟁ CLARIFY** — Where absence depends on business context not yet provided:
+
 - "This agreement has no DPA. Will personal data of EU or UK residents be processed?
   If yes, this is a regulatory violation (RED). If no personal data is involved, this is fine."
 - "There are no DR commitments. How critical is this service? An outage of how many
@@ -330,6 +338,7 @@ Classification** section. For each deviation:
   estimate exposure, recommend escalation
 
 **⟁ CLARIFY** — For borderline classifications:
+
 - **YELLOW vs. RED on SLA credits**: "The SLA credits clause states credits are the
   exclusive remedy for all SLA failures including extended outages. Should I treat this
   as YELLOW (negotiate broader remedy right) or RED (requires escalation) for a
@@ -343,6 +352,7 @@ Classification** section. For each deviation:
 ### Step 9: Generate Redlines
 
 **⟁ CLARIFY** — Before generating redlines, ask about negotiation posture if not clear:
+
 - **Volume of redlines**: "I've found [N] items worth negotiating. Do you want redlines
   for all of them, or focus on the top [X] most material ones? Too many redlines can
   signal inexperience or slow a closing."
@@ -350,6 +360,7 @@ Classification** section. For each deviation:
   that rarely move, or a mid-market SaaS provider with more flexibility?
 
 For hyperscalers, distinguish between:
+
 - **Non-negotiable** standard terms (usually pricing, liability structure, platform policies)
 - **Negotiable** with enterprise addenda or DPA amendments (usually DPA terms, sub-processor
   notification windows, audit rights)
@@ -358,6 +369,7 @@ For hyperscalers, distinguish between:
 ### Step 10: Business Impact Summary
 
 Provide a summary covering:
+
 - **Overall risk assessment**: High-level view of the agreement's risk profile
 - **Top 3 issues**: Most important items to address, with severity and regulatory dimension
 - **Regulatory exposure**: Specific regulatory violations or near-misses (GDPR, DORA, HIPAA)
@@ -365,6 +377,7 @@ Provide a summary covering:
 - **Cloud-specific considerations**: Vendor lock-in risk, switching cost, exit realism
 
 **⟁ CLARIFY** — If deal context would materially affect strategy:
+
 - **Walk-away option**: Is there a competing provider, or is this vendor the only viable
   option? This determines whether the strategy is assertive or accommodating.
 - **Regulatory deadline**: Is there a regulatory compliance deadline (e.g., DORA applies
@@ -392,6 +405,7 @@ Framework** section:
 ### 1. Service Description and Scope
 
 **Key elements to review:**
+
 - Whether the service is defined precisely or broadly at the provider's discretion
 - Whether the provider may change the service features, functionality, or components
   without consent (covered in Category 14 — Unilateral Modification)
@@ -400,6 +414,7 @@ Framework** section:
 - Prohibited use provisions (acceptable use policy)
 
 **Common issues:**
+
 - Service defined by reference to "current documentation" which the provider may change
 - Benchmark testing prohibited without provider consent (even for the customer's own
   environment and data)
@@ -415,6 +430,7 @@ carveout for internal security testing and performance testing of customer's own
 ### 2. SLA and Uptime Credits
 
 **Key elements to review:**
+
 - **Uptime commitment**: Numeric percentage (99.9%, 99.95%, 99.99%) vs. "commercially
   reasonable efforts" (no enforceable floor)
 - **Measurement period**: Per calendar month vs. rolling 30 days (provider typically uses
@@ -430,14 +446,15 @@ carveout for internal security testing and performance testing of customer's own
 
 **Uptime "Nines" Reference:**
 
-| Commitment | Annual Downtime | Monthly Downtime | Typical Use Case |
-|-----------|----------------|-------------------|-----------------|
-| 99.9% | ~8.76 hours/year | ~43.8 minutes | Baseline business SaaS |
-| 99.95% | ~4.38 hours/year | ~21.9 minutes | Mid-tier enterprise |
-| 99.99% | ~52.6 minutes/year | ~4.4 minutes | Payment, auth, core infra |
-| 99.999% | ~5.26 minutes/year | ~26.3 seconds | Life-critical / regulated |
+| Commitment | Annual Downtime    | Monthly Downtime | Typical Use Case          |
+| ---------- | ------------------ | ---------------- | ------------------------- |
+| 99.9%      | ~8.76 hours/year   | ~43.8 minutes    | Baseline business SaaS    |
+| 99.95%     | ~4.38 hours/year   | ~21.9 minutes    | Mid-tier enterprise       |
+| 99.99%     | ~52.6 minutes/year | ~4.4 minutes     | Payment, auth, core infra |
+| 99.999%    | ~5.26 minutes/year | ~26.3 seconds    | Life-critical / regulated |
 
 **Common issues:**
+
 - SLA commitment is "commercially reasonable efforts" — no enforceable uptime floor
 - Credits are the exclusive remedy for **all** service failures, including data loss during
   outages (Red flag: a 10% monthly fee credit may be $5 against a $50K data breach loss)
@@ -448,6 +465,7 @@ carveout for internal security testing and performance testing of customer's own
 - SLA measured only for "core service" with features outside the SLA scope undefined
 
 **Market standards (negotiation reference):**
+
 - Enterprise agreements often achieve 99.95% or 99.99% for core infrastructure
 - Credits of 25–30% for breaches below 99.9% are achievable for large accounts
 - Exclusive remedy language should carve out breach of the general agreement (not just
@@ -467,6 +485,7 @@ challengeable if the clause is a penalty clause in disguise.
 ### 3. Security Commitments
 
 **Key elements to review:**
+
 - Security standard the provider commits to maintain (ISO 27001 / 27017, SOC 2 Type II,
   NIST SP 800-53, CSA STAR, FedRAMP)
 - Whether commitments are a contractual obligation or just a representation of current practice
@@ -477,6 +496,7 @@ challengeable if the clause is a penalty clause in disguise.
 - Security incident notification obligations (timeline, content requirements, root cause)
 
 **Common issues:**
+
 - Security standards referenced but with no obligation to maintain them ("we currently
   maintain ISO 27001" vs. "we shall maintain ISO 27001")
 - Encryption at rest not addressed, or only using provider-managed keys with no option
@@ -488,6 +508,7 @@ challengeable if the clause is a penalty clause in disguise.
 - Security commitments apply "to the extent reasonably practicable" — not actionable
 
 **Market standard security commitments:**
+
 - ISO 27001 certification maintained and renewed annually
 - SOC 2 Type II report issued at least annually, provided to customer on request
 - Encryption at rest (AES-256 minimum) and in transit (TLS 1.2+)
@@ -508,6 +529,7 @@ NIS2 obligations and ensure the cloud agreement supports compliance [VERIFY].
 ### 4. Data Processing Agreement (GDPR Art. 28 / DPA Overlay)
 
 **Key elements to review (GDPR Art. 28 mandatory elements [VERIFY]):**
+
 - Processing only on documented customer instructions
 - Provider confidentiality obligation for personnel processing personal data
 - Technical and organisational security measures (Art. 32 standard)
@@ -518,6 +540,7 @@ NIS2 obligations and ensure the cloud agreement supports compliance [VERIFY].
 - Audit and inspection assistance right
 
 **Common issues:**
+
 - No standalone DPA — data protection terms buried in general MSA without GDPR-required
   structure (violates Art. 28(3))
 - Instructions limited to the agreement itself with no ability to issue further documented
@@ -528,6 +551,7 @@ NIS2 obligations and ensure the cloud agreement supports compliance [VERIFY].
 - Deletion timeline on termination unreasonably long or unspecified
 
 **2021 EU SCCs (Modules 2 and 3):**
+
 - **Module 2 (Controller-to-Processor)**: For customer (controller) to provider (processor)
   transfers to third countries. Required where personal data leaves the EEA.
 - **Module 3 (Processor-to-Processor)**: For provider (processor) to sub-processor transfers.
@@ -547,6 +571,7 @@ the service relationship; (c) combining personal information from incompatible s
 ### 5. Sub-Processors
 
 **Key elements to review:**
+
 - Authorization model: **specific** (customer approves each) vs. **general** (customer
   approves list at signing with notification rights for changes)
 - Advance notice period before sub-processor addition or replacement (14–30 days market
@@ -559,6 +584,7 @@ the service relationship; (c) combining personal information from incompatible s
 - Sub-processor list publication: stable URL, regularly updated, incorporated into DPA
 
 **Common issues:**
+
 - Blanket authorization for all current and future sub-processors with no notification
   requirement (violates Art. 28(2) spirit; leaves customer with no oversight)
 - Objection right exists but only triggers termination after a lengthy notice period
@@ -572,6 +598,7 @@ the service relationship; (c) combining personal information from incompatible s
 ### 6. Audit Rights and Certifications
 
 **Key elements to review:**
+
 - **Direct audit right**: Customer's right to audit (or appoint an auditor to audit)
   provider's systems, with frequency, notice, NDA, scope, and cost allocation
 - **Certification substitution**: Whether provider may satisfy audit obligations by
@@ -582,6 +609,7 @@ the service relationship; (c) combining personal information from incompatible s
   right to audit under DORA Arts. 40–44 (CTPPs) must be preserved in the contract
 
 **Common issues:**
+
 - Audit right theoretically present but conditioned on requirements that make it
   practically unusable (e.g., 90-day notice, customer bears all costs, limited to
   business hours, provider may designate a proxy for all inspections)
@@ -592,6 +620,7 @@ the service relationship; (c) combining personal information from incompatible s
   after a data breach (too late)
 
 **Market standard audit structure:**
+
 - Annual: customer receives current SOC 2 Type II or equivalent upon request (NDA basis)
 - Cause-based: customer may conduct (or appoint auditor for) direct audit with 30-day
   advance notice and reasonable NDA, limited to customer's data and relevant controls;
@@ -605,6 +634,7 @@ the service relationship; (c) combining personal information from incompatible s
 ### 7. Customer Data Ownership and Intellectual Property
 
 **Key elements to review:**
+
 - Explicit statement that customer retains all right, title, and interest in customer data
 - Provider's license to process customer data: scope, purpose, duration
 - Whether the license terminates on expiration or termination of the agreement
@@ -614,6 +644,7 @@ the service relationship; (c) combining personal information from incompatible s
 - Open source components in the service: disclosed? license obligations passed through?
 
 **Common issues:**
+
 - No express customer data ownership statement — rights left to implication
 - Provider license scope broader than needed for service delivery (e.g., "any purpose")
 - Provider retains broad rights to customer data post-termination
@@ -629,6 +660,7 @@ the service relationship; (c) combining personal information from incompatible s
 This is a rapidly evolving and heavily negotiated area (2024–2026). Review carefully.
 
 **Key elements to review:**
+
 - Whether the agreement permits provider to use customer data to **improve, develop, or
   train** its services, products, or AI/ML models
 - Whether any use of customer data for such purposes requires anonymization/aggregation
@@ -638,6 +670,7 @@ This is a rapidly evolving and heavily negotiated area (2024–2026). Review car
 - Prohibition on training AI models on customer-identifiable data
 
 **Common issues:**
+
 - Broad service improvement right: "Provider may use aggregated, de-identified Customer
   Data to improve Provider's products and services" — if "de-identified" is not defined
   to a clear standard (e.g., GDPR pseudonymization ≠ true anonymization), this may
@@ -651,6 +684,7 @@ This is a rapidly evolving and heavily negotiated area (2024–2026). Review car
   (November 2025) — retroactive AI training use of licensed data litigation risk [VERIFY]]
 
 **Market standard (2025):**
+
 - Express prohibition on using identifiable customer data for AI/ML model training
 - Any use of aggregated/anonymized data for service improvement must require genuine
   anonymization meeting the applicable data protection standard (GDPR recital 26 standard
@@ -668,6 +702,7 @@ ownership and licensing should be assessed.
 ### 9. Limitation of Liability
 
 **Key elements to review:**
+
 - **General liability cap**: Amount (typically 12 months' fees — negotiate for higher
   for business-critical or regulated services), mutual vs. unilateral
 - **Data breach super-cap**: Whether a higher separate cap applies specifically to data
@@ -679,6 +714,7 @@ ownership and licensing should be assessed.
   credits into the only remedy for **all** types of service failure (not just SLA failure)
 
 **Standard uncapped carveouts (market reference):**
+
 - Death or personal injury caused by negligence
 - Fraud or fraudulent misrepresentation
 - Any obligation that cannot be limited by law (jurisdiction-specific)
@@ -693,6 +729,7 @@ GDPR/DPA breaches separate from the general cap. This is now a standard negotiat
 position for financial services and healthcare customers. [VERIFY current market practice]
 
 **Common issues:**
+
 - General cap set at 3 months' fees or fees paid in the prior month — far below market
 - No data breach super-cap; regulatory fines and customer loss from breach capped at
   nominal amount
@@ -718,6 +755,7 @@ can indemnify the customer for fines caused by provider's breach of the DPA. [VE
 ### 10. Indemnification
 
 **Key elements to review:**
+
 - **IP infringement indemnification**: Provider indemnifies customer for third-party
   claims that the service, as provided, infringes IP rights — scope, procedure, carveouts
 - **Data breach indemnification**: Whether provider indemnifies customer for losses
@@ -728,6 +766,7 @@ can indemnify the customer for fines caused by provider's breach of the DPA. [VE
 - Procedure: notice, right to control defense, right to approve settlements, mitigation
 
 **Common issues:**
+
 - IP indemnity excludes the most likely infringement scenarios (open source components,
   APIs, third-party software embedded in the service)
 - "Combination carveout" so broad it excludes all infringement arising from use of the
@@ -742,6 +781,7 @@ can indemnify the customer for fines caused by provider's breach of the DPA. [VE
 ### 11. Business Continuity and Disaster Recovery
 
 **Key elements to review:**
+
 - **RTO (Recovery Time Objective)**: Maximum tolerable time from disruption to restoration
 - **RPO (Recovery Point Objective)**: Maximum tolerable data loss (age of last recoverable backup)
 - Geographic redundancy: multi-AZ, multi-region, active-active vs. active-passive
@@ -752,13 +792,14 @@ can indemnify the customer for fines caused by provider's breach of the DPA. [VE
 
 **Market standard DR reference:**
 
-| Tier | RTO | RPO | Typical Service |
-|------|-----|-----|----------------|
-| Standard | 4–8 hours | 1–4 hours | Non-critical SaaS |
-| Enhanced | 1–4 hours | 15–60 minutes | Business-critical SaaS |
-| Premium/HA | < 15 minutes | < 15 minutes | Financial / healthcare |
+| Tier       | RTO          | RPO           | Typical Service        |
+| ---------- | ------------ | ------------- | ---------------------- |
+| Standard   | 4–8 hours    | 1–4 hours     | Non-critical SaaS      |
+| Enhanced   | 1–4 hours    | 15–60 minutes | Business-critical SaaS |
+| Premium/HA | < 15 minutes | < 15 minutes  | Financial / healthcare |
 
 **Common issues:**
+
 - No DR commitments — entirely subsumed into the SLA uptime commitment, which
   addresses availability but not data recovery
 - RPO undefined or set at "best efforts" — no guaranteed data recovery point
@@ -799,6 +840,7 @@ compliance if EU-connected services are involved.
   switching fees prohibited. [VERIFY current fee cap implementation]
 
 **Key elements to review (beyond Data Act minimum):**
+
 - Export data formats: open, machine-readable, documented formats vs. proprietary formats
 - API access for export: whether customer can use APIs to export data programmatically
 - Written deletion certification: provider certifies in writing that all customer data
@@ -808,6 +850,7 @@ compliance if EU-connected services are involved.
 - Transition period duration: contractual commitment for 90–180 days for complex migrations
 
 **Common issues:**
+
 - No exit assistance obligation — service simply terminates, leaving customer data
   inaccessible or deleted immediately
 - Proprietary data export format requiring provider's own tools to read — functional
@@ -823,6 +866,7 @@ compliance if EU-connected services are involved.
 ### 13. Regulatory Compliance Allocation
 
 **Key elements to review:**
+
 - **HIPAA Business Associate Agreement (BAA)**: Required if PHI is processed. Must address:
   permitted uses and disclosures, safeguards, breach notification, sub-agent obligations,
   return or destruction of PHI on termination, access rights. Without a BAA, both parties
@@ -848,6 +892,7 @@ compliance if EU-connected services are involved.
   reports covering aggregate government access requests
 
 **Common issues:**
+
 - HIPAA BAA absent or attached but materially deficient
 - PCI DSS responsibility matrix not provided or outdated (PCI DSS 4.0 effective 1 April
   2024; PCI DSS 4.0.1 effective 1 April 2025 — verify current version [VERIFY])
@@ -865,6 +910,7 @@ This is one of the most asymmetric provisions in cloud agreements and frequently
 source of post-signing commercial disputes.
 
 **Key elements to review:**
+
 - Provider's right to modify: (a) service features/functionality; (b) pricing; (c)
   policies (AUP, security policy, sub-processor list); (d) SLA commitments; (e) these
   terms themselves
@@ -876,6 +922,7 @@ source of post-signing commercial disputes.
   cap vs. no protection)
 
 **Common issues:**
+
 - Provider may modify service features or SLA commitments unilaterally with 30-day notice
   and no customer right to terminate (customer is locked into a degraded service)
 - Price escalation clause unlimited (not capped at CPI or fixed percentage)
@@ -885,6 +932,7 @@ source of post-signing commercial disputes.
 - No distinction between material and non-material changes
 
 **Market standard:**
+
 - 90-day advance notice for material changes (pricing, material feature removals, SLA reductions)
 - 30-day advance notice for non-material changes
 - Customer right to terminate for convenience (no penalty) if a notified material change
@@ -899,6 +947,7 @@ For the following clause categories, review presence, reasonableness, and alignm
 playbook. Flag deviations using the GREEN/YELLOW/RED system.
 
 **15. Term, Termination, and Auto-Renewal**
+
 - [ ] Initial term reasonable for the service type
 - [ ] Auto-renewal: notice window to prevent renewal is sufficient (60–120 days minimum)
 - [ ] FTC Auto-Renewal Rule compliance (US) [VERIFY; FTC enforcement active 2024–2025]
@@ -908,6 +957,7 @@ playbook. Flag deviations using the GREEN/YELLOW/RED system.
 - [ ] Survival: what obligations survive termination (confidentiality, IP, payment)?
 
 **16. Governing Law and Dispute Resolution**
+
 - [ ] Governing jurisdiction is acceptable and commercial (not unusually remote)
 - [ ] Dispute escalation: negotiation, mediation before formal proceedings?
 - [ ] Arbitration vs. litigation: institution (ICC, AAA, LCIA), seat, rules?
@@ -915,6 +965,7 @@ playbook. Flag deviations using the GREEN/YELLOW/RED system.
 - [ ] Class action waiver / jury waiver (US): present and enforceable under applicable law?
 
 **17. Payment and Fees**
+
 - [ ] Net payment terms specified (Net 30 is standard; Net 60+ is customer-favorable)
 - [ ] Late payment interest rate defined (not penalty-rate)
 - [ ] Data egress fees: disclosed, capped, or unlimited? (EU Data Act capping from 2025)
@@ -923,6 +974,7 @@ playbook. Flag deviations using the GREEN/YELLOW/RED system.
 - [ ] Disputed invoice process: customer may withhold disputed amounts without late fee
 
 **18. Confidentiality**
+
 - [ ] Customer data classified as confidential
 - [ ] Provider's permitted disclosures (employees with need to know, sub-processors under NDA)
 - [ ] Provider's right to disclose: government requests, legal obligation, with notice
@@ -930,13 +982,15 @@ playbook. Flag deviations using the GREEN/YELLOW/RED system.
 - [ ] Return or deletion of confidential information on termination (aligns with data portability)
 
 **19. Assignment and Change of Control**
+
 - [ ] Customer consent required for assignment (or not to be unreasonably withheld)
 - [ ] **Change of control (provider acquired)**: Customer right to terminate if provider is
-  acquired by a direct competitor — critical for cloud services where competitive intelligence
-  risk is high
+      acquired by a direct competitor — critical for cloud services where competitive intelligence
+      risk is high
 - [ ] Customer's affiliate assignment right (no consent required for intra-group transfers)
 
 **20. Force Majeure**
+
 - [ ] Scope: specific events listed, not just "acts of God"
 - [ ] Provider infrastructure failures NOT included as force majeure (provider controls its own infrastructure)
 - [ ] Notification and mitigation obligations on claiming party
@@ -944,11 +998,13 @@ playbook. Flag deviations using the GREEN/YELLOW/RED system.
 - [ ] Credit obligations continue during force majeure period (if SLA credits are the remedy)
 
 **21. Compliance and Regulatory (General)**
+
 - [ ] Anti-bribery and anti-corruption (UK Bribery Act 2010, US FCPA, local equivalents)
 - [ ] Sanctions and export control compliance representations
 - [ ] Modern slavery statement (if required by applicable law)
 
 **22. Definitions and Boilerplate**
+
 - [ ] Order of Precedence: clearly defined for multi-document agreements
 - [ ] Entire Agreement: covers all documents forming the agreement
 - [ ] Amendment: written amendments only; click-through acceptance of revised terms limited
@@ -965,6 +1021,7 @@ The clause aligns with or is better than the organization's standard position. M
 variations that are commercially reasonable and do not materially increase risk.
 
 **CSA examples:**
+
 - SLA uptime at 99.99% when standard is 99.95%
 - Sub-processor notification at 14 days when standard is 14 days
 - Data deletion within 30 days when standard is 30 days
@@ -978,6 +1035,7 @@ The clause falls outside the standard position but within a negotiable range. Re
 attention and likely negotiation, but not escalation.
 
 **CSA examples:**
+
 - SLA uptime at 99.9% when standard is 99.95% (missed by 0.05 nines)
 - Sub-processor notification at 10 days (below 14-day standard but not egregious)
 - AI training right on aggregated data without anonymization standard definition
@@ -995,6 +1053,7 @@ The clause poses material risk, triggers a defined escalation criterion, or conf
 with mandatory regulatory requirements.
 
 **CSA examples:**
+
 - No DPA when personal data of EU/UK residents is processed (GDPR Art. 28 violation)
 - SLA credits as exclusive remedy for **all** contractual failures including data breach
 - No security incident notification timeline (GDPR 72-hour reporting risk)
@@ -1015,6 +1074,7 @@ escalation path (senior counsel, CISO, DPO, regulatory counsel as appropriate).
 ## Redline Format
 
 For each redline:
+
 ```
 **Clause**: [Section reference and clause name]
 **Current language**: "[exact quote or accurate paraphrase]"
@@ -1051,6 +1111,7 @@ Organize redlines by negotiation priority:
 ### Tier 1 — Must-Haves (Deal Breakers)
 
 Issues where the organization cannot proceed without resolution:
+
 - GDPR Art. 28 DPA absent or materially deficient — cannot process EU/UK personal data
 - HIPAA BAA absent — cannot store or process PHI
 - DORA Art. 30 mandatory provisions missing — regulatory violation from day one
@@ -1063,6 +1124,7 @@ Issues where the organization cannot proceed without resolution:
 ### Tier 2 — Should-Haves (Strong Preferences)
 
 Issues that materially affect risk but have negotiation room:
+
 - Data breach super-cap (higher cap or uncapped for data protection failures)
 - Sub-processor advance notice window extension (14 → 30 days)
 - Direct audit right alongside SOC 2 substitution (trigger-based)
@@ -1075,6 +1137,7 @@ Issues that materially affect risk but have negotiation room:
 ### Tier 3 — Nice-to-Haves (Concession Candidates)
 
 Issues that improve the position but can be conceded strategically:
+
 - Preferred governing law (if alternative is acceptable)
 - Customer-managed encryption keys (BYOK) for non-regulated data
 - Benchmark restriction carveout (if no security testing planned)
@@ -1094,29 +1157,32 @@ Never concede on Tier 1 without CISO/DPO/regulatory counsel sign-off.
 Run these 5 gates silently before delivering any output. If any gate fails, revise before
 delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, regulation, or established principle | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **Format** | All citations follow a consistent, recognizable format for the jurisdiction | Fix format |
-| **Currency** | Every cited provision checked for amendments or repeal (especially: DORA applied Jan 2025; EU Data Act applicable Sep 2025; PCI DSS 4.0.1 from Apr 2025; ISO 27017 revision underway) | Flag "[CHECK CURRENCY]" |
-| **Domain** | Analysis stays within the contract's governing law. No jurisdictional bleed | Remove or flag |
-| **Confidence** | Uncertainty explicitly stated, not hidden | Add confidence qualifier |
+| Gate           | Rule                                                                                                                                                                                  | Fail Action                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, regulation, or established principle                                                                                                      | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
+| **Format**     | All citations follow a consistent, recognizable format for the jurisdiction                                                                                                           | Fix format                                               |
+| **Currency**   | Every cited provision checked for amendments or repeal (especially: DORA applied Jan 2025; EU Data Act applicable Sep 2025; PCI DSS 4.0.1 from Apr 2025; ISO 27017 revision underway) | Flag "[CHECK CURRENCY]"                                  |
+| **Domain**     | Analysis stays within the contract's governing law. No jurisdictional bleed                                                                                                           | Remove or flag                                           |
+| **Confidence** | Uncertainty explicitly stated, not hidden                                                                                                                                             | Add confidence qualifier                                 |
 
 ### Self-Interrogation for RED Items
 
 For any clause classified as RED, apply this 3-pass review before delivering:
 
 **Pass 1 — Legal Chain Integrity**:
+
 - Does the risk assessment follow logically from the statute/principle cited?
 - Would a regulator or court actually reach this conclusion on these facts?
 - Is there a counter-argument the provider's counsel will make?
 
 **Pass 2 — Completeness**:
+
 - Have all relevant statutes and regulations been considered?
 - Are there any DORA, GDPR, NIS2, or Data Act dimensions not yet addressed?
 - Have any relevant regulatory guidance documents been missed?
 
 **Pass 3 — Challenge**:
+
 - What is the strongest argument that this clause IS acceptable?
 - Under what commercial circumstances might a reasonable legal professional accept this risk?
 - Is the RED classification proportionate, or is this actually YELLOW with mitigations
@@ -1129,13 +1195,13 @@ If any pass reveals a weakness, revise before delivery. Mark the audit trail wit
 
 For each material clause analysis, assign a confidence level:
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Settled law or clear regulatory mandate (e.g., GDPR Art. 28 DPA requirement) | State with confidence |
-| **High** | 0.80–0.94 | Strong authority, minor interpretation questions (e.g., DORA Art. 30 mandatory terms) | State with brief caveat |
-| **Probable** | 0.60–0.79 | Good arguments but reasonable minds could differ (e.g., whether aggregated data is "anonymous" under GDPR recital 26) | State with explicit reasoning and contra-indicators |
-| **Possible** | 0.40–0.59 | Genuinely uncertain (e.g., enforceability of SLA credits as exclusive remedy for all claims) | Flag for counsel with both sides |
-| **Unlikely** | 0.0–0.39 | Weak basis, speculative | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                                                                                               | Action                                                |
+| ------------ | --------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Settled law or clear regulatory mandate (e.g., GDPR Art. 28 DPA requirement)                                          | State with confidence                                 |
+| **High**     | 0.80–0.94 | Strong authority, minor interpretation questions (e.g., DORA Art. 30 mandatory terms)                                 | State with brief caveat                               |
+| **Probable** | 0.60–0.79 | Good arguments but reasonable minds could differ (e.g., whether aggregated data is "anonymous" under GDPR recital 26) | State with explicit reasoning and contra-indicators   |
+| **Possible** | 0.40–0.59 | Genuinely uncertain (e.g., enforceability of SLA credits as exclusive remedy for all claims)                          | Flag for counsel with both sides                      |
+| **Unlikely** | 0.0–0.39  | Weak basis, speculative                                                                                               | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
 
 ---
 
@@ -1179,17 +1245,17 @@ glass_box:
 
 Cloud service agreements affect multiple stakeholders beyond the contracting parties:
 
-| Stakeholder | Role | Affected Clauses | Key Concern | Action Required |
-|-------------|------|-----------------|-------------|----------------|
-| Customer | Primary | All | Service reliability, data control, cost | Sign / Negotiate |
-| Provider | Primary | All | Liability, operational flexibility, revenue | Sign / Negotiate |
-| Data subjects | Third party | DPA, sub-processors, data breach | Privacy rights, breach notification | DPA required |
-| Sub-processors | Third party | Sub-processor, DPA, security | Flow-down obligations | Notification rights |
-| DPA supervisory authority | Regulator | DPA, security, breach notification | GDPR compliance | Breach reporting obligation |
-| Financial regulator | Regulator (if DORA) | DORA Art. 30 terms, audit rights | Operational resilience | DORA compliance verification |
-| CISO / Security team | Internal | Security, SLA, DR, audit | Technical controls, incident response | Security review required |
-| DPO | Internal | DPA, sub-processors, transfers | GDPR compliance | DPO sign-off required |
-| Procurement / Finance | Internal | Payment, auto-renewal, egress fees | Cost exposure | Budget alignment |
+| Stakeholder               | Role                | Affected Clauses                   | Key Concern                                 | Action Required              |
+| ------------------------- | ------------------- | ---------------------------------- | ------------------------------------------- | ---------------------------- |
+| Customer                  | Primary             | All                                | Service reliability, data control, cost     | Sign / Negotiate             |
+| Provider                  | Primary             | All                                | Liability, operational flexibility, revenue | Sign / Negotiate             |
+| Data subjects             | Third party         | DPA, sub-processors, data breach   | Privacy rights, breach notification         | DPA required                 |
+| Sub-processors            | Third party         | Sub-processor, DPA, security       | Flow-down obligations                       | Notification rights          |
+| DPA supervisory authority | Regulator           | DPA, security, breach notification | GDPR compliance                             | Breach reporting obligation  |
+| Financial regulator       | Regulator (if DORA) | DORA Art. 30 terms, audit rights   | Operational resilience                      | DORA compliance verification |
+| CISO / Security team      | Internal            | Security, SLA, DR, audit           | Technical controls, incident response       | Security review required     |
+| DPO                       | Internal            | DPA, sub-processors, transfers     | GDPR compliance                             | DPO sign-off required        |
+| Procurement / Finance     | Internal            | Payment, auto-renewal, egress fees | Cost exposure                               | Budget alignment             |
 
 ---
 
@@ -1304,6 +1370,7 @@ Explicit catalogue of what NOT to do when reviewing cloud service agreements:
 Apply plain-language discipline to all output:
 
 **For redline rationales** (may be shared with provider's counsel):
+
 - Plain language; no jargon or filler
 - Active voice: "The provider must notify within 24 hours" not "Notification within 24 hours is required"
 - Short sentences; one point per sentence
@@ -1311,11 +1378,13 @@ Apply plain-language discipline to all output:
 - Cite the regulatory basis where applicable
 
 **For internal analysis**:
+
 - Same plain-language standards; technical legal analysis as needed
 - Confidence qualifiers applied throughout
 - Glass Box audit trail appended
 
 **Quality gates before delivery**:
+
 1. Can a non-lawyer senior stakeholder (CFO, CISO, CPO) understand the executive summary?
 2. Can the provider's counsel understand and respond to each redline?
 3. Is every legal claim backed by a specific citation or flagged [VERIFY]?
@@ -1327,6 +1396,7 @@ Apply plain-language discipline to all output:
 ## External Tool Integration
 
 **With legalcode-mcp connected (preferred):**
+
 - In Step 4, search for jurisdiction-relevant statutes, regulations, and case law
 - Prioritize: GDPR Art. 28 structure; EU Data Act Arts. 23–26 switching requirements;
   DORA Art. 30 mandatory provisions; applicable SCCs; NIS2 Directive; jurisdiction-specific
@@ -1339,6 +1409,7 @@ Apply plain-language discipline to all output:
 - Mark legalcode-mcp-sourced citations as VERIFIED in the Glass Box audit trail
 
 **Without legalcode-mcp:**
+
 - Mark all statutory and regulatory references with [VERIFY]
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Include a prominent notice that regulatory citations require independent verification
@@ -1374,8 +1445,8 @@ negotiation asks. Written for a senior non-lawyer (CFO, CPO, COO).]
 
 ## Key Findings
 
-| Issue | Severity | Regulatory Dimension | Priority |
-|-------|----------|---------------------|----------|
+| Issue   | Severity   | Regulatory Dimension | Priority                |
+| ------- | ---------- | -------------------- | ----------------------- |
 | [issue] | RED/YELLOW | [GDPR / DORA / None] | Must-have / Should-have |
 
 ---
@@ -1396,8 +1467,9 @@ negotiation asks. Written for a senior non-lawyer (CFO, CPO, COO).]
 **Regulatory dimension**: [GDPR Art. X / DORA Art. Y / Data Act Art. Z / None]
 **Business impact**: [practical risk — financial exposure, regulatory risk, operational impact]
 **Redline** (if YELLOW or RED):
+
 > [Specific proposed language]
-**Fallback**: [alternative position]
+> **Fallback**: [alternative position]
 
 [Repeat for each clause category]
 
@@ -1422,11 +1494,11 @@ compliance requirements. Use Tier 3 concessions to secure Tier 2 commercial asks
 
 ## Critical Dates
 
-| Date / Trigger | Action Required | Owner |
-|----------------|----------------|-------|
-| [Auto-renewal notice deadline] | Send notice to avoid renewal | [Legal / Procurement] |
-| [DORA review deadline if applicable] | Verify Art. 30 compliance | [DPO / Legal] |
-| [Data Act compliance date 12 Sep 2025] | Update exit assistance provisions | [Legal] |
+| Date / Trigger                         | Action Required                   | Owner                 |
+| -------------------------------------- | --------------------------------- | --------------------- |
+| [Auto-renewal notice deadline]         | Send notice to avoid renewal      | [Legal / Procurement] |
+| [DORA review deadline if applicable]   | Verify Art. 30 compliance         | [DPO / Legal]         |
+| [Data Act compliance date 12 Sep 2025] | Update exit assistance provisions | [Legal]               |
 
 ---
 

@@ -1,7 +1,13 @@
 ---
 title: Cookie Policy — Iceland (Lög nr. 70/2022 + EEA-imported ePrivacy + Act 90/2018)
 jurisdictions: [is]
-statutes: [Lög-70/2022-um-fjarskipti, Act-90/2018-Persónuverndarlög, GDPR-via-EEA, ePrivacy-via-EEA]
+statutes:
+  [
+    Lög-70/2022-um-fjarskipti,
+    Act-90/2018-Persónuverndarlög,
+    GDPR-via-EEA,
+    ePrivacy-via-EEA,
+  ]
 supervisory_authority: Persónuvernd
 license: MIT
 last_updated: 2026-04-28
@@ -25,11 +31,11 @@ Icelandic statutory or technical terms appear in parentheses on first use only.
 
 ## 1. Plain-language summary
 
-*Plain-language: A short overview of how cookies work, what Icelandic law requires, and what choice you have.*
+_Plain-language: A short overview of how cookies work, what Icelandic law requires, and what choice you have._
 
 Cookies (vafrakökur) and similar technologies are small files or data slots placed on, or read from, your device. Some are required for the Service to work at all; others are optional and run only with your permission.
 
-In Iceland, the rules come from two sources. **Lög nr. 70/2022 um fjarskipti** implements the EEA-applicable ePrivacy rule — equivalent to Article 5(3) of Directive 2002/58/EC — which requires informed consent before any non-essential information is stored on, or read from, a user's terminal equipment `[VERIFY exact section number for cookie/device-storage consent in Lög nr. 70/2022]`. **Act 90/2018 Article 9** and **GDPR Article 6(1)(a)** govern the *quality* of that consent: freely given, specific, informed, and unambiguous, by a clear affirmative act.
+In Iceland, the rules come from two sources. **Lög nr. 70/2022 um fjarskipti** implements the EEA-applicable ePrivacy rule — equivalent to Article 5(3) of Directive 2002/58/EC — which requires informed consent before any non-essential information is stored on, or read from, a user's terminal equipment `[VERIFY exact section number for cookie/device-storage consent in Lög nr. 70/2022]`. **Act 90/2018 Article 9** and **GDPR Article 6(1)(a)** govern the _quality_ of that consent: freely given, specific, informed, and unambiguous, by a clear affirmative act.
 
 In short: required cookies run automatically (no consent needed); optional cookies (functional, analytics, advertising, social) run only after you say yes via our consent banner; you can change your mind at any time at {{Cookie Settings URL}} or via the persistent footer link; you can complain to **Persónuvernd** (the Icelandic Data Protection Authority).
 
@@ -37,11 +43,11 @@ In short: required cookies run automatically (no consent needed); optional cooki
 
 ## 2. What cookies and similar technologies are
 
-*Plain-language: "Cookies" is shorthand for several related technologies that store or read information on your device.*
+_Plain-language: "Cookies" is shorthand for several related technologies that store or read information on your device._
 
-Lög nr. 70/2022 and the EEA-incorporated ePrivacy Directive apply by reference to *any* storage of, or access to, information already on a user's terminal equipment — not just text files labelled "cookie". The European Data Protection Board ("EDPB") confirmed this broad reading in **Guidelines 2/2023 on the technical scope of Article 5(3)**, which apply in Iceland via the EEA Joint Committee mechanism `[VERIFY EEA-incorporation status of EDPB Guidelines 2/2023]`.
+Lög nr. 70/2022 and the EEA-incorporated ePrivacy Directive apply by reference to _any_ storage of, or access to, information already on a user's terminal equipment — not just text files labelled "cookie". The European Data Protection Board ("EDPB") confirmed this broad reading in **Guidelines 2/2023 on the technical scope of Article 5(3)**, which apply in Iceland via the EEA Joint Committee mechanism `[VERIFY EEA-incorporation status of EDPB Guidelines 2/2023]`.
 
-- **Cookies (vafrakökur)** — small text files placed on a device and read back on later visits. *Session* cookies disappear when the browser closes; *persistent* cookies survive until they expire or are deleted.
+- **Cookies (vafrakökur)** — small text files placed on a device and read back on later visits. _Session_ cookies disappear when the browser closes; _persistent_ cookies survive until they expire or are deleted.
 - **Local and session storage (geymsla á tæki)** — larger browser data slots used to keep state between page loads.
 - **Web beacons and pixels (vefmælingapunktar)** — invisible images or scripts that report when a page or email is opened.
 - **Device fingerprinting (auðkenningar á tæki)** — device characteristics (screen, fonts, time zone, language) that, combined, can identify a returning visitor without a stored cookie. Per EDPB Guidelines 2/2023, fingerprinting falls inside the consent rule.
@@ -53,7 +59,7 @@ Where this policy says "set a cookie", read it as "set a cookie or use any equiv
 
 ## 3. Why we use them
 
-*Plain-language: We use cookies for a small number of clearly defined reasons.*
+_Plain-language: We use cookies for a small number of clearly defined reasons._
 
 We use cookies and similar technologies on {{Service Name}} to: (1) keep you signed in and maintain session integrity; (2) remember preferences such as language, region, theme, and accessibility settings; (3) measure usage to improve performance, fix bugs, and prioritise features; (4) protect the Service against fraud, abuse, and account takeover; and (5) deliver and measure marketing {{[OPTIONAL — only if advertising cookies present]}}.
 
@@ -63,7 +69,7 @@ We do not use cookies to build hidden profiles for sale to data brokers, and we 
 
 ## 4. Categories of cookies we use
 
-*Plain-language: We sort cookies into five categories. The first runs automatically; the other four run only after you opt in.*
+_Plain-language: We sort cookies into five categories. The first runs automatically; the other four run only after you opt in._
 
 The five categories below map to the consent regime under Lög nr. 70/2022 and EEA ePrivacy.
 
@@ -85,13 +91,13 @@ Set by us or by third-party advertising partners to build a record of your inter
 
 ### 4.5 Social media (samfélagsmiðlakökur)
 
-Set by social networks whose embeds, share buttons, or login widgets appear on the Service. Examples: embedded video, share-button, and social-login cookies. **Consent: required.** **Joint-controllership flag:** where a social network sets cookies through an embed for its own purposes, the operator and the network are typically **joint controllers (sameiginlegir ábyrgðaraðilar)** under GDPR Art. 26 (following *Fashion ID*). {{[OPTIONAL — only if social embeds present]}}.
+Set by social networks whose embeds, share buttons, or login widgets appear on the Service. Examples: embedded video, share-button, and social-login cookies. **Consent: required.** **Joint-controllership flag:** where a social network sets cookies through an embed for its own purposes, the operator and the network are typically **joint controllers (sameiginlegir ábyrgðaraðilar)** under GDPR Art. 26 (following _Fashion ID_). {{[OPTIONAL — only if social embeds present]}}.
 
 ---
 
 ## 5. Specific cookies we use
 
-*Plain-language: The full, current list of every cookie on the Service lives in Annex A.*
+_Plain-language: The full, current list of every cookie on the Service lives in Annex A._
 
 The current inventory is set out in **Annex A**, which lists each cookie's name, provider, purpose, category (§4), first/third-party status, duration, legal basis, and international-transfer mechanism. The inventory is regenerated whenever we add, remove, or change a cookie. The most recent audit was completed on {{Cookie Audit Date}}. If a cookie appears that is not listed in Annex A, please tell us using §14 — we treat that as a defect.
 
@@ -99,7 +105,7 @@ The current inventory is set out in **Annex A**, which lists each cookie's name,
 
 ## 6. Third-party cookies & subprocessors
 
-*Plain-language: Some cookies are placed by other companies who provide services to us.*
+_Plain-language: Some cookies are placed by other companies who provide services to us._
 
 Third parties whose cookies may appear on the Service fall into these groups: analytics providers (typically processors / vinnsluaðilar), advertising providers (typically separate or joint controllers), payment processors, customer-support tools, social-media platforms (often joint-controller), and content delivery networks.
 
@@ -111,7 +117,7 @@ Named providers and safeguards are listed in Annex A and at {{Subprocessor List 
 
 ## 7. Your choices & how to manage cookies
 
-*Plain-language: You have three ways to control cookies on this site, and they are equally easy to use.*
+_Plain-language: You have three ways to control cookies on this site, and they are equally easy to use._
 
 **(a) Cookie settings centre.** Manage your choices at {{Cookie Settings URL}} — grant or withdraw consent **per category** (§4). Reachable through a persistent footer link. The "withdraw" path has **equal prominence** to the "accept" path, in line with Persónuvernd guidance and EDPB Guidelines 05/2020.
 
@@ -125,7 +131,7 @@ Named providers and safeguards are listed in Annex A and at {{Subprocessor List 
 
 ## 8. Browser controls
 
-*Plain-language: Your browser has built-in cookie controls that work across every site.*
+_Plain-language: Your browser has built-in cookie controls that work across every site._
 
 You can clear or block cookies through your browser settings. Menus change between releases, so consult the canonical help page:
 
@@ -140,7 +146,7 @@ Note: blocking strictly necessary cookies breaks sign-in and other core features
 
 ## 9. Global Privacy Control (GPC) & Do Not Track (DNT)
 
-*Plain-language: Persónuvernd has not endorsed GPC as a binding signal under Icelandic law. We treat GPC as a non-binding preference and DNT as informational only.*
+_Plain-language: Persónuvernd has not endorsed GPC as a binding signal under Icelandic law. We treat GPC as a non-binding preference and DNT as informational only._
 
 **Global Privacy Control (GPC).** GPC is a signal a browser or extension sends to indicate that the user does not want their personal information sold or shared, and wants to opt out of targeted advertising. **Persónuvernd has not, as of the last-updated date of this policy, formally endorsed GPC as a binding opt-out signal under Lög nr. 70/2022 or Act 90/2018** `[VERIFY current Persónuvernd position on GPC]`. We nonetheless treat GPC as a **non-binding preference**: where a request carries a GPC header, we apply the equivalent of "reject all non-essential" on a best-effort basis. Where applicable law in another jurisdiction (e.g., certain US states) treats GPC as binding, we honour it as such.
 
@@ -150,7 +156,7 @@ Note: blocking strictly necessary cookies breaks sign-in and other core features
 
 ## 10. How we obtain and record consent
 
-*Plain-language: Before we set any non-essential cookie, we ask. We keep a record of your choice and re-ask if anything material changes.*
+_Plain-language: Before we set any non-essential cookie, we ask. We keep a record of your choice and re-ask if anything material changes._
 
 We obtain consent for non-essential cookies in line with **Lög nr. 70/2022**, **Persónuvernd cookie guidance** (issued and updated through 2022/2023) `[VERIFY current Persónuvernd cookie guidance]`, **EDPB Guidelines 05/2020**, and the **EDPB Cookie Banner Taskforce report (2023)**:
 
@@ -169,7 +175,7 @@ Legal bases for non-consent processing of strictly-necessary cookies (Art. 6(1)(
 
 ## 11. International data transfers
 
-*Plain-language: Within the EEA, your data flows freely. For transfers outside the EEA we use Standard Contractual Clauses with a Transfer Impact Assessment.*
+_Plain-language: Within the EEA, your data flows freely. For transfers outside the EEA we use Standard Contractual Clauses with a Transfer Impact Assessment._
 
 Iceland is part of the European Economic Area. **Transfers within the EEA are not restricted** under GDPR Chapter V as incorporated through the EEA Agreement.
 
@@ -186,7 +192,7 @@ The transfer mechanism for each third-party cookie is recorded in Annex A. The f
 
 ## 12. Children's data
 
-*Plain-language: We do not use non-essential cookies to track children, and targeted advertising is not directed at children.*
+_Plain-language: We do not use non-essential cookies to track children, and targeted advertising is not directed at children._
 
 Iceland sets the **age of digital consent at 13** under **Act 90/2018, Article 17**, exercising the GDPR Art. 8 national-discretion margin (the GDPR baseline is 16 unless a Member State sets a lower age between 13 and 16) `[VERIFY Act 90/2018 Art. 17 digital-consent age and current text]`.
 
@@ -196,7 +202,7 @@ For visitors **aged 13 or over**, the consent regime in §10 applies in the ordi
 
 ## 13. Changes to this policy
 
-*Plain-language: When we change cookies in a way that matters, we tell you and ask again where the law requires.*
+_Plain-language: When we change cookies in a way that matters, we tell you and ask again where the law requires._
 
 We may revise this Cookie Policy from time to time; we update the "Last updated" date at the top.
 
@@ -206,7 +212,7 @@ If a change is **material** — a new category, a new third-party provider in a 
 
 ## 14. Contact & complaints
 
-*Plain-language: Here is who to ask first and where to escalate.*
+_Plain-language: Here is who to ask first and where to escalate._
 
 For questions about this Cookie Policy or the cookie inventory, contact us first:
 
@@ -229,24 +235,24 @@ You may also lodge a complaint with the supervisory authority of any other EEA M
 
 ## Annex A — Cookie inventory
 
-*Plain-language: This is the live list of cookies on the Service, regenerated whenever cookies change.*
+_Plain-language: This is the live list of cookies on the Service, regenerated whenever cookies change._
 
 **Audit reference:** {{Cookie Audit ID}}
 **Audit date:** {{Cookie Audit Date}}
 **Auditor:** {{Cookie Auditor Name}}
 
-| Cookie | Provider | Purpose | Category | First/Third-party | Duration | Legal basis | Transfer mechanism |
-|---|---|---|---|---|---|---|---|
-| `session_id` | {{Company Legal Name}} | Maintains an authenticated session | Strictly necessary | First | Session | Art. 6(1)(b) contract | None (EEA) |
-| `csrf_token` | {{Company Legal Name}} | Cross-site request-forgery protection | Strictly necessary | First | Session | Art. 6(1)(f) | None |
-| `consent_v2` | {{Company Legal Name}} | Records cookie-consent choices and banner version | Strictly necessary | First | 12 months | Art. 6(1)(c) (Lög nr. 70/2022 record-keeping) | None |
-| `lang_pref` | {{Company Legal Name}} | Remembers preferred language and region | Functional | First | 12 months | Consent | None |
-| `theme` | {{Company Legal Name}} | Remembers light/dark display preference | Functional | First | 12 months | Consent | None |
-| `_ga` | Google LLC | Distinguishes unique visitors for aggregate analytics | Analytics | Third (processor) | 2 years | Consent | US transfer under 2021 SCCs Module 3 + DPF, TIA `[VERIFY]` |
-| `_ga_<container_id>` | Google LLC (GA4) | Persists session state for GA4 property | Analytics | Third (processor) | 2 years | Consent | US transfer under 2021 SCCs Module 3 + DPF, TIA `[VERIFY]` |
-| `_fbp` | Meta Platforms, Inc. | Conversion attribution and retargeting | Advertising | Third (joint controller) | 90 days | Consent | US transfer under 2021 SCCs Module 1, TIA `[VERIFY]` |
-| `intercom-session-<id>` | Intercom, Inc. | Maintains an in-product support chat session | Functional | Third (processor) | 7 days | Consent | US transfer under 2021 SCCs Module 3, TIA `[VERIFY]` |
-| `__cf_bm` | Cloudflare, Inc. | Bot management and DDoS protection on the CDN edge | Strictly necessary | Third (processor) | 30 minutes | Art. 6(1)(f) | Global edge under 2021 SCCs Module 3 `[VERIFY]` |
+| Cookie                  | Provider               | Purpose                                               | Category           | First/Third-party        | Duration   | Legal basis                                   | Transfer mechanism                                         |
+| ----------------------- | ---------------------- | ----------------------------------------------------- | ------------------ | ------------------------ | ---------- | --------------------------------------------- | ---------------------------------------------------------- |
+| `session_id`            | {{Company Legal Name}} | Maintains an authenticated session                    | Strictly necessary | First                    | Session    | Art. 6(1)(b) contract                         | None (EEA)                                                 |
+| `csrf_token`            | {{Company Legal Name}} | Cross-site request-forgery protection                 | Strictly necessary | First                    | Session    | Art. 6(1)(f)                                  | None                                                       |
+| `consent_v2`            | {{Company Legal Name}} | Records cookie-consent choices and banner version     | Strictly necessary | First                    | 12 months  | Art. 6(1)(c) (Lög nr. 70/2022 record-keeping) | None                                                       |
+| `lang_pref`             | {{Company Legal Name}} | Remembers preferred language and region               | Functional         | First                    | 12 months  | Consent                                       | None                                                       |
+| `theme`                 | {{Company Legal Name}} | Remembers light/dark display preference               | Functional         | First                    | 12 months  | Consent                                       | None                                                       |
+| `_ga`                   | Google LLC             | Distinguishes unique visitors for aggregate analytics | Analytics          | Third (processor)        | 2 years    | Consent                                       | US transfer under 2021 SCCs Module 3 + DPF, TIA `[VERIFY]` |
+| `_ga_<container_id>`    | Google LLC (GA4)       | Persists session state for GA4 property               | Analytics          | Third (processor)        | 2 years    | Consent                                       | US transfer under 2021 SCCs Module 3 + DPF, TIA `[VERIFY]` |
+| `_fbp`                  | Meta Platforms, Inc.   | Conversion attribution and retargeting                | Advertising        | Third (joint controller) | 90 days    | Consent                                       | US transfer under 2021 SCCs Module 1, TIA `[VERIFY]`       |
+| `intercom-session-<id>` | Intercom, Inc.         | Maintains an in-product support chat session          | Functional         | Third (processor)        | 7 days     | Consent                                       | US transfer under 2021 SCCs Module 3, TIA `[VERIFY]`       |
+| `__cf_bm`               | Cloudflare, Inc.       | Bot management and DDoS protection on the CDN edge    | Strictly necessary | Third (processor)        | 30 minutes | Art. 6(1)(f)                                  | Global edge under 2021 SCCs Module 3 `[VERIFY]`            |
 
 > **Implementer note:** replace the example rows with the actual audit output from the cookie scanner (companion `legalcode-cookie-compliance-audit` skill). Do not ship example rows as if they were real.
 
@@ -254,7 +260,7 @@ You may also lodge a complaint with the supervisory authority of any other EEA M
 
 ## Annex B — Iceland Consent banner UX requirements
 
-*Plain-language: This annex is for the team building the consent banner. It sets the floor under Lög nr. 70/2022 and Persónuvernd guidance.*
+_Plain-language: This annex is for the team building the consent banner. It sets the floor under Lög nr. 70/2022 and Persónuvernd guidance._
 
 Where the jurisdiction-neutral baseline in `core.md` Annex B is stricter, the stricter rule wins.
 
@@ -284,29 +290,29 @@ Where the jurisdiction-neutral baseline in `core.md` Annex B is stricter, the st
 
 ## Merge fields used
 
-| Field | Description |
-|---|---|
-| `{{Company Legal Name}}` | Registered legal name of the operator |
-| `{{Company Kennitala}}` | Icelandic legal-person identifier (10-digit kennitala) |
-| `{{Persónuvernd Registration Number}}` | OPTIONAL — Persónuvernd registration number, where applicable |
-| `{{Service Name}}` | Public name of the Service |
-| `{{Service URL}}` | Canonical URL of the Service |
-| `{{Effective Date}}` | Date this version takes effect |
-| `{{Last Updated Date}}` | Date this version was last edited |
-| `{{Privacy Policy URL}}` | Link to the companion privacy policy (IS variant) |
-| `{{Terms URL}}` | Link to the terms of service |
-| `{{Cookie Settings URL}}` | Link to the cookie settings centre |
-| `{{Subprocessor List URL}}` | Public subprocessor list |
-| `{{Cookie Audit Date}}` | Date of the most recent cookie audit |
-| `{{Cookie Audit ID}}` | Identifier of the audit run |
-| `{{Cookie Auditor Name}}` | Person or tool responsible for the audit |
-| `{{Company Email Privacy}}` | Privacy team contact email |
-| `{{Company Email DPO}}` | DPO contact email (if appointed) |
-| `{{Company Postal Address}}` | Operator's postal address for written enquiries |
-| `{{NAI Opt-Out URL}}` | Network Advertising Initiative opt-out page |
-| `{{DAA Opt-Out URL}}` | Digital Advertising Alliance opt-out page |
-| `{{EDAA Opt-Out URL}}` | European Interactive Digital Advertising Alliance opt-out page |
-| `{{Reading Level Target}}` | Target plain-language reading level for banner copy |
+| Field                                  | Description                                                    |
+| -------------------------------------- | -------------------------------------------------------------- |
+| `{{Company Legal Name}}`               | Registered legal name of the operator                          |
+| `{{Company Kennitala}}`                | Icelandic legal-person identifier (10-digit kennitala)         |
+| `{{Persónuvernd Registration Number}}` | OPTIONAL — Persónuvernd registration number, where applicable  |
+| `{{Service Name}}`                     | Public name of the Service                                     |
+| `{{Service URL}}`                      | Canonical URL of the Service                                   |
+| `{{Effective Date}}`                   | Date this version takes effect                                 |
+| `{{Last Updated Date}}`                | Date this version was last edited                              |
+| `{{Privacy Policy URL}}`               | Link to the companion privacy policy (IS variant)              |
+| `{{Terms URL}}`                        | Link to the terms of service                                   |
+| `{{Cookie Settings URL}}`              | Link to the cookie settings centre                             |
+| `{{Subprocessor List URL}}`            | Public subprocessor list                                       |
+| `{{Cookie Audit Date}}`                | Date of the most recent cookie audit                           |
+| `{{Cookie Audit ID}}`                  | Identifier of the audit run                                    |
+| `{{Cookie Auditor Name}}`              | Person or tool responsible for the audit                       |
+| `{{Company Email Privacy}}`            | Privacy team contact email                                     |
+| `{{Company Email DPO}}`                | DPO contact email (if appointed)                               |
+| `{{Company Postal Address}}`           | Operator's postal address for written enquiries                |
+| `{{NAI Opt-Out URL}}`                  | Network Advertising Initiative opt-out page                    |
+| `{{DAA Opt-Out URL}}`                  | Digital Advertising Alliance opt-out page                      |
+| `{{EDAA Opt-Out URL}}`                 | European Interactive Digital Advertising Alliance opt-out page |
+| `{{Reading Level Target}}`             | Target plain-language reading level for banner copy            |
 
 ---
 

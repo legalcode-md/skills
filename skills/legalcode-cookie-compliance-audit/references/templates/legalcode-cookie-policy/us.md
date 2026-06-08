@@ -266,17 +266,17 @@ Oregon residents have OCPA rights under ORS §§646A.570 et seq., including opt-
 
 The table below is the canonical inventory of cookies set on {{Website URL}}. We refresh it on each material change.
 
-| Cookie name | Host (set by) | Category | Purpose | Duration | First / third party | Vendor | Relationship type | CCPA Sale/Sharing? | Vendor privacy notice |
-|---|---|---|---|---|---|---|---|---|---|
-| `{{cookie_session}}` | {{Website Domain}} | Strictly necessary | Authenticated session | Session | First | {{Company Legal Name}} | N/A (own cookie) | No | n/a |
-| `{{cookie_csrf}}` | {{Website Domain}} | Strictly necessary | Cross-site request forgery defense | Session | First | {{Company Legal Name}} | N/A | No | n/a |
-| `{{cookie_consent}}` | {{Website Domain}} | Strictly necessary | Stores cookie preference center choices and GPC state | 12 months | First | {{Consent Platform Vendor}} | Service provider (§1798.140(ag)) | No | {{Consent Platform Privacy URL}} |
-| `{{cookie_locale}}` | {{Website Domain}} | Functional | Language/region preference | 12 months | First | {{Company Legal Name}} | N/A | No | n/a |
-| `{{cookie_analytics_id}}` | {{Analytics Domain}} | Analytics | Aggregated usage measurement | 13 months | Third | {{Analytics Vendor}} | Service provider (§1798.140(ag)) | No | {{Analytics Privacy URL}} |
-| `{{cookie_error_monitor}}` | {{Error Monitor Domain}} | Analytics | Error and performance traces | 30 days | Third | {{Error Monitor Vendor}} | Service provider | No | {{Error Monitor Privacy URL}} |
-| `{{cookie_ad_targeting}}` | {{Ad Vendor Domain}} | Targeted advertising | Cross-context behavioral advertising | 13 months | Third | {{Ad Vendor}} | Third party (§1798.140(ai)) | **Yes — Sharing** | {{Ad Vendor Privacy URL}} |
-| `{{cookie_ad_measurement}}` | {{Measurement Domain}} | Targeted advertising | Conversion measurement | 13 months | Third | {{Measurement Vendor}} | Third party | **Yes — Sharing** | {{Measurement Vendor Privacy URL}} |
-| `{{cookie_social_embed}}` | {{Social Domain}} | Social / embedded | Embedded content recognition | 13 months | Third | {{Social Vendor}} | Third party | **Yes — Sharing** | {{Social Vendor Privacy URL}} |
+| Cookie name                 | Host (set by)            | Category             | Purpose                                               | Duration  | First / third party | Vendor                      | Relationship type                | CCPA Sale/Sharing? | Vendor privacy notice              |
+| --------------------------- | ------------------------ | -------------------- | ----------------------------------------------------- | --------- | ------------------- | --------------------------- | -------------------------------- | ------------------ | ---------------------------------- |
+| `{{cookie_session}}`        | {{Website Domain}}       | Strictly necessary   | Authenticated session                                 | Session   | First               | {{Company Legal Name}}      | N/A (own cookie)                 | No                 | n/a                                |
+| `{{cookie_csrf}}`           | {{Website Domain}}       | Strictly necessary   | Cross-site request forgery defense                    | Session   | First               | {{Company Legal Name}}      | N/A                              | No                 | n/a                                |
+| `{{cookie_consent}}`        | {{Website Domain}}       | Strictly necessary   | Stores cookie preference center choices and GPC state | 12 months | First               | {{Consent Platform Vendor}} | Service provider (§1798.140(ag)) | No                 | {{Consent Platform Privacy URL}}   |
+| `{{cookie_locale}}`         | {{Website Domain}}       | Functional           | Language/region preference                            | 12 months | First               | {{Company Legal Name}}      | N/A                              | No                 | n/a                                |
+| `{{cookie_analytics_id}}`   | {{Analytics Domain}}     | Analytics            | Aggregated usage measurement                          | 13 months | Third               | {{Analytics Vendor}}        | Service provider (§1798.140(ag)) | No                 | {{Analytics Privacy URL}}          |
+| `{{cookie_error_monitor}}`  | {{Error Monitor Domain}} | Analytics            | Error and performance traces                          | 30 days   | Third               | {{Error Monitor Vendor}}    | Service provider                 | No                 | {{Error Monitor Privacy URL}}      |
+| `{{cookie_ad_targeting}}`   | {{Ad Vendor Domain}}     | Targeted advertising | Cross-context behavioral advertising                  | 13 months | Third               | {{Ad Vendor}}               | Third party (§1798.140(ai))      | **Yes — Sharing**  | {{Ad Vendor Privacy URL}}          |
+| `{{cookie_ad_measurement}}` | {{Measurement Domain}}   | Targeted advertising | Conversion measurement                                | 13 months | Third               | {{Measurement Vendor}}      | Third party                      | **Yes — Sharing**  | {{Measurement Vendor Privacy URL}} |
+| `{{cookie_social_embed}}`   | {{Social Domain}}        | Social / embedded    | Embedded content recognition                          | 13 months | Third               | {{Social Vendor}}           | Third party                      | **Yes — Sharing**  | {{Social Vendor Privacy URL}}      |
 
 OPTIONAL — only if you operate companion mobile applications: A parallel inventory of mobile SDK identifiers is published at {{Mobile SDK Inventory URL}} and follows the same relationship-type and Sale/Sharing classifications.
 

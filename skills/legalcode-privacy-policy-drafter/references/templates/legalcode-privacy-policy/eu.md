@@ -76,13 +76,13 @@ The controller responsible for the processing described in this policy is:
 
 ### 3.1 Data Protection Officer
 
-*OPTIONAL — only if a DPO has been appointed under GDPR Art. 37 (or under §38 BDSG, which has its own German triggers). Remove this subsection if not applicable.*
+_OPTIONAL — only if a DPO has been appointed under GDPR Art. 37 (or under §38 BDSG, which has its own German triggers). Remove this subsection if not applicable._
 
 We have appointed a Data Protection Officer in accordance with GDPR Art. 37. You can reach our DPO directly at {{Company Email DPO}} or by post to the address above marked "FAO: Data Protection Officer".
 
 ### 3.2 EU representative (Art. 27 GDPR)
 
-*OPTIONAL — only if {{Company Short Name}} is established outside the EU/EEA but offers goods or services to, or monitors the behaviour of, individuals in the EU/EEA. Remove if {{Company Short Name}} is itself established in the EU/EEA.*
+_OPTIONAL — only if {{Company Short Name}} is established outside the EU/EEA but offers goods or services to, or monitors the behaviour of, individuals in the EU/EEA. Remove if {{Company Short Name}} is itself established in the EU/EEA._
 
 Because {{Company Short Name}} is established outside the EU/EEA, we have designated an EU representative under GDPR Art. 27. Data subjects in the EU/EEA may contact our representative on all issues related to the processing of their personal data:
 
@@ -122,7 +122,7 @@ Identifiers stored in cookies, local storage, or similar technologies. See Secti
 
 ### 4.7 Payment data
 
-*OPTIONAL — only if {{Service Name}} accepts payments.*
+_OPTIONAL — only if {{Service Name}} accepts payments._
 
 Last-four digits and expiry of payment cards, billing address, transaction identifiers, VAT identifiers. Full payment card numbers are handled exclusively by our PCI-DSS-compliant payment processors and never reach our systems.
 
@@ -143,9 +143,9 @@ We obtain personal data from the following sources:
 - **Directly from you** — when you create an account, contact us, configure {{Service Name}}, upload content, or interact with our website or applications.
 - **Automatically from your device** — when your device connects to {{Service URL}} (technical and usage data described in §4.4–4.6).
 - **From your employer or organisation** — where your account is provisioned by an organisation that has a contract with us, your employer typically provides your name, email address, and role.
-- **From third-party identity providers** — *OPTIONAL — only if single sign-on (SSO) is offered.* Where you log in using a third-party identity provider (for example, a Google or Microsoft account), we receive the identifiers and profile fields that you authorise the provider to share.
-- **From payment processors** — *OPTIONAL — only if payments are accepted.* Confirmation of successful payment, last-four digits of the card used, and transaction identifiers.
-- **From public sources** — *OPTIONAL.* Limited business-contact information from publicly available company registers, where we are establishing a B2B relationship.
+- **From third-party identity providers** — _OPTIONAL — only if single sign-on (SSO) is offered._ Where you log in using a third-party identity provider (for example, a Google or Microsoft account), we receive the identifiers and profile fields that you authorise the provider to share.
+- **From payment processors** — _OPTIONAL — only if payments are accepted._ Confirmation of successful payment, last-four digits of the card used, and transaction identifiers.
+- **From public sources** — _OPTIONAL._ Limited business-contact information from publicly available company registers, where we are establishing a B2B relationship.
 - **From our subprocessors and security partners** — telemetry, abuse signals, and aggregated security indicators from the infrastructure providers and security vendors listed in Section 8.
 
 ---
@@ -164,7 +164,7 @@ Responding to your support requests, diagnosing reported issues, and following u
 
 ### 6.3 Billing & account administration
 
-*OPTIONAL — only if {{Service Name}} is paid.*
+_OPTIONAL — only if {{Service Name}} is paid._
 
 Issuing invoices, collecting payment, handling refunds, managing subscription lifecycle events, and meeting tax and bookkeeping obligations.
 
@@ -186,7 +186,7 @@ Sending transactional and service-related messages such as security alerts, bill
 
 ### 6.8 Marketing
 
-*OPTIONAL — only if marketing is conducted.*
+_OPTIONAL — only if marketing is conducted._
 
 Sending newsletters, product updates, and other marketing communications. Marketing emails are sent only on the basis of your consent (or, where permitted, a soft opt-in for similar products to existing customers under national e-marketing rules), and you can opt out at any time using the unsubscribe link in every message or by contacting {{Company Email Privacy}}.
 
@@ -196,7 +196,7 @@ Meeting our obligations under applicable law (for example, tax, accounting, anti
 
 ### 6.10 Corporate transactions
 
-*OPTIONAL.*
+_OPTIONAL._
 
 Evaluating, negotiating, and completing corporate transactions such as a merger, acquisition, financing, or restructuring, and integrating acquired businesses.
 
@@ -277,13 +277,13 @@ We share personal data only with recipients that need it to fulfil the purposes 
 ### 8.1 Categories of recipient
 
 - **Our staff and contractors** — bound by confidentiality, on a need-to-know basis, with role-based access controls.
-- **Group companies** — *OPTIONAL — only if {{Company Short Name}} is part of a group.* Affiliated entities, where intra-group sharing is necessary for shared infrastructure, support, or administration, governed by an intra-group data processing agreement.
+- **Group companies** — _OPTIONAL — only if {{Company Short Name}} is part of a group._ Affiliated entities, where intra-group sharing is necessary for shared infrastructure, support, or administration, governed by an intra-group data processing agreement.
 - **Processors and subprocessors** — vendors that process personal data on our behalf under written instructions and a contract that meets Art. 28 GDPR.
-- **Payment processors** — *OPTIONAL — only if payments are accepted.* PCI-DSS-compliant providers that act as independent or joint controllers for payment data.
-- **Identity providers** — *OPTIONAL — only if SSO is offered.* Where you sign in via a third-party identity provider, the provider acts as an independent controller for the authentication data.
+- **Payment processors** — _OPTIONAL — only if payments are accepted._ PCI-DSS-compliant providers that act as independent or joint controllers for payment data.
+- **Identity providers** — _OPTIONAL — only if SSO is offered._ Where you sign in via a third-party identity provider, the provider acts as an independent controller for the authentication data.
 - **Professional advisors** — accountants, auditors, lawyers, and insurers, bound by professional confidentiality.
 - **Public authorities** — where disclosure is required by law, regulation, or a binding order, after we have assessed the request and, where lawful, notified you.
-- **Acquirers and counterparties in corporate transactions** — *OPTIONAL.* Subject to confidentiality and to data minimisation.
+- **Acquirers and counterparties in corporate transactions** — _OPTIONAL._ Subject to confidentiality and to data minimisation.
 
 ### 8.2 Categories of processor
 
@@ -294,7 +294,7 @@ We engage processors in, among others, the following categories:
 - Customer support tooling
 - Error monitoring and observability
 - Product analytics
-- Payment processing — *OPTIONAL.*
+- Payment processing — _OPTIONAL._
 - Security and anti-abuse
 - Identity, authentication, and SSO
 - Storage and backup
@@ -303,7 +303,7 @@ Our current list of processors and subprocessors is published at {{Service URL}}
 
 ### 8.3 Joint controllers — Art. 26
 
-*OPTIONAL — only where joint-controller arrangements exist (for example, certain co-branded features, certain advertising-platform integrations).*
+_OPTIONAL — only where joint-controller arrangements exist (for example, certain co-branded features, certain advertising-platform integrations)._
 
 Where we and another organisation jointly determine the purposes and means of processing, we conclude a joint-controller arrangement under Art. 26. The essence of any such arrangement is made available to data subjects on request.
 
@@ -334,11 +334,11 @@ Where {{Service Name}} is also offered to UK data subjects, we attach the UK Int
 
 ### 9.3 Supplementary measures (Schrems II)
 
-Following *Schrems II* (CJEU C-311/18), we carry out a Transfer Impact Assessment (TIA) for transfers under Art. 46. The TIA looks at the laws and practices of the destination country, the nature of the data, the duration of processing, and the technical, contractual, and organisational supplementary measures we apply. Typical measures include encryption in transit and at rest with keys held in the EU/EEA, pseudonymisation, strict access controls, transparency reporting, and contractual commitments to challenge unlawful access requests.
+Following _Schrems II_ (CJEU C-311/18), we carry out a Transfer Impact Assessment (TIA) for transfers under Art. 46. The TIA looks at the laws and practices of the destination country, the nature of the data, the duration of processing, and the technical, contractual, and organisational supplementary measures we apply. Typical measures include encryption in transit and at rest with keys held in the EU/EEA, pseudonymisation, strict access controls, transparency reporting, and contractual commitments to challenge unlawful access requests.
 
 ### 9.4 Binding Corporate Rules — Art. 47
 
-*OPTIONAL — only if {{Company Short Name}} or any of its subprocessors rely on BCRs.*
+_OPTIONAL — only if {{Company Short Name}} or any of its subprocessors rely on BCRs._
 
 For transfers within a corporate group, we may rely on Binding Corporate Rules approved by a competent supervisory authority in accordance with Art. 47.
 
@@ -371,11 +371,11 @@ Our retention is governed by the following principles:
 The actual retention period for any given record depends on the data category and the legal basis. Indicative periods:
 
 - **Account data** — for the lifetime of the account, plus a short tail (typically 30–90 days) to allow account recovery, then deletion.
-- **Billing and accounting records** — *OPTIONAL — only if {{Service Name}} is paid.* For the period required by tax law (commonly 7–10 years in the EU; in Germany, see Section 18).
+- **Billing and accounting records** — _OPTIONAL — only if {{Service Name}} is paid._ For the period required by tax law (commonly 7–10 years in the EU; in Germany, see Section 18).
 - **Support correspondence** — typically up to 24 months after closure of the ticket, unless a longer period is necessary for an open issue.
 - **Security logs** — typically 90–180 days, longer where an investigation is open or where required by law.
 - **Backups** — for the rotation period of the backup system (commonly up to 35 days), after which deletions in the live system propagate to backups by overwriting.
-- **Marketing data** — *OPTIONAL — only if marketing is conducted.* Until you opt out or, in the absence of activity, after a defined period of inactivity.
+- **Marketing data** — _OPTIONAL — only if marketing is conducted._ Until you opt out or, in the absence of activity, after a defined period of inactivity.
 - **Records of consent and opt-outs** — for as long as we rely on the consent, plus a reasonable period afterwards to evidence compliance.
 
 We can provide more specific periods on request.
@@ -436,7 +436,7 @@ We use cookies and similar technologies (local storage, session storage, pixels,
 - **Strictly necessary** — needed for the service to work (for example, authentication, load balancing, security tokens, remembering cookie preferences). Set without consent because they are exempt under Art. 5(3) ePrivacy.
 - **Functional** — remember choices you have made (language, region, display preferences). Set on the basis of consent unless they are clearly indispensable to a feature you have requested.
 - **Analytics** — measure how the service is used, in aggregate. Non-essential analytics are set only after consent.
-- **Marketing / advertising** — *OPTIONAL — only if used.* Used to measure or target advertising. Set only after consent and never combined with special category data.
+- **Marketing / advertising** — _OPTIONAL — only if used._ Used to measure or target advertising. Set only after consent and never combined with special category data.
 
 ### 12.2 Consent before non-essential cookies
 
@@ -517,7 +517,7 @@ We do not subject you to decisions based solely on automated processing, includi
 
 ### 15.2 Where automated decision-making does occur
 
-*OPTIONAL — keep this subsection only if you carry out solely automated decisions that have legal or similarly significant effects, such as automated credit decisions, automated abuse blocking that suspends an account, or automated content moderation that demonetises or removes content.*
+_OPTIONAL — keep this subsection only if you carry out solely automated decisions that have legal or similarly significant effects, such as automated credit decisions, automated abuse blocking that suspends an account, or automated content moderation that demonetises or removes content._
 
 Where automated decisions are made (for example, automated abuse detection that may temporarily suspend an account), we do so on one of the following bases:
 
@@ -562,13 +562,13 @@ For any question, request, or concern about this policy or our processing:
 
 ### 17.2 Data Protection Officer
 
-*OPTIONAL — only if a DPO has been appointed.*
+_OPTIONAL — only if a DPO has been appointed._
 
 You can contact our DPO directly at {{Company Email DPO}} (or by post, marked "FAO: Data Protection Officer").
 
 ### 17.3 EU representative
 
-*OPTIONAL — only if {{Company Short Name}} is a non-EU controller and has appointed an Art. 27 representative.*
+_OPTIONAL — only if {{Company Short Name}} is a non-EU controller and has appointed an Art. 27 representative._
 
 EU/EEA data subjects may contact our EU representative on any matter related to processing of personal data: {{Company DPA Representative}}.
 
@@ -582,7 +582,7 @@ We would, of course, appreciate the chance to address your concern before you co
 
 ---
 
-## 18. Germany-specific addenda (BDSG / DSGVO) — *regional appendix*
+## 18. Germany-specific addenda (BDSG / DSGVO) — _regional appendix_
 
 > This section is a regional appendix. It supplements (and does not replace) Sections 1–17 for users and customers in Germany. The 17-section structure above is the primary policy.
 
@@ -594,7 +594,7 @@ Where we process special category data on a basis other than consent (for exampl
 
 ### 18.2 Employment-context data — §26 BDSG
 
-*OPTIONAL — only if {{Service Name}} processes employment-context data of {{Company Short Name}}'s own employees, or if {{Company Short Name}} processes employment data on behalf of an employer-customer in the role of processor.*
+_OPTIONAL — only if {{Service Name}} processes employment-context data of {{Company Short Name}}'s own employees, or if {{Company Short Name}} processes employment data on behalf of an employer-customer in the role of processor._
 
 §26 BDSG governs the processing of employees' personal data for purposes of the employment relationship. Where this policy is read by employees of {{Company Short Name}}, the employment-context aspects of processing (recruitment, payroll, working-time, performance, exit) are described in our internal employee privacy notice and in the works-council agreements that apply.
 
@@ -614,13 +614,13 @@ Section 12 of this policy describes how we comply with these requirements; the c
 
 ### 18.4 Works-council interplay
 
-*OPTIONAL — only if {{Company Short Name}} has its own works council, or processes employment data on behalf of customers that have one.*
+_OPTIONAL — only if {{Company Short Name}} has its own works council, or processes employment data on behalf of customers that have one._
 
 In Germany, the introduction or modification of technical systems that can monitor employees' performance or behaviour is, as a rule, subject to co-determination under §87(1)(6) of the Works Constitution Act (Betriebsverfassungsgesetz, "BetrVG"). This affects features such as detailed audit logging, productivity analytics, or screen-recording. We support our customers in concluding works-council agreements (Betriebsvereinbarungen) where required and provide processing-detail documentation suitable for that process.
 
 ### 18.5 Inventor compensation / employee inventors note
 
-*OPTIONAL — only if {{Service Name}} touches on R&D output or if {{Company Short Name}} is itself an employer of inventors in Germany.*
+_OPTIONAL — only if {{Service Name}} touches on R&D output or if {{Company Short Name}} is itself an employer of inventors in Germany._
 
 Processing of employee-inventor information (for example, names of inventors on patent filings) is subject to both the GDPR and the German Employee Inventions Act (Gesetz über Arbeitnehmererfindungen, "ArbnErfG"). We process inventor-name and inventor-share data on the legal basis of legal obligation (Art. 6(1)(c) GDPR) and contract performance (Art. 6(1)(b)) and retain it for the periods required by patent and inventor-compensation rules.
 
@@ -637,13 +637,13 @@ A complete list of the Land authorities is maintained by the BfDI: https://www.b
 
 ### 18.7 Data Protection Officer triggers — §38 BDSG
 
-*OPTIONAL — informational only.*
+_OPTIONAL — informational only._
 
 In Germany, in addition to the GDPR triggers in Art. 37 GDPR, §38 BDSG requires the appointment of a DPO where, among other things, at least 20 persons are constantly engaged in automated processing of personal data. Where this trigger applies to {{Company Short Name}}, our DPO contact is given in Section 3.1.
 
 ### 18.8 German bookkeeping retention
 
-*OPTIONAL — only if {{Service Name}} is paid and {{Company Short Name}} is subject to German bookkeeping rules.*
+_OPTIONAL — only if {{Service Name}} is paid and {{Company Short Name}} is subject to German bookkeeping rules._
 
 German tax and commercial law (in particular §147 AO and §257 HGB) typically require retention of accounting records and commercial letters for between 6 and 10 years. Where retention under Section 10 of this policy would otherwise be shorter, we apply the longer statutory period to the records concerned and restrict processing to the purpose of complying with that obligation.
 
@@ -653,21 +653,21 @@ German tax and commercial law (in particular §147 AO and §257 HGB) typically r
 
 The following merge fields appear in this template. Replace each with your own values before publishing.
 
-| Field | Description |
-|-------|-------------|
-| `{{Company Legal Name}}` | Full registered name of the controller. |
-| `{{Company Short Name}}` | How the controller refers to itself in prose. |
-| `{{Company Address}}` | Registered postal address. |
-| `{{Company State / Bundesland}}` | German Land of the controller's principal establishment (for §18.6). |
-| `{{Company Email Privacy}}` | Privacy contact mailbox. |
-| `{{Company Email DPO}}` | OPTIONAL — DPO mailbox if a DPO has been appointed. |
-| `{{Company DPA Representative}}` | OPTIONAL — name and address of the Art. 27 GDPR EU representative for non-EU controllers. |
-| `{{Service Name}}` | Product or service this policy applies to. |
-| `{{Service URL}}` | Primary URL of the service. |
-| `{{Effective Date}}` | YYYY-MM-DD when this policy takes effect. |
-| `{{Last Updated Date}}` | YYYY-MM-DD of the latest revision. |
-| `{{Supervisory Authority}}` | Lead supervisory authority for the controller (default: "your local data protection authority"). |
-| `{{Third Country List}}` | List of third countries to which personal data is currently transferred, with the safeguard used for each. |
+| Field                            | Description                                                                                                |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `{{Company Legal Name}}`         | Full registered name of the controller.                                                                    |
+| `{{Company Short Name}}`         | How the controller refers to itself in prose.                                                              |
+| `{{Company Address}}`            | Registered postal address.                                                                                 |
+| `{{Company State / Bundesland}}` | German Land of the controller's principal establishment (for §18.6).                                       |
+| `{{Company Email Privacy}}`      | Privacy contact mailbox.                                                                                   |
+| `{{Company Email DPO}}`          | OPTIONAL — DPO mailbox if a DPO has been appointed.                                                        |
+| `{{Company DPA Representative}}` | OPTIONAL — name and address of the Art. 27 GDPR EU representative for non-EU controllers.                  |
+| `{{Service Name}}`               | Product or service this policy applies to.                                                                 |
+| `{{Service URL}}`                | Primary URL of the service.                                                                                |
+| `{{Effective Date}}`             | YYYY-MM-DD when this policy takes effect.                                                                  |
+| `{{Last Updated Date}}`          | YYYY-MM-DD of the latest revision.                                                                         |
+| `{{Supervisory Authority}}`      | Lead supervisory authority for the controller (default: "your local data protection authority").           |
+| `{{Third Country List}}`         | List of third countries to which personal data is currently transferred, with the safeguard used for each. |
 
 ---
 
@@ -687,4 +687,4 @@ The following merge fields appear in this template. Replace each with your own v
 
 ---
 
-*Not legal advice.* This template is provided under the MIT licence as a drafting aid. It is general in nature, may not reflect the most recent regulatory developments or supervisory-authority guidance, and is not a substitute for advice from qualified counsel familiar with your processing activities, your jurisdictions, and your sector. Before adopting this template as your published privacy policy you should have it reviewed by counsel, verify every cited article and national-law reference is current as of your effective date, and confirm that the legal bases listed in Section 7 match the processing you actually carry out.
+_Not legal advice._ This template is provided under the MIT licence as a drafting aid. It is general in nature, may not reflect the most recent regulatory developments or supervisory-authority guidance, and is not a substitute for advice from qualified counsel familiar with your processing activities, your jurisdictions, and your sector. Before adopting this template as your published privacy policy you should have it reviewed by counsel, verify every cited article and national-law reference is current as of your effective date, and confirm that the legal bases listed in Section 7 match the processing you actually carry out.

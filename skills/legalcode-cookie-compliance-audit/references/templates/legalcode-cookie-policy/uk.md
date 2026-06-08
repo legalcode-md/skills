@@ -21,7 +21,7 @@ This overlay sets out how {{Company Legal Name}} uses cookies and similar techno
 
 ## 1. Plain-language summary
 
-*Plain-language: A short overview of how cookies work on this service in the UK and what choices you have under PECR and the UK GDPR.*
+_Plain-language: A short overview of how cookies work on this service in the UK and what choices you have under PECR and the UK GDPR._
 
 In the UK, cookies are governed by **PECR Regulation 6**, which forbids storing or reading information on a user's terminal equipment without prior consent — unless that storage or access is strictly necessary for a service the user has asked for. PECR borrows its definition of consent from the **UK GDPR**, so the consent we ask for must meet **Articles 6(1)(a) and 7**: freely given, specific, informed, unambiguous, and as easy to withdraw as to give.
 
@@ -33,7 +33,7 @@ We follow the **Information Commissioner's Office** ("ICO") cookies guidance as 
 
 ## 2. What cookies and similar technologies are
 
-*Plain-language: PECR covers more than text-file cookies; it covers any technology that stores or reads information on your device.*
+_Plain-language: PECR covers more than text-file cookies; it covers any technology that stores or reads information on your device._
 
 PECR Regulation 6 applies whenever a person stores information on, or gains access to information stored in, a user's terminal equipment. The drafting is technology-neutral. The **ICO 2023 cookies guidance** confirms the same rules apply to:
 
@@ -50,7 +50,7 @@ Where this overlay says "set a cookie", read it as "use any of the technologies 
 
 ## 3. Why we use them
 
-*Plain-language: Five short reasons, framed by what PECR Reg. 6 lets us do without consent.*
+_Plain-language: Five short reasons, framed by what PECR Reg. 6 lets us do without consent._
 
 We use cookies and similar technologies to:
 
@@ -66,7 +66,7 @@ We do not build hidden behavioural profiles for sale to data brokers, do not use
 
 ## 4. Categories of cookies we use
 
-*Plain-language: Five categories, with PECR Regulation 6 treatment for each.*
+_Plain-language: Five categories, with PECR Regulation 6 treatment for each._
 
 ### 4.1 Strictly necessary
 
@@ -111,7 +111,7 @@ Set by social networks via embeds, share buttons, or login widgets.
 
 ## 5. Specific cookies we use
 
-*Plain-language: The current, audited list is in Annex A.*
+_Plain-language: The current, audited list is in Annex A._
 
 The inventory is in **Annex A** — name, provider, purpose, category from §4, first-/third-party, duration, and transfer mechanism. It is regenerated whenever cookies change. Most recent audit: {{Cookie Audit Date}} (reference {{Cookie Audit ID}}).
 
@@ -121,7 +121,7 @@ If a cookie appears that is not in Annex A, tell us via §14 — that is a defec
 
 ## 6. Third-party cookies & subprocessors
 
-*Plain-language: Some cookies on this service are placed by other companies. The framework is the same as in the EU.*
+_Plain-language: Some cookies on this service are placed by other companies. The framework is the same as in the EU._
 
 Third-party cookies fall into these groups:
 
@@ -138,7 +138,7 @@ Where a provider acts on our written instructions and only for purposes we set, 
 
 ## 7. Your choices & how to manage cookies
 
-*Plain-language: A cookie settings centre, browser controls, and (where applicable) industry opt-outs.*
+_Plain-language: A cookie settings centre, browser controls, and (where applicable) industry opt-outs._
 
 Three ways to control cookies:
 
@@ -154,7 +154,7 @@ Three ways to control cookies:
 
 ## 8. Browser controls
 
-*Plain-language: Every modern browser has built-in cookie controls. They work across all sites.*
+_Plain-language: Every modern browser has built-in cookie controls. They work across all sites._
 
 You can clear or block cookies through your browser settings. The exact menus change, so we link to the canonical help pages:
 
@@ -169,7 +169,7 @@ Blocking strictly necessary cookies will break sign-in. Browser settings apply p
 
 ## 9. Global Privacy Control (GPC) & Do Not Track (DNT)
 
-*Plain-language: Neither GPC nor DNT is currently a binding signal in the UK, but we may treat GPC as a non-binding preference.*
+_Plain-language: Neither GPC nor DNT is currently a binding signal in the UK, but we may treat GPC as a non-binding preference._
 
 **Global Privacy Control (GPC).** GPC signals that a user does not want personal data sold or shared and does not want behavioural advertising. As at the date of this overlay, GPC is **not a binding opt-out signal under PECR or the UK GDPR**, and the ICO has not issued formal guidance treating it as such `[VERIFY current ICO position post-DUAA 2025]`. We treat GPC as a non-binding preference: on receiving it, we may decline to set non-essential cookies and may pre-populate the banner with non-essential categories rejected. Override is available in the cookie settings centre.
 
@@ -181,13 +181,13 @@ Blocking strictly necessary cookies will break sign-in. Browser settings apply p
 
 ## 10. How we obtain and record consent
 
-*Plain-language: Banner first. Equal prominence. Granular. Recorded.*
+_Plain-language: Banner first. Equal prominence. Granular. Recorded._
 
 We obtain and record consent in line with **PECR Regulation 6**, **UK GDPR Articles 6(1)(a) and 7**, and the **ICO 2023 cookies guidance**:
 
 - **Banner before first use.** Shown on first visit, before any non-essential cookie is set.
 - **Equal prominence.** "Accept all" and "Reject all" in the first layer with identical size, colour-contrast, affordance, layout, and position weight. "Manage preferences" with at least equal prominence to "Accept all".
-- **No pre-ticked boxes.** No non-essential category pre-ticked or default-on (*Planet49*; ICO guidance).
+- **No pre-ticked boxes.** No non-essential category pre-ticked or default-on (_Planet49_; ICO guidance).
 - **Granular per category.** Consent requested at the category level in §4; per-vendor control where a category mixes vendors with materially different purposes.
 - **No cookie walls.** Access is not conditioned on accepting non-essential cookies, save in narrow circumstances meeting the ICO's compelling-reasons standard with an equivalent service or opt-out path. {{[OPTIONAL — delete unless a cookie wall is in use.]}}
 - **Record of consent.** Each event logged with pseudonymous user ID, UTC timestamp, banner version, categories accepted, categories rejected, banner language, and consent mechanism. Retained **at least 12 months** and accessible to the user on request.
@@ -200,7 +200,7 @@ We obtain and record consent in line with **PECR Regulation 6**, **UK GDPR Artic
 
 ## 11. International data transfers
 
-*Plain-language: Some providers process data outside the UK. We rely on adequacy, the IDTA, the UK Addendum, or the UK–US Data Bridge.*
+_Plain-language: Some providers process data outside the UK. We rely on adequacy, the IDTA, the UK Addendum, or the UK–US Data Bridge._
 
 Where a transfer falls within Chapter V of the UK GDPR, we rely on one of:
 
@@ -215,7 +215,7 @@ The transfer mechanism for each cookie is in Annex A. Full transfer detail is in
 
 ## 12. Children's data
 
-*Plain-language: No targeted ads or behavioural analytics for users we know to be children. The Children's Code applies if the service is likely to be accessed by children.*
+_Plain-language: No targeted ads or behavioural analytics for users we know to be children. The Children's Code applies if the service is likely to be accessed by children._
 
 **UK GDPR Article 8 and DPA 2018 s.9** set the age below which a child cannot give their own consent for an information-society service at **13**. Where consent under §10 is the only lawful path for a non-essential cookie set on a user we know to be under 13, we suppress it unless given or authorised by a person with parental responsibility.
 
@@ -231,7 +231,7 @@ See §13 of our [Privacy Policy]({{Privacy Policy URL}}) for the full account.
 
 ## 13. Changes to this policy
 
-*Plain-language: We update this overlay when the rules change, and re-prompt where the law requires fresh consent.*
+_Plain-language: We update this overlay when the rules change, and re-prompt where the law requires fresh consent._
 
 We may revise this overlay from time to time and update the "Last updated" date.
 
@@ -243,7 +243,7 @@ Older versions are kept on file for at least three years and are available on re
 
 ## 14. Contact & complaints
 
-*Plain-language: Talk to us first. If we do not put it right, you can complain to the ICO.*
+_Plain-language: Talk to us first. If we do not put it right, you can complain to the ICO._
 
 For questions about this overlay or cookies on the service:
 
@@ -263,7 +263,7 @@ You may also have rights under UK GDPR Article 79 (judicial remedy) and Article 
 
 ## 15. DUAA 2025 — Forward-looking flag
 
-*Plain-language: DUAA 2025 changes parts of the UK regime; some provisions are in force, some are not.* `[VERIFY — DUAA 2025 phased commencement; some provisions may not be in force at adoption.]`
+_Plain-language: DUAA 2025 changes parts of the UK regime; some provisions are in force, some are not._ `[VERIFY — DUAA 2025 phased commencement; some provisions may not be in force at adoption.]`
 
 The **Data (Use and Access) Act 2025** ("DUAA 2025") amends parts of the UK GDPR, DPA 2018, and PECR, and is being commenced in phases. Until each provision is in force, the prior law applies. The provisions most relevant here:
 
@@ -279,24 +279,24 @@ This whole section is marked `[VERIFY]` and will be revised as commencement orde
 
 ## Annex A — Cookie inventory (PECR Reg. 6 classifications)
 
-*Plain-language: This is the live list of cookies on the service. Each row identifies the PECR Regulation 6 classification.*
+_Plain-language: This is the live list of cookies on the service. Each row identifies the PECR Regulation 6 classification._
 
 **Audit reference:** {{Cookie Audit ID}}
 **Audit date:** {{Cookie Audit Date}}
 **Auditor:** {{Cookie Auditor Name}}
 
-| Cookie name | Provider | Purpose | Category | PECR Reg. 6 status | First / third-party | Duration | Transfer mechanism |
-|---|---|---|---|---|---|---|---|
-| `session_id` | {{Company Legal Name}} | Authenticated session | Strictly necessary | Reg. 6(4) | First-party | Session | None (UK) |
-| `csrf_token` | {{Company Legal Name}} | CSRF protection | Strictly necessary | Reg. 6(4) | First-party | Session | None |
-| `consent_v2` | {{Company Legal Name}} | Cookie-consent record | Strictly necessary | Reg. 6(4) | First-party | 12 months | None |
-| `lang_pref` | {{Company Legal Name}} | Language and region | Functional | Consent required | First-party | 12 months | None |
-| `theme` | {{Company Legal Name}} | Display preference | Functional | Consent required | First-party | 12 months | None |
-| `_ga` | Google LLC | Aggregate analytics | Analytics | Consent required `[VERIFY DUAA 2025]` | Third-party | 2 years | UK Addendum / Data Bridge `[VERIFY]` |
-| `_ga_<id>` | Google LLC (GA4) | GA4 session state | Analytics | Consent required `[VERIFY DUAA 2025]` | Third-party | 2 years | UK Addendum / Data Bridge `[VERIFY]` |
-| `_fbp` | Meta Platforms | Conversion / retargeting | Advertising | Consent required | Third-party | 90 days | IDTA / UK Addendum `[VERIFY]` |
-| `intercom-session-<id>` | Intercom | Support chat | Functional | Consent required | Third-party | 7 days | IDTA / UK Addendum `[VERIFY]` |
-| `__cf_bm` | Cloudflare | Bot / DDoS protection | Strictly necessary | Reg. 6(4) | Third-party | 30 min | IDTA `[VERIFY]` |
+| Cookie name             | Provider               | Purpose                  | Category           | PECR Reg. 6 status                    | First / third-party | Duration  | Transfer mechanism                   |
+| ----------------------- | ---------------------- | ------------------------ | ------------------ | ------------------------------------- | ------------------- | --------- | ------------------------------------ |
+| `session_id`            | {{Company Legal Name}} | Authenticated session    | Strictly necessary | Reg. 6(4)                             | First-party         | Session   | None (UK)                            |
+| `csrf_token`            | {{Company Legal Name}} | CSRF protection          | Strictly necessary | Reg. 6(4)                             | First-party         | Session   | None                                 |
+| `consent_v2`            | {{Company Legal Name}} | Cookie-consent record    | Strictly necessary | Reg. 6(4)                             | First-party         | 12 months | None                                 |
+| `lang_pref`             | {{Company Legal Name}} | Language and region      | Functional         | Consent required                      | First-party         | 12 months | None                                 |
+| `theme`                 | {{Company Legal Name}} | Display preference       | Functional         | Consent required                      | First-party         | 12 months | None                                 |
+| `_ga`                   | Google LLC             | Aggregate analytics      | Analytics          | Consent required `[VERIFY DUAA 2025]` | Third-party         | 2 years   | UK Addendum / Data Bridge `[VERIFY]` |
+| `_ga_<id>`              | Google LLC (GA4)       | GA4 session state        | Analytics          | Consent required `[VERIFY DUAA 2025]` | Third-party         | 2 years   | UK Addendum / Data Bridge `[VERIFY]` |
+| `_fbp`                  | Meta Platforms         | Conversion / retargeting | Advertising        | Consent required                      | Third-party         | 90 days   | IDTA / UK Addendum `[VERIFY]`        |
+| `intercom-session-<id>` | Intercom               | Support chat             | Functional         | Consent required                      | Third-party         | 7 days    | IDTA / UK Addendum `[VERIFY]`        |
+| `__cf_bm`               | Cloudflare             | Bot / DDoS protection    | Strictly necessary | Reg. 6(4)                             | Third-party         | 30 min    | IDTA `[VERIFY]`                      |
 
 > Implementer note: rows above are `[EXAMPLE]` only. Replace with the actual audit output from the cookie scanner (see the companion `legalcode-cookie-compliance-audit` skill). PECR classifications must be set by the auditor on a per-cookie basis.
 
@@ -304,7 +304,7 @@ This whole section is marked `[VERIFY]` and will be revised as commencement orde
 
 ## Annex B — Consent banner UX requirements (ICO 2023-aligned)
 
-*Plain-language: This annex tells the team building the banner exactly what the ICO 2023 guidance requires.*
+_Plain-language: This annex tells the team building the banner exactly what the ICO 2023 guidance requires._
 
 The following is the **UK floor** for any consent banner deployed on the service. Where the jurisdiction-neutral baseline is stricter, the stricter rule applies.
 
@@ -312,7 +312,7 @@ The following is the **UK floor** for any consent banner deployed on the service
 
 **B.2 Equal prominence (ICO 2023).** "Accept all" and "Reject all" in the first layer with identical size, contrast, affordance, layout, and position weight. "Manage preferences" with at least equal prominence to "Accept all". No nudge colours, buried reject controls, friction asymmetry, auto-scroll past the choice, or time pressure.
 
-**B.3 No pre-ticked boxes.** No non-essential category pre-ticked or default-on (*Planet49*; ICO guidance).
+**B.3 No pre-ticked boxes.** No non-essential category pre-ticked or default-on (_Planet49_; ICO guidance).
 
 **B.4 Granular.** Per-category control as in §4 with one-line plain-English purposes; per-vendor control behind "Manage preferences" where a category mixes vendors with materially different purposes.
 
@@ -334,27 +334,27 @@ The following is the **UK floor** for any consent banner deployed on the service
 
 ## Merge fields used
 
-| Field | Description |
-|---|---|
-| `{{Company Legal Name}}` | Registered legal name of the operator |
-| `{{Service Name}}` | Public name of the service |
-| `{{Service URL}}` | Canonical URL |
+| Field                              | Description                                                       |
+| ---------------------------------- | ----------------------------------------------------------------- |
+| `{{Company Legal Name}}`           | Registered legal name of the operator                             |
+| `{{Service Name}}`                 | Public name of the service                                        |
+| `{{Service URL}}`                  | Canonical URL                                                     |
 | `{{Service Category Designation}}` | Category designation (e.g. for Online Safety Act cross-reference) |
-| `{{ICO Registration Number}}` | ICO registration number `[OPTIONAL]` |
-| `{{Effective Date}}` | Date this version takes effect |
-| `{{Last Updated Date}}` | Date last edited |
-| `{{Privacy Policy URL}}` | Companion privacy policy |
-| `{{Terms URL}}` | Terms of service |
-| `{{Cookie Settings URL}}` | Cookie settings centre |
-| `{{Subprocessor List URL}}` | Public subprocessor list |
-| `{{Cookie Audit Date}}` | Most recent audit date |
-| `{{Cookie Audit ID}}` | Audit run identifier |
-| `{{Cookie Auditor Name}}` | Auditor (person or tool) |
-| `{{Company Email Privacy}}` | Privacy team email |
-| `{{Company Email DPO}}` | DPO email (if appointed) |
-| `{{Company Postal Address}}` | Operator postal address |
-| `{{EDAA Opt-Out URL}}` | Your Online Choices opt-out (EDAA) |
-| `{{Reading Level Target}}` | Target reading level for banner copy |
+| `{{ICO Registration Number}}`      | ICO registration number `[OPTIONAL]`                              |
+| `{{Effective Date}}`               | Date this version takes effect                                    |
+| `{{Last Updated Date}}`            | Date last edited                                                  |
+| `{{Privacy Policy URL}}`           | Companion privacy policy                                          |
+| `{{Terms URL}}`                    | Terms of service                                                  |
+| `{{Cookie Settings URL}}`          | Cookie settings centre                                            |
+| `{{Subprocessor List URL}}`        | Public subprocessor list                                          |
+| `{{Cookie Audit Date}}`            | Most recent audit date                                            |
+| `{{Cookie Audit ID}}`              | Audit run identifier                                              |
+| `{{Cookie Auditor Name}}`          | Auditor (person or tool)                                          |
+| `{{Company Email Privacy}}`        | Privacy team email                                                |
+| `{{Company Email DPO}}`            | DPO email (if appointed)                                          |
+| `{{Company Postal Address}}`       | Operator postal address                                           |
+| `{{EDAA Opt-Out URL}}`             | Your Online Choices opt-out (EDAA)                                |
+| `{{Reading Level Target}}`         | Target reading level for banner copy                              |
 
 ---
 

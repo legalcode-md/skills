@@ -43,6 +43,7 @@ economics under multiple exit scenarios; and generates a dual-perspective negoti
 strategy (founder view and investor view for every material term).
 
 **Covers:**
+
 - Full economics analysis: valuation, option pool dilution, liquidation preference structure
   and waterfall, pay-to-play provisions, anti-dilution mechanics, and scenario modeling
   across three exit outcomes
@@ -62,6 +63,7 @@ strategy (founder view and investor view for every material term).
 - Confidence-scored redline recommendations with tiered negotiation strategy
 
 **Does not:**
+
 - Provide legal advice or replace qualified VC counsel
 - Draft a term sheet from scratch — see `legalcode-saas-agreement-drafter` or
   `legalcode-master-services-agreement` for drafting skills
@@ -83,6 +85,7 @@ incorporation jurisdiction) determines which track to engage.
 corporations governed by the Delaware General Corporation Law (DGCL). Most US term sheet
 analysis applies NVCA Model Legal Documents (latest edition, October 2025 update) as the
 benchmark. Key US-specific considerations:
+
 - Liquidation preference enforceability under DGCL § 151
 - Anti-dilution adjustments treated as recapitalizations for tax (IRC § 305)
 - IRC § 280G golden parachute screening for founder acceleration on change of control
@@ -94,6 +97,7 @@ benchmark. Key US-specific considerations:
 **UK**
 [JURISDICTION-SPECIFIC] UK VC deals typically use BVCA Model Documents for Early Stage
 Investments (February 2025 edition). Key UK-specific considerations:
+
 - UK companies incorporated under Companies Act 2006 (not DGCL)
 - BVCA model defaults to 1× non-participating liquidation preference (same as NVCA)
 - Anti-dilution formula in February 2025 BVCA update defaults to broad-based weighted
@@ -109,6 +113,7 @@ Investments (February 2025 edition). Key UK-specific considerations:
 
 **India**
 [JURISDICTION-SPECIFIC] Indian VC deals are governed by a complex regulatory framework:
+
 - Companies Act 2013 governs preference share rights, board composition, and shareholder
   agreements
 - SEBI (Alternative Investment Funds) Regulations 2012 (as amended through 2024/2025)
@@ -162,6 +167,7 @@ user can correct it.
 ### Step 1: Accept the Term Sheet
 
 Accept the term sheet in any of these formats:
+
 - **File**: PDF, DOCX, or other document format
 - **URL**: Link to a term sheet in a document management system
 - **Pasted text**: Term sheet text pasted directly into the conversation
@@ -177,13 +183,13 @@ If no term sheet is provided, prompt the user to supply one.
    - Options: **Founder / Company** (analyzing an investor's term sheet), **Lead Investor**
      (reviewing before sending), **Syndicate / Follow-on Investor** (reviewing a round
      you're joining), **Advisor / Counsel** (neutral analysis), **Other**
-   - *Why this matters*: The entire analysis inverts depending on which side you represent.
+   - _Why this matters_: The entire analysis inverts depending on which side you represent.
      A liquidation preference that is GREEN for an investor is RED for a founder. Dual-
      perspective framing is mandatory but knowing the primary reader sharpens priorities.
 
 2. **Round stage?**
    - Options: Pre-seed, **Seed**, **Series A**, **Series B**, **Series C+**
-   - *Why this matters*: Market benchmarks differ fundamentally by stage. A 2× participating
+   - _Why this matters_: Market benchmarks differ fundamentally by stage. A 2× participating
      preference may be unusual at seed (where SAFE notes dominate) but standard at
      Series C distressed. Option pool expectations, board seat norms, and protective
      provision scope all scale with stage.
@@ -192,7 +198,7 @@ If no term sheet is provided, prompt the user to supply one.
    - Options: Simple (founding team only, no prior investors), Medium (seed investors with
      SAFE or priced notes, limited prior rights), Complex (multiple priced rounds with
      accumulated preferred rights, drag-along, anti-dilution, and existing board seats)
-   - *Why this matters*: New terms interact with existing rights. A new Series A anti-
+   - _Why this matters_: New terms interact with existing rights. A new Series A anti-
      dilution provision stacks on top of any existing seed anti-dilution. A new board seat
      shifts existing board dynamics. Failing to model this is the single most common
      term sheet analysis error.
@@ -200,7 +206,7 @@ If no term sheet is provided, prompt the user to supply one.
 4. **Jurisdiction / governing law?**
    - Options: US (Delaware corporation), UK (Companies Act 2006), India (Companies Act
      2013 / AIF), Other (specify), Unknown (I'll identify from the term sheet)
-   - *Why this matters*: Delaware, UK, and India have different rules for preference share
+   - _Why this matters_: Delaware, UK, and India have different rules for preference share
      enforceability, anti-dilution mechanics, board removal, and regulatory constraints.
 
 If the user provides partial context, proceed with what you have and **state your
@@ -234,6 +240,7 @@ in [geography]. Not organizational positions."
 ### Step 4: Read the Term Sheet Holistically
 
 Before analysing individual terms, read the entire term sheet for:
+
 1. **Structure**: Is this a standard template (NVCA, BVCA, Y Combinator SAFE-extension)?
    Or a custom investor-drafted document?
 2. **Round summary**: Investment amount, pre-money valuation, post-money valuation, and
@@ -250,6 +257,7 @@ Identify the governing law clause and activate the appropriate jurisdiction trac
 
 Read the governing law clause and identify the applicable jurisdiction. Then use
 **legalcode-mcp** (if connected) to search for:
+
 - Relevant statutes governing preference share rights in the identified jurisdiction
 - Recent court decisions on drag-along, fiduciary duties, or anti-dilution enforceability
 - Regulatory guidance (SEBI AIF, FCA, SEC) relevant to the fund structure
@@ -284,15 +292,16 @@ or (C) Flag it as a key item for legal clarification before signing?"
 
 Identify and classify the liquidation preference on five dimensions:
 
-| Dimension | Description | Market Standard (Series A, US 2025) |
-|-----------|-------------|--------------------------------------|
-| Multiple | 1×, 2×, 3× or other | 1× (98% of Q2 2025 rounds per NVCA) |
-| Participation | Non-participating, participating, or capped participating | Non-participating (55–60% Series A; market shifting toward parity) |
-| Scope | Liquidation proceeds only, or includes dividends and redemptions | Liquidation proceeds (standard) |
-| Priority | Senior to all other preferred, pari-passu, or junior | Senior to common; pari-passu with other preferred of same series |
-| Trigger | Merger, acquisition, asset sale, IPO carve-out | M&A and asset sales standard; IPO typically does not trigger |
+| Dimension     | Description                                                      | Market Standard (Series A, US 2025)                                |
+| ------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Multiple      | 1×, 2×, 3× or other                                              | 1× (98% of Q2 2025 rounds per NVCA)                                |
+| Participation | Non-participating, participating, or capped participating        | Non-participating (55–60% Series A; market shifting toward parity) |
+| Scope         | Liquidation proceeds only, or includes dividends and redemptions | Liquidation proceeds (standard)                                    |
+| Priority      | Senior to all other preferred, pari-passu, or junior             | Senior to common; pari-passu with other preferred of same series   |
+| Trigger       | Merger, acquisition, asset sale, IPO carve-out                   | M&A and asset sales standard; IPO typically does not trigger       |
 
 Model the liquidation preference in three exit scenarios:
+
 - **Down exit** (50% of current valuation)
 - **Flat exit** (at or near current valuation)
 - **Up exit** (3× current valuation)
@@ -304,14 +313,15 @@ investor total return.
 
 Identify the anti-dilution provision type and scope:
 
-| Type | Mechanism | Founder Impact | Market Standard |
-|------|-----------|----------------|-----------------|
-| None | No protection | Best for founder | Rare at Series A+ |
-| Broad-based weighted average | Adjusts conversion price using all outstanding shares | Moderate dilution in down rounds | NVCA default; BVCA 2025 default |
-| Narrow-based weighted average | Adjusts using only preferred shares outstanding | More dilutive than broad-based | Less common; sometimes in older deals |
-| Full ratchet | Resets conversion price to new lower price entirely | Devastating in down rounds | ~22% of Series A (up from 12% in 2021; more common in down markets) |
+| Type                          | Mechanism                                             | Founder Impact                   | Market Standard                                                     |
+| ----------------------------- | ----------------------------------------------------- | -------------------------------- | ------------------------------------------------------------------- |
+| None                          | No protection                                         | Best for founder                 | Rare at Series A+                                                   |
+| Broad-based weighted average  | Adjusts conversion price using all outstanding shares | Moderate dilution in down rounds | NVCA default; BVCA 2025 default                                     |
+| Narrow-based weighted average | Adjusts using only preferred shares outstanding       | More dilutive than broad-based   | Less common; sometimes in older deals                               |
+| Full ratchet                  | Resets conversion price to new lower price entirely   | Devastating in down rounds       | ~22% of Series A (up from 12% in 2021; more common in down markets) |
 
 Identify carve-outs from anti-dilution (standard carve-outs per NVCA):
+
 - Shares issued under the stock option plan (up to a stated pool size)
 - Shares issued as stock splits, dividends, or recapitalizations
 - Shares issued to strategic partners, advisors, or vendors at board discretion
@@ -323,6 +333,7 @@ valuation) for all three anti-dilution types. Show founder ownership change for 
 #### 6.4 Option Pool
 
 Identify the option pool on four dimensions:
+
 1. **Pool size** as percentage of fully diluted shares, before or after this round
 2. **Pool inclusion**: Is the pool included in the pre-money share count (dilutes founder)
    or added post-close (dilutes all)?
@@ -351,6 +362,7 @@ Analyse the control dimension in four sub-categories.
 #### 7.1 Board Composition
 
 Identify the board structure post-close:
+
 - Total board size
 - Investor-designated seats (lead investor, follow-on investors separately)
 - Founder-designated seats
@@ -359,12 +371,12 @@ Identify the board structure post-close:
 
 Classify board control:
 
-| Board Outcome | Classification | Notes |
-|---------------|----------------|-------|
-| Founder majority (e.g., 2F / 1I / 0N) | FOUNDER-FAVORABLE | Rare at Series A |
-| Parity with neutral or founder-appointed neutral (e.g., 1F / 1I / 1N-founder-approved) | MARKET-STANDARD | Common at seed/Series A |
-| Investor majority or investor-approved neutral (e.g., 1F / 2I / 1I-controlled) | FOUNDER-DILUTIVE | Escalate; requires negotiation or compensating founder veto |
-| Full investor control (e.g., 0F / 3I) | FOUNDER-DILUTIVE / RED | Highly unusual at seed/Series A; major red flag |
+| Board Outcome                                                                          | Classification         | Notes                                                       |
+| -------------------------------------------------------------------------------------- | ---------------------- | ----------------------------------------------------------- |
+| Founder majority (e.g., 2F / 1I / 0N)                                                  | FOUNDER-FAVORABLE      | Rare at Series A                                            |
+| Parity with neutral or founder-appointed neutral (e.g., 1F / 1I / 1N-founder-approved) | MARKET-STANDARD        | Common at seed/Series A                                     |
+| Investor majority or investor-approved neutral (e.g., 1F / 2I / 1I-controlled)         | FOUNDER-DILUTIVE       | Escalate; requires negotiation or compensating founder veto |
+| Full investor control (e.g., 0F / 3I)                                                  | FOUNDER-DILUTIVE / RED | Highly unusual at seed/Series A; major red flag             |
 
 Market standard at Series A: 2 founders / 1 investor / 1 independent (source: NVCA
 2025; Orrick VC Report 2025 Q1).
@@ -373,6 +385,7 @@ Market standard at Series A: 2 founders / 1 investor / 1 independent (source: NV
 
 List every action that requires investor consent under the protective provisions. Standard
 NVCA protective provisions include:
+
 - Amend or change rights of preferred stock
 - Authorize or issue new equity or equity-equivalent securities
 - Liquidate, dissolve, or wind up the company
@@ -392,6 +405,7 @@ operations. Should I classify this as FOUNDER-DILUTIVE / RED, or do you want to 
 a carve-out?"
 
 Flag as FOUNDER-DILUTIVE / RED any protective provision that:
+
 - Requires investor consent for normal operations (hiring, budgeting, customer contracts)
 - Allows a single investor to block a decision (super-majority or unanimous preferred
   required vs. majority preferred is more balanced)
@@ -400,6 +414,7 @@ Flag as FOUNDER-DILUTIVE / RED any protective provision that:
 #### 7.3 Drag-Along and Tag-Along Rights
 
 **Drag-Along**: Allows the majority to force minority shareholders to join a sale.
+
 - Who triggers: majority of preferred, majority of all shares, or board plus majority?
 - Threshold: 50%, 60%, 66%, or 75% approval required?
 - Protections for dragged shareholders: appraisal rights, right to separate counsel,
@@ -412,6 +427,7 @@ majority of common (three-party consent). Single-class drag-along (preferred alo
 FOUNDER-DILUTIVE.
 
 **Tag-Along (Co-Sale)**: Allows minority to join a sale at the same price if majority sells.
+
 - Scope: founder shares only? All common? Including transfer to third parties?
 - Right of first refusal before tag-along triggers?
 - Threshold for activation?
@@ -419,6 +435,7 @@ FOUNDER-DILUTIVE.
 #### 7.4 Information Rights and Transparency Asymmetry
 
 List every information right granted to investors:
+
 - Quarterly financial statements (unaudited): threshold (e.g., investors holding >1%)
 - Annual financial statements (audited or unaudited)
 - Annual budget and operating plan
@@ -428,6 +445,7 @@ List every information right granted to investors:
 - Right to inspect books and records
 
 Flag information rights as FOUNDER-DILUTIVE if:
+
 - No threshold on who receives (all investors, including micro-angels)
 - No confidentiality obligation on information received
 - No time limit on information retention or use
@@ -442,6 +460,7 @@ a negotiating point.
 #### 8.1 Founder Vesting
 
 Identify founder vesting schedule and acceleration:
+
 - Standard: 4-year vesting with 1-year cliff (25% vests at month 12, then 1/48 per month)
 - Does the term sheet impose or modify founder vesting? (common for founders with prior
   co-founder splits or founders who have been working < 1 year)
@@ -504,19 +523,19 @@ Identify founder vesting schedule and acceleration:
 
 Check for absent terms that market-standard term sheets include at this stage. For each:
 
-| Missing Provision | Stage Expectation | Classification |
-|-------------------|-------------------|----------------|
+| Missing Provision             | Stage Expectation | Classification                                          |
+| ----------------------------- | ----------------- | ------------------------------------------------------- |
 | Liquidation preference clause | All priced rounds | FOUNDER-DILUTIVE RED if absent (no investor protection) |
-| Anti-dilution protection | Series A+ | MARKET-STANDARD to include; absence is unusual |
-| Pro-rata rights (investor) | Series A+ | MARKET-STANDARD (87% of Series A per NVCA 2025) |
-| Board observer rights | Seed+ | MARKET-STANDARD for larger investors |
-| Information rights | Series A+ | MARKET-STANDARD |
-| Drag-along / tag-along | Series A+ | MARKET-STANDARD |
-| Founder vesting schedule | All rounds | MARKET-STANDARD to specify |
-| ESOP pool size | All priced rounds | MARKET-STANDARD to state |
-| No-shop / exclusivity | All rounds | MARKET-STANDARD |
-| Registration rights | Series B+ | Optional at Seed/Series A; MARKET-STANDARD at Series B+ |
-| Pay-to-play | Situational | Unusual at Seed; ~10% of Series A 2025; worth flagging |
+| Anti-dilution protection      | Series A+         | MARKET-STANDARD to include; absence is unusual          |
+| Pro-rata rights (investor)    | Series A+         | MARKET-STANDARD (87% of Series A per NVCA 2025)         |
+| Board observer rights         | Seed+             | MARKET-STANDARD for larger investors                    |
+| Information rights            | Series A+         | MARKET-STANDARD                                         |
+| Drag-along / tag-along        | Series A+         | MARKET-STANDARD                                         |
+| Founder vesting schedule      | All rounds        | MARKET-STANDARD to specify                              |
+| ESOP pool size                | All priced rounds | MARKET-STANDARD to state                                |
+| No-shop / exclusivity         | All rounds        | MARKET-STANDARD                                         |
+| Registration rights           | Series B+         | Optional at Seed/Series A; MARKET-STANDARD at Series B+ |
+| Pay-to-play                   | Situational       | Unusual at Seed; ~10% of Series A 2025; worth flagging  |
 
 ### Step 11: Classify All Findings and Generate Redlines
 
@@ -525,6 +544,7 @@ Check for absent terms that market-standard term sheets include at this stage. F
 Every material term is classified from two perspectives:
 
 **FOUNDER PERSPECTIVE**:
+
 - **FOUNDER-FAVORABLE** (GREEN): Term is more favorable than market standard for this
   stage. Founder should preserve in negotiation; do not trade away without significant
   compensation.
@@ -535,6 +555,7 @@ Every material term is classified from two perspectives:
   or escalation.
 
 **INVESTOR PERSPECTIVE**:
+
 - **INVESTOR-FAVORABLE** (GREEN): Term provides stronger-than-standard investor
   protection. Investor should preserve.
 - **MARKET-STANDARD** (YELLOW): Term is within normal investor expectations.
@@ -542,6 +563,7 @@ Every material term is classified from two perspectives:
   Investor counsel may flag.
 
 For every FOUNDER-DILUTIVE finding, generate:
+
 1. Current language (quoted from term sheet)
 2. Why it is problematic (plain language, 1–2 sentences)
 3. Proposed redline (specific alternative language)
@@ -595,6 +617,7 @@ After completing the analysis:
 #### Liquidation Preference Waterfall
 
 Model the liquidation preference as a waterfall with three tiers:
+
 1. **Priority payments**: Debt, payroll, vendor payables
 2. **Preferred stock preferences**: Series A (and any senior series), then earlier preferred
    series, then pari-passu series
@@ -630,6 +653,7 @@ Show the difference in founder ownership percentage under both anti-dilution typ
 #### Option Pool Dilution Modeling
 
 Pre-money pool inclusion example:
+
 - Pre-money valuation: $10M
 - Investment: $2M
 - New 10% option pool required (pre-money)
@@ -637,6 +661,7 @@ Pre-money pool inclusion example:
   all pool dilution; investor buys new shares at full $12M post-money valuation
 
 Post-money pool addition example:
+
 - Same valuation and investment
 - 10% pool added post-close
 - Result: Pool dilutes all shareholders proportionally (founder and investor share dilution)
@@ -648,14 +673,14 @@ money addition, depending on pool size and round structure.
 
 ## Severity Classification Reference
 
-| Finding Severity | Founder View | Investor View | Action Required |
-|-----------------|--------------|---------------|-----------------|
-| FOUNDER-FAVORABLE / INVESTOR-RESTRICTIVE | GREEN | RED | Preserve if founder; negotiate if investor |
-| Founder-favorable / Investor-standard | GREEN | YELLOW | No action if founder; may negotiate if investor |
-| MARKET-STANDARD (both sides) | YELLOW | YELLOW | Accept; no negotiation needed |
-| Founder-standard / Investor-favorable | YELLOW | GREEN | May negotiate if founder; preserve if investor |
-| FOUNDER-DILUTIVE / INVESTOR-FAVORABLE | RED | GREEN | Negotiate if founder; preserve if investor |
-| FOUNDER-DILUTIVE / Investor-standard | RED | YELLOW | Must negotiate if founder |
+| Finding Severity                         | Founder View | Investor View | Action Required                                 |
+| ---------------------------------------- | ------------ | ------------- | ----------------------------------------------- |
+| FOUNDER-FAVORABLE / INVESTOR-RESTRICTIVE | GREEN        | RED           | Preserve if founder; negotiate if investor      |
+| Founder-favorable / Investor-standard    | GREEN        | YELLOW        | No action if founder; may negotiate if investor |
+| MARKET-STANDARD (both sides)             | YELLOW       | YELLOW        | Accept; no negotiation needed                   |
+| Founder-standard / Investor-favorable    | YELLOW       | GREEN         | May negotiate if founder; preserve if investor  |
+| FOUNDER-DILUTIVE / INVESTOR-FAVORABLE    | RED          | GREEN         | Negotiate if founder; preserve if investor      |
+| FOUNDER-DILUTIVE / Investor-standard     | RED          | YELLOW        | Must negotiate if founder                       |
 
 ---
 
@@ -664,13 +689,13 @@ money addition, depending on pool size and round structure.
 Run these five gates silently before delivering any output. If any gate fails, revise
 before delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every market claim cites a specific benchmark source (NVCA, BVCA, SEBI, PitchBook, Carta, Orrick VC Report) or a documented comparable round (company, stage, date, key terms) | Add source or mark "[UNVERIFIED — cite recent comparable round]" |
-| **Format** | All market benchmark citations follow: "[Source] reports [X]% of [stage] rounds in [geography/period] include [term]" | Fix to standardised format |
-| **Currency** | Every cited benchmark checked for data currency; market moved materially between 2021 (peak) and 2023 (trough) and 2025 (normalising); flag data older than 12 months | Flag as "[CHECK CURRENCY — collected [year]; current market sentiment is [up/neutral/down]]" |
-| **Domain** | Analysis stays within VC term sheet context; US DGCL statutes, UK Companies Act, and SEBI AIF regulations are flagged as "regulatory backdrop" not "market benchmarks"; NVCA models not conflated with contract law precedent | Separate market norms from regulatory requirements; flag when regulatory risk enters |
-| **Confidence** | Uncertainty explicitly stated; if benchmark is based on <50 rounds, flag low sample size; if market has shifted since data collection, note it | Add confidence level with reasoning; never state "market standard" without data |
+| Gate           | Rule                                                                                                                                                                                                                          | Fail Action                                                                                  |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Source**     | Every market claim cites a specific benchmark source (NVCA, BVCA, SEBI, PitchBook, Carta, Orrick VC Report) or a documented comparable round (company, stage, date, key terms)                                                | Add source or mark "[UNVERIFIED — cite recent comparable round]"                             |
+| **Format**     | All market benchmark citations follow: "[Source] reports [X]% of [stage] rounds in [geography/period] include [term]"                                                                                                         | Fix to standardised format                                                                   |
+| **Currency**   | Every cited benchmark checked for data currency; market moved materially between 2021 (peak) and 2023 (trough) and 2025 (normalising); flag data older than 12 months                                                         | Flag as "[CHECK CURRENCY — collected [year]; current market sentiment is [up/neutral/down]]" |
+| **Domain**     | Analysis stays within VC term sheet context; US DGCL statutes, UK Companies Act, and SEBI AIF regulations are flagged as "regulatory backdrop" not "market benchmarks"; NVCA models not conflated with contract law precedent | Separate market norms from regulatory requirements; flag when regulatory risk enters         |
+| **Confidence** | Uncertainty explicitly stated; if benchmark is based on <50 rounds, flag low sample size; if market has shifted since data collection, note it                                                                                | Add confidence level with reasoning; never state "market standard" without data              |
 
 ---
 
@@ -698,13 +723,13 @@ term acceptable?
 
 Confidence scoring for market-benchmark assertions (not legal certainty):
 
-| Level | Range | Market Characteristic | Prescribed Action |
-|-------|-------|----------------------|-------------------|
-| **Definite** | 0.95–1.0 | Universal consensus; >95% of comparable rounds include it; documented in multiple independent benchmarks with convergent data; included in NVCA/BVCA model as default | State with confidence: "This is market standard." |
-| **High** | 0.80–0.94 | Strong consensus; 80–95% prevalence; documented in multiple benchmarks; occasional investor deviations; in NVCA/BVCA model or near-equivalent | State with brief caveat: "Standard in most comparable rounds, though some investors negotiate." |
-| **Probable** | 0.60–0.79 | Consensus with material variance; 60–79% prevalence; documented but with notable variance by investor type, stage, or market conditions; noted as alternative in NVCA/BVCA | State with reasoning and contra-indicators: "Common in [X]% of rounds, less common in [Y situation]." Offer fallback. |
-| **Possible** | 0.40–0.59 | Market split; 40–59% prevalence; strong variance; mentioned as an alternative; ~half of comparable rounds include it | Flag for discussion: "About half of comparable rounds include this. Depends on investor type and deal momentum." Present both sides. |
-| **Unlikely** | 0.0–0.39 | Outlier or red flag; found in <40% of comparable rounds; noted as non-standard in benchmarks; often signals down-market or distressed negotiation | Flag explicitly: "This term is below market. It appears in <[X]% of comparable rounds. Signals [market stress / investor conservatism / deal risk]." |
+| Level        | Range     | Market Characteristic                                                                                                                                                      | Prescribed Action                                                                                                                                    |
+| ------------ | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Universal consensus; >95% of comparable rounds include it; documented in multiple independent benchmarks with convergent data; included in NVCA/BVCA model as default      | State with confidence: "This is market standard."                                                                                                    |
+| **High**     | 0.80–0.94 | Strong consensus; 80–95% prevalence; documented in multiple benchmarks; occasional investor deviations; in NVCA/BVCA model or near-equivalent                              | State with brief caveat: "Standard in most comparable rounds, though some investors negotiate."                                                      |
+| **Probable** | 0.60–0.79 | Consensus with material variance; 60–79% prevalence; documented but with notable variance by investor type, stage, or market conditions; noted as alternative in NVCA/BVCA | State with reasoning and contra-indicators: "Common in [X]% of rounds, less common in [Y situation]." Offer fallback.                                |
+| **Possible** | 0.40–0.59 | Market split; 40–59% prevalence; strong variance; mentioned as an alternative; ~half of comparable rounds include it                                                       | Flag for discussion: "About half of comparable rounds include this. Depends on investor type and deal momentum." Present both sides.                 |
+| **Unlikely** | 0.0–0.39  | Outlier or red flag; found in <40% of comparable rounds; noted as non-standard in benchmarks; often signals down-market or distressed negotiation                          | Flag explicitly: "This term is below market. It appears in <[X]% of comparable rounds. Signals [market stress / investor conservatism / deal risk]." |
 
 ---
 
@@ -876,6 +901,7 @@ Apply these standards before delivering any output:
 ## External Tool Integration
 
 **With legalcode-mcp connected (preferred)**:
+
 - Search for jurisdiction-relevant statutes governing preference share enforceability,
   anti-dilution mechanics, and board fiduciary duties
 - Verify SEBI AIF regulatory constraints for Indian deals
@@ -884,6 +910,7 @@ Apply these standards before delivering any output:
 - Mark all legalcode-mcp-sourced citations as VERIFIED in the Glass Box
 
 **Without legalcode-mcp**:
+
 - Proceed with market benchmark research and repository analysis only
 - Mark all statutory references with [VERIFY]
 - Note in the Glass Box: `legalcode_mcp: "Not connected"`
@@ -894,7 +921,7 @@ Apply these standards before delivering any output:
 
 ## Output Format Template
 
-```markdown
+````markdown
 # VC Term Sheet Analysis — [Company Name] [Series X] [YYYY-MM-DD]
 
 ## Executive Summary (60-Second Read)
@@ -917,13 +944,13 @@ RED-FLAG issues — retain VC counsel immediately / Competitive — proceed to d
 
 ## Founder Cap Table Impact
 
-| Party | Pre-Close % | Shares | Post-Close % | Fully Diluted % |
-|-------|------------|--------|--------------|-----------------|
-| Founder(s) | — | X | Y% | Z% |
-| Seed investors (prior) | — | X | Y% | Z% |
-| Series A investor | $[X]M | X | Y% | Z% |
-| ESOP (unissued) | — | X | Y% | Z% |
-| **Total** | | | 100% | 100% |
+| Party                  | Pre-Close % | Shares | Post-Close % | Fully Diluted % |
+| ---------------------- | ----------- | ------ | ------------ | --------------- |
+| Founder(s)             | —           | X      | Y%           | Z%              |
+| Seed investors (prior) | —           | X      | Y%           | Z%              |
+| Series A investor      | $[X]M       | X      | Y%           | Z%              |
+| ESOP (unissued)        | —           | X      | Y%           | Z%              |
+| **Total**              |             |        | 100%         | 100%            |
 
 **Founder dilution from this round**: [X.X%]
 **Founder fully-diluted ownership post-close**: [X.X%]
@@ -933,14 +960,14 @@ RED-FLAG issues — retain VC counsel immediately / Competitive — proceed to d
 
 ## Exit Scenario Modeling
 
-| Scenario | Exit Value | Preference Stack Paid | Remaining Proceeds | Founder Return | Investor Return |
-|----------|------------|----------------------|-------------------|----------------|-----------------|
-| Down exit (0.5× valuation) | $[X]M | $[X]M | $[X]M | $[X]M ([X]%) | $[X]M ([X]%) |
-| Flat exit (current valuation) | $[X]M | $[X]M | $[X]M | $[X]M ([X]%) | $[X]M ([X]%) |
-| Up exit (3× valuation) | $[X]M | $[X]M | $[X]M | $[X]M ([X]%) | $[X]M ([X]%) |
+| Scenario                      | Exit Value | Preference Stack Paid | Remaining Proceeds | Founder Return | Investor Return |
+| ----------------------------- | ---------- | --------------------- | ------------------ | -------------- | --------------- |
+| Down exit (0.5× valuation)    | $[X]M      | $[X]M                 | $[X]M              | $[X]M ([X]%)   | $[X]M ([X]%)    |
+| Flat exit (current valuation) | $[X]M      | $[X]M                 | $[X]M              | $[X]M ([X]%)   | $[X]M ([X]%)    |
+| Up exit (3× valuation)        | $[X]M      | $[X]M                 | $[X]M              | $[X]M ([X]%)   | $[X]M ([X]%)    |
 
-*Calculations assume [non-participating / participating] preference of [X]× on
-$[investment]M. Preference stack includes [any existing preferred + new preferred].*
+_Calculations assume [non-participating / participating] preference of [X]× on
+$[investment]M. Preference stack includes [any existing preferred + new preferred]._
 
 ---
 
@@ -952,9 +979,11 @@ $[investment]M. Preference stack includes [any existing preferred + new preferre
 **Governance friction risk**: [LOW / MEDIUM / HIGH / CRITICAL]
 
 Investor consent required for:
+
 - [ ] [List all decisions]
 
 Founder discretion (no consent required):
+
 - [ ] [List remaining operational decisions]
 
 ---
@@ -972,6 +1001,7 @@ Founder discretion (no consent required):
 [Any stage or geography variance]. Benchmark: [DEFINITE / HIGH / PROBABLE / POSSIBLE].
 
 **Proposed redline**:
+
 - Current: "[Exact quoted language from term sheet]"
 - Proposed: "[Exact alternative language]"
 - Fallback: "[What founder can accept if full redline is rejected]"
@@ -1008,8 +1038,8 @@ suggest how to use it strategically]
 
 ## Missing Provisions
 
-| Provision | Stage Expectation | Classification | Recommended Action |
-|-----------|-------------------|----------------|--------------------|
+| Provision   | Stage Expectation        | Classification                                        | Recommended Action              |
+| ----------- | ------------------------ | ----------------------------------------------------- | ------------------------------- |
 | [Provision] | [Standard at this stage] | [FOUNDER-DILUTIVE / MARKET-STANDARD / Not applicable] | [Add / Not necessary / Clarify] |
 
 ---
@@ -1017,6 +1047,7 @@ suggest how to use it strategically]
 ## Multi-Round Interaction Analysis
 
 **How current terms cascade to Series B/C**:
+
 - Anti-dilution: [If Series B is a down round, current weighted-average provision adjusts
   conversion price as follows: ...]
 - Preference stack: [Current $[X]M Series A preference will be senior to new Series B.
@@ -1030,12 +1061,12 @@ suggest how to use it strategically]
 
 ## Comparable Precedent Rounds
 
-| Company | Stage | Date | Key Terms | Comparison |
-|---------|-------|------|-----------|------------|
+| Company        | Stage    | Date    | Key Terms   | Comparison          |
+| -------------- | -------- | ------- | ----------- | ------------------- |
 | [Comparable A] | Series A | YYYY-QQ | [Key terms] | [Better/Worse/Same] |
 | [Comparable B] | Series A | YYYY-QQ | [Key terms] | [Better/Worse/Same] |
 
-*Source: [PitchBook / Carta / AngelList / Publicly disclosed rounds]*
+_Source: [PitchBook / Carta / AngelList / Publicly disclosed rounds]_
 
 ---
 
@@ -1141,6 +1172,8 @@ glass_box:
   reviewer: "AI-assisted — requires review by qualified VC counsel and founder/investor judgment"
   review_recommendation: "[Full VC counsel review before signing] / [Selective review: [terms]]"
 ```
+````
+
 ```
 
 ---
@@ -1187,3 +1220,4 @@ Regulations 2024/2025, Chambers VC Guide India 2025, Nishith Desai AIF publicati
 PitchBook Q2 2025 data, market benchmark research). Covers US/UK/India VC term sheet
 markets with dual-perspective founder/investor framing, 12-step workflow, 6-category
 deep analysis, three-scenario exit modeling, and 22 term-sheet-specific anti-patterns.
+```

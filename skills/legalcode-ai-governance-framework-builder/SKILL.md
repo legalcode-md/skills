@@ -44,6 +44,7 @@ regulatory obligations (EU AI Act, HIPAA AI guidance, financial services AI gove
 and others as applicable).
 
 **Covers:**
+
 - Governance structure design (AI committee, board oversight, roles and responsibilities)
 - Full AI governance policy suite (acceptable use, risk classification, procurement, training data, model lifecycle)
 - Risk-tiered AI use case classification and approval workflow
@@ -57,6 +58,7 @@ and others as applicable).
 - Governance documentation suite (template library)
 
 **Does not:**
+
 - Constitute legal advice or replace qualified AI governance counsel
 - Provide a substitute for formal ISO 42001 certification audit
 - Cover technical AI safety research (adversarial robustness, interpretability) beyond governance-relevant requirements
@@ -65,6 +67,7 @@ and others as applicable).
 - Assess individual AI system bias or fairness in depth (cross-reference specialized fairness tools)
 
 **Related skills:**
+
 - `legalcode-eu-ai-act-high-risk-compliance` — EU AI Act Annex III high-risk classification and conformity assessment
 - `legalcode-dpia-generator` — GDPR DPIA for AI systems processing personal data
 - `legalcode-data-mapping-workflow` — AI training data inventory and lineage mapping
@@ -81,12 +84,14 @@ NIST AI RMF). The governance framework should be adapted to the organization's o
 jurisdictions using the [JURISDICTION-SPECIFIC] markers below.
 
 **Framework alignment:**
+
 - **ISO/IEC 42001:2023** — global AI Management System standard; audit/certification pathway available
 - **NIST AI RMF 1.0** — voluntary, sector-agnostic framework; widely referenced by US government, financial services, and healthcare
 - **EU AI Act (Regulation 2024/1689)** — mandatory for EU market participants; enforcement timeline 2025-2026
 - **NIST AI RMF + Executive Order 14110 / OMB M-24-10** — [JURISDICTION-SPECIFIC: US federal agencies; verify with current OMB guidance]
 
 [JURISDICTION-SPECIFIC] When localizing, research and apply sector-specific AI governance requirements:
+
 - **EU**: EU AI Act deployer obligations (Arts. 25-27); GDPR Art. 22 automated decision-making; NIS2 for AI in critical infrastructure
 - **United States**: NIST AI RMF; sector regulator guidance (OCC/Federal Reserve for financial AI; OCR HIPAA AI guidance for health AI; SEC AI-related disclosure obligations; FTC AI guidance); state AI laws (Colorado SB 205, Texas HB 4497, California SB 1047 [VERIFY status])
 - **United Kingdom**: ICO AI Auditing Framework; National AI Strategy; AI Safety Institute guidance
@@ -134,6 +139,7 @@ user can correct it.
 ### Step 1: Accept Input
 
 Accept the engagement brief in any of these formats:
+
 - **Organization description**: Industry, size, AI use cases in scope, current governance state
 - **Existing policies**: Any current AI policy, acceptable use policy, or governance documentation for gap analysis
 - **Regulatory driver**: Specific regulation or framework to align with (ISO 42001, NIST AI RMF, EU AI Act, etc.)
@@ -148,11 +154,11 @@ If no input is provided, prompt: "Please describe your organization, industry, c
 
 1. **Organization type and industry:**
    - Options: Financial services / banking, Healthcare / life sciences, Technology / software, Manufacturing / industrial, Retail / e-commerce, Government / public sector, Professional services (legal, consulting), Energy / utilities, Other
-   - *Why this matters*: Industry determines which sector-specific AI regulations apply (HIPAA for health AI, BCBS for financial AI, FDA SaMD for medical AI) and what risk tolerance is appropriate.
+   - _Why this matters_: Industry determines which sector-specific AI regulations apply (HIPAA for health AI, BCBS for financial AI, FDA SaMD for medical AI) and what risk tolerance is appropriate.
 
 2. **Primary AI use cases (select all that apply):**
    - Options: Customer-facing AI (chatbots, recommendations), Internal productivity tools (coding assistants, document review), AI in HR/hiring decisions, AI in credit/lending/insurance decisions, AI in medical diagnosis or clinical decision support, Generative AI / LLMs for content creation, AI for fraud detection and security, AI in manufacturing/supply chain, AI for data analytics and forecasting
-   - *Why this matters*: High-stakes use cases (hiring, lending, medical) trigger stricter governance requirements; consumer-facing AI has transparency obligations; GPAI/LLM use requires different controls than narrow AI.
+   - _Why this matters_: High-stakes use cases (hiring, lending, medical) trigger stricter governance requirements; consumer-facing AI has transparency obligations; GPAI/LLM use requires different controls than narrow AI.
 
 3. **Current AI governance maturity:**
    - Options:
@@ -161,14 +167,14 @@ If no input is provided, prompt: "Please describe your organization, industry, c
      - **Level 3 — Defined**: Formal AI governance structure in place; policies documented; risk classification exists but inconsistently applied
      - **Level 4 — Managed**: Mature governance framework; systematic model lifecycle management; audit program active
      - **Level 5 — Optimizing**: Continuous improvement cycle; board-level AI oversight; ISO 42001 certified or pursuing certification
-   - *Why this matters*: Lower maturity organizations need foundation-building (policies, roles) before process controls; higher maturity organizations need gap analysis and optimization.
+   - _Why this matters_: Lower maturity organizations need foundation-building (policies, roles) before process controls; higher maturity organizations need gap analysis and optimization.
 
 4. **Governance model preference:**
    - Options:
      - **Centralized**: Single AI governance committee owns all decisions; enterprise-wide policies uniformly applied; strong central oversight
      - **Federated**: Central framework and standards with business-unit autonomy; decentralized implementation; designated AI owners per BU
      - **Hybrid**: Central policy-setting and high-risk approvals; BU-level execution and monitoring for standard-risk AI
-   - *Why this matters*: Organizational structure and AI distribution determine feasibility; federated models work better for large enterprises with diverse AI needs; centralized models suit mid-size organizations or those with concentrated AI risk.
+   - _Why this matters_: Organizational structure and AI distribution determine feasibility; federated models work better for large enterprises with diverse AI needs; centralized models suit mid-size organizations or those with concentrated AI risk.
 
 5. **Primary framework alignment objective:**
    - Options:
@@ -177,7 +183,7 @@ If no input is provided, prompt: "Please describe your organization, industry, c
      - **EU AI Act deployer compliance** — Focus on Arts. 25-27; use case risk classification per Annex III
      - **General best-practice framework** — Comprehensive governance without formal certification target
      - **Multiple frameworks** — Cross-walk ISO 42001 + NIST AI RMF + applicable regulations
-   - *Why this matters*: Determines documentation format, required elements, and certification roadmap.
+   - _Why this matters_: Determines documentation format, required elements, and certification roadmap.
 
 6. **Output scope:**
    - Options:
@@ -185,14 +191,14 @@ If no input is provided, prompt: "Please describe your organization, industry, c
      - **Framework and policy outline only** — Structure and key provisions, not full text
      - **Gap analysis against existing policies** — Assess current state vs. target framework
      - **Specific components** — Select which documents are needed
-   - *Why this matters*: Full suite is appropriate for organizations building from scratch; gap analysis is appropriate for organizations with existing policies; specific components suit targeted improvements.
+   - _Why this matters_: Full suite is appropriate for organizations building from scratch; gap analysis is appropriate for organizations with existing policies; specific components suit targeted improvements.
 
 7. **Highest-priority risk tolerance:**
    - Options:
      - **Conservative**: Avoid all high-risk AI use cases until governance is mature; extensive review for any consequential AI use
      - **Balanced**: Risk-proportionate controls; high-risk AI subject to rigorous process; low-risk AI fast-tracked
      - **Progressive**: Enable AI innovation; lightweight governance for most use cases; intensive controls reserved for clearly high-risk scenarios
-   - *Why this matters*: Risk tolerance drives classification threshold design, approval workflow stringency, and which AI use cases require full review vs. expedited review.
+   - _Why this matters_: Risk tolerance drives classification threshold design, approval workflow stringency, and which AI use cases require full review vs. expedited review.
 
 ### Step 3: Research Regulatory Landscape
 
@@ -220,18 +226,18 @@ If the organization has provided existing AI policies, governance documents, or 
 2. **Identify gaps**: Components absent entirely (GAP-ABSENT), components partially addressed (GAP-PARTIAL), and components meeting the target standard (COMPLIANT)
 3. **Classify each gap** by severity:
 
-| Gap Severity | Definition | Example |
-|---|---|---|
-| **CRITICAL** | Required by applicable regulation; absent or clearly non-compliant | No AI incident reporting procedure; EU AI Act Art. 73 requires one |
-| **HIGH** | Required by ISO 42001 or NIST AI RMF; material risk if absent | No AI risk classification system; all AI deployed without risk assessment |
-| **MEDIUM** | Best practice; creates governance risk if absent | No formal model validation step before deployment |
-| **LOW** | Enhancement; appropriate for higher maturity organizations | No formal AI skills development program |
+| Gap Severity | Definition                                                         | Example                                                                   |
+| ------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| **CRITICAL** | Required by applicable regulation; absent or clearly non-compliant | No AI incident reporting procedure; EU AI Act Art. 73 requires one        |
+| **HIGH**     | Required by ISO 42001 or NIST AI RMF; material risk if absent      | No AI risk classification system; all AI deployed without risk assessment |
+| **MEDIUM**   | Best practice; creates governance risk if absent                   | No formal model validation step before deployment                         |
+| **LOW**      | Enhancement; appropriate for higher maturity organizations         | No formal AI skills development program                                   |
 
 4. **Produce a gap summary table** (used in the output roadmap):
 
-| Governance Component | Status | Gap Severity | Priority | Owner |
-|---|---|---|---|---|
-| [Component name] | [COMPLIANT / GAP-PARTIAL / GAP-ABSENT] | [CRITICAL/HIGH/MEDIUM/LOW] | [1-4] | [Role/TBD] |
+| Governance Component | Status                                 | Gap Severity               | Priority | Owner      |
+| -------------------- | -------------------------------------- | -------------------------- | -------- | ---------- |
+| [Component name]     | [COMPLIANT / GAP-PARTIAL / GAP-ABSENT] | [CRITICAL/HIGH/MEDIUM/LOW] | [1-4]    | [Role/TBD] |
 
 **⟁ CLARIFY** — If existing documentation is provided, confirm: "Should I prioritize filling the CRITICAL and HIGH gaps first (recommended), or address all components comprehensively in a single pass?"
 
@@ -243,45 +249,46 @@ Design the organizational AI governance structure appropriate to the organizatio
 
 **For all organizations — Core Bodies:**
 
-| Body | Purpose | Membership | Meeting Cadence | Decision Authority |
-|---|---|---|---|---|
-| **AI Governance Committee (AGC)** | Cross-functional oversight; policy approval; high-risk use case sign-off; escalation body for AI risk | CTO/CIO (Chair), CLO/General Counsel, CPO/DPO, CISO, CHRO (if people-use AI), Business Unit heads (rotating), CFO (for high-cost AI projects) | Quarterly (at minimum); as-needed for major AI deployments or incidents | Approve/reject Tier 3 (High Risk) use cases; set enterprise AI policy; report to Board |
-| **AI Review Board (ARB)** or **AI Center of Excellence (CoE)** | Technical and risk review for proposed AI use cases; model validation; vendor assessment; Tier 2 approvals | Head of AI/ML, Data Science leads, Risk/Compliance, Legal, IT Security, relevant Business Unit | Monthly; as-needed for use case pipeline | Approve/reject Tier 2 (Limited Risk) use cases; flag Tier 3 for AGC escalation |
-| **AI Owners (per use case)** | Accountable for individual AI system from deployment to retirement | Business Unit lead responsible for the AI application | Continuous | Day-to-day operational decisions; escalate to ARB for changes or incidents |
+| Body                                                           | Purpose                                                                                                    | Membership                                                                                                                                    | Meeting Cadence                                                         | Decision Authority                                                                     |
+| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **AI Governance Committee (AGC)**                              | Cross-functional oversight; policy approval; high-risk use case sign-off; escalation body for AI risk      | CTO/CIO (Chair), CLO/General Counsel, CPO/DPO, CISO, CHRO (if people-use AI), Business Unit heads (rotating), CFO (for high-cost AI projects) | Quarterly (at minimum); as-needed for major AI deployments or incidents | Approve/reject Tier 3 (High Risk) use cases; set enterprise AI policy; report to Board |
+| **AI Review Board (ARB)** or **AI Center of Excellence (CoE)** | Technical and risk review for proposed AI use cases; model validation; vendor assessment; Tier 2 approvals | Head of AI/ML, Data Science leads, Risk/Compliance, Legal, IT Security, relevant Business Unit                                                | Monthly; as-needed for use case pipeline                                | Approve/reject Tier 2 (Limited Risk) use cases; flag Tier 3 for AGC escalation         |
+| **AI Owners (per use case)**                                   | Accountable for individual AI system from deployment to retirement                                         | Business Unit lead responsible for the AI application                                                                                         | Continuous                                                              | Day-to-day operational decisions; escalate to ARB for changes or incidents             |
 
 **For enterprises (>1,000 employees) — Enhanced Structure:**
 
-| Enhanced Body | Purpose |
-|---|---|
-| **Board AI Subcommittee** (or integration with existing Risk/Audit Committee) | Board-level oversight; annual AI governance report; major incident notification; strategic AI risk review |
-| **Chief AI Officer (CAIO)** | Enterprise-wide AI strategy; governance program ownership; external AI regulatory engagement |
-| **AI Ethics Advisory Panel** | Independent ethical review for AI systems with significant societal impact; external perspective; advisory only |
+| Enhanced Body                                                                 | Purpose                                                                                                         |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Board AI Subcommittee** (or integration with existing Risk/Audit Committee) | Board-level oversight; annual AI governance report; major incident notification; strategic AI risk review       |
+| **Chief AI Officer (CAIO)**                                                   | Enterprise-wide AI strategy; governance program ownership; external AI regulatory engagement                    |
+| **AI Ethics Advisory Panel**                                                  | Independent ethical review for AI systems with significant societal impact; external perspective; advisory only |
 
 [JURISDICTION-SPECIFIC] **EU**: Consider whether a "human oversight" role per EU AI Act Art. 14 is required for high-risk systems. **US regulated industries**: Model Risk Management (SR 11-7) functions may absorb AI governance functions in banks.
 
 #### 5b. Roles and Responsibilities (RACI)
 
-| Activity | AGC | ARB/CoE | AI Owner | CISO | Legal/CLO | DPO | HR | Audit |
-|----------|:---:|:-------:|:--------:|:----:|:---------:|:---:|:--:|:-----:|
-| Set enterprise AI policy | **A** | R | C | C | C | C | C | I |
-| Risk-classify AI use cases | I | **A** | R | C | C | C | I | I |
-| Approve Tier 3 (High Risk) deployments | **A** | R | C | C | C | C | I | I |
-| Approve Tier 2 (Limited Risk) deployments | I | **A** | R | C | I | I | I | I |
-| Approve Tier 1 (Minimal Risk) deployments | I | I | **A** | I | I | I | I | I |
-| Model validation before deployment | I | **A** | R | C | I | I | I | I |
-| Vendor AI due diligence | I | R | C | R | **A** | C | I | I |
-| AI incident response (declaration) | **A** | C | R | R | C | C | I | I |
-| AI incident regulatory notification | C | I | C | C | **A** | **A** | — | I |
-| Monitor deployed AI systems | I | C | **A** | C | I | C | I | I |
-| Annual AI governance audit | C | C | C | C | C | C | I | **A** |
-| AI training and awareness | I | C | C | I | C | C | **A** | I |
-| Board AI governance report | **A** | C | I | C | C | I | I | C |
+| Activity                                  |  AGC  | ARB/CoE | AI Owner | CISO | Legal/CLO |  DPO  |  HR   | Audit |
+| ----------------------------------------- | :---: | :-----: | :------: | :--: | :-------: | :---: | :---: | :---: |
+| Set enterprise AI policy                  | **A** |    R    |    C     |  C   |     C     |   C   |   C   |   I   |
+| Risk-classify AI use cases                |   I   |  **A**  |    R     |  C   |     C     |   C   |   I   |   I   |
+| Approve Tier 3 (High Risk) deployments    | **A** |    R    |    C     |  C   |     C     |   C   |   I   |   I   |
+| Approve Tier 2 (Limited Risk) deployments |   I   |  **A**  |    R     |  C   |     I     |   I   |   I   |   I   |
+| Approve Tier 1 (Minimal Risk) deployments |   I   |    I    |  **A**   |  I   |     I     |   I   |   I   |   I   |
+| Model validation before deployment        |   I   |  **A**  |    R     |  C   |     I     |   I   |   I   |   I   |
+| Vendor AI due diligence                   |   I   |    R    |    C     |  R   |   **A**   |   C   |   I   |   I   |
+| AI incident response (declaration)        | **A** |    C    |    R     |  R   |     C     |   C   |   I   |   I   |
+| AI incident regulatory notification       |   C   |    I    |    C     |  C   |   **A**   | **A** |   —   |   I   |
+| Monitor deployed AI systems               |   I   |    C    |  **A**   |  C   |     I     |   C   |   I   |   I   |
+| Annual AI governance audit                |   C   |    C    |    C     |  C   |     C     |   C   |   I   | **A** |
+| AI training and awareness                 |   I   |    C    |    C     |  I   |     C     |   C   | **A** |   I   |
+| Board AI governance report                | **A** |    C    |    I     |  C   |     C     |   I   |   I   |   C   |
 
 #### 5c. Reporting Lines
 
 Design the reporting hierarchy adapted to the selected governance model:
 
 **Centralized model:**
+
 ```
 Board of Directors / Board Risk Committee
     └── AI Governance Committee (AGC)
@@ -293,6 +300,7 @@ Board of Directors / Board Risk Committee
 ```
 
 **Federated model:**
+
 ```
 Board of Directors
     └── AI Governance Committee (AGC) [Enterprise Policy + Tier 3 decisions]
@@ -310,14 +318,15 @@ Build the risk classification framework that will be applied to all AI use cases
 
 **Default four-tier classification** (adapts EU AI Act structure with NIST AI RMF risk categorization):
 
-| Tier | Classification | Criteria (any one criterion triggers classification) | Approval Path | Review Frequency |
-|------|---------------|-----------------------------------------------------|---------------|-----------------|
-| **TIER 4** | **Unacceptable Risk** | AI that manipulates persons through subliminal techniques; AI-based social scoring by public authorities; real-time biometric surveillance in public spaces (absent narrow exceptions); exploitation of vulnerable groups; AI-enabled violations of fundamental rights | **PROHIBITED** — Do not deploy. Document decision. | N/A |
-| **TIER 3** | **High Risk** | Consequential decisions affecting employment, credit, insurance, housing, or education; medical diagnosis or treatment recommendations; critical infrastructure management; law enforcement AI; AI in recruitment, performance evaluation, or termination; AI subject to EU AI Act Annex III high-risk classification | **AGC approval required** — Full impact assessment + independent validation + human oversight + monitoring plan + legal review | Quarterly monitoring; annual re-assessment |
-| **TIER 2** | **Limited Risk** | Customer-facing AI with significant interaction (chatbots, virtual assistants, recommendation engines); AI generating synthetic content; AI with moderate reputational or operational risk; AI processing sensitive personal data in non-consequential ways | **ARB approval required** — Abbreviated impact assessment + transparency disclosure + monitoring plan | Semi-annual monitoring; biannual re-assessment |
-| **TIER 1** | **Minimal Risk** | Internal productivity tools with no consequential output; AI-assisted drafting where human reviews all output; AI for non-sensitive data analytics; widely used commercial AI tools with established track record | **AI Owner self-approval** — Registration in model inventory + basic documentation + opt-out where applicable | Annual review |
+| Tier       | Classification        | Criteria (any one criterion triggers classification)                                                                                                                                                                                                                                                                  | Approval Path                                                                                                                  | Review Frequency                               |
+| ---------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
+| **TIER 4** | **Unacceptable Risk** | AI that manipulates persons through subliminal techniques; AI-based social scoring by public authorities; real-time biometric surveillance in public spaces (absent narrow exceptions); exploitation of vulnerable groups; AI-enabled violations of fundamental rights                                                | **PROHIBITED** — Do not deploy. Document decision.                                                                             | N/A                                            |
+| **TIER 3** | **High Risk**         | Consequential decisions affecting employment, credit, insurance, housing, or education; medical diagnosis or treatment recommendations; critical infrastructure management; law enforcement AI; AI in recruitment, performance evaluation, or termination; AI subject to EU AI Act Annex III high-risk classification | **AGC approval required** — Full impact assessment + independent validation + human oversight + monitoring plan + legal review | Quarterly monitoring; annual re-assessment     |
+| **TIER 2** | **Limited Risk**      | Customer-facing AI with significant interaction (chatbots, virtual assistants, recommendation engines); AI generating synthetic content; AI with moderate reputational or operational risk; AI processing sensitive personal data in non-consequential ways                                                           | **ARB approval required** — Abbreviated impact assessment + transparency disclosure + monitoring plan                          | Semi-annual monitoring; biannual re-assessment |
+| **TIER 1** | **Minimal Risk**      | Internal productivity tools with no consequential output; AI-assisted drafting where human reviews all output; AI for non-sensitive data analytics; widely used commercial AI tools with established track record                                                                                                     | **AI Owner self-approval** — Registration in model inventory + basic documentation + opt-out where applicable                  | Annual review                                  |
 
 [JURISDICTION-SPECIFIC] Adapt tier criteria to applicable regulatory classification:
+
 - **EU AI Act**: Tier 3 criteria must encompass all Annex III categories (use `legalcode-eu-ai-act-high-risk-compliance` for detailed Annex III screening)
 - **Colorado SB 205**: "Consequential decisions" definition and required algorithmic impact assessments [VERIFY effective date and current text]
 - **Financial services**: SR 11-7 "model risk" classification overlays on AI governance tiers
@@ -327,24 +336,24 @@ Build the risk classification framework that will be applied to all AI use cases
 
 For each proposed AI use case, score these dimensions:
 
-| Dimension | Score 1 | Score 2 | Score 3 |
-|-----------|---------|---------|---------|
-| **Decision impact** | Advisory/informational; human reviews all output | Assists decisions with human override capability | Automated decisions with limited or no human review |
-| **Population affected** | Internal team (<50 people) | Internal org-wide or limited external | External customers, applicants, or vulnerable groups |
-| **Data sensitivity** | Non-personal, public data | Internal or pseudonymized personal data | Special-category, financial, health, biometric, or children's data |
-| **Reversibility** | Decisions easily reversed; no lasting harm | Decisions reversible with effort; limited lasting impact | Decisions difficult to reverse; potential lasting harm |
-| **Regulatory exposure** | No specific AI regulation applies | Sector regulatory guidance applies | Mandatory regulatory requirement applies |
-| **Reputational risk** | Low public visibility | Some public visibility; isolated incident risk | High public visibility; systemic risk |
+| Dimension               | Score 1                                          | Score 2                                                  | Score 3                                                            |
+| ----------------------- | ------------------------------------------------ | -------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Decision impact**     | Advisory/informational; human reviews all output | Assists decisions with human override capability         | Automated decisions with limited or no human review                |
+| **Population affected** | Internal team (<50 people)                       | Internal org-wide or limited external                    | External customers, applicants, or vulnerable groups               |
+| **Data sensitivity**    | Non-personal, public data                        | Internal or pseudonymized personal data                  | Special-category, financial, health, biometric, or children's data |
+| **Reversibility**       | Decisions easily reversed; no lasting harm       | Decisions reversible with effort; limited lasting impact | Decisions difficult to reverse; potential lasting harm             |
+| **Regulatory exposure** | No specific AI regulation applies                | Sector regulatory guidance applies                       | Mandatory regulatory requirement applies                           |
+| **Reputational risk**   | Low public visibility                            | Some public visibility; isolated incident risk           | High public visibility; systemic risk                              |
 
 **Scoring thresholds** (adapt to risk tolerance preference from Step 2):
 
-| Total Score | Default Classification | Conservative Org | Progressive Org |
-|------------|----------------------|-----------------|----------------|
-| 6 | Tier 1 | Tier 1 | Tier 1 |
-| 7-9 | Tier 1–2 (ARB decides) | Tier 2 | Tier 1 |
-| 10-12 | Tier 2 | Tier 2–3 (ARB decides) | Tier 2 |
-| 13-15 | Tier 3 | Tier 3 | Tier 2–3 (ARB decides) |
-| 16-18 | Tier 3 or Tier 4 | Tier 4 assessment | Tier 3 |
+| Total Score | Default Classification | Conservative Org       | Progressive Org        |
+| ----------- | ---------------------- | ---------------------- | ---------------------- |
+| 6           | Tier 1                 | Tier 1                 | Tier 1                 |
+| 7-9         | Tier 1–2 (ARB decides) | Tier 2                 | Tier 1                 |
+| 10-12       | Tier 2                 | Tier 2–3 (ARB decides) | Tier 2                 |
+| 13-15       | Tier 3                 | Tier 3                 | Tier 2–3 (ARB decides) |
+| 16-18       | Tier 3 or Tier 4       | Tier 4 assessment      | Tier 3                 |
 
 #### 6c. Prohibited AI Checklist (Tier 4 Screening)
 
@@ -368,6 +377,7 @@ Draft or outline the following governance documents. The scope and depth of each
 **Purpose**: Master governance document establishing organizational commitment, scope, principles, and accountability structure.
 
 **Required sections:**
+
 1. **Policy Statement** — Organization's commitment to responsible AI; alignment with values and legal obligations
 2. **Scope** — Which AI systems, which business units, which jurisdictions are covered; exclusions
 3. **AI Principles** — (minimum 6, adapted to organization): Fairness and non-discrimination; Transparency and explainability; Human oversight and control; Privacy and data governance; Safety and reliability; Accountability; [JURISDICTION-SPECIFIC: add local principles, e.g., EU Charter of Fundamental Rights alignment for EU entities]
@@ -385,6 +395,7 @@ Draft or outline the following governance documents. The scope and depth of each
 **Purpose**: Communicates to all employees what AI tools they may use, under what conditions, and with what safeguards.
 
 **Required sections:**
+
 1. **Approved AI Tools** — Categories of approved tools; approved tooling list (reference internal registry); approval process for new tools
 2. **Prohibited Uses** — Explicit prohibitions: inputting confidential data into unvetted AI tools; using AI for protected-characteristic decisions without approval; using AI to circumvent internal controls; using AI outputs without human review for high-stakes decisions; generating misleading content attributed to humans; prohibited per Tier 4 checklist
 3. **Data Handling Rules** — What data classes may be input to which AI tools; confidentiality obligations; prohibition on inputting regulated data (PHI, PII, trade secrets) into public AI services unless contractually authorized
@@ -478,23 +489,25 @@ Step 6: Deployment with monitoring obligations active
 
 **Mandatory assessment questions (all vendors providing AI systems):**
 
-| Category | Questions |
-|----------|-----------|
-| **System transparency** | Can the vendor explain how the AI system makes decisions? Is model documentation (model card, system card, technical sheet) available? What are the known limitations? |
-| **Data practices** | What data is used to train the model? Does the vendor use customer data for training? Where is data stored and processed? What are the data retention terms? Can the organization opt out of data use for training? |
-| **Bias and fairness** | Has the system been tested for bias across demographic groups? What were the results? Is a fairness assessment report available? Has the system been independently audited? |
-| **Security and adversarial robustness** | What security testing has been conducted? Is the system certified against OWASP ML Top 10 or equivalent? What are the vendor's protections against prompt injection, data poisoning, and adversarial inputs? |
-| **Regulatory compliance** | Is the vendor ISO 42001 certified? SOC 2 Type II? Does the vendor provide EU AI Act compliance declarations? What regulatory certifications apply? |
-| **Incident response** | What are the vendor's SLAs for AI system failures? How does the vendor notify customers of incidents? What is the vendor's AI incident log/history? |
-| **Contractual rights** | Does the contract include: right to audit AI system; model change notification rights; data deletion rights; SLAs for AI accuracy and uptime; indemnification for AI-caused harm; right to terminate for AI regulatory non-compliance? |
-| **Supply chain risk** | Does the AI system use third-party models (LLM APIs, open-source models)? What oversight does the vendor apply to its AI supply chain? Are subprocessor AI use restrictions in place? |
+| Category                                | Questions                                                                                                                                                                                                                              |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **System transparency**                 | Can the vendor explain how the AI system makes decisions? Is model documentation (model card, system card, technical sheet) available? What are the known limitations?                                                                 |
+| **Data practices**                      | What data is used to train the model? Does the vendor use customer data for training? Where is data stored and processed? What are the data retention terms? Can the organization opt out of data use for training?                    |
+| **Bias and fairness**                   | Has the system been tested for bias across demographic groups? What were the results? Is a fairness assessment report available? Has the system been independently audited?                                                            |
+| **Security and adversarial robustness** | What security testing has been conducted? Is the system certified against OWASP ML Top 10 or equivalent? What are the vendor's protections against prompt injection, data poisoning, and adversarial inputs?                           |
+| **Regulatory compliance**               | Is the vendor ISO 42001 certified? SOC 2 Type II? Does the vendor provide EU AI Act compliance declarations? What regulatory certifications apply?                                                                                     |
+| **Incident response**                   | What are the vendor's SLAs for AI system failures? How does the vendor notify customers of incidents? What is the vendor's AI incident log/history?                                                                                    |
+| **Contractual rights**                  | Does the contract include: right to audit AI system; model change notification rights; data deletion rights; SLAs for AI accuracy and uptime; indemnification for AI-caused harm; right to terminate for AI regulatory non-compliance? |
+| **Supply chain risk**                   | Does the AI system use third-party models (LLM APIs, open-source models)? What oversight does the vendor apply to its AI supply chain? Are subprocessor AI use restrictions in place?                                                  |
 
 **Risk-tiered procurement scrutiny:**
+
 - **Tier 3 AI vendors**: Full assessment + independent vendor AI audit + legal review of AI provisions in contract + AGC sign-off
 - **Tier 2 AI vendors**: Standard assessment + ARB review + procurement team legal review
 - **Tier 1 AI vendors**: Abbreviated questionnaire (data practices + security + incident response) + AI Owner review
 
 **Contract AI provisions checklist** (minimum required for Tier 2-3 AI vendor contracts):
+
 - [ ] Scope of AI system and permitted use cases defined
 - [ ] Data processing terms: what customer data is used; opt-out from training use
 - [ ] Model change notification: provider must notify of material model updates ≥ 30 days before effective date
@@ -515,6 +528,7 @@ Step 6: Deployment with monitoring obligations active
 **Lifecycle stages and governance gates:**
 
 **STAGE 1 — Concept and Approval**
+
 - Gate 1.1: Use case intake form submitted; Tier classification determined
 - Gate 1.2: Approval obtained per Tier (Tier 1: AI Owner; Tier 2: ARB; Tier 3: AGC)
 - Gate 1.3: AI Owner designated; AI system registered in model inventory
@@ -522,6 +536,7 @@ Step 6: Deployment with monitoring obligations active
 - Required documentation: Use Case Intake Form; Tier classification worksheet; approval record
 
 **STAGE 2 — Development**
+
 - Gate 2.1: Training data lineage documented (source, collection date, license, data quality assessment, demographic representation check)
 - Gate 2.2: Model documentation (model card) prepared: purpose, architecture, training data, known limitations, performance benchmarks, intended use, out-of-scope uses
 - Gate 2.3: Bias and fairness testing conducted across relevant demographic groups; results documented
@@ -529,6 +544,7 @@ Step 6: Deployment with monitoring obligations active
 - Required documentation: Data inventory; model card draft; bias testing report; security assessment
 
 **STAGE 3 — Validation (pre-deployment)**
+
 - Gate 3.1: Independent validation by person/team other than developer
 - Gate 3.2: Testing on representative production-like data (held-out test set)
 - Gate 3.3: Performance benchmarking against defined acceptance criteria
@@ -537,6 +553,7 @@ Step 6: Deployment with monitoring obligations active
 - Required documentation: Validation report; test results; acceptance criteria sign-off; legal review (Tier 3)
 
 **STAGE 4 — Deployment**
+
 - Gate 4.1: All validation gates cleared; approval documentation in place
 - Gate 4.2: Monitoring infrastructure active (performance dashboard, drift detection, incident alerting)
 - Gate 4.3: Rollback procedure documented and tested
@@ -545,6 +562,7 @@ Step 6: Deployment with monitoring obligations active
 - Required documentation: Deployment checklist; monitoring configuration; rollback plan; training records
 
 **STAGE 5 — Monitoring and Maintenance**
+
 - Monitoring metrics (adapt to use case):
   - **Performance drift**: Compare current accuracy/F1/AUC to baseline at regular cadence (Tier 3: weekly; Tier 2: monthly; Tier 1: quarterly)
   - **Bias drift**: Re-run fairness tests when input data distribution changes or at scheduled intervals
@@ -555,6 +573,7 @@ Step 6: Deployment with monitoring obligations active
 - Required documentation: Monitoring dashboard; drift reports; re-validation records; incident log
 
 **STAGE 6 — Retirement**
+
 - Gate 6.1: Impact assessment of decommissioning (dependent systems, downstream effects)
 - Gate 6.2: Data handling: determine retention vs. deletion of training data per data retention schedule; document decision
 - Gate 6.3: Archive model artifacts for regulatory audit trail
@@ -567,6 +586,7 @@ Step 6: Deployment with monitoring obligations active
 **Purpose**: Provides a playbook for detecting, assessing, responding to, and reporting AI-specific failures, harms, and incidents.
 
 **AI Incident definition**: An AI incident is any unplanned event involving an AI system that results in, or has the potential to result in:
+
 - Harm to individuals (physical, psychological, financial, reputational, or rights violation)
 - Material AI system error affecting consequential decisions
 - Bias or discriminatory outcome affecting protected groups
@@ -576,12 +596,12 @@ Step 6: Deployment with monitoring obligations active
 
 **AI Incident Severity Classification:**
 
-| Severity | Definition (any single criterion triggers) | Response SLA | Escalation |
-|----------|-------------------------------------------|-------------|------------|
+| Severity             | Definition (any single criterion triggers)                                                                                                                                       | Response SLA                                              | Escalation                                                                                                                                                                                     |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **AI-P1 (Critical)** | Confirmed harm to individuals; fundamental rights violation; EU AI Act Art. 73 serious incident trigger; safety-critical system failure; systemic bias affecting protected class | Immediate (within 2 hours): AI Owner → AGC + Legal + CISO | AGC + Legal + Board notification; EU AI Act Art. 73 notification to national MSA within [15 days for non-serious; 2 days for serious harm to health/safety] [VERIFY current Art. 73 timelines] |
-| **AI-P2 (High)** | Potential harm under investigation; significant performance degradation in Tier 3 system; bias event under assessment; regulator inquiry received | Within 4 hours: AI Owner → ARB + Legal | AGC notification within 24 hours; regulatory notification assessment within 48 hours |
-| **AI-P3 (Medium)** | Performance drift exceeding threshold; Tier 2 system anomaly; user complaint of potential bias; data quality issue affecting model inputs | Within 24 hours: AI Owner → ARB | Monitoring team alerted; re-validation scheduled; corrective action plan within 5 business days |
-| **AI-P4 (Low)** | Minor performance degradation; Tier 1 system anomaly; user usability complaint with no harm | Within 5 business days: AI Owner | Log incident; monthly review; incorporate in annual governance report |
+| **AI-P2 (High)**     | Potential harm under investigation; significant performance degradation in Tier 3 system; bias event under assessment; regulator inquiry received                                | Within 4 hours: AI Owner → ARB + Legal                    | AGC notification within 24 hours; regulatory notification assessment within 48 hours                                                                                                           |
+| **AI-P3 (Medium)**   | Performance drift exceeding threshold; Tier 2 system anomaly; user complaint of potential bias; data quality issue affecting model inputs                                        | Within 24 hours: AI Owner → ARB                           | Monitoring team alerted; re-validation scheduled; corrective action plan within 5 business days                                                                                                |
+| **AI-P4 (Low)**      | Minor performance degradation; Tier 1 system anomaly; user usability complaint with no harm                                                                                      | Within 5 business days: AI Owner                          | Log incident; monthly review; incorporate in annual governance report                                                                                                                          |
 
 **AI Incident Response Steps:**
 
@@ -605,15 +625,15 @@ Step 6: Deployment with monitoring obligations active
 
 **Monitoring cadences:**
 
-| Activity | Tier 3 | Tier 2 | Tier 1 |
-|----------|--------|--------|--------|
-| Performance dashboard review | Weekly | Monthly | Quarterly |
-| Bias/fairness spot-check | Monthly | Quarterly | Semi-annual |
-| Drift detection automated scan | Continuous | Continuous | Monthly |
-| Model registry review | Quarterly | Semi-annual | Annual |
-| Vendor AI security review | Annual + trigger | Annual | Every 2 years |
-| Use case scope review | Quarterly | Semi-annual | Annual |
-| Regulatory update scan | Continuous (via `legalcode-regulatory-change-tracker`) | | |
+| Activity                       | Tier 3                                                 | Tier 2      | Tier 1        |
+| ------------------------------ | ------------------------------------------------------ | ----------- | ------------- |
+| Performance dashboard review   | Weekly                                                 | Monthly     | Quarterly     |
+| Bias/fairness spot-check       | Monthly                                                | Quarterly   | Semi-annual   |
+| Drift detection automated scan | Continuous                                             | Continuous  | Monthly       |
+| Model registry review          | Quarterly                                              | Semi-annual | Annual        |
+| Vendor AI security review      | Annual + trigger                                       | Annual      | Every 2 years |
+| Use case scope review          | Quarterly                                              | Semi-annual | Annual        |
+| Regulatory update scan         | Continuous (via `legalcode-regulatory-change-tracker`) |             |               |
 
 **Annual AI Governance Audit:**
 
@@ -628,6 +648,7 @@ The AI Governance Committee shall conduct (or commission) an annual audit coveri
 7. **ISO 42001 / NIST AI RMF Alignment Check**: Gap analysis against applicable framework(s); progress on prior-year recommendations
 
 **Board reporting:**
+
 - Annual AI Governance Report to Board/Board Risk Committee
 - Contents: AI portfolio summary (active systems by tier); material incidents; regulatory developments; audit findings; maturity progress; upcoming regulatory deadlines; resource requests
 
@@ -708,42 +729,42 @@ Map your governance framework elements to the applicable standard for audit read
 
 ### ISO/IEC 42001:2023 Clause Alignment
 
-| ISO 42001 Clause | Clause Title | Governance Framework Component |
-|---|---|---|
-| Clause 4 | Organizational Context | Step 2 (Org context); regulatory landscape (Step 3); stakeholder identification |
-| Clause 5 | Leadership | Governance structure (Step 5); Enterprise AI Governance Policy (Doc 1) |
-| Clause 6 | Planning | Risk classification (Step 6); gap analysis (Step 4); use case approval (Doc 3) |
-| Clause 7 | Support | AI training program (Doc 2 AUP); resources; competence; documentation requirements |
-| Clause 8 | Operation | Model lifecycle (Doc 5); vendor assessment (Doc 4); approval workflow (Doc 3) |
-| Clause 9 | Performance Evaluation | Monitoring and audit program (Doc 7); performance metrics; management review |
-| Clause 10 | Improvement | Post-incident review; corrective actions; continual improvement cycle |
-| Annex A Controls | AIMS Controls | Controls mapped to: data governance, AI system impact assessment, risk treatment, responsible AI practices, third-party controls |
+| ISO 42001 Clause | Clause Title           | Governance Framework Component                                                                                                   |
+| ---------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Clause 4         | Organizational Context | Step 2 (Org context); regulatory landscape (Step 3); stakeholder identification                                                  |
+| Clause 5         | Leadership             | Governance structure (Step 5); Enterprise AI Governance Policy (Doc 1)                                                           |
+| Clause 6         | Planning               | Risk classification (Step 6); gap analysis (Step 4); use case approval (Doc 3)                                                   |
+| Clause 7         | Support                | AI training program (Doc 2 AUP); resources; competence; documentation requirements                                               |
+| Clause 8         | Operation              | Model lifecycle (Doc 5); vendor assessment (Doc 4); approval workflow (Doc 3)                                                    |
+| Clause 9         | Performance Evaluation | Monitoring and audit program (Doc 7); performance metrics; management review                                                     |
+| Clause 10        | Improvement            | Post-incident review; corrective actions; continual improvement cycle                                                            |
+| Annex A Controls | AIMS Controls          | Controls mapped to: data governance, AI system impact assessment, risk treatment, responsible AI practices, third-party controls |
 
 **ISO 42001 Statement of Applicability (SoA)**: For certification pathway, produce an SoA document listing each Annex A control, whether it applies, and if not, the justification for exclusion. Include reference to the governance document that implements each control.
 
 ### NIST AI RMF 1.0 Function Alignment
 
-| AI RMF Function | Sub-categories | Governance Framework Mapping |
-|---|---|---|
-| **GOVERN** | GOVERN 1: Policies, processes, procedures established | Enterprise AI Policy (Doc 1); AUP (Doc 2); all policy documents |
-| | GOVERN 2: Accountability assigned | RACI matrix (Step 5b); AI Owner designation |
-| | GOVERN 3: Organizational teams aware of AI risk | AI literacy training (Doc 2); governance reporting |
-| | GOVERN 4: Organizational teams are committed to AI risk management | AGC and ARB establishment; board oversight |
-| | GOVERN 5: Policies/processes for TEVV (test, eval, verify, validate) | Lifecycle management Stage 3 (validation) |
-| | GOVERN 6: AI risk management policies for third-party relationships | Vendor assessment (Doc 4) |
-| **MAP** | MAP 1: Context established | Org context (Step 2); regulatory landscape (Step 3) |
-| | MAP 2: Scientific understanding and risk categorization | Risk classification (Step 6); impact assessment |
-| | MAP 3: AI risks, benefits, and impacts enumerated | Use case intake form (Doc 3); impact assessment |
-| | MAP 4: Risks and benefits of impacts are mapped | Risk classification scoring; approval workflow |
-| | MAP 5: Practices for communicating impacts | Transparency disclosures; AUP requirements |
-| **MEASURE** | MEASURE 1: Methods identified to measure AI risks | Monitoring metrics (Doc 7); performance benchmarks |
-| | MEASURE 2: AI risk metrics and monitoring | Monitoring program (Doc 7); drift detection |
-| | MEASURE 3: Internal experts identified | ARB composition; skills inventory |
-| | MEASURE 4: Feedback processes incorporated | Post-incident review; annual audit |
-| **MANAGE** | MANAGE 1: Risks are prioritized | Risk tier classification; gap severity prioritization |
-| | MANAGE 2: Strategies applied to maximize benefit/minimize harm | Lifecycle management; approval workflow gates |
-| | MANAGE 3: Responses deployed | Incident response procedure (Doc 6) |
-| | MANAGE 4: Residual risks communicated | Board reporting; governance transparency statement |
+| AI RMF Function | Sub-categories                                                       | Governance Framework Mapping                                    |
+| --------------- | -------------------------------------------------------------------- | --------------------------------------------------------------- |
+| **GOVERN**      | GOVERN 1: Policies, processes, procedures established                | Enterprise AI Policy (Doc 1); AUP (Doc 2); all policy documents |
+|                 | GOVERN 2: Accountability assigned                                    | RACI matrix (Step 5b); AI Owner designation                     |
+|                 | GOVERN 3: Organizational teams aware of AI risk                      | AI literacy training (Doc 2); governance reporting              |
+|                 | GOVERN 4: Organizational teams are committed to AI risk management   | AGC and ARB establishment; board oversight                      |
+|                 | GOVERN 5: Policies/processes for TEVV (test, eval, verify, validate) | Lifecycle management Stage 3 (validation)                       |
+|                 | GOVERN 6: AI risk management policies for third-party relationships  | Vendor assessment (Doc 4)                                       |
+| **MAP**         | MAP 1: Context established                                           | Org context (Step 2); regulatory landscape (Step 3)             |
+|                 | MAP 2: Scientific understanding and risk categorization              | Risk classification (Step 6); impact assessment                 |
+|                 | MAP 3: AI risks, benefits, and impacts enumerated                    | Use case intake form (Doc 3); impact assessment                 |
+|                 | MAP 4: Risks and benefits of impacts are mapped                      | Risk classification scoring; approval workflow                  |
+|                 | MAP 5: Practices for communicating impacts                           | Transparency disclosures; AUP requirements                      |
+| **MEASURE**     | MEASURE 1: Methods identified to measure AI risks                    | Monitoring metrics (Doc 7); performance benchmarks              |
+|                 | MEASURE 2: AI risk metrics and monitoring                            | Monitoring program (Doc 7); drift detection                     |
+|                 | MEASURE 3: Internal experts identified                               | ARB composition; skills inventory                               |
+|                 | MEASURE 4: Feedback processes incorporated                           | Post-incident review; annual audit                              |
+| **MANAGE**      | MANAGE 1: Risks are prioritized                                      | Risk tier classification; gap severity prioritization           |
+|                 | MANAGE 2: Strategies applied to maximize benefit/minimize harm       | Lifecycle management; approval workflow gates                   |
+|                 | MANAGE 3: Responses deployed                                         | Incident response procedure (Doc 6)                             |
+|                 | MANAGE 4: Residual risks communicated                                | Board reporting; governance transparency statement              |
 
 ---
 
@@ -752,63 +773,83 @@ Map your governance framework elements to the applicable standard for audit read
 ### AI Governance Anti-Patterns
 
 #### Anti-Pattern 1: Shadow AI inventory
+
 Deploying AI tools without registration in the model inventory. Governance frameworks are only as comprehensive as the AI they cover. Mitigation: Regular discovery scans; mandatory procurement routing for any AI spend; employee reporting obligation in AUP.
 
 #### Anti-Pattern 2: Checkbox risk classification
+
 Treating risk classification as a compliance form rather than a genuine risk assessment. AI Owners game the scoring to avoid Tier 3 review. Mitigation: ARB spot-audits of Tier 1 self-approvals; anonymous reporting channel; sample re-classification by ARB.
 
 #### Anti-Pattern 3: Governance bodies without authority
+
 Establishing AI committees that advise but do not decide. AI deployments bypass governance because there are no actual gating mechanisms. Mitigation: Define binding approval authority in governance structure; tie procurement/deployment infrastructure to approval workflow.
 
 #### Anti-Pattern 4: Vendor AI outsourcing governance
+
 Treating "the vendor handles it" as a sufficient governance position for third-party AI. Mitigation: Vendor assessment policy (Doc 4); contract AI provisions checklist; deployer remains accountable under EU AI Act Arts. 25-27 regardless of vendor contractual indemnities.
 
 #### Anti-Pattern 5: Bias testing at launch only
+
 Conducting fairness assessments once before deployment and never again. Models drift; training data biases can manifest over time; demographic shifts in user population create new fairness risks. Mitigation: Scheduled recurring bias monitoring cadence in Doc 7.
 
 #### Anti-Pattern 6: AI incident under-reporting
+
 AI system errors not reported because AI Owner fears remediation burden or reputational risk. Mitigation: Blameless incident culture; near-miss reporting incentivized; whistleblower protection in AUP; incident log reviewed quarterly (not just when problems escalate).
 
 #### Anti-Pattern 7: Governance for AI, not the whole AI ecosystem
+
 Governing the organization's own AI systems but ignoring AI embedded in third-party software (CRM AI features, ERP AI suggestions, cloud platform AI). Mitigation: Vendor AI assessment applies to embedded AI in SaaS; procurement policy requires disclosure of AI features.
 
 #### Anti-Pattern 8: Static classification
+
 Classifying a use case once at intake and never re-classifying despite material changes in scope, affected population, or regulatory environment. Mitigation: Re-classification trigger in lifecycle management Stage 5; trigger-based re-validation protocol.
 
 #### Anti-Pattern 9: Training as compliance theater
+
 Deploying AI literacy training that is perfunctory checkbox completion rather than building genuine capability. Mitigation: Role-differentiated training (AI Owners need deeper training than general employees); competency assessment post-training; content updated for AI tool evolution.
 
 #### Anti-Pattern 10: AI governance separate from enterprise risk
+
 Running AI governance as a separate program disconnected from existing ERM, third-party risk, and data governance programs. AI risk should integrate with enterprise risk management, not run parallel to it. Mitigation: NIST AI RMF explicitly aligns with COSO ERM; ISO 42001 uses ISO 31000 risk framework.
 
 #### Anti-Pattern 11: Post-deployment oversight collapse
+
 Robust pre-deployment governance but minimal monitoring after deployment. Lifecycle Stage 5 monitoring is typically the weakest link. Mitigation: Monitoring obligations tied to approval; documented monitoring dashboards; ARB quarterly review of monitoring metrics.
 
 #### Anti-Pattern 12: Principles without procedures
+
 Elaborate AI principles documents ("We believe in fairness and transparency") with no operational procedures that implement them. Principles must map to specific policies, workflows, and controls. Mitigation: Every principle in Doc 1 must cross-reference at least one operational procedure that implements it.
 
 #### Anti-Pattern 13: Ignoring generative AI specifically
+
 Treating generative AI (LLMs, image generators, code generators) under the same governance framework as narrow AI without additional controls. Generative AI has distinct risks: hallucination, copyright infringement of training data, prompt injection, confidential data leakage. Mitigation: AUP must specifically address generative AI; Tier 2 default minimum for any customer-facing generative AI; data input prohibition for confidential information into external LLM APIs.
 
 #### Anti-Pattern 14: Documentation as the product
+
 Building elaborate governance documentation that is never operationalized. Documentation is the artifact; operationalization is the goal. Mitigation: Implementation roadmap with specific owners and deadlines; governance effectiveness measured by behavior change, not document count.
 
 #### Anti-Pattern 15: Governance without board engagement
+
 AI governance that never reaches the board level, leaving directors unaware of material AI risks. Mitigation: Annual AI governance board report; board AI risk education; AI risk in board risk register; major incidents reported to board within [48 hours].
 
 #### Anti-Pattern 16: Assuming one-size-fits-all model lifecycle
+
 Applying the same validation rigor to a simple rules-based system and a deep neural network for credit decisions. Mitigation: Lifecycle management gates calibrated by Tier; Tier 3 requires independent validation; Tier 1 requires registration only.
 
 #### Anti-Pattern 17: Privacy/AI governance silo
+
 AI governance and privacy governance operated separately without coordination. Mitigation: DPO participates in AGC; DPIA and AI impact assessment conducted jointly for AI systems processing personal data; cross-reference in policies.
 
 #### Anti-Pattern 18: Regulatory tunnel vision
+
 Governing only for the current known regulations and missing emerging requirements. Mitigation: `legalcode-regulatory-change-tracker` integration in monitoring program (Doc 7); quarterly regulatory scan.
 
 #### Anti-Pattern 19: Overlooking internal AI tools
+
 Focusing governance on external-facing AI while neglecting internal tools (HR analytics, management reporting AI, internal recommendation systems). Internal AI affecting employment decisions is often Tier 3. Mitigation: AUP applies to all AI regardless of internal/external classification; HR AI systematically Tier 2-3.
 
 #### Anti-Pattern 20: Treating AI governance as a one-time project
+
 Building the governance framework as a finite project rather than an ongoing program. AI evolves; regulations change; the organization's AI portfolio changes. Mitigation: Permanent AGC with regular cadence; annual review of all governance components; annual board report.
 
 ---
@@ -819,13 +860,13 @@ Building the governance framework as a finite project rather than an ongoing pro
 
 Run these 5 gates before delivering any governance framework output. If any gate fails, revise before delivery.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every regulatory or standards claim cites a specific instrument (ISO 42001 Clause X; EU AI Act Art. Y; NIST AI RMF GOVERN Z.1) | Add citation or mark "[UNVERIFIED]" |
-| **Format** | All citations follow a recognizable format for the instrument | Fix format |
-| **Currency** | Every cited provision checked against current version (ISO 42001 is December 2023; EU AI Act is Reg. 2024/1689; NIST AI RMF is January 2023) | Flag "[CHECK CURRENCY]" |
-| **Domain** | Analysis stays within the scope of AI governance; no unauthorized crosswalk into unrelated law | Remove or flag scope bleed |
-| **Confidence** | Uncertainty explicitly stated, not hidden | Add confidence qualifier |
+| Gate           | Rule                                                                                                                                         | Fail Action                         |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| **Source**     | Every regulatory or standards claim cites a specific instrument (ISO 42001 Clause X; EU AI Act Art. Y; NIST AI RMF GOVERN Z.1)               | Add citation or mark "[UNVERIFIED]" |
+| **Format**     | All citations follow a recognizable format for the instrument                                                                                | Fix format                          |
+| **Currency**   | Every cited provision checked against current version (ISO 42001 is December 2023; EU AI Act is Reg. 2024/1689; NIST AI RMF is January 2023) | Flag "[CHECK CURRENCY]"             |
+| **Domain**     | Analysis stays within the scope of AI governance; no unauthorized crosswalk into unrelated law                                               | Remove or flag scope bleed          |
+| **Confidence** | Uncertainty explicitly stated, not hidden                                                                                                    | Add confidence qualifier            |
 
 ### Self-Interrogation for Tier 3 and Tier 4 Classifications
 
@@ -839,13 +880,13 @@ For any AI system classified as Tier 3 (High Risk) or Tier 4 (Prohibited), apply
 
 ### Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95-1.0 | Settled in ISO 42001 / NIST AI RMF; regulatory text clear | State with confidence |
-| **High** | 0.80-0.94 | Strong authority; minor interpretive questions | State with brief caveat |
-| **Probable** | 0.60-0.79 | Good authority; emerging regulatory position; some uncertainty | State with reasoning and contra-indicators |
-| **Possible** | 0.40-0.59 | Genuine uncertainty; rapidly evolving regulatory area | Flag for professional review; present both sides |
-| **Unlikely** | 0.0-0.39 | Weak basis; speculative | Do not assert; flag "[UNCERTAIN]"; recommend specialist engagement |
+| Level        | Range     | Meaning                                                        | Action                                                             |
+| ------------ | --------- | -------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Definite** | 0.95-1.0  | Settled in ISO 42001 / NIST AI RMF; regulatory text clear      | State with confidence                                              |
+| **High**     | 0.80-0.94 | Strong authority; minor interpretive questions                 | State with brief caveat                                            |
+| **Probable** | 0.60-0.79 | Good authority; emerging regulatory position; some uncertainty | State with reasoning and contra-indicators                         |
+| **Possible** | 0.40-0.59 | Genuine uncertainty; rapidly evolving regulatory area          | Flag for professional review; present both sides                   |
+| **Unlikely** | 0.0-0.39  | Weak basis; speculative                                        | Do not assert; flag "[UNCERTAIN]"; recommend specialist engagement |
 
 ---
 
@@ -866,6 +907,7 @@ Governance documentation produced by this skill must meet these quality standard
 6. **Version control**: All governance documents should carry a version number, effective date, and next review date. Include in every document header.
 
 **Quality gates before delivery:**
+
 1. Can a non-compliance employee understand their obligations from reading the AUP?
 2. Does every policy have a named owner and review date?
 3. Does the RACI matrix have at least one "A" (Accountable) for every activity?
@@ -924,6 +966,7 @@ glass_box:
 ### With legalcode-mcp (preferred)
 
 When legalcode-mcp is connected:
+
 1. Search for current AI governance regulations in the organization's applicable jurisdictions
 2. Search for ISO 42001 and NIST AI RMF current guidance and interpretations
 3. Search for sector-specific AI governance requirements (financial, healthcare, government)
@@ -933,6 +976,7 @@ When legalcode-mcp is connected:
 ### With legalcode-regulatory-change-tracker
 
 Invoke `legalcode-regulatory-change-tracker` to:
+
 - Identify AI governance regulatory changes effective in the past 12 months
 - Identify upcoming AI regulatory effective dates requiring policy updates
 - Generate a compliance calendar for AI regulatory obligations
@@ -946,15 +990,15 @@ Invoke `legalcode-regulatory-change-tracker` to:
 
 ### Related Skill Integration Points
 
-| Trigger | Invoke Skill |
-|---------|-------------|
-| AI system processes personal data → DPIA needed | `legalcode-dpia-generator` |
-| Tier 3 AI system uses EU data → GDPR cross-border transfer assessment | `legalcode-cross-border-transfer-assessment` |
-| Vendor AI contract review needed | `legalcode-contract-review` with AI governance playbook |
-| EU AI Act Annex III classification needed | `legalcode-eu-ai-act-high-risk-compliance` |
-| AI-related data breach occurs | `legalcode-incident-response-plan-builder` |
-| AI regulatory change tracking needed | `legalcode-regulatory-change-tracker` |
-| AI training data inventory and lineage mapping | `legalcode-data-mapping-workflow` |
+| Trigger                                                               | Invoke Skill                                            |
+| --------------------------------------------------------------------- | ------------------------------------------------------- |
+| AI system processes personal data → DPIA needed                       | `legalcode-dpia-generator`                              |
+| Tier 3 AI system uses EU data → GDPR cross-border transfer assessment | `legalcode-cross-border-transfer-assessment`            |
+| Vendor AI contract review needed                                      | `legalcode-contract-review` with AI governance playbook |
+| EU AI Act Annex III classification needed                             | `legalcode-eu-ai-act-high-risk-compliance`              |
+| AI-related data breach occurs                                         | `legalcode-incident-response-plan-builder`              |
+| AI regulatory change tracking needed                                  | `legalcode-regulatory-change-tracker`                   |
+| AI training data inventory and lineage mapping                        | `legalcode-data-mapping-workflow`                       |
 
 ---
 
@@ -979,15 +1023,19 @@ Produce the governance framework in this structure:
 ## Part 1: Governance Structure
 
 ### 1.1 AI Governance Committee
+
 [Charter, membership, decision authority, meeting cadence]
 
 ### 1.2 AI Review Board
+
 [Terms of reference, membership, approval authority]
 
 ### 1.3 RACI Matrix
+
 [Full RACI table per Step 5b]
 
 ### 1.4 Reporting Lines Diagram
+
 [Textual representation of reporting hierarchy]
 
 ---
@@ -995,12 +1043,15 @@ Produce the governance framework in this structure:
 ## Part 2: AI Risk Classification Framework
 
 ### 2.1 Risk Tier Definitions
+
 [Tier 1-4 definitions, criteria, approval paths — per Step 6]
 
 ### 2.2 Risk Scoring Worksheet
+
 [Scoring table and threshold matrix]
 
 ### 2.3 Tier 4 Prohibited AI Checklist
+
 [Full checklist]
 
 ---
@@ -1008,27 +1059,35 @@ Produce the governance framework in this structure:
 ## Part 3: Governance Policy Suite
 
 ### Document 1: Enterprise AI Governance Policy
+
 [Full policy text or outline with [TBD] markers for org-specific content]
 
 ### Document 2: AI Acceptable Use Policy
+
 [Full policy text or outline]
 
 ### Document 3: AI Risk Classification and Use Case Approval Procedure
+
 [Full procedure with intake form template and decision tree]
 
 ### Document 4: AI Procurement and Vendor Assessment Policy
+
 [Policy with assessment checklist and contract provisions checklist]
 
 ### Document 5: AI Model Lifecycle Management Policy
+
 [Full lifecycle stages with governance gates]
 
 ### Document 6: AI Incident Response Procedure
+
 [Full procedure with severity classification and response playbook]
 
 ### Document 7: AI Monitoring and Audit Program
+
 [Monitoring cadences, annual audit scope, board reporting template]
 
 ### Document 8: AI Training Data Governance Policy
+
 [Data sourcing rules, quality standards, documentation requirements]
 
 ---
@@ -1036,12 +1095,15 @@ Produce the governance framework in this structure:
 ## Part 4: Framework Alignment Assessment
 
 ### 4.1 ISO 42001 Alignment
+
 [Clause-by-clause mapping; gap summary if gap analysis mode]
 
 ### 4.2 NIST AI RMF Alignment
+
 [Function/sub-category mapping; gap summary if gap analysis mode]
 
 ### 4.3 Applicable Regulatory Overlay
+
 [Jurisdiction-specific regulatory requirements applied]
 
 ---
@@ -1049,18 +1111,23 @@ Produce the governance framework in this structure:
 ## Part 5: Implementation Roadmap
 
 ### 5.1 Phase 1 — Foundation (Months 1-3)
+
 [Milestone table with owners, effort, deliverables]
 
 ### 5.2 Phase 2 — Policy and Process (Months 4-6)
+
 [Milestone table]
 
 ### 5.3 Phase 3 — Operationalization (Months 7-9)
+
 [Milestone table]
 
 ### 5.4 Phase 4 — Maturity (Months 10-12+)
+
 [Milestone table]
 
 ### 5.5 Regulatory Compliance Calendar
+
 [Key AI regulatory deadlines applicable to the organization]
 
 ---
@@ -1068,15 +1135,17 @@ Produce the governance framework in this structure:
 ## Part 6: Quality and Audit Documentation
 
 ### 6.1 Gap Summary (if gap analysis mode)
+
 [Gap table per Step 4]
 
 ### 6.2 Glass Box Audit Trail
+
 [YAML block per Glass Box template]
 
 ---
 
-*Review by qualified legal professional and AI governance specialist required before use.*
-*Version [1.0] | Prepared [date] | Next review [date+1 year]*
+_Review by qualified legal professional and AI governance specialist required before use._
+_Version [1.0] | Prepared [date] | Next review [date+1 year]_
 ```
 
 ---

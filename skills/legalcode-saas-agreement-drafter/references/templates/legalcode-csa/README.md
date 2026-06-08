@@ -12,13 +12,13 @@ captured on a separate Order Form (`legalcode-order-form`).
 
 ## Documents
 
-| File | Document Type | Use when |
-|------|--------------|----------|
-| `core.md` | Jurisdiction-neutral baseline (dual-perspective: customer / vendor / market-standard) | You operate in a jurisdiction not covered below, or you want the master before specialising. |
-| `us.md` | US — Delaware/NY default + CCPA service-provider terms + state auto-renewal + export controls | Either party is US-based; covers DTSA, FTC Click-to-Cancel, CCPA service-provider obligations, ROSCA, and state-by-state auto-renewal. |
-| `eu.md` | EU/EEA — DSA + DCD/SGD + Data Act + DE-AGB | Either party is EU/EEA-based. Includes German AGB-Kontrolle overlay and EU Data Act portability. |
-| `uk.md` | UK — UK CRA + DMCCA 2024 + DUAA 2025 | Either party is UK-based. Includes DMCCA Pt 4 subscription contract overlay. |
-| `is.md` | Iceland — Lög nr. 16/2016 + EEA-imported DSA/Data Act | Either party is Iceland-based. EEA framing for digital-services rules. |
+| File      | Document Type                                                                                 | Use when                                                                                                                               |
+| --------- | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `core.md` | Jurisdiction-neutral baseline (dual-perspective: customer / vendor / market-standard)         | You operate in a jurisdiction not covered below, or you want the master before specialising.                                           |
+| `us.md`   | US — Delaware/NY default + CCPA service-provider terms + state auto-renewal + export controls | Either party is US-based; covers DTSA, FTC Click-to-Cancel, CCPA service-provider obligations, ROSCA, and state-by-state auto-renewal. |
+| `eu.md`   | EU/EEA — DSA + DCD/SGD + Data Act + DE-AGB                                                    | Either party is EU/EEA-based. Includes German AGB-Kontrolle overlay and EU Data Act portability.                                       |
+| `uk.md`   | UK — UK CRA + DMCCA 2024 + DUAA 2025                                                          | Either party is UK-based. Includes DMCCA Pt 4 subscription contract overlay.                                                           |
+| `is.md`   | Iceland — Lög nr. 16/2016 + EEA-imported DSA/Data Act                                         | Either party is Iceland-based. EEA framing for digital-services rules.                                                                 |
 
 ## How to use
 

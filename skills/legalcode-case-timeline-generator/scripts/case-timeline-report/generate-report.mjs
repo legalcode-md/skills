@@ -29,7 +29,12 @@ function asArray(value) {
 function sourceText(source) {
   if (typeof source === "string") return source;
   if (!source || typeof source !== "object") return "";
-  return [source.label, source.path, source.page ? `p. ${source.page}` : "", source.quote]
+  return [
+    source.label,
+    source.path,
+    source.page ? `p. ${source.page}` : "",
+    source.quote,
+  ]
     .filter(Boolean)
     .join(" - ");
 }
@@ -152,5 +157,9 @@ const titleIndex = args.indexOf("--title");
 const title = titleIndex >= 0 ? args[titleIndex + 1] : undefined;
 const raw = await readFile(inputPath, "utf8");
 const data = JSON.parse(raw);
-await writeFile(outputPath, renderHtml(data, title || data.title || basename(inputPath)), "utf8");
+await writeFile(
+  outputPath,
+  renderHtml(data, title || data.title || basename(inputPath)),
+  "utf8",
+);
 console.log(`Wrote ${outputPath}`);

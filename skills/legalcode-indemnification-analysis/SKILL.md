@@ -50,6 +50,7 @@ provisions; and (4) failure to harmonize with the limitation of liability clause
 addresses all four failure modes.
 
 **Covers:**
+
 - Indemnification scope: first-party claims (between contracting parties) vs. third-party
   claims (from outsiders) — and the critical distinction between the two
 - Baskets: deductible (true deductible) vs. tipping (threshold/first dollar) and
@@ -76,6 +77,7 @@ addresses all four failure modes.
 - Risk-adjusted exposure analysis and negotiation strategy
 
 **Does not:**
+
 - Review limitation of liability caps, consequential damages exclusions, or cap
   adequacy independent of indemnification (see `legalcode-limitation-of-liability-review`)
 - Perform comprehensive clause-by-clause review of any commercial agreement
@@ -86,6 +88,7 @@ addresses all four failure modes.
 - Apply to insurance policies or surety bonds (different legal framework)
 
 **Related skills:**
+
 - `legalcode-limitation-of-liability-review` — deep analysis of LOL caps, exclusions,
   and carve-outs; use alongside this skill for complete risk allocation review
 - `legalcode-contract-review` — full clause-by-clause review of any commercial agreement
@@ -106,6 +109,7 @@ jurisdiction-specific enforceability issues throughout.
 [JURISDICTION-SPECIFIC] When localizing for these primary jurisdictions, research and apply:
 
 **United States**
+
 - **Duty to defend vs. duty to indemnify**: Under US common law, these are distinct obligations.
   The duty to defend is broader — triggered by allegations (not proven liability) — and
   potentially more valuable than the indemnification obligation itself. The duty to defend
@@ -143,6 +147,7 @@ jurisdiction-specific enforceability issues throughout.
   - Survival periods: 12–24 months for general reps; indefinite for fundamental reps and fraud
 
 **United Kingdom / England & Wales**
+
 - **Indemnity as a primary obligation**: Under English law, an indemnity is a primary obligation
   distinct from a claim for damages for breach of contract. Indemnities may bypass remoteness
   rules (Hadley v Baxendale [VERIFY]) and limitation of actions differences apply. An indemnity
@@ -168,6 +173,7 @@ jurisdiction-specific enforceability issues throughout.
   claims arising from use of the vendor's product as supplied. [VERIFY current UK market data]
 
 **Australia**
+
 - **Proportionate liability schemes**: All Australian states and territories have enacted
   proportionate liability legislation based on the model Proportionate Liability Act. Under
   these schemes, each "concurrent wrongdoer" is liable only for their proportionate share of
@@ -227,6 +233,7 @@ Accept the indemnification provision in any of these formats:
   and request it.
 
 **Also look for:**
+
 - IP indemnification provisions (often separate clauses or schedules)
 - Data Processing Addendum / DPA (may contain data breach indemnification)
 - M&A representations and warranties sections (survival and indemnification procedures
@@ -245,7 +252,7 @@ by the user:
 1. **Which side are you on?**
    - Options: Indemnitee (receiving indemnification / protected party), Indemnifying party
      (providing indemnification / obligated party), Neutral / reviewing for both sides, Other
-   - *Why this matters*: The entire risk analysis inverts. An uncapped indemnity obligation
+   - _Why this matters_: The entire risk analysis inverts. An uncapped indemnity obligation
      is catastrophic for the indemnifying party; a capped indemnity is dangerous for the
      indemnitee. Advice on "acceptable" terms depends entirely on which side bears the risk.
 
@@ -253,14 +260,14 @@ by the user:
    - Options: SaaS / technology services, Professional services / MSA, M&A / share purchase
      / asset purchase, Software license, Procurement / supply chain, Construction / EPC,
      Outsourcing (BPO/ITO), Energy / resources, Other / mixed
-   - *Why this matters*: Market standards for scope, baskets, caps, and defense mechanics
+   - _Why this matters_: Market standards for scope, baskets, caps, and defense mechanics
      vary fundamentally across contract types. M&A indemnification operates on entirely
      different economics from SaaS or construction.
 
 3. **What is the approximate deal value / annual contract value?**
    - Options: Under $100K / £100K / AUD 150K, $100K–$1M, $1M–$10M, Over $10M / M&A
      transaction, Not sure / not relevant
-   - *Why this matters*: Basket and cap adequacy must be assessed relative to deal value.
+   - _Why this matters_: Basket and cap adequacy must be assessed relative to deal value.
      A $100K basket on a $1M deal is standard; a $100K basket on a $50M deal is token.
      Exposure calculations require an order-of-magnitude estimate.
 
@@ -268,7 +275,7 @@ by the user:
    - Options: US (specify state if known — critical for anti-indemnity statutes), English /
      UK law, Australian law (specify state if known — critical for proportionate liability),
      Other / not stated, Multiple jurisdictions
-   - *Why this matters*: Anti-indemnity statutes (US construction), proportionate liability
+   - _Why this matters_: Anti-indemnity statutes (US construction), proportionate liability
      schemes (Australia), and UCTA constraints (UK) can void or limit indemnification clauses
      that are otherwise valid. The analysis must account for mandatory statutory limits.
 
@@ -276,14 +283,14 @@ by the user:
    - Options (multi-select): IP infringement claims, Data breach / privacy violations,
      Regulatory investigations and fines, Confidentiality breach, Personal injury / property
      damage, General contractual breach, M&A basket and cap structure, All of the above
-   - *Why this matters*: The IP and data breach indemnification analysis is different from
+   - _Why this matters_: The IP and data breach indemnification analysis is different from
      general contractual indemnification. Knowing the priority risk categories lets the
      analysis lead with what matters most.
 
 6. **Do you have the organization's negotiation playbook positions?**
    - Options: Yes, I'll provide them, Use general market standards (no playbook),
      I'll provide key positions as we go
-   - *Why this matters*: Playbook positions define what is "acceptable" for GREEN
+   - _Why this matters_: Playbook positions define what is "acceptable" for GREEN
      classification. Without them, analysis defaults to market standards.
 
 If the user provides partial context, proceed with what you have and **state all assumptions
@@ -384,11 +391,11 @@ generate a finding.
 
 Indemnification provisions traditionally cover two distinct categories:
 
-| Scope | Definition | Risk Profile |
-|-------|-----------|-------------|
-| **Third-party claims** | Claims brought by persons not party to the contract (customers, regulators, competitors, injured parties) — the indemnifying party defends and pays | Standard; expected in commercial contracts; typically the narrower scope |
-| **First-party claims** | Direct claims between the contracting parties (e.g., Party A indemnifies Party B for losses Party B itself suffers from Party A's breach) | High risk for indemnifying party — expands beyond what "damages for breach" provides; may bypass limitation periods and remoteness rules |
-| **Both** | Language covering "any loss, claim, or damage" without qualification | Broadest scope; most litigation-prone; requires explicit language in most jurisdictions |
+| Scope                  | Definition                                                                                                                                          | Risk Profile                                                                                                                             |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Third-party claims** | Claims brought by persons not party to the contract (customers, regulators, competitors, injured parties) — the indemnifying party defends and pays | Standard; expected in commercial contracts; typically the narrower scope                                                                 |
+| **First-party claims** | Direct claims between the contracting parties (e.g., Party A indemnifies Party B for losses Party B itself suffers from Party A's breach)           | High risk for indemnifying party — expands beyond what "damages for breach" provides; may bypass limitation periods and remoteness rules |
+| **Both**               | Language covering "any loss, claim, or damage" without qualification                                                                                | Broadest scope; most litigation-prone; requires explicit language in most jurisdictions                                                  |
 
 **Why first-party scope matters:** An indemnity that covers first-party claims can provide
 a claimant with more advantageous recovery than a pure damages claim — potentially bypassing
@@ -403,14 +410,15 @@ a general indemnity clause does not cover first-party claims without specific la
 [VERIFY current CA approach].
 
 **Assessment criteria:**
+
 - [ ] Scope (third-party only, first-party only, or both) is unambiguous
 - [ ] If first-party scope is intended, express language reflects this clearly
 - [ ] "Losses" definition, if present, clearly delineates what is covered (costs, damages,
-  judgments, settlement amounts, attorneys' fees, regulatory fines)
+      judgments, settlement amounts, attorneys' fees, regulatory fines)
 - [ ] Scope does not inadvertently override the limitation of liability clause
 - [ ] Cross-party indemnification (where Party A indemnifies Party B's own losses from Party
-  A's acts) is clearly limited to "arising from Party A's breach" not "any loss suffered by
-  Party B"
+      A's acts) is clearly limited to "arising from Party A's breach" not "any loss suffered by
+      Party B"
 
 ---
 
@@ -424,23 +432,24 @@ risk categories.
 
 **Basket structures:**
 
-| Structure | Mechanics | Effect |
-|-----------|-----------|--------|
-| **Deductible basket (true deductible)** | Indemnification applies only to losses EXCEEDING the basket; the buyer absorbs the basket amount | Like an insurance deductible — lower recovery for claimant; preferred by seller/indemnifying party |
-| **Tipping basket (threshold / first-dollar)** | Once cumulative losses exceed the basket threshold, ALL losses from the first dollar are recoverable | Much more favorable to claimant; standard in US M&A; disputed in UK M&A |
-| **Mini-basket (per-claim threshold)** | Individual claims below the mini-basket threshold are excluded regardless of aggregate losses | Prevents de minimis claims; does not reduce maximum recovery once threshold crossed |
+| Structure                                     | Mechanics                                                                                            | Effect                                                                                             |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Deductible basket (true deductible)**       | Indemnification applies only to losses EXCEEDING the basket; the buyer absorbs the basket amount     | Like an insurance deductible — lower recovery for claimant; preferred by seller/indemnifying party |
+| **Tipping basket (threshold / first-dollar)** | Once cumulative losses exceed the basket threshold, ALL losses from the first dollar are recoverable | Much more favorable to claimant; standard in US M&A; disputed in UK M&A                            |
+| **Mini-basket (per-claim threshold)**         | Individual claims below the mini-basket threshold are excluded regardless of aggregate losses        | Prevents de minimis claims; does not reduce maximum recovery once threshold crossed                |
 
 **Market standards by contract type (US M&A — ABA Deal Points Study [VERIFY most recent]):**
 
-| Metric | Range | Median |
-|--------|-------|--------|
-| General basket | 0.5%–1.5% of deal value | 0.75% |
-| Basket type | ~50% tipping, ~30% deductible, ~20% hybrid [VERIFY] | Tipping basket more common in US |
-| General cap | 10%–20% of deal value | 10%–15% |
-| Fundamental rep cap | 100% of deal value | 100% |
-| Fraud: uncapped | Standard | Uncapped (contractual fraud is not capped in any jurisdiction) |
+| Metric              | Range                                               | Median                                                         |
+| ------------------- | --------------------------------------------------- | -------------------------------------------------------------- |
+| General basket      | 0.5%–1.5% of deal value                             | 0.75%                                                          |
+| Basket type         | ~50% tipping, ~30% deductible, ~20% hybrid [VERIFY] | Tipping basket more common in US                               |
+| General cap         | 10%–20% of deal value                               | 10%–15%                                                        |
+| Fundamental rep cap | 100% of deal value                                  | 100%                                                           |
+| Fraud: uncapped     | Standard                                            | Uncapped (contractual fraud is not capped in any jurisdiction) |
 
 **Commercial contract baskets (technology/services):**
+
 - Baskets are less common in pure services contracts but increasingly seen for specific
   risk categories (e.g., data breach indemnification may have a mini-basket to exclude
   de minimis incidents)
@@ -448,16 +457,17 @@ risk categories.
   $50K are excluded from the defense obligation)
 
 **Assessment criteria:**
+
 - [ ] Basket type (deductible vs. tipping) is unambiguously stated
 - [ ] Basket amount is proportionate to deal value and realistic loss expectations
 - [ ] Mini-basket amount (if present) excludes only genuinely de minimis claims
 - [ ] Exclusions from the basket (items counted against the basket vs. excluded entirely)
-  are clearly stated
+      are clearly stated
 - [ ] Aggregate cap on indemnification is stated (unlimited indemnification is commercially
-  irrational for the indemnifying party)
+      irrational for the indemnifying party)
 - [ ] Cap on fundamental representations is separate from and higher than the general cap
 - [ ] Fraud is excluded from any cap (fraud caps are unenforceable as a matter of public
-  policy in US/UK/AU)
+      policy in US/UK/AU)
 - [ ] Super-caps for specific categories (IP, data breach) are appropriate
 
 ---
@@ -479,6 +489,7 @@ for real but small breaches. With a scrape, every breach triggers indemnificatio
 to the basket).
 
 **Types of scrapes:**
+
 - **Single scrape**: Materiality qualifiers removed only for calculating the amount of
   losses (not for determining whether a breach occurred). The claimant must still prove
   a material breach to trigger the obligation.
@@ -493,12 +504,13 @@ to the basket).
 in seller-favorable deals.
 
 **Assessment criteria:**
+
 - [ ] Presence/absence of materiality scrape is clearly stated (or absence is recognized)
 - [ ] Scrape type (single / double / none) is clear from the language
 - [ ] Knowledge qualifiers (e.g., "to Seller's knowledge") are addressed separately —
-  knowledge qualifiers are typically NOT scraped even when materiality is
+      knowledge qualifiers are typically NOT scraped even when materiality is
 - [ ] Scrape interaction with the basket is addressed (double scrape + tipping basket is
-  the most buyer-favorable combination)
+      the most buyer-favorable combination)
 
 ---
 
@@ -512,27 +524,28 @@ clause with no defense mechanics is commercially incomplete.
 
 **Key elements:**
 
-| Element | What It Provides | Risk if Missing |
-|---------|-----------------|-----------------|
-| **Duty to defend** | Indemnifying party takes over and funds the defense of third-party claims (US concept; not applicable under English law as a legal obligation) | Indemnitee must fund defense then recover via indemnity — cashflow risk; may be impractical for SMEs |
-| **Right to control defense** | Indemnifying party has the right to select counsel and control strategy for covered claims | Without this right, the indemnifying party bears cost but has no control — perverse incentive |
-| **Notification obligation** | Indemnitee must promptly notify the indemnifying party of a claim | Without prompt notice, indemnifying party may lose the ability to defend — courts may reduce recovery for late notice in some jurisdictions |
-| **Right to settle** | Indemnifying party may settle covered claims; indemnitee's consent may be required | Without consent protection, indemnitee can be forced into unfavorable settlement terms |
-| **Consent standard for settlement** | Indemnitee's consent "not to be unreasonably withheld" (standard) or "sole discretion" (aggressive) | Unreasonable withholding of consent may expose the indemnitee to excess damages above the settlement amount |
-| **Cooperation obligations** | Indemnitee must cooperate with defense: provide documents, witnesses, access | Without cooperation, defense may be compromised — indemnifying party may argue this as a defense |
-| **Cumis counsel (US)** | Where a conflict of interest exists between the insurer/indemnifying party and indemnitee, the indemnitee may be entitled to select independent counsel at the indemnifying party's expense | Applies primarily in insurance contexts; can be relevant where indemnification is paired with a duty to defend [JURISDICTION-SPECIFIC: California and some other US states] |
+| Element                             | What It Provides                                                                                                                                                                            | Risk if Missing                                                                                                                                                             |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Duty to defend**                  | Indemnifying party takes over and funds the defense of third-party claims (US concept; not applicable under English law as a legal obligation)                                              | Indemnitee must fund defense then recover via indemnity — cashflow risk; may be impractical for SMEs                                                                        |
+| **Right to control defense**        | Indemnifying party has the right to select counsel and control strategy for covered claims                                                                                                  | Without this right, the indemnifying party bears cost but has no control — perverse incentive                                                                               |
+| **Notification obligation**         | Indemnitee must promptly notify the indemnifying party of a claim                                                                                                                           | Without prompt notice, indemnifying party may lose the ability to defend — courts may reduce recovery for late notice in some jurisdictions                                 |
+| **Right to settle**                 | Indemnifying party may settle covered claims; indemnitee's consent may be required                                                                                                          | Without consent protection, indemnitee can be forced into unfavorable settlement terms                                                                                      |
+| **Consent standard for settlement** | Indemnitee's consent "not to be unreasonably withheld" (standard) or "sole discretion" (aggressive)                                                                                         | Unreasonable withholding of consent may expose the indemnitee to excess damages above the settlement amount                                                                 |
+| **Cooperation obligations**         | Indemnitee must cooperate with defense: provide documents, witnesses, access                                                                                                                | Without cooperation, defense may be compromised — indemnifying party may argue this as a defense                                                                            |
+| **Cumis counsel (US)**              | Where a conflict of interest exists between the insurer/indemnifying party and indemnitee, the indemnitee may be entitled to select independent counsel at the indemnifying party's expense | Applies primarily in insurance contexts; can be relevant where indemnification is paired with a duty to defend [JURISDICTION-SPECIFIC: California and some other US states] |
 
 **Defense obligation structure by jurisdiction:**
 
-| Jurisdiction | "Duty to Defend" Concept | Typical Commercial Mechanism |
-|-------------|------------------------|------------------------------|
-| **US (general)** | Recognized; typically broader than indemnity (triggered by allegations) | Explicit "defend, indemnify, and hold harmless" language creates defense obligation |
-| **England/Wales** | Not recognized as a primary legal obligation | Indemnity against "costs, claims, losses, and liabilities" — indemnitee defends and recovers costs |
-| **Australia** | Similar to England — no automatic duty to defend | Express control-of-claim language required; recovery mechanism differs from US |
+| Jurisdiction      | "Duty to Defend" Concept                                                | Typical Commercial Mechanism                                                                       |
+| ----------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **US (general)**  | Recognized; typically broader than indemnity (triggered by allegations) | Explicit "defend, indemnify, and hold harmless" language creates defense obligation                |
+| **England/Wales** | Not recognized as a primary legal obligation                            | Indemnity against "costs, claims, losses, and liabilities" — indemnitee defends and recovers costs |
+| **Australia**     | Similar to England — no automatic duty to defend                        | Express control-of-claim language required; recovery mechanism differs from US                     |
 
 **Notice requirements by jurisdiction:**
 
 [JURISDICTION-SPECIFIC] Late notice may affect recovery under an indemnification provision:
+
 - **US**: Courts are split on whether late notice is a defense to indemnification; some
   states require prejudice from late notice before reducing recovery [VERIFY per state]
 - **England/Wales**: Failure to give prompt notice may be a breach of condition or
@@ -542,19 +555,20 @@ clause with no defense mechanics is commercially incomplete.
   a claim if the indemnifying party can show prejudice [VERIFY per state]
 
 **Assessment criteria:**
+
 - [ ] Defense obligation (duty to defend or its equivalent mechanism) is expressly stated
 - [ ] Control of defense right is allocated (to indemnifying party, with clear exceptions)
 - [ ] Notice obligation is present and the notice period is specified (typically "prompt" or
-  within a specific number of days of receiving the claim)
+      within a specific number of days of receiving the claim)
 - [ ] Settlement consent is required from the indemnitee (standard position)
 - [ ] Consent standard is "not to be unreasonably withheld, conditioned, or delayed"
-  (rather than sole discretion)
+      (rather than sole discretion)
 - [ ] "No admission" protection is included (indemnitee cannot admit liability or make
-  statements that prejudice the defense without indemnifying party's consent)
+      statements that prejudice the defense without indemnifying party's consent)
 - [ ] Cooperation obligations are present but not unduly burdensome
 - [ ] Consequence of late notice is specified (or, absent language, flag as ambiguous)
 - [ ] Conflict of interest provisions address what happens when indemnitee's and indemnifying
-  party's interests diverge in defending the claim
+      party's interests diverge in defending the claim
 
 ---
 
@@ -569,16 +583,17 @@ intellectual property rights.
 
 **Scope variables:**
 
-| Element | Vendor-Favorable | Customer-Favorable |
-|---------|-----------------|-------------------|
-| **Coverage trigger** | "Finally adjudicated infringement" only (no coverage during litigation) | Any claim of infringement (including pending claims) |
-| **Remedy coverage** | Damages and settlements only | Damages, settlements, defense costs, and related expenses |
+| Element                       | Vendor-Favorable                                                                                                               | Customer-Favorable                                                                                     |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Coverage trigger**          | "Finally adjudicated infringement" only (no coverage during litigation)                                                        | Any claim of infringement (including pending claims)                                                   |
+| **Remedy coverage**           | Damages and settlements only                                                                                                   | Damages, settlements, defense costs, and related expenses                                              |
 | **Infringing use carve-outs** | Customer modifications, combination with unauthorized third-party products, continued use after notice to cease — all excluded | Narrow carve-outs: only customer's own modifications to the infringing element; not combination claims |
-| **Geographic scope** | Limited to specific jurisdictions | Global / worldwide |
-| **Open source** | Open-source components excluded from IP indemnity | Vendor must manage OSS IP risk; no blanket exclusion |
-| **Super-cap / uncapped** | Capped at 1–2× contract value | Uncapped (historically market standard; shifting to super-cap) |
+| **Geographic scope**          | Limited to specific jurisdictions                                                                                              | Global / worldwide                                                                                     |
+| **Open source**               | Open-source components excluded from IP indemnity                                                                              | Vendor must manage OSS IP risk; no blanket exclusion                                                   |
+| **Super-cap / uncapped**      | Capped at 1–2× contract value                                                                                                  | Uncapped (historically market standard; shifting to super-cap)                                         |
 
 **Remedy waterfall (standard market structure):** When a third-party IP claim arises:
+
 1. Vendor obtains a license for the customer to continue using the product
 2. Vendor modifies the product to remove the infringing element
 3. Vendor substitutes equivalent non-infringing product
@@ -588,6 +603,7 @@ intellectual property rights.
 IP indemnification is the most common carve-out from the general limitation of liability cap.
 However, even "uncapped" IP indemnities are increasingly subject to super-caps in technology
 contracts. The trend (per Norton Rose Fulbright Liability 101 Guide [VERIFY]) shows:
+
 - Service providers limiting uncapped IP indemnities to third-party claims amounts (not system
   replacement costs)
 - Super-caps for IP indemnification at 2–5× annual contract value becoming standard
@@ -595,9 +611,10 @@ contracts. The trend (per Norton Rose Fulbright Liability 101 Guide [VERIFY]) sh
   IP indemnity at higher levels
 
 **Assessment criteria:**
+
 - [ ] IP indemnification obligation is present (missing = RED for technology contracts)
 - [ ] Scope covers third-party claims of infringement (not limited to "finally adjudicated"
-  without interim defense coverage)
+      without interim defense coverage)
 - [ ] Defense costs are covered (not just ultimate judgment or settlement)
 - [ ] Carve-outs within IP indemnity are reasonable:
   - Customer modifications: narrowly scoped (only where modification is the cause)
@@ -607,7 +624,7 @@ contracts. The trend (per Norton Rose Fulbright Liability 101 Guide [VERIFY]) sh
 - [ ] Remedy waterfall is present (license → modify → substitute → refund)
 - [ ] Super-cap or uncapped status is clearly stated (and amount is proportionate to risk)
 - [ ] IP indemnity is carved out from the general LOL cap (or explicitly inside it — flag
-  if inside the cap as YELLOW or RED depending on cap level)
+      if inside the cap as YELLOW or RED depending on cap level)
 
 ---
 
@@ -618,12 +635,12 @@ contracts. The trend (per Norton Rose Fulbright Liability 101 Guide [VERIFY]) sh
 Data protection indemnification covers two distinct risk categories that must be analyzed
 separately:
 
-| Category | What It Covers | Key Issues |
-|----------|---------------|------------|
-| **Regulatory fines and penalties** | Governmental/regulatory fines for data protection violations (GDPR Art. 83, US state penalties, OAIC fines) | Contractual indemnification between parties doesn't reduce regulatory liability to the regulator; it allocates payment responsibility between the contracting parties |
-| **Third-party claims** | Private claims from data subjects (GDPR Art. 82, CCPA private rights of action [VERIFY scope], class actions) | These are indemnifiable; critical question is who pays when a joint controller/processor breach leads to data subject claims |
-| **Breach response costs** | Notification costs, forensic investigation, credit monitoring, remediation | Often contractually allocated; frequently excluded from standard indemnification caps |
-| **Business interruption** | Revenue lost due to a data breach incident | More difficult to indemnify; typically excluded or subject to consequential damages exclusions |
+| Category                           | What It Covers                                                                                                | Key Issues                                                                                                                                                            |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Regulatory fines and penalties** | Governmental/regulatory fines for data protection violations (GDPR Art. 83, US state penalties, OAIC fines)   | Contractual indemnification between parties doesn't reduce regulatory liability to the regulator; it allocates payment responsibility between the contracting parties |
+| **Third-party claims**             | Private claims from data subjects (GDPR Art. 82, CCPA private rights of action [VERIFY scope], class actions) | These are indemnifiable; critical question is who pays when a joint controller/processor breach leads to data subject claims                                          |
+| **Breach response costs**          | Notification costs, forensic investigation, credit monitoring, remediation                                    | Often contractually allocated; frequently excluded from standard indemnification caps                                                                                 |
+| **Business interruption**          | Revenue lost due to a data breach incident                                                                    | More difficult to indemnify; typically excluded or subject to consequential damages exclusions                                                                        |
 
 **Regulatory fine allocation between contracting parties:**
 
@@ -631,6 +648,7 @@ separately:
 or processor by the supervisory authority. The fine itself cannot be allocated by contract —
 the regulator will collect it from the entity found responsible. However, the contractual
 indemnification allocates who ultimately bears the economic burden between the parties:
+
 - Controller-to-processor indemnification: If the processor's breach caused the fine against
   the controller, the controller may seek indemnification from the processor
 - Processor's GDPR obligations: Under Art. 82, both controllers and processors can be
@@ -638,19 +656,20 @@ indemnification allocates who ultimately bears the economic burden between the p
   other [VERIFY: GDPR Art. 82(5) right of recourse]
 
 **Assessment criteria:**
+
 - [ ] Data breach / privacy violation is carved out from the general LOL cap (or clearly
-  inside it with an appropriate super-cap)
+      inside it with an appropriate super-cap)
 - [ ] Scope distinguishes between regulatory fines and third-party claims (different risk
-  profiles and allocation logics)
+      profiles and allocation logics)
 - [ ] Breach response costs (forensic, notification, remediation) are explicitly covered
 - [ ] Super-cap or uncapped treatment is stated; amount is proportionate (market range:
-  100%–500% of contract fees for data/security breaches per Norton Rose Fulbright [VERIFY])
+      100%–500% of contract fees for data/security breaches per Norton Rose Fulbright [VERIFY])
 - [ ] GDPR / UK GDPR / Privacy Act controller-processor responsibility allocation is
-  addressed (who bears regulatory investigation costs? who pays if a supervisory authority
-  opens a formal investigation following an incident?)
+      addressed (who bears regulatory investigation costs? who pays if a supervisory authority
+      opens a formal investigation following an incident?)
 - [ ] Data breach indemnification is not swept in by a "sole remedy" SLA provision
 - [ ] Cross-border indemnification for multi-regime data protection obligations is addressed
-  where the contract involves international data flows
+      where the contract involves international data flows
 
 ---
 
@@ -663,6 +682,7 @@ The confidentiality clause defines the obligation; indemnification (or a separat
 regime) determines the remedy.
 
 **Key variables:**
+
 - Is breach of confidentiality covered by the general indemnification clause? Or does the
   confidentiality clause have its own dedicated remedy (often injunctive relief + damages)?
 - Is confidentiality breach carved out from the general LOL cap?
@@ -672,14 +692,15 @@ regime) determines the remedy.
   owe confidentiality obligations)
 
 **Assessment criteria:**
+
 - [ ] Confidentiality breach is either: (a) covered by the general indemnification clause,
-  or (b) has a separate express remedy
+      or (b) has a separate express remedy
 - [ ] Confidentiality breach is carved out from the general LOL cap (market standard for
-  high-value or data-sensitive contracts)
+      high-value or data-sensitive contracts)
 - [ ] Losses covered include: direct losses from disclosure AND third-party claims arising
-  from the breach
+      from the breach
 - [ ] Trade secret misappropriation is addressed (particularly in US jurisdictions where
-  DTSA provides federal overlay) [VERIFY: Defend Trade Secrets Act 18 U.S.C. § 1836]
+      DTSA provides federal overlay) [VERIFY: Defend Trade Secrets Act 18 U.S.C. § 1836]
 - [ ] Confidentiality breach indemnification is mutual
 
 ---
@@ -691,25 +712,26 @@ regime) determines the remedy.
 Beyond data protection, contracts may involve indemnification for regulatory violations,
 governmental investigations, or compliance failures. Key contexts:
 
-| Context | Regulatory Category | Indemnification Considerations |
-|---------|-------------------|-------------------------------|
-| **Financial services** | SEC/FCA investigations, AML penalties, sanctions violations | Who pays investigation costs? Who bears penalty if conduct is attributable to counterparty? |
-| **Healthcare / life sciences** | FDA, TGA, MHRA enforcement; HIPAA penalties (US) | Regulatory allocation particularly important for contract research, manufacturing |
-| **Construction / infrastructure** | Building code violations, environmental fines, WHS penalties | Proportionate liability (AU); anti-indemnity statutes (US) |
-| **Employment / labor** | Workers' compensation, OSHA fines, unfair dismissal claims | Typically allocated to employing party; indemnification for contractor-related workforce claims |
-| **Anti-bribery / corruption** | FCPA (US), Bribery Act (UK), Criminal Code Act (AU) | Supply chain due diligence; who bears fine if third-party supplier is found in breach? |
+| Context                           | Regulatory Category                                          | Indemnification Considerations                                                                  |
+| --------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| **Financial services**            | SEC/FCA investigations, AML penalties, sanctions violations  | Who pays investigation costs? Who bears penalty if conduct is attributable to counterparty?     |
+| **Healthcare / life sciences**    | FDA, TGA, MHRA enforcement; HIPAA penalties (US)             | Regulatory allocation particularly important for contract research, manufacturing               |
+| **Construction / infrastructure** | Building code violations, environmental fines, WHS penalties | Proportionate liability (AU); anti-indemnity statutes (US)                                      |
+| **Employment / labor**            | Workers' compensation, OSHA fines, unfair dismissal claims   | Typically allocated to employing party; indemnification for contractor-related workforce claims |
+| **Anti-bribery / corruption**     | FCPA (US), Bribery Act (UK), Criminal Code Act (AU)          | Supply chain due diligence; who bears fine if third-party supplier is found in breach?          |
 
 **Assessment criteria:**
+
 - [ ] Regulatory claims covered by indemnification are specifically identified (not left
-  to inference from "any claims")
+      to inference from "any claims")
 - [ ] Allocation of regulatory investigation costs is stated
 - [ ] Allocation of resulting fines or penalties between the parties is stated
 - [ ] Anti-bribery / sanctions compliance obligations are cross-referenced
 - [ ] FCPA / Bribery Act / local equivalents are appropriately addressed for cross-border
-  contracts [JURISDICTION-SPECIFIC]
+      contracts [JURISDICTION-SPECIFIC]
 - [ ] Indemnification for regulatory fines does not purport to excuse the indemnifying
-  party from its own regulatory compliance obligations (indemnification allocates costs
-  between parties; it does not transfer regulatory responsibility to the regulator)
+      party from its own regulatory compliance obligations (indemnification allocates costs
+      between parties; it does not transfer regulatory responsibility to the regulator)
 
 ---
 
@@ -723,18 +745,19 @@ expire when the contract ends — before claims are discovered or filed.
 
 **Survival framework by claim type:**
 
-| Claim Type | Typical Survival Period | Rationale |
-|-----------|------------------------|-----------|
-| **General reps and warranties (M&A)** | 12–24 months post-closing | Discovery period for ordinary business representations |
-| **Fundamental reps (M&A)** | Indefinite / statute of limitations | Organization existence, authority, title, capitalization — no reason to cut off |
-| **Tax representations (M&A)** | Statute of limitations + 60–90 days | Tax authority assessment periods |
-| **IP infringement claims** | Term of the license / service agreement | IP claims arise during use |
-| **Data protection claims** | 3–5 years (or applicable regulatory limitation period) | GDPR limitation periods; regulatory investigation timelines |
-| **Fraud / intentional misconduct** | Indefinite (no cut-off) | Public policy prevents a party from contracting out of fraud liability with time limits |
-| **General indemnification (commercial contracts)** | 12–36 months post-termination | Aligned with limitation of actions in applicable jurisdiction |
-| **Environmental / property damage** | Long survival (10+ years) | Latent damage discovery |
+| Claim Type                                         | Typical Survival Period                                | Rationale                                                                               |
+| -------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| **General reps and warranties (M&A)**              | 12–24 months post-closing                              | Discovery period for ordinary business representations                                  |
+| **Fundamental reps (M&A)**                         | Indefinite / statute of limitations                    | Organization existence, authority, title, capitalization — no reason to cut off         |
+| **Tax representations (M&A)**                      | Statute of limitations + 60–90 days                    | Tax authority assessment periods                                                        |
+| **IP infringement claims**                         | Term of the license / service agreement                | IP claims arise during use                                                              |
+| **Data protection claims**                         | 3–5 years (or applicable regulatory limitation period) | GDPR limitation periods; regulatory investigation timelines                             |
+| **Fraud / intentional misconduct**                 | Indefinite (no cut-off)                                | Public policy prevents a party from contracting out of fraud liability with time limits |
+| **General indemnification (commercial contracts)** | 12–36 months post-termination                          | Aligned with limitation of actions in applicable jurisdiction                           |
+| **Environmental / property damage**                | Long survival (10+ years)                              | Latent damage discovery                                                                 |
 
 [JURISDICTION-SPECIFIC] Survival periods interact with statutes of limitations:
+
 - **US**: Limitation periods vary by state and claim type (contract: 4–6 years in most
   states; warranty: UCC 4 years for goods; longer for fraud) [VERIFY per state]
 - **England/Wales**: 6 years for simple contract claims; 12 years for claims under deed;
@@ -743,15 +766,16 @@ expire when the contract ends — before claims are discovered or filed.
   damage [VERIFY: Limitation Act per state]
 
 **Assessment criteria:**
+
 - [ ] Survival provision expressly states which obligations survive and for how long
 - [ ] General indemnification obligations have a stated survival period
 - [ ] IP indemnification survives at least for the term of the agreement
 - [ ] Data protection indemnification survives for the regulatory investigation period
 - [ ] Fraud and intentional misconduct indemnification survive indefinitely (or for the
-  statutory limitation period with discovery-based extension)
+      statutory limitation period with discovery-based extension)
 - [ ] Fundamental representations (M&A) survive indefinitely
 - [ ] Survival clause is not shorter than the applicable statute of limitations for the
-  most material claim types
+      most material claim types
 
 ---
 
@@ -765,13 +789,13 @@ litigation in commercial disputes.
 
 **Key interaction patterns:**
 
-| Pattern | Description | Risk |
-|---------|-------------|------|
-| **Indemnification inside the cap** | LOL clause applies to indemnification obligations; total recovery capped | Indemnitee may be left with uncovered losses if cap is inadequate |
-| **Indemnification outside the cap** | "Notwithstanding any other provision" language carves out indemnification from LOL cap | Indemnifying party faces potentially unlimited liability |
-| **Super-cap for indemnification** | Indemnification subject to a separate higher cap | Balances the two extremes; increasingly standard |
-| **Silent on interaction** | Neither clause addresses the other | Highest litigation risk — courts must interpret which governs; outcome varies by jurisdiction |
-| **LOL clause governs "any liability"** | Broad LOL cap language may inadvertently capture indemnification obligations | The "notwithstanding" carve-out for indemnification may be needed in the LOL clause |
+| Pattern                                | Description                                                                            | Risk                                                                                          |
+| -------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Indemnification inside the cap**     | LOL clause applies to indemnification obligations; total recovery capped               | Indemnitee may be left with uncovered losses if cap is inadequate                             |
+| **Indemnification outside the cap**    | "Notwithstanding any other provision" language carves out indemnification from LOL cap | Indemnifying party faces potentially unlimited liability                                      |
+| **Super-cap for indemnification**      | Indemnification subject to a separate higher cap                                       | Balances the two extremes; increasingly standard                                              |
+| **Silent on interaction**              | Neither clause addresses the other                                                     | Highest litigation risk — courts must interpret which governs; outcome varies by jurisdiction |
+| **LOL clause governs "any liability"** | Broad LOL cap language may inadvertently capture indemnification obligations           | The "notwithstanding" carve-out for indemnification may be needed in the LOL clause           |
 
 **Critical language patterns:**
 
@@ -783,17 +807,18 @@ litigation in commercial disputes.
   limitation of liability in Section X"**: explicit inclusion inside cap
 
 **Assessment criteria:**
+
 - [ ] The relationship between indemnification and the LOL cap is expressly stated
 - [ ] IP indemnification is clearly stated to be outside the general LOL cap (or inside
-  with a super-cap)
+      with a super-cap)
 - [ ] Data breach indemnification is clearly stated to be outside the general LOL cap
-  (or inside with a super-cap)
+      (or inside with a super-cap)
 - [ ] The LOL clause expressly carves out fraud and willful misconduct indemnification
-  from any cap (or these are never subject to a cap)
+      from any cap (or these are never subject to a cap)
 - [ ] There are no directly conflicting provisions between the indemnification clause
-  and the LOL clause
+      and the LOL clause
 - [ ] The LOL's consequential damages exclusion does not inadvertently sweep in
-  legitimate indemnification recoveries
+      legitimate indemnification recoveries
 
 ---
 
@@ -806,19 +831,19 @@ After completing all 10 dimensions, assign an overall classification:
 **All** of the following must be true:
 
 - [ ] Indemnification scope (first-party / third-party) is clear and appropriate for the
-  contract type
+      contract type
 - [ ] Defense obligation (or equivalent English/AU mechanism) is expressly stated
 - [ ] Settlement consent protection is present at reasonable standard ("not unreasonably
-  withheld")
+      withheld")
 - [ ] IP indemnification is present (for technology contracts) and carved out from the cap
 - [ ] Data protection indemnification is present and carved out from the cap (or subject
-  to appropriate super-cap)
+      to appropriate super-cap)
 - [ ] Confidentiality breach is covered by indemnification or express remedy
 - [ ] Fraud indemnification is uncapped (or no cap purports to apply to fraud)
 - [ ] Survival periods are appropriate for the claim types covered
 - [ ] LOL interaction is expressly stated (indemnification inside or outside the cap)
 - [ ] No mandatory statutory provision is violated (anti-indemnity statutes, proportionate
-  liability schemes)
+      liability schemes)
 - [ ] Indemnification structure is mutual OR asymmetry is commercially justified
 
 **Confidence required**: HIGH (0.80+)
@@ -912,6 +937,7 @@ Negotiation note: [Why this matters; how to frame the ask to the counterparty]
 **Standard Redline Library:**
 
 **Defense Obligation — Missing (Add):**
+
 ```
 Proposed: "Indemnifying Party shall, at its own expense, defend Indemnitee against any
 Third-Party Claim covered by the indemnification obligations in this Section, using counsel
@@ -931,6 +957,7 @@ that no admission of liability is made and no obligation imposed on Indemnitee w
 ```
 
 **IP Indemnification — Carve-Out from LOL Cap (Add "Notwithstanding"):**
+
 ```
 Proposed: "Notwithstanding any other provision of this Agreement, including any limitation
 of liability provisions, the Indemnifying Party's obligations under this Section [IP
@@ -943,6 +970,7 @@ the standard cap).
 ```
 
 **IP Indemnification Remedy Waterfall — Add:**
+
 ```
 Proposed: "If any Product or Service is, or in Vendor's reasonable opinion is likely to
 become, the subject of an infringement claim, Vendor shall, at its own expense and sole
@@ -957,6 +985,7 @@ mutual agreement on termination as last resort.
 ```
 
 **Survival Period — Extend to Cover Regulatory Investigation Period:**
+
 ```
 Proposed: "The indemnification obligations in this Section shall survive termination or
 expiration of this Agreement for a period of [3 / 5] years, except that obligations relating
@@ -969,6 +998,7 @@ Fallback: 2-year general survival + indefinite survival for fraud.
 ```
 
 **Tipping Basket — Clarify Mechanism (M&A):**
+
 ```
 Proposed: "Indemnitor shall not be required to make any payment pursuant to this Article [X]
 until the aggregate amount of all Losses for which indemnification is claimed under this
@@ -988,6 +1018,7 @@ Fallback: Convert tipping basket to deductible basket if tipping basket is not a
 Assign each finding a negotiation tier:
 
 **Tier 1 — Non-Negotiable (hold the line):**
+
 - Missing defense obligation in a contract with material third-party claim exposure
 - IP indemnification absent from technology contract
 - Anti-indemnity statute violation (regulatory void risk)
@@ -997,6 +1028,7 @@ Assign each finding a negotiation tier:
 - No survival provision on a contract covering data protection or IP obligations
 
 **Tier 2 — Material (strong preference; trade for equivalent):**
+
 - Defense obligation present but incomplete (no settlement consent protection)
 - IP indemnification inside general cap at inadequate level
 - Data breach indemnification inside general cap without super-cap
@@ -1005,6 +1037,7 @@ Assign each finding a negotiation tier:
 - M&A basket type unfavorable (deductible vs. tipping) — depending on deal dynamics
 
 **Tier 3 — Preferred (can concede with appropriate trade):**
+
 - IP remedy waterfall absent (indemnity present but no mitigation mechanism)
 - Minor basket amount optimization in M&A
 - Settlement consent at "sole discretion" where deal allows for it
@@ -1025,13 +1058,13 @@ the Glass Box YAML block at the end of every analysis.
 Run these 5 gates **silently** before delivering any output. If any gate fails, revise
 before delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, regulation, or established case | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **Format** | All citations follow a consistent, recognizable format for the jurisdiction | Fix format |
-| **Currency** | Every cited provision checked for amendments or repeal | Flag "[CHECK CURRENCY — may have been amended]" |
-| **Domain** | Analysis stays within the contract's governing law; no jurisdictional bleed | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated, not hidden | Add confidence qualifier |
+| Gate           | Rule                                                                        | Fail Action                                              |
+| -------------- | --------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, regulation, or established case | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
+| **Format**     | All citations follow a consistent, recognizable format for the jurisdiction | Fix format                                               |
+| **Currency**   | Every cited provision checked for amendments or repeal                      | Flag "[CHECK CURRENCY — may have been amended]"          |
+| **Domain**     | Analysis stays within the contract's governing law; no jurisdictional bleed | Remove or flag jurisdictional bleed                      |
+| **Confidence** | Uncertainty explicitly stated, not hidden                                   | Add confidence qualifier                                 |
 
 ---
 
@@ -1061,13 +1094,13 @@ trail with `self_interrogation: PASS` or `self_interrogation: REVISED`.
 
 For the overall classification and each material finding, assign a confidence level:
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Settled law, clear contractual provision, no ambiguity | State with confidence |
-| **High** | 0.80–0.94 | Strong basis, minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60–0.79 | Good arguments but reasonable minds could differ | State with reasoning and contra-indicators |
-| **Possible** | 0.40–0.59 | Genuinely uncertain, competing interpretations | Flag for counsel review with both sides |
-| **Unlikely** | 0.0–0.39 | Weak basis, speculative | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                                | Action                                                |
+| ------------ | --------- | ------------------------------------------------------ | ----------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Settled law, clear contractual provision, no ambiguity | State with confidence                                 |
+| **High**     | 0.80–0.94 | Strong basis, minor interpretation questions           | State with brief caveat                               |
+| **Probable** | 0.60–0.79 | Good arguments but reasonable minds could differ       | State with reasoning and contra-indicators            |
+| **Possible** | 0.40–0.59 | Genuinely uncertain, competing interpretations         | Flag for counsel review with both sides               |
+| **Unlikely** | 0.0–0.39  | Weak basis, speculative                                | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
 
 **Critical rule**: If overall confidence is below 0.60, escalate to counsel review regardless
 of GREEN/YELLOW classification. Never GREEN-classify with sub-0.60 confidence.
@@ -1300,6 +1333,7 @@ What NOT to do when reviewing or drafting indemnification clauses:
 ### With legalcode-mcp (preferred)
 
 Use legalcode-mcp in Step 4 to:
+
 - Retrieve current anti-indemnity statute text per applicable US state
 - Retrieve current proportionate liability scheme provisions per applicable Australian state
 - Retrieve current UCTA 1977 / Consumer Rights Act 2015 indemnification case law (UK)
@@ -1376,6 +1410,7 @@ Plain language. Business-focused. Include exposure estimates where quantifiable.
 ## Holistic Risk Assessment
 
 [Assessment of how the indemnification structure interacts with:
+
 - Limitation of liability clause (inside / outside / super-cap)
 - Insurance requirements
 - Data protection addendum / DPA
@@ -1412,21 +1447,22 @@ How to frame the ask to the counterparty. Trade-link suggestions.]
 When applying this skill to a specific jurisdiction, replace [JURISDICTION-SPECIFIC] markers
 with verified local content:
 
-| Jurisdiction | Key Constraint | Critical Issue | Primary Authority |
-|-------------|---------------|---------------|-------------------|
-| US (general) | No anti-indemnity statute outside construction | First-party vs. third-party scope; Cumis counsel | State-by-state — verify |
-| US (construction) | Anti-indemnity statutes in ~30 states | Sole negligence / partial negligence carve-outs | Cal. Civ. Code § 2782; Tex. Ins. Code § 151.102 [VERIFY] |
-| England/Wales | No duty to defend; UCTA 1977 reasonableness | Contra proferentem; proportionate liability adjustment | Caledonia North Sea [2002] UKHL 4; UCTA 1977 [VERIFY] |
-| Australia (Qld) | Civil Liability Act 2003 (Qld) — no contracting out | Proportionate liability cannot be re-apportioned by contract | Civil Liability Act 2003 (Qld) [VERIFY] |
-| Australia (NSW) | Civil Liability Act 2002 (NSW) s.3A — contracting permitted | Parties may provide for their own rights | Civil Liability Act 2002 (NSW) [VERIFY] |
-| Australia (Vic) | Position less clear | VERIFY current Victorian position | [VERIFY Victorian legislation] |
-| EU / UK (GDPR) | Art. 82 — data subject compensation rights; Art. 82(5) recourse | Cannot limit data subject rights; allocation between parties permitted | GDPR Arts. 82, 83 [VERIFY current EDPB guidance] |
+| Jurisdiction      | Key Constraint                                                  | Critical Issue                                                         | Primary Authority                                        |
+| ----------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------- |
+| US (general)      | No anti-indemnity statute outside construction                  | First-party vs. third-party scope; Cumis counsel                       | State-by-state — verify                                  |
+| US (construction) | Anti-indemnity statutes in ~30 states                           | Sole negligence / partial negligence carve-outs                        | Cal. Civ. Code § 2782; Tex. Ins. Code § 151.102 [VERIFY] |
+| England/Wales     | No duty to defend; UCTA 1977 reasonableness                     | Contra proferentem; proportionate liability adjustment                 | Caledonia North Sea [2002] UKHL 4; UCTA 1977 [VERIFY]    |
+| Australia (Qld)   | Civil Liability Act 2003 (Qld) — no contracting out             | Proportionate liability cannot be re-apportioned by contract           | Civil Liability Act 2003 (Qld) [VERIFY]                  |
+| Australia (NSW)   | Civil Liability Act 2002 (NSW) s.3A — contracting permitted     | Parties may provide for their own rights                               | Civil Liability Act 2002 (NSW) [VERIFY]                  |
+| Australia (Vic)   | Position less clear                                             | VERIFY current Victorian position                                      | [VERIFY Victorian legislation]                           |
+| EU / UK (GDPR)    | Art. 82 — data subject compensation rights; Art. 82(5) recourse | Cannot limit data subject rights; allocation between parties permitted | GDPR Arts. 82, 83 [VERIFY current EDPB guidance]         |
 
 ---
 
 ## Provenance
 
 Created by Legalcode (2026-03-01). Original synthesis based on:
+
 - Deep legal research on indemnification enforceability across US, UK, and Australian law
 - Analysis of structural patterns from `legalcode-limitation-of-liability-review`,
   `legalcode-contract-review`, and `legalcode-master-services-agreement` reference skills

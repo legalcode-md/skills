@@ -24,17 +24,20 @@ agent: general-purpose
 ## Purpose and Scope
 
 Use this skill to produce an external-facing privacy policy package that is:
+
 - Legally structured across multiple jurisdictions.
 - Operationally accurate to actual data handling.
 - Ready for legal review and publication.
 
 This skill does:
+
 - Build a jurisdiction-aware policy architecture.
 - Draft modular policy language by topic and legal regime.
 - Run policy-to-practice consistency checks.
 - Produce remediation tasks and publication readiness status.
 
 This skill does not:
+
 - Replace legal advice or attorney sign-off.
 - Guarantee regulator acceptance.
 - Fully resolve sector overlays (health, financial services, telecom, children) without
@@ -45,6 +48,7 @@ This skill does not:
 This skill is jurisdiction-agnostic and uses localization modules.
 
 Baseline legal anchors:
+
 - GDPR (EU) Regulation (EU) 2016/679, especially Articles 12-14.
   Source: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679
 - UK GDPR transparency guidance (ICO right-to-be-informed guidance).
@@ -56,6 +60,7 @@ Baseline legal anchors:
   Source: http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
 
 [JURISDICTION-SPECIFIC] Localize for:
+
 - EU member-state overlays and supervisory guidance.
 - UK Data Protection Act interactions and ICO updates.
 - US state-specific rights, appeals, and opt-out mechanics.
@@ -69,29 +74,35 @@ Use **CLARIFY** whenever answers materially change legal drafting.
 ### CLARIFY packet (required before drafting)
 
 1. **Entity and channels**
+
 - Options: Website only, SaaS web app, Mobile app, Multi-channel ecosystem.
 - Why it matters: Changes notice-at-collection surfaces and tracker disclosures.
 
 2. **User geography**
+
 - Options: Single jurisdiction, Multi-jurisdiction, Global unknown.
 - Why it matters: Determines module stack and rights matrix complexity.
 
 3. **Data profile**
+
 - Options: Basic account/contact only, Includes sensitive/special-category data,
   Includes children/minors data, Includes precise geolocation/biometrics.
 - Why it matters: Triggers stricter notice content and consent/governance language.
 
 4. **Monetization and sharing model**
+
 - Options: No third-party sharing, Processor/service-provider only,
   Advertising/measurement ecosystem, Data sale/share or cross-context advertising.
 - Why it matters: Controls opt-out disclosures and third-party detail requirements.
 
 5. **Automation and profiling**
+
 - Options: None, Personalization only, Eligibility/risk scoring,
   Significant automated decisioning.
 - Why it matters: May require enhanced transparency and rights language.
 
 6. **Policy posture**
+
 - Options: Conservative legal-first, Balanced legal/UX, Product-first concise.
 - Why it matters: Affects drafting style and detail density while preserving mandatory content.
 
@@ -102,6 +113,7 @@ If facts are incomplete, proceed with explicit assumptions tagged `[ASSUMPTION]`
 ### Step 1: Intake and data-practice inventory
 
 Collect:
+
 - Legal entity names and contact channels.
 - Products/channels covered by the policy.
 - Data categories collected and collection points.
@@ -115,6 +127,7 @@ Collect:
 
 Build the initial legal coverage map from user geography and business operations.
 Output a table with:
+
 - Jurisdiction.
 - Applies? (Yes/No/Uncertain).
 - Why it applies.
@@ -123,6 +136,7 @@ Output a table with:
 ### Step 3: Mandatory disclosure matrix
 
 Generate a obligations matrix by jurisdiction for:
+
 - Identity and contact details.
 - Processing purposes and legal basis.
 - Data categories and sources.
@@ -136,6 +150,7 @@ Generate a obligations matrix by jurisdiction for:
 ### Step 4: Draft policy architecture
 
 Create a consistent section structure using plain language:
+
 1. Who we are.
 2. Data we collect.
 3. How we use data.
@@ -155,12 +170,14 @@ Create a consistent section structure using plain language:
 Draft localized modules for each applicable regime.
 
 **CLARIFY** if one global policy vs geo-specific policy pages are both feasible:
+
 - Option A: Single global policy with addenda.
 - Option B: Region-specific policies with shared core.
 
 ### Step 6: Operational truthfulness and systems check
 
 Validate policy statements against real operations:
+
 - Consent/cookie banner behavior.
 - DSAR/consumer-request tooling.
 - Data retention execution.
@@ -172,6 +189,7 @@ Classify each mismatch as a finding and produce remediation tasks.
 ### Step 7: Rights workflow validation
 
 Ensure each promised right has a practical execution path:
+
 - Intake channel.
 - Verification logic.
 - SLA/timeline.
@@ -182,6 +200,7 @@ Flag policy promises with no operational support as `BLOCKED`.
 ### Step 8: Publication-readiness gate
 
 Run legal and quality gates, then classify publication state:
+
 - `READY_FOR_COUNSEL_REVIEW`
 - `PARTIAL_REMEDIATION_REQUIRED`
 - `BLOCKED_HIGH_RISK_GAPS`
@@ -189,6 +208,7 @@ Run legal and quality gates, then classify publication state:
 ### Step 9: Delivery package
 
 Deliver:
+
 - Draft privacy policy text.
 - Jurisdiction addenda.
 - Finding register with owners/deadlines.
@@ -199,19 +219,20 @@ Deliver:
 
 ### A. Required Notice Content Matrix (starter)
 
-| Topic | GDPR / UK GDPR | CCPA/CPRA | LGPD | Global baseline guidance |
-|---|---|---|---|---|
-| Controller identity | Required | Required in privacy policy context | Required | Always include legal entity + contact |
-| Purposes | Required | Required | Required | Use concrete purpose language |
-| Legal basis | Required | Not framed as legal-basis table | Basis/model disclosure expected in context | Include where legally required |
-| Rights | Required | Required | Required | Map to execution channel + timeline |
-| Transfers | Required when applicable | Disclose sharing categories/transfers where relevant | Cross-border transparency expected | Add transfer mechanism summary |
-| Retention | Required (period or criteria) | Required disclosures expected in policy design | Required by principle/ANPD posture | Avoid vague "as needed" only |
-| Automated decisions | Required when applicable | ADMT/risk-assessment trend is active `[CHECK CURRENCY]` | Include where relevant `[VERIFY]` | Add module for meaningful logic explanations |
+| Topic               | GDPR / UK GDPR                | CCPA/CPRA                                               | LGPD                                       | Global baseline guidance                     |
+| ------------------- | ----------------------------- | ------------------------------------------------------- | ------------------------------------------ | -------------------------------------------- |
+| Controller identity | Required                      | Required in privacy policy context                      | Required                                   | Always include legal entity + contact        |
+| Purposes            | Required                      | Required                                                | Required                                   | Use concrete purpose language                |
+| Legal basis         | Required                      | Not framed as legal-basis table                         | Basis/model disclosure expected in context | Include where legally required               |
+| Rights              | Required                      | Required                                                | Required                                   | Map to execution channel + timeline          |
+| Transfers           | Required when applicable      | Disclose sharing categories/transfers where relevant    | Cross-border transparency expected         | Add transfer mechanism summary               |
+| Retention           | Required (period or criteria) | Required disclosures expected in policy design          | Required by principle/ANPD posture         | Avoid vague "as needed" only                 |
+| Automated decisions | Required when applicable      | ADMT/risk-assessment trend is active `[CHECK CURRENCY]` | Include where relevant `[VERIFY]`          | Add module for meaningful logic explanations |
 
 ### B. Channel and surface mapping
 
 Require policy consistency across:
+
 - Web footer policy.
 - In-product notices.
 - Mobile app store privacy disclosures.
@@ -221,6 +242,7 @@ Require policy consistency across:
 ### C. Policy-to-practice integrity checks
 
 For each major statement, verify:
+
 - Source of truth system.
 - Responsible owner.
 - Last validation date.
@@ -231,11 +253,13 @@ For each major statement, verify:
 Use dual classification for drafting work.
 
 ### 1) Clause Materiality
+
 - `REQUIRED`: Must include for applicable regime or high-risk processing profile.
 - `RECOMMENDED`: Strong best practice; omission increases risk but may be acceptable short-term.
 - `OPTIONAL`: Contextual language not generally mandatory.
 
 ### 2) Implementation Readiness
+
 - `READY`: Drafted and operationally supported.
 - `PARTIAL`: Drafted but operational controls or evidence incomplete.
 - `BLOCKED`: Mandatory content missing or unsupported by operations.
@@ -244,20 +268,20 @@ Use dual classification for drafting work.
 
 Each finding must include:
 
-| Field | Requirement |
-|---|---|
-| Finding ID | Stable unique ID |
-| Jurisdiction | Specific legal regime |
-| Topic | Policy section/topic |
-| Materiality | REQUIRED / RECOMMENDED / OPTIONAL |
-| Readiness | READY / PARTIAL / BLOCKED |
-| Legal basis | Specific authority or `[VERIFY]` |
-| Gap description | Exact mismatch or omission |
-| Remediation action | Concrete task |
-| Owner | Function/team |
-| Deadline | Date or sprint target |
-| Evidence required | Artifact proving closure |
-| Confidence | Definite/High/Probable/Possible/Unlikely |
+| Field              | Requirement                              |
+| ------------------ | ---------------------------------------- |
+| Finding ID         | Stable unique ID                         |
+| Jurisdiction       | Specific legal regime                    |
+| Topic              | Policy section/topic                     |
+| Materiality        | REQUIRED / RECOMMENDED / OPTIONAL        |
+| Readiness          | READY / PARTIAL / BLOCKED                |
+| Legal basis        | Specific authority or `[VERIFY]`         |
+| Gap description    | Exact mismatch or omission               |
+| Remediation action | Concrete task                            |
+| Owner              | Function/team                            |
+| Deadline           | Date or sprint target                    |
+| Evidence required  | Artifact proving closure                 |
+| Confidence         | Definite/High/Probable/Possible/Unlikely |
 
 ## Prioritization Framework
 
@@ -287,13 +311,13 @@ If challenge succeeds, downgrade with explicit rationale. If not, keep blocker s
 
 ## Confidence Scoring
 
-| Level | Range | Meaning | Required Action |
-|---|---|---|---|
-| Definite | 0.95-1.00 | settled duty + verified facts | proceed with direct recommendation |
-| High | 0.80-0.94 | strong support, minor caveat | proceed with concise caveat |
-| Probable | 0.60-0.79 | defensible but fact-dependent | include contra-indicators |
-| Possible | 0.40-0.59 | uncertain interpretation | escalate for counsel review |
-| Unlikely | 0.00-0.39 | weak support/speculative | avoid assertion, mark `[UNCERTAIN]` |
+| Level    | Range     | Meaning                       | Required Action                     |
+| -------- | --------- | ----------------------------- | ----------------------------------- |
+| Definite | 0.95-1.00 | settled duty + verified facts | proceed with direct recommendation  |
+| High     | 0.80-0.94 | strong support, minor caveat  | proceed with concise caveat         |
+| Probable | 0.60-0.79 | defensible but fact-dependent | include contra-indicators           |
+| Possible | 0.40-0.59 | uncertain interpretation      | escalate for counsel review         |
+| Unlikely | 0.00-0.39 | weak support/speculative      | avoid assertion, mark `[UNCERTAIN]` |
 
 ## Glass Box Audit Trail
 
@@ -350,63 +374,88 @@ Avoid these mistakes when drafting privacy policies:
 Preferred: use **legalcode-mcp** to verify current statutes, guidance, and enforcement context.
 
 If legalcode-mcp is connected:
+
 - Build a jurisdiction-specific legal-reference file first.
 - Validate article/section citations before final output.
 - Mark citations as VERIFIED in the audit trail.
 
 If legalcode-mcp is not connected:
+
 - Proceed with high-confidence primary public sources.
 - Mark uncertain items with `[VERIFY]` or `[CHECK CURRENCY]`.
 - Explicitly state that final legal verification is required.
 
 ## Output Format Template
 
-```markdown
+````markdown
 # Privacy Policy Draft Package
 
 ## A. Scope and Assumptions
+
 - Entity:
 - Channels:
 - Jurisdictions:
 - Assumptions:
 
 ## B. Draft Privacy Policy
+
 ### 1. Who We Are
+
 ### 2. Data We Collect
+
 ### 3. How We Use Data
+
 ### 4. Legal Bases (where required)
+
 ### 5. Sharing and Disclosure
+
 ### 6. International Transfers
+
 ### 7. Data Retention
+
 ### 8. Your Rights and Choices
+
 ### 9. Cookies and Similar Technologies
+
 ### 10. Security Overview
+
 ### 11. Children/Minors
+
 ### 12. Contact Us
+
 ### 13. Jurisdiction-Specific Addenda
 
 ## C. Jurisdiction Matrix
+
 | Jurisdiction | Applies | Key Modules | Notes |
-|---|---|---|---|
+| ------------ | ------- | ----------- | ----- |
 
 ## D. Finding Register
-| ID | Jurisdiction | Topic | Materiality | Readiness | Gap | Action | Owner | Deadline | Confidence |
-|---|---|---|---|---|---|---|---|---|---|
+
+| ID  | Jurisdiction | Topic | Materiality | Readiness | Gap | Action | Owner | Deadline | Confidence |
+| --- | ------------ | ----- | ----------- | --------- | --- | ------ | ----- | -------- | ---------- |
 
 ## E. Priority Remediation Plan
+
 ### Tier 1 (Publish Blockers)
+
 ### Tier 2 (Pre-Launch)
+
 ### Tier 3 (Hardening)
 
 ## F. Publication Readiness
+
 - Status: READY_FOR_COUNSEL_REVIEW / PARTIAL_REMEDIATION_REQUIRED / BLOCKED_HIGH_RISK_GAPS
 - Key blockers:
 - Counsel review focus:
 
 ## G. Glass Box Audit
+
 ```yaml
 [glass_box template]
 ```
+````
+
 ```
 
 ## Localization Notes
@@ -424,3 +473,4 @@ Enhanced using:
 - Primary-source research file at `/tmp/legalcode-enhancement-research.md`.
 - In-repo reference patterns from `legalcode-contract-review`, `legalcode-dpia-generator`,
   and `legalcode-breach-severity-assessment`.
+```

@@ -16,15 +16,18 @@ disable-model-invocation: true
 ## Purpose
 
 This skill tells Codex how to run a case timeline locally:
+
 - inventory and normalize evidence files
 - extract events and obligations into a stable schema
 - preserve contradictions instead of flattening them
 - render a portable HTML chronology from JSON
 
 Use the paired legal skill at:
+
 - `skills/general/litigation/legalcode-case-timeline-builder/SKILL.md`
 
 Use this Codex skill when the user wants:
+
 - an implementation plan
 - a local prototype or script
 - a corpus run over folders in the workspace
@@ -121,6 +124,7 @@ Use `scripts/case-timeline-report/schema.md` as the canonical output contract.
 Use when `claude` exists and the user wants low-cost extraction at scale.
 
 Pattern:
+
 1. Codex inventories and converts files.
 2. Codex writes or feeds stable extraction prompts.
 3. `claude -p --model haiku` handles first-pass extraction.
@@ -130,11 +134,13 @@ Pattern:
 ### Path B: Codex-Native
 
 Use when:
+
 - `claude` CLI is unavailable
 - the corpus is small
 - the user wants a pure Codex flow
 
 Pattern:
+
 1. Codex inventories and converts files.
 2. Codex uses sub-agents only if the user explicitly asked for agent-team work.
 3. Codex validates the returned event and obligation JSON.
@@ -145,6 +151,7 @@ Pattern:
 Use when the user wants the skill and architecture without executing a corpus run.
 
 Outputs:
+
 - skill files
 - schema
 - report generator
@@ -156,16 +163,19 @@ Outputs:
 Keep `timeline-data.json` as the single source of truth.
 
 Required top-level sections:
+
 - `meta`
 - `events`
 - `obligations`
 
 Recommended sections:
+
 - `entities`
 - `contradictions`
 - `gaps`
 
 Each event should carry:
+
 - date
 - date precision
 - evidence type
@@ -179,13 +189,13 @@ Do not let summary prose exist only inside the HTML renderer.
 
 If the user explicitly wants agent-team execution, use disjoint roles:
 
-| Agent | Responsibility | Output |
-|------|----------------|--------|
-| inventory agent | enumerate files, hash duplicates, classify types | manifest fragment |
-| conversion agent | convert documents into reviewable text | normalized files |
-| extraction agent | extract events and obligations for assigned files | extraction JSON |
-| verification agent | review weak or conflicting events | verified JSON |
-| synthesis agent | produce matter-level summaries and issues | summary markdown |
+| Agent              | Responsibility                                    | Output            |
+| ------------------ | ------------------------------------------------- | ----------------- |
+| inventory agent    | enumerate files, hash duplicates, classify types  | manifest fragment |
+| conversion agent   | convert documents into reviewable text            | normalized files  |
+| extraction agent   | extract events and obligations for assigned files | extraction JSON   |
+| verification agent | review weak or conflicting events                 | verified JSON     |
+| synthesis agent    | produce matter-level summaries and issues         | summary markdown  |
 
 Do not duplicate ownership. Each agent should own a bounded write surface or result set.
 
@@ -194,6 +204,7 @@ Do not duplicate ownership. Each agent should own a bounded write surface or res
 ### Step 1: Inventory
 
 Build a manifest with:
+
 - document id
 - absolute path
 - extension
@@ -206,6 +217,7 @@ Prefer `rg --files`, `find`, and local hashing tools. Keep discovery determinist
 ### Step 2: Incremental extraction
 
 Before launching fresh extraction:
+
 - inspect the run directory for prior extraction artifacts
 - skip unchanged documents when the mapping is deterministic
 
@@ -214,6 +226,7 @@ This prevents duplicate work on reruns.
 ### Step 3: Conversion
 
 Use deterministic converters first:
+
 - `pdftotext`
 - `pandoc`
 - `markitdown`
@@ -224,6 +237,7 @@ Persist converted text before asking a model to reason about it.
 ### Step 4: Extraction
 
 Per document, extract:
+
 - events
 - obligations
 - people and organizations
@@ -235,6 +249,7 @@ Return parserable JSON whenever possible.
 ### Step 5: Consolidation
 
 Merge into canonical JSON with these rules:
+
 - sort by date
 - preserve precision markers
 - normalize category and issue labels
@@ -244,6 +259,7 @@ Merge into canonical JSON with these rules:
 ### Step 6: Verification
 
 Escalate:
+
 - low-confidence events
 - missing dates
 - unsupported summaries
@@ -268,6 +284,7 @@ The renderer is local and self-contained. No external assets or network requests
 ## HTML Framework Expectations
 
 The renderer should preserve the core UX patterns from the prototype:
+
 - timeline rail
 - filter chips
 - contradiction visibility
@@ -280,6 +297,7 @@ Do not treat the HTML as an editable source artifact. It is a render target.
 ## Guardrails
 
 Do not:
+
 - embed data manually in HTML and drift from JSON
 - overwrite contradictions to make the story cleaner
 - omit page or document references for material points when available
@@ -289,6 +307,7 @@ Do not:
 ## Deliverables
 
 When the task is complete, report:
+
 - execution path used
 - output paths
 - corpus size

@@ -1,7 +1,17 @@
 ---
 title: Cloud Service Agreement — United Kingdom (UK CRA + DMCCA 2024 + DUAA 2025)
 jurisdictions: [uk, gb]
-statutes: [UK-CRA-2015, DMCCA-2024, DUAA-2025, UK-GDPR, DPA-2018, EA-2010, MSA-2015, BSA-1985]
+statutes:
+  [
+    UK-CRA-2015,
+    DMCCA-2024,
+    DUAA-2025,
+    UK-GDPR,
+    DPA-2018,
+    EA-2010,
+    MSA-2015,
+    BSA-1985,
+  ]
 audience: [B2B]
 license: MIT
 last_updated: 2026-04-28
@@ -355,7 +365,7 @@ In short: {{Vendor Short Name}} will not use Customer Data to train its general-
 
 **15.6 UK AI regulatory framework.** The UK does not, at the date of this Agreement, have a single cross-sectoral **AI Act** equivalent to the EU AI Act `[VERIFY current state — including any AI Bill before Parliament]`. AI is regulated through a **pro-innovation, principles-based** framework (DSIT 2023 white paper) implemented by existing regulators (ICO, FCA, CMA, MHRA, Ofcom, HSE) within their statutory remits. {{Vendor Short Name}} will engage in good faith with any future statutory framework.
 
-**15.7 ICO guidance on AI.** {{Vendor Short Name}} will have regard to the ICO's *Guidance on AI and data protection* and the ICO–Alan Turing Institute *Explaining decisions made with AI* guidance, including accountability, fairness, transparency, accuracy, and security.
+**15.7 ICO guidance on AI.** {{Vendor Short Name}} will have regard to the ICO's _Guidance on AI and data protection_ and the ICO–Alan Turing Institute _Explaining decisions made with AI_ guidance, including accountability, fairness, transparency, accuracy, and security.
 
 **15.8 Text and data mining (TDM).** **CDPA section 29A** TDM exception is limited to **non-commercial research**; commercial TDM requires a licence or alternative lawful basis. Neither party will rely on s.29A to mine the other's content commercially `[VERIFY any DUAA / commercial-TDM amendments to CDPA s.29A]`. {{Customer Short Name}} warrants that third-party content it submits is owned, licensed, or otherwise covered by a lawful basis.
 
@@ -573,7 +583,7 @@ The AUP (`legalcode-acceptable-use-policy` or §7 of `legalcode-tos`) records th
 
 **Secondary legislation:** SI 2018/506 (NIS Regulations 2018); SI 2018/597 (Trade Secrets); SI 2008/3231 (Export Control Order 2008); SI 2016/696 (eIDAS-equivalent); SI 1997/3032 (Database Rights).
 
-**Regulator guidance:** ICO (https://ico.org.uk) — *Guidance on AI and data protection*, *International Transfers*; CMA (https://www.gov.uk/government/organisations/competition-and-markets-authority); Ofcom Online Safety (https://www.ofcom.org.uk/online-safety); NCSC (https://www.ncsc.gov.uk) — *Cyber Essentials*, *Cyber Assessment Framework*; DSIT (2023) *A pro-innovation approach to AI regulation*; OFSI consolidated sanctions list (https://www.gov.uk/government/publications/financial-sanctions-consolidated-list-of-targets).
+**Regulator guidance:** ICO (https://ico.org.uk) — _Guidance on AI and data protection_, _International Transfers_; CMA (https://www.gov.uk/government/organisations/competition-and-markets-authority); Ofcom Online Safety (https://www.ofcom.org.uk/online-safety); NCSC (https://www.ncsc.gov.uk) — _Cyber Essentials_, _Cyber Assessment Framework_; DSIT (2023) _A pro-innovation approach to AI regulation_; OFSI consolidated sanctions list (https://www.gov.uk/government/publications/financial-sanctions-consolidated-list-of-targets).
 
 ---
 

@@ -17,7 +17,7 @@ These Terms of Service (the "Terms") form a binding agreement between Company an
 
 ## 1. Plain-language summary
 
-*Plain-language: A friendly overview. The operative language is in Sections 2 through 20 and the Annexes; where this summary and a later section disagree, the later section controls.*
+_Plain-language: A friendly overview. The operative language is in Sections 2 through 20 and the Annexes; where this summary and a later section disagree, the later section controls._
 
 These Terms describe what you can expect from {{Service Name}} and what we expect from you. They cover accounts, subscription billing, content ownership, acceptable use, our liability, and dispute handling.
 
@@ -33,7 +33,7 @@ We are not your lawyer; these Terms are not legal advice.
 
 ## 2. Acceptance & eligibility
 
-*Plain-language: You must be old enough and legally able to agree, you must accept before using the Service, and you must not be in a country we cannot serve.*
+_Plain-language: You must be old enough and legally able to agree, you must accept before using the Service, and you must not be in a country we cannot serve._
 
 By clicking "I agree," creating an account, or accessing the Service, you represent that (a) you have read, understood, and accept these Terms; (b) you are at least {{Minimum Age}} years old, or the age of digital consent in your jurisdiction, whichever is greater; (c) you have legal capacity to contract; and (d) if you accept on behalf of an entity, you have authority to bind that entity, in which case "you" and "Customer" refer to that entity.
 
@@ -49,7 +49,7 @@ OPTIONAL — only if Company restricts access by region: The Service is offered 
 
 ## 3. Definitions
 
-*Plain-language: Capitalized words have specific meanings, listed here.*
+_Plain-language: Capitalized words have specific meanings, listed here._
 
 - **"Account"** — the credentialed environment through which a User or Customer accesses the Service.
 - **"AUP"** — the Acceptable Use Policy in Annex A, as updated.
@@ -70,7 +70,7 @@ Other terms are defined where they first appear.
 
 ## 4. Account registration & security
 
-*Plain-language: Keep your credentials safe, give us accurate information, and tell us if something looks wrong.*
+_Plain-language: Keep your credentials safe, give us accurate information, and tell us if something looks wrong._
 
 To register, you shall provide a valid email, a password meeting published complexity requirements, and any other information requested, and shall keep that information accurate. Company may verify and may decline registration that appears inaccurate, fraudulent, or duplicative.
 
@@ -88,7 +88,7 @@ OPTIONAL — only if Company supports SSO: Where you sign in via a third-party i
 
 ## 5. License & access rights
 
-*Plain-language: We grant limited permission to use the Service for its intended purpose. We keep all other rights.*
+_Plain-language: We grant limited permission to use the Service for its intended purpose. We keep all other rights._
 
 Subject to your compliance with these Terms and timely payment of Fees, Company grants you a revocable, non-exclusive, non-transferable, non-sublicensable, limited license to access and use the Service during the Term solely for its intended purpose and within the parameters of your plan.
 
@@ -102,7 +102,7 @@ OPTIONAL — only if Company offers a downloadable client: The license extends t
 
 ## 6. User-generated content (UGC)
 
-*Plain-language: You own what you upload. You give us just enough permission to run the Service, and you promise the content is yours to share.*
+_Plain-language: You own what you upload. You give us just enough permission to run the Service, and you promise the content is yours to share._
 
 As between you and Company, you retain all right, title, and interest in your UGC; these Terms do not transfer ownership.
 
@@ -120,7 +120,7 @@ Company has no general obligation to monitor UGC but may review and may remove, 
 
 ## 7. Acceptable use
 
-*Plain-language: Use the Service responsibly. The full rules are in Annex A.*
+_Plain-language: Use the Service responsibly. The full rules are in Annex A._
 
 You shall use the Service only in accordance with these Terms, the Documentation, and the AUP in Annex A, which is incorporated by reference and may be updated under Section 18.
 
@@ -134,7 +134,7 @@ OPTIONAL — only if Company publishes a research-and-evaluation policy: Good-fa
 
 ## 8. Intellectual property (platform IP)
 
-*Plain-language: The Service, our software, our brand, and our documentation belong to us. If you give us feedback, we can use it.*
+_Plain-language: The Service, our software, our brand, and our documentation belong to us. If you give us feedback, we can use it._
 
 The Service — including all software, code, interfaces, databases, designs, models, weights (where applicable), Documentation, and all related IP rights — remains the exclusive property of Company and its licensors. Company's name, logos, and brand assets are Company trademarks; you shall not use them without prior written consent, except as permitted at {{Brand Guidelines URL}}.
 
@@ -146,7 +146,7 @@ Nothing transfers Customer's pre-existing IP to Company. Company may collect and
 
 ## 9. Third-party services & links
 
-*Plain-language: We may connect to other companies' tools or link to their websites. We are not responsible for those companies.*
+_Plain-language: We may connect to other companies' tools or link to their websites. We are not responsible for those companies._
 
 The Service may interoperate with, link to, or display content from third-party services or websites ("Third-Party Services"). Your use of any Third-Party Service is governed by that provider's terms and privacy notice; Company is not a party and is not responsible for its availability, accuracy, content, security, or performance.
 
@@ -158,7 +158,7 @@ OPTIONAL — only if Company resells third-party features under a single SKU: Wh
 
 ## 10. Subscription, billing, auto-renewal, refunds
 
-*Plain-language: Paid plans renew automatically unless you cancel. We will remind you before each renewal, and you can cancel from your Account.*
+_Plain-language: Paid plans renew automatically unless you cancel. We will remind you before each renewal, and you can cancel from your Account._
 
 The Service is offered on a subscription basis with the term ("Subscription Term") set in your plan or Order Form, typically {{Subscription Term}}. Fees are stated in {{Currency}} unless an Order Form provides otherwise. Except where prohibited by law, Fees are non-refundable once paid, save as stated below or in {{Refund Policy URL}}.
 
@@ -184,7 +184,7 @@ OPTIONAL — only if Company offers usage-based billing: Usage-based Fees are ca
 
 ## 11. Trials, free tier & beta
 
-*Plain-language: Free trials, free plans, and beta features are offered as-is, may be discontinued, and may have stricter limits.*
+_Plain-language: Free trials, free plans, and beta features are offered as-is, may be discontinued, and may have stricter limits._
 
 Company may offer the Service, or specific features, on a trial, free-tier, or beta basis ("Trial/Beta Offering"). Trial/Beta Offerings are provided "as is" and "as available," without representation, warranty, or service-level commitment, and may be modified, suspended, or discontinued at any time without liability.
 
@@ -198,7 +198,7 @@ Beta features may expose Company's unreleased products. You shall treat any non-
 
 ## 12. Term, suspension, termination
 
-*Plain-language: You can stop using the Service whenever you want. We can suspend or close an account if you break the rules. Some clauses survive termination.*
+_Plain-language: You can stop using the Service whenever you want. We can suspend or close an account if you break the rules. Some clauses survive termination._
 
 These Terms apply from the Effective Date until terminated (the "Term").
 
@@ -218,7 +218,7 @@ These Terms apply from the Effective Date until terminated (the "Term").
 
 ## 13. Disclaimers (warranties)
 
-*Plain-language: We try hard to deliver a good Service, but we cannot guarantee it will be perfect. Three drafting options follow; pick the one that fits your risk profile and consumer law.*
+_Plain-language: We try hard to deliver a good Service, but we cannot guarantee it will be perfect. Three drafting options follow; pick the one that fits your risk profile and consumer law._
 
 **Platform-favorable:** TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITH ALL FAULTS, AND COMPANY AND ITS SUPPLIERS DISCLAIM ALL REPRESENTATIONS, WARRANTIES, AND CONDITIONS OF ANY KIND, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING ANY WARRANTY OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, NON-INFRINGEMENT, TITLE, UNINTERRUPTED OR ERROR-FREE OPERATION, OR FREEDOM FROM HARMFUL COMPONENTS. COMPANY DOES NOT WARRANT THAT DEFECTS WILL BE CORRECTED OR THAT OUTPUTS WILL BE ACCURATE OR RELIABLE.
 
@@ -232,7 +232,7 @@ These Terms apply from the Effective Date until terminated (the "Term").
 
 ## 14. Limitation of liability
 
-*Plain-language: We cap how much we pay if something goes wrong, and exclude certain indirect losses. Three drafting options follow.*
+_Plain-language: We cap how much we pay if something goes wrong, and exclude certain indirect losses. Three drafting options follow._
 
 **Platform-favorable:** TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, COMPANY AND ITS AFFILIATES SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOST PROFITS, REVENUE, GOODWILL, DATA, OR BUSINESS INTERRUPTION, REGARDLESS OF THEORY AND EVEN IF ADVISED OF THE POSSIBILITY. COMPANY'S TOTAL AGGREGATE LIABILITY SHALL NOT EXCEED THE LESSER OF (A) FEES YOU PAID IN THE THREE (3) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM, OR (B) USD ONE HUNDRED.
 
@@ -246,7 +246,7 @@ These Terms apply from the Effective Date until terminated (the "Term").
 
 ## 15. Indemnification
 
-*Plain-language: Each party covers certain outside claims against the other. Three drafting options follow.*
+_Plain-language: Each party covers certain outside claims against the other. Three drafting options follow._
 
 **Platform-favorable:** You shall defend, indemnify, and hold harmless Company and its affiliates, officers, directors, employees, and agents from any third-party claim, demand, loss, or expense (including reasonable attorneys' fees) arising out of or related to (a) your UGC; (b) your breach of these Terms or the AUP; (c) your violation of applicable law in connection with the Service; (d) your infringement of any third-party right; or (e) any dispute between you and another User. Company shall provide prompt Notice and reasonable cooperation at your expense; you shall not settle a claim imposing a non-monetary obligation on Company without Company's prior written consent.
 
@@ -254,17 +254,17 @@ These Terms apply from the Effective Date until terminated (the "Term").
 
 **Market-standard compromise (recommended default):**
 
-*By Customer.* Customer shall defend, indemnify, and hold harmless Company from third-party claims arising out of (a) Customer's UGC, (b) Customer's breach of these Terms or the AUP, or (c) Customer's violation of applicable law in connection with the Service.
+_By Customer._ Customer shall defend, indemnify, and hold harmless Company from third-party claims arising out of (a) Customer's UGC, (b) Customer's breach of these Terms or the AUP, or (c) Customer's violation of applicable law in connection with the Service.
 
-*By Company.* Company shall defend, indemnify, and hold harmless Customer from third-party claims alleging that the Service, when used in accordance with these Terms and the Documentation, infringes a copyright, registered trademark, or trade secret. Company's obligation does not apply to claims arising from (i) UGC, (ii) modifications by anyone other than Company, (iii) combination with items not provided by Company where the claim would have been avoided absent the combination, or (iv) continued use after Notice and the availability of a non-infringing alternative.
+_By Company._ Company shall defend, indemnify, and hold harmless Customer from third-party claims alleging that the Service, when used in accordance with these Terms and the Documentation, infringes a copyright, registered trademark, or trade secret. Company's obligation does not apply to claims arising from (i) UGC, (ii) modifications by anyone other than Company, (iii) combination with items not provided by Company where the claim would have been avoided absent the combination, or (iv) continued use after Notice and the availability of a non-infringing alternative.
 
-*Procedure.* The indemnified party shall (1) give prompt Notice; (2) tender sole control of defense and settlement to the indemnifying party, provided that party shall not settle a claim imposing a non-monetary obligation on the indemnified party without prior written consent (not unreasonably withheld); and (3) provide reasonable cooperation at the indemnifying party's expense. The indemnified party may participate at its own expense with counsel of its choice. This Section 15 is each party's exclusive remedy for third-party IP claims, except as Section 14 carve-outs apply.
+_Procedure._ The indemnified party shall (1) give prompt Notice; (2) tender sole control of defense and settlement to the indemnifying party, provided that party shall not settle a claim imposing a non-monetary obligation on the indemnified party without prior written consent (not unreasonably withheld); and (3) provide reasonable cooperation at the indemnifying party's expense. The indemnified party may participate at its own expense with counsel of its choice. This Section 15 is each party's exclusive remedy for third-party IP claims, except as Section 14 carve-outs apply.
 
 ---
 
 ## 16. Dispute resolution
 
-*Plain-language: If we disagree, we try to talk it out first. If that fails, we use a defined process. Consumers in some places have stronger non-waivable rights we do not try to remove. Three options follow; the third is the recommended default.*
+_Plain-language: If we disagree, we try to talk it out first. If that fails, we use a defined process. Consumers in some places have stronger non-waivable rights we do not try to remove. Three options follow; the third is the recommended default._
 
 **Step 1 — Informal resolution (applies to all variants).** Before commencing any formal proceeding, the complaining party shall send a Notice describing the dispute and requested relief to {{Legal Notice Email}}. The parties shall negotiate in good faith for at least {{Informal Resolution Days}} days before escalating.
 
@@ -285,7 +285,7 @@ Either party may seek interim or injunctive relief from a court without waiving 
 
 ## 17. Governing law & jurisdiction
 
-*Plain-language: One specific law applies and disputes go to specific courts, except where consumer-protection law gives you stronger local rights.*
+_Plain-language: One specific law applies and disputes go to specific courts, except where consumer-protection law gives you stronger local rights._
 
 These Terms, and any non-contractual obligation arising in connection with them, are governed by the laws of {{Governing Law}}, without regard to conflict-of-laws principles. The CISG does not apply.
 
@@ -299,7 +299,7 @@ Subject to Section 16 and to any non-waivable consumer right, the courts of {{Fo
 
 ## 18. Changes to these Terms
 
-*Plain-language: We may update these Terms. For important changes we tell you in advance and ask you to accept; small fixes take effect when posted.*
+_Plain-language: We may update these Terms. For important changes we tell you in advance and ask you to accept; small fixes take effect when posted._
 
 Company may update these Terms; the current version is at {{Terms URL}}.
 
@@ -313,7 +313,7 @@ Company may update these Terms; the current version is at {{Terms URL}}.
 
 ## 19. Notices & communications
 
-*Plain-language: How we send official messages, and how to keep your contact information up to date.*
+_Plain-language: How we send official messages, and how to keep your contact information up to date._
 
 Notices to you are given when sent to the email address on your Account, when posted as an in-product banner you would reasonably see in normal use, or, where Company has your postal address, when delivered by reputable courier or registered mail. You shall keep your registered email current; Notices sent to an out-of-date address you failed to update remain effective.
 
@@ -327,7 +327,7 @@ OPTIONAL — only if Company offers SMS notifications: Where you opted in to SMS
 
 ## 20. Miscellaneous
 
-*Plain-language: Boilerplate that ties up loose ends.*
+_Plain-language: Boilerplate that ties up loose ends._
 
 **Entire agreement.** These Terms (with the AUP, the privacy notice at {{Privacy Policy URL}}, any Order Form, and any signed addenda) are the entire agreement regarding the Service and supersede prior agreements on the subject.
 
@@ -361,7 +361,7 @@ OPTIONAL — only if Company offers SMS notifications: Where you opted in to SMS
 
 # Annex A — Acceptable Use Policy
 
-*Plain-language: The rules that apply to everything you do with the Service. Breaking them can lead to suspension or termination.*
+_Plain-language: The rules that apply to everything you do with the Service. Breaking them can lead to suspension or termination._
 
 This AUP forms part of the Terms. Capitalized terms have the meanings in Section 3.
 
@@ -381,7 +381,7 @@ This AUP forms part of the Terms. Capitalized terms have the meanings in Section
 
 # Annex B — Notice-and-takedown procedure (jurisdiction-neutral skeleton)
 
-*Plain-language: How to tell us about content you believe infringes your rights or breaks the law, and how the User who posted it can respond.*
+_Plain-language: How to tell us about content you believe infringes your rights or breaks the law, and how the User who posted it can respond._
 
 Where local law (for example, the U.S. DMCA, the EU Digital Services Act, or comparable regimes) prescribes a specific notice format or timeline, Company shall comply with the stricter rule.
 
@@ -405,7 +405,7 @@ Where local law (for example, the U.S. DMCA, the EU Digital Services Act, or com
 
 # Annex C — Subscription, billing & auto-renewal disclosures
 
-*Plain-language: A consolidated view of how subscriptions, renewals, cancellations, and refunds work on the Service.*
+_Plain-language: A consolidated view of how subscriptions, renewals, cancellations, and refunds work on the Service._
 
 Where a specific rule (U.S. ROSCA and FTC "click-to-cancel" rule, California ARL, EU Consumer Rights Directive, UK DMCC Act, or comparable national laws) imposes a stricter requirement, that rule prevails for affected Users.
 

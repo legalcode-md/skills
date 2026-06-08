@@ -1,7 +1,17 @@
 ---
 title: Cloud Service Agreement — Iceland (Lög nr. 7/1936 + EEA-imported DSA/Data Act/AI Act)
 jurisdictions: [is]
-statutes: [Lög-7/1936, Lög-16/2016, Lög-30/2002, Lög-90/2018, Lög-70/2022, AI-Act-via-EEA, Data-Act-via-EEA, NIS2-via-EEA]
+statutes:
+  [
+    Lög-7/1936,
+    Lög-16/2016,
+    Lög-30/2002,
+    Lög-90/2018,
+    Lög-70/2022,
+    AI-Act-via-EEA,
+    Data-Act-via-EEA,
+    NIS2-via-EEA,
+  ]
 supervisory_authority: Persónuvernd / Neytendastofa
 audience: [B2B]
 license: MIT
@@ -122,13 +132,13 @@ This section explains who owns the Customer's data, how the Vendor may use it, a
 
 6.4 **Data portability and switching (Data Act).** Subject to verification of the EEA Joint Committee Decision incorporating **Regulation (EU) 2023/2854 (the Data Act)** into the EEA Agreement and of Iceland-specific transposition `[VERIFY EEA Joint Committee Decision and IS transposition]`, the Vendor shall:
 
-  (a) make the Customer Data available to the Customer in a structured, commonly used, and machine-readable format on request during the Subscription Term and for the export period set out in §6.5;
+(a) make the Customer Data available to the Customer in a structured, commonly used, and machine-readable format on request during the Subscription Term and for the export period set out in §6.5;
 
-  (b) facilitate the Customer's switch to another provider of an equivalent service, including by providing reasonable cooperation and the technical interfaces and metadata necessary for switching, consistent with **Articles 23 to 25 of the Data Act**;
+(b) facilitate the Customer's switch to another provider of an equivalent service, including by providing reasonable cooperation and the technical interfaces and metadata necessary for switching, consistent with **Articles 23 to 25 of the Data Act**;
 
-  (c) not impose unreasonable contractual, technical, or commercial obstacles to switching; and
+(c) not impose unreasonable contractual, technical, or commercial obstacles to switching; and
 
-  (d) not charge switching fees beyond those expressly permitted by the Data Act and only for the period during which such fees remain permitted.
+(d) not charge switching fees beyond those expressly permitted by the Data Act and only for the period during which such fees remain permitted.
 
 6.5 **Export and deletion at end of Subscription Term.** During the Subscription Term and for `{{Export Window — default 30 days}}` after expiry or termination, the Vendor shall make the Customer Data available for export in the format described in Exhibit A. After that period, the Vendor shall delete the Customer Data within `{{Deletion Window — default 90 days}}`, except where retention is required by law, by Exhibit C, or for back-up rotation that is itself subject to deletion.
 
@@ -278,15 +288,15 @@ This section says how AI features in the Service work, who owns AI Output, and t
 
 15.6 **EU AI Act (Regulation (EU) 2024/1689) via the EEA Agreement.** Subject to verification of the EEA Joint Committee Decision incorporating **Regulation (EU) 2024/1689 (the AI Act)** into the EEA Agreement and to Iceland-specific transposition and commencement `[VERIFY EEA Joint Committee Decision and Iceland-specific commencement]`:
 
-  (a) **Article 5 — prohibited practices.** The Vendor shall not place on the market, put into service, or use any AI system that engages in a practice prohibited by Article 5, and the Customer shall not use the Service in a manner that would constitute such a prohibited practice.
+(a) **Article 5 — prohibited practices.** The Vendor shall not place on the market, put into service, or use any AI system that engages in a practice prohibited by Article 5, and the Customer shall not use the Service in a manner that would constitute such a prohibited practice.
 
-  (b) **Article 6 — high-risk classification.** Where the Service or a feature of the Service falls within a high-risk classification under Article 6 and Annex III, the Parties shall execute a high-risk addendum at Exhibit A allocating the obligations of the provider, deployer, importer, and distributor as defined in the AI Act.
+(b) **Article 6 — high-risk classification.** Where the Service or a feature of the Service falls within a high-risk classification under Article 6 and Annex III, the Parties shall execute a high-risk addendum at Exhibit A allocating the obligations of the provider, deployer, importer, and distributor as defined in the AI Act.
 
-  (c) **Article 50 — transparency for AI interacting with humans.** Where an AI feature interacts directly with end users, the Vendor shall implement disclosures so end users are informed they are interacting with an AI system, except where this is obvious from the circumstances or is otherwise excused by Article 50.
+(c) **Article 50 — transparency for AI interacting with humans.** Where an AI feature interacts directly with end users, the Vendor shall implement disclosures so end users are informed they are interacting with an AI system, except where this is obvious from the circumstances or is otherwise excused by Article 50.
 
-  (d) **Article 13 — transparency for high-risk.** For any high-risk feature, the Vendor shall provide the Customer (as deployer) with the information required by Article 13 to enable the Customer to interpret and use the output appropriately.
+(d) **Article 13 — transparency for high-risk.** For any high-risk feature, the Vendor shall provide the Customer (as deployer) with the information required by Article 13 to enable the Customer to interpret and use the output appropriately.
 
-  (e) **Article 25 — GPAI obligations.** Where the Service uses a general-purpose AI model, the Vendor shall comply with the obligations applicable to providers and deployers of general-purpose AI models under Article 25 and the related provisions of Chapter V, including reasonable transparency about training-data summaries to the extent required.
+(e) **Article 25 — GPAI obligations.** Where the Service uses a general-purpose AI model, the Vendor shall comply with the obligations applicable to providers and deployers of general-purpose AI models under Article 25 and the related provisions of Chapter V, including reasonable transparency about training-data summaries to the extent required.
 
 15.7 **Customer prompt warranty.** The Customer represents and warrants that prompts and inputs it submits to AI features of the Service shall comply with applicable Icelandic law and EEA law, including (without limitation) **Lög nr. 73/1972 um höfundarétt**, **Lög nr. 90/2018** and the GDPR, **Almenn hegningarlög nr. 19/1940**, and the AI Act prohibitions in §15.6(a).
 
@@ -332,13 +342,13 @@ This section sets out who covers what in third-party claims, plus minimum insura
 
 17.5 **Insurance.** The Vendor shall maintain, throughout the Subscription Term, insurance with reputable insurers in not less than the following amounts:
 
-  (a) **Professional indemnity / errors and omissions ("E&O")** — `{{E&O Limit — default ISK 750,000,000 (approximately EUR 5,000,000)}}` per claim and in the aggregate;
+(a) **Professional indemnity / errors and omissions ("E&O")** — `{{E&O Limit — default ISK 750,000,000 (approximately EUR 5,000,000)}}` per claim and in the aggregate;
 
-  (b) **Public liability** — `{{Public Liability Limit — default ISK 300,000,000 (approximately EUR 2,000,000)}}` per claim;
+(b) **Public liability** — `{{Public Liability Limit — default ISK 300,000,000 (approximately EUR 2,000,000)}}` per claim;
 
-  (c) **Cyber liability** — `{{Insurance Cyber Limit — default ISK 750,000,000 (approximately EUR 5,000,000)}}` per claim and in the aggregate, covering data-breach response, regulatory investigation costs (including Persónuvernd proceedings), and third-party data-subject claims; and
+(c) **Cyber liability** — `{{Insurance Cyber Limit — default ISK 750,000,000 (approximately EUR 5,000,000)}}` per claim and in the aggregate, covering data-breach response, regulatory investigation costs (including Persónuvernd proceedings), and third-party data-subject claims; and
 
-  (d) **Employer's liability** — at the level required by **Lög nr. 55/1980 um starfskjör launafólks** and other applicable Icelandic labour-market legislation (vinnumarkaðarslög) `[VERIFY current statutory minimum at execution]`.
+(d) **Employer's liability** — at the level required by **Lög nr. 55/1980 um starfskjör launafólks** and other applicable Icelandic labour-market legislation (vinnumarkaðarslög) `[VERIFY current statutory minimum at execution]`.
 
 The Vendor shall provide certificates of insurance on reasonable written request.
 

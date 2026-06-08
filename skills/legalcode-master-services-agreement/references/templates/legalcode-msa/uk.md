@@ -146,7 +146,7 @@ The Services for any given engagement are whatever the relevant SOW says they ar
 
 ---
 
-## 5. Fees, expenses and invoicing  *— DUAL-PERSPECTIVE*
+## 5. Fees, expenses and invoicing _— DUAL-PERSPECTIVE_
 
 The first sentence is the floor: Provider invoices in accordance with the SOW; Client pays within {{Payment Terms}} of receipt of a valid VAT invoice; late payment attracts statutory interest at {{Statutory Interest Rate}} plus reasonable recovery costs under regulation 5A of the Late Payment of Commercial Debts Regulations 2002 (as amended). Beyond that floor, the Parties may select one of the three drafting postures below.
 
@@ -167,7 +167,7 @@ The first sentence is the floor: Provider invoices in accordance with the SOW; C
 
 5.6 **Taxes.** All fees are exclusive of VAT, which is chargeable at the prevailing rate. Each Party is responsible for its own corporation tax, business rates and similar imposts. Withholding obligations are addressed in section 7 (IR35) and section 19 (cross-border).
 
-> **5-A. Client-favourable variant.** For Client-side drafting: net {{Payment Terms}} runs from receipt of a *correctly addressed and undisputed* VAT invoice; Client may consolidate all SOW invoicing into a single monthly statement; statutory interest accrues only on amounts undisputed at the time of the cause of action; Provider must give 10 Business Days' written notice and an opportunity to cure before invoking suspension under section 5.2(c); rate-card increases require 90 days' written notice and apply only to new SOWs and to SOW renewals after the notice period expires; expense pre-approvals must be obtained line-by-line above £500 per item; foreign exchange exposure beyond the SOW Currency sits with Provider unless the SOW specifies a hedge.
+> **5-A. Client-favourable variant.** For Client-side drafting: net {{Payment Terms}} runs from receipt of a _correctly addressed and undisputed_ VAT invoice; Client may consolidate all SOW invoicing into a single monthly statement; statutory interest accrues only on amounts undisputed at the time of the cause of action; Provider must give 10 Business Days' written notice and an opportunity to cure before invoking suspension under section 5.2(c); rate-card increases require 90 days' written notice and apply only to new SOWs and to SOW renewals after the notice period expires; expense pre-approvals must be obtained line-by-line above £500 per item; foreign exchange exposure beyond the SOW Currency sits with Provider unless the SOW specifies a hedge.
 
 > **5-B. Provider-favourable variant.** For Provider-side drafting: net {{Payment Terms}} runs from invoice date; statutory interest accrues from the day after the due date without further notice; Provider may suspend Services on five Business Days' written notice for any undisputed amount unpaid for more than 15 days past the due date; rate-card increases of up to CPI + 2% per annum apply automatically on each anniversary of the SOW; expense pre-approvals are deemed given where the SOW includes a stated expenses budget; FX risk is shared 50/50 outside a stated hedge; Provider may charge a 1.5% per month administration fee on any payment processed by cheque or by means other than electronic bank transfer.
 
@@ -175,7 +175,7 @@ The first sentence is the floor: Provider invoices in accordance with the SOW; C
 
 ---
 
-## 6. Change control and Change Orders  *— DUAL-PERSPECTIVE*
+## 6. Change control and Change Orders _— DUAL-PERSPECTIVE_
 
 Either Party may propose a Change Order; nothing changes the scope, fees or schedule of a SOW unless and until both Parties sign a written Change Order describing the change.
 
@@ -205,7 +205,7 @@ This section sits at the intersection of three statutory regimes — IR35 / off-
 
 7.3 **IR35 status — Chapter 10 (off-payroll working in the public and medium/large private sector).** Where Client is a public authority or a medium/large company within section 60A ITEPA, Client (or the deemed-employer entity in the chain) is responsible for issuing a Status Determination Statement ("**SDS**") under section 61T ITEPA in respect of any individual who would but for the intermediary be regarded as an employee of Client. Client will provide the SDS to Provider and to the worker before the Services start, will issue any reasonable disagreement response within 45 days under section 61T(8), and will operate PAYE/NICs as deemed employer where the SDS records the engagement as "inside" IR35. The current {{IR35 Status}} for the engagement is "{{IR35 Status}}", issued by {{SDS Issuer}}; this is reviewed at the start of each SOW and on any material change in working arrangements.
 
-7.4 **CEST and supporting reasoning.** The Parties acknowledge that HMRC's Check Employment Status for Tax tool ("**CEST**") output is one input into a status determination but is not determinative. The SDS issuer must take reasonable care to consider all relevant factors, including the right of substitution, mutuality of obligation, control, financial risk and the employment-status case law (notably *Ready Mixed Concrete (South East) v MoPNI* [1968] 2 QB 497, *Pimlico Plumbers v Smith* [2018] UKSC 29, *Uber BV v Aslam* [2021] UKSC 5 and the HMRC manuals current at the time of the determination).
+7.4 **CEST and supporting reasoning.** The Parties acknowledge that HMRC's Check Employment Status for Tax tool ("**CEST**") output is one input into a status determination but is not determinative. The SDS issuer must take reasonable care to consider all relevant factors, including the right of substitution, mutuality of obligation, control, financial risk and the employment-status case law (notably _Ready Mixed Concrete (South East) v MoPNI_ [1968] 2 QB 497, _Pimlico Plumbers v Smith_ [2018] UKSC 29, _Uber BV v Aslam_ [2021] UKSC 5 and the HMRC manuals current at the time of the determination).
 
 7.5 **Apportionment of IR35 liabilities.** Where IR35 applies and the engagement is "inside":
 (a) Client (or its deemed-employer fee-payer) accounts for income tax and primary and secondary Class 1 NICs in respect of the deemed-direct-payment to the worker;
@@ -247,7 +247,7 @@ This section explains how Client accepts a Deliverable, how it rejects one, and 
 
 ---
 
-## 9. Intellectual property  *— DUAL-PERSPECTIVE*
+## 9. Intellectual property _— DUAL-PERSPECTIVE_
 
 The first sentence is the floor: Foreground IP in Deliverables vests in the Party identified in the SOW (default {{IP Ownership Default}}); each Party retains its Background IP and grants the other a licence only to the extent strictly required to use or deliver the Services; Open-Source Components are flagged and licensed separately. The Parties acknowledge the framework of the Copyright, Designs and Patents Act 1988 ("**CDPA**") and that, since 1 August 1989, copyright in commissioned works does not automatically vest in the commissioner — express assignment is required.
 
@@ -317,13 +317,13 @@ The first sentence is the floor: where Provider processes Personal Data on behal
 
 11.5 **Security controls.** Provider implements technical and organisational measures appropriate to the risk, taking account of the state of the art, the cost of implementation and the nature, scope, context and purposes of processing. Without limitation, those measures include: (a) access control and the principle of least privilege; (b) encryption in transit (TLS 1.2+) and at rest where the Personal Data is sensitive or involves special-category data within Article 9 UK GDPR; (c) logging and monitoring sufficient to detect and investigate suspicious activity; (d) backup, restore and disaster-recovery procedures appropriate to the SOW recovery objectives; (e) secure software development, including code review and dependency management; and (f) supply-chain security including the controls in section 11.7.
 
-11.6 **Cyber Essentials / NIS / Operational Resilience overlays.** Where {{Cyber Essentials Required}} is "Cyber Essentials" or "Cyber Essentials Plus", Provider holds the relevant certification and maintains it in force during the Term; certificates are provided to Client on request. Where {{NIS Operator Class}} is "OES" or "RDSP", the Parties acknowledge that the Network and Information Systems Regulations 2018 apply to the relevant Party and the Services are provided so as to support that Party's compliance, including the security and incident-reporting duties under regulations 10–12. *OPTIONAL — only if Operational Resilience applies.* Where {{Operational Resilience Toggle}} is "Yes" and Client is regulated by the FCA or PRA, Provider supports Client's operational-resilience obligations under FCA SYSC 15A / PRA SS1/21, including by mapping important business services, identifying impact tolerances and participating in scenario testing on reasonable notice. Provider will reference the NCSC Cyber Assessment Framework as the baseline maturity model.
+11.6 **Cyber Essentials / NIS / Operational Resilience overlays.** Where {{Cyber Essentials Required}} is "Cyber Essentials" or "Cyber Essentials Plus", Provider holds the relevant certification and maintains it in force during the Term; certificates are provided to Client on request. Where {{NIS Operator Class}} is "OES" or "RDSP", the Parties acknowledge that the Network and Information Systems Regulations 2018 apply to the relevant Party and the Services are provided so as to support that Party's compliance, including the security and incident-reporting duties under regulations 10–12. _OPTIONAL — only if Operational Resilience applies._ Where {{Operational Resilience Toggle}} is "Yes" and Client is regulated by the FCA or PRA, Provider supports Client's operational-resilience obligations under FCA SYSC 15A / PRA SS1/21, including by mapping important business services, identifying impact tolerances and participating in scenario testing on reasonable notice. Provider will reference the NCSC Cyber Assessment Framework as the baseline maturity model.
 
 11.7 **Sub-processor security.** Provider imposes on each sub-processor data-protection and security obligations that are at least as protective as those in this section. Provider remains liable for the acts and omissions of each sub-processor as if they were its own.
 
 11.8 **Personal-data breach notification.** Provider notifies Client of any personal-data breach affecting Client's Personal Data without undue delay and in any event within 48 hours of becoming aware. The notification includes, to the extent then known: the nature of the breach, the categories and approximate number of data subjects and records, the likely consequences, the measures taken or proposed and the contact details of Provider's data-protection officer or equivalent. Provider continues to update the notification as facts emerge and supports Client's notifications to the ICO and to data subjects.
 
-11.9 **PECR overlay.** *OPTIONAL — only if the Services involve electronic communications, cookies or direct marketing.* Where the Services involve direct marketing, cookie placement, location data or traffic data, Provider supports Client's compliance with the Privacy and Electronic Communications (EC Directive) Regulations 2003 ("**PECR**"), including the consent and information requirements of regulations 6 (cookies) and 22 (electronic-mail marketing).
+11.9 **PECR overlay.** _OPTIONAL — only if the Services involve electronic communications, cookies or direct marketing._ Where the Services involve direct marketing, cookie placement, location data or traffic data, Provider supports Client's compliance with the Privacy and Electronic Communications (EC Directive) Regulations 2003 ("**PECR**"), including the consent and information requirements of regulations 6 (cookies) and 22 (electronic-mail marketing).
 
 11.10 **DUAA 2025.** The Parties acknowledge the changes introduced by the Data (Use and Access) Act 2025 to the UK GDPR and DPA 2018 framework, including changes to the accountability framework, recognised legitimate interests, automated-decision-making rules and the regulator's structure. Provider will support Client's compliance with the DUAA 2025 changes as they take effect [VERIFY commencement of each Part of DUAA 2025 — the Act is being commenced in tranches and not all provisions are in force at the date of this Agreement].
 
@@ -335,7 +335,7 @@ The first sentence is the floor: where Provider processes Personal Data on behal
 
 ---
 
-## 12. Representations and warranties  *— DUAL-PERSPECTIVE*
+## 12. Representations and warranties _— DUAL-PERSPECTIVE_
 
 Each Party warrants to the other that it has the corporate authority to enter into this Agreement and that doing so does not breach any other obligation owed by it.
 
@@ -369,7 +369,7 @@ Each Party warrants to the other that it has the corporate authority to enter in
 
 ---
 
-## 13. Indemnification  *— DUAL-PERSPECTIVE*
+## 13. Indemnification _— DUAL-PERSPECTIVE_
 
 The first sentence is the floor: Provider indemnifies Client against IP-infringement claims arising out of Deliverables; Client indemnifies Provider against claims arising from Client materials or Client misuse of Deliverables; both indemnities are subject to the limitations in section 14 except where stated otherwise.
 
@@ -391,7 +391,7 @@ The first sentence is the floor: Provider indemnifies Client against IP-infringe
 
 ---
 
-## 14. Limitation of liability  *— DUAL-PERSPECTIVE*
+## 14. Limitation of liability _— DUAL-PERSPECTIVE_
 
 The first sentence is the floor: subject to the carve-outs in 14.1 (which are required by law and cannot be excluded), each Party's total aggregate liability arising under or in connection with this Agreement is capped at {{Liability Cap Multiplier}} times the fees paid or payable to Provider under the affected SOW in the 12 months before the cause of action arose, with a floor of {{Liability Cap Floor}}; neither Party is liable for indirect, special, consequential or punitive losses, or for loss of profits, revenue, business, goodwill, reputation, anticipated savings or data, in each case to the extent excluded by law.
 
@@ -444,7 +444,7 @@ This section sets the insurance floor; the SOW may raise but not lower it. Cover
 
 ---
 
-## 16. Term and termination  *— DUAL-PERSPECTIVE*
+## 16. Term and termination _— DUAL-PERSPECTIVE_
 
 The first sentence is the floor: this Agreement begins on the Effective Date and runs for the Initial Term, automatically renewing for successive Renewal Terms unless either Party gives {{Termination Notice Window}} days' written notice before the end of the then-current Term, save that any SOW with a fixed term continues unaffected by the expiry of this Agreement until the SOW itself ends.
 
@@ -455,7 +455,7 @@ The first sentence is the floor: this Agreement begins on the Effective Date and
 (d) **For repudiatory breach.** Common-law rights of termination for repudiatory breach are preserved; nothing in this section excludes or limits the right of an innocent Party to accept a repudiatory breach as terminating the Agreement.
 (e) **For change of control.** Either Party may terminate on 30 days' written notice if the other Party undergoes a change of control to an entity that competes with the terminating Party in a material way.
 
-16.2 **Termination of a SOW.** A SOW may be terminated independently of this Agreement on the same grounds as 16.1(a)–(d); termination of one SOW does not affect any other SOW. *OPTIONAL — only if Construction Operations apply.* Where {{Construction Operations Toggle}} is "Yes", Provider may suspend or terminate the affected SOW for non-payment under section 112 HGCRA on the giving of seven days' notice, the right of suspension being exercisable in respect of the whole or any part of the obligations affected.
+16.2 **Termination of a SOW.** A SOW may be terminated independently of this Agreement on the same grounds as 16.1(a)–(d); termination of one SOW does not affect any other SOW. _OPTIONAL — only if Construction Operations apply._ Where {{Construction Operations Toggle}} is "Yes", Provider may suspend or terminate the affected SOW for non-payment under section 112 HGCRA on the giving of seven days' notice, the right of suspension being exercisable in respect of the whole or any part of the obligations affected.
 
 16.3 **Effect of termination.** On termination of this Agreement or any SOW:
 (a) Client pays Provider for all Services properly performed up to the effective date of termination, including any non-cancellable third-party costs already committed at Client's authorisation;
@@ -474,7 +474,7 @@ The first sentence is the floor: this Agreement begins on the Effective Date and
 
 ---
 
-## 17. Transition assistance and wind-down  *— DUAL-PERSPECTIVE*
+## 17. Transition assistance and wind-down _— DUAL-PERSPECTIVE_
 
 The first sentence is the floor: on termination or expiry of this Agreement or any SOW for any cause (including for cause), Provider provides Client with reasonable transition assistance to allow Client or its replacement provider to take over the Services without undue disruption.
 
@@ -536,7 +536,7 @@ This section gathers the boilerplate that is necessary but did not fit anywhere 
 
 19.5 **No waiver.** No failure or delay to exercise a right is a waiver of that right; a waiver is effective only if in writing and signed by the waiving Party.
 
-19.6 **Assignment.** Neither Party may assign or novate this Agreement without the other's prior written consent, save that either Party may assign or novate without consent to a successor in connection with a merger, reorganisation or sale of substantially all the assets of the business to which the Agreement relates, on written notice. *OPTIONAL — only if {{Deed Execution Required}} is "Yes".* Any assignment of IP under section 9 that requires execution as a deed (for example, to satisfy section 44 of the Companies Act 2006) is to be executed as a deed substantially in the form attached to the relevant SOW.
+19.6 **Assignment.** Neither Party may assign or novate this Agreement without the other's prior written consent, save that either Party may assign or novate without consent to a successor in connection with a merger, reorganisation or sale of substantially all the assets of the business to which the Agreement relates, on written notice. _OPTIONAL — only if {{Deed Execution Required}} is "Yes"._ Any assignment of IP under section 9 that requires execution as a deed (for example, to satisfy section 44 of the Companies Act 2006) is to be executed as a deed substantially in the form attached to the relevant SOW.
 
 19.7 **Third-party rights.** A person who is not a party to this Agreement has no right under the Contracts (Rights of Third Parties) Act 1999 to enforce any of its terms. The Parties may rescind or vary this Agreement without the consent of any third party.
 
@@ -548,9 +548,9 @@ This section gathers the boilerplate that is necessary but did not fit anywhere 
 
 19.11 **Sanctions and export control.** Each Party complies with applicable economic and trade sanctions and export-control laws, including the United Kingdom's regimes administered by HM Treasury (OFSI), the Department for Business and Trade (Export Control Joint Unit) and where applicable equivalent regimes of the European Union, the United States and the United Nations. Neither Party will use the Services for any purpose prohibited by those regimes.
 
-19.12 **Public-sector flow-downs.** *OPTIONAL — only if {{Public Sector Toggle}} is "Yes".* Where Client is a contracting authority within the meaning of the Procurement Act 2023 [VERIFY commencement of the Procurement Act 2023 and any transitional provisions], Provider supports Client's compliance with that Act and with the Public Contracts Regulations 2015 (to the extent they continue to apply on a transitional basis), including by providing data necessary for the Procurement Act 2023's transparency notices and supplier-conduct obligations. Provider will cooperate with Client's obligations under the Freedom of Information Act 2000 and the Public Services Network ("**PSN**") code of compliance where applicable.
+19.12 **Public-sector flow-downs.** _OPTIONAL — only if {{Public Sector Toggle}} is "Yes"._ Where Client is a contracting authority within the meaning of the Procurement Act 2023 [VERIFY commencement of the Procurement Act 2023 and any transitional provisions], Provider supports Client's compliance with that Act and with the Public Contracts Regulations 2015 (to the extent they continue to apply on a transitional basis), including by providing data necessary for the Procurement Act 2023's transparency notices and supplier-conduct obligations. Provider will cooperate with Client's obligations under the Freedom of Information Act 2000 and the Public Services Network ("**PSN**") code of compliance where applicable.
 
-19.13 **DMCCA 2024.** *OPTIONAL — only if {{Subscription Reminder Toggle}} is "Yes".* Where Provider supplies subscription services to a small or medium-sized Client and the Digital Markets, Competition and Consumers Act 2024 ("**DMCCA**") subscription regime applies, Provider supports Client's reminder-notice and cancellation obligations under Part 4 DMCCA [VERIFY phased commencement of Part 4 DMCCA].
+19.13 **DMCCA 2024.** _OPTIONAL — only if {{Subscription Reminder Toggle}} is "Yes"._ Where Provider supplies subscription services to a small or medium-sized Client and the Digital Markets, Competition and Consumers Act 2024 ("**DMCCA**") subscription regime applies, Provider supports Client's reminder-notice and cancellation obligations under Part 4 DMCCA [VERIFY phased commencement of Part 4 DMCCA].
 
 19.14 **Counterparts and electronic execution.** This Agreement may be executed in any number of counterparts. The Parties acknowledge the validity of electronic signatures under section 7 of the Electronic Communications Act 2000 and the retained eIDAS framework [VERIFY post-REUL retention status]. Each counterpart, when executed and delivered, is an original; all counterparts together constitute one Agreement.
 
@@ -570,19 +570,19 @@ Executed by the Parties on the dates below by their authorised signatories.
 
 For and on behalf of **{{Provider Legal Name}}** (company number {{Provider Companies House Number}}):
 
-Signature: ___________________________________________
+Signature: **\*\*\*\***\*\*\*\***\*\*\*\***\_\_\_**\*\*\*\***\*\*\*\***\*\*\*\***
 Name: {{Provider Signatory Name}}
 Title: {{Provider Signatory Title}}
-Date: ____________________
+Date: **\*\*\*\***\_\_\_\_**\*\*\*\***
 
 For and on behalf of **{{Client Legal Name}}** (company number {{Client Companies House Number}}):
 
-Signature: ___________________________________________
+Signature: **\*\*\*\***\*\*\*\***\*\*\*\***\_\_\_**\*\*\*\***\*\*\*\***\*\*\*\***
 Name: {{Client Signatory Name}}
 Title: {{Client Signatory Title}}
-Date: ____________________
+Date: **\*\*\*\***\_\_\_\_**\*\*\*\***
 
-*OPTIONAL — only if {{Deed Execution Required}} is "Yes".* If executed as a deed, each Party's signature must be witnessed (in the case of an individual signing) or executed in accordance with section 44 of the Companies Act 2006 (in the case of a company), as recorded on a separate deed of execution attached to the relevant SOW.
+_OPTIONAL — only if {{Deed Execution Required}} is "Yes"._ If executed as a deed, each Party's signature must be witnessed (in the case of an individual signing) or executed in accordance with section 44 of the Companies Act 2006 (in the case of a company), as recorded on a separate deed of execution attached to the relevant SOW.
 
 ---
 
@@ -627,9 +627,9 @@ A.14 **Signatures.** As per the signature block of the Agreement.
 This Annex lists the Subcontractors and key Personnel pre-approved as at the Effective Date; updates are made by notice under section 7.10.
 
 | Subcontractor / Person | Role | Location | IR35 status (if individual) | Right-to-work check date |
-|------------------------|------|----------|-----------------------------|---------------------------|
-| [•]                    | [•]  | [•]      | [•]                         | [•]                       |
-| [•]                    | [•]  | [•]      | [•]                         | [•]                       |
+| ---------------------- | ---- | -------- | --------------------------- | ------------------------ |
+| [•]                    | [•]  | [•]      | [•]                         | [•]                      |
+| [•]                    | [•]  | [•]      | [•]                         | [•]                      |
 
 ---
 

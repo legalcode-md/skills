@@ -1,7 +1,18 @@
 ---
 title: Cloud Service Agreement — EU/EEA (DSA + DCD/SGD + Data Act + DE-AGB)
 jurisdictions: [eu, eea, de]
-statutes: [DSA, DCD-2019/770, SGD-2019/771, Data-Act-2023/2854, AI-Act-2024/1689, NIS2-2022/2555, DORA-2022/2554, BGB, GeschGehG]
+statutes:
+  [
+    DSA,
+    DCD-2019/770,
+    SGD-2019/771,
+    Data-Act-2023/2854,
+    AI-Act-2024/1689,
+    NIS2-2022/2555,
+    DORA-2022/2554,
+    BGB,
+    GeschGehG,
+  ]
 audience: [B2B]
 license: MIT
 last_updated: 2026-04-28

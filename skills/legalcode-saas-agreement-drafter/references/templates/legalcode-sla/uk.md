@@ -1,7 +1,15 @@
 ---
 title: Service Level Agreement — United Kingdom
 jurisdictions: [uk, gb]
-statutes: [NIS-Regs-2018-SI-506, UK-GDPR, DPA-2018, DUAA-2025, FCA-Handbook, PRA-Rulebook]
+statutes:
+  [
+    NIS-Regs-2018-SI-506,
+    UK-GDPR,
+    DPA-2018,
+    DUAA-2025,
+    FCA-Handbook,
+    PRA-Rulebook,
+  ]
 audience: [B2B]
 license: MIT
 last_updated: 2026-04-28
@@ -391,12 +399,12 @@ In short: the DUAA reshapes parts of the UK data-protection regime. Provisions a
 
 In short: this matrix defines P1 to P4 and the response and resolution targets that apply.
 
-| Severity | Definition | First-response target | Resolution / workaround target | Channels |
-|---|---|---|---|---|
-| **P1 — Critical** | Production Service unavailable to substantially all Authorised Users; severe data loss; confirmed security incident affecting Customer Data. | {{P1 Response Target}} (default 15 minutes) | {{P1 Resolution Target}} (default 4 hours) | Pager + Status Page + ticket |
-| **P2 — High** | Major-feature impairment with workaround; degraded performance affecting a substantial subset of Authorised Users. | {{P2 Response Target}} (default 1 hour) | 1 Business Day | Ticket + Status Page where customer-visible |
-| **P3 — Medium** | Minor-feature impairment; cosmetic but functional defect. | {{P3 Response Target}} (default 4 Business Hours) | 5 Business Days | Ticket |
-| **P4 — Low** | Question, documentation request, cosmetic issue without functional impact. | {{P4 Response Target}} (default 1 Business Day) | Best efforts | Ticket |
+| Severity          | Definition                                                                                                                                   | First-response target                             | Resolution / workaround target             | Channels                                    |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------ | ------------------------------------------- |
+| **P1 — Critical** | Production Service unavailable to substantially all Authorised Users; severe data loss; confirmed security incident affecting Customer Data. | {{P1 Response Target}} (default 15 minutes)       | {{P1 Resolution Target}} (default 4 hours) | Pager + Status Page + ticket                |
+| **P2 — High**     | Major-feature impairment with workaround; degraded performance affecting a substantial subset of Authorised Users.                           | {{P2 Response Target}} (default 1 hour)           | 1 Business Day                             | Ticket + Status Page where customer-visible |
+| **P3 — Medium**   | Minor-feature impairment; cosmetic but functional defect.                                                                                    | {{P3 Response Target}} (default 4 Business Hours) | 5 Business Days                            | Ticket                                      |
+| **P4 — Low**      | Question, documentation request, cosmetic issue without functional impact.                                                                   | {{P4 Response Target}} (default 1 Business Day)   | Best efforts                               | Ticket                                      |
 
 Severity is initially assessed by {{Customer Short Name}} when raising the ticket and may be reclassified by {{Vendor Short Name}} acting reasonably on the basis of the technical facts. Disputes about severity classification are raised under the dispute-resolution clause of the CSA.
 
@@ -409,12 +417,12 @@ In short: this annex gives the Service Credit ladder by Availability Percentage 
 **B.1 Default ladder for a {{Uptime Tier}} = 99.9% commitment.**
 
 | Monthly Availability Percentage achieved | Service Credit (% of Monthly Service Fee) |
-|---|---|
-| ≥ 99.9% | 0% |
-| ≥ 99.0% and < 99.9% | 10% |
-| ≥ 98.0% and < 99.0% | 15% |
-| ≥ 95.0% and < 98.0% | 25% |
-| < 95.0% | 30% (or {{Credit Cap Percent}}) |
+| ---------------------------------------- | ----------------------------------------- |
+| ≥ 99.9%                                  | 0%                                        |
+| ≥ 99.0% and < 99.9%                      | 10%                                       |
+| ≥ 98.0% and < 99.0%                      | 15%                                       |
+| ≥ 95.0% and < 98.0%                      | 25%                                       |
+| < 95.0%                                  | 30% (or {{Credit Cap Percent}})           |
 
 **B.2 Worked example.** Monthly Service Fee for the affected production Service: GBP 10,000. Achieved Availability Percentage in the calendar month: 98.4%. Applicable credit row: 15%. Credit issued: GBP 1,500, applied as a line item on the next invoice.
 

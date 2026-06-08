@@ -42,6 +42,7 @@ failures, classifies their severity, and produces a prioritised remediation chec
 technical implementation guidance.
 
 **Covers:**
+
 - Pre-consent blocking verification (scripts, pixels, SDKs firing before consent)
 - Consent banner UX compliance (reject-all parity, dark patterns, information adequacy)
 - Cookie category classification (strictly necessary vs. analytics vs. marketing)
@@ -57,6 +58,7 @@ technical implementation guidance.
 - IAB TCF v2.2 / Global Privacy Platform (GPP) string integrity (ad-tech-integrated sites)
 
 **Does not:**
+
 - Draft privacy policies — see `legalcode-privacy-policy-drafter`
 - Assess lawful bases for general data processing — see `legalcode-gdpr-legal-basis-assessment`
 - Conduct a full DPIA — see `legalcode-dpia-generator`
@@ -67,6 +69,7 @@ technical implementation guidance.
 - Guarantee against supervisory authority enforcement action
 
 **Complementary skills in the privacy skill family:**
+
 - `legalcode-gdpr-legal-basis-assessment` — verify consent is the correct basis for cookie-linked processing
 - `legalcode-legitimate-interest-assessment` — assess LI basis for analytics (note: LI cannot substitute for ePrivacy consent in EU/UK)
 - `legalcode-dpia-generator` — triggered by high-risk tracking identified here (fingerprinting, cross-site profiling)
@@ -81,41 +84,41 @@ This skill covers three regulatory layers that frequently apply simultaneously.
 
 ### Layer 1: EU ePrivacy Framework (Governs All EU/EEA Sites)
 
-| Instrument | Key Provision | Scope |
-|------------|--------------|-------|
-| ePrivacy Directive 2002/58/EC (amended 2009/136/EC) | Article 5(3) — prior informed consent before storing or accessing info on terminal equipment, unless strictly necessary | Any website/app with EU/EEA visitors |
-| GDPR Regulation 2016/679 | Article 4(11) + Article 7 — defines valid consent conditions; Article 5(2) — accountability obligation | Consent given under ePrivacy Art. 5(3) must meet GDPR standard |
-| EDPB Guidelines 2/2023 v2.0 (October 2024) | Technical scope of Art. 5(3): all storage or access to terminal equipment — cookies, local storage, pixels, fingerprinting, ephemeral RAM cache | All forms of tracking technology |
-| EDPB Guidelines 05/2020 on Consent (v1.1) | Six consent conditions; prohibited mechanisms; withdrawal requirements | All consent-based cookie processing |
-| EDPB Cookie Banner Taskforce Report (January 2023) | Minimum threshold for banner design — reject must be accessible at first layer | Banner UX compliance |
-| EDPB Guidelines 03/2022 on Dark Patterns (v2.0, February 2023) | Prohibits deceptive UI design in consent interfaces | Banner visual design and UX |
-| EDPB Opinion 08/2024 on "Consent or Pay" | Cookie walls impermissible; Large Online Platforms face heightened threshold | Cookie wall analysis |
+| Instrument                                                     | Key Provision                                                                                                                                   | Scope                                                          |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| ePrivacy Directive 2002/58/EC (amended 2009/136/EC)            | Article 5(3) — prior informed consent before storing or accessing info on terminal equipment, unless strictly necessary                         | Any website/app with EU/EEA visitors                           |
+| GDPR Regulation 2016/679                                       | Article 4(11) + Article 7 — defines valid consent conditions; Article 5(2) — accountability obligation                                          | Consent given under ePrivacy Art. 5(3) must meet GDPR standard |
+| EDPB Guidelines 2/2023 v2.0 (October 2024)                     | Technical scope of Art. 5(3): all storage or access to terminal equipment — cookies, local storage, pixels, fingerprinting, ephemeral RAM cache | All forms of tracking technology                               |
+| EDPB Guidelines 05/2020 on Consent (v1.1)                      | Six consent conditions; prohibited mechanisms; withdrawal requirements                                                                          | All consent-based cookie processing                            |
+| EDPB Cookie Banner Taskforce Report (January 2023)             | Minimum threshold for banner design — reject must be accessible at first layer                                                                  | Banner UX compliance                                           |
+| EDPB Guidelines 03/2022 on Dark Patterns (v2.0, February 2023) | Prohibits deceptive UI design in consent interfaces                                                                                             | Banner visual design and UX                                    |
+| EDPB Opinion 08/2024 on "Consent or Pay"                       | Cookie walls impermissible; Large Online Platforms face heightened threshold                                                                    | Cookie wall analysis                                           |
 
 ### Layer 2: National Transpositions (Member-State-Specific)
 
 [JURISDICTION-SPECIFIC] Each EU/EEA member state has transposed Article 5(3) into national
 law. Research the applicable national transposition for the site's primary audience:
 
-| Jurisdiction | Transposing Instrument | Key Additional Requirements |
-|-------------|----------------------|---------------------------|
-| **France** | Article 82 Loi Informatique et Libertés | Reject All required at first layer; analytics exemption available under strict conditions (13-month cookie lifetime, single-site scope, no cross-referencing, IP pseudonymised, no session replay, anonymous output only); Google Analytics does NOT qualify for the exemption; CNIL active enforcement — €325M Google (Sept 2025), €150M SHEIN (Sept 2025) |
-| **Germany** | §25 TDDDG (Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz, in force December 2021) | Active opt-in required; browser-level cookie settings do not constitute valid consent under German law; DSK Orientierungshilfe v1.2 (November 2024) — strict CMP blocking requirements |
-| **UK (post-Brexit)** | Regulation 6 PECR 2003 (Data (Use and Access) Act 2025, Royal Assent 19 June 2025) | Consent required for analytics (existing position); DUAA introduces potential exceptions for low-risk statistical analysis functions [VERIFY — ICO guidance under revision as of mid-2025]; ICO reviewing top 1,000 UK websites (announced January 2025) |
-| **Netherlands** | Telecommunicatiewet Article 11.7a | Strict consent requirement; cookie walls prohibited |
-| **Spain** | LSSI-CE | AEPD enforcement active; record €35.5M total fines FY2024 |
+| Jurisdiction         | Transposing Instrument                                                                    | Key Additional Requirements                                                                                                                                                                                                                                                                                                                                 |
+| -------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **France**           | Article 82 Loi Informatique et Libertés                                                   | Reject All required at first layer; analytics exemption available under strict conditions (13-month cookie lifetime, single-site scope, no cross-referencing, IP pseudonymised, no session replay, anonymous output only); Google Analytics does NOT qualify for the exemption; CNIL active enforcement — €325M Google (Sept 2025), €150M SHEIN (Sept 2025) |
+| **Germany**          | §25 TDDDG (Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz, in force December 2021) | Active opt-in required; browser-level cookie settings do not constitute valid consent under German law; DSK Orientierungshilfe v1.2 (November 2024) — strict CMP blocking requirements                                                                                                                                                                      |
+| **UK (post-Brexit)** | Regulation 6 PECR 2003 (Data (Use and Access) Act 2025, Royal Assent 19 June 2025)        | Consent required for analytics (existing position); DUAA introduces potential exceptions for low-risk statistical analysis functions [VERIFY — ICO guidance under revision as of mid-2025]; ICO reviewing top 1,000 UK websites (announced January 2025)                                                                                                    |
+| **Netherlands**      | Telecommunicatiewet Article 11.7a                                                         | Strict consent requirement; cookie walls prohibited                                                                                                                                                                                                                                                                                                         |
+| **Spain**            | LSSI-CE                                                                                   | AEPD enforcement active; record €35.5M total fines FY2024                                                                                                                                                                                                                                                                                                   |
 
 ### Layer 3: US State Privacy Requirements (Opt-Out / GPC)
 
 [JURISDICTION-SPECIFIC] US state law does not require opt-in consent for analytics cookies.
 Instead, it requires opt-out mechanisms and mandatory honoring of GPC signals:
 
-| State | Law | Key Cookie-Related Requirement | Effective Date |
-|-------|-----|-------------------------------|----------------|
-| California | CCPA/CPRA (revised regs effective Jan 1, 2026) | Mandatory GPC honoring as opt-out of sale and sharing; "Do Not Sell or Share My PI" link; opt-in consent required for under-16s | GPC mandatory now; revised dark-patterns regs Jan 1, 2026 |
-| Colorado | CPA | GPC approved as first UOOM; must honor GPC as opt-out of targeted advertising and data sales | July 1, 2024 |
-| Connecticut | CTDPA | UOOM honoring required | January 1, 2025 |
-| Delaware, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Texas | Various | UOOM / opt-out signal honoring required | Varies — verify state-specific effective dates [VERIFY] |
-| Virginia | VCDPA | No UOOM provision in statute; standard opt-out rights apply | January 1, 2023 |
+| State                                                                 | Law                                            | Key Cookie-Related Requirement                                                                                                  | Effective Date                                            |
+| --------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| California                                                            | CCPA/CPRA (revised regs effective Jan 1, 2026) | Mandatory GPC honoring as opt-out of sale and sharing; "Do Not Sell or Share My PI" link; opt-in consent required for under-16s | GPC mandatory now; revised dark-patterns regs Jan 1, 2026 |
+| Colorado                                                              | CPA                                            | GPC approved as first UOOM; must honor GPC as opt-out of targeted advertising and data sales                                    | July 1, 2024                                              |
+| Connecticut                                                           | CTDPA                                          | UOOM honoring required                                                                                                          | January 1, 2025                                           |
+| Delaware, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Texas | Various                                        | UOOM / opt-out signal honoring required                                                                                         | Varies — verify state-specific effective dates [VERIFY]   |
+| Virginia                                                              | VCDPA                                          | No UOOM provision in statute; standard opt-out rights apply                                                                     | January 1, 2023                                           |
 
 ---
 
@@ -157,23 +160,23 @@ options where possible. Skip any question already answered by the input.
 
 1. **Primary regulatory jurisdiction?**
    - Options: EU (specify primary country or "all EU"), UK only, US only, EU + UK + US (multinational), Other
-   - *Why this matters*: Determines which regulatory layer(s) apply. A US-only audience may need GPC/UOOM compliance but not ePrivacy pre-consent requirements. An EU site needs all layers.
+   - _Why this matters_: Determines which regulatory layer(s) apply. A US-only audience may need GPC/UOOM compliance but not ePrivacy pre-consent requirements. An EU site needs all layers.
 
 2. **Site type and audience?**
    - Options: Consumer website (B2C), SaaS/business platform (B2B), E-commerce, News/media, Mobile app, Other
-   - *Why this matters*: CNIL analytics exemption requires single-site scope; mobile apps face CNIL 2025 investigation campaign; B2C consumer sites face higher enforcement scrutiny; news/media sites commonly implement cookie walls.
+   - _Why this matters_: CNIL analytics exemption requires single-site scope; mobile apps face CNIL 2025 investigation campaign; B2C consumer sites face higher enforcement scrutiny; news/media sites commonly implement cookie walls.
 
 3. **CMP currently deployed?**
    - Options: OneTrust, Cookiebot / Usercentrics, TrustArc, Didomi, iubenda, Axeptio, No CMP, Unknown
-   - *Why this matters*: Different CMPs have known configuration patterns and common compliance gaps. Identifying the CMP helps focus the audit on platform-specific failure modes.
+   - _Why this matters_: Different CMPs have known configuration patterns and common compliance gaps. Identifying the CMP helps focus the audit on platform-specific failure modes.
 
 4. **Ad tech or behavioral advertising in use?**
    - Options: Yes (Google Ads, Meta Ads, programmatic/DSP), Analytics only, No advertising, Unknown
-   - *Why this matters*: Advertising tracking requires the strictest consent controls and mandatory Google Consent Mode v2 analysis. Ad-tech-integrated sites must also address IAB TCF/GPP string accuracy.
+   - _Why this matters_: Advertising tracking requires the strictest consent controls and mandatory Google Consent Mode v2 analysis. Ad-tech-integrated sites must also address IAB TCF/GPP string accuracy.
 
 5. **Audit scope?**
    - Options: Full audit (all domains), Banner UX only, Pre-consent blocking only, US GPC/UOOM only, Analytics exemption eligibility only
-   - *Why this matters*: Scopes the analysis depth and output format.
+   - _Why this matters_: Scopes the analysis depth and output format.
 
 If the user provides partial context, proceed with what is available but **state assumptions
 explicitly** (e.g., "Assuming EU primary jurisdiction and full audit scope — advise if different").
@@ -223,23 +226,25 @@ session, or should I analyse an existing automated scan report?"
 
 **Known tracking domains to monitor (non-exhaustive):**
 
-| Category | Domains to Monitor |
-|----------|-------------------|
+| Category               | Domains to Monitor                                                                                                 |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | Google Analytics / Ads | `google-analytics.com`, `analytics.google.com`, `googletagmanager.com`, `doubleclick.net`, `googlesyndication.com` |
-| Meta / Facebook | `facebook.net`, `connect.facebook.net`, `fbcdn.net` |
-| Microsoft | `clarity.ms`, `bing.com`, `bat.bing.com` |
-| Session recording | `hotjar.com`, `hj.com`, `fullstory.com`, `logrocket.com` |
-| LinkedIn | `licdn.com`, `linkedin.com` |
-| Twitter/X | `ads-twitter.com`, `t.co` |
-| Trade Desk | `adsrvr.org` |
-| A/B testing | `optimizely.com`, `vwo.com` |
+| Meta / Facebook        | `facebook.net`, `connect.facebook.net`, `fbcdn.net`                                                                |
+| Microsoft              | `clarity.ms`, `bing.com`, `bat.bing.com`                                                                           |
+| Session recording      | `hotjar.com`, `hj.com`, `fullstory.com`, `logrocket.com`                                                           |
+| LinkedIn               | `licdn.com`, `linkedin.com`                                                                                        |
+| Twitter/X              | `ads-twitter.com`, `t.co`                                                                                          |
+| Trade Desk             | `adsrvr.org`                                                                                                       |
+| A/B testing            | `optimizely.com`, `vwo.com`                                                                                        |
 
 **Classify pre-consent blocking findings:**
+
 - **NON-COMPLIANT**: Any non-essential cookie, tracker, or pixel fires before consent interaction
 - **REQUIRES REMEDIATION**: Tracking domain receives a request but no cookie is set; or scripts load but are not initialised
 - **COMPLIANT**: Only strictly necessary cookies present; no third-party tracking requests before consent
 
 **If only an automated scan report is available:**
+
 - Extract all cookies listed as "set before consent" or in the "strictly necessary" bucket that appear to serve analytics/advertising purposes
 - Note automated scan limitations (JavaScript-only trackers may be missed)
 - Document scan tool name, version, and scan date
@@ -252,10 +257,12 @@ Audit each cookie against the strictly necessary exemption test.
 #### Strictly Necessary Cookies — Two-Part Eligibility Test
 
 A cookie is strictly necessary ONLY if BOTH conditions are met:
+
 1. It is technically required for a service **explicitly requested by the user** (not merely beneficial)
 2. Without it, the service cannot function at all (not merely degrades or becomes less convenient)
 
 **Always legitimately strictly necessary:**
+
 - [ ] Session authentication tokens (login state persistence)
 - [ ] Shopping cart / basket state cookies (e-commerce only)
 - [ ] CSRF (Cross-Site Request Forgery) protection tokens
@@ -266,16 +273,16 @@ A cookie is strictly necessary ONLY if BOTH conditions are met:
 
 **Common misclassifications — never strictly necessary:**
 
-| Cookie / Tool | Why NOT strictly necessary | Common justification (rejected) |
-|---------------|--------------------------|--------------------------------|
-| Google Analytics / GA4 | Measures audience behaviour — not technically required for service delivery | "We need it to improve the site" |
-| Google Tag Manager data layer | Loads third-party scripts — not technically required | "It's just a container" |
-| Meta Pixel / Facebook tracking | Advertising attribution — explicitly not necessary for service delivery | "Our marketing depends on it" |
-| Hotjar / Microsoft Clarity | Session recording and heatmapping — optional analytics | "It's for performance monitoring" |
-| Optimizely / VWO (A/B testing) | Conversion optimisation — not technically necessary | "It improves user experience" |
-| Google Ads conversion tracking | Advertising ROI measurement — never technically necessary | "We need to measure ad spend" |
-| Intercom / Drift chatbot | Customer support enhancement — service accessible by other means | "It's a core support tool" |
-| Social media share/like buttons (SDK) | Social platform data transfer — no user explicitly requested it | "They're standard site features" |
+| Cookie / Tool                         | Why NOT strictly necessary                                                  | Common justification (rejected)   |
+| ------------------------------------- | --------------------------------------------------------------------------- | --------------------------------- |
+| Google Analytics / GA4                | Measures audience behaviour — not technically required for service delivery | "We need it to improve the site"  |
+| Google Tag Manager data layer         | Loads third-party scripts — not technically required                        | "It's just a container"           |
+| Meta Pixel / Facebook tracking        | Advertising attribution — explicitly not necessary for service delivery     | "Our marketing depends on it"     |
+| Hotjar / Microsoft Clarity            | Session recording and heatmapping — optional analytics                      | "It's for performance monitoring" |
+| Optimizely / VWO (A/B testing)        | Conversion optimisation — not technically necessary                         | "It improves user experience"     |
+| Google Ads conversion tracking        | Advertising ROI measurement — never technically necessary                   | "We need to measure ad spend"     |
+| Intercom / Drift chatbot              | Customer support enhancement — service accessible by other means            | "It's a core support tool"        |
+| Social media share/like buttons (SDK) | Social platform data transfer — no user explicitly requested it             | "They're standard site features"  |
 
 **Audit test for each "strictly necessary" claim:** Apply the two-part test above. If the
 answer to part (1) is "No" or the answer to part (2) is "No," the cookie fails the test.
@@ -320,6 +327,7 @@ describe the banner design (number of layers, button labels, colour/size of Acce
 - [ ] Rejection requires the **same number of clicks** as acceptance (click parity)
 
 **NON-COMPLIANT markers:**
+
 - "Accept All" at first layer; rejection requires "Manage Preferences" → second layer
 - "Reject" is text-only (hyperlink or body text), not a button element
 - "Accept" is bright/prominent; "Reject" is grey, small, or low-contrast
@@ -341,6 +349,7 @@ of equivalent Reject All at first layer. This remains the most frequently cited 
 #### C. First-Layer Information Adequacy
 
 Minimum information required at first layer or via immediately accessible link:
+
 - [ ] Identity of the data controller (organisation name)
 - [ ] Purpose of each cookie category (specific description, not just the category label)
 - [ ] Categories of recipients or named third-party vendors
@@ -355,10 +364,10 @@ identifies this as below the minimum threshold.
 #### D. Cookie Wall Test
 
 - [ ] Is access to the service conditional on accepting non-essential cookies?
-  → **NON-COMPLIANT** (unless EDPB Opinion 08/2024 "truly equivalent" alternative is offered — only applies to Large Online Platforms)
+      → **NON-COMPLIANT** (unless EDPB Opinion 08/2024 "truly equivalent" alternative is offered — only applies to Large Online Platforms)
 - [ ] Is a "consent or pay" model used?
-  → If Large Online Platform: essentially impermissible; "truly equivalent free option" required
-  → If standard site: generally impermissible under EDPB Guidelines 05/2020; some national DPA latitude [JURISDICTION-SPECIFIC]
+      → If Large Online Platform: essentially impermissible; "truly equivalent free option" required
+      → If standard site: generally impermissible under EDPB Guidelines 05/2020; some national DPA latitude [JURISDICTION-SPECIFIC]
 
 #### E. Second-Layer / Preference Centre Requirements
 
@@ -378,22 +387,23 @@ not only HTTP cookies.
 
 Identify and classify each technology found:
 
-| Technology | Audit Method | Pre-Consent Test | Common Non-Compliance |
-|------------|-------------|-----------------|----------------------|
-| **HTTP cookies** (session, persistent, first/third-party) | Application tab → Cookies | Steps 4-6 | Pre-consent firing |
-| **Local storage** (`localStorage`, `sessionStorage`) | Application tab → Local Storage; look for tracking IDs | Check for identifiers written before consent | Analytics or ad tech writing tracking IDs before consent |
-| **IndexedDB** | Application tab → IndexedDB; inspect structured databases | Check for fingerprinting data | Fingerprinting scripts using IndexedDB for identifier persistence |
-| **Tracking pixels / web beacons** | Network tab → filter image requests; look for 1×1 pixel GIF patterns to ad domains | Check for pixel requests before consent | Meta Pixel, LinkedIn Insight Tag firing on page load |
-| **ETags** (HTTP cache-based tracking) | Network response headers → ETag values that could serve as identifiers | Check for consistent ETag values across page loads | Rarely detected by basic scans; flag where ETag values are sent to analytics domains |
-| **Browser fingerprinting** (canvas, WebGL, audio, font) | Inspect page JS for canvas API, WebGL renderer, AudioContext calls | Check script execution timing | Scripts fingerprinting user before consent; used as cookie-less tracking alternative |
-| **CNAME cloaking** | DNS lookup of analytics subdomain; check if first-party subdomain proxies third-party analytics | DNS/network check | `analytics.yourdomain.com` resolving to `googleanalytics.com` — bypasses third-party cookie blocking but does not eliminate consent obligation |
-| **Service worker caches** | Application tab → Service Workers, Cache Storage | Check for tracking data stored in SW cache | Service worker used to persist identifiers after cookie deletion |
-| **URL tracking parameters** (UTM, gclid, fbclid) | Inspect page URLs; check if parameters are captured by analytics scripts | Check analytics script execution timing | UTM parameters captured by analytics before consent interaction |
-| **Social media embed SDKs** | Network tab → look for requests to `connect.facebook.net`, `platform.twitter.com`, `platform.linkedin.com` | Check request timing on page load | "Like," "Share," and "Follow" buttons loading social media SDKs before consent |
-| **Server-side tagging** (GTM server-side, Segment, etc.) | Review server-side container configuration; inspect network requests for first-party proxy endpoints | CMP consent signal propagation to server-side container | Server-side tags receiving data before CMP consent signal; first-party proxy endpoints bypassing client-side consent gating |
-| **IP-based tracking** | Review server logs and analytics configuration | Server-side signal reception | Server-side analytics collecting full IP before browser consent signal received |
+| Technology                                                | Audit Method                                                                                               | Pre-Consent Test                                        | Common Non-Compliance                                                                                                                          |
+| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **HTTP cookies** (session, persistent, first/third-party) | Application tab → Cookies                                                                                  | Steps 4-6                                               | Pre-consent firing                                                                                                                             |
+| **Local storage** (`localStorage`, `sessionStorage`)      | Application tab → Local Storage; look for tracking IDs                                                     | Check for identifiers written before consent            | Analytics or ad tech writing tracking IDs before consent                                                                                       |
+| **IndexedDB**                                             | Application tab → IndexedDB; inspect structured databases                                                  | Check for fingerprinting data                           | Fingerprinting scripts using IndexedDB for identifier persistence                                                                              |
+| **Tracking pixels / web beacons**                         | Network tab → filter image requests; look for 1×1 pixel GIF patterns to ad domains                         | Check for pixel requests before consent                 | Meta Pixel, LinkedIn Insight Tag firing on page load                                                                                           |
+| **ETags** (HTTP cache-based tracking)                     | Network response headers → ETag values that could serve as identifiers                                     | Check for consistent ETag values across page loads      | Rarely detected by basic scans; flag where ETag values are sent to analytics domains                                                           |
+| **Browser fingerprinting** (canvas, WebGL, audio, font)   | Inspect page JS for canvas API, WebGL renderer, AudioContext calls                                         | Check script execution timing                           | Scripts fingerprinting user before consent; used as cookie-less tracking alternative                                                           |
+| **CNAME cloaking**                                        | DNS lookup of analytics subdomain; check if first-party subdomain proxies third-party analytics            | DNS/network check                                       | `analytics.yourdomain.com` resolving to `googleanalytics.com` — bypasses third-party cookie blocking but does not eliminate consent obligation |
+| **Service worker caches**                                 | Application tab → Service Workers, Cache Storage                                                           | Check for tracking data stored in SW cache              | Service worker used to persist identifiers after cookie deletion                                                                               |
+| **URL tracking parameters** (UTM, gclid, fbclid)          | Inspect page URLs; check if parameters are captured by analytics scripts                                   | Check analytics script execution timing                 | UTM parameters captured by analytics before consent interaction                                                                                |
+| **Social media embed SDKs**                               | Network tab → look for requests to `connect.facebook.net`, `platform.twitter.com`, `platform.linkedin.com` | Check request timing on page load                       | "Like," "Share," and "Follow" buttons loading social media SDKs before consent                                                                 |
+| **Server-side tagging** (GTM server-side, Segment, etc.)  | Review server-side container configuration; inspect network requests for first-party proxy endpoints       | CMP consent signal propagation to server-side container | Server-side tags receiving data before CMP consent signal; first-party proxy endpoints bypassing client-side consent gating                    |
+| **IP-based tracking**                                     | Review server logs and analytics configuration                                                             | Server-side signal reception                            | Server-side analytics collecting full IP before browser consent signal received                                                                |
 
 For each technology identified, record:
+
 - Technology type and vendor name
 - Purpose / which cookie category it serves
 - Pre-consent? (Yes / No / Uncertain)
@@ -413,6 +423,7 @@ Consent must be "as easy to withdraw as to give." Test each criterion:
 - [ ] **State persists**: After withdrawal, preference is persisted across browser sessions
 
 **Test procedure:**
+
 1. Accept all cookies; verify non-essential cookies are set
 2. Access withdrawal mechanism (footer link / settings icon / preference centre)
 3. Withdraw consent for all non-essential categories
@@ -420,6 +431,7 @@ Consent must be "as easy to withdraw as to give." Test each criterion:
 5. Reload page: verify non-essential tracking does not resume
 
 **Common failures:**
+
 - CMP updates consent preference but does not delete previously set cookies (failure to "unset")
 - Withdrawal only affects future visits; persisted cookies remain active for current session
 - Withdrawal mechanism hidden — only accessible via buried link in privacy policy body text
@@ -464,12 +476,14 @@ sufficient time to respond to regulatory investigations. **3 years minimum** is 
 retention period; best practice guidance varies from 2-5 years].
 
 **Audit test:**
+
 1. Give consent on the site
 2. Request from the CMP operator or technical team: a sample consent record for a specific cookie/device ID
 3. Verify all required fields are present and accurately reflect the interaction
 4. Test CMP's ability to retrieve and export a specific user's consent history upon regulatory request
 
 #### Consent Record Anti-Patterns
+
 - Records stored in the same database as personal data without segregation
 - Records not encrypted at rest
 - Consent logs deleted after a short period (30–90 days) with no backup
@@ -487,6 +501,7 @@ GPC is a browser-level signal indicating the user's preference to opt out of the
 sharing of personal information. Honoring GPC is mandatory in California and Colorado.
 
 **Test procedure:**
+
 1. Install a GPC-enabled browser extension (e.g., Privacy Badger, OptMeowt) or use a browser
    with native GPC support (Firefox with GPC enabled; Brave with "Global Privacy Control" active)
 2. Navigate to the site with GPC signal active
@@ -497,6 +512,7 @@ sharing of personal information. Honoring GPC is mandatory in California and Col
      regardless of the browser signal
 
 **California requirements (as of January 1, 2026 revised regulations):**
+
 - [ ] GPC signal honored as opt-out of sale and sharing of personal information
 - [ ] "Do Not Sell or Share My Personal Information" link present on homepage (unless GPC is the sole mechanism)
 - [ ] Opt-out processed without requiring user account creation or login
@@ -504,6 +520,7 @@ sharing of personal information. Honoring GPC is mandatory in California and Col
 - [ ] No financial or service discrimination against users who opt out
 
 **Colorado UOOM (effective July 1, 2024):**
+
 - [ ] GPC honored as the approved UOOM for opt-out of targeted advertising and data sales
 - [ ] Opt-out applies to all Colorado residents' data, not only users who actively send the signal
 
@@ -515,6 +532,7 @@ state AG's published guidance].
 #### IAB GPP / TCF String Audit (Ad-Tech-Integrated Sites)
 
 If the site uses IAB TCF v2.2 or IAB Global Privacy Platform:
+
 - [ ] TCF/GPP consent string accurately reflects the user's actual consent decision
 - [ ] Consent string is correctly propagated to all integrated ad tech vendors
 - [ ] All consent parameters default to "denied" before consent interaction
@@ -536,14 +554,15 @@ consent is not given.
 
 All four signals must default to `denied` before any user consent interaction:
 
-| Signal | Controls | Required Default | Risk if Incorrect |
-|--------|----------|-----------------|--------------------|
-| `ad_storage` | Advertising cookies | `denied` | Advertising cookies load before consent |
-| `analytics_storage` | Analytics cookies | `denied` | Analytics data collected before consent |
-| `ad_user_data` | Sending user data to Google Ads | `denied` | User data sent to Google without consent |
-| `ad_personalization` | Personalised advertising | `denied` | Ad personalisation without consent |
+| Signal               | Controls                        | Required Default | Risk if Incorrect                        |
+| -------------------- | ------------------------------- | ---------------- | ---------------------------------------- |
+| `ad_storage`         | Advertising cookies             | `denied`         | Advertising cookies load before consent  |
+| `analytics_storage`  | Analytics cookies               | `denied`         | Analytics data collected before consent  |
+| `ad_user_data`       | Sending user data to Google Ads | `denied`         | User data sent to Google without consent |
+| `ad_personalization` | Personalised advertising        | `denied`         | Ad personalisation without consent       |
 
 **Test procedure:**
+
 1. Open Chrome DevTools → Console tab
 2. Navigate to site in Incognito mode (no prior cookies)
 3. Before any consent interaction, check: `window.dataLayer` → look for `gtag('consent', 'default', {...})` event with all signals set to `denied`
@@ -551,6 +570,7 @@ All four signals must default to `denied` before any user consent interaction:
 5. Accept only analytics; verify: `analytics_storage: 'granted'`, `ad_storage: 'denied'`, `ad_user_data: 'denied'`, `ad_personalization: 'denied'`
 
 **Common failures:**
+
 - Consent Mode initialised with `ad_storage: 'granted'` as default (non-compliant with GDPR consent conditions)
 - `analytics_storage` updates to `granted` when user only accepted "functional" cookies
 - `ad_user_data` set to `granted` without separate, specific consent for data sending to Google
@@ -567,13 +587,13 @@ Before delivering the audit report, apply these quality checks silently.
 
 #### Citation Quality Gates
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every non-compliance finding cites a specific EDPB Guideline, Directive article, or SA guidance document | Add citation or mark "[UNVERIFIED]" |
-| **Format** | All citations follow a consistent format: Authority, document title, article/section, date | Fix format |
-| **Currency** | Verify against known regulatory updates: DUAA (UK 2025), CCPA revised regs (CA Jan 2026), DSK v1.2 (Nov 2024), EDPB Guidelines 2/2023 v2.0 (Oct 2024) | Flag "[CHECK CURRENCY]" |
-| **Domain** | Analysis stays within cookie/ePrivacy scope; do not conflate general GDPR data processing analysis with ePrivacy consent requirements | Remove or flag scope bleed |
-| **Confidence** | Uncertainty (DUAA analytics exception, multi-state UOOM evolution, Consent Mode Advanced Mode) explicitly stated, not hidden | Add confidence qualifier |
+| Gate           | Rule                                                                                                                                                  | Fail Action                         |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| **Source**     | Every non-compliance finding cites a specific EDPB Guideline, Directive article, or SA guidance document                                              | Add citation or mark "[UNVERIFIED]" |
+| **Format**     | All citations follow a consistent format: Authority, document title, article/section, date                                                            | Fix format                          |
+| **Currency**   | Verify against known regulatory updates: DUAA (UK 2025), CCPA revised regs (CA Jan 2026), DSK v1.2 (Nov 2024), EDPB Guidelines 2/2023 v2.0 (Oct 2024) | Flag "[CHECK CURRENCY]"             |
+| **Domain**     | Analysis stays within cookie/ePrivacy scope; do not conflate general GDPR data processing analysis with ePrivacy consent requirements                 | Remove or flag scope bleed          |
+| **Confidence** | Uncertainty (DUAA analytics exception, multi-state UOOM evolution, Consent Mode Advanced Mode) explicitly stated, not hidden                          | Add confidence qualifier            |
 
 #### Self-Interrogation for NON-COMPLIANT Findings
 
@@ -593,13 +613,13 @@ ambiguity clearly in the audit report alongside the finding.
 
 #### Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Clear violation per settled EDPB/SA guidance; enforcement action has been taken for this exact failure | State non-compliance with confidence; cite enforcement precedent |
-| **High** | 0.80–0.94 | Strong authority; minor interpretive questions | Assert with brief caveat noting the uncertainty |
-| **Probable** | 0.60–0.79 | Good arguments; some national DPA latitude possible | State assessment with contra-indicators and jurisdictional notes |
-| **Possible** | 0.40–0.59 | Genuinely uncertain law (e.g., DUAA analytics exception scope) | Flag for legal review with both sides of the argument presented |
-| **Unlikely** | 0.0–0.39 | Weak or speculative non-compliance basis | Do not assert violation; note factual observation without legal conclusion |
+| Level        | Range     | Meaning                                                                                                | Action                                                                     |
+| ------------ | --------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Clear violation per settled EDPB/SA guidance; enforcement action has been taken for this exact failure | State non-compliance with confidence; cite enforcement precedent           |
+| **High**     | 0.80–0.94 | Strong authority; minor interpretive questions                                                         | Assert with brief caveat noting the uncertainty                            |
+| **Probable** | 0.60–0.79 | Good arguments; some national DPA latitude possible                                                    | State assessment with contra-indicators and jurisdictional notes           |
+| **Possible** | 0.40–0.59 | Genuinely uncertain law (e.g., DUAA analytics exception scope)                                         | Flag for legal review with both sides of the argument presented            |
+| **Unlikely** | 0.0–0.39  | Weak or speculative non-compliance basis                                                               | Do not assert violation; note factual observation without legal conclusion |
 
 ---
 
@@ -607,21 +627,21 @@ ambiguity clearly in the audit report alongside the finding.
 
 ### Severity Classification System
 
-| Classification | Definition | Regulatory Risk | Remediation Priority |
-|----------------|-----------|----------------|----------------------|
-| **NON-COMPLIANT** | Clear violation of ePrivacy Directive, GDPR consent requirements, or applicable national law. Enforcement action has been taken for this exact failure type. | HIGH — regulators have fined this violation; immediate risk if audited | **Critical** — remediate within 30 days |
-| **REQUIRES REMEDIATION** | Implementation does not meet current EDPB/SA guidance or best practice, but may not yet have triggered enforcement. Or: clear violation of US opt-out requirements. | MEDIUM — active enforcement risk, especially under ICO top-1,000 review | **High** — remediate within 90 days |
-| **COMPLIANT** | Implementation meets applicable legal requirements and EDPB/SA guidance | LOW | No action required; note best practice gaps where applicable |
+| Classification           | Definition                                                                                                                                                          | Regulatory Risk                                                         | Remediation Priority                                         |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------ |
+| **NON-COMPLIANT**        | Clear violation of ePrivacy Directive, GDPR consent requirements, or applicable national law. Enforcement action has been taken for this exact failure type.        | HIGH — regulators have fined this violation; immediate risk if audited  | **Critical** — remediate within 30 days                      |
+| **REQUIRES REMEDIATION** | Implementation does not meet current EDPB/SA guidance or best practice, but may not yet have triggered enforcement. Or: clear violation of US opt-out requirements. | MEDIUM — active enforcement risk, especially under ICO top-1,000 review | **High** — remediate within 90 days                          |
+| **COMPLIANT**            | Implementation meets applicable legal requirements and EDPB/SA guidance                                                                                             | LOW                                                                     | No action required; note best practice gaps where applicable |
 
 ### Domain 1: Pre-Consent Blocking
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| Analytics scripts | Analytics fires + sets cookie before consent | Analytics domain receives request; no cookie set | No analytics request before consent |
-| Advertising pixels | Advertising pixel fires before consent | Advertising domain request; no cookie or data sent | No advertising request before consent |
-| Session recording | Hotjar / Clarity / FullStory loads and initialises before consent | Recording library loads; not initialised | Library not loaded before consent |
-| Social media embeds | Social SDK loads and sets cookies before consent | SDK loads; no cross-domain cookie | Social embed not loaded before consent |
-| Tag manager configuration | GTM fires all tags before CMP initialisation | GTM loads; consent triggers partially configured | GTM configured to wait for CMP consent state |
+| Criterion                 | NON-COMPLIANT                                                     | REQUIRES REMEDIATION                               | COMPLIANT                                    |
+| ------------------------- | ----------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------- |
+| Analytics scripts         | Analytics fires + sets cookie before consent                      | Analytics domain receives request; no cookie set   | No analytics request before consent          |
+| Advertising pixels        | Advertising pixel fires before consent                            | Advertising domain request; no cookie or data sent | No advertising request before consent        |
+| Session recording         | Hotjar / Clarity / FullStory loads and initialises before consent | Recording library loads; not initialised           | Library not loaded before consent            |
+| Social media embeds       | Social SDK loads and sets cookies before consent                  | SDK loads; no cross-domain cookie                  | Social embed not loaded before consent       |
+| Tag manager configuration | GTM fires all tags before CMP initialisation                      | GTM loads; consent triggers partially configured   | GTM configured to wait for CMP consent state |
 
 **Enforcement precedent:** CNIL fined SHEIN €150M (September 2025) for pre-consent cookie
 placement. Google €150M (January 2022) and Yahoo €10M (December 2023) for the same violation.
@@ -629,11 +649,11 @@ This is the single most-fined violation category across EU supervisory authoriti
 
 ### Domain 2: Accept/Reject Parity
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| Reject All at first layer | No rejection option at first layer; only "Accept All" | Reject accessible but requires extra navigational step | Accept and Reject both visible at first layer |
-| Visual parity | Strong visual asymmetry (bright/prominent Accept; grey/tiny Reject) | Mild asymmetry; both identifiable as interactive buttons | Equivalent visual prominence, colour, and size |
-| Click parity | Rejection requires 3+ clicks vs. 1 click to accept | Rejection requires 1 additional step vs. acceptance | Equal number of steps for both actions |
+| Criterion                 | NON-COMPLIANT                                                       | REQUIRES REMEDIATION                                     | COMPLIANT                                      |
+| ------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------- |
+| Reject All at first layer | No rejection option at first layer; only "Accept All"               | Reject accessible but requires extra navigational step   | Accept and Reject both visible at first layer  |
+| Visual parity             | Strong visual asymmetry (bright/prominent Accept; grey/tiny Reject) | Mild asymmetry; both identifiable as interactive buttons | Equivalent visual prominence, colour, and size |
+| Click parity              | Rejection requires 3+ clicks vs. 1 click to accept                  | Rejection requires 1 additional step vs. acceptance      | Equal number of steps for both actions         |
 
 **Enforcement precedent:** Cookie Banner Taskforce Report (January 2023) — 5 of 7 identified
 violation types relate to reject-all parity. CNIL fines Google €150M and Facebook €60M for this
@@ -641,97 +661,97 @@ specific violation (January 2022).
 
 ### Domain 3: Dark Patterns
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| Pre-ticked boxes | Pre-ticked checkbox at any layer | Pre-ticked but visually prominent (clear opt-out available) | No pre-ticked boxes at any layer |
-| Misleading labels | "Accept" vs. "Close" where "Close" actually accepts | Unclear but not actively misleading | Unambiguous labelling throughout |
-| Passive consent | Scrolling or continued browsing treated as consent | Banner disappears on scroll (ambiguous) | Explicit positive affirmative action required |
-| Consent-by-close | Closing banner (X button only) treated as acceptance | X button dismisses banner; preference state unclear | X button maintains prior state without implying consent |
-| Emotional manipulation | Guilt-tripping or fear-based labels on rejection option | Mild framing asymmetry | Neutral, equivalent labelling for both options |
+| Criterion              | NON-COMPLIANT                                           | REQUIRES REMEDIATION                                        | COMPLIANT                                               |
+| ---------------------- | ------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------- |
+| Pre-ticked boxes       | Pre-ticked checkbox at any layer                        | Pre-ticked but visually prominent (clear opt-out available) | No pre-ticked boxes at any layer                        |
+| Misleading labels      | "Accept" vs. "Close" where "Close" actually accepts     | Unclear but not actively misleading                         | Unambiguous labelling throughout                        |
+| Passive consent        | Scrolling or continued browsing treated as consent      | Banner disappears on scroll (ambiguous)                     | Explicit positive affirmative action required           |
+| Consent-by-close       | Closing banner (X button only) treated as acceptance    | X button dismisses banner; preference state unclear         | X button maintains prior state without implying consent |
+| Emotional manipulation | Guilt-tripping or fear-based labels on rejection option | Mild framing asymmetry                                      | Neutral, equivalent labelling for both options          |
 
 ### Domain 4: Cookie Classification Accuracy
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| GA4 / analytics in "strictly necessary" | Google Analytics classified as strictly necessary | Analytics tool in analytics category but fires before consent | Analytics gated behind analytics consent |
-| Session recording in "performance" | Hotjar / Clarity classified as strictly necessary or performance | Recording tools in analytics category (misnamed) | Recording tools in appropriate category, gated on consent |
-| Advertising in "functional" | Advertising trackers classified as functional or strictly necessary | Advertising tracker in analytics (not marketing) | Advertising trackers in marketing category; gated on consent |
+| Criterion                               | NON-COMPLIANT                                                       | REQUIRES REMEDIATION                                          | COMPLIANT                                                    |
+| --------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------ |
+| GA4 / analytics in "strictly necessary" | Google Analytics classified as strictly necessary                   | Analytics tool in analytics category but fires before consent | Analytics gated behind analytics consent                     |
+| Session recording in "performance"      | Hotjar / Clarity classified as strictly necessary or performance    | Recording tools in analytics category (misnamed)              | Recording tools in appropriate category, gated on consent    |
+| Advertising in "functional"             | Advertising trackers classified as functional or strictly necessary | Advertising tracker in analytics (not marketing)              | Advertising trackers in marketing category; gated on consent |
 
 ### Domain 5: Granular Category Controls
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| All-or-nothing consent | Single Accept/Decline toggle; no category granularity | Categories visible but not fully independent (some coupling) | Independent per-category toggles at second layer |
-| Category descriptions | Vague descriptions ("enhance experience," "personalisation") | Category names accurate; descriptions minimal | Specific descriptions of purpose, data types, and third parties per category |
-| Vendor transparency | No vendor list disclosed anywhere | Categories of recipients disclosed; no individual names | Named third-party vendor list accessible in preference centre |
+| Criterion              | NON-COMPLIANT                                                | REQUIRES REMEDIATION                                         | COMPLIANT                                                                    |
+| ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| All-or-nothing consent | Single Accept/Decline toggle; no category granularity        | Categories visible but not fully independent (some coupling) | Independent per-category toggles at second layer                             |
+| Category descriptions  | Vague descriptions ("enhance experience," "personalisation") | Category names accurate; descriptions minimal                | Specific descriptions of purpose, data types, and third parties per category |
+| Vendor transparency    | No vendor list disclosed anywhere                            | Categories of recipients disclosed; no individual names      | Named third-party vendor list accessible in preference centre                |
 
 ### Domain 6: Cookie Wall
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| Service conditioned on consent (non-LOP) | Access denied without accepting non-essential cookies | Reduced functionality threatened (not full denial) | Full service accessible without non-essential consent |
-| "Consent or pay" (non-LOP) | Pay-or-consent model with no alternative | Pay-or-consent with very low-cost alternative | No pay-or-consent model |
-| "Consent or pay" (Large Online Platform) | Any pay-or-consent model without "truly equivalent" free option | Free option available but materially inferior in features | Not applicable (not a Large Online Platform) |
+| Criterion                                | NON-COMPLIANT                                                   | REQUIRES REMEDIATION                                      | COMPLIANT                                             |
+| ---------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------- |
+| Service conditioned on consent (non-LOP) | Access denied without accepting non-essential cookies           | Reduced functionality threatened (not full denial)        | Full service accessible without non-essential consent |
+| "Consent or pay" (non-LOP)               | Pay-or-consent model with no alternative                        | Pay-or-consent with very low-cost alternative             | No pay-or-consent model                               |
+| "Consent or pay" (Large Online Platform) | Any pay-or-consent model without "truly equivalent" free option | Free option available but materially inferior in features | Not applicable (not a Large Online Platform)          |
 
 ### Domain 7: Withdrawal Mechanism
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| Withdrawal mechanism exists | No persistent mechanism accessible on site | Link exists but not in standard location (footer/header) | Persistent, clearly labelled mechanism on all pages |
-| Withdrawal effectiveness | Previously set cookies not deleted on withdrawal | Cookies expire on next visit (not current session) | Cookies deleted or expired immediately on withdrawal |
-| Withdrawal ease | Withdrawal requires significantly more steps than giving consent | Withdrawal requires 1-2 extra steps | Comparable steps for withdrawal and acceptance |
+| Criterion                   | NON-COMPLIANT                                                    | REQUIRES REMEDIATION                                     | COMPLIANT                                            |
+| --------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------- |
+| Withdrawal mechanism exists | No persistent mechanism accessible on site                       | Link exists but not in standard location (footer/header) | Persistent, clearly labelled mechanism on all pages  |
+| Withdrawal effectiveness    | Previously set cookies not deleted on withdrawal                 | Cookies expire on next visit (not current session)       | Cookies deleted or expired immediately on withdrawal |
+| Withdrawal ease             | Withdrawal requires significantly more steps than giving consent | Withdrawal requires 1-2 extra steps                      | Comparable steps for withdrawal and acceptance       |
 
 ### Domain 8: Tracking Technology Scope
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| Local storage tracking | Tracking identifiers written to localStorage before consent | Local storage used post-consent but gating inconsistent | localStorage tracking gated behind consent |
-| Fingerprinting | Canvas/WebGL/audio fingerprinting on page load | Fingerprinting script present; timing uncertain | No fingerprinting; or gated behind explicit consent |
-| Pixel tracking | Tracking pixels fire before consent | Pixel request detected; no data confirmed sent | Pixels blocked until consent given |
-| Server-side tagging | Server-side tags bypass CMP consent gating | Server-side tags present; consent signal propagation unverified | Server-side tags receive and honour CMP consent signal |
-| CNAME cloaking | First-party subdomain proxies third-party analytics; no consent gating | CNAME proxying present; consent mechanism in place | No CNAME cloaking; or CNAME proxy with correct consent gating |
+| Criterion              | NON-COMPLIANT                                                          | REQUIRES REMEDIATION                                            | COMPLIANT                                                     |
+| ---------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------- |
+| Local storage tracking | Tracking identifiers written to localStorage before consent            | Local storage used post-consent but gating inconsistent         | localStorage tracking gated behind consent                    |
+| Fingerprinting         | Canvas/WebGL/audio fingerprinting on page load                         | Fingerprinting script present; timing uncertain                 | No fingerprinting; or gated behind explicit consent           |
+| Pixel tracking         | Tracking pixels fire before consent                                    | Pixel request detected; no data confirmed sent                  | Pixels blocked until consent given                            |
+| Server-side tagging    | Server-side tags bypass CMP consent gating                             | Server-side tags present; consent signal propagation unverified | Server-side tags receive and honour CMP consent signal        |
+| CNAME cloaking         | First-party subdomain proxies third-party analytics; no consent gating | CNAME proxying present; consent mechanism in place              | No CNAME cloaking; or CNAME proxy with correct consent gating |
 
 ### Domain 9: Consent Record Completeness
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| Records exist | No consent records maintained | Records maintained but with incomplete required fields | Full records containing all required fields |
-| Retrievability | Records cannot be retrieved for a specific user/device ID | Retrievable but only through slow, manual process | Records retrievable on demand by cookie/device ID |
-| Retention period | Records deleted within 90 days | Records retained 1–2 years | Records retained 3+ years |
-| Tamper evidence | Records stored in mutable plain text | Records in database with basic integrity controls | Records in tamper-evident, encrypted storage |
+| Criterion        | NON-COMPLIANT                                             | REQUIRES REMEDIATION                                   | COMPLIANT                                         |
+| ---------------- | --------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------- |
+| Records exist    | No consent records maintained                             | Records maintained but with incomplete required fields | Full records containing all required fields       |
+| Retrievability   | Records cannot be retrieved for a specific user/device ID | Retrievable but only through slow, manual process      | Records retrievable on demand by cookie/device ID |
+| Retention period | Records deleted within 90 days                            | Records retained 1–2 years                             | Records retained 3+ years                         |
+| Tamper evidence  | Records stored in mutable plain text                      | Records in database with basic integrity controls      | Records in tamper-evident, encrypted storage      |
 
 ### Domain 10: US GPC and UOOM Compliance
 
 [JURISDICTION-SPECIFIC — US STATES]
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| GPC honoring (California) | GPC signal completely ignored | GPC detected; processing delayed or partial | GPC honored immediately as full opt-out |
-| DNSS link (California) | No "Do Not Sell or Share" link on homepage | Link present but below the fold or hard to find | Prominent link or functional GPC mechanism on homepage |
-| Multi-state UOOM | No UOOM honoring in any applicable state | Partial state coverage (e.g., California only) | All applicable state UOOMs honored |
-| Non-discrimination | Service degraded or pricing changed for GPC opt-out users | Minor service differences for opt-out users | Full service and pricing parity for opt-out users |
+| Criterion                 | NON-COMPLIANT                                             | REQUIRES REMEDIATION                            | COMPLIANT                                              |
+| ------------------------- | --------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------ |
+| GPC honoring (California) | GPC signal completely ignored                             | GPC detected; processing delayed or partial     | GPC honored immediately as full opt-out                |
+| DNSS link (California)    | No "Do Not Sell or Share" link on homepage                | Link present but below the fold or hard to find | Prominent link or functional GPC mechanism on homepage |
+| Multi-state UOOM          | No UOOM honoring in any applicable state                  | Partial state coverage (e.g., California only)  | All applicable state UOOMs honored                     |
+| Non-discrimination        | Service degraded or pricing changed for GPC opt-out users | Minor service differences for opt-out users     | Full service and pricing parity for opt-out users      |
 
 ### Domain 11: Google Consent Mode v2
 
 [JURISDICTION-SPECIFIC — where Google Ads / GA4 deployed]
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| Default signal states | Any signal defaults to `granted` before consent | Signals initialised late (after page load, before consent) | All four signals default to `denied` on page load |
-| Signal accuracy | Signals do not reflect user's actual consent choice | Signals update correctly but with noticeable delay | Signals update accurately and immediately on consent |
-| Signal granularity | Single granted/denied for all four signals (no differentiation) | Partial granularity | All four signals independently and accurately set per consent category |
+| Criterion             | NON-COMPLIANT                                                   | REQUIRES REMEDIATION                                       | COMPLIANT                                                              |
+| --------------------- | --------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Default signal states | Any signal defaults to `granted` before consent                 | Signals initialised late (after page load, before consent) | All four signals default to `denied` on page load                      |
+| Signal accuracy       | Signals do not reflect user's actual consent choice             | Signals update correctly but with noticeable delay         | Signals update accurately and immediately on consent                   |
+| Signal granularity    | Single granted/denied for all four signals (no differentiation) | Partial granularity                                        | All four signals independently and accurately set per consent category |
 
 ### Domain 12: Analytics Exemption Claims
 
 [JURISDICTION-SPECIFIC — French sites claiming CNIL analytics exemption; UK sites post-DUAA]
 
-| Criterion | NON-COMPLIANT | REQUIRES REMEDIATION | COMPLIANT |
-|-----------|--------------|---------------------|-----------|
-| Tool qualification | Google Analytics claimed as exempt tool | Qualifying tool (Matomo) deployed but configuration not verified | Qualifying tool with documented CNIL-compliant configuration |
-| Cookie lifetime | Analytics cookies > 13 months | Analytics cookies 13–25 months | Analytics cookies ≤ 13 months |
-| IP pseudonymisation | Full IP addresses in analytics data | Last byte removed for city-level tracking only | Final byte (or more) removed after geolocation |
-| Session replay | Session replay tool included in analytics exemption | Session replay on separate consent category (not exemption) | No session replay under any analytics exemption claim |
-| Cross-referencing | Analytics data merged with CRM or advertising data | Analytics and advertising use separate IDs with possible linkage | Strict data silo; verifiable non-referencing |
+| Criterion           | NON-COMPLIANT                                       | REQUIRES REMEDIATION                                             | COMPLIANT                                                    |
+| ------------------- | --------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------ |
+| Tool qualification  | Google Analytics claimed as exempt tool             | Qualifying tool (Matomo) deployed but configuration not verified | Qualifying tool with documented CNIL-compliant configuration |
+| Cookie lifetime     | Analytics cookies > 13 months                       | Analytics cookies 13–25 months                                   | Analytics cookies ≤ 13 months                                |
+| IP pseudonymisation | Full IP addresses in analytics data                 | Last byte removed for city-level tracking only                   | Final byte (or more) removed after geolocation               |
+| Session replay      | Session replay tool included in analytics exemption | Session replay on separate consent category (not exemption)      | No session replay under any analytics exemption claim        |
+| Cross-referencing   | Analytics data merged with CRM or advertising data  | Analytics and advertising use separate IDs with possible linkage | Strict data silo; verifiable non-referencing                 |
 
 ---
 
@@ -934,6 +954,7 @@ Apply these standards before delivering any audit output:
 Use **legalcode-mcp** to verify and supplement legal authority in audit output:
 
 **Queries to run:**
+
 - EDPB Guidelines on cookie consent and ePrivacy Directive Article 5(3) — verify current versions and any updates post-October 2024
 - National SA guidance (CNIL, ICO, DSK) — retrieve current guidance documents and verify publication dates
 - Enforcement decisions — verify fine amounts, violation types, and dates for enforcement precedents cited
@@ -943,6 +964,7 @@ Use **legalcode-mcp** to verify and supplement legal authority in audit output:
 **Save verified sources** to `/tmp/legalcode-cookie-research.md` and reference in the Glass Box audit trail.
 
 **Without legalcode-mcp connected:**
+
 - Mark all statutory and SA guidance references with [VERIFY]
 - Note in Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Direct the user to verify enforcement precedents via the GDPR Enforcement Tracker
@@ -954,15 +976,15 @@ Use **legalcode-mcp** to verify and supplement legal authority in audit output:
 
 The audit may be informed by output from external scanning tools:
 
-| Tool | Best For | Limitations |
-|------|----------|-------------|
-| **Cookiebot** | Comprehensive cookie inventory; automated category detection | May miss JavaScript-only trackers |
-| **OneTrust Cookie Scan** | Enterprise sites; maps cookies to CMP categories | Requires OneTrust CMP deployment |
-| **Termly** | SME sites; automated classification | Limited deep technical audit depth |
-| **Chrome DevTools** | Manual pre-consent blocking test; Consent Mode v2 signal inspection | Requires manual execution; examiner expertise needed |
-| **Google PSAT** | Privacy Sandbox / cookie analysis; debugging first-party sets | Google-specific focus |
-| **Privado.ai** | Automated CMP compliance monitoring; ongoing drift detection | Commercial service |
-| **Nixon Digital scanner** | Specifically identifies cookies firing before consent | Focused scope |
+| Tool                      | Best For                                                            | Limitations                                          |
+| ------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------- |
+| **Cookiebot**             | Comprehensive cookie inventory; automated category detection        | May miss JavaScript-only trackers                    |
+| **OneTrust Cookie Scan**  | Enterprise sites; maps cookies to CMP categories                    | Requires OneTrust CMP deployment                     |
+| **Termly**                | SME sites; automated classification                                 | Limited deep technical audit depth                   |
+| **Chrome DevTools**       | Manual pre-consent blocking test; Consent Mode v2 signal inspection | Requires manual execution; examiner expertise needed |
+| **Google PSAT**           | Privacy Sandbox / cookie analysis; debugging first-party sets       | Google-specific focus                                |
+| **Privado.ai**            | Automated CMP compliance monitoring; ongoing drift detection        | Commercial service                                   |
+| **Nixon Digital scanner** | Specifically identifies cookies firing before consent               | Focused scope                                        |
 
 ---
 
@@ -1030,12 +1052,12 @@ Deliver the audit report in this format:
 
 ## Regulatory Obligations Summary
 
-| Regime | Applicable? | Primary SA | Enforcement Risk Level |
-|--------|------------|-----------|------------------------|
-| EU ePrivacy / GDPR | [Yes/No] | [CNIL / DPC / AEPD / DSK / other] | [HIGH/MEDIUM/LOW] |
-| UK PECR / UK GDPR | [Yes/No] | ICO | [HIGH/MEDIUM/LOW] |
-| US CCPA / GPC | [Yes/No] | CPPA / CA AG | [HIGH/MEDIUM/LOW] |
-| US State UOOMs | [Yes/No — list states] | State AGs | [HIGH/MEDIUM/LOW] |
+| Regime             | Applicable?            | Primary SA                        | Enforcement Risk Level |
+| ------------------ | ---------------------- | --------------------------------- | ---------------------- |
+| EU ePrivacy / GDPR | [Yes/No]               | [CNIL / DPC / AEPD / DSK / other] | [HIGH/MEDIUM/LOW]      |
+| UK PECR / UK GDPR  | [Yes/No]               | ICO                               | [HIGH/MEDIUM/LOW]      |
+| US CCPA / GPC      | [Yes/No]               | CPPA / CA AG                      | [HIGH/MEDIUM/LOW]      |
+| US State UOOMs     | [Yes/No — list states] | State AGs                         | [HIGH/MEDIUM/LOW]      |
 
 ---
 
@@ -1046,12 +1068,12 @@ and overall remediation recommendation.]
 
 **Overall Assessment:** [NON-COMPLIANT / PARTIALLY COMPLIANT / COMPLIANT]
 
-| Priority | Count |
-|----------|-------|
-| Critical findings | [N] |
-| High priority | [N] |
-| Medium priority | [N] |
-| Best practice gaps | [N] |
+| Priority           | Count |
+| ------------------ | ----- |
+| Critical findings  | [N]   |
+| High priority      | [N]   |
+| Medium priority    | [N]   |
+| Best practice gaps | [N]   |
 
 ---
 
@@ -1107,13 +1129,14 @@ script removal, developer action required]
 
 ### GPC Test Results
 
-| State | GPC Honoring Status | DNSS Link Present | Assessment |
-|-------|--------------------|--------------------|------------|
-| California | [Honored / Ignored / Partial] | [Yes/No] | [COMPLIANT/NON-COMPLIANT] |
-| Colorado | [Honored / Ignored / Partial] | N/A (UOOM-based) | [COMPLIANT/NON-COMPLIANT] |
-| [Other applicable states] | | | |
+| State                     | GPC Honoring Status           | DNSS Link Present | Assessment                |
+| ------------------------- | ----------------------------- | ----------------- | ------------------------- |
+| California                | [Honored / Ignored / Partial] | [Yes/No]          | [COMPLIANT/NON-COMPLIANT] |
+| Colorado                  | [Honored / Ignored / Partial] | N/A (UOOM-based)  | [COMPLIANT/NON-COMPLIANT] |
+| [Other applicable states] |                               |                   |                           |
 
 ### UOOM Compliance Summary
+
 [State-by-state assessment of universal opt-out mechanism compliance]
 
 ---
@@ -1122,14 +1145,14 @@ script removal, developer action required]
 
 [JURISDICTION-SPECIFIC — complete only if French site claiming CNIL exemption or UK site post-DUAA]
 
-| Condition | Status | Notes |
-|-----------|--------|-------|
-| Tool qualification | [Met / Not met] | [Tool name; qualifying status] |
-| Cookie lifetime ≤ 13 months | [Met / Not met] | [Actual lifetime observed] |
-| IP pseudonymisation | [Met / Not met] | [Configuration verified / unverified] |
-| No session replay | [Met / Not met] | [Tools found] |
-| No cross-referencing | [Met / Not met] | [Data flows identified] |
-| Anonymous output only | [Met / Not met] | [Verification method] |
+| Condition                   | Status          | Notes                                 |
+| --------------------------- | --------------- | ------------------------------------- |
+| Tool qualification          | [Met / Not met] | [Tool name; qualifying status]        |
+| Cookie lifetime ≤ 13 months | [Met / Not met] | [Actual lifetime observed]            |
+| IP pseudonymisation         | [Met / Not met] | [Configuration verified / unverified] |
+| No session replay           | [Met / Not met] | [Tools found]                         |
+| No cross-referencing        | [Met / Not met] | [Data flows identified]               |
+| Anonymous output only       | [Met / Not met] | [Verification method]                 |
 
 **Exemption eligibility:** [ELIGIBLE / NOT ELIGIBLE / UNCERTAIN — requires verification]
 
@@ -1137,33 +1160,33 @@ script removal, developer action required]
 
 ## Tracking Technology Inventory
 
-| Technology | Vendor | Pre-consent? | CMP Category | Assessment |
-|------------|--------|-------------|-------------|------------|
-| Google Analytics (GA4) | Google | [Yes/No] | [Strictly necessary / Analytics] | [NON-COMPLIANT / COMPLIANT] |
-| Meta Pixel | Meta | [Yes/No] | [Marketing] | [NON-COMPLIANT / COMPLIANT] |
-| [Additional entries] | | | | |
+| Technology             | Vendor | Pre-consent? | CMP Category                     | Assessment                  |
+| ---------------------- | ------ | ------------ | -------------------------------- | --------------------------- |
+| Google Analytics (GA4) | Google | [Yes/No]     | [Strictly necessary / Analytics] | [NON-COMPLIANT / COMPLIANT] |
+| Meta Pixel             | Meta   | [Yes/No]     | [Marketing]                      | [NON-COMPLIANT / COMPLIANT] |
+| [Additional entries]   |        |              |                                  |                             |
 
 ---
 
 ## Consent Record Assessment
 
-| Criterion | Status | Evidence |
-|-----------|--------|---------|
-| Records maintained | [Yes/No] | [CMP name; confirmation source] |
-| All required fields present | [Yes/Partial/No] | [Missing fields if partial] |
-| Records retrievable by user/device ID | [Yes/No] | [Tested / Untested] |
-| Retention period | [X months/years] | [Source] |
-| Tamper evidence | [Present/Absent] | [Storage method] |
+| Criterion                             | Status           | Evidence                        |
+| ------------------------------------- | ---------------- | ------------------------------- |
+| Records maintained                    | [Yes/No]         | [CMP name; confirmation source] |
+| All required fields present           | [Yes/Partial/No] | [Missing fields if partial]     |
+| Records retrievable by user/device ID | [Yes/No]         | [Tested / Untested]             |
+| Retention period                      | [X months/years] | [Source]                        |
+| Tamper evidence                       | [Present/Absent] | [Storage method]                |
 
 ---
 
 ## Remediation Checklist
 
-| Priority | Finding | Remediation Action | Owner | Target Date | Status |
-|----------|---------|-------------------|-------|-------------|--------|
-| Critical | [finding title] | [specific action] | [Technical/Legal/Both] | [YYYY-MM-DD] | ☐ |
-| High | [finding title] | [specific action] | | | ☐ |
-| Medium | [finding title] | [specific action] | | | ☐ |
+| Priority | Finding         | Remediation Action | Owner                  | Target Date  | Status |
+| -------- | --------------- | ------------------ | ---------------------- | ------------ | ------ |
+| Critical | [finding title] | [specific action]  | [Technical/Legal/Both] | [YYYY-MM-DD] | ☐      |
+| High     | [finding title] | [specific action]  |                        |              | ☐      |
+| Medium   | [finding title] | [specific action]  |                        |              | ☐      |
 
 ---
 
@@ -1184,13 +1207,14 @@ script removal, developer action required]
 
 ---
 
-*Report generated by legalcode-cookie-compliance-audit. AI-assisted analysis — not legal advice. Qualified privacy counsel review required before action.*
+_Report generated by legalcode-cookie-compliance-audit. AI-assisted analysis — not legal advice. Qualified privacy counsel review required before action._
 
 ---
 
 ## Provenance
 
 Created by Legalcode (2026-03-02). Original synthesis from deep legal research across:
+
 - EDPB Guidelines 05/2020 on Consent (v1.1); EDPB Guidelines 2/2023 v2.0 (Technical Scope of
   Art. 5(3) ePrivacy Directive, October 2024); EDPB Cookie Banner Taskforce Report (January 2023);
   EDPB Guidelines 03/2022 on Deceptive Design Patterns (v2.0, February 2023); EDPB Opinion

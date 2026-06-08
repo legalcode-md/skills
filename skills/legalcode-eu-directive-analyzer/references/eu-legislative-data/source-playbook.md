@@ -154,6 +154,7 @@ directive under the obligation in Art. 260(3) TFEU.
 ### 3.1 Structure
 
 For each (MS × directive) pair, the MNE record contains:
+
 - the directive CELEX,
 - the MS country code,
 - one or more NIMs (sector 7 CELEX) with national identifier (BGBl./JORF/etc.),
@@ -172,9 +173,9 @@ returns a per-MS table.
 ### 3.3 Caveats
 
 The "complete-transposition" flag is self-declared and does not equal conformity.
-The conformity-assessment skill must treat MNE as a *necessary-but-not-sufficient*
+The conformity-assessment skill must treat MNE as a _necessary-but-not-sufficient_
 input: an MS that has not notified is presumptively in breach of Art. 260(3) TFEU
-and exposed to first-referral penalties (the *Commission v Belgium* C-543/17,
+and exposed to first-referral penalties (the _Commission v Belgium_ C-543/17,
 ECLI:EU:C:2019:573 line of authority); an MS that has notified may still face an
 Art. 258 TFEU action for non-conformity even though the notification box is ticked.
 
@@ -215,6 +216,7 @@ Worked dossier numbers used in the suite:
 ### 4.2 Extractable data per dossier
 
 For each procedural file, OEIL exposes:
+
 - the rapporteur (lead MEP) and shadow rapporteurs,
 - the lead committee and opinion-providing committees,
 - every reading stage (first reading, second reading, conciliation),
@@ -242,8 +244,9 @@ official portal; InfoCuria is its structured search interface.
 ### 5.1 Structured search dimensions
 
 InfoCuria accepts queries on:
+
 - **ECLI** — direct lookup of a specific decision.
-- **Case number** — e.g. `C-543/17` resolves to *Commission v Belgium*.
+- **Case number** — e.g. `C-543/17` resolves to _Commission v Belgium_.
 - **CELEX of the contested act** — returns every case in which the act was the
   subject of a request for preliminary ruling, action for annulment, or
   infringement.
@@ -282,6 +285,7 @@ EEA pillar. The data the suite needs lives in three corpora.
 Every EU act incorporated into the EEA Annexes is incorporated by a JCD adopted
 under Art. 102 EEA. JCDs are sector-E CELEX. EEA-Lex publishes the JCD register
 indexed by:
+
 - the incorporated EU act CELEX,
 - the JCD number and date,
 - the EEA Annex affected (Annex I–XXII),
@@ -318,6 +322,7 @@ languages plus Icelandic, Norwegian, and several languages of accession candidat
 
 IATE provides a free, registration-required bulk export at
 `https://iate.europa.eu/download-iate`. Format options:
+
 - **TBX** (TermBase eXchange, ISO 30042) — XML, the canonical format.
 - **CSV** — flattened, one row per (term × language), useful for joins.
 - **JSON** — newer, exposes the full IATE record structure (definitions,
@@ -326,7 +331,7 @@ IATE provides a free, registration-required bulk export at
 ### 7.2 Use case in the suite
 
 When the conformity-assessment skill needs to verify that the German Expression's
-*wesentliche Dienste* and the English Expression's *essential entities* refer to
+_wesentliche Dienste_ and the English Expression's _essential entities_ refer to
 the same NIS2 concept, IATE entry 3577712 (or the relevant active entry) is the
 authoritative cross-language alignment. Always cite the IATE entry ID.
 
@@ -406,6 +411,7 @@ EEA EFTA states publish open APIs.
 ### 9.1 Single Market Scoreboard (Commission)
 
 At `https://single-market-scoreboard.ec.europa.eu/`. Refresh cadence:
+
 - **Transposition deficit** — semi-annual (twice per calendar year).
 - **Open infringement procedures** — semi-annual.
 - **Conformity deficit** — annual.
@@ -432,25 +438,25 @@ source is reachable through Legalcode MCP `search_laws`/`search_cases`/
 `search_guidance`; "Direct" means the skill must fall back to the API/SPARQL
 shape described above.
 
-| Source | `search_laws` | `search_cases` | `search_guidance` | Direct fallback |
-|---|---|---|---|---|
-| Cellar SPARQL (acts) | yes | — | — | §1 of this file |
-| Cellar SPARQL (case-law graph) | — | yes | — | §1 of this file |
-| EUR-Lex web service | partial | — | — | §2 |
-| N-Lex / MNE | yes | — | — | §3 (via Cellar) |
-| OEIL dossiers | — | — | partial | §4 (HTML parse + Cellar) |
-| CURIA / InfoCuria | — | yes | — | §5 |
-| EEA-Lex (JCDs) | partial | — | partial | §6 |
-| ESA Art. 31 SCA cases | — | partial | — | §6.2 |
-| IATE bulk | — | — | — | §7 (download required) |
-| Riksdagen | — | — | partial | §8.1 |
-| Storting | — | — | partial | §8.2 |
-| Folketinget | — | — | partial | §8.3 |
-| Althingi | — | — | partial | §8.4 |
-| Bundestag DIP | — | — | partial | §8.5 |
-| Assemblée nationale | — | — | partial | §8.6 |
-| Single Market Scoreboard | — | — | partial | §9.1 (XLSX export) |
-| ESA Internal Market Scoreboard | — | — | partial | §9.2 |
+| Source                         | `search_laws` | `search_cases` | `search_guidance` | Direct fallback          |
+| ------------------------------ | ------------- | -------------- | ----------------- | ------------------------ |
+| Cellar SPARQL (acts)           | yes           | —              | —                 | §1 of this file          |
+| Cellar SPARQL (case-law graph) | —             | yes            | —                 | §1 of this file          |
+| EUR-Lex web service            | partial       | —              | —                 | §2                       |
+| N-Lex / MNE                    | yes           | —              | —                 | §3 (via Cellar)          |
+| OEIL dossiers                  | —             | —              | partial           | §4 (HTML parse + Cellar) |
+| CURIA / InfoCuria              | —             | yes            | —                 | §5                       |
+| EEA-Lex (JCDs)                 | partial       | —              | partial           | §6                       |
+| ESA Art. 31 SCA cases          | —             | partial        | —                 | §6.2                     |
+| IATE bulk                      | —             | —              | —                 | §7 (download required)   |
+| Riksdagen                      | —             | —              | partial           | §8.1                     |
+| Storting                       | —             | —              | partial           | §8.2                     |
+| Folketinget                    | —             | —              | partial           | §8.3                     |
+| Althingi                       | —             | —              | partial           | §8.4                     |
+| Bundestag DIP                  | —             | —              | partial           | §8.5                     |
+| Assemblée nationale            | —             | —              | partial           | §8.6                     |
+| Single Market Scoreboard       | —             | —              | partial           | §9.1 (XLSX export)       |
+| ESA Internal Market Scoreboard | —             | —              | partial           | §9.2                     |
 
 "Partial" means coverage exists for some but not all queries the suite issues;
 the skill must check whether the MCP response addresses the specific question

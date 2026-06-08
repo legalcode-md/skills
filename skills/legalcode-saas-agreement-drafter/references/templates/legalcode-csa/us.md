@@ -1,7 +1,23 @@
 ---
 title: Cloud Service Agreement — United States (Delaware default + CCPA + multi-state)
 jurisdictions: [us, us-ca, us-de, us-ny, us-co, us-ct, us-tx, us-or]
-statutes: [CCPA, CPRA, CPA, VCDPA, CTDPA, TDPSA, OCPA, DTSA, ROSCA, FTC-Click-to-Cancel, EAR, ITAR, OFAC, FCPA]
+statutes:
+  [
+    CCPA,
+    CPRA,
+    CPA,
+    VCDPA,
+    CTDPA,
+    TDPSA,
+    OCPA,
+    DTSA,
+    ROSCA,
+    FTC-Click-to-Cancel,
+    EAR,
+    ITAR,
+    OFAC,
+    FCPA,
+  ]
 audience: [B2B]
 license: MIT
 last_updated: 2026-04-28
@@ -89,9 +105,9 @@ In one sentence: Vendor grants Customer a non-exclusive right to use the Service
 
 4.2. **Affiliate use.** Customer may permit Affiliates and their Authorised Users to use the Service under Customer's account. Customer remains responsible for each Affiliate's compliance.
 
-4.3. **Customer-Favorable variant.** *OPTIONAL — only if Customer is a regulated financial institution or federal contractor.* Rights granted include access by Customer's regulators, contracting agency, or external auditors for audit and supervisory review on reasonable notice and under appropriate confidentiality.
+4.3. **Customer-Favorable variant.** _OPTIONAL — only if Customer is a regulated financial institution or federal contractor._ Rights granted include access by Customer's regulators, contracting agency, or external auditors for audit and supervisory review on reasonable notice and under appropriate confidentiality.
 
-4.4. **Vendor-Favorable variant.** *OPTIONAL — only if usage is metered.* Use is bounded by the metric on the Order Form. Vendor will give 80% and 100% notices and will not throttle for the first 14 days after the 100% notice.
+4.4. **Vendor-Favorable variant.** _OPTIONAL — only if usage is metered._ Use is bounded by the metric on the Order Form. Vendor will give 80% and 100% notices and will not throttle for the first 14 days after the 100% notice.
 
 4.5. **Documentation.** Customer may copy and distribute Documentation internally as reasonably required.
 
@@ -113,7 +129,7 @@ In one sentence: Customer is responsible for its Authorised Users, must protect 
 
 5.5. **Anti-bribery.** Customer will comply with the FCPA (15 U.S.C. §§78dd-1, 78dd-2, 78dd-3, 78ff), the UK Bribery Act 2010, and other applicable anti-bribery laws. Neither Party will offer, promise, give, or accept anything of value in connection with the Agreement other than reasonable, lawful business courtesies.
 
-5.6. **AML / sanctions screening.** *OPTIONAL — only if Customer is a regulated financial institution.* Customer warrants it has implemented an AML / sanctions-screening programme reasonably designed to comply with the Bank Secrecy Act and OFAC.
+5.6. **AML / sanctions screening.** _OPTIONAL — only if Customer is a regulated financial institution._ Customer warrants it has implemented an AML / sanctions-screening programme reasonably designed to comply with the Bank Secrecy Act and OFAC.
 
 5.7. **Lawful content.** Customer warrants it has the right to submit Customer Data and that submission will not violate third-party rights or law.
 
@@ -134,23 +150,23 @@ In one sentence: Customer owns Customer Data and Vendor processes it only as a C
 - **(C) No retention, use, or disclosure outside the direct business relationship** between Vendor and Customer.
 - **(D) No combining** with PI received from or on behalf of another person, except as permitted by Cal. Civ. Code §1798.145(a)(1)–(7).
 
-6.4. **Multi-state addenda.** §19 (Multi-State Service Provider Addenda) is incorporated into this §6 by reference. Where a State Privacy Law imposes a stricter or additional processor obligation than CCPA, Vendor will comply with that stricter obligation for processing within scope.
+  6.4. **Multi-state addenda.** §19 (Multi-State Service Provider Addenda) is incorporated into this §6 by reference. Where a State Privacy Law imposes a stricter or additional processor obligation than CCPA, Vendor will comply with that stricter obligation for processing within scope.
 
-6.5. **Subprocessors.** Vendor maintains a Subprocessor list at `{{Subprocessor List URL}}`. Vendor will (a) impose written terms on each Subprocessor at least as protective as §6.3 and the DPA; (b) remain liable for Subprocessor acts and omissions affecting Customer Data; and (c) provide ≥30 days' notice of a new Subprocessor with a reasonable objection mechanism. If Vendor cannot resolve a reasonable objection, Customer may terminate the affected Order Form for cause and receive a pro-rata refund of prepaid unused fees.
+  6.5. **Subprocessors.** Vendor maintains a Subprocessor list at `{{Subprocessor List URL}}`. Vendor will (a) impose written terms on each Subprocessor at least as protective as §6.3 and the DPA; (b) remain liable for Subprocessor acts and omissions affecting Customer Data; and (c) provide ≥30 days' notice of a new Subprocessor with a reasonable objection mechanism. If Vendor cannot resolve a reasonable objection, Customer may terminate the affected Order Form for cause and receive a pro-rata refund of prepaid unused fees.
 
-6.6. **Customer instructions.** "Documented instructions" are (a) the Agreement; (b) configurations Customer makes; and (c) written instructions to Vendor's privacy contact. Vendor will inform Customer if it believes an instruction violates a State Privacy Law.
+  6.6. **Customer instructions.** "Documented instructions" are (a) the Agreement; (b) configurations Customer makes; and (c) written instructions to Vendor's privacy contact. Vendor will inform Customer if it believes an instruction violates a State Privacy Law.
 
-6.7. **Data subject requests.** Vendor will assist with verifiable consumer requests under State Privacy Laws (right to know, delete, correct, opt out of Sale/Sharing, limit use of Sensitive PI, portability), to the extent technically feasible. The DPA describes the mechanism and SLA.
+  6.7. **Data subject requests.** Vendor will assist with verifiable consumer requests under State Privacy Laws (right to know, delete, correct, opt out of Sale/Sharing, limit use of Sensitive PI, portability), to the extent technically feasible. The DPA describes the mechanism and SLA.
 
-6.8. **Sensitive PI.** Customer remains responsible for any consent required and for honouring the right to limit use or disclosure of Sensitive PI. Vendor will not use Sensitive PI to infer consumer characteristics beyond Service delivery.
+  6.8. **Sensitive PI.** Customer remains responsible for any consent required and for honouring the right to limit use or disclosure of Sensitive PI. Vendor will not use Sensitive PI to infer consumer characteristics beyond Service delivery.
 
-6.9. **Deletion at termination.** Vendor will delete or, at Customer's election, return Customer Data within 30 days of termination, except where law requires retention. Backup copies that cannot be selectively deleted are overwritten on Vendor's standard rotation (≤90 days) and remain subject to §6.3 until destroyed.
+  6.9. **Deletion at termination.** Vendor will delete or, at Customer's election, return Customer Data within 30 days of termination, except where law requires retention. Backup copies that cannot be selectively deleted are overwritten on Vendor's standard rotation (≤90 days) and remain subject to §6.3 until destroyed.
 
-6.10. **Dual-perspective variants.**
+  6.10. **Dual-perspective variants.**
 
-- *Customer-Favorable.* No use of Customer Data to train, retrain, fine-tune, or improve any ML model offered to or used for any other customer or Vendor's general benefit, except security/abuse-detection models on metadata.
-- *Vendor-Favorable.* Vendor may use Service Generated Data and Aggregated Data for any lawful purpose, including improving the Service, security analytics, benchmarking, and product research.
-- *Market-standard.* Vendor may use Customer Data only to deliver and improve the Service for Customer; Aggregated Data for any lawful purpose; no training of general foundation models on Customer content unless Customer opts in on the Order Form.
+- _Customer-Favorable._ No use of Customer Data to train, retrain, fine-tune, or improve any ML model offered to or used for any other customer or Vendor's general benefit, except security/abuse-detection models on metadata.
+- _Vendor-Favorable._ Vendor may use Service Generated Data and Aggregated Data for any lawful purpose, including improving the Service, security analytics, benchmarking, and product research.
+- _Market-standard._ Vendor may use Customer Data only to deliver and improve the Service for Customer; Aggregated Data for any lawful purpose; no training of general foundation models on Customer content unless Customer opts in on the Order Form.
 
 ---
 
@@ -170,7 +186,7 @@ In one sentence: each Party keeps the other's non-public information confidentia
 
 7.6. **California §16600 carve-out.** This §7 is a confidentiality obligation, not a non-compete. Nothing here prohibits a Party's personnel from accepting employment or consulting work with a competitor in California, in compliance with Cal. Bus. & Prof. Code §16600. The clause must not be construed as a de facto non-compete.
 
-7.7. **FTC Non-Compete Rule.** *`[VERIFY enforceability]`* — to the extent the FTC's final Non-Compete Rule (16 C.F.R. Part 910) is in force at the time of dispute, this §7 is construed consistently with it, and any portion that would constitute a "non-compete clause" is severed to the extent required.
+7.7. **FTC Non-Compete Rule.** _`[VERIFY enforceability]`_ — to the extent the FTC's final Non-Compete Rule (16 C.F.R. Part 910) is in force at the time of dispute, this §7 is construed consistently with it, and any portion that would constitute a "non-compete clause" is severed to the extent required.
 
 7.8. **Survival.** §7 survives for five years post-termination, except Trade Secret protection continues so long as the information qualifies under DTSA.
 
@@ -188,7 +204,7 @@ In one sentence: Customer pays the Order Form fees, taxes are added on top, and 
 
 8.4. **Expenses.** Professional services fees and expenses are stated on the Order Form or SOW.
 
-8.5. **Price changes.** Vendor may adjust list prices at renewal with ≥60 days' notice, capped at the lower of (a) Vendor's published list for the same tier and (b) the prior-term price plus the greater of 7% and the BLS CPI-U change over the prior 12 months. *Customer-Favorable: cap at prior + 5%. Vendor-Favorable: replace cap with "Vendor's reasonable discretion".*
+8.5. **Price changes.** Vendor may adjust list prices at renewal with ≥60 days' notice, capped at the lower of (a) Vendor's published list for the same tier and (b) the prior-term price plus the greater of 7% and the BLS CPI-U change over the prior 12 months. _Customer-Favorable: cap at prior + 5%. Vendor-Favorable: replace cap with "Vendor's reasonable discretion"._
 
 8.6. **California ARLDA.** For Order Forms with initial term ≥1 year and automatic renewal, Vendor will provide the disclosures and reminders required by Cal. Bus. & Prof. Code §17600 et seq., including (a) clear and conspicuous disclosure of auto-renewal terms before acceptance, (b) a pre-renewal reminder sent 15–45 days before the renewal date stating the date and next-term cost, and (c) an online cancellation mechanism that does not require speaking with a representative.
 
@@ -202,15 +218,15 @@ In one sentence: Customer pays the Order Form fees, taxes are added on top, and 
 
 8.11. **ROSCA (15 U.S.C. §§8401–8405).** As a federal floor, Vendor (a) discloses material terms clearly and conspicuously before billing, (b) obtains express informed consent to be charged, and (c) provides a simple stop-recurring mechanism.
 
-8.12. **FTC Click-to-Cancel (16 C.F.R. Part 425).** *`[VERIFY commencement]`* — to the extent in force, Vendor will (a) provide cancellation at least as easy as sign-up; (b) obtain express informed consent to any negative-option feature before charging; and (c) honour cancellation requests promptly.
+8.12. **FTC Click-to-Cancel (16 C.F.R. Part 425).** _`[VERIFY commencement]`_ — to the extent in force, Vendor will (a) provide cancellation at least as easy as sign-up; (b) obtain express informed consent to any negative-option feature before charging; and (c) honour cancellation requests promptly.
 
 8.13. **State-by-state matrix.** For billing addresses outside §§8.6–8.10, Vendor follows the corresponding state auto-renewal statute (if any) per the matrix maintained in the companion `legalcode-tos` Annex C ("US Auto-Renewal Matrix").
 
 8.14. **Dual-perspective variants.**
 
-- *Customer-Favorable.* No mid-term increases; renewal cap = CPI-U for the prior 12 months.
-- *Vendor-Favorable.* Vendor may pass through Subprocessor cost increases mid-term on 30 days' notice, capped at 10% of the affected line item.
-- *Market-standard.* Renewal cap per §8.5; no mid-term increases other than for additional usage.
+- _Customer-Favorable._ No mid-term increases; renewal cap = CPI-U for the prior 12 months.
+- _Vendor-Favorable._ Vendor may pass through Subprocessor cost increases mid-term on 30 days' notice, capped at 10% of the affected line item.
+- _Market-standard._ Renewal cap per §8.5; no mid-term increases other than for additional usage.
 
 ---
 
@@ -228,7 +244,7 @@ In one sentence: each Order Form has its own term and renewal cadence, and eithe
 
 9.5. **Termination for insolvency.** Either Party may terminate immediately on written notice on the other's bankruptcy petition not dismissed within 60 days, assignment for the benefit of creditors, receivership over a material portion of assets, or cessation of business in the ordinary course.
 
-9.6. **Termination for convenience by Customer.** *OPTIONAL — Customer-Favorable.* Customer may terminate any Order Form on 60 days' notice with a pro-rata refund of prepaid unused fees.
+9.6. **Termination for convenience by Customer.** _OPTIONAL — Customer-Favorable._ Customer may terminate any Order Form on 60 days' notice with a pro-rata refund of prepaid unused fees.
 
 9.7. **Suspension.** Vendor may suspend the Service or part of it on reasonable notice (or with prompt subsequent notice if not feasible) where (a) Customer's use poses an imminent security or legal risk; (b) Customer is materially breaching §5; or (c) payment is more than 30 days overdue and undisputed and Vendor has given ≥10 days' notice. Suspension is limited to the affected functionality where technically feasible.
 
@@ -236,9 +252,9 @@ In one sentence: each Order Form has its own term and renewal cadence, and eithe
 
 9.9. **Dual-perspective variants.**
 
-- *Customer-Favorable.* Add §9.6; refund of prepaid unused fees on Vendor's material breach.
-- *Vendor-Favorable.* Remove §9.6; any unpaid invoice (disputed or not) overdue 30 days is a material breach.
-- *Market-standard.* §§9.4–9.5; no convenience termination by either Party.
+- _Customer-Favorable._ Add §9.6; refund of prepaid unused fees on Vendor's material breach.
+- _Vendor-Favorable._ Remove §9.6; any unpaid invoice (disputed or not) overdue 30 days is a material breach.
+- _Market-standard._ §§9.4–9.5; no convenience termination by either Party.
 
 ---
 
@@ -254,7 +270,7 @@ In one sentence: Vendor commits to a monthly uptime target and Customer's exclus
 
 10.4. **Reporting.** Vendor publishes monthly availability metrics on the status page named on the Order Form. Credit claims must be made within 30 days of the affected month.
 
-10.5. **Customer-Favorable variant.** *OPTIONAL — enterprise tiers.* Tiered credit schedule, chronic-failure termination on three SLA misses in any rolling six months, annual SLA review.
+10.5. **Customer-Favorable variant.** _OPTIONAL — enterprise tiers._ Tiered credit schedule, chronic-failure termination on three SLA misses in any rolling six months, annual SLA review.
 
 ---
 
@@ -276,7 +292,7 @@ In one sentence: Vendor maintains a written information-security programme, hold
 
 11.7. **DPA.** Exhibit C is incorporated into §11 and supplements (without limiting) the operational commitments here.
 
-11.8. **California cybersecurity audit.** *`[VERIFY commencement]`* — to the extent the CPPA Cybersecurity Audit Regulations (Cal. Code Regs. tit. 11 §§7120–7129) apply, Vendor will (a) conduct or commission the annual audit on the regulatory schedule, (b) provide a summary on request, and (c) reasonably cooperate with Customer's own audit obligations.
+11.8. **California cybersecurity audit.** _`[VERIFY commencement]`_ — to the extent the CPPA Cybersecurity Audit Regulations (Cal. Code Regs. tit. 11 §§7120–7129) apply, Vendor will (a) conduct or commission the annual audit on the regulatory schedule, (b) provide a summary on request, and (c) reasonably cooperate with Customer's own audit obligations.
 
 11.9. **State breach notification.** On confirmation of a Security Incident affecting Customer Data, Vendor notifies Customer in writing without undue delay, and in any event within the lesser of 72 hours and the strictest applicable state statutory window (including Cal. Civ. Code §1798.82 and the equivalents in the other 49 states and DC). Notice will include the information the statute requires and reasonable detail on scope, root cause, and remediation. "**Security Incident**" is a confirmed unauthorised access, acquisition, disclosure, or loss; routine unsuccessful attempts are excluded.
 
@@ -284,15 +300,15 @@ In one sentence: Vendor maintains a written information-security programme, hold
 
 11.11. **HIPAA.** Vendor is not a HIPAA business associate by default. If Customer's use involves PHI under 45 C.F.R. §160.103, the Parties must execute a HIPAA Business Associate Agreement before submission; the BAA is referenced on the Order Form.
 
-11.12. **Financial-services oversight.** *OPTIONAL — only if Customer is a regulated financial institution.* Where Customer is supervised by the Federal Reserve, OCC, CFPB, or a state banking regulator, Vendor cooperates with examination requests directed through Customer (Interagency Guidance on Third-Party Relationships, June 2023), under confidentiality and a mutually-agreed timeline.
+11.12. **Financial-services oversight.** _OPTIONAL — only if Customer is a regulated financial institution._ Where Customer is supervised by the Federal Reserve, OCC, CFPB, or a state banking regulator, Vendor cooperates with examination requests directed through Customer (Interagency Guidance on Third-Party Relationships, June 2023), under confidentiality and a mutually-agreed timeline.
 
-11.13. **GLBA.** *OPTIONAL — only if Customer is a "financial institution" under 15 U.S.C. §6801 et seq.* Vendor treats NPI received per the GLBA Safeguards Rule (16 C.F.R. Part 314) and limits use to the purposes in the Agreement.
+11.13. **GLBA.** _OPTIONAL — only if Customer is a "financial institution" under 15 U.S.C. §6801 et seq._ Vendor treats NPI received per the GLBA Safeguards Rule (16 C.F.R. Part 314) and limits use to the purposes in the Agreement.
 
 11.14. **Dual-perspective variants.**
 
-- *Customer-Favorable.* 24-hour breach notice; one-time on-site audit per 24-month period; annual pen-test executive summary.
-- *Vendor-Favorable.* "Without undue delay" notice; SOC 2 + questionnaires only, no on-site audit.
-- *Market-standard.* §11 as drafted, with the 72-hour-or-shorter-statutory-window notice.
+- _Customer-Favorable._ 24-hour breach notice; one-time on-site audit per 24-month period; annual pen-test executive summary.
+- _Vendor-Favorable._ "Without undue delay" notice; SOC 2 + questionnaires only, no on-site audit.
+- _Market-standard._ §11 as drafted, with the 72-hour-or-shorter-statutory-window notice.
 
 ---
 
@@ -340,7 +356,7 @@ In one sentence: Vendor owns the Service and Vendor IP, Customer owns Customer D
 
 14.6. **California §16600.** This §14 does not restrict personnel mobility in California; it preserves confidentiality under §7.
 
-14.7. **FTC Non-Compete Rule.** *`[VERIFY enforceability]`* — to the extent 16 C.F.R. Part 910 is in force, this §14 is construed consistently and any "non-compete clause" portion is severed.
+14.7. **FTC Non-Compete Rule.** _`[VERIFY enforceability]`_ — to the extent 16 C.F.R. Part 910 is in force, this §14 is construed consistently and any "non-compete clause" portion is severed.
 
 14.8. **"Intellectual Property Rights"** means patents, copyrights (including waivable moral rights), Trade Secrets, trademarks, service marks, trade dress, database rights, and similar proprietary rights, registered or unregistered, anywhere in the world.
 
@@ -360,19 +376,19 @@ In one sentence: Vendor will not train general models on Customer Data unless Cu
 
 15.5. **No automated decisions about consumers.** Vendor will not use AI features to make decisions producing legal or similarly significant effects on consumers (within State Privacy Laws) without Customer's written authorisation; Customer remains the controller/Business.
 
-15.6. **California ADMT.** *`[VERIFY adoption]`* — to the extent the CPPA Automated Decisionmaking Technology Regulations (Cal. Code Regs. tit. 11 §§7150–7158, 7200–7222) are adopted and in force, Vendor will (a) operate AI features consistently with their notice, opt-out, and assessment requirements, and (b) reasonably assist Customer's own ADMT obligations.
+15.6. **California ADMT.** _`[VERIFY adoption]`_ — to the extent the CPPA Automated Decisionmaking Technology Regulations (Cal. Code Regs. tit. 11 §§7150–7158, 7200–7222) are adopted and in force, Vendor will (a) operate AI features consistently with their notice, opt-out, and assessment requirements, and (b) reasonably assist Customer's own ADMT obligations.
 
-15.7. **Colorado AI Act (SB 24-205).** *`[VERIFY commencement]`* — to the extent in force and the AI feature is a "high-risk artificial intelligence system", Vendor will (a) provide developer-side disclosures, (b) reasonably cooperate with Customer's deployer-side disclosures and impact assessments, and (c) treat algorithmic discrimination as a material defect for §16.
+15.7. **Colorado AI Act (SB 24-205).** _`[VERIFY commencement]`_ — to the extent in force and the AI feature is a "high-risk artificial intelligence system", Vendor will (a) provide developer-side disclosures, (b) reasonably cooperate with Customer's deployer-side disclosures and impact assessments, and (c) treat algorithmic discrimination as a material defect for §16.
 
-15.8. **NYC Local Law 144.** *OPTIONAL — only if the Service is an "automated employment decision tool" (NYC Admin. Code §20-870 et seq.) used to screen NYC candidates.* Vendor will (a) make a current bias-audit summary available, (b) disclose AEDT data sources and types, and (c) reasonably cooperate with Customer's notice and recordkeeping obligations.
+15.8. **NYC Local Law 144.** _OPTIONAL — only if the Service is an "automated employment decision tool" (NYC Admin. Code §20-870 et seq.) used to screen NYC candidates._ Vendor will (a) make a current bias-audit summary available, (b) disclose AEDT data sources and types, and (c) reasonably cooperate with Customer's notice and recordkeeping obligations.
 
-15.9. **California SB 942 (AI Transparency Act).** *`[VERIFY]`* — to the extent in force and applicable, Vendor will provide AI-detection tools or content-provenance signals as the statute requires and document its compliance approach.
+15.9. **California SB 942 (AI Transparency Act).** _`[VERIFY]`_ — to the extent in force and applicable, Vendor will provide AI-detection tools or content-provenance signals as the statute requires and document its compliance approach.
 
 15.10. **Dual-perspective variants.**
 
-- *Customer-Favorable.* No training (incl. dedicated instances) without prior written consent; mandatory derivative deletion within 14 days; Subprocessor flow-down of model-card obligations.
-- *Vendor-Favorable.* Vendor may use Customer Data and Service Generated Data to improve the Service, provided resulting models do not memorise Customer content; opt-out, not opt-in.
-- *Market-standard.* §15.1 as drafted.
+- _Customer-Favorable._ No training (incl. dedicated instances) without prior written consent; mandatory derivative deletion within 14 days; Subprocessor flow-down of model-card obligations.
+- _Vendor-Favorable._ Vendor may use Customer Data and Service Generated Data to improve the Service, provided resulting models do not memorise Customer content; opt-out, not opt-in.
+- _Market-standard._ §15.1 as drafted.
 
 ---
 
@@ -400,9 +416,9 @@ In one sentence: Vendor warrants the Service will materially conform to the Docu
 
 16.10. **Dual-perspective variants.**
 
-- *Customer-Favorable.* Cap = 2x prior 12 months' fees, with a super-cap of 3x the standard cap for Confidentiality and Security Incidents; carve-out for gross negligence in addition to wilful misconduct.
-- *Vendor-Favorable.* Cap = lower of prior 12 months' fees and the Liability Cap Floor; consequential damages excluded, carve-outs limited to indemnities and payment.
-- *Market-standard.* §16 as drafted.
+- _Customer-Favorable._ Cap = 2x prior 12 months' fees, with a super-cap of 3x the standard cap for Confidentiality and Security Incidents; carve-out for gross negligence in addition to wilful misconduct.
+- _Vendor-Favorable._ Cap = lower of prior 12 months' fees and the Liability Cap Floor; consequential damages excluded, carve-outs limited to indemnities and payment.
+- _Market-standard._ §16 as drafted.
 
 ---
 
@@ -429,7 +445,7 @@ In one sentence: Vendor defends Customer against IP-infringement claims arising 
 
 On request, Vendor provides certificates of insurance. Customer may, on reasonable notice and not more than annually, request additional-insured status on the CGL policy where commercially available.
 
-17.7. **Mutual IP indemnity.** *OPTIONAL — Customer-Favorable.* Replace §17.1 with a mutual IP indemnity in which each Party defends the other against IP-infringement claims arising from that Party's content (Vendor for the Service; Customer for Customer Data), with mirror-image carve-outs.
+17.7. **Mutual IP indemnity.** _OPTIONAL — Customer-Favorable._ Replace §17.1 with a mutual IP indemnity in which each Party defends the other against IP-infringement claims arising from that Party's content (Vendor for the Service; Customer for Customer Data), with mirror-image carve-outs.
 
 17.8. **EXCLUSIVE REMEDY.** §17 IS THE INDEMNIFIED PARTY'S EXCLUSIVE REMEDY FOR THIRD-PARTY CLAIMS WITHIN §§17.1, 17.4, OR 17.7.
 
@@ -443,7 +459,7 @@ In one sentence: this section is the boilerplate — notices, compliance, force 
 
 18.2. **Compliance with law.** Each Party will comply with the laws applicable to its performance, including (a) the EAR (15 C.F.R. parts 730–774); (b) the ITAR (22 C.F.R. parts 120–130) where applicable; (c) OFAC sanctions programmes, including the SDN, NS-PLC, SSI, and Foreign Sanctions Evaders lists; (d) the FCPA (15 U.S.C. §§78dd-1, 78dd-2, 78dd-3, 78ff); and (e) Bank Secrecy Act and AML obligations applicable to its operations.
 
-18.3. **No personal liability; federal-contractor carve-out.** No officer, director, employee, or agent of either Party has personal liability under the Agreement except where personal liability cannot be waived under applicable law (e.g., fraud or wilful misconduct). *OPTIONAL — only if Customer is the US Government or a federal contractor.* The flow-down clauses listed on the Order Form (which may include FAR 52.227-14, FAR 52.227-19, DFARS 252.227-7013, and FAR 52.204-21) are incorporated by reference and modify the corresponding sections to the extent required.
+18.3. **No personal liability; federal-contractor carve-out.** No officer, director, employee, or agent of either Party has personal liability under the Agreement except where personal liability cannot be waived under applicable law (e.g., fraud or wilful misconduct). _OPTIONAL — only if Customer is the US Government or a federal contractor._ The flow-down clauses listed on the Order Form (which may include FAR 52.227-14, FAR 52.227-19, DFARS 252.227-7013, and FAR 52.204-21) are incorporated by reference and modify the corresponding sections to the extent required.
 
 18.4. **Force majeure.** Neither Party is liable for failure or delay in non-monetary performance caused by an event beyond its reasonable control, including (a) acts of God, fire, flood, earthquake, severe weather, pandemic, or epidemic; (b) war, terrorism, civil unrest, or governmental order; (c) widespread internet outage or cyber attack on infrastructure outside the affected Party's control; (d) labour disturbance not specific to the affected Party; or (e) failure of utility, telecommunication, or cloud-infrastructure providers. The affected Party gives prompt notice and uses reasonable efforts to resume. After 60 days of continued force majeure, either Party may terminate the affected Order Form on notice.
 
@@ -457,16 +473,16 @@ In one sentence: this section is the boilerplate — notices, compliance, force 
 
 18.9. **Governing law.** Governed by the law of `{{Choice Of Law State}}` (default: State of Delaware), excluding conflict-of-laws principles. The UN Convention on Contracts for the International Sale of Goods does not apply.
 
-- *Alternative — New York.* For Order Forms with transaction value ≥USD 250,000, the Parties may select New York law per N.Y. Gen. Obligations Law §5-1401, which permits selection of New York law without a "reasonable relationship" requirement at that threshold.
-- *Alternative — California.* For California-domiciled Customers, the Parties may select California law, in which case Cal. Civ. Code §1717 applies to attorneys'-fee provisions on a mutual basis.
+- _Alternative — New York._ For Order Forms with transaction value ≥USD 250,000, the Parties may select New York law per N.Y. Gen. Obligations Law §5-1401, which permits selection of New York law without a "reasonable relationship" requirement at that threshold.
+- _Alternative — California._ For California-domiciled Customers, the Parties may select California law, in which case Cal. Civ. Code §1717 applies to attorneys'-fee provisions on a mutual basis.
 
-18.10. **Forum.** Subject to §18.11, the Parties consent to the exclusive jurisdiction and venue of (a) the Delaware Court of Chancery for equitable relief or actions involving the internal affairs of a Delaware entity, and (b) the US District Court for the District of Delaware (or, if federal subject-matter jurisdiction is lacking, the Delaware state courts) for damages. As an alternative, the Order Form may submit disputes (other than emergency or interim equitable relief) to binding arbitration administered by the American Arbitration Association under its Commercial Arbitration Rules, seated at `{{Arbitration Seat}}` (default: Wilmington, Delaware), with one arbitrator below USD 1,000,000 in controversy and three above. Where the Order Form selects another `{{Arbitration Provider}}` (e.g., JAMS or NAM), that provider's rules apply with comparable seat and panel defaults. Either Party may seek emergency or interim equitable relief from a court without waiving the agreement to arbitrate.
+  18.10. **Forum.** Subject to §18.11, the Parties consent to the exclusive jurisdiction and venue of (a) the Delaware Court of Chancery for equitable relief or actions involving the internal affairs of a Delaware entity, and (b) the US District Court for the District of Delaware (or, if federal subject-matter jurisdiction is lacking, the Delaware state courts) for damages. As an alternative, the Order Form may submit disputes (other than emergency or interim equitable relief) to binding arbitration administered by the American Arbitration Association under its Commercial Arbitration Rules, seated at `{{Arbitration Seat}}` (default: Wilmington, Delaware), with one arbitrator below USD 1,000,000 in controversy and three above. Where the Order Form selects another `{{Arbitration Provider}}` (e.g., JAMS or NAM), that provider's rules apply with comparable seat and panel defaults. Either Party may seek emergency or interim equitable relief from a court without waiving the agreement to arbitrate.
 
-18.11. **Class waiver — B2B only.** Each Party waives the right to participate in a class, collective, or representative action arising out of the Agreement. *`[VERIFY enforceability]`* — this waiver is intended to be enforced under the Federal Arbitration Act (9 U.S.C. §§1 et seq.) and is presented in a B2B context; it is not intended to apply to consumer relationships.
+  18.11. **Class waiver — B2B only.** Each Party waives the right to participate in a class, collective, or representative action arising out of the Agreement. _`[VERIFY enforceability]`_ — this waiver is intended to be enforced under the Federal Arbitration Act (9 U.S.C. §§1 et seq.) and is presented in a B2B context; it is not intended to apply to consumer relationships.
 
-18.12. **Headings; construction.** Section headings are for convenience only and do not affect interpretation. "Including" means "including without limitation". Lists are illustrative. References to a statute or regulation include amendments and successors.
+  18.12. **Headings; construction.** Section headings are for convenience only and do not affect interpretation. "Including" means "including without limitation". Lists are illustrative. References to a statute or regulation include amendments and successors.
 
-18.13. **No third-party beneficiaries.** Except for indemnified Affiliates, officers, directors, and employees identified in §17, the Agreement creates no third-party beneficiary rights.
+  18.13. **No third-party beneficiaries.** Except for indemnified Affiliates, officers, directors, and employees identified in §17, the Agreement creates no third-party beneficiary rights.
 
 ---
 
@@ -488,7 +504,7 @@ For Personal Data of Connecticut consumers within scope of the CTDPA, Vendor act
 
 ### 19.4 Texas TDPSA processor terms (Tex. Bus. & Com. Code §§541.101 et seq.) `[VERIFY]`
 
-For Personal Data of Texas consumers within scope of the Texas Data Privacy and Security Act, Vendor acts as a "processor" under Tex. Bus. & Com. Code §541.001, and the processor terms under §541.104 (or successor) are incorporated. *`[VERIFY]`* — TDPSA is in force from 1 July 2024; review against the current statute and any AG regulations. Vendor will: (a) act on Customer's documented instructions; (b) assist with consumer-rights requests, security and breach obligations, and data-protection assessments; (c) maintain personnel confidentiality; (d) at Customer's election, delete or return Personal Data at end of services; (e) make available the information necessary to demonstrate compliance and contribute to reasonable assessments; and (f) engage Subprocessors only under written equivalent terms.
+For Personal Data of Texas consumers within scope of the Texas Data Privacy and Security Act, Vendor acts as a "processor" under Tex. Bus. & Com. Code §541.001, and the processor terms under §541.104 (or successor) are incorporated. _`[VERIFY]`_ — TDPSA is in force from 1 July 2024; review against the current statute and any AG regulations. Vendor will: (a) act on Customer's documented instructions; (b) assist with consumer-rights requests, security and breach obligations, and data-protection assessments; (c) maintain personnel confidentiality; (d) at Customer's election, delete or return Personal Data at end of services; (e) make available the information necessary to demonstrate compliance and contribute to reasonable assessments; and (f) engage Subprocessors only under written equivalent terms.
 
 ### 19.5 Oregon OCPA processor terms (ORS 646A.578)
 
@@ -551,20 +567,20 @@ Name / Title: {{Vendor Signatory Name}} / {{Vendor Signatory Title}}
 
 **B.2. Service-credit schedule (default).**
 
-| Monthly Uptime Percentage | Service Credit |
-| --- | --- |
-| < 99.9% but ≥ 99.0% | 10% of monthly fees for the affected Service |
-| < 99.0% but ≥ 95.0% | 25% of monthly fees for the affected Service |
-| < 95.0% | 50% of monthly fees for the affected Service |
+| Monthly Uptime Percentage | Service Credit                               |
+| ------------------------- | -------------------------------------------- |
+| < 99.9% but ≥ 99.0%       | 10% of monthly fees for the affected Service |
+| < 99.0% but ≥ 95.0%       | 25% of monthly fees for the affected Service |
+| < 95.0%                   | 50% of monthly fees for the affected Service |
 
 **B.3. Tiered "enterprise" schedule (Customer-Favorable, optional).**
 
 | Monthly Uptime Percentage | Service Credit |
-| --- | --- |
-| < 99.95% | 10% |
-| < 99.9% | 25% |
-| < 99.5% | 50% |
-| < 99.0% | 100% |
+| ------------------------- | -------------- |
+| < 99.95%                  | 10%            |
+| < 99.9%                   | 25%            |
+| < 99.5%                   | 50%            |
+| < 99.0%                   | 100%           |
 
 **B.4. Chronic-failure termination.** Three SLA misses in any rolling six months entitle Customer to terminate the affected Order Form for cause and receive a pro-rata refund of prepaid unused fees.
 
@@ -596,35 +612,35 @@ Name / Title: {{Vendor Signatory Name}} / {{Vendor Signatory Title}}
 
 ## Appendix — Merge fields used
 
-| Field | Description |
-| --- | --- |
-| `{{Vendor Legal Name}}` / `{{Customer Legal Name}}` | Legal entity names |
-| `{{Vendor State Of Formation}}` / `{{Customer State Of Formation}}` | State of organisation |
-| `{{Vendor Entity Type}}` / `{{Customer Entity Type}}` | Entity type (corporation, LLC, etc.) |
-| `{{Vendor Address}}` / `{{Customer Address}}` | Principal places of business |
-| `{{Customer Billing Contact}}` / `{{Customer Legal Notices Email}}` | Customer contacts |
-| `{{Customer Signatory Name}}` / `{{Customer Signatory Title}}` | Customer signing official |
-| `{{Vendor Signatory Name}}` / `{{Vendor Signatory Title}}` | Vendor signing official |
-| `{{Effective Date}}` / `{{CSA Effective Date}}` | CSA effective dates |
-| `{{Order Form Number}}` / `{{Order Effective Date}}` | Order Form identifiers |
-| `{{Service Tier}}` / `{{Scope Description}}` | Tier and scope |
-| `{{Service Provider Designation}}` | CCPA role: Service Provider / Contractor / Third Party |
-| `{{Authorised Affiliates}}` | Affiliates entitled to use under the Order Form |
-| `{{Initial Term Months}}` / `{{Renewal Term Months}}` | Term durations |
-| `{{Annual Fee}}` / `{{Billing Cadence}}` / `{{Payment Days}}` | Pricing and payment terms |
-| `{{Metric}}` / `{{Metric Limit}}` / `{{Period}}` | Usage metering |
-| `{{Uptime Target Percent}}` | SLA uptime target (e.g., 99.9) |
-| `{{Data Residency Region}}` | Hosting region for Customer Data |
-| `{{Subprocessor List URL}}` | URL of Vendor's Subprocessor list |
-| `{{Liability Cap Floor}}` | Negotiated minimum liability cap |
-| `{{CGL Limit}}` / `{{E&O Limit}}` / `{{Insurance Cyber Limit}}` | Insurance limits |
-| `{{Choice Of Law State}}` | Selected governing-law state (default Delaware) |
-| `{{Arbitration Provider}}` / `{{Arbitration Seat}}` | AAA / JAMS / NAM and seat (default Wilmington, DE) |
-| `{{State Overlays}}` | Elected state overlays (e.g., NYDFS Reg 500, MA 201 CMR 17) |
-| `{{Flow-Down Clauses}}` | Federal-contractor flow-downs, if any |
-| `{{Special Terms}}` | Free-text special terms |
-| `{{DPA URL}}` / `{{AUP URL}}` | URLs to the DPA and AUP |
-| `{{BAA Reference}}` | Reference to a HIPAA BAA, if applicable |
+| Field                                                               | Description                                                 |
+| ------------------------------------------------------------------- | ----------------------------------------------------------- |
+| `{{Vendor Legal Name}}` / `{{Customer Legal Name}}`                 | Legal entity names                                          |
+| `{{Vendor State Of Formation}}` / `{{Customer State Of Formation}}` | State of organisation                                       |
+| `{{Vendor Entity Type}}` / `{{Customer Entity Type}}`               | Entity type (corporation, LLC, etc.)                        |
+| `{{Vendor Address}}` / `{{Customer Address}}`                       | Principal places of business                                |
+| `{{Customer Billing Contact}}` / `{{Customer Legal Notices Email}}` | Customer contacts                                           |
+| `{{Customer Signatory Name}}` / `{{Customer Signatory Title}}`      | Customer signing official                                   |
+| `{{Vendor Signatory Name}}` / `{{Vendor Signatory Title}}`          | Vendor signing official                                     |
+| `{{Effective Date}}` / `{{CSA Effective Date}}`                     | CSA effective dates                                         |
+| `{{Order Form Number}}` / `{{Order Effective Date}}`                | Order Form identifiers                                      |
+| `{{Service Tier}}` / `{{Scope Description}}`                        | Tier and scope                                              |
+| `{{Service Provider Designation}}`                                  | CCPA role: Service Provider / Contractor / Third Party      |
+| `{{Authorised Affiliates}}`                                         | Affiliates entitled to use under the Order Form             |
+| `{{Initial Term Months}}` / `{{Renewal Term Months}}`               | Term durations                                              |
+| `{{Annual Fee}}` / `{{Billing Cadence}}` / `{{Payment Days}}`       | Pricing and payment terms                                   |
+| `{{Metric}}` / `{{Metric Limit}}` / `{{Period}}`                    | Usage metering                                              |
+| `{{Uptime Target Percent}}`                                         | SLA uptime target (e.g., 99.9)                              |
+| `{{Data Residency Region}}`                                         | Hosting region for Customer Data                            |
+| `{{Subprocessor List URL}}`                                         | URL of Vendor's Subprocessor list                           |
+| `{{Liability Cap Floor}}`                                           | Negotiated minimum liability cap                            |
+| `{{CGL Limit}}` / `{{E&O Limit}}` / `{{Insurance Cyber Limit}}`     | Insurance limits                                            |
+| `{{Choice Of Law State}}`                                           | Selected governing-law state (default Delaware)             |
+| `{{Arbitration Provider}}` / `{{Arbitration Seat}}`                 | AAA / JAMS / NAM and seat (default Wilmington, DE)          |
+| `{{State Overlays}}`                                                | Elected state overlays (e.g., NYDFS Reg 500, MA 201 CMR 17) |
+| `{{Flow-Down Clauses}}`                                             | Federal-contractor flow-downs, if any                       |
+| `{{Special Terms}}`                                                 | Free-text special terms                                     |
+| `{{DPA URL}}` / `{{AUP URL}}`                                       | URLs to the DPA and AUP                                     |
+| `{{BAA Reference}}`                                                 | Reference to a HIPAA BAA, if applicable                     |
 
 ---
 

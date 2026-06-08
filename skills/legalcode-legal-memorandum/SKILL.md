@@ -37,6 +37,7 @@ legal research memorandum that can support litigation decisions, transactional a
 regulatory compliance analysis, or board-level risk reporting.
 
 **Covers:**
+
 - Internal predictive research memos (IRAC/CREAC structure, objective tone)
 - Litigation risk assessment memos (four-dimensional risk analysis, expected value)
 - Deal advisory / transaction advisory memos (risk mapping, structure alternatives)
@@ -54,6 +55,7 @@ regulatory compliance analysis, or board-level risk reporting.
 - Mandatory citation verification checklist before finalization
 
 **Does not:**
+
 - Draft court pleadings, briefs, or motions (see `legalcode-complaint-drafter`,
   `legalcode-brief-analyzer`)
 - Perform granular damages calculation (see `legalcode-damages-calculation`)
@@ -66,6 +68,7 @@ regulatory compliance analysis, or board-level risk reporting.
 - Guarantee citation accuracy — all citations require independent verification
 
 **Related skills:**
+
 - `legalcode-litigation-risk-assessment` — full four-dimensional risk matrix; the
   litigation risk memo type in this skill is a lighter wrapper; use the dedicated
   skill for full quantitative analysis
@@ -88,28 +91,30 @@ citation format then lock to that jurisdiction.
 **[JURISDICTION-SPECIFIC]** For each jurisdiction, localize at minimum:
 
 **United States (Federal or State):**
+
 - Identify the controlling circuit (or state jurisdiction) — mandatory vs. persuasive
   authority varies by circuit; circuit splits require explicit treatment
 - Apply textualist/purposivist interpretation canon as appropriate to the court
-  (note: *Chevron* deference overruled by *Loper Bright Enterprises v. Raimondo*,
-  603 U.S. ___ (2024) [VERIFY current status]; *Skidmore* deference remains
+  (note: _Chevron_ deference overruled by _Loper Bright Enterprises v. Raimondo_,
+  603 U.S. \_\_\_ (2024) [VERIFY current status]; _Skidmore_ deference remains
   available)
 - Distinguish federal question jurisdiction from diversity jurisdiction — state
-  substantive law applies under *Erie R.R. Co. v. Tompkins*, 304 U.S. 64 (1938)
+  substantive law applies under _Erie R.R. Co. v. Tompkins_, 304 U.S. 64 (1938)
   [VERIFY citation] for diversity cases
 - Note any circuit-specific procedural rules affecting memo structure
   (e.g., Seventh Circuit's preference for plain-English briefs)
 - Cite in Bluebook 21st edition Practitioner format
 
 **England & Wales:**
+
 - Apply the E&W court hierarchy: UKSC → Court of Appeal → High Court → Crown/County Courts
 - Distinguish legal advice privilege (dominant purpose: giving legal advice) from
-  litigation privilege (*Three Rivers District Council v Bank of England (No 6)*
+  litigation privilege (_Three Rivers District Council v Bank of England (No 6)_
   [2004] UKHL 48 [VERIFY citation])
 - Apply statutory interpretation: literal, golden, mischief rules; purposive
-  approach post-*Pepper v Hart* [1993] AC 593 [VERIFY citation]; *Assange v Swedish
-  Prosecution Authority* purposive methodology
-- EU retained law: post-*Retained EU Law (Revocation and Reform) Act 2023* (UK),
+  approach post-_Pepper v Hart_ [1993] AC 593 [VERIFY citation]; _Assange v Swedish
+  Prosecution Authority_ purposive methodology
+- EU retained law: post-_Retained EU Law (Revocation and Reform) Act 2023_ (UK),
   identify whether EU-derived law applies and whether any sunset provisions
   have taken effect [VERIFY current status of each relevant retained provision]
 - Note: Scottish law, Northern Irish law, and Welsh devolved law are distinct
@@ -117,16 +122,17 @@ citation format then lock to that jurisdiction.
 - Cite in OSCOLA 4th edition format
 
 **Australia:**
+
 - Apply the federal/state hierarchy: High Court of Australia → Federal Court /
   State Supreme Courts (by jurisdiction) → intermediate courts
-- Apply *Acts Interpretation Act 1901* (Cth) s 15AA purposive interpretation for
+- Apply _Acts Interpretation Act 1901_ (Cth) s 15AA purposive interpretation for
   Commonwealth statutes; equivalent state legislation for state law
 - Note that Australia has no general statutory codification of common law — identify
   whether the matter is governed by federal or state law and the applicable
   jurisdiction's court hierarchy
-- High Court statutory interpretation methodology: *Project Blue Sky Inc v Australian
-  Broadcasting Authority* (1998) 194 CLR 355 [VERIFY] (text and purpose read
-  together); *SZTAL v Minister for Immigration and Border Protection* [2017] HCA 34
+- High Court statutory interpretation methodology: _Project Blue Sky Inc v Australian
+  Broadcasting Authority_ (1998) 194 CLR 355 [VERIFY] (text and purpose read
+  together); _SZTAL v Minister for Immigration and Border Protection_ [2017] HCA 34
   [VERIFY] (ordinary meaning of words)
 - Cite in AGLC 4th edition format
 
@@ -157,6 +163,7 @@ the information, skip the question and proceed with the stated information.
 ### Step 1: Accept the Request
 
 Accept the memo request in any of these formats:
+
 - **Structured request**: Matter description, legal question(s), factual background,
   jurisdiction, memo type, and any relevant documents
 - **Conversational request**: Free-form description of the legal issue and what the
@@ -177,27 +184,29 @@ jurisdiction, prompt the user before proceeding.
 structured options. Skip questions already answered by the user's input.
 
 **1. Memo type — What output format is needed?**
+
 - **Internal research memo (predictive)** — Objective CREAC analysis for a supervising
   attorney or GC. Answers "How will a court likely rule?" Tone: analytical, balanced.
-  *Why this matters*: Determines tone, conclusion format, and probability language.
+  _Why this matters_: Determines tone, conclusion format, and probability language.
 - **Litigation risk assessment memo** — Assesses litigation exposure for settlement
   or reserve-setting decisions. Adds expected value modeling and strategic
-  recommendation. *Why this matters*: Requires probability × magnitude framing,
+  recommendation. _Why this matters_: Requires probability × magnitude framing,
   not just doctrinal analysis.
 - **Deal advisory memo** — Identifies legal risks and structural alternatives in a
-  proposed transaction. Tone: practical, risk-ranked. *Why this matters*: Output is
+  proposed transaction. Tone: practical, risk-ranked. _Why this matters_: Output is
   a risk ranking with recommended deal modifications, not a court prediction.
 - **Regulatory compliance memo** — Analyzes whether a proposed course of conduct
-  complies with regulations. Cites agency guidance and safe harbors. *Why this
-  matters*: Regulatory memos use COMPLIANT/PARTIAL/NON-COMPLIANT classification
+  complies with regulations. Cites agency guidance and safe harbors. _Why this
+  matters_: Regulatory memos use COMPLIANT/PARTIAL/NON-COMPLIANT classification
   rather than a court-outcome prediction.
 - **Board executive summary** — 1–2 page plain-English risk summary for non-lawyers.
-  Strips citations; quantifies risk in business terms. *Why this matters*: Completely
+  Strips citations; quantifies risk in business terms. _Why this matters_: Completely
   different format — no footnotes, no legal jargon, action-item focus.
 - **Full memo + board summary** — Produce both the detailed research memo and a
   derived 1-page board executive summary.
 
 **2. Jurisdiction — What law controls?**
+
 - **US Federal** — specify circuit (e.g., 9th Circuit, D.C. Circuit)
 - **US State** — specify state (e.g., Delaware, California, New York)
 - **England & Wales** — note any devolved law considerations
@@ -207,6 +216,7 @@ structured options. Skip questions already answered by the user's input.
   and which are secondary; this memo applies primary jurisdiction with comparison notes
 
 **3. Side and purpose — Who is the memo for?**
+
 - **Plaintiff / claimant advisory** — Assesses whether to file or pursue a claim
 - **Defendant advisory** — Assesses exposure and defense strategy
 - **Transactional (party-neutral)** — Identifies legal risks in a proposed transaction
@@ -214,10 +224,11 @@ structured options. Skip questions already answered by the user's input.
 - **Regulatory / compliance advisory** — Assesses regulatory compliance for the
   regulated entity
 - **Board / senior management** — Aggregates legal risks for governance purposes
-  *Why this matters*: "Side" affects framing of probability assessments and strategic
+  _Why this matters_: "Side" affects framing of probability assessments and strategic
   recommendations.
 
 **4. Scope — How many issues?**
+
 - **Single-issue memo** — one Question Presented, focused analysis
 - **Multi-issue memo** — multiple Questions Presented (specify issues or describe
   and let this skill identify discrete issues)
@@ -225,10 +236,11 @@ structured options. Skip questions already answered by the user's input.
   described matter (this skill identifies and frames all issues)
 
 **5. Depth**
+
 - **Standard analysis** — CREAC per issue, key authority cited, conclusion
 - **Deep analysis** — Extended rule synthesis, multi-level counterargument treatment,
   sensitivity analysis on key factual assumptions, comparative jurisdiction notes
-  *Why this matters*: Deep analysis is appropriate for novel questions, bet-the-company
+  _Why this matters_: Deep analysis is appropriate for novel questions, bet-the-company
   matters, or cases going before a court that has not directly addressed the issue.
 
 ---
@@ -238,6 +250,7 @@ structured options. Skip questions already answered by the user's input.
 Before drafting any legal analysis, establish the controlling legal framework.
 
 **3a. Identify controlling law:**
+
 1. State the controlling jurisdiction and court system
 2. Identify the governing substantive law (constitutional, statutory, common law,
    regulatory)
@@ -247,13 +260,14 @@ Before drafting any legal analysis, establish the controlling legal framework.
 
 **3b. Authority Hierarchy Map** — Document the applicable authority hierarchy:
 
-| Tier | Authority Type | Examples | Effect |
-|------|---------------|----------|--------|
-| **Mandatory Primary** | Highest applicable court + controlling statutes | SCOTUS, Circuit CA, State Supreme Court; applicable statutes | Binding — must apply |
-| **Persuasive Primary** | Other courts, other jurisdictions | Sister circuits, foreign courts, state courts on federal questions | Persuasive — cite with signal (*see, cf., accord*) |
-| **Secondary** | Treatises, Restatements, Law Review, Guidance | Restatement (Third), ABA guidance, agency no-action letters | Background only — "see also" citations; not dispositive |
+| Tier                   | Authority Type                                  | Examples                                                           | Effect                                                  |
+| ---------------------- | ----------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------- |
+| **Mandatory Primary**  | Highest applicable court + controlling statutes | SCOTUS, Circuit CA, State Supreme Court; applicable statutes       | Binding — must apply                                    |
+| **Persuasive Primary** | Other courts, other jurisdictions               | Sister circuits, foreign courts, state courts on federal questions | Persuasive — cite with signal (_see, cf., accord_)      |
+| **Secondary**          | Treatises, Restatements, Law Review, Guidance   | Restatement (Third), ABA guidance, agency no-action letters        | Background only — "see also" citations; not dispositive |
 
 **3c. Privilege marking selection:**
+
 - Internal research memo + no litigation context: `ATTORNEY-CLIENT PRIVILEGED AND CONFIDENTIAL`
 - Memo prepared in anticipation of litigation: add `ATTORNEY WORK PRODUCT — Prepared in Anticipation of Litigation`
 - E&W equivalent: `LEGALLY PRIVILEGED AND CONFIDENTIAL — LEGAL ADVICE PRIVILEGE`
@@ -267,6 +281,7 @@ Before drafting any legal analysis, establish the controlling legal framework.
 
 **4a. Identify all discrete legal issues** arising from the matter description.
 For each issue:
+
 - Is it a question of law (pure legal interpretation), a mixed question of law and
   fact, or a primarily factual question?
 - Which issues are threshold/dispositive (must be resolved first)?
@@ -277,10 +292,11 @@ remedies/damages.
 
 **4b. Frame each Question Presented (QP)** using the "whether-when-and" technique:
 
-> *Whether [legal conclusion to be tested], when [legally relevant fact(s)], and
-> [additional dispositive fact(s) or legal element that creates the tension].*
+> _Whether [legal conclusion to be tested], when [legally relevant fact(s)], and
+> [additional dispositive fact(s) or legal element that creates the tension]._
 
 **Well-framed example** (Delaware corporate law):
+
 > Whether a Delaware corporation's board of directors breached its fiduciary duty
 > of care under the business judgment rule, when the board approved a $50M acquisition
 > without obtaining a fairness opinion, and the CEO had a disclosed financial interest
@@ -292,6 +308,7 @@ remedies/damages.
 the agreement, entitling plaintiff to consequential damages."
 
 **Rules for QP framing:**
+
 1. Include the legal standard by name ("under the business judgment rule," "applying
    strict scrutiny," "for purposes of UCTA 1977 s 2(2)")
 2. Include only legally relevant facts — facts that are elements or factors under the
@@ -308,10 +325,10 @@ the agreement, entitling plaintiff to consequential damages."
 The Brief Answer should tell the reader the conclusion and the single most important
 reason for it.
 
-> *Probably yes. The board's failure to obtain a fairness opinion in a self-interested
+> _Probably yes. The board's failure to obtain a fairness opinion in a self-interested
 > transaction is unlikely to receive business judgment rule protection under Van
 > Gorkom, and the disclosed conflict does not, on its own, satisfy the entire fairness
-> standard.*
+> standard._
 
 ---
 
@@ -321,6 +338,7 @@ Write a focused, objective Statement of Facts. Include only facts that are legal
 relevant to the Issues — do not narrate the entire matter chronology.
 
 **Rules:**
+
 1. Include both favorable and unfavorable facts — objectivity is mandatory in
    internal memos
 2. Flag disputed facts explicitly: "The parties dispute whether notice was given on
@@ -334,6 +352,7 @@ relevant to the Issues — do not narrate the entire matter chronology.
 6. Mark uncertain or unverified facts: "[Unverified — confirm with client]"
 
 **Structural options:**
+
 - **Narrative**: Chronological paragraph form; appropriate for complex matters
   with a story arc
 - **Tabular**: Key facts table; appropriate for document-heavy or date-intensive
@@ -355,39 +374,45 @@ with in-memory synthesis and mark all authority with [VERIFY CITATION].
 **Rule synthesis structure (CREAC):**
 
 **Rule Statement** — State the black-letter rule from the highest applicable authority:
-> *Under Delaware law, directors owe a fiduciary duty of care requiring them to act
+
+> \_Under Delaware law, directors owe a fiduciary duty of care requiring them to act
 > on an informed basis in good faith and in the honest belief that the action taken
 > is in the best interests of the company. Smith v. Van Gorkom, 488 A.2d 858, 872
 > (Del. 1985) [VERIFY CITATION]. The business judgment rule presumes compliance with
 > this standard unless plaintiff rebuts the presumption by showing self-dealing,
 > bad faith, or waste. Aronson v. Lewis, 473 A.2d 805, 812 (Del. 1984) [VERIFY
-> CITATION].*
+>
+> > CITATION].\_
 
 **Synthesis for multi-element rules** — Organize by element:
 
-| Element | Statement | Leading Authority |
-|---------|-----------|-------------------|
+| Element           | Statement        | Leading Authority   |
+| ----------------- | ---------------- | ------------------- |
 | 1. [element name] | [rule statement] | [citation] [VERIFY] |
 | 2. [element name] | [rule statement] | [citation] [VERIFY] |
-| … | … | … |
+| …                 | …                | …                   |
 
 **Handling circuit splits / unsettled questions:**
-> *The circuits are split on whether X. The Fifth and Seventh Circuits hold [Y].
+
+> _The circuits are split on whether X. The Fifth and Seventh Circuits hold [Y].
 > See [cite] [VERIFY]; [cite] [VERIFY]. The Third Circuit has adopted a narrower
-> rule. See [cite] [VERIFY]. This memo applies [circuit] precedent as controlling.*
+> rule. See [cite] [VERIFY]. This memo applies [circuit] precedent as controlling._
 
 **Statutory text rule — quote, do not paraphrase:**
-> *Section 2(2) of the Unfair Contract Terms Act 1977 provides: "In the case of
+
+> _Section 2(2) of the Unfair Contract Terms Act 1977 provides: "In the case of
 > other loss or damage, a person cannot so exclude or restrict his liability for
 > negligence except in so far as the contract term or notice satisfies the
-> requirement of reasonableness." UCTA 1977, s 2(2) [VERIFY current text].*
+> requirement of reasonableness." UCTA 1977, s 2(2) [VERIFY current text]._
 
 **Recent developments note:**
 For any area of law with significant developments after 2023, explicitly flag:
-> *[Note: This area of law has seen significant recent development. Verify whether
+
+> \_[Note: This area of law has seen significant recent development. Verify whether
 > any post-[date] legislative amendments, regulations, or appellate decisions affect
 > this analysis. The rule as stated reflects law through [knowledge cutoff — state
-> explicitly].]*
+>
+> > explicitly].]\_
 
 ---
 
@@ -405,24 +430,24 @@ disputed, or unknown. Conditional analysis is required for disputed or unknown f
 Address each element in order. For elements clearly satisfied (or not), state
 briefly and move on. Spend analytical depth on contested elements.
 
-> *Element 1 — [rule standard]: [client fact]. This element is satisfied / not
-> satisfied / genuinely uncertain because [reason with citation to factual record].*
+> _Element 1 — [rule standard]: [client fact]. This element is satisfied / not
+> satisfied / genuinely uncertain because [reason with citation to factual record]._
 
 **7b. The "because" discipline:**
 Every legal conclusion must be followed by "because" and a factual/legal reason:
 
-> *The limitation clause is likely unenforceable [because] it purports to exclude
+> _The limitation clause is likely unenforceable [because] it purports to exclude
 > liability for personal injury caused by negligence — an exclusion categorically
-> prohibited by UCTA 1977 s 2(1), irrespective of reasonableness. [VERIFY citation]*
+> prohibited by UCTA 1977 s 2(1), irrespective of reasonableness. [VERIFY citation]_
 
 Never: "The clause is likely unenforceable." (conclusory — no reason given)
 
 **7c. Fact-citation discipline:**
 Every factual assertion in the Application must cite to a specific source:
 
-> *Defendant gave written notice on 14 January 2025 (Letter, 14 Jan. 2025, at 2),
+> _Defendant gave written notice on 14 January 2025 (Letter, 14 Jan. 2025, at 2),
 > which is 47 days after the contractual deadline of 28 November 2024 (Agreement
-> s 12(b)).*
+> s 12(b))._
 
 **7d. Counterargument block (mandatory for every Analysis section):**
 
@@ -431,8 +456,9 @@ Every factual assertion in the Application must cite to a specific source:
 > [what the case held].
 >
 > **Rebuttal**: However, [case] is distinguishable because [specific factual or
-> legal distinction]. Additionally, [additional rebuttal if available]. Under
-> [controlling authority], [your conclusion] notwithstanding this contrary argument.
+>
+> > legal distinction]. Additionally, [additional rebuttal if available]. Under
+> > [controlling authority], [your conclusion] notwithstanding this contrary argument.
 
 **The steelman requirement**: Present the opposing argument in its strongest form,
 not a strawman. If you cannot articulate why the opposing argument is reasonable
@@ -440,29 +466,31 @@ and supported by authority, the analysis is incomplete.
 
 **7e. Conditional analysis for uncertain facts:**
 
-> *If the court finds that [Fact A — plaintiff's version], then [legal consequence A]
+> \_If the court finds that [Fact A — plaintiff's version], then [legal consequence A]
 > and [conclusion A with probability]. If instead the court finds [Fact B —
-> defendant's version], then [legal consequence B] and [conclusion B with probability].
-> The more likely factual finding is [A/B] because [factual reasoning].*
+>
+> > defendant's version], then [legal consequence B] and [conclusion B with probability].
+> > The more likely factual finding is [A/B] because [factual reasoning].\_
 
 **7f. Adverse authority treatment (mandatory):**
 Never omit adverse controlling authority. Structure as:
 
-> *It should be noted that [adverse case] [VERIFY citation] appears to support
+> \_It should be noted that [adverse case] [VERIFY citation] appears to support
 > [opposing position]. That decision held [what it held]. However, [case] is
 > distinguishable because [reason] / has been limited by [subsequent case] [VERIFY] /
 > predates [statutory amendment effective date] [VERIFY]. Even applying [adverse
-> case]'s reasoning, [your conclusion holds / carries increased risk] because [reason].*
+>
+> > case]'s reasoning, [your conclusion holds / carries increased risk] because [reason].\_
 
 **7g. Classification tiers by memo type:**
 
-| Memo Type | Classification System |
-|-----------|----------------------|
-| Predictive research | STRONG (>75%) / PROBABLE (55-75%) / UNCERTAIN (40-55%) / ADVERSE (<40%) |
-| Litigation risk | HIGH RISK / MEDIUM RISK / LOW RISK (tied to expected value ranges) |
-| Deal advisory | CRITICAL / MATERIAL / MINOR (by business impact) |
-| Regulatory compliance | COMPLIANT / PARTIAL / NON-COMPLIANT |
-| Board summary | HIGH / MEDIUM / LOW (plain English risk rating) |
+| Memo Type             | Classification System                                                   |
+| --------------------- | ----------------------------------------------------------------------- |
+| Predictive research   | STRONG (>75%) / PROBABLE (55-75%) / UNCERTAIN (40-55%) / ADVERSE (<40%) |
+| Litigation risk       | HIGH RISK / MEDIUM RISK / LOW RISK (tied to expected value ranges)      |
+| Deal advisory         | CRITICAL / MATERIAL / MINOR (by business impact)                        |
+| Regulatory compliance | COMPLIANT / PARTIAL / NON-COMPLIANT                                     |
+| Board summary         | HIGH / MEDIUM / LOW (plain English risk rating)                         |
 
 ---
 
@@ -472,16 +500,16 @@ Never omit adverse controlling authority. Structure as:
 Never use hedging language ("may," "could") when the analysis supports a directional
 conclusion.
 
-| Language | Approximate Probability | When to Use |
-|----------|------------------------|-------------|
-| "Will" / "clearly will" | 90%+ | Settled law, unambiguous application to facts |
-| "Should" / "very likely" | 75–90% | Strong authority, clear application, minor risk only |
-| "Likely" / "probably" | 60–75% | Good authority, reasonable arguments on both sides, one side stronger |
-| "More likely than not" | 55–60% | Marginal probability advantage; opposing argument is substantial |
-| "Genuinely uncertain" / "may" | 40–55% | Both outcomes are plausible; result depends on fact-finding or unsettled law |
-| "Unlikely" / "probably will not" | 25–40% | Adverse outcome more probable; one viable path to favorable result |
-| "Very unlikely" / "should not" | 10–25% | Strong adverse precedent; viable only on exceptional facts |
-| "Will not" / "clearly will not" | <10% | Controlling adverse authority; no realistic favorable path |
+| Language                         | Approximate Probability | When to Use                                                                  |
+| -------------------------------- | ----------------------- | ---------------------------------------------------------------------------- |
+| "Will" / "clearly will"          | 90%+                    | Settled law, unambiguous application to facts                                |
+| "Should" / "very likely"         | 75–90%                  | Strong authority, clear application, minor risk only                         |
+| "Likely" / "probably"            | 60–75%                  | Good authority, reasonable arguments on both sides, one side stronger        |
+| "More likely than not"           | 55–60%                  | Marginal probability advantage; opposing argument is substantial             |
+| "Genuinely uncertain" / "may"    | 40–55%                  | Both outcomes are plausible; result depends on fact-finding or unsettled law |
+| "Unlikely" / "probably will not" | 25–40%                  | Adverse outcome more probable; one viable path to favorable result           |
+| "Very unlikely" / "should not"   | 10–25%                  | Strong adverse precedent; viable only on exceptional facts                   |
+| "Will not" / "clearly will not"  | <10%                    | Controlling adverse authority; no realistic favorable path                   |
 
 **Calibration discipline**: Every probability statement must include the primary reason
 for that confidence level. Example: "We assess a 65–75% likelihood that the clause is
@@ -493,28 +521,33 @@ approved in the most recent comparable case, creating meaningful uncertainty]."
 **8b. Conclusion format by memo type:**
 
 **Predictive research memo conclusion:**
-> *For the reasons set forth above, we conclude that [legal conclusion], with a
+
+> \_For the reasons set forth above, we conclude that [legal conclusion], with a
 > probability assessment of approximately [X%]. The primary basis for this conclusion
 > is [primary reason]. The primary risk to this conclusion is [adverse authority or
-> uncertain fact]. If [adverse condition], the probability shifts to approximately [Y%].*
+>
+> > uncertain fact]. If [adverse condition], the probability shifts to approximately [Y%].\_
 
 **Litigation risk assessment memo conclusion:**
-> *Overall Litigation Risk: [HIGH / MEDIUM / LOW]*
-> *Exposure range: $[low] – $[high], expected value approximately $[midpoint]*
-> *Recommended posture: [file/defend/settle at $X / seek mediation]*
-> *Key uncertainties: [list 2-3 most material unknowns that could shift the analysis]*
+
+> _Overall Litigation Risk: [HIGH / MEDIUM / LOW]_
+> _Exposure range: $[low] – $[high], expected value approximately $[midpoint]_
+> _Recommended posture: [file/defend/settle at $X / seek mediation]_
+> _Key uncertainties: [list 2-3 most material unknowns that could shift the analysis]_
 
 **Deal advisory memo conclusion:**
-> *Overall Deal Risk: [CRITICAL / MATERIAL / MINOR]*
-> *Recommended modifications: [list top 3 in priority order]*
-> *Acceptable risk if not modified: [yes/no + conditions]*
-> *Alternative structures considered: [list with relative risk profile]*
+
+> _Overall Deal Risk: [CRITICAL / MATERIAL / MINOR]_
+> _Recommended modifications: [list top 3 in priority order]_
+> _Acceptable risk if not modified: [yes/no + conditions]_
+> _Alternative structures considered: [list with relative risk profile]_
 
 **Regulatory compliance memo conclusion:**
-> *Compliance status: [COMPLIANT / PARTIAL / NON-COMPLIANT]*
-> *Regulatory exposure: [describe risk if non-compliant — penalties, enforcement]*
-> *Required remediation steps: [prioritized action list with deadlines if applicable]*
-> *Safe harbor availability: [yes/no + conditions]*
+
+> _Compliance status: [COMPLIANT / PARTIAL / NON-COMPLIANT]_
+> _Regulatory exposure: [describe risk if non-compliant — penalties, enforcement]_
+> _Required remediation steps: [prioritized action list with deadlines if applicable]_
+> _Safe harbor availability: [yes/no + conditions]_
 
 ---
 
@@ -566,6 +599,7 @@ DETAILED ANALYSIS: See attached legal memorandum dated [date].
 ```
 
 **Board summary discipline:**
+
 - Every sentence must answer "So what?" from a business perspective
 - No legal citations in the summary body (moved to underlying memo)
 - Risk ratings must be calibrated consistently within your organization
@@ -584,13 +618,13 @@ Before delivering any memo, run these quality gates silently and revise if any f
 
 Run all five gates before delivering. Fail any gate → revise before output.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, regulation, case, or authoritative secondary source | Add citation or mark "[UNVERIFIED]" |
-| **Format** | All citations follow the correct format for the jurisdiction (Bluebook Practitioner / OSCOLA / AGLC) | Fix format |
-| **Currency** | Every cited provision checked for amendments, repeal, or subsequent limiting authority | Flag "[CHECK CURRENCY — [year of cited authority]]" |
-| **Domain** | Analysis stays within the identified controlling jurisdiction; no jurisdiction bleed | Remove or re-flag any jurisdictional bleed |
-| **Confidence** | Uncertainty is explicitly stated, not hidden | Add confidence qualifier or probability statement |
+| Gate           | Rule                                                                                                 | Fail Action                                         |
+| -------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, regulation, case, or authoritative secondary source      | Add citation or mark "[UNVERIFIED]"                 |
+| **Format**     | All citations follow the correct format for the jurisdiction (Bluebook Practitioner / OSCOLA / AGLC) | Fix format                                          |
+| **Currency**   | Every cited provision checked for amendments, repeal, or subsequent limiting authority               | Flag "[CHECK CURRENCY — [year of cited authority]]" |
+| **Domain**     | Analysis stays within the identified controlling jurisdiction; no jurisdiction bleed                 | Remove or re-flag any jurisdictional bleed          |
+| **Confidence** | Uncertainty is explicitly stated, not hidden                                                         | Add confidence qualifier or probability statement   |
 
 #### Self-Interrogation for HIGH RISK / Adverse Conclusions
 
@@ -768,10 +802,11 @@ CONCLUSION
 #### Authority Hierarchy (Federal)
 
 Apply this hierarchy in strict order:
+
 1. US Constitution (supreme law)
 2. Federal statutes (USC) — look for implied preemption of state law
-3. Federal regulations (CFR) — notice: *Chevron* deference overruled by *Loper
-   Bright* (2024) [VERIFY]; *Skidmore* deference (weight proportional to agency
+3. Federal regulations (CFR) — notice: _Chevron_ deference overruled by _Loper
+   Bright_ (2024) [VERIFY]; _Skidmore_ deference (weight proportional to agency
    persuasiveness) remains
 4. SCOTUS decisions — binding on all lower courts
 5. Circuit Court decisions — binding within circuit; "circuit split" triggers
@@ -783,7 +818,8 @@ apply state substantive law. Identify whether the question is governed by state 
 federal law before citing any authority.
 
 **Statutory interpretation canons** (apply per circuit's preferred methodology):
-- Textualist: "plain meaning of the statutory text"; *King v. Burwell* [VERIFY]
+
+- Textualist: "plain meaning of the statutory text"; _King v. Burwell_ [VERIFY]
 - Purposivist: "interpret to effectuate congressional purpose"
 - Whole act rule: interpret provision consistently with entire statute
 - Surplusage canon: every word should have independent meaning
@@ -792,6 +828,7 @@ federal law before citing any authority.
 #### Bluebook Practitioner Format — Key Rules
 
 **Cases** (Practitioner):
+
 ```
 First citation:   Smith v. Jones, 123 F.3d 456, 460 (5th Cir. 1997).
 Short form:       Smith, 123 F.3d at 461.
@@ -800,31 +837,34 @@ Unpublished:      Smith v. Jones, No. 23-1234, slip op. at 3 (5th Cir. Jan. 15, 
 ```
 
 **Federal statutes**:
+
 ```
 17 U.S.C. § 101 (2018).
 Sherman Antitrust Act, 15 U.S.C. §§ 1–7 (2018).
 ```
 
 **Federal regulations**:
+
 ```
 17 C.F.R. § 240.10b-5 (2024).
 ```
 
 **Signal hierarchy** (before citation in Practitioner format):
+
 - No signal: directly on point, cited for stated proposition
-- *See*: supports proposition by clear inference, not directly stated
-- *See also*: additional support (less direct than *see*)
-- *Accord*: same legal proposition held in different jurisdiction/context
-- *Cf.*: analogous but different; comparison supports proposition
-- *But see*: contrary position; court has reached different result
-- *Contra*: directly opposed to stated proposition
-- *See generally*: general background; not directly on point
+- _See_: supports proposition by clear inference, not directly stated
+- _See also_: additional support (less direct than _see_)
+- _Accord_: same legal proposition held in different jurisdiction/context
+- _Cf._: analogous but different; comparison supports proposition
+- _But see_: contrary position; court has reached different result
+- _Contra_: directly opposed to stated proposition
+- _See generally_: general background; not directly on point
 
 #### Work Product and Privilege (US)
 
 Internal research memos prepared in anticipation of litigation are **opinion work
 product** if they reflect the attorney's mental impressions and legal theories.
-Near-absolute protection from discovery. *Hickman v. Taylor*, 329 U.S. 495 (1947)
+Near-absolute protection from discovery. _Hickman v. Taylor_, 329 U.S. 495 (1947)
 [VERIFY citation]; Fed. R. Civ. P. 26(b)(3).
 
 **Waiver risk**: Sharing memo with third parties outside the attorney-client
@@ -844,28 +884,31 @@ Requires Attorney Review and Adoption" in the memo heading.
 #### Authority Hierarchy
 
 Apply in order:
+
 1. Acts of Parliament (primary legislation)
 2. Statutory Instruments (secondary/delegated legislation)
 3. UK Supreme Court decisions (post-2009; previously House of Lords)
 4. Court of Appeal decisions
 5. High Court decisions (strongly persuasive; binding in some contexts)
 6. Privy Council decisions (highly persuasive — near-mandatory on many points)
-7. EU retained law: apply EU-derived provisions retained under the *Retained EU
-   Law (Revocation and Reform) Act 2023* [VERIFY current sunset status of specific
+7. EU retained law: apply EU-derived provisions retained under the _Retained EU
+   Law (Revocation and Reform) Act 2023_ [VERIFY current sunset status of specific
    retained provisions]
 8. Decisions from other Commonwealth jurisdictions (persuasive)
 
 **Statutory interpretation (E&W):**
+
 - Literal rule: ordinary meaning of words
 - Golden rule: modify literal reading to avoid absurdity
 - Mischief rule: interpret to remedy the mischief Parliament intended to address
-- Purposive approach (post-*Pepper v Hart* [1993] AC 593 [VERIFY]): Hansard
+- Purposive approach (post-_Pepper v Hart_ [1993] AC 593 [VERIFY]): Hansard
   admissible in limited circumstances to clarify ambiguous legislation
 - Human Rights Act 1998 s 3: read and give effect to legislation compatibly with
   ECHR Convention rights "so far as it is possible to do so"
 
 **Privilege in E&W:**
-- Legal advice privilege: dominant purpose test (*Three Rivers (No 6)* [2004]
+
+- Legal advice privilege: dominant purpose test (_Three Rivers (No 6)_ [2004]
   UKHL 48 [VERIFY]) — communications between lawyer and client dominant purpose
   of giving/obtaining legal advice
 - Litigation privilege: communications dominant purpose of pending or reasonably
@@ -877,6 +920,7 @@ Apply in order:
 #### OSCOLA 4th Edition — Key Rules
 
 **Cases:**
+
 ```
 First citation:   R v Brown [1994] 1 AC 212 (HL).
 Modern neutral:   Smith v Jones [2023] EWCA Civ 456, [12].
@@ -885,18 +929,21 @@ Immediately preceding: ibid 215.
 ```
 
 **Statutes:**
+
 ```
 Unfair Contract Terms Act 1977, s 2(1).
 Consumer Rights Act 2015, s 62(1).
 ```
 
 **Statutory instruments:**
+
 ```
 Consumer Contracts (Information, Cancellation and Additional Charges)
 Regulations 2013, SI 2013/3134, reg 9.
 ```
 
 **EU retained legislation (post-Brexit UK):**
+
 ```
 UK GDPR, art 6(1)(a).  [distinguish from EU GDPR, art 6(1)(a) — [VERIFY
 current citation convention in UK practice]]
@@ -913,6 +960,7 @@ preceding footnote authority.
 #### Authority Hierarchy
 
 Federal matters:
+
 1. Australian Constitution (Commonwealth, State law may need to be read
    consistently with constitutional grants of power)
 2. Commonwealth Acts; State Acts (for state matters)
@@ -923,6 +971,7 @@ Federal matters:
    state; persuasive elsewhere in Australia)
 
 Persuasive:
+
 - Decisions from other Australian jurisdictions (strong persuasive weight)
 - UK decisions (highly persuasive in common law areas; weaker in statutory
   interpretation)
@@ -930,20 +979,21 @@ Persuasive:
 - Privy Council (historical; persuasive but not binding post-1986)
 
 **Statutory interpretation (Australia):**
-Apply *Acts Interpretation Act 1901* (Cth) s 15AA: "In interpreting a provision
+Apply _Acts Interpretation Act 1901_ (Cth) s 15AA: "In interpreting a provision
 of an Act, the interpretation that would best achieve the purpose or object of
 the Act is to be preferred to each other interpretation." [VERIFY current text]
 
 High Court methodology:
-- *Project Blue Sky* (1998) 194 CLR 355 [VERIFY]: purpose and text read together;
+
+- _Project Blue Sky_ (1998) 194 CLR 355 [VERIFY]: purpose and text read together;
   no hierarchy between text and purpose
-- *SZTAL* [2017] HCA 34 [VERIFY]: begin with the ordinary meaning of words;
+- _SZTAL_ [2017] HCA 34 [VERIFY]: begin with the ordinary meaning of words;
   context and purpose illuminate ambiguity
 
 **Privilege in Australia:**
-Legal professional privilege / client legal privilege under *Evidence Act 1995*
+Legal professional privilege / client legal privilege under _Evidence Act 1995_
 (Cth) ss 118–119 [VERIFY]: confidential communications for dominant purpose
-of legal advice. *Esso Australia Resources Ltd v Commissioner of Taxation*
+of legal advice. _Esso Australia Resources Ltd v Commissioner of Taxation_
 (1999) 201 CLR 49 [VERIFY] established the dominant purpose test.
 
 **Marking:** `CLIENT LEGAL PRIVILEGE — CONFIDENTIAL LEGAL ADVICE`
@@ -951,6 +1001,7 @@ of legal advice. *Esso Australia Resources Ltd v Commissioner of Taxation*
 #### AGLC 4th Edition — Key Rules
 
 **Cases:**
+
 ```
 High Court:  Mabo v Queensland (No 2) (1992) 175 CLR 1 (HCA).
               [round brackets when volume number present]
@@ -960,6 +1011,7 @@ Short form:  Mabo (No 2) (n 12) 66.  [n 12 = footnote number]
 ```
 
 **Australian statutes (italicized):**
+
 ```
 Competition and Consumer Act 2010 (Cth) s 18.
 Corporations Act 2001 (Cth) s 181(1).
@@ -967,20 +1019,20 @@ Fair Work Act 2009 (Cth) s 385.
 Environmental Planning and Assessment Act 1979 (NSW) s 4.15.
 ```
 
-**Key AGLC difference from OSCOLA**: Statute names are *italicized* in AGLC.
+**Key AGLC difference from OSCOLA**: Statute names are _italicized_ in AGLC.
 Jurisdiction in round brackets after statute name.
 
 ---
 
 ## Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Settled law, clear statute, unambiguous application | State with full confidence; no caveat needed |
-| **High** | 0.80–0.94 | Strong authority, minor factual uncertainty only | State with brief caveat ("subject to confirmation of [fact]") |
-| **Probable** | 0.60–0.79 | Good arguments for the conclusion; meaningful contrary arguments | State conclusion with probability calibration and contra-indicators noted |
-| **Uncertain** | 0.40–0.59 | Genuinely uncertain outcome; both sides have substantial arguments | Flag for professional review; present both sides with probability ranges |
-| **Adverse** | 0.0–0.39 | Weak basis; adverse authority controls; favorable outcome requires exceptional facts | Do not assert favorably; clearly flag adverse risk; recommend alternative strategies |
+| Level         | Range     | Meaning                                                                              | Action                                                                               |
+| ------------- | --------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| **Definite**  | 0.95–1.0  | Settled law, clear statute, unambiguous application                                  | State with full confidence; no caveat needed                                         |
+| **High**      | 0.80–0.94 | Strong authority, minor factual uncertainty only                                     | State with brief caveat ("subject to confirmation of [fact]")                        |
+| **Probable**  | 0.60–0.79 | Good arguments for the conclusion; meaningful contrary arguments                     | State conclusion with probability calibration and contra-indicators noted            |
+| **Uncertain** | 0.40–0.59 | Genuinely uncertain outcome; both sides have substantial arguments                   | Flag for professional review; present both sides with probability ranges             |
+| **Adverse**   | 0.0–0.39  | Weak basis; adverse authority controls; favorable outcome requires exceptional facts | Do not assert favorably; clearly flag adverse risk; recommend alternative strategies |
 
 ---
 
@@ -1085,18 +1137,21 @@ What NOT to do when drafting legal memoranda:
 Apply these quality gates before delivering the memo:
 
 **Precision:**
+
 - Every legal conclusion is supported by cited authority or explicit factual reasoning
 - Probability language is calibrated per the probability table — no untargeted hedging
 - Factual assertions cite specific sources — documents, deposition pages, pleading paragraphs
 - Statutory text is quoted verbatim, not paraphrased
 
 **Objectivity:**
+
 - Both favorable and unfavorable authority and facts are addressed
 - Counterarguments are presented in their strongest form (steelman, not strawman)
 - Probability assessments are calibrated, not advocacy-toned
 - Adverse controlling authority is not omitted or minimized
 
 **Clarity:**
+
 - Plain English for non-legal sections (board summary, executive sections)
 - Active voice where legally possible — "the contractor failed to deliver" not
   "delivery was not made"
@@ -1104,12 +1159,14 @@ Apply these quality gates before delivering the memo:
 - Issue headings clearly restate the issue in affirmative or question form
 
 **Completeness:**
+
 - All Questions Presented receive explicit answers in Brief Answers and Conclusion
 - All elements of the applicable test are addressed in the Application section
 - The verification checklist is appended and populated
 - Scope statement identifies what the memo does and does not cover
 
 **Format integrity:**
+
 - Privilege marking is present and correct for memo type and jurisdiction
 - Controlling jurisdiction and citation format are stated in the memo header
 - CREAC structure is maintained in each Discussion section
@@ -1120,6 +1177,7 @@ Apply these quality gates before delivering the memo:
 ## External Tool Integration
 
 **With legalcode-mcp connected (preferred):**
+
 - In Step 6 (Rule Synthesis), query legalcode-mcp for primary authority on each
   legal question — statutes, regulations, leading cases
 - Save research results to a local reference file (e.g.,
@@ -1131,6 +1189,7 @@ Apply these quality gates before delivering the memo:
   cross-jurisdiction authority contamination
 
 **Without legalcode-mcp:**
+
 - Proceed with in-memory rule synthesis
 - Mark every citation with [VERIFY CITATION] — mandatory, not optional
 - Note in the Glass Box audit trail: `legalcode_mcp: "Not connected"`
@@ -1156,7 +1215,7 @@ Append this audit section to every produced memo for traceability:
 glass_box:
   skill_name: "legalcode-legal-memorandum"
   memo_type: "[Predictive Research / Litigation Risk / Deal Advisory /
-               Regulatory Compliance / Board Summary]"
+    Regulatory Compliance / Board Summary]"
   controlling_jurisdiction: "[Jurisdiction — court system]"
   governing_law: "[Primary statute or doctrine]"
   citation_format: "[Bluebook Practitioner / OSCOLA / AGLC]"
@@ -1178,7 +1237,7 @@ glass_box:
     - "Knowledge cutoff: [date] — recent developments require separate verification"
     - "[Any scope limitations, assumptions, or caveats specific to this memo]"
   reviewer: "AI-Assisted Draft — requires review and adoption by qualified
-             legal professional licensed in [jurisdiction]"
+    legal professional licensed in [jurisdiction]"
 ```
 
 ---
@@ -1190,6 +1249,7 @@ For other jurisdictions, it provides the structural framework (IRAC/CREAC, privi
 marking, probability calibration) but cannot provide reliable primary authority.
 
 **For jurisdictions outside US/UK/AU:**
+
 1. Apply the memo structure (Questions Presented, Brief Answers, Facts, Discussion,
    Conclusion) — this is jurisdiction-agnostic
 2. Apply the analytical disciplines (element-by-element, steelmanning, adverse

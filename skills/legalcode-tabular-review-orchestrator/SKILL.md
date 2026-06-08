@@ -81,12 +81,12 @@ Record the result in the run summary.
 
 ### Preferred Conversion Order
 
-| Format | Preferred | Fallback |
-|---|---|---|
-| born-digital PDF | `magic-pdf` | `pdftotext` |
-| scanned PDF | `ocrmypdf` then `magic-pdf` | mark `UNREADABLE` if still unusable |
-| DOCX | `pandoc` | `markitdown` |
-| mixed / unknown | `markitdown` trial pass | manual routing |
+| Format           | Preferred                   | Fallback                            |
+| ---------------- | --------------------------- | ----------------------------------- |
+| born-digital PDF | `magic-pdf`                 | `pdftotext`                         |
+| scanned PDF      | `ocrmypdf` then `magic-pdf` | mark `UNREADABLE` if still unusable |
+| DOCX             | `pandoc`                    | `markitdown`                        |
+| mixed / unknown  | `markitdown` trial pass     | manual routing                      |
 
 ## Runtime Modes
 
@@ -128,13 +128,13 @@ Pattern:
 
 Spawn or simulate this team whenever the corpus is non-trivial.
 
-| Agent | Purpose | Notes |
-|---|---|---|
-| `inventory-router` | find documents, classify types, dedupe paths, produce manifest | deterministic-first |
-| `extractor` | answer 3-8 related questions for one document | use Haiku-class model when available |
-| `row-normalizer` | standardize dates, amounts, booleans, and source anchors | central merge point |
-| `conflict-reviewer` | inspect inconsistent candidates and set `CONFLICT` when needed | never paper over contradictions |
-| `qa-auditor` | spot-check important cells and overall schema completeness | run before delivery |
+| Agent               | Purpose                                                        | Notes                                |
+| ------------------- | -------------------------------------------------------------- | ------------------------------------ |
+| `inventory-router`  | find documents, classify types, dedupe paths, produce manifest | deterministic-first                  |
+| `extractor`         | answer 3-8 related questions for one document                  | use Haiku-class model when available |
+| `row-normalizer`    | standardize dates, amounts, booleans, and source anchors       | central merge point                  |
+| `conflict-reviewer` | inspect inconsistent candidates and set `CONFLICT` when needed | never paper over contradictions      |
+| `qa-auditor`        | spot-check important cells and overall schema completeness     | run before delivery                  |
 
 ### Delegation Rules
 
@@ -266,12 +266,12 @@ Preserve original nuance in:
 
 Use these exact statuses:
 
-| Status | Meaning |
-|---|---|
-| `VERIFIED` | clear answer with source anchor |
-| `PROBABLE` | likely answer with caveat |
-| `CONFLICT` | competing or contradictory answers |
-| `NOT_FOUND` | no answer identified in reviewed text |
+| Status       | Meaning                                    |
+| ------------ | ------------------------------------------ |
+| `VERIFIED`   | clear answer with source anchor            |
+| `PROBABLE`   | likely answer with caveat                  |
+| `CONFLICT`   | competing or contradictory answers         |
+| `NOT_FOUND`  | no answer identified in reviewed text      |
 | `UNREADABLE` | conversion / OCR prevented reliable review |
 
 Never silently coerce `CONFLICT` or `UNREADABLE` into an answer string.
@@ -324,14 +324,14 @@ If a user column asks for legal interpretation rather than factual extraction:
 
 ## Failure Handling
 
-| Failure | Response |
-|---|---|
-| document unreadable | mark `UNREADABLE`, retry OCR once if appropriate, then escalate |
-| weak extraction confidence | downgrade to `PROBABLE` |
-| contradictory clauses | mark `CONFLICT` and cite both |
-| missing annexes | ask whether to expand scope |
-| spreadsheet export unavailable | ship CSV + JSON + Markdown |
-| corpus too large for one pass | stage by subset or document type |
+| Failure                        | Response                                                        |
+| ------------------------------ | --------------------------------------------------------------- |
+| document unreadable            | mark `UNREADABLE`, retry OCR once if appropriate, then escalate |
+| weak extraction confidence     | downgrade to `PROBABLE`                                         |
+| contradictory clauses          | mark `CONFLICT` and cite both                                   |
+| missing annexes                | ask whether to expand scope                                     |
+| spreadsheet export unavailable | ship CSV + JSON + Markdown                                      |
+| corpus too large for one pass  | stage by subset or document type                                |
 
 ## Delivery Format
 
@@ -362,7 +362,7 @@ Always keep the close-out concise. The user does not need a changelog of every i
 ## Provenance
 
 Created in response to a Legalcode request to design a Legora-style tabular review workflow
- with explicit agent-team and sub-agent support, alongside a companion user-facing skill.
+with explicit agent-team and sub-agent support, alongside a companion user-facing skill.
 Design sources include:
 
 - `docs/brainstorms/2026-04-09-legora-tabular-review-agentic-design.md`

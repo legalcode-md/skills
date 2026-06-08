@@ -58,6 +58,7 @@ Regulations 2017, and FATF 40 Recommendations. It operates across three modes:
   finding, or internal audit deficiency
 
 **Covers:**
+
 - Enterprise AML/KYC risk assessment (inherent risk → controls → residual risk)
 - Customer Due Diligence (CDD) program design — Standard / Simplified / Enhanced tiers
 - Beneficial ownership identification (25% threshold, control prong, certification)
@@ -74,6 +75,7 @@ Regulations 2017, and FATF 40 Recommendations. It operates across three modes:
 - Multi-jurisdiction regulatory framework mapping (US / EU / UK / FATF)
 
 **Does not:**
+
 - Constitute legal advice or substitute for qualified AML counsel or certified AML
   specialist (CAMS/CFCS)
 - Replace a fully documented AML/KYC policy suite — produces frameworks and gap analyses,
@@ -85,6 +87,7 @@ Regulations 2017, and FATF 40 Recommendations. It operates across three modes:
 - Cover sector-specific BSA exemption calculations in full depth
 
 **Related skills:**
+
 - `legalcode-compliance-program-builder` — enterprise compliance program governance and
   anti-bribery/anti-corruption program design
 - `legalcode-regulatory-change-tracker` — ongoing AML/KYC regulatory change monitoring
@@ -101,6 +104,7 @@ This is a multi-jurisdiction skill designed to work across US, EU, and UK framew
 simultaneously. The applicable regulatory overlay(s) are determined in Step 2.
 
 [JURISDICTION-SPECIFIC: United States] When the entity is subject to US BSA/AML:
+
 - Primary statute: Bank Secrecy Act (31 U.S.C. §§ 5311–5336), as implemented by
   FinCEN and federal banking regulators
 - CDD obligations: FinCEN CDD Final Rule (31 C.F.R. § 1010.230, effective May 11, 2018)
@@ -128,6 +132,7 @@ simultaneously. The applicable regulatory overlay(s) are determined in Step 2.
   primary operational reference
 
 [JURISDICTION-SPECIFIC: European Union] When the entity is subject to EU AML law:
+
 - Sixth Anti-Money Laundering Directive (AMLD6, Dir. (EU) 2018/1673): Harmonizes
   criminal liability for ML offenses across member states; extends predicate offenses
 - EU AML Package 2024 (in force July 2024, phased application from 2027):
@@ -147,6 +152,7 @@ simultaneously. The applicable regulatory overlay(s) are determined in Step 2.
   remain operative; significant variation exists across member states
 
 [JURISDICTION-SPECIFIC: United Kingdom] When the entity is subject to UK AML law:
+
 - Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer)
   Regulations 2017 (MLR 2017, SI 2017/692): Primary CDD/AML obligations for regulated
   sector firms; FCA is primary AML supervisor for most financial institutions
@@ -170,6 +176,7 @@ simultaneously. The applicable regulatory overlay(s) are determined in Step 2.
 
 [JURISDICTION-SPECIFIC: Global / FATF] For all jurisdictions, the FATF 40
 Recommendations provide the underlying international standard:
+
 - R.10 (CDD): Customer identification and verification obligations
 - R.12 (PEPs): Enhanced due diligence for politically exposed persons
 - R.15 (New Technologies / VASPs): AML/CFT obligations for virtual asset service providers
@@ -226,7 +233,7 @@ If no input is provided, prompt the user to describe their entity and the task t
      know where it falls short)
    - **Remediate**: Design a remediation roadmap following a specific finding (consent
      order, exam finding, internal audit)
-   - *Why this matters*: Build mode produces frameworks and templates; assess mode
+   - _Why this matters_: Build mode produces frameworks and templates; assess mode
      compares current state to regulatory expectations; remediate mode prioritizes
      speed and regulator-facing communication.
 
@@ -237,7 +244,7 @@ If no input is provided, prompt the user to describe their entity and the task t
    - EU Obliged Entity (credit institution, payment institution, crypto-VASP, etc.)
    - UK FCA-Regulated Firm (bank, payment institution, e-money institution)
    - Multi-jurisdictional (operates in 2+ of the above)
-   - *Why this matters*: Entity type determines which specific regulations apply, which
+   - _Why this matters_: Entity type determines which specific regulations apply, which
      regulator will examine the program, and which specific obligations attach.
 
 3. **Jurisdictions** — Which regulatory frameworks apply?
@@ -246,7 +253,7 @@ If no input is provided, prompt the user to describe their entity and the task t
    - UK only (POCA/MLR 2017/FCA)
    - US + EU + UK (multinational)
    - Other combination
-   - *Why this matters*: Multi-jurisdiction entities must satisfy the highest standard
+   - _Why this matters_: Multi-jurisdiction entities must satisfy the highest standard
      across all applicable regimes simultaneously.
 
 4. **Program Maturity** — If assessing an existing program:
@@ -254,7 +261,7 @@ If no input is provided, prompt the user to describe their entity and the task t
    - **Developing**: Core elements in place but significant gaps
    - **Established**: Full program in place; seeking assurance and fine-tuning
    - **Enforcement-context**: Under consent order, MRA, or MOU
-   - *Why this matters*: Determines the depth of gap analysis and the urgency of
+   - _Why this matters_: Determines the depth of gap analysis and the urgency of
      remediation recommendations.
 
 5. **Risk Profile** — What is the entity's core ML risk exposure?
@@ -262,7 +269,7 @@ If no input is provided, prompt the user to describe their entity and the task t
    - High-risk products (private banking, correspondent banking, crypto, trade finance)
    - High-risk geographies (FATF grey/black list countries, sanctions nexus)
    - Low-risk profile (retail banking, consumer lending, low-risk payment processing)
-   - *Why this matters*: Determines whether Enhanced Due Diligence frameworks are needed
+   - _Why this matters_: Determines whether Enhanced Due Diligence frameworks are needed
      and how the transaction monitoring rules should be calibrated.
 
 If the user provides partial context, proceed with reasonable professional defaults and
@@ -274,16 +281,16 @@ state assumptions explicitly.
 
 Map the entity to its specific regulatory obligations:
 
-| Regulatory Dimension | US | EU | UK |
-|---------------------|-----|-----|-----|
-| **Primary AML statute** | BSA (31 U.S.C. §§ 5311-5336) | AMLD6/AMLR | POCA 2002 + MLR 2017 |
-| **Implementing rule** | FinCEN CFR Part 1010-1030 | National AMLD transpositions / AMLR (2027) | SI 2017/692 |
-| **Primary supervisor** | FinCEN + federal banking regulator | National CA / AMLA (2026+) | FCA / HMRC / others |
-| **CDD standard** | 31 C.F.R. § 1010.230 | AMLD4/AMLR Art. 16-40 | MLR 2017 regs. 27-38 |
-| **BO threshold** | 25% ownership + control prong | 25% direct/indirect | 25% PSC threshold |
-| **SAR filing** | FinCEN via BSA E-Filing | National FIU | NCA via SAR Online |
-| **Sanctions authority** | OFAC (Treasury) | EU Common Foreign & Security Policy | OFSI (HM Treasury) |
-| **PEP treatment** | Risk-based (no formal domestic PEP category) | EDD required for all PEPs (AMLR) | Domestic PEP = lower risk starting point |
+| Regulatory Dimension    | US                                           | EU                                         | UK                                       |
+| ----------------------- | -------------------------------------------- | ------------------------------------------ | ---------------------------------------- |
+| **Primary AML statute** | BSA (31 U.S.C. §§ 5311-5336)                 | AMLD6/AMLR                                 | POCA 2002 + MLR 2017                     |
+| **Implementing rule**   | FinCEN CFR Part 1010-1030                    | National AMLD transpositions / AMLR (2027) | SI 2017/692                              |
+| **Primary supervisor**  | FinCEN + federal banking regulator           | National CA / AMLA (2026+)                 | FCA / HMRC / others                      |
+| **CDD standard**        | 31 C.F.R. § 1010.230                         | AMLD4/AMLR Art. 16-40                      | MLR 2017 regs. 27-38                     |
+| **BO threshold**        | 25% ownership + control prong                | 25% direct/indirect                        | 25% PSC threshold                        |
+| **SAR filing**          | FinCEN via BSA E-Filing                      | National FIU                               | NCA via SAR Online                       |
+| **Sanctions authority** | OFAC (Treasury)                              | EU Common Foreign & Security Policy        | OFSI (HM Treasury)                       |
+| **PEP treatment**       | Risk-based (no formal domestic PEP category) | EDD required for all PEPs (AMLR)           | Domestic PEP = lower risk starting point |
 
 For multi-jurisdiction entities, apply the most stringent requirement in each area unless
 the entity has a reasoned written position supporting a different approach.
@@ -300,15 +307,16 @@ any provided risk assessment document:
 
 **Inherent Risk Factors:**
 
-| Risk Category | Low | Medium | High | Very High |
-|--------------|-----|--------|------|-----------|
-| **Customer types** | Retail consumers, W-2 employees | SME business owners | Cash businesses, legal/accounting professionals | PEPs, MSBs, shell companies, correspondent banks |
-| **Products/services** | Consumer deposits, standard lending | Business banking | Private banking, trade finance, prepaid cards | Correspondent banking, crypto, digital assets, cross-border remittance |
-| **Geographic reach** | Domestic only, low-risk state | Multi-state domestic | Countries with moderate FATF ratings | FATF grey/black list countries, OFAC-sanctioned jurisdictions |
-| **Delivery channels** | In-person branch | Online banking | Mobile/digital-first | Fully anonymous/pseudonymous, agent networks |
-| **Transaction volume** | Low volume, large transactions | Moderate | High volume, varied sizes | High frequency, small transactions (structuring risk) |
+| Risk Category          | Low                                 | Medium               | High                                            | Very High                                                              |
+| ---------------------- | ----------------------------------- | -------------------- | ----------------------------------------------- | ---------------------------------------------------------------------- |
+| **Customer types**     | Retail consumers, W-2 employees     | SME business owners  | Cash businesses, legal/accounting professionals | PEPs, MSBs, shell companies, correspondent banks                       |
+| **Products/services**  | Consumer deposits, standard lending | Business banking     | Private banking, trade finance, prepaid cards   | Correspondent banking, crypto, digital assets, cross-border remittance |
+| **Geographic reach**   | Domestic only, low-risk state       | Multi-state domestic | Countries with moderate FATF ratings            | FATF grey/black list countries, OFAC-sanctioned jurisdictions          |
+| **Delivery channels**  | In-person branch                    | Online banking       | Mobile/digital-first                            | Fully anonymous/pseudonymous, agent networks                           |
+| **Transaction volume** | Low volume, large transactions      | Moderate             | High volume, varied sizes                       | High frequency, small transactions (structuring risk)                  |
 
 **Risk Assessment Output:**
+
 - Overall inherent risk: LOW / MEDIUM / HIGH / VERY HIGH
 - Key risk drivers: [list top 3-5]
 - Mitigating controls currently in place: [summarize]
@@ -333,6 +341,7 @@ types; FinCEN 2024 Proposed Rule adds a mandatory enterprise risk assessment):
 #### Pillar 1: Internal Controls — Policies, Procedures, and Controls
 
 **What is required:**
+
 - Written AML/KYC policy approved by senior management or board
 - Comprehensive written procedures for each program element
 - Controls to prevent, detect, and report suspicious activity
@@ -342,24 +351,25 @@ types; FinCEN 2024 Proposed Rule adds a mandatory enterprise risk assessment):
 
 **Assessment checklist:**
 
-| Control Element | Present | Quality | Gap |
-|----------------|---------|---------|-----|
-| Written AML Policy (board/senior mgmt approved, dated) | | | |
-| CDD Procedure — Individual Customers | | | |
-| CDD Procedure — Legal Entity Customers + BO identification | | | |
-| EDD Procedure — High-risk customer categories | | | |
-| Sanctions Screening Procedure (OFAC/EU/UK as applicable) | | | |
-| PEP Identification and EDD Procedure | | | |
-| Transaction Monitoring Procedure (alert investigation workflow) | | | |
-| SAR Filing Procedure (internal referral → Compliance → FinCEN/FIU) | | | |
-| CTR Filing Procedure (US: $10K threshold, structuring prohibition) | | | |
-| Record Retention Schedule (5-year retention confirmed) | | | |
-| High-Risk Customer Category Management Procedure | | | |
-| Third-Party Reliance Procedure (if applicable) | | | |
-| De-risking / Account Closure Procedure | | | |
-| Annual Policy Review and Update Process | | | |
+| Control Element                                                    | Present | Quality | Gap |
+| ------------------------------------------------------------------ | ------- | ------- | --- |
+| Written AML Policy (board/senior mgmt approved, dated)             |         |         |     |
+| CDD Procedure — Individual Customers                               |         |         |     |
+| CDD Procedure — Legal Entity Customers + BO identification         |         |         |     |
+| EDD Procedure — High-risk customer categories                      |         |         |     |
+| Sanctions Screening Procedure (OFAC/EU/UK as applicable)           |         |         |     |
+| PEP Identification and EDD Procedure                               |         |         |     |
+| Transaction Monitoring Procedure (alert investigation workflow)    |         |         |     |
+| SAR Filing Procedure (internal referral → Compliance → FinCEN/FIU) |         |         |     |
+| CTR Filing Procedure (US: $10K threshold, structuring prohibition) |         |         |     |
+| Record Retention Schedule (5-year retention confirmed)             |         |         |     |
+| High-Risk Customer Category Management Procedure                   |         |         |     |
+| Third-Party Reliance Procedure (if applicable)                     |         |         |     |
+| De-risking / Account Closure Procedure                             |         |         |     |
+| Annual Policy Review and Update Process                            |         |         |     |
 
 **Classification criteria:**
+
 - **COMPLIANT**: All key policies present, reviewed within 12 months, senior management
   approved, operationalized (not just paper)
 - **PARTIAL**: Most policies present but missing key elements, not recently updated,
@@ -372,6 +382,7 @@ types; FinCEN 2024 Proposed Rule adds a mandatory enterprise risk assessment):
 #### Pillar 2: BSA/AML Compliance Officer
 
 **What is required:**
+
 - Designated individual responsible for day-to-day BSA/AML compliance
   (31 C.F.R. § 1020.210(a)(2)(iii))
 - Sufficient authority, independence, and resources to perform the function
@@ -393,21 +404,22 @@ Laundering Reporting Officer (MLRO) for most regulated firms; the MLRO must be a
 
 **Assessment checklist:**
 
-| Element | Present | Quality | Gap |
-|---------|---------|---------|-----|
-| Named BSA Officer / MLRO designated in writing | | | |
-| Appropriate seniority and authority (can escalate to board) | | | |
-| Dedicated resources for AML function (headcount/budget) | | | |
-| Direct access to board/risk committee | | | |
-| Qualified (CAMS, CFCS, or equivalent experience) | | | |
-| Annual performance review includes AML function metrics | | | |
-| Succession plan / backup MLRO designated | | | |
+| Element                                                     | Present | Quality | Gap |
+| ----------------------------------------------------------- | ------- | ------- | --- |
+| Named BSA Officer / MLRO designated in writing              |         |         |     |
+| Appropriate seniority and authority (can escalate to board) |         |         |     |
+| Dedicated resources for AML function (headcount/budget)     |         |         |     |
+| Direct access to board/risk committee                       |         |         |     |
+| Qualified (CAMS, CFCS, or equivalent experience)            |         |         |     |
+| Annual performance review includes AML function metrics     |         |         |     |
+| Succession plan / backup MLRO designated                    |         |         |     |
 
 ---
 
 #### Pillar 3: Employee Training Program
 
 **What is required:**
+
 - Ongoing training program for all relevant employees
   (31 C.F.R. § 1020.210(a)(2)(iv))
 - Training tailored to each employee's role and ML risk exposure
@@ -417,27 +429,28 @@ Laundering Reporting Officer (MLRO) for most regulated firms; the MLRO must be a
 
 **Training content by audience:**
 
-| Audience | Required Content | Frequency |
-|---------|-----------------|-----------|
-| **BSA Officer / AML Staff** | Full regulatory framework; typologies; SAR/CTR filing; exam preparation; enforcement trends | Annual + upon material regulatory change |
-| **Front-Line (Tellers, Relationship Managers)** | Red flag recognition; structuring prohibition; SAR internal referral; CDD documentation requirements; escalation protocol | New hire + annual |
-| **Senior Management** | Culture of compliance; tone from the top; program oversight responsibility; enforcement exposure | Annual |
-| **Board of Directors** | Program oversight; regulatory environment; material metrics; enforcement landscape | Annual |
-| **Operations / Back-Office** | CTR filing; wire transfer documentation; record retention | Role-specific at onboarding + annual |
+| Audience                                        | Required Content                                                                                                          | Frequency                                |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| **BSA Officer / AML Staff**                     | Full regulatory framework; typologies; SAR/CTR filing; exam preparation; enforcement trends                               | Annual + upon material regulatory change |
+| **Front-Line (Tellers, Relationship Managers)** | Red flag recognition; structuring prohibition; SAR internal referral; CDD documentation requirements; escalation protocol | New hire + annual                        |
+| **Senior Management**                           | Culture of compliance; tone from the top; program oversight responsibility; enforcement exposure                          | Annual                                   |
+| **Board of Directors**                          | Program oversight; regulatory environment; material metrics; enforcement landscape                                        | Annual                                   |
+| **Operations / Back-Office**                    | CTR filing; wire transfer documentation; record retention                                                                 | Role-specific at onboarding + annual     |
 
 **Assessment checklist:**
 
-| Element | Present | Quality | Gap |
-|---------|---------|---------|-----|
-| Role-tailored training program in place | | | |
-| Training content reflects current regulations and typologies | | | |
-| Training completion records maintained (5 years) | | | |
-| New hire training completed before customer-facing work | | | |
-| Annual refresher completed for all relevant staff | | | |
-| Board-level training documented | | | |
-| Training tests/assessments with pass thresholds | | | |
+| Element                                                      | Present | Quality | Gap |
+| ------------------------------------------------------------ | ------- | ------- | --- |
+| Role-tailored training program in place                      |         |         |     |
+| Training content reflects current regulations and typologies |         |         |     |
+| Training completion records maintained (5 years)             |         |         |     |
+| New hire training completed before customer-facing work      |         |         |     |
+| Annual refresher completed for all relevant staff            |         |         |     |
+| Board-level training documented                              |         |         |     |
+| Training tests/assessments with pass thresholds              |         |         |     |
 
 **Common 2024 exam findings on training:**
+
 - Training not tailored to specific business lines or product risks
 - Off-the-shelf training modules not customized for the entity's risk profile
 - Front-line staff unable to describe red flags specific to the entity's customers
@@ -449,6 +462,7 @@ Laundering Reporting Officer (MLRO) for most regulated firms; the MLRO must be a
 #### Pillar 4: Independent Testing / Audit
 
 **What is required:**
+
 - Independent testing (audit) of the AML/KYC program
   (31 C.F.R. § 1020.210(a)(2)(ii))
 - "Independent" means the testing function should not be the BSA Officer reviewing
@@ -460,17 +474,17 @@ Laundering Reporting Officer (MLRO) for most regulated firms; the MLRO must be a
 
 **Assessment checklist:**
 
-| Element | Present | Quality | Gap |
-|---------|---------|---------|-----|
-| Annual independent audit/testing conducted | | | |
-| Auditor independence confirmed (not BSA Officer self-review) | | | |
-| Audit scope covers all five pillars | | | |
-| Transaction monitoring system logic and threshold tested | | | |
-| CDD file quality reviewed (sample of customer files) | | | |
-| SAR/CTR filing accuracy and timeliness tested | | | |
-| Prior audit findings tracked to resolution | | | |
-| Audit findings reported to board/senior management | | | |
-| Management responses with corrective action timelines documented | | | |
+| Element                                                          | Present | Quality | Gap |
+| ---------------------------------------------------------------- | ------- | ------- | --- |
+| Annual independent audit/testing conducted                       |         |         |     |
+| Auditor independence confirmed (not BSA Officer self-review)     |         |         |     |
+| Audit scope covers all five pillars                              |         |         |     |
+| Transaction monitoring system logic and threshold tested         |         |         |     |
+| CDD file quality reviewed (sample of customer files)             |         |         |     |
+| SAR/CTR filing accuracy and timeliness tested                    |         |         |     |
+| Prior audit findings tracked to resolution                       |         |         |     |
+| Audit findings reported to board/senior management               |         |         |     |
+| Management responses with corrective action timelines documented |         |         |     |
 
 **⟁ CLARIFY** — If the audit was last conducted more than 18 months ago, or if the
 audit scope excluded transaction monitoring, present this as a gap:
@@ -491,13 +505,14 @@ This is the most complex pillar and is assessed in depth in Step 6.
 
 Assess whether the entity has correctly designed its CDD tier system:
 
-| Tier | Trigger Criteria | Required Elements |
-|------|----------------|-----------------|
-| **Simplified Due Diligence (SDD)** | Low-risk customers where ML risk is minimal (e.g., public sector entities, regulated financial institutions in low-risk jurisdictions, employee payroll accounts) | Identity verification; limited ongoing monitoring |
-| **Standard CDD** | Default tier for most customers | Full identity verification; beneficial ownership (entities); customer risk profile; ongoing monitoring |
-| **Enhanced Due Diligence (EDD)** | Mandatory for: PEPs; high-risk countries; correspondent banking; complex/unusual ownership structures; high-risk business types; customer behavior triggers | All CDD elements PLUS source of wealth; source of funds; senior management approval; more frequent monitoring; additional adverse media screening |
+| Tier                               | Trigger Criteria                                                                                                                                                  | Required Elements                                                                                                                                 |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Simplified Due Diligence (SDD)** | Low-risk customers where ML risk is minimal (e.g., public sector entities, regulated financial institutions in low-risk jurisdictions, employee payroll accounts) | Identity verification; limited ongoing monitoring                                                                                                 |
+| **Standard CDD**                   | Default tier for most customers                                                                                                                                   | Full identity verification; beneficial ownership (entities); customer risk profile; ongoing monitoring                                            |
+| **Enhanced Due Diligence (EDD)**   | Mandatory for: PEPs; high-risk countries; correspondent banking; complex/unusual ownership structures; high-risk business types; customer behavior triggers       | All CDD elements PLUS source of wealth; source of funds; senior management approval; more frequent monitoring; additional adverse media screening |
 
 **EDD must be applied — not optional — for:**
+
 - All PEPs and their family members and close associates
 - Customers from or with significant connections to FATF grey/black list jurisdictions
 - Correspondent banking relationships (PATRIOT Act § 312 for US banks)
@@ -512,18 +527,19 @@ Assess whether the entity has correctly designed its CDD tier system:
 
 **Identity verification requirements:**
 
-| Element | Minimum Standard | EDD Enhancement |
-|---------|-----------------|----------------|
-| Legal name | Government-issued photo ID (passport, driver's license, national ID) | Cross-reference with PEP/sanctions database at onboarding |
-| Date of birth | Same photo ID | — |
-| Residential address | Photo ID + utility bill / bank statement / government letter (≤ 3 months) | Confirm via independent source (credit bureau, commercial database) |
-| Nationality | Passport / national ID | Screen against sanctions/PEP lists for all nationalities |
-| ID number | SSN (US) / national ID number | — |
-| Purpose/expected activity | Transaction profile at onboarding | Detailed business purpose; expected transaction volumes |
-| Source of funds (EDD) | Not required for SDD/CDD | Bank statement; payroll record; asset sale documentation |
-| Source of wealth (EDD) | Not required for SDD/CDD | Employment history; business activities; inheritance documentation |
+| Element                   | Minimum Standard                                                          | EDD Enhancement                                                     |
+| ------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Legal name                | Government-issued photo ID (passport, driver's license, national ID)      | Cross-reference with PEP/sanctions database at onboarding           |
+| Date of birth             | Same photo ID                                                             | —                                                                   |
+| Residential address       | Photo ID + utility bill / bank statement / government letter (≤ 3 months) | Confirm via independent source (credit bureau, commercial database) |
+| Nationality               | Passport / national ID                                                    | Screen against sanctions/PEP lists for all nationalities            |
+| ID number                 | SSN (US) / national ID number                                             | —                                                                   |
+| Purpose/expected activity | Transaction profile at onboarding                                         | Detailed business purpose; expected transaction volumes             |
+| Source of funds (EDD)     | Not required for SDD/CDD                                                  | Bank statement; payroll record; asset sale documentation            |
+| Source of wealth (EDD)    | Not required for SDD/CDD                                                  | Employment history; business activities; inheritance documentation  |
 
 **Electronic identity verification:**
+
 - Electronic ID verification (eIDV) tools (e.g., Jumio, Onfido, LexisNexis) are
   accepted in most jurisdictions but must meet minimum standards for reliability
 - FATF has endorsed biometric verification for remote onboarding where supported by
@@ -536,16 +552,16 @@ Assess whether the entity has correctly designed its CDD tier system:
 
 **Entity verification checklist:**
 
-| Element | Required Information | Source |
-|---------|---------------------|--------|
-| Legal name and type | Full legal name; entity type (LLC, Corp., Ltd., etc.) | Certificate of incorporation; commercial register |
-| Registered address | Registered agent address or principal office | Formation documents |
-| Jurisdiction of formation | State/country of incorporation | Certificate of incorporation |
-| Principal place of business | Actual operating address | Client certification; utility bill |
-| Business purpose | Nature of business; industry; products/services | Client certification; website; business license |
-| Expected activity | Expected transaction volume; types; counterparties | Client certification |
-| Authorized signatories | Names; identification of individuals authorized to act | Board resolution; corporate authority documents |
-| Beneficial ownership | All natural persons owning ≥ 25% + control person | FinCEN Beneficial Ownership Certification (US) or equivalent |
+| Element                     | Required Information                                   | Source                                                       |
+| --------------------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
+| Legal name and type         | Full legal name; entity type (LLC, Corp., Ltd., etc.)  | Certificate of incorporation; commercial register            |
+| Registered address          | Registered agent address or principal office           | Formation documents                                          |
+| Jurisdiction of formation   | State/country of incorporation                         | Certificate of incorporation                                 |
+| Principal place of business | Actual operating address                               | Client certification; utility bill                           |
+| Business purpose            | Nature of business; industry; products/services        | Client certification; website; business license              |
+| Expected activity           | Expected transaction volume; types; counterparties     | Client certification                                         |
+| Authorized signatories      | Names; identification of individuals authorized to act | Board resolution; corporate authority documents              |
+| Beneficial ownership        | All natural persons owning ≥ 25% + control person      | FinCEN Beneficial Ownership Certification (US) or equivalent |
 
 [JURISDICTION-SPECIFIC: US/FinCEN CDD Rule] Collect and verify the identity of all
 natural persons owning 25%+ equity interest AND one individual who controls/manages the
@@ -574,18 +590,18 @@ requiring EDD and document the enhanced ownership analysis?"
 
 **PEP categories (apply to all jurisdictions as minimum):**
 
-| Category | Examples |
-|---------|---------|
-| **Head of State / Government** | Presidents, prime ministers, monarchs |
-| **Legislative** | National parliament/congress/senate members |
-| **Judicial (senior)** | Supreme Court justices; appellate court judges |
-| **Military (senior)** | Generals, admirals, chiefs of defense |
-| **Senior government officials** | Cabinet ministers; departmental secretaries |
-| **Senior political party officials** | Party executives; general secretaries |
-| **Senior state-owned enterprise executives** | CEOs, CFOs, board members of SOEs |
-| **International organization executives** | Senior officials of UN, IMF, World Bank, NATO, etc. |
-| **Immediate family members** | Spouse, registered partner, children, parents, siblings |
-| **Known close associates** | Business partners with personal/financial connections to PEP |
+| Category                                     | Examples                                                     |
+| -------------------------------------------- | ------------------------------------------------------------ |
+| **Head of State / Government**               | Presidents, prime ministers, monarchs                        |
+| **Legislative**                              | National parliament/congress/senate members                  |
+| **Judicial (senior)**                        | Supreme Court justices; appellate court judges               |
+| **Military (senior)**                        | Generals, admirals, chiefs of defense                        |
+| **Senior government officials**              | Cabinet ministers; departmental secretaries                  |
+| **Senior political party officials**         | Party executives; general secretaries                        |
+| **Senior state-owned enterprise executives** | CEOs, CFOs, board members of SOEs                            |
+| **International organization executives**    | Senior officials of UN, IMF, World Bank, NATO, etc.          |
+| **Immediate family members**                 | Spouse, registered partner, children, parents, siblings      |
+| **Known close associates**                   | Business partners with personal/financial connections to PEP |
 
 [JURISDICTION-SPECIFIC: UK/MLR 2017] As of January 2024, domestic PEPs carry a lower
 risk starting point than foreign PEPs (reg. 35A as amended). However, EDD must still
@@ -593,6 +609,7 @@ be applied and cannot be automatically reduced to CDD without a documented risk
 assessment demonstrating lower ML risk. [VERIFY current MLR 2017 reg. 35A position]
 
 **PEP screening tools:**
+
 - Commercial screening databases: LexisNexis World-Check, Refinitiv Screening,
   Dow Jones Risk & Compliance, Moody's, ComplyAdvantage, LSEG, Acuris
 - Government lists: OFAC SDN, US State Dept., EU targeted financial sanctions, OFSI
@@ -601,19 +618,20 @@ assessment demonstrating lower ML risk. [VERIFY current MLR 2017 reg. 35A positi
 
 **EDD requirements for PEPs (all jurisdictions):**
 
-| Element | Standard CDD | PEP EDD Addition |
-|---------|-------------|------------------|
-| Identity verification | Standard | Same; cross-reference multiple sources |
-| Beneficial ownership | Standard 25% | Full ownership mapping; identify all associated entities |
-| Source of funds | Not required | Required — documented; corroborated |
-| Source of wealth | Not required | Required — career/business history; asset acquisition timeline |
-| Business purpose | General | Specific justification for each product/service |
-| Transaction monitoring | Standard thresholds | Enhanced thresholds; tailored rules; frequent manual review |
-| Review frequency | Annual or risk-based | 6-monthly or more frequent |
-| Senior management approval | Not required | Required — documented; named approver |
-| Ongoing adverse media | Periodic | Continuous / real-time |
+| Element                    | Standard CDD         | PEP EDD Addition                                               |
+| -------------------------- | -------------------- | -------------------------------------------------------------- |
+| Identity verification      | Standard             | Same; cross-reference multiple sources                         |
+| Beneficial ownership       | Standard 25%         | Full ownership mapping; identify all associated entities       |
+| Source of funds            | Not required         | Required — documented; corroborated                            |
+| Source of wealth           | Not required         | Required — career/business history; asset acquisition timeline |
+| Business purpose           | General              | Specific justification for each product/service                |
+| Transaction monitoring     | Standard thresholds  | Enhanced thresholds; tailored rules; frequent manual review    |
+| Review frequency           | Annual or risk-based | 6-monthly or more frequent                                     |
+| Senior management approval | Not required         | Required — documented; named approver                          |
+| Ongoing adverse media      | Periodic             | Continuous / real-time                                         |
 
 **De-PEPing procedure:**
+
 - A former PEP should retain EDD treatment for a minimum period after leaving office
   (typically 12–18 months; some jurisdictions require indefinite if ML risk remains)
 - [JURISDICTION-SPECIFIC: EU/AMLR] Obliged entities must assess whether risk has
@@ -627,6 +645,7 @@ assessment demonstrating lower ML risk. [VERIFY current MLR 2017 reg. 35A positi
 ### Step 7: Assess Sanctions Screening Framework
 
 **⟁ CLARIFY** — Determine which sanctions lists the entity must screen against:
+
 - OFAC (US entities, and all USD transactions clearing through US correspondent banks)
 - EU Consolidated List (EU entities; extraterritorial effect on EU persons worldwide)
 - UK OFSI Consolidated List (UK entities; note post-Brexit divergence from EU list)
@@ -635,23 +654,24 @@ assessment demonstrating lower ML risk. [VERIFY current MLR 2017 reg. 35A positi
 
 **Screening framework assessment:**
 
-| Element | Required Standard | Assessment |
-|---------|-----------------|------------|
-| Lists screened | Applicable jurisdiction list(s) + any correspondent bank requirements | |
-| Screening at onboarding | All new customers; all related parties (UBOs, directors, guarantors) | |
-| Ongoing screening | Re-screen all customers when list updates (automated preferred) | |
-| Transaction screening | Wire transfers and other high-risk transactions | |
-| OFAC 50% Rule | Aggregate indirect ownership to screen through legal entity layers | |
-| Name matching algorithm | Fuzzy matching; transliteration variants; nickname handling | |
-| Hit adjudication | Documented process for true match vs. false positive | |
-| True match escalation | Blocking/rejecting transactions; OFAC reporting; account review | |
-| OFAC specific license | Process for requesting specific license when required | |
-| Record retention | Sanctions screening records (5 years minimum) | |
-| Vendor management | Sanctions screening tool validation; regular threshold testing | |
+| Element                 | Required Standard                                                     | Assessment |
+| ----------------------- | --------------------------------------------------------------------- | ---------- |
+| Lists screened          | Applicable jurisdiction list(s) + any correspondent bank requirements |            |
+| Screening at onboarding | All new customers; all related parties (UBOs, directors, guarantors)  |            |
+| Ongoing screening       | Re-screen all customers when list updates (automated preferred)       |            |
+| Transaction screening   | Wire transfers and other high-risk transactions                       |            |
+| OFAC 50% Rule           | Aggregate indirect ownership to screen through legal entity layers    |            |
+| Name matching algorithm | Fuzzy matching; transliteration variants; nickname handling           |            |
+| Hit adjudication        | Documented process for true match vs. false positive                  |            |
+| True match escalation   | Blocking/rejecting transactions; OFAC reporting; account review       |            |
+| OFAC specific license   | Process for requesting specific license when required                 |            |
+| Record retention        | Sanctions screening records (5 years minimum)                         |            |
+| Vendor management       | Sanctions screening tool validation; regular threshold testing        |            |
 
 **OFAC 50% Rule — critical compliance element:**
 OFAC considers entities owned 50% or more in the aggregate by one or more blocked
 persons to themselves be blocked, even if not named on the SDN list. This means:
+
 - Screen through corporate ownership chains to identify entities meeting this threshold
 - Document the ownership analysis supporting the conclusion that an entity is not
   blocked under the 50% Rule
@@ -659,6 +679,7 @@ persons to themselves be blocked, even if not named on the SDN list. This means:
   not analyze ownership structures
 
 **Sanctions screening quality gates:**
+
 - False positive rate: Document and review; excessive false positives often indicate
   threshold issues that may also suppress true positives
 - False negative testing: Conduct periodic testing with known-positive test names to
@@ -671,6 +692,7 @@ persons to themselves be blocked, even if not named on the SDN list. This means:
 ### Step 8: Assess Transaction Monitoring Framework
 
 **⟁ CLARIFY** — Determine the transaction monitoring approach:
+
 - Manual monitoring only (suitable only for very small, low-risk entities)
 - Rule-based automated system (most common for small/mid-sized institutions)
 - Hybrid: Rule-based + behavioral analytics / ML-based detection
@@ -678,18 +700,18 @@ persons to themselves be blocked, even if not named on the SDN list. This means:
 
 **Transaction monitoring rule assessment:**
 
-| Rule Type | Purpose | Key Design Considerations |
-|-----------|---------|--------------------------|
-| **High-value cash** | CTR threshold; large cash activity | $10,000 US threshold; aggregate same-day related transactions |
-| **Structuring detection** | Identify deliberate below-threshold transactions | Pattern of transactions just below $10K; velocity over 24-72 hours |
-| **Wire transfer velocity** | Unusual wire activity | Volume and frequency vs. expected activity baseline |
-| **Round-dollar transactions** | Layering indicator | High frequency of transactions in exact round amounts |
-| **Geographic anomaly** | Transactions to/from high-risk countries | FATF grey/black list; OFAC country overlays |
-| **Dormant account activation** | Sudden activity on previously inactive accounts | Define dormancy threshold; investigate reactivation triggers |
-| **Rapid fund movement** | Funds in/out same business day | Layering typology |
-| **Inconsistent activity** | Transactions inconsistent with customer profile | Compare to expected activity profile established at onboarding |
-| **High-risk business type** | Specific rules for MSBs, crypto, real estate | Tailored thresholds for entity risk category |
-| **PEP-specific rules** | Enhanced monitoring for PEP accounts | Lower alert thresholds; manual review triggers |
+| Rule Type                      | Purpose                                          | Key Design Considerations                                          |
+| ------------------------------ | ------------------------------------------------ | ------------------------------------------------------------------ |
+| **High-value cash**            | CTR threshold; large cash activity               | $10,000 US threshold; aggregate same-day related transactions      |
+| **Structuring detection**      | Identify deliberate below-threshold transactions | Pattern of transactions just below $10K; velocity over 24-72 hours |
+| **Wire transfer velocity**     | Unusual wire activity                            | Volume and frequency vs. expected activity baseline                |
+| **Round-dollar transactions**  | Layering indicator                               | High frequency of transactions in exact round amounts              |
+| **Geographic anomaly**         | Transactions to/from high-risk countries         | FATF grey/black list; OFAC country overlays                        |
+| **Dormant account activation** | Sudden activity on previously inactive accounts  | Define dormancy threshold; investigate reactivation triggers       |
+| **Rapid fund movement**        | Funds in/out same business day                   | Layering typology                                                  |
+| **Inconsistent activity**      | Transactions inconsistent with customer profile  | Compare to expected activity profile established at onboarding     |
+| **High-risk business type**    | Specific rules for MSBs, crypto, real estate     | Tailored thresholds for entity risk category                       |
+| **PEP-specific rules**         | Enhanced monitoring for PEP accounts             | Lower alert thresholds; manual review triggers                     |
 
 **Alert investigation process:**
 
@@ -708,6 +730,7 @@ Alert Generated → L1 Review (analyst) → True alert or False Positive?
 ```
 
 **Transaction monitoring calibration — common failures:**
+
 - Off-the-shelf rules not tailored to the entity's specific business, products, or
   customer types (cited in TD Bank $3.1B penalty and multiple 2024 consent orders)
 - Alert thresholds set too high to avoid operational burden (cited in 2024 enforcement)
@@ -717,6 +740,7 @@ Alert Generated → L1 Review (analyst) → True alert or False Positive?
 - Alert backlogs that prevent timely investigation and SAR filing
 
 **Transaction monitoring adequacy test:**
+
 - Pull a sample of filed SARs and trace back to the alert that triggered them — is
   the alert → investigation → SAR pipeline functioning as designed?
 - Conduct a reverse review: identify known ML patterns and test whether current rules
@@ -729,6 +753,7 @@ Alert Generated → L1 Review (analyst) → True alert or False Positive?
 #### 9a. SAR Filing (All Jurisdictions)
 
 **US SAR — key parameters (31 C.F.R. § 1020.320):**
+
 - Threshold: $5,000 (known or suspected suspect) / $25,000 (no suspect identified)
 - Deadline: 30 calendar days from initial detection; 60-day maximum where no suspect
   identified at detection
@@ -749,6 +774,7 @@ national FIU; specific deadlines and formats vary by member state. AMLR (from 20
 will harmonize some procedural elements [VERIFY].
 
 **SAR narrative quality standards (5 Ws framework):**
+
 - **Who**: Full identification of subject(s) — name, address, ID, account numbers,
   role in the suspicious activity
 - **What**: Description of the suspicious activity — specific transactions, amounts,
@@ -761,6 +787,7 @@ will harmonize some procedural elements [VERIFY].
   explain the basis for suspicion
 
 **SAR narrative common deficiencies:**
+
 - Generic boilerplate language not specific to the transaction pattern
 - Missing customer identification information
 - Failing to explain what made the activity suspicious (just describing what happened)
@@ -770,6 +797,7 @@ will harmonize some procedural elements [VERIFY].
 #### 9b. CTR Filing (US)
 
 **CTR key parameters:**
+
 - Threshold: Cash transactions exceeding $10,000 in a single business day
 - Aggregation: Must aggregate multiple cash transactions by the same person in the same
   day at the same institution, even across different branches
@@ -790,12 +818,14 @@ and a defined exemption program? This is an area of frequent examination finding
 #### 10a. Governance and Culture
 
 **Board and senior management responsibilities:**
+
 - Board must approve the AML policy annually and receive meaningful AML program
   reporting (not just "no SARs filed" — qualitative metrics are required)
 - Senior management must ensure adequate resources — staffing, technology, budget
 - "Tone from the top" is explicitly evaluated in FFIEC examinations and DOJ enforcement
 
 **AML program metrics to present to board:**
+
 - SAR filings: Volume; amounts; typologies; disposition of declined SARs
 - CTR filings: Volume; exemptions granted
 - CDD quality: Sample review results; backlog if any
@@ -808,29 +838,30 @@ and a defined exemption program? This is an area of frequent examination finding
 
 **Documentation readiness checklist:**
 
-| Document Category | Exam Ready? | Location |
-|------------------|-------------|----------|
-| AML Policy (current, board-approved) | | |
-| BSA/AML Officer designation (written) | | |
-| Enterprise AML/KYC Risk Assessment (≤ 12 months old) | | |
-| CDD Procedures (current version with revision history) | | |
-| Beneficial Ownership Procedures and Certification Forms | | |
-| Sanctions Screening Procedure + tool configuration documentation | | |
-| PEP Procedure + current PEP list/inventory | | |
-| Transaction Monitoring Rule Inventory (thresholds, rationale, last review date) | | |
-| SAR Filing Log (5 years; searchable by subject/date) | | |
-| Declined SAR Log (with documented reasoning) | | |
-| CTR Filing Log + Exemption Register | | |
-| Independent Audit Report (most recent) | | |
-| Open Audit Findings + Corrective Action Plans | | |
-| Training Records (5 years; completions by role) | | |
-| Board AML Reporting (minutes confirming board review) | | |
+| Document Category                                                               | Exam Ready? | Location |
+| ------------------------------------------------------------------------------- | ----------- | -------- |
+| AML Policy (current, board-approved)                                            |             |          |
+| BSA/AML Officer designation (written)                                           |             |          |
+| Enterprise AML/KYC Risk Assessment (≤ 12 months old)                            |             |          |
+| CDD Procedures (current version with revision history)                          |             |          |
+| Beneficial Ownership Procedures and Certification Forms                         |             |          |
+| Sanctions Screening Procedure + tool configuration documentation                |             |          |
+| PEP Procedure + current PEP list/inventory                                      |             |          |
+| Transaction Monitoring Rule Inventory (thresholds, rationale, last review date) |             |          |
+| SAR Filing Log (5 years; searchable by subject/date)                            |             |          |
+| Declined SAR Log (with documented reasoning)                                    |             |          |
+| CTR Filing Log + Exemption Register                                             |             |          |
+| Independent Audit Report (most recent)                                          |             |          |
+| Open Audit Findings + Corrective Action Plans                                   |             |          |
+| Training Records (5 years; completions by role)                                 |             |          |
+| Board AML Reporting (minutes confirming board review)                           |             |          |
 
 **⟁ CLARIFY** — If any of the above documents are missing or more than 18 months old,
 flag the gap: "Your [document] appears to be [X] months old / absent. Regulators
 expect this to be [frequency]. This should be addressed before an examination."
 
 **2024-2025 examination hot topics:**
+
 - Beneficial ownership adequacy (FinCEN CDD Rule vs. CTA BOI — regulators evaluating
   whether institutions understand the distinction)
 - Crypto/VASP relationships — adequate CDD and transaction monitoring for crypto
@@ -850,22 +881,22 @@ expect this to be [frequency]. This should be addressed before an examination."
 
 Apply this four-tier classification to each program element assessed:
 
-| Classification | Definition | Regulatory Risk |
-|---------------|-----------|----------------|
-| **COMPLIANT** | The element meets or exceeds regulatory expectations; no material gaps identified; documented, current, and operationalized | Low — this element should not be cited in an examination |
-| **PARTIAL** | The element exists but has identifiable gaps: missing documentation, outdated content, incomplete implementation, or limited effectiveness | Moderate — could be cited as an "area for improvement" in examination; monitor and remediate |
-| **NON-COMPLIANT** | A required element is materially deficient: significantly outdated, not operationalized, not tailored to the entity's risk, or demonstrably ineffective | High — examination finding expected; voluntary remediation reduces penalty risk |
-| **CRITICAL DEFICIENCY** | A required element is absent or completely non-functional; immediate regulatory risk; possible basis for consent order, civil money penalty, or criminal referral | Immediate — requires emergency remediation; consider voluntary disclosure to regulator |
+| Classification          | Definition                                                                                                                                                        | Regulatory Risk                                                                              |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **COMPLIANT**           | The element meets or exceeds regulatory expectations; no material gaps identified; documented, current, and operationalized                                       | Low — this element should not be cited in an examination                                     |
+| **PARTIAL**             | The element exists but has identifiable gaps: missing documentation, outdated content, incomplete implementation, or limited effectiveness                        | Moderate — could be cited as an "area for improvement" in examination; monitor and remediate |
+| **NON-COMPLIANT**       | A required element is materially deficient: significantly outdated, not operationalized, not tailored to the entity's risk, or demonstrably ineffective           | High — examination finding expected; voluntary remediation reduces penalty risk              |
+| **CRITICAL DEFICIENCY** | A required element is absent or completely non-functional; immediate regulatory risk; possible basis for consent order, civil money penalty, or criminal referral | Immediate — requires emergency remediation; consider voluntary disclosure to regulator       |
 
 #### Prioritization Framework
 
 Prioritize remediation by regulatory and operational risk:
 
-| Priority | Criteria | Action |
-|----------|---------|--------|
-| **IMMEDIATE** (0-30 days) | CRITICAL DEFICIENCY findings; any element that could constitute a BSA/AML criminal violation (failure to file required SARs; structuring facilitation); OFAC blocking violations; regulatory examination scheduled | Halt operations if legally required; remediate immediately; brief board; consider voluntary disclosure |
-| **NEAR-TERM** (30-90 days) | NON-COMPLIANT findings; multiple PARTIAL findings in the same pillar; gaps that would likely be cited in an examination | Assign remediation owner; document corrective action plan; report to board |
-| **BACKGROUND** (90-180 days) | PARTIAL findings that do not create immediate regulatory risk; enhancements that improve program effectiveness beyond the minimum required standard | Include in annual program enhancement roadmap |
+| Priority                     | Criteria                                                                                                                                                                                                           | Action                                                                                                 |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| **IMMEDIATE** (0-30 days)    | CRITICAL DEFICIENCY findings; any element that could constitute a BSA/AML criminal violation (failure to file required SARs; structuring facilitation); OFAC blocking violations; regulatory examination scheduled | Halt operations if legally required; remediate immediately; brief board; consider voluntary disclosure |
+| **NEAR-TERM** (30-90 days)   | NON-COMPLIANT findings; multiple PARTIAL findings in the same pillar; gaps that would likely be cited in an examination                                                                                            | Assign remediation owner; document corrective action plan; report to board                             |
+| **BACKGROUND** (90-180 days) | PARTIAL findings that do not create immediate regulatory risk; enhancements that improve program effectiveness beyond the minimum required standard                                                                | Include in annual program enhancement roadmap                                                          |
 
 ---
 
@@ -876,13 +907,13 @@ Prioritize remediation by regulatory and operational risk:
 Run these 5 gates silently before delivering any compliance assessment. If any gate
 fails, revise before delivering.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every regulatory claim cites a specific statute, regulation, or authoritative guidance | Add citation or mark "[VERIFY — source not identified]" |
-| **Format** | All citations follow consistent format appropriate to the jurisdiction (31 C.F.R., SI 2017/692, etc.) | Fix format |
-| **Currency** | Each cited provision checked for amendments or replacement | Flag "[CHECK CURRENCY]" — especially for AMLR application dates |
-| **Domain** | Analysis stays within the applicable regulatory framework; no cross-jurisdiction contamination without appropriate labeling | Remove or flag |
-| **Confidence** | Uncertainty explicitly stated, not hidden; sanctions list data acknowledged as current only if freshly queried | Add confidence qualifier |
+| Gate           | Rule                                                                                                                        | Fail Action                                                     |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| **Source**     | Every regulatory claim cites a specific statute, regulation, or authoritative guidance                                      | Add citation or mark "[VERIFY — source not identified]"         |
+| **Format**     | All citations follow consistent format appropriate to the jurisdiction (31 C.F.R., SI 2017/692, etc.)                       | Fix format                                                      |
+| **Currency**   | Each cited provision checked for amendments or replacement                                                                  | Flag "[CHECK CURRENCY]" — especially for AMLR application dates |
+| **Domain**     | Analysis stays within the applicable regulatory framework; no cross-jurisdiction contamination without appropriate labeling | Remove or flag                                                  |
+| **Confidence** | Uncertainty explicitly stated, not hidden; sanctions list data acknowledged as current only if freshly queried              | Add confidence qualifier                                        |
 
 ### Self-Interrogation for CRITICAL DEFICIENCY Classifications
 
@@ -904,13 +935,13 @@ a reasonable regulator accept the current state? Is there compensating control e
 
 ### Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95-1.0 | Settled regulatory requirement; cited provision confirmed | State with confidence |
-| **High** | 0.80-0.94 | Strong regulatory expectation; minor interpretive questions | State with brief caveat |
-| **Probable** | 0.60-0.79 | Good regulatory arguments but some interpretive uncertainty | State with reasoning and contra-indicators |
-| **Possible** | 0.40-0.59 | Genuine regulatory uncertainty | Flag for legal review with both sides of argument |
-| **Unlikely** | 0.0-0.39 | Weak basis; speculative | Do not assert; flag "[UNCERTAIN — verify with AML counsel]" |
+| Level        | Range     | Meaning                                                     | Action                                                      |
+| ------------ | --------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| **Definite** | 0.95-1.0  | Settled regulatory requirement; cited provision confirmed   | State with confidence                                       |
+| **High**     | 0.80-0.94 | Strong regulatory expectation; minor interpretive questions | State with brief caveat                                     |
+| **Probable** | 0.60-0.79 | Good regulatory arguments but some interpretive uncertainty | State with reasoning and contra-indicators                  |
+| **Possible** | 0.40-0.59 | Genuine regulatory uncertainty                              | Flag for legal review with both sides of argument           |
+| **Unlikely** | 0.0-0.39  | Weak basis; speculative                                     | Do not assert; flag "[UNCERTAIN — verify with AML counsel]" |
 
 ---
 
@@ -1057,6 +1088,7 @@ Apply these standards when producing any compliance assessment deliverable:
 ## External Tool Integration
 
 **With legalcode-mcp connected (preferred):**
+
 - Search for current FinCEN guidance, FCA notices, and FATF publications related to
   the entity's specific risk areas
 - Verify current OFAC, EU, and UK sanctions list currency
@@ -1065,6 +1097,7 @@ Apply these standards when producing any compliance assessment deliverable:
 - Mark all legalcode-mcp-verified citations as VERIFIED in the Glass Box audit trail
 
 **Without legalcode-mcp:**
+
 - Proceed with training-data knowledge and mark all regulatory citations with [VERIFY]
 - Note in Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Direct the user to verify: FinCEN.gov, FATF-GAFI.org, FCA Handbook online,
@@ -1093,8 +1126,9 @@ Produce the AML/KYC Compliance Program Assessment in this structure:
 
 ---
 
-```markdown
+````markdown
 # AML/KYC Compliance Program Assessment
+
 **Entity**: [Entity Name and Type]
 **Jurisdiction(s)**: [US / EU / UK / Multi-jurisdictional]
 **Assessment Date**: [Date]
@@ -1112,6 +1146,7 @@ Produce the AML/KYC Compliance Program Assessment in this structure:
 **Compliant Elements**: [N elements meeting regulatory expectations]
 
 ### Top 3 Priority Actions
+
 1. [Most urgent finding with specific remediation step and deadline]
 2. [Second priority]
 3. [Third priority]
@@ -1120,12 +1155,12 @@ Produce the AML/KYC Compliance Program Assessment in this structure:
 
 ## Applicable Regulatory Framework
 
-| Framework | Applicable | Primary Supervisor | Key Rules |
-|-----------|-----------|-------------------|-----------|
-| US BSA/AML | [Yes/No] | [FinCEN + banking regulator] | [31 C.F.R. §§ ...] |
-| EU AMLD/AMLR | [Yes/No] | [National CA / AMLA] | [Directive/Regulation] |
-| UK POCA/MLR 2017 | [Yes/No] | [FCA / other] | [SI 2017/692] |
-| FATF Standards | [Yes] | N/A — international standard | [Relevant recommendations] |
+| Framework        | Applicable | Primary Supervisor           | Key Rules                  |
+| ---------------- | ---------- | ---------------------------- | -------------------------- |
+| US BSA/AML       | [Yes/No]   | [FinCEN + banking regulator] | [31 C.F.R. §§ ...]         |
+| EU AMLD/AMLR     | [Yes/No]   | [National CA / AMLA]         | [Directive/Regulation]     |
+| UK POCA/MLR 2017 | [Yes/No]   | [FCA / other]                | [SI 2017/692]              |
+| FATF Standards   | [Yes]      | N/A — international standard | [Relevant recommendations] |
 
 ---
 
@@ -1133,9 +1168,10 @@ Produce the AML/KYC Compliance Program Assessment in this structure:
 
 **Inherent Risk**: [LOW / MEDIUM / HIGH / VERY HIGH]
 **Key Risk Drivers**:
+
 - [Driver 1]
 - [Driver 2]
-**Residual Risk**: [Assessment]
+  **Residual Risk**: [Assessment]
 
 ---
 
@@ -1146,12 +1182,12 @@ Produce the AML/KYC Compliance Program Assessment in this structure:
 **Classification**: [COMPLIANT / PARTIAL / NON-COMPLIANT / CRITICAL DEFICIENCY]
 **Confidence**: [0.X] — [rationale]
 
-| Control Element | Status | Finding | Remediation |
-|----------------|--------|---------|-------------|
-| Written AML Policy | [✅/⚠️/❌/🚨] | [Specific finding] | [Specific action] |
-| CDD Procedure — Individuals | [✅/⚠️/❌/🚨] | | |
-| CDD Procedure — Entities + BO | [✅/⚠️/❌/🚨] | | |
-| ... (all checklist items) | | | |
+| Control Element               | Status        | Finding            | Remediation       |
+| ----------------------------- | ------------- | ------------------ | ----------------- |
+| Written AML Policy            | [✅/⚠️/❌/🚨] | [Specific finding] | [Specific action] |
+| CDD Procedure — Individuals   | [✅/⚠️/❌/🚨] |                    |                   |
+| CDD Procedure — Entities + BO | [✅/⚠️/❌/🚨] |                    |                   |
+| ... (all checklist items)     |               |                    |                   |
 
 **Summary**: [2-3 sentence narrative on Pillar 1 overall status]
 
@@ -1178,15 +1214,19 @@ Produce the AML/KYC Compliance Program Assessment in this structure:
 **Classification**: [COMPLIANT / PARTIAL / NON-COMPLIANT / CRITICAL DEFICIENCY]
 
 #### CDD Tier Framework
+
 [Assessment of SDD / CDD / EDD tier design]
 
 #### Individual Customer Onboarding
+
 [Assessment with specific findings]
 
 #### Legal Entity Onboarding and Beneficial Ownership
+
 [Assessment with specific findings]
 
 #### PEP Identification and EDD
+
 [Assessment with specific findings]
 
 ---
@@ -1215,19 +1255,22 @@ Produce the AML/KYC Compliance Program Assessment in this structure:
 ## Remediation Roadmap
 
 ### IMMEDIATE (0-30 days)
-| Finding | Remediation Action | Owner | Deadline |
-|---------|-------------------|-------|----------|
-| [Critical deficiency] | [Specific action] | [Role] | [Date] |
+
+| Finding               | Remediation Action | Owner  | Deadline |
+| --------------------- | ------------------ | ------ | -------- |
+| [Critical deficiency] | [Specific action]  | [Role] | [Date]   |
 
 ### NEAR-TERM (30-90 days)
-| Finding | Remediation Action | Owner | Deadline |
-|---------|-------------------|-------|----------|
-| [Non-compliant item] | [Specific action] | [Role] | [Date] |
+
+| Finding              | Remediation Action | Owner  | Deadline |
+| -------------------- | ------------------ | ------ | -------- |
+| [Non-compliant item] | [Specific action]  | [Role] | [Date]   |
 
 ### BACKGROUND (90-180 days)
-| Finding | Remediation Action | Owner | Deadline |
-|---------|-------------------|-------|----------|
-| [Partial finding] | [Enhancement action] | [Role] | [Date] |
+
+| Finding           | Remediation Action   | Owner  | Deadline |
+| ----------------- | -------------------- | ------ | -------- |
+| [Partial finding] | [Enhancement action] | [Role] | [Date]   |
 
 ---
 
@@ -1264,13 +1307,15 @@ glass_box:
     - "[Any other specific limitations]"
   reviewer: "AI-assisted — requires review by qualified AML counsel (CAMS/CFCS recommended)"
 ```
+````
 
 ---
 
-*This assessment is AI-assisted and does not constitute legal advice. All findings should
+_This assessment is AI-assisted and does not constitute legal advice. All findings should
 be reviewed by qualified AML counsel and an experienced compliance professional before
 use in regulatory submissions or board reports. Regulatory requirements change frequently;
-verify current applicability of all cited provisions.*
+verify current applicability of all cited provisions._
+
 ```
 
 ---
@@ -1288,3 +1333,4 @@ R.12, R.15, R.16, R.20, R.21), FATF Travel Rule June 2024 update, EU EBA Travel 
 Guidelines (December 2024), 2024 enforcement actions including TD Bank $3.1B penalty,
 Bank of America OCC consent order, ICBC BSA/AML consent orders, USAA FSB consent order,
 and K&L Gates analysis of 2024 BSA/AML enforcement action patterns.
+```

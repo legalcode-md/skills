@@ -37,6 +37,7 @@ It is designed for lawyers and legal ops teams who need spreadsheet-speed review
 giving up source visibility, verification discipline, or workflow control.
 
 **Covers:**
+
 - Folder-based and multi-folder document intake
 - PDF, DOCX, scan, and mixed-format review
 - User-defined extraction questions and standard field schemas
@@ -46,6 +47,7 @@ giving up source visibility, verification discipline, or workflow control.
 - Portfolio analytics and follow-up questioning on the resulting table
 
 **Does not:**
+
 - Replace clause-by-clause bespoke legal review of a single critical document
 - Determine final legal acceptability without human review
 - Guarantee OCR quality on poor scans
@@ -53,12 +55,12 @@ giving up source visibility, verification discipline, or workflow control.
 
 ### Relationship to Nearby Skills
 
-| Skill | Use This Skill Instead When |
-|------|-----------------------------|
-| `legalcode-contract-review` | The user needs a deep review of one document, not a portfolio matrix |
+| Skill                                   | Use This Skill Instead When                                                  |
+| --------------------------------------- | ---------------------------------------------------------------------------- |
+| `legalcode-contract-review`             | The user needs a deep review of one document, not a portfolio matrix         |
 | `legalcode-contract-metadata-extractor` | The user only needs generic metadata extraction rather than custom questions |
-| `legalcode-precedent-analyzer` | The goal is corpus analytics and playbook mining, not an answer table |
-| `legalcode-case-timeline-builder` | The core output is chronology rather than a spreadsheet review grid |
+| `legalcode-precedent-analyzer`          | The goal is corpus analytics and playbook mining, not an answer table        |
+| `legalcode-case-timeline-builder`       | The core output is chronology rather than a spreadsheet review grid          |
 
 ## Jurisdiction and Governing Law
 
@@ -68,6 +70,7 @@ single universal answer.
 
 [JURISDICTION-SPECIFIC] When the user includes legal-risk or compliance columns, localize at
 minimum:
+
 - Governing law or jurisdiction source for each document
 - Mandatory statutory rules that affect the answer
 - Local terminology, date conventions, and execution formalities
@@ -86,37 +89,45 @@ cost materially. If the user has already supplied the information, skip the ques
 proceed.
 
 **CLARIFY 1: Corpus source**
+
 - Options: `single folder`, `multiple folders`, `specific file list`, `VDR export`, `DMS export`, `mixed`
 - Why it matters: Controls inventory, dedupe, and provenance grouping.
 
 **CLARIFY 2: Review objective**
+
 - Options: `metadata extraction`, `due diligence matrix`, `red-flag table`, `compliance check`, `playbook comparison`, `custom`
 - Why it matters: Changes default columns, answer style, and escalation thresholds.
 
 **CLARIFY 3: Column design**
+
 - Options: `I have exact questions`, `propose columns from corpus type`, `use playbook-driven columns`, `mixed`
 - Why it matters: Prevents vague columns that produce low-value answers.
 
 **CLARIFY 4: Output format**
+
 - Options: `xlsx + markdown`, `csv + json`, `full export`, `markdown only`
 - Default: `xlsx + markdown`
 - Why it matters: Controls rendering and downstream usability.
 
 **CLARIFY 5: Execution mode**
+
 - Options: `auto-detect`, `Claude CLI workers`, `Task sub-agents only`
 - Default: `auto-detect`
 - Why it matters: Changes throughput, batching, and checkpointing behavior.
 
 **CLARIFY 6: Confidence policy**
+
 - Options: `surface only strong answers`, `include uncertain answers with flags`, `capture all possible answers`
 - Default: `include uncertain answers with flags`
 - Why it matters: Balances recall against noise.
 
 **CLARIFY 7: Portfolio size**
+
 - Options: `small (<25 docs)`, `medium (25-250)`, `large (250-2500)`, `very large (2500+)`
 - Why it matters: Controls batch size, worker count, and whether to recommend staging.
 
 **CLARIFY 8: Review posture**
+
 - Options: `neutral extraction only`, `include risk labels`, `include playbook deviations`, `include legal commentary`
 - Default: `neutral extraction only`
 - Why it matters: Determines whether cells stay factual or include evaluative analysis.
@@ -174,6 +185,7 @@ Select the path using user preference first, then tool availability, then corpus
 ### Step 1: Accept the Corpus
 
 Accept documents as:
+
 - Folder path
 - Multiple folder paths
 - Explicit file list
@@ -181,6 +193,7 @@ Accept documents as:
 - Mixed collection of PDFs, DOCX, text files, and scans
 
 Build an initial inventory:
+
 - Absolute path
 - File name
 - Folder or source bucket
@@ -197,15 +210,15 @@ unless the user explicitly wants a one-row table.
 
 Normalize every requested column into a structured extraction spec.
 
-| Field | Meaning |
-|------|---------|
-| `column_name` | Final table header |
-| `question` | Exact extraction prompt |
-| `answer_type` | text, date, money, yes_no, enum, list, risk, citation_only |
-| `format_rule` | normalization rule such as ISO date or currency format |
-| `comparison_rule` | how values should align across documents |
-| `required_evidence` | page, section, quote, or all |
-| `review_policy` | auto-accept, verify-if-low-confidence, always-human-check |
+| Field               | Meaning                                                    |
+| ------------------- | ---------------------------------------------------------- |
+| `column_name`       | Final table header                                         |
+| `question`          | Exact extraction prompt                                    |
+| `answer_type`       | text, date, money, yes_no, enum, list, risk, citation_only |
+| `format_rule`       | normalization rule such as ISO date or currency format     |
+| `comparison_rule`   | how values should align across documents                   |
+| `required_evidence` | page, section, quote, or all                               |
+| `review_policy`     | auto-accept, verify-if-low-confidence, always-human-check  |
 
 If the user gives vague questions such as "important risks," rewrite them into answerable
 cell prompts before extraction.
@@ -213,6 +226,7 @@ cell prompts before extraction.
 ### Step 3: Build the Inventory and Dedupe Layer
 
 Create a manifest that records:
+
 - Document identity
 - Source grouping
 - Suspected duplicates
@@ -222,6 +236,7 @@ Create a manifest that records:
 - Parse strategy
 
 **If duplicates or version families exist:**
+
 - Preserve both, but mark them clearly
 - Prefer executed or final versions where the user wants one answer per deal
 - Add optional columns such as `version_status` or `superseded_by`
@@ -230,24 +245,26 @@ Create a manifest that records:
 
 Prefer deterministic conversion before model extraction:
 
-| File Type | Preferred Path | Fallback |
-|----------|----------------|----------|
-| PDF with selectable text | `pdftotext` | model reads pages directly |
-| Scanned PDF | `ocrmypdf` then `pdftotext` | model vision path |
-| DOCX | `pandoc` or `markitdown` | raw XML-aware fallback |
-| Plain text / markdown | read directly | none |
+| File Type                | Preferred Path              | Fallback                   |
+| ------------------------ | --------------------------- | -------------------------- |
+| PDF with selectable text | `pdftotext`                 | model reads pages directly |
+| Scanned PDF              | `ocrmypdf` then `pdftotext` | model vision path          |
+| DOCX                     | `pandoc` or `markitdown`    | raw XML-aware fallback     |
+| Plain text / markdown    | read directly               | none                       |
 
 Preserve page anchors and section cues. The extractor must be able to cite the answer source.
 
 ### Step 5: Create the Batch Plan
 
 Plan work before launching workers:
+
 - Group related columns together to reduce repeated reads
 - Split long documents into stable chunks
 - Assign short documents in bundles
 - Separate high-risk evaluative columns from simple metadata columns
 
 **Recommended pattern:**
+
 - Batch A: identity and metadata
 - Batch B: economics and dates
 - Batch C: legal/risk or playbook columns
@@ -266,6 +283,7 @@ claude -p --model haiku --max-turns 1 --output-format json
 #### Task worker pattern
 
 Launch a Task sub-agent per document or per document batch with instructions to return:
+
 - normalized answer
 - page or section
 - quote snippet
@@ -277,6 +295,7 @@ Each worker must return JSON that conforms to the shared schema below.
 ### Step 7: Verification and Adjudication
 
 Run a second pass for cells that are:
+
 - low confidence
 - missing evidence
 - contradictory
@@ -284,6 +303,7 @@ Run a second pass for cells that are:
 - derived from poor OCR
 
 Verification agent tasks:
+
 - compare answer against source quote
 - confirm page or section
 - detect overclaiming beyond the source
@@ -292,6 +312,7 @@ Verification agent tasks:
 ### Step 8: Assemble the Review Grid
 
 Render the main table with one row per document and one column per question. Include:
+
 - normalized cell value
 - verification state
 - confidence
@@ -299,6 +320,7 @@ Render the main table with one row per document and one column per question. Inc
 - optional comment or note
 
 Recommended workbook sheets:
+
 - `Review`
 - `Sources`
 - `Summary`
@@ -308,6 +330,7 @@ Recommended workbook sheets:
 ### Step 9: Portfolio Synthesis
 
 After the table is assembled, optionally add:
+
 - frequency counts
 - missing-clause or missing-answer rates
 - red-flag totals
@@ -319,6 +342,7 @@ Keep synthesis separate from extraction facts. Do not collapse uncertainty silen
 ### Step 10: Deliver and Preserve Reusability
 
 Deliver:
+
 - review-data JSON payload
 - portable report HTML
 - review workbook
@@ -336,16 +360,16 @@ re-reading the entire corpus.
 
 ### Column Types
 
-| Type | Example | Normalization Rule |
-|------|---------|--------------------|
-| `text` | Governing law | concise factual answer |
-| `date` | Effective date | `YYYY-MM-DD` when known |
-| `money` | Liability cap | currency + amount + basis |
-| `yes_no` | Termination for convenience | `Yes`, `No`, `Unclear` |
-| `enum` | NDA type | controlled vocabulary |
-| `list` | Carveouts | semicolon-separated items |
-| `risk` | Data processing risk | risk label + short rationale |
-| `citation_only` | Key indemnity section | source pointer only |
+| Type            | Example                     | Normalization Rule           |
+| --------------- | --------------------------- | ---------------------------- |
+| `text`          | Governing law               | concise factual answer       |
+| `date`          | Effective date              | `YYYY-MM-DD` when known      |
+| `money`         | Liability cap               | currency + amount + basis    |
+| `yes_no`        | Termination for convenience | `Yes`, `No`, `Unclear`       |
+| `enum`          | NDA type                    | controlled vocabulary        |
+| `list`          | Carveouts                   | semicolon-separated items    |
+| `risk`          | Data processing risk        | risk label + short rationale |
+| `citation_only` | Key indemnity section       | source pointer only          |
 
 ### Cell Schema
 
@@ -369,24 +393,24 @@ re-reading the entire corpus.
 
 ### Verification States
 
-| State | Meaning |
-|------|---------|
-| `verified` | Answer matched source and passed review |
-| `needs_review` | Answer plausible but not yet confirmed |
-| `conflict` | Competing answers or inconsistent evidence |
-| `not_found` | No support located after reasonable search |
-| `failed` | Document or extraction failure prevented answer |
+| State          | Meaning                                         |
+| -------------- | ----------------------------------------------- |
+| `verified`     | Answer matched source and passed review         |
+| `needs_review` | Answer plausible but not yet confirmed          |
+| `conflict`     | Competing answers or inconsistent evidence      |
+| `not_found`    | No support located after reasonable search      |
+| `failed`       | Document or extraction failure prevented answer |
 
 ### Risk States for Evaluative Columns
 
 If the user requests risk analysis, use a topic-appropriate scale and make the basis explicit.
 
-| Skill Mode | Scale |
-|-----------|-------|
-| neutral extraction | no risk label |
-| contract review | `GREEN / YELLOW / RED` |
-| compliance check | `COMPLIANT / PARTIAL / NON-COMPLIANT` |
-| diligence | `PASS / FLAG / FAIL` |
+| Skill Mode         | Scale                                 |
+| ------------------ | ------------------------------------- |
+| neutral extraction | no risk label                         |
+| contract review    | `GREEN / YELLOW / RED`                |
+| compliance check   | `COMPLIANT / PARTIAL / NON-COMPLIANT` |
+| diligence          | `PASS / FLAG / FAIL`                  |
 
 Never mix evaluative labels with factual answers without telling the user which columns are
 interpretive.
@@ -396,12 +420,14 @@ interpretive.
 ## Actionable Output Rules
 
 For every flagged or non-standard cell, provide:
+
 - what was found
 - where it was found
 - how certain the extraction is
 - what follow-up action is recommended
 
 Recommended follow-up actions:
+
 - verify source manually
 - escalate to deeper document review
 - add a bespoke follow-up column
@@ -412,46 +438,49 @@ Recommended follow-up actions:
 
 Use three priority tiers for follow-up work:
 
-| Tier | Use |
-|------|-----|
+| Tier     | Use                                                              |
+| -------- | ---------------------------------------------------------------- |
 | `Tier 1` | broken extraction, major conflict, high-impact unanswered column |
-| `Tier 2` | medium-confidence or ambiguous cells affecting analysis |
-| `Tier 3` | polish, normalization, formatting improvements |
+| `Tier 2` | medium-confidence or ambiguous cells affecting analysis          |
+| `Tier 3` | polish, normalization, formatting improvements                   |
 
 ## Citation Quality Gates
 
 Run these silently before final delivery:
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| Source | Every answer cites a real document location or is marked `not_found` | re-run or flag |
-| Format | Citation format is consistent across cells | normalize |
-| Support | Answer does not overstate the quote | downgrade confidence or revise |
-| Domain | Legal conclusions do not outrun factual extraction | separate fact from interpretation |
-| Confidence | Uncertainty is explicit | add flag |
+| Gate       | Rule                                                                 | Fail Action                       |
+| ---------- | -------------------------------------------------------------------- | --------------------------------- |
+| Source     | Every answer cites a real document location or is marked `not_found` | re-run or flag                    |
+| Format     | Citation format is consistent across cells                           | normalize                         |
+| Support    | Answer does not overstate the quote                                  | downgrade confidence or revise    |
+| Domain     | Legal conclusions do not outrun factual extraction                   | separate fact from interpretation |
+| Confidence | Uncertainty is explicit                                              | add flag                          |
 
 ## Self-Interrogation for High-Impact Cells
 
 For critical columns or red-flag findings, run three passes:
 
 **Pass 1 - Source integrity**
+
 - Does the answer actually appear in the cited text?
 
 **Pass 2 - Alternative reading**
+
 - Could a reasonable reviewer read the clause differently?
 
 **Pass 3 - Portfolio consistency**
+
 - Is this answer inconsistent with nearby documents, amendments, or schedules?
 
 ## Confidence Scoring
 
-| Level | Meaning | Action |
-|------|---------|--------|
-| `definite` | exact answer with clean evidence | accept |
-| `high` | strong answer with minor ambiguity | accept with citation |
-| `probable` | answer likely correct but should be checked if important | verify if material |
-| `possible` | weak support or OCR noise | surface with flag |
-| `unlikely` | insufficient support | use `not_found` or `needs_review` |
+| Level      | Meaning                                                  | Action                            |
+| ---------- | -------------------------------------------------------- | --------------------------------- |
+| `definite` | exact answer with clean evidence                         | accept                            |
+| `high`     | strong answer with minor ambiguity                       | accept with citation              |
+| `probable` | answer likely correct but should be checked if important | verify if material                |
+| `possible` | weak support or OCR noise                                | surface with flag                 |
+| `unlikely` | insufficient support                                     | use `not_found` or `needs_review` |
 
 ## Glass Box Audit Trail
 
@@ -508,14 +537,14 @@ outputs:
 
 Use external tools opportunistically, not as hidden dependencies:
 
-| Tool | Use |
-|------|-----|
-| `pdftotext` | selectable-text PDFs |
-| `ocrmypdf` | scanned PDFs |
-| `pandoc` | DOCX conversion |
-| `markitdown` | mixed-format markdown conversion |
-| `claude -p --model haiku` | first-pass extraction workers |
-| Task sub-agents | fallback extraction and verification |
+| Tool                                                                | Use                                                                    |
+| ------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| `pdftotext`                                                         | selectable-text PDFs                                                   |
+| `ocrmypdf`                                                          | scanned PDFs                                                           |
+| `pandoc`                                                            | DOCX conversion                                                        |
+| `markitdown`                                                        | mixed-format markdown conversion                                       |
+| `claude -p --model haiku`                                           | first-pass extraction workers                                          |
+| Task sub-agents                                                     | fallback extraction and verification                                   |
 | `node path/to/legalcode-tabular-review/scripts/generate-report.mjs` | render a portable self-contained review report from `review-data.json` |
 
 If tools are unavailable, degrade gracefully and record the limitation in the audit trail.
@@ -526,6 +555,7 @@ If tools are unavailable, degrade gracefully and record the limitation in the au
 # Tabular Review Summary
 
 ## 1. Review Snapshot
+
 - Corpus type: [multi-folder / VDR / mixed]
 - Documents processed: [count]
 - Columns answered: [count]
@@ -533,37 +563,44 @@ If tools are unavailable, degrade gracefully and record the limitation in the au
 - Overall confidence: [HIGH / MEDIUM / LOW]
 
 ## 2. Corpus Summary
-| Metric | Value |
-|-------|-------|
-| Documents inventoried | |
-| Documents processed | |
-| Duplicate families | |
-| Mixed jurisdictions | |
-| Extraction failures | |
+
+| Metric                | Value |
+| --------------------- | ----- |
+| Documents inventoried |       |
+| Documents processed   |       |
+| Duplicate families    |       |
+| Mixed jurisdictions   |       |
+| Extraction failures   |       |
 
 ## 3. Verification Summary
-| State | Count |
-|------|------:|
-| verified | |
-| needs_review | |
-| conflict | |
-| not_found | |
-| failed | |
+
+| State        | Count |
+| ------------ | ----: |
+| verified     |       |
+| needs_review |       |
+| conflict     |       |
+| not_found    |       |
+| failed       |       |
 
 ## 4. Priority Follow-Ups
+
 ### Tier 1
+
 | Document | Column | Issue | Recommended action |
-|---------|--------|-------|--------------------|
+| -------- | ------ | ----- | ------------------ |
 
 ### Tier 2
+
 | Document | Column | Issue | Recommended action |
-|---------|--------|-------|--------------------|
+| -------- | ------ | ----- | ------------------ |
 
 ## 5. Portfolio Findings
+
 | Column | Most common value | Notes |
-|-------|-------------------|-------|
+| ------ | ----------------- | ----- |
 
 ## 6. Deliverables
+
 - `report.html`
 - `review-data.json`
 - `review.xlsx`
@@ -571,6 +608,7 @@ If tools are unavailable, degrade gracefully and record the limitation in the au
 - `summary.md`
 
 ## 7. Glass Box Audit Trail
+
 ```yaml
 [populate glass_box]
 ```
@@ -579,6 +617,7 @@ If tools are unavailable, degrade gracefully and record the limitation in the au
 ## Provenance
 
 Created by Legalcode on 2026-04-09 as a Legalcode-original workflow skill informed by:
+
 - Legora product research on Tabular Review and Workflows
 - In-repo prior art from imported Lawvable and IURA tabular-review skills
 - Dual-path execution patterns from `legalcode-case-timeline-builder`

@@ -3,7 +3,7 @@
 This playbook is the authoritative guide to handling multiple language versions
 of EU acts across the seven-skill EU Legislative Compliance suite. The rules
 below are anchored in primary law (Regulation 1/1958), the equal-authenticity
-doctrine of the Court of Justice (*CILFIT*, *Codan*, *EMU Tabac*, *Endendijk*),
+doctrine of the Court of Justice (_CILFIT_, _Codan_, _EMU Tabac_, _Endendijk_),
 and the EEA additions for Icelandic and Norwegian. Every conformity verdict,
 every gold-plating finding, and every obligation register the suite emits must
 honour the doctrine — assuming the English text is canonical is an Anti-Pattern
@@ -26,7 +26,7 @@ The operative rules, in their current consolidated form:
   of the Union shall be the languages listed (currently 24).
 - **Art. 4** — regulations and other documents of general application shall be
   drafted in the official languages.
-- **Art. 5** — the *Official Journal of the European Union* shall be published in
+- **Art. 5** — the _Official Journal of the European Union_ shall be published in
   the official languages.
 - **Art. 7** — the languages to be used in the proceedings of the Court of Justice
   shall be laid down in its rules of procedure.
@@ -36,32 +36,32 @@ list is the cumulative product of every accession treaty since 1973.
 
 ### 1.2 The 24 currently authentic languages
 
-| Language | ISO 639-2 | Authentic since |
-|---|---|---|
-| French | `fra` | 1958 (founding) |
-| German | `deu` | 1958 (founding) |
-| Italian | `ita` | 1958 (founding) |
-| Dutch | `nld` | 1958 (founding) |
-| Danish | `dan` | 1973 (Denmark accession) |
-| English | `eng` | 1973 (Ireland and UK accession; remained an authentic language post-Brexit because Ireland and Malta retain English as an official language under their accession instruments) |
-| Irish | `gle` | 1973 (constitutionally authentic since accession; subject to a temporary derogation under Reg. 920/2005 limiting drafting/publication to a subset of acts; derogation lifted on 1 January 2022 by Council Regulation 2015/2264) |
-| Greek | `ell` | 1981 (Greece accession) |
-| Spanish | `spa` | 1986 (Spain accession) |
-| Portuguese | `por` | 1986 (Portugal accession) |
-| Finnish | `fin` | 1995 (Finland accession) |
-| Swedish | `swe` | 1995 (Sweden and Finland accession; Finland is bilingual, Swedish is one of its two official languages) |
-| Czech | `ces` | 2004 (CZ accession) |
-| Estonian | `est` | 2004 (EE accession) |
-| Hungarian | `hun` | 2004 (HU accession) |
-| Latvian | `lav` | 2004 (LV accession) |
-| Lithuanian | `lit` | 2004 (LT accession) |
-| Maltese | `mlt` | 2004 (MT accession) |
-| Polish | `pol` | 2004 (PL accession) |
-| Slovak | `slk` | 2004 (SK accession) |
-| Slovenian | `slv` | 2004 (SI accession) |
-| Bulgarian | `bul` | 2007 (BG accession) |
-| Romanian | `ron` | 2007 (RO accession) |
-| Croatian | `hrv` | 2013 (HR accession) |
+| Language   | ISO 639-2 | Authentic since                                                                                                                                                                                                                 |
+| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| French     | `fra`     | 1958 (founding)                                                                                                                                                                                                                 |
+| German     | `deu`     | 1958 (founding)                                                                                                                                                                                                                 |
+| Italian    | `ita`     | 1958 (founding)                                                                                                                                                                                                                 |
+| Dutch      | `nld`     | 1958 (founding)                                                                                                                                                                                                                 |
+| Danish     | `dan`     | 1973 (Denmark accession)                                                                                                                                                                                                        |
+| English    | `eng`     | 1973 (Ireland and UK accession; remained an authentic language post-Brexit because Ireland and Malta retain English as an official language under their accession instruments)                                                  |
+| Irish      | `gle`     | 1973 (constitutionally authentic since accession; subject to a temporary derogation under Reg. 920/2005 limiting drafting/publication to a subset of acts; derogation lifted on 1 January 2022 by Council Regulation 2015/2264) |
+| Greek      | `ell`     | 1981 (Greece accession)                                                                                                                                                                                                         |
+| Spanish    | `spa`     | 1986 (Spain accession)                                                                                                                                                                                                          |
+| Portuguese | `por`     | 1986 (Portugal accession)                                                                                                                                                                                                       |
+| Finnish    | `fin`     | 1995 (Finland accession)                                                                                                                                                                                                        |
+| Swedish    | `swe`     | 1995 (Sweden and Finland accession; Finland is bilingual, Swedish is one of its two official languages)                                                                                                                         |
+| Czech      | `ces`     | 2004 (CZ accession)                                                                                                                                                                                                             |
+| Estonian   | `est`     | 2004 (EE accession)                                                                                                                                                                                                             |
+| Hungarian  | `hun`     | 2004 (HU accession)                                                                                                                                                                                                             |
+| Latvian    | `lav`     | 2004 (LV accession)                                                                                                                                                                                                             |
+| Lithuanian | `lit`     | 2004 (LT accession)                                                                                                                                                                                                             |
+| Maltese    | `mlt`     | 2004 (MT accession)                                                                                                                                                                                                             |
+| Polish     | `pol`     | 2004 (PL accession)                                                                                                                                                                                                             |
+| Slovak     | `slk`     | 2004 (SK accession)                                                                                                                                                                                                             |
+| Slovenian  | `slv`     | 2004 (SI accession)                                                                                                                                                                                                             |
+| Bulgarian  | `bul`     | 2007 (BG accession)                                                                                                                                                                                                             |
+| Romanian   | `ron`     | 2007 (RO accession)                                                                                                                                                                                                             |
+| Croatian   | `hrv`     | 2013 (HR accession)                                                                                                                                                                                                             |
 
 Each language version is published under the ELI `/oj/<lang>` pattern set out in
 `identifier-playbook.md` § 2.3. All 24 versions of an act of general application
@@ -99,9 +99,9 @@ Icelandic courts but does not back-propagate into EU-internal interpretation.
 
 ## 3. The equal-authenticity doctrine — operative case law
 
-### 3.1 *CILFIT* — Case C-283/81, ECLI:EU:C:1982:335
+### 3.1 _CILFIT_ — Case C-283/81, ECLI:EU:C:1982:335
 
-*Srl CILFIT and Lanificio di Gavardo SpA v Ministry of Health* established two
+_Srl CILFIT and Lanificio di Gavardo SpA v Ministry of Health_ established two
 foundational propositions cited in every language-version dispute at the Court:
 
 1. **Equal authenticity**: "It must be borne in mind, even where the different
@@ -110,18 +110,18 @@ foundational propositions cited in every language-version dispute at the Court:
    that legal concepts do not necessarily have the same meaning in Community law
    and in the law of the various Member States" (CILFIT, para. 19).
 
-2. ***Acte clair* limit on Art. 234 EC (now Art. 267 TFEU) referral**: a national
+2. **_Acte clair_ limit on Art. 234 EC (now Art. 267 TFEU) referral**: a national
    court of last instance may refrain from referring only where it has compared
    "the various language versions" and is satisfied that the matter is equally
    obvious to the courts of the other Member States and to the Court of Justice
    itself (CILFIT, paras. 16–21).
 
-Operationally, *CILFIT* is the source of the rule that **multilingual comparison
+Operationally, _CILFIT_ is the source of the rule that **multilingual comparison
 is a precondition of confident legal interpretation**, not an optional cross-check.
 
-### 3.2 *Codan* — Case C-236/97, ECLI:EU:C:1998:208
+### 3.2 _Codan_ — Case C-236/97, ECLI:EU:C:1998:208
 
-*Skatteministeriet v Aktieselskabet Forsikringsselskabet Codan* held that, where
+_Skatteministeriet v Aktieselskabet Forsikringsselskabet Codan_ held that, where
 language versions of a Community provision diverge, "the provision in question
 must be interpreted by reference to the purpose and general scheme of the rules
 of which it forms part" (Codan, para. 28). Reconciliation is therefore not a
@@ -134,28 +134,28 @@ The operative passage:
 > interpreted by reference to the purpose and general scheme of the rules of
 > which it forms part" (Codan, para. 28).
 
-### 3.3 *EMU Tabac* — Case C-296/95, ECLI:EU:C:1998:152
+### 3.3 _EMU Tabac_ — Case C-296/95, ECLI:EU:C:1998:152
 
-*EMU Tabac Sàrl v Imperial Tobacco Ltd* ruled that "the wording used in one
+_EMU Tabac Sàrl v Imperial Tobacco Ltd_ ruled that "the wording used in one
 language version of a Community provision cannot serve as the sole basis for the
 interpretation of that provision, or be made to override the other language
 versions in that regard. Such an approach would be incompatible with the
 requirement of uniform application of Community law" (EMU Tabac, para. 36).
 
 This is the proposition that defeats the temptation to treat the English version
-of a directive as canonical merely because English is the *de facto* working
+of a directive as canonical merely because English is the _de facto_ working
 language of the Council and Commission. **No one language version dominates.**
 
-### 3.4 *Endendijk* — Case C-187/07, ECLI:EU:C:2008:197
+### 3.4 _Endendijk_ — Case C-187/07, ECLI:EU:C:2008:197
 
-*Criminal proceedings against Dirk Endendijk* applied the *Codan* methodology to
+_Criminal proceedings against Dirk Endendijk_ applied the _Codan_ methodology to
 agricultural law: the Court held that where the German, Dutch, and English
 versions of a directive on the protection of calves diverged on the meaning of
 "tethered", the provision had to be interpreted by reference to the purpose of
 the directive (animal welfare) and its general scheme (Endendijk, paras. 22–24).
 
 The case is the modern operative example: when the conformity-assessment skill
-flags a definitional divergence between authentic versions, *Endendijk* is the
+flags a definitional divergence between authentic versions, _Endendijk_ is the
 authority for treating the divergence not as a defect to be ignored but as a
 signal that purposive interpretation must do work the literal reading cannot.
 
@@ -183,21 +183,22 @@ German `wesentlich`, Spanish `esencial`, Italian `essenziale`, but the
 Slovenian and Croatian versions translate differently. Group by linguistic and
 legal-tradition cluster.
 
-### Step 3: Apply the *Codan*/*Endendijk* purposive test
+### Step 3: Apply the _Codan_/_Endendijk_ purposive test
 
 Reconcile the clusters by reference to the **purpose** and the **general scheme**
 of the directive. The recitals and the explanatory memorandum of the Commission
 proposal are admissible interpretative materials at this step (settled CJEU
-practice; see e.g. *Schul* C-461/03). The reconciled meaning is the meaning that
+practice; see e.g. _Schul_ C-461/03). The reconciled meaning is the meaning that
 best gives effect to the act's stated objective across all language clusters.
 
 ### Step 4: Document the divergence and the reconciliation
 
 The conformity-assessment skill must record, in its Glass Box audit trail:
+
 - the article and term in dispute,
 - the divergent renderings in all 24 versions (with ELI `/oj/<lang>` URIs),
 - the cluster grouping,
-- the recital references invoked under *Codan*,
+- the recital references invoked under _Codan_,
 - the reconciled interpretation,
 - the resulting verdict implication.
 
@@ -225,7 +226,7 @@ under Art. 32 NIS2).
 
 The clusters: Romance + Germanic + English use a near-identical
 "essential/important" pair; Slavic-language Expressions use "key/important".
-Applying *Codan*: the recitals and the general scheme make clear the distinction
+Applying _Codan_: the recitals and the general scheme make clear the distinction
 is regulatory-supervisory (ex-ante vs. ex-post oversight intensity), not
 substantively about the entity's qualitative importance. The "key/important"
 rendering produces the same operational classification as "essential/important".
@@ -252,7 +253,7 @@ definitional or scope term.
 ### 5.2 Terminology drift over time
 
 Translations are not frozen at adoption. The Publications Office issues
-*corrigenda* (corrigendum acts in the OJ L series, e.g. "Corrigendum to Directive
+_corrigenda_ (corrigendum acts in the OJ L series, e.g. "Corrigendum to Directive
 (EU) 2022/2555") that retroactively correct translation errors. Always fetch the
 latest consolidated Expression at the relevant point in time, not the
 adoption-date Expression. The Cellar `eli:point-in-time` mechanism described in

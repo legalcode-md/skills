@@ -33,18 +33,18 @@ You are orchestrating the **Work phase** of the Compound Knowledge Work loop. Yo
 
 When the work involves legal subject matter, classify each task into one or more of these work types. The classification determines which agent mindset to apply, what quality checks to run, and what formatting standards to enforce.
 
-| Work Type | Description | Primary Agent | Quality Standard |
-|-----------|-------------|---------------|------------------|
-| **Contract Drafting** | Agreements, amendments, side letters, term sheets | executive-writer | Defined terms, cross-refs, signature blocks |
-| **Legal Memorandum** | Internal analysis memos, research memos, opinion letters | executive-writer + analyst | IRAC/CREAC structure, citation accuracy |
-| **Regulatory Filing** | Agency submissions, comment letters, registration statements | executive-writer + task-executor | Format compliance, deadline tracking |
-| **Court Filing / Brief** | Motions, briefs, petitions, complaints, answers | executive-writer | Bluebook/OSCOLA citation, court rules compliance |
-| **Corporate Resolution** | Board resolutions, consent actions, minutes | executive-writer + task-executor | Statutory authority, quorum, proper approvals |
-| **Legal Opinion Letter** | Third-party reliance opinions, closing opinions | executive-writer + analyst | Qualification language, assumption statements |
-| **Compliance Report** | Regulatory compliance assessments, audit responses | analyst + task-executor | Evidence-based findings, remediation tracking |
-| **Discovery Response** | Interrogatories, document requests, privilege logs | task-executor + analyst | Objection preservation, privilege review |
-| **Settlement Agreement** | Settlement terms, releases, consent decrees | executive-writer + decision-architect | Release scope, consideration, conditions |
-| **Due Diligence Report** | Transaction due diligence, risk registers | analyst + decision-architect | Issue categorization, risk scoring, materiality |
+| Work Type                | Description                                                  | Primary Agent                         | Quality Standard                                 |
+| ------------------------ | ------------------------------------------------------------ | ------------------------------------- | ------------------------------------------------ |
+| **Contract Drafting**    | Agreements, amendments, side letters, term sheets            | executive-writer                      | Defined terms, cross-refs, signature blocks      |
+| **Legal Memorandum**     | Internal analysis memos, research memos, opinion letters     | executive-writer + analyst            | IRAC/CREAC structure, citation accuracy          |
+| **Regulatory Filing**    | Agency submissions, comment letters, registration statements | executive-writer + task-executor      | Format compliance, deadline tracking             |
+| **Court Filing / Brief** | Motions, briefs, petitions, complaints, answers              | executive-writer                      | Bluebook/OSCOLA citation, court rules compliance |
+| **Corporate Resolution** | Board resolutions, consent actions, minutes                  | executive-writer + task-executor      | Statutory authority, quorum, proper approvals    |
+| **Legal Opinion Letter** | Third-party reliance opinions, closing opinions              | executive-writer + analyst            | Qualification language, assumption statements    |
+| **Compliance Report**    | Regulatory compliance assessments, audit responses           | analyst + task-executor               | Evidence-based findings, remediation tracking    |
+| **Discovery Response**   | Interrogatories, document requests, privilege logs           | task-executor + analyst               | Objection preservation, privilege review         |
+| **Settlement Agreement** | Settlement terms, releases, consent decrees                  | executive-writer + decision-architect | Release scope, consideration, conditions         |
+| **Due Diligence Report** | Transaction due diligence, risk registers                    | analyst + decision-architect          | Issue categorization, risk scoring, materiality  |
 
 ---
 
@@ -57,25 +57,25 @@ When the work involves legal subject matter, classify each task into one or more
 3. **Classify legal work types** for each step (see table above). If the work is general (non-legal), skip this classification.
 4. **Identify the right agent mindset** for each step:
 
-| Work Type | Primary Agent |
-|-----------|--------------|
-| Writing communications | executive-writer |
-| Data analysis | analyst |
-| Structuring decisions | decision-architect |
-| Meeting preparation | meeting-orchestrator |
-| Coaching conversation | coach |
-| Task execution | task-executor |
+| Work Type              | Primary Agent        |
+| ---------------------- | -------------------- |
+| Writing communications | executive-writer     |
+| Data analysis          | analyst              |
+| Structuring decisions  | decision-architect   |
+| Meeting preparation    | meeting-orchestrator |
+| Coaching conversation  | coach                |
+| Task execution         | task-executor        |
 
 **Legal-specific agent mappings:**
 
-| Legal Work Type | Primary Agent | Supporting Agent |
-|-----------------|---------------|------------------|
-| Contract drafting, memos, briefs, opinions | executive-writer | analyst (for research-heavy sections) |
-| Case analysis, statutory interpretation, regulatory analysis | analyst | executive-writer (for memo formatting) |
-| Litigation strategy, settlement analysis, regulatory response options | decision-architect | analyst (for risk quantification) |
-| Deposition prep, hearing prep, mediation, board meetings, closings | meeting-orchestrator | executive-writer (for materials) |
-| Associate development, client relationship management | coach | — |
-| Filing, docketing, compliance tracking, document management | task-executor | — |
+| Legal Work Type                                                       | Primary Agent        | Supporting Agent                       |
+| --------------------------------------------------------------------- | -------------------- | -------------------------------------- |
+| Contract drafting, memos, briefs, opinions                            | executive-writer     | analyst (for research-heavy sections)  |
+| Case analysis, statutory interpretation, regulatory analysis          | analyst              | executive-writer (for memo formatting) |
+| Litigation strategy, settlement analysis, regulatory response options | decision-architect   | analyst (for risk quantification)      |
+| Deposition prep, hearing prep, mediation, board meetings, closings    | meeting-orchestrator | executive-writer (for materials)       |
+| Associate development, client relationship management                 | coach                | —                                      |
+| Filing, docketing, compliance tracking, document management           | task-executor        | —                                      |
 
 5. **Check prerequisites.** Does any step need user input before you can proceed?
 6. **Identify privilege considerations.** If the work involves attorney-client communications, work product, or litigation strategy, flag this early and maintain appropriate markings throughout.
@@ -136,6 +136,7 @@ Present the completed work to the user with:
 Run this checklist for all legal work product. Flag any failures for attorney review.
 
 ### Language Precision
+
 - [ ] All defined terms are capitalized consistently and used only as defined
 - [ ] No term is used in both defined and undefined senses
 - [ ] "Shall" used for obligations, "may" for permissions, "will" for future facts
@@ -146,6 +147,7 @@ Run this checklist for all legal work product. Flag any failures for attorney re
 - [ ] Conjunctive ("and") vs. disjunctive ("or") usage is intentional
 
 ### Structural Integrity
+
 - [ ] All cross-references resolve to correct sections
 - [ ] All exhibit/schedule references match actual attachments
 - [ ] Numbering is sequential with no gaps or duplicates
@@ -155,6 +157,7 @@ Run this checklist for all legal work product. Flag any failures for attorney re
 - [ ] Termination provisions are consistent with survival clauses
 
 ### Citation Accuracy
+
 - [ ] Case citations include full name, reporter, volume, page, court, and year
 - [ ] Statutory citations include title, section, and current codification
 - [ ] Regulatory citations include volume, part, and section of relevant code
@@ -163,6 +166,7 @@ Run this checklist for all legal work product. Flag any failures for attorney re
 - [ ] All cited authorities are still good law (not overruled, superseded, or withdrawn)
 
 ### Privilege and Confidentiality
+
 - [ ] Attorney-client privileged communications are marked appropriately
 - [ ] Work product documents carry proper legends
 - [ ] Draft documents are marked "DRAFT — PRIVILEGED AND CONFIDENTIAL"
@@ -170,6 +174,7 @@ Run this checklist for all legal work product. Flag any failures for attorney re
 - [ ] Settlement communications are marked per applicable rules (e.g., FRE 408)
 
 ### Formatting Compliance
+
 - [ ] Court filings comply with local rules (margins, font, spacing, page limits)
 - [ ] Regulatory submissions comply with agency format requirements
 - [ ] Signature blocks include proper party names, capacities, and titles
@@ -178,6 +183,7 @@ Run this checklist for all legal work product. Flag any failures for attorney re
 - [ ] Table of contents and table of authorities are accurate (for briefs)
 
 ### Substantive Safeguards
+
 - [ ] No inadvertent admissions of liability or fault
 - [ ] Representations and warranties are appropriately qualified
 - [ ] Limitations of liability are conspicuous where required by law
@@ -193,29 +199,34 @@ Run this checklist for all legal work product. Flag any failures for attorney re
 These principles supplement the general execution principles below. Apply them whenever the work involves legal subject matter.
 
 ### Precision of Language
+
 - Every word in a legal document carries weight. Choose words that have established legal meaning in the relevant jurisdiction.
 - Avoid colloquialisms, jargon, and ambiguity. If a term can be read two ways, it will be read the way that harms your client.
 - Use defined terms as a discipline — they create a private vocabulary for the document that overrides ordinary meaning.
 - Distinguish between "best efforts," "reasonable efforts," "commercially reasonable efforts," and "good faith" — these have different legal meanings in different jurisdictions.
 
 ### Defined Terms Consistency
+
 - Maintain a running index of defined terms as you draft.
 - A defined term should be used every time the defined concept appears — never use a synonym or informal shorthand.
 - If you find yourself wanting to use a defined term in a slightly different sense, you need a second defined term.
 - Cross-check: every capitalized term should appear in the definitions; every definition should be used at least once.
 
 ### Cross-Reference Integrity
+
 - Every internal reference ("as set forth in Section 4.2(b)") must resolve to the correct provision.
 - After any structural edit (adding, removing, or reordering sections), re-verify all cross-references.
 - Use descriptive cross-references alongside numbered ones where possible ("the indemnification obligations set forth in Section 8.1") to aid readability and catch numbering errors.
 
 ### Conformance to Court and Regulatory Rules
+
 - Court filings must comply with the specific court's local rules — these override general rules of procedure.
 - Regulatory submissions must follow the agency's format requirements exactly — non-conforming submissions may be rejected.
 - Page limits, word counts, margin requirements, font requirements, and filing deadlines are non-negotiable.
 - Certificate of service requirements vary by court and must be followed precisely.
 
 ### Privilege Preservation During Drafting
+
 - Mark all draft legal work product with appropriate privilege legends from the outset.
 - Do not include legal strategy, mental impressions, or litigation assessments in documents that may be disclosed to third parties.
 - Maintain the distinction between business communications (not privileged) and legal advice (privileged).
@@ -226,21 +237,25 @@ These principles supplement the general execution principles below. Apply them w
 ## Execution Principles
 
 ### Ship Complete Work
+
 - Don't present half-finished output
 - If a piece isn't ready, say so and explain what's needed
 - Complete means it addresses all success criteria
 
 ### Follow the Plan, Adapt as Needed
+
 - The plan is your guide, not a straitjacket
 - If new information emerges, adjust
 - Document any deviations and rationale
 
 ### Continuous Validation
+
 - Check alignment with goals at each step
 - Don't wait until the end to discover misalignment
 - Ask the user to validate early if stakes are high
 
 ### Right Level of Polish
+
 - Match polish to the audience and purpose
 - Internal draft != board presentation != court filing
 - Don't over-polish low-stakes work
@@ -251,6 +266,7 @@ These principles supplement the general execution principles below. Apply them w
 ## Work Patterns by Type
 
 ### Communications
+
 1. Draft using executive-writer mindset
 2. Apply tone appropriate to audience and relationship
 3. Front-load the key message
@@ -258,6 +274,7 @@ These principles supplement the general execution principles below. Apply them w
 5. Check against stakeholder map from planning
 
 ### Legal Drafting (Contracts, Agreements)
+
 1. Draft using executive-writer mindset with legal precision overlay
 2. Begin with defined terms and recitals — establish the vocabulary and context
 3. Draft operative provisions in logical sequence (rights, obligations, conditions, remedies)
@@ -268,6 +285,7 @@ These principles supplement the general execution principles below. Apply them w
 8. Flag provisions requiring jurisdiction-specific legal review
 
 ### Legal Memoranda and Opinions
+
 1. Structure using IRAC (Issue, Rule, Application, Conclusion) or CREAC (Conclusion, Rule, Explanation, Application, Conclusion)
 2. Draft issue statement precisely — a well-framed issue is half the answer
 3. Synthesize the rule from primary authorities (statutes, regulations, case law)
@@ -277,6 +295,7 @@ These principles supplement the general execution principles below. Apply them w
 7. Mark as privileged and confidential where appropriate
 
 ### Court Filings and Briefs
+
 1. Verify court rules (local rules, standing orders, judge-specific requirements)
 2. Structure argument: standard of review, statement of facts, argument, conclusion
 3. Use Bluebook citation format (or jurisdiction-appropriate format)
@@ -286,6 +305,7 @@ These principles supplement the general execution principles below. Apply them w
 7. Prepare proposed order (if required)
 
 ### Regulatory Filings
+
 1. Verify agency submission requirements and format specifications
 2. Prepare cover letter with submission summary
 3. Draft substantive content with regulatory precision
@@ -295,6 +315,7 @@ These principles supplement the general execution principles below. Apply them w
 7. Prepare proof of filing record
 
 ### Decisions
+
 1. Structure using decision-architect mindset
 2. Present options with explicit tradeoffs
 3. Include clear recommendation with rationale
@@ -302,6 +323,7 @@ These principles supplement the general execution principles below. Apply them w
 5. Provide implementation notes for chosen option
 
 ### Legal Strategy Decisions
+
 1. Structure using decision-architect mindset with legal strategy overlay
 2. Frame the legal issue and applicable standards
 3. Map the decision tree (litigation risk, settlement analysis, regulatory response options)
@@ -311,6 +333,7 @@ These principles supplement the general execution principles below. Apply them w
 7. Document conditions for reconsidering the strategy
 
 ### Analysis
+
 1. Analyze using analyst mindset
 2. Separate findings from interpretation
 3. State confidence levels explicitly
@@ -318,6 +341,7 @@ These principles supplement the general execution principles below. Apply them w
 5. Lead with executive summary
 
 ### Legal Analysis
+
 1. Analyze using analyst mindset with legal rigor overlay
 2. Apply appropriate legal analysis methodology (case analysis, statutory construction, regulatory interpretation)
 3. Distinguish holdings from dicta; identify binding vs. persuasive authority
@@ -327,6 +351,7 @@ These principles supplement the general execution principles below. Apply them w
 7. Include citation to primary authorities for all legal propositions
 
 ### Meetings
+
 1. Prepare using meeting-orchestrator mindset
 2. Build timed agenda with clear objectives
 3. Prepare discussion guides and questions
@@ -334,6 +359,7 @@ These principles supplement the general execution principles below. Apply them w
 5. Create pre-read materials if needed
 
 ### Legal Proceedings Preparation
+
 1. Prepare using meeting-orchestrator mindset with legal proceedings overlay
 2. For depositions: witness preparation outline, exhibit organization, question outline, objection strategy
 3. For hearings: argument structure, authority binder, anticipated questions from the bench
@@ -342,6 +368,7 @@ These principles supplement the general execution principles below. Apply them w
 6. For closings: closing checklist, condition precedent tracking, escrow arrangements, document execution order
 
 ### Coaching
+
 1. Engage using coach mindset
 2. Lead with questions, not answers
 3. Surface assumptions and beliefs
@@ -349,6 +376,7 @@ These principles supplement the general execution principles below. Apply them w
 5. Capture insights and commitments
 
 ### Legal Professional Development
+
 1. Engage using coach mindset with legal profession overlay
 2. Address associate development: legal research skills, drafting quality, client communication
 3. Guide client relationship management: responsiveness, managing expectations, building trust
@@ -361,6 +389,7 @@ These principles supplement the general execution principles below. Apply them w
 ## Anti-Patterns to Avoid
 
 ### General Anti-Patterns
+
 - Starting execution without reading the full plan
 - Re-researching what was already gathered in planning
 - Guessing at important details instead of asking
@@ -369,6 +398,7 @@ These principles supplement the general execution principles below. Apply them w
 - Presenting output without self-review
 
 ### Legal-Specific Anti-Patterns
+
 - **Undefined terms**: Using a capitalized term that appears nowhere in the definitions section
 - **Phantom cross-references**: Referencing "Section 5.3" when no Section 5.3 exists, or when renumbering has shifted it
 - **Inconsistent defined terms**: Using "Company" in some places and "Employer" in others to refer to the same party

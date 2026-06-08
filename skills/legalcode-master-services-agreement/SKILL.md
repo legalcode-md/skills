@@ -45,6 +45,7 @@ and assignment formalities, key personnel obligations, transition assistance, an
 coverage.
 
 **Covers:**
+
 - Framework MSAs with modular Statements of Work (professional services: consulting, IT, creative)
 - Framework MSAs with modular Order Forms (recurring services: managed services, outsourcing)
 - Hybrid MSA/SOW/Order Form structures combining bespoke and recurring service lines
@@ -61,6 +62,7 @@ coverage.
 - Quality-verified output with Glass Box audit trail and confidence scoring
 
 **Does not:**
+
 - Draft SaaS/cloud subscription agreements (see `legalcode-saas-agreement-drafter`)
 - Perform clause-by-clause review of any commercial agreement (see `legalcode-contract-review`)
 - Replace specialized counsel for complex outsourcing, regulated-sector engagements (financial services,
@@ -68,6 +70,7 @@ coverage.
 - Apply to one jurisdiction exclusively — jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers
 
 **Related skills:**
+
 - `legalcode-saas-agreement-drafter` — for SaaS subscription and platform agreements
 - `legalcode-contract-review` — clause-by-clause review of any commercial agreement
 - `legalcode-nda-triage` — for screening standalone NDAs embedded in MSA schedules
@@ -86,6 +89,7 @@ accordingly.
 [JURISDICTION-SPECIFIC] When localizing, research and apply:
 
 **United States**
+
 - IP ownership: Work-for-hire doctrine (17 U.S.C. § 101) — applies only to specific categories
   (works made within scope of employment, or nine categories of specially commissioned works
   where parties agree in writing). For software and most deliverables, a written assignment is
@@ -103,6 +107,7 @@ accordingly.
   class action waivers generally enforceable in commercial B2B contracts [VERIFY]
 
 **United Kingdom**
+
 - IP ownership: No work-for-hire doctrine. Copyright in contractor-created works belongs to the
   contractor by default unless assigned. Copyright assignment must be in writing signed by or
   on behalf of the assignor (Copyright, Designs and Patents Act 1988, s.90(3)). Design right
@@ -121,6 +126,7 @@ accordingly.
   "loser pays" is the default costs principle; LCIA or ICC arbitration common for high-value disputes
 
 **Australia**
+
 - IP ownership: No work-for-hire doctrine for contractors. Copyright in contractor-created works
   belongs to the contractor unless assigned. Copyright assignment must be in writing (Copyright
   Act 1968, s.196(3)). Patent assignment must be in writing signed by assignor and assignee
@@ -174,6 +180,7 @@ user can correct it.
 ### Step 1: Accept Input
 
 Accept one of these inputs:
+
 - **Existing MSA** (PDF, DOCX, URL, or pasted text) for review, analysis, and redlines
 - **Drafting request** ("Draft service-provider-side MSA for IT consulting" or "Draft customer-friendly
   managed services framework agreement")
@@ -191,19 +198,19 @@ If no input is provided, prompt the user to supply one.
 
 1. **Which side are you on?**
    - Options: Service Provider / Vendor, Client / Customer, Both (analyzing for alignment or benchmarking)
-   - *Why this matters*: Provider and client positions on IP ownership, liability caps, change control,
+   - _Why this matters_: Provider and client positions on IP ownership, liability caps, change control,
      acceptance, and payment terms are fundamentally opposed. The entire analysis flips.
 
 2. **Service type?**
    - Options: IT / Technology Consulting, Managed Services / Outsourcing, Professional Services
      (legal, finance, strategy), Creative / Marketing Services, Software Development, Mixed / Multi-service
-   - *Why this matters*: Service type affects IP sensitivity (highest in software/creative), change control
+   - _Why this matters_: Service type affects IP sensitivity (highest in software/creative), change control
      complexity (highest in fixed-scope software), and insurance requirements (professional indemnity
      minimums vary by sector).
 
 3. **Pricing model?**
    - Options: Time & Materials (T&M), Fixed-Fee / Lump Sum, Milestone-Based, Retainer, Hybrid (mixed)
-   - *Why this matters*: T&M — client bears scope risk; provider bills actuals. Fixed-fee — provider bears
+   - _Why this matters_: T&M — client bears scope risk; provider bills actuals. Fixed-fee — provider bears
      cost risk; scope disputes create liability. Milestone — accountability structure changes acceptance
      obligations. Hybrid — requires careful SOW structure to avoid ambiguity.
 
@@ -211,20 +218,20 @@ If no input is provided, prompt the user to supply one.
    - Options: High (software, code, creative works, product IP — custom-developed for client),
      Standard (reports, analyses, work product incorporated into client's business),
      Low (commoditized services, no bespoke deliverables)
-   - *Why this matters*: High IP sensitivity triggers jurisdiction-specific assignment formality requirements,
+   - _Why this matters_: High IP sensitivity triggers jurisdiction-specific assignment formality requirements,
      background IP protection, and moral rights waiver provisions.
 
 5. **Regulatory scope?**
    - Options: GDPR / UK GDPR (EU/UK client or personal data flows), Australian Privacy Act (AU),
      HIPAA (US health data), CCPA (US/California), No identified data processing obligations, Not yet assessed
-   - Allow multiple. *Why this matters*: Determines whether a Data Processing Agreement/Addendum is required,
+   - Allow multiple. _Why this matters_: Determines whether a Data Processing Agreement/Addendum is required,
      what breach notification timelines apply, and whether the provider is a data processor or controller.
 
 6. **Deal context?**
    - Free text with examples: "5-year outsourcing deal — $10M value, provider has leverage,"
      "Startup client, first enterprise engagement," "Critical infrastructure migration — must-have provider,"
      "Commodity IT support — multiple providers competing"
-   - *Why this matters*: Deal size, strategic importance, and negotiation leverage determine how hard to push
+   - _Why this matters_: Deal size, strategic importance, and negotiation leverage determine how hard to push
      and what to concede.
 
 If partial context is provided, proceed with stated assumptions: "I'm assuming service-provider side,
@@ -235,6 +242,7 @@ IT consulting, T&M pricing, high IP sensitivity, GDPR scope. Let me know if that
 Check for an organizational MSA playbook in local settings (e.g., `legal.local.md`).
 
 The playbook should define:
+
 - **Standard positions**: Preferred terms per clause (liability cap formula, IP ownership default,
   change control approval thresholds, insurance minimums, payment terms)
 - **Acceptable ranges**: Terms that can be agreed without escalation (cap 6-24 months of fees,
@@ -246,6 +254,7 @@ The playbook should define:
 **If no playbook is configured:**
 
 **⟁ CLARIFY** — Inform the user and ask which approach:
+
 - **Option A: Set up playbook now** — Define standard positions for 8 key MSA clauses (liability cap,
   IP ownership, change control threshold, key personnel approval, payment terms, termination notice,
   insurance minimums, data protection approach). More precise outputs; 15-20 minutes upfront.
@@ -262,12 +271,14 @@ Identify the governing law (from the agreement or the user's drafting intent). T
 **legalcode-mcp** to build a working legal reference for this analysis.
 
 **⟁ CLARIFY** — If any of the following apply, ask the user:
+
 - No governing law clause found → flag as RED and ask which jurisdiction applies
 - Multiple conflicting governing law references → ask which governs the main body
 - Unusual jurisdiction for the deal type → confirm intentional
 
 **With legalcode-mcp connected (preferred):**
 Search for jurisdiction-relevant authority covering:
+
 - IP assignment formality requirements (CDPA s.90(3) UK; Copyright Act 1968 s.196(3) AU;
   17 U.S.C. § 101 work-for-hire categories US)
 - Limitation of liability enforceability (UCTA 1977 reasonableness UK; ACL unfair terms AU;
@@ -277,7 +288,7 @@ Search for jurisdiction-relevant authority covering:
 - Unfair contract terms for small business contracts (ACL Sch. 2 Part 2-3, AU)
 - Implied terms that cannot be excluded (Supply of Goods and Services Act 1982 UK [VERIFY];
   ACL consumer guarantees AU for applicable contracts)
-- Penalty clause enforceability (UK — rule against penalties post-*Cavendish Square* [VERIFY];
+- Penalty clause enforceability (UK — rule against penalties post-_Cavendish Square_ [VERIFY];
   AU — similar common law test)
 - Proportionate liability schemes (state Civil Liability Acts, AU)
 
@@ -285,6 +296,7 @@ Save results to `/tmp/legalcode-msa-authority.md`. Mark all legalcode-mcp-source
 VERIFIED in Glass Box.
 
 **Without legalcode-mcp:**
+
 - Mark all statutory and case law references with [VERIFY]
 - Note in Glass Box: `legalcode_mcp: "Not connected"`
 
@@ -297,18 +309,19 @@ exposed beyond expectations. Review holistically first, then clause-by-clause.
 Analyze systematically across all 16 MSA topic areas (see **MSA Clause Architecture** below).
 For each area, assess:
 
-| Criterion | What to Evaluate |
-|-----------|-----------------|
-| **Presence** | Is this topic covered? Missing entirely? Addressed in a schedule or SOW? |
-| **Perspective** | Does current language favor provider, client, or is it balanced? |
-| **Market deviation** | How far is this from professional services market standard? |
-| **Classification** | GREEN (acceptable), YELLOW (negotiate), RED (escalate) |
-| **Compliance gap** | Does this clause create or cure a regulatory obligation? |
+| Criterion            | What to Evaluate                                                         |
+| -------------------- | ------------------------------------------------------------------------ |
+| **Presence**         | Is this topic covered? Missing entirely? Addressed in a schedule or SOW? |
+| **Perspective**      | Does current language favor provider, client, or is it balanced?         |
+| **Market deviation** | How far is this from professional services market standard?              |
+| **Classification**   | GREEN (acceptable), YELLOW (negotiate), RED (escalate)                   |
+| **Compliance gap**   | Does this clause create or cure a regulatory obligation?                 |
 
 For each topic area, produce both a **service-provider-side assessment** and a **client-side
 assessment**, noting where positions diverge.
 
 **⟁ CLARIFY** — For complex agreements (30+ pages, multiple SOWs, or incorporated schedules):
+
 - Ask whether to perform full analysis (all 16 topic areas) or priority review (stated focus areas
   plus all RED items)
 - If the MSA incorporates documents by reference (SOW templates, rate cards, standard T&Cs),
@@ -320,20 +333,21 @@ After analyzing clauses present, identify material topics entirely absent from t
 
 **Common MSA missing-clause issues:**
 
-| Missing Clause | Provider Risk | Client Risk | Classification |
-|----------------|--------------|-------------|----------------|
-| No change control procedure | Scope creep, unpaid work | Uncontrolled cost escalation | RED (both) |
-| No acceptance procedure | Dispute over completion | Subjective sign-off risk | RED (both) |
-| No IP ownership clause | Default rules apply (may favor provider) | Client may not own deliverables | RED (client), YELLOW (provider) |
-| No liability cap | Unlimited exposure | Potentially unrecoverable loss | RED (provider), YELLOW (client) |
-| No DPA when GDPR/AU Privacy Act applies | Regulatory fine | Regulatory fine | RED (both) |
-| No key personnel clause (critical engagement) | Loss of client relationship | Unplanned resource changes | YELLOW–RED |
-| No transition assistance | Harmful exit scenario | Lock-in risk | RED (client), YELLOW (provider) |
-| No background IP protection | Background IP exposed to assignment | May receive narrower-than-needed license | RED (provider) |
-| No subcontracting restriction | Client uncertain who performs work | Quality and confidentiality risk | YELLOW |
-| No force majeure | No relief for unforeseeable events | No relief for unforeseeable events | YELLOW (both) |
+| Missing Clause                                | Provider Risk                            | Client Risk                              | Classification                  |
+| --------------------------------------------- | ---------------------------------------- | ---------------------------------------- | ------------------------------- |
+| No change control procedure                   | Scope creep, unpaid work                 | Uncontrolled cost escalation             | RED (both)                      |
+| No acceptance procedure                       | Dispute over completion                  | Subjective sign-off risk                 | RED (both)                      |
+| No IP ownership clause                        | Default rules apply (may favor provider) | Client may not own deliverables          | RED (client), YELLOW (provider) |
+| No liability cap                              | Unlimited exposure                       | Potentially unrecoverable loss           | RED (provider), YELLOW (client) |
+| No DPA when GDPR/AU Privacy Act applies       | Regulatory fine                          | Regulatory fine                          | RED (both)                      |
+| No key personnel clause (critical engagement) | Loss of client relationship              | Unplanned resource changes               | YELLOW–RED                      |
+| No transition assistance                      | Harmful exit scenario                    | Lock-in risk                             | RED (client), YELLOW (provider) |
+| No background IP protection                   | Background IP exposed to assignment      | May receive narrower-than-needed license | RED (provider)                  |
+| No subcontracting restriction                 | Client uncertain who performs work       | Quality and confidentiality risk         | YELLOW                          |
+| No force majeure                              | No relief for unforeseeable events       | No relief for unforeseeable events       | YELLOW (both)                   |
 
 **⟁ CLARIFY** — When missing clause severity depends on context:
+
 - "No change control procedure found. Is this a fixed-fee or T&M engagement? If fixed-fee, this is RED."
 - "No acceptance criteria in the SOW. Are deliverables clearly defined elsewhere? If not, both parties
   lack a mechanism to close out the engagement."
@@ -351,6 +365,7 @@ Classification** below. For each:
   alternative language, estimate exposure, recommend escalation.
 
 **⟁ CLARIFY** — For borderline classifications:
+
 - **YELLOW vs. RED**: "The liability cap is set at 3 months' fees. For a 2-year engagement, this
   is well below market standard. Should I classify as YELLOW (negotiate) or RED (escalate)?
   Depends on your risk tolerance and whether there are uncapped indemnities."
@@ -364,6 +379,7 @@ For each YELLOW and RED deviation, generate guidance using the **Redline Format*
 Before generating redlines:
 
 **⟁ CLARIFY** — Ask about negotiation posture if not already clear:
+
 - **Relationship dynamic**: New client relationship, repeat engagement, or sole-source essential
   provider? Affects tone.
 - **Volume of redlines**: If many YELLOW items exist: "I've found [N] items worth negotiating.
@@ -382,10 +398,12 @@ This prevents preparing a negotiation position without understanding the counter
 
 If an SOW or Order Form is provided or requested, apply the **SOW Completeness Checklist** and
 **Order Form Completeness Checklist** from the Annex Templates section. For each element:
+
 - Present: assess quality and clarity
 - Absent: classify as REQUIRED, RECOMMENDED, or OPTIONAL for the stated service type and pricing model
 
 **⟁ CLARIFY** — If the SOW uses fixed-fee pricing but lacks acceptance criteria:
+
 - "This is a fixed-fee SOW with no acceptance criteria. Without defined acceptance triggers, the
   provider risks never achieving final payment. Should I flag this as RED and draft acceptance
   language, or is the client willing to accept completion without formal sign-off?"
@@ -393,6 +411,7 @@ If an SOW or Order Form is provided or requested, apply the **SOW Completeness C
 ### Step 11: Compliance Flag (if applicable)
 
 If GDPR, UK GDPR, Australian Privacy Act, or HIPAA obligations were identified in Step 2:
+
 - Cross-reference relevant MSA provisions against the compliance requirements
 - Flag missing or inadequate compliance provisions with [COMPLIANCE-REQUIRED]
 - Recommend specific addenda (DPA, BAA, Data Security Annex)
@@ -401,6 +420,7 @@ If GDPR, UK GDPR, Australian Privacy Act, or HIPAA obligations were identified i
 ### Step 12: Business Impact and Negotiation Strategy
 
 Provide a summary covering:
+
 - **Overall risk profile**: High-level risk assessment across IP, liability, commercial, and compliance
   dimensions
 - **Top 3-5 issues**: Most important items to resolve, with severity, perspective, and legal basis
@@ -409,6 +429,7 @@ Provide a summary covering:
 - **Timeline considerations**: Urgency factors affecting negotiation approach
 
 **⟁ CLARIFY** — If deal context is unclear:
+
 - "Can you walk away from this engagement, or is this provider/client essential?" — determines
   whether strategy is assertive or accommodating.
 - "Who signs off internally? Legal only, or also operations/finance?" — determines how to frame
@@ -434,24 +455,24 @@ Framework** section:
 Analyze the MSA systematically across these 16 topic areas. Use **Deep** tier for the most
 material and contested clauses; **Standard** tier for important but less contested provisions.
 
-| # | Topic Area | Depth | Provider Focal Points | Client Focal Points |
-|---|------------|-------|----------------------|---------------------|
-| 1 | **Framework Structure (MSA/SOW/Order Form)** | Deep | MSA governs; SOW/Order Forms are subordinate; conflict resolution favoring MSA | SOW/Order Form specifics override MSA where conflict; right to issue new SOWs without re-negotiating MSA |
-| 2 | **Scope of Services and Deliverables** | Deep | Broad scope definition, exclusions listed in SOW; no implied obligations; dependencies on client | Precise deliverable specifications; acceptance criteria; client assumptions and responsibilities; scope freeze mechanism |
-| 3 | **Pricing and Payment** | Deep | T&M rates + true-up; invoicing on milestones; expenses at cost; interest on late payment | Budget caps on T&M; milestone payment tied to acceptance; disputed invoice procedure; no pay-when-paid |
-| 4 | **Change Control** | Deep | Bilateral change order process; no work proceeds without written authorization; provider's right to price changes | Change orders priced at agreed rates; provider cannot stop work pending change order; deemed approval if client fails to respond |
-| 5 | **Intellectual Property** | Deep | Provider retains background IP; client receives license (not assignment) of deliverables; foreground IP owned by provider unless expressly assigned | Client owns all deliverables (commissioned work); provider retains tools and methods only; background IP licensed for deliverables use |
-| 6 | **Acceptance Testing** | Deep | Deemed acceptance if client fails to respond within review period; provider's right to cure before rejection; no retroactive rejection | Objective acceptance criteria; client's right to reject for any material non-conformance; cure period before acceptance triggers payment |
-| 7 | **Liability Caps and Exclusions** | Deep | Cap at 12 months' fees paid; exclude consequential damages; carveout only for death/personal injury and fraud | Cap at aggregate fees paid (or uncapped for IP breach and data breach); consequential damages carveout for loss of data and business disruption |
-| 8 | **Indemnification** | Deep | Mutual indemnity for own IP infringement; narrow scope; client indemnifies for client-provided materials | Provider indemnifies for IP infringement in deliverables; data breach caused by provider; gross negligence/willful misconduct uncapped |
-| 9 | **Representations and Warranties** | Deep | Professional standards warranty; non-infringement warranty limited to materials provided; no fitness for purpose | Services warranty (professional, workmanlike); non-infringement warranty for all deliverables; compliance warranty; remedy for warranty breach |
-| 10 | **Confidentiality** | Standard | Mutual; term of 3-5 years; standard carveouts; return/destroy on termination; injunctive relief right | Indefinite for trade secrets; client data treated as confidential; provider staff under NDA; right to seek injunction |
-| 11 | **Key Personnel and Subcontracting** | Standard | Right to replace key personnel with reasonable notice; broad subcontracting right with flow-down of obligations | Named key personnel; prior consent for replacement; prior consent for subcontracting; flow-down of MSA obligations to subcontractors |
-| 12 | **Insurance** | Standard | Professional indemnity, public/general liability, cyber liability (where applicable), workers' compensation; certificates on request | Insurance to market minimums for service type and deal size; additional insured status; certificates before work commences |
-| 13 | **Data Protection** | Standard | Provider as data processor if processing client personal data; standard DPA terms; breach notification at 72h post-discovery | GDPR Art. 28 / UK GDPR / Australian Privacy Act mandatory DPA; sub-processor controls; breach notification; cross-border transfer mechanisms |
-| 14 | **Term and Termination** | Standard | Auto-renewal; termination for cause with 30-day cure; termination for convenience by client on 90 days' notice with payment for work to date | Termination for cause with 14-day cure; termination for convenience with 30 days' notice; no termination fees; survival of obligations |
-| 15 | **Transition and Wind-Down Assistance** | Standard | Transition assistance for reasonable period at then-current rates; limited cooperation obligations; hard end date | Minimum 6-month transition assistance at fixed rates; successor provider non-interference; knowledge transfer; data handover |
-| 16 | **Governing Law and Disputes** | Standard | Provider's jurisdiction; senior executive escalation before formal proceedings; binding arbitration for high-value disputes | Neutral jurisdiction; mediation before arbitration; client's right to seek injunctive relief in courts; no class action waiver (B2C) |
+| #   | Topic Area                                   | Depth    | Provider Focal Points                                                                                                                               | Client Focal Points                                                                                                                             |
+| --- | -------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Framework Structure (MSA/SOW/Order Form)** | Deep     | MSA governs; SOW/Order Forms are subordinate; conflict resolution favoring MSA                                                                      | SOW/Order Form specifics override MSA where conflict; right to issue new SOWs without re-negotiating MSA                                        |
+| 2   | **Scope of Services and Deliverables**       | Deep     | Broad scope definition, exclusions listed in SOW; no implied obligations; dependencies on client                                                    | Precise deliverable specifications; acceptance criteria; client assumptions and responsibilities; scope freeze mechanism                        |
+| 3   | **Pricing and Payment**                      | Deep     | T&M rates + true-up; invoicing on milestones; expenses at cost; interest on late payment                                                            | Budget caps on T&M; milestone payment tied to acceptance; disputed invoice procedure; no pay-when-paid                                          |
+| 4   | **Change Control**                           | Deep     | Bilateral change order process; no work proceeds without written authorization; provider's right to price changes                                   | Change orders priced at agreed rates; provider cannot stop work pending change order; deemed approval if client fails to respond                |
+| 5   | **Intellectual Property**                    | Deep     | Provider retains background IP; client receives license (not assignment) of deliverables; foreground IP owned by provider unless expressly assigned | Client owns all deliverables (commissioned work); provider retains tools and methods only; background IP licensed for deliverables use          |
+| 6   | **Acceptance Testing**                       | Deep     | Deemed acceptance if client fails to respond within review period; provider's right to cure before rejection; no retroactive rejection              | Objective acceptance criteria; client's right to reject for any material non-conformance; cure period before acceptance triggers payment        |
+| 7   | **Liability Caps and Exclusions**            | Deep     | Cap at 12 months' fees paid; exclude consequential damages; carveout only for death/personal injury and fraud                                       | Cap at aggregate fees paid (or uncapped for IP breach and data breach); consequential damages carveout for loss of data and business disruption |
+| 8   | **Indemnification**                          | Deep     | Mutual indemnity for own IP infringement; narrow scope; client indemnifies for client-provided materials                                            | Provider indemnifies for IP infringement in deliverables; data breach caused by provider; gross negligence/willful misconduct uncapped          |
+| 9   | **Representations and Warranties**           | Deep     | Professional standards warranty; non-infringement warranty limited to materials provided; no fitness for purpose                                    | Services warranty (professional, workmanlike); non-infringement warranty for all deliverables; compliance warranty; remedy for warranty breach  |
+| 10  | **Confidentiality**                          | Standard | Mutual; term of 3-5 years; standard carveouts; return/destroy on termination; injunctive relief right                                               | Indefinite for trade secrets; client data treated as confidential; provider staff under NDA; right to seek injunction                           |
+| 11  | **Key Personnel and Subcontracting**         | Standard | Right to replace key personnel with reasonable notice; broad subcontracting right with flow-down of obligations                                     | Named key personnel; prior consent for replacement; prior consent for subcontracting; flow-down of MSA obligations to subcontractors            |
+| 12  | **Insurance**                                | Standard | Professional indemnity, public/general liability, cyber liability (where applicable), workers' compensation; certificates on request                | Insurance to market minimums for service type and deal size; additional insured status; certificates before work commences                      |
+| 13  | **Data Protection**                          | Standard | Provider as data processor if processing client personal data; standard DPA terms; breach notification at 72h post-discovery                        | GDPR Art. 28 / UK GDPR / Australian Privacy Act mandatory DPA; sub-processor controls; breach notification; cross-border transfer mechanisms    |
+| 14  | **Term and Termination**                     | Standard | Auto-renewal; termination for cause with 30-day cure; termination for convenience by client on 90 days' notice with payment for work to date        | Termination for cause with 14-day cure; termination for convenience with 30 days' notice; no termination fees; survival of obligations          |
+| 15  | **Transition and Wind-Down Assistance**      | Standard | Transition assistance for reasonable period at then-current rates; limited cooperation obligations; hard end date                                   | Minimum 6-month transition assistance at fixed rates; successor provider non-interference; knowledge transfer; data handover                    |
+| 16  | **Governing Law and Disputes**               | Standard | Provider's jurisdiction; senior executive escalation before formal proceedings; binding arbitration for high-value disputes                         | Neutral jurisdiction; mediation before arbitration; client's right to seek injunctive relief in courts; no class action waiver (B2C)            |
 
 ---
 
@@ -462,6 +483,7 @@ material and contested clauses; **Standard** tier for important but less contest
 **Risk allocation**: Client bears scope risk. Provider bills actual time at agreed rates plus reimbursable expenses.
 
 **Key provisions:**
+
 - **Rate schedule**: Named individuals or role categories with blended rates; rate escalation mechanism (CPI or fixed % per year)
 - **Budget authorization**: Spending authorization thresholds; obligation to notify client when approaching cap
 - **Invoicing frequency**: Weekly, bi-weekly, or monthly; timesheet format and approval process
@@ -469,16 +491,19 @@ material and contested clauses; **Standard** tier for important but less contest
 - **True-up mechanism**: Quarterly or annual reconciliation if minimum commitment applies
 
 **Common YELLOW issues:**
+
 - No budget cap or authorization threshold: client has no cost control mechanism; can generate surprise invoices
 - Rate escalation clause without notice period: provider can unilaterally increase rates without giving client time to plan
 - No timesheet approval process: billing disputes arise when client questions hours after the fact
 
 **Provider-side redline** (if client demands fixed budget):
+
 > "Provider will notify Client in writing when cumulative fees reach 80% of the authorized budget.
 > Client may authorize additional budget in writing or direct Provider to cease work on the affected
 > SOW. Provider has no obligation to perform work beyond the authorized budget."
 
 **Client-side redline** (if no cap protection):
+
 > "Provider's aggregate fees under each SOW shall not exceed the authorized budget set out in such
 > SOW without prior written authorization from Client's designated representative."
 
@@ -488,6 +513,7 @@ material and contested clauses; **Standard** tier for important but less contest
 scope changes through the change control process.
 
 **Key provisions:**
+
 - **Scope definition**: Unambiguous deliverable specifications and acceptance criteria are essential;
   vague scope is the primary driver of fixed-fee disputes
 - **Change control**: Mandatory bilateral change order process (see below); price impact of changes
@@ -497,6 +523,7 @@ scope changes through the change control process.
   integration with third-party systems, travel, certain environments)
 
 **Common RED issues:**
+
 - No change control procedure on fixed-fee: every client request for changes becomes a scope dispute
 - Payment tied to "completion" without defining acceptance criteria: provider can never finalize
 - Unilateral client right to expand scope without price impact
@@ -506,6 +533,7 @@ scope changes through the change control process.
 **Risk allocation**: Shared. Provider is accountable for deliverable quality; client controls payment release.
 
 **Key provisions:**
+
 - **Milestone table**: Each milestone with: description, deliverables, due date, payment trigger, percentage
   of total fee
 - **Acceptance criteria**: Objective, measurable criteria for each milestone (not "client satisfaction")
@@ -515,6 +543,7 @@ scope changes through the change control process.
   milestone is deemed accepted and payment is triggered
 
 **Common disputes:**
+
 - Acceptance criteria that are subjective ("meets client's requirements") rather than objective
 - No deemed acceptance: client delays indefinitely; provider cannot invoice
 - No cure period: client rejects; provider has no right to remediate before being in default
@@ -524,6 +553,7 @@ scope changes through the change control process.
 **Risk allocation**: Provider earns retainer regardless of utilization; client bears underutilization risk.
 
 **Key provisions:**
+
 - **Scope of retainer services**: Defined availability, response time, and service categories covered
 - **Monthly hours / capacity**: Number of hours or days available; carryforward or use-it-or-lose-it
 - **Excluded services**: Work outside retainer scope billed at T&M or via separate SOW
@@ -534,6 +564,7 @@ scope changes through the change control process.
 **Risk allocation**: Varies by component. Requires careful SOW design to avoid ambiguity.
 
 **Key provisions:**
+
 - **Clear delineation**: Explicitly identify which services are fixed-fee and which are T&M in each SOW
 - **Separate tracking**: Separate budgets, invoices, and change control processes for each pricing component
 - **Order of precedence**: If conflict between pricing mechanisms, which governs?
@@ -548,6 +579,7 @@ This framework adapts to T&M and hybrid engagements as a voluntary cost-control 
 ### Trigger Events
 
 Change control is triggered by any of:
+
 - Expansion of deliverable scope beyond the SOW description
 - Change to acceptance criteria or success metrics
 - Change to project timeline or milestone dates affecting other deliverables
@@ -558,6 +590,7 @@ Change control is triggered by any of:
 ### Change Request Documentation
 
 The party requesting a change submits a **Change Request (CR)** including:
+
 - Description of the requested change
 - Reason and business justification
 - Proposed impact on: scope, timeline, acceptance criteria, fees
@@ -565,15 +598,16 @@ The party requesting a change submits a **Change Request (CR)** including:
 
 ### Approval Thresholds
 
-| Change Value | Approval Authority | Timing |
-|---|---|---|
-| Up to $[X] / [X]% of SOW value | Designated project managers | Within [5] business days |
-| $[X] to $[Y] | Senior management on both sides | Within [10] business days |
-| Above $[Y] | Executive / legal sign-off | Within [15] business days |
+| Change Value                   | Approval Authority              | Timing                    |
+| ------------------------------ | ------------------------------- | ------------------------- |
+| Up to $[X] / [X]% of SOW value | Designated project managers     | Within [5] business days  |
+| $[X] to $[Y]                   | Senior management on both sides | Within [10] business days |
+| Above $[Y]                     | Executive / legal sign-off      | Within [15] business days |
 
 ### Deemed Approval
 
 If client fails to approve, reject, or request further information within the approval period:
+
 - Provider sends written reminder
 - After [5] additional business days: change is **deemed approved** at provider's proposed terms
 
@@ -600,17 +634,18 @@ client ratification within [2] business days.
 
 ### Standard Market Positions
 
-| IP Category | Provider-Side Default | Client-Side Standard | Balanced Position |
-|-------------|----------------------|---------------------|-------------------|
-| Provider background IP (tools, methods, platform, pre-existing code) | Provider retains all; licenses to client for scope of engagement | Provider retains; perpetual license for client's use of deliverables | Provider retains; perpetual, irrevocable, royalty-free license for client's business use of deliverables |
-| Third-party IP incorporated into deliverables | Licensed through provider; provider to procure sub-licenses | Client's prior approval for any third-party IP; provider to obtain perpetual sub-license | Provider discloses third-party IP; client approves; provider procures sub-license at no additional cost |
-| Foreground IP (deliverables created specifically for client) | Provider retains; grants license to client | Client owns; provider retains license for similar future work | Negotiated: client owns if paid for in full; provider retains generic tools/methods |
-| IP developed jointly | Co-ownership (each can exploit independently) | Client owns with license-back to provider | Co-ownership with defined exploitation rights |
-| Feedback and improvements | Provider owns all improvements arising from client feedback | Client owns improvements arising from client's input | Provider owns platform improvements; client owns deliverable-specific improvements |
+| IP Category                                                          | Provider-Side Default                                            | Client-Side Standard                                                                     | Balanced Position                                                                                        |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Provider background IP (tools, methods, platform, pre-existing code) | Provider retains all; licenses to client for scope of engagement | Provider retains; perpetual license for client's use of deliverables                     | Provider retains; perpetual, irrevocable, royalty-free license for client's business use of deliverables |
+| Third-party IP incorporated into deliverables                        | Licensed through provider; provider to procure sub-licenses      | Client's prior approval for any third-party IP; provider to obtain perpetual sub-license | Provider discloses third-party IP; client approves; provider procures sub-license at no additional cost  |
+| Foreground IP (deliverables created specifically for client)         | Provider retains; grants license to client                       | Client owns; provider retains license for similar future work                            | Negotiated: client owns if paid for in full; provider retains generic tools/methods                      |
+| IP developed jointly                                                 | Co-ownership (each can exploit independently)                    | Client owns with license-back to provider                                                | Co-ownership with defined exploitation rights                                                            |
+| Feedback and improvements                                            | Provider owns all improvements arising from client feedback      | Client owns improvements arising from client's input                                     | Provider owns platform improvements; client owns deliverable-specific improvements                       |
 
 ### Jurisdiction-Specific Assignment Formalities
 
 **United States** [VERIFY]:
+
 - Work-for-hire: applies only to (a) works made by employees in scope of employment, OR (b) nine
   categories of specially commissioned works (including compilations, parts of a collective work,
   translations, instructional texts, tests, answer material for tests, atlases, supplementary works,
@@ -620,6 +655,7 @@ client ratification within [2] business days.
 - Timing: assignment of future copyright is enforceable in equity in the US [VERIFY]
 
 **United Kingdom** [VERIFY]:
+
 - No work-for-hire doctrine: contractors own their IP by default
 - Copyright assignment: must be in writing AND signed by or on behalf of the assignor
   (CDPA 1988, s.90(3))
@@ -633,6 +669,7 @@ client ratification within [2] business days.
   signed written assignment language
 
 **Australia** [VERIFY]:
+
 - No work-for-hire doctrine for contractors: Copyright Act 1968, s.35(6) provides that the
   person who engages a contractor owns copyright in certain specific categories (commissioned
   photographs, portraits, engravings) but NOT software or general works
@@ -702,12 +739,14 @@ IP ASSIGNMENT
 ### Acceptance Criteria Design
 
 **Objective criteria (preferred):**
+
 - Passes specified test cases with [X]% pass rate
 - Conforms to functional specifications in Exhibit A
 - Processes [X] transactions per second under [Y] load conditions
 - Complies with [specific regulatory standard]
 
 **Subjective criteria (avoid where possible):**
+
 - "Meets Client's satisfaction" — unenforceable without further definition
 - "Professional quality" — disputed; add "as measured against [benchmark]"
 - "Fit for purpose" — define the purpose against which fitness is measured
@@ -731,6 +770,7 @@ The clause aligns with or is better than the organizational standard position or
 services market standard. No negotiation needed.
 
 **All of the following must be true:**
+
 - Clause is present and unambiguous
 - Falls within playbook's acceptable range or professional services market standard
 - No material compliance risk
@@ -742,6 +782,7 @@ The clause deviates from market standard in a material way, but the risk is mana
 the clause is typically negotiable.
 
 **Any of the following triggers YELLOW:**
+
 - Liability cap below 12 months' fees (client-side) or above 24 months' fees (provider-side)
 - No change control procedure in a fixed-fee or milestone-based engagement
 - Unilateral IP assignment of background IP or provider tools (client-side)
@@ -759,6 +800,7 @@ The clause presents a material legal, financial, or compliance risk that cannot 
 without senior legal sign-off.
 
 **Any of the following triggers RED:**
+
 - No liability cap at all (provider-side)
 - Liability cap below 3 months' fees in a multi-year engagement (client-side)
 - Full assignment of background IP (provider-side)
@@ -788,6 +830,7 @@ liability, confidentiality, termination). SOWs / Order Forms define specific com
 terms for each engagement.
 
 **Order of precedence**: The MSA should contain an explicit order of precedence clause. Recommended:
+
 1. The applicable SOW or Order Form (for commercial terms specific to that engagement)
 2. This MSA (for all other terms)
 3. Any exhibits or schedules to the MSA
@@ -797,6 +840,7 @@ terms for each engagement.
 that engagement; the MSA prevails for all other terms."
 
 **SOW vs. Order Form distinction:**
+
 - **Statement of Work (SOW)**: Used for bespoke, deliverable-based, or project-based engagements.
   Should include: scope narrative, deliverables table, milestones, acceptance criteria, resource list,
   pricing, client dependencies, assumptions, exclusions.
@@ -808,22 +852,23 @@ that engagement; the MSA prevails for all other terms."
 
 **Critical drafting principles:**
 
-*Deliverables table (fixed-fee and milestone engagements):*
+_Deliverables table (fixed-fee and milestone engagements):_
 | Deliverable | Description | Format | Due Date | Acceptance Criteria | Milestone Fee |
 |-------------|-------------|--------|----------|--------------------:|:-------------:|
 | [Name] | [Specific description] | [PDF, code, report] | [Date] | [Objective criteria] | [$X] |
 
-*Client dependencies clause*: Explicitly list what the provider needs from the client (access,
+_Client dependencies clause_: Explicitly list what the provider needs from the client (access,
 data, approvals, review time). Failure to provide should trigger timeline relief and, if fixed-fee,
 a change order mechanism.
 
-*Exclusions clause*: Explicitly list what is NOT included in the scope. "The Services do not include:
+_Exclusions clause_: Explicitly list what is NOT included in the scope. "The Services do not include:
 (a) integration with third-party systems other than those listed in Exhibit A; (b) hardware
 procurement or installation; (c) services governed by a separate SOW."
 
 ### 3. Pricing and Payment
 
 **Invoice dispute procedure**: A missed element in many MSAs. Provider should include:
+
 - Client has [20] business days to dispute an invoice in writing with reasonable detail
 - Undisputed portion payable by due date; disputed portion held pending resolution
 - Dispute resolution process mirrors the main dispute resolution clause
@@ -839,35 +884,37 @@ base rate on B2B debts automatically [VERIFY]. US — specify interest rate (mar
 
 **Core structure:**
 
-*IP indemnification (provider obligation):*
+_IP indemnification (provider obligation):_
 Provider indemnifies client against third-party IP infringement claims arising from provider's
 deliverables, provided that: (a) client gives prompt written notice; (b) provider controls the
 defense; (c) client cooperates; (d) client does not make admissions or settlements without consent.
 
 **Carveouts (provider's indemnity does NOT cover):**
+
 - Modifications to deliverables made by client or a third party without provider's consent
 - Combination of deliverables with third-party products not specified by provider
 - Client's failure to implement updates or patches provided by provider
 - Infringement resulting from client-provided specifications or content
 
-*Data breach indemnification:* Where provider processes client personal data as a processor,
+_Data breach indemnification:_ Where provider processes client personal data as a processor,
 provider should indemnify client for losses arising from provider's breach of the DPA and applicable
 data protection law. Scope this to provider-caused breaches only.
 
-*Mutual indemnification for third-party bodily injury and property damage.*
+_Mutual indemnification for third-party bodily injury and property damage._
 
 ### 5. Insurance Schedule
 
 Market-standard insurance requirements vary by service type, jurisdiction, and deal size:
 
-| Coverage Type | Professional Services | IT/Tech Services | Managed Services | Notes |
-|---------------|----------------------|-----------------|-----------------|-------|
-| Professional Indemnity / E&O | $1M–$5M per claim | $2M–$10M per claim | $5M–$10M per claim | UK: "Professional Indemnity"; US/AU: "Errors & Omissions" |
-| Public / General Liability | $2M–$5M | $2M–$5M | $5M–$10M | US: "Commercial General Liability"; UK/AU: "Public Liability" |
-| Cyber / Data Protection | N/A – YELLOW | $1M–$5M | $2M–$10M | Required when processing client personal data at scale |
-| Workers' Compensation / Employer's Liability | Statutory | Statutory | Statutory | US: varies by state; UK: £5M minimum (Employers' Liability (Compulsory Insurance) Act 1969); AU: statutory |
+| Coverage Type                                | Professional Services | IT/Tech Services   | Managed Services   | Notes                                                                                                      |
+| -------------------------------------------- | --------------------- | ------------------ | ------------------ | ---------------------------------------------------------------------------------------------------------- |
+| Professional Indemnity / E&O                 | $1M–$5M per claim     | $2M–$10M per claim | $5M–$10M per claim | UK: "Professional Indemnity"; US/AU: "Errors & Omissions"                                                  |
+| Public / General Liability                   | $2M–$5M               | $2M–$5M            | $5M–$10M           | US: "Commercial General Liability"; UK/AU: "Public Liability"                                              |
+| Cyber / Data Protection                      | N/A – YELLOW          | $1M–$5M            | $2M–$10M           | Required when processing client personal data at scale                                                     |
+| Workers' Compensation / Employer's Liability | Statutory             | Statutory          | Statutory          | US: varies by state; UK: £5M minimum (Employers' Liability (Compulsory Insurance) Act 1969); AU: statutory |
 
 **Key insurance provisions:**
+
 - Provider must maintain coverage throughout the MSA term and for [3] years post-termination
   (tail coverage or "run-off" coverage for professional indemnity)
 - Provider must deliver certificates of insurance before commencing work and on renewal
@@ -880,12 +927,14 @@ vary by state [VERIFY].
 ### 6. Termination and Transition
 
 **Termination for cause:**
+
 - Material breach that is: (i) not capable of remedy; OR (ii) capable of remedy and not remedied
   within [30] business days of written notice
 - Insolvency, administration, or cessation of business (no cure period)
 - Regulatory sanction preventing performance
 
 **Termination for convenience:**
+
 - Client's right: termination on [30–90] days' written notice. Provider paid for all work completed
   to date; no termination fee unless minimum commitment applies.
 - Provider's right: [90] days' notice; typically more constrained than client's right
@@ -895,6 +944,7 @@ vary by state [VERIFY].
   Client's written consent."
 
 **Transition and wind-down assistance:**
+
 - Duration: minimum [3] months for short engagements; [6–12] months for multi-year outsourcing
 - Scope: knowledge transfer, documentation, assistance to successor provider, data handover
 - Pricing: at fixed rates (provider-side: then-current rates; client-side: rates frozen at exit)
@@ -926,13 +976,13 @@ for future reviews. If review changes understanding of a standard position, note
 
 Run these 5 gates silently before delivering any output:
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every legal claim cites a specific statute, regulation, or established principle | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
-| **Format** | All citations follow a consistent, recognizable format for the jurisdiction | Fix format |
-| **Currency** | Every cited provision checked for amendments (UCTA, CDPA, Copyright Act, Privacy Act, ACL unfair terms 2023) | Flag "[CHECK CURRENCY — may have been amended]" |
-| **Domain** | Analysis stays within the MSA's governing law — no US work-for-hire assumptions in UK analysis | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty explicitly stated — IP assignment formalities and unfair terms rules vary by jurisdiction | Add confidence qualifier |
+| Gate           | Rule                                                                                                         | Fail Action                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
+| **Source**     | Every legal claim cites a specific statute, regulation, or established principle                             | Add citation or mark "[UNVERIFIED — counsel to confirm]" |
+| **Format**     | All citations follow a consistent, recognizable format for the jurisdiction                                  | Fix format                                               |
+| **Currency**   | Every cited provision checked for amendments (UCTA, CDPA, Copyright Act, Privacy Act, ACL unfair terms 2023) | Flag "[CHECK CURRENCY — may have been amended]"          |
+| **Domain**     | Analysis stays within the MSA's governing law — no US work-for-hire assumptions in UK analysis               | Remove or flag jurisdictional bleed                      |
+| **Confidence** | Uncertainty explicitly stated — IP assignment formalities and unfair terms rules vary by jurisdiction        | Add confidence qualifier                                 |
 
 ### Self-Interrogation for RED Items
 
@@ -954,13 +1004,13 @@ PASS` or `self_interrogation: REVISED`.
 
 ### Confidence Scoring
 
-| Level | Range | Meaning | Action |
-|-------|-------|---------|--------|
-| **Definite** | 0.95–1.0 | Settled law, clear statute, no ambiguity | State with confidence |
-| **High** | 0.80–0.94 | Strong authority, minor interpretation questions | State with brief caveat |
-| **Probable** | 0.60–0.79 | Good arguments but reasonable minds could differ | State with reasoning and contra-indicators |
-| **Possible** | 0.40–0.59 | Genuinely uncertain (e.g., work-for-hire scope, unfair terms borderline) | Flag for professional review with both sides |
-| **Unlikely** | 0.0–0.39 | Weak basis, speculative | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
+| Level        | Range     | Meaning                                                                  | Action                                                |
+| ------------ | --------- | ------------------------------------------------------------------------ | ----------------------------------------------------- |
+| **Definite** | 0.95–1.0  | Settled law, clear statute, no ambiguity                                 | State with confidence                                 |
+| **High**     | 0.80–0.94 | Strong authority, minor interpretation questions                         | State with brief caveat                               |
+| **Probable** | 0.60–0.79 | Good arguments but reasonable minds could differ                         | State with reasoning and contra-indicators            |
+| **Possible** | 0.40–0.59 | Genuinely uncertain (e.g., work-for-hire scope, unfair terms borderline) | Flag for professional review with both sides          |
+| **Unlikely** | 0.0–0.39  | Weak basis, speculative                                                  | Do not assert; flag "[UNCERTAIN — counsel to advise]" |
 
 ---
 
@@ -1145,7 +1195,7 @@ What NOT to do when drafting or reviewing MSAs. These are MSA-specific — not g
     IR35 compliance clause and status determination obligation. [VERIFY]
 
 22. **Penalty clause risk on milestone payment structures**: Delay penalties and "liquidated damages"
-    for late delivery must be proportionate to the actual loss suffered (UK: post-*Cavendish Square*
+    for late delivery must be proportionate to the actual loss suffered (UK: post-_Cavendish Square_
     penalty doctrine; AU: similar common law rule). An excessive delay penalty is unenforceable.
     Draft milestone delay provisions as genuine pre-estimates of loss. [VERIFY]
 
@@ -1190,6 +1240,7 @@ Before delivering any output, apply these quality gates:
 ### With legalcode-mcp Connected (Preferred)
 
 Use legalcode-mcp at Step 4 to gather jurisdiction-specific legal authority. Search for:
+
 - 17 U.S.C. § 101 work-for-hire categories and their application to software (US)
 - CDPA 1988 s.90(3) copyright assignment formalities and s.91(1) future works (UK)
 - Copyright Act 1968 s.196(3) assignment requirements and s.35(6) commissioned works (AU)
@@ -1202,7 +1253,7 @@ Use legalcode-mcp at Step 4 to gather jurisdiction-specific legal authority. Sea
 - UK GDPR / Data Protection Act 2018 processor obligations
 - Australian Privacy Act APPs and NDB scheme notification obligations
 - IR35 / ITEPA 2003 off-payroll working rules (UK)
-- *Cavendish Square Holding BV v Makdessi* [2015] UKSC 67 — penalty doctrine (UK) [VERIFY]
+- _Cavendish Square Holding BV v Makdessi_ [2015] UKSC 67 — penalty doctrine (UK) [VERIFY]
 
 Save to `/tmp/legalcode-msa-authority.md`. Mark all legalcode-mcp-sourced citations as VERIFIED
 in the Glass Box.
@@ -1261,15 +1312,19 @@ Structure every analysis output as follows:
 **Legal basis**: "[Statute, regulation, or market practice — or [VERIFY]]" [Confidence: X.XX]
 
 **Provider-side redline** (if current language favors client):
+
 > [Specific alternative language]
 
 **Client-side redline** (if current language favors provider):
+
 > [Specific alternative language]
 
 **Fallback position** (if primary redline is rejected):
+
 > [Compromise language]
 
 **Risk Scoring**:
+
 - Business impact: [HIGH / MEDIUM / LOW]
 - Enforceability risk: [HIGH / MEDIUM / LOW]
 - Negotiation difficulty: [HIGH / MEDIUM / LOW]
@@ -1303,12 +1358,12 @@ Structure every analysis output as follows:
 
 ## Compliance Flags
 
-| Obligation | Clause Status | Gap | Classification |
-|-----------|--------------|-----|----------------|
-| GDPR / UK GDPR Art. 28 DPA | [Present / Absent] | [Description] | [GREEN / COMPLIANCE-REQUIRED] |
-| AU Privacy Act DPA | [Present / Absent / N/A] | [Description] | [GREEN / COMPLIANCE-REQUIRED / N/A] |
-| HIPAA BAA | [Present / Absent / N/A] | [Description] | [GREEN / COMPLIANCE-REQUIRED / N/A] |
-| UK IR35 compliance clause | [Present / Absent / N/A] | [Description] | [GREEN / YELLOW / N/A] |
+| Obligation                 | Clause Status            | Gap           | Classification                      |
+| -------------------------- | ------------------------ | ------------- | ----------------------------------- |
+| GDPR / UK GDPR Art. 28 DPA | [Present / Absent]       | [Description] | [GREEN / COMPLIANCE-REQUIRED]       |
+| AU Privacy Act DPA         | [Present / Absent / N/A] | [Description] | [GREEN / COMPLIANCE-REQUIRED / N/A] |
+| HIPAA BAA                  | [Present / Absent / N/A] | [Description] | [GREEN / COMPLIANCE-REQUIRED / N/A] |
+| UK IR35 compliance clause  | [Present / Absent / N/A] | [Description] | [GREEN / YELLOW / N/A]              |
 
 ---
 
@@ -1352,23 +1407,24 @@ Structure every analysis output as follows:
 ---
 
 ### 1. Services Description
+
 [Narrative description of the services to be performed]
 
 ### 2. Deliverables
 
-| # | Deliverable | Description | Format | Due Date | Acceptance Criteria |
-|---|-------------|-------------|--------|----------|---------------------|
-| 1 | [Name] | [Specific description] | [PDF / Code / Report] | [Date] | [Objective criteria] |
-| 2 | | | | | |
+| #   | Deliverable | Description            | Format                | Due Date | Acceptance Criteria  |
+| --- | ----------- | ---------------------- | --------------------- | -------- | -------------------- |
+| 1   | [Name]      | [Specific description] | [PDF / Code / Report] | [Date]   | [Objective criteria] |
+| 2   |             |                        |                       |          |                      |
 
 ### 3. Milestones and Payment Schedule (Milestone-Based)
 
-| # | Milestone | Description | Due Date | Payment Trigger | Fee (%) |
-|---|-----------|-------------|----------|-----------------|---------|
-| 1 | [Name] | [Description] | [Date] | Acceptance of Deliverable(s) [list] | [XX%] |
-| 2 | | | | | |
+| #   | Milestone | Description   | Due Date | Payment Trigger                     | Fee (%) |
+| --- | --------- | ------------- | -------- | ----------------------------------- | ------- |
+| 1   | [Name]    | [Description] | [Date]   | Acceptance of Deliverable(s) [list] | [XX%]   |
+| 2   |           |               |          |                                     |         |
 
-*(Total = 100% of SOW value: $[AMOUNT])*
+_(Total = 100% of SOW value: $[AMOUNT])_
 
 ### 4. Pricing (T&M / Fixed-Fee)
 
@@ -1383,18 +1439,21 @@ Structure every analysis output as follows:
 Total SOW Fee: $[AMOUNT], payable per Milestone Schedule above.
 
 ### 5. Expenses
+
 Pre-approved expense categories: [Travel, accommodation, subsistence at actuals / up to $X per day].
 All expenses require receipts and submitted within 30 days of incurrence.
 
 ### 6. Personnel
 
-| Name / Role | Status |
-|-------------|--------|
+| Name / Role     | Status                                               |
+| --------------- | ---------------------------------------------------- |
 | [Name] — [Role] | Key Personnel — replacement requires Client approval |
-| [Name] — [Role] | Standard Personnel |
+| [Name] — [Role] | Standard Personnel                                   |
 
 ### 7. Client Dependencies
+
 Provider's obligations are conditional on Client providing:
+
 - [ ] [Specific access / system / data / approvals]
 - [ ] [Named client personnel for review and approval]
 - [ ] [Review periods as specified in acceptance procedure]
@@ -1403,34 +1462,40 @@ Failure to provide client dependencies within [5] business days of Provider's wr
 entitles Provider to a corresponding extension of timeline and, on fixed-fee SOWs, a change order.
 
 ### 8. Assumptions and Exclusions
+
 **Assumptions** (incorporated into fee estimate):
+
 - [E.g., "Client systems are accessible 99% during business hours"]
 - [E.g., "Integration limited to systems identified in Exhibit A"]
 
 **Exclusions** (not included in Services):
+
 - [E.g., "Hardware procurement or installation"]
 - [E.g., "Third-party software licensing costs"]
 - [E.g., "Services governed by a separate SOW"]
 
 ### 9. Acceptance Procedure
+
 The acceptance procedure set out in Section [X] of the MSA applies. Acceptance criteria for each
 Deliverable are set out in the table above. Review period: [10] business days. Cure period: [10]
 business days following rejection notice.
 
 ### 10. Change Control
+
 All changes to this SOW are subject to the change control procedure set out in Section [X] of the MSA.
 
 ### 11. Governing Terms
+
 This SOW is governed by the MSA. In case of conflict between this SOW and the MSA: this SOW prevails
 for commercial terms specific to this engagement; the MSA prevails for all other terms.
 
 **Signed for and on behalf of CLIENT:**
-Name: _____________________________ Title: ________________________
-Signature: _________________________ Date: _________________________
+Name: **\*\***\*\***\*\***\_**\*\***\*\***\*\*** Title: \***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***
+Signature: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\*** Date: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***
 
 **Signed for and on behalf of SERVICE PROVIDER:**
-Name: _____________________________ Title: ________________________
-Signature: _________________________ Date: _________________________
+Name: **\*\***\*\***\*\***\_**\*\***\*\***\*\*** Title: \***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***
+Signature: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\*** Date: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***
 
 ---
 
@@ -1449,17 +1514,17 @@ Signature: _________________________ Date: _________________________
 
 ### 1. Services
 
-| Service | Description | Reference | Volume / Scope |
-|---------|-------------|-----------|---------------|
+| Service          | Description         | Reference            | Volume / Scope          |
+| ---------------- | ------------------- | -------------------- | ----------------------- |
 | [Service Line A] | [Brief description] | [Service Schedule A] | [Units / hours / users] |
 | [Service Line B] | [Brief description] | [Service Schedule B] | [Units / hours / users] |
 
 ### 2. Fees and Billing
 
-| Service | Unit Price | Volume | Monthly Fee | Annual Fee |
-|---------|-----------|--------|-------------|-----------|
-| [Service A] | $[X] / unit | [N] | $[Y] | $[Z] |
-| **Total** | | | **$[Y]** | **$[Z]** |
+| Service     | Unit Price  | Volume | Monthly Fee | Annual Fee |
+| ----------- | ----------- | ------ | ----------- | ---------- |
+| [Service A] | $[X] / unit | [N]    | $[Y]        | $[Z]       |
+| **Total**   |             |        | **$[Y]**    | **$[Z]**   |
 
 **Billing period**: [Monthly / Quarterly / Annual] in advance
 **Payment terms**: Net [30] days from invoice date
@@ -1473,6 +1538,7 @@ written notice of non-renewal before the end of the then-current term.
 ### 4. Service Level Agreement
 
 [Reference applicable SLA schedule, or state key metrics:]
+
 - Availability: [99.5%] measured monthly
 - Response time for Priority 1 incidents: [2] hours
 - Resolution time for Priority 1 incidents: [8] hours
@@ -1481,23 +1547,24 @@ Service credit regime: [reference Service Schedule or state credits]
 
 ### 5. Key Contacts
 
-| Role | Client | Service Provider |
-|------|--------|-----------------|
-| Contract Manager | [Name / email] | [Name / email] |
-| Technical Lead | [Name / email] | [Name / email] |
-| Billing Contact | [Name / email] | [Name / email] |
+| Role             | Client         | Service Provider |
+| ---------------- | -------------- | ---------------- |
+| Contract Manager | [Name / email] | [Name / email]   |
+| Technical Lead   | [Name / email] | [Name / email]   |
+| Billing Contact  | [Name / email] | [Name / email]   |
 
 ### 6. Governing Terms
+
 This Order Form is governed by the MSA. In case of conflict: this Order Form prevails for commercial
 terms specific to this Order Form; the MSA prevails for all other terms.
 
 **Signed for and on behalf of CLIENT:**
-Name: _____________________________ Title: ________________________
-Signature: _________________________ Date: _________________________
+Name: **\*\***\*\***\*\***\_**\*\***\*\***\*\*** Title: \***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***
+Signature: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\*** Date: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***
 
 **Signed for and on behalf of SERVICE PROVIDER:**
-Name: _____________________________ Title: ________________________
-Signature: _________________________ Date: _________________________
+Name: **\*\***\*\***\*\***\_**\*\***\*\***\*\*** Title: \***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***
+Signature: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\*** Date: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***
 
 ---
 
@@ -1534,21 +1601,22 @@ where personal data flows across borders.
 
 For every MSA, identify ALL affected stakeholders:
 
-| Stakeholder | Role | Affected Clauses | Impact | Action Required |
-|-------------|------|-----------------|--------|-----------------|
-| Client | Primary party | All | Primary | Sign / Negotiate |
-| Service Provider | Primary party | All | Primary | Sign / Negotiate |
-| Client data subjects | Third party | Data protection, IP | Indirect | DPA required |
-| Subcontractors | Third party | Subcontracting, IP, confidentiality | Indirect | Flow-down obligations |
-| Key personnel | Internal (provider) | Personnel, IP (moral rights), non-compete | Indirect | Employment contract alignment |
-| Successor provider | Third party | Transition, IP, data handover | Indirect | Cooperation obligation |
-| Regulator | Regulator | Data protection, compliance | Compliance | Breach notification readiness |
+| Stakeholder          | Role                | Affected Clauses                          | Impact     | Action Required               |
+| -------------------- | ------------------- | ----------------------------------------- | ---------- | ----------------------------- |
+| Client               | Primary party       | All                                       | Primary    | Sign / Negotiate              |
+| Service Provider     | Primary party       | All                                       | Primary    | Sign / Negotiate              |
+| Client data subjects | Third party         | Data protection, IP                       | Indirect   | DPA required                  |
+| Subcontractors       | Third party         | Subcontracting, IP, confidentiality       | Indirect   | Flow-down obligations         |
+| Key personnel        | Internal (provider) | Personnel, IP (moral rights), non-compete | Indirect   | Employment contract alignment |
+| Successor provider   | Third party         | Transition, IP, data handover             | Indirect   | Cooperation obligation        |
+| Regulator            | Regulator           | Data protection, compliance               | Compliance | Breach notification readiness |
 
 ---
 
 ## Provenance
 
 Created by Legalcode (2026-03-01). Original synthesis incorporating:
+
 - Structural patterns from `legalcode-contract-review` and `legalcode-saas-agreement-drafter`
   (Legalcode gold standards)
 - 2-agent research pipeline:

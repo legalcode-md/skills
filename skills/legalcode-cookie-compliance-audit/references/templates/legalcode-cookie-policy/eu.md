@@ -37,7 +37,7 @@ This policy is read alongside our companion {{Privacy Policy URL}} and, where ap
 
 A cookie is a small text file that a website asks your browser to store and return on later visits. The legal regime, however, reaches well beyond cookies.
 
-The **EDPB Guidelines 2/2023 on the technical scope of Article 5(3) of the ePrivacy Directive** clarify that Article 5(3) applies to *any* operation that stores information on, or accesses information stored in, a user's terminal equipment — regardless of underlying technology `[VERIFY EDPB Guidelines 2/2023 specifics]`. This includes:
+The **EDPB Guidelines 2/2023 on the technical scope of Article 5(3) of the ePrivacy Directive** clarify that Article 5(3) applies to _any_ operation that stores information on, or accesses information stored in, a user's terminal equipment — regardless of underlying technology `[VERIFY EDPB Guidelines 2/2023 specifics]`. This includes:
 
 - HTTP cookies (session and persistent)
 - HTML5 local storage, session storage, and IndexedDB entries
@@ -59,7 +59,7 @@ We use cookies and similar technologies for two broad reasons: to make the servi
 
 European law splits this into two regimes:
 
-- **Strictly necessary — exempt from consent.** Article 5(3) ePrivacy carves out two narrow exemptions: the *carrier exception* (sole purpose of carrying out a communication transmission) and the *service-requested-by-the-user exception* (strictly necessary for delivering a service the user has explicitly requested). Authentication tokens, load-balancer routing, shopping-cart state, and CSRF protections fall here.
+- **Strictly necessary — exempt from consent.** Article 5(3) ePrivacy carves out two narrow exemptions: the _carrier exception_ (sole purpose of carrying out a communication transmission) and the _service-requested-by-the-user exception_ (strictly necessary for delivering a service the user has explicitly requested). Authentication tokens, load-balancer routing, shopping-cart state, and CSRF protections fall here.
 - **All others — consent required.** Anything else — most analytics, A/B testing, personalisation, advertising, social-media plug-ins, re-marketing — requires prior Article 5(3) consent meeting the Article 6(1)(a) / Article 7 GDPR quality standard described in §1.
 
 We do not rely on **legitimate interests (Art. 6(1)(f) GDPR)** as a substitute for Article 5(3) consent.
@@ -74,7 +74,7 @@ We group the technologies we deploy into five categories. For each, we set out t
 
 **Examples:** session authentication, CSRF tokens, load-balancer affinity, cookie-consent state, shopping-cart contents, fraud-prevention tokens.
 
-**Art. 5(3) treatment:** exempt under the *service-requested-by-the-user* or *carrier* exception. We still disclose them under **GDPR Articles 13/14**.
+**Art. 5(3) treatment:** exempt under the _service-requested-by-the-user_ or _carrier_ exception. We still disclose them under **GDPR Articles 13/14**.
 
 **Posture:** load on first visit; cannot meaningfully be disabled without breaking the service.
 
@@ -106,7 +106,7 @@ We group the technologies we deploy into five categories. For each, we set out t
 
 **Examples:** embedded share buttons, "log in with" buttons, embedded video / post players that set identifiers on load.
 
-**Art. 5(3) treatment:** consent required. Social-media plug-ins frequently raise **GDPR Article 26** joint-controllership concerns. The CJEU held in **Wirtschaftsakademie Schleswig-Holstein (C-210/16)** and **Fashion ID (C-40/17)** that an operator embedding a social-media component can be a *joint controller* with the platform for the collection and transmission triggered by the embed.
+**Art. 5(3) treatment:** consent required. Social-media plug-ins frequently raise **GDPR Article 26** joint-controllership concerns. The CJEU held in **Wirtschaftsakademie Schleswig-Holstein (C-210/16)** and **Fashion ID (C-40/17)** that an operator embedding a social-media component can be a _joint controller_ with the platform for the collection and transmission triggered by the embed.
 
 **Posture:** off by default. Where you opt in, we disclose the joint-controller relationship and link to the platform's joint-controller arrangement.
 
@@ -136,7 +136,7 @@ Our companion **Data Processing Addendum** ({{DPA URL}}) lists each Art. 28 subp
 
 ### 6.2 Joint controller (GDPR Art. 26)
 
-We and the third party **jointly determine the purposes and means of processing**. Article 26 requires us to make the *essence* of the joint-controllership arrangement available to you.
+We and the third party **jointly determine the purposes and means of processing**. Article 26 requires us to make the _essence_ of the joint-controllership arrangement available to you.
 
 Typical examples: the **Meta Pixel** (joint controllership for the collection-and-transmission step under **Fashion ID, C-40/17**), Facebook Page-Insights integrations (**Wirtschaftsakademie Schleswig-Holstein, C-210/16**), certain LinkedIn Insight Tag deployments.
 
@@ -199,7 +199,7 @@ If you block or delete cookies, we will treat your next visit as fresh and re-pr
 
 In the EEA, neither signal **substitutes for** ePrivacy consent:
 
-- **Art. 5(3) requires affirmative opt-in.** A signal that says "I have not opted in" cannot, by itself, satisfy the *prior, specific, informed, unambiguous* consent standard.
+- **Art. 5(3) requires affirmative opt-in.** A signal that says "I have not opted in" cannot, by itself, satisfy the _prior, specific, informed, unambiguous_ consent standard.
 - **GPC.** We treat GPC as a strong "do not collect" preference. If your browser sends GPC, we refrain from setting non-essential cookies and firing non-essential pixels even before you engage the banner. The banner remains available if you choose to opt in.
 - **DNT.** Informational only. We log the header but do not change behaviour based on DNT alone. Where both are present, GPC controls.
 
@@ -258,15 +258,15 @@ The detailed transfer-mechanism map per subprocessor is in our companion privacy
 
 We do not direct `{{Website Domain}}` or `{{Service Name}}` at children, and we do not target advertising at children.
 
-**Article 8 GDPR** sets the *age of digital consent* for information-society services offered directly to a child. The default age is **16**; Member States may lower it to **13**. An illustrative map `[VERIFY MS-specific Art. 8 ages]`:
+**Article 8 GDPR** sets the _age of digital consent_ for information-society services offered directly to a child. The default age is **16**; Member States may lower it to **13**. An illustrative map `[VERIFY MS-specific Art. 8 ages]`:
 
-| Member State | Age of digital consent |
-| --- | --- |
-| Germany, Ireland, Netherlands, Luxembourg, Slovakia | 16 |
-| Austria, Hungary, Czechia, Lithuania, Cyprus, Bulgaria, Croatia | 16 (default) |
-| France, Slovenia, Greece | 15 |
-| Italy, Spain, Finland, Estonia, Malta | 14 |
-| Belgium, Denmark, Portugal, Sweden, Latvia, Poland | 13 |
+| Member State                                                    | Age of digital consent |
+| --------------------------------------------------------------- | ---------------------- |
+| Germany, Ireland, Netherlands, Luxembourg, Slovakia             | 16                     |
+| Austria, Hungary, Czechia, Lithuania, Cyprus, Bulgaria, Croatia | 16 (default)           |
+| France, Slovenia, Greece                                        | 15                     |
+| Italy, Spain, Finland, Estonia, Malta                           | 14                     |
+| Belgium, Denmark, Portugal, Sweden, Latvia, Poland              | 13                     |
 
 Below the applicable age, processing for an information-society service requires consent given or authorised by the holder of parental responsibility. We do not set non-essential cookies on a visitor we know or reasonably suspect to be below the applicable age without verified parental consent.
 
@@ -313,8 +313,8 @@ The German implementation of Article 5(3) of the ePrivacy Directive is **§ 25**
 
 **§ 25 (2) TTDSG / TDDDG** sets out two narrow exceptions tracking Article 5(3) of the ePrivacy Directive:
 
-1. The sole purpose is to carry out the transmission of a communication over an electronic communications network (the *carrier* exception), or
-2. The storage or access is **strictly necessary** so that the provider of a digital service expressly requested by the user can deliver that service (the *strictly-necessary* exception).
+1. The sole purpose is to carry out the transmission of a communication over an electronic communications network (the _carrier_ exception), or
+2. The storage or access is **strictly necessary** so that the provider of a digital service expressly requested by the user can deliver that service (the _strictly-necessary_ exception).
 
 Anything outside those two exceptions requires consent. § 25 (1) sentence 2 expressly requires that consent meet the **GDPR Article 4(11) and Article 7** standard — there is no German-specific lower bar.
 
@@ -326,11 +326,11 @@ The **Datenschutzkonferenz (DSK)** — the standing conference of the German fed
 - **No dark patterns**, no nudging, no asymmetric friction.
 - **No pre-ticked checkboxes** for non-essential categories.
 - **No cookie walls** without compelling justification, and equivalent alternatives must be offered.
-- **Vendor-supplied consent management platforms** (Cookiebot, OneTrust, Usercentrics, and similar) are *not inherently compliant* — the controller remains responsible for verifying that the deployed configuration meets § 25 TTDSG / TDDDG and the GDPR. Buying a CMP does not buy compliance.
+- **Vendor-supplied consent management platforms** (Cookiebot, OneTrust, Usercentrics, and similar) are _not inherently compliant_ — the controller remains responsible for verifying that the deployed configuration meets § 25 TTDSG / TDDDG and the GDPR. Buying a CMP does not buy compliance.
 
 ### 15.4 Competent supervisory authority — BfDI vs. Land LDA
 
-The **Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)** is the federal supervisory authority. Each Land has its own data-protection authority (commonly the *Landesbeauftragte(r) für Datenschutz*, "LfD" or "LDA"). Competence is allocated as follows `[VERIFY current BfDI / LDA allocation]`:
+The **Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)** is the federal supervisory authority. Each Land has its own data-protection authority (commonly the _Landesbeauftragte(r) für Datenschutz_, "LfD" or "LDA"). Competence is allocated as follows `[VERIFY current BfDI / LDA allocation]`:
 
 - **B2C cookies on consumer-facing digital services (Telemedien / digitale Dienste)** — generally a Land LDA, determined by the establishment of the controller in Germany.
 - **Federal authorities and telecoms-heavy services (TKG)** — generally the BfDI.
@@ -345,11 +345,11 @@ The Court of Justice's ruling in **Planet49 (C-673/17)**, applied by the **Bunde
 
 ### 15.6 Transparency obligations: § 1 TMG / TDDDG, plus Art. 13/14 GDPR
 
-The transparency obligations of the former **§ 1 TMG (Telemediengesetz)** carry over, in substance, to the **TDDDG**. They apply *on top of* the **GDPR Articles 13 and 14** transparency duties, not in place of them. In practice, this means:
+The transparency obligations of the former **§ 1 TMG (Telemediengesetz)** carry over, in substance, to the **TDDDG**. They apply _on top of_ the **GDPR Articles 13 and 14** transparency duties, not in place of them. In practice, this means:
 
 - A separate, accessible **Impressum** under § 5 DDG / TMG.
 - A privacy notice meeting **Art. 13/14 GDPR** for processing of personal data.
-- A cookie disclosure meeting **§ 25 (1) TTDSG / TDDDG** ("clear and comprehensive information") *before* consent is requested.
+- A cookie disclosure meeting **§ 25 (1) TTDSG / TDDDG** ("clear and comprehensive information") _before_ consent is requested.
 
 ### 15.7 The TKG / TDDDG dual regime
 
@@ -366,7 +366,7 @@ To the standard EU banner described in §10, we add for German users:
 
 - The first-layer copy is available in **German** and labelled as such.
 - The **Impressum** and **Datenschutzerklärung** links are accessible from the banner, not buried.
-- The "Manage preferences" option is presented at the same prominence as "Accept all" and "Reject all" — DSK guidance treats unequal prominence between *Accept / Reject / Manage* as a compliance failure, not just unequal prominence between *Accept* and *Reject*.
+- The "Manage preferences" option is presented at the same prominence as "Accept all" and "Reject all" — DSK guidance treats unequal prominence between _Accept / Reject / Manage_ as a compliance failure, not just unequal prominence between _Accept_ and _Reject_.
 
 ### 15.9 German-language contact
 
@@ -378,16 +378,16 @@ For German-language privacy enquiries, please contact {{Company Email Privacy}}.
 
 This annex lists every cookie and similar technology deployed on `{{Website Domain}}` and `{{Service Name}}`. It is the canonical source; if the body of this policy and Annex A diverge, Annex A controls.
 
-| # | Name / identifier | Provider | First / third party | Category (§4) | Purpose | Duration | Domain | Art. 5(3) treatment | Relationship (§6) | Transfer destination (§11) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | `{{Cookie Name 1}}` | `{{Provider 1}}` | First | Strictly necessary | Session authentication | Session | `{{Website Domain}}` | Exempt — service requested by user | n/a (controller) | EEA |
-| 2 | `{{Cookie Name 2}}` | `{{Provider 2}}` | First | Strictly necessary | CSRF protection | Session | `{{Website Domain}}` | Exempt — service requested by user | n/a (controller) | EEA |
-| 3 | `{{Cookie Name 3}}` | `{{Provider 3}}` | First | Strictly necessary | Cookie consent state | 12 months | `{{Website Domain}}` | Exempt — service requested by user | n/a (controller) | EEA |
-| 4 | `{{Cookie Name 4}}` | `{{Provider 4}}` | First | Functional | Language / locale preference | 12 months | `{{Website Domain}}` | Consent required | Processor (Art. 28) | EEA |
-| 5 | `{{Cookie Name 5}}` | `{{Provider 5}}` | First | Analytics | Aggregate page-view measurement | 13 months | `{{Website Domain}}` | Consent required | Processor (Art. 28) | EEA |
-| 6 | `{{Cookie Name 6}}` | `{{Provider 6}}` | Third | Advertising | Conversion tracking | 90 days | `{{Provider 6 Domain}}` | Consent required | Joint controller (Art. 26) | US (SCCs + DPF where applicable) |
-| 7 | `{{Cookie Name 7}}` | `{{Provider 7}}` | Third | Social media | Embedded share button | 24 months | `{{Provider 7 Domain}}` | Consent required | Joint controller (Art. 26) | US (SCCs + DPF where applicable) |
-| 8 | `{{Cookie Name 8}}` | `{{Provider 8}}` | Third | Analytics | Crash and error telemetry | 90 days | `{{Provider 8 Domain}}` | Consent required | Processor (Art. 28) | EEA |
+| #   | Name / identifier   | Provider         | First / third party | Category (§4)      | Purpose                         | Duration  | Domain                  | Art. 5(3) treatment                | Relationship (§6)          | Transfer destination (§11)       |
+| --- | ------------------- | ---------------- | ------------------- | ------------------ | ------------------------------- | --------- | ----------------------- | ---------------------------------- | -------------------------- | -------------------------------- |
+| 1   | `{{Cookie Name 1}}` | `{{Provider 1}}` | First               | Strictly necessary | Session authentication          | Session   | `{{Website Domain}}`    | Exempt — service requested by user | n/a (controller)           | EEA                              |
+| 2   | `{{Cookie Name 2}}` | `{{Provider 2}}` | First               | Strictly necessary | CSRF protection                 | Session   | `{{Website Domain}}`    | Exempt — service requested by user | n/a (controller)           | EEA                              |
+| 3   | `{{Cookie Name 3}}` | `{{Provider 3}}` | First               | Strictly necessary | Cookie consent state            | 12 months | `{{Website Domain}}`    | Exempt — service requested by user | n/a (controller)           | EEA                              |
+| 4   | `{{Cookie Name 4}}` | `{{Provider 4}}` | First               | Functional         | Language / locale preference    | 12 months | `{{Website Domain}}`    | Consent required                   | Processor (Art. 28)        | EEA                              |
+| 5   | `{{Cookie Name 5}}` | `{{Provider 5}}` | First               | Analytics          | Aggregate page-view measurement | 13 months | `{{Website Domain}}`    | Consent required                   | Processor (Art. 28)        | EEA                              |
+| 6   | `{{Cookie Name 6}}` | `{{Provider 6}}` | Third               | Advertising        | Conversion tracking             | 90 days   | `{{Provider 6 Domain}}` | Consent required                   | Joint controller (Art. 26) | US (SCCs + DPF where applicable) |
+| 7   | `{{Cookie Name 7}}` | `{{Provider 7}}` | Third               | Social media       | Embedded share button           | 24 months | `{{Provider 7 Domain}}` | Consent required                   | Joint controller (Art. 26) | US (SCCs + DPF where applicable) |
+| 8   | `{{Cookie Name 8}}` | `{{Provider 8}}` | Third               | Analytics          | Crash and error telemetry       | 90 days   | `{{Provider 8 Domain}}` | Consent required                   | Processor (Art. 28)        | EEA                              |
 
 **Annex A last updated:** {{Annex A Last Updated}}
 
@@ -459,25 +459,25 @@ This annex sets out the UX requirements our consent banner must meet. We restate
 
 The following Mustache merge fields appear in this policy and must be populated before publication.
 
-| Field | Description | Example |
-| --- | --- | --- |
-| `{{Effective Date}}` | The effective date of this policy | 2026-04-28 |
-| `{{Company Legal Name}}` | Full legal name of the controller | Example Holdings Ltd. |
-| `{{Company Trading Name}}` | Trading / brand name | Example |
-| `{{Member State Of Establishment}}` | EU/EEA Member State of main establishment | Ireland |
-| `{{Supervisory Authority}}` | Lead supervisory authority under Art. 56 GDPR | Data Protection Commission (Ireland) |
-| `{{Website Domain}}` | The domain this policy governs | example.com |
-| `{{Service Name}}` | The user-facing name of the service | Example |
-| `{{Privacy Policy URL}}` | URL of the companion privacy policy | https://example.com/privacy |
-| `{{DPA URL}}` | URL of the companion Data Processing Addendum | https://example.com/dpa |
-| `{{Cookie Settings URL}}` | URL of the cookie settings centre | https://example.com/cookies |
-| `{{Consent Management Platform}}` | Vendor name of the deployed CMP | (vendor name) |
-| `{{Company Email Privacy}}` | Privacy enquiries inbox | privacy@example.com |
-| `{{Company Email DPO}}` | DPO inbox (if appointed) | dpo@example.com |
-| `{{Company Postal Address}}` | Postal address of the controller | (street, city, postcode, country) |
-| `{{EU Representative}}` | Article 27 representative (if controller is outside EEA) | (name and address) |
-| `{{Cookie Name N}}` / `{{Provider N}}` / `{{Provider N Domain}}` | Annex A row fields | (per row) |
-| `{{Annex A Last Updated}}` | Last update date of Annex A | 2026-04-28 |
+| Field                                                            | Description                                              | Example                              |
+| ---------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------ |
+| `{{Effective Date}}`                                             | The effective date of this policy                        | 2026-04-28                           |
+| `{{Company Legal Name}}`                                         | Full legal name of the controller                        | Example Holdings Ltd.                |
+| `{{Company Trading Name}}`                                       | Trading / brand name                                     | Example                              |
+| `{{Member State Of Establishment}}`                              | EU/EEA Member State of main establishment                | Ireland                              |
+| `{{Supervisory Authority}}`                                      | Lead supervisory authority under Art. 56 GDPR            | Data Protection Commission (Ireland) |
+| `{{Website Domain}}`                                             | The domain this policy governs                           | example.com                          |
+| `{{Service Name}}`                                               | The user-facing name of the service                      | Example                              |
+| `{{Privacy Policy URL}}`                                         | URL of the companion privacy policy                      | https://example.com/privacy          |
+| `{{DPA URL}}`                                                    | URL of the companion Data Processing Addendum            | https://example.com/dpa              |
+| `{{Cookie Settings URL}}`                                        | URL of the cookie settings centre                        | https://example.com/cookies          |
+| `{{Consent Management Platform}}`                                | Vendor name of the deployed CMP                          | (vendor name)                        |
+| `{{Company Email Privacy}}`                                      | Privacy enquiries inbox                                  | privacy@example.com                  |
+| `{{Company Email DPO}}`                                          | DPO inbox (if appointed)                                 | dpo@example.com                      |
+| `{{Company Postal Address}}`                                     | Postal address of the controller                         | (street, city, postcode, country)    |
+| `{{EU Representative}}`                                          | Article 27 representative (if controller is outside EEA) | (name and address)                   |
+| `{{Cookie Name N}}` / `{{Provider N}}` / `{{Provider N Domain}}` | Annex A row fields                                       | (per row)                            |
+| `{{Annex A Last Updated}}`                                       | Last update date of Annex A                              | 2026-04-28                           |
 
 ---
 

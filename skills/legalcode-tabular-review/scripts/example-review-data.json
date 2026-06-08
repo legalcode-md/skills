@@ -248,8 +248,18 @@
   "summary": {},
   "conflicts": [],
   "filters": {
-    "sourceGroups": ["Supplier folder A", "Supplier folder B", "Security annexes", "Legacy scans"],
-    "documentTypes": ["MSA", "Order Form", "Security Addendum", "Services Agreement"],
+    "sourceGroups": [
+      "Supplier folder A",
+      "Supplier folder B",
+      "Security annexes",
+      "Legacy scans"
+    ],
+    "documentTypes": [
+      "MSA",
+      "Order Form",
+      "Security Addendum",
+      "Services Agreement"
+    ],
     "statuses": ["verified", "needs_review", "conflict", "not_found", "failed"]
   }
 }

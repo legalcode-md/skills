@@ -18,13 +18,13 @@ fixed-fee, key personnel, IP assignment) — distinct from
 
 ## Documents
 
-| File | Document Type | Use when |
-|------|--------------|----------|
-| `core.md` | Jurisdiction-neutral baseline (dual-perspective: client / provider / market-standard) | You operate in a jurisdiction not covered below, or you want the master before specialising. |
-| `us.md` | US — DE/NY default + work-for-hire + IRS independent-contractor + state insurance defaults + FAA arbitration | Either party is US-based; covers federal IP assignment formalities, classification (DOL §541, ABC test states), and state-by-state late-payment rules. |
-| `eu.md` | EU/EEA — Late Payment Directive + GDPR Art. 28 + worker-classification + DE-AGB + EU IP assignment formalities | Either party is EU/EEA-based. Includes German overlay (Schriftform / § 31 UrhG buy-out / GeschGehG) and EU-wide moral-rights handling. |
-| `uk.md` | UK — UK CRA B2B + IR35 / off-payroll working + LDEDC late-payment + Equality Act + DUAA 2025 | Either party is UK-based. Includes IR35 status determination, JCT-style payment provisions, and UK GDPR processor terms. |
-| `is.md` | Iceland — Lög nr. 38/2001 statutory interest + kennitala + EEA-imported AI Act / Data Act + bilingual signature | Either party is Iceland-based. Bilingual labels in signature block; EEA-import election for digital obligations. |
+| File      | Document Type                                                                                                   | Use when                                                                                                                                               |
+| --------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `core.md` | Jurisdiction-neutral baseline (dual-perspective: client / provider / market-standard)                           | You operate in a jurisdiction not covered below, or you want the master before specialising.                                                           |
+| `us.md`   | US — DE/NY default + work-for-hire + IRS independent-contractor + state insurance defaults + FAA arbitration    | Either party is US-based; covers federal IP assignment formalities, classification (DOL §541, ABC test states), and state-by-state late-payment rules. |
+| `eu.md`   | EU/EEA — Late Payment Directive + GDPR Art. 28 + worker-classification + DE-AGB + EU IP assignment formalities  | Either party is EU/EEA-based. Includes German overlay (Schriftform / § 31 UrhG buy-out / GeschGehG) and EU-wide moral-rights handling.                 |
+| `uk.md`   | UK — UK CRA B2B + IR35 / off-payroll working + LDEDC late-payment + Equality Act + DUAA 2025                    | Either party is UK-based. Includes IR35 status determination, JCT-style payment provisions, and UK GDPR processor terms.                               |
+| `is.md`   | Iceland — Lög nr. 38/2001 statutory interest + kennitala + EEA-imported AI Act / Data Act + bilingual signature | Either party is Iceland-based. Bilingual labels in signature block; EEA-import election for digital obligations.                                       |
 
 ## How to use
 

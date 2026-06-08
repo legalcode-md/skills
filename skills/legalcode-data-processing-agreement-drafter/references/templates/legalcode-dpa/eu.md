@@ -68,7 +68,7 @@ In short: this section identifies whose data is processed and what kinds of data
 
 4.2 **Categories of Personal Data.** As specified in **Annex 1**, which may include, without limitation, identification data, contact data, account credentials, device and log data, content data, transaction data, support correspondence, and any other categories listed therein.
 
-4.3 **Special Categories of Personal Data.** *OPTIONAL — only if applicable.* The Parties acknowledge that the processing under this DPA `{{may | will not}}` involve Special Categories of Personal Data within the meaning of Article 9 GDPR or data relating to criminal convictions and offences within the meaning of Article 10 GDPR. Where applicable, the additional safeguards in Section 8.4 apply.
+4.3 **Special Categories of Personal Data.** _OPTIONAL — only if applicable._ The Parties acknowledge that the processing under this DPA `{{may | will not}}` involve Special Categories of Personal Data within the meaning of Article 9 GDPR or data relating to criminal convictions and offences within the meaning of Article 10 GDPR. Where applicable, the additional safeguards in Section 8.4 apply.
 
 ---
 
@@ -96,7 +96,7 @@ In short: Processor follows Controller's written instructions and pushes back if
 
 6.3 **Notification of unlawful instruction.** Pursuant to Article 28(3) ¶2 GDPR, if Processor reasonably considers that an instruction infringes the GDPR or other Applicable Data Protection Law, Processor will inform Controller without undue delay and may suspend execution of that instruction until Controller confirms or amends it in writing. Processor's reasonable concerns will be set out in writing with sufficient specificity to allow Controller to assess them.
 
-6.4 **Out-of-scope requests.** *OPTIONAL — only if Processor offers professional-services consulting that goes beyond the Services.* Any work outside the documented Services scope must be commissioned through a separate written instruction or change order and is outside this DPA's scope until so commissioned.
+6.4 **Out-of-scope requests.** _OPTIONAL — only if Processor offers professional-services consulting that goes beyond the Services._ Any work outside the documented Services scope must be commissioned through a separate written instruction or change order and is outside this DPA's scope until so commissioned.
 
 ---
 
@@ -130,9 +130,9 @@ In short: Processor implements appropriate technical and organisational measures
 
 8.3 **Risk-proportionate controls.** Processor will calibrate measures to the risks presented by the processing, including risks of accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, Personal Data.
 
-8.4 **Special categories.** *OPTIONAL — only if Annex 1 indicates Article 9 data.* Where the Services involve Special Categories of Personal Data, Processor will apply the additional safeguards in **Annex 2** Section "Special Categories", including stricter access controls, segregated key management, and enhanced audit logging.
+8.4 **Special categories.** _OPTIONAL — only if Annex 1 indicates Article 9 data._ Where the Services involve Special Categories of Personal Data, Processor will apply the additional safeguards in **Annex 2** Section "Special Categories", including stricter access controls, segregated key management, and enhanced audit logging.
 
-8.5 **Compliance with codes and certifications.** *OPTIONAL — only if Processor is certified.* Processor's adherence to `{{Certifications, e.g., ISO/IEC 27001:2022, ISO/IEC 27701, SOC 2 Type II, BSI C5}}` is one means of demonstrating compliance with this Section but does not limit Processor's underlying obligations.
+8.5 **Compliance with codes and certifications.** _OPTIONAL — only if Processor is certified._ Processor's adherence to `{{Certifications, e.g., ISO/IEC 27001:2022, ISO/IEC 27701, SOC 2 Type II, BSI C5}}` is one means of demonstrating compliance with this Section but does not limit Processor's underlying obligations.
 
 ---
 
@@ -146,7 +146,7 @@ In short: Processor may use sub-processors only with Controller's authorisation,
 
 9.3 **Right to object.** Within the Notification Window, Controller may object on reasonable data-protection grounds. The Parties will discuss the objection in good faith. If the Parties cannot agree on a resolution, Controller may terminate the affected portion of the Services without penalty by written notice within thirty (30) days after the end of the Notification Window; Processor will refund pre-paid fees for the terminated, undelivered portion.
 
-9.4 **Specific authorisation alternative.** *OPTIONAL — selected via merge field `{{Sub-processor Authorisation Mode}}` = "specific".* Where Controller selects specific authorisation, Processor will not engage any new Sub-processor without Controller's prior written consent for that Sub-processor. Annex 3 will list pre-approved Sub-processors as of the DPA Effective Date.
+9.4 **Specific authorisation alternative.** _OPTIONAL — selected via merge field `{{Sub-processor Authorisation Mode}}` = "specific"._ Where Controller selects specific authorisation, Processor will not engage any new Sub-processor without Controller's prior written consent for that Sub-processor. Annex 3 will list pre-approved Sub-processors as of the DPA Effective Date.
 
 9.5 **Flow-down.** Processor will impose on each Sub-processor, by way of a written contract, data-protection obligations that are no less protective than those imposed on Processor under this DPA, in particular providing sufficient guarantees to implement appropriate technical and organisational measures so that the processing meets the requirements of the GDPR. Where the Sub-processor fails to fulfil its data protection obligations, Processor remains fully liable to Controller for the performance of that Sub-processor's obligations, in accordance with Article 28(4) GDPR.
 
@@ -244,7 +244,7 @@ In short: this section governs how Personal Data may leave the EEA, the UK, or S
 
 14.4 **Transfer Impact Assessment (Schrems II).** Before relying on the SCCs for a Restricted Transfer, the data exporter will conduct a Transfer Impact Assessment in accordance with EDPB Recommendations 01/2020 on supplementary measures, version 2.0, taking into account the specific circumstances of the transfer, the laws and practices of the destination country, and any supplementary technical, organisational, and contractual measures. Processor will provide reasonable assistance with the TIA. A placeholder TIA workflow is described in **Annex 4** Section 4.9; Controllers using the broader Legalcode workflow should consult the `legalcode-cross-border-transfer-assessment` skill. `[VERIFY]`
 
-14.5 **Binding Corporate Rules (Article 47).** *OPTIONAL — only if applicable.* Where a Party has approved BCRs covering the transfer, the BCRs may serve as the appropriate safeguard in lieu of the SCCs, provided they are in force and applicable to the relevant entities and processing.
+14.5 **Binding Corporate Rules (Article 47).** _OPTIONAL — only if applicable._ Where a Party has approved BCRs covering the transfer, the BCRs may serve as the appropriate safeguard in lieu of the SCCs, provided they are in force and applicable to the relevant entities and processing.
 
 14.6 **Article 49 derogations.** Reliance on Article 49 derogations is a last resort, on a case-by-case basis, and only where no other Chapter V transfer mechanism applies. Processor will not rely on Article 49 derogations without Controller's prior written consent.
 
@@ -278,7 +278,7 @@ In short: when the engagement ends, Controller chooses return or deletion, and P
 
 16.1 **Controller's choice.** On termination or expiry of the Principal Agreement, or otherwise on Controller's written instruction, Processor will, at Controller's choice, return or delete all Personal Data processed on Controller's behalf. The default action, in the absence of a Controller instruction, is `{{Default Termination Action, "deletion"}}`.
 
-16.2 **Return mechanism.** *OPTIONAL — only if Controller selects return.* Processor will return Personal Data via `{{Return Mechanism, default secure download in industry-standard formats}}` within `{{Return Window, default thirty (30)}}` days of the request.
+16.2 **Return mechanism.** _OPTIONAL — only if Controller selects return._ Processor will return Personal Data via `{{Return Mechanism, default secure download in industry-standard formats}}` within `{{Return Window, default thirty (30)}}` days of the request.
 
 16.3 **Deletion certification.** Processor will delete existing copies of Personal Data and provide Controller with a written certification of deletion within `{{Deletion Window, default sixty (60)}}` days of the request, except for copies retained as required by Section 16.4.
 
@@ -296,7 +296,7 @@ In short: liability follows the Principal Agreement and the SCCs; statutory and 
 
 17.2 **Inter-party allocation.** Where one Party pays compensation to a Data Subject under Article 82(4) GDPR for damage caused by processing for which both Parties are responsible, the paying Party may claim back from the other Party the part of the compensation corresponding to that other Party's share of responsibility under Article 82(5) GDPR.
 
-17.3 **Indemnity.** *OPTIONAL — only if the Principal Agreement does not already address indemnification for data-protection claims.* Each Party will indemnify the other against direct losses incurred as a result of the indemnifying Party's material breach of this DPA, subject to the caps in Section 17.1 and to the indemnification mechanics in the Principal Agreement (including notice, control of defence, and cooperation).
+17.3 **Indemnity.** _OPTIONAL — only if the Principal Agreement does not already address indemnification for data-protection claims._ Each Party will indemnify the other against direct losses incurred as a result of the indemnifying Party's material breach of this DPA, subject to the caps in Section 17.1 and to the indemnification mechanics in the Principal Agreement (including notice, control of defence, and cooperation).
 
 17.4 **SCCs liability.** Where the SCCs apply to a Restricted Transfer, the liability provisions in the relevant SCCs Module prevail over this Section to the extent of any conflict, in accordance with the order of precedence in Section 19.
 
@@ -314,7 +314,7 @@ In short: this DPA follows the Principal Agreement's governing law and forum, ex
 
 18.4 **Supervisory Authority.** The competent Supervisory Authority is, by default, `{{Lead Supervisory Authority}}` (e.g., the lead authority under Article 56 GDPR's one-stop-shop for Controller's main establishment). For Switzerland, the FDPIC. For Germany, see the Germany Appendix in Section 20 for BfDI vs. Land-LDA navigation.
 
-18.5 **Informal escalation.** *OPTIONAL.* Before commencing litigation under this DPA (other than for injunctive relief), the Parties will escalate disputes to senior representatives for good-faith resolution within `{{Escalation Window, default thirty (30)}}` days.
+18.5 **Informal escalation.** _OPTIONAL._ Before commencing litigation under this DPA (other than for injunctive relief), the Parties will escalate disputes to senior representatives for good-faith resolution within `{{Escalation Window, default thirty (30)}}` days.
 
 ---
 
@@ -354,11 +354,11 @@ In short: where Controller or Processor is in Germany, or where the BDSG or TTDS
 
 20.2 **Section 22 BDSG — special-category processing.** Where the processing involves special categories of personal data within the meaning of Article 9 GDPR, the Parties will apply the additional appropriate and specific measures set out in §22(2) BDSG, including, as relevant, technical and organisational measures to ensure compliance with Article 5 GDPR, awareness-raising measures, restrictions on access, pseudonymisation, encryption, logging of access, and procedures for the regular review of necessity. Specific measures are reflected in **Annex 2** Section "Special Categories".
 
-20.3 **Section 26 BDSG / new §§ for employee data.** *OPTIONAL — only if employee data is in scope.* Where the processing concerns employee Personal Data, Processor acknowledges the BDSG provisions on employee data protection (currently §26 BDSG, subject to legislative reform `[VERIFY]`), including the principles of necessity and proportionality, the prohibition on covert monitoring outside narrowly defined cases, and the obligations on consent in employment contexts. Controller is responsible for the lawful basis (typically §26 BDSG or a collective agreement) and for any required works council co-determination under §87(1)(6) Betriebsverfassungsgesetz ("BetrVG"). Processor will provide the technical capability to implement Controller's instructions arising from co-determination outcomes.
+20.3 **Section 26 BDSG / new §§ for employee data.** _OPTIONAL — only if employee data is in scope._ Where the processing concerns employee Personal Data, Processor acknowledges the BDSG provisions on employee data protection (currently §26 BDSG, subject to legislative reform `[VERIFY]`), including the principles of necessity and proportionality, the prohibition on covert monitoring outside narrowly defined cases, and the obligations on consent in employment contexts. Controller is responsible for the lawful basis (typically §26 BDSG or a collective agreement) and for any required works council co-determination under §87(1)(6) Betriebsverfassungsgesetz ("BetrVG"). Processor will provide the technical capability to implement Controller's instructions arising from co-determination outcomes.
 
 20.4 **Section 38 BDSG — DPO threshold.** Controller and Processor each acknowledge the BDSG threshold for the mandatory designation of a Data Protection Officer (currently, organisations with at least twenty (20) persons constantly engaged in the automated processing of personal data, in addition to Article 37 GDPR triggers). `[VERIFY]` Each Party that meets the threshold will designate a DPO and provide the DPO's contact details to the other Party.
 
-20.5 **Section 25 TTDSG — terminal-equipment storage and access.** *OPTIONAL — only if the Services involve client-side storage or access (cookies, local storage, SDKs, pixels) on Data Subjects' devices.* Controller is responsible for obtaining consent or relying on the strict-necessity exemption under §25 TTDSG before any storage or access on a Data Subject's terminal equipment by means of the Services. Processor will provide the technical capability to support Controller's consent regime, including consent-mode signalling and (where the Services include such tooling) consent management.
+20.5 **Section 25 TTDSG — terminal-equipment storage and access.** _OPTIONAL — only if the Services involve client-side storage or access (cookies, local storage, SDKs, pixels) on Data Subjects' devices._ Controller is responsible for obtaining consent or relying on the strict-necessity exemption under §25 TTDSG before any storage or access on a Data Subject's terminal equipment by means of the Services. Processor will provide the technical capability to support Controller's consent regime, including consent-mode signalling and (where the Services include such tooling) consent management.
 
 20.6 **Works council interplay (BetrVG §87(1)(6)).** Where the Services include any technical means suitable for monitoring employee performance or behaviour, Controller is responsible for fulfilling co-determination obligations under §87(1)(6) BetrVG before deployment. Processor will reasonably support Controller in providing required information to the works council, subject to confidentiality.
 
@@ -372,7 +372,7 @@ For private-sector engagements under this DPA, the relevant Land-LDA is `{{Land-
 
 20.8 **Bookkeeping and tax retention.** Where the Services involve documents or data that are subject to German bookkeeping retention rules, the retention period applicable under §147 Abgabenordnung ("AO") and §257 Handelsgesetzbuch ("HGB") (currently between six (6) and ten (10) years depending on the document type) `[VERIFY]` overrides the deletion obligations under Section 16 of this DPA for the affected data, and Processor will continue to apply this DPA's protections during the statutory retention.
 
-20.9 **Language.** *OPTIONAL.* The Parties may execute a German-language version of this DPA. In the event of conflict between language versions, `{{Controlling Language, default English}}` controls.
+20.9 **Language.** _OPTIONAL._ The Parties may execute a German-language version of this DPA. In the event of conflict between language versions, `{{Controlling Language, default English}}` controls.
 
 ---
 
@@ -410,21 +410,21 @@ In short: where the revised FADP applies, this Appendix adapts the DPA. Within i
 
 In short: a single fillable summary describing the who, what, why, how long, and how often.
 
-| Field | Value |
-|---|---|
-| **Subject matter of processing** | `{{Subject Matter}}` (e.g., provision of the `{{Services Name}}` Services to Controller) |
-| **Duration of processing** | From `{{DPA Effective Date}}` until termination of the Principal Agreement plus any retention tail under Section 16 |
-| **Nature of processing** | `{{Nature of Processing}}` (e.g., hosting, transmission, storage, retrieval, structuring, indexing, analytics, support, deletion) |
-| **Purpose of processing** | `{{Purpose of Processing}}` (e.g., enabling Controller's use of the Services as scoped in the Principal Agreement) |
-| **Categories of Data Subjects** | `{{Data Subject Categories}}` (e.g., Controller's employees, customers, prospects, end users, suppliers, contractors) |
-| **Categories of Personal Data** | `{{Personal Data Categories}}` (e.g., identifiers, contact data, account credentials, device/log data, content data, transaction data, support correspondence) |
-| **Special categories (Art. 9 GDPR)** | `{{Special Categories Indicator}}` (yes / no; if yes, which categories and applicable safeguards under Annex 2 "Special Categories") |
-| **Criminal-conviction data (Art. 10 GDPR)** | `{{Criminal Data Indicator}}` (yes / no; if yes, lawful basis and safeguards) |
-| **Frequency of transfer** | `{{Transfer Frequency}}` (continuous / periodic / one-off) |
-| **Retention period** | `{{Retention Period}}` (e.g., for the term of the Principal Agreement plus the periods set out in Section 16 and any statutory retention) |
-| **Locations of processing** | `{{Processing Locations}}` (regions, data centres, countries) |
-| **Processor's data protection contact** | `{{Processor DPO Contact}}` |
-| **Controller's data protection contact** | `{{Controller DPO Contact}}` |
+| Field                                       | Value                                                                                                                                                          |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Subject matter of processing**            | `{{Subject Matter}}` (e.g., provision of the `{{Services Name}}` Services to Controller)                                                                       |
+| **Duration of processing**                  | From `{{DPA Effective Date}}` until termination of the Principal Agreement plus any retention tail under Section 16                                            |
+| **Nature of processing**                    | `{{Nature of Processing}}` (e.g., hosting, transmission, storage, retrieval, structuring, indexing, analytics, support, deletion)                              |
+| **Purpose of processing**                   | `{{Purpose of Processing}}` (e.g., enabling Controller's use of the Services as scoped in the Principal Agreement)                                             |
+| **Categories of Data Subjects**             | `{{Data Subject Categories}}` (e.g., Controller's employees, customers, prospects, end users, suppliers, contractors)                                          |
+| **Categories of Personal Data**             | `{{Personal Data Categories}}` (e.g., identifiers, contact data, account credentials, device/log data, content data, transaction data, support correspondence) |
+| **Special categories (Art. 9 GDPR)**        | `{{Special Categories Indicator}}` (yes / no; if yes, which categories and applicable safeguards under Annex 2 "Special Categories")                           |
+| **Criminal-conviction data (Art. 10 GDPR)** | `{{Criminal Data Indicator}}` (yes / no; if yes, lawful basis and safeguards)                                                                                  |
+| **Frequency of transfer**                   | `{{Transfer Frequency}}` (continuous / periodic / one-off)                                                                                                     |
+| **Retention period**                        | `{{Retention Period}}` (e.g., for the term of the Principal Agreement plus the periods set out in Section 16 and any statutory retention)                      |
+| **Locations of processing**                 | `{{Processing Locations}}` (regions, data centres, countries)                                                                                                  |
+| **Processor's data protection contact**     | `{{Processor DPO Contact}}`                                                                                                                                    |
+| **Controller's data protection contact**    | `{{Controller DPO Contact}}`                                                                                                                                   |
 
 ---
 
@@ -478,7 +478,7 @@ Describe the audit-logging programme (e.g., what is logged, retention period, ta
 
 ### Special categories
 
-*OPTIONAL — only if Annex 1 indicates Article 9 data.* Describe additional safeguards, including stricter access controls (e.g., dedicated access-control lists, hardware-bound keys), segregated key management, application-level encryption, enhanced monitoring, restricted geographic processing, and additional review cycles. `{{Special-Category Safeguards}}`
+_OPTIONAL — only if Annex 1 indicates Article 9 data._ Describe additional safeguards, including stricter access controls (e.g., dedicated access-control lists, hardware-bound keys), segregated key management, application-level encryption, enhanced monitoring, restricted geographic processing, and additional review cycles. `{{Special-Category Safeguards}}`
 
 ---
 
@@ -486,12 +486,12 @@ Describe the audit-logging programme (e.g., what is logged, retention period, ta
 
 In short: the current list of Authorised Sub-processors, with the information needed for Controller to assess them.
 
-| Sub-processor | Address | Processing activity | Location of processing | Transfer mechanism | Certifications |
-|---|---|---|---|---|---|
-| `{{Sub-processor 1 Name}}` | `{{Address}}` | `{{Activity}}` | `{{Country/Region}}` | `{{Mechanism}}` | `{{Certifications}}` |
-| `{{Sub-processor 2 Name}}` | `{{Address}}` | `{{Activity}}` | `{{Country/Region}}` | `{{Mechanism}}` | `{{Certifications}}` |
+| Sub-processor              | Address       | Processing activity | Location of processing | Transfer mechanism | Certifications       |
+| -------------------------- | ------------- | ------------------- | ---------------------- | ------------------ | -------------------- |
+| `{{Sub-processor 1 Name}}` | `{{Address}}` | `{{Activity}}`      | `{{Country/Region}}`   | `{{Mechanism}}`    | `{{Certifications}}` |
+| `{{Sub-processor 2 Name}}` | `{{Address}}` | `{{Activity}}`      | `{{Country/Region}}`   | `{{Mechanism}}`    | `{{Certifications}}` |
 
-*Illustrative `[OPTIONAL]` row — replace before signing:*
+_Illustrative `[OPTIONAL]` row — replace before signing:_
 
 | Stripe Payments Europe, Ltd. (with Stripe, Inc. as US affiliate) | 1 Grand Canal Street Lower, Dublin, Ireland (and 354 Oyster Point Blvd, South San Francisco, CA, USA) | Payment processing for Services billing | Ireland (EEA) and United States | EU-US Data Privacy Framework certification of Stripe, Inc.; SCCs Module 3 fallback for non-DPF flows `[VERIFY]` | PCI DSS Level 1; SOC 1; SOC 2 Type II; ISO/IEC 27001 |
 
@@ -509,17 +509,17 @@ In short: this Annex selects and configures the European Commission's Standard C
 
 **Step 2 — Determine each party's role for the flow.**
 
-| Exporter role | Importer role | Module | Typical fact pattern |
-|---|---|---|---|
-| Controller | Controller | **Module 1** | Two controllers exchanging data (e.g., HR data shared between an EEA parent and a non-EEA affiliate as independent controllers). |
-| Controller | Processor | **Module 2** | Most common: EEA Controller engages a non-EEA Processor (e.g., SaaS in the US). |
-| Processor | Sub-processor | **Module 3** | EEA Processor engages a non-EEA Sub-processor; flow-down from the Controller-Processor relationship. |
-| Processor | Controller | **Module 4** | Reverse flow: a non-EEA Controller receives data back from an EEA Processor (e.g., processor is an EEA-based service of a non-EEA controller, returning processed output). |
+| Exporter role | Importer role | Module       | Typical fact pattern                                                                                                                                                       |
+| ------------- | ------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Controller    | Controller    | **Module 1** | Two controllers exchanging data (e.g., HR data shared between an EEA parent and a non-EEA affiliate as independent controllers).                                           |
+| Controller    | Processor     | **Module 2** | Most common: EEA Controller engages a non-EEA Processor (e.g., SaaS in the US).                                                                                            |
+| Processor     | Sub-processor | **Module 3** | EEA Processor engages a non-EEA Sub-processor; flow-down from the Controller-Processor relationship.                                                                       |
+| Processor     | Controller    | **Module 4** | Reverse flow: a non-EEA Controller receives data back from an EEA Processor (e.g., processor is an EEA-based service of a non-EEA controller, returning processed output). |
 
 **Step 3 — Select the Module.** Mark the chosen Module(s) below; multiple Modules may apply where there are multiple flows.
 
 - [ ] Module 1 (C2C)
-- [x] Module 2 (C2P) — *default for Controller-to-Processor configurations; remove the [x] if not applicable*
+- [x] Module 2 (C2P) — _default for Controller-to-Processor configurations; remove the [x] if not applicable_
 - [ ] Module 3 (P2P)
 - [ ] Module 4 (P2C)
 
@@ -608,13 +608,13 @@ Selected Option for this DPA: `{{Module 2 Clause 9 Option, default Option 2}}`.
 
 To avoid duplication, the SCCs Annexes are mapped to this DPA's Annexes as follows:
 
-| SCCs Annex | Content | Source in this DPA |
-|---|---|---|
-| **Annex I.A — List of parties** | Names, addresses, contact points, Article 27 representatives (where applicable), DPO contacts, signatures | Section 4.7.1 below (completed at execution) |
-| **Annex I.B — Description of the transfer** | Categories of data subjects, categories of personal data, sensitive data, frequency of transfer, nature and purpose, period of retention, recipient (in case of transfer to a third party), competent supervisory authority | **Annex 1** of this DPA (incorporated by reference) |
-| **Annex I.C — Competent supervisory authority** | Identifies the lead authority per Clause 13 | Section 18.4 of this DPA |
-| **Annex II — TOMs** | Description of the TOMs implemented by the data importer | **Annex 2** of this DPA (incorporated by reference) |
-| **Annex III — List of sub-processors** | (Only for Modules 2 and 3) | **Annex 3** of this DPA (incorporated by reference) |
+| SCCs Annex                                      | Content                                                                                                                                                                                                                     | Source in this DPA                                  |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| **Annex I.A — List of parties**                 | Names, addresses, contact points, Article 27 representatives (where applicable), DPO contacts, signatures                                                                                                                   | Section 4.7.1 below (completed at execution)        |
+| **Annex I.B — Description of the transfer**     | Categories of data subjects, categories of personal data, sensitive data, frequency of transfer, nature and purpose, period of retention, recipient (in case of transfer to a third party), competent supervisory authority | **Annex 1** of this DPA (incorporated by reference) |
+| **Annex I.C — Competent supervisory authority** | Identifies the lead authority per Clause 13                                                                                                                                                                                 | Section 18.4 of this DPA                            |
+| **Annex II — TOMs**                             | Description of the TOMs implemented by the data importer                                                                                                                                                                    | **Annex 2** of this DPA (incorporated by reference) |
+| **Annex III — List of sub-processors**          | (Only for Modules 2 and 3)                                                                                                                                                                                                  | **Annex 3** of this DPA (incorporated by reference) |
 
 #### 4.7.1 Annex I.A — List of parties (template)
 

@@ -1,7 +1,18 @@
 ---
 title: Terms of Service — EU/EEA (DSA + CRD + Sale of Digital Content + DE-AGB)
 jurisdictions: [eu, eea, de]
-statutes: [DSA, DMA, CRD-2011/83, SGD-2019/771, DCD-2019/770, MD-2019/2161, Geo-blocking, BGB, TMG]
+statutes:
+  [
+    DSA,
+    DMA,
+    CRD-2011/83,
+    SGD-2019/771,
+    DCD-2019/770,
+    MD-2019/2161,
+    Geo-blocking,
+    BGB,
+    TMG,
+  ]
 audience: [B2C, B2B]
 license: MIT
 last_updated: 2026-04-28
@@ -752,15 +763,15 @@ The right of withdrawal does not apply where:
 >
 > I/We hereby give notice that I/We withdraw from my/our contract for the supply of the following service: {{Service Description}}.
 >
-> Ordered on / received on: __________
+> Ordered on / received on: \***\*\_\_\*\***
 >
-> Name of consumer(s): __________
+> Name of consumer(s): \***\*\_\_\*\***
 >
-> Address of consumer(s): __________
+> Address of consumer(s): \***\*\_\_\*\***
 >
-> Signature of consumer(s) (only if this form is notified on paper): __________
+> Signature of consumer(s) (only if this form is notified on paper): \***\*\_\_\*\***
 >
-> Date: __________
+> Date: \***\*\_\_\*\***
 
 ### C.5 Statutory guarantees (DCD/SGD)
 
@@ -774,42 +785,42 @@ Any commercial guarantees offered alongside the statutory guarantees are describ
 
 ## Merge fields used
 
-| Field | Purpose |
-| --- | --- |
-| `{{Provider Legal Name}}` | Legal name of the trader |
-| `{{Registered Office Address}}` | Registered office for service of notices and imprint |
-| `{{Commercial Register and Number}}` | Court of registration and registration number |
-| `{{VAT ID}}` | EU VAT identification number |
-| `{{Support Email}}` | Primary support contact and ODR email |
-| `{{Postal Address}}` | Postal address for legal notices |
-| `{{Effective Date}}` | Effective date of this version |
-| `{{Version}}` | Version identifier |
-| `{{Contract Language}}` | Controlling language of the contract |
-| `{{Security Contact Email}}` | Security incident reporting address |
-| `{{Notice URL}}` | URL of the DSA notice form (Art. 16) |
-| `{{Notice Email}}` | Email address for DSA notices |
-| `{{Internal Complaint URL}}` | URL of the internal complaint-handling system (Art. 18) |
-| `{{Out-of-Court Body}}` | DSA Art. 21 out-of-court dispute settlement body information |
-| `{{ODR Platform URL}}` | EU ODR platform URL (default https://ec.europa.eu/consumers/odr/) |
-| `{{ADR Body Name and URL}}` | Certified national ADR entity |
-| `{{Consumer Protection Statute}}` | Member-State consumer-protection law |
-| `{{Open Source Notices URL}}` | URL listing open-source components and licences |
-| `{{Grace Period Days}}` | Grace period before suspension for non-payment |
-| `{{Notice Period Days}}` | Notice period for termination for convenience of indefinite-term contracts |
-| `{{Liability Cap Amount}}` | Alternative B2B liability cap |
-| `{{Governing Law Country}}` | Governing-law country |
-| `{{Jurisdiction Country and City}}` | Default forum |
-| `{{German Venue}}` | German venue for B2B disputes (e.g., the Provider's seat) |
-| `{{Authorised Representatives}}` | Geschäftsführer / authorised representatives |
-| `{{Telephone}}` | Telephone for imprint and consumer information |
-| `{{Responsible Person}}` | § 18 Abs. 2 MStV responsible person |
-| `{{Address}}` | Address of the responsible person |
-| `{{Privacy Notice URL}}` | Privacy notice URL |
-| `{{German Data Protection Authority}}` | BfDI or competent state DPA |
-| `{{Service Description}}` | Description of the Service for CRD disclosure |
-| `{{Functionality}}` | Functionality disclosure (Art. 6(1)(r)) |
-| `{{Interoperability}}` | Interoperability disclosure (Art. 6(1)(s)) |
-| `{{Commercial Guarantee URL}}` | URL describing any commercial guarantees |
+| Field                                  | Purpose                                                                    |
+| -------------------------------------- | -------------------------------------------------------------------------- |
+| `{{Provider Legal Name}}`              | Legal name of the trader                                                   |
+| `{{Registered Office Address}}`        | Registered office for service of notices and imprint                       |
+| `{{Commercial Register and Number}}`   | Court of registration and registration number                              |
+| `{{VAT ID}}`                           | EU VAT identification number                                               |
+| `{{Support Email}}`                    | Primary support contact and ODR email                                      |
+| `{{Postal Address}}`                   | Postal address for legal notices                                           |
+| `{{Effective Date}}`                   | Effective date of this version                                             |
+| `{{Version}}`                          | Version identifier                                                         |
+| `{{Contract Language}}`                | Controlling language of the contract                                       |
+| `{{Security Contact Email}}`           | Security incident reporting address                                        |
+| `{{Notice URL}}`                       | URL of the DSA notice form (Art. 16)                                       |
+| `{{Notice Email}}`                     | Email address for DSA notices                                              |
+| `{{Internal Complaint URL}}`           | URL of the internal complaint-handling system (Art. 18)                    |
+| `{{Out-of-Court Body}}`                | DSA Art. 21 out-of-court dispute settlement body information               |
+| `{{ODR Platform URL}}`                 | EU ODR platform URL (default https://ec.europa.eu/consumers/odr/)          |
+| `{{ADR Body Name and URL}}`            | Certified national ADR entity                                              |
+| `{{Consumer Protection Statute}}`      | Member-State consumer-protection law                                       |
+| `{{Open Source Notices URL}}`          | URL listing open-source components and licences                            |
+| `{{Grace Period Days}}`                | Grace period before suspension for non-payment                             |
+| `{{Notice Period Days}}`               | Notice period for termination for convenience of indefinite-term contracts |
+| `{{Liability Cap Amount}}`             | Alternative B2B liability cap                                              |
+| `{{Governing Law Country}}`            | Governing-law country                                                      |
+| `{{Jurisdiction Country and City}}`    | Default forum                                                              |
+| `{{German Venue}}`                     | German venue for B2B disputes (e.g., the Provider's seat)                  |
+| `{{Authorised Representatives}}`       | Geschäftsführer / authorised representatives                               |
+| `{{Telephone}}`                        | Telephone for imprint and consumer information                             |
+| `{{Responsible Person}}`               | § 18 Abs. 2 MStV responsible person                                        |
+| `{{Address}}`                          | Address of the responsible person                                          |
+| `{{Privacy Notice URL}}`               | Privacy notice URL                                                         |
+| `{{German Data Protection Authority}}` | BfDI or competent state DPA                                                |
+| `{{Service Description}}`              | Description of the Service for CRD disclosure                              |
+| `{{Functionality}}`                    | Functionality disclosure (Art. 6(1)(r))                                    |
+| `{{Interoperability}}`                 | Interoperability disclosure (Art. 6(1)(s))                                 |
+| `{{Commercial Guarantee URL}}`         | URL describing any commercial guarantees                                   |
 
 ---
 
@@ -862,4 +873,4 @@ These Terms are a template and not legal advice. Mandatory consumer-protection, 
 
 ---
 
-*End of Terms — v{{Version}} — {{Effective Date}}.*
+_End of Terms — v{{Version}} — {{Effective Date}}._

@@ -17,7 +17,7 @@ This SLA is drafted in three labelled variants — Customer-favorable, Vendor-fa
 
 ## 1. Plain-language summary
 
-*Plain-language: This section is a non-binding orientation. The binding obligations live in Sections 2 through 16 and the three Annexes. Where the summary and the operative text differ, the operative text controls.*
+_Plain-language: This section is a non-binding orientation. The binding obligations live in Sections 2 through 16 and the three Annexes. Where the summary and the operative text differ, the operative text controls._
 
 This SLA makes two promises about {{Service Name}}: an uptime promise that the production Service will be available a high percentage of each calendar month, and a support promise that issues will be acknowledged and worked toward resolution within published targets that scale with severity. Both are measured monthly and both have exclusions listed in Section 5.
 
@@ -31,7 +31,7 @@ This SLA is subordinate to the Master Agreement on topics outside its subject ma
 
 ## 2. Definitions
 
-*Plain-language: Capitalized terms used in this SLA have the meanings given here, in the Master Agreement, or in the Order Form. If a term is defined in more than one place, the SLA's definition controls for purposes of this SLA.*
+_Plain-language: Capitalized terms used in this SLA have the meanings given here, in the Master Agreement, or in the Order Form. If a term is defined in more than one place, the SLA's definition controls for purposes of this SLA._
 
 **2.1 "Service Availability"** means, for any calendar month, the percentage calculated as:
 
@@ -75,7 +75,7 @@ where "Total Minutes in the Month" is the actual minutes in that calendar month 
 
 ## 3. Scope of services covered
 
-*Plain-language: This SLA applies to the production environment of the Service. Sandboxes, betas, free tiers, mobile clients, and Customer-controlled systems are outside scope unless an Order Form says otherwise.*
+_Plain-language: This SLA applies to the production environment of the Service. Sandboxes, betas, free tiers, mobile clients, and Customer-controlled systems are outside scope unless an Order Form says otherwise._
 
 **3.1 In-Scope Services.** This SLA applies to the production environment of {{Service Name}} as identified on the Order Form, accessed at {{Service URL}}, and to any additional Service expressly listed as in-scope on an Order Form.
 
@@ -99,7 +99,7 @@ where "Total Minutes in the Month" is the actual minutes in that calendar month 
 
 ## 4. Service Availability commitment
 
-*Plain-language: Vendor commits to a monthly uptime percentage. If Vendor misses, Customer is entitled to Service Credits per Annex B. The commitment level depends on the bargain struck in the Order Form; this Section sets the menu.*
+_Plain-language: Vendor commits to a monthly uptime percentage. If Vendor misses, Customer is entitled to Service Credits per Annex B. The commitment level depends on the bargain struck in the Order Form; this Section sets the menu._
 
 **4.1 Commitment.** Vendor shall provide Service Availability of at least {{Uptime Tier}} per calendar month, measured per the methodology described in Section 4.4.
 
@@ -114,11 +114,11 @@ where "Total Minutes in the Month" is the actual minutes in that calendar month 
 **4.3 Downtime budget by tier.** For convenience, allowable Downtime per 30-day month at common tiers:
 
 | Uptime tier | Allowable Downtime per 30-day month |
-|------------:|------------------------------------:|
-| 99.5% | ~3h 36m (216 min) |
-| 99.9% | ~43m 12s (43.2 min) |
-| 99.95% | ~21m 36s (21.6 min) |
-| 99.99% | ~4m 19s (4.32 min) |
+| ----------: | ----------------------------------: |
+|       99.5% |                   ~3h 36m (216 min) |
+|       99.9% |                 ~43m 12s (43.2 min) |
+|      99.95% |                 ~21m 36s (21.6 min) |
+|      99.99% |                  ~4m 19s (4.32 min) |
 
 Illustrative; the operative calculation in Section 2.1 uses actual minutes in the relevant month.
 
@@ -132,7 +132,7 @@ Illustrative; the operative calculation in Section 2.1 uses actual minutes in th
 
 ## 5. Excluded Downtime
 
-*Plain-language: Several categories of unavailability do not count against Service Availability. The list below is the market-standard scope; see the dual-perspective subsection for narrower and broader variants.*
+_Plain-language: Several categories of unavailability do not count against Service Availability. The list below is the market-standard scope; see the dual-perspective subsection for narrower and broader variants._
 
 **5.1 Excluded categories.** None of the following count as Downtime; time spent in these categories is Excluded Downtime:
 
@@ -164,7 +164,7 @@ Illustrative; the operative calculation in Section 2.1 uses actual minutes in th
 
 ## 6. Support response & resolution targets
 
-*Plain-language: Customer raises support issues at one of four severity levels. Vendor commits to a response time (first human acknowledgment) and a resolution / workaround time (restoration or documented bypass) for each level. Targets and details are in Annex A.*
+_Plain-language: Customer raises support issues at one of four severity levels. Vendor commits to a response time (first human acknowledgment) and a resolution / workaround time (restoration or documented bypass) for each level. Targets and details are in Annex A._
 
 **6.1 Severity definitions.**
 
@@ -197,7 +197,7 @@ These values populate {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Res
 
 ## 7. Service Credits
 
-*Plain-language: When Vendor misses the monthly uptime tier, Customer is entitled to a Service Credit calculated as a percentage of the Affected Service's Monthly Fees. Credits are capped, do not roll forward indefinitely, and are not paid in cash.*
+_Plain-language: When Vendor misses the monthly uptime tier, Customer is entitled to a Service Credit calculated as a percentage of the Affected Service's Monthly Fees. Credits are capped, do not roll forward indefinitely, and are not paid in cash._
 
 **7.1 Calculation.** Service Credits are calculated per Annex B as a percentage of Monthly Fees for the Affected Service for the calendar month of the miss. The percentage scales with the size of the miss. Calculation is performed separately for each Affected Service.
 
@@ -221,7 +221,7 @@ These values populate {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Res
 
 ## 8. Credit request procedure
 
-*Plain-language: Customer claims a credit by submitting a written request within sixty days of the affected month, with specified evidence. Vendor validates and responds within thirty days.*
+_Plain-language: Customer claims a credit by submitting a written request within sixty days of the affected month, with specified evidence. Vendor validates and responds within thirty days._
 
 **8.1 Window.** Customer shall submit a credit request within {{Credit Window Days}} (default sixty (60) days) after the end of the calendar month of the SLA miss. Late requests are waived for that month except where Customer demonstrates Vendor materially concealed the underlying facts.
 
@@ -246,7 +246,7 @@ These values populate {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Res
 
 ## 9. Credit issuance & exclusivity as remedy
 
-*Plain-language: Validated credits appear on the next invoice. Service Credits are the only remedy for ordinary SLA misses, except for the termination right in Section 14. Vendor will not pay credits in cash except on Customer's exit when the credits exceed remaining commitments.*
+_Plain-language: Validated credits appear on the next invoice. Service Credits are the only remedy for ordinary SLA misses, except for the termination right in Section 14. Vendor will not pay credits in cash except on Customer's exit when the credits exceed remaining commitments._
 
 **9.1 Form of credit.** Validated credits are issued as a percentage applied to Customer's next invoice for the Affected Service. For annual-in-advance billing without a near-term invoice, the credit applies at the next renewal or, on Customer's request, is prorated against the current annual fee on the billing portal.
 
@@ -262,7 +262,7 @@ These values populate {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Res
 
 ## 10. Performance reporting & status page
 
-*Plain-language: Vendor publishes a real-time Status Page and delivers a monthly SLA report. Customer can request raw monitoring data on reasonable notice.*
+_Plain-language: Vendor publishes a real-time Status Page and delivers a monthly SLA report. Customer can request raw monitoring data on reasonable notice._
 
 **10.1 Status Page.** Vendor shall maintain a public Status Page at {{Status Page URL}}, updated in approximately real time during incidents and maintenance. The Status Page shall distinguish operational, degraded, and outage states for each major Service component; provide an incident-history archive going back at least six (6) months; and offer a machine-readable feed (RSS, JSON, or equivalent).
 
@@ -280,7 +280,7 @@ These values populate {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Res
 
 ## 11. Disaster recovery & business continuity
 
-*Plain-language: Vendor commits to recovery objectives, periodic disaster-recovery testing, and minimum backup retention. The recovery objectives differ by perspective.*
+_Plain-language: Vendor commits to recovery objectives, periodic disaster-recovery testing, and minimum backup retention. The recovery objectives differ by perspective._
 
 **11.1 Business continuity program.** Vendor shall maintain a documented business-continuity and disaster-recovery program covering the Service, reviewed at least annually, addressing personnel, facilities, communications, and technical recovery.
 
@@ -306,7 +306,7 @@ These values populate {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Res
 
 ## 12. Scheduled & emergency maintenance
 
-*Plain-language: Maintenance is excluded from Downtime if it follows the rules below: notice, defined window, and good-faith standards.*
+_Plain-language: Maintenance is excluded from Downtime if it follows the rules below: notice, defined window, and good-faith standards._
 
 **12.1 Scheduled Maintenance.** Vendor may take the Service offline or into a degraded state during the maintenance window {{Maintenance Window}} (default Saturdays 02:00–06:00 UTC), provided Vendor publishes the maintenance to the Status Page and to the Customer-facing notice channel at least {{Maintenance Notice Window}} (default seven (7) days) in advance. Scheduled Maintenance within these constraints does not count as Downtime.
 
@@ -322,7 +322,7 @@ These values populate {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Res
 
 ## 13. Service degradation vs. outage
 
-*Plain-language: Not every problem is an outage. Outages trigger credits; sub-threshold degradation does not, but Vendor still owes root-cause analysis and remediation when degradation is sustained.*
+_Plain-language: Not every problem is an outage. Outages trigger credits; sub-threshold degradation does not, but Vendor still owes root-cause analysis and remediation when degradation is sustained._
 
 **13.1 Outage.** An "Outage" is a period of Downtime per Section 2.3. Outages reduce Service Availability and may trigger Service Credits per Annex B.
 
@@ -338,7 +338,7 @@ These values populate {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Res
 
 ## 14. Material SLA breach & termination right
 
-*Plain-language: Sustained or repeated SLA misses that drop the Service below the committed tier across multiple months entitle Customer to terminate the affected Order Form (or the Master Agreement, where the Service is the only Service) and recover a pro-rata refund of unused pre-paid fees. The threshold differs by perspective.*
+_Plain-language: Sustained or repeated SLA misses that drop the Service below the committed tier across multiple months entitle Customer to terminate the affected Order Form (or the Master Agreement, where the Service is the only Service) and recover a pro-rata refund of unused pre-paid fees. The threshold differs by perspective._
 
 **14.1 Dual-perspective on termination threshold.**
 
@@ -362,7 +362,7 @@ These values populate {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Res
 
 ## 15. Changes to this SLA
 
-*Plain-language: Vendor may update this SLA on notice. Material decreases — lower tier, narrower scope, lower cap — require Customer's affirmative consent or a no-penalty exit window.*
+_Plain-language: Vendor may update this SLA on notice. Material decreases — lower tier, narrower scope, lower cap — require Customer's affirmative consent or a no-penalty exit window._
 
 **15.1 General changes.** Vendor may modify this SLA on at least thirty (30) days' prior written notice via the Status Page or Customer-facing notice channel and, where the Master Agreement designates a customer-success contact, also to that contact. Clarifying changes, improvements to Customer, and methodology changes that do not reduce substantive commitments take effect at the end of the notice period.
 
@@ -381,7 +381,7 @@ These values populate {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Res
 
 ## 16. Survival & order of precedence
 
-*Plain-language: This SLA controls availability and support topics; the Master Agreement controls everything else. Pending credits, accrued claims, and audit/reporting rights for the period survive termination.*
+_Plain-language: This SLA controls availability and support topics; the Master Agreement controls everything else. Pending credits, accrued claims, and audit/reporting rights for the period survive termination._
 
 **16.1 Order of precedence.** Where this SLA conflicts with another contract document, the order of precedence, from highest to lowest, is:
 
@@ -404,12 +404,12 @@ This order of precedence is limited to the subject matter of this SLA: availabil
 
 Merge fields {{P1 Response Target}}, {{P1 Resolution Target}}, {{P2 Response Target}}, {{P3 Response Target}}, and {{P4 Response Target}} are populated from the perspective table in Section 6.3.
 
-| Severity | Definition | Response Target | Resolution / Workaround | Support Hours |
-|----------|-----------|-----------------|-------------------------|---------------|
-| P1 (Critical) | Service Unavailable for all users; data loss imminent or occurring; security incident with active exploitation | {{P1 Response Target}} | {{P1 Resolution Target}} | 24×7 |
-| P2 (High) | Major feature unavailable; significant performance degradation affecting a substantial subset of users; security incident without active exploitation | {{P2 Response Target}} | 8 hours (workaround) | 24×7 |
-| P3 (Medium) | Non-critical feature degraded; workaround available; small user subset affected | {{P3 Response Target}} | 5 business days | Business hours |
-| P4 (Low) | Cosmetic; documentation question; feature request; no operational impact | {{P4 Response Target}} | Best effort | Business hours |
+| Severity      | Definition                                                                                                                                            | Response Target        | Resolution / Workaround  | Support Hours  |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------ | -------------- |
+| P1 (Critical) | Service Unavailable for all users; data loss imminent or occurring; security incident with active exploitation                                        | {{P1 Response Target}} | {{P1 Resolution Target}} | 24×7           |
+| P2 (High)     | Major feature unavailable; significant performance degradation affecting a substantial subset of users; security incident without active exploitation | {{P2 Response Target}} | 8 hours (workaround)     | 24×7           |
+| P3 (Medium)   | Non-critical feature degraded; workaround available; small user subset affected                                                                       | {{P3 Response Target}} | 5 business days          | Business hours |
+| P4 (Low)      | Cosmetic; documentation question; feature request; no operational impact                                                                              | {{P4 Response Target}} | Best effort              | Business hours |
 
 Notes:
 
@@ -423,12 +423,12 @@ Notes:
 
 Default credit schedule for a committed tier of 99.9%. For other tiers, Vendor will provide an equivalent table with breakpoints scaled proportionally.
 
-| Monthly Uptime Percentage for the Affected Service | Service Credit (% of Monthly Fees for the Affected Service) |
-|-------------------------------------------------:|------------------------------------------------------------:|
-| ≥ 99.9% (committed tier met) | 0% |
-| < 99.9% but ≥ 99.0% | 10% |
-| < 99.0% but ≥ 95.0% | 25% |
-| < 95.0% | 50%, subject to the {{Credit Cap Percent}} cap (default 30%) |
+| Monthly Uptime Percentage for the Affected Service |  Service Credit (% of Monthly Fees for the Affected Service) |
+| -------------------------------------------------: | -----------------------------------------------------------: |
+|                       ≥ 99.9% (committed tier met) |                                                           0% |
+|                                < 99.9% but ≥ 99.0% |                                                          10% |
+|                                < 99.0% but ≥ 95.0% |                                                          25% |
+|                                            < 95.0% | 50%, subject to the {{Credit Cap Percent}} cap (default 30%) |
 
 Application notes:
 

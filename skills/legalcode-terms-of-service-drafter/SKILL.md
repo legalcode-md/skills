@@ -45,6 +45,7 @@ jurisdiction, flags compliance gaps in existing terms, and surfaces platform-spe
 across account management, content moderation, billing, and dispute resolution.
 
 **Covers:**
+
 - **Account and Eligibility**: Age verification, COPPA and KOSA obligations, parental consent,
   corporate entity account acceptance, identity verification requirements
 - **Acceptable Use Policies (AUP)**: Prohibited conduct, content restrictions, anti-abuse
@@ -76,6 +77,7 @@ across account management, content moderation, billing, and dispute resolution.
 business-to-consumer contexts where legal requirements differ materially.
 
 **Does not:**
+
 - Draft Privacy Policies (see `legalcode-privacy-policy-drafter`)
 - Review commercial SaaS agreements between businesses (see `legalcode-saas-agreement-drafter`)
 - Replace specialized legal counsel for regulated industries (financial services FINRA/FCA,
@@ -84,6 +86,7 @@ business-to-consumer contexts where legal requirements differ materially.
 - Constitute legal advice; all output requires qualified legal review before use
 
 **Related skills:**
+
 - `legalcode-privacy-policy-drafter` — generates the complementary Privacy Policy document
 - `legalcode-saas-agreement-drafter` — B2B SaaS master service agreements
 - `legalcode-dpa-review-and-negotiation` — data processing addendum for GDPR/CCPA contexts
@@ -99,6 +102,7 @@ that override contractual choice of law in many jurisdictions. The drafting proc
 applicable jurisdictions early and applies mandatory requirements before optional customization.
 
 [JURISDICTION-SPECIFIC] **United States** — mandatory requirements:
+
 - **COPPA** (15 U.S.C. §§6501–6506): Operators of websites and online services directed to
   children under 13, or with actual knowledge of child users, must obtain verifiable parental
   consent before collecting personal information. TOS must include clear age gates and
@@ -131,6 +135,7 @@ applicable jurisdictions early and applies mandatory requirements before optiona
   aggressive. Unlawful terms subject to private right of action.
 
 [JURISDICTION-SPECIFIC] **European Union** — mandatory requirements:
+
 - **Consumer Rights Directive** (Directive 2011/83/EU): Art. 6 mandatory pre-contract
   information; Art. 16 exceptions to 14-day withdrawal right; Art. 22 express consent for
   automatic renewal; Directive 2019/2161 (Omnibus) amendments for digital services in force
@@ -162,6 +167,7 @@ applicable jurisdictions early and applies mandatory requirements before optiona
   bundled with service acceptance). Process under separate legal basis.
 
 [JURISDICTION-SPECIFIC] **United Kingdom** — mandatory requirements:
+
 - **Consumer Rights Act 2015**: Part 2 (unfair terms in consumer contracts) replaces UTCCR
   1999 — terms must be fair, transparent, and prominent; grey list of terms presumptively
   unfair; limitation of liability for death/personal injury from negligence unenforceable.
@@ -177,6 +183,7 @@ applicable jurisdictions early and applies mandatory requirements before optiona
   outside their habitual residence are presumptively unfair.
 
 [JURISDICTION-SPECIFIC] **Australia** — mandatory requirements:
+
 - **Australian Consumer Law** (ACL, Competition and Consumer Act 2010 Sch. 2): Consumer
   guarantees (ss. 60–64) cannot be excluded; remedies for breach of guarantee mandatory;
   limitation clauses that purport to exclude consumer guarantees are void. B2C TOS must
@@ -193,6 +200,7 @@ applicable jurisdictions early and applies mandatory requirements before optiona
   TOS must cross-reference APP-compliant Privacy Policy.
 
 [JURISDICTION-SPECIFIC] **Canada** — mandatory requirements:
+
 - **PIPEDA** (Personal Information Protection and Electronic Documents Act): TOS must
   reference compliant Privacy Policy; Bill C-27 / Consumer Privacy Protection Act (CPPA)
   [VERIFY current legislative status — not yet in force as of March 2026].
@@ -262,21 +270,21 @@ options. Skip any question already answered by the input:
    - Options: SaaS / web application (browser-based), Mobile app (iOS/Android/both),
      Marketplace / multi-sided platform, Social / UGC platform, E-commerce, Gaming/entertainment,
      API / developer platform, Other (specify)
-   - *Why this matters*: Platform type determines which regulatory frameworks apply
+   - _Why this matters_: Platform type determines which regulatory frameworks apply
      (DMCA safe harbor, DSA upload obligations, COPPA UGC rules, KOSA duties,
      marketplace seller liability, etc.).
 
 2. **User audience:**
    - Options: B2C consumers only, B2B businesses only, Both B2C and B2B (generate separate
      variants), B2B2C (platform for businesses that serve consumers), Government/public sector
-   - *Why this matters*: Consumer protection rules (unfair terms, auto-renewal, arbitration
+   - _Why this matters_: Consumer protection rules (unfair terms, auto-renewal, arbitration
      enforceability, liability caps, withdrawal rights) apply to B2C contexts only. B2B
      terms have significantly more drafting flexibility.
 
 3. **Geographic scope:**
    - Options (multi-select): US only, EU (and/or EEA), UK, Australia, Canada, All of the above
      (US/EU/UK/AU/CA), Global (jurisdiction-agnostic with all markers), Other (specify)
-   - *Why this matters*: Each jurisdiction has mandatory disclosure requirements and terms
+   - _Why this matters_: Each jurisdiction has mandatory disclosure requirements and terms
      that cannot be overridden by choice of law. The DSA applies to any platform with EU users
      regardless of incorporation. The ACL applies regardless of where the company is based if
      it supplies to Australian consumers.
@@ -286,7 +294,7 @@ options. Skip any question already answered by the input:
      Subscription / recurring billing, Free trial with auto-conversion, Marketplace (third-party
      sellers), Minor users or children's platform, Financial services integration,
      Healthcare data handling, Gambling or regulated content, None of the above
-   - *Why this matters*: UGC triggers DMCA/DSA analysis; AI features require output ownership
+   - _Why this matters_: UGC triggers DMCA/DSA analysis; AI features require output ownership
      and training data provisions; subscriptions require auto-renewal law compliance; minors
      trigger COPPA and KOSA; financial services and healthcare face sector-specific overlays.
 
@@ -294,10 +302,11 @@ options. Skip any question already answered by the input:
    - Options: Draft new TOS from scratch, Audit existing TOS for compliance gaps,
      Update specific TOS provisions, Add jurisdiction-specific supplement, Create B2B variant
      from existing B2C TOS, Other
-   - *Why this matters*: Determines whether the skill generates clause text, analyzes existing
+   - _Why this matters_: Determines whether the skill generates clause text, analyzes existing
      text, or both.
 
 For batch or non-interactive runs, default to:
+
 - Platform type: SaaS/web application
 - User audience: Both B2C and B2C variants required
 - Geographic scope: US/EU/UK/AU/CA (full multi-jurisdiction coverage)
@@ -350,6 +359,7 @@ FTC Auto-Renewal / State Laws (US)  |          | Subscription services with US  
 #### 3b. Platform Classification Under DSA
 
 For EU-facing platforms, determine DSA category:
+
 - **Mere conduit / caching**: Minimal obligations
 - **Hosting service**: Arts. 14–17 notice-and-action, repeat infringer, trusted flaggers
 - **Online platform** (hosting + dissemination): Full DSA obligations including TOS Arts. 14, 27;
@@ -370,29 +380,32 @@ clause element.
 #### Section 1: Acceptance and Agreement Formation
 
 **REQUIRED elements:**
+
 - [ ] Clear statement that use of the service constitutes acceptance of TOS
 - [ ] Effective date / version identification (for modification tracking)
 - [ ] Age minimum statement (minimum 13 for COPPA; 16 for GDPR-compliant EU services; 18 for
-  some regulated content — adapt to platform)
+      some regulated content — adapt to platform)
 - [ ] B2C: affirmative click-through for new users (not just "continued use" acceptance
-  — EU Consumer Rights Directive requires affirmative assent for paid services)
+      — EU Consumer Rights Directive requires affirmative assent for paid services)
 - [ ] B2B: company acceptance mechanism, authority representation by individual accepting
 
 **RECOMMENDED elements:**
+
 - [ ] Summary / "plain language" introduction or "quick summary" box (EU best practice,
-  DSA Art. 14(1) requires "clear and unambiguous language, plain and intelligible")
+      DSA Art. 14(1) requires "clear and unambiguous language, plain and intelligible")
 - [ ] TOS versioning URL / changelog link
 - [ ] Cross-reference to Privacy Policy and any DPA, Cookie Policy, AUP (if separate)
 
 **⟁ CLARIFY** — Age gate approach:
+
 - Simple age declaration ("I am 13 or older") — lightweight but limited verification
 - Date-of-birth collection with neutral design (no "age-steering" to bypass gate)
 - COPPA-compliant parental consent flow for under-13 users
 - Platform-wide 18+ restriction (simplest but forecloses younger users)
-*Why this matters*: COPPA requires operators to either (a) screen out under-13 users or
-(b) implement verifiable parental consent. Age declaration alone has been challenged by
-FTC in enforcement actions. California AADC [VERIFY current law] requires age-appropriate
-design by default, not just gating.
+  _Why this matters_: COPPA requires operators to either (a) screen out under-13 users or
+  (b) implement verifiable parental consent. Age declaration alone has been challenged by
+  FTC in enforcement actions. California AADC [VERIFY current law] requires age-appropriate
+  design by default, not just gating.
 
 **Anti-pattern flag**: Do NOT use pre-ticked checkboxes for TOS acceptance — GDPR Recital 32
 and CRA 2015 require affirmative, unambiguous assent. Pre-ticked boxes are specifically
@@ -403,6 +416,7 @@ cited as invalid consent mechanisms.
 #### Section 2: Account Registration and Security
 
 **REQUIRED elements:**
+
 - [ ] User representations on accuracy of registration information
 - [ ] Account security obligations (password protection, unauthorized access notification)
 - [ ] Platform right to require verification or suspend unverified accounts
@@ -410,11 +424,13 @@ cited as invalid consent mechanisms.
 - [ ] Business account: authorized representatives, organizational binding
 
 **RECOMMENDED elements:**
+
 - [ ] Multi-factor authentication offering or requirement (good practice; SEC/NIST guidance)
 - [ ] Account recovery process reference
 - [ ] Dormant account handling (data retention limits under GDPR Art. 5(1)(e))
 
 **Classification**:
+
 - REQUIRED: All items above for any account-based platform
 - RECOMMENDED: MFA, account recovery, dormant account
 - OPTIONAL: API key management provisions (for developer platforms)
@@ -424,24 +440,26 @@ cited as invalid consent mechanisms.
 #### Section 3: Acceptable Use Policy (AUP)
 
 **REQUIRED elements** (all platforms):
+
 - [ ] Prohibited content categories (at minimum): illegal content, CSAM, hate speech
-  (mandatory under UK OSA 2023 and DSA Arts. 14, 28), harassment, malware/phishing,
-  spam, fraud, unauthorized access attempts
+      (mandatory under UK OSA 2023 and DSA Arts. 14, 28), harassment, malware/phishing,
+      spam, fraud, unauthorized access attempts
 - [ ] Prohibited conduct: account sharing in violation of plan limits, circumventing
-  technical measures, automated access without authorization (scraping), impersonation,
-  reverse engineering
+      technical measures, automated access without authorization (scraping), impersonation,
+      reverse engineering
 - [ ] Enforcement discretion clause: platform right to remove content, suspend, or terminate
-  at sole discretion for AUP violations
+      at sole discretion for AUP violations
 - [ ] No liability for third-party content (Section 230 / DSA Art. 6 immunity preservation)
 
 **RECOMMENDED elements**:
+
 - [ ] Tiered enforcement: warning → content removal → temporary suspension → termination
 - [ ] Notice of enforcement action (AUP violation notice before suspension where possible,
-  except for emergency removal)
+      except for emergency removal)
 - [ ] Appeals mechanism (mandatory under DSA Art. 20 for online platforms; recommended
-  generally for good practice)
+      generally for good practice)
 - [ ] Reporting mechanism for AUP violations by other users (mandatory for DSA hosting
-  services under Art. 16 notice-and-action)
+      services under Art. 16 notice-and-action)
 
 **B2C vs. B2B note**: B2C AUPs must be clearly written and not overreaching — consumer
 protection regulators (FTC, CMA, ACCC) have challenged AUPs that give platforms unchecked
@@ -450,12 +468,13 @@ and include SLA-linked consequences.
 
 **⟁ CLARIFY** — AUP enforcement: Does the platform want a detailed tiered enforcement
 framework in the TOS itself, or a short TOS provision that cross-references a separate AUP document?
+
 - In-TOS detailed AUP: More comprehensive, harder to update
 - TOS + separate AUP document: More flexible, easier to update AUP without full TOS revision
   (preferred for large platforms)
-*Why this matters*: Platforms subject to DSA must update content moderation rules with
-notice (Art. 14(4)) — a separate AUP document is easier to maintain with proper notification
-mechanisms.
+  _Why this matters_: Platforms subject to DSA must update content moderation rules with
+  notice (Art. 14(4)) — a separate AUP document is easier to maintain with proper notification
+  mechanisms.
 
 ---
 
@@ -464,47 +483,52 @@ mechanisms.
 ##### 4a. User Content License
 
 **REQUIRED elements**:
+
 - [ ] User retains ownership of content they submit (cannot claim ownership transfer
-  without explicit, prominently disclosed consent — FTC guidance; EU law)
+      without explicit, prominently disclosed consent — FTC guidance; EU law)
 - [ ] License grant to platform: scope must be defined — minimum: worldwide, royalty-free,
-  non-exclusive, sublicensable (for CDN/hosting), license to host, store, reproduce,
-  display, and distribute user content in connection with the service
+      non-exclusive, sublicensable (for CDN/hosting), license to host, store, reproduce,
+      display, and distribute user content in connection with the service
 - [ ] Termination of license: what happens to license on account deletion or content removal?
-  Standard: license terminates except for copies made in ordinary course of platform operation
-  (backups, cached copies)
+      Standard: license terminates except for copies made in ordinary course of platform operation
+      (backups, cached copies)
 
 **⟁ CLARIFY** — AI Training Data Use: Does the platform intend to use user content to train AI models?
+
 - No AI training use — include explicit prohibition or omit
 - AI training permitted — requires specific, prominent disclosure; separate opt-in recommended
   for EU (GDPR Art. 6 / Art. 9); user backlash has been significant (Meta, Twitter/X backlash
   in 2023–2025); California AB 2355 [VERIFY] may impose additional consent requirements
 - AI training with opt-out — EU GDPR requires basis; UK ICO guidance suggests legitimate
   interests may apply with opt-out; recommended for non-EU markets where opt-in is not mandatory
-*Why this matters*: Using user content for AI training without disclosed consent has triggered
-regulatory action (CNIL investigation of Meta; UK ICO investigations; Italian DPA block of
-Replika). Including without disclosure creates material regulatory and reputational risk.
+  _Why this matters_: Using user content for AI training without disclosed consent has triggered
+  regulatory action (CNIL investigation of Meta; UK ICO investigations; Italian DPA block of
+  Replika). Including without disclosure creates material regulatory and reputational risk.
 
 **RECOMMENDED elements**:
+
 - [ ] Moral rights waiver (B2C EU/UK — waiver is limited in some EU jurisdictions; UK CDPA
-  1988 s. 87 permits waiver; France droit moral not fully waivable; include with [JURISDICTION-SPECIFIC] note)
+      1988 s. 87 permits waiver; France droit moral not fully waivable; include with [JURISDICTION-SPECIFIC] note)
 - [ ] User representations on content (does not infringe third-party IP, does not violate
-  applicable law) — establishes basis for DMCA safe harbor / DSA notice-and-action
+      applicable law) — establishes basis for DMCA safe harbor / DSA notice-and-action
 - [ ] DMCA repeat infringer policy: platform will terminate accounts of users who repeatedly
-  infringe copyrights — required for DMCA §512 safe harbor
+      infringe copyrights — required for DMCA §512 safe harbor
 - [ ] Takedown process reference: link to or describe DMCA notification address and process
 
 ##### 4b. Platform Intellectual Property
 
 **REQUIRED elements**:
+
 - [ ] Reservation of platform IP: platform and its licensors own all platform IP
 - [ ] License to user: limited, revocable, non-exclusive, non-transferable license to use
-  the service as provided
+      the service as provided
 - [ ] No IP transfer by virtue of using the service
 - [ ] Trademark restrictions: no use of platform marks without written permission
 - [ ] API terms: if applicable, any additional license restrictions, rate limits, no
-  competitive use of API output
+      competitive use of API output
 
 **RECOMMENDED elements** (AI-assisted platforms):
+
 - [ ] Output ownership: who owns AI-generated content produced using the platform?
   - Common approach: user owns outputs generated from their inputs; platform retains
     right to use anonymized/aggregated output data for service improvement
@@ -512,7 +536,7 @@ Replika). Including without disclosure creates material regulatory and reputatio
     may have diminished IP protection (CJEU Cofemel [2019]; UK IPO guidance on AI [VERIFY])
 - [ ] AI limitations: outputs are not legal/medical/financial advice; no accuracy warranties
 - [ ] Third-party model restrictions: if platform uses third-party AI models, pass-through
-  restrictions may apply (OpenAI, Anthropic, Google Gemini usage policies)
+      restrictions may apply (OpenAI, Anthropic, Google Gemini usage policies)
 
 ---
 
@@ -521,24 +545,27 @@ Replika). Including without disclosure creates material regulatory and reputatio
 ##### 5a. Subscription Terms
 
 **REQUIRED elements**:
+
 - [ ] Pricing: current pricing or reference to pricing page; right to change prices
-  (with required advance notice — CA requires 30 days for material price changes;
-  EU CRD Art. 22 requires prior notice for changes to ongoing digital services)
+      (with required advance notice — CA requires 30 days for material price changes;
+      EU CRD Art. 22 requires prior notice for changes to ongoing digital services)
 - [ ] Billing cycle: monthly, annual, other; prorated refunds or credits on upgrades
 - [ ] Payment methods accepted; recurring billing authorization
 - [ ] Failed payment: grace period, service suspension, account cancellation on failure
 - [ ] Taxes: user responsible for applicable taxes; platform will collect where legally required
 
 **B2C specific**:
+
 - [ ] Free trial auto-conversion disclosure: conspicuous notice before trial ends
-  (required by FTC Click-to-Cancel principles, CA B&P §17600, NY GBL §527-A)
+      (required by FTC Click-to-Cancel principles, CA B&P §17600, NY GBL §527-A)
 - [ ] Refund policy: mandatory cooling-off / withdrawal rights for digital services in EU
-  (CRD Art. 14–16: 14-day right of withdrawal for digital services unless service has
-  already begun with consumer's prior express consent and acknowledgment of loss of
-  withdrawal right); UK CRA 2015 equivalent; Australia: no general cooling-off right for
-  services (ACL) but misleading representations are prohibited
+      (CRD Art. 14–16: 14-day right of withdrawal for digital services unless service has
+      already begun with consumer's prior express consent and acknowledgment of loss of
+      withdrawal right); UK CRA 2015 equivalent; Australia: no general cooling-off right for
+      services (ACL) but misleading representations are prohibited
 
 **B2B specific**:
+
 - [ ] Invoice terms, net payment periods
 - [ ] True-up mechanics for seat-based pricing
 - [ ] Suspension on breach vs. suspension on non-payment (distinguish)
@@ -549,42 +576,46 @@ This is an area of active US regulatory enforcement. Draft auto-renewal provisio
 comply with the most stringent applicable state law (California B&P §§17600–17606).
 
 **REQUIRED elements** (for any subscription with auto-renewal):
+
 - [ ] **Conspicuous disclosure** of auto-renewal terms: plain language, before acceptance,
-  separate from other terms or visually prominent — California requires "clear and conspicuous"
-  presentation, not buried in TOS body
+      separate from other terms or visually prominent — California requires "clear and conspicuous"
+      presentation, not buried in TOS body
 - [ ] **Offer terms disclosure** at time of subscription: price, billing frequency, length
-  of subscription term, how to cancel
+      of subscription term, how to cancel
 - [ ] **Acknowledgment**: affirmative assent specifically to auto-renewal terms (separate
-  checkbox recommended for California compliance)
+      checkbox recommended for California compliance)
 - [ ] **Renewal notice**: email notification before renewal for annual subscriptions
-  — California requires 3–30 days' advance notice for auto-renewing contracts over 1 year;
-  New York GBL §527-A requires 15–30 days' notice [VERIFY current text]; UK DMCCA 2024
-  requires reminder notices [VERIFY precise timing]
+      — California requires 3–30 days' advance notice for auto-renewing contracts over 1 year;
+      New York GBL §527-A requires 15–30 days' notice [VERIFY current text]; UK DMCCA 2024
+      requires reminder notices [VERIFY precise timing]
 - [ ] **Easy online cancellation**: "click-to-cancel" mechanism; FTC principles (even if
-  final rule vacated) are reflected in many state laws. California requires the cancellation
-  mechanism to be at least as easy to use as the enrollment mechanism.
+      final rule vacated) are reflected in many state laws. California requires the cancellation
+      mechanism to be at least as easy to use as the enrollment mechanism.
 - [ ] **Post-cancellation confirmation**: email confirmation of cancellation (FTC, CA)
 - [ ] **Price change notification**: advance notice before applying pricing changes to
-  existing subscriptions; allow cancellation as remedy
+      existing subscriptions; allow cancellation as remedy
 
 **⟁ CLARIFY** — Governing auto-renewal law: Which US state is most restrictive for this platform's user base?
+
 - If the platform has significant California users: California B&P §§17600–17606 governs
 - If national/global: California as baseline (most stringent); verify NY, IL, OR, WA [JURISDICTION-SPECIFIC]
 - EU: Consumer Rights Directive Art. 22 is the baseline; some member states have stricter rules
-*Why this matters*: Non-compliance with California auto-renewal law has resulted in multi-million
-dollar class action settlements (LinkedIn, Amazon, Instacart, DoorDash) and FTC enforcement actions.
+  _Why this matters_: Non-compliance with California auto-renewal law has resulted in multi-million
+  dollar class action settlements (LinkedIn, Amazon, Instacart, DoorDash) and FTC enforcement actions.
 
 ---
 
 #### Section 6: Disclaimer of Warranties
 
 **REQUIRED elements**:
+
 - [ ] "AS IS" and "AS AVAILABLE" warranty disclaimer
 - [ ] Disclaimer of implied warranties of merchantability, fitness for a particular purpose,
-  non-infringement, accuracy, and reliability
+      non-infringement, accuracy, and reliability
 - [ ] No warranty that service will be error-free, uninterrupted, secure, or free of viruses
 
 **Jurisdiction-specific enforceability**:
+
 - [JURISDICTION-SPECIFIC] **US**: UCC §2-316 warranty disclaimer must be conspicuous (all caps
   or other notice-drawing format) if UCC applies; most courts treat SaaS as services (not goods)
   so UCC applies by analogy at most. Disclaimer still requires conspicuousness for enforcement.
@@ -607,14 +638,16 @@ to avoid voiding entire clause in consumer jurisdictions.
 #### Section 7: Limitation of Liability
 
 **REQUIRED elements**:
+
 - [ ] Exclusion of consequential, indirect, incidental, special, and punitive damages
 - [ ] Aggregate liability cap: common structures include 12-month fees paid, $100 flat cap
-  (B2C), or fee paid in the 30 days preceding the claim
+      (B2C), or fee paid in the 30 days preceding the claim
 - [ ] Exceptions to cap (standard carve-outs): death/personal injury from negligence
-  (mandatory carve-out in UK and EU B2C — unfair/void to exclude), fraud, gross negligence
-  or willful misconduct (US negotiated), IP infringement claims, breach of confidentiality
+      (mandatory carve-out in UK and EU B2C — unfair/void to exclude), fraud, gross negligence
+      or willful misconduct (US negotiated), IP infringement claims, breach of confidentiality
 
 **Jurisdiction-specific enforceability**:
+
 - [JURISDICTION-SPECIFIC] **US B2B**: High enforceability under mutual agreement; unconscionability
   challenge available but rarely succeeds in commercial contexts. Follow UCC §2-719 or
   common law enforceability standards depending on characterization.
@@ -635,13 +668,14 @@ to avoid voiding entire clause in consumer jurisdictions.
   repair, or re-supply for goods; for services — refund of price or re-supply.
 
 **⟁ CLARIFY** — Liability cap structure:
+
 - Mutual cap (both parties): Standard for B2B; platform may accept mutual cap with carve-outs
 - Unilateral platform-only cap: Standard for B2C; user's liability often uncapped for
   IP infringement, AUP violations, payment obligations
 - Tiered caps by claim type: Higher cap for data breaches (market trend); lower cap for SLA
   claims; separate super-cap for fraud/gross negligence
-*Why this matters*: Cap structure determines the platform's risk exposure. B2C caps below one
-year of fees paid have been successfully challenged.
+  _Why this matters_: Cap structure determines the platform's risk exposure. B2C caps below one
+  year of fees paid have been successfully challenged.
 
 ---
 
@@ -650,28 +684,31 @@ year of fees paid have been successfully challenged.
 ##### 8a. Arbitration Agreement (US-Focused)
 
 **REQUIRED elements** (if using arbitration):
+
 - [ ] **Conspicuous disclosure** that arbitration waives jury trial right and class action rights
-  — US courts require this to be prominent; "ALL CAPS" notice is standard
+      — US courts require this to be prominent; "ALL CAPS" notice is standard
 - [ ] **Opt-out mechanism**: 30-day opt-out window recommended for enforceability
-  (JAMS Consumer Arbitration Rules require opt-out; AAA Consumer Due Process Protocol)
+      (JAMS Consumer Arbitration Rules require opt-out; AAA Consumer Due Process Protocol)
 - [ ] **Arbitration administrator**: specify AAA or JAMS; include link to rules
 - [ ] **Cost allocation**: consumer may not pay fees exceeding what a court would charge
-  — FTC and state AGs challenge arbitration agreements that shift costs to consumers
+      — FTC and state AGs challenge arbitration agreements that shift costs to consumers
 - [ ] **Individual claims only**: class and representative action waiver
 - [ ] **Small claims court carve-out**: small claims court available for qualifying claims
-  — required for AAA/JAMS consumer arbitration acceptance; some state statutes require it
+      — required for AAA/JAMS consumer arbitration acceptance; some state statutes require it
 - [ ] **EFASSHA carve-out**: sexual assault and sexual harassment claims not subject to
-  arbitration (Pub. L. 117-90, mandatory, cannot be contracted away)
+      arbitration (Pub. L. 117-90, mandatory, cannot be contracted away)
 - [ ] **Governing law for arbitration**: FAA governs; specify if California arbitration law applies
 
 **Mass arbitration considerations**:
+
 - [ ] Mass arbitration protocol: batching provisions, bellwether procedures, trial group
-  selection — companies including DoorDash, Amazon, and StubHub have adopted these after
-  mass arbitration abuse tactics by plaintiffs' bar
+      selection — companies including DoorDash, Amazon, and StubHub have adopted these after
+      mass arbitration abuse tactics by plaintiffs' bar
 - [ ] Filing fee limits: consider fee-splitting for mass arbitration (above individual
-  threshold) — balance enforceability against mass arbitration gaming
+      threshold) — balance enforceability against mass arbitration gaming
 
 **Jurisdictional inapplicability** [JURISDICTION-SPECIFIC]:
+
 - **EU**: Mandatory arbitration clauses in B2C contracts are unfair under Directive 93/13/EEC
   Annex (1)(q); EU consumers retain right to sue in their local courts (Rome I Art. 6).
   Arbitration must be genuinely optional and mutually agreed upon.
@@ -687,13 +724,14 @@ year of fees paid have been successfully challenged.
 ##### 8b. Governing Law and Jurisdiction
 
 **REQUIRED elements**:
+
 - [ ] Choice of governing law: common choices are Delaware (business-friendly, predictable),
-  California (but more plaintiff-friendly), Ireland/England and Wales (for EU/UK platforms)
+      California (but more plaintiff-friendly), Ireland/England and Wales (for EU/UK platforms)
 - [ ] Forum selection / jurisdiction clause: exclusive jurisdiction in specified courts
 - [ ] Mandatory consumer protection override savings clause: "[Notwithstanding the choice of
-  governing law, you may benefit from the mandatory consumer protection provisions of your
-  country or state of habitual residence to the extent that such provisions cannot be
-  excluded by agreement]" — essential for EU, UK, AU, CA consumer compliance
+      governing law, you may benefit from the mandatory consumer protection provisions of your
+      country or state of habitual residence to the extent that such provisions cannot be
+      excluded by agreement]" — essential for EU, UK, AU, CA consumer compliance
 
 [JURISDICTION-SPECIFIC] EU Rome I Art. 6: Choice of law cannot deprive consumer of
 mandatory protection of the law of their habitual residence. Platform must comply with EU
@@ -703,79 +741,86 @@ consumer protection minimum regardless of governing law clause.
 apply ACL regardless of governing law clause if service is supplied to Australian consumers.
 
 **⟁ CLARIFY** — Governing law choice:
+
 - Delaware: Best for B2B, investor-facing, or US-incorporated entities
 - California: Transparent for California consumer base; subjects platform to CLRA, UCL
 - England and Wales: Good for global B2B; familiar to many international parties
 - Ireland: Preferred for EU-incorporated entities; GDPR supervisory authority (DPC)
-*Why this matters*: Choice of law affects unconscionability doctrine, warranty disclaimers,
-arbitration enforceability, and litigation cost exposure. California choice of law combined
-with B2C exposure is highest-risk combination for class action exposure.
+  _Why this matters_: Choice of law affects unconscionability doctrine, warranty disclaimers,
+  arbitration enforceability, and litigation cost exposure. California choice of law combined
+  with B2C exposure is highest-risk combination for class action exposure.
 
 ---
 
 #### Section 9: Privacy Cross-Reference and Data Protection
 
 **REQUIRED elements**:
+
 - [ ] Cross-reference to Privacy Policy: TOS must reference and incorporate the Privacy Policy
 - [ ] No consent in TOS for data processing: GDPR Recital 43 and Art. 7(4) — consent for
-  data processing must be separate from service acceptance and freely given; bundle consent
-  is not freely given; do NOT place data processing consent in TOS acceptance
+      data processing must be separate from service acceptance and freely given; bundle consent
+      is not freely given; do NOT place data processing consent in TOS acceptance
 - [ ] Cookie Policy cross-reference (if cookies used)
 - [ ] Data breach notification process reference (consumer-facing: link to process or
-  outline key timelines — GDPR 72 hours to supervisory authority; GDPR Art. 34 — without
-  undue delay to data subjects for high-risk breaches)
+      outline key timelines — GDPR 72 hours to supervisory authority; GDPR Art. 34 — without
+      undue delay to data subjects for high-risk breaches)
 
 **RECOMMENDED elements**:
+
 - [ ] GDPR data subject rights summary (brief, with link to full Privacy Policy)
 - [ ] CCPA opt-out of sale/sharing cross-reference and link to "Do Not Sell or Share"
-  mechanism (if applicable)
+      mechanism (if applicable)
 - [ ] Quebec Law 25: reference to automated decision-making disclosure if platform uses
-  automated decision-making affecting users
+      automated decision-making affecting users
 
 ---
 
 #### Section 10: Termination and Suspension
 
 **REQUIRED elements**:
+
 - [ ] Platform rights to suspend or terminate: for-cause (AUP violation, fraud, failure to pay),
-  with-notice (platform discontinuing service), immediate (for serious violations)
+      with-notice (platform discontinuing service), immediate (for serious violations)
 - [ ] User right to terminate: how users cancel / close accounts
 - [ ] Effect of termination: access cessation, data retrieval window, data deletion timeline
 - [ ] Survival: which provisions survive termination (indemnification, IP, limitation of
-  liability, dispute resolution, governing law — standard)
+      liability, dispute resolution, governing law — standard)
 
 **B2C considerations**:
+
 - [ ] Reasonable prior notice before suspension for non-emergency AUP violations
-  — DSA Art. 17 requires statement of reasons for content moderation decisions and
-  suspension of access; CMA (UK) and ACCC (AU) have challenged TOS that give platforms
-  absolute termination discretion without process in consumer contexts
+      — DSA Art. 17 requires statement of reasons for content moderation decisions and
+      suspension of access; CMA (UK) and ACCC (AU) have challenged TOS that give platforms
+      absolute termination discretion without process in consumer contexts
 - [ ] Data portability window: GDPR Art. 20 data portability right on termination;
-  EU Data Act switching rights (applicable from September 12, 2025); recommend minimum
-  30-day data export window post-termination
+      EU Data Act switching rights (applicable from September 12, 2025); recommend minimum
+      30-day data export window post-termination
 - [ ] No punitive data deletion on termination: platforms should not delete data immediately
-  on termination without reasonable notice and export opportunity; GDPR data portability
-  right applies at termination
+      on termination without reasonable notice and export opportunity; GDPR data portability
+      right applies at termination
 
 **B2B considerations**:
+
 - [ ] Termination for convenience with notice period (30–90 days typical)
 - [ ] Termination for cause with cure period (typically 30 days for remediable breaches)
 - [ ] Effect on committed subscriptions and refund obligations
 - [ ] Data handling post-termination (GDPR Art. 28(3)(g) — processor must delete or return
-  data on termination per instructions)
+      data on termination per instructions)
 
 ---
 
 #### Section 11: Modification of Terms
 
 **REQUIRED elements**:
+
 - [ ] Platform right to modify TOS: right reserved with notice obligation
 - [ ] Notice mechanism: email or prominent in-product notice; advance notice period
-  — recommend minimum 30 days for material changes (EU best practice; DMCCA 2024 subscription changes)
+      — recommend minimum 30 days for material changes (EU best practice; DMCCA 2024 subscription changes)
 - [ ] Acceptance mechanism for changes: continued use = acceptance (acceptable for B2B;
-  for B2C, material changes may require affirmative re-acceptance — EU best practice)
+      for B2C, material changes may require affirmative re-acceptance — EU best practice)
 - [ ] Non-acceptance right: user right to terminate if they do not accept material changes
-  — required for EU/UK B2C (unfair to impose material changes without exit right);
-  DSA Art. 14(4) requires notification period before new restrictions take effect
+      — required for EU/UK B2C (unfair to impose material changes without exit right);
+      DSA Art. 14(4) requires notification period before new restrictions take effect
 
 **B2C compliance note**: Under EU Unfair Contract Terms Directive and CRA 2015, unilateral
 modification clauses without adequate notice and exit rights are presumptively unfair.
@@ -792,23 +837,26 @@ link to prior versions at bottom of TOS. Required for DSA Art. 14 compliance.
 
 **Art. 14 — Terms and Conditions Content Requirements**:
 The TOS must include:
+
 - [ ] Information on restrictions on use of the service (content moderation, prohibited
-  content categories, enforcement measures)
+      content categories, enforcement measures)
 - [ ] Enforcement measures that may be applied: content removal, account suspension,
-  account termination
+      account termination
 - [ ] Internal complaint-handling procedure reference (Art. 20)
 - [ ] Reference to out-of-court dispute settlement body (Art. 21 — listed DSC-certified body)
 - [ ] Applicable law (Art. 14(1)(d))
 - [ ] Reference to trusted flaggers (Art. 22 — for platforms)
 - [ ] Information on the Digital Services Coordinator (DSC) of establishment for complaints
 - [ ] For algorithmic recommender systems: Art. 27 requires TOS to identify recommender
-  systems, explain main parameters, and describe options to modify or opt out
+      systems, explain main parameters, and describe options to modify or opt out
 
 **Art. 15 — Reporting Obligations**:
+
 - [ ] Obligation to report CSAM (child sexual abuse material) to relevant national authorities
-  immediately — mandate applies regardless of Art. 14
+      immediately — mandate applies regardless of Art. 14
 
 **VLOP-specific** (45M+ EU monthly active users):
+
 - [ ] Annual transparency report on content moderation
 - [ ] Systemic risk assessment
 - [ ] Independent audit access
@@ -824,15 +872,16 @@ Apply these frameworks to each drafted clause before finalizing:
 
 Run these 5 gates silently for every legal claim made in the draft TOS guidance:
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every mandatory requirement cites specific statute, regulation, or enforcement guidance | Add citation or mark "[UNVERIFIED]" |
-| **Format** | Citations follow consistent format for each jurisdiction | Fix format |
-| **Currency** | Every cited provision verified for amendments — consumer law changes frequently | Flag "[CHECK CURRENCY]" |
-| **Domain** | Analysis stays within applicable jurisdiction's legal framework | Remove or flag jurisdictional bleed |
-| **Confidence** | Uncertainty in legal interpretation explicitly stated | Add confidence qualifier |
+| Gate           | Rule                                                                                    | Fail Action                         |
+| -------------- | --------------------------------------------------------------------------------------- | ----------------------------------- |
+| **Source**     | Every mandatory requirement cites specific statute, regulation, or enforcement guidance | Add citation or mark "[UNVERIFIED]" |
+| **Format**     | Citations follow consistent format for each jurisdiction                                | Fix format                          |
+| **Currency**   | Every cited provision verified for amendments — consumer law changes frequently         | Flag "[CHECK CURRENCY]"             |
+| **Domain**     | Analysis stays within applicable jurisdiction's legal framework                         | Remove or flag jurisdictional bleed |
+| **Confidence** | Uncertainty in legal interpretation explicitly stated                                   | Add confidence qualifier            |
 
 **High-volatility areas requiring extra verification** (consumer law changes rapidly):
+
 - US auto-renewal laws: California, New York, FTC Rule status — verify quarterly
 - UK DMCCA 2024 subscription provisions — effective dates may not all be in force
 - KOSA / state minors' law — legislative status changes frequently
@@ -856,13 +905,13 @@ Under what circumstances would this provision be at reduced risk?
 
 #### Confidence Scoring
 
-| Level | Range | Meaning | Application |
-|-------|-------|---------|-------------|
-| **Definite** | 0.95–1.0 | Clear statutory mandate, recent enforcement | State as required with statutory citation |
-| **High** | 0.80–0.94 | Strong authority, minor interpretation questions | State as required with brief qualification |
-| **Probable** | 0.60–0.79 | Strong arguments, some uncertainty | State as strongly recommended; note uncertainty |
-| **Possible** | 0.40–0.59 | Genuine regulatory uncertainty | Flag for legal review; present both views |
-| **Unlikely** | 0.0–0.39 | Speculative or minority view | Do not assert; flag "[UNCERTAIN]" |
+| Level        | Range     | Meaning                                          | Application                                     |
+| ------------ | --------- | ------------------------------------------------ | ----------------------------------------------- |
+| **Definite** | 0.95–1.0  | Clear statutory mandate, recent enforcement      | State as required with statutory citation       |
+| **High**     | 0.80–0.94 | Strong authority, minor interpretation questions | State as required with brief qualification      |
+| **Probable** | 0.60–0.79 | Strong arguments, some uncertainty               | State as strongly recommended; note uncertainty |
+| **Possible** | 0.40–0.59 | Genuine regulatory uncertainty                   | Flag for legal review; present both views       |
+| **Unlikely** | 0.0–0.39  | Speculative or minority view                     | Do not assert; flag "[UNCERTAIN]"               |
 
 ---
 
@@ -870,15 +919,15 @@ Under what circumstances would this provision be at reduced risk?
 
 For platforms that serve both audiences, generate a comparison table for each high-impact clause:
 
-| Clause | B2C Version | B2B Version | Mandatory Difference |
-|--------|-------------|-------------|----------------------|
-| Warranty disclaimer | Limited by ACL, CRA 2015, EU Dirs. | Full AS IS disclaimer | YES — consumer laws void B2C disclaimers |
-| Limitation of liability | Must carve out death/injury, GDPR, ACL | More flexibility; mutual negotiation | YES — UCTA s.2, ACL s.64 |
-| Arbitration | Opt-out required; EU unenforceable | Generally enforceable with proper drafting | YES — consumer protection laws |
-| TOS modification | 30-day notice + exit right | Shorter notice acceptable | YES — unfair terms rules |
-| Auto-renewal | Conspicuous disclosure, easy cancel | Standard business practice | YES — state auto-renewal laws |
-| Jurisdiction clause | Consumer habitual residence override | Freely negotiated | YES — Rome I Art. 6, CRA 2015 |
-| Termination notice | Reasonable notice + data export | For convenience with notice | RECOMMENDED — CMA/ACCC scrutiny |
+| Clause                  | B2C Version                            | B2B Version                                | Mandatory Difference                     |
+| ----------------------- | -------------------------------------- | ------------------------------------------ | ---------------------------------------- |
+| Warranty disclaimer     | Limited by ACL, CRA 2015, EU Dirs.     | Full AS IS disclaimer                      | YES — consumer laws void B2C disclaimers |
+| Limitation of liability | Must carve out death/injury, GDPR, ACL | More flexibility; mutual negotiation       | YES — UCTA s.2, ACL s.64                 |
+| Arbitration             | Opt-out required; EU unenforceable     | Generally enforceable with proper drafting | YES — consumer protection laws           |
+| TOS modification        | 30-day notice + exit right             | Shorter notice acceptable                  | YES — unfair terms rules                 |
+| Auto-renewal            | Conspicuous disclosure, easy cancel    | Standard business practice                 | YES — state auto-renewal laws            |
+| Jurisdiction clause     | Consumer habitual residence override   | Freely negotiated                          | YES — Rome I Art. 6, CRA 2015            |
+| Termination notice      | Reasonable notice + data export        | For convenience with notice                | RECOMMENDED — CMA/ACCC scrutiny          |
 
 ---
 
@@ -914,6 +963,7 @@ Element                          | Present | Quality (1-5) | Notes
 #### Regulatory Coverage Check
 
 For each applicable jurisdiction, confirm:
+
 - [ ] Mandatory disclosure requirements addressed
 - [ ] Forbidden clause types excluded (unfair terms, banned arbitration provisions)
 - [ ] Consumer guarantee carve-outs included where required
@@ -928,14 +978,14 @@ For each applicable jurisdiction, confirm:
 
 Classify each TOS provision and any compliance gap on this scale:
 
-| Classification | Meaning | Action Required |
-|----------------|---------|-----------------|
-| **REQUIRED** | Mandatory by statute or regulation; absence creates regulatory or legal liability | Must include — no discretion |
-| **REQUIRED (B2C)** | Mandatory for consumer-facing services; optional for B2B | Include for B2C variant; flag for B2B |
-| **RECOMMENDED** | Industry standard; absence creates risk of regulatory scrutiny or enforcement | Include with high urgency |
-| **OPTIONAL** | Depends on business model or risk tolerance; no mandatory basis | Include if relevant; flagged as discretionary |
-| **FORBIDDEN (B2C)** | Clause type is unenforceable or illegal in consumer contracts | Remove; do not include |
-| **FORBIDDEN (Jurisdiction)** | Clause type is unenforceable in specific jurisdiction | Remove or add [JURISDICTION-SPECIFIC] carve-out |
+| Classification               | Meaning                                                                           | Action Required                                 |
+| ---------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------- |
+| **REQUIRED**                 | Mandatory by statute or regulation; absence creates regulatory or legal liability | Must include — no discretion                    |
+| **REQUIRED (B2C)**           | Mandatory for consumer-facing services; optional for B2B                          | Include for B2C variant; flag for B2B           |
+| **RECOMMENDED**              | Industry standard; absence creates risk of regulatory scrutiny or enforcement     | Include with high urgency                       |
+| **OPTIONAL**                 | Depends on business model or risk tolerance; no mandatory basis                   | Include if relevant; flagged as discretionary   |
+| **FORBIDDEN (B2C)**          | Clause type is unenforceable or illegal in consumer contracts                     | Remove; do not include                          |
+| **FORBIDDEN (Jurisdiction)** | Clause type is unenforceable in specific jurisdiction                             | Remove or add [JURISDICTION-SPECIFIC] carve-out |
 
 **Gap Classification** (for TOS audit mode):
 | Gap Severity | Meaning | Urgency |
@@ -952,6 +1002,7 @@ Classify each TOS provision and any compliance gap on this scale:
 When building or auditing TOS, prioritize in this order:
 
 ### Tier 1 — Regulatory Must-Haves (address immediately)
+
 1. COPPA / age gate provisions (active FTC enforcement; per-violation penalties up to $51,744)
 2. DMCA safe harbor requirements (repeat infringer policy, designated agent)
 3. DSA Art. 14 TOS content requirements (6% global revenue fines)
@@ -962,6 +1013,7 @@ When building or auditing TOS, prioritize in this order:
 8. UK OSA / DSA — content moderation duties in TOS (Ofcom enforcement)
 
 ### Tier 2 — Legal Risk Mitigators (address before launch or major update)
+
 9. Warranty disclaimer conspicuousness (US); savings clause for consumer jurisdictions
 10. Limitation of liability cap validity and carve-outs
 11. Arbitration agreement enforceability — opt-out, EFASSHA, AAA/JAMS compliance
@@ -970,6 +1022,7 @@ When building or auditing TOS, prioritize in this order:
 14. UGC license scope and AI training data disclosure
 
 ### Tier 3 — Best Practice Enhancements (next review cycle)
+
 15. Multi-tier enforcement framework for AUP (warning → removal → suspension → termination)
 16. Appeals mechanism for content moderation decisions (DSA Art. 20 for EU platforms)
 17. Recommender system transparency (DSA Art. 27)
@@ -1114,6 +1167,7 @@ Before delivering any TOS clause or guidance, apply these writing discipline che
    labels (e.g., "see Section 8 (Dispute Resolution)" not just "see above").
 
 **Legal Precision Gates** (applies to all TOS, including B2B):
+
 1. All monetary amounts in specific currency with ISO 4217 code if multi-jurisdiction.
 2. All notice periods as exact calendar day counts.
 3. All survival provisions explicitly enumerated.
@@ -1126,6 +1180,7 @@ Before delivering any TOS clause or guidance, apply these writing discipline che
 ### legalcode-mcp
 
 When legalcode-mcp is connected, use it for:
+
 - Searching for current statutory text for each jurisdiction's auto-renewal, consumer
   protection, and arbitration statutes (verify effective dates and recent amendments)
 - Finding enforcement actions by FTC, CMA, ACCC, DPC, CNIL relevant to platform TOS
@@ -1136,6 +1191,7 @@ When legalcode-mcp is connected, use it for:
 Save research results to `/tmp/legalcode-tos-research.md` for reference during drafting.
 
 **Without legalcode-mcp** (graceful degradation):
+
 - Proceed with knowledge-based drafting and flag all statutory citations with [VERIFY]
 - Note in Glass Box audit trail: `legalcode_mcp: "Not connected"`
 - Prioritize client review of: COPPA Rule current text; California B&P §17600 as amended;
@@ -1144,11 +1200,13 @@ Save research results to `/tmp/legalcode-tos-research.md` for reference during d
 ### Perplexity Search (fallback research)
 
 Use the perplexity-search skill for:
+
 ```bash
 uv run ~/.claude/skills/perplexity-search/scripts/perplexity_search.py "<query>"
 ```
 
 Recommended queries:
+
 - "Terms of service legal requirements US EU UK Australia 2025 2026"
 - "COPPA enforcement actions FTC 2024 2025 age verification"
 - "California auto-renewal law B&P 17600 amendments July 2025"
@@ -1209,18 +1267,19 @@ Structure all TOS drafting guidance using this template:
 ---
 
 ## Glass Box Audit Trail
+
 [Insert YAML glass_box block]
 
 ---
 
 ## Regulatory Framework Assessment
 
-| Framework | Applicable | Key Obligations | Confidence |
-|-----------|------------|-----------------|------------|
-| COPPA (US) | [YES/NO] | [Summary] | [0.0-1.0] |
-| DMCA §512 | [YES/NO] | [Summary] | [0.0-1.0] |
-| DSA (EU) | [YES/NO] | [Summary] | [0.0-1.0] |
-| ... | | | |
+| Framework  | Applicable | Key Obligations | Confidence |
+| ---------- | ---------- | --------------- | ---------- |
+| COPPA (US) | [YES/NO]   | [Summary]       | [0.0-1.0]  |
+| DMCA §512  | [YES/NO]   | [Summary]       | [0.0-1.0]  |
+| DSA (EU)   | [YES/NO]   | [Summary]       | [0.0-1.0]  |
+| ...        |            |                 |            |
 
 ---
 
@@ -1233,9 +1292,11 @@ Structure all TOS drafting guidance using this template:
 **Confidence**: [0.0-1.0]
 
 **Recommended Draft Language:**
+
 > [Draft TOS text in plain language, formatted for inclusion]
 
 **Jurisdictional Notes:**
+
 - **US**: [Note]
 - **EU**: [Note]
 - **UK**: [Note]
@@ -1248,9 +1309,11 @@ Structure all TOS drafting guidance using this template:
 ---
 
 ### 2. Account Registration and Security
+
 [Repeat structure for each section]
 
 ---
+
 [Continue for all applicable sections]
 
 ---
@@ -1263,21 +1326,24 @@ Structure all TOS drafting guidance using this template:
 
 ## Compliance Gap Summary (Audit Mode)
 
-| Gap | Severity | Jurisdiction | Action Required | Deadline |
-|-----|----------|-------------|-----------------|---------|
-| [Description] | [CRITICAL/HIGH/MEDIUM/LOW] | [Jurisdiction] | [Action] | [Timeline] |
+| Gap           | Severity                   | Jurisdiction   | Action Required | Deadline   |
+| ------------- | -------------------------- | -------------- | --------------- | ---------- |
+| [Description] | [CRITICAL/HIGH/MEDIUM/LOW] | [Jurisdiction] | [Action]        | [Timeline] |
 
 ---
 
 ## Prioritized Action Plan
 
 ### Tier 1 — Address Before Publication
+
 - [ ] [Action item with statutory basis]
 
 ### Tier 2 — Address Within 30 Days
+
 - [ ] [Action item]
 
 ### Tier 3 — Next Review Cycle
+
 - [ ] [Action item]
 
 ---
@@ -1292,9 +1358,9 @@ Structure all TOS drafting guidance using this template:
 
 ---
 
-*This analysis was produced by legalcode-terms-of-service-drafter. It does not constitute
+_This analysis was produced by legalcode-terms-of-service-drafter. It does not constitute
 legal advice. Review by qualified legal professionals licensed in each applicable jurisdiction
-is required before publishing or enforcing any Terms of Service.*
+is required before publishing or enforcing any Terms of Service._
 ```
 
 ---
@@ -1304,6 +1370,7 @@ is required before publishing or enforcing any Terms of Service.*
 When creating jurisdiction-specific TOS supplements or standalone jurisdiction TOS:
 
 ### EU-Specific Supplement
+
 - Include EU consumer protection rights summary (withdrawal rights, conformity guarantee)
 - DSA Art. 14 compliant content moderation section with appeals reference
 - EU ADR / out-of-court dispute settlement link (DSA Art. 21)
@@ -1313,6 +1380,7 @@ When creating jurisdiction-specific TOS supplements or standalone jurisdiction T
 - VAT/GST disclosure and digital services place-of-supply rules
 
 ### UK-Specific Supplement
+
 - CRA 2015 Part 2 unfair terms compliance (grey list review)
 - DMCCA 2024 subscription reminder and cancellation provisions (when in force)
 - Online Safety Act 2023 safety duties acknowledgment
@@ -1320,12 +1388,14 @@ When creating jurisdiction-specific TOS supplements or standalone jurisdiction T
 - UK courts as alternative to arbitration for consumer claims under £5,000
 
 ### Australia-Specific Supplement
+
 - ACL consumer guarantee acknowledgment — cannot be excluded
 - ACL unfair terms compliance — review all standard-form terms against grey list
 - ACCC complaint escalation reference
 - Privacy Act 1988 / APP compliance cross-reference
 
 ### Canada-Specific Supplement
+
 - CASL: separate email marketing consent mechanism; TOS acceptance ≠ CASL consent
 - PIPEDA Privacy Policy cross-reference
 - Quebec Law 25: automated decision-making disclosure; PI incident cross-reference

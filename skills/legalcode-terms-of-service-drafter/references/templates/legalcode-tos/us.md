@@ -1,7 +1,8 @@
 ---
 title: Terms of Service — United States
 jurisdictions: [us, us-ca, us-ny, us-or, us-co, us-il, us-tx]
-statutes: [Section-230, DMCA, COPPA, CAN-SPAM, ROSCA, FTC-Click-to-Cancel, ARLDA, ADA]
+statutes:
+  [Section-230, DMCA, COPPA, CAN-SPAM, ROSCA, FTC-Click-to-Cancel, ARLDA, ADA]
 audience: [B2C, B2B]
 license: MIT
 last_updated: 2026-04-28
@@ -20,7 +21,7 @@ These Terms of Service (the "Terms") form a binding contract between you ("you" 
 
 ## 1. Plain-language summary
 
-*Non-binding overview; operative obligations are in Sections 2–20.*
+_Non-binding overview; operative obligations are in Sections 2–20._
 
 The short version, in plain English:
 
@@ -38,7 +39,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 2. Acceptance & eligibility
 
-*By creating an account, clicking "I agree", or otherwise accessing the Service, you accept these Terms and confirm you can lawfully enter into them.*
+_By creating an account, clicking "I agree", or otherwise accessing the Service, you accept these Terms and confirm you can lawfully enter into them._
 
 **2.1 Acceptance.** You accept these Terms by (a) clicking a button labeled "I agree", "Sign up", or similar; (b) creating or accessing an account; or (c) otherwise using the Service. If you do not accept these Terms, do not use the Service.
 
@@ -46,9 +47,9 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 **2.3 Children — COPPA.** The Service is not directed to children under 13, and we do not knowingly collect personal information from children under 13 in violation of the Children's Online Privacy Protection Act, 15 U.S.C. §§ 6501–6506, and 16 C.F.R. Part 312. If we learn that a child under 13 has provided personal information without verifiable parental consent, we will delete that information promptly. Parents or guardians who believe their child has provided information in violation of this section should contact {{Privacy Contact Email}}.
 
-**2.4 Teen users (13–17).** *OPTIONAL — only if the Service offers features for users aged 13 to 17.* If you are 13–17, you may use the Service only with the involvement of a parent or legal guardian who has reviewed these Terms. {{Company Short Name}} provides age-appropriate defaults consistent with the FTC's COPPA guidance and, where applicable, California Senate Bill 976 (Protecting Our Kids from Social Media Addiction Act) `[VERIFY]` and other state laws governing minor-targeted features.
+**2.4 Teen users (13–17).** _OPTIONAL — only if the Service offers features for users aged 13 to 17._ If you are 13–17, you may use the Service only with the involvement of a parent or legal guardian who has reviewed these Terms. {{Company Short Name}} provides age-appropriate defaults consistent with the FTC's COPPA guidance and, where applicable, California Senate Bill 976 (Protecting Our Kids from Social Media Addiction Act) `[VERIFY]` and other state laws governing minor-targeted features.
 
-**2.5 Business users (B2B).** *B2B toggle.* If you accept these Terms on behalf of an organization, you represent that you are authorized to bind that organization, and "you" includes the organization. Where the parties have signed a separate master services agreement or order form covering the Service, that agreement controls in case of conflict with these Terms.
+**2.5 Business users (B2B).** _B2B toggle._ If you accept these Terms on behalf of an organization, you represent that you are authorized to bind that organization, and "you" includes the organization. Where the parties have signed a separate master services agreement or order form covering the Service, that agreement controls in case of conflict with these Terms.
 
 **2.6 Geographic scope.** The Service is operated from the United States. We make no representation that the Service is appropriate or available outside the United States. Users who access the Service from other jurisdictions do so on their own initiative and are responsible for compliance with local law.
 
@@ -56,7 +57,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 3. Definitions
 
-*Defined terms used in these Terms have the meanings given below.*
+_Defined terms used in these Terms have the meanings given below._
 
 - **"Account"** — your registered profile and credentials for the Service.
 - **"Affiliate"** — any entity that controls, is controlled by, or is under common control with a party.
@@ -74,23 +75,23 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 4. Account registration & security
 
-*Open and keep an account in good standing. Protect your credentials.*
+_Open and keep an account in good standing. Protect your credentials._
 
 **4.1 Registration.** To access most features, you must register an Account with accurate, current, and complete information. You agree to keep that information up to date.
 
 **4.2 Credentials.** You are responsible for keeping your password and other authentication credentials confidential and for all activity occurring under your Account. Notify us immediately at {{Security Contact Email}} if you suspect unauthorized access. We recommend enabling multi-factor authentication where available.
 
-**4.3 One person per account.** Each individual Account is for one natural person. *B2B toggle.* Business Users may provision separate Accounts for each authorized end user under a single workspace; sharing credentials is prohibited.
+**4.3 One person per account.** Each individual Account is for one natural person. _B2B toggle._ Business Users may provision separate Accounts for each authorized end user under a single workspace; sharing credentials is prohibited.
 
 **4.4 Account information accuracy.** You may not impersonate any person, misrepresent your affiliation, or use another person's credentials. We may require identity verification consistent with applicable Know-Your-Customer rules and may suspend Accounts that fail verification.
 
-**4.5 Inactive accounts.** *OPTIONAL — only if the Service deactivates inactive accounts.* We may deactivate Accounts that have been inactive for {{Inactivity Period}}. Where required by state unclaimed-property law, balances or stored value will be handled in accordance with applicable escheat rules.
+**4.5 Inactive accounts.** _OPTIONAL — only if the Service deactivates inactive accounts._ We may deactivate Accounts that have been inactive for {{Inactivity Period}}. Where required by state unclaimed-property law, balances or stored value will be handled in accordance with applicable escheat rules.
 
 ---
 
 ## 5. License & access rights
 
-*We grant you a limited, revocable license to use the Service for its intended purpose.*
+_We grant you a limited, revocable license to use the Service for its intended purpose._
 
 **5.1 License grant.** Subject to your compliance with these Terms and payment of any applicable fees, {{Company Short Name}} grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license during the Term to access and use the Service for your personal use (B2C) or your internal business operations (B2B).
 
@@ -104,7 +105,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 6. User-generated content (UGC)
 
-*You own your content. We need a license to operate the Service. Section 230 limits our liability for what users post.*
+_You own your content. We need a license to operate the Service. Section 230 limits our liability for what users post._
 
 **6.1 Ownership.** As between you and {{Company Short Name}}, you retain all rights, title, and interest in and to your User Content. {{Company Short Name}} does not claim ownership of your User Content.
 
@@ -112,7 +113,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 **6.3 Representations.** You represent that you own or have the necessary rights to your User Content and that posting it through the Service does not infringe third-party rights or violate law.
 
-**6.4 Section 230 — publisher and editorial discretion.** Under Section 230 of the Communications Act, 47 U.S.C. § 230(c)(1), no provider of an interactive computer service shall be treated as the publisher or speaker of information provided by another information content provider. Section 230(c)(2) further protects good-faith decisions to restrict access to material the provider considers objectionable. {{Company Short Name}} acts as a provider of an interactive computer service with limited liability for User Content under applicable federal law `[VERIFY]`. We may, in our sole editorial discretion, remove, edit, refuse, demote, label, or restrict access to User Content without losing the protections of Section 230, consistent with the framework recognized in *Zeran v. America Online* and the principles that displaced *Stratton Oakmont, Inc. v. Prodigy Services Co.*
+**6.4 Section 230 — publisher and editorial discretion.** Under Section 230 of the Communications Act, 47 U.S.C. § 230(c)(1), no provider of an interactive computer service shall be treated as the publisher or speaker of information provided by another information content provider. Section 230(c)(2) further protects good-faith decisions to restrict access to material the provider considers objectionable. {{Company Short Name}} acts as a provider of an interactive computer service with limited liability for User Content under applicable federal law `[VERIFY]`. We may, in our sole editorial discretion, remove, edit, refuse, demote, label, or restrict access to User Content without losing the protections of Section 230, consistent with the framework recognized in _Zeran v. America Online_ and the principles that displaced _Stratton Oakmont, Inc. v. Prodigy Services Co._
 
 **6.5 Section 230 carve-outs.** Section 230 does not limit liability for (a) federal criminal law; (b) intellectual property claims, including the DMCA; (c) the Electronic Communications Privacy Act, 18 U.S.C. §§ 2510 et seq.; or (d) sex-trafficking claims under 47 U.S.C. § 230(e)(5) (FOSTA-SESTA). Nothing in this Section limits {{Company Short Name}}'s obligations under those laws.
 
@@ -120,13 +121,13 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 **6.7 Feedback.** If you send us suggestions, ideas, or feedback, you grant {{Company Short Name}} a perpetual, irrevocable, royalty-free license to use that feedback for any lawful purpose, without obligation to you.
 
-**6.8 Storage and retention.** *OPTIONAL — only if storage limits apply.* User Content may be subject to storage quotas, retention windows, or file-size limits described in the Documentation. We will give reasonable notice before deleting User Content for quota reasons.
+**6.8 Storage and retention.** _OPTIONAL — only if storage limits apply._ User Content may be subject to storage quotas, retention windows, or file-size limits described in the Documentation. We will give reasonable notice before deleting User Content for quota reasons.
 
 ---
 
 ## 7. Acceptable use
 
-*Use the Service lawfully and respectfully. Annex A sets out the prohibited conduct in detail.*
+_Use the Service lawfully and respectfully. Annex A sets out the prohibited conduct in detail._
 
 **7.1 Acceptable Use Policy.** You agree to comply with the Acceptable Use Policy attached as Annex A, which is incorporated into these Terms by reference.
 
@@ -134,7 +135,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 **7.3 Anti-spam compliance.** If you use the Service to send commercial electronic mail, you must comply with the CAN-SPAM Act of 2003, 15 U.S.C. §§ 7701–7713, and 16 C.F.R. Part 316, including accurate header information, functional opt-out, and physical postal address disclosure. Violations may also implicate state anti-spam laws.
 
-**7.4 Telephone consumer protection.** *OPTIONAL — only if the Service supports SMS, voice, or fax outreach.* You will comply with the Telephone Consumer Protection Act, 47 U.S.C. § 227, and FCC implementing rules at 47 C.F.R. § 64.1200, including prior express written consent for marketing messages and honoring opt-outs.
+**7.4 Telephone consumer protection.** _OPTIONAL — only if the Service supports SMS, voice, or fax outreach._ You will comply with the Telephone Consumer Protection Act, 47 U.S.C. § 227, and FCC implementing rules at 47 C.F.R. § 64.1200, including prior express written consent for marketing messages and honoring opt-outs.
 
 **7.5 Export and sanctions.** You will not use the Service in violation of U.S. export-control laws, including the Export Administration Regulations, 15 C.F.R. Parts 730–774, or U.S. sanctions administered by OFAC.
 
@@ -144,7 +145,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 8. Intellectual property (platform IP)
 
-*We own the Service. The DMCA process for copyright complaints is summarized below and detailed in Annex B.*
+_We own the Service. The DMCA process for copyright complaints is summarized below and detailed in Annex B._
 
 **8.1 {{Company Short Name}} property.** The Service, including its software, designs, trademarks, service marks, logos, trade dress, and Documentation, is the property of {{Company Short Name}} or its licensors and is protected by U.S. and international intellectual-property laws. Except for the limited license in Section 5, no rights are granted to you in {{Company Short Name}}'s intellectual property.
 
@@ -168,7 +169,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 9. Third-party services & links
 
-*The Service may interoperate with third-party tools that we do not control.*
+_The Service may interoperate with third-party tools that we do not control._
 
 **9.1 Third-party services.** The Service may include integrations with third-party services, embedded content, or links to third-party websites ("Third-Party Services"). {{Company Short Name}} does not control Third-Party Services and is not responsible for their content, privacy practices, security, or terms.
 
@@ -182,7 +183,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 10. Subscription, billing, auto-renewal, refunds
 
-*Paid plans renew automatically. We will remind you before renewal (where state law requires) and you can cancel online at any time.*
+_Paid plans renew automatically. We will remind you before renewal (where state law requires) and you can cancel online at any time._
 
 **10.1 Plans and fees.** Pricing for Subscriptions is described at {{Pricing URL}} or in your Order Form. Fees are exclusive of taxes, which you are responsible for paying except for taxes on {{Company Short Name}}'s net income.
 
@@ -209,19 +210,19 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 **10.11 Cancellation.** You may cancel a Subscription at any time by following the steps at {{Cancellation URL}}. Cancellation takes effect at the end of the current billing cycle unless we are required to honor it earlier under applicable state law. We use a one-click or equivalent cancellation flow consistent with the FTC Click-to-Cancel Rule and ARLDA online-cancellation requirements.
 
-**10.12 Refunds.** Except where required by law or expressly stated in these Terms, fees are non-refundable. *B2C toggle.* Where state law requires pro-rated refunds for early cancellation of long-term subscriptions, we will issue refunds consistent with that law. *B2B toggle.* Refunds for prepaid annual Subscriptions are not provided except as required by law or by the applicable Order Form.
+**10.12 Refunds.** Except where required by law or expressly stated in these Terms, fees are non-refundable. _B2C toggle._ Where state law requires pro-rated refunds for early cancellation of long-term subscriptions, we will issue refunds consistent with that law. _B2B toggle._ Refunds for prepaid annual Subscriptions are not provided except as required by law or by the applicable Order Form.
 
 **10.13 Price changes.** We may change Subscription prices for future billing cycles. We will notify you of price increases at least {{Price Change Notice Days}} days in advance and, where state law requires, obtain your fresh consent before charging the new amount.
 
-**10.14 Failed payments.** If a payment fails, we may retry the charge and may suspend your Subscription until the balance is paid. *B2B toggle.* Past-due amounts accrue interest at the lesser of 1.5% per month or the maximum rate permitted by law.
+**10.14 Failed payments.** If a payment fails, we may retry the charge and may suspend your Subscription until the balance is paid. _B2B toggle._ Past-due amounts accrue interest at the lesser of 1.5% per month or the maximum rate permitted by law.
 
-**10.15 Free trials converting to paid.** *OPTIONAL — only if a free trial converts to paid.* When a free trial converts to a paid Subscription, we provide the disclosures required by ROSCA, the FTC Click-to-Cancel Rule, and applicable state law before any charge is made.
+**10.15 Free trials converting to paid.** _OPTIONAL — only if a free trial converts to paid._ When a free trial converts to a paid Subscription, we provide the disclosures required by ROSCA, the FTC Click-to-Cancel Rule, and applicable state law before any charge is made.
 
 ---
 
 ## 11. Trials, free tier & beta
 
-*Free and beta features are offered as-is and may change without notice.*
+_Free and beta features are offered as-is and may change without notice._
 
 **11.1 Free tier.** {{Company Short Name}} may offer a free tier with limited features. The free tier is provided at our discretion and may be modified or discontinued.
 
@@ -229,13 +230,13 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 **11.3 Beta features.** Features marked "beta", "preview", "experimental", or similar are offered for evaluation, may be unstable or incomplete, and are excluded from any service-level commitments. Beta features are provided "as is" and may be discontinued at any time.
 
-**11.4 Feedback for beta.** *B2B toggle.* If you participate in a beta, you agree to provide reasonable feedback. Feedback is licensed under Section 6.7.
+**11.4 Feedback for beta.** _B2B toggle._ If you participate in a beta, you agree to provide reasonable feedback. Feedback is licensed under Section 6.7.
 
 ---
 
 ## 12. Term, suspension, termination
 
-*Either party may end the relationship. We will give notice and a chance to cure where reasonable.*
+_Either party may end the relationship. We will give notice and a chance to cure where reasonable._
 
 **12.1 Term.** These Terms take effect when you first accept them and continue until terminated under this Section.
 
@@ -251,23 +252,23 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 13. Disclaimers (warranties)
 
-*The Service is provided "as is". State law may give you additional rights that we cannot waive.*
+_The Service is provided "as is". State law may give you additional rights that we cannot waive._
 
 **13.1 "AS IS".** **TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS, AND {{COMPANY SHORT NAME}} AND ITS AFFILIATES, LICENSORS, AND SUPPLIERS DISCLAIM ALL WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, AND ANY WARRANTIES ARISING FROM A COURSE OF DEALING, USAGE, OR TRADE PRACTICE.** This disclaimer is made consistent with U.C.C. § 2-316.
 
-**13.2 No warranty of uninterrupted operation.** {{Company Short Name}} does not warrant that the Service will be uninterrupted, error-free, secure, or free of harmful components. *B2B toggle.* Service-level commitments, where offered, are set forth in the applicable Order Form or service-level agreement.
+**13.2 No warranty of uninterrupted operation.** {{Company Short Name}} does not warrant that the Service will be uninterrupted, error-free, secure, or free of harmful components. _B2B toggle._ Service-level commitments, where offered, are set forth in the applicable Order Form or service-level agreement.
 
 **13.3 Beta features.** Beta features are excluded from all warranties under Section 11.3.
 
-**13.4 Magnuson-Moss.** *OPTIONAL — only if {{Company Short Name}} provides an express written warranty.* If {{Company Short Name}} provides an express written warranty in connection with a "consumer product" within the meaning of the Magnuson-Moss Warranty Act, 15 U.S.C. §§ 2301–2312, that warranty is provided in a separate written document and the implied-warranty disclaimers above apply only to the extent permitted under 15 U.S.C. § 2308.
+**13.4 Magnuson-Moss.** _OPTIONAL — only if {{Company Short Name}} provides an express written warranty._ If {{Company Short Name}} provides an express written warranty in connection with a "consumer product" within the meaning of the Magnuson-Moss Warranty Act, 15 U.S.C. §§ 2301–2312, that warranty is provided in a separate written document and the implied-warranty disclaimers above apply only to the extent permitted under 15 U.S.C. § 2308.
 
-**13.5 State carve-outs.** *Some states do not allow the exclusion of certain implied warranties or limitations on how long an implied warranty lasts. The disclaimers in this Section apply to the maximum extent permitted by the law of your state of residence, and you may have additional rights under that law.*
+**13.5 State carve-outs.** _Some states do not allow the exclusion of certain implied warranties or limitations on how long an implied warranty lasts. The disclaimers in this Section apply to the maximum extent permitted by the law of your state of residence, and you may have additional rights under that law._
 
 ---
 
 ## 14. Limitation of liability
 
-*Damages are capped. Some states do not allow these caps in full.*
+_Damages are capped. Some states do not allow these caps in full._
 
 **14.1 Exclusion of indirect damages.** **TO THE MAXIMUM EXTENT PERMITTED BY LAW, NEITHER PARTY WILL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOST PROFITS, LOST REVENUE, LOST GOODWILL, OR LOSS OR CORRUPTION OF DATA, ARISING FROM OR RELATED TO THESE TERMS OR THE SERVICE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.** This exclusion is consistent with U.C.C. § 2-719(3).
 
@@ -275,7 +276,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 **14.3 Carve-outs.** The limitations in Sections 14.1 and 14.2 do not apply to (a) a party's indemnification obligations under Section 15; (b) breaches of confidentiality; (c) infringement of the other party's intellectual property; (d) a party's gross negligence, willful misconduct, or fraud; or (e) liability that cannot be limited under applicable law.
 
-**14.4 State carve-outs.** Some states, including New Jersey under the Truth-in-Consumer Contract, Warranty and Notice Act, N.J.S.A. 56:12-14 et seq., restrict or prohibit certain liability limitations. **In those states, the limitations in this Section apply only to the extent permitted by law, and nothing in these Terms is intended to limit any rights that cannot be waived under applicable consumer-protection law.** *Some states do not allow the exclusion or limitation of incidental or consequential damages, so the above limitations may not apply to you.*
+**14.4 State carve-outs.** Some states, including New Jersey under the Truth-in-Consumer Contract, Warranty and Notice Act, N.J.S.A. 56:12-14 et seq., restrict or prohibit certain liability limitations. **In those states, the limitations in this Section apply only to the extent permitted by law, and nothing in these Terms is intended to limit any rights that cannot be waived under applicable consumer-protection law.** _Some states do not allow the exclusion or limitation of incidental or consequential damages, so the above limitations may not apply to you._
 
 **14.5 Basis of the bargain.** The parties acknowledge that the disclaimers and liability limits in Sections 13 and 14 are a fundamental basis of the bargain and reflect a reasonable allocation of risk.
 
@@ -283,11 +284,11 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 15. Indemnification
 
-*You cover us for your misuse, and (where applicable) we cover you for our IP infringement.*
+_You cover us for your misuse, and (where applicable) we cover you for our IP infringement._
 
 **15.1 Your indemnity.** You will defend, indemnify, and hold harmless {{Company Short Name}}, its Affiliates, and their respective officers, directors, employees, and agents from and against any third-party claims, demands, and proceedings, and pay damages, fines, settlements, and reasonable attorneys' fees finally awarded, arising from (a) your User Content; (b) your breach of these Terms or the Acceptable Use Policy; (c) your violation of law; or (d) your infringement of third-party rights.
 
-**15.2 {{Company Short Name}} indemnity (B2B).** *B2B toggle — typically only for paid Business Users.* {{Company Short Name}} will defend you against third-party claims that the Service, when used as authorized, infringes a U.S. patent, copyright, or trademark, and will pay damages and costs finally awarded, subject to the carve-outs in Section 15.4.
+**15.2 {{Company Short Name}} indemnity (B2B).** _B2B toggle — typically only for paid Business Users._ {{Company Short Name}} will defend you against third-party claims that the Service, when used as authorized, infringes a U.S. patent, copyright, or trademark, and will pay damages and costs finally awarded, subject to the carve-outs in Section 15.4.
 
 **15.3 Procedure.** The party seeking indemnification must (a) promptly notify the indemnifying party in writing; (b) give sole control of the defense and settlement to the indemnifying party (provided the settlement does not impose any non-monetary obligation on the indemnified party without consent); and (c) reasonably cooperate. Failure to give prompt notice does not relieve the indemnifying party of obligations except to the extent of material prejudice.
 
@@ -297,11 +298,11 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 16. Dispute resolution
 
-*Most disputes are resolved by binding individual arbitration. You can opt out within 30 days. You can always go to small-claims court.*
+_Most disputes are resolved by binding individual arbitration. You can opt out within 30 days. You can always go to small-claims court._
 
 **PLEASE READ THIS SECTION CAREFULLY. IT REQUIRES YOU AND {{COMPANY SHORT NAME}} TO RESOLVE DISPUTES THROUGH BINDING INDIVIDUAL ARBITRATION RATHER THAN A COURT, EXCEPT AS PROVIDED BELOW. IT ALSO INCLUDES A WAIVER OF CLASS ACTIONS AND JURY TRIAL.**
 
-**16.1 Federal Arbitration Act.** This Section is governed by the Federal Arbitration Act, 9 U.S.C. §§ 1–16, which preempts inconsistent state law where it applies. The parties intend that the arbitration provisions of these Terms be enforced to the fullest extent permitted under the FAA, consistent with *AT&T Mobility LLC v. Concepcion*, 563 U.S. 333 (2011), *DIRECTV, Inc. v. Imburgia*, 577 U.S. 47 (2015), and *Lamps Plus, Inc. v. Varela*, 587 U.S. 176 (2019).
+**16.1 Federal Arbitration Act.** This Section is governed by the Federal Arbitration Act, 9 U.S.C. §§ 1–16, which preempts inconsistent state law where it applies. The parties intend that the arbitration provisions of these Terms be enforced to the fullest extent permitted under the FAA, consistent with _AT&T Mobility LLC v. Concepcion_, 563 U.S. 333 (2011), _DIRECTV, Inc. v. Imburgia_, 577 U.S. 47 (2015), and _Lamps Plus, Inc. v. Varela_, 587 U.S. 176 (2019).
 
 **16.2 Informal dispute resolution first.** Before initiating arbitration, the party with a claim must send a written notice to the other party at {{Legal Notice Address}} (for {{Company Short Name}}) or your Account address (for you). The notice must describe the claim and the relief sought. The parties will attempt to resolve the claim informally for {{Informal Resolution Days}} days before either may initiate arbitration.
 
@@ -310,10 +311,11 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 **16.4 Class-action waiver and jury waiver.** **YOU AND {{COMPANY SHORT NAME}} EACH WAIVE THE RIGHT TO A TRIAL BY JURY AND THE RIGHT TO PARTICIPATE IN A CLASS, COLLECTIVE, OR REPRESENTATIVE ACTION.** Claims must be brought in an individual capacity. The arbitrator may not consolidate more than one person's claims and may not preside over any form of class or representative proceeding, except as required by the mass-arbitration procedures in Section 16.6 or as expressly preserved by Section 16.5. **If this class waiver is found unenforceable as to a particular claim or remedy, that claim or remedy must be litigated in court, but the remainder of this Section continues to apply.**
 
 **16.5 Carve-outs from arbitration.** Notwithstanding Section 16.3:
+
 - (a) **Small-claims court.** Either party may bring an individual claim in small-claims court if the claim qualifies and proceeds on an individual basis.
 - (b) **Injunctive relief for IP.** Either party may seek temporary or preliminary injunctive relief in court to protect intellectual property or confidential information.
-- (c) **Public injunctive relief — California.** Consistent with *McGill v. Citibank, N.A.*, 2 Cal. 5th 945 (2017), claims for public injunctive relief brought by California users may be litigated in court if a court finds those claims non-arbitrable. The remainder of this Section continues to apply to other claims.
-- (d) **New Jersey — Atalese.** New Jersey users acknowledge that they have read and understood this Section, including the waiver of the right to a jury trial and the right to sue in court, consistent with *Atalese v. U.S. Legal Services Group, L.P.*, 219 N.J. 430 (2014).
+- (c) **Public injunctive relief — California.** Consistent with _McGill v. Citibank, N.A._, 2 Cal. 5th 945 (2017), claims for public injunctive relief brought by California users may be litigated in court if a court finds those claims non-arbitrable. The remainder of this Section continues to apply to other claims.
+- (d) **New Jersey — Atalese.** New Jersey users acknowledge that they have read and understood this Section, including the waiver of the right to a jury trial and the right to sue in court, consistent with _Atalese v. U.S. Legal Services Group, L.P._, 219 N.J. 430 (2014).
 
 **16.6 Mass arbitration.** If 25 or more similar claims are filed against {{Company Short Name}} by or with coordinated counsel, the parties agree that the AAA Mass Arbitration Supplementary Rules or the JAMS Mass Arbitration Procedures (whichever provider is selected) will govern, including bellwether-and-batched protocols, standardized fee schedules, and an option for mediation before merits arbitration. The procedures are intended to ensure efficient and fair handling of high-volume claims.
 
@@ -329,19 +331,19 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 17. Governing law & jurisdiction
 
-*The law of {{Governing Law}} governs, but consumer-protection laws of your home state are preserved.*
+_The law of {{Governing Law}} governs, but consumer-protection laws of your home state are preserved._
 
 **17.1 Governing law.** These Terms and any non-arbitrable disputes arising out of or relating to them are governed by the laws of the State of {{Governing Law}} (commonly Delaware or California for SaaS), without regard to its conflict-of-laws principles. The United Nations Convention on Contracts for the International Sale of Goods does not apply.
 
 **17.2 Forum.** Subject to Section 16, any judicial proceeding (for example, to compel arbitration, confirm an award, or seek injunctive relief) will be brought exclusively in the state or federal courts located in {{Forum County}}, {{Governing Law}}, and the parties consent to personal jurisdiction there.
 
-**17.3 Consumer-protection carve-outs.** Consistent with *Carnival Cruise Lines, Inc. v. Shute*, 499 U.S. 585 (1991), and the principle that mandatory consumer-protection statutes of the user's home state are not waived by a forum-selection clause, nothing in this Section limits any non-waivable consumer-protection right available to you under the law of your state of residence.
+**17.3 Consumer-protection carve-outs.** Consistent with _Carnival Cruise Lines, Inc. v. Shute_, 499 U.S. 585 (1991), and the principle that mandatory consumer-protection statutes of the user's home state are not waived by a forum-selection clause, nothing in this Section limits any non-waivable consumer-protection right available to you under the law of your state of residence.
 
 ---
 
 ## 18. Changes to these Terms
 
-*We will tell you before changing these Terms in a material way.*
+_We will tell you before changing these Terms in a material way._
 
 **18.1 Notice of changes.** {{Company Short Name}} may modify these Terms from time to time. We will post the updated Terms with a new "Last Updated" date and, for material changes, will provide notice through the Service, by email, or by another reasonable method at least {{Material Change Notice Days}} days before the changes take effect.
 
@@ -355,7 +357,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 ## 19. Notices & communications
 
-*How we contact you and how you contact us.*
+_How we contact you and how you contact us._
 
 **19.1 Notices to you.** We may send notices through the Service, by email to the address on your Account, or by posting on {{Service URL}}. You consent to electronic delivery of notices, including those required to be in writing under applicable law, to the maximum extent permitted.
 
@@ -363,17 +365,17 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 **19.3 California "Shine the Light".** Under California Civil Code § 1798.83, California residents who use the Service for personal, family, or household purposes may request information about how their personal information has been shared with third parties for those third parties' direct-marketing purposes. To make such a request, contact {{Privacy Contact Email}}. Additional details are provided in our Privacy Policy at {{Privacy Policy URL}}.
 
-**19.4 Marketing communications.** *B2C toggle.* If you receive marketing emails from us, each will include an unsubscribe link consistent with the CAN-SPAM Act. You may also manage marketing preferences in your Account.
+**19.4 Marketing communications.** _B2C toggle._ If you receive marketing emails from us, each will include an unsubscribe link consistent with the CAN-SPAM Act. You may also manage marketing preferences in your Account.
 
 ---
 
 ## 20. Miscellaneous
 
-*Standard contract housekeeping.*
+_Standard contract housekeeping._
 
 **20.1 Entire agreement.** These Terms, together with any Order Form, Documentation incorporated by reference, the Acceptable Use Policy (Annex A), the DMCA procedure (Annex B), the Auto-Renewal Disclosures (Annex C), and the Privacy Policy, constitute the entire agreement between the parties on the subject and supersede all prior agreements.
 
-**20.2 Order of precedence.** *B2B toggle.* In the event of conflict, the order of precedence is (a) the Order Form; (b) any signed master services agreement; (c) these Terms; (d) the Annexes; (e) the Documentation.
+**20.2 Order of precedence.** _B2B toggle._ In the event of conflict, the order of precedence is (a) the Order Form; (b) any signed master services agreement; (c) these Terms; (d) the Annexes; (e) the Documentation.
 
 **20.3 Severability.** If a provision of these Terms is found unenforceable, the remaining provisions remain in full force, and the unenforceable provision will be modified to the minimum extent necessary to make it enforceable consistent with the parties' intent.
 
@@ -387,11 +389,11 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 **20.8 No third-party beneficiaries.** These Terms do not create rights in favor of any third party, except that {{Company Short Name}}'s Affiliates and their respective personnel are intended beneficiaries of Sections 13, 14, and 15.
 
-**20.9 California Civil Code § 1542 waiver.** *OPTIONAL — only if these Terms include a release of claims (for example, in connection with settlement of a dispute or termination).* Where these Terms include a release of claims, you waive California Civil Code § 1542, which provides: "A general release does not extend to claims that the creditor or releasing party does not know or suspect to exist in his or her favor at the time of executing the release and that, if known by him or her, would have materially affected his or her settlement with the debtor or released party."
+**20.9 California Civil Code § 1542 waiver.** _OPTIONAL — only if these Terms include a release of claims (for example, in connection with settlement of a dispute or termination)._ Where these Terms include a release of claims, you waive California Civil Code § 1542, which provides: "A general release does not extend to claims that the creditor or releasing party does not know or suspect to exist in his or her favor at the time of executing the release and that, if known by him or her, would have materially affected his or her settlement with the debtor or released party."
 
 **20.10 Accessibility commitment.** {{Company Short Name}} is committed to making the Service accessible to people with disabilities and works toward conformance with the Web Content Accessibility Guidelines and the principles of the Americans with Disabilities Act. Accessibility feedback may be sent to {{Accessibility Contact Email}}.
 
-**20.11 Government users.** *OPTIONAL — only if the Service is sold to U.S. federal customers.* The Service is "commercial computer software" within the meaning of FAR 12.212 and DFARS 227.7202; rights provided to U.S. Government end users are only those rights granted to all other end users under these Terms.
+**20.11 Government users.** _OPTIONAL — only if the Service is sold to U.S. federal customers._ The Service is "commercial computer software" within the meaning of FAR 12.212 and DFARS 227.7202; rights provided to U.S. Government end users are only those rights granted to all other end users under these Terms.
 
 **20.12 Anti-bribery.** Each party will comply with the Foreign Corrupt Practices Act, 15 U.S.C. §§ 78dd-1 et seq., and other applicable anti-bribery laws.
 
@@ -401,7 +403,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 # Annex A — Acceptable Use Policy
 
-*Use the Service to create and exchange lawful, respectful content. The list below is illustrative, not exhaustive.*
+_Use the Service to create and exchange lawful, respectful content. The list below is illustrative, not exhaustive._
 
 **A.1 Prohibited content.** You will not use the Service to upload, store, transmit, or make available content that:
 
@@ -433,7 +435,7 @@ This summary is for transparency under FTC clear-and-conspicuous disclosure guid
 
 # Annex B — DMCA Notice-and-Takedown Procedure
 
-*If you believe content on the Service infringes your copyright, follow the procedure below. Knowingly false notices may result in liability under 17 U.S.C. § 512(f).*
+_If you believe content on the Service infringes your copyright, follow the procedure below. Knowingly false notices may result in liability under 17 U.S.C. § 512(f)._
 
 ## Part 1 — Notification of claimed infringement (17 U.S.C. § 512(c)(3))
 
@@ -484,7 +486,7 @@ Under **17 U.S.C. § 512(f)**, any person who knowingly materially misrepresents
 
 # Annex C — Auto-renewal & cancellation disclosures (state-by-state)
 
-*This Annex describes pre-renewal notice content and the windows that apply by state.*
+_This Annex describes pre-renewal notice content and the windows that apply by state._
 
 ## Part 1 — Pre-renewal notice content (CA ARLDA model)
 
@@ -499,15 +501,15 @@ Where pre-renewal notice is required by state law, the notice will include, in a
 
 ## Part 2 — State-by-state pre-renewal window matrix
 
-| State | Trigger | Pre-renewal window | Authority |
-|---|---|---|---|
-| California | Initial term ≥ 1 year | 15–45 days before each automatic renewal | Cal. Bus. & Prof. Code §§ 17600–17606 |
-| New York | Initial term ≥ 1 year | 15–45 days before automatic renewal `[VERIFY]` | N.Y. Gen. Bus. Law § 527-a |
-| Oregon | Initial term ≥ 6 months | At least 15 days before renewal `[VERIFY]` | ORS 646A.293 |
-| Colorado | Auto-renewal contracts | `[VERIFY]` window — see HB 21-1063 | Colo. Rev. Stat. (codification varies) |
-| Illinois | Initial term ≥ 12 months | 30–60 days before renewal | 815 ILCS 601/ |
-| Texas | No general pre-renewal window for online subs `[VERIFY]` | — | Tex. Bus. & Com. Code, applicable provisions |
-| Federal (FTC + ROSCA) | All consumer auto-renewals | Clear-and-conspicuous disclosure before charge; renewal reminders for annual or longer terms `[VERIFY exact FTC final rule terms]` | 16 C.F.R. Part 425; 15 U.S.C. §§ 8401–8405 |
+| State                 | Trigger                                                  | Pre-renewal window                                                                                                                 | Authority                                    |
+| --------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| California            | Initial term ≥ 1 year                                    | 15–45 days before each automatic renewal                                                                                           | Cal. Bus. & Prof. Code §§ 17600–17606        |
+| New York              | Initial term ≥ 1 year                                    | 15–45 days before automatic renewal `[VERIFY]`                                                                                     | N.Y. Gen. Bus. Law § 527-a                   |
+| Oregon                | Initial term ≥ 6 months                                  | At least 15 days before renewal `[VERIFY]`                                                                                         | ORS 646A.293                                 |
+| Colorado              | Auto-renewal contracts                                   | `[VERIFY]` window — see HB 21-1063                                                                                                 | Colo. Rev. Stat. (codification varies)       |
+| Illinois              | Initial term ≥ 12 months                                 | 30–60 days before renewal                                                                                                          | 815 ILCS 601/                                |
+| Texas                 | No general pre-renewal window for online subs `[VERIFY]` | —                                                                                                                                  | Tex. Bus. & Com. Code, applicable provisions |
+| Federal (FTC + ROSCA) | All consumer auto-renewals                               | Clear-and-conspicuous disclosure before charge; renewal reminders for annual or longer terms `[VERIFY exact FTC final rule terms]` | 16 C.F.R. Part 425; 15 U.S.C. §§ 8401–8405   |
 
 ## Part 3 — One-click cancellation flow
 
