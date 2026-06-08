@@ -51,6 +51,7 @@ The skill supports two execution architectures:
    the skill execution context. Same extraction logic, same prompts, lower throughput.
 
 **Covers:**
+
 - **Document conversion**: PDF, DOCX, MSG, EML, PST, HTML, images, transcripts, spreadsheets to markdown
 - **Multi-agent extraction**: Parallel date/event/entity/relationship extraction using Haiku workers
 - **Coreference resolution**: Cross-document entity linking, alias tables, name normalization
@@ -63,6 +64,7 @@ The skill supports two execution architectures:
 - **Cross-border matters**: Timezone normalization, multi-jurisdiction deadline tracking
 
 **Does not:**
+
 - Replace jurisdiction-specific legal advice or counsel judgment
 - Determine witness credibility as a final legal finding
 - Draft final pleadings without human review
@@ -71,6 +73,7 @@ The skill supports two execution architectures:
 - Waive any privilege (redacts rather than excludes)
 
 **Related skills:**
+
 - `legalcode-early-case-assessment` — Pre-discovery case evaluation
 - `legalcode-privilege-review` — Privilege classification for productions
 - `legalcode-breach-severity-assessment` — Incident timeline construction
@@ -84,6 +87,7 @@ This skill is jurisdiction-agnostic at baseline. Identify governing law, forum, 
 procedural track first, then localize timeline treatment and admissibility implications.
 
 **[JURISDICTION-SPECIFIC]** Localize at minimum:
+
 - Discovery/disclosure scope and scheduling controls
 - Evidence authentication and admissibility thresholds (FRE 901, 1002 or equivalent) [VERIFY]
 - Witness statement/deposition practice and contradiction use
@@ -95,6 +99,7 @@ procedural track first, then localize timeline treatment and admissibility impli
 - Protective order standard designations
 
 **Reference anchors frequently needed:**
+
 - **U.S. federal**: FRCP Rules 16, 26, 34, 37, 56; FRE 901, 1002; ESI proportionality (Rule 26(b)(1)) [VERIFY]
 - **England & Wales**: CPR Part 31 and/or PD 57AD track; Civil Evidence Act 1995; Technology and Construction Court Guide [VERIFY]
 - **Australia (Federal)**: Federal Court Rules 2011 (Cth), Federal Court Act 1976 (Cth) s 37M, CPN-1 and GPN-TECH [VERIFY]
@@ -110,58 +115,69 @@ strategy, or timeline outputs. If information is already provided, skip the ques
 Proceed with stated defaults when the user does not respond.
 
 **CLARIFY block 1: Timeline objective**
+
 - Options: `case strategy`, `summary judgment`, `deposition prep`, `trial prep`, `settlement`, `regulatory response`, `MDL coordination`, `class certification`
 - Default: `case strategy`
 - Why it matters: Changes event granularity, output emphasis, filtering criteria, and court-ready format.
 
 **CLARIFY block 2: Side represented**
+
 - Options: `claimant/plaintiff`, `defendant/respondent`, `regulatory/enforcement`, `class counsel`, `mixed/neutral`
 - Default: `mixed/neutral`
 - Why it matters: Changes contradiction framing, priority issues, narrative direction, and burden analysis.
 
 **CLARIFY block 3: Document corpus**
+
 - Options: `file paths provided`, `directory to scan`, `document manifest`, `incremental update`
 - Sub-options for formats: PDF, DOCX, MSG/EML/PST, images, transcripts, spreadsheets, mixed
 - Default: `directory to scan` with `mixed` formats
 - Why it matters: Determines document processing pipeline configuration and tool selection.
 
 **CLARIFY block 4: Corpus size and budget**
+
 - Options: `small (<100 docs)`, `medium (100-1000)`, `large (1000-10000)`, `enterprise (10K+)`
 - Budget tolerance: `strict ($X cap)`, `moderate (flag at $X)`, `flexible`
 - Default: `medium` with `moderate` budget
 - Why it matters: Controls batch sizing, parallelization degree, model selection, and whether to use CLI or sub-agent path.
 
 **CLARIFY block 5: Execution path preference**
+
 - Options: `auto-detect`, `CLI scripts only`, `sub-agents only`
 - Default: `auto-detect` (check for `claude` CLI, fall back to sub-agents)
 - Why it matters: Determines whether to use `timeline-build.sh` pipeline or in-skill Task tool agents.
 
 **CLARIFY block 6: Date precision policy**
+
 - Options: `exact date required`, `allow month-only`, `allow approximate`, `preserve all with precision markers`
 - Default: `preserve all with precision markers`
 - Why it matters: Prevents false certainty for incomplete records; affects timeline visualization.
 
 **CLARIFY block 7: Contradiction policy**
+
 - Options: `strict (flag all)`, `material-only`, `strategy-filtered`
 - Default: `material-only`
 - Why it matters: Controls noise vs. issue focus in output. Strategy-filtered requires side/issues context.
 
 **CLARIFY block 8: Privilege handling**
+
 - Options: `skip privilege screening`, `flag potential privilege`, `integrate with privilege log`, `parallel privilege chronology`
 - Default: `flag potential privilege`
 - Why it matters: Prevents inadvertent privilege waiver; determines whether privileged content enters timeline.
 
 **CLARIFY block 9: Protective order designations**
+
 - Options: `none`, `standard confidential/highly-confidential`, `custom designation scheme`
 - Default: `none`
 - Why it matters: Controls output labeling, redaction requirements, and distribution restrictions.
 
 **CLARIFY block 10: Timezone baseline**
+
 - Options: `source-local`, `single normalized timezone (specify)`, `dual-view`
 - Default: `source-local` with notation
 - Why it matters: Avoids timeline distortion in cross-border matters.
 
 **CLARIFY block 11: Output formats**
+
 - Options: `markdown only`, `JSON + markdown`, `full export (all formats)`, `trial-ready`, `EDRM XML`
 - Default: `JSON + markdown`
 - Why it matters: Determines post-processing and export pipeline; trial-ready adds FRCP-formatted outputs.
@@ -222,6 +238,7 @@ resumable execution.
 **Location**: `scripts/corpus-processing/`
 
 **Master orchestrator**: `timeline-build.sh`
+
 ```bash
 # Initialize pipeline workspace for a document corpus
 ./scripts/corpus-processing/timeline-build.sh init /path/to/documents
@@ -244,14 +261,14 @@ resumable execution.
 
 **Stage scripts** (in `scripts/corpus-processing/stages/`):
 
-| Stage | Script | Model | Cost | Purpose |
-|-------|--------|-------|------|---------|
-| 1 | `stage-1-convert.sh` | None (local) | $0 | Document conversion to markdown |
-| 2 | `stage-2-extract.sh` | Haiku | ~$3-5/1K docs | Parallel date/event/entity extraction |
-| 3 | `stage-3-consolidate.sh` | None (Python) | $0 | Merge, deduplicate, assign IDs |
-| 4 | `stage-4-validate.sh` | Sonnet | ~$1-3/1K docs | Contradiction/sequence/gap detection |
-| 5 | `stage-5-synthesize.sh` | Opus | ~$2-5 total | Final timeline construction |
-| 6 | `stage-6-output.sh` | None (Python) | $0 | Format export (MD, JSON, CSV, HTML) |
+| Stage | Script                   | Model         | Cost          | Purpose                               |
+| ----- | ------------------------ | ------------- | ------------- | ------------------------------------- |
+| 1     | `stage-1-convert.sh`     | None (local)  | $0            | Document conversion to markdown       |
+| 2     | `stage-2-extract.sh`     | Haiku         | ~$3-5/1K docs | Parallel date/event/entity extraction |
+| 3     | `stage-3-consolidate.sh` | None (Python) | $0            | Merge, deduplicate, assign IDs        |
+| 4     | `stage-4-validate.sh`    | Sonnet        | ~$1-3/1K docs | Contradiction/sequence/gap detection  |
+| 5     | `stage-5-synthesize.sh`  | Opus          | ~$2-5 total   | Final timeline construction           |
+| 6     | `stage-6-output.sh`      | None (Python) | $0            | Format export (MD, JSON, CSV, HTML)   |
 
 **Supporting scripts**:
 | Script | Purpose |
@@ -265,6 +282,7 @@ resumable execution.
 | `patterns-reference.sh` | CLI flag patterns and reference examples |
 
 **CLI extraction command pattern** (Stage 2 core):
+
 ```bash
 claude -p \
   --model haiku \
@@ -280,6 +298,7 @@ $(cat "$converted_markdown_file")"
 ```
 
 Key CLI flags explained:
+
 - `--model haiku` — Use Haiku for cost-efficient high-volume extraction
 - `--output-format json` — Get structured JSON with `result` field
 - `--max-turns 1` — Single response, no agentic loop (extraction only)
@@ -289,6 +308,7 @@ Key CLI flags explained:
 - `--system-prompt-file` — Load extraction system prompt from file
 
 **Parallel execution** (background job pool):
+
 ```bash
 MAX_PARALLEL=8
 running_pids=()
@@ -321,6 +341,7 @@ When `claude` CLI is not available, the skill uses the Task tool to launch sub-a
 This path mirrors the CLI pipeline stage-by-stage but executes within the skill context.
 
 **Runtime detection** (execute at the start of every workflow run):
+
 ```bash
 # Check if claude CLI is available
 if command -v claude &>/dev/null; then
@@ -360,6 +381,7 @@ Task tool call:
 ```
 
 **Sub-agent validation pattern** (replaces Stage 4 CLI workers):
+
 ```
 Task tool call:
   subagent_type: "general-purpose"
@@ -372,6 +394,7 @@ Task tool call:
 ```
 
 **Sub-agent synthesis pattern** (replaces Stage 5):
+
 ```
 Task tool call:
   subagent_type: "general-purpose"
@@ -398,20 +421,20 @@ execution when calls are independent.
 
 ### Model Selection Strategy
 
-| Model | Role | Use Case | Approximate Cost/MTok |
-|-------|------|----------|-----------------------|
-| **Claude Haiku 4.5** | Extraction workers | High-volume date/event/entity extraction | Input: $0.80 / Output: $4.00 |
-| **Claude Sonnet 4.5** | Validation agents | Contradiction detection, quality checks | Input: $3.00 / Output: $15.00 |
-| **Claude Opus 4.5** | Orchestrator/Synthesis | Planning, conflict resolution, complex reasoning | Input: $15.00 / Output: $75.00 |
+| Model                 | Role                   | Use Case                                         | Approximate Cost/MTok          |
+| --------------------- | ---------------------- | ------------------------------------------------ | ------------------------------ |
+| **Claude Haiku 4.5**  | Extraction workers     | High-volume date/event/entity extraction         | Input: $0.80 / Output: $4.00   |
+| **Claude Sonnet 4.5** | Validation agents      | Contradiction detection, quality checks          | Input: $3.00 / Output: $15.00  |
+| **Claude Opus 4.5**   | Orchestrator/Synthesis | Planning, conflict resolution, complex reasoning | Input: $15.00 / Output: $75.00 |
 
 **Cost estimation for typical corpora:**
 
-| Corpus Size | Haiku Extraction | Sonnet Validation | Opus Synthesis | Total |
-|-------------|------------------|-------------------|----------------|-------|
-| 50 docs | ~$1-2 | ~$0.50 | ~$2 | ~$3-5 |
-| 500 docs | ~$5-10 | ~$2-4 | ~$3-5 | ~$10-20 |
-| 5,000 docs | ~$30-50 | ~$10-20 | ~$5-10 | ~$45-80 |
-| 50,000 docs | ~$300-500 | ~$50-100 | ~$10-15 | ~$360-615 |
+| Corpus Size | Haiku Extraction | Sonnet Validation | Opus Synthesis | Total     |
+| ----------- | ---------------- | ----------------- | -------------- | --------- |
+| 50 docs     | ~$1-2            | ~$0.50            | ~$2            | ~$3-5     |
+| 500 docs    | ~$5-10           | ~$2-4             | ~$3-5          | ~$10-20   |
+| 5,000 docs  | ~$30-50          | ~$10-20           | ~$5-10         | ~$45-80   |
+| 50,000 docs | ~$300-500        | ~$50-100          | ~$10-15        | ~$360-615 |
 
 ---
 
@@ -445,22 +468,24 @@ command -v markitdown &>/dev/null && HAVE_MARKITDOWN=true
 
 **Step 0.2: Select execution path**
 
-| Condition | Path Selected | Rationale |
-|-----------|---------------|-----------|
-| `claude` available + corpus >100 docs | CLI Path | Maximum throughput |
-| `claude` available + corpus ≤100 docs | Either (user preference) | Both viable |
-| `claude` NOT available | Sub-Agent Path | Only option |
-| User explicitly selects | Respect user choice | Override auto-detect |
+| Condition                             | Path Selected            | Rationale            |
+| ------------------------------------- | ------------------------ | -------------------- |
+| `claude` available + corpus >100 docs | CLI Path                 | Maximum throughput   |
+| `claude` available + corpus ≤100 docs | Either (user preference) | Both viable          |
+| `claude` NOT available                | Sub-Agent Path           | Only option          |
+| User explicitly selects               | Respect user choice      | Override auto-detect |
 
 **Step 0.3: Verify minimum requirements**
 
 For CLI path:
+
 - [ ] `claude` CLI is installed and functional
 - [ ] At least one PDF converter (magic-pdf, pandoc, or pdftotext)
 - [ ] `python3` available (for consolidation and output stages)
 - [ ] Sufficient disk space for converted documents (~2-5x corpus size)
 
 For sub-agent path:
+
 - [ ] Task tool is available in allowed-tools
 - [ ] At least one PDF converter OR willingness to use sub-agent vision for PDFs
 - [ ] `python3` available (or fallback to sub-agent for consolidation)
@@ -490,6 +515,7 @@ Estimated processing:
 ### Phase 1: Matter Frame Definition
 
 **Step 1.1: Capture matter context**
+
 - Case name, forum, governing law, procedural stage
 - Timeline objective (strategy, deposition, trial, summary judgment, regulatory, MDL)
 - Key parties and their roles (plaintiff, defendant, third party, class, regulator)
@@ -498,6 +524,7 @@ Estimated processing:
 - Side represented (affects narrative framing)
 
 **Step 1.2: Define scope boundaries**
+
 - Issues to include/exclude
 - Custodians in scope
 - Document types to process
@@ -508,6 +535,7 @@ Estimated processing:
 **Step 1.3: Configure pipeline parameters**
 
 **Output**: `matter_frame.yaml` (also serves as `config.yaml` for CLI path)
+
 ```yaml
 matter_frame:
   case_name: "[Matter Name]"
@@ -539,7 +567,7 @@ matter_frame:
     - "[Excluded issue or topic]"
 
 pipeline:
-  execution_path: "auto"  # auto | cli | subagent
+  execution_path: "auto" # auto | cli | subagent
   max_parallel: 8
   max_budget_usd: 50.00
   haiku_budget_per_doc: 0.50
@@ -553,7 +581,7 @@ pipeline:
 quality:
   min_ocr_confidence: 0.85
   min_extraction_confidence: 0.40
-  validation_sample_rate: 1.0  # 1.0 = validate all; 0.1 = 10% sample
+  validation_sample_rate: 1.0 # 1.0 = validate all; 0.1 = 10% sample
   require_source_citation: true
 ```
 
@@ -566,11 +594,13 @@ This phase runs entirely locally with no API costs.
 **Step 2.1: Build document inventory**
 
 **CLI path**: Use `01-discover-and-classify.sh`:
+
 ```bash
 ./scripts/corpus-processing/01-discover-and-classify.sh /path/to/documents
 ```
 
 **Sub-agent path**: Use Bash tool within the skill:
+
 ```bash
 find /path/to/documents -type f \
   \( -name "*.pdf" -o -name "*.docx" -o -name "*.doc" \
@@ -582,6 +612,7 @@ find /path/to/documents -type f \
 ```
 
 For each document, capture:
+
 - Unique `source_id` (e.g., `DOC-00001`)
 - Original file path
 - File type (extension-based + magic byte validation)
@@ -594,6 +625,7 @@ For each document, capture:
 **Step 2.2: Detect and handle duplicates**
 
 Compute SHA-256 for each file. Group by hash. For duplicates:
+
 - Keep earliest custodian copy as primary
 - Record all duplicate paths in manifest
 - Track cross-custodian overlap (discovery significance)
@@ -603,6 +635,7 @@ Compute SHA-256 for each file. Group by hash. For duplicates:
 #### PDF Processing Pipeline
 
 **Tool fallback chain**:
+
 1. **MinerU** (`magic-pdf`) — Best for complex layouts, tables, multi-column
 2. **MarkItDown** (`markitdown`) — Good for simpler PDFs
 3. **Pandoc** (`pandoc`) — Acceptable quality
@@ -624,6 +657,7 @@ ocrmypdf --force-ocr "$pdf_file" "$ocr_output" && pdftotext "$ocr_output" "$outp
 ```
 
 **Quality checks for PDFs**:
+
 - [ ] OCR confidence > 85% (or flag for manual review)
 - [ ] All pages extracted (page count matches original)
 - [ ] Tables properly formatted (detect garbled table text)
@@ -633,6 +667,7 @@ ocrmypdf --force-ocr "$pdf_file" "$ocr_output" && pdftotext "$ocr_output" "$outp
 #### Word Document Processing
 
 **Primary**: Pandoc with track changes preservation (critical for litigation):
+
 ```bash
 # Preserve track changes, comments, and metadata
 pandoc --from=docx --to=markdown --track-changes=all "$docx_file" -o "$output_file"
@@ -648,6 +683,7 @@ comments, and custom properties from DOCX metadata.
 #### Email Processing (MSG/EML/PST)
 
 **Extract for each email:**
+
 - Sender, recipients (To/CC/BCC) — all are potential custodians/witnesses
 - Date/time with timezone (use header Date, not file system date)
 - Subject line
@@ -657,12 +693,14 @@ comments, and custom properties from DOCX metadata.
 - Transport headers (for authenticity, routing analysis)
 
 **Tool fallback chain**:
+
 1. **MarkItDown** — Handles MSG and EML formats
 2. **extract-msg** (Python) — For MSG files specifically
 3. **Python email stdlib** — For EML files
 4. **readpst** — For PST archive extraction to individual EML files
 
 **Email markdown format:**
+
 ```markdown
 ---
 source_id: EMAIL-00001
@@ -698,6 +736,7 @@ custodian: "John Smith"
 ---
 
 **Attachments:**
+
 1. Contract_Draft_v3.docx → see EMAIL-00001-ATT-001
 ```
 
@@ -706,6 +745,7 @@ custodian: "John Smith"
 Images (exhibits, photographs, screenshots, diagrams) require vision model analysis.
 
 **CLI path**: Use Claude with vision via piping:
+
 ```bash
 # Claude CLI can read image files directly
 claude -p --model haiku \
@@ -716,6 +756,7 @@ claude -p --model haiku \
 ```
 
 **Sub-agent path**: Use Task tool with the image file path:
+
 ```
 Task tool call:
   subagent_type: "general-purpose"
@@ -730,6 +771,7 @@ Task tool call:
 #### Transcript Processing
 
 Deposition transcripts, hearing transcripts, and recorded interview transcripts:
+
 - Parse page:line citation format (e.g., "125:14-126:3")
 - Extract witness name, date, and examining counsel
 - Preserve Q&A structure for contradiction analysis
@@ -738,6 +780,7 @@ Deposition transcripts, hearing transcripts, and recorded interview transcripts:
 #### Spreadsheet Processing
 
 For Excel/CSV files containing structured data (financial records, logs, inventories):
+
 - Extract column headers as field names
 - Preserve date columns with format detection
 - Flag monetary columns for amount extraction
@@ -746,6 +789,7 @@ For Excel/CSV files containing structured data (financial records, logs, invento
 **Step 2.4: Generate document manifest**
 
 **Output**: `document_manifest.json`
+
 ```json
 {
   "manifest_id": "MAN-2026-00001",
@@ -775,8 +819,8 @@ For Excel/CSV files containing structured data (financial records, logs, invento
   ],
   "summary": {
     "total_documents": 1500,
-    "by_type": {"pdf": 800, "docx": 200, "email": 450, "image": 50},
-    "by_custodian": {"John Smith": 300, "Jane Doe": 450},
+    "by_type": { "pdf": 800, "docx": 200, "email": 450, "image": 50 },
+    "by_custodian": { "John Smith": 300, "Jane Doe": 450 },
     "processing_complete": 1485,
     "processing_failed": 15,
     "duplicates_found": 42,
@@ -805,6 +849,7 @@ tool prompts (sub-agent path).
 You are a Date and Event Extraction Agent specialized in legal documents.
 
 ## Task
+
 Extract ALL dates, events, and temporal references from the document provided.
 Return a JSON object matching the schema below. Extract exhaustively — it is
 better to over-extract than to miss events.
@@ -822,6 +867,7 @@ better to over-extract than to miss events.
 7. **Implicit dates**: References to known events ("after the IPO", "pre-merger")
 
 ## Event Types
+
 - meeting, call, communication, negotiation
 - transaction, payment, transfer, delivery
 - filing, motion, order, ruling, judgment
@@ -832,29 +878,30 @@ better to over-extract than to miss events.
 - other
 
 ## Output Schema
+
 {
-  "source_id": "string — document source_id from frontmatter",
-  "extraction_model": "haiku",
-  "extracted_at": "ISO-8601 timestamp",
-  "events": [
-    {
-      "raw_text": "original text as it appears in document",
-      "normalized_date": "YYYY-MM-DD or YYYY-MM or YYYY or ~YYYY-MM-DD",
-      "date_end": "for ranges: YYYY-MM-DD (null if point-in-time)",
-      "precision": "exact|day|week|month|quarter|year|approximate|relative|range",
-      "anchor_text": "for relative dates: the anchor reference text",
-      "confidence": 0.0-1.0,
-      "timezone": "IANA timezone if detectable, else null",
-      "event_type": "one of the event types above",
-      "description": "1-2 sentence normalized description of the event",
-      "actors": ["names of people/orgs involved"],
-      "location": "location if mentioned, else null",
-      "source_location": "page X, paragraph Y or section heading",
-      "is_deadline": false,
-      "deadline_trigger": "for deadlines: what triggers the deadline",
-      "deadline_days": null
-    }
-  ]
+"source_id": "string — document source_id from frontmatter",
+"extraction_model": "haiku",
+"extracted_at": "ISO-8601 timestamp",
+"events": [
+{
+"raw_text": "original text as it appears in document",
+"normalized_date": "YYYY-MM-DD or YYYY-MM or YYYY or ~YYYY-MM-DD",
+"date_end": "for ranges: YYYY-MM-DD (null if point-in-time)",
+"precision": "exact|day|week|month|quarter|year|approximate|relative|range",
+"anchor_text": "for relative dates: the anchor reference text",
+"confidence": 0.0-1.0,
+"timezone": "IANA timezone if detectable, else null",
+"event_type": "one of the event types above",
+"description": "1-2 sentence normalized description of the event",
+"actors": ["names of people/orgs involved"],
+"location": "location if mentioned, else null",
+"source_location": "page X, paragraph Y or section heading",
+"is_deadline": false,
+"deadline_trigger": "for deadlines: what triggers the deadline",
+"deadline_days": null
+}
+]
 }
 
 ## Examples
@@ -862,41 +909,41 @@ better to over-extract than to miss events.
 Input: "On March 15, 2024, Smith and Jones met at Acme headquarters to discuss the proposed merger."
 Output event:
 {
-  "raw_text": "On March 15, 2024, Smith and Jones met at Acme headquarters to discuss the proposed merger.",
-  "normalized_date": "2024-03-15",
-  "date_end": null,
-  "precision": "exact",
-  "anchor_text": null,
-  "confidence": 0.98,
-  "timezone": null,
-  "event_type": "meeting",
-  "description": "Smith and Jones met at Acme headquarters to discuss proposed merger",
-  "actors": ["Smith", "Jones"],
-  "location": "Acme headquarters",
-  "source_location": "page 3, paragraph 2",
-  "is_deadline": false,
-  "deadline_trigger": null,
-  "deadline_days": null
+"raw_text": "On March 15, 2024, Smith and Jones met at Acme headquarters to discuss the proposed merger.",
+"normalized_date": "2024-03-15",
+"date_end": null,
+"precision": "exact",
+"anchor_text": null,
+"confidence": 0.98,
+"timezone": null,
+"event_type": "meeting",
+"description": "Smith and Jones met at Acme headquarters to discuss proposed merger",
+"actors": ["Smith", "Jones"],
+"location": "Acme headquarters",
+"source_location": "page 3, paragraph 2",
+"is_deadline": false,
+"deadline_trigger": null,
+"deadline_days": null
 }
 
 Input: "The Company shall provide notice within thirty (30) days of the Closing Date."
 Output event:
 {
-  "raw_text": "The Company shall provide notice within thirty (30) days of the Closing Date.",
-  "normalized_date": null,
-  "date_end": null,
-  "precision": "relative",
-  "anchor_text": "the Closing Date",
-  "confidence": 0.90,
-  "timezone": null,
-  "event_type": "deadline",
-  "description": "Company must provide notice within 30 days of closing",
-  "actors": ["The Company"],
-  "location": null,
-  "source_location": "Section 4.2",
-  "is_deadline": true,
-  "deadline_trigger": "Closing Date",
-  "deadline_days": 30
+"raw_text": "The Company shall provide notice within thirty (30) days of the Closing Date.",
+"normalized_date": null,
+"date_end": null,
+"precision": "relative",
+"anchor_text": "the Closing Date",
+"confidence": 0.90,
+"timezone": null,
+"event_type": "deadline",
+"description": "Company must provide notice within 30 days of closing",
+"actors": ["The Company"],
+"location": null,
+"source_location": "Section 4.2",
+"is_deadline": true,
+"deadline_trigger": "Closing Date",
+"deadline_days": 30
 }
 
 Extract ALL events. Do not skip events because they seem minor.
@@ -909,12 +956,14 @@ Return ONLY the JSON object. No commentary.
 You are an Entity Extraction Agent for legal documents.
 
 ## Task
+
 Extract all entities and relationships from the document provided.
 Return a JSON object matching the schema below.
 
 ## Entity Types (3-Tier Taxonomy)
 
 ### Tier 1 — Core (always extract):
+
 - **PERSON**: Individual humans (full names, partial names, titles+names)
 - **ORGANIZATION**: Companies, law firms, government agencies, courts, funds
 - **DATE**: Temporal references (covered by date extraction — skip here)
@@ -922,6 +971,7 @@ Return a JSON object matching the schema below.
 - **EVENT_REF**: References to specific events ("the March meeting", "the closing")
 
 ### Tier 2 — Enrichment (extract when present):
+
 - **LOCATION**: Physical addresses, cities, jurisdictions, venues, states, countries
 - **MONETARY**: Financial amounts ($1,000,000, EUR 500K, "the purchase price")
 - **DEADLINE**: Contractual or procedural deadlines (may overlap with date extraction)
@@ -929,6 +979,7 @@ Return a JSON object matching the schema below.
 - **CASE_REF**: Case numbers, docket numbers, citations (Smith v. Jones, 2024 WL 12345)
 
 ### Tier 3 — Contextual (extract if straightforward):
+
 - **CLAIM**: Legal claims referenced (breach of contract, negligence, fraud)
 - **EVIDENCE**: Evidence references (Exhibit A, Bates ACME_00001, Deposition Tr. 125:14)
 - **ROLE**: Legal roles attributed to entities (plaintiff, defendant, witness, counsel, judge, expert, custodian)
@@ -937,50 +988,53 @@ Return a JSON object matching the schema below.
 ## Coreference Resolution
 
 Identify when different text strings refer to the same entity:
+
 - "Acme Corporation", "Acme Corp.", "Acme", "the Company", "Defendant" → same entity
 - "John Smith", "Mr. Smith", "Smith", "JS", "he" (when referent is clear) → same entity
 - "the Agreement", "this Contract", "the SPA", "Exhibit 1" → may be same instrument
 
 For each entity, provide:
+
 - A canonical (normalized) form
 - All alias forms found in the document
 - Confidence in the coreference link
 
 ## Output Schema
+
 {
-  "source_id": "string",
-  "extraction_model": "haiku",
-  "extracted_at": "ISO-8601 timestamp",
-  "entities": [
-    {
-      "entity_id": "local entity ID (e.g., E-001)",
-      "text": "as it appears in document",
-      "type": "PERSON|ORGANIZATION|INSTRUMENT|etc.",
-      "tier": 1|2|3,
-      "normalized": "canonical form",
-      "aliases": ["other forms found"],
-      "role": "legal role if applicable (plaintiff, defendant, etc.)",
-      "context": "sentence where entity appears",
-      "confidence": 0.0-1.0
-    }
-  ],
-  "relationships": [
-    {
-      "source_entity": "E-001",
-      "target_entity": "E-002",
-      "relationship_type": "employed_by|party_to|counsel_for|signed|filed|witness_in|etc.",
-      "context": "sentence establishing the relationship",
-      "confidence": 0.0-1.0
-    }
-  ],
-  "privilege_flags": [
-    {
-      "text": "flagged text",
-      "flag_type": "attorney_client|work_product|joint_defense|other",
-      "source_location": "page/section",
-      "confidence": 0.0-1.0
-    }
-  ]
+"source_id": "string",
+"extraction_model": "haiku",
+"extracted_at": "ISO-8601 timestamp",
+"entities": [
+{
+"entity_id": "local entity ID (e.g., E-001)",
+"text": "as it appears in document",
+"type": "PERSON|ORGANIZATION|INSTRUMENT|etc.",
+"tier": 1|2|3,
+"normalized": "canonical form",
+"aliases": ["other forms found"],
+"role": "legal role if applicable (plaintiff, defendant, etc.)",
+"context": "sentence where entity appears",
+"confidence": 0.0-1.0
+}
+],
+"relationships": [
+{
+"source_entity": "E-001",
+"target_entity": "E-002",
+"relationship_type": "employed_by|party_to|counsel_for|signed|filed|witness_in|etc.",
+"context": "sentence establishing the relationship",
+"confidence": 0.0-1.0
+}
+],
+"privilege_flags": [
+{
+"text": "flagged text",
+"flag_type": "attorney_client|work_product|joint_defense|other",
+"source_location": "page/section",
+"confidence": 0.0-1.0
+}
+]
 }
 
 Extract ALL entities. Return ONLY the JSON object. No commentary.
@@ -990,14 +1044,15 @@ Extract ALL entities. Return ONLY the JSON object. No commentary.
 
 Documents exceeding Haiku's context window must be chunked:
 
-| Document Size | Strategy |
-|---------------|----------|
-| < 8K tokens (~6K words) | Process as single unit |
-| 8K-50K tokens | Split by page/section with 500-token overlap |
-| 50K-200K tokens | Hierarchical: section → subsection with overlap |
-| > 200K tokens | Split into ~6K-token chunks by paragraph boundary |
+| Document Size           | Strategy                                          |
+| ----------------------- | ------------------------------------------------- |
+| < 8K tokens (~6K words) | Process as single unit                            |
+| 8K-50K tokens           | Split by page/section with 500-token overlap      |
+| 50K-200K tokens         | Hierarchical: section → subsection with overlap   |
+| > 200K tokens           | Split into ~6K-token chunks by paragraph boundary |
 
 **Chunking rules:**
+
 - Preserve structural boundaries (pages, sections, paragraphs)
 - Include 500-token overlap for context continuity at chunk boundaries
 - Prepend document frontmatter (source_id, custodian, date) to every chunk
@@ -1007,6 +1062,7 @@ Documents exceeding Haiku's context window must be chunked:
 **Step 3.3: Execute extraction**
 
 **CLI path**: Stage 2 script handles parallel dispatch automatically:
+
 ```bash
 ./scripts/corpus-processing/timeline-build.sh run --from 2 --to 2
 ```
@@ -1037,6 +1093,7 @@ Each pass uses 6-8 output fields maximum for reliable structured extraction.
 **Step 3.4: Validate extraction outputs**
 
 For each extraction result, verify:
+
 - [ ] Valid JSON (parse without error)
 - [ ] Required fields present (source_id, events/entities array)
 - [ ] Dates are parseable (ISO 8601 or recognized format)
@@ -1044,6 +1101,7 @@ For each extraction result, verify:
 - [ ] No hallucinated source_ids (match against manifest)
 
 **Failed extractions**: Log the failure, increment failure counter, and either:
+
 - Retry with a different prompt (add "Be more careful with JSON formatting")
 - Flag for manual review
 - Skip if non-critical document
@@ -1051,6 +1109,7 @@ For each extraction result, verify:
 **Step 3.5: Merge chunk results**
 
 For documents processed in multiple chunks:
+
 1. Collect all extraction results by source_id
 2. Merge events across chunks (union of all events)
 3. Deduplicate events from overlapping regions (same date + event type + similar text)
@@ -1066,6 +1125,7 @@ This phase merges per-document extractions into unified timeline data structures
 No API calls — runs locally with Python.
 
 **CLI path**: Stage 3 script:
+
 ```bash
 ./scripts/corpus-processing/timeline-build.sh run --from 3 --to 3
 ```
@@ -1103,20 +1163,22 @@ Load all per-document extraction JSON files and merge into a single event list:
 
 **Step 4.2: Normalize dates and timezones**
 
-| Input | Precision | Normalized | Range Start | Range End |
-|-------|-----------|------------|-------------|-----------|
-| "January 15, 2025" | exact | 2025-01-15 | — | — |
-| "early March 2025" | approximate | ~2025-03-05 | 2025-03-01 | 2025-03-10 |
-| "Q1 2025" | quarter | 2025-Q1 | 2025-01-01 | 2025-03-31 |
-| "2025" | year | 2025 | 2025-01-01 | 2025-12-31 |
-| "within 30 days of closing" | relative | null | [closing] | [closing+30] |
+| Input                       | Precision   | Normalized  | Range Start | Range End    |
+| --------------------------- | ----------- | ----------- | ----------- | ------------ |
+| "January 15, 2025"          | exact       | 2025-01-15  | —           | —            |
+| "early March 2025"          | approximate | ~2025-03-05 | 2025-03-01  | 2025-03-10   |
+| "Q1 2025"                   | quarter     | 2025-Q1     | 2025-01-01  | 2025-03-31   |
+| "2025"                      | year        | 2025        | 2025-01-01  | 2025-12-31   |
+| "within 30 days of closing" | relative    | null        | [closing]   | [closing+30] |
 
 **Relative date resolution**: Attempt to anchor relative dates to known events:
+
 1. Search for the anchor event in the event table (e.g., "the Closing Date")
 2. If anchor found with exact date, compute the relative date
 3. If anchor not found, mark as `unresolved_relative` with the anchor text
 
 **Timezone normalization**:
+
 - Detect timezone from email headers (most reliable)
 - Detect timezone from document metadata (creation timezone)
 - Apply jurisdiction-based timezone default for legal filings
@@ -1129,6 +1191,7 @@ Group by `(normalized_date, event_type, text_signature)` where text_signature is
 the first 50 characters of the normalized description.
 
 For duplicates:
+
 - Keep the highest-confidence extraction
 - Merge all source references into `source_references` array
 - Set `corroboration_count` to number of independent source documents
@@ -1137,6 +1200,7 @@ For duplicates:
 **Step 4.4: Build unified entity registry**
 
 Merge all per-document entity extractions:
+
 1. Normalize entity names (case-insensitive, strip titles/suffixes)
 2. Match entities across documents by normalized name
 3. Merge alias lists
@@ -1147,6 +1211,7 @@ Merge all per-document entity extractions:
 **Step 4.5: Link entities to events**
 
 For each event, resolve actor names to entity IDs:
+
 - Exact match on normalized name → link
 - Alias match → link with confidence note
 - Ambiguous match → flag for review (e.g., "Smith" when multiple Smiths exist)
@@ -1154,6 +1219,7 @@ For each event, resolve actor names to entity IDs:
 **Step 4.6: Tag events with issues**
 
 Apply issue tagging based on matter frame keywords:
+
 - For each issue, scan event descriptions and raw text for keywords
 - Apply issue tags to matching events
 - Events may belong to multiple issues
@@ -1162,6 +1228,7 @@ Apply issue tagging based on matter frame keywords:
 **Step 4.7: Screen for privilege indicators**
 
 If privilege handling is not "skip":
+
 - Check privilege_flags from entity extraction
 - Scan for attorney-client communication patterns (attorney → client or vice versa)
 - Scan for work product indicators ("in anticipation of litigation", "attorney work product")
@@ -1169,6 +1236,7 @@ If privilege handling is not "skip":
 - Do NOT exclude — flag for human review with `privilege_flag` field
 
 **Outputs**:
+
 - `consolidated/events.json` — All events with stable IDs
 - `consolidated/entities.json` — Entity registry with relationships
 - `consolidated/summary.json` — Processing statistics
@@ -1180,11 +1248,13 @@ If privilege handling is not "skip":
 This phase uses Sonnet agents for intelligent quality checking.
 
 **CLI path**: Stage 4 script:
+
 ```bash
 ./scripts/corpus-processing/timeline-build.sh run --from 4 --to 4
 ```
 
 **Sub-agent path**: Launch Sonnet Task tool agents for validation:
+
 ```
 Task(model: "sonnet", description: "Validate timeline segment"):
   [validation prompt + events JSON chunk]
@@ -1196,34 +1266,34 @@ Submit timeline segments to Sonnet for contradiction analysis.
 
 **Contradiction types:**
 
-| Type | Description | Example | Severity |
-|------|-------------|---------|----------|
-| **DIRECT** | Same event, conflicting dates | "Meeting on March 15" vs "Meeting on March 18" | HIGH |
-| **SEQUENCE** | Events in impossible order | Response filed before complaint served | HIGH |
-| **OVERLAP** | Person in two places simultaneously | Deposition in NY while at meeting in LA | HIGH |
-| **DURATION** | Implausible time spans | 500-page contract drafted in 1 hour | MEDIUM |
-| **WITNESS** | Conflicting witness accounts | Smith says X happened; Jones says not X | MEDIUM-HIGH |
-| **AMOUNT** | Inconsistent financial figures | "$1M in Exhibit A" vs "$1.5M in Exhibit B" | MEDIUM |
-| **PARTY** | Conflicting party attributions | "Smith signed" vs "Jones signed" | MEDIUM |
+| Type         | Description                         | Example                                        | Severity    |
+| ------------ | ----------------------------------- | ---------------------------------------------- | ----------- |
+| **DIRECT**   | Same event, conflicting dates       | "Meeting on March 15" vs "Meeting on March 18" | HIGH        |
+| **SEQUENCE** | Events in impossible order          | Response filed before complaint served         | HIGH        |
+| **OVERLAP**  | Person in two places simultaneously | Deposition in NY while at meeting in LA        | HIGH        |
+| **DURATION** | Implausible time spans              | 500-page contract drafted in 1 hour            | MEDIUM      |
+| **WITNESS**  | Conflicting witness accounts        | Smith says X happened; Jones says not X        | MEDIUM-HIGH |
+| **AMOUNT**   | Inconsistent financial figures      | "$1M in Exhibit A" vs "$1.5M in Exhibit B"     | MEDIUM      |
+| **PARTY**    | Conflicting party attributions      | "Smith signed" vs "Jones signed"               | MEDIUM      |
 
 **Step 5.2: Sequence validation**
 
 Apply causal ordering rules. These represent logical dependencies where one event
 must precede another:
 
-| Cause Event | Effect Event | Rule |
-|-------------|--------------|------|
-| contract_drafted | contract_signed | Draft precedes signature |
-| contract_signed | contract_breached | Execution precedes breach |
-| invoice_sent | payment_received | Invoice precedes payment |
-| complaint_filed | complaint_served | Filing precedes service |
-| complaint_served | answer_filed | Service precedes answer |
-| motion_filed | motion_heard | Filing precedes hearing |
-| deposition_noticed | deposition_taken | Notice precedes deposition |
-| discovery_request | discovery_response | Request precedes response |
-| verdict_entered | appeal_filed | Verdict precedes appeal |
-| breach_occurred | notice_sent | Breach precedes notice (usually) |
-| termination_notice | termination_effective | Notice precedes effective date |
+| Cause Event        | Effect Event          | Rule                             |
+| ------------------ | --------------------- | -------------------------------- |
+| contract_drafted   | contract_signed       | Draft precedes signature         |
+| contract_signed    | contract_breached     | Execution precedes breach        |
+| invoice_sent       | payment_received      | Invoice precedes payment         |
+| complaint_filed    | complaint_served      | Filing precedes service          |
+| complaint_served   | answer_filed          | Service precedes answer          |
+| motion_filed       | motion_heard          | Filing precedes hearing          |
+| deposition_noticed | deposition_taken      | Notice precedes deposition       |
+| discovery_request  | discovery_response    | Request precedes response        |
+| verdict_entered    | appeal_filed          | Verdict precedes appeal          |
+| breach_occurred    | notice_sent           | Breach precedes notice (usually) |
+| termination_notice | termination_effective | Notice precedes effective date   |
 
 **Step 5.3: Gap analysis**
 
@@ -1250,22 +1320,24 @@ gap_register:
 **Step 5.4: Confidence auditing**
 
 Flag events where confidence and evidence quality are misaligned:
+
 - High confidence (>0.80) but single source → downgrade or add corroboration note
 - Multiple corroborating sources but low confidence → investigate extraction quality
 - Critical events (tied to core claims) with <0.60 confidence → escalate
 
 **Step 5.5: Apply citation quality gates**
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every event has at least one source pointer | Mark `[UNSOURCED]` |
-| **Format** | Citations use consistent format (doc ID + locator) | Normalize format |
-| **Currency** | Procedural references checked for current rules | Add `[CHECK CURRENCY]` |
-| **Domain** | Jurisdiction-specific statements limited to selected forum | Flag jurisdiction bleed |
-| **Confidence** | Certainty aligned to source quality | Downgrade and flag |
-| **Privilege** | No privileged content in timeline without review | Redact pending review |
+| Gate           | Rule                                                       | Fail Action             |
+| -------------- | ---------------------------------------------------------- | ----------------------- |
+| **Source**     | Every event has at least one source pointer                | Mark `[UNSOURCED]`      |
+| **Format**     | Citations use consistent format (doc ID + locator)         | Normalize format        |
+| **Currency**   | Procedural references checked for current rules            | Add `[CHECK CURRENCY]`  |
+| **Domain**     | Jurisdiction-specific statements limited to selected forum | Flag jurisdiction bleed |
+| **Confidence** | Certainty aligned to source quality                        | Downgrade and flag      |
+| **Privilege**  | No privileged content in timeline without review           | Redact pending review   |
 
 **Validation output**: `validated/validation.json`
+
 ```json
 {
   "validation_id": "VAL-001",
@@ -1289,11 +1361,13 @@ Flag events where confidence and evidence quality are misaligned:
 This phase uses an Opus agent to produce the final defensible chronology.
 
 **CLI path**: Stage 5 script:
+
 ```bash
 ./scripts/corpus-processing/timeline-build.sh run --from 5 --to 5
 ```
 
 **Sub-agent path**: Launch a single Opus Task tool agent:
+
 ```
 Task(model: "opus", description: "Synthesize final timeline for [Matter Name]"):
   [synthesis prompt + consolidated events + validation report + matter frame]
@@ -1304,6 +1378,7 @@ The Opus agent receives all consolidated data and validation results, then:
 **Step 6.1: Resolve contradictions**
 
 For each contradiction flagged in Phase 5:
+
 - Assess materiality (does it affect a core claim/defense?)
 - Determine which version has stronger evidentiary support
 - If resolvable: choose the better-supported version, note the conflict
@@ -1317,11 +1392,11 @@ All material events in chronological order with full citation:
 ```markdown
 ## Master Chronology
 
-| # | Date | Prec. | Event | Actors | Sources | Issues | Disp. | Conf. |
-|---|------|-------|-------|--------|---------|--------|-------|-------|
-| 1 | 2024-01-15 | exact | Initial meeting between Smith and Jones | Smith, Jones | DOC-001 p.5; DOC-015 p.2 | Formation | — | 0.95 |
-| 2 | ~2024-02-01 | approx | Oral representations re: revenue | Jones | Smith Decl. ¶8 | Fraud | **Yes** | 0.60 |
-| 3 | 2024-02-15 | exact | Draft SPA circulated | Smith | EMAIL-034 | Formation | — | 0.92 |
+| #   | Date        | Prec.  | Event                                   | Actors       | Sources                  | Issues    | Disp.   | Conf. |
+| --- | ----------- | ------ | --------------------------------------- | ------------ | ------------------------ | --------- | ------- | ----- |
+| 1   | 2024-01-15  | exact  | Initial meeting between Smith and Jones | Smith, Jones | DOC-001 p.5; DOC-015 p.2 | Formation | —       | 0.95  |
+| 2   | ~2024-02-01 | approx | Oral representations re: revenue        | Jones        | Smith Decl. ¶8           | Fraud     | **Yes** | 0.60  |
+| 3   | 2024-02-15  | exact  | Draft SPA circulated                    | Smith        | EMAIL-034                | Formation | —       | 0.92  |
 ```
 
 **Step 6.3: Build issue chronologies**
@@ -1332,11 +1407,11 @@ tagged with that issue:
 ```markdown
 ### Issue: Contract Formation (ISS-001)
 
-| # | Date | Event | Support | Sources | Deposition Topics |
-|---|------|-------|---------|---------|-------------------|
-| 1 | 2024-01-15 | Initial contact re: acquisition | Strong (3 sources) | DOC-001, DOC-015, EMAIL-003 | Circumstances of first meeting |
-| 2 | 2024-02-01 | Draft SPA circulated | Strong | EMAIL-034 | Who drafted, what terms |
-| 3 | 2024-03-01 | SPA executed | Definitive | ACME_050 | Authority, understanding of terms |
+| #   | Date       | Event                           | Support            | Sources                     | Deposition Topics                 |
+| --- | ---------- | ------------------------------- | ------------------ | --------------------------- | --------------------------------- |
+| 1   | 2024-01-15 | Initial contact re: acquisition | Strong (3 sources) | DOC-001, DOC-015, EMAIL-003 | Circumstances of first meeting    |
+| 2   | 2024-02-01 | Draft SPA circulated            | Strong             | EMAIL-034                   | Who drafted, what terms           |
+| 3   | 2024-03-01 | SPA executed                    | Definitive         | ACME_050                    | Authority, understanding of terms |
 ```
 
 **Step 6.4: Build entity chronologies**
@@ -1349,11 +1424,11 @@ Per-actor timelines for deposition preparation:
 Aliases: Mr. Smith, JS, "the CEO"
 Documents involving Smith: 145 of 1,247 total
 
-| # | Date | Event | Document Basis | Contradictions | Deposition Topics |
-|---|------|-------|----------------|----------------|-------------------|
-| 1 | 2024-01-15 | Met with Jones at HQ | DOC-001 p.5 | — | Circumstances, who present, what discussed |
-| 2 | 2024-02-15 | Received revenue reps | **Disputed** (Smith Decl. vs Jones Dep.) | CONTRADICTION-003 | What was said, by whom, in what context |
-| 3 | 2024-03-01 | Signed SPA on behalf of Acme | ACME_050 | — | Authority, reliance, understanding |
+| #   | Date       | Event                        | Document Basis                           | Contradictions    | Deposition Topics                          |
+| --- | ---------- | ---------------------------- | ---------------------------------------- | ----------------- | ------------------------------------------ |
+| 1   | 2024-01-15 | Met with Jones at HQ         | DOC-001 p.5                              | —                 | Circumstances, who present, what discussed |
+| 2   | 2024-02-15 | Received revenue reps        | **Disputed** (Smith Decl. vs Jones Dep.) | CONTRADICTION-003 | What was said, by whom, in what context    |
+| 3   | 2024-03-01 | Signed SPA on behalf of Acme | ACME_050                                 | —                 | Authority, reliance, understanding         |
 ```
 
 **Step 6.5: Build deadline risk calendar**
@@ -1363,13 +1438,13 @@ Procedural timeline with risk indicators:
 ```markdown
 ### Deadline Calendar
 
-| # | Trigger Event | Rule/Order | Deadline | Status | Risk | Mitigation |
-|---|---------------|------------|----------|--------|------|------------|
-| 1 | Complaint filed 2025-06-15 | FRCP 12(a)(1) [VERIFY] | Answer: 2025-07-06 | Complete | — | — |
-| 2 | Initial disclosures | FRCP 26(a)(1) [VERIFY] | 2025-08-15 | Pending | MEDIUM | Prepare disclosure checklist |
-| 3 | Fact discovery cutoff | Scheduling Order ¶4 | 2026-04-01 | Active | Track | Priority depositions by Feb |
-| 4 | Expert reports | Scheduling Order ¶6 | 2026-05-15 | Upcoming | HIGH | Retain expert by March |
-| 5 | Summary judgment | FRCP 56 [VERIFY] | 2026-07-01 | Future | Plan | Begin fact statement drafting |
+| #   | Trigger Event              | Rule/Order             | Deadline           | Status   | Risk   | Mitigation                    |
+| --- | -------------------------- | ---------------------- | ------------------ | -------- | ------ | ----------------------------- |
+| 1   | Complaint filed 2025-06-15 | FRCP 12(a)(1) [VERIFY] | Answer: 2025-07-06 | Complete | —      | —                             |
+| 2   | Initial disclosures        | FRCP 26(a)(1) [VERIFY] | 2025-08-15         | Pending  | MEDIUM | Prepare disclosure checklist  |
+| 3   | Fact discovery cutoff      | Scheduling Order ¶4    | 2026-04-01         | Active   | Track  | Priority depositions by Feb   |
+| 4   | Expert reports             | Scheduling Order ¶6    | 2026-05-15         | Upcoming | HIGH   | Retain expert by March        |
+| 5   | Summary judgment           | FRCP 56 [VERIFY]       | 2026-07-01         | Future   | Plan   | Begin fact statement drafting |
 ```
 
 **Step 6.6: Build relationship map**
@@ -1379,12 +1454,12 @@ Entity-to-entity relationships for understanding case dynamics:
 ```markdown
 ### Key Relationships
 
-| Entity A | Relationship | Entity B | Sources | Significance |
-|----------|-------------|----------|---------|-------------|
-| Smith | CEO of | Acme Corp | ACME_001 | Plaintiff's authority |
-| Jones | VP Sales at | Acme Corp | ACME_002 | Made alleged representations |
-| Smith | Negotiated with | Doe (Vendor) | EMAIL-034 | Contract formation |
-| Baker LLP | Counsel for | Acme Corp | Engagement letter | Privilege boundary |
+| Entity A  | Relationship    | Entity B     | Sources           | Significance                 |
+| --------- | --------------- | ------------ | ----------------- | ---------------------------- |
+| Smith     | CEO of          | Acme Corp    | ACME_001          | Plaintiff's authority        |
+| Jones     | VP Sales at     | Acme Corp    | ACME_002          | Made alleged representations |
+| Smith     | Negotiated with | Doe (Vendor) | EMAIL-034         | Contract formation           |
+| Baker LLP | Counsel for     | Acme Corp    | Engagement letter | Privilege boundary           |
 ```
 
 ---
@@ -1394,6 +1469,7 @@ Entity-to-entity relationships for understanding case dynamics:
 This phase runs locally — no API calls.
 
 **CLI path**: Stage 6 script:
+
 ```bash
 ./scripts/corpus-processing/timeline-build.sh run --from 6 --to 6
 ```
@@ -1407,6 +1483,7 @@ Primary working document for legal team. Full template below in Output Format se
 **Step 7.2: JSON export**
 
 Structured data for system integration:
+
 ```json
 {
   "metadata": {
@@ -1445,6 +1522,7 @@ For spreadsheet analysis and bulk operations. One row per event with flattened f
 **Step 7.4: HTML interactive timeline**
 
 Self-contained HTML file with:
+
 - Zoomable timeline visualization (year → month → day → hour)
 - Color-coded event types
 - Issue filter toggles
@@ -1475,6 +1553,7 @@ fact is supported by citation to admissible evidence:
 ```
 
 Criteria for inclusion:
+
 - Only events with confidence ≥ 0.80
 - Only events with `disputed: false`
 - Only events supported by admissible evidence (not hearsay-only)
@@ -1501,6 +1580,7 @@ significance:
 **Step 7.6: EDRM XML export** (optional)
 
 For integration with eDiscovery platforms (Relativity, DISCO, Everlaw):
+
 - EDRM XML 2.0 format for load file generation
 - Map events to document production metadata
 - Preserve Bates references and custodian linkage
@@ -1521,6 +1601,7 @@ For Multi-District Litigation and class actions, the timeline requires additiona
 structure:
 
 **MDL coordination timeline**:
+
 - Transfer/consolidation events (28 U.S.C. § 1407) [VERIFY]
 - Bellwether selection and scheduling
 - Common discovery vs. case-specific discovery
@@ -1528,12 +1609,14 @@ structure:
 - Settlement class events
 
 **Class certification timeline**:
+
 - Named plaintiff events (typicality, adequacy)
 - Commonality events (shared facts across class)
 - Class definition events (who is in/out)
 - Notice events (opt-in/opt-out deadlines)
 
 **Multi-plaintiff structure**:
+
 ```yaml
 timeline_structure:
   master_docket: "MDL No. 1234"
@@ -1554,6 +1637,7 @@ timeline_structure:
 For government investigations (SEC, DOJ, FTC, state AG):
 
 **Key differences from private litigation**:
+
 - Voluntary vs. compulsory process distinction
 - Tolling agreements and statute of limitations events
 - Wells notices and response deadlines
@@ -1562,6 +1646,7 @@ For government investigations (SEC, DOJ, FTC, state AG):
 - Consent decree/settlement negotiation milestones
 
 **Regulatory-specific event types**:
+
 - subpoena_issued, subpoena_response, voluntary_production
 - wells_notice, wells_response
 - consent_decree_draft, consent_decree_final
@@ -1573,17 +1658,20 @@ For government investigations (SEC, DOJ, FTC, state AG):
 For matters spanning multiple jurisdictions:
 
 **Timezone management**:
+
 - Store all times in UTC internally
 - Display in source-local timezone with UTC offset
 - Flag events where timezone affects legal deadline (e.g., filing at 11:59 PM in one timezone vs. next day in another)
 
 **Multi-jurisdiction deadline tracking**:
+
 - Track deadlines per jurisdiction separately
 - Flag conflicts (e.g., U.S. discovery deadline vs. EU blocking statute)
 - Note Hague Convention service timing vs. domestic service
 - Track data transfer timeline (GDPR adequacy, SCCs, derogations)
 
 **Language and date format**:
+
 - Preserve original language text alongside English translation
 - Use ISO 8601 (YYYY-MM-DD) as canonical format
 - Note source format conventions (US MM/DD, EU DD/MM, ISO YYYY-MM-DD)
@@ -1599,6 +1687,7 @@ for human review and ensures privileged content does not enter the final timelin
 without attorney sign-off.
 
 **Privilege flag triggers**:
+
 - Communication between attorney and client (check entity roles)
 - Documents marked "Attorney-Client Privileged" or "Work Product"
 - Communications referencing legal advice ("counsel advised", "per our attorney")
@@ -1606,24 +1695,27 @@ without attorney sign-off.
 - Joint defense communications
 
 **Treatment of flagged items**:
+
 1. Events sourced solely from flagged documents: mark `privilege_flag: "pending_review"`
 2. Events sourced from both flagged and non-flagged documents: include with non-flagged citation only
 3. Never include privileged document content in timeline text
 4. Generate parallel privilege chronology for privilege log support
 
 **Parallel privilege chronology**:
+
 ```markdown
 ### Privilege Chronology (For Privilege Log — NOT for production)
 
-| # | Date | Communication Type | Participants | Subject (Redacted) | Flag Type | Review Status |
-|---|------|-------------------|--------------|-------------------|-----------|--------------|
-| P-1 | 2024-02-20 | Email | Smith → Baker LLP | [Re: potential claims] | AC | Pending |
-| P-2 | 2024-03-05 | Memo | Baker LLP | [Litigation assessment] | WP | Pending |
+| #   | Date       | Communication Type | Participants      | Subject (Redacted)      | Flag Type | Review Status |
+| --- | ---------- | ------------------ | ----------------- | ----------------------- | --------- | ------------- |
+| P-1 | 2024-02-20 | Email              | Smith → Baker LLP | [Re: potential claims]  | AC        | Pending       |
+| P-2 | 2024-03-05 | Memo               | Baker LLP         | [Litigation assessment] | WP        | Pending       |
 ```
 
 ### Protective Order Designations
 
 If a protective order is in effect:
+
 - Tag each event and source with its highest designation level
 - Filter outputs by designation for different audiences
 - Generate designation-specific timeline views:
@@ -1637,32 +1729,32 @@ If a protective order is in effect:
 
 Evaluate each event and chronology segment across these 14 dimensions:
 
-| # | Dimension | What to Assess | Evidence Signals | Red Flags |
-|---|-----------|----------------|------------------|-----------|
-| 1 | **Event authenticity** | Event tied to reliable source | Original doc, transcript, metadata | No source pointer |
-| 2 | **Temporal precision** | Exactness of date/time | Timestamp, filing date, signature | Approximate treated as exact |
-| 3 | **Sequence integrity** | Coherent ordering | Cross-source consistency | Circular/impossible sequence |
-| 4 | **Actor attribution** | Who performed the act | Named sender/speaker/author | Unknown actor |
-| 5 | **Documentary support** | Corroboration depth | Multiple independent sources | Single unverified source |
-| 6 | **Testimonial alignment** | Witness consistency | Page-line aligned testimony | Direct contradiction |
-| 7 | **Contradiction materiality** | Case impact of conflict | Links to core claim/defense | Immaterial conflict flagged as critical |
-| 8 | **Admissibility sensitivity** | Likely evidentiary treatment | Authentication chain | Hearsay-heavy anchors |
-| 9 | **Procedural relevance** | Relation to deadlines | Trigger events linked to rules | Missed trigger event |
-| 10 | **Gap severity** | Importance of missing periods | Missing records in key window | Unknown bridging event |
-| 11 | **Preservation posture** | Evidence integrity | Custody records, immutable logs | Missing custody chain |
-| 12 | **Strategic leverage** | Utility for case theory | Supports/disrupts narrative | Timeline exists but not issue-mapped |
-| 13 | **Entity linkage** | People/orgs properly connected | Clear actor-event relationships | Orphan entities |
-| 14 | **Timezone coherence** | Cross-border time consistency | Normalized timestamps | Date shift across timezones |
+| #   | Dimension                     | What to Assess                 | Evidence Signals                   | Red Flags                               |
+| --- | ----------------------------- | ------------------------------ | ---------------------------------- | --------------------------------------- |
+| 1   | **Event authenticity**        | Event tied to reliable source  | Original doc, transcript, metadata | No source pointer                       |
+| 2   | **Temporal precision**        | Exactness of date/time         | Timestamp, filing date, signature  | Approximate treated as exact            |
+| 3   | **Sequence integrity**        | Coherent ordering              | Cross-source consistency           | Circular/impossible sequence            |
+| 4   | **Actor attribution**         | Who performed the act          | Named sender/speaker/author        | Unknown actor                           |
+| 5   | **Documentary support**       | Corroboration depth            | Multiple independent sources       | Single unverified source                |
+| 6   | **Testimonial alignment**     | Witness consistency            | Page-line aligned testimony        | Direct contradiction                    |
+| 7   | **Contradiction materiality** | Case impact of conflict        | Links to core claim/defense        | Immaterial conflict flagged as critical |
+| 8   | **Admissibility sensitivity** | Likely evidentiary treatment   | Authentication chain               | Hearsay-heavy anchors                   |
+| 9   | **Procedural relevance**      | Relation to deadlines          | Trigger events linked to rules     | Missed trigger event                    |
+| 10  | **Gap severity**              | Importance of missing periods  | Missing records in key window      | Unknown bridging event                  |
+| 11  | **Preservation posture**      | Evidence integrity             | Custody records, immutable logs    | Missing custody chain                   |
+| 12  | **Strategic leverage**        | Utility for case theory        | Supports/disrupts narrative        | Timeline exists but not issue-mapped    |
+| 13  | **Entity linkage**            | People/orgs properly connected | Clear actor-event relationships    | Orphan entities                         |
+| 14  | **Timezone coherence**        | Cross-border time consistency  | Normalized timestamps              | Date shift across timezones             |
 
 ---
 
 ## Chronology Finding Classification
 
-| Class | Meaning | Typical Response |
-|-------|---------|------------------|
-| **LOW** | Minor inconsistency; limited case impact | Track and monitor |
-| **MEDIUM** | Material ambiguity requiring clarification | Assign follow-up action |
-| **HIGH** | Significant contradiction or unsupported core event | Escalate to matter lead |
+| Class        | Meaning                                                  | Typical Response                         |
+| ------------ | -------------------------------------------------------- | ---------------------------------------- |
+| **LOW**      | Minor inconsistency; limited case impact                 | Track and monitor                        |
+| **MEDIUM**   | Material ambiguity requiring clarification               | Assign follow-up action                  |
+| **HIGH**     | Significant contradiction or unsupported core event      | Escalate to matter lead                  |
 | **CRITICAL** | Timeline defect threatens position or sanctions exposure | Immediate escalation; 24-72h remediation |
 
 ---
@@ -1671,55 +1763,55 @@ Evaluate each event and chronology segment across these 14 dimensions:
 
 For each `MEDIUM/HIGH/CRITICAL` finding, provide:
 
-| Field | Content |
-|-------|---------|
-| **Finding summary** | One-sentence description |
-| **Why it matters** | Legal + strategic impact |
-| **Source basis** | `VERIFIED` or `[VERIFY]` |
+| Field                  | Content                                                               |
+| ---------------------- | --------------------------------------------------------------------- |
+| **Finding summary**    | One-sentence description                                              |
+| **Why it matters**     | Legal + strategic impact                                              |
+| **Source basis**       | `VERIFIED` or `[VERIFY]`                                              |
 | **Recommended action** | Specific task (e.g., "Subpoena Doe's phone records for Feb 15-Mar 1") |
-| **Owner role** | Legal, eDiscovery, forensic, business, expert |
-| **Due window** | `24h`, `72h`, `7d`, `14d+` |
-| **Expected effect** | Uncertainty reduction, conflict resolution, gap closure |
+| **Owner role**         | Legal, eDiscovery, forensic, business, expert                         |
+| **Due window**         | `24h`, `72h`, `7d`, `14d+`                                            |
+| **Expected effect**    | Uncertainty reduction, conflict resolution, gap closure               |
 
 ---
 
 ## Prioritization Framework
 
-| Tier | Label | Criteria | Deadline |
-|------|-------|----------|----------|
-| **Tier 1** | Immediate | `CRITICAL` defects, sanctions risk, deadline impact | 0-72 hours |
-| **Tier 2** | Near-term | `HIGH` conflicts affecting merits/strategy | 3-14 days |
-| **Tier 3** | Programmatic | `MEDIUM/LOW` improvements and completeness | 2+ weeks |
+| Tier       | Label        | Criteria                                            | Deadline   |
+| ---------- | ------------ | --------------------------------------------------- | ---------- |
+| **Tier 1** | Immediate    | `CRITICAL` defects, sanctions risk, deadline impact | 0-72 hours |
+| **Tier 2** | Near-term    | `HIGH` conflicts affecting merits/strategy          | 3-14 days  |
+| **Tier 3** | Programmatic | `MEDIUM/LOW` improvements and completeness          | 2+ weeks   |
 
 ---
 
 ## Confidence Scoring
 
-| Level | Range | Interpretation | Action |
-|-------|-------|----------------|--------|
-| **Definite** | 0.95-1.00 | Multiple consistent primary sources | Use as anchor event |
-| **High** | 0.80-0.94 | Strong support with limited ambiguity | Use with brief caveat |
-| **Probable** | 0.60-0.79 | Competing readings remain | Present both readings |
-| **Possible** | 0.40-0.59 | Material uncertainty | Flag for collection/interview |
-| **Unlikely** | 0.00-0.39 | Weak support/speculative | Exclude from core timeline; note in appendix |
+| Level        | Range     | Interpretation                        | Action                                       |
+| ------------ | --------- | ------------------------------------- | -------------------------------------------- |
+| **Definite** | 0.95-1.00 | Multiple consistent primary sources   | Use as anchor event                          |
+| **High**     | 0.80-0.94 | Strong support with limited ambiguity | Use with brief caveat                        |
+| **Probable** | 0.60-0.79 | Competing readings remain             | Present both readings                        |
+| **Possible** | 0.40-0.59 | Material uncertainty                  | Flag for collection/interview                |
+| **Unlikely** | 0.00-0.39 | Weak support/speculative              | Exclude from core timeline; note in appendix |
 
 ---
 
 ## Date Precision Levels
 
-| Precision | Format | Example | Timeline Treatment |
-|-----------|--------|---------|-------------------|
-| **EXACT_DATETIME** | YYYY-MM-DDTHH:MM:SS±HH:MM | 2024-03-15T14:30:00-05:00 | Plot at exact point |
-| **EXACT_DATE** | YYYY-MM-DD | 2024-03-15 | Plot at date |
-| **WEEK** | YYYY-Www | 2024-W11 | Show as week range |
-| **MONTH** | YYYY-MM | 2024-03 | Show as month range |
-| **QUARTER** | YYYY-Qn | 2024-Q1 | Show as quarter range |
-| **YEAR** | YYYY | 2024 | Show as year range |
-| **APPROXIMATE** | ~YYYY-MM-DD | ~2024-03-15 | Plot with uncertainty indicator |
-| **RANGE** | YYYY-MM-DD/YYYY-MM-DD | 2024-03-01/2024-03-31 | Show as span |
-| **BEFORE** | <YYYY-MM-DD | <2024-03-15 | Plot as terminus ante quem |
-| **AFTER** | >YYYY-MM-DD | >2024-03-15 | Plot as terminus post quem |
-| **RELATIVE** | +Nd from [anchor] | +30d from Closing Date | Resolve when anchor known |
+| Precision          | Format                    | Example                   | Timeline Treatment              |
+| ------------------ | ------------------------- | ------------------------- | ------------------------------- |
+| **EXACT_DATETIME** | YYYY-MM-DDTHH:MM:SS±HH:MM | 2024-03-15T14:30:00-05:00 | Plot at exact point             |
+| **EXACT_DATE**     | YYYY-MM-DD                | 2024-03-15                | Plot at date                    |
+| **WEEK**           | YYYY-Www                  | 2024-W11                  | Show as week range              |
+| **MONTH**          | YYYY-MM                   | 2024-03                   | Show as month range             |
+| **QUARTER**        | YYYY-Qn                   | 2024-Q1                   | Show as quarter range           |
+| **YEAR**           | YYYY                      | 2024                      | Show as year range              |
+| **APPROXIMATE**    | ~YYYY-MM-DD               | ~2024-03-15               | Plot with uncertainty indicator |
+| **RANGE**          | YYYY-MM-DD/YYYY-MM-DD     | 2024-03-01/2024-03-31     | Show as span                    |
+| **BEFORE**         | <YYYY-MM-DD               | <2024-03-15               | Plot as terminus ante quem      |
+| **AFTER**          | >YYYY-MM-DD               | >2024-03-15               | Plot as terminus post quem      |
+| **RELATIVE**       | +Nd from [anchor]         | +30d from Closing Date    | Resolve when anchor known       |
 
 ---
 
@@ -1727,41 +1819,41 @@ For each `MEDIUM/HIGH/CRITICAL` finding, provide:
 
 ### Tier 1 — Core Entities (Always Extract)
 
-| Type | Description | Examples | Coreference Patterns |
-|------|-------------|----------|---------------------|
-| **PERSON** | Individual humans | John Smith, Dr. Jane Doe | Mr. Smith, Smith, JS, "he" |
-| **ORGANIZATION** | Companies, firms, agencies | Acme Corp., Smith & Jones LLP | Acme, the Company, Defendant |
-| **INSTRUMENT** | Legal documents | SPA, NDA, Employment Agreement | the Agreement, this Contract, Exhibit 1 |
-| **EVENT_REF** | Named events | the Closing, the IPO, the Merger | the transaction, the deal |
+| Type             | Description                | Examples                         | Coreference Patterns                    |
+| ---------------- | -------------------------- | -------------------------------- | --------------------------------------- |
+| **PERSON**       | Individual humans          | John Smith, Dr. Jane Doe         | Mr. Smith, Smith, JS, "he"              |
+| **ORGANIZATION** | Companies, firms, agencies | Acme Corp., Smith & Jones LLP    | Acme, the Company, Defendant            |
+| **INSTRUMENT**   | Legal documents            | SPA, NDA, Employment Agreement   | the Agreement, this Contract, Exhibit 1 |
+| **EVENT_REF**    | Named events               | the Closing, the IPO, the Merger | the transaction, the deal               |
 
 ### Tier 2 — Enrichment Entities
 
-| Type | Description | Examples |
-|------|-------------|----------|
-| **LOCATION** | Physical places | 123 Main St., New York, Delaware |
-| **MONETARY** | Financial amounts | $1,000,000, EUR 500K, "the purchase price" |
-| **DEADLINE** | Time-bound obligations | "within 30 days", "no later than June 1" |
-| **STATUTE** | Legal citations | 15 U.S.C. § 78j(b), FRCP 26, GDPR Art. 17 |
-| **CASE_REF** | Case identifiers | Case No. 1:25-cv-00123, Smith v. Jones |
+| Type         | Description            | Examples                                   |
+| ------------ | ---------------------- | ------------------------------------------ |
+| **LOCATION** | Physical places        | 123 Main St., New York, Delaware           |
+| **MONETARY** | Financial amounts      | $1,000,000, EUR 500K, "the purchase price" |
+| **DEADLINE** | Time-bound obligations | "within 30 days", "no later than June 1"   |
+| **STATUTE**  | Legal citations        | 15 U.S.C. § 78j(b), FRCP 26, GDPR Art. 17  |
+| **CASE_REF** | Case identifiers       | Case No. 1:25-cv-00123, Smith v. Jones     |
 
 ### Tier 3 — Contextual Entities
 
-| Type | Description | Examples |
-|------|-------------|----------|
-| **CLAIM** | Legal claims | Breach of contract, fraud, negligence |
-| **EVIDENCE** | Evidence references | Exhibit A, Bates ACME_00001, Tr. 125:14 |
-| **ROLE** | Legal roles | Plaintiff, Defendant, Witness, Counsel |
-| **PRIVILEGE_FLAG** | Privilege indicators | "attorney-client", "work product" |
+| Type               | Description          | Examples                                |
+| ------------------ | -------------------- | --------------------------------------- |
+| **CLAIM**          | Legal claims         | Breach of contract, fraud, negligence   |
+| **EVIDENCE**       | Evidence references  | Exhibit A, Bates ACME_00001, Tr. 125:14 |
+| **ROLE**           | Legal roles          | Plaintiff, Defendant, Witness, Counsel  |
+| **PRIVILEGE_FLAG** | Privilege indicators | "attorney-client", "work product"       |
 
 ### Legal-Specific Roles
 
-| Role Category | Subtypes |
-|---------------|----------|
-| **PARTY** | Plaintiff, Defendant, Petitioner, Respondent, Intervenor, Third-Party |
-| **LEGAL** | Counsel, Judge, Magistrate, Arbitrator, Mediator, Special Master |
-| **WITNESS** | Fact Witness, Expert Witness, Designated Corporate Representative (30(b)(6)) |
-| **DISCOVERY** | Custodian, Producing Party, Requesting Party |
-| **COURT** | Federal District, State Trial, Appellate, Supreme, Bankruptcy, Administrative |
+| Role Category | Subtypes                                                                      |
+| ------------- | ----------------------------------------------------------------------------- |
+| **PARTY**     | Plaintiff, Defendant, Petitioner, Respondent, Intervenor, Third-Party         |
+| **LEGAL**     | Counsel, Judge, Magistrate, Arbitrator, Mediator, Special Master              |
+| **WITNESS**   | Fact Witness, Expert Witness, Designated Corporate Representative (30(b)(6))  |
+| **DISCOVERY** | Custodian, Producing Party, Requesting Party                                  |
+| **COURT**     | Federal District, State Trial, Appellate, Supreme, Bankruptcy, Administrative |
 
 ---
 
@@ -1789,15 +1881,15 @@ If unresolved after Pass 3, classify as uncertain and escalate to counsel.
 
 Apply these gates before delivery. If any fail, revise output.
 
-| Gate | Rule | Fail Action |
-|------|------|-------------|
-| **Source** | Every material event has ≥1 concrete source pointer | Add source or mark `[UNSOURCED]` |
-| **Format** | Citations use consistent format (doc ID + locator) | Normalize citation format |
-| **Currency** | Rule/procedural references checked for current version | Add `[CHECK CURRENCY]` |
-| **Domain** | Jurisdiction-specific statements limited to selected forum | Remove jurisdiction bleed |
-| **Confidence** | Certainty aligned to source quality and contradiction status | Downgrade confidence and flag |
-| **Privilege** | No potentially privileged content without review clearance | Redact or flag `[PRIVILEGE REVIEW]` |
-| **Designation** | Protective order designations properly applied | Add designation or restrict distribution |
+| Gate            | Rule                                                         | Fail Action                              |
+| --------------- | ------------------------------------------------------------ | ---------------------------------------- |
+| **Source**      | Every material event has ≥1 concrete source pointer          | Add source or mark `[UNSOURCED]`         |
+| **Format**      | Citations use consistent format (doc ID + locator)           | Normalize citation format                |
+| **Currency**    | Rule/procedural references checked for current version       | Add `[CHECK CURRENCY]`                   |
+| **Domain**      | Jurisdiction-specific statements limited to selected forum   | Remove jurisdiction bleed                |
+| **Confidence**  | Certainty aligned to source quality and contradiction status | Downgrade confidence and flag            |
+| **Privilege**   | No potentially privileged content without review clearance   | Redact or flag `[PRIVILEGE REVIEW]`      |
+| **Designation** | Protective order designations properly applied               | Add designation or restrict distribution |
 
 ---
 
@@ -1957,41 +2049,43 @@ glass_box:
 
 ### Document Processing Tools
 
-| Tool | Purpose | Install | Fallback |
-|------|---------|---------|----------|
-| **MinerU** (`magic-pdf`) | PDF → markdown with OCR, tables, layout | `pip install magic-pdf` | markitdown, pdftotext |
-| **MarkItDown** (`markitdown`) | Multi-format → markdown | `pip install markitdown` | pandoc |
-| **Pandoc** | DOCX → markdown with track changes | `brew install pandoc` | python-docx |
-| **pdftotext** (poppler) | Basic PDF text extraction | `brew install poppler` | — |
-| **ocrmypdf** | OCR for scanned PDFs | `pip install ocrmypdf` | tesseract |
-| **extract-msg** | MSG email parsing | `pip install extract-msg` | markitdown |
-| **readpst** | PST archive extraction | `brew install libpst` | — |
+| Tool                          | Purpose                                 | Install                   | Fallback              |
+| ----------------------------- | --------------------------------------- | ------------------------- | --------------------- |
+| **MinerU** (`magic-pdf`)      | PDF → markdown with OCR, tables, layout | `pip install magic-pdf`   | markitdown, pdftotext |
+| **MarkItDown** (`markitdown`) | Multi-format → markdown                 | `pip install markitdown`  | pandoc                |
+| **Pandoc**                    | DOCX → markdown with track changes      | `brew install pandoc`     | python-docx           |
+| **pdftotext** (poppler)       | Basic PDF text extraction               | `brew install poppler`    | —                     |
+| **ocrmypdf**                  | OCR for scanned PDFs                    | `pip install ocrmypdf`    | tesseract             |
+| **extract-msg**               | MSG email parsing                       | `pip install extract-msg` | markitdown            |
+| **readpst**                   | PST archive extraction                  | `brew install libpst`     | —                     |
 
 ### Claude Code CLI
 
-| Command | Purpose |
-|---------|---------|
-| `claude -p --model haiku` | Non-interactive extraction worker |
-| `claude -p --model sonnet` | Validation worker |
-| `claude -p --model opus` | Synthesis/orchestration |
-| `--output-format json` | Structured JSON output |
-| `--max-turns 1` | Single response (no tool use) |
-| `--max-budget-usd X` | Per-worker cost cap |
-| `--no-session-persistence` | Don't save session state |
-| `--system-prompt-file` | Load extraction prompt from file |
-| `--tools ""` | Disable all tools (pure extraction) |
-| `--json-schema '{...}'` | Validate output against JSON schema |
-| `--fallback-model sonnet` | Auto-fallback when Haiku overloaded |
+| Command                    | Purpose                             |
+| -------------------------- | ----------------------------------- |
+| `claude -p --model haiku`  | Non-interactive extraction worker   |
+| `claude -p --model sonnet` | Validation worker                   |
+| `claude -p --model opus`   | Synthesis/orchestration             |
+| `--output-format json`     | Structured JSON output              |
+| `--max-turns 1`            | Single response (no tool use)       |
+| `--max-budget-usd X`       | Per-worker cost cap                 |
+| `--no-session-persistence` | Don't save session state            |
+| `--system-prompt-file`     | Load extraction prompt from file    |
+| `--tools ""`               | Disable all tools (pure extraction) |
+| `--json-schema '{...}'`    | Validate output against JSON schema |
+| `--fallback-model sonnet`  | Auto-fallback when Haiku overloaded |
 
 ### legalcode-mcp Integration
 
 When `legalcode-mcp` is available:
+
 - Validate jurisdiction-specific procedural and evidentiary references
 - Verify statutory/rule statements used in deadline calculations
 - Pull current case law on timeline-relevant doctrines
 - Mark validated items as `VERIFIED` in output and audit trail
 
 When `legalcode-mcp` is not available:
+
 - Continue with repository and web sources
 - Mark jurisdiction-sensitive assertions with `[VERIFY]`
 - Record verification limitations in Glass Box output
@@ -2000,15 +2094,15 @@ When `legalcode-mcp` is not available:
 
 Export formats compatible with:
 
-| Platform | Format | Export Method |
-|----------|--------|--------------|
-| **Relativity** | DAT load files, EDRM XML | Stage 6 EDRM export |
-| **DISCO** | CSV import | Stage 6 CSV export |
-| **Everlaw** | CSV/JSON | Stage 6 JSON export |
-| **CaseMap** | TLF timeline import | Stage 6 TLF export |
-| **TrialLine** | JSON import | Stage 6 JSON export |
-| **TimelineJS** | JSON/Google Sheets | Stage 6 HTML export |
-| **Generic** | JSON, CSV, Markdown | Default Stage 6 outputs |
+| Platform       | Format                   | Export Method           |
+| -------------- | ------------------------ | ----------------------- |
+| **Relativity** | DAT load files, EDRM XML | Stage 6 EDRM export     |
+| **DISCO**      | CSV import               | Stage 6 CSV export      |
+| **Everlaw**    | CSV/JSON                 | Stage 6 JSON export     |
+| **CaseMap**    | TLF timeline import      | Stage 6 TLF export      |
+| **TrialLine**  | JSON import              | Stage 6 JSON export     |
+| **TimelineJS** | JSON/Google Sheets       | Stage 6 HTML export     |
+| **Generic**    | JSON, CSV, Markdown      | Default Stage 6 outputs |
 
 ---
 
@@ -2018,6 +2112,7 @@ Export formats compatible with:
 # Case Timeline Pack — [Matter Name]
 
 ## 1. Executive Snapshot
+
 - **Matter**: [Case name and number]
 - **Objective**: [strategy | deposition | trial | settlement | regulatory]
 - **Side represented**: [plaintiff | defendant | class | regulatory | neutral]
@@ -2032,6 +2127,7 @@ Export formats compatible with:
   3. [Risk 3 — e.g., 5 events rely on single disputed source]
 
 ## 2. Processing Summary
+
 - **Documents in corpus**: [count]
 - **Documents converted**: [count] ([count] failed)
 - **Duplicates detected**: [count]
@@ -2044,66 +2140,80 @@ Export formats compatible with:
 - **Privilege flags**: [count] (pending review)
 
 ## 3. Source Register
+
 | source_id | type | custodian | date_range | bates_range | pages | reliability | privilege |
-|-----------|------|-----------|------------|-------------|-------|-------------|-----------|
+| --------- | ---- | --------- | ---------- | ----------- | ----- | ----------- | --------- |
 
 ## 4. Master Chronology
-| # | date | prec. | event | actors | sources | issues | disp. | conf. |
-|---|------|-------|-------|--------|---------|--------|-------|-------|
+
+| #   | date | prec. | event | actors | sources | issues | disp. | conf. |
+| --- | ---- | ----- | ----- | ------ | ------- | ------ | ----- | ----- |
 
 ## 5. Issue Timelines
 
 ### 5.1 [Issue Name] (ISS-001)
-| # | date | event | support | sources | deposition_topics |
-|---|------|-------|---------|---------|-------------------|
+
+| #   | date | event | support | sources | deposition_topics |
+| --- | ---- | ----- | ------- | ------- | ----------------- |
 
 ### 5.2 [Issue Name] (ISS-002)
+
 [...]
 
 ## 6. Entity Timelines
 
 ### 6.1 [Entity Name] ([Role])
+
 Aliases: [list]
 Documents: [count] of [total]
 
-| # | date | event | document_basis | contradictions | deposition_topics |
-|---|------|-------|----------------|----------------|-------------------|
+| #   | date | event | document_basis | contradictions | deposition_topics |
+| --- | ---- | ----- | -------------- | -------------- | ----------------- |
 
 ## 7. Relationship Map
+
 | entity_a | relationship | entity_b | sources | significance |
-|----------|-------------|----------|---------|-------------|
+| -------- | ------------ | -------- | ------- | ------------ |
 
 ## 8. Contradiction Register
-| id | type | severity | events | materiality | sources_for | sources_against | status | resolution |
-|----|------|----------|--------|-------------|-------------|-----------------|--------|------------|
+
+| id  | type | severity | events | materiality | sources_for | sources_against | status | resolution |
+| --- | ---- | -------- | ------ | ----------- | ----------- | --------------- | ------ | ---------- |
 
 ## 9. Gap Register
-| id | period | missing_info | impact | custodians | recommended_action | owner |
-|----|--------|-------------|--------|------------|--------------------| ------|
+
+| id  | period | missing_info | impact | custodians | recommended_action | owner |
+| --- | ------ | ------------ | ------ | ---------- | ------------------ | ----- |
 
 ## 10. Deadline Risk Calendar
-| # | trigger_event | rule_or_order | deadline | status | risk | mitigation |
-|---|---------------|---------------|----------|--------|------|------------|
+
+| #   | trigger_event | rule_or_order | deadline | status | risk | mitigation |
+| --- | ------------- | ------------- | -------- | ------ | ---- | ---------- |
 
 ## 11. Priority Actions
 
 ### Tier 1 — Immediate (0-72h)
+
 | action | finding | owner | due | expected_outcome |
-|--------|---------|-------|-----|------------------|
+| ------ | ------- | ----- | --- | ---------------- |
 
 ### Tier 2 — Near-term (3-14d)
+
 | action | finding | owner | due | expected_outcome |
-|--------|---------|-------|-----|------------------|
+| ------ | ------- | ----- | --- | ---------------- |
 
 ### Tier 3 — Programmatic (2+ weeks)
+
 | action | finding | owner | due | expected_outcome |
-|--------|---------|-------|-----|------------------|
+| ------ | ------- | ----- | --- | ---------------- |
 
 ## 12. Privilege Chronology (For counsel review — NOT for production)
-| # | date | type | participants | subject_redacted | flag_type | review_status |
-|---|------|------|--------------|-----------------|-----------|--------------|
+
+| #   | date | type | participants | subject_redacted | flag_type | review_status |
+| --- | ---- | ---- | ------------ | ---------------- | --------- | ------------- |
 
 ## 13. QA and Confidence Notes
+
 - **Citation gate exceptions**: [list]
 - **Self-interrogation outcomes**: [summary for HIGH/CRITICAL findings]
 - **Items marked [VERIFY]**: [count and list]
@@ -2111,6 +2221,7 @@ Documents: [count] of [total]
 - **Confidence rationale**: [explanation]
 
 ## 14. Glass Box Audit Trail
+
 ```yaml
 [Populate glass_box template from above]
 ```
@@ -2141,18 +2252,25 @@ For ongoing matters where new documents are produced periodically:
 
 **Step 1**: Add new documents to corpus directory
 **Step 2**: Run discovery stage to identify new/changed files:
+
 ```bash
 ./scripts/corpus-processing/timeline-build.sh run --from 1 --to 1  # Re-inventory
 ```
+
 **Step 3**: Run extraction on new documents only:
+
 ```bash
 ./scripts/corpus-processing/timeline-build.sh run --from 2 --to 2  # Only processes unconverted/unextracted
 ```
+
 **Step 4**: Re-run consolidation and validation on full dataset:
+
 ```bash
 ./scripts/corpus-processing/timeline-build.sh run --from 3 --to 6
 ```
+
 **Step 5**: Diff the new timeline against previous version:
+
 - New events added
 - Events with changed confidence (new corroboration or contradiction)
 - Gaps closed or opened
@@ -2169,6 +2287,7 @@ source_id tracking in the manifest.
 skill with dual-path architecture (CLI + sub-agent fallback).
 
 **Enhancement methodology:**
+
 - Large Opus agent team research across 6 parallel research tracks
 - Claude Code CLI batch processing patterns and `-p` mode documentation
 - Document conversion tool evaluation (MinerU, MarkItDown, pandoc, pdftotext, ocrmypdf)
@@ -2178,9 +2297,11 @@ skill with dual-path architecture (CLI + sub-agent fallback).
 - Multi-agent orchestration design (pipeline stages, dual-path architecture)
 
 **Pipeline scripts**: `scripts/corpus-processing/`
+
 - `timeline-build.sh` — Master orchestrator
 - `stages/stage-1-convert.sh` through `stages/stage-6-output.sh`
 - `01-discover-and-classify.sh` through `05-cost-tracker.sh`
 
 **Research artifacts**:
+
 - `skills/CLAUDE-CLI-BATCH-PROCESSING.md` — CLI flag reference and batch patterns

@@ -27,8 +27,8 @@ ratified in 2018. The current authoritative reference is at
   in the namespace is a version of the Akn schema family that pre-dates the
   OASIS ratification of the standard as 1.0; the OASIS standard normatively
   freezes this namespace).
-- **Document classes**: `<act>` (legislation as adopted), `<bill>` (proposal), 
-  `<judgment>` (case law), `<doc>` (any structured legal document not falling 
+- **Document classes**: `<act>` (legislation as adopted), `<bill>` (proposal),
+  `<judgment>` (case law), `<doc>` (any structured legal document not falling
   in the other classes), plus `<debate>`, `<documentCollection>`, `<amendment>`.
 
 ### 1.2 The AKN4EU subschema
@@ -41,6 +41,7 @@ The AKN4EU schema documentation lives in the cdm.zip distribution at
 `https://op.europa.eu/o/opportal-service/euvoc-download-handler` (see brief).
 
 AKN4EU constrains and extends the base schema by:
+
 - Requiring a `<FRBRWork>` block that references a CELEX and an ELI.
 - Constraining the metadata vocabulary to the EuroVoc and EU Whoiswho
   controlled lists.
@@ -142,14 +143,14 @@ URIs) because it is a derived analytical document, not the directive.
 
 ### 1.4 Document-class selection
 
-| Artefact | AKN document class | Notes |
-|---|---|---|
-| Obligation register | `<doc name="obligationRegister">` | Analytical document; not the act itself |
-| NIM transposition matrix | `<doc name="transpositionMatrix">` | Analytical document |
-| Correlation table | `<doc name="correlationTable">` | Commission template format |
-| Conformity verdict | `<doc name="conformityAssessment">` | Per-article verdict |
-| Gold-plating finding | `<doc name="goldPlatingFinding">` | Annotated divergence record |
-| Infringement timeline | `<doc name="infringementTimeline">` | Procedural record; references CJEU `<judgment>` instances |
+| Artefact                 | AKN document class                  | Notes                                                     |
+| ------------------------ | ----------------------------------- | --------------------------------------------------------- |
+| Obligation register      | `<doc name="obligationRegister">`   | Analytical document; not the act itself                   |
+| NIM transposition matrix | `<doc name="transpositionMatrix">`  | Analytical document                                       |
+| Correlation table        | `<doc name="correlationTable">`     | Commission template format                                |
+| Conformity verdict       | `<doc name="conformityAssessment">` | Per-article verdict                                       |
+| Gold-plating finding     | `<doc name="goldPlatingFinding">`   | Annotated divergence record                               |
+| Infringement timeline    | `<doc name="infringementTimeline">` | Procedural record; references CJEU `<judgment>` instances |
 
 `<judgment>` is reserved for actual case-law documents (when the suite emits a
 sub-element of an infringement timeline that mirrors a CJEU judgment, it is a
@@ -271,7 +272,7 @@ ratified in August 2021. Reference:
 The fragment validates against the LegalRuleML 1.0 schema. It contains exactly
 one Obligation (Art. 21(1) NIS2), one Prohibition (Art. 2(3) NIS2 — the prohibition
 on entities that do not meet the size criteria from claiming essential-entity
-status), and one Permission (Art. 4 NIS2 — the *lex specialis* permission for
+status), and one Permission (Art. 4 NIS2 — the _lex specialis_ permission for
 Member States to maintain sector-specific regimes).
 
 ---
@@ -344,7 +345,7 @@ that the orchestrator must catch. The suggested implementation:
 2. Validate against the bundled schema.
 3. On validation failure, fix and retry once.
 4. On second failure, emit Markdown + JSON only and flag `xml-validation-failed:
-   true` in the Glass Box audit trail.
+true` in the Glass Box audit trail.
 
 ---
 
@@ -363,32 +364,52 @@ consumes both the obligation register and the NIM matrix.
   "$id": "https://legalcode.io/schema/eu-suite/obligation-register/v1",
   "title": "EU Directive Obligation Register",
   "type": "object",
-  "required": ["directiveCelex", "directiveEli", "extractionDate", "obligations"],
+  "required": [
+    "directiveCelex",
+    "directiveEli",
+    "extractionDate",
+    "obligations"
+  ],
   "properties": {
-    "directiveCelex": {"type": "string", "pattern": "^3[0-9]{4}[A-Z][0-9]{4}$"},
-    "directiveEli": {"type": "string", "format": "uri"},
-    "directiveOJReference": {"type": "string"},
-    "extractionDate": {"type": "string", "format": "date"},
-    "extractionLanguage": {"type": "string", "pattern": "^[a-z]{3}$"},
-    "eeaRelevance": {"type": "boolean"},
+    "directiveCelex": {
+      "type": "string",
+      "pattern": "^3[0-9]{4}[A-Z][0-9]{4}$"
+    },
+    "directiveEli": { "type": "string", "format": "uri" },
+    "directiveOJReference": { "type": "string" },
+    "extractionDate": { "type": "string", "format": "date" },
+    "extractionLanguage": { "type": "string", "pattern": "^[a-z]{3}$" },
+    "eeaRelevance": { "type": "boolean" },
     "obligations": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "article", "addressee", "deontic", "text", "languageDivergenceFlag"],
+        "required": [
+          "id",
+          "article",
+          "addressee",
+          "deontic",
+          "text",
+          "languageDivergenceFlag"
+        ],
         "properties": {
-          "id": {"type": "string", "pattern": "^OBL-[A-Z0-9]+-[0-9]{3}$"},
-          "article": {"type": "string"},
-          "paragraph": {"type": "string"},
-          "subparagraph": {"type": "string"},
-          "addressee": {"type": "array", "items": {"type": "string"}},
-          "deontic": {"enum": ["obligation", "permission", "prohibition"]},
-          "text": {"type": "string"},
-          "transpositionDeadline": {"type": "string", "format": "date"},
-          "languageDivergenceFlag": {"enum": ["unverified", "verified-aligned", "verified-divergent"]},
-          "addresseeAuthenticLanguage": {"type": "string", "pattern": "^[a-z]{3}$"},
-          "akn4euRef": {"type": "string"},
-          "lrmlKey": {"type": "string"}
+          "id": { "type": "string", "pattern": "^OBL-[A-Z0-9]+-[0-9]{3}$" },
+          "article": { "type": "string" },
+          "paragraph": { "type": "string" },
+          "subparagraph": { "type": "string" },
+          "addressee": { "type": "array", "items": { "type": "string" } },
+          "deontic": { "enum": ["obligation", "permission", "prohibition"] },
+          "text": { "type": "string" },
+          "transpositionDeadline": { "type": "string", "format": "date" },
+          "languageDivergenceFlag": {
+            "enum": ["unverified", "verified-aligned", "verified-divergent"]
+          },
+          "addresseeAuthenticLanguage": {
+            "type": "string",
+            "pattern": "^[a-z]{3}$"
+          },
+          "akn4euRef": { "type": "string" },
+          "lrmlKey": { "type": "string" }
         }
       }
     }
@@ -406,29 +427,40 @@ consumes both the obligation register and the NIM matrix.
   "type": "object",
   "required": ["directiveCelex", "transpositionDeadline", "memberStates"],
   "properties": {
-    "directiveCelex": {"type": "string", "pattern": "^3[0-9]{4}L[0-9]{4}$"},
-    "transpositionDeadline": {"type": "string", "format": "date"},
+    "directiveCelex": { "type": "string", "pattern": "^3[0-9]{4}L[0-9]{4}$" },
+    "transpositionDeadline": { "type": "string", "format": "date" },
     "memberStates": {
       "type": "array",
       "items": {
         "type": "object",
         "required": ["countryCode", "transpositionStatus", "nims"],
         "properties": {
-          "countryCode": {"type": "string", "pattern": "^[A-Z]{2}$"},
-          "transpositionStatus": {"enum": ["complete", "partial", "not-notified", "draft", "in-parliament"]},
-          "deadlineMet": {"type": "boolean"},
+          "countryCode": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "transpositionStatus": {
+            "enum": [
+              "complete",
+              "partial",
+              "not-notified",
+              "draft",
+              "in-parliament"
+            ]
+          },
+          "deadlineMet": { "type": "boolean" },
           "nims": {
             "type": "array",
             "items": {
               "type": "object",
               "required": ["nationalCitation", "title", "entryIntoForce"],
               "properties": {
-                "nationalCitation": {"type": "string"},
-                "celex7": {"type": "string", "pattern": "^7[0-9]{4}[A-Z][A-Z][0-9]{4}$"},
-                "title": {"type": "string"},
-                "entryIntoForce": {"type": "string", "format": "date"},
-                "notificationDate": {"type": "string", "format": "date"},
-                "sourceUrl": {"type": "string", "format": "uri"}
+                "nationalCitation": { "type": "string" },
+                "celex7": {
+                  "type": "string",
+                  "pattern": "^7[0-9]{4}[A-Z][A-Z][0-9]{4}$"
+                },
+                "title": { "type": "string" },
+                "entryIntoForce": { "type": "string", "format": "date" },
+                "notificationDate": { "type": "string", "format": "date" },
+                "sourceUrl": { "type": "string", "format": "uri" }
               }
             }
           }
@@ -449,20 +481,28 @@ consumes both the obligation register and the NIM matrix.
   "type": "object",
   "required": ["directiveCelex", "memberStateCountryCode", "rows"],
   "properties": {
-    "directiveCelex": {"type": "string"},
-    "memberStateCountryCode": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "directiveCelex": { "type": "string" },
+    "memberStateCountryCode": { "type": "string", "pattern": "^[A-Z]{2}$" },
     "rows": {
       "type": "array",
       "items": {
         "type": "object",
         "required": ["directiveProvision", "nimProvision"],
         "properties": {
-          "directiveProvision": {"type": "string"},
-          "obligationId": {"type": "string"},
-          "nimProvision": {"type": "string"},
-          "nimCitation": {"type": "string"},
-          "transpositionMethod": {"enum": ["literal", "paraphrased", "elaborated", "by-reference", "not-transposed"]},
-          "comment": {"type": "string"}
+          "directiveProvision": { "type": "string" },
+          "obligationId": { "type": "string" },
+          "nimProvision": { "type": "string" },
+          "nimCitation": { "type": "string" },
+          "transpositionMethod": {
+            "enum": [
+              "literal",
+              "paraphrased",
+              "elaborated",
+              "by-reference",
+              "not-transposed"
+            ]
+          },
+          "comment": { "type": "string" }
         }
       }
     }
@@ -478,23 +518,32 @@ consumes both the obligation register and the NIM matrix.
   "$id": "https://legalcode.io/schema/eu-suite/conformity-verdict/v1",
   "title": "Per-Article Conformity Verdict",
   "type": "object",
-  "required": ["directiveCelex", "memberStateCountryCode", "assessmentDate", "verdicts"],
+  "required": [
+    "directiveCelex",
+    "memberStateCountryCode",
+    "assessmentDate",
+    "verdicts"
+  ],
   "properties": {
-    "directiveCelex": {"type": "string"},
-    "memberStateCountryCode": {"type": "string", "pattern": "^[A-Z]{2}$"},
-    "assessmentDate": {"type": "string", "format": "date"},
+    "directiveCelex": { "type": "string" },
+    "memberStateCountryCode": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "assessmentDate": { "type": "string", "format": "date" },
     "verdicts": {
       "type": "array",
       "items": {
         "type": "object",
         "required": ["obligationId", "verdict", "reasoning", "confidence"],
         "properties": {
-          "obligationId": {"type": "string"},
-          "verdict": {"enum": ["correct", "partial", "incorrect", "not-transposed"]},
-          "reasoning": {"type": "string"},
-          "confidence": {"enum": ["VERIFIED", "LIKELY", "POSSIBLE", "VERIFY", "ASSUMED"]},
-          "languageReconciliation": {"type": "string"},
-          "supportingEcli": {"type": "array", "items": {"type": "string"}}
+          "obligationId": { "type": "string" },
+          "verdict": {
+            "enum": ["correct", "partial", "incorrect", "not-transposed"]
+          },
+          "reasoning": { "type": "string" },
+          "confidence": {
+            "enum": ["VERIFIED", "LIKELY", "POSSIBLE", "VERIFY", "ASSUMED"]
+          },
+          "languageReconciliation": { "type": "string" },
+          "supportingEcli": { "type": "array", "items": { "type": "string" } }
         }
       }
     }
@@ -512,21 +561,30 @@ consumes both the obligation register and the NIM matrix.
   "type": "object",
   "required": ["directiveCelex", "memberStateCountryCode", "findings"],
   "properties": {
-    "directiveCelex": {"type": "string"},
-    "memberStateCountryCode": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "directiveCelex": { "type": "string" },
+    "memberStateCountryCode": { "type": "string", "pattern": "^[A-Z]{2}$" },
     "findings": {
       "type": "array",
       "items": {
         "type": "object",
         "required": ["obligationId", "category", "description"],
         "properties": {
-          "obligationId": {"type": "string"},
-          "category": {"enum": ["broader-scope", "stricter-substantive", "earlier-deadline", "additional-procedural", "additional-sanction", "removal-of-permitted-derogation"]},
-          "description": {"type": "string"},
-          "directiveText": {"type": "string"},
-          "nimText": {"type": "string"},
-          "rationale": {"type": "string"},
-          "publishedTrackerSource": {"type": "string", "format": "uri"}
+          "obligationId": { "type": "string" },
+          "category": {
+            "enum": [
+              "broader-scope",
+              "stricter-substantive",
+              "earlier-deadline",
+              "additional-procedural",
+              "additional-sanction",
+              "removal-of-permitted-derogation"
+            ]
+          },
+          "description": { "type": "string" },
+          "directiveText": { "type": "string" },
+          "nimText": { "type": "string" },
+          "rationale": { "type": "string" },
+          "publishedTrackerSource": { "type": "string", "format": "uri" }
         }
       }
     }
@@ -544,22 +602,34 @@ consumes both the obligation register and the NIM matrix.
   "type": "object",
   "required": ["directiveCelex", "memberStateCountryCode", "events"],
   "properties": {
-    "directiveCelex": {"type": "string"},
-    "memberStateCountryCode": {"type": "string", "pattern": "^[A-Z]{2}$"},
-    "procedureNumber": {"type": "string"},
-    "tfeuBasis": {"enum": ["258", "260(2)", "260(3)", "EFTA-31-SCA"]},
+    "directiveCelex": { "type": "string" },
+    "memberStateCountryCode": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "procedureNumber": { "type": "string" },
+    "tfeuBasis": { "enum": ["258", "260(2)", "260(3)", "EFTA-31-SCA"] },
     "events": {
       "type": "array",
       "items": {
         "type": "object",
         "required": ["eventType", "date"],
         "properties": {
-          "eventType": {"enum": ["letter-of-formal-notice", "additional-lfn", "reasoned-opinion", "additional-reasoned-opinion", "referral-to-cjeu", "judgment", "compliance-notification", "second-lfn-260", "second-referral-260"]},
-          "date": {"type": "string", "format": "date"},
-          "celexOrEcli": {"type": "string"},
-          "summary": {"type": "string"},
-          "lumpSumEur": {"type": "number"},
-          "penaltyPaymentEurPerDay": {"type": "number"}
+          "eventType": {
+            "enum": [
+              "letter-of-formal-notice",
+              "additional-lfn",
+              "reasoned-opinion",
+              "additional-reasoned-opinion",
+              "referral-to-cjeu",
+              "judgment",
+              "compliance-notification",
+              "second-lfn-260",
+              "second-referral-260"
+            ]
+          },
+          "date": { "type": "string", "format": "date" },
+          "celexOrEcli": { "type": "string" },
+          "summary": { "type": "string" },
+          "lumpSumEur": { "type": "number" },
+          "penaltyPaymentEurPerDay": { "type": "number" }
         }
       }
     }

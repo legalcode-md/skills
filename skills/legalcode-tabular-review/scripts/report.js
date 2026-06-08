@@ -1,8 +1,20 @@
 (function () {
   "use strict";
 
-  var STATUS_ORDER = ["verified", "needs_review", "conflict", "not_found", "failed"];
-  var CONFIDENCE_ORDER = ["definite", "high", "probable", "possible", "unlikely"];
+  var STATUS_ORDER = [
+    "verified",
+    "needs_review",
+    "conflict",
+    "not_found",
+    "failed",
+  ];
+  var CONFIDENCE_ORDER = [
+    "definite",
+    "high",
+    "probable",
+    "possible",
+    "unlikely",
+  ];
   var state = {
     data: null,
     visibleColumnKeys: [],
@@ -18,9 +30,11 @@
       throw new Error("Missing review-data script tag");
     }
     state.data = JSON.parse(dataNode.textContent || "{}");
-    state.visibleColumnKeys = state.data.columns.slice(0, 8).map(function (column) {
-      return column.key;
-    });
+    state.visibleColumnKeys = state.data.columns
+      .slice(0, 8)
+      .map(function (column) {
+        return column.key;
+      });
     if (state.data.rows.length > 0) {
       state.selectedRowId = state.data.rows[0].id;
     }
@@ -76,8 +90,14 @@
         metaCard("Execution", meta.executionPath || "manual"),
       ]),
       h("div", { className: "metrics-grid" }, [
-        metricCard("Documents", String(meta.documentCount || state.data.rows.length)),
-        metricCard("Columns", String(meta.columnCount || state.data.columns.length)),
+        metricCard(
+          "Documents",
+          String(meta.documentCount || state.data.rows.length),
+        ),
+        metricCard(
+          "Columns",
+          String(meta.columnCount || state.data.columns.length),
+        ),
         metricCard("Verified", String(summary.verified)),
         metricCard("Needs Review", String(summary.needs_review)),
         metricCard("Conflicts", String(summary.conflict)),
@@ -167,7 +187,12 @@
             className: "button secondary",
             type: "button",
             onclick: function () {
-              state.filters = { q: "", status: "", sourceGroup: "", documentType: "" };
+              state.filters = {
+                q: "",
+                status: "",
+                sourceGroup: "",
+                documentType: "",
+              };
               render();
             },
           },
@@ -199,7 +224,11 @@
   function renderTable(rows) {
     var columns = getVisibleColumns();
     if (rows.length === 0) {
-      return h("div", { className: "empty-state" }, "No rows match the current filters.");
+      return h(
+        "div",
+        { className: "empty-state" },
+        "No rows match the current filters.",
+      );
     }
 
     return h("div", { className: "table-wrap" }, [
@@ -208,7 +237,10 @@
           h(
             "tr",
             {},
-            [sortHeader("Document", "documentName"), sortHeader("Status", "overallStatus")].concat(
+            [
+              sortHeader("Document", "documentName"),
+              sortHeader("Status", "overallStatus"),
+            ].concat(
               columns.map(function (column) {
                 return sortHeader(column.label, "cell:" + column.key);
               }),
@@ -236,17 +268,25 @@
                       },
                     },
                     [
-                      h("div", { className: "doc-name" }, row.documentName || row.id),
+                      h(
+                        "div",
+                        { className: "doc-name" },
+                        row.documentName || row.id,
+                      ),
                       h(
                         "div",
                         { className: "doc-meta" },
-                        [row.documentType, row.sourceGroup].filter(Boolean).join(" • "),
+                        [row.documentType, row.sourceGroup]
+                          .filter(Boolean)
+                          .join(" • "),
                       ),
                     ],
                   ),
                 ]),
                 h("td", {}, [
-                  h("div", { className: "cell-meta" }, [statusBadge(row.overallStatus)]),
+                  h("div", { className: "cell-meta" }, [
+                    statusBadge(row.overallStatus),
+                  ]),
                 ]),
               ].concat(
                 columns.map(function (column) {
@@ -263,7 +303,9 @@
   function renderCell(row, columnKey) {
     var cell = (row.cells && row.cells[columnKey]) || null;
     if (!cell) {
-      return h("td", {}, [h("div", { className: "cell-empty" }, "Not available")]);
+      return h("td", {}, [
+        h("div", { className: "cell-empty" }, "Not available"),
+      ]);
     }
 
     return h("td", {}, [
@@ -306,7 +348,13 @@
         "div",
         { className: "priority-list" },
         items.length === 0
-          ? [h("div", { className: "empty-state" }, "No follow-up items in the current view.")]
+          ? [
+              h(
+                "div",
+                { className: "empty-state" },
+                "No follow-up items in the current view.",
+              ),
+            ]
           : items.map(function (item) {
               return h("div", { className: "priority-item" }, [
                 h("div", { className: "priority-top" }, [
@@ -345,8 +393,16 @@
           { className: "drawer-card" },
           [
             h("div", { className: "drawer-head" }, [
-              h("div", { className: "section-label" }, selected ? "Selected cell" : "Selected row"),
-              h("h2", { className: "drawer-title" }, row ? row.documentName : "Nothing selected"),
+              h(
+                "div",
+                { className: "section-label" },
+                selected ? "Selected cell" : "Selected row",
+              ),
+              h(
+                "h2",
+                { className: "drawer-title" },
+                row ? row.documentName : "Nothing selected",
+              ),
               h(
                 "p",
                 { className: "drawer-subtitle" },
@@ -368,7 +424,9 @@
       h("div", { className: "drawer-body" }, [
         h("div", { className: "drawer-block" }, [
           h("h4", {}, "Document status"),
-          h("div", { className: "cell-meta" }, [statusBadge(row.overallStatus)]),
+          h("div", { className: "cell-meta" }, [
+            statusBadge(row.overallStatus),
+          ]),
         ]),
         h("div", { className: "drawer-block" }, [
           h("h4", {}, "Document metadata"),
@@ -392,15 +450,27 @@
               statusBadge(selected.cell.status),
               confidenceBadge(selected.cell.confidence),
             ]),
-            kvRow("Answer", selected.cell.answer || prettifyStatus(selected.cell.status)),
+            kvRow(
+              "Answer",
+              selected.cell.answer || prettifyStatus(selected.cell.status),
+            ),
             kvRow(
               "Source anchor",
-              formatSourceAnchor(selected.cell.source || {}) || "No source anchor provided",
+              formatSourceAnchor(selected.cell.source || {}) ||
+                "No source anchor provided",
             ),
             selected.cell.notes ? kvRow("Notes", selected.cell.notes) : null,
             selected.cell.source && selected.cell.source.quote
-              ? h("div", { className: "source-quote" }, selected.cell.source.quote)
-              : h("div", { className: "source-quote" }, "No supporting quote provided."),
+              ? h(
+                  "div",
+                  { className: "source-quote" },
+                  selected.cell.source.quote,
+                )
+              : h(
+                  "div",
+                  { className: "source-quote" },
+                  "No supporting quote provided.",
+                ),
           ].filter(Boolean),
         ),
       );
@@ -415,10 +485,13 @@
     if (filters.q) {
       const query = filters.q.toLowerCase();
       rows = rows.filter(function (row) {
-        if ((row.documentName || "").toLowerCase().indexOf(query) !== -1) return true;
+        if ((row.documentName || "").toLowerCase().indexOf(query) !== -1)
+          return true;
         return getVisibleColumns().some(function (column) {
           var cell = row.cells && row.cells[column.key];
-          return cell && (cell.answer || "").toLowerCase().indexOf(query) !== -1;
+          return (
+            cell && (cell.answer || "").toLowerCase().indexOf(query) !== -1
+          );
         });
       });
     }
@@ -453,8 +526,10 @@
   }
 
   function getSortValue(row, sortKey) {
-    if (sortKey === "documentName") return (row.documentName || "").toLowerCase();
-    if (sortKey === "overallStatus") return STATUS_ORDER.indexOf(row.overallStatus);
+    if (sortKey === "documentName")
+      return (row.documentName || "").toLowerCase();
+    if (sortKey === "overallStatus")
+      return STATUS_ORDER.indexOf(row.overallStatus);
     if (sortKey.indexOf("cell:") === 0) {
       const key = sortKey.slice(5);
       const cell = row.cells && row.cells[key];
@@ -503,7 +578,10 @@
     });
     return {
       cell: cell,
-      column: column || { key: state.selectedColumnKey, label: state.selectedColumnKey },
+      column: column || {
+        key: state.selectedColumnKey,
+        label: state.selectedColumnKey,
+      },
     };
   }
 
@@ -513,7 +591,8 @@
       Object.keys(row.cells || {}).forEach(function (columnKey) {
         var cell = row.cells[columnKey];
         if (!cell) return;
-        if (["needs_review", "conflict", "failed"].indexOf(cell.status) === -1) return;
+        if (["needs_review", "conflict", "failed"].indexOf(cell.status) === -1)
+          return;
         var column = state.data.columns.find(function (item) {
           return item.key === columnKey;
         });
@@ -530,7 +609,9 @@
       });
     });
     return items.sort(function (left, right) {
-      return STATUS_ORDER.indexOf(left.status) - STATUS_ORDER.indexOf(right.status);
+      return (
+        STATUS_ORDER.indexOf(left.status) - STATUS_ORDER.indexOf(right.status)
+      );
     });
   }
 
@@ -555,7 +636,8 @@
           type: "button",
           onclick: function () {
             if (state.sort.key === key) {
-              state.sort.direction = state.sort.direction === "asc" ? "desc" : "asc";
+              state.sort.direction =
+                state.sort.direction === "asc" ? "desc" : "asc";
             } else {
               state.sort.key = key;
               state.sort.direction = "asc";

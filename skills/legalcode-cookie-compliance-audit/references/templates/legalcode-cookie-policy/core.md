@@ -18,7 +18,7 @@ This Cookie Policy explains how {{Company Legal Name}} uses cookies and similar 
 
 ## 1. Plain-language summary
 
-*Plain-language: A short, plain-English overview of how cookies work on this site and what choice you have.*
+_Plain-language: A short, plain-English overview of how cookies work on this site and what choice you have._
 
 Cookies are small files that websites place on your device. Some are needed for the site to work at all — for example, to keep you logged in. Others are optional and help us measure how the service is used, remember your preferences, or show relevant content.
 
@@ -32,11 +32,11 @@ The rest of this document covers what each category does, who the third-party pr
 
 ## 2. What cookies and similar technologies are
 
-*Plain-language: "Cookies" is shorthand for several related technologies that store or read information on your device.*
+_Plain-language: "Cookies" is shorthand for several related technologies that store or read information on your device._
 
 When this policy says "cookies", it covers several related technologies. Most regulators treat them similarly, so we group them together.
 
-- **Cookies** — small text files placed on your device and read back on later visits. Each is tied to a domain and has an expiry. A *session* cookie disappears when you close the browser; a *persistent* cookie survives until it expires or is deleted.
+- **Cookies** — small text files placed on your device and read back on later visits. Each is tied to a domain and has an expiry. A _session_ cookie disappears when you close the browser; a _persistent_ cookie survives until it expires or is deleted.
 - **Local storage and session storage** — larger data slots inside your browser used to keep state between page loads. Functionally similar to cookies for privacy purposes.
 - **IndexedDB** — a richer browser database used for offline functionality and structured caching.
 - **Web beacons and pixels** — invisible images or scripts that report when a page or email is opened. Often paired with cookies for attribution.
@@ -49,7 +49,7 @@ Where this policy says "set a cookie", read it as "set a cookie or use an equiva
 
 ## 3. Why we use them
 
-*Plain-language: We use cookies for a small number of clearly defined reasons.*
+_Plain-language: We use cookies for a small number of clearly defined reasons._
 
 We use cookies and similar technologies to:
 
@@ -65,7 +65,7 @@ We do not use cookies to build hidden profiles for sale to data brokers, and we 
 
 ## 4. Categories of cookies we use
 
-*Plain-language: We sort cookies into five categories. The first one runs automatically; the other four run only with your permission where required.*
+_Plain-language: We sort cookies into five categories. The first one runs automatically; the other four run only with your permission where required._
 
 ### 4.1 Strictly necessary
 
@@ -108,7 +108,7 @@ Set by social networks whose embeds, share buttons, or login widgets appear on t
 
 ## 5. Specific cookies we use
 
-*Plain-language: The full, current list of every cookie on this site lives in Annex A at the end of this document.*
+_Plain-language: The full, current list of every cookie on this site lives in Annex A at the end of this document._
 
 The current inventory of cookies and similar technologies is set out in **Annex A**, listing each cookie's name, provider, purpose, category from §4, first/third-party status, duration, and transfer mechanism. The inventory is regenerated whenever a cookie is added, removed, or changed; the most recent audit was completed on {{Cookie Audit Date}}.
 
@@ -118,7 +118,7 @@ If a cookie appears that is not listed in Annex A, tell us via §14 — we treat
 
 ## 6. Third-party cookies & subprocessors
 
-*Plain-language: Some cookies on this site are placed by other companies who provide services to us. Their categories are listed below.*
+_Plain-language: Some cookies on this site are placed by other companies who provide services to us. Their categories are listed below._
 
 Third parties whose cookies may appear on the service fall into these groups:
 
@@ -137,7 +137,7 @@ The specific providers, processing locations, and safeguards are in Annex A and 
 
 ## 7. Your choices & how to manage cookies
 
-*Plain-language: You have three ways to control cookies on this site.*
+_Plain-language: You have three ways to control cookies on this site._
 
 You have the following mechanisms to control cookies:
 
@@ -146,6 +146,7 @@ You have the following mechanisms to control cookies:
 **(b) Browser controls.** Every modern browser lets you block, delete, or be warned about cookies. See §8. Browser controls affect this site and every other site you visit.
 
 **(c) Third-party advertising opt-outs.** {{[OPTIONAL — only if advertising cookies present]}} For interest-based advertising delivered through industry programmes:
+
 - **Network Advertising Initiative:** {{NAI Opt-Out URL}}
 - **Digital Advertising Alliance:** {{DAA Opt-Out URL}}
 - **EDAA — Your Online Choices:** {{EDAA Opt-Out URL}}
@@ -158,7 +159,7 @@ Withdrawing consent is as easy as giving it. Withdrawal does not affect processi
 
 ## 8. Browser controls
 
-*Plain-language: Your browser has built-in cookie controls that work across every site, not just ours.*
+_Plain-language: Your browser has built-in cookie controls that work across every site, not just ours._
 
 You can clear or block cookies through your browser settings. The exact menus change between releases, so we point at the canonical help docs rather than describing steps:
 
@@ -173,7 +174,7 @@ Two notes: blocking strictly necessary cookies will break sign-in and other core
 
 ## 9. Global Privacy Control (GPC) & Do Not Track (DNT)
 
-*Plain-language: GPC is a modern opt-out signal we honour where the law requires; DNT is an older signal we treat as a non-binding preference.*
+_Plain-language: GPC is a modern opt-out signal we honour where the law requires; DNT is an older signal we treat as a non-binding preference._
 
 **Global Privacy Control (GPC).** GPC is a signal a browser or extension sends on every request to indicate you do not want personal information sold or shared, and that you want to opt out of targeted advertising. Where applicable law treats GPC as a valid opt-out (for example, several US state privacy laws), we honour it automatically and treat it as a withdrawal of consent for the advertising and certain analytics categories in §4.
 
@@ -185,7 +186,7 @@ Where a jurisdictional overlay to this policy requires us to honour DNT or any o
 
 ## 10. How we obtain and record consent
 
-*Plain-language: In regions that require consent, we ask before setting non-essential cookies and we keep a record of your choice.*
+_Plain-language: In regions that require consent, we ask before setting non-essential cookies and we keep a record of your choice._
 
 In regions requiring opt-in consent for non-essential cookies:
 
@@ -203,7 +204,7 @@ The legal bases for non-consent processing of strictly necessary cookies (legiti
 
 ## 11. International data transfers
 
-*Plain-language: Some of our third-party cookie providers are based outside your home country. The Privacy Policy explains the safeguards.*
+_Plain-language: Some of our third-party cookie providers are based outside your home country. The Privacy Policy explains the safeguards._
 
 Several third-party providers whose cookies may appear on the service are located outside {{Operator Jurisdiction}}. Data those providers receive may be transferred to and processed in another country.
 
@@ -215,7 +216,7 @@ For the full transfer story (mechanisms, supplementary measures, onward transfer
 
 ## 12. Children's data
 
-*Plain-language: We do not target advertising or behavioural analytics at users we know to be children.*
+_Plain-language: We do not target advertising or behavioural analytics at users we know to be children._
 
 We do not knowingly use targeted advertising, behavioural analytics, or fingerprinting to track users we know to be under {{Minimum Age}}. Where the service is age-gated or a user has self-identified as below that age, we suppress non-essential cookies regardless of the consent state.
 
@@ -225,7 +226,7 @@ For our full approach to children's data — including parental consent and veri
 
 ## 13. Changes to this policy
 
-*Plain-language: When we change cookies in a way that matters, we tell you and ask again where required.*
+_Plain-language: When we change cookies in a way that matters, we tell you and ask again where required._
 
 We may revise this Cookie Policy from time to time. When we do, we update the "Last updated" date.
 
@@ -237,7 +238,7 @@ Older versions are kept on file for at least three years and are available on re
 
 ## 14. Contact & complaints
 
-*Plain-language: If you have a question or a complaint, here is who to ask first and where to escalate.*
+_Plain-language: If you have a question or a complaint, here is who to ask first and where to escalate._
 
 Contact us first:
 
@@ -251,7 +252,7 @@ If you are not satisfied with our response, you may have the right to complain t
 
 ## Annex A — Cookie inventory
 
-*Plain-language: This is the live list of cookies on the service. It is regenerated whenever cookies change.*
+_Plain-language: This is the live list of cookies on the service. It is regenerated whenever cookies change._
 
 **Audit reference:** {{Cookie Audit ID}}
 **Audit date:** {{Cookie Audit Date}}
@@ -259,18 +260,18 @@ If you are not satisfied with our response, you may have the right to complain t
 
 > All rows below are `[EXAMPLE — replace with audit output]`.
 
-| Cookie name | Provider | Purpose | Category (per §4) | First / third-party | Duration | Transfer mechanism |
-|---|---|---|---|---|---|---|
-| `session_id` | {{Company Legal Name}} | Maintains an authenticated session across page loads | Strictly necessary | First-party | Session | None (stored in {{Operator Jurisdiction}}) |
-| `csrf_token` | {{Company Legal Name}} | Cross-site request forgery protection on form submissions | Strictly necessary | First-party | Session | None |
-| `consent_v2` | {{Company Legal Name}} | Records your cookie-consent choices and the banner version shown | Strictly necessary | First-party | 12 months | None |
-| `lang_pref` | {{Company Legal Name}} | Remembers your preferred language and region | Functional / preferences | First-party | 12 months | None |
-| `theme` | {{Company Legal Name}} | Remembers light or dark display preference | Functional / preferences | First-party | 12 months | None |
-| `_ga` | Google LLC | Distinguishes unique visitors for aggregate analytics | Analytics / performance | Third-party | 2 years | US transfer under SCCs and EU-US Data Privacy Framework `[VERIFY]` |
-| `_ga_<container_id>` | Google LLC (GA4) | Persists session state for GA4 property | Analytics / performance | Third-party | 2 years | US transfer under SCCs and EU-US Data Privacy Framework `[VERIFY]` |
-| `_fbp` | Meta Platforms, Inc. | Conversion attribution and retargeting | Advertising / marketing | Third-party | 90 days | US transfer under SCCs `[VERIFY]` |
-| `intercom-session-<id>` | Intercom, Inc. | Maintains an in-product support chat session | Functional / preferences | Third-party | 7 days | US transfer under SCCs `[VERIFY]` |
-| `__cf_bm` | Cloudflare, Inc. | Bot management and DDoS protection on the CDN edge | Strictly necessary | Third-party | 30 minutes | Global edge processing under SCCs `[VERIFY]` |
+| Cookie name             | Provider               | Purpose                                                          | Category (per §4)        | First / third-party | Duration   | Transfer mechanism                                                 |
+| ----------------------- | ---------------------- | ---------------------------------------------------------------- | ------------------------ | ------------------- | ---------- | ------------------------------------------------------------------ |
+| `session_id`            | {{Company Legal Name}} | Maintains an authenticated session across page loads             | Strictly necessary       | First-party         | Session    | None (stored in {{Operator Jurisdiction}})                         |
+| `csrf_token`            | {{Company Legal Name}} | Cross-site request forgery protection on form submissions        | Strictly necessary       | First-party         | Session    | None                                                               |
+| `consent_v2`            | {{Company Legal Name}} | Records your cookie-consent choices and the banner version shown | Strictly necessary       | First-party         | 12 months  | None                                                               |
+| `lang_pref`             | {{Company Legal Name}} | Remembers your preferred language and region                     | Functional / preferences | First-party         | 12 months  | None                                                               |
+| `theme`                 | {{Company Legal Name}} | Remembers light or dark display preference                       | Functional / preferences | First-party         | 12 months  | None                                                               |
+| `_ga`                   | Google LLC             | Distinguishes unique visitors for aggregate analytics            | Analytics / performance  | Third-party         | 2 years    | US transfer under SCCs and EU-US Data Privacy Framework `[VERIFY]` |
+| `_ga_<container_id>`    | Google LLC (GA4)       | Persists session state for GA4 property                          | Analytics / performance  | Third-party         | 2 years    | US transfer under SCCs and EU-US Data Privacy Framework `[VERIFY]` |
+| `_fbp`                  | Meta Platforms, Inc.   | Conversion attribution and retargeting                           | Advertising / marketing  | Third-party         | 90 days    | US transfer under SCCs `[VERIFY]`                                  |
+| `intercom-session-<id>` | Intercom, Inc.         | Maintains an in-product support chat session                     | Functional / preferences | Third-party         | 7 days     | US transfer under SCCs `[VERIFY]`                                  |
+| `__cf_bm`               | Cloudflare, Inc.       | Bot management and DDoS protection on the CDN edge               | Strictly necessary       | Third-party         | 30 minutes | Global edge processing under SCCs `[VERIFY]`                       |
 
 > Implementer note: replace the example rows with the actual audit output from the cookie scanner (see the companion `legalcode-cookie-compliance-audit` skill). Do not ship the example rows as if they were real.
 
@@ -278,46 +279,55 @@ If you are not satisfied with our response, you may have the right to complain t
 
 ## Annex B — Consent banner UX requirements (jurisdiction-neutral baseline)
 
-*Plain-language: For the team building the consent banner. It sets the floor; per-jurisdiction overlays raise it.*
+_Plain-language: For the team building the consent banner. It sets the floor; per-jurisdiction overlays raise it._
 
 This is the **baseline** any consent banner deployed on the service must meet. Per-jurisdiction overlays (EEA/UK, California, Brazil, etc.) may impose stricter requirements; where they conflict, the stricter rule wins.
 
 **B.1 First-visit behaviour**
+
 - Banner appears on first visit, before any non-essential cookie or similar technology is set.
 - No non-essential cookie reads or writes occur until the user has chosen.
 
 **B.2 Equal prominence**
+
 - "Accept all" and "Reject all" have equal visual prominence: same contrast, size, affordance, and position weight.
 - "Manage preferences" is at least as prominent as "Accept all".
 - No dark patterns: no nudge colours, no buried reject, no friction asymmetry.
 
 **B.3 Granular control**
+
 - Consent can be granted or withheld **per category** as defined in §4.
 - Each category has a one-line, plain-English purpose description.
 - No pre-ticked checkboxes for any non-essential category.
 
 **B.4 Persistence**
+
 - The user's choice is stored for **at least 6 months** (stricter cap may apply per overlay).
 - Choice is honoured across pages, in-scope subdomains, and sessions until it expires or changes.
 
 **B.5 Withdrawal**
+
 - A persistent link to the cookie settings center sits in the site footer at all times.
 - Withdrawing consent is no harder than granting it (same clicks or fewer).
 
 **B.6 Record of consent**
+
 - Each event logs: pseudonymous user identifier, UTC timestamp, banner version, language, categories accepted, categories rejected, and mechanism (banner / settings center / API).
 - Logs are retained for at least 12 months and are tamper-evident.
 
 **B.7 Re-prompting**
+
 - Re-prompt when a category materially changes (new vendor, purpose, or legal basis).
 - Re-prompt at least every 12 months.
 - Do not re-prompt purely to wear the user into accepting (that is itself a dark pattern).
 
 **B.8 Accessibility**
+
 - Banner meets WCAG 2.2 AA: keyboard-operable, screen-reader-labelled, sufficient contrast, no time-out on the choice.
 - Plain-language copy at no higher than {{Reading Level Target}} (default: B1 / 8th grade).
 
 **B.9 Signal handling**
+
 - Honour GPC where applicable law requires.
 - Treat DNT per §9.
 - For returning users with a prior opt-out signal, respect it on first load (no fresh "accept all" prompt that overrides it).
@@ -326,30 +336,30 @@ This is the **baseline** any consent banner deployed on the service must meet. P
 
 ## Merge fields used
 
-| Field | Description |
-|---|---|
-| `{{Company Legal Name}}` | Registered legal name of the operator |
-| `{{Service Name}}` | Public name of the service |
-| `{{Service URL}}` | Canonical service URL |
-| `{{Effective Date}}` | Date this version takes effect |
-| `{{Last Updated Date}}` | Date last edited |
-| `{{Privacy Policy URL}}` | Companion privacy policy |
-| `{{Terms URL}}` | Terms of service |
-| `{{Cookie Settings URL}}` | Cookie settings center |
-| `{{Subprocessor List URL}}` | Public subprocessor list |
-| `{{Cookie Audit Date}}` | Date of most recent audit |
-| `{{Cookie Audit ID}}` | Audit run identifier |
-| `{{Cookie Auditor Name}}` | Person or tool that ran the audit |
-| `{{Operator Jurisdiction}}` | Jurisdiction in which operator is established |
-| `{{Minimum Age}}` | Age below which non-essential cookies are suppressed |
-| `{{DNT Honor Stance}}` | Operator's DNT stance |
-| `{{Company Email Privacy}}` | Privacy team email |
-| `{{Company Email DPO}}` | DPO email (if appointed) |
-| `{{Company Postal Address}}` | Postal address |
-| `{{NAI Opt-Out URL}}` | NAI opt-out page |
-| `{{DAA Opt-Out URL}}` | DAA opt-out page |
-| `{{EDAA Opt-Out URL}}` | EDAA Your Online Choices page |
-| `{{Reading Level Target}}` | Target reading level for banner copy |
+| Field                        | Description                                          |
+| ---------------------------- | ---------------------------------------------------- |
+| `{{Company Legal Name}}`     | Registered legal name of the operator                |
+| `{{Service Name}}`           | Public name of the service                           |
+| `{{Service URL}}`            | Canonical service URL                                |
+| `{{Effective Date}}`         | Date this version takes effect                       |
+| `{{Last Updated Date}}`      | Date last edited                                     |
+| `{{Privacy Policy URL}}`     | Companion privacy policy                             |
+| `{{Terms URL}}`              | Terms of service                                     |
+| `{{Cookie Settings URL}}`    | Cookie settings center                               |
+| `{{Subprocessor List URL}}`  | Public subprocessor list                             |
+| `{{Cookie Audit Date}}`      | Date of most recent audit                            |
+| `{{Cookie Audit ID}}`        | Audit run identifier                                 |
+| `{{Cookie Auditor Name}}`    | Person or tool that ran the audit                    |
+| `{{Operator Jurisdiction}}`  | Jurisdiction in which operator is established        |
+| `{{Minimum Age}}`            | Age below which non-essential cookies are suppressed |
+| `{{DNT Honor Stance}}`       | Operator's DNT stance                                |
+| `{{Company Email Privacy}}`  | Privacy team email                                   |
+| `{{Company Email DPO}}`      | DPO email (if appointed)                             |
+| `{{Company Postal Address}}` | Postal address                                       |
+| `{{NAI Opt-Out URL}}`        | NAI opt-out page                                     |
+| `{{DAA Opt-Out URL}}`        | DAA opt-out page                                     |
+| `{{EDAA Opt-Out URL}}`       | EDAA Your Online Choices page                        |
+| `{{Reading Level Target}}`   | Target reading level for banner copy                 |
 
 ---
 

@@ -31,11 +31,13 @@ and emits a self-contained `report.html`.
 ```
 
 Required:
+
 - `reportTitle`
 - `generatedAt`
 - `runId`
 
 Optional:
+
 - `corpusLabel`
 - `executionPath`
 - `documentCount`
@@ -58,15 +60,18 @@ Each column defines a visible review dimension.
 ```
 
 Required per column:
+
 - `key`
 - `label`
 
 Optional:
+
 - `type`
 - `sortable`
 - `filterable`
 
 Rules:
+
 - column keys must be unique
 - keys must be stable because rows reference them directly
 
@@ -99,12 +104,14 @@ Rules:
 ```
 
 Required per row:
+
 - `id`
 - `documentName`
 - `overallStatus`
 - `cells`
 
 Optional:
+
 - `documentPath`
 - `documentType`
 - `sourceGroup`
@@ -112,11 +119,13 @@ Optional:
 ## Cell object
 
 Required per cell:
+
 - `answer`
 - `status`
 - `confidence`
 
 Optional:
+
 - `source`
 - `notes`
 
@@ -165,6 +174,7 @@ Optional array collections for future precomputed filter metadata.
 ## Validation rules
 
 The generator fails on:
+
 - non-object top-level input
 - missing `meta`, `columns`, or `rows`
 - duplicate column keys
@@ -176,9 +186,11 @@ The generator fails on:
 ## Output contract
 
 The generator emits:
+
 - a single portable `report.html`
 
 The report is fully self-contained:
+
 - CSS inlined
 - JS inlined
 - JSON payload inlined

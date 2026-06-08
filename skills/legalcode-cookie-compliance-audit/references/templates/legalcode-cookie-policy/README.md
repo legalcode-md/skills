@@ -11,13 +11,13 @@ file's category list and consent flow).
 
 ## Documents
 
-| File | Document Type | Use when |
-|------|--------------|----------|
-| `core.md` | Jurisdiction-neutral baseline | You operate in a jurisdiction not covered below, or you want the master before specialising. |
-| `us.md` | US — CCPA/CPRA opt-out + GPC + multi-state | You target US consumers; covers Sale/Sharing opt-out under CCPA, GPC honor obligation in CO/CT/TX, state-specific cookie/tracker disclosures. |
-| `eu.md` | EU/EEA — ePrivacy Art. 5(3) + GDPR consent + DE-TTDSG | You target EU/EEA users. Includes German TTDSG/TDDDG overlay. |
-| `uk.md` | UK — PECR Reg. 6 + ICO 2023 cookies guidance | You target UK users post-Brexit. Includes ICO consent UX expectations. |
-| `is.md` | Iceland — Lög nr. 70/2022 + EEA-imported ePrivacy | You operate in Iceland or target Icelandic users. |
+| File      | Document Type                                         | Use when                                                                                                                                      |
+| --------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `core.md` | Jurisdiction-neutral baseline                         | You operate in a jurisdiction not covered below, or you want the master before specialising.                                                  |
+| `us.md`   | US — CCPA/CPRA opt-out + GPC + multi-state            | You target US consumers; covers Sale/Sharing opt-out under CCPA, GPC honor obligation in CO/CT/TX, state-specific cookie/tracker disclosures. |
+| `eu.md`   | EU/EEA — ePrivacy Art. 5(3) + GDPR consent + DE-TTDSG | You target EU/EEA users. Includes German TTDSG/TDDDG overlay.                                                                                 |
+| `uk.md`   | UK — PECR Reg. 6 + ICO 2023 cookies guidance          | You target UK users post-Brexit. Includes ICO consent UX expectations.                                                                        |
+| `is.md`   | Iceland — Lög nr. 70/2022 + EEA-imported ePrivacy     | You operate in Iceland or target Icelandic users.                                                                                             |
 
 ## How to use
 

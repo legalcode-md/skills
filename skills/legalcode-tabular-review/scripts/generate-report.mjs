@@ -5,8 +5,20 @@ import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
 
-const STATUS_VALUES = new Set(["verified", "needs_review", "conflict", "not_found", "failed"]);
-const CONFIDENCE_VALUES = new Set(["definite", "high", "probable", "possible", "unlikely"]);
+const STATUS_VALUES = new Set([
+  "verified",
+  "needs_review",
+  "conflict",
+  "not_found",
+  "failed",
+]);
+const CONFIDENCE_VALUES = new Set([
+  "definite",
+  "high",
+  "probable",
+  "possible",
+  "unlikely",
+]);
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
@@ -128,7 +140,9 @@ function validateReportData(data) {
       throw new Error(`row ${row.id} requires documentName`);
     }
     if (!STATUS_VALUES.has(row.overallStatus)) {
-      throw new Error(`row ${row.id} has invalid overallStatus: ${row.overallStatus}`);
+      throw new Error(
+        `row ${row.id} has invalid overallStatus: ${row.overallStatus}`,
+      );
     }
     if (!isPlainObject(row.cells)) {
       throw new Error(`row ${row.id} requires cells object`);
@@ -136,16 +150,22 @@ function validateReportData(data) {
 
     for (const [columnKey, cell] of Object.entries(row.cells)) {
       if (!columnKeys.has(columnKey)) {
-        throw new Error(`row ${row.id} references unknown column key: ${columnKey}`);
+        throw new Error(
+          `row ${row.id} references unknown column key: ${columnKey}`,
+        );
       }
       if (!isPlainObject(cell)) {
         throw new Error(`row ${row.id} column ${columnKey} must be an object`);
       }
       if (typeof cell.answer !== "string") {
-        throw new Error(`row ${row.id} column ${columnKey} must have string answer`);
+        throw new Error(
+          `row ${row.id} column ${columnKey} must have string answer`,
+        );
       }
       if (!STATUS_VALUES.has(cell.status)) {
-        throw new Error(`row ${row.id} column ${columnKey} has invalid status: ${cell.status}`);
+        throw new Error(
+          `row ${row.id} column ${columnKey} has invalid status: ${cell.status}`,
+        );
       }
       if (!CONFIDENCE_VALUES.has(cell.confidence)) {
         throw new Error(
@@ -153,10 +173,14 @@ function validateReportData(data) {
         );
       }
       if (cell.source !== undefined && !isPlainObject(cell.source)) {
-        throw new Error(`row ${row.id} column ${columnKey} source must be an object`);
+        throw new Error(
+          `row ${row.id} column ${columnKey} source must be an object`,
+        );
       }
       if (cell.notes !== undefined && typeof cell.notes !== "string") {
-        throw new Error(`row ${row.id} column ${columnKey} notes must be a string`);
+        throw new Error(
+          `row ${row.id} column ${columnKey} notes must be a string`,
+        );
       }
     }
   }
@@ -164,13 +188,18 @@ function validateReportData(data) {
 
 function normalizeReportData(data, titleOverride) {
   const cloned = structuredClone(data);
-  cloned.meta.reportTitle = titleOverride || cloned.meta.reportTitle || "Tabular Review";
+  cloned.meta.reportTitle =
+    titleOverride || cloned.meta.reportTitle || "Tabular Review";
   cloned.meta.generatedAt = cloned.meta.generatedAt || new Date().toISOString();
   cloned.meta.runId = cloned.meta.runId || "run-unknown";
   cloned.meta.corpusLabel = cloned.meta.corpusLabel || "";
   cloned.meta.executionPath = cloned.meta.executionPath || "manual";
-  cloned.meta.documentCount = Number(cloned.meta.documentCount || cloned.rows.length);
-  cloned.meta.columnCount = Number(cloned.meta.columnCount || cloned.columns.length);
+  cloned.meta.documentCount = Number(
+    cloned.meta.documentCount || cloned.rows.length,
+  );
+  cloned.meta.columnCount = Number(
+    cloned.meta.columnCount || cloned.columns.length,
+  );
   cloned.summary = isPlainObject(cloned.summary) ? cloned.summary : {};
   cloned.conflicts = Array.isArray(cloned.conflicts) ? cloned.conflicts : [];
   cloned.filters = isPlainObject(cloned.filters) ? cloned.filters : {};

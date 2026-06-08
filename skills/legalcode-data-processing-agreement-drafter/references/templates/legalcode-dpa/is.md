@@ -9,9 +9,9 @@ last_updated: 2026-04-28
 
 # Data Processing Agreement — Iceland (Lög nr. 90/2018 + EEA)
 
-This Data Processing Agreement (the **"DPA"**) is entered into between **{{Controller Legal Name}}**, kennitala **{{Controller Kennitala}}**, with registered office at **{{Controller Address}}** (the **"Controller"** / *ábyrgðaraðili*), and **{{Processor Legal Name}}**, kennitala **{{Processor Kennitala}}** (or, if the Processor is not an Icelandic entity, its corporate registration number under the law of its place of incorporation), with registered office at **{{Processor Address}}** (the **"Processor"** / *vinnsluaðili*). The DPA takes effect on **{{Effective Date}}** and forms part of, and is subject to, the master services agreement, order form or other written contract between the parties dated **{{Underlying Agreement Date}}** (the **"Underlying Agreement"**).
+This Data Processing Agreement (the **"DPA"**) is entered into between **{{Controller Legal Name}}**, kennitala **{{Controller Kennitala}}**, with registered office at **{{Controller Address}}** (the **"Controller"** / _ábyrgðaraðili_), and **{{Processor Legal Name}}**, kennitala **{{Processor Kennitala}}** (or, if the Processor is not an Icelandic entity, its corporate registration number under the law of its place of incorporation), with registered office at **{{Processor Address}}** (the **"Processor"** / _vinnsluaðili_). The DPA takes effect on **{{Effective Date}}** and forms part of, and is subject to, the master services agreement, order form or other written contract between the parties dated **{{Underlying Agreement Date}}** (the **"Underlying Agreement"**).
 
-> **Bilingual usage and controlling text.** The parties agree that the working language of this DPA is English. A companion Icelandic-language draft is published, or will be published, as `is-isl.md` in the same template pack. Where the parties execute both an Icelandic-language version and this English-language version of the DPA, the **Icelandic-language version shall control** in the event of any inconsistency, ambiguity or dispute, and this English version shall be operative only as the parties' agreed working language for day-to-day administration. If only the English-language version is executed, this English version controls between the parties, but each party acknowledges that Persónuvernd, the Icelandic courts and any data subject may rely on the Icelandic statutory text of Lög nr. 90/2018 um persónuvernd og vinnslu persónuupplýsinga (the **"Act 90/2018"** or *Persónuverndarlög*) and on the Icelandic-language version of the General Data Protection Regulation as incorporated into the Agreement on the European Economic Area (the **"EEA Agreement"**). Both parties shall record their **kennitala** (Icelandic national ID number) on the cover page; if the Processor is not Icelandic, the Processor shall record its foreign company registration number and home jurisdiction in lieu of a kennitala. {{Persónuvernd Registration Number}} `[OPTIONAL — only if Controller is registered with Persónuvernd or maintains a public Persónuvernd file reference]`.
+> **Bilingual usage and controlling text.** The parties agree that the working language of this DPA is English. A companion Icelandic-language draft is published, or will be published, as `is-isl.md` in the same template pack. Where the parties execute both an Icelandic-language version and this English-language version of the DPA, the **Icelandic-language version shall control** in the event of any inconsistency, ambiguity or dispute, and this English version shall be operative only as the parties' agreed working language for day-to-day administration. If only the English-language version is executed, this English version controls between the parties, but each party acknowledges that Persónuvernd, the Icelandic courts and any data subject may rely on the Icelandic statutory text of Lög nr. 90/2018 um persónuvernd og vinnslu persónuupplýsinga (the **"Act 90/2018"** or _Persónuverndarlög_) and on the Icelandic-language version of the General Data Protection Regulation as incorporated into the Agreement on the European Economic Area (the **"EEA Agreement"**). Both parties shall record their **kennitala** (Icelandic national ID number) on the cover page; if the Processor is not Icelandic, the Processor shall record its foreign company registration number and home jurisdiction in lieu of a kennitala. {{Persónuvernd Registration Number}} `[OPTIONAL — only if Controller is registered with Persónuvernd or maintains a public Persónuvernd file reference]`.
 
 ---
 
@@ -25,23 +25,23 @@ This Section 1 is a non-binding plain-language summary; the binding terms are in
 
 This Section 2 defines the terms used in the DPA. Capitalised terms not defined here have the meaning given to them in the Underlying Agreement, in Act 90/2018 or in the GDPR (whichever applies to the term in context). On first use, the Icelandic statutory equivalent is given in parentheses; the same term is used in English thereafter.
 
-- **"Act 90/2018"** means Lög nr. 90/2018 um persónuvernd og vinnslu persónuupplýsinga (*Persónuverndarlög*), as amended and consolidated from time to time on althingi.is.
-- **"Controller"** (*ábyrgðaraðili*) means the natural or legal person which, alone or jointly with others, determines the purposes and means of the processing of personal data, as defined in GDPR Article 4(7) and Act 90/2018.
-- **"Data Subject"** (*skráður einstaklingur*) means an identified or identifiable natural person to whom personal data relate.
+- **"Act 90/2018"** means Lög nr. 90/2018 um persónuvernd og vinnslu persónuupplýsinga (_Persónuverndarlög_), as amended and consolidated from time to time on althingi.is.
+- **"Controller"** (_ábyrgðaraðili_) means the natural or legal person which, alone or jointly with others, determines the purposes and means of the processing of personal data, as defined in GDPR Article 4(7) and Act 90/2018.
+- **"Data Subject"** (_skráður einstaklingur_) means an identified or identifiable natural person to whom personal data relate.
 - **"Data Subject Request"** means a request made by, or on behalf of, a Data Subject seeking to exercise any of the rights described in Section 10.
-- **"Data Protection Officer"** (*persónuverndarfulltrúi*) means a person appointed under GDPR Articles 37–39 and Act 90/2018 to advise on, and monitor, compliance with data protection law.
+- **"Data Protection Officer"** (_persónuverndarfulltrúi_) means a person appointed under GDPR Articles 37–39 and Act 90/2018 to advise on, and monitor, compliance with data protection law.
 - **"EEA"** means the European Economic Area, comprising the Member States of the European Union together with Iceland, Norway and Liechtenstein, governed by the EEA Agreement.
 - **"GDPR"** means Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016, as incorporated into the EEA Agreement by Joint Committee Decision and applied directly in Iceland.
-- **"Personal Data"** (*persónuupplýsingar*) means any information relating to an identified or identifiable Data Subject that is Processed under the Underlying Agreement, as further described in Annex 1.
-- **"Personal Data Breach"** (*öryggisbrestur*) means a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, Personal Data.
+- **"Personal Data"** (_persónuupplýsingar_) means any information relating to an identified or identifiable Data Subject that is Processed under the Underlying Agreement, as further described in Annex 1.
+- **"Personal Data Breach"** (_öryggisbrestur_) means a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, Personal Data.
 - **"Persónuvernd"** means the Icelandic Data Protection Authority established under Act 90/2018, with offices at Rauðarárstígur 10, 105 Reykjavík and contact `postur@personuvernd.is`.
-- **"Processing"** (*vinnsla*) means any operation or set of operations performed on Personal Data, whether or not by automated means, as defined in GDPR Article 4(2).
-- **"Processor"** (*vinnsluaðili*) means a natural or legal person that processes Personal Data on behalf of the Controller.
-- **"Records of Processing"** (*skrá yfir vinnsluaðgerðir*) means the records described in GDPR Article 30 and Section 13.
+- **"Processing"** (_vinnsla_) means any operation or set of operations performed on Personal Data, whether or not by automated means, as defined in GDPR Article 4(2).
+- **"Processor"** (_vinnsluaðili_) means a natural or legal person that processes Personal Data on behalf of the Controller.
+- **"Records of Processing"** (_skrá yfir vinnsluaðgerðir_) means the records described in GDPR Article 30 and Section 13.
 - **"Restricted Transfer"** means a transfer of Personal Data to a country outside the EEA that does not benefit from a European Commission adequacy decision applicable in Iceland, as described in Section 14 and Annex 4.
 - **"SCCs"** means the Standard Contractual Clauses adopted by the European Commission in Implementing Decision (EU) 2021/914 of 4 June 2021, as in force in Iceland through the EEA legal order.
-- **"Special Category Data"** (*viðkvæmar persónuupplýsingar*) means the categories of personal data described in GDPR Article 9(1) and corresponding provisions of Act 90/2018, including data revealing racial or ethnic origin, political opinions, religious beliefs, trade-union membership, genetic data, biometric data uniquely identifying a person, health data and data concerning sex life or sexual orientation.
-- **"Sub-processor"** (*undirvinnsluaðili*) means any third party engaged by the Processor (or by another Sub-processor) to process Personal Data on behalf of the Controller.
+- **"Special Category Data"** (_viðkvæmar persónuupplýsingar_) means the categories of personal data described in GDPR Article 9(1) and corresponding provisions of Act 90/2018, including data revealing racial or ethnic origin, political opinions, religious beliefs, trade-union membership, genetic data, biometric data uniquely identifying a person, health data and data concerning sex life or sexual orientation.
+- **"Sub-processor"** (_undirvinnsluaðili_) means any third party engaged by the Processor (or by another Sub-processor) to process Personal Data on behalf of the Controller.
 - **"Telecom Act 70/2022"** means Lög nr. 70/2022 um fjarskipti, the Icelandic Electronic Communications Act, which gives effect in Iceland to obligations corresponding to the EU ePrivacy Directive.
 - **"TOMs"** means the technical and organisational security measures described in Section 8 and Annex 2.
 
@@ -68,13 +68,13 @@ This Section 4 records, at a high level, who the Data Subjects are and what kind
 - **4.2 Types of Personal Data** typically include {{identification data such as name and kennitala where used}}, {{contact details}}, {{authentication data}}, {{usage and telemetry data}}, {{content and communications submitted to the Services}} and any further categories listed in Annex 1.
 - **4.3 Special Category Data.** OPTIONAL — only if the Controller intends to submit Special Category Data to the Services: the Controller represents that it has identified a lawful basis under GDPR Article 9(2) and any applicable provision of Act 90/2018 (including, where relevant, the additional national-law conditions for processing health, genetic, biometric or criminal-conviction data). The Processor shall apply the heightened security measures recorded in Annex 2 to any such data.
 - **4.4 Children's data.** OPTIONAL — only if the Controller knowingly submits data of children: the Controller represents that it has obtained any consent or authorisation required under GDPR Article 8 and Act 90/2018 (Iceland sets the digital-consent age at 13 under Act 90/2018 `[VERIFY]`).
-- **4.5 Kennitala.** Where the Controller submits the Icelandic national ID number (*kennitala*), the Controller acknowledges that the kennitala is treated as personal data and that its use is subject to Persónuvernd guidance on the processing of national identification numbers; the Processor shall handle kennitala data using the security measures in Annex 2 and shall not further use the kennitala beyond the documented purposes of the Services.
+- **4.5 Kennitala.** Where the Controller submits the Icelandic national ID number (_kennitala_), the Controller acknowledges that the kennitala is treated as personal data and that its use is subject to Persónuvernd guidance on the processing of national identification numbers; the Processor shall handle kennitala data using the security measures in Annex 2 and shall not further use the kennitala beyond the documented purposes of the Services.
 
 ---
 
 ## 5. Roles and responsibilities
 
-This Section 5 sets out the parties' respective roles. The Controller is the *ábyrgðaraðili* and the Processor is the *vinnsluaðili* of the Personal Data described in Annex 1. Under Iceland's EEA framework, the GDPR applies directly through the EEA Agreement, while Act 90/2018 implements supplementary national provisions.
+This Section 5 sets out the parties' respective roles. The Controller is the _ábyrgðaraðili_ and the Processor is the _vinnsluaðili_ of the Personal Data described in Annex 1. Under Iceland's EEA framework, the GDPR applies directly through the EEA Agreement, while Act 90/2018 implements supplementary national provisions.
 
 - **5.1 Roles.** With respect to Personal Data Processed under the Underlying Agreement and this DPA, the Controller is the controller and the Processor is the processor. Where the Processor independently determines purposes and means of any Processing — for example, with respect to its own corporate operations, its billing records, or its security-monitoring data — the Processor acts as a separate controller for that Processing, and that Processing falls outside this DPA.
 - **5.2 Authority of the Controller.** The Controller represents that it has authority to instruct the Processor on behalf of any joint controllers, affiliates or other entities whose Personal Data are submitted to the Services, and that it has provided appropriate notice to, and where required obtained appropriate consent from, Data Subjects.
@@ -138,14 +138,14 @@ This Section 10 implements GDPR Article 28(3)(e) and Act 90/2018, by which the P
 
 - **10.1 Forwarding of requests.** Where the Processor receives a Data Subject Request relating to Personal Data Processed on behalf of the Controller, the Processor shall not respond to the Data Subject directly (other than to acknowledge receipt and direct the Data Subject to the Controller, where appropriate) and shall forward the request to the Controller without undue delay and in any event within five (5) business days of receipt.
 - **10.2 Assistance.** Taking into account the nature of the Processing, the Processor shall assist the Controller, by appropriate technical and organisational measures, insofar as this is possible, to respond to the Controller's obligations regarding Data Subject Requests. The relevant rights are:
-    - the right of access (*aðgangsréttur*);
-    - the right to rectification (*réttur til leiðréttingar*);
-    - the right to erasure or "right to be forgotten" (*eyðingaréttur* / *rétturinn til að gleymast*);
-    - the right to restriction of processing (*réttur til takmörkunar á vinnslu*);
-    - the right to data portability (*réttur til flutnings persónuupplýsinga*);
-    - the right to object (*andmælaréttur*);
-    - the right to withdraw consent (*réttur til afturköllunar á samþykki*); and
-    - the right to lodge a complaint with the supervisory authority (*réttur til að leggja fram kvörtun til Persónuverndar*).
+  - the right of access (_aðgangsréttur_);
+  - the right to rectification (_réttur til leiðréttingar_);
+  - the right to erasure or "right to be forgotten" (_eyðingaréttur_ / _rétturinn til að gleymast_);
+  - the right to restriction of processing (_réttur til takmörkunar á vinnslu_);
+  - the right to data portability (_réttur til flutnings persónuupplýsinga_);
+  - the right to object (_andmælaréttur_);
+  - the right to withdraw consent (_réttur til afturköllunar á samþykki_); and
+  - the right to lodge a complaint with the supervisory authority (_réttur til að leggja fram kvörtun til Persónuverndar_).
 - **10.3 Self-service tooling.** The Processor shall make reasonably available, within the Services, self-service tools that the Controller can use to access, export, correct or delete Personal Data without the need for the Processor's manual intervention.
 - **10.4 Out-of-scope assistance.** Where the Processor is asked to provide assistance that is materially beyond the assistance offered by the standard Services, the Processor may charge a reasonable fee on a time-and-materials basis, provided that fees shall not be charged for assistance that the Processor is required to provide for free under Act 90/2018 or the GDPR.
 - **10.5 Records.** The Processor shall keep a brief record of Data Subject Requests forwarded under this Section 10 and of any assistance provided.
@@ -242,7 +242,7 @@ This Section 17 allocates liability between the parties; it does not affect Data
 
 This Section 18 sets the choice-of-law and forum for disputes arising out of this DPA. It does not affect Data Subjects' rights to bring complaints to Persónuvernd or actions in their place of habitual residence.
 
-- **18.1 Governing law.** This DPA is governed by **Icelandic law** (*íslensk lög*), without regard to its conflict-of-laws rules, except where mandatory provisions of Act 90/2018, the GDPR or other applicable EEA law require otherwise.
+- **18.1 Governing law.** This DPA is governed by **Icelandic law** (_íslensk lög_), without regard to its conflict-of-laws rules, except where mandatory provisions of Act 90/2018, the GDPR or other applicable EEA law require otherwise.
 - **18.2 Jurisdiction.** The parties submit to the exclusive jurisdiction of **Héraðsdómur Reykjavíkur** (Reykjavík District Court) for the resolution of any dispute arising out of or in connection with this DPA, with appeal as provided by Icelandic law.
 - **18.3 Arbitration.** OPTIONAL — only if the parties agree on arbitration in lieu of court litigation: any dispute arising out of or in connection with this DPA shall be finally resolved by arbitration administered under {{Arbitration Rules}}, seated in {{Reykjavík or other Icelandic seat}}, in the {{English or Icelandic}} language; this option does not displace Persónuvernd's regulatory jurisdiction or the rights of Data Subjects.
 - **18.4 Persónuvernd jurisdiction.** Nothing in this Section 18 limits Persónuvernd's jurisdiction under Act 90/2018, nor the rights of Data Subjects to lodge complaints with Persónuvernd or with any other competent supervisory authority.
@@ -268,27 +268,27 @@ This Section 19 resolves conflicts between documents and houses the standard mis
 
 The particulars below are the parties' Article 28(3) description of Processing.
 
-| Item | Detail |
-| --- | --- |
-| Controller | {{Controller Legal Name}}, kennitala {{Controller Kennitala}} |
-| Controller contact | {{Controller Privacy Contact Name}} / {{Controller Privacy Email}} |
-| Controller DPO (if any) | {{Controller DPO Name}} / {{Controller DPO Email}} |
-| Processor | {{Processor Legal Name}}, kennitala {{Processor Kennitala}} (or foreign registration number) |
-| Processor contact | {{Processor Privacy Contact Name}} / {{Processor Privacy Email}} |
-| Processor DPO / EU representative | {{Processor DPO Name}} / {{Processor EU Representative}} |
-| Subject matter | Provision of the Services described in the Underlying Agreement |
-| Duration | Term of the Underlying Agreement, plus any return-or-deletion window under Section 16 |
-| Nature of Processing | {{e.g., hosting; storage; transmission; analytics; support; backup; security monitoring}} |
-| Purpose of Processing | {{e.g., providing the Services to the Controller and its end users}} |
-| Categories of Data Subjects | {{e.g., Controller's customers, end users, prospects, personnel, contractors}} |
-| Types of Personal Data | {{e.g., name, kennitala (where used), email, contact details, account data, authentication data, usage data, content submitted to the Services}} |
-| Special Category Data | {{None / specify}} |
-| Children's data | {{None / specify}} |
-| Frequency of Processing | {{Continuous / Periodic / On request}} |
-| Storage period | {{Per Controller configuration / per retention policy in Underlying Agreement}} |
-| Recipients | Sub-processors listed in Annex 3; Controller's authorised users |
-| Storage and Processing locations | {{e.g., EEA primary; specified backup region; see Annex 3 for Sub-processor locations}} |
-| Incident contact | {{Controller's Incident Email}} ; {{Processor's Incident Email}} |
+| Item                              | Detail                                                                                                                                           |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Controller                        | {{Controller Legal Name}}, kennitala {{Controller Kennitala}}                                                                                    |
+| Controller contact                | {{Controller Privacy Contact Name}} / {{Controller Privacy Email}}                                                                               |
+| Controller DPO (if any)           | {{Controller DPO Name}} / {{Controller DPO Email}}                                                                                               |
+| Processor                         | {{Processor Legal Name}}, kennitala {{Processor Kennitala}} (or foreign registration number)                                                     |
+| Processor contact                 | {{Processor Privacy Contact Name}} / {{Processor Privacy Email}}                                                                                 |
+| Processor DPO / EU representative | {{Processor DPO Name}} / {{Processor EU Representative}}                                                                                         |
+| Subject matter                    | Provision of the Services described in the Underlying Agreement                                                                                  |
+| Duration                          | Term of the Underlying Agreement, plus any return-or-deletion window under Section 16                                                            |
+| Nature of Processing              | {{e.g., hosting; storage; transmission; analytics; support; backup; security monitoring}}                                                        |
+| Purpose of Processing             | {{e.g., providing the Services to the Controller and its end users}}                                                                             |
+| Categories of Data Subjects       | {{e.g., Controller's customers, end users, prospects, personnel, contractors}}                                                                   |
+| Types of Personal Data            | {{e.g., name, kennitala (where used), email, contact details, account data, authentication data, usage data, content submitted to the Services}} |
+| Special Category Data             | {{None / specify}}                                                                                                                               |
+| Children's data                   | {{None / specify}}                                                                                                                               |
+| Frequency of Processing           | {{Continuous / Periodic / On request}}                                                                                                           |
+| Storage period                    | {{Per Controller configuration / per retention policy in Underlying Agreement}}                                                                  |
+| Recipients                        | Sub-processors listed in Annex 3; Controller's authorised users                                                                                  |
+| Storage and Processing locations  | {{e.g., EEA primary; specified backup region; see Annex 3 for Sub-processor locations}}                                                          |
+| Incident contact                  | {{Controller's Incident Email}} ; {{Processor's Incident Email}}                                                                                 |
 
 ---
 
@@ -318,11 +318,11 @@ This Annex 2 describes the Processor's TOMs implemented under Section 8, GDPR Ar
 
 This Annex 3 lists the authorised Sub-processors as of the Effective Date. The Processor maintains the up-to-date list at **{{Sub-processor List URL}}** and shall notify changes in accordance with Section 9.
 
-| Sub-processor | Registered Office | Kennitala (if Icelandic) | Processing Activity | Processing Location | Transfer Mechanism (if Restricted) | Certifications |
-| --- | --- | --- | --- | --- | --- | --- |
-| {{Sub-processor 1}} | {{Address 1}} | {{Kennitala or "n/a"}} | {{e.g., cloud hosting}} | {{e.g., EEA}} | {{n/a / SCCs Module 3 / UK Addendum}} | {{ISO 27001 / SOC 2 / ISO 27701}} |
-| {{Sub-processor 2}} | {{Address 2}} | {{Kennitala or "n/a"}} | {{e.g., email delivery}} | {{e.g., US — adequacy / SCCs}} | {{Adequacy / SCCs Module 3}} | {{ISO 27001 / SOC 2}} |
-| {{Sub-processor 3}} | {{Address 3}} | {{Kennitala or "n/a"}} | {{e.g., support tooling}} | {{e.g., EEA}} | {{n/a}} | {{ISO 27001}} |
+| Sub-processor       | Registered Office | Kennitala (if Icelandic) | Processing Activity       | Processing Location            | Transfer Mechanism (if Restricted)    | Certifications                    |
+| ------------------- | ----------------- | ------------------------ | ------------------------- | ------------------------------ | ------------------------------------- | --------------------------------- |
+| {{Sub-processor 1}} | {{Address 1}}     | {{Kennitala or "n/a"}}   | {{e.g., cloud hosting}}   | {{e.g., EEA}}                  | {{n/a / SCCs Module 3 / UK Addendum}} | {{ISO 27001 / SOC 2 / ISO 27701}} |
+| {{Sub-processor 2}} | {{Address 2}}     | {{Kennitala or "n/a"}}   | {{e.g., email delivery}}  | {{e.g., US — adequacy / SCCs}} | {{Adequacy / SCCs Module 3}}          | {{ISO 27001 / SOC 2}}             |
+| {{Sub-processor 3}} | {{Address 3}}     | {{Kennitala or "n/a"}}   | {{e.g., support tooling}} | {{e.g., EEA}}                  | {{n/a}}                               | {{ISO 27001}}                     |
 
 ---
 
@@ -332,10 +332,10 @@ This Annex 4 describes the transfer mechanism for cross-border movement of Perso
 
 - **A4.1 EEA-internal transfers.** Personal Data may move freely between Iceland and the other EEA states (the EU Member States, Norway and Liechtenstein) without a separate transfer mechanism. Iceland gives effect to the GDPR through the EEA Agreement, and the EEA Joint Committee Decision incorporating the GDPR (and the SCCs adopted under it) into the EEA legal order means that Icelandic exports to other EEA states are not Restricted Transfers. The parties shall nevertheless apply the contractual TOMs in Annex 2 to all EEA-internal Processing.
 - **A4.2 EU SCCs (Implementing Decision (EU) 2021/914).** Where the Personal Data is exported from the EEA to a country that does not benefit from a European Commission adequacy decision applicable in Iceland, the parties shall execute the **EU SCCs**, as in force in Iceland through the EEA legal order. The selection guide is:
-    - **Module 1 (controller-to-controller)** applies where the data exporter and data importer are both controllers — for example, where the Controller and the Processor share Personal Data for distinct controller purposes.
-    - **Module 2 (controller-to-processor)** applies to most Restricted Transfers under this DPA, where the Controller (data exporter) instructs the Processor (data importer) to Process Personal Data outside the EEA.
-    - **Module 3 (processor-to-processor)** applies where the Processor (data exporter) onwardly transfers Personal Data to a Sub-processor (data importer) outside the EEA.
-    - **Module 4 (processor-to-controller)** applies in the relatively rare case where the data exporter is a processor and the data importer is a controller (for example, return of Personal Data to a non-EEA controller).
+  - **Module 1 (controller-to-controller)** applies where the data exporter and data importer are both controllers — for example, where the Controller and the Processor share Personal Data for distinct controller purposes.
+  - **Module 2 (controller-to-processor)** applies to most Restricted Transfers under this DPA, where the Controller (data exporter) instructs the Processor (data importer) to Process Personal Data outside the EEA.
+  - **Module 3 (processor-to-processor)** applies where the Processor (data exporter) onwardly transfers Personal Data to a Sub-processor (data importer) outside the EEA.
+  - **Module 4 (processor-to-controller)** applies in the relatively rare case where the data exporter is a processor and the data importer is a controller (for example, return of Personal Data to a non-EEA controller).
     For each transfer, the parties shall complete Annexes I, II and III to the SCCs, select Clause 7 (docking) where the parties agree to allow third-party accession, select Option 2 (general written authorisation) under Clause 9(a) to align with Section 9 of this DPA where Module 2 or 3 applies, and select Option 1 or Option 2 under Clause 17 (governing law) in line with Section 18. Where the Controller also operates an EU establishment, cross-reference `eu.md` of this template pack for the EU-side execution.
 - **A4.3 United Kingdom transfers.** Where Personal Data is transferred to or from the United Kingdom and the transfer is governed by UK data-protection law, the parties shall execute the **IDTA** or the **UK Addendum to the EU SCCs**, as documented in `uk.md` of this template pack. Where the transfer remains governed by EEA law and the United Kingdom benefits from the European Commission's UK adequacy decision, no additional mechanism is required for the duration of that decision.
 - **A4.4 Transfer Impact Assessment (TIA).** Where the parties rely on the SCCs (or BCRs), they shall, where required by EDPB Recommendations 01/2020 (Recommendations on supplementary measures) or by Persónuvernd guidance, carry out a documented assessment of the law and practice of the destination country relating to government access to data, and shall implement supplementary technical, contractual and organisational measures where necessary to ensure essentially equivalent protection. The Processor shall reasonably assist the Controller's TIA on request.

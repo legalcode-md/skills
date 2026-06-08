@@ -41,12 +41,12 @@ CELEX is a fixed-width string composed of four positional fields:
   not the year of OJ publication.
 - **Type (1 char)** — the act type within the sector. Within sector 3:
   - `R` Regulation
-  - `L` Directive (Latin *Lex*; the letter is fixed by Publications Office convention)
+  - `L` Directive (Latin _Lex_; the letter is fixed by Publications Office convention)
   - `D` Decision
   - `H` Recommendation
   - `O` Opinion
   - `G` Guideline (ECB) / Communication
-  Within sector 6 (case law):
+    Within sector 6 (case law):
   - `J` Judgment of the Court of Justice
   - `T` Judgment of the General Court
   - `O` Order
@@ -70,20 +70,20 @@ A CELEX validates if and only if:
 
 ### 1.3 Worked examples
 
-| Short title | CELEX | Sector | Year | Type | Number | Notes |
-|---|---|---|---|---|---|---|
-| GDPR | `32016R0679` | 3 | 2016 | R Regulation | 0679 | Regulation (EU) 2016/679 |
-| NIS2 Directive | `32022L2555` | 3 | 2022 | L Directive | 2555 | Directive (EU) 2022/2555 |
-| AI Act | `32024R1689` | 3 | 2024 | R Regulation | 1689 | Regulation (EU) 2024/1689 |
-| CSRD | `32022L2464` | 3 | 2022 | L Directive | 2464 | Directive (EU) 2022/2464 |
-| CSDDD | `32024L1760` | 3 | 2024 | L Directive | 1760 | Directive (EU) 2024/1760 |
-| DSA | `32022R2065` | 3 | 2022 | R Regulation | 2065 | Regulation (EU) 2022/2065 |
-| DMA | `32022R1925` | 3 | 2022 | R Regulation | 1925 | Regulation (EU) 2022/1925 |
-| DORA | `32022R2554` | 3 | 2022 | R Regulation | 2554 | Regulation (EU) 2022/2554 |
-| Whistleblower Directive | `32019L1937` | 3 | 2019 | L Directive | 1937 | Directive (EU) 2019/1937 |
-| Reg. 1/1958 (languages) | `31958R0001` | 3 | 1958 | R Regulation | 0001 | Council Regulation No 1 |
-| TFEU consolidated 2008 | `12008E/TXT` | 1 | 2008 | E TFEU | TXT | Sector 1 uses non-numeric tail |
-| TFEU Art. 288 | `12008E288` | 1 | 2008 | E TFEU | 288 | Cited in every infringement skill |
+| Short title             | CELEX        | Sector | Year | Type         | Number | Notes                             |
+| ----------------------- | ------------ | ------ | ---- | ------------ | ------ | --------------------------------- |
+| GDPR                    | `32016R0679` | 3      | 2016 | R Regulation | 0679   | Regulation (EU) 2016/679          |
+| NIS2 Directive          | `32022L2555` | 3      | 2022 | L Directive  | 2555   | Directive (EU) 2022/2555          |
+| AI Act                  | `32024R1689` | 3      | 2024 | R Regulation | 1689   | Regulation (EU) 2024/1689         |
+| CSRD                    | `32022L2464` | 3      | 2022 | L Directive  | 2464   | Directive (EU) 2022/2464          |
+| CSDDD                   | `32024L1760` | 3      | 2024 | L Directive  | 1760   | Directive (EU) 2024/1760          |
+| DSA                     | `32022R2065` | 3      | 2022 | R Regulation | 2065   | Regulation (EU) 2022/2065         |
+| DMA                     | `32022R1925` | 3      | 2022 | R Regulation | 1925   | Regulation (EU) 2022/1925         |
+| DORA                    | `32022R2554` | 3      | 2022 | R Regulation | 2554   | Regulation (EU) 2022/2554         |
+| Whistleblower Directive | `32019L1937` | 3      | 2019 | L Directive  | 1937   | Directive (EU) 2019/1937          |
+| Reg. 1/1958 (languages) | `31958R0001` | 3      | 1958 | R Regulation | 0001   | Council Regulation No 1           |
+| TFEU consolidated 2008  | `12008E/TXT` | 1      | 2008 | E TFEU       | TXT    | Sector 1 uses non-numeric tail    |
+| TFEU Art. 288           | `12008E288`  | 1      | 2008 | E TFEU       | 288    | Cited in every infringement skill |
 
 ### 1.4 Constructing a CELEX from a formal title
 
@@ -149,32 +149,32 @@ Reg. 1/1958 (English):       https://eur-lex.europa.eu/eli/reg/1958/1(1)/oj/eng
 
 ### 2.3 The 24 official-language `/oj/<lang>` patterns
 
-| Language | ISO code | Example (NIS2) |
-|---|---|---|
-| Bulgarian | `bul` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/bul` |
-| Croatian | `hrv` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/hrv` |
-| Czech | `ces` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/ces` |
-| Danish | `dan` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/dan` |
-| Dutch | `nld` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/nld` |
-| English | `eng` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng` |
-| Estonian | `est` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/est` |
-| Finnish | `fin` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/fin` |
-| French | `fra` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/fra` |
-| German | `deu` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/deu` |
-| Greek | `ell` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/ell` |
-| Hungarian | `hun` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/hun` |
-| Irish | `gle` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/gle` |
-| Italian | `ita` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/ita` |
-| Latvian | `lav` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/lav` |
-| Lithuanian | `lit` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/lit` |
-| Maltese | `mlt` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/mlt` |
-| Polish | `pol` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/pol` |
-| Portuguese | `por` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/por` |
-| Romanian | `ron` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/ron` |
-| Slovak | `slk` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/slk` |
-| Slovenian | `slv` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/slv` |
-| Spanish | `spa` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/spa` |
-| Swedish | `swe` | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/swe` |
+| Language   | ISO code | Example (NIS2)                                       |
+| ---------- | -------- | ---------------------------------------------------- |
+| Bulgarian  | `bul`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/bul` |
+| Croatian   | `hrv`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/hrv` |
+| Czech      | `ces`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/ces` |
+| Danish     | `dan`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/dan` |
+| Dutch      | `nld`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/nld` |
+| English    | `eng`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng` |
+| Estonian   | `est`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/est` |
+| Finnish    | `fin`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/fin` |
+| French     | `fra`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/fra` |
+| German     | `deu`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/deu` |
+| Greek      | `ell`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/ell` |
+| Hungarian  | `hun`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/hun` |
+| Irish      | `gle`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/gle` |
+| Italian    | `ita`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/ita` |
+| Latvian    | `lav`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/lav` |
+| Lithuanian | `lit`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/lit` |
+| Maltese    | `mlt`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/mlt` |
+| Polish     | `pol`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/pol` |
+| Portuguese | `por`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/por` |
+| Romanian   | `ron`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/ron` |
+| Slovak     | `slk`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/slk` |
+| Slovenian  | `slv`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/slv` |
+| Spanish    | `spa`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/spa` |
+| Swedish    | `swe`    | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/swe` |
 
 The 24-language regime is the consequence of Regulation 1/1958 as amended by every
 accession treaty since the 1973 enlargement. The Irish derogation under Council
@@ -237,14 +237,14 @@ ECLI:{country-code}:{court-code}:{year}:{ordinal}
 
 ### 3.2 Worked ECLI examples
 
-| Case | Citation | Notes |
-|---|---|---|
-| *Commission v Belgium* | C-543/17, ECLI:EU:C:2019:573 | First Art. 260(3) TFEU lump sum for failure to notify transposition (telecoms framework directive). |
-| *CILFIT* | C-283/81, ECLI:EU:C:1982:335 | Equal authenticity of language versions; *acte clair* doctrine. |
-| *Codan* | C-236/97, ECLI:EU:C:1998:208 | Reconciliation methodology where language versions diverge. |
-| *EMU Tabac* | C-296/95, ECLI:EU:C:1998:152 | Single language interpretation cannot prevail over the others. |
-| *Endendijk* | C-187/07, ECLI:EU:C:2008:197 | Comparative-language interpretation in agricultural law. |
-| *Francovich* | C-6/90, ECLI:EU:C:1991:428 | State liability for non-transposition. |
+| Case                   | Citation                     | Notes                                                                                               |
+| ---------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------- |
+| _Commission v Belgium_ | C-543/17, ECLI:EU:C:2019:573 | First Art. 260(3) TFEU lump sum for failure to notify transposition (telecoms framework directive). |
+| _CILFIT_               | C-283/81, ECLI:EU:C:1982:335 | Equal authenticity of language versions; _acte clair_ doctrine.                                     |
+| _Codan_                | C-236/97, ECLI:EU:C:1998:208 | Reconciliation methodology where language versions diverge.                                         |
+| _EMU Tabac_            | C-296/95, ECLI:EU:C:1998:152 | Single language interpretation cannot prevail over the others.                                      |
+| _Endendijk_            | C-187/07, ECLI:EU:C:2008:197 | Comparative-language interpretation in agricultural law.                                            |
+| _Francovich_           | C-6/90, ECLI:EU:C:1991:428   | State liability for non-transposition.                                                              |
 
 ### 3.3 Validation
 
@@ -256,15 +256,15 @@ An ECLI validates if and only if:
 3. For `EU`, the court code is `C`, `T`, or `F`.
 4. The year is four digits within the court's lifetime.
 5. The ECLI dereferences via CURIA: `https://curia.europa.eu/juris/liste.jsf?
-   language=en&num=<case-number>` returns the case file, and the case file's
+language=en&num=<case-number>` returns the case file, and the case file's
    metadata block lists the ECLI.
 
 ### 3.4 Court of First Instance / General Court legacy
 
 Pre-October 2016 General Court cases used the Court of First Instance abbreviation
-`T-` for the case number (e.g. *Microsoft* T-201/04, ECLI:EU:T:2007:289). After
+`T-` for the case number (e.g. _Microsoft_ T-201/04, ECLI:EU:T:2007:289). After
 the Civil Service Tribunal was abolished in September 2016, all `F-` cases were
-either transferred to the General Court or closed. Historical ECLI:EU:F:* citations
+either transferred to the General Court or closed. Historical ECLI:EU:F:\* citations
 remain valid but the court no longer exists.
 
 ---
@@ -305,21 +305,21 @@ correlation table builder, transposition tracker, and conformity assessment skil
 must cite the NIM in the form used by the national legislator. The table below
 covers the seven priority MS plus EEA EFTA states.
 
-| MS | Publication | Citation format | Example |
-|---|---|---|---|
-| Germany | *Bundesgesetzblatt* (BGBl.) Teil I/II | `BGBl. I {year} Nr. {issue}, S. {page}` or modern `BGBl. {year} I Nr. {sequential-id}` (since 2023 reform abandoning page numbers in the digital BGBl.) | `BGBl. 2024 I Nr. 244` (NIS2 Umsetzungsgesetz) |
-| France | *Journal officiel de la République française* (JORF) | `JORF n° {issue}, {date}, texte n° {item}` and the parallel "NOR" identifier on each act | `JORF n° 0123 du 28 mai 2024, texte n° 5; NOR : INTX2400412L` |
-| Norway | *Norsk Lovtidend* / *Stortingsforhandlinger* | `LOV-{year}-{date}-{number}` | `LOV-2024-06-14-30` |
-| Iceland | *Stjórnartíðindi* (A series for laws, B series for regulations) | `Lög nr. {number}/{year}` | `Lög nr. 47/2024` |
-| Sweden | *Svensk författningssamling* (SFS) | `SFS {year}:{number}` | `SFS 2024:1255` |
-| Denmark | *Lovtidende* | `LOV nr {number} af {dd/mm/yyyy}` | `LOV nr 1212 af 18/06/2024` |
-| Poland | *Dziennik Ustaw* (Dz.U.) | `Dz.U. {year} poz. {item}` | `Dz.U. 2024 poz. 1234` |
-| Netherlands | *Staatsblad* (Stb.) | `Stb. {year}, {number}` | `Stb. 2024, 250` |
-| Italy | *Gazzetta Ufficiale* (G.U.) | `G.U. Serie Generale n. {issue} del {date}` | `G.U. n. 156 del 5.7.2024` |
-| Spain | *Boletín Oficial del Estado* (BOE) | `BOE núm. {issue}, de {date}` and parallel "BOE-A-{year}-{seq}" identifier | `BOE-A-2024-12345` |
-| Finland | *Suomen säädöskokoelma* (SK) | `{number}/{year}` | `345/2024` |
+| MS          | Publication                                                     | Citation format                                                                                                                                         | Example                                                       |
+| ----------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Germany     | _Bundesgesetzblatt_ (BGBl.) Teil I/II                           | `BGBl. I {year} Nr. {issue}, S. {page}` or modern `BGBl. {year} I Nr. {sequential-id}` (since 2023 reform abandoning page numbers in the digital BGBl.) | `BGBl. 2024 I Nr. 244` (NIS2 Umsetzungsgesetz)                |
+| France      | _Journal officiel de la République française_ (JORF)            | `JORF n° {issue}, {date}, texte n° {item}` and the parallel "NOR" identifier on each act                                                                | `JORF n° 0123 du 28 mai 2024, texte n° 5; NOR : INTX2400412L` |
+| Norway      | _Norsk Lovtidend_ / _Stortingsforhandlinger_                    | `LOV-{year}-{date}-{number}`                                                                                                                            | `LOV-2024-06-14-30`                                           |
+| Iceland     | _Stjórnartíðindi_ (A series for laws, B series for regulations) | `Lög nr. {number}/{year}`                                                                                                                               | `Lög nr. 47/2024`                                             |
+| Sweden      | _Svensk författningssamling_ (SFS)                              | `SFS {year}:{number}`                                                                                                                                   | `SFS 2024:1255`                                               |
+| Denmark     | _Lovtidende_                                                    | `LOV nr {number} af {dd/mm/yyyy}`                                                                                                                       | `LOV nr 1212 af 18/06/2024`                                   |
+| Poland      | _Dziennik Ustaw_ (Dz.U.)                                        | `Dz.U. {year} poz. {item}`                                                                                                                              | `Dz.U. 2024 poz. 1234`                                        |
+| Netherlands | _Staatsblad_ (Stb.)                                             | `Stb. {year}, {number}`                                                                                                                                 | `Stb. 2024, 250`                                              |
+| Italy       | _Gazzetta Ufficiale_ (G.U.)                                     | `G.U. Serie Generale n. {issue} del {date}`                                                                                                             | `G.U. n. 156 del 5.7.2024`                                    |
+| Spain       | _Boletín Oficial del Estado_ (BOE)                              | `BOE núm. {issue}, de {date}` and parallel "BOE-A-{year}-{seq}" identifier                                                                              | `BOE-A-2024-12345`                                            |
+| Finland     | _Suomen säädöskokoelma_ (SK)                                    | `{number}/{year}`                                                                                                                                       | `345/2024`                                                    |
 
-Liechtenstein publishes in the *Liechtensteinisches Landesgesetzblatt* (LGBl.):
+Liechtenstein publishes in the _Liechtensteinisches Landesgesetzblatt_ (LGBl.):
 `LGBl. {year} Nr. {number}`. The format is identical in form to the German BGBl.
 but the institution and citation context are distinct.
 
@@ -332,12 +332,12 @@ for Bibliographic Records) hierarchy. Every act in the EU acquis is modelled as
 four nested entities; understanding the level matters when fetching definitive
 versus consolidated text.
 
-| FRBR level | CDM class | What it represents | Why it matters |
-|---|---|---|---|
-| **Work** | `cdm:work` | The abstract intellectual creation — "Directive (EU) 2022/2555". One per act, language-neutral, version-neutral. | The Work is what `eli:realizes_legal_resource` points to. Use the Work URI when you need the canonical identity of the act independent of any particular text. |
-| **Expression** | `cdm:expression` | A specific intellectual realisation — "the German consolidated version of NIS2 as at 14 December 2022". One per (language × point-in-time) combination. | The Expression is the level at which equal authenticity attaches under Reg. 1/1958: a German Expression and a French Expression of the same Work are equally authentic. When the suite does language-version reconciliation (see `multilingualism-playbook.md`), it compares Expressions. |
-| **Manifestation** | `cdm:manifestation` | A physical realisation of an Expression — the OJ PDF, the AKN4EU XML, the HTML page. One Expression typically has several Manifestations (PDF, XHTML, RDF/XML, AKN4EU). | The Manifestation is what content negotiation against an ELI returns. When the suite emits an Akoma Ntoso obligation register (see `formats-playbook.md`), it is a new Manifestation of an analytical Expression, not of the act itself. |
-| **Item** | `cdm:item` | A single instance of a Manifestation — one downloaded file. Rarely surfaced in the suite. | Used internally by Cellar for caching and access control; the suite does not normally distinguish Items from Manifestations. |
+| FRBR level        | CDM class           | What it represents                                                                                                                                                      | Why it matters                                                                                                                                                                                                                                                                            |
+| ----------------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Work**          | `cdm:work`          | The abstract intellectual creation — "Directive (EU) 2022/2555". One per act, language-neutral, version-neutral.                                                        | The Work is what `eli:realizes_legal_resource` points to. Use the Work URI when you need the canonical identity of the act independent of any particular text.                                                                                                                            |
+| **Expression**    | `cdm:expression`    | A specific intellectual realisation — "the German consolidated version of NIS2 as at 14 December 2022". One per (language × point-in-time) combination.                 | The Expression is the level at which equal authenticity attaches under Reg. 1/1958: a German Expression and a French Expression of the same Work are equally authentic. When the suite does language-version reconciliation (see `multilingualism-playbook.md`), it compares Expressions. |
+| **Manifestation** | `cdm:manifestation` | A physical realisation of an Expression — the OJ PDF, the AKN4EU XML, the HTML page. One Expression typically has several Manifestations (PDF, XHTML, RDF/XML, AKN4EU). | The Manifestation is what content negotiation against an ELI returns. When the suite emits an Akoma Ntoso obligation register (see `formats-playbook.md`), it is a new Manifestation of an analytical Expression, not of the act itself.                                                  |
+| **Item**          | `cdm:item`          | A single instance of a Manifestation — one downloaded file. Rarely surfaced in the suite.                                                                               | Used internally by Cellar for caching and access control; the suite does not normally distinguish Items from Manifestations.                                                                                                                                                              |
 
 ### 6.1 Definitive vs. consolidated text
 

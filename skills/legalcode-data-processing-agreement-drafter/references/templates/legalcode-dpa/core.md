@@ -14,7 +14,7 @@ This Data Processing Agreement ("**DPA**") is entered into between **{{Controlle
 
 ## 1. Plain-language summary
 
-*Plain-language: This first part of the DPA tells a non-lawyer what the document is for, what the rest of the document does, and how the schedules in the back fit together. Read this first and the operative clauses second.*
+_Plain-language: This first part of the DPA tells a non-lawyer what the document is for, what the rest of the document does, and how the schedules in the back fit together. Read this first and the operative clauses second._
 
 A Data Processing Agreement is the written contract the parties sign whenever one party (the Controller) hands personal data to another party (the Processor) so the Processor can perform a service. The Controller decided why the data is being handled and broadly how. The Processor handles that data on the Controller's behalf, doing only the things the Controller has asked it to do. This DPA is the rulebook that sits between them.
 
@@ -30,7 +30,7 @@ This DPA is not, and is not intended to be, legal advice. It is a starting frame
 
 ## 2. Definitions
 
-*Plain-language: This section gives the words used in the rest of the DPA a single, agreed meaning so the parties do not argue later about what something meant.*
+_Plain-language: This section gives the words used in the rest of the DPA a single, agreed meaning so the parties do not argue later about what something meant._
 
 In this DPA, capitalized terms have the meanings set out below. Terms used but not defined here have the meanings given to them in Applicable Data Protection Law or, failing that, the Parent Agreement.
 
@@ -66,7 +66,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 3. Subject matter, duration, nature & purpose of processing
 
-*Plain-language: This section anchors the DPA to a specific real-world activity instead of leaving it abstract.*
+_Plain-language: This section anchors the DPA to a specific real-world activity instead of leaving it abstract._
 
 **3.1 Subject matter.** The subject matter of the Processing under this DPA is the Processor's performance of the Services as described in the Parent Agreement and further particularized in Annex 1.
 
@@ -80,7 +80,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 4. Categories of data subjects and types of personal data
 
-*Plain-language: This section says, at a high level, whose data is being handled and what kind of data it is. The detail is in Annex 1.*
+_Plain-language: This section says, at a high level, whose data is being handled and what kind of data it is. The detail is in Annex 1._
 
 **4.1 Data subjects.** The categories of Data Subjects whose Personal Data may be Processed under this DPA include those described in Annex 1, which may include the Controller's customers, end users, employees, contractors, prospective customers, and other natural persons whose Personal Data the Controller submits to or generates within the Services.
 
@@ -92,7 +92,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 5. Roles & responsibilities
 
-*Plain-language: This section says which party is the boss of the data and which party is the hired hand.*
+_Plain-language: This section says which party is the boss of the data and which party is the hired hand._
 
 **5.1 Controller role.** The Controller determines the purposes and means of the Processing. The Controller is responsible for the lawfulness of its Instructions and for establishing a valid legal basis for the Processing, for providing transparency information to Data Subjects, and for the accuracy and quality of the Personal Data submitted to the Services.
 
@@ -106,7 +106,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 6. Documented processing instructions
 
-*Plain-language: This section says where the Controller's instructions to the Processor live, and what happens if the Processor thinks an instruction is unlawful.*
+_Plain-language: This section says where the Controller's instructions to the Processor live, and what happens if the Processor thinks an instruction is unlawful._
 
 **6.1 Initial instructions.** The Parent Agreement, this DPA (including its annexes), the Controller's documented configuration of the Services, and the Controller's lawful use of the Services together constitute the Controller's complete and final Instructions to the Processor at the Effective Date.
 
@@ -122,7 +122,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 7. Confidentiality of personnel
 
-*Plain-language: This section says that the people working on the Controller's data must be sworn to confidentiality.*
+_Plain-language: This section says that the people working on the Controller's data must be sworn to confidentiality._
 
 **7.1 Authorized personnel.** The Processor shall ensure that access to Personal Data is limited to personnel who need access to perform the Services and who have been authorized in writing by the Processor.
 
@@ -136,7 +136,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 8. Security measures (TOMs)
 
-*Plain-language: This section says the Processor must have real, working security in place — and lets the parties pick how detailed the lock-in language is.*
+_Plain-language: This section says the Processor must have real, working security in place — and lets the parties pick how detailed the lock-in language is._
 
 **8.1 Baseline obligation.** Taking into account the state of the art, the costs of implementation, the nature, scope, context and purposes of Processing, and the risks of varying likelihood and severity for the rights and freedoms of natural persons, the Processor shall implement and maintain the Technical and Organizational Measures set out in Annex 2 and shall ensure that those measures are appropriate to the risk.
 
@@ -154,7 +154,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 9. Sub-processors
 
-*Plain-language: This section says when, and how, the Processor may bring in other companies to help — and what veto rights the Controller has.*
+_Plain-language: This section says when, and how, the Processor may bring in other companies to help — and what veto rights the Controller has._
 
 **9.1 Existing sub-processors.** The Controller acknowledges and accepts the Sub-processors engaged by the Processor as of the Effective Date, listed in Annex 3 and at **{{Subprocessor List URL}}**.
 
@@ -174,7 +174,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 10. Data subject rights assistance
 
-*Plain-language: This section says the Processor will help the Controller respond when a person whose data is in the system asks to see it, correct it, delete it, or exercise some other right.*
+_Plain-language: This section says the Processor will help the Controller respond when a person whose data is in the system asks to see it, correct it, delete it, or exercise some other right._
 
 **10.1 Cooperation duty.** Taking into account the nature of the Processing, the Processor shall assist the Controller by appropriate technical and organizational measures, insofar as this is possible, in fulfilling the Controller's obligation to respond to requests from Data Subjects exercising rights under Applicable Data Protection Law, including rights of access, rectification, erasure, restriction, portability, objection, and rights related to automated decision-making.
 
@@ -188,7 +188,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 11. Assistance with controller compliance
 
-*Plain-language: This section covers the Processor's duty to help the Controller with its broader data-protection paperwork — DPIAs, regulator consultations, breach response support, and records of processing.*
+_Plain-language: This section covers the Processor's duty to help the Controller with its broader data-protection paperwork — DPIAs, regulator consultations, breach response support, and records of processing._
 
 **11.1 Scope.** Taking into account the nature of the Processing and the information available to the Processor, the Processor shall provide reasonable assistance to the Controller in respect of the Controller's compliance with its obligations under Applicable Data Protection Law, including those described in this Section 11.
 
@@ -210,7 +210,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 12. Personal data breach notification
 
-*Plain-language: This section says the Processor must tell the Controller fast when something goes wrong with the data, and what that notification has to contain.*
+_Plain-language: This section says the Processor must tell the Controller fast when something goes wrong with the data, and what that notification has to contain._
 
 **12.1 Detection.** The Processor shall maintain monitoring, alerting, and incident-response capabilities reasonably designed to detect Personal Data Breaches affecting the Services.
 
@@ -234,7 +234,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 13. Records of processing
 
-*Plain-language: This section says the Processor keeps its own paperwork about what it does and helps the Controller keep its paperwork.*
+_Plain-language: This section says the Processor keeps its own paperwork about what it does and helps the Controller keep its paperwork._
 
 **13.1 Processor's records.** The Processor shall maintain a written (which may be electronic) record of the categories of Processing activities carried out on behalf of the Controller, in the form and with the content required by Applicable Data Protection Law (including, where applicable, Article 30(2) of the EU General Data Protection Regulation).
 
@@ -246,7 +246,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 14. International data transfers
 
-*Plain-language: This section says that if the data crosses a border into a country whose laws are considered weaker, a special legal mechanism (such as the EU Standard Contractual Clauses) must be in place. The detail is in the per-jurisdiction addenda and Annex 4.*
+_Plain-language: This section says that if the data crosses a border into a country whose laws are considered weaker, a special legal mechanism (such as the EU Standard Contractual Clauses) must be in place. The detail is in the per-jurisdiction addenda and Annex 4._
 
 **14.1 General principle.** Any Restricted Transfer of Personal Data carried out under this DPA shall be supported by a valid transfer mechanism under Applicable Data Protection Law.
 
@@ -262,7 +262,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 15. Audits & inspections
 
-*Plain-language: This section says how the Controller verifies that the Processor is actually doing what it promised. It strikes a balance between meaningful oversight and operational disruption.*
+_Plain-language: This section says how the Controller verifies that the Processor is actually doing what it promised. It strikes a balance between meaningful oversight and operational disruption._
 
 **15.1 Audit right.** The Processor shall make available to the Controller information necessary to demonstrate compliance with this DPA, and shall allow for and contribute to audits, including inspections, conducted by the Controller or a third-party auditor mandated by the Controller, in accordance with this Section 15.
 
@@ -282,7 +282,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 16. Return or deletion on termination
 
-*Plain-language: This section says what happens to the data when the relationship ends.*
+_Plain-language: This section says what happens to the data when the relationship ends._
 
 **16.1 Controller's choice.** On termination or expiry of the Parent Agreement, or on the Controller's earlier written request, the Processor shall, at the Controller's choice, return to the Controller, or delete, all Personal Data Processed on behalf of the Controller, and shall delete existing copies, except to the extent that retention is required by Applicable Data Protection Law.
 
@@ -298,7 +298,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 17. Liability & indemnity
 
-*Plain-language: This section says how money flows if something goes wrong. It is normally the most negotiated section in any DPA.*
+_Plain-language: This section says how money flows if something goes wrong. It is normally the most negotiated section in any DPA._
 
 ### 17.1 Variants — liability cap and indemnity carve-outs
 
@@ -316,7 +316,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 18. Governing law, jurisdiction, dispute resolution
 
-*Plain-language: This section says which country's law governs the DPA and where disputes are heard.*
+_Plain-language: This section says which country's law governs the DPA and where disputes are heard._
 
 **18.1 Governing law.** This DPA is governed by **{{Governing Law}}**, except to the extent that Applicable Data Protection Law mandatorily applies its own rules.
 
@@ -330,7 +330,7 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## 19. Order of precedence & miscellaneous
 
-*Plain-language: This section says which document wins if two of the contracts say slightly different things, plus the usual housekeeping.*
+_Plain-language: This section says which document wins if two of the contracts say slightly different things, plus the usual housekeeping._
 
 **19.1 Order of precedence.** In the event of any conflict or inconsistency among the documents that govern the parties' relationship in respect of Processing, the following order of precedence applies, with each item taking precedence over those that follow it:
 
@@ -360,37 +360,37 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## Annex 1 — Description of processing
 
-*This Annex captures the Article 28(3) particulars and any equivalent particulars required by other Applicable Data Protection Law. The Controller is responsible for the accuracy of these particulars. The parties shall update this Annex as the Processing changes materially.*
+_This Annex captures the Article 28(3) particulars and any equivalent particulars required by other Applicable Data Protection Law. The Controller is responsible for the accuracy of these particulars. The parties shall update this Annex as the Processing changes materially._
 
-| Particular | Value |
-|---|---|
-| Controller legal name | **{{Controller Legal Name}}** |
-| Controller address | **{{Controller Address}}** |
-| Controller privacy contact | **{{Controller Email Privacy}}** |
-| Controller DPO contact (if applicable) | **{{Controller Email DPO}}** |
-| Processor legal name | **{{Processor Legal Name}}** |
-| Processor address | **{{Processor Address}}** |
-| Processor privacy contact | **{{Processor Email Privacy}}** |
-| Processor DPO contact (if applicable) | **{{Processor Email DPO}}** |
-| Service | **{{Service Name}}** at **{{Service URL}}** |
-| Subject matter of Processing | *The Processor's performance of the Services for the Controller, comprising [insert short description].* |
-| Duration of Processing | *For the term of the Parent Agreement and any post-termination period required by Section 16.* |
-| Nature of Processing | *[Insert nature: e.g., hosting, transmission, storage, analytics, support.]* |
-| Purpose of Processing | *Enabling the Controller's lawful use of the Services and the Processor's performance of the Parent Agreement.* |
-| Categories of Data Subjects | *[Insert: e.g., Controller's customers, end users, employees, contractors, prospects, other natural persons whose Personal Data the Controller submits.]* |
-| Categories of Personal Data | *[Insert: e.g., identifiers, contact information, account credentials, technical data, content submitted by Data Subjects.]* |
-| Special categories (if any) | *[Insert "None" if not applicable.]* |
-| Frequency of Processing | *[Insert: continuous / on demand / batch.]* |
-| Sensitive operations (e.g., automated decision-making) | *[Insert "None" if not applicable.]* |
-| Retention period | *As described in the Parent Agreement and Section 16 of the DPA.* |
-| Sub-processor list reference | **{{Subprocessor List URL}}** and Annex 3 |
-| Transfer mechanism reference | Annex 4 and the applicable per-jurisdiction addendum |
+| Particular                                             | Value                                                                                                                                                     |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Controller legal name                                  | **{{Controller Legal Name}}**                                                                                                                             |
+| Controller address                                     | **{{Controller Address}}**                                                                                                                                |
+| Controller privacy contact                             | **{{Controller Email Privacy}}**                                                                                                                          |
+| Controller DPO contact (if applicable)                 | **{{Controller Email DPO}}**                                                                                                                              |
+| Processor legal name                                   | **{{Processor Legal Name}}**                                                                                                                              |
+| Processor address                                      | **{{Processor Address}}**                                                                                                                                 |
+| Processor privacy contact                              | **{{Processor Email Privacy}}**                                                                                                                           |
+| Processor DPO contact (if applicable)                  | **{{Processor Email DPO}}**                                                                                                                               |
+| Service                                                | **{{Service Name}}** at **{{Service URL}}**                                                                                                               |
+| Subject matter of Processing                           | _The Processor's performance of the Services for the Controller, comprising [insert short description]._                                                  |
+| Duration of Processing                                 | _For the term of the Parent Agreement and any post-termination period required by Section 16._                                                            |
+| Nature of Processing                                   | _[Insert nature: e.g., hosting, transmission, storage, analytics, support.]_                                                                              |
+| Purpose of Processing                                  | _Enabling the Controller's lawful use of the Services and the Processor's performance of the Parent Agreement._                                           |
+| Categories of Data Subjects                            | _[Insert: e.g., Controller's customers, end users, employees, contractors, prospects, other natural persons whose Personal Data the Controller submits.]_ |
+| Categories of Personal Data                            | _[Insert: e.g., identifiers, contact information, account credentials, technical data, content submitted by Data Subjects.]_                              |
+| Special categories (if any)                            | _[Insert "None" if not applicable.]_                                                                                                                      |
+| Frequency of Processing                                | _[Insert: continuous / on demand / batch.]_                                                                                                               |
+| Sensitive operations (e.g., automated decision-making) | _[Insert "None" if not applicable.]_                                                                                                                      |
+| Retention period                                       | _As described in the Parent Agreement and Section 16 of the DPA._                                                                                         |
+| Sub-processor list reference                           | **{{Subprocessor List URL}}** and Annex 3                                                                                                                 |
+| Transfer mechanism reference                           | Annex 4 and the applicable per-jurisdiction addendum                                                                                                      |
 
 ---
 
 ## Annex 2 — Technical and organizational measures (TOMs)
 
-*This Annex describes the security measures the Processor maintains. The Processor shall keep these measures under review and shall ensure that the overall level of protection is not materially diminished.*
+_This Annex describes the security measures the Processor maintains. The Processor shall keep these measures under review and shall ensure that the overall level of protection is not materially diminished._
 
 **A2.1 Access control.** Identity and access management with unique accounts, role-based access control, the principle of least privilege, multi-factor authentication for administrative and remote access, periodic access reviews, and a documented joiner-mover-leaver process tied to HR systems.
 
@@ -424,30 +424,30 @@ Words such as "include", "including", and "in particular" are illustrative and n
 
 ## Annex 3 — Sub-processor list
 
-*The Processor maintains an up-to-date Sub-processor list at **{{Subprocessor List URL}}**. The table below is a snapshot as of the Effective Date. The published list is the authoritative current version for the purposes of Section 9.*
+_The Processor maintains an up-to-date Sub-processor list at **{{Subprocessor List URL}}**. The table below is a snapshot as of the Effective Date. The published list is the authoritative current version for the purposes of Section 9._
 
-| Sub-processor name | Address | Processing activity | Location of Processing | Transfer mechanism (if applicable) |
-|---|---|---|---|---|
-| *[Insert]* | *[Insert]* | *[Insert: e.g., infrastructure hosting, email delivery, payment processing, analytics]* | *[Insert country/region]* | *[Insert: e.g., adequacy decision, EU SCCs Module 3, UK IDTA, intra-group BCRs, none required]* |
-| *[Insert]* | *[Insert]* | *[Insert]* | *[Insert]* | *[Insert]* |
-| *[Insert]* | *[Insert]* | *[Insert]* | *[Insert]* | *[Insert]* |
+| Sub-processor name | Address    | Processing activity                                                                     | Location of Processing    | Transfer mechanism (if applicable)                                                              |
+| ------------------ | ---------- | --------------------------------------------------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- |
+| _[Insert]_         | _[Insert]_ | _[Insert: e.g., infrastructure hosting, email delivery, payment processing, analytics]_ | _[Insert country/region]_ | _[Insert: e.g., adequacy decision, EU SCCs Module 3, UK IDTA, intra-group BCRs, none required]_ |
+| _[Insert]_         | _[Insert]_ | _[Insert]_                                                                              | _[Insert]_                | _[Insert]_                                                                                      |
+| _[Insert]_         | _[Insert]_ | _[Insert]_                                                                              | _[Insert]_                | _[Insert]_                                                                                      |
 
 ---
 
 ## Annex 4 — International transfer mechanism
 
-*This Annex is a jurisdiction-neutral placeholder. The applicable transfer mechanism is determined by the per-jurisdiction addendum that the parties incorporate by reference together with this DPA.*
+_This Annex is a jurisdiction-neutral placeholder. The applicable transfer mechanism is determined by the per-jurisdiction addendum that the parties incorporate by reference together with this DPA._
 
 **A4.1 Determination of mechanism.** Where Personal Data is the subject of a Restricted Transfer, the parties shall identify and incorporate, before the transfer occurs, the appropriate transfer mechanism under the originating jurisdiction's data protection law. The current selection is recorded below.
 
 **A4.2 Selection (to be completed at deployment).**
 
-| Originating jurisdiction | Selected mechanism | Reference document |
-|---|---|---|
-| EU/EEA | *[e.g., adequacy decision; EU SCCs 2021/914 Module __ ; binding corporate rules]* | *[Per-jurisdiction EU addendum]* |
-| United Kingdom | *[e.g., adequacy regulations; UK IDTA; UK Addendum to the EU SCCs]* | *[Per-jurisdiction UK addendum]* |
-| Switzerland | *[e.g., Federal Council adequacy list; Swiss SCC overlay]* | *[Per-jurisdiction Swiss addendum]* |
-| Other | *[e.g., other jurisdictional mechanism]* | *[Per-jurisdiction addendum]* |
+| Originating jurisdiction | Selected mechanism                                                                | Reference document                  |
+| ------------------------ | --------------------------------------------------------------------------------- | ----------------------------------- |
+| EU/EEA                   | _[e.g., adequacy decision; EU SCCs 2021/914 Module __ ; binding corporate rules]_ | _[Per-jurisdiction EU addendum]_    |
+| United Kingdom           | _[e.g., adequacy regulations; UK IDTA; UK Addendum to the EU SCCs]_               | _[Per-jurisdiction UK addendum]_    |
+| Switzerland              | _[e.g., Federal Council adequacy list; Swiss SCC overlay]_                        | _[Per-jurisdiction Swiss addendum]_ |
+| Other                    | _[e.g., other jurisdictional mechanism]_                                          | _[Per-jurisdiction addendum]_       |
 
 **A4.3 Reference to per-jurisdiction variant.** The substantive transfer-clause text (including any incorporated Standard Contractual Clauses, the UK International Data Transfer Addendum, or comparable instrument) is set out in the applicable per-jurisdiction addendum and is not duplicated here. Where the per-jurisdiction addendum and this core DPA conflict, the addendum prevails in accordance with Section 19.1.
 

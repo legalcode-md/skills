@@ -314,19 +314,19 @@ This section explains how the various contractual documents fit together and hou
 
 This Annex satisfies the requirement in Article 28(3) of the UK GDPR that the processor's contract sets out the subject matter, duration, nature, purpose, types of personal data, and categories of data subjects.
 
-| Element | Description |
-|---|---|
-| **Subject matter of processing** | {{Subject Matter of Processing}} |
-| **Duration of processing** | {{Duration of Processing}} (default: term of the Principal Agreement plus the post-termination return-or-delete window in clause 16) |
-| **Nature of processing** | {{Nature of Processing}} (e.g., hosting, storage, transmission, retrieval, analytics, support) |
-| **Purpose of processing** | {{Purpose of Processing}} |
-| **Types of Personal Data** | {{Types of Personal Data}} |
-| **Special Category Data** | {{Special Category Data}} (if any) |
-| **Categories of Data Subjects** | {{Categories of Data Subjects}} (e.g., Controller's customers, end-users, employees, contractors) |
-| **Frequency of processing** | {{Frequency of Processing}} (e.g., continuous, on-demand, batch) |
-| **Retention period** | {{Retention Period}} |
-| **Geographic locations of processing** | {{Locations of Processing}} |
-| **Onward Restricted Transfers** | {{Onward Restricted Transfers}} (see Annex 3) |
+| Element                                | Description                                                                                                                          |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Subject matter of processing**       | {{Subject Matter of Processing}}                                                                                                     |
+| **Duration of processing**             | {{Duration of Processing}} (default: term of the Principal Agreement plus the post-termination return-or-delete window in clause 16) |
+| **Nature of processing**               | {{Nature of Processing}} (e.g., hosting, storage, transmission, retrieval, analytics, support)                                       |
+| **Purpose of processing**              | {{Purpose of Processing}}                                                                                                            |
+| **Types of Personal Data**             | {{Types of Personal Data}}                                                                                                           |
+| **Special Category Data**              | {{Special Category Data}} (if any)                                                                                                   |
+| **Categories of Data Subjects**        | {{Categories of Data Subjects}} (e.g., Controller's customers, end-users, employees, contractors)                                    |
+| **Frequency of processing**            | {{Frequency of Processing}} (e.g., continuous, on-demand, batch)                                                                     |
+| **Retention period**                   | {{Retention Period}}                                                                                                                 |
+| **Geographic locations of processing** | {{Locations of Processing}}                                                                                                          |
+| **Onward Restricted Transfers**        | {{Onward Restricted Transfers}} (see Annex 3)                                                                                        |
 
 ---
 
@@ -393,8 +393,8 @@ Where Personal Data includes Special Category Data, the Processor shall apply en
 
 This Annex lists the Sub-processors authorised at the Effective Date and identifies the transfer mechanism applicable to each onward Restricted Transfer.
 
-| Sub-processor | Address | Processing activity | Location of processing | Transfer mechanism (if Restricted Transfer) | Certifications |
-|---|---|---|---|---|---|
+| Sub-processor            | Address                     | Processing activity          | Location of processing       | Transfer mechanism (if Restricted Transfer)                      | Certifications                     |
+| ------------------------ | --------------------------- | ---------------------------- | ---------------------------- | ---------------------------------------------------------------- | ---------------------------------- |
 | {{Sub-processor 1 Name}} | {{Sub-processor 1 Address}} | {{Sub-processor 1 Activity}} | {{Sub-processor 1 Location}} | {{UK Adequacy / IDTA / UK Addendum to SCCs / BCRs / Derogation}} | {{Sub-processor 1 Certifications}} |
 | {{Sub-processor 2 Name}} | {{Sub-processor 2 Address}} | {{Sub-processor 2 Activity}} | {{Sub-processor 2 Location}} | {{UK Adequacy / IDTA / UK Addendum to SCCs / BCRs / Derogation}} | {{Sub-processor 2 Certifications}} |
 | {{Sub-processor 3 Name}} | {{Sub-processor 3 Address}} | {{Sub-processor 3 Activity}} | {{Sub-processor 3 Location}} | {{UK Adequacy / IDTA / UK Addendum to SCCs / BCRs / Derogation}} | {{Sub-processor 3 Certifications}} |
@@ -428,10 +428,12 @@ In all cases (other than adequacy and Article 49 derogations relied on for occas
 The Approved IDTA is divided into the following parts. Where the parties select the IDTA as the transfer mechanism, the parties shall complete a copy of the Approved IDTA published by the ICO. The Mandatory Clauses are incorporated by reference under the Open Government Licence. They are not reproduced here and shall not be amended save as their terms permit. `[VERIFY — current ICO Mandatory Clauses references]`
 
 **Table 1 — Parties.** Identifies the data exporter and importer, key contact details for data protection, and the start date of the IDTA. The parties shall complete:
+
 - exporter name, address, official registration (Companies House number, charity number, or equivalent), key contact, signature block;
 - importer name, address, official registration (where applicable), key contact, signature block.
 
 **Table 2 — Transfer Details.** Records the operative parameters of the transfer:
+
 - the UK country whose laws apply (England & Wales, Scotland, or Northern Ireland) — see §4.5;
 - the primary place of arbitration or court selected;
 - the parties' status as controller or processor (controller-to-controller, controller-to-processor, processor-to-processor, processor-to-controller);
@@ -441,6 +443,7 @@ The Approved IDTA is divided into the following parts. Where the parties select 
 - the review period for the Transfer Risk Assessment.
 
 **Table 3 — Transferred Data.** Mirrors the Article 28 description in **Annex 1** and adds:
+
 - the categories of Personal Data;
 - the Special Category Data (if any);
 - the relevant Data Subjects;
@@ -449,6 +452,7 @@ The Approved IDTA is divided into the following parts. Where the parties select 
 - the retention period applicable to the transferred data.
 
 **Table 4 — Security Requirements.** Mirrors **Annex 2** and confirms:
+
 - the technical and organisational measures applied by the importer;
 - any further requirements specific to the transferred data;
 - key personnel for security matters;
@@ -467,12 +471,14 @@ The Approved Addendum extends the European Commission's Standard Contractual Cla
 **Table 1 — Parties.** Identifies the parties using the same conventions as the IDTA and confirms the start date of the UK Addendum. The Table is completed by reference to the corresponding Annex of the EU SCCs to avoid duplication.
 
 **Table 2 — Selected SCCs, Modules, and Selected Clauses.** Records:
+
 - the version of the EU SCCs in use (Decision (EU) 2021/914) and the date of the executed SCCs;
 - the Module(s) selected (Module One: controller-to-controller; Module Two: controller-to-processor; Module Three: processor-to-processor; Module Four: processor-to-controller);
 - the optional clauses selected within each Module (for example, the optional docking clause, the optional language on third-party beneficiary rights, and the choice of audit format);
 - where Clause 17 (governing law) and Clause 18 (forum) of the EU SCCs are completed, the choices made for the EU SCCs (which may differ from the choices made for the UK Addendum under §4.5).
 
 **Table 3 — Appendix Information.** Mirrors the Annexes to the EU SCCs:
+
 - Annex 1A — list of parties (cross-references Table 1);
 - Annex 1B — description of transfer (mirrors **Annex 1** of this DPA);
 - Annex 2 — technical and organisational measures (mirrors **Annex 2** of this DPA);

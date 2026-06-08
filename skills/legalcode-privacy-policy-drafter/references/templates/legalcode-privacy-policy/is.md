@@ -73,13 +73,13 @@ Where regional law uses different wording for these concepts, we treat the regio
 - **Legal name:** {{Company Legal Name}}
 - **Trading name:** {{Company Short Name}}
 - **Registered address:** {{Company Address}}
-- **Kennitala:** {{Company Kennitala}} *(OPTIONAL — recommended for IS-registered companies; the Icelandic legal-person identifier issued by the Registers Iceland / Skatturinn)*
+- **Kennitala:** {{Company Kennitala}} _(OPTIONAL — recommended for IS-registered companies; the Icelandic legal-person identifier issued by the Registers Iceland / Skatturinn)_
 - **Privacy contact:** {{Company Email Privacy}}
 - **Supervisory authority:** Persónuvernd (`personuvernd.is`)
 
-*OPTIONAL — only if you have appointed a Data Protection Officer.* Our Data Protection Officer (persónuverndarfulltrúi) can be reached at {{Company Email DPO}}. Under GDPR Art. 37 and Act 90/2018 Art. 35, appointment of a DPO is mandatory for public bodies, controllers whose core activities require regular and systematic monitoring of data subjects on a large scale, and controllers whose core activities involve large-scale processing of special categories of data.
+_OPTIONAL — only if you have appointed a Data Protection Officer._ Our Data Protection Officer (persónuverndarfulltrúi) can be reached at {{Company Email DPO}}. Under GDPR Art. 37 and Act 90/2018 Art. 35, appointment of a DPO is mandatory for public bodies, controllers whose core activities require regular and systematic monitoring of data subjects on a large scale, and controllers whose core activities involve large-scale processing of special categories of data.
 
-*OPTIONAL — only if you are established outside the EEA and offer the Service to Icelandic data subjects.* Our representative in the EEA for the purposes of GDPR Art. 27 is {{Company DPA Representative}}.
+_OPTIONAL — only if you are established outside the EEA and offer the Service to Icelandic data subjects._ Our representative in the EEA for the purposes of GDPR Art. 27 is {{Company DPA Representative}}.
 
 If you have a question about who controls a particular dataset — for example because your employer or another organisation gave you access to the Service — see Section 2 above and, where relevant, the data processing agreement between us and that organisation.
 
@@ -90,11 +90,11 @@ We collect personal data in three ways: you give it to us, the Service collects 
 ### 4.1 Information you provide
 
 - **Account data** — name, email address, password (stored hashed), and any profile information you choose to add. We do not require kennitala for account creation.
-- **Billing data** — *OPTIONAL — only if you sell paid subscriptions.* Where you purchase a paid plan, we receive a billing record from our payment processor. We do not store full payment-card numbers; the processor holds the card data on our behalf as a separate controller or processor.
-- **Kennitala** — *OPTIONAL — only if you have a statutory or contractual reason to collect it.* Where Icelandic tax law (e.g. Act on Income Tax No. 90/2003), accounting law, or anti-money-laundering law (Act 140/2018) requires us to record a kennitala against an invoice, payment, or KYC file, we will collect it for that purpose only.
+- **Billing data** — _OPTIONAL — only if you sell paid subscriptions._ Where you purchase a paid plan, we receive a billing record from our payment processor. We do not store full payment-card numbers; the processor holds the card data on our behalf as a separate controller or processor.
+- **Kennitala** — _OPTIONAL — only if you have a statutory or contractual reason to collect it._ Where Icelandic tax law (e.g. Act on Income Tax No. 90/2003), accounting law, or anti-money-laundering law (Act 140/2018) requires us to record a kennitala against an invoice, payment, or KYC file, we will collect it for that purpose only.
 - **Content** — text, files, images, code, or other material you upload, create, or send through the Service.
 - **Communications** — messages you send to support, feedback you submit, survey responses, and any correspondence with us.
-- **Identity verification material** — *OPTIONAL — only if you carry out KYC, age verification, or similar checks.* Documents or attestations you provide when we have to verify who you are. For AML-regulated processing we apply the heightened safeguards required by Act 140/2018.
+- **Identity verification material** — _OPTIONAL — only if you carry out KYC, age verification, or similar checks._ Documents or attestations you provide when we have to verify who you are. For AML-regulated processing we apply the heightened safeguards required by Act 140/2018.
 
 ### 4.2 Information collected automatically
 
@@ -105,7 +105,7 @@ We collect personal data in three ways: you give it to us, the Service collects 
 
 ### 4.3 Information from other sources
 
-- **Authentication providers** — *OPTIONAL — only if you offer SSO/OAuth login.* Where you sign in with a third-party identity provider (for example, Audkenni / Íslykill, Google, Microsoft, Apple), we receive the profile fields you authorise that provider to share with us.
+- **Authentication providers** — _OPTIONAL — only if you offer SSO/OAuth login._ Where you sign in with a third-party identity provider (for example, Audkenni / Íslykill, Google, Microsoft, Apple), we receive the profile fields you authorise that provider to share with us.
 - **Service partners** — vendors and integrators that help us deliver the Service may share data with us within the scope of their engagement.
 - **Public sources** — we may receive personal data from publicly accessible sources (for example, business contact information from public registers or professional networks for sales outreach).
 - **Other users** — other users may share information about you when they refer you, mention you, or include your data in content they submit.
@@ -134,14 +134,14 @@ We document sources alongside categories of personal data in our internal Record
 We process personal data only for purposes we can justify. The main purposes are:
 
 - **Providing the Service** — creating and authenticating your account, delivering features you request, and keeping the Service operational.
-- **Account administration** — billing, invoicing, subscription management, and related record-keeping. *OPTIONAL — only if you sell paid services.*
+- **Account administration** — billing, invoicing, subscription management, and related record-keeping. _OPTIONAL — only if you sell paid services._
 - **Support** — answering your questions, troubleshooting issues, and following up on incidents you report.
 - **Security and abuse prevention** — detecting, investigating, and stopping fraud, abuse, account takeover, spam, malicious traffic, and violations of our terms.
 - **Service improvement** — understanding how the Service is used so we can fix bugs, prioritise features, and improve performance and reliability.
 - **Communications** — sending transactional messages (account notices, security alerts, service updates) and, where you have opted in or where Icelandic law allows, marketing or product news. Marketing email is governed by the Telecommunications Act No. 70/2022 (Lög um fjarskipti).
 - **Legal compliance** — meeting tax (Act 90/2003 on Income Tax), accounting (Act on Annual Accounts No. 3/2006), anti-money-laundering (Act 140/2018), dispute-resolution, and other obligations imposed on us under Icelandic and EEA law.
 - **Analytics and aggregation** — generating aggregated, de-identified statistics about usage. Once data is reduced to a form that no longer identifies any individual, this policy no longer constrains its use.
-- **Research and development** — *OPTIONAL — only if you use de-identified or pseudonymised data for R&D.* Improving existing features and developing new ones, using de-identified or pseudonymised data wherever possible, consistent with the research-purposes provisions of Act 90/2018.
+- **Research and development** — _OPTIONAL — only if you use de-identified or pseudonymised data for R&D._ Improving existing features and developing new ones, using de-identified or pseudonymised data wherever possible, consistent with the research-purposes provisions of Act 90/2018.
 
 We do not use personal data for purposes that are incompatible with the ones listed here without first telling you and, where required by law, obtaining your consent.
 
@@ -167,7 +167,7 @@ We rely on one or more of the following bases. Many activities engage more than 
 
 **(d) Vital interests** — GDPR Art. 6(1)(d); Act 90/2018 Art. 9(1)(4). We rely on this basis only in exceptional cases where processing is necessary to protect the vital interests of you or another natural person — for example, contacting emergency services in response to a credible safety report.
 
-**(e) Public task / public interest** — GDPR Art. 6(1)(e); Act 90/2018 Art. 9(1)(5). This basis is generally relevant only to public bodies and to private bodies carrying out a task in the public interest. {{Company Short Name}} does not normally rely on this basis. *OPTIONAL — retain only if your service genuinely involves a public task assigned by Icelandic law.*
+**(e) Public task / public interest** — GDPR Art. 6(1)(e); Act 90/2018 Art. 9(1)(5). This basis is generally relevant only to public bodies and to private bodies carrying out a task in the public interest. {{Company Short Name}} does not normally rely on this basis. _OPTIONAL — retain only if your service genuinely involves a public task assigned by Icelandic law._
 
 **(f) Legitimate interests** — GDPR Art. 6(1)(f); Act 90/2018 Art. 9(1)(6). We rely on legitimate interests where processing is necessary for purposes that we (or a third party) pursue and those interests are not overridden by your interests, fundamental rights, or freedoms. For each such activity we apply a three-part test:
 
@@ -195,15 +195,15 @@ We do not collect personal data relating to criminal convictions or offences exc
 
 ### 7.4 Mapping of purposes to legal bases
 
-| Purpose (from Section 6) | Primary lawful basis |
-|---|---|
-| Providing the Service; account administration | Contract — GDPR Art. 6(1)(b); Act 90/2018 Art. 9(1)(2) |
-| Support (in response to a request from you) | Contract; or legitimate interests in maintaining a working support function — Art. 6(1)(b) / 6(1)(f) |
-| Security and abuse prevention | Legitimate interests — Art. 6(1)(f); plus legal obligation (Art. 32 GDPR / Act 90/2018 Art. 27) for technical and organisational security measures |
-| Service improvement; analytics | Legitimate interests — Art. 6(1)(f); consent for non-essential cookies (Telecom Act No. 70/2022) |
-| Marketing communications | Consent — Art. 6(1)(a); soft opt-in for similar products of an existing customer where permitted |
-| Legal compliance | Legal obligation — Art. 6(1)(c); Act 90/2018 Art. 9(1)(3) |
-| R&D on de-identified data | Legitimate interests — Art. 6(1)(f); de-identification removes data from the GDPR's scope where effective |
+| Purpose (from Section 6)                      | Primary lawful basis                                                                                                                               |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Providing the Service; account administration | Contract — GDPR Art. 6(1)(b); Act 90/2018 Art. 9(1)(2)                                                                                             |
+| Support (in response to a request from you)   | Contract; or legitimate interests in maintaining a working support function — Art. 6(1)(b) / 6(1)(f)                                               |
+| Security and abuse prevention                 | Legitimate interests — Art. 6(1)(f); plus legal obligation (Art. 32 GDPR / Act 90/2018 Art. 27) for technical and organisational security measures |
+| Service improvement; analytics                | Legitimate interests — Art. 6(1)(f); consent for non-essential cookies (Telecom Act No. 70/2022)                                                   |
+| Marketing communications                      | Consent — Art. 6(1)(a); soft opt-in for similar products of an existing customer where permitted                                                   |
+| Legal compliance                              | Legal obligation — Art. 6(1)(c); Act 90/2018 Art. 9(1)(3)                                                                                          |
+| R&D on de-identified data                     | Legitimate interests — Art. 6(1)(f); de-identification removes data from the GDPR's scope where effective                                          |
 
 If you would like a fuller explanation of the lawful basis we rely on for any particular activity, write to {{Company Email Privacy}}.
 
@@ -214,16 +214,16 @@ We share personal data only where it is necessary, with parties that have commit
 ### 8.1 Categories of recipients
 
 - **Subprocessors and service providers** — hosting, storage, content delivery, email delivery, payment processing, analytics, customer support tooling, error reporting, and similar infrastructure vendors. Each is bound by a written contract requiring confidentiality, security measures, assistance with data-subject rights, and onward-transfer safeguards.
-- **Affiliates** — *OPTIONAL — only if you have group companies.* Other entities under common control with {{Company Legal Name}}, for shared services such as engineering, finance, and security.
+- **Affiliates** — _OPTIONAL — only if you have group companies._ Other entities under common control with {{Company Legal Name}}, for shared services such as engineering, finance, and security.
 - **Authorities** — courts, regulators, law enforcement, tax authorities (Skatturinn), and other public authorities, where we are legally compelled or where disclosure is permitted to protect rights, safety, or property. Persónuvernd may direct us to provide information in connection with an investigation; we comply with such directions as required by Act 90/2018.
 - **Professional advisors** — auditors, lawyers (lögmenn), and other advisors bound by professional confidentiality.
-- **Successors** — *OPTIONAL — only relevant if you describe corporate transactions.* Where we undergo a merger, acquisition, financing, reorganisation, or asset sale, the counterparty as part of due diligence and any closing transfer.
+- **Successors** — _OPTIONAL — only relevant if you describe corporate transactions._ Where we undergo a merger, acquisition, financing, reorganisation, or asset sale, the counterparty as part of due diligence and any closing transfer.
 - **Other users** — only as you have configured the Service; for example, content you have shared in a workspace becomes visible to others in that workspace.
 - **At your direction** — anyone else you ask us to share with, including third-party applications you authorise.
 
 ### 8.2 Subprocessor list
 
-A current list of our subprocessors is available at *[REPLACE with the URL where you publish your subprocessor list]*. We update it when we add, remove, or replace a subprocessor and, where required by contract, give business customers advance notice so they can object and, if they wish, terminate the affected service.
+A current list of our subprocessors is available at _[REPLACE with the URL where you publish your subprocessor list]_. We update it when we add, remove, or replace a subprocessor and, where required by contract, give business customers advance notice so they can object and, if they wish, terminate the affected service.
 
 We do **not** sell personal data, and we do not share it for cross-context behavioural advertising, except where you have opted in.
 
@@ -276,15 +276,15 @@ The actual retention period for a given record depends on:
 
 As a guide:
 
-| Data | Indicative retention |
-|---|---|
-| Account record | Lifetime of the account, plus a short tail for closure, dispute resolution, and applicable limitation periods. |
-| Content you create or upload | Until you delete it, or until your account is closed and the closure grace period ends. |
-| Billing and tax records | Seven years from the end of the relevant accounting year, in line with Icelandic bookkeeping and tax law. |
-| AML / KYC records | Five years from the end of the customer relationship, as required by Act 140/2018 (where applicable). |
-| Server and security logs | Short retention windows (typically 30–365 days) unless an incident requires longer for investigation. |
-| Marketing preferences | Until you opt out, plus a suppression record so we honour your opt-out going forward. |
-| Support tickets | Up to a few years after closure of the ticket, depending on severity and any related legal hold. |
+| Data                         | Indicative retention                                                                                           |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Account record               | Lifetime of the account, plus a short tail for closure, dispute resolution, and applicable limitation periods. |
+| Content you create or upload | Until you delete it, or until your account is closed and the closure grace period ends.                        |
+| Billing and tax records      | Seven years from the end of the relevant accounting year, in line with Icelandic bookkeeping and tax law.      |
+| AML / KYC records            | Five years from the end of the customer relationship, as required by Act 140/2018 (where applicable).          |
+| Server and security logs     | Short retention windows (typically 30–365 days) unless an incident requires longer for investigation.          |
+| Marketing preferences        | Until you opt out, plus a suppression record so we honour your opt-out going forward.                          |
+| Support tickets              | Up to a few years after closure of the ticket, depending on severity and any related legal hold.               |
 
 When we no longer need personal data, we delete it or convert it into a form that no longer identifies you. Backups are overwritten on rolling cycles; data we cannot immediately purge from a backup is isolated and deleted at the next cycle.
 
@@ -315,7 +315,7 @@ The Service uses cookies and similar technologies (local storage, session storag
 - **Strictly necessary** — sign-in, session management, security, load balancing, and CSRF protection. The Service cannot function without these. No consent is required because these cookies fall within the "strictly necessary" exception of the Telecommunications Act.
 - **Functional** — remembering preferences such as language or display settings. Where these are non-essential, we ask for consent before setting them.
 - **Analytics** — understanding how the Service is used, so we can improve it. We ask for opt-in consent before setting analytics cookies that are not strictly necessary, including before transmitting any analytics identifier to a third-party analytics provider.
-- **Marketing** — *OPTIONAL — only if you run advertising.* Measuring the effectiveness of advertising campaigns. Runs only after you opt in.
+- **Marketing** — _OPTIONAL — only if you run advertising._ Measuring the effectiveness of advertising campaigns. Runs only after you opt in.
 
 You can manage your preferences in your browser, in your device settings, or through the cookie banner the Service shows you on first visit and on demand. You can also send an opt-out signal (for example Global Privacy Control) and we will honour it where the law treats it as a valid opt-out.
 
@@ -331,7 +331,7 @@ We do not knowingly collect personal data from children below the age of 13 with
 
 If you believe a child has given us personal data without the necessary consent, contact {{Company Email Privacy}} and we will investigate and, where appropriate, delete the data.
 
-*OPTIONAL — only if you offer a youth-facing or education-tier product.* Where the Service is offered to children with verifiable parental or school consent, we describe the additional safeguards we apply in a separate notice.
+_OPTIONAL — only if you offer a youth-facing or education-tier product._ Where the Service is offered to children with verifiable parental or school consent, we describe the additional safeguards we apply in a separate notice.
 
 ## 14. Your rights & how to exercise them
 
@@ -373,7 +373,7 @@ We do use automated processing for:
 - Spam and abuse detection.
 - Security and fraud signals (for example, detecting suspicious sign-in attempts).
 - Service-improvement analytics described in Section 6.
-- *OPTIONAL — only if you do this.* Personalising content or recommendations within the Service, where the personalisation does not produce legal or similarly significant effects.
+- _OPTIONAL — only if you do this._ Personalising content or recommendations within the Service, where the personalisation does not produce legal or similarly significant effects.
 
 Where any automated process could, in a particular case, qualify as automated decision-making with legal or similarly significant effects within the meaning of Art. 22, we will:
 
@@ -401,9 +401,9 @@ For any privacy question, request, or complaint, contact us first:
 
 - **Email:** {{Company Email Privacy}}
 - **Postal address:** {{Company Legal Name}}, {{Company Address}}
-- **Kennitala:** {{Company Kennitala}} *(OPTIONAL)*
+- **Kennitala:** {{Company Kennitala}} _(OPTIONAL)_
 
-*OPTIONAL — only if you have appointed a DPO.* Data Protection Officer (persónuverndarfulltrúi): {{Company Email DPO}}.
+_OPTIONAL — only if you have appointed a DPO._ Data Protection Officer (persónuverndarfulltrúi): {{Company Email DPO}}.
 
 We will acknowledge your message and aim to resolve the matter directly. If you are not satisfied with our response, you have the right to lodge a complaint with the Icelandic Data Protection Authority and to seek a judicial remedy.
 
@@ -431,10 +431,10 @@ The following Mustache placeholders appear in this document. Replace each with a
 - `{{Company Legal Name}}`
 - `{{Company Short Name}}`
 - `{{Company Address}}` — Icelandic registered address
-- `{{Company Kennitala}}` — *optional but recommended for IS-registered companies (Icelandic legal-person identifier)*
+- `{{Company Kennitala}}` — _optional but recommended for IS-registered companies (Icelandic legal-person identifier)_
 - `{{Company Email Privacy}}`
-- `{{Company Email DPO}}` — *optional, only if a Data Protection Officer is appointed*
-- `{{Company DPA Representative}}` — *optional, only if you are established outside the EEA and offer the Service to Icelandic data subjects*
+- `{{Company Email DPO}}` — _optional, only if a Data Protection Officer is appointed_
+- `{{Company DPA Representative}}` — _optional, only if you are established outside the EEA and offer the Service to Icelandic data subjects_
 - `{{Service Name}}`
 - `{{Service URL}}`
 - `{{Effective Date}}`
@@ -463,4 +463,4 @@ An Icelandic-language version (`is-isl.md`) of this policy is on the legalcode-p
 
 ---
 
-*This document is informational only and is not legal advice. It is a starting point for drafting, not a finished privacy policy. Have it reviewed by qualified Icelandic counsel before publishing, and verify that any statutory references it contains — including references to Act 90/2018, Act 70/2022, Act 140/2018, Act 90/2003, Act 3/2006, Act 145/1994, the GDPR, the SCCs Implementing Decision 2021/914, and Persónuvernd guidance — are still accurate at the time of adoption. Privacy law in Iceland evolves through new Persónuvernd guidance, EDPB opinions, EEA Joint Committee Decisions, and case-law from the Icelandic courts and the EFTA Court; review this policy on a regular cadence (we recommend quarterly).*
+_This document is informational only and is not legal advice. It is a starting point for drafting, not a finished privacy policy. Have it reviewed by qualified Icelandic counsel before publishing, and verify that any statutory references it contains — including references to Act 90/2018, Act 70/2022, Act 140/2018, Act 90/2003, Act 3/2006, Act 145/1994, the GDPR, the SCCs Implementing Decision 2021/914, and Persónuvernd guidance — are still accurate at the time of adoption. Privacy law in Iceland evolves through new Persónuvernd guidance, EDPB opinions, EEA Joint Committee Decisions, and case-law from the Icelandic courts and the EFTA Court; review this policy on a regular cadence (we recommend quarterly)._

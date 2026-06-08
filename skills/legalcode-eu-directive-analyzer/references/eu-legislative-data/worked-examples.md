@@ -17,38 +17,38 @@ Herbert Smith Freehills, Ropes & Gray) as the verifiable secondary source.
 
 ### 1.1 Identification
 
-| Field | Value |
-|---|---|
-| Short title | NIS2 Directive |
-| Formal title | Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 |
-| CELEX | `32022L2555` |
-| ELI (English) | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng` |
-| OJ reference | OJ L 333, 27.12.2022, p. 80 |
-| Adopted | 14 December 2022 |
-| Entry into force | 16 January 2023 (twentieth day after publication, Art. 45) |
-| Transposition deadline | **17 October 2024** (Art. 41(1)) |
-| EEA-relevance flag | Marked "Text with EEA relevance"; JCD process pending as of late 2025 |
-| OEIL dossier | 2020/0359(COD) |
+| Field                  | Value                                                                                                                                                                                                                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Short title            | NIS2 Directive                                                                                                                                                                                                                                                              |
+| Formal title           | Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 |
+| CELEX                  | `32022L2555`                                                                                                                                                                                                                                                                |
+| ELI (English)          | `https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng`                                                                                                                                                                                                                        |
+| OJ reference           | OJ L 333, 27.12.2022, p. 80                                                                                                                                                                                                                                                 |
+| Adopted                | 14 December 2022                                                                                                                                                                                                                                                            |
+| Entry into force       | 16 January 2023 (twentieth day after publication, Art. 45)                                                                                                                                                                                                                  |
+| Transposition deadline | **17 October 2024** (Art. 41(1))                                                                                                                                                                                                                                            |
+| EEA-relevance flag     | Marked "Text with EEA relevance"; JCD process pending as of late 2025                                                                                                                                                                                                       |
+| OEIL dossier           | 2020/0359(COD)                                                                                                                                                                                                                                                              |
 
 ### 1.2 Sample obligation extraction (5 obligations)
 
-| ID | Article | Deontic | Addressee | Text (English) |
-|---|---|---|---|---|
-| OBL-NIS2-001 | Art. 21(1) | Obligation | Essential entities; important entities | "Member States shall ensure that essential and important entities take appropriate and proportionate technical, operational and organisational measures to manage the risks posed to the security of network and information systems which those entities use for their operations or for the provision of their services, and to prevent or minimise the impact of incidents on recipients of their services and on other services." |
-| OBL-NIS2-002 | Art. 23(1) | Obligation | Essential entities; important entities | "Each Member State shall ensure that essential and important entities notify, without undue delay, its CSIRT or, where applicable, its competent authority [...] of any incident that has a significant impact on the provision of their services as referred to in paragraph 3 (significant incident)." |
+| ID           | Article    | Deontic    | Addressee                              | Text (English)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------ | ---------- | ---------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| OBL-NIS2-001 | Art. 21(1) | Obligation | Essential entities; important entities | "Member States shall ensure that essential and important entities take appropriate and proportionate technical, operational and organisational measures to manage the risks posed to the security of network and information systems which those entities use for their operations or for the provision of their services, and to prevent or minimise the impact of incidents on recipients of their services and on other services."                                                                                                                                                                                                                                                     |
+| OBL-NIS2-002 | Art. 23(1) | Obligation | Essential entities; important entities | "Each Member State shall ensure that essential and important entities notify, without undue delay, its CSIRT or, where applicable, its competent authority [...] of any incident that has a significant impact on the provision of their services as referred to in paragraph 3 (significant incident)."                                                                                                                                                                                                                                                                                                                                                                                  |
 | OBL-NIS2-003 | Art. 23(4) | Obligation | Essential entities; important entities | "Member States shall ensure that, for the purpose of notification under paragraph 1, the entities concerned submit to the CSIRT or, where applicable, the competent authority: (a) without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning [...]; (b) without undue delay and in any event within 72 hours of becoming aware of the significant incident, an incident notification [...]; (c) upon the request of a CSIRT or, where applicable, the competent authority, an intermediate report [...]; (d) a final report not later than one month after the submission of the incident notification under point (b) [...]." |
-| OBL-NIS2-004 | Art. 32(2) | Obligation | Member States (supervisory regime) | "When exercising their supervisory tasks in relation to essential entities, the competent authorities shall have the power to subject those entities at least to the following [ex-ante powers listed]." |
-| OBL-NIS2-005 | Art. 34(1) | Obligation | Member States (sanctions regime) | "Member States shall ensure that the administrative fines imposed on essential and important entities pursuant to this Article in respect of infringements of this Directive are effective, proportionate and dissuasive [...]." |
+| OBL-NIS2-004 | Art. 32(2) | Obligation | Member States (supervisory regime)     | "When exercising their supervisory tasks in relation to essential entities, the competent authorities shall have the power to subject those entities at least to the following [ex-ante powers listed]."                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| OBL-NIS2-005 | Art. 34(1) | Obligation | Member States (sanctions regime)       | "Member States shall ensure that the administrative fines imposed on essential and important entities pursuant to this Article in respect of infringements of this Directive are effective, proportionate and dissuasive [...]."                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 ### 1.3 Transposition status (priority Member States; verify against Linklaters NIS2 transposition tracker at `https://www.linklaters.com/en/insights/blogs/digilinks/nis2-tracker` before reliance)
 
-| MS | Status (as at late 2025/early 2026) | NIM citation (verify against published tracker) |
-|---|---|---|
-| Germany (DE) | Draft NIS2-Umsetzungs- und Cybersicherheitsstärkungsgesetz (NIS2UmsuCG); deadline missed; legislative process delayed across the 2024–2025 parliamentary calendar | Verify against Linklaters NIS2 tracker — final BGBl. citation pending adoption |
-| France (FR) | Loi n° 2025-... transposing NIS2; verify against Linklaters NIS2 tracker for current JORF citation; partial transposition in advance via the SREN Loi (Loi n° 2024-449 du 21 mai 2024 visant à sécuriser et à réguler l'espace numérique) | Verify against Linklaters NIS2 tracker — JORF citation |
-| Sweden (SE) | Cybersäkerhetslagen (cybersecurity act) transposing NIS2; SFS reference to be confirmed against Linklaters NIS2 tracker | Verify against Linklaters NIS2 tracker — SFS citation |
-| Poland (PL) | Ustawa o krajowym systemie cyberbezpieczeństwa amendment transposing NIS2; Dz.U. citation to be confirmed | Verify against Linklaters NIS2 tracker — Dz.U. citation |
-| Iceland (IS) | NIS2 not yet incorporated into the EEA Agreement (JCD pending); national transposition cannot precede incorporation; Stjórnartíðindi citation N/A until JCD adopted | Track via EEA-Lex pending JCD; see §6 of `source-playbook.md` |
+| MS           | Status (as at late 2025/early 2026)                                                                                                                                                                                                       | NIM citation (verify against published tracker)                                |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Germany (DE) | Draft NIS2-Umsetzungs- und Cybersicherheitsstärkungsgesetz (NIS2UmsuCG); deadline missed; legislative process delayed across the 2024–2025 parliamentary calendar                                                                         | Verify against Linklaters NIS2 tracker — final BGBl. citation pending adoption |
+| France (FR)  | Loi n° 2025-... transposing NIS2; verify against Linklaters NIS2 tracker for current JORF citation; partial transposition in advance via the SREN Loi (Loi n° 2024-449 du 21 mai 2024 visant à sécuriser et à réguler l'espace numérique) | Verify against Linklaters NIS2 tracker — JORF citation                         |
+| Sweden (SE)  | Cybersäkerhetslagen (cybersecurity act) transposing NIS2; SFS reference to be confirmed against Linklaters NIS2 tracker                                                                                                                   | Verify against Linklaters NIS2 tracker — SFS citation                          |
+| Poland (PL)  | Ustawa o krajowym systemie cyberbezpieczeństwa amendment transposing NIS2; Dz.U. citation to be confirmed                                                                                                                                 | Verify against Linklaters NIS2 tracker — Dz.U. citation                        |
+| Iceland (IS) | NIS2 not yet incorporated into the EEA Agreement (JCD pending); national transposition cannot precede incorporation; Stjórnartíðindi citation N/A until JCD adopted                                                                       | Track via EEA-Lex pending JCD; see §6 of `source-playbook.md`                  |
 
 ### 1.4 Gold-plating examples (verify against Linklaters NIS2 tracker)
 
@@ -91,17 +91,17 @@ procedures inform the standard the Commission is likely to apply under NIS2.
 
 ### 2.1 Identification
 
-| Field | Value |
-|---|---|
-| Short title | AI Act |
-| Formal title | Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) |
-| CELEX | `32024R1689` |
-| ELI (English) | `https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng` |
-| OJ reference | OJ L, 2024/1689, 12.7.2024 |
-| Adopted | 13 June 2024 |
-| Entry into force | 1 August 2024 (twentieth day after publication, Art. 113) |
-| EEA-relevance flag | Marked "Text with EEA relevance"; JCD process pending as of late 2025/early 2026 |
-| OEIL dossier | 2021/0106(COD) |
+| Field              | Value                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Short title        | AI Act                                                                                                                                                                                                                                                                                                                                                                    |
+| Formal title       | Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) |
+| CELEX              | `32024R1689`                                                                                                                                                                                                                                                                                                                                                              |
+| ELI (English)      | `https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng`                                                                                                                                                                                                                                                                                                                      |
+| OJ reference       | OJ L, 2024/1689, 12.7.2024                                                                                                                                                                                                                                                                                                                                                |
+| Adopted            | 13 June 2024                                                                                                                                                                                                                                                                                                                                                              |
+| Entry into force   | 1 August 2024 (twentieth day after publication, Art. 113)                                                                                                                                                                                                                                                                                                                 |
+| EEA-relevance flag | Marked "Text with EEA relevance"; JCD process pending as of late 2025/early 2026                                                                                                                                                                                                                                                                                          |
+| OEIL dossier       | 2021/0106(COD)                                                                                                                                                                                                                                                                                                                                                            |
 
 ### 2.2 Regulation (no transposition) but national-implementing-measure obligations
 
@@ -128,6 +128,7 @@ directives).
 ### 2.3 Phased application
 
 The AI Act applies in phases:
+
 - 2 February 2025 — prohibitions on Art. 5 unacceptable-risk practices.
 - 2 August 2025 — General-Purpose AI (GPAI) provider obligations.
 - 2 August 2026 — high-risk system obligations (Annex III).
@@ -153,18 +154,18 @@ EEA-incorporation-tracker skill follows this dossier closely.
 
 ### 3.1 Identification
 
-| Field | Value |
-|---|---|
-| Short title | CSRD |
-| Formal title | Directive (EU) 2022/2464 of the European Parliament and of the Council of 14 December 2022 amending Regulation (EU) No 537/2014, Directive 2004/109/EC, Directive 2006/43/EC and Directive 2013/34/EU, as regards corporate sustainability reporting |
-| CELEX | `32022L2464` |
-| ELI (English) | `https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng` |
-| OJ reference | OJ L 322, 16.12.2022, p. 15 |
-| Adopted | 14 December 2022 |
-| Entry into force | 5 January 2023 |
-| Transposition deadline | **6 July 2024** (Art. 5(1)) |
-| EEA-relevance flag | Marked "Text with EEA relevance" |
-| OEIL dossier | 2021/0104(COD) |
+| Field                  | Value                                                                                                                                                                                                                                                |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Short title            | CSRD                                                                                                                                                                                                                                                 |
+| Formal title           | Directive (EU) 2022/2464 of the European Parliament and of the Council of 14 December 2022 amending Regulation (EU) No 537/2014, Directive 2004/109/EC, Directive 2006/43/EC and Directive 2013/34/EU, as regards corporate sustainability reporting |
+| CELEX                  | `32022L2464`                                                                                                                                                                                                                                         |
+| ELI (English)          | `https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng`                                                                                                                                                                                                 |
+| OJ reference           | OJ L 322, 16.12.2022, p. 15                                                                                                                                                                                                                          |
+| Adopted                | 14 December 2022                                                                                                                                                                                                                                     |
+| Entry into force       | 5 January 2023                                                                                                                                                                                                                                       |
+| Transposition deadline | **6 July 2024** (Art. 5(1))                                                                                                                                                                                                                          |
+| EEA-relevance flag     | Marked "Text with EEA relevance"                                                                                                                                                                                                                     |
+| OEIL dossier           | 2021/0104(COD)                                                                                                                                                                                                                                       |
 
 ### 3.2 Transposition gold-plating examples
 
@@ -199,18 +200,18 @@ the underlying NIM text via ELI/Cellar dereference.
 
 ### 4.1 Identification
 
-| Field | Value |
-|---|---|
-| Short title | CSDDD (Corporate Sustainability Due Diligence Directive) |
-| Formal title | Directive (EU) 2024/1760 of the European Parliament and of the Council of 13 June 2024 on corporate sustainability due diligence and amending Directive (EU) 2019/1937 and Regulation (EU) 2023/2859 |
-| CELEX | `32024L1760` |
-| ELI (English) | `https://eur-lex.europa.eu/eli/dir/2024/1760/oj/eng` |
-| OJ reference | OJ L, 2024/1760, 5.7.2024 |
-| Adopted | 13 June 2024 |
-| Entry into force | 25 July 2024 |
-| Transposition deadline | **26 July 2026** (Art. 37(1)) |
-| EEA-relevance flag | Marked "Text with EEA relevance" |
-| OEIL dossier | 2022/0051(COD) |
+| Field                  | Value                                                                                                                                                                                                |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Short title            | CSDDD (Corporate Sustainability Due Diligence Directive)                                                                                                                                             |
+| Formal title           | Directive (EU) 2024/1760 of the European Parliament and of the Council of 13 June 2024 on corporate sustainability due diligence and amending Directive (EU) 2019/1937 and Regulation (EU) 2023/2859 |
+| CELEX                  | `32024L1760`                                                                                                                                                                                         |
+| ELI (English)          | `https://eur-lex.europa.eu/eli/dir/2024/1760/oj/eng`                                                                                                                                                 |
+| OJ reference           | OJ L, 2024/1760, 5.7.2024                                                                                                                                                                            |
+| Adopted                | 13 June 2024                                                                                                                                                                                         |
+| Entry into force       | 25 July 2024                                                                                                                                                                                         |
+| Transposition deadline | **26 July 2026** (Art. 37(1))                                                                                                                                                                        |
+| EEA-relevance flag     | Marked "Text with EEA relevance"                                                                                                                                                                     |
+| OEIL dossier           | 2022/0051(COD)                                                                                                                                                                                       |
 
 ### 4.2 Live transposition exercise
 
@@ -223,6 +224,7 @@ tracker.
 
 The transposition-tracker and gold-plating-detector skills, when applied to
 CSDDD, must:
+
 - Treat any NIM in force before 26 July 2026 as **early transposition**, not
   gold-plating per se.
 - Flag the pre-existing **German LkSG** (Lieferkettensorgfaltspflichtengesetz,
@@ -235,6 +237,7 @@ CSDDD, must:
 ### 4.3 Phased application
 
 CSDDD applies in phases linked to company size:
+
 - 26 July 2027 — companies with > 5,000 employees and > EUR 1.5 billion
   worldwide net turnover.
 - 26 July 2028 — companies with > 3,000 employees and > EUR 900 million
@@ -253,18 +256,18 @@ before reliance.)
 
 ### 5.1 Identification
 
-| Field | Value |
-|---|---|
-| Short title | GDPR |
-| Formal title | Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) |
-| CELEX | `32016R0679` |
-| ELI (English) | `https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng` |
-| OJ reference | OJ L 119, 4.5.2016, p. 1 |
-| Adopted | 27 April 2016 |
-| Entry into force | 24 May 2016 |
-| Application date | **25 May 2018** (Art. 99(2)) |
-| EEA-relevance flag | Marked "Text with EEA relevance"; incorporated by JCD No 154/2018 of 6 July 2018, in force in IS/NO/LI from 20 July 2018 |
-| OEIL dossier | 2012/0011(COD) |
+| Field              | Value                                                                                                                                                                                                                                                                                    |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Short title        | GDPR                                                                                                                                                                                                                                                                                     |
+| Formal title       | Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) |
+| CELEX              | `32016R0679`                                                                                                                                                                                                                                                                             |
+| ELI (English)      | `https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng`                                                                                                                                                                                                                                      |
+| OJ reference       | OJ L 119, 4.5.2016, p. 1                                                                                                                                                                                                                                                                 |
+| Adopted            | 27 April 2016                                                                                                                                                                                                                                                                            |
+| Entry into force   | 24 May 2016                                                                                                                                                                                                                                                                              |
+| Application date   | **25 May 2018** (Art. 99(2))                                                                                                                                                                                                                                                             |
+| EEA-relevance flag | Marked "Text with EEA relevance"; incorporated by JCD No 154/2018 of 6 July 2018, in force in IS/NO/LI from 20 July 2018                                                                                                                                                                 |
+| OEIL dossier       | 2012/0011(COD)                                                                                                                                                                                                                                                                           |
 
 ### 5.2 Regulation example for contrast
 
@@ -282,6 +285,7 @@ that the Regulation expressly leaves for MS specification:
   opening clauses.
 
 Each MS has therefore enacted a **national GDPR implementation act**:
+
 - Germany — Bundesdatenschutzgesetz (BDSG) of 30 June 2017 (BGBl. I S. 2097),
   re-issued 20 November 2019 (BGBl. I S. 1626).
 - France — Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux
@@ -301,11 +305,11 @@ TFEU pre-emption issue, not gold-plating in the usual sense.
 
 ### 5.3 Notable CJEU jurisprudence (interpretive context)
 
-- *Schrems II* (Case C-311/18, ECLI:EU:C:2020:559) — Privacy Shield invalidation;
+- _Schrems II_ (Case C-311/18, ECLI:EU:C:2020:559) — Privacy Shield invalidation;
   Standard Contractual Clauses survival with supplementary measures.
-- *Bundesverband der Verbraucherzentralen* (Case C-319/20, ECLI:EU:C:2022:322) —
+- _Bundesverband der Verbraucherzentralen_ (Case C-319/20, ECLI:EU:C:2022:322) —
   collective redress under Art. 80(2) GDPR.
-- *Österreichische Post* (Case C-300/21, ECLI:EU:C:2023:370) — non-material
+- _Österreichische Post_ (Case C-300/21, ECLI:EU:C:2023:370) — non-material
   damage under Art. 82 GDPR.
 
 ---
@@ -314,23 +318,24 @@ TFEU pre-emption issue, not gold-plating in the usual sense.
 
 ### 6.1 Identification
 
-| Field | Value |
-|---|---|
-| Short title | DSA (Digital Services Act) |
-| Formal title | Regulation (EU) 2022/2065 of the European Parliament and of the Council of 19 October 2022 on a Single Market For Digital Services and amending Directive 2000/31/EC (Digital Services Act) |
-| CELEX | `32022R2065` |
-| ELI (English) | `https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng` |
-| OJ reference | OJ L 277, 27.10.2022, p. 1 |
-| Adopted | 19 October 2022 |
-| Entry into force | 16 November 2022 |
-| Application date | 17 February 2024 (general); 25 August 2023 (designated VLOPs/VLOSEs) |
-| EEA-relevance flag | Marked "Text with EEA relevance"; JCD pending |
-| OEIL dossier | 2020/0361(COD) |
+| Field              | Value                                                                                                                                                                                       |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Short title        | DSA (Digital Services Act)                                                                                                                                                                  |
+| Formal title       | Regulation (EU) 2022/2065 of the European Parliament and of the Council of 19 October 2022 on a Single Market For Digital Services and amending Directive 2000/31/EC (Digital Services Act) |
+| CELEX              | `32022R2065`                                                                                                                                                                                |
+| ELI (English)      | `https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng`                                                                                                                                        |
+| OJ reference       | OJ L 277, 27.10.2022, p. 1                                                                                                                                                                  |
+| Adopted            | 19 October 2022                                                                                                                                                                             |
+| Entry into force   | 16 November 2022                                                                                                                                                                            |
+| Application date   | 17 February 2024 (general); 25 August 2023 (designated VLOPs/VLOSEs)                                                                                                                        |
+| EEA-relevance flag | Marked "Text with EEA relevance"; JCD pending                                                                                                                                               |
+| OEIL dossier       | 2020/0361(COD)                                                                                                                                                                              |
 
 ### 6.2 Regulation contrast
 
 Like GDPR and the AI Act, DSA is a Regulation — no transposition. National
 implementing measures are limited to:
+
 - Designating Digital Services Coordinators (Art. 49 DSA).
 - Establishing penalty regimes (Art. 52 DSA).
 - Procedural rules for trusted-flagger certification (Art. 22 DSA).
@@ -344,18 +349,18 @@ narrow scope of NIM tracking on a Regulation.
 
 ### 7.1 Identification
 
-| Field | Value |
-|---|---|
-| Short title | DMA (Digital Markets Act) |
-| Formal title | Regulation (EU) 2022/1925 of the European Parliament and of the Council of 14 September 2022 on contestable and fair markets in the digital sector and amending Directives (EU) 2019/1937 and (EU) 2020/1828 (Digital Markets Act) |
-| CELEX | `32022R1925` |
-| ELI (English) | `https://eur-lex.europa.eu/eli/reg/2022/1925/oj/eng` |
-| OJ reference | OJ L 265, 12.10.2022, p. 1 |
-| Adopted | 14 September 2022 |
-| Entry into force | 1 November 2022 |
-| Application date | 2 May 2023 |
-| EEA-relevance flag | Marked "Text with EEA relevance"; JCD pending |
-| OEIL dossier | 2020/0374(COD) |
+| Field              | Value                                                                                                                                                                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Short title        | DMA (Digital Markets Act)                                                                                                                                                                                                          |
+| Formal title       | Regulation (EU) 2022/1925 of the European Parliament and of the Council of 14 September 2022 on contestable and fair markets in the digital sector and amending Directives (EU) 2019/1937 and (EU) 2020/1828 (Digital Markets Act) |
+| CELEX              | `32022R1925`                                                                                                                                                                                                                       |
+| ELI (English)      | `https://eur-lex.europa.eu/eli/reg/2022/1925/oj/eng`                                                                                                                                                                               |
+| OJ reference       | OJ L 265, 12.10.2022, p. 1                                                                                                                                                                                                         |
+| Adopted            | 14 September 2022                                                                                                                                                                                                                  |
+| Entry into force   | 1 November 2022                                                                                                                                                                                                                    |
+| Application date   | 2 May 2023                                                                                                                                                                                                                         |
+| EEA-relevance flag | Marked "Text with EEA relevance"; JCD pending                                                                                                                                                                                      |
+| OEIL dossier       | 2020/0374(COD)                                                                                                                                                                                                                     |
 
 ### 7.2 Regulation contrast — heavy direct enforcement
 
@@ -375,16 +380,16 @@ transposition-or-enforcement architectures.
 
 ## 8. Cross-instrument summary table
 
-| Instrument | CELEX | Type | Deadline / Application | EEA-relevant | Transposition tracker authority |
-|---|---|---|---|---|---|
-| GDPR | `32016R0679` | Regulation | Applied 25.5.2018 | Yes (JCD 154/2018) | EDPB; national DPAs |
-| NIS2 | `32022L2555` | Directive | Transposition 17.10.2024 | Yes (JCD pending) | Linklaters NIS2 tracker |
-| DSA | `32022R2065` | Regulation | Applied 17.2.2024 | Yes (JCD pending) | Commission DSA register |
-| DMA | `32022R1925` | Regulation | Applied 2.5.2023 | Yes (JCD pending) | Commission DG COMP |
-| CSRD | `32022L2464` | Directive | Transposition 6.7.2024 | Yes | Linklaters / Ropes & Gray CSRD trackers |
-| AI Act | `32024R1689` | Regulation | Phased 2.2.2025–2.8.2027 | Yes (JCD pending) | EU AI Office; published trackers |
-| CSDDD | `32024L1760` | Directive | Transposition 26.7.2026 | Yes | HSF / Linklaters CSDDD trackers |
-| DORA | `32022R2554` | Regulation | Applied 17.1.2025 | Yes | EBA / ESMA / EIOPA |
+| Instrument | CELEX        | Type       | Deadline / Application   | EEA-relevant       | Transposition tracker authority         |
+| ---------- | ------------ | ---------- | ------------------------ | ------------------ | --------------------------------------- |
+| GDPR       | `32016R0679` | Regulation | Applied 25.5.2018        | Yes (JCD 154/2018) | EDPB; national DPAs                     |
+| NIS2       | `32022L2555` | Directive  | Transposition 17.10.2024 | Yes (JCD pending)  | Linklaters NIS2 tracker                 |
+| DSA        | `32022R2065` | Regulation | Applied 17.2.2024        | Yes (JCD pending)  | Commission DSA register                 |
+| DMA        | `32022R1925` | Regulation | Applied 2.5.2023         | Yes (JCD pending)  | Commission DG COMP                      |
+| CSRD       | `32022L2464` | Directive  | Transposition 6.7.2024   | Yes                | Linklaters / Ropes & Gray CSRD trackers |
+| AI Act     | `32024R1689` | Regulation | Phased 2.2.2025–2.8.2027 | Yes (JCD pending)  | EU AI Office; published trackers        |
+| CSDDD      | `32024L1760` | Directive  | Transposition 26.7.2026  | Yes                | HSF / Linklaters CSDDD trackers         |
+| DORA       | `32022R2554` | Regulation | Applied 17.1.2025        | Yes                | EBA / ESMA / EIOPA                      |
 
 ---
 
@@ -412,5 +417,5 @@ The verification flag is not a defect — it is the operational consequence of
 working in EU law, where transposition status, infringement procedures, and
 consolidated text versions change continuously. Every skill in the suite
 honours the flag by passing the cited fact through a re-verification step
-before emission. This is what equal authenticity, the doctrine of *CILFIT*, and
+before emission. This is what equal authenticity, the doctrine of _CILFIT_, and
 the rigour bar of the suite require in operational practice.

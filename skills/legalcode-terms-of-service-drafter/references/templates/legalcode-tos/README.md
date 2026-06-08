@@ -7,13 +7,13 @@ Last updated: 2026-04-28
 
 ## Documents
 
-| File | Document Type | Use when |
-|------|--------------|----------|
-| `core.md` | Jurisdiction-neutral baseline (B2C/B2B toggle) | You operate in a jurisdiction not covered below, or you want the master before specialising. |
-| `us.md` | US — Section 230 + DMCA + state auto-renewal + arbitration | You target US consumers; covers CA/NY/OR/CO/IL auto-renewal, FTC Click-to-Cancel, Section 230 platform immunity, DMCA safe harbor. |
-| `eu.md` | EU/EEA — DSA + Consumer Rights Directive + Sale of Goods + DE-AGB | You target EU/EEA consumers or operate a hosting / marketplace / very-large-online-platform service. Includes German AGB-Kontrolle overlay. |
-| `uk.md` | UK — UK CRA 2015 + DMCCA 2024 + Online Safety Act 2023 | You target UK consumers post-Brexit. Includes Online Safety Act category-1/2A/2B duties. |
-| `is.md` | Iceland — consumer protection + EEA-imported DSA | You operate in Iceland or target Icelandic consumers. EEA framing for digital-services rules. |
+| File      | Document Type                                                     | Use when                                                                                                                                    |
+| --------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `core.md` | Jurisdiction-neutral baseline (B2C/B2B toggle)                    | You operate in a jurisdiction not covered below, or you want the master before specialising.                                                |
+| `us.md`   | US — Section 230 + DMCA + state auto-renewal + arbitration        | You target US consumers; covers CA/NY/OR/CO/IL auto-renewal, FTC Click-to-Cancel, Section 230 platform immunity, DMCA safe harbor.          |
+| `eu.md`   | EU/EEA — DSA + Consumer Rights Directive + Sale of Goods + DE-AGB | You target EU/EEA consumers or operate a hosting / marketplace / very-large-online-platform service. Includes German AGB-Kontrolle overlay. |
+| `uk.md`   | UK — UK CRA 2015 + DMCCA 2024 + Online Safety Act 2023            | You target UK consumers post-Brexit. Includes Online Safety Act category-1/2A/2B duties.                                                    |
+| `is.md`   | Iceland — consumer protection + EEA-imported DSA                  | You operate in Iceland or target Icelandic consumers. EEA framing for digital-services rules.                                               |
 
 ## How to use
 

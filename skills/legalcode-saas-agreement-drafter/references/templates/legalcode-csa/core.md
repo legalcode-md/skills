@@ -15,7 +15,7 @@ last_updated: 2026-04-28
 
 ## 1. Plain-language summary
 
-*Plain-language: This section is a non-binding orientation for readers; the binding terms appear in Sections 2 through 18 and any executed Order Form.*
+_Plain-language: This section is a non-binding orientation for readers; the binding terms appear in Sections 2 through 18 and any executed Order Form._
 
 This Agreement is the master contract that governs Customer's subscription to Vendor's cloud-delivered software (the "Cloud Service"). It is intentionally modular. The terms in this CSA cover topics that rarely change between deals — definitions, confidentiality, payment mechanics, security baselines, liability, and governing law. The commercial details of each subscription — products, quantities, term, fees, discounts, and any deal-specific edits — are written separately on each Order Form.
 
@@ -31,7 +31,7 @@ This summary does not modify the operative provisions. Where the summary and the
 
 ## 2. Agreement structure (Master Agreement + Order Forms)
 
-*Plain-language: This CSA sits at the top; specific subscriptions live on Order Forms; conflicts are resolved by an explicit precedence rule.*
+_Plain-language: This CSA sits at the top; specific subscriptions live on Order Forms; conflicts are resolved by an explicit precedence rule._
 
 **2.1 Master Agreement.** This CSA is the master agreement between the Parties for the Cloud Service. It applies to every Order Form that references it, whether signed today or in the future, and to every Statement of Work, Exhibit, and addendum incorporated by reference.
 
@@ -49,7 +49,7 @@ This summary does not modify the operative provisions. Where the summary and the
 
 ## 3. Definitions
 
-*Plain-language: Defined terms used throughout the CSA. Capitalized terms have the meanings given in this Section, in the Order Form, or where defined elsewhere in this CSA.*
+_Plain-language: Defined terms used throughout the CSA. Capitalized terms have the meanings given in this Section, in the Order Form, or where defined elsewhere in this CSA._
 
 **3.1 "Affiliate"** means, with respect to a Party, any entity that directly or indirectly controls, is controlled by, or is under common control with that Party, where "control" means ownership of more than fifty percent (50%) of the voting equity or the power to direct management and policies.
 
@@ -93,7 +93,7 @@ This summary does not modify the operative provisions. Where the summary and the
 
 ## 4. Use of the Service
 
-*Plain-language: Vendor grants Customer a limited subscription right to use the Cloud Service for its internal business purposes during the term, subject to the restrictions in Section 5 and the volume scope in the Order Form.*
+_Plain-language: Vendor grants Customer a limited subscription right to use the Cloud Service for its internal business purposes during the term, subject to the restrictions in Section 5 and the volume scope in the Order Form._
 
 **4.1 Subscription right.** Subject to Customer's compliance with this CSA and timely payment of Fees, Vendor hereby grants Customer a non-exclusive, non-transferable (except as permitted by Section 18.6), non-sublicensable, worldwide right during the term of each Order Form to access and use the Cloud Service identified in that Order Form solely for Customer's internal business purposes.
 
@@ -109,7 +109,7 @@ This summary does not modify the operative provisions. Where the summary and the
 
 ## 5. Customer responsibilities & restrictions
 
-*Plain-language: Customer is responsible for what it and its users do with the Cloud Service, and there are specific things Customer must not do.*
+_Plain-language: Customer is responsible for what it and its users do with the Cloud Service, and there are specific things Customer must not do._
 
 **5.1 Compliance with laws.** Customer shall use the Cloud Service in compliance with all applicable laws, including export-control, sanctions, anti-corruption, anti-money-laundering, consumer-protection, employment, and data-protection laws, and shall obtain all consents and permissions needed for Customer Data and Customer Inputs to be processed by the Cloud Service.
 
@@ -145,7 +145,7 @@ This summary does not modify the operative provisions. Where the summary and the
 
 ## 6. Customer Data
 
-*Plain-language: Customer owns its data; Vendor processes the data only to run the service; on exit, Customer can pull the data back; default rules for AI training and deletion are dual-perspective.*
+_Plain-language: Customer owns its data; Vendor processes the data only to run the service; on exit, Customer can pull the data back; default rules for AI training and deletion are dual-perspective._
 
 **6.1 Ownership.** As between the Parties, Customer retains all right, title, and interest in and to Customer Data and Customer Materials, including all intellectual-property rights therein. Vendor acquires no ownership interest in Customer Data or Customer Materials by virtue of this Agreement.
 
@@ -177,7 +177,7 @@ This summary does not modify the operative provisions. Where the summary and the
 
 ## 7. Confidentiality
 
-*Plain-language: Each Party protects the other's non-public information, with standard exclusions and a court-order protocol.*
+_Plain-language: Each Party protects the other's non-public information, with standard exclusions and a court-order protocol._
 
 **7.1 Definition.** "Confidential Information" means any non-public information disclosed by one Party (the "Discloser") to the other (the "Recipient") that is identified as confidential at the time of disclosure or that a reasonable person would understand to be confidential given its nature and the circumstances of disclosure. Confidential Information includes the terms of this Agreement and each Order Form, product roadmaps, pricing, security documentation, and Customer Data.
 
@@ -195,7 +195,7 @@ This summary does not modify the operative provisions. Where the summary and the
 
 ## 8. Fees, billing, taxes
 
-*Plain-language: Customer pays the Fees on the Order Form on the agreed cadence; price changes are bounded; taxes are separate.*
+_Plain-language: Customer pays the Fees on the Order Form on the agreed cadence; price changes are bounded; taxes are separate._
 
 **8.1 Fees.** Customer shall pay the Fees set forth on each Order Form. Unless an Order Form provides otherwise, Fees are payable in the currency stated on the Order Form (defaulting to U.S. dollars), are non-cancelable, and amounts paid are non-refundable except as expressly stated in this Agreement.
 
@@ -231,7 +231,7 @@ This summary does not modify the operative provisions. Where the summary and the
 
 ## 9. Term, renewal, termination & suspension
 
-*Plain-language: Each subscription has a fixed term, renews on the cadence stated on the Order Form, and can be ended for material breach (with cure) or, in some cases, for convenience.*
+_Plain-language: Each subscription has a fixed term, renews on the cadence stated on the Order Form, and can be ended for material breach (with cure) or, in some cases, for convenience._
 
 **9.1 CSA term.** This CSA begins on the Effective Date and continues until the later of the expiration or termination of the last Order Form and the discharge of all surviving obligations.
 
@@ -281,7 +281,7 @@ Vendor shall use commercially reasonable efforts to (i) notify Customer of the s
 
 ## 10. Service Level Agreement
 
-*Plain-language: Vendor commits to a defined uptime; if Vendor misses, Customer's remedy is service credits, calculated as set out in Exhibit B.*
+_Plain-language: Vendor commits to a defined uptime; if Vendor misses, Customer's remedy is service credits, calculated as set out in Exhibit B._
 
 **10.1 Service-level commitment.** Vendor shall make the Cloud Service available with a monthly uptime percentage of at least {{Uptime Commitment}} (default 99.9%) measured as set forth in Exhibit B (the "Uptime Commitment"). The Uptime Commitment excludes Scheduled Maintenance, Customer-caused unavailability, force-majeure events, and the carve-outs identified in Exhibit B.
 
@@ -297,7 +297,7 @@ Vendor shall use commercially reasonable efforts to (i) notify Customer of the s
 
 ## 11. Security & data protection
 
-*Plain-language: Vendor maintains a written security program that meets industry standards; Customer can verify it; breaches are notified on a defined timeline; personal data flows through the DPA.*
+_Plain-language: Vendor maintains a written security program that meets industry standards; Customer can verify it; breaches are notified on a defined timeline; personal data flows through the DPA._
 
 **11.1 Security program.** Vendor shall maintain a written information-security program designed to protect the confidentiality, integrity, and availability of Customer Data, that is aligned with one or more recognized industry frameworks (including, where applicable, SOC 2 Type II, ISO/IEC 27001, ISO/IEC 27017, ISO/IEC 27018, NIST CSF, or PCI DSS to the scope it applies). The program includes administrative, technical, and physical safeguards, including access control, encryption in transit and (where applicable) at rest, vulnerability management, secure software-development practices, logging, incident response, business continuity, vendor risk management, and personnel training. Vendor shall not materially decrease the protection afforded by the program during the term.
 
@@ -329,7 +329,7 @@ Vendor shall use commercially reasonable efforts to (i) notify Customer of the s
 
 ## 12. Trials & beta features
 
-*Plain-language: Free, pilot, evaluation, and beta access is provided AS IS, may end at any time, and is governed by lighter terms than paid subscriptions.*
+_Plain-language: Free, pilot, evaluation, and beta access is provided AS IS, may end at any time, and is governed by lighter terms than paid subscriptions._
 
 **12.1 Trials and beta scope.** Vendor may make Trials or beta features available, with or without a fee, on an Order Form or via a self-service signup. "Beta features" means features identified in the Documentation or in the user interface as alpha, beta, preview, early-access, experimental, or similar, even if accessed under a paid Order Form.
 
@@ -347,7 +347,7 @@ Vendor shall use commercially reasonable efforts to (i) notify Customer of the s
 
 ## 13. Third-party services & integrations
 
-*Plain-language: Customer may integrate the Cloud Service with third-party services, but Vendor is not responsible for those third-party services.*
+_Plain-language: Customer may integrate the Cloud Service with third-party services, but Vendor is not responsible for those third-party services._
 
 **13.1 Customer-elected integrations.** Customer may enable integrations between the Cloud Service and Third-Party Services, either through the Cloud Service's marketplace, through Vendor-published APIs, or through Customer-developed connectors.
 
@@ -363,7 +363,7 @@ Vendor shall use commercially reasonable efforts to (i) notify Customer of the s
 
 ## 14. Intellectual property
 
-*Plain-language: Each side keeps what it brought to the table; Customer keeps Customer Data; feedback is licensed to Vendor; logos may be used with consent.*
+_Plain-language: Each side keeps what it brought to the table; Customer keeps Customer Data; feedback is licensed to Vendor; logos may be used with consent._
 
 **14.1 Vendor IP.** As between the Parties, Vendor retains all right, title, and interest in and to the Cloud Service, the Documentation, Vendor Materials, and all derivatives, modifications, and improvements thereto, including all intellectual-property rights therein. No license is granted to Customer to the source code, model weights, or underlying architecture of the Cloud Service. The subscription right in Section 4 is the only license granted to Customer to the Cloud Service.
 
@@ -383,7 +383,7 @@ Vendor shall use commercially reasonable efforts to (i) notify Customer of the s
 
 ## 15. AI & machine learning
 
-*Plain-language: This Section governs how AI features in the Cloud Service handle Customer Data, who owns AI Output, and how the parties allocate risk for AI-specific issues.*
+_Plain-language: This Section governs how AI features in the Cloud Service handle Customer Data, who owns AI Output, and how the parties allocate risk for AI-specific issues._
 
 **15.1 Training restriction.**
 
@@ -415,7 +415,7 @@ Vendor shall use commercially reasonable efforts to (i) notify Customer of the s
 
 ## 16. Warranties, disclaimers & limitations of liability
 
-*Plain-language: Vendor stands behind the basics, disclaims the rest, and caps the maximum exposure of either side, with named carve-outs.*
+_Plain-language: Vendor stands behind the basics, disclaims the rest, and caps the maximum exposure of either side, with named carve-outs._
 
 **16.1 Mutual warranties.** Each Party represents and warrants that (i) it has the corporate power and authority to enter into this Agreement and to perform its obligations, (ii) execution and performance do not violate any other contract or law to which it is subject, and (iii) it shall comply with all laws applicable to its performance.
 
@@ -457,7 +457,7 @@ Vendor shall use commercially reasonable efforts to (i) notify Customer of the s
 
 ## 17. Indemnification & insurance
 
-*Plain-language: Vendor defends Customer against IP infringement claims about the Cloud Service; Customer defends Vendor against claims arising from Customer Data and Customer's misuse; both sides carry insurance.*
+_Plain-language: Vendor defends Customer against IP infringement claims about the Cloud Service; Customer defends Vendor against claims arising from Customer Data and Customer's misuse; both sides carry insurance._
 
 **17.1 Vendor IP indemnity.**
 
@@ -503,7 +503,7 @@ On Customer's reasonable request, Vendor shall furnish a certificate of insuranc
 
 ## 18. General provisions
 
-*Plain-language: The boilerplate that lets the Agreement function — notices, force majeure, assignment, signatures, governing law, and dispute resolution.*
+_Plain-language: The boilerplate that lets the Agreement function — notices, force majeure, assignment, signatures, governing law, and dispute resolution._
 
 **18.1 Notices.** Notices under this Agreement shall be in writing and delivered to the addresses on the Order Form (or, if none, the addresses in the preamble), with copies to {{Notice Email Vendor}} and {{Notice Email Customer}}. Notices may be delivered by (i) personal delivery, (ii) nationally recognized courier, (iii) certified mail return-receipt, or (iv) email with confirmation of receipt (auto-replies do not count). Notice is effective on the earlier of receipt and the second business day after sending. Operational, billing, and product-update notices may be delivered through the Cloud Service's in-product notification mechanism. Notices of breach, termination, indemnification, or litigation must use one of clauses (i) through (iv).
 
@@ -553,33 +553,38 @@ On Customer's reasonable request, Vendor shall furnish a certificate of insuranc
 
 ## Exhibit A — Order Form (skeleton)
 
-*This is a skeleton; the companion `legalcode-order-form` template is the full version. The Order Form on file controls.*
+_This is a skeleton; the companion `legalcode-order-form` template is the full version. The Order Form on file controls._
 
 **Order Form No.:** `{{Order Form Number}}`
 **Order Form Date:** `{{Order Form Date}}`
 **Master Agreement:** Cloud Service Agreement dated `{{Effective Date}}` between Vendor and Customer.
 
 **1. Parties.**
+
 - Vendor: `{{Vendor Legal Name}}`
 - Customer: `{{Customer Legal Name}}`
 - Customer Affiliates covered: `{{Affiliate List}}`
 
 **2. Cloud Service.**
+
 - Product(s): `{{Product Names}}`
 - Edition / SKU: `{{SKU}}`
 - Hosting region: `{{Hosting Region}}`
 
 **3. Subscription Scope.**
+
 - Capacity unit: `{{Capacity Unit}}` (e.g., per-Authorized-User, per-tenant, per-API-call)
 - Subscribed quantity: `{{Subscribed Users}}` / `{{Subscribed Capacity}}`
 - Overage handling: `{{Overage Treatment}}`
 
 **4. Term.**
+
 - Start date: `{{Subscription Start Date}}`
 - Initial Term: `{{Initial Term}}` (default 12 months)
 - Renewal Term: `{{Renewal Term}}` (default 12 months, auto-renewing per Section 9.3 unless `{{Non-Renewal Notice Window}}` notice given)
 
 **5. Fees.**
+
 - Subscription Fee: `{{Subscription Fee}}` per `{{Billing Period}}`
 - Setup / Implementation Fee: `{{Setup Fee}}`
 - Usage / Overage rate: `{{Overage Rate}}`
@@ -587,12 +592,14 @@ On Customer's reasonable request, Vendor shall furnish a certificate of insuranc
 - Total contract value: `{{TCV}}`
 
 **6. Billing & payment.**
+
 - Billing frequency: `{{Billing Frequency}}` (default annual in advance)
 - Payment terms: `{{Payment Terms}}` (default Net 30)
 - Currency: `{{Currency}}`
 - Annual price-increase cap: `{{Annual Price Cap}}` (per Section 8.3 default)
 
 **7. Contacts.**
+
 - Vendor billing: `{{Vendor Billing Contact}}` / `{{Vendor Billing Email}}`
 - Vendor notice: `{{Notice Email Vendor}}`
 - Customer billing: `{{Customer Billing Contact}}` / `{{Billing Contact Email}}`
@@ -611,7 +618,7 @@ On Customer's reasonable request, Vendor shall furnish a certificate of insuranc
 
 ## Exhibit B — Service Level Agreement (skeleton)
 
-*This is a skeleton; the companion `legalcode-sla` template is the full version.*
+_This is a skeleton; the companion `legalcode-sla` template is the full version._
 
 **1. Uptime Commitment.** Vendor commits to a monthly uptime of `{{Uptime Commitment}}` (default 99.9%), measured as set forth below.
 
@@ -621,11 +628,11 @@ On Customer's reasonable request, Vendor shall furnish a certificate of insuranc
 
 **4. Service credits.** If monthly uptime falls below the Uptime Commitment, Customer is entitled to credits as follows (illustrative; the companion `legalcode-sla` controls):
 
-| Monthly uptime | Credit (% of monthly Fees) |
-| --- | --- |
-| < 99.9% but >= 99.0% | 10% |
-| < 99.0% but >= 95.0% | 25% |
-| < 95.0% | 50% |
+| Monthly uptime       | Credit (% of monthly Fees) |
+| -------------------- | -------------------------- |
+| < 99.9% but >= 99.0% | 10%                        |
+| < 99.0% but >= 95.0% | 25%                        |
+| < 95.0%              | 50%                        |
 
 **5. Support response.** Vendor shall respond to severity-tagged support requests within `{{Support Response P1}}` for Severity 1, `{{Support Response P2}}` for Severity 2, and `{{Support Response P3}}` for Severity 3, as further defined in `legalcode-sla`.
 
@@ -637,7 +644,7 @@ On Customer's reasonable request, Vendor shall furnish a certificate of insuranc
 
 ## Exhibit C — Data Processing Agreement (cross-reference)
 
-*Plain-language: Personal-data processing under this CSA is governed by the companion `legalcode-dpa`, incorporated by reference.*
+_Plain-language: Personal-data processing under this CSA is governed by the companion `legalcode-dpa`, incorporated by reference._
 
 The Data Processing Agreement (`legalcode-dpa`), as executed between the Parties or as published by Vendor and accepted by Customer's continued use of the Cloud Service, is incorporated into this CSA by reference and applies to all processing of personal data Customer (or its Authorized Users) submits to or generates within the Cloud Service. The DPA covers: roles (controller / processor by default; joint-controllership where expressly designated); processing instructions; Subprocessors and the Subprocessor change-notice mechanism; cross-border transfer mechanisms (EU SCCs, UK IDTA, Swiss addendum, and other recognized mechanisms `[VERIFY]` for Customer's jurisdiction); data-subject-rights cooperation; security and TOMs (Annex 2); personal-data-breach notification (within 72 hours of confirmed breach affecting personal data, see DPA §X `[VERIFY]`); audit rights (aligned with CSA Section 11.4); and post-termination return / deletion of personal data (aligned with CSA Section 6.4).
 
@@ -647,7 +654,7 @@ If there is a conflict between this CSA and the DPA on the processing of persona
 
 ## Exhibit D — Acceptable Use Policy (cross-reference)
 
-*Plain-language: Use of the Cloud Service is governed by the companion `legalcode-aup`, incorporated by reference.*
+_Plain-language: Use of the Cloud Service is governed by the companion `legalcode-aup`, incorporated by reference._
 
 The Acceptable Use Policy (`legalcode-aup`) at `{{AUP URL}}`, as updated from time to time, is incorporated into this CSA by reference. The AUP prohibits, among other things: (i) unlawful, infringing, or fraudulent use; (ii) transmission of malware, spam, or content that violates third-party rights; (iii) use that compromises the security, integrity, availability, or performance of the Cloud Service; (iv) circumvention of authentication or rate limits; (v) reverse engineering and competitive benchmarking (cross-reference Section 5.4); (vi) generation of content that violates child-safety, terrorism, or other prohibited-content rules; and (vii) high-risk uses (medical-decision support, weapons systems, mass surveillance) absent express written authorization. Vendor may update the AUP on reasonable notice; material changes that increase Customer's compliance burden take effect at the start of the next Renewal Term unless Customer agrees to an earlier effective date or applicable law requires earlier compliance. Vendor may suspend or terminate per Section 9 for AUP breach.
 
@@ -655,70 +662,70 @@ The Acceptable Use Policy (`legalcode-aup`) at `{{AUP URL}}`, as updated from ti
 
 ## Appendix 1 — Merge fields used
 
-| Merge field | Description | Default |
-| --- | --- | --- |
-| `{{Vendor Legal Name}}` | Vendor's full legal name | — |
-| `{{Vendor Entity Type}}` | Vendor's entity form (Inc., GmbH, ehf., LLC, etc.) | — |
-| `{{Vendor Jurisdiction}}` | Vendor's jurisdiction of organization | — |
-| `{{Vendor Address}}` | Vendor's principal place of business | — |
-| `{{Customer Legal Name}}` | Customer's full legal name | — |
-| `{{Customer Entity Type}}` | Customer's entity form | — |
-| `{{Customer Jurisdiction}}` | Customer's jurisdiction of organization | — |
-| `{{Customer Address}}` | Customer's principal place of business | — |
-| `{{Effective Date}}` | CSA effective date | first Order Form date |
-| `{{Documentation URL}}` | URL for product Documentation | — |
-| `{{Affiliate List}}` | List of Customer Affiliates covered | — |
-| `{{Subscribed Users}}` | Authorized-User cap | — |
-| `{{Subscribed Capacity}}` | Capacity-based scope | — |
-| `{{Overage Treatment}}` | How overage above Subscription Scope is billed | — |
-| `{{Initial Term}}` | Length of Initial Term | 12 months |
-| `{{Renewal Term}}` | Length of each Renewal Term | 12 months |
-| `{{Non-Renewal Notice Window}}` | Days of notice to stop auto-renewal | 30 days |
-| `{{Cure Period}}` | Days to cure material breach | 30 days |
-| `{{Return Window}}` | Days post-termination to export Customer Data | 30 days |
-| `{{Billing Frequency}}` | Invoicing cadence | annual in advance |
-| `{{Billing Period}}` | Period covered by each invoice | matches Billing Frequency |
-| `{{Payment Terms}}` | Days from invoice to payment due | Net 30 |
-| `{{Late Fee Rate}}` | Interest on past-due amounts | 1.5% / month |
-| `{{Annual Price Cap}}` | Cap on year-over-year price increase | 7% |
-| `{{Subscription Fee}}` | Periodic fee | — |
-| `{{Setup Fee}}` | One-time onboarding fee | — |
-| `{{Overage Rate}}` | Per-unit overage rate | — |
-| `{{Discount Schedule}}` | Ramp / discount detail | — |
-| `{{TCV}}` | Total contract value | — |
-| `{{Currency}}` | Billing currency | USD |
-| `{{Billing Contact Email}}` | Customer billing email | — |
-| `{{Vendor Billing Contact}}` | Vendor billing-contact name | — |
-| `{{Vendor Billing Email}}` | Vendor billing email | — |
-| `{{Notice Email Vendor}}` | Vendor notice email | — |
-| `{{Notice Email Customer}}` | Customer notice email | — |
-| `{{Customer Security Contact}}` | Customer security POC | — |
-| `{{Hosting Region}}` | Cloud-Service hosting region | — |
-| `{{Uptime Commitment}}` | Monthly uptime SLA | 99.9% |
-| `{{Continuous Downtime Threshold}}` | Minutes that count as Downtime | 5 minutes |
-| `{{Maintenance Notice Window}}` | Hours of maintenance notice | 48 hours |
-| `{{Support Response P1}}` | Sev-1 response SLA | 1 hour |
-| `{{Support Response P2}}` | Sev-2 response SLA | 4 business hours |
-| `{{Support Response P3}}` | Sev-3 response SLA | 1 business day |
-| `{{SLA Termination Threshold}}` | Consecutive months SLA missed before termination right | 3 months |
-| `{{Breach Notification SLA}}` | Hours to notify confirmed Security Breach | 72 hours |
-| `{{Liability Cap Multiplier}}` | Multiplier on 12 months Fees | 1.5x |
-| `{{Liability Cap Floor}}` | Minimum liability cap | USD 100,000 |
-| `{{CGL Limit}}` | Commercial general liability limits | USD 1M / 2M aggregate |
-| `{{E&O Limit}}` | Professional / E&O liability limits | USD 5M |
-| `{{Insurance Cyber Limit}}` | Cyber liability limits | USD 5M |
-| `{{Governing Law}}` | Choice of law | — |
-| `{{Forum}}` | Choice of forum | — |
-| `{{Arbitration Body}}` | If arbitration elected | ICC or AAA |
-| `{{Arbitration Seat}}` | Seat of arbitration | — |
-| `{{Order Form Number}}` | Order Form identifier | — |
-| `{{Order Form Date}}` | Order Form execution date | — |
-| `{{Product Names}}` | Cloud-Service products covered | — |
-| `{{SKU}}` | Edition / SKU | — |
-| `{{Capacity Unit}}` | Unit of subscription scope | per-Authorized-User |
-| `{{Subscription Start Date}}` | Order Form start date | — |
-| `{{Express Overrides}}` | Order-Form-specific deviations from CSA | none |
-| `{{AUP URL}}` | URL of the Acceptable Use Policy | — |
+| Merge field                         | Description                                            | Default                   |
+| ----------------------------------- | ------------------------------------------------------ | ------------------------- |
+| `{{Vendor Legal Name}}`             | Vendor's full legal name                               | —                         |
+| `{{Vendor Entity Type}}`            | Vendor's entity form (Inc., GmbH, ehf., LLC, etc.)     | —                         |
+| `{{Vendor Jurisdiction}}`           | Vendor's jurisdiction of organization                  | —                         |
+| `{{Vendor Address}}`                | Vendor's principal place of business                   | —                         |
+| `{{Customer Legal Name}}`           | Customer's full legal name                             | —                         |
+| `{{Customer Entity Type}}`          | Customer's entity form                                 | —                         |
+| `{{Customer Jurisdiction}}`         | Customer's jurisdiction of organization                | —                         |
+| `{{Customer Address}}`              | Customer's principal place of business                 | —                         |
+| `{{Effective Date}}`                | CSA effective date                                     | first Order Form date     |
+| `{{Documentation URL}}`             | URL for product Documentation                          | —                         |
+| `{{Affiliate List}}`                | List of Customer Affiliates covered                    | —                         |
+| `{{Subscribed Users}}`              | Authorized-User cap                                    | —                         |
+| `{{Subscribed Capacity}}`           | Capacity-based scope                                   | —                         |
+| `{{Overage Treatment}}`             | How overage above Subscription Scope is billed         | —                         |
+| `{{Initial Term}}`                  | Length of Initial Term                                 | 12 months                 |
+| `{{Renewal Term}}`                  | Length of each Renewal Term                            | 12 months                 |
+| `{{Non-Renewal Notice Window}}`     | Days of notice to stop auto-renewal                    | 30 days                   |
+| `{{Cure Period}}`                   | Days to cure material breach                           | 30 days                   |
+| `{{Return Window}}`                 | Days post-termination to export Customer Data          | 30 days                   |
+| `{{Billing Frequency}}`             | Invoicing cadence                                      | annual in advance         |
+| `{{Billing Period}}`                | Period covered by each invoice                         | matches Billing Frequency |
+| `{{Payment Terms}}`                 | Days from invoice to payment due                       | Net 30                    |
+| `{{Late Fee Rate}}`                 | Interest on past-due amounts                           | 1.5% / month              |
+| `{{Annual Price Cap}}`              | Cap on year-over-year price increase                   | 7%                        |
+| `{{Subscription Fee}}`              | Periodic fee                                           | —                         |
+| `{{Setup Fee}}`                     | One-time onboarding fee                                | —                         |
+| `{{Overage Rate}}`                  | Per-unit overage rate                                  | —                         |
+| `{{Discount Schedule}}`             | Ramp / discount detail                                 | —                         |
+| `{{TCV}}`                           | Total contract value                                   | —                         |
+| `{{Currency}}`                      | Billing currency                                       | USD                       |
+| `{{Billing Contact Email}}`         | Customer billing email                                 | —                         |
+| `{{Vendor Billing Contact}}`        | Vendor billing-contact name                            | —                         |
+| `{{Vendor Billing Email}}`          | Vendor billing email                                   | —                         |
+| `{{Notice Email Vendor}}`           | Vendor notice email                                    | —                         |
+| `{{Notice Email Customer}}`         | Customer notice email                                  | —                         |
+| `{{Customer Security Contact}}`     | Customer security POC                                  | —                         |
+| `{{Hosting Region}}`                | Cloud-Service hosting region                           | —                         |
+| `{{Uptime Commitment}}`             | Monthly uptime SLA                                     | 99.9%                     |
+| `{{Continuous Downtime Threshold}}` | Minutes that count as Downtime                         | 5 minutes                 |
+| `{{Maintenance Notice Window}}`     | Hours of maintenance notice                            | 48 hours                  |
+| `{{Support Response P1}}`           | Sev-1 response SLA                                     | 1 hour                    |
+| `{{Support Response P2}}`           | Sev-2 response SLA                                     | 4 business hours          |
+| `{{Support Response P3}}`           | Sev-3 response SLA                                     | 1 business day            |
+| `{{SLA Termination Threshold}}`     | Consecutive months SLA missed before termination right | 3 months                  |
+| `{{Breach Notification SLA}}`       | Hours to notify confirmed Security Breach              | 72 hours                  |
+| `{{Liability Cap Multiplier}}`      | Multiplier on 12 months Fees                           | 1.5x                      |
+| `{{Liability Cap Floor}}`           | Minimum liability cap                                  | USD 100,000               |
+| `{{CGL Limit}}`                     | Commercial general liability limits                    | USD 1M / 2M aggregate     |
+| `{{E&O Limit}}`                     | Professional / E&O liability limits                    | USD 5M                    |
+| `{{Insurance Cyber Limit}}`         | Cyber liability limits                                 | USD 5M                    |
+| `{{Governing Law}}`                 | Choice of law                                          | —                         |
+| `{{Forum}}`                         | Choice of forum                                        | —                         |
+| `{{Arbitration Body}}`              | If arbitration elected                                 | ICC or AAA                |
+| `{{Arbitration Seat}}`              | Seat of arbitration                                    | —                         |
+| `{{Order Form Number}}`             | Order Form identifier                                  | —                         |
+| `{{Order Form Date}}`               | Order Form execution date                              | —                         |
+| `{{Product Names}}`                 | Cloud-Service products covered                         | —                         |
+| `{{SKU}}`                           | Edition / SKU                                          | —                         |
+| `{{Capacity Unit}}`                 | Unit of subscription scope                             | per-Authorized-User       |
+| `{{Subscription Start Date}}`       | Order Form start date                                  | —                         |
+| `{{Express Overrides}}`             | Order-Form-specific deviations from CSA                | none                      |
+| `{{AUP URL}}`                       | URL of the Acceptable Use Policy                       | —                         |
 
 ---
 
@@ -735,6 +742,7 @@ The following permissively-licensed baselines informed the structure of this tem
 - **Mozilla legal templates** — `[MPL-2.0]`. Reference for community-friendly disclaimer drafting and clean-room style.
 
 `[VERIFY]` items in this draft:
+
 - The Documentation URL placeholder, the AUP URL placeholder, the DPA-specific clause numbers in Exhibit C, and the recognized cross-border-transfer mechanisms appropriate to the Customer's jurisdiction. These should be confirmed against the live `legalcode-dpa` and `legalcode-aup` templates when this CSA is instantiated for a specific deal.
 
 ---

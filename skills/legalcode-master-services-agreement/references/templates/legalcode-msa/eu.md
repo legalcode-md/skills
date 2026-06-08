@@ -121,7 +121,7 @@ This Section sets out how Services are scoped, agreed, and changed. {{Provider S
 
 4.4 **Provider standards.** {{Provider Short Name}} will (a) comply with applicable EU/EEA and Member-State law in performing the Services; (b) maintain the certifications and accreditations stated in Annex C, where any are listed; (c) follow {{Client Short Name}}'s reasonable on-site and information-security policies provided to it in advance and given a fair time to implement; and (d) act in good faith ("Treu und Glauben" within the meaning of § 242 BGB where the German overlay applies).
 
-## 5. Fees, expenses & invoicing  *(DUAL-PERSPECTIVE)*
+## 5. Fees, expenses & invoicing _(DUAL-PERSPECTIVE)_
 
 This Section sets out how {{Client Short Name}} pays {{Provider Short Name}} and what happens if it pays late. Fees are stated in {{Currency}}, exclusive of VAT and any other indirect taxes. Where the supply is a cross-border B2B service within the meaning of Article 196 of Council Directive 2006/112/EC (the VAT Directive), the reverse-charge mechanism applies and {{Client Short Name}} is the person liable for the VAT in its Member State; {{Provider Short Name}}'s invoice will reflect this and reference the applicable VAT identification numbers. Where the place-of-supply rules require Provider-charged VAT, {{Provider Short Name}} will charge it at the prevailing rate.
 
@@ -167,7 +167,7 @@ This Section sets out how {{Client Short Name}} pays {{Provider Short Name}} and
 
 5.4.1 **Reference rate for interest.** For purposes of this §5, references to "ECB MRO" mean the European Central Bank main refinancing operations interest rate in force on the first calendar day of the relevant half-year (as published on the ECB's website). For Parties seated in non-euro EEA Member States that have transposed Directive 2011/7/EU using the national central-bank reference rate (for example, Sweden, Denmark, Norway, Iceland), the local equivalent reference rate plus eight percentage points applies [VERIFY current rates and MS-specific equivalents].
 
-## 6. Change control & change orders  *(DUAL-PERSPECTIVE)*
+## 6. Change control & change orders _(DUAL-PERSPECTIVE)_
 
 This Section explains how the Parties change a SOW. Changes to scope, fees, or timeline take effect only through a written Change Order signed by both Parties. A Change Order may be a stand-alone document or an amendment to the existing SOW; it must identify the SOW it amends, describe the change, and state any fee or schedule impact.
 
@@ -201,7 +201,7 @@ This Section explains how the Parties change a SOW. Changes to scope, fees, or t
 
 This Section governs who performs the Services and what {{Client Short Name}} can expect from them. {{Provider Short Name}} is the employer or principal of the personnel it deploys and is solely responsible for their wages, social-security contributions, taxes, and benefits.
 
-7.1 **Worker classification.** {{Provider Short Name}} performs the Services as an independent provider. Nothing in this MSA creates an employment relationship between {{Client Short Name}} and any individual of {{Provider Short Name}} or its sub-providers. {{Provider Short Name}} acknowledges the EU and Member-State legal framework on worker classification and warrants that it has assessed the relationship under that framework, including (a) German social-security risk under § 7a SGB IV (Statusfeststellungsverfahren) and the case law on `Scheinselbstständigkeit` / `Bogusbeschäftigung`; (b) French rules on `salariat déguisé` and the use of `portage salarial` where individual contractors are deployed; (c) Italian `lavoro parasubordinato` rules under Articles 2 and 409 c.p.c.; (d) Spanish `falsos autónomos` framework; and (e) the line of CJEU case law on platform-worker reclassification, including Case C-692/19 *B* (heard 22 April 2020) and the platform-work directive as transposed in the host Member State [VERIFY transposition status of Dir. (EU) 2024/2831 in the relevant MS].
+7.1 **Worker classification.** {{Provider Short Name}} performs the Services as an independent provider. Nothing in this MSA creates an employment relationship between {{Client Short Name}} and any individual of {{Provider Short Name}} or its sub-providers. {{Provider Short Name}} acknowledges the EU and Member-State legal framework on worker classification and warrants that it has assessed the relationship under that framework, including (a) German social-security risk under § 7a SGB IV (Statusfeststellungsverfahren) and the case law on `Scheinselbstständigkeit` / `Bogusbeschäftigung`; (b) French rules on `salariat déguisé` and the use of `portage salarial` where individual contractors are deployed; (c) Italian `lavoro parasubordinato` rules under Articles 2 and 409 c.p.c.; (d) Spanish `falsos autónomos` framework; and (e) the line of CJEU case law on platform-worker reclassification, including Case C-692/19 _B_ (heard 22 April 2020) and the platform-work directive as transposed in the host Member State [VERIFY transposition status of Dir. (EU) 2024/2831 in the relevant MS].
 
 7.2 **Posted Workers.** Where {{Provider Short Name}}'s personnel will physically perform Services in {{Posted Workers Member State}} other than the Member State of their normal employment, {{Provider Short Name}} complies with Directive 96/71/EC as amended by Directive (EU) 2018/957, and the Enforcement Directive 2014/67/EU, including the host-State minimum wage and core working conditions, the prior posting declaration required by the host MS, and the maintenance of an A1 portable document for each posted individual evidencing the home-MS social-security regime.
 
@@ -233,7 +233,7 @@ This Section sets out how Deliverables are reviewed and accepted. Where a SOW id
 
 8.5 **§ 640 BGB analogue (DE).** Where the German overlay applies, the Acceptance Criteria-based regime in this §8 is the contractual expression of `Abnahme` for purposes of § 640 BGB; the Parties exclude tacit acceptance ("`fiktive Abnahme`") under § 640(2) BGB except as stated in §8.3.
 
-## 9. Intellectual property (foreground / background / open-source)  *(DUAL-PERSPECTIVE)*
+## 9. Intellectual property (foreground / background / open-source) _(DUAL-PERSPECTIVE)_
 
 This Section sets out who owns and may use the IPR created and used in the Services. The default position is set in §9.1 ({{IP Ownership Default}}); the dual-perspective sub-sections vary that default. EU/EEA-specific IPR formalities (moral rights, database rights, German § 31 UrhG buy-out, French Article L.121-1 CPI inalienable moral rights, and trade-secret protections under Directive (EU) 2016/943) apply as set out below.
 
@@ -323,7 +323,7 @@ This Section sets out the GDPR allocation between the Parties and incorporates t
 
 11.12 **Data Act portability.** Where Regulation (EU) 2023/2854 (Data Act) applies (in particular Article 4 user-access and Articles 23–31 cloud-switching obligations), {{Provider Short Name}} cooperates with {{Client Short Name}}'s exercise of those rights and supports portability of {{Client Short Name}} data and Deliverables to a successor provider on commercially reasonable terms, including the maximum migration period and exit-charge constraints set by the Data Act [VERIFY Article 31 transition rules and applicability to the specific service].
 
-## 12. Representations & warranties  *(DUAL-PERSPECTIVE)*
+## 12. Representations & warranties _(DUAL-PERSPECTIVE)_
 
 This Section states what each Party promises about itself, the Services, and the Deliverables. Each Party represents and warrants to the other that, as at the Effective Date and on each SOW execution: (a) it is duly organised and validly existing under the law of its jurisdiction of incorporation; (b) it has the corporate authority to enter into and perform this MSA and each SOW; (c) signature does not violate its constitutional documents, any other agreement, or any applicable law; and (d) there is no proceeding, judgment, or order pending or threatened that would impair its performance.
 
@@ -363,7 +363,7 @@ This Section states what each Party promises about itself, the Services, and the
 
 12.3.6 **No general fitness-for-purpose.** Other than the warranties expressly stated in this §12.3, no warranty is given as to fitness for a specific business purpose, save where {{Client Short Name}}'s specific purpose is recorded in the SOW and the SOW expressly extends the conformity warranty to that purpose.
 
-## 13. Indemnification  *(DUAL-PERSPECTIVE)*
+## 13. Indemnification _(DUAL-PERSPECTIVE)_
 
 This Section sets out who pays for third-party claims and on what conditions. The indemnification framework here operates as a contractual allocation; it does not limit either Party's right to seek independent statutory remedies (including under §§ 280, 311 BGB, French Article 1240 Code civil, or equivalent), subject to §14.
 
@@ -395,7 +395,7 @@ This Section sets out who pays for third-party claims and on what conditions. Th
 
 13.3.4 **Procedure.** The indemnified Party must (a) give prompt written notice of the claim (and any delay only reduces the indemnity to the extent the indemnifying Party is prejudiced); (b) give the indemnifying Party sole control of defence and settlement, save that no settlement may impose non-monetary obligations on the indemnified Party without consent; and (c) reasonably cooperate at the indemnifying Party's expense.
 
-## 14. Limitation of liability  *(DUAL-PERSPECTIVE)*
+## 14. Limitation of liability _(DUAL-PERSPECTIVE)_
 
 This Section caps each Party's exposure under or in connection with the MSA. The cap operates subject to mandatory rules of the governing law and the rules in §14.3.
 
@@ -455,7 +455,7 @@ This Section sets out the insurance each Party must maintain. {{Provider Short N
 
 15.8 **Notice of material change.** {{Provider Short Name}} promptly notifies {{Client Short Name}} of any cancellation, non-renewal, or material reduction of cover required under this §15.
 
-## 16. Term & termination  *(DUAL-PERSPECTIVE)*
+## 16. Term & termination _(DUAL-PERSPECTIVE)_
 
 This Section sets out how long the MSA lasts and how either Party may exit.
 
@@ -483,9 +483,9 @@ This Section sets out how long the MSA lasts and how either Party may exit.
 
 16.4.4 **Effect of termination.** On termination, (a) {{Provider Short Name}} ceases work on the affected SOW(s) save for any agreed wind-down activities (§17); (b) {{Client Short Name}} pays for Services performed and Deliverables accepted up to the effective date; (c) each Party returns or destroys the other's Confidential Information (§10.8) and Personal Data (§11 / DPA); (d) accrued rights and remedies survive; (e) those provisions intended to survive (including §§ 9, 10, 11, 13, 14, 18, and 19) survive.
 
-16.4.5 **Consumer carve-out (B2C only).** *OPTIONAL — only if a consumer touchpoint exists.* Where the Services or any Deliverable is supplied to a "consumer" within the meaning of Article 2(1) of Directive 2011/83/EU, the consumer's right of withdrawal (`Widerrufsrecht`) under Articles 9–16 of that Directive applies and prevails over this §16, including the fourteen (14)-day cooling-off period and the requirement to notify withdrawal using the model form. This provision does not apply to a B2B engagement.
+16.4.5 **Consumer carve-out (B2C only).** _OPTIONAL — only if a consumer touchpoint exists._ Where the Services or any Deliverable is supplied to a "consumer" within the meaning of Article 2(1) of Directive 2011/83/EU, the consumer's right of withdrawal (`Widerrufsrecht`) under Articles 9–16 of that Directive applies and prevails over this §16, including the fourteen (14)-day cooling-off period and the requirement to notify withdrawal using the model form. This provision does not apply to a B2B engagement.
 
-## 17. Transition assistance & wind-down  *(DUAL-PERSPECTIVE)*
+## 17. Transition assistance & wind-down _(DUAL-PERSPECTIVE)_
 
 This Section governs how Services hand over to {{Client Short Name}} or to a successor on expiry or termination.
 
@@ -519,17 +519,17 @@ This Section sets out which law governs and where disputes are heard.
 
 18.1 **Governing law.** This MSA and any non-contractual obligations arising out of or in connection with it are governed by the law of {{Governing Law}} (default: Ireland, English-language and common-law-flavoured), excluding its conflict-of-laws rules. The UN Convention on Contracts for the International Sale of Goods (CISG) does not apply.
 
-18.2 **Alternative governing-law elections.** *OPTIONAL — only if the parties prefer a civil-law seat.* The Parties may elect Dutch law (Netherlands), German law (Germany — `Kaufmanns-` and BGB-flavoured), French law (France — `droit civil`), Belgian law, Luxembourg law, or another EU/EEA Member State's law in the SOW or in §19.10; an elected Member-State law replaces Irish law for this MSA on countersignature of that election. Where the elected law is German, §§ 305–310 BGB and § 126a BGB apply automatically and the AGB transparency review is part of judicial scrutiny.
+18.2 **Alternative governing-law elections.** _OPTIONAL — only if the parties prefer a civil-law seat._ The Parties may elect Dutch law (Netherlands), German law (Germany — `Kaufmanns-` and BGB-flavoured), French law (France — `droit civil`), Belgian law, Luxembourg law, or another EU/EEA Member State's law in the SOW or in §19.10; an elected Member-State law replaces Irish law for this MSA on countersignature of that election. Where the elected law is German, §§ 305–310 BGB and § 126a BGB apply automatically and the AGB transparency review is part of judicial scrutiny.
 
 18.3 **Jurisdiction.** Subject to §18.4, the Parties submit to the exclusive jurisdiction of the courts of {{Venue}} for any dispute arising out of or in connection with this MSA, in accordance with Article 25 of Regulation (EU) No 1215/2012 (Brussels I-bis Recast). Where {{Governing Law}} is Ireland, the Parties choose the courts of Dublin.
 
-18.4 **Arbitration alternative.** *OPTIONAL — only if elected on signature.* The Parties may, by election in the signature block or in a SOW, refer disputes instead to arbitration under the {{Arbitration Rules}} (default: ICC) of the {{Arbitral Institution}}, seated at {{Arbitration Seat}} (default: Dublin; alternatives: Stockholm under SCC Rules, Vienna under VIAC Rules, Paris under ICC Rules, Frankfurt under DIS Rules), conducted in the {{Language Default}}. The arbitral tribunal consists of one arbitrator for disputes below {{Currency}} 1,000,000 and three arbitrators for disputes at or above that threshold. The award is final and binding and may be enforced under the New York Convention 1958.
+18.4 **Arbitration alternative.** _OPTIONAL — only if elected on signature._ The Parties may, by election in the signature block or in a SOW, refer disputes instead to arbitration under the {{Arbitration Rules}} (default: ICC) of the {{Arbitral Institution}}, seated at {{Arbitration Seat}} (default: Dublin; alternatives: Stockholm under SCC Rules, Vienna under VIAC Rules, Paris under ICC Rules, Frankfurt under DIS Rules), conducted in the {{Language Default}}. The arbitral tribunal consists of one arbitrator for disputes below {{Currency}} 1,000,000 and three arbitrators for disputes at or above that threshold. The award is final and binding and may be enforced under the New York Convention 1958.
 
 18.5 **Pre-dispute escalation.** Before commencing court or arbitration proceedings, the Parties escalate the dispute in writing to a senior representative of each Party, who confer in good faith for thirty (30) days. This obligation does not prevent a Party from seeking interim or injunctive relief at any time, including provisional measures under Article 35 Brussels I-bis Recast.
 
 18.6 **Injunctive relief.** Either Party may seek interim, conservatory, or injunctive relief from any court of competent jurisdiction (including under Articles 31 and 35 Brussels I-bis Recast) without first complying with §18.5.
 
-18.7 **Mediation election.** *OPTIONAL — only if Parties elect.* Either Party may at any time propose mediation under the rules of the chosen institution (for example, the ICC International Centre for ADR or the WIPO Arbitration and Mediation Center). Mediation does not pause the running of any limitation or statute-of-prescription period; the Parties record their agreement that they will, where lawful, suspend running of `Verjährung` (DE) or `prescription` (FR) for the duration of any agreed mediation.
+18.7 **Mediation election.** _OPTIONAL — only if Parties elect._ Either Party may at any time propose mediation under the rules of the chosen institution (for example, the ICC International Centre for ADR or the WIPO Arbitration and Mediation Center). Mediation does not pause the running of any limitation or statute-of-prescription period; the Parties record their agreement that they will, where lawful, suspend running of `Verjährung` (DE) or `prescription` (FR) for the duration of any agreed mediation.
 
 ## 19. General provisions & signature block
 
@@ -559,7 +559,7 @@ This Section sets out which law governs and where disputes are heard.
 
 19.13 **Third-party rights.** Save where expressly stated, no person other than the Parties has any right under this MSA. Affiliates that sign a SOW under §3.2 take direct rights under that SOW.
 
-19.14 **§ 102 GWB notice (DE).** *OPTIONAL — only where this MSA functions as a procurement framework subject to public-procurement law.* Where this MSA is a "framework agreement" within the meaning of § 103(5) GWB or Article 33 of Directive 2014/24/EU, the Parties record that the framework rules do not exclude an award procedure for individual SOWs where required by mandatory public-procurement law; the Parties cooperate to comply with those rules.
+19.14 **§ 102 GWB notice (DE).** _OPTIONAL — only where this MSA functions as a procurement framework subject to public-procurement law._ Where this MSA is a "framework agreement" within the meaning of § 103(5) GWB or Article 33 of Directive 2014/24/EU, the Parties record that the framework rules do not exclude an award procedure for individual SOWs where required by mandatory public-procurement law; the Parties cooperate to comply with those rules.
 
 19.15 **Anti-bribery and sanctions.** Each Party complies with applicable anti-bribery and anti-corruption law (including the OECD Anti-Bribery Convention, the German `Korruptionsbekämpfungsgesetz`, the French `Loi Sapin II` anti-corruption duties, and the UK Bribery Act 2010 to the extent it has extraterritorial effect on either Party) and applicable sanctions law (EU restrictive measures and Member-State implementing acts).
 
@@ -574,17 +574,17 @@ This Section sets out which law governs and where disputes are heard.
 Signed for and on behalf of:
 
 **{{Provider Legal Name}}** ({{Provider Legal Form}}, {{HR Number}})
-By: ____________________________
+By: \***\*\*\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*\*\***
 Name: {{Provider Signatory Name}}
 Title: {{Provider Signatory Title}}
-Date: __________________________
+Date: \***\*\*\*\*\*\*\***\_\_\***\*\*\*\*\*\*\***
 VAT ID: {{VAT ID Provider}}
 
 **{{Client Legal Name}}** ({{Client Legal Form}}, {{Client HR Number}})
-By: ____________________________
+By: \***\*\*\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*\*\***
 Name: {{Client Signatory Name}}
 Title: {{Client Signatory Title}}
-Date: __________________________
+Date: \***\*\*\*\*\*\*\***\_\_\***\*\*\*\*\*\*\***
 VAT ID: {{VAT ID Client}}
 
 The Parties intend execution by qualified or advanced electronic signature under Article 25 of Regulation (EU) 910/2014 (eIDAS); for Schriftform-mandatory amendments under § 126a BGB the Parties will use a qualified electronic signature or wet-ink signature on paper original.
@@ -625,24 +625,24 @@ The Parties record below the sub-providers and Key Personnel approved at the Eff
 
 **Approved sub-providers (general).**
 
-| Sub-provider | Service | Country | Sub-processor under §11? |
-|--------------|---------|---------|--------------------------|
-| {{Subcontractor Name}} | {{Subcontractor Service}} | {{Subcontractor Country}} | Yes / No |
-| ... | ... | ... | ... |
+| Sub-provider           | Service                   | Country                   | Sub-processor under §11? |
+| ---------------------- | ------------------------- | ------------------------- | ------------------------ |
+| {{Subcontractor Name}} | {{Subcontractor Service}} | {{Subcontractor Country}} | Yes / No                 |
+| ...                    | ...                       | ...                       | ...                      |
 
 **Approved Sub-processors (Personal Data).**
 
-| Sub-processor | Processing role | Data Importer Country | SCC Module | Onward transfers? |
-|---------------|------------------|------------------------|------------|---------------------|
-| {{Subprocessor Name}} | {{Subprocessor Role}} | {{Data Importer Country}} | {{SCC Module}} | Yes / No |
-| ... | ... | ... | ... | ... |
+| Sub-processor         | Processing role       | Data Importer Country     | SCC Module     | Onward transfers? |
+| --------------------- | --------------------- | ------------------------- | -------------- | ----------------- |
+| {{Subprocessor Name}} | {{Subprocessor Role}} | {{Data Importer Country}} | {{SCC Module}} | Yes / No          |
+| ...                   | ...                   | ...                       | ...            | ...               |
 
 **Key Personnel.**
 
-| Individual | Role | Engagement | % Commitment | Replacement protocol |
-|------------|------|-------------|----------------|------------------------|
-| {{Key Person Name}} | {{Key Person Role}} | {{SOW Reference}} | {{Commitment %}} | §7.5 |
-| ... | ... | ... | ... | ... |
+| Individual          | Role                | Engagement        | % Commitment     | Replacement protocol |
+| ------------------- | ------------------- | ----------------- | ---------------- | -------------------- |
+| {{Key Person Name}} | {{Key Person Role}} | {{SOW Reference}} | {{Commitment %}} | §7.5                 |
+| ...                 | ...                 | ...               | ...              | ...                  |
 
 **A1 portable documents.** For each posted-worker individual, {{Provider Short Name}} maintains a current A1 (Article 19 of Regulation (EC) 987/2009). Copies are made available on reasonable request.
 
@@ -666,12 +666,12 @@ This Annex sets out the agreed framework for measuring quality of Service and as
 
 **C.4 Defect classification.**
 
-| Severity | Description | Target response | Target resolution |
-|----------|-------------|------------------|--------------------|
-| 1 (Critical) | Production down or material data loss | 1 hour | 8 hours |
-| 2 (Major) | Material function impaired, no workaround | 4 hours | 1 Working Day |
-| 3 (Minor) | Minor function impaired, workaround available | 1 Working Day | 5 Working Days |
-| 4 (Cosmetic) | Cosmetic / non-blocking | 5 Working Days | Next release |
+| Severity     | Description                                   | Target response | Target resolution |
+| ------------ | --------------------------------------------- | --------------- | ----------------- |
+| 1 (Critical) | Production down or material data loss         | 1 hour          | 8 hours           |
+| 2 (Major)    | Material function impaired, no workaround     | 4 hours         | 1 Working Day     |
+| 3 (Minor)    | Minor function impaired, workaround available | 1 Working Day   | 5 Working Days    |
+| 4 (Cosmetic) | Cosmetic / non-blocking                       | 5 Working Days  | Next release      |
 
 **C.5 Security baseline.** {{Provider Short Name}} maintains, at minimum: information-security policy aligned with ISO/IEC 27001; access control on least-privilege basis; encryption in transit (TLS 1.2 or higher) and at rest (AES-256 or equivalent) for Personal Data and trade secrets; vulnerability management with timely patching; logging and monitoring with retention not less than the period required by Article 30 GDPR; secure SDLC with code-review for security-relevant changes; incident-response plan tested at least annually; supply-chain security (sub-provider due diligence and contractual flow-down).
 
@@ -762,6 +762,7 @@ The merge fields used in this template are consolidated below for ease of search
 The following EU and Member-State sources have been consulted as authoritative references during clean-room drafting. No verbatim text was used; only structure, statutory citations, and regulatory frameworks were drawn upon.
 
 **EU regulations and directives**
+
 - Regulation (EU) 2016/679 (GDPR)
 - Commission Implementing Decision (EU) 2021/914 (Standard Contractual Clauses for international transfers)
 - Commission Implementing Decision (EU) 2023/1795 (EU-US Data Privacy Framework adequacy)
@@ -788,6 +789,7 @@ The following EU and Member-State sources have been consulted as authoritative r
 - Directive (EU) 2024/2831 (Platform Work)
 
 **Member-State law (illustrative; consult local counsel)**
+
 - DE: BGB §§ 126a, 305–310, 314, 640; UrhG §§ 12–14, 31, 31a, 32, 32a; GeschGehG §§ 1–4; HinSchG; SGB IV § 7a; GWB §§ 102–103
 - FR: Code civil Art. 1240; CPI Art. L.121-1 / L.131-1 et seq.; Loi Toubon (No 94-665); Loi Sapin II; LME (Loi de modernisation de l'économie)
 - IT: D.Lgs. 231/2002 (late payment transposition); D.Lgs. 24/2023 (whistleblower); Legge sul diritto d'autore Arts. 20–22 (moral rights)
@@ -795,6 +797,7 @@ The following EU and Member-State sources have been consulted as authoritative r
 - BE / NL / LU / IE: equivalent transpositions and statutes of general application
 
 **Permissive baselines consulted (clean-room only — no verbatim use)**
+
 - Bonterms Professional Services Agreement (PSA) v1.2 — `[CC0]`
 - Common Paper Standard Services Agreement — `[CC-BY-4.0]`
 - Common Paper SOW — `[CC-BY-4.0]`

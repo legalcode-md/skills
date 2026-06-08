@@ -1,7 +1,8 @@
 ---
 title: legalcode-privacy-policy — United States (CCPA/CPRA + multi-state)
 jurisdictions: [United States]
-states_covered: [California, Colorado, Virginia, Connecticut, Utah, Texas, Oregon]
+states_covered:
+  [California, Colorado, Virginia, Connecticut, Utah, Texas, Oregon]
 statutes:
   - CCPA (Cal. Civ. Code §§ 1798.100–1798.199.100)
   - CPRA amendments (operative 2023-01-01)
@@ -36,7 +37,7 @@ This is the United States edition of the privacy policy for **{{Service Name}}**
 
 This section gives you a quick read on what {{Company Short Name}} does with your information.
 
-We collect personal information to run **{{Service Name}}**, keep it secure, comply with the law, and improve the product. We do not run ads on the service and we do not sell or share your personal information for cross-context behavioral advertising — *unless an explicit clause in this policy says otherwise.* When you exercise a privacy right, we do not charge you, deny you service, or give you a worse price.
+We collect personal information to run **{{Service Name}}**, keep it secure, comply with the law, and improve the product. We do not run ads on the service and we do not sell or share your personal information for cross-context behavioral advertising — _unless an explicit clause in this policy says otherwise._ When you exercise a privacy right, we do not charge you, deny you service, or give you a worse price.
 
 You have the right to know what we collect, to ask for a copy, to correct mistakes, to delete information we hold about you, to opt out of any sale or sharing, and to limit how we use sensitive personal information. We respond within 45 days of a verified request and can extend that once if a request is unusually complex. Section 14 explains how to make a request, including through an authorized agent or the Global Privacy Control browser signal.
 
@@ -86,7 +87,7 @@ This section identifies the legal entity responsible for personal information co
 - **Country:** {{Company Country}}
 - **Privacy contact email:** {{Company Email Privacy}}
 
-*OPTIONAL — only if you have appointed a Data Protection Officer or US privacy lead:* The privacy officer responsible for compliance with this policy can be reached at **{{Company Email DPO}}**.
+_OPTIONAL — only if you have appointed a Data Protection Officer or US privacy lead:_ The privacy officer responsible for compliance with this policy can be reached at **{{Company Email DPO}}**.
 
 For B2B engagements where we handle personal information on behalf of a customer (for example, end users of a customer's own application powered by {{Service Name}}), we act as a service provider, contractor, or processor under the relevant state law. The customer is the business or controller for that personal information. Our written agreements with those customers prohibit us from selling or sharing the personal information, retaining it outside the scope of the contract, or using it for any purpose other than the services performed for the customer.
 
@@ -164,7 +165,7 @@ We use personal information for the following business purposes:
 We use personal information for the following commercial purposes:
 
 - **Marketing** — only with the legal basis required by your jurisdiction. In the US, we follow CAN-SPAM (15 U.S.C. § 7701) for email, the TCPA for SMS, and any state-specific opt-in requirements.
-- **Account-based advertising on our own properties** — limited to first-party context; we do not engage in cross-context behavioral advertising — *unless an explicit clause in this policy says otherwise.*
+- **Account-based advertising on our own properties** — limited to first-party context; we do not engage in cross-context behavioral advertising — _unless an explicit clause in this policy says otherwise._
 
 We do not use personal information for any purpose that is materially different from the purposes for which it was collected, or compatible with those purposes, without first giving notice and, where required, obtaining consent (CCPA §1798.100(c)).
 
@@ -176,20 +177,20 @@ This section is the categorical disclosure required by CCPA §1798.130(a)(5) and
 
 ### 7.1 Categories collected, sources, purposes, recipients, sale/sharing
 
-| Statutory category (CCPA §1798.140(v)) | Examples in {{Service Name}} | Sources (Section 5) | Business purposes (Section 6) | Recipients (Section 8) | Sold? | Shared (cross-context behavioral advertising)? |
-|---|---|---|---|---|---|---|
-| A. Identifiers | Name, email, account ID, IP address, device identifier | You; your device; SSO provider | Provide service; secure service; support; communicate | Hosting; SSO; email; support tooling; security vendors | No | No |
-| B. Customer records (Cal. Civ. Code §1798.80(e)) | Billing name, billing address, last 4 of payment card | You; payment processor | Bill and collect; comply with law | Payment processor; accounting software | No | No |
-| C. Protected classifications | Not collected | — | — | — | No | No |
-| D. Commercial information | Plan, transaction history, product usage at the account level | You; your device | Bill and collect; provide service | Hosting; payment processor; analytics (de-identified) | No | No |
-| E. Biometric information | Not collected | — | — | — | No | No |
-| F. Internet or network activity | Pages viewed, features used, search queries on our own site, logs | Your device | Provide service; improve service; secure service | Hosting; analytics (de-identified); security vendors | No | No |
-| G. Geolocation | Approximate (city/region) from IP. Precise only if you opt into a specific feature. | Your device | Localize content; detect fraud; (optional) feature delivery | Hosting; security vendors | No | No |
-| H. Sensory (audio, electronic, visual) | Voice or screen recordings only if you submit them through a support channel that asks for them | You | Support; debug | Support tooling; hosting | No | No |
-| I. Professional or employment information | Job title, company name (only if you provide it) | You | Provide service; support | Hosting; CRM (where applicable) | No | No |
-| J. Education information | Not collected | — | — | — | No | No |
-| K. Inferences drawn from the above | Limited operational inferences (for example, usage tier classification) | Your activity | Improve service; provide service | Hosting | No | No |
-| L. Sensitive personal information (§1798.140(ae)) | Account credentials only | You | Authenticate; secure service | Hosting | No | No |
+| Statutory category (CCPA §1798.140(v))            | Examples in {{Service Name}}                                                                    | Sources (Section 5)            | Business purposes (Section 6)                               | Recipients (Section 8)                                 | Sold? | Shared (cross-context behavioral advertising)? |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------ | ----- | ---------------------------------------------- |
+| A. Identifiers                                    | Name, email, account ID, IP address, device identifier                                          | You; your device; SSO provider | Provide service; secure service; support; communicate       | Hosting; SSO; email; support tooling; security vendors | No    | No                                             |
+| B. Customer records (Cal. Civ. Code §1798.80(e))  | Billing name, billing address, last 4 of payment card                                           | You; payment processor         | Bill and collect; comply with law                           | Payment processor; accounting software                 | No    | No                                             |
+| C. Protected classifications                      | Not collected                                                                                   | —                              | —                                                           | —                                                      | No    | No                                             |
+| D. Commercial information                         | Plan, transaction history, product usage at the account level                                   | You; your device               | Bill and collect; provide service                           | Hosting; payment processor; analytics (de-identified)  | No    | No                                             |
+| E. Biometric information                          | Not collected                                                                                   | —                              | —                                                           | —                                                      | No    | No                                             |
+| F. Internet or network activity                   | Pages viewed, features used, search queries on our own site, logs                               | Your device                    | Provide service; improve service; secure service            | Hosting; analytics (de-identified); security vendors   | No    | No                                             |
+| G. Geolocation                                    | Approximate (city/region) from IP. Precise only if you opt into a specific feature.             | Your device                    | Localize content; detect fraud; (optional) feature delivery | Hosting; security vendors                              | No    | No                                             |
+| H. Sensory (audio, electronic, visual)            | Voice or screen recordings only if you submit them through a support channel that asks for them | You                            | Support; debug                                              | Support tooling; hosting                               | No    | No                                             |
+| I. Professional or employment information         | Job title, company name (only if you provide it)                                                | You                            | Provide service; support                                    | Hosting; CRM (where applicable)                        | No    | No                                             |
+| J. Education information                          | Not collected                                                                                   | —                              | —                                                           | —                                                      | No    | No                                             |
+| K. Inferences drawn from the above                | Limited operational inferences (for example, usage tier classification)                         | Your activity                  | Improve service; provide service                            | Hosting                                                | No    | No                                             |
+| L. Sensitive personal information (§1798.140(ae)) | Account credentials only                                                                        | You                            | Authenticate; secure service                                | Hosting                                                | No    | No                                             |
 
 The table reflects our current practice. If we change any of these — for example, if we ever start to sell or share any category — we will update this policy and post the change before the new practice takes effect, give the notice required by CCPA §1798.100(c), and make any opt-out mechanism available.
 
@@ -228,7 +229,7 @@ We disclose personal information in the following categories of recipients and o
 - **Authorities** — law enforcement, regulators, and courts, in response to a lawful request or where disclosure is necessary to protect rights, safety, or property. We require legal process where the law allows us to.
 - **Acquirers in a corporate transaction** — if {{Company Short Name}} is involved in a merger, acquisition, financing, or sale of assets, personal information may be transferred to the counter-party, subject to obligations consistent with this policy.
 
-A current list of named subprocessors is published at *{{Subprocessor List URL}}* and updated as vendors change. Customers on enterprise plans can subscribe to notifications of additions to that list.
+A current list of named subprocessors is published at _{{Subprocessor List URL}}_ and updated as vendors change. Customers on enterprise plans can subscribe to notifications of additions to that list.
 
 Our written agreements with service providers, contractors, and processors meet the requirements of CCPA §1798.140(ag) and the equivalent state-law definitions: they are restricted to the limited and specified purposes set out in the contract, prohibited from selling or sharing the information, prohibited from combining it with other personal information except as permitted, and required to assist us with consumer requests.
 
@@ -297,7 +298,7 @@ This section explains the cookies and similar technologies we use, and your choi
 - **Analytics cookies** — set by us or by a privacy-preserving analytics vendor to count visitors and measure feature use. We use de-identified or aggregated data wherever the analytics tool allows.
 - **Third-party cookies** — set by named integrations (for example, an embedded video, a CAPTCHA, an SSO widget) when you choose to use them.
 
-We do not set advertising cookies that enable cross-context behavioral advertising on the service — *unless an explicit clause in this policy says otherwise.*
+We do not set advertising cookies that enable cross-context behavioral advertising on the service — _unless an explicit clause in this policy says otherwise._
 
 ### 12.2 Your choices
 
@@ -321,7 +322,7 @@ Most browsers send a "Do Not Track" header. The state of the law has not converg
 
 ### 12.5 Cookie list
 
-A current cookie list — provider, name, purpose, and expiry — is maintained at *{{Cookie Notice URL}}* and updated when cookies change.
+A current cookie list — provider, name, purpose, and expiry — is maintained at _{{Cookie Notice URL}}_ and updated when cookies change.
 
 ---
 
@@ -415,7 +416,7 @@ We do not charge a fee for responding to verifiable consumer requests, unless th
 
 This section explains whether we make decisions about you using automated processing.
 
-We do not make decisions that produce legal or similarly significant effects about you using solely automated processing — *unless an explicit clause in this policy says otherwise.*
+We do not make decisions that produce legal or similarly significant effects about you using solely automated processing — _unless an explicit clause in this policy says otherwise._
 
 We do use limited automated processing to:
 
@@ -441,7 +442,7 @@ We update this policy from time to time. When we do, we change the "Last Updated
 
 If a change creates a new sale, sharing, or sensitive-personal-information use, we provide the opt-out or right-to-limit mechanism before the practice begins, as required by CCPA §1798.100(c) and the parallel state laws.
 
-We keep prior versions of this policy in our archive at *{{Policy Archive URL}}* so that you can see what the policy said at any prior point in time.
+We keep prior versions of this policy in our archive at _{{Policy Archive URL}}_ so that you can see what the policy said at any prior point in time.
 
 ---
 
@@ -455,7 +456,7 @@ This section tells you how to reach us and how to complain.
 - **Postal mail:** {{Company Legal Name}}, Attn: Privacy, {{Company Address}}
 - **Online form:** {{DSAR Submission URL}}
 
-*OPTIONAL — only if you have appointed a Data Protection Officer or US privacy lead:* Our Data Protection Officer can be reached at {{Company Email DPO}}.
+_OPTIONAL — only if you have appointed a Data Protection Officer or US privacy lead:_ Our Data Protection Officer can be reached at {{Company Email DPO}}.
 
 **California Privacy Protection Agency.** If you live in California and you are not satisfied with our response, you can complain to the California Privacy Protection Agency or the California Attorney General:
 
@@ -484,7 +485,7 @@ The following Mustache-style placeholders appear in this template. Replace each 
 - `{{Company Address}}` — registered address of the controller.
 - `{{Company Country}}` — country of incorporation.
 - `{{Company Email Privacy}}` — privacy contact email (for example, privacy@…).
-- `{{Company Email DPO}}` — *OPTIONAL* — DPO or US privacy lead email if appointed.
+- `{{Company Email DPO}}` — _OPTIONAL_ — DPO or US privacy lead email if appointed.
 - `{{Service Name}}` — product or service this policy applies to.
 - `{{Service URL}}` — primary URL of the service.
 - `{{Effective Date}}` — date the policy takes effect (YYYY-MM-DD).

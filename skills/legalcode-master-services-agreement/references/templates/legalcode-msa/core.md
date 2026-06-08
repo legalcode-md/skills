@@ -224,7 +224,7 @@ authority on the date stated in the notice.
 
 ---
 
-## 5. Fees, expenses & invoicing  *(DUAL-PERSPECTIVE)*
+## 5. Fees, expenses & invoicing _(DUAL-PERSPECTIVE)_
 
 This Section governs how Provider charges, how Client pays, and what
 each Party can do when payment goes wrong. The Parties select one of
@@ -314,7 +314,7 @@ determined to be properly due.
 5.B.8 **Set-off.** Client may not set off, withhold, or
 counterclaim except for amounts disputed under Section 5.B.4.
 
-### 5.C Market-standard variant *(default)*
+### 5.C Market-standard variant _(default)_
 
 5.C.1 **Fees.** Client pays the SOW Fees in {{Currency}}.
 
@@ -358,7 +358,7 @@ risk and conversion charges.
 
 ---
 
-## 6. Change control & change orders  *(DUAL-PERSPECTIVE)*
+## 6. Change control & change orders _(DUAL-PERSPECTIVE)_
 
 This Section governs how a previously agreed scope, schedule, or
 price gets changed mid-engagement.
@@ -423,7 +423,7 @@ the personnel or resources at the time requested.
 mobilisation, ramp-up, or transition costs reasonably necessary
 to accommodate the change.
 
-### 6.C Market-standard variant *(default)*
+### 6.C Market-standard variant _(default)_
 
 6.C.1 **Process.** Either Party may request a change by written
 notice. Within ten (10) Business Days, Provider will return a
@@ -585,7 +585,7 @@ applies.
 
 ---
 
-## 9. Intellectual property (foreground / background / open-source)  *(DUAL-PERSPECTIVE)*
+## 9. Intellectual property (foreground / background / open-source) _(DUAL-PERSPECTIVE)_
 
 This Section allocates ownership of, and rights to use, the
 materials produced under SOWs and the materials each Party brings
@@ -665,7 +665,7 @@ as a customer (logo and name only) and describe in general terms
 the work performed, provided no Confidential Information of Client
 is disclosed.
 
-### 9.C Market-standard variant *(default)*
+### 9.C Market-standard variant _(default)_
 
 9.C.1 **Foreground IP — Bespoke Deliverables assigned.** Provider
 assigns to Client all right, title, and interest in Foreground IP
@@ -865,7 +865,7 @@ prior written notice and an updated DPA where appropriate.
 
 ---
 
-## 12. Representations & warranties  *(DUAL-PERSPECTIVE)*
+## 12. Representations & warranties _(DUAL-PERSPECTIVE)_
 
 This Section sets out the operative promises each Party makes about
 itself, the Services, and the Deliverables.
@@ -938,7 +938,7 @@ investment advice. Recommendations are deliverables of professional
 analysis, not advice on which Client may rely without independent
 qualified counsel.
 
-### 12.C Market-standard variant *(default)*
+### 12.C Market-standard variant _(default)_
 
 12.C.1 **Mutual.** Each Party represents and warrants that it has
 authority to enter into and perform this Agreement and each SOW
@@ -987,7 +987,7 @@ for the purposes of the SOW.
 
 ---
 
-## 13. Indemnification  *(DUAL-PERSPECTIVE)*
+## 13. Indemnification _(DUAL-PERSPECTIVE)_
 
 This Section allocates responsibility for third-party claims that
 land at the Parties' door because of how the Services or
@@ -1076,7 +1076,7 @@ the types covered.
 notice; the indemnifier has sole control; the indemnitee may
 participate at its expense with separate counsel.
 
-### 13.C Market-standard variant *(default)*
+### 13.C Market-standard variant _(default)_
 
 13.C.1 **Provider's indemnity.** Provider will defend Client
 against any third-party claim alleging that:
@@ -1129,7 +1129,7 @@ cover.
 
 ---
 
-## 14. Limitation of liability  *(DUAL-PERSPECTIVE)*
+## 14. Limitation of liability _(DUAL-PERSPECTIVE)_
 
 This Section caps and excludes the kinds of damages each Party can
 recover from the other, with carve-outs for the most serious
@@ -1192,7 +1192,7 @@ WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 liability and across all claims; multiple claims do not increase
 the cap.
 
-### 14.C Market-standard variant *(default)*
+### 14.C Market-standard variant _(default)_
 
 14.C.1 **Damages cap.** Each Party's aggregate liability arising
 out of or in connection with this Agreement and all SOWs is
@@ -1288,7 +1288,7 @@ replacement coverage on substantially comparable terms.
 
 ---
 
-## 16. Term & termination  *(DUAL-PERSPECTIVE)*
+## 16. Term & termination _(DUAL-PERSPECTIVE)_
 
 This Section sets out how long the relationship lasts and how each
 Party can end it.
@@ -1368,7 +1368,7 @@ is set out in Section 5.B.
 16.B.5 **Survival.** Sections 5 (for accrued amounts), 9, 10, 11,
 12.B.3, 13, 14, 15 (for accrued claims), 17, 18, and 19 survive.
 
-### 16.C Market-standard variant *(default)*
+### 16.C Market-standard variant _(default)_
 
 16.C.1 **Term.** This Agreement begins on the Effective Date and
 continues until terminated. Each SOW runs for its stated term; if
@@ -1424,7 +1424,7 @@ nature should survive, survive termination.
 
 ---
 
-## 17. Transition assistance & wind-down  *(DUAL-PERSPECTIVE)*
+## 17. Transition assistance & wind-down _(DUAL-PERSPECTIVE)_
 
 This Section sets out what happens after notice of termination so
 that the Services can be wound down or transitioned without
@@ -1486,7 +1486,7 @@ operate Deliverables as delivered.
 17.B.4 **No long-tail.** Transition assistance terminates no more
 than ninety (90) days after the SOW termination date.
 
-### 17.C Market-standard variant *(default)*
+### 17.C Market-standard variant _(default)_
 
 17.C.1 **Transition assistance.** On Client's written request,
 Provider provides reasonable transition assistance for up to six
@@ -1709,16 +1709,16 @@ IN WITNESS WHEREOF, the Parties have executed this Agreement as of
 the Effective Date.
 
 **{{Provider Legal Name}}**
-By: ____________________________________
+By: **\*\***\*\*\*\***\*\***\_\_\_\_**\*\***\*\*\*\***\*\***
 Name: {{Provider Signatory Name}}
 Title: {{Provider Signatory Title}}
-Date: __________________________________
+Date: **\*\***\*\*\*\***\*\***\_\_**\*\***\*\*\*\***\*\***
 
 **{{Client Legal Name}}**
-By: ____________________________________
+By: **\*\***\*\*\*\***\*\***\_\_\_\_**\*\***\*\*\*\***\*\***
 Name: {{Client Signatory Name}}
 Title: {{Client Signatory Title}}
-Date: __________________________________
+Date: **\*\***\*\*\*\***\*\***\_\_**\*\***\*\*\*\***\*\***
 
 ---
 
@@ -1747,8 +1747,9 @@ material milestones with target dates. Note any dependencies on
 Client.]
 
 **4. Fees and payment.**
+
 - Fee basis: [fixed fee / time-and-materials / milestone-based /
-recurring]
+  recurring]
 - Total Fees (or rate card): [amount, with breakdown]
 - Currency: {{Currency}}
 - Invoice cadence: [monthly / on milestone / on signing]
@@ -1800,23 +1801,23 @@ overrides expressly identified.]
 addition to MSA notice contacts.]
 
 **Signatures.**
-For Provider: ____________________________________
-For Client:   ____________________________________
+For Provider: **\*\***\*\*\*\***\*\***\_\_\_\_**\*\***\*\*\*\***\*\***
+For Client: **\*\***\*\*\*\***\*\***\_\_\_\_**\*\***\*\*\*\***\*\***
 
 ---
 
 ## Annex B — Approved subcontractors & key personnel
 
-*Placeholder. Populate at signing and update by written notice or
-Change Order.*
+_Placeholder. Populate at signing and update by written notice or
+Change Order._
 
 **B.1 Approved Subcontractors.** The following Subcontractors are
 deemed approved as of the Effective Date for the Services
 indicated:
 
-| Subcontractor | Role / Services | Location | Personal Data access? |
-|---------------|-----------------|----------|----------------------|
-| [name]        | [role]          | [country]| [yes/no]             |
+| Subcontractor | Role / Services | Location  | Personal Data access? |
+| ------------- | --------------- | --------- | --------------------- |
+| [name]        | [role]          | [country] | [yes/no]              |
 
 Provider may engage additional Subcontractors per Section 7.6 and
 Section 7.7. Material additions or replacements require written
@@ -1825,9 +1826,9 @@ notice to Client and are subject to Client's reasonable objection.
 **B.2 Key Personnel.** The following individuals are designated
 Key Personnel under Section 7.4 for the SOWs indicated:
 
-| Name | Role | Applicable SOW(s) | Time commitment |
-|------|------|-------------------|-----------------|
-| [name] | [role] | [SOW number] | [%]            |
+| Name   | Role   | Applicable SOW(s) | Time commitment |
+| ------ | ------ | ----------------- | --------------- |
+| [name] | [role] | [SOW number]      | [%]             |
 
 Replacement of Key Personnel is governed by Section 7.4.
 
@@ -1835,8 +1836,8 @@ Replacement of Key Personnel is governed by Section 7.4.
 
 ## Annex C — Service standards & acceptance criteria framework
 
-*Placeholder. Use this framework where the SOW does not state
-specific Acceptance Criteria.*
+_Placeholder. Use this framework where the SOW does not state
+specific Acceptance Criteria._
 
 **C.1 General standard.** A Deliverable conforms when it materially
 satisfies the description in the SOW, the documentation Provider
@@ -1942,17 +1943,17 @@ clause-headings were used as drafting guides, with original prose
 throughout. No verbatim text was copied:
 
 - Bonterms Professional Services Agreement (PSA) v1.2 — CC0
-(primary structural baseline)
+  (primary structural baseline)
 - Common Paper Standard Services Agreement — CC-BY-4.0
-(dual-perspective patterning)
+  (dual-perspective patterning)
 - Common Paper Statement of Work — CC-BY-4.0 (Annex A skeleton)
 - GitHub `site-policy` repository — CC0 (drafting conventions)
 - Mozilla legal templates — MPL-2.0 (regional-overlay approach)
 - Linux Foundation / Apache project services agreements —
-Apache-2.0 (IP allocation patterning)
+  Apache-2.0 (IP allocation patterning)
 - ICO, CMA, EU Commission, U.S. state attorney-general guidance
-materials — Open Government Licence / public domain (definition
-patterns)
+  materials — Open Government Licence / public domain (definition
+  patterns)
 
 **Blocked baselines (not consulted, even for comparison):** AWS
 PSA, Microsoft services agreements, Google Cloud PSA, IBM Master

@@ -20,23 +20,24 @@ transposition record), and `formats-playbook.md` (to emit a validating Akoma Nto
 obligation register). A skill drafting a conformity verdict for a Maltese transposition
 will additionally pull `multilingualism-playbook.md` to reconcile the Maltese
 authentic version against the English working text under the equal-authenticity
-doctrine anchored in *CILFIT* (Case C-283/81, ECLI:EU:C:1982:335).
+doctrine anchored in _CILFIT_ (Case C-283/81, ECLI:EU:C:1982:335).
 
 ## When to load each file
 
-| If the skill is doing… | Load primarily | Load supporting |
-|---|---|---|
-| Extracting obligations from a directive | `identifier-playbook.md`, `formats-playbook.md` | `source-playbook.md`, `multilingualism-playbook.md` |
-| Tracking national transposition status | `source-playbook.md`, `worked-examples.md` | `identifier-playbook.md` |
-| Building a Commission-format correlation table | `formats-playbook.md`, `identifier-playbook.md` | `worked-examples.md` |
-| Per-article conformity verdict | `multilingualism-playbook.md`, `identifier-playbook.md` | `worked-examples.md`, `formats-playbook.md` |
-| Gold-plating detection | `worked-examples.md`, `source-playbook.md` | `identifier-playbook.md` |
-| EEA Joint Committee Decision tracking | `source-playbook.md` (EEA-Lex section) | `identifier-playbook.md`, `multilingualism-playbook.md` |
-| TFEU 258/260 infringement timeline | `source-playbook.md` (CURIA, OEIL) | `identifier-playbook.md`, `worked-examples.md` |
+| If the skill is doing…                         | Load primarily                                          | Load supporting                                         |
+| ---------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------- |
+| Extracting obligations from a directive        | `identifier-playbook.md`, `formats-playbook.md`         | `source-playbook.md`, `multilingualism-playbook.md`     |
+| Tracking national transposition status         | `source-playbook.md`, `worked-examples.md`              | `identifier-playbook.md`                                |
+| Building a Commission-format correlation table | `formats-playbook.md`, `identifier-playbook.md`         | `worked-examples.md`                                    |
+| Per-article conformity verdict                 | `multilingualism-playbook.md`, `identifier-playbook.md` | `worked-examples.md`, `formats-playbook.md`             |
+| Gold-plating detection                         | `worked-examples.md`, `source-playbook.md`              | `identifier-playbook.md`                                |
+| EEA Joint Committee Decision tracking          | `source-playbook.md` (EEA-Lex section)                  | `identifier-playbook.md`, `multilingualism-playbook.md` |
+| TFEU 258/260 infringement timeline             | `source-playbook.md` (CURIA, OEIL)                      | `identifier-playbook.md`, `worked-examples.md`          |
 
 ## Files in this pack
 
 ### `identifier-playbook.md` (~250 lines)
+
 Canonical identifier reference. Defines the structure, validation rules, and
 construction algorithm for **CELEX** (the Publications Office identifier — sector +
 year + type + number, e.g. `32016R0679` for GDPR, `32022L2555` for NIS2), the
@@ -44,7 +45,7 @@ year + type + number, e.g. `32016R0679` for GDPR, `32022L2555` for NIS2), the
 Publications Office for legislation, with all 24 official-language `/oj/<lang>`
 patterns), the **European Case Law Identifier (ECLI)** (jurisdiction codes including
 EU for CJEU and EFTA for the EFTA Court, with worked examples drawn from
-*Commission v Belgium* (Case C-543/17, ECLI:EU:C:2019:573) and *CILFIT* (Case
+_Commission v Belgium_ (Case C-543/17, ECLI:EU:C:2019:573) and _CILFIT_ (Case
 C-283/81, ECLI:EU:C:1982:335)), the **Official Journal reference format** (e.g. "OJ L
 333, 27.12.2022, p. 80" for NIS2), national identifier formats for the seven
 priority Member States plus EEA EFTA states (BGBl, JORF, Stortingsforhandlinger,
@@ -54,6 +55,7 @@ Load this file first whenever a workflow step constructs, parses, or validates a
 legal identifier — never invent a CELEX or ECLI.
 
 ### `source-playbook.md` (~300 lines)
+
 Operational guide to the data sources the suite queries. Contains working SPARQL
 queries against the **Cellar endpoint** at `https://publications.europa.eu/webapi/
 rdf/sparql` (consolidated versions of a directive, language version listing,
@@ -71,6 +73,7 @@ versus those requiring direct API access. Load this file whenever a workflow ste
 needs to fetch data — never quote a transposition fact without first sourcing it.
 
 ### `multilingualism-playbook.md` (~200 lines)
+
 Authoritative guide to the equal-authenticity regime governing all 24 EU official
 languages. Anchored in **Regulation 1/1958** (the original language regulation;
 ELI `https://eur-lex.europa.eu/eli/reg/1958/1(1)/oj/eng`), the **24 currently
@@ -78,8 +81,8 @@ authentic languages** (Croatian since accession in 2013; Irish since the derogat
 under Regulation 920/2005 was lifted on 1 January 2022 by Regulation 2015/2264),
 and the EEA addition of **Icelandic and Norwegian** (authentic for EEA EFTA states
 under Art. 129(1) EEA, but never authentic in EU-internal litigation). Walks through
-the operative reasoning of *CILFIT* (Case C-283/81), *Codan* (Case C-236/97),
-*EMU Tabac* (Case C-296/95), and *Endendijk* (Case C-187/07), then sets out a
+the operative reasoning of _CILFIT_ (Case C-283/81), _Codan_ (Case C-236/97),
+_EMU Tabac_ (Case C-296/95), and _Endendijk_ (Case C-187/07), then sets out a
 four-step reconciliation methodology with a worked NIS2 example. Closes with the
 operational rule for the analyzer skill: extract obligations from the user's working
 language, set an `eea-relevance` and `language-divergence-flag` whenever the user's
@@ -88,6 +91,7 @@ conformity verdict turns on a definitional or scope term — never assume the En
 text is canonical.
 
 ### `formats-playbook.md` (~250 lines)
+
 The standards-based output guide. This is the suite's differentiator: every artefact
 the suite emits (obligation register, NIM matrix, correlation table, conformity
 verdict, gold-plating finding, infringement timeline) must round-trip into LEOS
@@ -105,6 +109,7 @@ any structured output — placeholders or non-validating XML are an anti-pattern
 brief explicitly forbids.
 
 ### `worked-examples.md` (~300 lines)
+
 Concrete reference instruments used throughout the suite for illustration. Provides
 short title, formal title, CELEX, ELI URI, OJ reference, transposition deadline (if
 a directive), notable language-version issues, and the published transposition or
