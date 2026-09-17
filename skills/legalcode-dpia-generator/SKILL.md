@@ -1,18 +1,17 @@
 ---
 name: legalcode-dpia-generator
-description: >
-  Build and review Data Protection Impact Assessments (DPIAs) for high-risk processing
-  under GDPR/UK GDPR and aligned privacy regimes. Use when launching new products,
-  AI features, profiling, surveillance, large-scale special-category processing, or new
-  cross-border data uses that may materially impact individuals' rights and freedoms.
-  Produces a defensible trigger decision, risk register, mitigation plan, prior-consultation
+description: Build and review Data Protection Impact Assessments (DPIAs) for high-risk processing under
+  GDPR/UK GDPR and aligned privacy regimes. Use when launching new products, AI features, profiling, surveillance,
+  large-scale special-category processing, or new cross-border data uses that may materially impact individuals'
+  rights and freedoms. Produces a defensible trigger decision, risk register, mitigation plan, prior-consultation
   recommendation, and executive-ready approval package.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode DPIA Generator
 

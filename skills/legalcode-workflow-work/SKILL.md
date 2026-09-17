@@ -1,17 +1,19 @@
 ---
 name: legalcode-workflow-work
-description: >
-  Execute a knowledge work plan efficiently while maintaining quality, with deep legal domain
-  expertise for contract drafting, legal memoranda, court filings, regulatory submissions,
-  corporate governance, and compliance operations. Use after the research phase to systematically
-  work through a plan using the right agents for each step. Triggers on requests like 'execute
-  the plan', 'draft that contract we planned', 'go ahead and write the memo', 'prepare the
-  filing', or when moving from planning to execution. Supports both general knowledge work and
-  legal-specific work types with precision-of-language standards, defined terms consistency,
-  cross-reference integrity, and privilege preservation.
-disable-model-invocation: true
+description: Execute a knowledge work plan efficiently while maintaining quality, with deep legal domain
+  expertise for contract drafting, legal memoranda, court filings, regulatory submissions, corporate governance,
+  and compliance operations. Use after the research phase to systematically work through a plan using
+  the right agents for each step. Triggers on requests like 'execute the plan', 'draft that contract we
+  planned', 'go ahead and write the memo', 'prepare the filing', or when moving from planning to execution.
+  Supports both general knowledge work and legal-specific work types with precision-of-language standards,
+  defined terms consistency, cross-reference integrity, and privilege preservation.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Work: Knowledge Work Execution Workflow
 

@@ -1,28 +1,24 @@
 ---
 name: legalcode-nis2-compliance-assessment
-description: >
-  NIS2 Directive (EU 2022/2555) compliance assessment for essential and important entities
-  covering entity classification (essential vs. important), all ten Article 21 risk management
-  measures, Article 23 incident reporting obligations (24-hour early warning, 72-hour
-  notification, one-month final report), Article 32 board accountability and training mandates,
-  supply chain security requirements, cross-border cooperation, and intersection with GDPR,
-  DORA, and sector-specific regulations. Use when an organization needs to determine NIS2
-  applicability, assess compliance posture against the ten risk management measures, design
-  incident reporting procedures, prepare for supervisory examination, or understand member
-  state transposition variations. Covers entity classification gates, all ten Article 21
-  measures with implementation checklists and evidence requirements, incident significance
-  thresholds and reporting timelines, supply chain risk methodology, board-level governance,
-  and cross-directive alignment. Produces compliance assessments with COMPLIANT/PARTIAL/
-  NON-COMPLIANT/CRITICAL classifications, prioritized remediation roadmaps with timelines,
-  incident reporting readiness checklists, and board-level governance recommendations.
-  Jurisdiction-agnostic core (NIS2 Directive 2022/2555) with [JURISDICTION-SPECIFIC] markers
-  for national implementations across EU member states and sector-specific variations.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: NIS2 Directive (EU 2022/2555) compliance assessment for essential and important entities
+  covering entity classification (essential vs. important), all ten Article 21 risk management measures,
+  Article 23 incident reporting obligations (24-hour early warning, 72-hour notification, one-month final
+  report), Article 32 board accountability and training mandates, supply chain security requirements,
+  cross-border cooperation, and intersection with GDPR, DORA, and sector-specific regulations. Use when
+  an organization needs to determine NIS2 applicability, assess compliance posture against the ten risk
+  management measures, design incident reporting procedures, prepare for supervisory examination, or understand
+  member state transposition variations.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+NIS2 Directive (EU 2022/2555) compliance assessment for essential and important entities covering entity classification (essential vs. important), all ten Article 21 risk management measures, Article 23 incident reporting obligations (24-hour early warning, 72-hour notification, one-month final report), Article 32 board accountability and training mandates, supply chain security requirements, cross-border cooperation, and intersection with GDPR, DORA, and sector-specific regulations. Use when an organization needs to determine NIS2 applicability, assess compliance posture against the ten risk management measures, design incident reporting procedures, prepare for supervisory examination, or understand member state transposition variations. Covers entity classification gates, all ten Article 21 measures with implementation checklists and evidence requirements, incident significance thresholds and reporting timelines, supply chain risk methodology, board-level governance, and cross-directive alignment. Produces compliance assessments with COMPLIANT/PARTIAL/ NON-COMPLIANT/CRITICAL classifications, prioritized remediation roadmaps with timelines, incident reporting readiness checklists, and board-level governance recommendations. Jurisdiction-agnostic core (NIS2 Directive 2022/2555) with [JURISDICTION-SPECIFIC] markers for national implementations across EU member states and sector-specific variations.
+
 
 # NIS2 Compliance Assessment
 

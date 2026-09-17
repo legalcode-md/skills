@@ -1,21 +1,20 @@
 ---
 name: legalcode-tabular-review
-description: >
-  Perform a high-volume, citation-backed tabular review across one or more document folders,
-  VDR exports, DMS exports, or mixed document sets. Turn PDFs, DOCX files, scans, and related
-  legal materials into a spreadsheet-style review where each document is a row and each user
-  question is a column. Use when the user wants to compare agreements side by side, run a due
-  diligence matrix, extract structured terms from a portfolio, build a red-flag table, answer
-  a fixed list of questions across many documents, or generate Excel-ready review outputs with
-  source citations, confidence, and verification states. Supports dual execution paths:
-  Claude Code CLI workers (`claude -p --model haiku`) for scale, or Task sub-agents when CLI
-  is unavailable. Jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers.
-allowed-tools: Read, Bash(grep:*), Bash(ls:*), Bash(find:*), Bash(wc:*), Bash(claude:*), Bash(sh:*), Bash(bash:*), Bash(python3:*), Bash(pandoc:*), Bash(pdftotext:*), Bash(ocrmypdf:*), Bash(markitdown:*), Glob, Task
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: 'Perform a high-volume, citation-backed tabular review across one or more document folders,
+  VDR exports, DMS exports, or mixed document sets. Turn PDFs, DOCX files, scans, and related legal materials
+  into a spreadsheet-style review where each document is a row and each user question is a column. Use
+  when the user wants to compare agreements side by side, run a due diligence matrix, extract structured
+  terms from a portfolio, build a red-flag table, answer a fixed list of questions across many documents,
+  or generate Excel-ready review outputs with source citations, confidence, and verification states. Supports
+  dual execution paths: Claude Code CLI workers (`claude -p --model haiku`) for scale, or Task sub-agents
+  when CLI is unavailable. Jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers.'
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Tabular Review
 

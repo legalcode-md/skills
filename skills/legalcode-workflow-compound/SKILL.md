@@ -1,19 +1,21 @@
 ---
 name: legalcode-workflow-compound
-description: >
-  Extract and store learnings from completed legal and knowledge work to make the next task
-  easier. Use after completing any significant piece of legal work — transactions, litigation
-  milestones, regulatory filings, contract negotiations, compliance audits, corporate governance
-  actions — to capture patterns, create templates, update preferences, and compound institutional
-  legal knowledge. Triggers on requests like 'that went well, let's capture what worked',
-  'what did we learn from that deal/case/negotiation', 'that motion failed — let's analyze why',
-  or after completing high-stakes legal work. Supports 11 insight types including 6 legal-specific
-  types (precedent, clause-library, jurisdiction-note, regulatory-update, opposing-counsel-pattern,
-  judge-pattern) with privilege-safe storage, ethical obligation compliance, and legal knowledge
-  compounding across matters.
-disable-model-invocation: true
+description: Extract and store learnings from completed legal and knowledge work to make the next task
+  easier. Use after completing any significant piece of legal work — transactions, litigation milestones,
+  regulatory filings, contract negotiations, compliance audits, corporate governance actions — to capture
+  patterns, create templates, update preferences, and compound institutional legal knowledge. Triggers
+  on requests like 'that went well, let's capture what worked', 'what did we learn from that deal/case/negotiation',
+  'that motion failed — let's analyze why', or after completing high-stakes legal work. Supports 11 insight
+  types including 6 legal-specific types (precedent, clause-library, jurisdiction-note, regulatory-update,
+  opposing-counsel-pattern, judge-pattern) with privilege-safe storage, ethical obligation compliance,
+  and legal knowledge compounding across matters.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Compound: Legal Knowledge Compounding Workflow
 

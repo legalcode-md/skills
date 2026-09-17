@@ -1,16 +1,19 @@
 ---
 name: legalcode-workflow-review
-description: >
-  Run parallel multi-agent review on completed knowledge work with deep legal domain expertise.
-  Use after the work phase to evaluate output quality from multiple specialized perspectives
-  before finalizing. Triggers on requests like 'review this', 'check this before I send it',
-  'stress-test this recommendation', 'review this contract', 'check this brief', 'audit this
-  filing', or when quality assurance is needed on a deliverable. Supports general knowledge work
-  review and specialized legal work review including contracts, memoranda, court filings,
-  regulatory submissions, corporate resolutions, and compliance deliverables. Produces a
-  severity-classified, auditable review synthesis with legal-specific quality gates.
+description: Run parallel multi-agent review on completed knowledge work with deep legal domain expertise.
+  Use after the work phase to evaluate output quality from multiple specialized perspectives before finalizing.
+  Triggers on requests like 'review this', 'check this before I send it', 'stress-test this recommendation',
+  'review this contract', 'check this brief', 'audit this filing', or when quality assurance is needed
+  on a deliverable. Supports general knowledge work review and specialized legal work review including
+  contracts, memoranda, court filings, regulatory submissions, corporate resolutions, and compliance deliverables.
+  Produces a severity-classified, auditable review synthesis with legal-specific quality gates.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Workflow Review: Multi-Agent Knowledge Work Review
 

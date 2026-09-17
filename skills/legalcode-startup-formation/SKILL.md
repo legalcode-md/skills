@@ -1,22 +1,21 @@
 ---
 name: legalcode-startup-formation
-description: >
-  Generates complete Delaware C-Corporation formation packages for founders and counsel.
-  Produces all eight core formation documents: Certificate of Incorporation, Bylaws, Action
-  by Incorporator, Initial Board of Directors Consent, Founders Restricted Stock Purchase
-  Agreements (with vesting schedule), Confidential Information and Invention Assignment
-  Agreements (CIIA), Section 83(b) Election Letters, and Indemnification Agreements.
-  Use when incorporating a startup, forming a Delaware C-Corp, preparing founder documents,
-  setting up founder equity and vesting, protecting company IP, or preparing for a seed or
-  Series A financing. Covers DGCL §§ 102, 108, 109, 141, 145, 151; IRC § 83(b); IRS Form
-  15620; California Labor Code § 2870; DTSA immunity notice. Validates the complete
-  formation package against VC due diligence standards and common founder mistake patterns.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: 'Generates complete Delaware C-Corporation formation packages for founders and counsel. Produces
+  all eight core formation documents: Certificate of Incorporation, Bylaws, Action by Incorporator, Initial
+  Board of Directors Consent, Founders Restricted Stock Purchase Agreements (with vesting schedule), Confidential
+  Information and Invention Assignment Agreements (CIIA), Section 83(b) Election Letters, and Indemnification
+  Agreements. Use when incorporating a startup, forming a Delaware C-Corp, preparing founder documents,
+  setting up founder equity and vesting, protecting company IP, or preparing for a seed or Series A financing.
+  Covers DGCL §§ 102, 108, 109, 141, 145, 151; IRC § 83(b); IRS Form 15620; California Labor Code § 2870;
+  DTSA immunity notice. Validates the complete formation package against VC due diligence standards and
+  common founder mistake patterns.'
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Startup Formation
 

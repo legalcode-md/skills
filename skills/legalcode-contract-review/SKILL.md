@@ -1,19 +1,18 @@
 ---
 name: legalcode-contract-review
-description: >
-  Review contracts against your organization's negotiation playbook — flag deviations,
-  generate confidence-scored redlines, and produce an auditable analysis with business
-  impact assessment. Use when reviewing vendor contracts, customer agreements, SaaS
-  agreements, professional services contracts, licenses, partnerships, procurement
-  agreements, or any commercial agreement requiring clause-by-clause analysis against
-  standard positions. Jurisdiction-agnostic with localization markers for any governing
-  law. Supports playbook-based or general-standard review.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Review contracts against your organization's negotiation playbook — flag deviations, generate
+  confidence-scored redlines, and produce an auditable analysis with business impact assessment. Use when
+  reviewing vendor contracts, customer agreements, SaaS agreements, professional services contracts, licenses,
+  partnerships, procurement agreements, or any commercial agreement requiring clause-by-clause analysis
+  against standard positions. Jurisdiction-agnostic with localization markers for any governing law. Supports
+  playbook-based or general-standard review.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Contract Review
 

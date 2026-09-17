@@ -1,25 +1,22 @@
 ---
 name: legalcode-master-services-agreement
-description: >
-  Draft and review Master Services Agreements (MSAs) with SOW/Order Form frameworks from
-  both service provider and client perspectives — generate clause-by-clause guidance, flag
-  market deviations, and produce auditable dual-perspective analysis with confidence-scored
-  redlines. Use when drafting or negotiating MSAs, professional services agreements, managed
-  services contracts, IT services agreements, consulting framework agreements, or any
-  engagement model using a master agreement with modular statements of work or order forms.
-  Covers scope of services and deliverables, pricing models (T&M, fixed-fee, milestone,
-  hybrid), change order procedures, IP ownership and work-for-hire provisions, confidentiality,
-  representations and warranties, liability caps, indemnification, insurance requirements,
-  data protection, key personnel and subcontracting, termination for cause and convenience,
-  transition/wind-down assistance, and governing law with dispute resolution. Includes SOW
-  template and Order Form template as annexes. Jurisdiction-agnostic with localization markers
-  for US, UK, and AU. Produces structured guidance with Glass Box audit trail.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Draft and review Master Services Agreements (MSAs) with SOW/Order Form frameworks from both
+  service provider and client perspectives — generate clause-by-clause guidance, flag market deviations,
+  and produce auditable dual-perspective analysis with confidence-scored redlines. Use when drafting or
+  negotiating MSAs, professional services agreements, managed services contracts, IT services agreements,
+  consulting framework agreements, or any engagement model using a master agreement with modular statements
+  of work or order forms.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Draft and review Master Services Agreements (MSAs) with SOW/Order Form frameworks from both service provider and client perspectives — generate clause-by-clause guidance, flag market deviations, and produce auditable dual-perspective analysis with confidence-scored redlines. Use when drafting or negotiating MSAs, professional services agreements, managed services contracts, IT services agreements, consulting framework agreements, or any engagement model using a master agreement with modular statements of work or order forms. Covers scope of services and deliverables, pricing models (T&M, fixed-fee, milestone, hybrid), change order procedures, IP ownership and work-for-hire provisions, confidentiality, representations and warranties, liability caps, indemnification, insurance requirements, data protection, key personnel and subcontracting, termination for cause and convenience, transition/wind-down assistance, and governing law with dispute resolution. Includes SOW template and Order Form template as annexes. Jurisdiction-agnostic with localization markers for US, UK, and AU. Produces structured guidance with Glass Box audit trail.
+
 
 # Legalcode Master Services Agreement
 

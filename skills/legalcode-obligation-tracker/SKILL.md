@@ -1,18 +1,17 @@
 ---
 name: legalcode-obligation-tracker
-description: >
-  Extract, normalize, prioritize, and monitor post-signature contract obligations across
-  executed agreements, amendments, renewals, and incorporated documents. Use when legal,
-  procurement, finance, sales operations, vendor management, and compliance teams need an
-  auditable obligation register with owners, trigger logic, due-date computation,
-  escalation pathways, and confidence-scored outputs. Supports single-contract and
-  portfolio modes, jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Extract, normalize, prioritize, and monitor post-signature contract obligations across executed
+  agreements, amendments, renewals, and incorporated documents. Use when legal, procurement, finance,
+  sales operations, vendor management, and compliance teams need an auditable obligation register with
+  owners, trigger logic, due-date computation, escalation pathways, and confidence-scored outputs. Supports
+  single-contract and portfolio modes, jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Obligation Tracker
 

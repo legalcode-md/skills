@@ -1,22 +1,21 @@
 ---
 name: legalcode-cross-border-transfer-assessment
-description: >
-  Assess the lawfulness of international personal data transfers under GDPR Chapter V,
-  UK GDPR, and Swiss DPA (nDSG). Use when transferring personal data outside the EEA/UK/
-  Switzerland to a third country; when selecting or validating a transfer mechanism
-  (adequacy decision, SCCs, BCRs, derogations); when building or reviewing a Transfer
-  Impact Assessment (TIA) post-Schrems II; when assessing supplementary technical and
-  organisational measures; when evaluating destination-country surveillance law (FISA 702,
-  EO 12333, CLOUD Act, China PIPL/MPS, India DPDP); when reviewing Binding Corporate Rules
-  for intra-group transfers; or when advising on Art. 49 derogations. Produces a mechanism
-  selection decision, TIA, supplementary measures catalogue, risk classification
-  (LAWFUL/RESTRICTED/UNLAWFUL per transfer), remediation roadmap, and Glass Box audit trail.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Assess the lawfulness of international personal data transfers under GDPR Chapter V, UK GDPR,
+  and Swiss DPA (nDSG). Use when transferring personal data outside the EEA/UK/ Switzerland to a third
+  country; when selecting or validating a transfer mechanism (adequacy decision, SCCs, BCRs, derogations);
+  when building or reviewing a Transfer Impact Assessment (TIA) post-Schrems II; when assessing supplementary
+  technical and organisational measures; when evaluating destination-country surveillance law (FISA 702,
+  EO 12333, CLOUD Act, China PIPL/MPS, India DPDP); when reviewing Binding Corporate Rules for intra-group
+  transfers; or when advising on Art. 49 derogations. Produces a mechanism selection decision, TIA, supplementary
+  measures catalogue, risk classification (LAWFUL/RESTRICTED/UNLAWFUL per transfer), remediation roadmap,
+  and Glass Box audit trail.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Cross-Border Transfer Assessment
 

@@ -513,17 +513,17 @@ In short: pre-contract disclosures, the 14-day withdrawal right, the model withd
 
 > **To:** {{Company Legal Name}}, {{Company Registered Address}}, {{Country}}, {{Support Email}}
 >
-> I/We hereby give notice that I/we withdraw from my/our contract for the supply of the following service / digital content: ****\*\*****\*\*\*\*****\*\*****\_\_\_\_****\*\*****\*\*\*\*****\*\*****
+> I/We hereby give notice that I/we withdraw from my/our contract for the supply of the following service / digital content: \***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***
 >
-> Ordered on: ****\*\*****\*\*\*\*****\*\*****\_\_\_\_****\*\*****\*\*\*\*****\*\*****
+> Ordered on: \***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***
 >
-> Name of consumer(s): ****\*\*****\*\*\*\*****\*\*****\_\_\_\_****\*\*****\*\*\*\*****\*\*****
+> Name of consumer(s): \***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***
 >
-> Address of consumer(s): ****\*\*****\*\*\*\*****\*\*****\_\_\_\_****\*\*****\*\*\*\*****\*\*****
+> Address of consumer(s): \***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***
 >
 > Signature of consumer(s) (only if this form is notified on paper): **\*\*\*\***\_\_\_\_**\*\*\*\***
 >
-> Date: ****\*\*****\*\*\*\*****\*\*****\_\_\_\_****\*\*****\*\*\*\*****\*\*****
+> Date: \***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***
 
 **C.6 Cancellation mechanism.** You can cancel an auto-renewing subscription:
 

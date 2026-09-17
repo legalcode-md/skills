@@ -1,23 +1,22 @@
 ---
 name: legalcode-dsar-workflow-builder
-description: >
-  Build and execute end-to-end Data Subject Access Request (DSAR) operational workflows
-  covering intake normalization, identity and authority verification, jurisdiction mapping,
-  scope determination, data discovery across all systems, legal basis review, exemption
-  analysis (trade secrets, third-party data, legal privilege, manifestly unfounded/excessive,
-  national security, ongoing investigations), redaction protocols with proportionality
-  review, response assembly, notice drafting, timeline management, and post-dispatch
-  monitoring. Supports GDPR Article 15, CCPA/CPRA, UK GDPR/DPA 2018, LGPD (Brazil), and
-  PIPEDA (Canada). Includes escalation paths, template responses, compliance documentation,
-  and a full Glass Box audit trail. Use when receiving a DSAR or right-to-know request
-  from any individual, managing backlog of open requests, building a DSAR process program,
-  or auditing an existing DSAR response for defensibility.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Build and execute end-to-end Data Subject Access Request (DSAR) operational workflows covering
+  intake normalization, identity and authority verification, jurisdiction mapping, scope determination,
+  data discovery across all systems, legal basis review, exemption analysis (trade secrets, third-party
+  data, legal privilege, manifestly unfounded/excessive, national security, ongoing investigations), redaction
+  protocols with proportionality review, response assembly, notice drafting, timeline management, and
+  post-dispatch monitoring. Supports GDPR Article 15, CCPA/CPRA, UK GDPR/DPA 2018, LGPD (Brazil), and
+  PIPEDA (Canada). Includes escalation paths, template responses, compliance documentation, and a full
+  Glass Box audit trail. Use when receiving a DSAR or right-to-know request from any individual, managing
+  backlog of open requests, building a DSAR process program, or auditing an existing DSAR response for
+  defensibility.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode DSAR Workflow Builder
 

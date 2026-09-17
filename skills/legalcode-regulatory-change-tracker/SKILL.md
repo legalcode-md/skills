@@ -1,25 +1,22 @@
 ---
 name: legalcode-regulatory-change-tracker
-description: >
-  Monitor regulatory landscape changes and assess their impact on organizational compliance
-  posture across privacy, employment, financial services, environmental, AI, and
-  sector-specific regulations. Use when tracking regulatory amendments or new rules,
-  analyzing applicability to your organization, identifying compliance gaps against current
-  policies and procedures, prioritizing remediation workflows, maintaining a regulatory
-  change log, and generating board-ready impact summaries and compliance project plans.
-  Covers multi-jurisdictional scanning globally (GDPR, CCPA/CPRA, EU AI Act, US state
-  privacy and employment laws, HIPAA, CSRD, AML/BSA, financial services regulation),
-  regulatory impact scoring by business unit, process, data flow, and contract exposure,
-  gap analysis, policy update workflow generation with owner assignment and milestone
-  tracking, and GRC platform integration (ServiceNow, MetricStream, Archer, OneTrust,
-  Workiva). Produces regulatory change digests, board-ready impact summaries, gap analysis
-  reports, and compliance project plans with milestone tracking.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Monitor regulatory landscape changes and assess their impact on organizational compliance
+  posture across privacy, employment, financial services, environmental, AI, and sector-specific regulations.
+  Use when tracking regulatory amendments or new rules, analyzing applicability to your organization,
+  identifying compliance gaps against current policies and procedures, prioritizing remediation workflows,
+  maintaining a regulatory change log, and generating board-ready impact summaries and compliance project
+  plans.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Monitor regulatory landscape changes and assess their impact on organizational compliance posture across privacy, employment, financial services, environmental, AI, and sector-specific regulations. Use when tracking regulatory amendments or new rules, analyzing applicability to your organization, identifying compliance gaps against current policies and procedures, prioritizing remediation workflows, maintaining a regulatory change log, and generating board-ready impact summaries and compliance project plans. Covers multi-jurisdictional scanning globally (GDPR, CCPA/CPRA, EU AI Act, US state privacy and employment laws, HIPAA, CSRD, AML/BSA, financial services regulation), regulatory impact scoring by business unit, process, data flow, and contract exposure, gap analysis, policy update workflow generation with owner assignment and milestone tracking, and GRC platform integration (ServiceNow, MetricStream, Archer, OneTrust, Workiva). Produces regulatory change digests, board-ready impact summaries, gap analysis reports, and compliance project plans with milestone tracking.
+
 
 # Legalcode Regulatory Change Tracker
 

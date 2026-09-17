@@ -1,16 +1,19 @@
 ---
 name: legalcode-tabular-review-orchestrator
-description: >
-  Orchestrate citation-backed tabular review over one or more local folders by turning a
-  user-supplied question list into a review matrix with one row per document and one
-  column per question. Use when the user wants Codex to actually run the workflow inside
-  this repository: discover files, convert PDFs and DOCX to reviewable text, fan out
-  cheap extraction workers, normalize answers, assemble CSV / Markdown / JSON / XLSX
-  outputs, and preserve cell-level provenance. Prefer this skill over ad hoc scripting
-  whenever the task involves repeated questions across many documents, portfolio review,
-  diligence matrices, or side-by-side extraction from folders.
+description: 'Orchestrate citation-backed tabular review over one or more local folders by turning a user-supplied
+  question list into a review matrix with one row per document and one column per question. Use when the
+  user wants Codex to actually run the workflow inside this repository: discover files, convert PDFs and
+  DOCX to reviewable text, fan out cheap extraction workers, normalize answers, assemble CSV / Markdown
+  / JSON / XLSX outputs, and preserve cell-level provenance. Prefer this skill over ad hoc scripting whenever
+  the task involves repeated questions across many documents, portfolio review, diligence matrices, or
+  side-by-side extraction from folders.'
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Tabular Review Orchestrator
 

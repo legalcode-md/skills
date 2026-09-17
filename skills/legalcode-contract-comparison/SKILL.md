@@ -1,17 +1,17 @@
 ---
 name: legalcode-contract-comparison
-description: >
-  Compare two contract versions or compare a contract against an approved template/playbook
-  to detect textual and semantic legal changes, classify risk by clause family, and produce
-  remediation-ready recommendations with fallback language and audit traceability. Use when
-  reviewing counterparty markups, renewal amendments, template drift, procurement paper,
-  M&A diligence batches, or any scenario requiring defensible contract delta analysis.
-allowed-tools: Read, Bash(grep:*), Glob, WebSearch, WebFetch
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Compare two contract versions or compare a contract against an approved template/playbook
+  to detect textual and semantic legal changes, classify risk by clause family, and produce remediation-ready
+  recommendations with fallback language and audit traceability. Use when reviewing counterparty markups,
+  renewal amendments, template drift, procurement paper, M&A diligence batches, or any scenario requiring
+  defensible contract delta analysis.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Contract Comparison
 

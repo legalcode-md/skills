@@ -1,22 +1,20 @@
 ---
 name: legalcode-ropa-generator
-description: >
-  Generate Article 30 Records of Processing Activities (RoPA) for controllers and
-  processors under GDPR, UK GDPR, Swiss FADP, and Brazil LGPD. Use when creating or
-  auditing a processing register, onboarding a new business unit into a data inventory,
-  assessing ROPA completeness before a supervisory authority audit, building a
-  department-by-department data inventory, or integrating data mapping outputs into a
-  supervisory-authority-ready ROPA format. Supports controller RoPA (Art. 30(1)) and
-  processor RoPA (Art. 30(2)) with distinct mandatory-field coverage, Art. 30(5) SME
-  exemption screening, multi-regime jurisdictional overlays, and machine-readable
-  export hooks. Produces both summary and detailed ROPA formats with completeness
-  scoring and prioritized remediation.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: Generate Article 30 Records of Processing Activities (RoPA) for controllers and processors
+  under GDPR, UK GDPR, Swiss FADP, and Brazil LGPD. Use when creating or auditing a processing register,
+  onboarding a new business unit into a data inventory, assessing ROPA completeness before a supervisory
+  authority audit, building a department-by-department data inventory, or integrating data mapping outputs
+  into a supervisory-authority-ready ROPA format. Supports controller RoPA (Art. 30(1)) and processor
+  RoPA (Art. 30(2)) with distinct mandatory-field coverage, Art. 30(5) SME exemption screening, multi-regime
+  jurisdictional overlays, and machine-readable export hooks. Produces both summary and detailed ROPA
+  formats with completeness scoring and prioritized remediation.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode ROPA Generator
 

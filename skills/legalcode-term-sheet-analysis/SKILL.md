@@ -1,26 +1,22 @@
 ---
 name: legalcode-term-sheet-analysis
-description: >
-  Deep analysis of venture capital term sheets across three dimensions: economics
-  (pre/post-money valuation, option pool dilution, liquidation preference multiples
-  and participation mechanics, pay-to-play provisions, anti-dilution weighted-average
-  vs. full-ratchet), control (board composition, protective provisions and veto rights,
-  drag-along/tag-along, information rights, registration rights), and other terms
-  (founder vesting and acceleration, ESOP allocation, exclusivity, no-shop, conditions
-  precedent). Evaluates each term against market benchmarks by stage (seed, Series A–D)
-  and identifies investor-favorable vs. founder-favorable deviations. Models cap table
-  dilution and founder economics across multiple exit scenarios. Produces dual-perspective
-  annotated analysis (founder view and investor view for every material term) with
-  confidence-scored negotiation recommendations and a Glass Box audit trail.
-  Use when reviewing VC term sheets for founders, legal counsel, or investors in
-  US, UK, or Indian jurisdictions. Jurisdiction-agnostic base with [JURISDICTION-SPECIFIC]
-  markers for US (Delaware), UK (BVCA model), and India (SEBI AIF/Companies Act).
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: 'Deep analysis of venture capital term sheets across three dimensions: economics (pre/post-money
+  valuation, option pool dilution, liquidation preference multiples and participation mechanics, pay-to-play
+  provisions, anti-dilution weighted-average vs. full-ratchet), control (board composition, protective
+  provisions and veto rights, drag-along/tag-along, information rights, registration rights), and other
+  terms (founder vesting and acceleration, ESOP allocation, exclusivity, no-shop, conditions precedent).
+  Use when reviewing VC term sheets for founders, legal counsel, or investors in US, UK, or Indian jurisdictions.'
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Deep analysis of venture capital term sheets across three dimensions: economics (pre/post-money valuation, option pool dilution, liquidation preference multiples and participation mechanics, pay-to-play provisions, anti-dilution weighted-average vs. full-ratchet), control (board composition, protective provisions and veto rights, drag-along/tag-along, information rights, registration rights), and other terms (founder vesting and acceleration, ESOP allocation, exclusivity, no-shop, conditions precedent). Evaluates each term against market benchmarks by stage (seed, Series A–D) and identifies investor-favorable vs. founder-favorable deviations. Models cap table dilution and founder economics across multiple exit scenarios. Produces dual-perspective annotated analysis (founder view and investor view for every material term) with confidence-scored negotiation recommendations and a Glass Box audit trail. Use when reviewing VC term sheets for founders, legal counsel, or investors in US, UK, or Indian jurisdictions. Jurisdiction-agnostic base with [JURISDICTION-SPECIFIC] markers for US (Delaware), UK (BVCA model), and India (SEBI AIF/Companies Act).
+
 
 # Legalcode Term Sheet Analysis
 

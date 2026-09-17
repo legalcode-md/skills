@@ -1,17 +1,20 @@
 ---
 name: legalcode-workflow-research
-description: >
-  Research and plan legal and knowledge work tasks thoroughly before execution. Use when
-  starting any significant legal matter — contract review, regulatory compliance analysis,
-  litigation preparation, corporate governance review, IP/patent analysis, M&A due diligence,
-  employment law matters, data privacy assessments (GDPR/CCPA/LGPD), or any high-stakes
-  knowledge work requiring structured research. Triggers on requests like 'help me prepare for',
-  'I need to draft', 'plan out', 'research this legal question', 'analyze this contract',
-  'assess regulatory risk', or any compound legal or knowledge work. Jurisdiction-agnostic
-  with localization markers for any governing law. Produces confidence-scored, auditable
-  research plans with Glass Box reasoning trail.
+description: Research and plan legal and knowledge work tasks thoroughly before execution. Use when starting
+  any significant legal matter — contract review, regulatory compliance analysis, litigation preparation,
+  corporate governance review, IP/patent analysis, M&A due diligence, employment law matters, data privacy
+  assessments (GDPR/CCPA/LGPD), or any high-stakes knowledge work requiring structured research. Triggers
+  on requests like 'help me prepare for', 'I need to draft', 'plan out', 'research this legal question',
+  'analyze this contract', 'assess regulatory risk', or any compound legal or knowledge work. Jurisdiction-agnostic
+  with localization markers for any governing law. Produces confidence-scored, auditable research plans
+  with Glass Box reasoning trail.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Research: Legal & Knowledge Work Research Workflow
 

@@ -1,58 +1,110 @@
 # Legalcode Skills
 
-Public Agent Skills for Legalcode.
+**250 legal skills** for agents that support `SKILL.md` packages: practical general
+workflows alongside bespoke jurisdiction-specific work.
 
-Legalcode gives AI agents access to primary legal sources, legal research workflows, and reusable legal skills. This repository is the public skills distribution surface for agents that support `SKILL.md` files and the `skills` CLI.
+Browse the [complete catalogue](CATALOG.md). The September 2026 expansion adds
+**200 Legalcode-authored skills** to the existing 50-skill selection:
 
-Website: https://legalcode.md
+| Addition area | Skills |
+| --- | ---: |
+| Compliance, privacy, AI and EU/EEA implementation | 38 |
+| Litigation and dispute resolution | 24 |
+| Research, document quality and matter workflows | 20 |
+| Contract drafting, review and lifecycle work | 18 |
+| Corporate transactions, governance and financing | 16 |
+| Intellectual property | 6 |
+| Real estate | 4 |
+| Banking and finance | 3 |
+| Cross-practice legal risk assessment | 1 |
+| Bespoke jurisdiction-specific workflows | 70 |
+| **Total additions** | **200** |
 
-## Install with skills.sh / skills CLI
+Bespoke coverage spans Australia, Brazil, Canada, China, the EU, France, Germany,
+Iceland, India, Ireland, Japan, New Zealand, the Nordic region, Poland, Singapore,
+Switzerland, the UK and the US. Highlights include Icelandic gold-plating and EEA
+conformity assessments, national employment and contract reviews, venture financing,
+construction contracts and local regulatory compliance.
 
-```bash
+## Install
+
+List the available skills:
+
+```sh
 npx skills add legalcode-md/skills --list --full-depth
-npx skills add legalcode-md/skills --skill legalcode-public-search --full-depth
 ```
 
-Install all public Legalcode skills:
+Install a general workflow:
 
-```bash
+```sh
+npx skills add legalcode-md/skills --skill legalcode-contract-review --full-depth
+```
+
+Install a bespoke workflow:
+
+```sh
+npx skills add legalcode-md/skills --skill legalcode-eea-conformity-assessment-is --full-depth
+```
+
+To install the complete collection:
+
+```sh
 npx skills add legalcode-md/skills --all --full-depth
 ```
 
-## MCP Endpoints
+Choose the skills relevant to your work. Each folder includes its own required local
+references and resources. Some workflows can use companion skills or external tools;
+the workflow describes those prerequisites. No model or provider is pinned.
 
-Anonymous public MCP:
+## Legalcode connection
 
-```text
-https://mcp.legalcode.md
-```
-
-Authenticated MCP for Legalcode Pro accounts:
+Use the hosted Streamable HTTP endpoint:
 
 ```text
-https://mcppro.legalcode.md
+https://mcp.legalcode.md/mcp
 ```
 
-Anonymous access supports laws and case law, with rate limits. Pro adds stronger search, more results per query, downloadable results, guidance, and agreements.
+Complete the client authentication flow and discover current coverage and access.
+The Legalcode tools are Discover, Search, Fetch, Analyze and Trace. Fetch primary
+texts before relying on sources. Keep confidential documents local and minimize
+matter facts in source queries.
 
-## Included Skills
+Website: [legalcode.md](https://legalcode.md).
 
-This repository includes 50 public Legalcode skills, with supporting `references/`,
-`scripts/`, templates, and agent files copied alongside each `SKILL.md` where used.
+## Selection and provenance
 
-The bundle covers:
+The 200 additions were selected from our source collection's **Legalcode original**
+and **Complete** entries. Selection favors useful, distinct workflows, verification
+and output guidance, and a balance of general and bespoke coverage. Imported entries
+and overlapping variants were excluded from this expansion.
 
-- MCP setup and public legal source search.
-- Legal work orchestration workflows: research, work, review, compounding, tabular review, and case timeline generation.
-- Contract review, drafting, redlining, comparison, playbook, obligation, NDA, SaaS, MSA, services, terms, DPA, limitation of liability, indemnity, and AI clause workflows.
-- Privacy, data protection, AI governance, EU directive, NIS2, DORA, AML/KYC, sanctions, vendor, third-party, policy gap, and regulatory change workflows.
-- Corporate transaction workflows for startups, SAFEs, term sheets, and due diligence.
+- [Selection record](selection-2026-09.json): source paths and rationale for all 200 additions.
+- [Integrity manifest](catalog.json): source provenance, original metadata and hashes for every packaged file.
 
-Run `npx skills add legalcode-md/skills --list --full-depth` to inspect the current skill list.
+The 250 total preserves the existing 50-skill selection and adds 200 curated skills.
 
-## Notes
+The workflow bodies preserve their original legal analysis and attribution. Portable
+frontmatter, shorter discovery descriptions, current runtime guidance and bundled
+shared references make the collection installable across supported clients. Original
+full descriptions remain available inside the skills.
 
-These skills are instructions for agents. They do not send your documents to Legalcode. Your agent works with your data; Legalcode provides legal source lookup.
+Publication validation checks packaging and resource integrity. It does not certify
+current legal accuracy or successful execution of every workflow. Verify dated legal
+examples, citations, thresholds and deadlines against current primary authorities
+for the relevant matter. Preserve embedded attribution and license notices.
+
+## Validate a checkout
+
+With Python 3.10 or newer:
+
+```sh
+python3 -m pip install -r requirements-dev.txt
+python3 scripts/validate-public-skills.py .
+```
+
+The validator checks all 250 names, metadata, the 200-addition selection, file hashes
+and local Markdown references. `catalog.json` is generated with the source export;
+rebuild it when changing packaged skill files.
 
 ## License and permitted use
 

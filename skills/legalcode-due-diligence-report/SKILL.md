@@ -1,24 +1,22 @@
 ---
 name: legalcode-due-diligence-report
-description: >
-  Structure M&A due diligence findings into executive-ready reports with material risks,
-  deal-breaker identification, negotiation leverage points, closing conditions, and
-  post-closing integration risks. Use when compiling legal due diligence findings into
-  board presentations, legal memoranda, or commercial deal reports for mergers,
-  acquisitions, carve-outs, joint ventures, or corporate investments. Produces
-  audience-differentiated output in three formats — board/executive, legal/counsel,
-  and commercial/deal team — with risk heat maps, remediation recommendations, and a
-  negotiation playbook. Supports US, UK, and EU transactions. Triggers on "due diligence
-  report", "DD report", "findings report", "deal risk summary", "board presentation M&A",
-  "legal DD memo", "red flag report", "deal-breaker analysis", "negotiation leverage DD",
-  "closing conditions", "post-closing integration risk", or "diligence executive summary".
+description: Structure M&A due diligence findings into executive-ready reports with material risks, deal-breaker
+  identification, negotiation leverage points, closing conditions, and post-closing integration risks.
+  Use when compiling legal due diligence findings into board presentations, legal memoranda, or commercial
+  deal reports for mergers, acquisitions, carve-outs, joint ventures, or corporate investments. Produces
+  audience-differentiated output in three formats — board/executive, legal/counsel, and commercial/deal
+  team — with risk heat maps, remediation recommendations, and a negotiation playbook. Supports US, UK,
+  and EU transactions. Triggers on "due diligence report", "DD report", "findings report", "deal risk
+  summary", "board presentation M&A", "legal DD memo", "red flag report", "deal-breaker analysis", "negotiation
+  leverage DD", "closing conditions", "post-closing integration risk", or "diligence executive summary".
   Jurisdiction-agnostic with markers for US, UK, and EU variants.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Due Diligence Report
 

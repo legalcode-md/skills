@@ -1,32 +1,25 @@
 ---
 name: legalcode-dora-compliance-assessment
-description: >
-  Assesses EU DORA (Digital Operational Resilience Act, Regulation (EU) 2022/2554) compliance
-  for financial entities covering all five DORA pillars: ICT risk management framework
-  (Chapter II, Articles 5–16); ICT-related incident classification and reporting
-  (Chapter III, Articles 17–23); digital operational resilience testing including
-  Threat-Led Penetration Testing — TLPT (Chapter IV, Articles 24–27); third-party ICT
-  risk management including critical ICT third-party service providers — CTPPs
-  (Chapter V, Articles 28–44); and information sharing arrangements (Chapter VI, Article 45).
-  Maps DORA to NIS2 Directive lex specialis, GDPR Article 32, EBA guidelines, and all
-  27 finalized regulatory and implementing technical standards (RTS/ITS). Use when a
-  financial entity needs to assess DORA compliance posture, prepare for supervisory
-  examination, build a DORA gap remediation roadmap, design incident classification and
-  reporting procedures, prepare TLPT programs, audit third-party ICT contracts for Article 30
-  mandatory provisions, or build information sharing arrangements. Covers entity scope
-  determination (21 in-scope categories including credit institutions, investment firms,
-  payment institutions, insurers, crypto-asset service providers), simplified regime
-  entities (Article 16), board governance requirements (Article 5), TLPT mandatory 3-year
-  testing cycle, register of contractual arrangements, CTPP oversight exposure, and
-  cross-directive alignment. Produces COMPLIANT/PARTIAL/NON-COMPLIANT/CRITICAL compliance
-  assessments per pillar with IMMEDIATE/NEAR-TERM/BACKGROUND remediation roadmaps,
-  prioritised action tables, and Glass Box audit trail.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: 'Assesses EU DORA (Digital Operational Resilience Act, Regulation (EU) 2022/2554) compliance
+  for financial entities covering all five DORA pillars: ICT risk management framework (Chapter II, Articles
+  5–16); ICT-related incident classification and reporting (Chapter III, Articles 17–23); digital operational
+  resilience testing including Threat-Led Penetration Testing — TLPT (Chapter IV, Articles 24–27); third-party
+  ICT risk management including critical ICT third-party service providers — CTPPs (Chapter V, Articles
+  28–44); and information sharing arrangements (Chapter VI, Article 45). Use when a financial entity needs
+  to assess DORA compliance posture, prepare for supervisory examination, build a DORA gap remediation
+  roadmap, design incident classification and reporting procedures, prepare TLPT programs, audit third-party
+  ICT contracts for Article 30 mandatory provisions, or build information sharing arrangements.'
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Assesses EU DORA (Digital Operational Resilience Act, Regulation (EU) 2022/2554) compliance for financial entities covering all five DORA pillars: ICT risk management framework (Chapter II, Articles 5–16); ICT-related incident classification and reporting (Chapter III, Articles 17–23); digital operational resilience testing including Threat-Led Penetration Testing — TLPT (Chapter IV, Articles 24–27); third-party ICT risk management including critical ICT third-party service providers — CTPPs (Chapter V, Articles 28–44); and information sharing arrangements (Chapter VI, Article 45). Maps DORA to NIS2 Directive lex specialis, GDPR Article 32, EBA guidelines, and all 27 finalized regulatory and implementing technical standards (RTS/ITS). Use when a financial entity needs to assess DORA compliance posture, prepare for supervisory examination, build a DORA gap remediation roadmap, design incident classification and reporting procedures, prepare TLPT programs, audit third-party ICT contracts for Article 30 mandatory provisions, or build information sharing arrangements. Covers entity scope determination (21 in-scope categories including credit institutions, investment firms, payment institutions, insurers, crypto-asset service providers), simplified regime entities (Article 16), board governance requirements (Article 5), TLPT mandatory 3-year testing cycle, register of contractual arrangements, CTPP oversight exposure, and cross-directive alignment. Produces COMPLIANT/PARTIAL/NON-COMPLIANT/CRITICAL compliance assessments per pillar with IMMEDIATE/NEAR-TERM/BACKGROUND remediation roadmaps, prioritised action tables, and Glass Box audit trail.
+
 
 # DORA Compliance Assessment
 

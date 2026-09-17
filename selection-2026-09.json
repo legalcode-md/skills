@@ -1,0 +1,1616 @@
+{
+  "baseline_count": 50,
+  "additional_count": 200,
+  "total_count": 250,
+  "general_additions": 130,
+  "jurisdiction_additions": 70,
+  "selection_criteria": [
+    "Legalcode original provenance and Complete status in the source registry",
+    "Distinct practical user task, with workflow, output and verification guidance",
+    "Balanced general and jurisdiction-specific coverage, including the complete EU/EEA implementation suite",
+    "Exclude imported skills and de-prioritize overlapping variants, administrative reporting and narrow prediction workflows"
+  ],
+  "validation_scope": "Publication and packaging review; not a new legal-authority audit or behavioral benchmark of 200 workflows. Legal examples and thresholds require verification at use time.",
+  "skills": [
+    {
+      "name": "legalcode-consumer-lending-compliance",
+      "source": "skills/general/banking-finance/legalcode-consumer-lending-compliance",
+      "scope": "general",
+      "category": "banking-finance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Specialist financial-services or secured-lending workflow."
+    },
+    {
+      "name": "legalcode-fintech-regulatory-assessment",
+      "source": "skills/general/banking-finance/legalcode-fintech-regulatory-assessment",
+      "scope": "general",
+      "category": "banking-finance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Specialist financial-services or secured-lending workflow."
+    },
+    {
+      "name": "legalcode-security-collateral-review",
+      "source": "skills/general/banking-finance/legalcode-security-collateral-review",
+      "scope": "general",
+      "category": "banking-finance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Specialist financial-services or secured-lending workflow."
+    },
+    {
+      "name": "legalcode-accessibility-compliance",
+      "source": "skills/general/compliance/legalcode-accessibility-compliance",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-ai-acceptable-use-policy",
+      "source": "skills/general/compliance/legalcode-ai-acceptable-use-policy",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-ai-fundamental-rights-impact-assessment",
+      "source": "skills/general/compliance/legalcode-ai-fundamental-rights-impact-assessment",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-ai-in-employment-compliance",
+      "source": "skills/general/compliance/legalcode-ai-in-employment-compliance",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-anti-bribery-compliance",
+      "source": "skills/general/compliance/legalcode-anti-bribery-compliance",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-antitrust-merger-review",
+      "source": "skills/general/compliance/legalcode-antitrust-merger-review",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-biometric-data-compliance",
+      "source": "skills/general/compliance/legalcode-biometric-data-compliance",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-breach-affected-party-communication",
+      "source": "skills/general/compliance/legalcode-breach-affected-party-communication",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-breach-severity-assessment",
+      "source": "skills/general/compliance/legalcode-breach-severity-assessment",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-compliance-program-builder",
+      "source": "skills/general/compliance/legalcode-compliance-program-builder",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-consent-mechanism-review",
+      "source": "skills/general/compliance/legalcode-consent-mechanism-review",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-coppa-compliance-assessment",
+      "source": "skills/general/compliance/legalcode-coppa-compliance-assessment",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-corporate-governance-audit",
+      "source": "skills/general/compliance/legalcode-corporate-governance-audit",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-data-mapping-workflow",
+      "source": "skills/general/compliance/legalcode-data-mapping-workflow",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-dpa-review-and-negotiation",
+      "source": "skills/general/compliance/legalcode-dpa-review-and-negotiation",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-eea-incorporation-tracker",
+      "source": "skills/general/compliance/legalcode-eea-incorporation-tracker",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-employee-handbook-review",
+      "source": "skills/general/compliance/legalcode-employee-handbook-review",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-environmental-compliance-review",
+      "source": "skills/general/compliance/legalcode-environmental-compliance-review",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-eu-conformity-assessment",
+      "source": "skills/general/compliance/legalcode-eu-conformity-assessment",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-eu-correlation-table-builder",
+      "source": "skills/general/compliance/legalcode-eu-correlation-table-builder",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-eu-gold-plating-detector",
+      "source": "skills/general/compliance/legalcode-eu-gold-plating-detector",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-eu-infringement-procedure-tracker",
+      "source": "skills/general/compliance/legalcode-eu-infringement-procedure-tracker",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-eu-transposition-tracker",
+      "source": "skills/general/compliance/legalcode-eu-transposition-tracker",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-immigration-work-authorization",
+      "source": "skills/general/compliance/legalcode-immigration-work-authorization",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-incident-response-plan-builder",
+      "source": "skills/general/compliance/legalcode-incident-response-plan-builder",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-internal-investigation",
+      "source": "skills/general/compliance/legalcode-internal-investigation",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-legitimate-interest-assessment",
+      "source": "skills/general/compliance/legalcode-legitimate-interest-assessment",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-multi-jurisdiction-privacy-comparison",
+      "source": "skills/general/compliance/legalcode-multi-jurisdiction-privacy-comparison",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-non-compete-analysis",
+      "source": "skills/general/compliance/legalcode-non-compete-analysis",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-open-source-license-compliance",
+      "source": "skills/general/compliance/legalcode-open-source-license-compliance",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-pay-equity-audit",
+      "source": "skills/general/compliance/legalcode-pay-equity-audit",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-soc2-readiness-assessment",
+      "source": "skills/general/compliance/legalcode-soc2-readiness-assessment",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-trademark-clearance-search",
+      "source": "skills/general/compliance/legalcode-trademark-clearance-search",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-us-breach-notification-triage",
+      "source": "skills/general/compliance/legalcode-us-breach-notification-triage",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-us-state-privacy-comparison",
+      "source": "skills/general/compliance/legalcode-us-state-privacy-comparison",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-wage-hour-compliance-audit",
+      "source": "skills/general/compliance/legalcode-wage-hour-compliance-audit",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-warn-act-analysis",
+      "source": "skills/general/compliance/legalcode-warn-act-analysis",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-workplace-investigation",
+      "source": "skills/general/compliance/legalcode-workplace-investigation",
+      "scope": "general",
+      "category": "compliance",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Practical privacy, AI, employment, investigation or EU/EEA implementation workflow with verification and audit guidance."
+    },
+    {
+      "name": "legalcode-clause-library-manager",
+      "source": "skills/general/contracts/legalcode-clause-library-manager",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-commercial-lease-review",
+      "source": "skills/general/contracts/legalcode-commercial-lease-review",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-construction-contract-review",
+      "source": "skills/general/contracts/legalcode-construction-contract-review",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-contract-amendment-drafter",
+      "source": "skills/general/contracts/legalcode-contract-amendment-drafter",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-contract-metadata-extractor",
+      "source": "skills/general/contracts/legalcode-contract-metadata-extractor",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-contract-renewal-analysis",
+      "source": "skills/general/contracts/legalcode-contract-renewal-analysis",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-distribution-agreement-review",
+      "source": "skills/general/contracts/legalcode-distribution-agreement-review",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-employment-agreement-review",
+      "source": "skills/general/contracts/legalcode-employment-agreement-review",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-esg-clause-reviewer",
+      "source": "skills/general/contracts/legalcode-esg-clause-reviewer",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-franchise-agreement-review",
+      "source": "skills/general/contracts/legalcode-franchise-agreement-review",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-guaranty-agreement-review",
+      "source": "skills/general/contracts/legalcode-guaranty-agreement-review",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-ip-assignment-agreement",
+      "source": "skills/general/contracts/legalcode-ip-assignment-agreement",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-lease-abstractor",
+      "source": "skills/general/contracts/legalcode-lease-abstractor",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-loan-agreement-review",
+      "source": "skills/general/contracts/legalcode-loan-agreement-review",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-partnership-agreement-review",
+      "source": "skills/general/contracts/legalcode-partnership-agreement-review",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-supply-chain-contract-review",
+      "source": "skills/general/contracts/legalcode-supply-chain-contract-review",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-technology-license-agreement",
+      "source": "skills/general/contracts/legalcode-technology-license-agreement",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-nda-mutual",
+      "source": "skills/general/contracts/nda-mutual",
+      "scope": "general",
+      "category": "contracts",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct contract drafting, review, extraction or lifecycle workflow; complements the existing commercial-contract baseline."
+    },
+    {
+      "name": "legalcode-board-resolution-drafter",
+      "source": "skills/general/corporate-transactions/legalcode-board-resolution-drafter",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-cap-table-review",
+      "source": "skills/general/corporate-transactions/legalcode-cap-table-review",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-closing-checklist",
+      "source": "skills/general/corporate-transactions/legalcode-closing-checklist",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-convertible-note-review",
+      "source": "skills/general/corporate-transactions/legalcode-convertible-note-review",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-corporate-minutes-drafter",
+      "source": "skills/general/corporate-transactions/legalcode-corporate-minutes-drafter",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-corporate-restructuring",
+      "source": "skills/general/corporate-transactions/legalcode-corporate-restructuring",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-data-room-organizer",
+      "source": "skills/general/corporate-transactions/legalcode-data-room-organizer",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-equity-incentive-plan-review",
+      "source": "skills/general/corporate-transactions/legalcode-equity-incentive-plan-review",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-founders-agreement-drafter",
+      "source": "skills/general/corporate-transactions/legalcode-founders-agreement-drafter",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-joint-venture-agreement",
+      "source": "skills/general/corporate-transactions/legalcode-joint-venture-agreement",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-letter-of-intent-review",
+      "source": "skills/general/corporate-transactions/legalcode-letter-of-intent-review",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-ma-due-diligence-checklist",
+      "source": "skills/general/corporate-transactions/legalcode-ma-due-diligence-checklist",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-merger-agreement-analysis",
+      "source": "skills/general/corporate-transactions/legalcode-merger-agreement-analysis",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-purchase-agreement-review",
+      "source": "skills/general/corporate-transactions/legalcode-purchase-agreement-review",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-shareholders-agreement-review",
+      "source": "skills/general/corporate-transactions/legalcode-shareholders-agreement-review",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-venture-financing-suite",
+      "source": "skills/general/corporate-transactions/legalcode-venture-financing-suite",
+      "scope": "general",
+      "category": "corporate-transactions",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Transaction execution, financing, governance or restructuring workflow beyond the existing startup and term-sheet skills."
+    },
+    {
+      "name": "legalcode-ai-training-data-copyright",
+      "source": "skills/general/ip/legalcode-ai-training-data-copyright",
+      "scope": "general",
+      "category": "ip",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct intellectual-property protection, licensing or infringement workflow."
+    },
+    {
+      "name": "legalcode-copyright-infringement-assessment",
+      "source": "skills/general/ip/legalcode-copyright-infringement-assessment",
+      "scope": "general",
+      "category": "ip",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct intellectual-property protection, licensing or infringement workflow."
+    },
+    {
+      "name": "legalcode-dmca-takedown-workflow",
+      "source": "skills/general/ip/legalcode-dmca-takedown-workflow",
+      "scope": "general",
+      "category": "ip",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct intellectual-property protection, licensing or infringement workflow."
+    },
+    {
+      "name": "legalcode-licensing-agreement-review",
+      "source": "skills/general/ip/legalcode-licensing-agreement-review",
+      "scope": "general",
+      "category": "ip",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct intellectual-property protection, licensing or infringement workflow."
+    },
+    {
+      "name": "legalcode-patent-landscape-analysis",
+      "source": "skills/general/ip/legalcode-patent-landscape-analysis",
+      "scope": "general",
+      "category": "ip",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct intellectual-property protection, licensing or infringement workflow."
+    },
+    {
+      "name": "legalcode-trade-secret-audit",
+      "source": "skills/general/ip/legalcode-trade-secret-audit",
+      "scope": "general",
+      "category": "ip",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Distinct intellectual-property protection, licensing or infringement workflow."
+    },
+    {
+      "name": "legalcode-appellate-brief-drafter",
+      "source": "skills/general/litigation/legalcode-appellate-brief-drafter",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-arbitration-clause-review",
+      "source": "skills/general/litigation/legalcode-arbitration-clause-review",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-arbitration-demand-drafter",
+      "source": "skills/general/litigation/legalcode-arbitration-demand-drafter",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-case-summarizer",
+      "source": "skills/general/litigation/legalcode-case-summarizer",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-citation-checker",
+      "source": "skills/general/litigation/legalcode-citation-checker",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-complaint-drafter",
+      "source": "skills/general/litigation/legalcode-complaint-drafter",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-complaint-drafter-ew",
+      "source": "skills/general/litigation/legalcode-complaint-drafter-ew",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-complaint-drafter-is",
+      "source": "skills/general/litigation/legalcode-complaint-drafter-is",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-damages-calculation",
+      "source": "skills/general/litigation/legalcode-damages-calculation",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-deadline-calculator",
+      "source": "skills/general/litigation/legalcode-deadline-calculator",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-demand-letter-drafter",
+      "source": "skills/general/litigation/legalcode-demand-letter-drafter",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-deposition-preparation",
+      "source": "skills/general/litigation/legalcode-deposition-preparation",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-discovery-request-drafter",
+      "source": "skills/general/litigation/legalcode-discovery-request-drafter",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-discovery-response-drafter",
+      "source": "skills/general/litigation/legalcode-discovery-response-drafter",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-early-case-assessment",
+      "source": "skills/general/litigation/legalcode-early-case-assessment",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-evidence-admissibility-analysis",
+      "source": "skills/general/litigation/legalcode-evidence-admissibility-analysis",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-injunctive-relief-motion",
+      "source": "skills/general/litigation/legalcode-injunctive-relief-motion",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-litigation-risk-assessment",
+      "source": "skills/general/litigation/legalcode-litigation-risk-assessment",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-mediation-preparation",
+      "source": "skills/general/litigation/legalcode-mediation-preparation",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-privilege-review",
+      "source": "skills/general/litigation/legalcode-privilege-review",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-settlement-agreement-drafter",
+      "source": "skills/general/litigation/legalcode-settlement-agreement-drafter",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-settlement-negotiation",
+      "source": "skills/general/litigation/legalcode-settlement-negotiation",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-witness-preparation",
+      "source": "skills/general/litigation/legalcode-witness-preparation",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-litigation-hold-notice",
+      "source": "skills/general/litigation/litigation-hold-notice",
+      "scope": "general",
+      "category": "litigation",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Core dispute preparation, evidence, drafting or settlement work with jurisdiction and source-verification boundaries."
+    },
+    {
+      "name": "legalcode-real-estate-due-diligence",
+      "source": "skills/general/real-estate/legalcode-real-estate-due-diligence",
+      "scope": "general",
+      "category": "real-estate",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Property-specific diligence, lease, title or land-use workflow."
+    },
+    {
+      "name": "legalcode-residential-lease-review",
+      "source": "skills/general/real-estate/legalcode-residential-lease-review",
+      "scope": "general",
+      "category": "real-estate",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Property-specific diligence, lease, title or land-use workflow."
+    },
+    {
+      "name": "legalcode-title-review",
+      "source": "skills/general/real-estate/legalcode-title-review",
+      "scope": "general",
+      "category": "real-estate",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Property-specific diligence, lease, title or land-use workflow."
+    },
+    {
+      "name": "legalcode-zoning-land-use-analysis",
+      "source": "skills/general/real-estate/legalcode-zoning-land-use-analysis",
+      "scope": "general",
+      "category": "real-estate",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Property-specific diligence, lease, title or land-use workflow."
+    },
+    {
+      "name": "legalcode-legal-risk-assessment",
+      "source": "skills/general/risk-assessment/legalcode-legal-risk-assessment",
+      "scope": "general",
+      "category": "risk-assessment",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Cross-practice framework for prioritizing legal exposure."
+    },
+    {
+      "name": "legalcode-client-intake-workflow",
+      "source": "skills/general/workflows/legalcode-client-intake-workflow",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-conflict-check",
+      "source": "skills/general/workflows/legalcode-conflict-check",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-cross-reference-analyzer",
+      "source": "skills/general/workflows/legalcode-cross-reference-analyzer",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-defined-term-audit",
+      "source": "skills/general/workflows/legalcode-defined-term-audit",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-document-classifier",
+      "source": "skills/general/workflows/legalcode-document-classifier",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-document-summarizer",
+      "source": "skills/general/workflows/legalcode-document-summarizer",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-engagement-letter-drafter",
+      "source": "skills/general/workflows/legalcode-engagement-letter-drafter",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-entity-compliance-tracker",
+      "source": "skills/general/workflows/legalcode-entity-compliance-tracker",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-jurisdiction-mapper",
+      "source": "skills/general/workflows/legalcode-jurisdiction-mapper",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-legal-project-management",
+      "source": "skills/general/workflows/legalcode-legal-project-management",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-legislation-verification",
+      "source": "skills/general/workflows/legalcode-legislation-verification",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-matter-scoping",
+      "source": "skills/general/workflows/legalcode-matter-scoping",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-matter-triage-workflow",
+      "source": "skills/general/workflows/legalcode-matter-triage-workflow",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-offer-letter-drafter",
+      "source": "skills/general/workflows/legalcode-offer-letter-drafter",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-outside-counsel-guidelines",
+      "source": "skills/general/workflows/legalcode-outside-counsel-guidelines",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-plain-language",
+      "source": "skills/general/workflows/legalcode-plain-language",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-precedent-analyzer",
+      "source": "skills/general/workflows/legalcode-precedent-analyzer",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-precedent-search",
+      "source": "skills/general/workflows/legalcode-precedent-search",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-proofread",
+      "source": "skills/general/workflows/legalcode-proofread",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-strategic-equilibrium-analysis",
+      "source": "skills/general/workflows/legalcode-strategic-equilibrium-analysis",
+      "scope": "general",
+      "category": "workflows",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Reusable intake, research, document-quality or matter-management capability."
+    },
+    {
+      "name": "legalcode-au-asic-regulatory-compliance",
+      "source": "skills/jurisdictions/australia/compliance/legalcode-au-asic-regulatory-compliance",
+      "scope": "jurisdictions",
+      "category": "australia",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke australia workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-au-consumer-law-compliance",
+      "source": "skills/jurisdictions/australia/compliance/legalcode-au-consumer-law-compliance",
+      "scope": "jurisdictions",
+      "category": "australia",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke australia workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-au-fair-work-compliance",
+      "source": "skills/jurisdictions/australia/compliance/legalcode-au-fair-work-compliance",
+      "scope": "jurisdictions",
+      "category": "australia",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke australia workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-au-unfair-contract-terms",
+      "source": "skills/jurisdictions/australia/contracts/legalcode-au-unfair-contract-terms",
+      "scope": "jurisdictions",
+      "category": "australia",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke australia workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-franchise-agreement-review-au",
+      "source": "skills/jurisdictions/australia/contracts/legalcode-franchise-agreement-review-au",
+      "scope": "jurisdictions",
+      "category": "australia",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke australia workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-br-clt-employment-review",
+      "source": "skills/jurisdictions/brazil/compliance/legalcode-br-clt-employment-review",
+      "scope": "jurisdictions",
+      "category": "brazil",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke brazil workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-venture-financing-br",
+      "source": "skills/jurisdictions/brazil/corporate/legalcode-venture-financing-br",
+      "scope": "jurisdictions",
+      "category": "brazil",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke brazil workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-ca-competition-act-assessment",
+      "source": "skills/jurisdictions/canada/federal/compliance/legalcode-ca-competition-act-assessment",
+      "scope": "jurisdictions",
+      "category": "canada",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke canada workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-ca-employment-standards-review",
+      "source": "skills/jurisdictions/canada/federal/compliance/legalcode-ca-employment-standards-review",
+      "scope": "jurisdictions",
+      "category": "canada",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke canada workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-ca-pipeda-compliance",
+      "source": "skills/jurisdictions/canada/federal/compliance/legalcode-ca-pipeda-compliance",
+      "scope": "jurisdictions",
+      "category": "canada",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke canada workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-non-compete-analysis-cn",
+      "source": "skills/jurisdictions/china/compliance/legalcode-non-compete-analysis-cn",
+      "scope": "jurisdictions",
+      "category": "china",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke china workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-eu-competition-law-assessment",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-competition-law-assessment",
+      "scope": "jurisdictions",
+      "category": "european-union",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke european union workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-eu-csrd-sustainability-reporting",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-csrd-sustainability-reporting",
+      "scope": "jurisdictions",
+      "category": "european-union",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke european union workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-eu-dma-compliance",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-dma-compliance",
+      "scope": "jurisdictions",
+      "category": "european-union",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke european union workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-eu-dsa-compliance",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-dsa-compliance",
+      "scope": "jurisdictions",
+      "category": "european-union",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke european union workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-eu-gdpr-breach-notification-operations",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-gdpr-breach-notification-operations",
+      "scope": "jurisdictions",
+      "category": "european-union",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke european union workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-eu-prospectus-regulation",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-prospectus-regulation",
+      "scope": "jurisdictions",
+      "category": "european-union",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke european union workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-eu-whistleblower-directive",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-whistleblower-directive",
+      "scope": "jurisdictions",
+      "category": "european-union",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke european union workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-fr-cnil-privacy-compliance",
+      "source": "skills/jurisdictions/france/compliance/legalcode-fr-cnil-privacy-compliance",
+      "scope": "jurisdictions",
+      "category": "france",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke france workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-fr-sapin-ii-compliance",
+      "source": "skills/jurisdictions/france/compliance/legalcode-fr-sapin-ii-compliance",
+      "scope": "jurisdictions",
+      "category": "france",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke france workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-non-compete-analysis-fr",
+      "source": "skills/jurisdictions/france/compliance/legalcode-non-compete-analysis-fr",
+      "scope": "jurisdictions",
+      "category": "france",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke france workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-fr-bail-commercial",
+      "source": "skills/jurisdictions/france/contracts/legalcode-fr-bail-commercial",
+      "scope": "jurisdictions",
+      "category": "france",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke france workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-fr-contrat-de-travail-cdi",
+      "source": "skills/jurisdictions/france/contracts/legalcode-fr-contrat-de-travail-cdi",
+      "scope": "jurisdictions",
+      "category": "france",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke france workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-franchise-agreement-review-eu-fr",
+      "source": "skills/jurisdictions/france/contracts/legalcode-franchise-agreement-review-eu-fr",
+      "scope": "jurisdictions",
+      "category": "france",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke france workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-venture-financing-fr",
+      "source": "skills/jurisdictions/france/corporate/legalcode-venture-financing-fr",
+      "scope": "jurisdictions",
+      "category": "france",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke france workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-de-betriebsrat-consultation",
+      "source": "skills/jurisdictions/germany/compliance/legalcode-de-betriebsrat-consultation",
+      "scope": "jurisdictions",
+      "category": "germany",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke germany workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-de-kuendigungsschutz",
+      "source": "skills/jurisdictions/germany/compliance/legalcode-de-kuendigungsschutz",
+      "scope": "jurisdictions",
+      "category": "germany",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke germany workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-non-compete-analysis-de",
+      "source": "skills/jurisdictions/germany/compliance/legalcode-non-compete-analysis-de",
+      "scope": "jurisdictions",
+      "category": "germany",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke germany workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-de-agb-review",
+      "source": "skills/jurisdictions/germany/contracts/legalcode-de-agb-review",
+      "scope": "jurisdictions",
+      "category": "germany",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke germany workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-de-gmbh-formation",
+      "source": "skills/jurisdictions/germany/corporate/legalcode-de-gmbh-formation",
+      "scope": "jurisdictions",
+      "category": "germany",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke germany workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-venture-financing-de",
+      "source": "skills/jurisdictions/germany/corporate/legalcode-venture-financing-de",
+      "scope": "jurisdictions",
+      "category": "germany",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke germany workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-anti-gold-plating-is",
+      "source": "skills/jurisdictions/iceland/compliance/legalcode-anti-gold-plating-is",
+      "scope": "jurisdictions",
+      "category": "iceland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke iceland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-eea-conformity-assessment-is",
+      "source": "skills/jurisdictions/iceland/compliance/legalcode-eea-conformity-assessment-is",
+      "scope": "jurisdictions",
+      "category": "iceland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke iceland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-is-contract-law-general",
+      "source": "skills/jurisdictions/iceland/contracts/legalcode-is-contract-law-general",
+      "scope": "jurisdictions",
+      "category": "iceland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke iceland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-iceland-real-estate-contracts",
+      "source": "skills/jurisdictions/iceland/real-estate/legalcode-iceland-real-estate-contracts",
+      "scope": "jurisdictions",
+      "category": "iceland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke iceland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-venture-financing-in",
+      "source": "skills/jurisdictions/india/corporate/legalcode-venture-financing-in",
+      "scope": "jurisdictions",
+      "category": "india",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke india workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-ie-company-formation",
+      "source": "skills/jurisdictions/ireland/corporate/legalcode-ie-company-formation",
+      "scope": "jurisdictions",
+      "category": "ireland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke ireland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-jp-labor-standards-compliance",
+      "source": "skills/jurisdictions/japan/compliance/legalcode-jp-labor-standards-compliance",
+      "scope": "jurisdictions",
+      "category": "japan",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke japan workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-venture-financing-jp",
+      "source": "skills/jurisdictions/japan/corporate/legalcode-venture-financing-jp",
+      "scope": "jurisdictions",
+      "category": "japan",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke japan workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-nz-employment-relations",
+      "source": "skills/jurisdictions/new-zealand/compliance/legalcode-nz-employment-relations",
+      "scope": "jurisdictions",
+      "category": "new-zealand",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke new zealand workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-franchise-agreement-review-nordic",
+      "source": "skills/jurisdictions/nordic/contracts/legalcode-franchise-agreement-review-nordic",
+      "scope": "jurisdictions",
+      "category": "nordic",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke nordic workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-pl-legal-memorandum",
+      "source": "skills/jurisdictions/poland/compliance/legalcode-pl-legal-memorandum",
+      "scope": "jurisdictions",
+      "category": "poland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke poland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-pl-contract-review",
+      "source": "skills/jurisdictions/poland/contracts/legalcode-pl-contract-review",
+      "scope": "jurisdictions",
+      "category": "poland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke poland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-pl-employment-agreement",
+      "source": "skills/jurisdictions/poland/contracts/legalcode-pl-employment-agreement",
+      "scope": "jurisdictions",
+      "category": "poland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke poland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-sg-employment-act-compliance",
+      "source": "skills/jurisdictions/singapore/compliance/legalcode-sg-employment-act-compliance",
+      "scope": "jurisdictions",
+      "category": "singapore",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke singapore workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-venture-financing-sg",
+      "source": "skills/jurisdictions/singapore/corporate/legalcode-venture-financing-sg",
+      "scope": "jurisdictions",
+      "category": "singapore",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke singapore workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-ch-cantonal-law-navigator",
+      "source": "skills/jurisdictions/switzerland/compliance/legalcode-ch-cantonal-law-navigator",
+      "scope": "jurisdictions",
+      "category": "switzerland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke switzerland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-ch-ndsg-compliance",
+      "source": "skills/jurisdictions/switzerland/compliance/legalcode-ch-ndsg-compliance",
+      "scope": "jurisdictions",
+      "category": "switzerland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke switzerland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-ch-or-contract-review",
+      "source": "skills/jurisdictions/switzerland/contracts/legalcode-ch-or-contract-review",
+      "scope": "jurisdictions",
+      "category": "switzerland",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke switzerland workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-non-compete-analysis-ew",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-non-compete-analysis-ew",
+      "scope": "jurisdictions",
+      "category": "united-kingdom",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united kingdom workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-uk-advertising-compliance",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-advertising-compliance",
+      "scope": "jurisdictions",
+      "category": "united-kingdom",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united kingdom workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-uk-bribery-act-compliance",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-bribery-act-compliance",
+      "scope": "jurisdictions",
+      "category": "united-kingdom",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united kingdom workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-uk-corporate-governance-code",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-corporate-governance-code",
+      "scope": "jurisdictions",
+      "category": "united-kingdom",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united kingdom workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-uk-fca-regulatory-compliance",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-fca-regulatory-compliance",
+      "scope": "jurisdictions",
+      "category": "united-kingdom",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united kingdom workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-uk-prospectus-and-fca-offering-compliance",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-prospectus-and-fca-offering-compliance",
+      "scope": "jurisdictions",
+      "category": "united-kingdom",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united kingdom workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-uk-whistleblower-program-builder",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-whistleblower-program-builder",
+      "scope": "jurisdictions",
+      "category": "united-kingdom",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united kingdom workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-uk-jct-nec-contract-review",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/contracts/legalcode-uk-jct-nec-contract-review",
+      "scope": "jurisdictions",
+      "category": "united-kingdom",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united kingdom workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-venture-financing-uk",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/corporate/legalcode-venture-financing-uk",
+      "scope": "jurisdictions",
+      "category": "united-kingdom",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united kingdom workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-uk-employment-tribunal-claim",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/litigation/legalcode-uk-employment-tribunal-claim",
+      "scope": "jurisdictions",
+      "category": "united-kingdom",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united kingdom workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-franchise-agreement-review-us-ca",
+      "source": "skills/jurisdictions/united-states/california/contracts/legalcode-franchise-agreement-review-us-ca",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-us-aia-construction-contract-review",
+      "source": "skills/jurisdictions/united-states/contracts/legalcode-us-aia-construction-contract-review",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-us-delaware-entity-formation",
+      "source": "skills/jurisdictions/united-states/delaware/corporate/legalcode-us-delaware-entity-formation",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-us-fcpa-compliance",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-fcpa-compliance",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-us-federal-regulatory-comment",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-federal-regulatory-comment",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-us-ftc-advertising-compliance",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-ftc-advertising-compliance",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-us-ofac-sanctions-screening",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-ofac-sanctions-screening",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-us-private-offering-and-blue-sky-compliance",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-private-offering-and-blue-sky-compliance",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-us-section-409a-valuation-review",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-section-409a-valuation-review",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-us-state-non-compete-analysis",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-state-non-compete-analysis",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    },
+    {
+      "name": "legalcode-us-whistleblower-program-builder",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-whistleblower-program-builder",
+      "scope": "jurisdictions",
+      "category": "united-states",
+      "provenance": "Legalcode original; marked Complete in skills/TOC.md",
+      "selection_reason": "Bespoke united states workflow with local-law analysis and source-verification requirements."
+    }
+  ]
+}

@@ -1,26 +1,21 @@
 ---
 name: legalcode-ai-governance-framework-builder
-description: >
-  Builds comprehensive organizational AI governance frameworks aligned with ISO/IEC
-  42001:2023 (AI Management System) and the NIST AI Risk Management Framework (AI RMF
-  1.0). Covers governance structure (AI ethics committee, RACI matrix, reporting lines),
-  policy development suite (acceptable use, risk classification, procurement, training
-  data), risk management lifecycle (MAP, MEASURE, MANAGE, GOVERN functions), risk-tiered
-  use case approval workflows, model lifecycle management (development, testing, deployment,
-  monitoring, retirement), vendor and third-party AI assessment criteria, AI incident
-  response procedures, and ongoing monitoring and audit programs. Use when an organization
-  needs to establish, audit, or mature its AI governance posture; prepare for ISO 42001
-  certification; align with NIST AI RMF; satisfy EU AI Act deployer obligations; respond
-  to board or investor AI governance inquiries; or produce a customizable AI governance
-  documentation suite with an implementation roadmap. Produces governance framework
-  documentation, policy templates, workflow designs, RACI matrices, and a phased
-  implementation roadmap.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: Builds comprehensive organizational AI governance frameworks aligned with ISO/IEC 42001:2023
+  (AI Management System) and the NIST AI Risk Management Framework (AI RMF 1.0). Use when an organization
+  needs to establish, audit, or mature its AI governance posture; prepare for ISO 42001 certification;
+  align with NIST AI RMF; satisfy EU AI Act deployer obligations; respond to board or investor AI governance
+  inquiries; or produce a customizable AI governance documentation suite with an implementation roadmap.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Builds comprehensive organizational AI governance frameworks aligned with ISO/IEC 42001:2023 (AI Management System) and the NIST AI Risk Management Framework (AI RMF 1.0). Covers governance structure (AI ethics committee, RACI matrix, reporting lines), policy development suite (acceptable use, risk classification, procurement, training data), risk management lifecycle (MAP, MEASURE, MANAGE, GOVERN functions), risk-tiered use case approval workflows, model lifecycle management (development, testing, deployment, monitoring, retirement), vendor and third-party AI assessment criteria, AI incident response procedures, and ongoing monitoring and audit programs. Use when an organization needs to establish, audit, or mature its AI governance posture; prepare for ISO 42001 certification; align with NIST AI RMF; satisfy EU AI Act deployer obligations; respond to board or investor AI governance inquiries; or produce a customizable AI governance documentation suite with an implementation roadmap. Produces governance framework documentation, policy templates, workflow designs, RACI matrices, and a phased implementation roadmap.
+
 
 # Legalcode AI Governance Framework Builder
 

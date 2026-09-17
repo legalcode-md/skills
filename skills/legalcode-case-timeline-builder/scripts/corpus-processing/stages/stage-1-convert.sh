@@ -6,7 +6,7 @@
 # Uses LOCAL tools only -- no API calls. Zero cost.
 #
 # Conversion strategy per format:
-#   PDF   -> magic-pdf (MinerU) or pdftotext fallback
+#   PDF   -> LiteParse, with LiteParse OCR as needed
 #   DOCX  -> pandoc or python-docx
 #   MSG   -> extract-msg (Python) or manual parse
 #   EML   -> Python email stdlib
@@ -25,20 +25,20 @@ run_stage_1_convert() {
   ensure_dir "$log_dir"
 
   # Determine available conversion tools
-  local has_magic_pdf=false
+  local repo_root="${LEGALCODE_REPO_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)}"
+  local has_liteparse=false
   local has_pandoc=false
-  local has_pdftotext=false
 
-  command -v magic-pdf &>/dev/null && has_magic_pdf=true
+  if [[ -f "${repo_root}/apps/ingest/src/core/pdf/pdf-to-markdown.ts" ]] && command -v pnpm &>/dev/null; then
+    has_liteparse=true
+  fi
   command -v pandoc &>/dev/null    && has_pandoc=true
-  command -v pdftotext &>/dev/null && has_pdftotext=true
 
-  log "Available tools: magic-pdf=$has_magic_pdf pandoc=$has_pandoc pdftotext=$has_pdftotext"
+  log "Available tools: liteparse=$has_liteparse pandoc=$has_pandoc"
 
-  if [[ "$has_magic_pdf" == "false" && "$has_pdftotext" == "false" && "$has_pandoc" == "false" ]]; then
+  if [[ "$has_liteparse" == "false" && "$has_pandoc" == "false" ]]; then
     warn "No PDF conversion tools found. Install one of:"
-    warn "  pip install magic-pdf    # MinerU (recommended)"
-    warn "  brew install poppler     # pdftotext"
+    warn "  pnpm install             # LiteParse via apps/ingest"
     warn "  brew install pandoc      # pandoc"
     warn "Falling back to text-only extraction where possible."
   fi
@@ -71,7 +71,7 @@ run_stage_1_convert() {
     case "$ext" in
       pdf)
         convert_pdf "$source_id" "$original_path" "$out_file" "$conv_log" \
-          "$has_magic_pdf" "$has_pdftotext" "$has_pandoc" && convert_ok=true
+          "$repo_root" "$has_liteparse" "$has_pandoc" && convert_ok=true
         ;;
       docx|doc)
         convert_docx "$source_id" "$original_path" "$out_file" "$conv_log" \
@@ -146,31 +146,26 @@ FMEOF
 
 convert_pdf() {
   local source_id="$1" original_path="$2" out_file="$3" conv_log="$4"
-  local has_magic_pdf="$5" has_pdftotext="$6" has_pandoc="$7"
+  local repo_root="$5" has_liteparse="$6" has_pandoc="$7"
 
-  if [[ "$has_magic_pdf" == "true" ]]; then
-    local tmp_dir="${TIMELINE_DIR}/converted/.tmp-${source_id}"
-    mkdir -p "$tmp_dir"
-    if magic-pdf -p "$original_path" -o "$tmp_dir" -m auto > "$conv_log" 2>&1; then
-      # Find the generated markdown
-      local md_file
-      md_file="$(find "$tmp_dir" -name "*.md" -type f | head -1)"
-      if [[ -n "$md_file" ]]; then
-        write_frontmatter "$out_file" "$source_id" "$original_path" "pdf"
-        cat "$md_file" >> "$out_file"
-        rm -rf "$tmp_dir"
-        ok "  ${source_id}: PDF converted via MinerU"
-        return 0
-      fi
-    fi
-    rm -rf "$tmp_dir"
-  fi
-
-  if [[ "$has_pdftotext" == "true" ]]; then
-    write_frontmatter "$out_file" "$source_id" "$original_path" "pdf" "conversion_tool: pdftotext
+  if [[ "$has_liteparse" == "true" ]]; then
+    write_frontmatter "$out_file" "$source_id" "$original_path" "pdf" "conversion_tool: liteparse
 "
-    if pdftotext -layout "$original_path" - >> "$out_file" 2> "$conv_log"; then
-      ok "  ${source_id}: PDF converted via pdftotext"
+    if PDF_OCR_PROVIDER="${PDF_OCR_PROVIDER:-liteparse}" \
+      pnpm -C "${repo_root}/apps/ingest" exec tsx -e '
+        import { extractPdfMarkdown } from "./src/core/pdf/pdf-to-markdown.ts";
+
+        const inputPath = process.argv[2];
+        if (!inputPath) throw new Error("Missing PDF path");
+
+        const result = await extractPdfMarkdown({
+          localPath: inputPath,
+          ocrPolicy: "auto",
+          acceptLiteParseOcrOnQualityIssue: true,
+        });
+        process.stdout.write(result.markdown);
+      ' "$original_path" >> "$out_file" 2> "$conv_log"; then
+      ok "  ${source_id}: PDF converted via LiteParse"
       return 0
     fi
   fi

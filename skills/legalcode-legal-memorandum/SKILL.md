@@ -1,22 +1,20 @@
 ---
 name: legalcode-legal-memorandum
-description: >
-  Draft objective IRAC/CREAC-structured legal research memoranda with balanced risk
-  assessment, calibrated probability language, and Bluebook/OSCOLA/AGLC citation
-  frameworks. Use when drafting internal predictive research memos, litigation risk
-  assessment memos, deal advisory memos, regulatory compliance memos, or board-ready
-  executive summaries. Produces Glass Box audit-trailed memoranda across US (federal
-  and state), England & Wales, and Australia jurisdictions. Covers issue framing,
-  rule synthesis from statutory and case authority, counterargument steelmanning,
-  probability-weighted conclusions, privilege marking, and mandatory citation
-  verification. Distinguishes settled law from open questions requiring judicial
-  interpretation. Supports multi-issue memos with separate Questions Presented.
-allowed-tools: Read, Bash(grep:*), Glob, WebSearch, WebFetch
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: Draft objective IRAC/CREAC-structured legal research memoranda with balanced risk assessment,
+  calibrated probability language, and Bluebook/OSCOLA/AGLC citation frameworks. Use when drafting internal
+  predictive research memos, litigation risk assessment memos, deal advisory memos, regulatory compliance
+  memos, or board-ready executive summaries. Produces Glass Box audit-trailed memoranda across US (federal
+  and state), England & Wales, and Australia jurisdictions. Covers issue framing, rule synthesis from
+  statutory and case authority, counterargument steelmanning, probability-weighted conclusions, privilege
+  marking, and mandatory citation verification. Distinguishes settled law from open questions requiring
+  judicial interpretation. Supports multi-issue memos with separate Questions Presented.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Legal Memorandum
 

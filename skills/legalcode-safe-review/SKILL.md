@@ -1,32 +1,23 @@
 ---
 name: legalcode-safe-review
-description: >
-  Review YC post-money SAFEs (Simple Agreements for Future Equity) clause-by-clause for
-  founders, investors, and counsel — covering valuation cap mechanics and Company
-  Capitalization denominator, discount rate analysis, MFN clause triggering and scope,
-  pro rata rights (in-form and side letter), conversion mechanics across all trigger events
-  (equity financing, liquidity event, dissolution), amendment and majority-in-interest
-  provisions, and non-standard modifications. Benchmarks every material term against the
-  current YC post-money templates (v1.1/v1.2, February 2023 update) and market data
-  (Carta Q3 2024). Classifies deviations as STANDARD / FLAG / RED FLAG with dual-perspective
-  framing (founder view and investor view). Models ownership percentage at conversion.
-  Identifies template drift (modifications beyond blank-filling). Reviews accompanying side
-  letters (pro rata, information rights, board observer, MFN extension). Flags securities law
-  compliance gaps (Reg D Form D, accredited investor verification, Blue Sky notices) and tax
-  risks (IRC § 1202 QSBS, Section 409A timing). Produces confidence-scored, jurisdiction-aware
-  analysis with prioritized redlines and a Glass Box audit trail. Use when reviewing, negotiating,
-  or advising on a YC-form SAFE, any SAFE variant, uncapped MFN SAFE, discount-only SAFE, or
-  post-money SAFE side letter at pre-seed, seed, or bridge stage. Also triggers on: post-money
-  cap calculation, Company Capitalization definition, valuation cap vs. discount comparison,
-  shadow preferred stock at conversion, SAFE conversion mechanics, Liquidity Capitalization,
-  MFN notification window, pro rata side letter scope, majority-in-interest amendment, QSBS
-  clock for SAFEs, and YC template modification detection.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: Review YC post-money SAFEs (Simple Agreements for Future Equity) clause-by-clause for founders,
+  investors, and counsel — covering valuation cap mechanics and Company Capitalization denominator, discount
+  rate analysis, MFN clause triggering and scope, pro rata rights (in-form and side letter), conversion
+  mechanics across all trigger events (equity financing, liquidity event, dissolution), amendment and
+  majority-in-interest provisions, and non-standard modifications. Use when reviewing, negotiating, or
+  advising on a YC-form SAFE, any SAFE variant, uncapped MFN SAFE, discount-only SAFE, or post-money SAFE
+  side letter at pre-seed, seed, or bridge stage.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Review YC post-money SAFEs (Simple Agreements for Future Equity) clause-by-clause for founders, investors, and counsel — covering valuation cap mechanics and Company Capitalization denominator, discount rate analysis, MFN clause triggering and scope, pro rata rights (in-form and side letter), conversion mechanics across all trigger events (equity financing, liquidity event, dissolution), amendment and majority-in-interest provisions, and non-standard modifications. Benchmarks every material term against the current YC post-money templates (v1.1/v1.2, February 2023 update) and market data (Carta Q3 2024). Classifies deviations as STANDARD / FLAG / RED FLAG with dual-perspective framing (founder view and investor view). Models ownership percentage at conversion. Identifies template drift (modifications beyond blank-filling). Reviews accompanying side letters (pro rata, information rights, board observer, MFN extension). Flags securities law compliance gaps (Reg D Form D, accredited investor verification, Blue Sky notices) and tax risks (IRC § 1202 QSBS, Section 409A timing). Produces confidence-scored, jurisdiction-aware analysis with prioritized redlines and a Glass Box audit trail. Use when reviewing, negotiating, or advising on a YC-form SAFE, any SAFE variant, uncapped MFN SAFE, discount-only SAFE, or post-money SAFE side letter at pre-seed, seed, or bridge stage. Also triggers on: post-money cap calculation, Company Capitalization definition, valuation cap vs. discount comparison, shadow preferred stock at conversion, SAFE conversion mechanics, Liquidity Capitalization, MFN notification window, pro rata side letter scope, majority-in-interest amendment, QSBS clock for SAFEs, and YC template modification detection.
+
 
 # Legalcode SAFE Review
 

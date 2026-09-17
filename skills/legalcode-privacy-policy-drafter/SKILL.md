@@ -1,17 +1,16 @@
 ---
 name: legalcode-privacy-policy-drafter
-description: >
-  Draft, localize, and QA website/app privacy policies and notice-at-collection content
-  across GDPR/UK GDPR, CCPA/CPRA, LGPD, and expanding state/global privacy regimes.
-  Use when launching products, expanding to new jurisdictions, updating data practices,
-  or remediating policy gaps found during audits, enforcement readiness checks, or
-  incident-driven policy refreshes.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Draft, localize, and QA website/app privacy policies and notice-at-collection content across
+  GDPR/UK GDPR, CCPA/CPRA, LGPD, and expanding state/global privacy regimes. Use when launching products,
+  expanding to new jurisdictions, updating data practices, or remediating policy gaps found during audits,
+  enforcement readiness checks, or incident-driven policy refreshes.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Privacy Policy Drafter
 

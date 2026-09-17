@@ -1,32 +1,25 @@
 ---
 name: legalcode-aml-kyc-compliance
-description: >
-  Design, assess, and gap-analyse Anti-Money Laundering and Know Your Customer compliance
-  programs covering: Customer Due Diligence (CDD) and Enhanced Due Diligence (EDD)
-  procedures; beneficial ownership identification (FinCEN CDD Final Rule 31 C.F.R.
-  § 1010.230, Corporate Transparency Act, EU AMLD/AMLR, UK MLR 2017); sanctions
-  screening (OFAC SDN/50% rule, EU Consolidated List, UK OFSI, UN Security Council);
-  Politically Exposed Person (PEP) identification and risk rating; Suspicious Activity
-  Report (SAR) filing procedures (30/60-day deadlines, tipping-off prohibition);
-  Currency Transaction Report (CTR) filing ($10,000 threshold, structuring rules);
-  transaction monitoring rule design (velocity, structuring, behavioral alerts);
-  enterprise risk assessment methodology; BSA/AML five-pillar program governance;
-  employee training requirements; independent audit/testing procedures; and regulatory
-  examination preparation. Aligned with BSA/AML (US), EU AML Package 2024 (AMLR
-  Reg. 2024/1624, Dir. 2024/1640), AMLD6 (Dir. 2018/1673), POCA 2002 / MLR 2017
-  (UK), and FATF 40 Recommendations. Use when building a new AML/KYC program,
-  assessing an existing program against regulatory expectations, preparing for a
-  regulatory examination, remediating a consent order, or designing a risk-based
-  customer due diligence framework. Produces compliance gap assessments with
-  COMPLIANT / PARTIAL / NON-COMPLIANT / CRITICAL DEFICIENCY classifications,
-  remediation action plans with prioritized timelines, and board-ready program
-  assessment documentation. Jurisdiction-agnostic core with US/EU/UK markers.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: 'Design, assess, and gap-analyse Anti-Money Laundering and Know Your Customer compliance
+  programs covering: Customer Due Diligence (CDD) and Enhanced Due Diligence (EDD) procedures; beneficial
+  ownership identification (FinCEN CDD Final Rule 31 C.F.R. § 1010.230, Corporate Transparency Act, EU
+  AMLD/AMLR, UK MLR 2017); sanctions screening (OFAC SDN/50% rule, EU Consolidated List, UK OFSI, UN Security
+  Council); Politically Exposed Person (PEP) identification and risk rating; Suspicious Activity Report
+  (SAR) filing procedures (30/60-day deadlines, tipping-off prohibition); Currency Transaction Report
+  (CTR) filing ($10,000 threshold, structuring rules); transaction monitoring rule design (velocity, structuring,
+  behavioral alerts); enterprise risk assessment methodology; BSA/AML five-pillar program governance;
+  employee training requirements; independent audit/testing procedures; and regulatory examination preparation.'
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Design, assess, and gap-analyse Anti-Money Laundering and Know Your Customer compliance programs covering: Customer Due Diligence (CDD) and Enhanced Due Diligence (EDD) procedures; beneficial ownership identification (FinCEN CDD Final Rule 31 C.F.R. § 1010.230, Corporate Transparency Act, EU AMLD/AMLR, UK MLR 2017); sanctions screening (OFAC SDN/50% rule, EU Consolidated List, UK OFSI, UN Security Council); Politically Exposed Person (PEP) identification and risk rating; Suspicious Activity Report (SAR) filing procedures (30/60-day deadlines, tipping-off prohibition); Currency Transaction Report (CTR) filing ($10,000 threshold, structuring rules); transaction monitoring rule design (velocity, structuring, behavioral alerts); enterprise risk assessment methodology; BSA/AML five-pillar program governance; employee training requirements; independent audit/testing procedures; and regulatory examination preparation. Aligned with BSA/AML (US), EU AML Package 2024 (AMLR Reg. 2024/1624, Dir. 2024/1640), AMLD6 (Dir. 2018/1673), POCA 2002 / MLR 2017 (UK), and FATF 40 Recommendations. Use when building a new AML/KYC program, assessing an existing program against regulatory expectations, preparing for a regulatory examination, remediating a consent order, or designing a risk-based customer due diligence framework. Produces compliance gap assessments with COMPLIANT / PARTIAL / NON-COMPLIANT / CRITICAL DEFICIENCY classifications, remediation action plans with prioritized timelines, and board-ready program assessment documentation. Jurisdiction-agnostic core with US/EU/UK markers.
+
 
 # Legalcode AML/KYC Compliance Program Designer & Assessor
 

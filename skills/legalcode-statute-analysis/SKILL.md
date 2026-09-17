@@ -1,27 +1,22 @@
 ---
 name: legalcode-statute-analysis
-description: >
-  Analyze statutes, acts, and regulations section by section — deconstruct structure,
-  parse definitions, classify operative verbs, map exceptions and conditions, assess
-  penalty tiers, determine authority boundaries, flag interpretive ambiguities, and
-  identify implementation consequences. Use when a lawyer, compliance officer, policy
-  analyst, or legal researcher needs to understand what a statute actually says and
-  requires — as distinct from verifying that a citation is in-force (use
-  legalcode-legislation-verification for that). Covers primary legislation, delegated
-  legislation (statutory instruments, regulations, ordinances, executive orders, decrees),
-  and secondary regulatory frameworks. Jurisdiction-agnostic with [JURISDICTION-SPECIFIC]
-  markers; supports common law and civil law systems. Triggers when the user provides
-  statute text or a statutory reference and asks what it means, what it requires, who
-  it applies to, what the penalties are, how it interacts with other law, or what
-  they need to do to comply. Pairs with legalcode-legislation-verification (citation
-  accuracy), legalcode-cross-border-checklist (multi-jurisdiction mapping), and
-  legalcode-plain-language (readability rewriting).
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: Analyze statutes, acts, and regulations section by section — deconstruct structure, parse
+  definitions, classify operative verbs, map exceptions and conditions, assess penalty tiers, determine
+  authority boundaries, flag interpretive ambiguities, and identify implementation consequences. Use when
+  a lawyer, compliance officer, policy analyst, or legal researcher needs to understand what a statute
+  actually says and requires — as distinct from verifying that a citation is in-force (use legalcode-legislation-verification
+  for that).
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Analyze statutes, acts, and regulations section by section — deconstruct structure, parse definitions, classify operative verbs, map exceptions and conditions, assess penalty tiers, determine authority boundaries, flag interpretive ambiguities, and identify implementation consequences. Use when a lawyer, compliance officer, policy analyst, or legal researcher needs to understand what a statute actually says and requires — as distinct from verifying that a citation is in-force (use legalcode-legislation-verification for that). Covers primary legislation, delegated legislation (statutory instruments, regulations, ordinances, executive orders, decrees), and secondary regulatory frameworks. Jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers; supports common law and civil law systems. Triggers when the user provides statute text or a statutory reference and asks what it means, what it requires, who it applies to, what the penalties are, how it interacts with other law, or what they need to do to comply. Pairs with legalcode-legislation-verification (citation accuracy), legalcode-cross-border-checklist (multi-jurisdiction mapping), and legalcode-plain-language (readability rewriting).
+
 
 # Legalcode Statute Analysis
 

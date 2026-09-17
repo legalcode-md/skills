@@ -1,26 +1,22 @@
 ---
 name: legalcode-gdpr-legal-basis-assessment
-description: >
-  Systematically assess the appropriate GDPR Article 6 lawful basis for any processing
-  activity — covering consent (Art. 6(1)(a)), contract performance (Art. 6(1)(b)), legal
-  obligation (Art. 6(1)(c)), vital interests (Art. 6(1)(d)), public task (Art. 6(1)(e)),
-  and legitimate interests (Art. 6(1)(f)). Use when selecting a legal basis for new
-  processing, auditing an existing legal basis for GDPR/UK GDPR compliance, refreshing
-  invalidated consent, evaluating basis changes, or building a legal basis register
-  integrated with ROPA requirements. Covers Article 9 special category processing
-  conditions, Article 10 criminal conviction and offence data, and children's data under
-  Article 8. Evaluates each candidate basis against adequacy criteria, identifies where
-  multiple bases apply or conflict, flags basis-switching risks, documents downstream
-  data subject rights per basis, and produces a legal basis register ready for ROPA
-  population. EU/UK GDPR primary scope; Swiss FADP and multi-regime annotations
-  included. Produces ADEQUATE / REQUIRES REVIEW / INADEQUATE per-basis classifications
-  and APPROVED / CONDITIONAL / REJECTED overall outcomes with Glass Box audit trail.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: Systematically assess the appropriate GDPR Article 6 lawful basis for any processing activity
+  — covering consent (Art. 6(1)(a)), contract performance (Art. 6(1)(b)), legal obligation (Art. 6(1)(c)),
+  vital interests (Art. 6(1)(d)), public task (Art. 6(1)(e)), and legitimate interests (Art. 6(1)(f)).
+  Use when selecting a legal basis for new processing, auditing an existing legal basis for GDPR/UK GDPR
+  compliance, refreshing invalidated consent, evaluating basis changes, or building a legal basis register
+  integrated with ROPA requirements.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Systematically assess the appropriate GDPR Article 6 lawful basis for any processing activity — covering consent (Art. 6(1)(a)), contract performance (Art. 6(1)(b)), legal obligation (Art. 6(1)(c)), vital interests (Art. 6(1)(d)), public task (Art. 6(1)(e)), and legitimate interests (Art. 6(1)(f)). Use when selecting a legal basis for new processing, auditing an existing legal basis for GDPR/UK GDPR compliance, refreshing invalidated consent, evaluating basis changes, or building a legal basis register integrated with ROPA requirements. Covers Article 9 special category processing conditions, Article 10 criminal conviction and offence data, and children's data under Article 8. Evaluates each candidate basis against adequacy criteria, identifies where multiple bases apply or conflict, flags basis-switching risks, documents downstream data subject rights per basis, and produces a legal basis register ready for ROPA population. EU/UK GDPR primary scope; Swiss FADP and multi-regime annotations included. Produces ADEQUATE / REQUIRES REVIEW / INADEQUATE per-basis classifications and APPROVED / CONDITIONAL / REJECTED overall outcomes with Glass Box audit trail.
+
 
 # Legalcode GDPR Legal Basis Assessment
 

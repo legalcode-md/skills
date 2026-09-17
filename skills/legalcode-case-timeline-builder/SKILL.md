@@ -1,24 +1,22 @@
 ---
 name: legalcode-case-timeline-builder
-description: >
-  Build defensible litigation chronologies from document corpora using a dual-path
-  multi-agent pipeline. Process PDFs, Word documents, emails, images, and other
-  evidence formats at scale — converting to markdown, extracting dates, events,
-  entities, and relationships using Claude Haiku workers in parallel, validating
-  sequences with Sonnet, and synthesizing final timelines with Opus.
-  Supports two execution paths: (1) Claude Code CLI scripts (`claude -p --model haiku`)
-  for maximum throughput on large corpora, and (2) in-skill sub-agent fallback via
-  the Task tool when CLI is unavailable. Produces citation-linked master timelines,
-  issue timelines, entity timelines, deadline calendars, and court-ready outputs
-  (FRCP Rule 56 statements, proposed findings of fact) across jurisdictions.
-  Handles 10K+ document corpora with automatic chunking, deduplication, privilege
-  screening, protective order designations, and conflict resolution.
-allowed-tools: Read, Bash(grep:*), Bash(ls:*), Bash(find:*), Bash(wc:*), Bash(claude:*), Bash(sh:*), Bash(bash:*), Bash(python3:*), Bash(pandoc:*), Bash(magic-pdf:*), Bash(pdftotext:*), Bash(ocrmypdf:*), Bash(markitdown:*), Glob, WebSearch, WebFetch, Task
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: 'Build defensible litigation chronologies from document corpora using a dual-path multi-agent
+  pipeline. Process PDFs, Word documents, emails, images, and other evidence formats at scale — converting
+  to markdown, extracting dates, events, entities, and relationships using Claude Haiku workers in parallel,
+  validating sequences with Sonnet, and synthesizing final timelines with Opus. Supports two execution
+  paths: (1) Claude Code CLI scripts (`claude -p --model haiku`) for maximum throughput on large corpora,
+  and (2) in-skill sub-agent fallback via the Task tool when CLI is unavailable. Produces citation-linked
+  master timelines, issue timelines, entity timelines, deadline calendars, and court-ready outputs (FRCP
+  Rule 56 statements, proposed findings of fact) across jurisdictions. Handles 10K+ document corpora with
+  automatic chunking, deduplication, privilege screening, protective order designations, and conflict
+  resolution.'
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Case Timeline Builder
 
@@ -2304,4 +2302,4 @@ skill with dual-path architecture (CLI + sub-agent fallback).
 
 **Research artifacts**:
 
-- `skills/CLAUDE-CLI-BATCH-PROCESSING.md` — CLI flag reference and batch patterns
+- `references/claude-cli-batch-processing.md` — CLI flag reference and batch patterns

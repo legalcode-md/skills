@@ -1,19 +1,18 @@
 ---
 name: legalcode-nda-triage
-description: >
-  Screen and triage incoming NDAs — classify as GREEN (standard approval), YELLOW (counsel
-  review), or RED (significant issues) with confidence-scored, auditable analysis. Use when
-  a new NDA arrives from sales, business development, or a counterparty, when assessing NDA
-  risk level before signature, when deciding whether an NDA needs full counsel review, or
-  when routing NDAs through an in-house legal workflow. Jurisdiction-agnostic with
-  localization markers for any governing law. Supports playbook-based or general-standard
-  screening. Produces a structured triage report with Glass Box audit trail.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Screen and triage incoming NDAs — classify as GREEN (standard approval), YELLOW (counsel
+  review), or RED (significant issues) with confidence-scored, auditable analysis. Use when a new NDA
+  arrives from sales, business development, or a counterparty, when assessing NDA risk level before signature,
+  when deciding whether an NDA needs full counsel review, or when routing NDAs through an in-house legal
+  workflow. Jurisdiction-agnostic with localization markers for any governing law. Supports playbook-based
+  or general-standard screening. Produces a structured triage report with Glass Box audit trail.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode NDA Triage
 

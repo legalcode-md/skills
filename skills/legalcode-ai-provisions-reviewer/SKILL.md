@@ -1,26 +1,24 @@
 ---
 name: legalcode-ai-provisions-reviewer
-description: >
-  Reviews contracts for AI-specific provisions: IP ownership of AI-generated outputs,
-  AI usage restrictions and acceptable-use policies, training data rights (inputs/outputs
-  as training material), liability allocation for AI errors and hallucinations, transparency
-  and explainability requirements, algorithmic audit rights, bias monitoring and disparate
-  impact obligations, human oversight and human-in-the-loop requirements, AI governance
-  and responsible-AI clauses, and missing AI governance terms. Flags contracts that lack
-  adequate AI safeguards, identifies one-sided AI risk transfers, generates redlines, and
-  produces a confidence-scored, auditable AI governance analysis. Use when reviewing SaaS
-  agreements, professional services contracts, technology licenses, vendor contracts,
-  employment agreements, or any commercial contract where either party uses, deploys,
-  procures, or integrates AI systems. Applies EU AI Act 2024/1689, GDPR Art. 22, NIST AI
-  RMF, NYC Local Law 144 (AEDT), Colorado SB 205 (2024), US Copyright Office AI guidance
-  (Jan 2025), and UK IP Office AI position. Jurisdiction-agnostic with [JURISDICTION-SPECIFIC]
-  markers. Severity classification: GREEN / YELLOW / RED / [AI-GOVERNANCE-GAP].
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: 'Reviews contracts for AI-specific provisions: IP ownership of AI-generated outputs, AI usage
+  restrictions and acceptable-use policies, training data rights (inputs/outputs as training material),
+  liability allocation for AI errors and hallucinations, transparency and explainability requirements,
+  algorithmic audit rights, bias monitoring and disparate impact obligations, human oversight and human-in-the-loop
+  requirements, AI governance and responsible-AI clauses, and missing AI governance terms. Use when reviewing
+  SaaS agreements, professional services contracts, technology licenses, vendor contracts, employment
+  agreements, or any commercial contract where either party uses, deploys, procures, or integrates AI
+  systems.'
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Reviews contracts for AI-specific provisions: IP ownership of AI-generated outputs, AI usage restrictions and acceptable-use policies, training data rights (inputs/outputs as training material), liability allocation for AI errors and hallucinations, transparency and explainability requirements, algorithmic audit rights, bias monitoring and disparate impact obligations, human oversight and human-in-the-loop requirements, AI governance and responsible-AI clauses, and missing AI governance terms. Flags contracts that lack adequate AI safeguards, identifies one-sided AI risk transfers, generates redlines, and produces a confidence-scored, auditable AI governance analysis. Use when reviewing SaaS agreements, professional services contracts, technology licenses, vendor contracts, employment agreements, or any commercial contract where either party uses, deploys, procures, or integrates AI systems. Applies EU AI Act 2024/1689, GDPR Art. 22, NIST AI RMF, NYC Local Law 144 (AEDT), Colorado SB 205 (2024), US Copyright Office AI guidance (Jan 2025), and UK IP Office AI position. Jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers. Severity classification: GREEN / YELLOW / RED / [AI-GOVERNANCE-GAP].
+
 
 # Legalcode AI Provisions Reviewer
 

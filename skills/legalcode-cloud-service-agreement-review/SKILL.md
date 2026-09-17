@@ -1,25 +1,21 @@
 ---
 name: legalcode-cloud-service-agreement-review
-description: >
-  Review cloud and hosted-service agreements (CSA, cloud MSA, SaaS agreement, cloud
-  subscription agreement, cloud order form) — flag deviations, generate confidence-scored
-  redlines, and produce an auditable analysis. Covers service description and scope, SLAs
-  and uptime credits, security commitments, data processing (GDPR Art. 28 / DPA overlay),
-  sub-processors, audit rights, customer data ownership, provider AI training rights,
-  limitation of liability (including data breach super-caps), indemnification, business
-  continuity and DR, exit assistance and data portability (EU Data Act 2023), regulatory
-  compliance allocation (DORA, HIPAA BAA, PCI DSS, FedRAMP), unilateral modification
-  rights, and term and termination. Jurisdiction-agnostic with [JURISDICTION-SPECIFIC]
-  markers. Native Legalcode replacement for imported cloud-service agreement packs.
-  Use when reviewing cloud provider terms, AWS/Azure/GCP order forms, SaaS enterprise
-  agreements, managed-hosting contracts, IaaS/PaaS/SaaS agreements, or any contract
-  where a customer is consuming computing, storage, or software as a service.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: Review cloud and hosted-service agreements (CSA, cloud MSA, SaaS agreement, cloud subscription
+  agreement, cloud order form) — flag deviations, generate confidence-scored redlines, and produce an
+  auditable analysis. Use when reviewing cloud provider terms, AWS/Azure/GCP order forms, SaaS enterprise
+  agreements, managed-hosting contracts, IaaS/PaaS/SaaS agreements, or any contract where a customer is
+  consuming computing, storage, or software as a service.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Review cloud and hosted-service agreements (CSA, cloud MSA, SaaS agreement, cloud subscription agreement, cloud order form) — flag deviations, generate confidence-scored redlines, and produce an auditable analysis. Covers service description and scope, SLAs and uptime credits, security commitments, data processing (GDPR Art. 28 / DPA overlay), sub-processors, audit rights, customer data ownership, provider AI training rights, limitation of liability (including data breach super-caps), indemnification, business continuity and DR, exit assistance and data portability (EU Data Act 2023), regulatory compliance allocation (DORA, HIPAA BAA, PCI DSS, FedRAMP), unilateral modification rights, and term and termination. Jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers. Native Legalcode replacement for imported cloud-service agreement packs. Use when reviewing cloud provider terms, AWS/Azure/GCP order forms, SaaS enterprise agreements, managed-hosting contracts, IaaS/PaaS/SaaS agreements, or any contract where a customer is consuming computing, storage, or software as a service.
+
 
 # Legalcode Cloud Service Agreement Review
 

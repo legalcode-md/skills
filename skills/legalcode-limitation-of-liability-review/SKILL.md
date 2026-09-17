@@ -1,26 +1,23 @@
 ---
 name: legalcode-limitation-of-liability-review
-description: >
-  Deep analysis of limitation of liability clauses across contract types — review and
-  classify liability caps (aggregate, per-incident, per-claim), excluded damages
-  (consequential, indirect, special, incidental, punitive), carve-outs and super-caps
-  (IP indemnity, confidentiality breach, data breach, willful misconduct, gross
-  negligence, death and personal injury), sole-remedy clauses, and fundamental breach
-  enforceability. Evaluates cap adequacy relative to deal value and risk profile. Compares
-  against market standards for SaaS, professional services, licensing, and procurement
-  agreements. Use when reviewing any commercial agreement with limitation of liability
-  language, when a counterparty proposes aggressive cap levels or broad exclusions, when
-  assessing whether a vendor's LOL clause creates unacceptable risk exposure, or when
-  drafting LOL provisions for any contract type. Produces GREEN/YELLOW/RED classification
-  with confidence-scored redline suggestions for rebalancing risk allocation, Glass Box
-  audit trail, and jurisdiction-aware enforceability analysis. Jurisdiction-agnostic with
-  localization markers for US, UK, EU (Germany, France), and Australia.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Deep analysis of limitation of liability clauses across contract types — review and classify
+  liability caps (aggregate, per-incident, per-claim), excluded damages (consequential, indirect, special,
+  incidental, punitive), carve-outs and super-caps (IP indemnity, confidentiality breach, data breach,
+  willful misconduct, gross negligence, death and personal injury), sole-remedy clauses, and fundamental
+  breach enforceability. Use when reviewing any commercial agreement with limitation of liability language,
+  when a counterparty proposes aggressive cap levels or broad exclusions, when assessing whether a vendor's
+  LOL clause creates unacceptable risk exposure, or when drafting LOL provisions for any contract type.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Deep analysis of limitation of liability clauses across contract types — review and classify liability caps (aggregate, per-incident, per-claim), excluded damages (consequential, indirect, special, incidental, punitive), carve-outs and super-caps (IP indemnity, confidentiality breach, data breach, willful misconduct, gross negligence, death and personal injury), sole-remedy clauses, and fundamental breach enforceability. Evaluates cap adequacy relative to deal value and risk profile. Compares against market standards for SaaS, professional services, licensing, and procurement agreements. Use when reviewing any commercial agreement with limitation of liability language, when a counterparty proposes aggressive cap levels or broad exclusions, when assessing whether a vendor's LOL clause creates unacceptable risk exposure, or when drafting LOL provisions for any contract type. Produces GREEN/YELLOW/RED classification with confidence-scored redline suggestions for rebalancing risk allocation, Glass Box audit trail, and jurisdiction-aware enforceability analysis. Jurisdiction-agnostic with localization markers for US, UK, EU (Germany, France), and Australia.
+
 
 # Legalcode Limitation of Liability Review
 

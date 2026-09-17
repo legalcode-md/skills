@@ -1,18 +1,17 @@
 ---
 name: legalcode-redline-generator
-description: >
-  Generate negotiation-ready contract redlines with primary and fallback language,
-  playbook alignment, risk-tiered priorities, and auditable rationale for each edit.
-  Use when reviewing third-party paper, preparing response markups, or standardizing
-  first-pass legal edits across procurement, sales, and legal teams. Supports Word
-  track-changes workflows and clause-by-clause redline strategy under jurisdiction-
+description: Generate negotiation-ready contract redlines with primary and fallback language, playbook
+  alignment, risk-tiered priorities, and auditable rationale for each edit. Use when reviewing third-party
+  paper, preparing response markups, or standardizing first-pass legal edits across procurement, sales,
+  and legal teams. Supports Word track-changes workflows and clause-by-clause redline strategy under jurisdiction-
   agnostic guidance with localization markers.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Redline Generator
 

@@ -1,36 +1,22 @@
 ---
 name: legalcode-sanctions-export-control-screening
-description: >
-  Screen transactions, counterparties, and exports against major international sanctions
-  and export control regimes: OFAC SDN and Consolidated Sanctions Lists (all programs),
-  EU Consolidated Sanctions List, UK OFSI Consolidated List, UN Security Council
-  consolidated lists, BIS Entity/Denied Persons/Unverified/MEU Lists, and DDTC Debarred
-  Parties. Applies the OFAC 50% Rule (SDN-owned beneficial owners), secondary sanctions
-  analysis under CAATSA Sections 228/231/232/233 and CISADA, and Sectoral Sanctions
-  Identifications (SSI) Directive 1-4 analysis for Russia. Covers EAR export
-  classification (ECCN and EAR99), Commerce Control List (CCL) mapping, license exception
-  analysis (STA, ENC, LVS, TMP, TSU, RPL, GOV, and others), Foreign Direct Product Rule
-  (FDPR), Military End-Use Rule (15 C.F.R. § 744.21), and deemed export analysis. Covers
-  ITAR US Munitions List (USML) classification, deemed export, TAA/MLA requirements,
-  and fundamental research exemption analysis. Addresses correspondent banking
-  de-risking, SWIFT compliance, and shell-company/beneficial ownership risk. Produces
-  a five-tier risk determination (BLOCKED / HIGH RISK / ELEVATED / MONITORED / CLEAR),
-  program-by-program analysis, confidence-scored findings, and a complete Glass Box
-  audit trail. Use when screening a transaction before it proceeds, onboarding a
-  counterparty, classifying an export, evaluating secondary sanctions exposure, preparing
-  a due diligence report, or responding to a potential violation. Triggers on: "sanctions
-  screening," "OFAC check," "SDN list," "50% rule," "entity list," "ECCN classification,"
-  "ITAR compliance," "EAR license exception," "export control classification," "secondary
-  sanctions," "CAATSA," "EU sanctions," "UK OFSI," "correspondent banking sanctions,"
-  "trade compliance screening," "restricted party list," "denied party," "sectoral
-  sanctions," "deemed export," "Foreign Direct Product Rule," "FDPR," "voluntary
-  self-disclosure sanctions."
-allowed-tools: Read, Bash(grep:*)
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: 'Screen transactions, counterparties, and exports against major international sanctions and
+  export control regimes: OFAC SDN and Consolidated Sanctions Lists (all programs), EU Consolidated Sanctions
+  List, UK OFSI Consolidated List, UN Security Council consolidated lists, BIS Entity/Denied Persons/Unverified/MEU
+  Lists, and DDTC Debarred Parties. Use when screening a transaction before it proceeds, onboarding a
+  counterparty, classifying an export, evaluating secondary sanctions exposure, preparing a due diligence
+  report, or responding to a potential violation.'
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Screen transactions, counterparties, and exports against major international sanctions and export control regimes: OFAC SDN and Consolidated Sanctions Lists (all programs), EU Consolidated Sanctions List, UK OFSI Consolidated List, UN Security Council consolidated lists, BIS Entity/Denied Persons/Unverified/MEU Lists, and DDTC Debarred Parties. Applies the OFAC 50% Rule (SDN-owned beneficial owners), secondary sanctions analysis under CAATSA Sections 228/231/232/233 and CISADA, and Sectoral Sanctions Identifications (SSI) Directive 1-4 analysis for Russia. Covers EAR export classification (ECCN and EAR99), Commerce Control List (CCL) mapping, license exception analysis (STA, ENC, LVS, TMP, TSU, RPL, GOV, and others), Foreign Direct Product Rule (FDPR), Military End-Use Rule (15 C.F.R. § 744.21), and deemed export analysis. Covers ITAR US Munitions List (USML) classification, deemed export, TAA/MLA requirements, and fundamental research exemption analysis. Addresses correspondent banking de-risking, SWIFT compliance, and shell-company/beneficial ownership risk. Produces a five-tier risk determination (BLOCKED / HIGH RISK / ELEVATED / MONITORED / CLEAR), program-by-program analysis, confidence-scored findings, and a complete Glass Box audit trail. Use when screening a transaction before it proceeds, onboarding a counterparty, classifying an export, evaluating secondary sanctions exposure, preparing a due diligence report, or responding to a potential violation. Triggers on: "sanctions screening," "OFAC check," "SDN list," "50% rule," "entity list," "ECCN classification," "ITAR compliance," "EAR license exception," "export control classification," "secondary sanctions," "CAATSA," "EU sanctions," "UK OFSI," "correspondent banking sanctions," "trade compliance screening," "restricted party list," "denied party," "sectoral sanctions," "deemed export," "Foreign Direct Product Rule," "FDPR," "voluntary self-disclosure sanctions."
+
 
 # Legalcode Sanctions & Export Control Screening
 

@@ -1,20 +1,20 @@
 ---
 name: legalcode-saas-agreement-drafter
-description: >
-  Draft and review SaaS/cloud service agreements from both vendor and customer perspectives —
-  generate clause-by-clause guidance, flag market deviations, and produce auditable dual-perspective
+description: Draft and review SaaS/cloud service agreements from both vendor and customer perspectives
+  — generate clause-by-clause guidance, flag market deviations, and produce auditable dual-perspective
   analysis with confidence-scored redlines. Use when negotiating SaaS terms, drafting customer-facing
-  service agreements, building vendor playbooks, managing SaaS compliance obligations (GDPR, CCPA,
-  SOC 2, HIPAA BAA), assessing SaaS-specific risk allocation, reviewing subscription mechanics,
-  SLA uptime commitments, data processing obligations, AI training restrictions, data portability,
-  or exit assistance terms. Covers B2B, B2C, and B2B2C models. Jurisdiction-agnostic with
-  localization markers for US, EU, UK, and AU. Produces structured guidance with Glass Box audit trail.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+  service agreements, building vendor playbooks, managing SaaS compliance obligations (GDPR, CCPA, SOC
+  2, HIPAA BAA), assessing SaaS-specific risk allocation, reviewing subscription mechanics, SLA uptime
+  commitments, data processing obligations, AI training restrictions, data portability, or exit assistance
+  terms. Covers B2B, B2C, and B2B2C models. Jurisdiction-agnostic with localization markers for US, EU,
+  UK, and AU. Produces structured guidance with Glass Box audit trail.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode SaaS Agreement Drafter
 

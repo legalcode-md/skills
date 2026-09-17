@@ -1,18 +1,18 @@
 ---
 name: legalcode-contract-playbook-builder
-description: >
-  Build and continuously improve organization-specific contract negotiation playbooks with
-  approved clause positions, fallback ladders, escalation triggers, approval matrices, and
-  KPI instrumentation. Use when legal, procurement, sales, or commercial teams need a
-  governed system for reviewing and negotiating NDAs, MSAs, SaaS agreements, procurement
-  terms, partner agreements, and other commercial contracts at scale. Supports green/yellow/
-  red/black positioning, clause-library governance, and auditable decision trails.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Build and continuously improve organization-specific contract negotiation playbooks with
+  approved clause positions, fallback ladders, escalation triggers, approval matrices, and KPI instrumentation.
+  Use when legal, procurement, sales, or commercial teams need a governed system for reviewing and negotiating
+  NDAs, MSAs, SaaS agreements, procurement terms, partner agreements, and other commercial contracts at
+  scale. Supports green/yellow/ red/black positioning, clause-library governance, and auditable decision
+  trails.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Contract Playbook Builder
 

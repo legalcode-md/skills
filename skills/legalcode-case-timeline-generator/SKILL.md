@@ -1,13 +1,16 @@
 ---
 name: legalcode-case-timeline-generator
-description: >
-  Codex orchestration skill for designing or running a case timeline over one or more local
-  folders. Use when the user wants a chronology, event map, or investigative timeline from
-  PDFs, DOCX files, emails, scans, or mixed evidence and wants a canonical JSON plus a
-  portable static HTML report rendered locally.
-disable-model-invocation: true
+description: Codex orchestration skill for designing or running a case timeline over one or more local
+  folders. Use when the user wants a chronology, event map, or investigative timeline from PDFs, DOCX
+  files, emails, scans, or mixed evidence and wants a canonical JSON plus a portable static HTML report
+  rendered locally.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Codex Case Timeline Orchestrator
 

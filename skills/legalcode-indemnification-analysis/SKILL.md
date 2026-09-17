@@ -1,26 +1,24 @@
 ---
 name: legalcode-indemnification-analysis
-description: >
-  Deep analysis of indemnification provisions across commercial contract types — review
-  indemnification scope (first-party vs. third-party claims), caps and baskets (deductible
-  basket vs. tipping basket, mini-basket thresholds), materiality qualifiers and scrapes,
-  defense and control-of-claim mechanics (duty to defend, right to control defense, right
-  to settle, cooperation obligations, Cumis counsel in US), survival periods by claim type,
-  and interaction with limitation of liability provisions. Evaluates indemnification exposure
-  across IP infringement, confidentiality breach, data protection violations, and regulatory
-  claims. Compares against market standards by contract type (SaaS, M&A, professional
-  services, construction). Use when reviewing or drafting indemnification provisions in any
-  commercial agreement, when assessing indemnification exposure from a counterparty's draft,
-  when negotiating IP or data breach indemnification obligations, or when structuring M&A
-  indemnification baskets and caps. Produces GREEN/YELLOW/RED classification with
-  risk-adjusted exposure analysis, confidence-scored redline recommendations, Glass Box
-  audit trail, and jurisdiction-aware enforceability notes for US, UK, and Australia.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Deep analysis of indemnification provisions across commercial contract types — review indemnification
+  scope (first-party vs. third-party claims), caps and baskets (deductible basket vs. tipping basket,
+  mini-basket thresholds), materiality qualifiers and scrapes, defense and control-of-claim mechanics
+  (duty to defend, right to control defense, right to settle, cooperation obligations, Cumis counsel in
+  US), survival periods by claim type, and interaction with limitation of liability provisions. Use when
+  reviewing or drafting indemnification provisions in any commercial agreement, when assessing indemnification
+  exposure from a counterparty's draft, when negotiating IP or data breach indemnification obligations,
+  or when structuring M&A indemnification baskets and caps.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Deep analysis of indemnification provisions across commercial contract types — review indemnification scope (first-party vs. third-party claims), caps and baskets (deductible basket vs. tipping basket, mini-basket thresholds), materiality qualifiers and scrapes, defense and control-of-claim mechanics (duty to defend, right to control defense, right to settle, cooperation obligations, Cumis counsel in US), survival periods by claim type, and interaction with limitation of liability provisions. Evaluates indemnification exposure across IP infringement, confidentiality breach, data protection violations, and regulatory claims. Compares against market standards by contract type (SaaS, M&A, professional services, construction). Use when reviewing or drafting indemnification provisions in any commercial agreement, when assessing indemnification exposure from a counterparty's draft, when negotiating IP or data breach indemnification obligations, or when structuring M&A indemnification baskets and caps. Produces GREEN/YELLOW/RED classification with risk-adjusted exposure analysis, confidence-scored redline recommendations, Glass Box audit trail, and jurisdiction-aware enforceability notes for US, UK, and Australia.
+
 
 # Legalcode Indemnification Analysis
 

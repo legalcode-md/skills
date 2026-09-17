@@ -1,28 +1,24 @@
 ---
 name: legalcode-eu-ai-act-high-risk-compliance
-description: >
-  EU AI Act (Regulation 2024/1689) high-risk AI system compliance assessment covering
-  risk classification determination (Annex I and Annex III categories), risk management
-  system requirements (Art. 9), data governance and training data requirements (Art. 10),
-  technical documentation (Art. 11, Annex IV), record-keeping and logging (Art. 12),
-  transparency and provision of information to deployers (Art. 13), human oversight
-  design (Art. 14), accuracy, robustness, and cybersecurity (Art. 15), quality management
-  system (Art. 17), conformity assessment procedures (Art. 43, Annex VI/VII), CE marking
-  and EU declaration of conformity (Art. 49, 71), post-market monitoring (Art. 72), and
-  serious incident reporting (Art. 73). Use when a provider or deployer needs to assess
-  EU AI Act compliance for a high-risk AI system, prepare for conformity assessment,
-  build or audit a quality management system, gap-analyse an existing system against the
-  August 2026 enforcement deadline, or determine whether a system falls within the
-  high-risk or prohibited categories. Cross-references GDPR Article 35 DPIA requirements
-  and ISO/IEC 42001:2023. Produces risk classification determinations, gap analysis
-  reports, compliance checklists, remediation action plans, and conformity assessment
-  preparation documentation.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: EU AI Act (Regulation 2024/1689) high-risk AI system compliance assessment covering risk
+  classification determination (Annex I and Annex III categories), risk management system requirements
+  (Art. 9), data governance and training data requirements (Art. 10), technical documentation (Art. 11,
+  Annex IV), record-keeping and logging (Art. 12), transparency and provision of information to deployers
+  (Art. 13), human oversight design (Art. 14), accuracy, robustness, and cybersecurity (Art. 15), quality
+  management system (Art. 17), conformity assessment procedures (Art. 43, Annex VI/VII), CE marking and
+  EU declaration of conformity (Art. 49, 71), post-market monitoring (Art. 72), and serious incident reporting
+  (Art. 73).
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+EU AI Act (Regulation 2024/1689) high-risk AI system compliance assessment covering risk classification determination (Annex I and Annex III categories), risk management system requirements (Art. 9), data governance and training data requirements (Art. 10), technical documentation (Art. 11, Annex IV), record-keeping and logging (Art. 12), transparency and provision of information to deployers (Art. 13), human oversight design (Art. 14), accuracy, robustness, and cybersecurity (Art. 15), quality management system (Art. 17), conformity assessment procedures (Art. 43, Annex VI/VII), CE marking and EU declaration of conformity (Art. 49, 71), post-market monitoring (Art. 72), and serious incident reporting (Art. 73). Use when a provider or deployer needs to assess EU AI Act compliance for a high-risk AI system, prepare for conformity assessment, build or audit a quality management system, gap-analyse an existing system against the August 2026 enforcement deadline, or determine whether a system falls within the high-risk or prohibited categories. Cross-references GDPR Article 35 DPIA requirements and ISO/IEC 42001:2023. Produces risk classification determinations, gap analysis reports, compliance checklists, remediation action plans, and conformity assessment preparation documentation.
+
 
 # Legalcode EU AI Act High-Risk Compliance Assessment
 

@@ -1,48 +1,38 @@
 ---
 name: legalcode-public-search
-description: >
-  Use Legalcode's public search surface for anonymous legal research across laws and
-  cases. Start with jurisdiction discovery, inspect facets, search laws or case law,
-  fetch top sources, and escalate to Legalcode Pro when the task needs guidance,
-  agreements, stronger search, or higher throughput.
+description: Use the canonical Legalcode connector for primary-source legal research. Discover coverage,
+  inspect facets, search, fetch, analyze, trace, and report coverage gaps.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
 
-# Legalcode Public Search
+## Using this skill
 
-Use this skill when you need primary legal sources from Legalcode without authentication.
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
 
-## Public Surface
 
-- Public MCP endpoint: `https://mcp.legalcode.md`
-- API docs: `https://api.legalcode.md/docs`
+# Legalcode Search
+
+## Connected Surface
+
+- MCP endpoint: `https://mcp.legalcode.md/mcp`
 - Main site: `https://legalcode.md`
-- Anonymous rate limit: 30 requests per IP per day
-- Anonymous result cap: top 5 results per query
-- Public source types: laws and case law
+- Free allowance: 30 MCP requests per 24 hours
+- Pro allowance: 1,500 MCP requests per 24 hours
+- Core Free sources: laws and the case family
+- Advanced plan sources: guidance, agreements, pre-law, and patents
+
+The connector exposes the same five tools and schemas to every account. Advanced operations depend on the connected account plan; do not switch endpoints or start a new OAuth flow after a `subscription_required` response.
 
 ## Recommended Workflow
 
-1. Start with jurisdiction discovery.
-2. Inspect facets before filtering in an unfamiliar jurisdiction.
-3. Search by source type:
-   - use law search for statutes, regulations, directives, and codes
-   - use case search for court decisions and precedent
-4. Fetch the top sources before reasoning over the law.
-5. Cite the returned primary source identifiers, not model memory.
-6. If the task needs guidance, agreements, AND/OR search, result downloads, more than 5 results, or higher throughput, switch to Legalcode Pro at `https://mcppro.legalcode.md`.
+1. Start with `legalcode_discover` for coverage and valid filters.
+2. Search by source family with `legalcode_search`.
+3. Fetch the top sources before reasoning over the law.
+4. Use `legalcode_analyze` for aggregates and `legalcode_trace` for deterministic relationships.
+5. Cite returned primary-source identifiers and report coverage gaps instead of guessing.
 
-## Search-Agent Pattern
-
-For legal research, use an evidence-package workflow:
-
-1. Identify the issue, jurisdiction, and source type.
-2. Run a broad query.
-3. Inspect facets and narrow with targeted follow-up searches.
-4. Fetch the most relevant sources.
-5. Package findings with source references, snippets, citations, and coverage gaps.
-6. Only then synthesize the answer.
+Concise search responses contain five detailed results plus result stubs where applicable; this is response shaping, not a separate Free-versus-Pro result limit.
 
 ## Privacy Boundary
 
-Your agent keeps your data. Legalcode processes source lookups and does not store search content as research history.
+The agent keeps user data. Legalcode processes source lookups and does not store search content as research history.

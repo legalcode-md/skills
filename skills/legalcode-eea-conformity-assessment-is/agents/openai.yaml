@@ -1,0 +1,15 @@
+interface:
+  display_name: "EEA Conformity Assessment — Iceland"
+  short_description: "Audit Icelandic EEA transposition for ESA conformity"
+  default_prompt: "Use $legalcode-eea-conformity-assessment-is to run an ESA-style provision-by-provision conformity assessment of this Icelandic EEA implementation."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "legalcode"
+      description: "Legalcode Pro research across Icelandic, EU, ESA, EFTA Court, and other EEA-EFTA sources"
+      transport: "streamable_http"
+      url: "https://mcppro.legalcode.md/mcp"
+
+policy:
+  allow_implicit_invocation: true

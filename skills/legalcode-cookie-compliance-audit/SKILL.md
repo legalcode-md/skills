@@ -1,23 +1,22 @@
 ---
 name: legalcode-cookie-compliance-audit
-description: >
-  Audit cookie and tracking technology implementations for ePrivacy Directive and GDPR
-  compliance. Tests consent banner functionality including pre-consent cookie blocking,
-  granular category controls, reject-all parity with accept-all, consent withdrawal
-  mechanisms, and consent record retention. Identifies tracking technologies beyond cookies
-  (pixels, fingerprinting, local storage, ETags). Evaluates compliance with CNIL, ICO, and
-  EDPB guidance on cookie walls, analytics exceptions, and essential cookie classifications.
-  Covers US state requirements (CCPA opt-out signals, Global Privacy Control, and state
-  universal opt-out mechanisms). Produces remediation checklist with technical implementation
-  guidance and confidence-scored compliance findings. Use when auditing a website, mobile app,
-  or digital platform for cookie consent compliance, preparing for supervisory authority review,
-  or assessing a consent management platform (CMP) implementation.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
+description: Audit cookie and tracking technology implementations for ePrivacy Directive and GDPR compliance.
+  Tests consent banner functionality including pre-consent cookie blocking, granular category controls,
+  reject-all parity with accept-all, consent withdrawal mechanisms, and consent record retention. Identifies
+  tracking technologies beyond cookies (pixels, fingerprinting, local storage, ETags). Evaluates compliance
+  with CNIL, ICO, and EDPB guidance on cookie walls, analytics exceptions, and essential cookie classifications.
+  Covers US state requirements (CCPA opt-out signals, Global Privacy Control, and state universal opt-out
+  mechanisms). Produces remediation checklist with technical implementation guidance and confidence-scored
+  compliance findings. Use when auditing a website, mobile app, or digital platform for cookie consent
+  compliance, preparing for supervisory authority review, or assessing a consent management platform (CMP)
+  implementation.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
 
 # Legalcode Cookie Compliance Audit
 

@@ -1,35 +1,21 @@
 ---
 name: legalcode-vendor-privacy-assessment
-description: >
-  Conduct comprehensive privacy risk assessments of third-party vendors and service
-  providers. Use when onboarding new vendors, renewing vendor contracts, responding
-  to procurement due diligence requests, conducting periodic vendor audits, evaluating
-  vendors following a breach incident, reviewing sub-processor chains, assessing
-  vendor acquisitions, or responding to regulatory inquiries about supplier oversight.
-  Covers security controls evaluation (encryption, access controls, vulnerability
-  management, penetration testing), sub-processor identification and oversight
-  mechanisms, data breach detection and notification capabilities (GDPR 72-hour rule,
-  HIPAA 60-day, all-US-state breach notification), cross-border transfer mechanisms
-  and adequacy (EU SCCs 2021 Modules 1-4, UK IDTA, BCRs, EU-US DPF), data retention
-  and deletion verification practices, employee privacy training and background screening,
-  business continuity and disaster recovery, regulatory compliance certifications
-  (SOC 2 Type II, ISO 27001:2022, ISO 27701:2019, PCI DSS, FedRAMP), contractual
-  safeguards adequacy (GDPR Art. 28 DPA, SCCs, CCPA/CPRA service provider agreements,
-  HIPAA BAAs), data subject rights fulfillment capability, and ongoing monitoring and
-  reassessment trigger management. Produces vendor risk tier rating (Tier 1-4),
-  GREEN/YELLOW/RED/CRITICAL classification across 11 assessment domains, conditional
-  approval recommendations with remediation timelines, and a Glass Box audit trail.
-  Supports integration with VRM platforms (OneTrust, Prevalent, Venminder, ProcessUnity)
-  and standard questionnaire frameworks (SIG Core/Lite, CAIQ, HECVAT, VSA).
-  Jurisdiction-agnostic baseline with [JURISDICTION-SPECIFIC] markers covering GDPR,
-  UK GDPR, CCPA/CPRA, HIPAA, LGPD, PIPEDA, APPI, PDPA, and NIS2 supply chain
-  security obligations.
-allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
+description: Conduct comprehensive privacy risk assessments of third-party vendors and service providers.
+  Use when onboarding new vendors, renewing vendor contracts, responding to procurement due diligence
+  requests, conducting periodic vendor audits, evaluating vendors following a breach incident, reviewing
+  sub-processor chains, assessing vendor acquisitions, or responding to regulatory inquiries about supplier
+  oversight.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
+
+## Using this skill
+
+Before following the workflow, read [runtime and evidence requirements](references/runtime-compatibility.md). They govern current tool use and source verification when older examples below differ from the connected runtime.
+
+## Full scope from the source skill
+
+Conduct comprehensive privacy risk assessments of third-party vendors and service providers. Use when onboarding new vendors, renewing vendor contracts, responding to procurement due diligence requests, conducting periodic vendor audits, evaluating vendors following a breach incident, reviewing sub-processor chains, assessing vendor acquisitions, or responding to regulatory inquiries about supplier oversight. Covers security controls evaluation (encryption, access controls, vulnerability management, penetration testing), sub-processor identification and oversight mechanisms, data breach detection and notification capabilities (GDPR 72-hour rule, HIPAA 60-day, all-US-state breach notification), cross-border transfer mechanisms and adequacy (EU SCCs 2021 Modules 1-4, UK IDTA, BCRs, EU-US DPF), data retention and deletion verification practices, employee privacy training and background screening, business continuity and disaster recovery, regulatory compliance certifications (SOC 2 Type II, ISO 27001:2022, ISO 27701:2019, PCI DSS, FedRAMP), contractual safeguards adequacy (GDPR Art. 28 DPA, SCCs, CCPA/CPRA service provider agreements, HIPAA BAAs), data subject rights fulfillment capability, and ongoing monitoring and reassessment trigger management. Produces vendor risk tier rating (Tier 1-4), GREEN/YELLOW/RED/CRITICAL classification across 11 assessment domains, conditional approval recommendations with remediation timelines, and a Glass Box audit trail. Supports integration with VRM platforms (OneTrust, Prevalent, Venminder, ProcessUnity) and standard questionnaire frameworks (SIG Core/Lite, CAIQ, HECVAT, VSA). Jurisdiction-agnostic baseline with [JURISDICTION-SPECIFIC] markers covering GDPR, UK GDPR, CCPA/CPRA, HIPAA, LGPD, PIPEDA, APPI, PDPA, and NIS2 supply chain security obligations.
+
 
 # Legalcode Vendor Privacy Assessment
 
