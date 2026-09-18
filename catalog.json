@@ -2,7 +2,7 @@
   "source_repository": "RobertHH-IS/legalcode",
   "source_head": "8cea90d1af24df618811de166bbd9bdc52e2d807",
   "source_note": "File hashes identify the exact working-copy inputs; HEAD alone is not a clean-tree assertion.",
-  "total_count": 251,
+  "total_count": 252,
   "additional_count": 200,
   "validation_scope": "Publication and packaging review; not a new legal-authority audit or behavioral benchmark of 200 workflows. Legal examples and thresholds require verification at use time.",
   "transformations": [
@@ -5940,6 +5940,25 @@
         "scripts/inspect_docx.py": "cbea39b5d48801e4d3e4d4613610e916b9f895994fad06f610b0e859ca51e5f4",
         "scripts/make_template.py": "42674168876b151049876462279172005e760f8b57ee6510052668d9f4e21ff3",
         "tests/test_docx_helpers.py": "f93ca2e69e8c43194e8a88505406bb1c545d2db911b6257d81a24b3204ffaa93"
+      }
+    },
+    {
+      "name": "legalcode-grill-document",
+      "source": "skills/general/workflows/legalcode-grill-document",
+      "source_skill_sha256": "084995751e3f60d5db02a2ceea2a6ce07c134f100edf048cabcd6213f621666c",
+      "source_frontmatter": {
+        "name": "legalcode-grill-document",
+        "description": "Question a lawyer about their own draft to identify material weaknesses and develop concrete improvements. Use when they ask for an interactive grilling or stress test of an existing legal document."
+      },
+      "description": "Question a lawyer about their own draft to identify material weaknesses and develop concrete improvements. Use when they ask for an interactive grilling or stress test of an existing legal document.",
+      "addition": false,
+      "category": "later-addition",
+      "scope": "general",
+      "selection_reason": "Added after the September 2026 expansion: interactive, evidence-based questioning of a lawyer about their own draft, with scoped research, professional revisions and an actionable handover.",
+      "files": {
+        "LICENSE.md": "ecc9a52d40f2d818937453cfcb1466ce6a0fc88abd6e8c44f9784a6d22dfc7ac",
+        "SKILL.md": "ea8c1556b2a4d91601ea7c975329b99ce957ce8b24ead076ccfc62ea9dae76fb",
+        "references/runtime-compatibility.md": "f9227cd86aeefdbd7454c01fb173add6a31bd50839fc72db5693c896eee290e9"
       }
     }
   ]
