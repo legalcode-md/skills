@@ -4,9 +4,10 @@
 Usage:  python3 make_template.py <sample.docx> <template.docx> --edits edits.json [--force]
 
 The template keeps the sample's wording, styles, numbering, page setup, header and footer.
-edits.json says what to change (every key is optional):
+edits.json says what to change (every key is optional). The company and date below
+are illustrative placeholders, not details from a real matter:
 
-    {"replace":           {"Borealis Seafood ehf.": "[Client name]", "4 March 2024": "[Date]"},
+    {"replace":           {"EXAMPLE COMPANY ehf.": "[Client name]", "EXAMPLE DATE": "[Date]"},
      "replace_paragraph": [{"containing": "You have asked us to", "with": "[Scope of work: what the client asked for and what we will do]"}],
      "insert_after":      [{"after": "We record time in units", "text": "[IF fixed fee] We will carry out the work for a fixed fee of [Fee]."}],
      "delete_paragraph":  ["We also act for"]}

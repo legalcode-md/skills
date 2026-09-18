@@ -11,15 +11,16 @@ blanks. A blank is [Name] or [Name: a note on what goes here]; values.json is ke
 the name, spelt as --list prints it. A paragraph that starts with a choice marker, such
 as [IF substitution allowed] or [EF varakrafa á við], is kept or dropped as a whole.
 An example for a template with [Principal name], [IF substitution allowed] and one
-[Attorney name], [Attorney id] line per attorney:
+[Attorney name], [Attorney id] line per attorney. All identities and dates below
+are illustrative placeholders, not details from a real matter:
 
-    {"Principal name": "Example ehf.",
-     "Date": "2 October 2026",
+    {"Principal name": "EXAMPLE COMPANY ehf.",
+     "Date": "EXAMPLE DATE",
      "Powers granted": "First line\\nSecond line of the same paragraph",
      "IF substitution allowed": true,
      "IF limited in time": false,
-     "Attorney name": [{"Attorney name": "First Person", "Attorney id": "..."},
-                       {"Attorney name": "Second Person", "Attorney id": "..."}]}
+     "Attorney name": [{"Attorney name": "EXAMPLE PERSON 1", "Attorney id": "EXAMPLE ID 1"},
+                       {"Attorney name": "EXAMPLE PERSON 2", "Attorney id": "EXAMPLE ID 2"}]}
 
   [Name]        is replaced by its value wherever it appears, header and footer included;
                 the note after a colon is guidance and goes when the blank is filled
