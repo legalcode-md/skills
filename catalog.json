@@ -2,7 +2,7 @@
   "source_repository": "RobertHH-IS/legalcode",
   "source_head": "8cea90d1af24df618811de166bbd9bdc52e2d807",
   "source_note": "File hashes identify the exact working-copy inputs; HEAD alone is not a clean-tree assertion.",
-  "total_count": 250,
+  "total_count": 251,
   "additional_count": 200,
   "validation_scope": "Publication and packaging review; not a new legal-authority audit or behavioral benchmark of 200 workflows. Legal examples and thresholds require verification at use time.",
   "transformations": [
@@ -5910,6 +5910,36 @@
         "LICENSE.md": "ecc9a52d40f2d818937453cfcb1466ce6a0fc88abd6e8c44f9784a6d22dfc7ac",
         "SKILL.md": "0dc6856a7788922f19121f6cac0534452070a66769f900f8dfbd87f271a11503",
         "references/runtime-compatibility.md": "585c52257e62b7528bacd57f7d531cc8d9f506000bf5985d3a2b448285895b23"
+      }
+    },
+    {
+      "name": "legalcode-document-to-skill",
+      "source": "skills/general/workflows/legalcode-document-to-skill",
+      "source_skill_sha256": "392b756fc415c1394cf780f44d66e447d68a66f9bacd663973b0592c39c26353",
+      "source_frontmatter": {
+        "name": "legalcode-document-to-skill",
+        "description": "Build or refine a reusable drafting skill from a lawyer's example documents, preserving their layout, structure, tone, style and word choice while removing matter-specific content. Use when asked to turn examples into a drafting skill."
+      },
+      "description": "Build or refine a reusable drafting skill from a lawyer's example documents, preserving their layout, structure, tone, style and word choice while removing matter-specific content. Use when asked to turn examples into a drafting skill.",
+      "addition": false,
+      "category": "later-addition",
+      "scope": "general",
+      "selection_reason": "Added after the September 2026 expansion: build reusable drafting skills from lawyer samples, preserving form and professional writing while separating matter content.",
+      "files": {
+        "LICENSE.md": "ecc9a52d40f2d818937453cfcb1466ce6a0fc88abd6e8c44f9784a6d22dfc7ac",
+        "SKILL.md": "9ab58df55c82fb4c83095988dd47ab577f10b3d9eda19a099b3d018ca0648536",
+        "assets/create_docx.py": "47bef0a7e0e09cf832191bae5b437c3f10fc99889d79c7509d3d80b342cd1593",
+        "assets/drafting-skill.md": "515e7316f8cd6013f758ec17c7a73915c886757bccd69084eb2f4bda1a2de001",
+        "references/legal-writing-analysis.md": "707624f3e1fe87ce01598822c15e82005c7f6ba4d9543bbb677eca6c9ac095c3",
+        "references/runtime-compatibility.md": "29bbee1faa77e9d1e4043ac3b6e480a9b0e8334ec4ee03fcc073234c11bd3475",
+        "references/skill-authoring-practices.md": "d3d3190f244c3a7bb291131b9409020f45160534333542452aa7de52ca573808",
+        "references/structure-and-choices.md": "6c3ad1c1ebe7edbf7d8dad9a9734cf5513d0b20b32bd1a1a135d450267ae47f4",
+        "references/validation-and-learning.md": "2a55a3e069d299cad417e87c35db118c61bc099d4b0f6f914629132ed6f79296",
+        "scripts/compare_samples.py": "442a8ceaa39ebce5bba29f72acb429ee126d21809dc01b201da3fafa68e9aba8",
+        "scripts/docxlib.py": "10ac76db705e8206ed8a67279144f8346c656e683ae363ac2567e548f31d76bc",
+        "scripts/inspect_docx.py": "cbea39b5d48801e4d3e4d4613610e916b9f895994fad06f610b0e859ca51e5f4",
+        "scripts/make_template.py": "42674168876b151049876462279172005e760f8b57ee6510052668d9f4e21ff3",
+        "tests/test_docx_helpers.py": "f93ca2e69e8c43194e8a88505406bb1c545d2db911b6257d81a24b3204ffaa93"
       }
     }
   ]

@@ -12,13 +12,31 @@ from urllib.parse import unquote
 import yaml
 
 
+def prose_links(text):
+    """Find reference links outside fenced examples, which may describe generated files."""
+    lines, fence = [], None
+    for line in text.splitlines():
+        marker = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)$", line)
+        if marker:
+            run, rest = marker.groups()
+            if fence is None:
+                fence = run
+            elif run[0] == fence[0] and len(run) >= len(fence) and not rest.strip():
+                fence = None
+            continue
+        if fence is None:
+            lines.append(line)
+    return re.findall(r"\[([^\]\n]+)\]\(([^)\n]+)\)", "\n".join(lines))
+
+
 def validate(root):
     catalog = json.loads((root / "catalog.json").read_text())
     selection = json.loads((root / "selection-2026-09.json").read_text())
     entries = catalog["skills"]
     names = [item["name"] for item in entries]
     errors = []
-    assert len(names) == len(set(names)) == catalog["total_count"] == selection["total_count"]
+    later = [item for item in entries if item.get("category") == "later-addition"]
+    assert len(names) == len(set(names)) == catalog["total_count"] == selection["total_count"] + len(later)
     selected = {item["name"] for item in selection["skills"]}
     assert selected == {item["name"] for item in entries if item["addition"]}
     assert len(selected) == selection["additional_count"] == 200
@@ -37,7 +55,7 @@ def validate(root):
                 errors.append(f"Hash mismatch: {path}")
             if path.suffix != ".md":
                 continue
-            for label, target in re.findall(r"\[([^\]\n]+)\]\(([^)\n]+)\)", path.read_text()):
+            for label, target in prose_links(path.read_text()):
                 target = target.split(' "')[0].split("#")[0]
                 if not target or re.match(r"[a-zA-Z][a-zA-Z0-9+.-]*:|#", target):
                     continue

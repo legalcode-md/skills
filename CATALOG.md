@@ -1,12 +1,18 @@
 # Legalcode Skills Catalogue
 
-250 installable skills: the existing 50-skill selection plus 200 Legalcode-authored additions.
+251 installable skills: the existing 50-skill selection, 200 Legalcode-authored additions and 1 later addition.
 
 The additions comprise 130 general workflows and 70 bespoke workflows across 18 jurisdiction or regional groups.
 
 See [selection criteria and provenance](selection-2026-09.json) and [file integrity manifest](catalog.json).
 
 This is a curated publication inventory, not a certification of current legal accuracy. Verify primary authorities when using a skill.
+
+## Later additions (1)
+
+### [legalcode-document-to-skill](skills/legalcode-document-to-skill/SKILL.md)
+
+Build or refine a reusable drafting skill from a lawyer's example documents, preserving their layout, structure, tone, style and word choice while removing matter-specific content. Use when asked to turn examples into a drafting skill.
 
 ## Existing collection (50)
 

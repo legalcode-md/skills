@@ -1,6 +1,6 @@
 # Legalcode Skills
 
-**250 legal skills** for agents that support `SKILL.md` packages: practical general
+**251 legal skills** for agents that support `SKILL.md` packages: practical general
 workflows alongside bespoke jurisdiction-specific work.
 
 Browse the [complete catalogue](CATALOG.md). The September 2026 expansion adds
@@ -32,6 +32,12 @@ List the available skills:
 
 ```sh
 npx skills add legalcode-md/skills --list --full-depth
+```
+
+Install the document-to-skill builder:
+
+```sh
+npx skills add legalcode-md/skills --skill legalcode-document-to-skill --full-depth
 ```
 
 Install a general workflow:
@@ -81,7 +87,8 @@ and overlapping variants were excluded from this expansion.
 - [Selection record](selection-2026-09.json): source paths and rationale for all 200 additions.
 - [Integrity manifest](catalog.json): source provenance, original metadata and hashes for every packaged file.
 
-The 250 total preserves the existing 50-skill selection and adds 200 curated skills.
+The 251 total preserves the existing 50-skill selection, adds 200 curated skills,
+and includes the document-to-skill builder as a later addition.
 
 The workflow bodies preserve their original legal analysis and attribution. Portable
 frontmatter, shorter discovery descriptions, current runtime guidance and bundled
@@ -102,7 +109,7 @@ python3 -m pip install -r requirements-dev.txt
 python3 scripts/validate-public-skills.py .
 ```
 
-The validator checks all 250 names, metadata, the 200-addition selection, file hashes
+The validator checks all 251 names, metadata, the 200-addition selection, file hashes
 and local Markdown references. `catalog.json` is generated with the source export;
 rebuild it when changing packaged skill files.
 
