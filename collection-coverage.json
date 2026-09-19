@@ -1,0 +1,1711 @@
+{
+  "policy": "All unique legalcode- names from skills/general and skills/jurisdictions, plus previously published workflows. Internal development tools outside the collection are not added.",
+  "definition_count": 322,
+  "unique_collection_names": 321,
+  "preserved_public_workflows": [
+    "legalcode-case-timeline-generator",
+    "legalcode-tabular-review-orchestrator",
+    "legalcode-workflow-compound",
+    "legalcode-workflow-research",
+    "legalcode-workflow-review",
+    "legalcode-workflow-work"
+  ],
+  "total_count": 327,
+  "previous_published_count": 252,
+  "new_skill_names": [
+    "legalcode-advertising-marketing-compliance",
+    "legalcode-algorithmic-impact-assessment",
+    "legalcode-appellate-brief-analysis",
+    "legalcode-benefits-erisa-compliance",
+    "legalcode-boi-filing-prep",
+    "legalcode-brand-protection-program",
+    "legalcode-breach-regulatory-notification-drafter",
+    "legalcode-breach-response-checklist",
+    "legalcode-brief-analyzer",
+    "legalcode-canned-responses",
+    "legalcode-canned-responses-ccpa",
+    "legalcode-canned-responses-eu",
+    "legalcode-canned-responses-ew",
+    "legalcode-case-outcome-prediction",
+    "legalcode-ccpa-admt-compliance",
+    "legalcode-class-action-settlement-review",
+    "legalcode-class-certification-analysis",
+    "legalcode-collective-bargaining-review",
+    "legalcode-compliance-risk-assessment",
+    "legalcode-consulting-agreement",
+    "legalcode-contract-risk-scorer",
+    "legalcode-cross-border-checklist",
+    "legalcode-deposition-digest",
+    "legalcode-entity-formation-advisor",
+    "legalcode-esg-sustainability-reporting",
+    "legalcode-estate-plan-generator",
+    "legalcode-eu-dpia-assessment",
+    "legalcode-eu-privacy-notice-drafter",
+    "legalcode-expert-witness-preparation",
+    "legalcode-faq-generator",
+    "legalcode-franchise-agreement-review-uk",
+    "legalcode-hipaa-compliance-assessment",
+    "legalcode-independent-contractor-classification",
+    "legalcode-insurance-coverage-analysis",
+    "legalcode-investigation-plan-builder",
+    "legalcode-invoice-reviewer",
+    "legalcode-ip-docket-tracker",
+    "legalcode-judge-profile",
+    "legalcode-legal-ops-dashboard",
+    "legalcode-legal-spend-analysis",
+    "legalcode-litigation-budget",
+    "legalcode-mac-clause-analysis",
+    "legalcode-malstadur",
+    "legalcode-medical-records-summarizer",
+    "legalcode-minnisblad",
+    "legalcode-motion-in-limine",
+    "legalcode-motion-to-dismiss-drafter",
+    "legalcode-nda-triage-ew",
+    "legalcode-nda-triage-pl",
+    "legalcode-nist-csf-mapping",
+    "legalcode-non-compete-analysis-is",
+    "legalcode-non-compete-enforceability",
+    "legalcode-opposition-brief-drafter",
+    "legalcode-pci-dss-compliance",
+    "legalcode-private-placement-memo-review",
+    "legalcode-proxy-statement-analysis",
+    "legalcode-reasonable-accommodation-assessment",
+    "legalcode-review-contract",
+    "legalcode-sec-filing-checklist",
+    "legalcode-securities-regulation-compliance",
+    "legalcode-severance-agreement-review",
+    "legalcode-sox-compliance-assessment",
+    "legalcode-structured-finance-review",
+    "legalcode-summary-judgment-analysis",
+    "legalcode-tabulate",
+    "legalcode-tar-review-protocol",
+    "legalcode-technology-license-review",
+    "legalcode-termination-risk-assessment",
+    "legalcode-time-narrative",
+    "legalcode-triage-nda",
+    "legalcode-uk-pensions-trustee-compliance",
+    "legalcode-uk-residential-tenancy",
+    "legalcode-us-ada-accommodation",
+    "legalcode-us-reg-s-offering-review",
+    "legalcode-whistleblower-program-builder"
+  ],
+  "duplicate_resolution": {
+    "legalcode-nda-triage": {
+      "canonical_source": "skills/general/contracts/legalcode-nda-triage",
+      "alternate_source": "skills/general/contracts/nda-triage",
+      "reason": "Same install name; retain the previously published canonical package rather than install two competing definitions."
+    }
+  },
+  "definitions": [
+    {
+      "name": "legalcode-consumer-lending-compliance",
+      "source": "skills/general/banking-finance/legalcode-consumer-lending-compliance",
+      "published_name": "legalcode-consumer-lending-compliance"
+    },
+    {
+      "name": "legalcode-fintech-regulatory-assessment",
+      "source": "skills/general/banking-finance/legalcode-fintech-regulatory-assessment",
+      "published_name": "legalcode-fintech-regulatory-assessment"
+    },
+    {
+      "name": "legalcode-security-collateral-review",
+      "source": "skills/general/banking-finance/legalcode-security-collateral-review",
+      "published_name": "legalcode-security-collateral-review"
+    },
+    {
+      "name": "legalcode-structured-finance-review",
+      "source": "skills/general/banking-finance/legalcode-structured-finance-review",
+      "published_name": "legalcode-structured-finance-review"
+    },
+    {
+      "name": "legalcode-accessibility-compliance",
+      "source": "skills/general/compliance/legalcode-accessibility-compliance",
+      "published_name": "legalcode-accessibility-compliance"
+    },
+    {
+      "name": "legalcode-advertising-marketing-compliance",
+      "source": "skills/general/compliance/legalcode-advertising-marketing-compliance",
+      "published_name": "legalcode-advertising-marketing-compliance"
+    },
+    {
+      "name": "legalcode-ai-acceptable-use-policy",
+      "source": "skills/general/compliance/legalcode-ai-acceptable-use-policy",
+      "published_name": "legalcode-ai-acceptable-use-policy"
+    },
+    {
+      "name": "legalcode-ai-fundamental-rights-impact-assessment",
+      "source": "skills/general/compliance/legalcode-ai-fundamental-rights-impact-assessment",
+      "published_name": "legalcode-ai-fundamental-rights-impact-assessment"
+    },
+    {
+      "name": "legalcode-ai-governance-framework-builder",
+      "source": "skills/general/compliance/legalcode-ai-governance-framework-builder",
+      "published_name": "legalcode-ai-governance-framework-builder"
+    },
+    {
+      "name": "legalcode-ai-in-employment-compliance",
+      "source": "skills/general/compliance/legalcode-ai-in-employment-compliance",
+      "published_name": "legalcode-ai-in-employment-compliance"
+    },
+    {
+      "name": "legalcode-algorithmic-impact-assessment",
+      "source": "skills/general/compliance/legalcode-algorithmic-impact-assessment",
+      "published_name": "legalcode-algorithmic-impact-assessment"
+    },
+    {
+      "name": "legalcode-aml-kyc-compliance",
+      "source": "skills/general/compliance/legalcode-aml-kyc-compliance",
+      "published_name": "legalcode-aml-kyc-compliance"
+    },
+    {
+      "name": "legalcode-anti-bribery-compliance",
+      "source": "skills/general/compliance/legalcode-anti-bribery-compliance",
+      "published_name": "legalcode-anti-bribery-compliance"
+    },
+    {
+      "name": "legalcode-antitrust-merger-review",
+      "source": "skills/general/compliance/legalcode-antitrust-merger-review",
+      "published_name": "legalcode-antitrust-merger-review"
+    },
+    {
+      "name": "legalcode-benefits-erisa-compliance",
+      "source": "skills/general/compliance/legalcode-benefits-erisa-compliance",
+      "published_name": "legalcode-benefits-erisa-compliance"
+    },
+    {
+      "name": "legalcode-biometric-data-compliance",
+      "source": "skills/general/compliance/legalcode-biometric-data-compliance",
+      "published_name": "legalcode-biometric-data-compliance"
+    },
+    {
+      "name": "legalcode-boi-filing-prep",
+      "source": "skills/general/compliance/legalcode-boi-filing-prep",
+      "published_name": "legalcode-boi-filing-prep"
+    },
+    {
+      "name": "legalcode-breach-affected-party-communication",
+      "source": "skills/general/compliance/legalcode-breach-affected-party-communication",
+      "published_name": "legalcode-breach-affected-party-communication"
+    },
+    {
+      "name": "legalcode-breach-regulatory-notification-drafter",
+      "source": "skills/general/compliance/legalcode-breach-regulatory-notification-drafter",
+      "published_name": "legalcode-breach-regulatory-notification-drafter"
+    },
+    {
+      "name": "legalcode-breach-response-checklist",
+      "source": "skills/general/compliance/legalcode-breach-response-checklist",
+      "published_name": "legalcode-breach-response-checklist"
+    },
+    {
+      "name": "legalcode-breach-severity-assessment",
+      "source": "skills/general/compliance/legalcode-breach-severity-assessment",
+      "published_name": "legalcode-breach-severity-assessment"
+    },
+    {
+      "name": "legalcode-ccpa-admt-compliance",
+      "source": "skills/general/compliance/legalcode-ccpa-admt-compliance",
+      "published_name": "legalcode-ccpa-admt-compliance"
+    },
+    {
+      "name": "legalcode-collective-bargaining-review",
+      "source": "skills/general/compliance/legalcode-collective-bargaining-review",
+      "published_name": "legalcode-collective-bargaining-review"
+    },
+    {
+      "name": "legalcode-compliance-program-builder",
+      "source": "skills/general/compliance/legalcode-compliance-program-builder",
+      "published_name": "legalcode-compliance-program-builder"
+    },
+    {
+      "name": "legalcode-compliance-risk-assessment",
+      "source": "skills/general/compliance/legalcode-compliance-risk-assessment",
+      "published_name": "legalcode-compliance-risk-assessment"
+    },
+    {
+      "name": "legalcode-consent-mechanism-review",
+      "source": "skills/general/compliance/legalcode-consent-mechanism-review",
+      "published_name": "legalcode-consent-mechanism-review"
+    },
+    {
+      "name": "legalcode-cookie-compliance-audit",
+      "source": "skills/general/compliance/legalcode-cookie-compliance-audit",
+      "published_name": "legalcode-cookie-compliance-audit"
+    },
+    {
+      "name": "legalcode-coppa-compliance-assessment",
+      "source": "skills/general/compliance/legalcode-coppa-compliance-assessment",
+      "published_name": "legalcode-coppa-compliance-assessment"
+    },
+    {
+      "name": "legalcode-corporate-governance-audit",
+      "source": "skills/general/compliance/legalcode-corporate-governance-audit",
+      "published_name": "legalcode-corporate-governance-audit"
+    },
+    {
+      "name": "legalcode-cross-border-checklist",
+      "source": "skills/general/compliance/legalcode-cross-border-checklist",
+      "published_name": "legalcode-cross-border-checklist"
+    },
+    {
+      "name": "legalcode-cross-border-transfer-assessment",
+      "source": "skills/general/compliance/legalcode-cross-border-transfer-assessment",
+      "published_name": "legalcode-cross-border-transfer-assessment"
+    },
+    {
+      "name": "legalcode-data-mapping-workflow",
+      "source": "skills/general/compliance/legalcode-data-mapping-workflow",
+      "published_name": "legalcode-data-mapping-workflow"
+    },
+    {
+      "name": "legalcode-data-processing-agreement-drafter",
+      "source": "skills/general/compliance/legalcode-data-processing-agreement-drafter",
+      "published_name": "legalcode-data-processing-agreement-drafter"
+    },
+    {
+      "name": "legalcode-dora-compliance-assessment",
+      "source": "skills/general/compliance/legalcode-dora-compliance-assessment",
+      "published_name": "legalcode-dora-compliance-assessment"
+    },
+    {
+      "name": "legalcode-dpa-review-and-negotiation",
+      "source": "skills/general/compliance/legalcode-dpa-review-and-negotiation",
+      "published_name": "legalcode-dpa-review-and-negotiation"
+    },
+    {
+      "name": "legalcode-dpia-generator",
+      "source": "skills/general/compliance/legalcode-dpia-generator",
+      "published_name": "legalcode-dpia-generator"
+    },
+    {
+      "name": "legalcode-dsar-workflow-builder",
+      "source": "skills/general/compliance/legalcode-dsar-workflow-builder",
+      "published_name": "legalcode-dsar-workflow-builder"
+    },
+    {
+      "name": "legalcode-eea-incorporation-tracker",
+      "source": "skills/general/compliance/legalcode-eea-incorporation-tracker",
+      "published_name": "legalcode-eea-incorporation-tracker"
+    },
+    {
+      "name": "legalcode-employee-handbook-review",
+      "source": "skills/general/compliance/legalcode-employee-handbook-review",
+      "published_name": "legalcode-employee-handbook-review"
+    },
+    {
+      "name": "legalcode-environmental-compliance-review",
+      "source": "skills/general/compliance/legalcode-environmental-compliance-review",
+      "published_name": "legalcode-environmental-compliance-review"
+    },
+    {
+      "name": "legalcode-esg-sustainability-reporting",
+      "source": "skills/general/compliance/legalcode-esg-sustainability-reporting",
+      "published_name": "legalcode-esg-sustainability-reporting"
+    },
+    {
+      "name": "legalcode-eu-ai-act-high-risk-compliance",
+      "source": "skills/general/compliance/legalcode-eu-ai-act-high-risk-compliance",
+      "published_name": "legalcode-eu-ai-act-high-risk-compliance"
+    },
+    {
+      "name": "legalcode-eu-conformity-assessment",
+      "source": "skills/general/compliance/legalcode-eu-conformity-assessment",
+      "published_name": "legalcode-eu-conformity-assessment"
+    },
+    {
+      "name": "legalcode-eu-correlation-table-builder",
+      "source": "skills/general/compliance/legalcode-eu-correlation-table-builder",
+      "published_name": "legalcode-eu-correlation-table-builder"
+    },
+    {
+      "name": "legalcode-eu-directive-analyzer",
+      "source": "skills/general/compliance/legalcode-eu-directive-analyzer",
+      "published_name": "legalcode-eu-directive-analyzer"
+    },
+    {
+      "name": "legalcode-eu-gold-plating-detector",
+      "source": "skills/general/compliance/legalcode-eu-gold-plating-detector",
+      "published_name": "legalcode-eu-gold-plating-detector"
+    },
+    {
+      "name": "legalcode-eu-infringement-procedure-tracker",
+      "source": "skills/general/compliance/legalcode-eu-infringement-procedure-tracker",
+      "published_name": "legalcode-eu-infringement-procedure-tracker"
+    },
+    {
+      "name": "legalcode-eu-transposition-tracker",
+      "source": "skills/general/compliance/legalcode-eu-transposition-tracker",
+      "published_name": "legalcode-eu-transposition-tracker"
+    },
+    {
+      "name": "legalcode-gdpr-legal-basis-assessment",
+      "source": "skills/general/compliance/legalcode-gdpr-legal-basis-assessment",
+      "published_name": "legalcode-gdpr-legal-basis-assessment"
+    },
+    {
+      "name": "legalcode-hipaa-compliance-assessment",
+      "source": "skills/general/compliance/legalcode-hipaa-compliance-assessment",
+      "published_name": "legalcode-hipaa-compliance-assessment"
+    },
+    {
+      "name": "legalcode-immigration-work-authorization",
+      "source": "skills/general/compliance/legalcode-immigration-work-authorization",
+      "published_name": "legalcode-immigration-work-authorization"
+    },
+    {
+      "name": "legalcode-incident-response-plan-builder",
+      "source": "skills/general/compliance/legalcode-incident-response-plan-builder",
+      "published_name": "legalcode-incident-response-plan-builder"
+    },
+    {
+      "name": "legalcode-independent-contractor-classification",
+      "source": "skills/general/compliance/legalcode-independent-contractor-classification",
+      "published_name": "legalcode-independent-contractor-classification"
+    },
+    {
+      "name": "legalcode-internal-investigation",
+      "source": "skills/general/compliance/legalcode-internal-investigation",
+      "published_name": "legalcode-internal-investigation"
+    },
+    {
+      "name": "legalcode-investigation-plan-builder",
+      "source": "skills/general/compliance/legalcode-investigation-plan-builder",
+      "published_name": "legalcode-investigation-plan-builder"
+    },
+    {
+      "name": "legalcode-legitimate-interest-assessment",
+      "source": "skills/general/compliance/legalcode-legitimate-interest-assessment",
+      "published_name": "legalcode-legitimate-interest-assessment"
+    },
+    {
+      "name": "legalcode-multi-jurisdiction-privacy-comparison",
+      "source": "skills/general/compliance/legalcode-multi-jurisdiction-privacy-comparison",
+      "published_name": "legalcode-multi-jurisdiction-privacy-comparison"
+    },
+    {
+      "name": "legalcode-nis2-compliance-assessment",
+      "source": "skills/general/compliance/legalcode-nis2-compliance-assessment",
+      "published_name": "legalcode-nis2-compliance-assessment"
+    },
+    {
+      "name": "legalcode-nist-csf-mapping",
+      "source": "skills/general/compliance/legalcode-nist-csf-mapping",
+      "published_name": "legalcode-nist-csf-mapping"
+    },
+    {
+      "name": "legalcode-non-compete-analysis",
+      "source": "skills/general/compliance/legalcode-non-compete-analysis",
+      "published_name": "legalcode-non-compete-analysis"
+    },
+    {
+      "name": "legalcode-non-compete-enforceability",
+      "source": "skills/general/compliance/legalcode-non-compete-enforceability",
+      "published_name": "legalcode-non-compete-enforceability"
+    },
+    {
+      "name": "legalcode-open-source-license-compliance",
+      "source": "skills/general/compliance/legalcode-open-source-license-compliance",
+      "published_name": "legalcode-open-source-license-compliance"
+    },
+    {
+      "name": "legalcode-pay-equity-audit",
+      "source": "skills/general/compliance/legalcode-pay-equity-audit",
+      "published_name": "legalcode-pay-equity-audit"
+    },
+    {
+      "name": "legalcode-pci-dss-compliance",
+      "source": "skills/general/compliance/legalcode-pci-dss-compliance",
+      "published_name": "legalcode-pci-dss-compliance"
+    },
+    {
+      "name": "legalcode-policy-gap-analysis",
+      "source": "skills/general/compliance/legalcode-policy-gap-analysis",
+      "published_name": "legalcode-policy-gap-analysis"
+    },
+    {
+      "name": "legalcode-privacy-policy-drafter",
+      "source": "skills/general/compliance/legalcode-privacy-policy-drafter",
+      "published_name": "legalcode-privacy-policy-drafter"
+    },
+    {
+      "name": "legalcode-reasonable-accommodation-assessment",
+      "source": "skills/general/compliance/legalcode-reasonable-accommodation-assessment",
+      "published_name": "legalcode-reasonable-accommodation-assessment"
+    },
+    {
+      "name": "legalcode-regulatory-change-tracker",
+      "source": "skills/general/compliance/legalcode-regulatory-change-tracker",
+      "published_name": "legalcode-regulatory-change-tracker"
+    },
+    {
+      "name": "legalcode-ropa-generator",
+      "source": "skills/general/compliance/legalcode-ropa-generator",
+      "published_name": "legalcode-ropa-generator"
+    },
+    {
+      "name": "legalcode-sanctions-export-control-screening",
+      "source": "skills/general/compliance/legalcode-sanctions-export-control-screening",
+      "published_name": "legalcode-sanctions-export-control-screening"
+    },
+    {
+      "name": "legalcode-sec-filing-checklist",
+      "source": "skills/general/compliance/legalcode-sec-filing-checklist",
+      "published_name": "legalcode-sec-filing-checklist"
+    },
+    {
+      "name": "legalcode-securities-regulation-compliance",
+      "source": "skills/general/compliance/legalcode-securities-regulation-compliance",
+      "published_name": "legalcode-securities-regulation-compliance"
+    },
+    {
+      "name": "legalcode-severance-agreement-review",
+      "source": "skills/general/compliance/legalcode-severance-agreement-review",
+      "published_name": "legalcode-severance-agreement-review"
+    },
+    {
+      "name": "legalcode-soc2-readiness-assessment",
+      "source": "skills/general/compliance/legalcode-soc2-readiness-assessment",
+      "published_name": "legalcode-soc2-readiness-assessment"
+    },
+    {
+      "name": "legalcode-sox-compliance-assessment",
+      "source": "skills/general/compliance/legalcode-sox-compliance-assessment",
+      "published_name": "legalcode-sox-compliance-assessment"
+    },
+    {
+      "name": "legalcode-termination-risk-assessment",
+      "source": "skills/general/compliance/legalcode-termination-risk-assessment",
+      "published_name": "legalcode-termination-risk-assessment"
+    },
+    {
+      "name": "legalcode-third-party-due-diligence",
+      "source": "skills/general/compliance/legalcode-third-party-due-diligence",
+      "published_name": "legalcode-third-party-due-diligence"
+    },
+    {
+      "name": "legalcode-trademark-clearance-search",
+      "source": "skills/general/compliance/legalcode-trademark-clearance-search",
+      "published_name": "legalcode-trademark-clearance-search"
+    },
+    {
+      "name": "legalcode-us-breach-notification-triage",
+      "source": "skills/general/compliance/legalcode-us-breach-notification-triage",
+      "published_name": "legalcode-us-breach-notification-triage"
+    },
+    {
+      "name": "legalcode-us-state-privacy-comparison",
+      "source": "skills/general/compliance/legalcode-us-state-privacy-comparison",
+      "published_name": "legalcode-us-state-privacy-comparison"
+    },
+    {
+      "name": "legalcode-vendor-privacy-assessment",
+      "source": "skills/general/compliance/legalcode-vendor-privacy-assessment",
+      "published_name": "legalcode-vendor-privacy-assessment"
+    },
+    {
+      "name": "legalcode-wage-hour-compliance-audit",
+      "source": "skills/general/compliance/legalcode-wage-hour-compliance-audit",
+      "published_name": "legalcode-wage-hour-compliance-audit"
+    },
+    {
+      "name": "legalcode-warn-act-analysis",
+      "source": "skills/general/compliance/legalcode-warn-act-analysis",
+      "published_name": "legalcode-warn-act-analysis"
+    },
+    {
+      "name": "legalcode-whistleblower-program-builder",
+      "source": "skills/general/compliance/legalcode-whistleblower-program-builder",
+      "published_name": "legalcode-whistleblower-program-builder"
+    },
+    {
+      "name": "legalcode-workplace-investigation",
+      "source": "skills/general/compliance/legalcode-workplace-investigation",
+      "published_name": "legalcode-workplace-investigation"
+    },
+    {
+      "name": "legalcode-consulting-agreement",
+      "source": "skills/general/contracts/consulting-agreement",
+      "published_name": "legalcode-consulting-agreement"
+    },
+    {
+      "name": "legalcode-ai-provisions-reviewer",
+      "source": "skills/general/contracts/legalcode-ai-provisions-reviewer",
+      "published_name": "legalcode-ai-provisions-reviewer"
+    },
+    {
+      "name": "legalcode-clause-library-manager",
+      "source": "skills/general/contracts/legalcode-clause-library-manager",
+      "published_name": "legalcode-clause-library-manager"
+    },
+    {
+      "name": "legalcode-cloud-service-agreement-review",
+      "source": "skills/general/contracts/legalcode-cloud-service-agreement-review",
+      "published_name": "legalcode-cloud-service-agreement-review"
+    },
+    {
+      "name": "legalcode-commercial-lease-review",
+      "source": "skills/general/contracts/legalcode-commercial-lease-review",
+      "published_name": "legalcode-commercial-lease-review"
+    },
+    {
+      "name": "legalcode-construction-contract-review",
+      "source": "skills/general/contracts/legalcode-construction-contract-review",
+      "published_name": "legalcode-construction-contract-review"
+    },
+    {
+      "name": "legalcode-contract-amendment-drafter",
+      "source": "skills/general/contracts/legalcode-contract-amendment-drafter",
+      "published_name": "legalcode-contract-amendment-drafter"
+    },
+    {
+      "name": "legalcode-contract-comparison",
+      "source": "skills/general/contracts/legalcode-contract-comparison",
+      "published_name": "legalcode-contract-comparison"
+    },
+    {
+      "name": "legalcode-contract-metadata-extractor",
+      "source": "skills/general/contracts/legalcode-contract-metadata-extractor",
+      "published_name": "legalcode-contract-metadata-extractor"
+    },
+    {
+      "name": "legalcode-contract-playbook-builder",
+      "source": "skills/general/contracts/legalcode-contract-playbook-builder",
+      "published_name": "legalcode-contract-playbook-builder"
+    },
+    {
+      "name": "legalcode-contract-renewal-analysis",
+      "source": "skills/general/contracts/legalcode-contract-renewal-analysis",
+      "published_name": "legalcode-contract-renewal-analysis"
+    },
+    {
+      "name": "legalcode-contract-review",
+      "source": "skills/general/contracts/legalcode-contract-review",
+      "published_name": "legalcode-contract-review"
+    },
+    {
+      "name": "legalcode-contract-risk-scorer",
+      "source": "skills/general/contracts/legalcode-contract-risk-scorer",
+      "published_name": "legalcode-contract-risk-scorer"
+    },
+    {
+      "name": "legalcode-distribution-agreement-review",
+      "source": "skills/general/contracts/legalcode-distribution-agreement-review",
+      "published_name": "legalcode-distribution-agreement-review"
+    },
+    {
+      "name": "legalcode-employment-agreement-review",
+      "source": "skills/general/contracts/legalcode-employment-agreement-review",
+      "published_name": "legalcode-employment-agreement-review"
+    },
+    {
+      "name": "legalcode-esg-clause-reviewer",
+      "source": "skills/general/contracts/legalcode-esg-clause-reviewer",
+      "published_name": "legalcode-esg-clause-reviewer"
+    },
+    {
+      "name": "legalcode-franchise-agreement-review",
+      "source": "skills/general/contracts/legalcode-franchise-agreement-review",
+      "published_name": "legalcode-franchise-agreement-review"
+    },
+    {
+      "name": "legalcode-guaranty-agreement-review",
+      "source": "skills/general/contracts/legalcode-guaranty-agreement-review",
+      "published_name": "legalcode-guaranty-agreement-review"
+    },
+    {
+      "name": "legalcode-indemnification-analysis",
+      "source": "skills/general/contracts/legalcode-indemnification-analysis",
+      "published_name": "legalcode-indemnification-analysis"
+    },
+    {
+      "name": "legalcode-ip-assignment-agreement",
+      "source": "skills/general/contracts/legalcode-ip-assignment-agreement",
+      "published_name": "legalcode-ip-assignment-agreement"
+    },
+    {
+      "name": "legalcode-lease-abstractor",
+      "source": "skills/general/contracts/legalcode-lease-abstractor",
+      "published_name": "legalcode-lease-abstractor"
+    },
+    {
+      "name": "legalcode-limitation-of-liability-review",
+      "source": "skills/general/contracts/legalcode-limitation-of-liability-review",
+      "published_name": "legalcode-limitation-of-liability-review"
+    },
+    {
+      "name": "legalcode-loan-agreement-review",
+      "source": "skills/general/contracts/legalcode-loan-agreement-review",
+      "published_name": "legalcode-loan-agreement-review"
+    },
+    {
+      "name": "legalcode-master-services-agreement",
+      "source": "skills/general/contracts/legalcode-master-services-agreement",
+      "published_name": "legalcode-master-services-agreement"
+    },
+    {
+      "name": "legalcode-nda-triage",
+      "source": "skills/general/contracts/legalcode-nda-triage",
+      "published_name": "legalcode-nda-triage"
+    },
+    {
+      "name": "legalcode-obligation-tracker",
+      "source": "skills/general/contracts/legalcode-obligation-tracker",
+      "published_name": "legalcode-obligation-tracker"
+    },
+    {
+      "name": "legalcode-partnership-agreement-review",
+      "source": "skills/general/contracts/legalcode-partnership-agreement-review",
+      "published_name": "legalcode-partnership-agreement-review"
+    },
+    {
+      "name": "legalcode-redline-generator",
+      "source": "skills/general/contracts/legalcode-redline-generator",
+      "published_name": "legalcode-redline-generator"
+    },
+    {
+      "name": "legalcode-saas-agreement-drafter",
+      "source": "skills/general/contracts/legalcode-saas-agreement-drafter",
+      "published_name": "legalcode-saas-agreement-drafter"
+    },
+    {
+      "name": "legalcode-services-agreement-drafter",
+      "source": "skills/general/contracts/legalcode-services-agreement-drafter",
+      "published_name": "legalcode-services-agreement-drafter"
+    },
+    {
+      "name": "legalcode-supply-chain-contract-review",
+      "source": "skills/general/contracts/legalcode-supply-chain-contract-review",
+      "published_name": "legalcode-supply-chain-contract-review"
+    },
+    {
+      "name": "legalcode-technology-license-agreement",
+      "source": "skills/general/contracts/legalcode-technology-license-agreement",
+      "published_name": "legalcode-technology-license-agreement"
+    },
+    {
+      "name": "legalcode-technology-license-review",
+      "source": "skills/general/contracts/legalcode-technology-license-review",
+      "published_name": "legalcode-technology-license-review"
+    },
+    {
+      "name": "legalcode-terms-of-service-drafter",
+      "source": "skills/general/contracts/legalcode-terms-of-service-drafter",
+      "published_name": "legalcode-terms-of-service-drafter"
+    },
+    {
+      "name": "legalcode-nda-mutual",
+      "source": "skills/general/contracts/nda-mutual",
+      "published_name": "legalcode-nda-mutual"
+    },
+    {
+      "name": "legalcode-nda-triage",
+      "source": "skills/general/contracts/nda-triage",
+      "published_name": "legalcode-nda-triage"
+    },
+    {
+      "name": "legalcode-review-contract",
+      "source": "skills/general/contracts/review-contract",
+      "published_name": "legalcode-review-contract"
+    },
+    {
+      "name": "legalcode-triage-nda",
+      "source": "skills/general/contracts/triage-nda",
+      "published_name": "legalcode-triage-nda"
+    },
+    {
+      "name": "legalcode-board-resolution-drafter",
+      "source": "skills/general/corporate-transactions/legalcode-board-resolution-drafter",
+      "published_name": "legalcode-board-resolution-drafter"
+    },
+    {
+      "name": "legalcode-cap-table-review",
+      "source": "skills/general/corporate-transactions/legalcode-cap-table-review",
+      "published_name": "legalcode-cap-table-review"
+    },
+    {
+      "name": "legalcode-closing-checklist",
+      "source": "skills/general/corporate-transactions/legalcode-closing-checklist",
+      "published_name": "legalcode-closing-checklist"
+    },
+    {
+      "name": "legalcode-convertible-note-review",
+      "source": "skills/general/corporate-transactions/legalcode-convertible-note-review",
+      "published_name": "legalcode-convertible-note-review"
+    },
+    {
+      "name": "legalcode-corporate-minutes-drafter",
+      "source": "skills/general/corporate-transactions/legalcode-corporate-minutes-drafter",
+      "published_name": "legalcode-corporate-minutes-drafter"
+    },
+    {
+      "name": "legalcode-corporate-restructuring",
+      "source": "skills/general/corporate-transactions/legalcode-corporate-restructuring",
+      "published_name": "legalcode-corporate-restructuring"
+    },
+    {
+      "name": "legalcode-data-room-organizer",
+      "source": "skills/general/corporate-transactions/legalcode-data-room-organizer",
+      "published_name": "legalcode-data-room-organizer"
+    },
+    {
+      "name": "legalcode-due-diligence-report",
+      "source": "skills/general/corporate-transactions/legalcode-due-diligence-report",
+      "published_name": "legalcode-due-diligence-report"
+    },
+    {
+      "name": "legalcode-entity-formation-advisor",
+      "source": "skills/general/corporate-transactions/legalcode-entity-formation-advisor",
+      "published_name": "legalcode-entity-formation-advisor"
+    },
+    {
+      "name": "legalcode-equity-incentive-plan-review",
+      "source": "skills/general/corporate-transactions/legalcode-equity-incentive-plan-review",
+      "published_name": "legalcode-equity-incentive-plan-review"
+    },
+    {
+      "name": "legalcode-founders-agreement-drafter",
+      "source": "skills/general/corporate-transactions/legalcode-founders-agreement-drafter",
+      "published_name": "legalcode-founders-agreement-drafter"
+    },
+    {
+      "name": "legalcode-joint-venture-agreement",
+      "source": "skills/general/corporate-transactions/legalcode-joint-venture-agreement",
+      "published_name": "legalcode-joint-venture-agreement"
+    },
+    {
+      "name": "legalcode-letter-of-intent-review",
+      "source": "skills/general/corporate-transactions/legalcode-letter-of-intent-review",
+      "published_name": "legalcode-letter-of-intent-review"
+    },
+    {
+      "name": "legalcode-ma-due-diligence-checklist",
+      "source": "skills/general/corporate-transactions/legalcode-ma-due-diligence-checklist",
+      "published_name": "legalcode-ma-due-diligence-checklist"
+    },
+    {
+      "name": "legalcode-mac-clause-analysis",
+      "source": "skills/general/corporate-transactions/legalcode-mac-clause-analysis",
+      "published_name": "legalcode-mac-clause-analysis"
+    },
+    {
+      "name": "legalcode-merger-agreement-analysis",
+      "source": "skills/general/corporate-transactions/legalcode-merger-agreement-analysis",
+      "published_name": "legalcode-merger-agreement-analysis"
+    },
+    {
+      "name": "legalcode-private-placement-memo-review",
+      "source": "skills/general/corporate-transactions/legalcode-private-placement-memo-review",
+      "published_name": "legalcode-private-placement-memo-review"
+    },
+    {
+      "name": "legalcode-proxy-statement-analysis",
+      "source": "skills/general/corporate-transactions/legalcode-proxy-statement-analysis",
+      "published_name": "legalcode-proxy-statement-analysis"
+    },
+    {
+      "name": "legalcode-purchase-agreement-review",
+      "source": "skills/general/corporate-transactions/legalcode-purchase-agreement-review",
+      "published_name": "legalcode-purchase-agreement-review"
+    },
+    {
+      "name": "legalcode-safe-review",
+      "source": "skills/general/corporate-transactions/legalcode-safe-review",
+      "published_name": "legalcode-safe-review"
+    },
+    {
+      "name": "legalcode-shareholders-agreement-review",
+      "source": "skills/general/corporate-transactions/legalcode-shareholders-agreement-review",
+      "published_name": "legalcode-shareholders-agreement-review"
+    },
+    {
+      "name": "legalcode-startup-formation",
+      "source": "skills/general/corporate-transactions/legalcode-startup-formation",
+      "published_name": "legalcode-startup-formation"
+    },
+    {
+      "name": "legalcode-term-sheet-analysis",
+      "source": "skills/general/corporate-transactions/legalcode-term-sheet-analysis",
+      "published_name": "legalcode-term-sheet-analysis"
+    },
+    {
+      "name": "legalcode-venture-financing-suite",
+      "source": "skills/general/corporate-transactions/legalcode-venture-financing-suite",
+      "published_name": "legalcode-venture-financing-suite"
+    },
+    {
+      "name": "legalcode-ai-training-data-copyright",
+      "source": "skills/general/ip/legalcode-ai-training-data-copyright",
+      "published_name": "legalcode-ai-training-data-copyright"
+    },
+    {
+      "name": "legalcode-brand-protection-program",
+      "source": "skills/general/ip/legalcode-brand-protection-program",
+      "published_name": "legalcode-brand-protection-program"
+    },
+    {
+      "name": "legalcode-copyright-infringement-assessment",
+      "source": "skills/general/ip/legalcode-copyright-infringement-assessment",
+      "published_name": "legalcode-copyright-infringement-assessment"
+    },
+    {
+      "name": "legalcode-dmca-takedown-workflow",
+      "source": "skills/general/ip/legalcode-dmca-takedown-workflow",
+      "published_name": "legalcode-dmca-takedown-workflow"
+    },
+    {
+      "name": "legalcode-ip-docket-tracker",
+      "source": "skills/general/ip/legalcode-ip-docket-tracker",
+      "published_name": "legalcode-ip-docket-tracker"
+    },
+    {
+      "name": "legalcode-licensing-agreement-review",
+      "source": "skills/general/ip/legalcode-licensing-agreement-review",
+      "published_name": "legalcode-licensing-agreement-review"
+    },
+    {
+      "name": "legalcode-patent-landscape-analysis",
+      "source": "skills/general/ip/legalcode-patent-landscape-analysis",
+      "published_name": "legalcode-patent-landscape-analysis"
+    },
+    {
+      "name": "legalcode-trade-secret-audit",
+      "source": "skills/general/ip/legalcode-trade-secret-audit",
+      "published_name": "legalcode-trade-secret-audit"
+    },
+    {
+      "name": "legalcode-appellate-brief-analysis",
+      "source": "skills/general/litigation/legalcode-appellate-brief-analysis",
+      "published_name": "legalcode-appellate-brief-analysis"
+    },
+    {
+      "name": "legalcode-appellate-brief-drafter",
+      "source": "skills/general/litigation/legalcode-appellate-brief-drafter",
+      "published_name": "legalcode-appellate-brief-drafter"
+    },
+    {
+      "name": "legalcode-arbitration-clause-review",
+      "source": "skills/general/litigation/legalcode-arbitration-clause-review",
+      "published_name": "legalcode-arbitration-clause-review"
+    },
+    {
+      "name": "legalcode-arbitration-demand-drafter",
+      "source": "skills/general/litigation/legalcode-arbitration-demand-drafter",
+      "published_name": "legalcode-arbitration-demand-drafter"
+    },
+    {
+      "name": "legalcode-brief-analyzer",
+      "source": "skills/general/litigation/legalcode-brief-analyzer",
+      "published_name": "legalcode-brief-analyzer"
+    },
+    {
+      "name": "legalcode-case-outcome-prediction",
+      "source": "skills/general/litigation/legalcode-case-outcome-prediction",
+      "published_name": "legalcode-case-outcome-prediction"
+    },
+    {
+      "name": "legalcode-case-summarizer",
+      "source": "skills/general/litigation/legalcode-case-summarizer",
+      "published_name": "legalcode-case-summarizer"
+    },
+    {
+      "name": "legalcode-case-timeline-builder",
+      "source": "skills/general/litigation/legalcode-case-timeline-builder",
+      "published_name": "legalcode-case-timeline-builder"
+    },
+    {
+      "name": "legalcode-citation-checker",
+      "source": "skills/general/litigation/legalcode-citation-checker",
+      "published_name": "legalcode-citation-checker"
+    },
+    {
+      "name": "legalcode-class-action-settlement-review",
+      "source": "skills/general/litigation/legalcode-class-action-settlement-review",
+      "published_name": "legalcode-class-action-settlement-review"
+    },
+    {
+      "name": "legalcode-class-certification-analysis",
+      "source": "skills/general/litigation/legalcode-class-certification-analysis",
+      "published_name": "legalcode-class-certification-analysis"
+    },
+    {
+      "name": "legalcode-complaint-drafter",
+      "source": "skills/general/litigation/legalcode-complaint-drafter",
+      "published_name": "legalcode-complaint-drafter"
+    },
+    {
+      "name": "legalcode-complaint-drafter-ew",
+      "source": "skills/general/litigation/legalcode-complaint-drafter-ew",
+      "published_name": "legalcode-complaint-drafter-ew"
+    },
+    {
+      "name": "legalcode-complaint-drafter-is",
+      "source": "skills/general/litigation/legalcode-complaint-drafter-is",
+      "published_name": "legalcode-complaint-drafter-is"
+    },
+    {
+      "name": "legalcode-damages-calculation",
+      "source": "skills/general/litigation/legalcode-damages-calculation",
+      "published_name": "legalcode-damages-calculation"
+    },
+    {
+      "name": "legalcode-deadline-calculator",
+      "source": "skills/general/litigation/legalcode-deadline-calculator",
+      "published_name": "legalcode-deadline-calculator"
+    },
+    {
+      "name": "legalcode-demand-letter-drafter",
+      "source": "skills/general/litigation/legalcode-demand-letter-drafter",
+      "published_name": "legalcode-demand-letter-drafter"
+    },
+    {
+      "name": "legalcode-deposition-digest",
+      "source": "skills/general/litigation/legalcode-deposition-digest",
+      "published_name": "legalcode-deposition-digest"
+    },
+    {
+      "name": "legalcode-deposition-preparation",
+      "source": "skills/general/litigation/legalcode-deposition-preparation",
+      "published_name": "legalcode-deposition-preparation"
+    },
+    {
+      "name": "legalcode-discovery-request-drafter",
+      "source": "skills/general/litigation/legalcode-discovery-request-drafter",
+      "published_name": "legalcode-discovery-request-drafter"
+    },
+    {
+      "name": "legalcode-discovery-response-drafter",
+      "source": "skills/general/litigation/legalcode-discovery-response-drafter",
+      "published_name": "legalcode-discovery-response-drafter"
+    },
+    {
+      "name": "legalcode-early-case-assessment",
+      "source": "skills/general/litigation/legalcode-early-case-assessment",
+      "published_name": "legalcode-early-case-assessment"
+    },
+    {
+      "name": "legalcode-evidence-admissibility-analysis",
+      "source": "skills/general/litigation/legalcode-evidence-admissibility-analysis",
+      "published_name": "legalcode-evidence-admissibility-analysis"
+    },
+    {
+      "name": "legalcode-expert-witness-preparation",
+      "source": "skills/general/litigation/legalcode-expert-witness-preparation",
+      "published_name": "legalcode-expert-witness-preparation"
+    },
+    {
+      "name": "legalcode-injunctive-relief-motion",
+      "source": "skills/general/litigation/legalcode-injunctive-relief-motion",
+      "published_name": "legalcode-injunctive-relief-motion"
+    },
+    {
+      "name": "legalcode-insurance-coverage-analysis",
+      "source": "skills/general/litigation/legalcode-insurance-coverage-analysis",
+      "published_name": "legalcode-insurance-coverage-analysis"
+    },
+    {
+      "name": "legalcode-judge-profile",
+      "source": "skills/general/litigation/legalcode-judge-profile",
+      "published_name": "legalcode-judge-profile"
+    },
+    {
+      "name": "legalcode-legal-memorandum",
+      "source": "skills/general/litigation/legalcode-legal-memorandum",
+      "published_name": "legalcode-legal-memorandum"
+    },
+    {
+      "name": "legalcode-litigation-budget",
+      "source": "skills/general/litigation/legalcode-litigation-budget",
+      "published_name": "legalcode-litigation-budget"
+    },
+    {
+      "name": "legalcode-litigation-risk-assessment",
+      "source": "skills/general/litigation/legalcode-litigation-risk-assessment",
+      "published_name": "legalcode-litigation-risk-assessment"
+    },
+    {
+      "name": "legalcode-mediation-preparation",
+      "source": "skills/general/litigation/legalcode-mediation-preparation",
+      "published_name": "legalcode-mediation-preparation"
+    },
+    {
+      "name": "legalcode-medical-records-summarizer",
+      "source": "skills/general/litigation/legalcode-medical-records-summarizer",
+      "published_name": "legalcode-medical-records-summarizer"
+    },
+    {
+      "name": "legalcode-motion-in-limine",
+      "source": "skills/general/litigation/legalcode-motion-in-limine",
+      "published_name": "legalcode-motion-in-limine"
+    },
+    {
+      "name": "legalcode-motion-to-dismiss-drafter",
+      "source": "skills/general/litigation/legalcode-motion-to-dismiss-drafter",
+      "published_name": "legalcode-motion-to-dismiss-drafter"
+    },
+    {
+      "name": "legalcode-opposition-brief-drafter",
+      "source": "skills/general/litigation/legalcode-opposition-brief-drafter",
+      "published_name": "legalcode-opposition-brief-drafter"
+    },
+    {
+      "name": "legalcode-privilege-review",
+      "source": "skills/general/litigation/legalcode-privilege-review",
+      "published_name": "legalcode-privilege-review"
+    },
+    {
+      "name": "legalcode-settlement-agreement-drafter",
+      "source": "skills/general/litigation/legalcode-settlement-agreement-drafter",
+      "published_name": "legalcode-settlement-agreement-drafter"
+    },
+    {
+      "name": "legalcode-settlement-negotiation",
+      "source": "skills/general/litigation/legalcode-settlement-negotiation",
+      "published_name": "legalcode-settlement-negotiation"
+    },
+    {
+      "name": "legalcode-summary-judgment-analysis",
+      "source": "skills/general/litigation/legalcode-summary-judgment-analysis",
+      "published_name": "legalcode-summary-judgment-analysis"
+    },
+    {
+      "name": "legalcode-tar-review-protocol",
+      "source": "skills/general/litigation/legalcode-tar-review-protocol",
+      "published_name": "legalcode-tar-review-protocol"
+    },
+    {
+      "name": "legalcode-witness-preparation",
+      "source": "skills/general/litigation/legalcode-witness-preparation",
+      "published_name": "legalcode-witness-preparation"
+    },
+    {
+      "name": "legalcode-litigation-hold-notice",
+      "source": "skills/general/litigation/litigation-hold-notice",
+      "published_name": "legalcode-litigation-hold-notice"
+    },
+    {
+      "name": "legalcode-real-estate-due-diligence",
+      "source": "skills/general/real-estate/legalcode-real-estate-due-diligence",
+      "published_name": "legalcode-real-estate-due-diligence"
+    },
+    {
+      "name": "legalcode-residential-lease-review",
+      "source": "skills/general/real-estate/legalcode-residential-lease-review",
+      "published_name": "legalcode-residential-lease-review"
+    },
+    {
+      "name": "legalcode-title-review",
+      "source": "skills/general/real-estate/legalcode-title-review",
+      "published_name": "legalcode-title-review"
+    },
+    {
+      "name": "legalcode-zoning-land-use-analysis",
+      "source": "skills/general/real-estate/legalcode-zoning-land-use-analysis",
+      "published_name": "legalcode-zoning-land-use-analysis"
+    },
+    {
+      "name": "legalcode-legal-risk-assessment",
+      "source": "skills/general/risk-assessment/legalcode-legal-risk-assessment",
+      "published_name": "legalcode-legal-risk-assessment"
+    },
+    {
+      "name": "legalcode-canned-responses",
+      "source": "skills/general/workflows/legalcode-canned-responses",
+      "published_name": "legalcode-canned-responses"
+    },
+    {
+      "name": "legalcode-client-intake-workflow",
+      "source": "skills/general/workflows/legalcode-client-intake-workflow",
+      "published_name": "legalcode-client-intake-workflow"
+    },
+    {
+      "name": "legalcode-conflict-check",
+      "source": "skills/general/workflows/legalcode-conflict-check",
+      "published_name": "legalcode-conflict-check"
+    },
+    {
+      "name": "legalcode-cross-reference-analyzer",
+      "source": "skills/general/workflows/legalcode-cross-reference-analyzer",
+      "published_name": "legalcode-cross-reference-analyzer"
+    },
+    {
+      "name": "legalcode-defined-term-audit",
+      "source": "skills/general/workflows/legalcode-defined-term-audit",
+      "published_name": "legalcode-defined-term-audit"
+    },
+    {
+      "name": "legalcode-document-classifier",
+      "source": "skills/general/workflows/legalcode-document-classifier",
+      "published_name": "legalcode-document-classifier"
+    },
+    {
+      "name": "legalcode-document-qa",
+      "source": "skills/general/workflows/legalcode-document-qa",
+      "published_name": "legalcode-document-qa"
+    },
+    {
+      "name": "legalcode-document-summarizer",
+      "source": "skills/general/workflows/legalcode-document-summarizer",
+      "published_name": "legalcode-document-summarizer"
+    },
+    {
+      "name": "legalcode-document-to-skill",
+      "source": "skills/general/workflows/legalcode-document-to-skill",
+      "published_name": "legalcode-document-to-skill"
+    },
+    {
+      "name": "legalcode-engagement-letter-drafter",
+      "source": "skills/general/workflows/legalcode-engagement-letter-drafter",
+      "published_name": "legalcode-engagement-letter-drafter"
+    },
+    {
+      "name": "legalcode-entity-compliance-tracker",
+      "source": "skills/general/workflows/legalcode-entity-compliance-tracker",
+      "published_name": "legalcode-entity-compliance-tracker"
+    },
+    {
+      "name": "legalcode-estate-plan-generator",
+      "source": "skills/general/workflows/legalcode-estate-plan-generator",
+      "published_name": "legalcode-estate-plan-generator"
+    },
+    {
+      "name": "legalcode-faq-generator",
+      "source": "skills/general/workflows/legalcode-faq-generator",
+      "published_name": "legalcode-faq-generator"
+    },
+    {
+      "name": "legalcode-grill-document",
+      "source": "skills/general/workflows/legalcode-grill-document",
+      "published_name": "legalcode-grill-document"
+    },
+    {
+      "name": "legalcode-invoice-reviewer",
+      "source": "skills/general/workflows/legalcode-invoice-reviewer",
+      "published_name": "legalcode-invoice-reviewer"
+    },
+    {
+      "name": "legalcode-jurisdiction-mapper",
+      "source": "skills/general/workflows/legalcode-jurisdiction-mapper",
+      "published_name": "legalcode-jurisdiction-mapper"
+    },
+    {
+      "name": "legalcode-legal-ops-dashboard",
+      "source": "skills/general/workflows/legalcode-legal-ops-dashboard",
+      "published_name": "legalcode-legal-ops-dashboard"
+    },
+    {
+      "name": "legalcode-legal-project-management",
+      "source": "skills/general/workflows/legalcode-legal-project-management",
+      "published_name": "legalcode-legal-project-management"
+    },
+    {
+      "name": "legalcode-legal-spend-analysis",
+      "source": "skills/general/workflows/legalcode-legal-spend-analysis",
+      "published_name": "legalcode-legal-spend-analysis"
+    },
+    {
+      "name": "legalcode-legislation-verification",
+      "source": "skills/general/workflows/legalcode-legislation-verification",
+      "published_name": "legalcode-legislation-verification"
+    },
+    {
+      "name": "legalcode-malstadur",
+      "source": "skills/general/workflows/legalcode-malstadur",
+      "published_name": "legalcode-malstadur"
+    },
+    {
+      "name": "legalcode-matter-scoping",
+      "source": "skills/general/workflows/legalcode-matter-scoping",
+      "published_name": "legalcode-matter-scoping"
+    },
+    {
+      "name": "legalcode-matter-triage-workflow",
+      "source": "skills/general/workflows/legalcode-matter-triage-workflow",
+      "published_name": "legalcode-matter-triage-workflow"
+    },
+    {
+      "name": "legalcode-mcp-setup",
+      "source": "skills/general/workflows/legalcode-mcp-setup",
+      "published_name": "legalcode-mcp-setup"
+    },
+    {
+      "name": "legalcode-minnisblad",
+      "source": "skills/general/workflows/legalcode-minnisblad",
+      "published_name": "legalcode-minnisblad"
+    },
+    {
+      "name": "legalcode-offer-letter-drafter",
+      "source": "skills/general/workflows/legalcode-offer-letter-drafter",
+      "published_name": "legalcode-offer-letter-drafter"
+    },
+    {
+      "name": "legalcode-outside-counsel-guidelines",
+      "source": "skills/general/workflows/legalcode-outside-counsel-guidelines",
+      "published_name": "legalcode-outside-counsel-guidelines"
+    },
+    {
+      "name": "legalcode-plain-language",
+      "source": "skills/general/workflows/legalcode-plain-language",
+      "published_name": "legalcode-plain-language"
+    },
+    {
+      "name": "legalcode-precedent-analyzer",
+      "source": "skills/general/workflows/legalcode-precedent-analyzer",
+      "published_name": "legalcode-precedent-analyzer"
+    },
+    {
+      "name": "legalcode-precedent-search",
+      "source": "skills/general/workflows/legalcode-precedent-search",
+      "published_name": "legalcode-precedent-search"
+    },
+    {
+      "name": "legalcode-proofread",
+      "source": "skills/general/workflows/legalcode-proofread",
+      "published_name": "legalcode-proofread"
+    },
+    {
+      "name": "legalcode-public-search",
+      "source": "skills/general/workflows/legalcode-public-search",
+      "published_name": "legalcode-public-search"
+    },
+    {
+      "name": "legalcode-statute-analysis",
+      "source": "skills/general/workflows/legalcode-statute-analysis",
+      "published_name": "legalcode-statute-analysis"
+    },
+    {
+      "name": "legalcode-strategic-equilibrium-analysis",
+      "source": "skills/general/workflows/legalcode-strategic-equilibrium-analysis",
+      "published_name": "legalcode-strategic-equilibrium-analysis"
+    },
+    {
+      "name": "legalcode-tabular-review",
+      "source": "skills/general/workflows/legalcode-tabular-review",
+      "published_name": "legalcode-tabular-review"
+    },
+    {
+      "name": "legalcode-tabulate",
+      "source": "skills/general/workflows/legalcode-tabulate",
+      "published_name": "legalcode-tabulate"
+    },
+    {
+      "name": "legalcode-time-narrative",
+      "source": "skills/general/workflows/legalcode-time-narrative",
+      "published_name": "legalcode-time-narrative"
+    },
+    {
+      "name": "legalcode-au-asic-regulatory-compliance",
+      "source": "skills/jurisdictions/australia/compliance/legalcode-au-asic-regulatory-compliance",
+      "published_name": "legalcode-au-asic-regulatory-compliance"
+    },
+    {
+      "name": "legalcode-au-consumer-law-compliance",
+      "source": "skills/jurisdictions/australia/compliance/legalcode-au-consumer-law-compliance",
+      "published_name": "legalcode-au-consumer-law-compliance"
+    },
+    {
+      "name": "legalcode-au-fair-work-compliance",
+      "source": "skills/jurisdictions/australia/compliance/legalcode-au-fair-work-compliance",
+      "published_name": "legalcode-au-fair-work-compliance"
+    },
+    {
+      "name": "legalcode-au-unfair-contract-terms",
+      "source": "skills/jurisdictions/australia/contracts/legalcode-au-unfair-contract-terms",
+      "published_name": "legalcode-au-unfair-contract-terms"
+    },
+    {
+      "name": "legalcode-franchise-agreement-review-au",
+      "source": "skills/jurisdictions/australia/contracts/legalcode-franchise-agreement-review-au",
+      "published_name": "legalcode-franchise-agreement-review-au"
+    },
+    {
+      "name": "legalcode-br-clt-employment-review",
+      "source": "skills/jurisdictions/brazil/compliance/legalcode-br-clt-employment-review",
+      "published_name": "legalcode-br-clt-employment-review"
+    },
+    {
+      "name": "legalcode-venture-financing-br",
+      "source": "skills/jurisdictions/brazil/corporate/legalcode-venture-financing-br",
+      "published_name": "legalcode-venture-financing-br"
+    },
+    {
+      "name": "legalcode-ca-competition-act-assessment",
+      "source": "skills/jurisdictions/canada/federal/compliance/legalcode-ca-competition-act-assessment",
+      "published_name": "legalcode-ca-competition-act-assessment"
+    },
+    {
+      "name": "legalcode-ca-employment-standards-review",
+      "source": "skills/jurisdictions/canada/federal/compliance/legalcode-ca-employment-standards-review",
+      "published_name": "legalcode-ca-employment-standards-review"
+    },
+    {
+      "name": "legalcode-ca-pipeda-compliance",
+      "source": "skills/jurisdictions/canada/federal/compliance/legalcode-ca-pipeda-compliance",
+      "published_name": "legalcode-ca-pipeda-compliance"
+    },
+    {
+      "name": "legalcode-non-compete-analysis-cn",
+      "source": "skills/jurisdictions/china/compliance/legalcode-non-compete-analysis-cn",
+      "published_name": "legalcode-non-compete-analysis-cn"
+    },
+    {
+      "name": "legalcode-eu-competition-law-assessment",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-competition-law-assessment",
+      "published_name": "legalcode-eu-competition-law-assessment"
+    },
+    {
+      "name": "legalcode-eu-csrd-sustainability-reporting",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-csrd-sustainability-reporting",
+      "published_name": "legalcode-eu-csrd-sustainability-reporting"
+    },
+    {
+      "name": "legalcode-eu-dma-compliance",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-dma-compliance",
+      "published_name": "legalcode-eu-dma-compliance"
+    },
+    {
+      "name": "legalcode-eu-dpia-assessment",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-dpia-assessment",
+      "published_name": "legalcode-eu-dpia-assessment"
+    },
+    {
+      "name": "legalcode-eu-dsa-compliance",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-dsa-compliance",
+      "published_name": "legalcode-eu-dsa-compliance"
+    },
+    {
+      "name": "legalcode-eu-gdpr-breach-notification-operations",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-gdpr-breach-notification-operations",
+      "published_name": "legalcode-eu-gdpr-breach-notification-operations"
+    },
+    {
+      "name": "legalcode-eu-privacy-notice-drafter",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-privacy-notice-drafter",
+      "published_name": "legalcode-eu-privacy-notice-drafter"
+    },
+    {
+      "name": "legalcode-eu-prospectus-regulation",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-prospectus-regulation",
+      "published_name": "legalcode-eu-prospectus-regulation"
+    },
+    {
+      "name": "legalcode-eu-whistleblower-directive",
+      "source": "skills/jurisdictions/european-union/compliance/legalcode-eu-whistleblower-directive",
+      "published_name": "legalcode-eu-whistleblower-directive"
+    },
+    {
+      "name": "legalcode-canned-responses-eu",
+      "source": "skills/jurisdictions/european-union/workflows/legalcode-canned-responses-eu",
+      "published_name": "legalcode-canned-responses-eu"
+    },
+    {
+      "name": "legalcode-fr-cnil-privacy-compliance",
+      "source": "skills/jurisdictions/france/compliance/legalcode-fr-cnil-privacy-compliance",
+      "published_name": "legalcode-fr-cnil-privacy-compliance"
+    },
+    {
+      "name": "legalcode-fr-sapin-ii-compliance",
+      "source": "skills/jurisdictions/france/compliance/legalcode-fr-sapin-ii-compliance",
+      "published_name": "legalcode-fr-sapin-ii-compliance"
+    },
+    {
+      "name": "legalcode-non-compete-analysis-fr",
+      "source": "skills/jurisdictions/france/compliance/legalcode-non-compete-analysis-fr",
+      "published_name": "legalcode-non-compete-analysis-fr"
+    },
+    {
+      "name": "legalcode-fr-bail-commercial",
+      "source": "skills/jurisdictions/france/contracts/legalcode-fr-bail-commercial",
+      "published_name": "legalcode-fr-bail-commercial"
+    },
+    {
+      "name": "legalcode-fr-contrat-de-travail-cdi",
+      "source": "skills/jurisdictions/france/contracts/legalcode-fr-contrat-de-travail-cdi",
+      "published_name": "legalcode-fr-contrat-de-travail-cdi"
+    },
+    {
+      "name": "legalcode-franchise-agreement-review-eu-fr",
+      "source": "skills/jurisdictions/france/contracts/legalcode-franchise-agreement-review-eu-fr",
+      "published_name": "legalcode-franchise-agreement-review-eu-fr"
+    },
+    {
+      "name": "legalcode-venture-financing-fr",
+      "source": "skills/jurisdictions/france/corporate/legalcode-venture-financing-fr",
+      "published_name": "legalcode-venture-financing-fr"
+    },
+    {
+      "name": "legalcode-de-betriebsrat-consultation",
+      "source": "skills/jurisdictions/germany/compliance/legalcode-de-betriebsrat-consultation",
+      "published_name": "legalcode-de-betriebsrat-consultation"
+    },
+    {
+      "name": "legalcode-de-kuendigungsschutz",
+      "source": "skills/jurisdictions/germany/compliance/legalcode-de-kuendigungsschutz",
+      "published_name": "legalcode-de-kuendigungsschutz"
+    },
+    {
+      "name": "legalcode-non-compete-analysis-de",
+      "source": "skills/jurisdictions/germany/compliance/legalcode-non-compete-analysis-de",
+      "published_name": "legalcode-non-compete-analysis-de"
+    },
+    {
+      "name": "legalcode-de-agb-review",
+      "source": "skills/jurisdictions/germany/contracts/legalcode-de-agb-review",
+      "published_name": "legalcode-de-agb-review"
+    },
+    {
+      "name": "legalcode-de-gmbh-formation",
+      "source": "skills/jurisdictions/germany/corporate/legalcode-de-gmbh-formation",
+      "published_name": "legalcode-de-gmbh-formation"
+    },
+    {
+      "name": "legalcode-venture-financing-de",
+      "source": "skills/jurisdictions/germany/corporate/legalcode-venture-financing-de",
+      "published_name": "legalcode-venture-financing-de"
+    },
+    {
+      "name": "legalcode-anti-gold-plating-is",
+      "source": "skills/jurisdictions/iceland/compliance/legalcode-anti-gold-plating-is",
+      "published_name": "legalcode-anti-gold-plating-is"
+    },
+    {
+      "name": "legalcode-eea-conformity-assessment-is",
+      "source": "skills/jurisdictions/iceland/compliance/legalcode-eea-conformity-assessment-is",
+      "published_name": "legalcode-eea-conformity-assessment-is"
+    },
+    {
+      "name": "legalcode-non-compete-analysis-is",
+      "source": "skills/jurisdictions/iceland/compliance/legalcode-non-compete-analysis-is",
+      "published_name": "legalcode-non-compete-analysis-is"
+    },
+    {
+      "name": "legalcode-is-contract-law-general",
+      "source": "skills/jurisdictions/iceland/contracts/legalcode-is-contract-law-general",
+      "published_name": "legalcode-is-contract-law-general"
+    },
+    {
+      "name": "legalcode-iceland-real-estate-contracts",
+      "source": "skills/jurisdictions/iceland/real-estate/legalcode-iceland-real-estate-contracts",
+      "published_name": "legalcode-iceland-real-estate-contracts"
+    },
+    {
+      "name": "legalcode-venture-financing-in",
+      "source": "skills/jurisdictions/india/corporate/legalcode-venture-financing-in",
+      "published_name": "legalcode-venture-financing-in"
+    },
+    {
+      "name": "legalcode-ie-company-formation",
+      "source": "skills/jurisdictions/ireland/corporate/legalcode-ie-company-formation",
+      "published_name": "legalcode-ie-company-formation"
+    },
+    {
+      "name": "legalcode-jp-labor-standards-compliance",
+      "source": "skills/jurisdictions/japan/compliance/legalcode-jp-labor-standards-compliance",
+      "published_name": "legalcode-jp-labor-standards-compliance"
+    },
+    {
+      "name": "legalcode-venture-financing-jp",
+      "source": "skills/jurisdictions/japan/corporate/legalcode-venture-financing-jp",
+      "published_name": "legalcode-venture-financing-jp"
+    },
+    {
+      "name": "legalcode-nz-employment-relations",
+      "source": "skills/jurisdictions/new-zealand/compliance/legalcode-nz-employment-relations",
+      "published_name": "legalcode-nz-employment-relations"
+    },
+    {
+      "name": "legalcode-franchise-agreement-review-nordic",
+      "source": "skills/jurisdictions/nordic/contracts/legalcode-franchise-agreement-review-nordic",
+      "published_name": "legalcode-franchise-agreement-review-nordic"
+    },
+    {
+      "name": "legalcode-pl-legal-memorandum",
+      "source": "skills/jurisdictions/poland/compliance/legalcode-pl-legal-memorandum",
+      "published_name": "legalcode-pl-legal-memorandum"
+    },
+    {
+      "name": "legalcode-nda-triage-pl",
+      "source": "skills/jurisdictions/poland/contracts/legalcode-nda-triage-pl",
+      "published_name": "legalcode-nda-triage-pl"
+    },
+    {
+      "name": "legalcode-pl-contract-review",
+      "source": "skills/jurisdictions/poland/contracts/legalcode-pl-contract-review",
+      "published_name": "legalcode-pl-contract-review"
+    },
+    {
+      "name": "legalcode-pl-employment-agreement",
+      "source": "skills/jurisdictions/poland/contracts/legalcode-pl-employment-agreement",
+      "published_name": "legalcode-pl-employment-agreement"
+    },
+    {
+      "name": "legalcode-sg-employment-act-compliance",
+      "source": "skills/jurisdictions/singapore/compliance/legalcode-sg-employment-act-compliance",
+      "published_name": "legalcode-sg-employment-act-compliance"
+    },
+    {
+      "name": "legalcode-venture-financing-sg",
+      "source": "skills/jurisdictions/singapore/corporate/legalcode-venture-financing-sg",
+      "published_name": "legalcode-venture-financing-sg"
+    },
+    {
+      "name": "legalcode-ch-cantonal-law-navigator",
+      "source": "skills/jurisdictions/switzerland/compliance/legalcode-ch-cantonal-law-navigator",
+      "published_name": "legalcode-ch-cantonal-law-navigator"
+    },
+    {
+      "name": "legalcode-ch-ndsg-compliance",
+      "source": "skills/jurisdictions/switzerland/compliance/legalcode-ch-ndsg-compliance",
+      "published_name": "legalcode-ch-ndsg-compliance"
+    },
+    {
+      "name": "legalcode-ch-or-contract-review",
+      "source": "skills/jurisdictions/switzerland/contracts/legalcode-ch-or-contract-review",
+      "published_name": "legalcode-ch-or-contract-review"
+    },
+    {
+      "name": "legalcode-franchise-agreement-review-uk",
+      "source": "skills/jurisdictions/united-kingdom/contracts/legalcode-franchise-agreement-review-uk",
+      "published_name": "legalcode-franchise-agreement-review-uk"
+    },
+    {
+      "name": "legalcode-non-compete-analysis-ew",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-non-compete-analysis-ew",
+      "published_name": "legalcode-non-compete-analysis-ew"
+    },
+    {
+      "name": "legalcode-uk-advertising-compliance",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-advertising-compliance",
+      "published_name": "legalcode-uk-advertising-compliance"
+    },
+    {
+      "name": "legalcode-uk-bribery-act-compliance",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-bribery-act-compliance",
+      "published_name": "legalcode-uk-bribery-act-compliance"
+    },
+    {
+      "name": "legalcode-uk-corporate-governance-code",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-corporate-governance-code",
+      "published_name": "legalcode-uk-corporate-governance-code"
+    },
+    {
+      "name": "legalcode-uk-fca-regulatory-compliance",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-fca-regulatory-compliance",
+      "published_name": "legalcode-uk-fca-regulatory-compliance"
+    },
+    {
+      "name": "legalcode-uk-pensions-trustee-compliance",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-pensions-trustee-compliance",
+      "published_name": "legalcode-uk-pensions-trustee-compliance"
+    },
+    {
+      "name": "legalcode-uk-prospectus-and-fca-offering-compliance",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-prospectus-and-fca-offering-compliance",
+      "published_name": "legalcode-uk-prospectus-and-fca-offering-compliance"
+    },
+    {
+      "name": "legalcode-uk-whistleblower-program-builder",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/compliance/legalcode-uk-whistleblower-program-builder",
+      "published_name": "legalcode-uk-whistleblower-program-builder"
+    },
+    {
+      "name": "legalcode-nda-triage-ew",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/contracts/legalcode-nda-triage-ew",
+      "published_name": "legalcode-nda-triage-ew"
+    },
+    {
+      "name": "legalcode-uk-jct-nec-contract-review",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/contracts/legalcode-uk-jct-nec-contract-review",
+      "published_name": "legalcode-uk-jct-nec-contract-review"
+    },
+    {
+      "name": "legalcode-uk-residential-tenancy",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/contracts/legalcode-uk-residential-tenancy",
+      "published_name": "legalcode-uk-residential-tenancy"
+    },
+    {
+      "name": "legalcode-venture-financing-uk",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/corporate/legalcode-venture-financing-uk",
+      "published_name": "legalcode-venture-financing-uk"
+    },
+    {
+      "name": "legalcode-uk-employment-tribunal-claim",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/litigation/legalcode-uk-employment-tribunal-claim",
+      "published_name": "legalcode-uk-employment-tribunal-claim"
+    },
+    {
+      "name": "legalcode-canned-responses-ew",
+      "source": "skills/jurisdictions/united-kingdom/england-wales/workflows/legalcode-canned-responses-ew",
+      "published_name": "legalcode-canned-responses-ew"
+    },
+    {
+      "name": "legalcode-franchise-agreement-review-us-ca",
+      "source": "skills/jurisdictions/united-states/california/contracts/legalcode-franchise-agreement-review-us-ca",
+      "published_name": "legalcode-franchise-agreement-review-us-ca"
+    },
+    {
+      "name": "legalcode-canned-responses-ccpa",
+      "source": "skills/jurisdictions/united-states/california/workflows/legalcode-canned-responses-ccpa",
+      "published_name": "legalcode-canned-responses-ccpa"
+    },
+    {
+      "name": "legalcode-us-aia-construction-contract-review",
+      "source": "skills/jurisdictions/united-states/contracts/legalcode-us-aia-construction-contract-review",
+      "published_name": "legalcode-us-aia-construction-contract-review"
+    },
+    {
+      "name": "legalcode-us-delaware-entity-formation",
+      "source": "skills/jurisdictions/united-states/delaware/corporate/legalcode-us-delaware-entity-formation",
+      "published_name": "legalcode-us-delaware-entity-formation"
+    },
+    {
+      "name": "legalcode-us-ada-accommodation",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-ada-accommodation",
+      "published_name": "legalcode-us-ada-accommodation"
+    },
+    {
+      "name": "legalcode-us-fcpa-compliance",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-fcpa-compliance",
+      "published_name": "legalcode-us-fcpa-compliance"
+    },
+    {
+      "name": "legalcode-us-federal-regulatory-comment",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-federal-regulatory-comment",
+      "published_name": "legalcode-us-federal-regulatory-comment"
+    },
+    {
+      "name": "legalcode-us-ftc-advertising-compliance",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-ftc-advertising-compliance",
+      "published_name": "legalcode-us-ftc-advertising-compliance"
+    },
+    {
+      "name": "legalcode-us-ofac-sanctions-screening",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-ofac-sanctions-screening",
+      "published_name": "legalcode-us-ofac-sanctions-screening"
+    },
+    {
+      "name": "legalcode-us-private-offering-and-blue-sky-compliance",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-private-offering-and-blue-sky-compliance",
+      "published_name": "legalcode-us-private-offering-and-blue-sky-compliance"
+    },
+    {
+      "name": "legalcode-us-reg-s-offering-review",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-reg-s-offering-review",
+      "published_name": "legalcode-us-reg-s-offering-review"
+    },
+    {
+      "name": "legalcode-us-section-409a-valuation-review",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-section-409a-valuation-review",
+      "published_name": "legalcode-us-section-409a-valuation-review"
+    },
+    {
+      "name": "legalcode-us-state-non-compete-analysis",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-state-non-compete-analysis",
+      "published_name": "legalcode-us-state-non-compete-analysis"
+    },
+    {
+      "name": "legalcode-us-whistleblower-program-builder",
+      "source": "skills/jurisdictions/united-states/federal/compliance/legalcode-us-whistleblower-program-builder",
+      "published_name": "legalcode-us-whistleblower-program-builder"
+    }
+  ]
+}

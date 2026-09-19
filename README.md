@@ -1,123 +1,82 @@
 # Legalcode Skills
 
-**252 legal skills** for agents that support `SKILL.md` packages: practical general
-workflows alongside bespoke jurisdiction-specific work.
+**327 legal skills**, organized into **15 practice areas** and **18 jurisdiction groups**.
 
-Browse the [complete catalogue](CATALOG.md). The September 2026 expansion adds
-**200 Legalcode-authored skills** to the existing 50-skill selection:
+[Browse the catalogue](CATALOG.md) · [General skills](skills/general/README.md) · [By jurisdiction](skills/jurisdictions/README.md)
 
-| Addition area | Skills |
+## Start with a task
+
+- [Review a contract](skills/general/contracts-commercial/legalcode-contract-review/SKILL.md)
+- [Research primary law](skills/general/legal-research/legalcode-public-search/SKILL.md)
+- [Build a skill from example documents](skills/general/drafting-documents/legalcode-document-to-skill/SKILL.md)
+- [Question and improve a legal draft](skills/general/drafting-documents/legalcode-grill-document/SKILL.md)
+- [Assess Icelandic EEA implementation](skills/jurisdictions/iceland/eu-eea-implementation/legalcode-eea-conformity-assessment-is/SKILL.md)
+- [Review a data breach](skills/general/privacy-data-protection/legalcode-breach-severity-assessment/SKILL.md)
+
+## Browse by practice area
+
+Each area includes general and bespoke local workflows.
+
+| Practice area | Skills |
 | --- | ---: |
-| Compliance, privacy, AI and EU/EEA implementation | 38 |
-| Litigation and dispute resolution | 24 |
-| Research, document quality and matter workflows | 20 |
-| Contract drafting, review and lifecycle work | 18 |
-| Corporate transactions, governance and financing | 16 |
-| Intellectual property | 6 |
-| Real estate | 4 |
-| Banking and finance | 3 |
-| Cross-practice legal risk assessment | 1 |
-| Bespoke jurisdiction-specific workflows | 70 |
-| **Total additions** | **200** |
+| [Contracts & commercial](catalog/practice-areas/contracts-commercial.md) | 36 |
+| [Corporate & financing](catalog/practice-areas/corporate-financing.md) | 33 |
+| [Privacy & data protection](catalog/practice-areas/privacy-data-protection.md) | 32 |
+| [AI & technology](catalog/practice-areas/ai-technology.md) | 8 |
+| [Employment & workplace](catalog/practice-areas/employment-workplace.md) | 35 |
+| [Financial regulation](catalog/practice-areas/financial-regulation.md) | 19 |
+| [Governance & compliance](catalog/practice-areas/governance-compliance.md) | 40 |
+| [EU & EEA implementation](catalog/practice-areas/eu-eea-implementation.md) | 9 |
+| [Litigation & disputes](catalog/practice-areas/litigation-disputes.md) | 39 |
+| [Intellectual property](catalog/practice-areas/intellectual-property.md) | 14 |
+| [Real estate & construction](catalog/practice-areas/real-estate-construction.md) | 12 |
+| [Legal research](catalog/practice-areas/legal-research.md) | 8 |
+| [Drafting & document analysis](catalog/practice-areas/drafting-documents.md) | 18 |
+| [Legal operations](catalog/practice-areas/legal-operations.md) | 18 |
+| [Tools & orchestration](catalog/practice-areas/tools-orchestration.md) | 6 |
 
-Bespoke coverage spans Australia, Brazil, Canada, China, the EU, France, Germany,
-Iceland, India, Ireland, Japan, New Zealand, the Nordic region, Poland, Singapore,
-Switzerland, the UK and the US. Highlights include Icelandic gold-plating and EEA
-conformity assessments, national employment and contract reviews, venture financing,
-construction contracts and local regulatory compliance.
+## Browse by jurisdiction
+
+[Australia](catalog/jurisdictions/australia.md) · [Brazil](catalog/jurisdictions/brazil.md) · [Canada](catalog/jurisdictions/canada.md) · [China](catalog/jurisdictions/china.md) · [European Union](catalog/jurisdictions/european-union.md) · [France](catalog/jurisdictions/france.md) · [Germany](catalog/jurisdictions/germany.md) · [Iceland](catalog/jurisdictions/iceland.md) · [India](catalog/jurisdictions/india.md) · [Ireland](catalog/jurisdictions/ireland.md) · [Japan](catalog/jurisdictions/japan.md) · [New Zealand](catalog/jurisdictions/new-zealand.md) · [Nordic region](catalog/jurisdictions/nordic.md) · [Poland](catalog/jurisdictions/poland.md) · [Singapore](catalog/jurisdictions/singapore.md) · [Switzerland](catalog/jurisdictions/switzerland.md) · [United Kingdom](catalog/jurisdictions/united-kingdom.md) · [United States](catalog/jurisdictions/united-states.md)
 
 ## Install
 
-List the available skills:
+List available skills, then install only the workflows you need:
 
 ```sh
 npx skills add legalcode-md/skills --list --full-depth
-```
-
-Install the document-to-skill builder:
-
-```sh
-npx skills add legalcode-md/skills --skill legalcode-document-to-skill --full-depth
-```
-
-Install the interactive document-grilling workflow:
-
-```sh
-npx skills add legalcode-md/skills --skill legalcode-grill-document --full-depth
-```
-
-Install a general workflow:
-
-```sh
 npx skills add legalcode-md/skills --skill legalcode-contract-review --full-depth
 ```
 
-Install a bespoke workflow:
-
-```sh
-npx skills add legalcode-md/skills --skill legalcode-eea-conformity-assessment-is --full-depth
-```
-
-To install the complete collection:
+Install the full collection with:
 
 ```sh
 npx skills add legalcode-md/skills --all --full-depth
 ```
 
-Choose the skills relevant to your work. Each folder includes its own required local
-references and resources. Some workflows can use companion skills or external tools;
-the workflow describes those prerequisites. No model or provider is pinned.
+Requires Node.js/npm for the skills CLI. Install names are unchanged. Skill folders now live under `skills/general/<practice-area>/` or `skills/jurisdictions/<jurisdiction>/<practice-area>/`. Use `--full-depth` for recursive discovery. Existing flat GitHub file links should be replaced with the paths in the catalogue; no reinstall is needed solely for the folder change.
+
+Each package carries its scripts, references, templates and license. Check the skill's stated prerequisites before running external software or services. No model or provider is pinned.
 
 ## Legalcode connection
 
-Use the hosted Streamable HTTP endpoint:
+Add `https://mcp.legalcode.md/mcp` as a remote Streamable HTTP connector and complete authentication. Discover current coverage and permissions, then Search and Fetch primary texts before relying on them. Analyze and Trace support aggregate and relationship queries. Keep confidential documents local and minimize matter facts in source queries.
 
-```text
-https://mcp.legalcode.md/mcp
-```
+## Collection and validation
 
-Complete the client authentication flow and discover current coverage and access.
-The Legalcode tools are Discover, Search, Fetch, Analyze and Trace. Fetch primary
-texts before relying on sources. Keep confidential documents local and minimize
-matter facts in source queries.
+This release publishes every unique `legalcode-` name in the source collection, retaining previously published workflow tools. The [coverage record](collection-coverage.json) reconciles source definitions, the duplicate NDA-triage name, and retained tools. Internal development skills and imported skills without Legalcode names are outside this collection.
 
-Website: [legalcode.md](https://legalcode.md).
-
-## Selection and provenance
-
-The 200 additions were selected from our source collection's **Legalcode original**
-and **Complete** entries. Selection favors useful, distinct workflows, verification
-and output guidance, and a balance of general and bespoke coverage. Imported entries
-and overlapping variants were excluded from this expansion.
-
-- [Selection record](selection-2026-09.json): source paths and rationale for all 200 additions.
-- [Integrity manifest](catalog.json): source provenance, original metadata and hashes for every packaged file.
-
-The 252 total preserves the existing 50-skill selection, adds 200 curated skills,
-and includes the document-to-skill builder and document-grilling workflow as later additions.
-
-The workflow bodies preserve their original legal analysis and attribution. Portable
-frontmatter, shorter discovery descriptions, current runtime guidance and bundled
-shared references make the collection installable across supported clients. Original
-full descriptions remain available inside the skills.
-
-Publication validation checks packaging and resource integrity. It does not certify
-current legal accuracy or successful execution of every workflow. Verify dated legal
-examples, citations, thresholds and deadlines against current primary authorities
-for the relevant matter. Preserve embedded attribution and license notices.
-
-## Validate a checkout
+The [machine-readable catalogue](catalog.json) records categories, source provenance, package paths and file hashes. [Earlier selection records](selection-2026-09.json) remain available as release history.
 
 With Python 3.10 or newer:
 
 ```sh
 python3 -m pip install -r requirements-dev.txt
 python3 scripts/validate-public-skills.py .
+python3 -m unittest discover -s scripts/tests
 ```
 
-The validator checks all 252 names, metadata, the 200-addition selection, file hashes
-and local Markdown references. `catalog.json` is generated with the source export;
-rebuild it when changing packaged skill files.
+Maintainers can regenerate category pages with `python3 scripts/organize-catalog.py .`. The validator checks collection coverage, package licenses, metadata, hashes and navigation. Packaging validation does not certify current legal accuracy or exercise every workflow; verify dated legal examples and authorities for the relevant matter.
 
 ## License and permitted use
 
