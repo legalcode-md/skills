@@ -14,7 +14,7 @@ statutes:
   - Reg. (EU) 2016/679 GDPR (EEA-imported via PSL)
   - Reg. (EU) 2023/2854 Data Act (EEA Joint Committee — verify status)
   - Reg. (EU) 2024/1689 AI Act (EEA Joint Committee — verify status)
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-29
 ---
 

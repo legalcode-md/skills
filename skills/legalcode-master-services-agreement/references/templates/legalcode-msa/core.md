@@ -2,7 +2,7 @@
 title: Master Services Agreement (Jurisdiction-Neutral Baseline)
 jurisdiction: neutral
 statutes: []
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-29
 ---
 

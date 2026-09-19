@@ -7,7 +7,7 @@ statutes:
   - UCC Art. 2 (analog, services)
   - CCPA / CPRA (Cal. Civ. Code §§1798.100–1798.199.100)
   - FAR 52.227-14 / DFARS 252.227-7013, 7014
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-29
 ---
 

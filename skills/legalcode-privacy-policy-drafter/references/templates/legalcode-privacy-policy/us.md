@@ -10,7 +10,7 @@ statutes:
   - COPPA (15 U.S.C. §§ 6501–6506) — children
   - HIPAA — note carve-out for PHI handled under BAA
   - State equivalents: CO CPA, VA VCDPA, CT CTDPA, UT UCPA, TX TDPSA, OR OCPA
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

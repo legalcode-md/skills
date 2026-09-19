@@ -3,7 +3,7 @@ title: Data Processing Agreement — Iceland (Lög nr. 90/2018 + EEA)
 jurisdictions: [is]
 statutes: [Act-90/2018, GDPR, Telecom-Act-70/2022, FADP-CH-via-EEA]
 supervisory_authority: Persónuvernd
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

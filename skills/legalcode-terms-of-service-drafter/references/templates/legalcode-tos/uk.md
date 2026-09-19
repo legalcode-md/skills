@@ -3,7 +3,7 @@ title: Terms of Service — United Kingdom (UK CRA + DMCCA 2024 + Online Safety 
 jurisdictions: [uk, gb]
 statutes: [UK-CRA-2015, DMCCA-2024, OSA-2023, UK-GDPR, PECR, EA-2010]
 audience: [B2C, B2B]
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

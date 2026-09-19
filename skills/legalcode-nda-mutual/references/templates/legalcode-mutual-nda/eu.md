@@ -4,7 +4,7 @@ jurisdictions: [eu, eea, de]
 statutes:
   [Trade-Secrets-Directive-2016/943, GDPR, eIDAS-910/2014, BGB, GeschGehG]
 form: bilateral
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

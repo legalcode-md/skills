@@ -35,6 +35,7 @@ def validate(root):
     entries = catalog["skills"]
     names = [item["name"] for item in entries]
     errors = []
+    license_text = (root / "LICENSE.md").read_bytes()
     later = [item for item in entries if item.get("category") == "later-addition"]
     assert len(names) == len(set(names)) == catalog["total_count"] == selection["total_count"] + len(later)
     selected = {item["name"] for item in selection["skills"]}
@@ -47,6 +48,8 @@ def validate(root):
         directory = root / "skills" / entry["name"]
         files = {str(p.relative_to(directory)): p for p in directory.rglob("*") if p.is_file()}
         assert set(files) == set(entry["files"]), f"Inventory mismatch: {entry['name']}"
+        if "LICENSE.md" not in files or files["LICENSE.md"].read_bytes() != license_text:
+            errors.append(f"Missing or inconsistent package license: {entry['name']}")
         for relative, path in files.items():
             file_count += 1
             if path.is_symlink():
@@ -71,6 +74,8 @@ def validate(root):
             errors.append(f"Missing frontmatter: {entry['name']}")
             continue
         metadata = yaml.safe_load(match[1])
+        if metadata.get("license") != "Legalcode Skills Source-Available License 1.0; see LICENSE.md":
+            errors.append(f"Missing or inconsistent license metadata: {entry['name']}")
         if set(metadata) - {"name", "description", "license", "metadata", "allowed-tools"}:
             errors.append(f"Unsupported frontmatter: {entry['name']}")
         if metadata.get("name") != entry["name"] or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", entry["name"]) or len(entry["name"]) > 64:

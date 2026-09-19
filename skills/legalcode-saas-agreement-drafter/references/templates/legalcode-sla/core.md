@@ -3,7 +3,7 @@ title: Service Level Agreement (Jurisdiction-Neutral Baseline)
 jurisdictions: [global]
 posture: dual-perspective (customer-favorable / vendor-favorable / market-standard)
 audience: [B2B]
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

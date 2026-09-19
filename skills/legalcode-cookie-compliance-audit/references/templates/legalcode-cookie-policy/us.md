@@ -2,7 +2,7 @@
 title: Cookie Policy — United States (CCPA/CPRA + multi-state + GPC)
 jurisdictions: [us, us-ca, us-co, us-ct, us-tx, us-or]
 statutes: [CCPA, CPRA, CPA, VCDPA, CTDPA, TDPSA, OCPA, COPPA, CalOPPA]
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

@@ -2,7 +2,7 @@
 title: Data Processing Agreement — EU/EEA (GDPR Art. 28 + DE-DSGVO + CH-FDPIC + SCCs Modules 1–4)
 jurisdictions: [eu, eea, de, ch]
 statutes: [GDPR, DSGVO, BDSG, TTDSG, FADP, SCCs-2021/914]
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

@@ -11,7 +11,7 @@ statutes:
     GeschGehG,
   ]
 audience: [B2B]
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-29
 ---
 

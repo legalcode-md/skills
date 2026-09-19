@@ -2,7 +2,7 @@
 title: Cookie Policy — United Kingdom (PECR + UK GDPR + ICO Guidance)
 jurisdictions: [uk, gb]
 statutes: [PECR-2003-SI-2426, UK-GDPR, DPA-2018, DUAA-2025]
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

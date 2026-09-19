@@ -7,7 +7,7 @@ statutes:
   - Privacy and Electronic Communications Regulations 2003 (PECR)
   - Age Appropriate Design Code (Children's Code) — ICO statutory code
   - UK International Data Transfer Agreement (IDTA) and UK Addendum
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

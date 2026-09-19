@@ -33,12 +33,17 @@ When creating or substantially revising the generated skill's instructions, appl
 1. **Understand the form and choices.** Read [structure-and-choices.md](references/structure-and-choices.md) when inspecting layout, separating reusable text from variables, or defining the input contract. Prefer the approved precedent; otherwise choose the best-supported representative sample. Record uncertainty and conflicts alongside the supporting evidence.
 2. **Learn the writing.** Read [legal-writing-analysis.md](references/legal-writing-analysis.md) when the document contains newly drafted prose or when revising its voice guidance. Produce instructions grounded in actual passages: how this lawyer attributes facts, develops reasoning, qualifies conclusions and chooses words. Include contextual tone and annotated examples where useful.
 3. **Prepare the template.** Use the supplied scripts for supported DOCX work. Preserve the source form and replace matter content with named blanks, passage notes, choices or repeated blocks. Copy [create_docx.py](assets/create_docx.py) into the generated skill. It needs only Python 3.9+ and the standard library.
-4. **Write the entrypoint and references.** Adapt [drafting-skill.md](assets/drafting-skill.md); it is an authoring scaffold, not a finished skill. Keep shared rules and routing in SKILL.md. Put this lawyer's learned patterns in `references/legal-writing-profile.md` when substantial prose warrants it. Add `references/drafting-rules.md` for complex selection rules and `examples/values.json` for useful synthetic input examples. Small forms can keep their brief writing guidance in the root.
+4. **Write the entrypoint and references.** Adapt [drafting-skill.md](assets/drafting-skill.md); it is an authoring scaffold, not a finished skill. Keep shared rules and routing in SKILL.md. Bundle [runtime requirements](references/runtime-compatibility.md) as `references/runtime-compatibility.md` and link it for first use, including on Windows machines without Python. Put this lawyer's learned patterns in `references/legal-writing-profile.md` when substantial prose warrants it. Add `references/drafting-rules.md` for complex selection rules and `examples/values.json` for useful synthetic input examples. Small forms can keep their brief writing guidance in the root.
 5. **Validate and repair.** Read [validation-and-learning.md](references/validation-and-learning.md) for package isolation, generation trials, appearance, writing quality, meaning and revision learning. Exercise the actual delivered command. Repair the package and rerun the checks affected by a change. Do not claim visual fidelity from XML comparison alone.
 
 ## What to deliver
 
-The generated folder contains `SKILL.md`, `template.docx` and `create_docx.py`, plus the references or examples justified by its work. Name it for the document type, using lowercase words and hyphens; match its frontmatter name to the folder. Keep operative standard wording in the template. References may use labelled illustrative excerpts without creating a second competing source of operative wording.
+When copying Legalcode scripts or other licensed components into the generated
+package, include [LICENSE.md](LICENSE.md) and retain applicable attribution.
+Identify the copied components; do not imply that Legalcode owns the user's
+original content or that generating a skill removes restrictions on reused code.
+
+The generated folder contains `SKILL.md`, `template.docx`, `create_docx.py` and `references/runtime-compatibility.md`, plus the other references or examples justified by its work. Name it for the document type, using lowercase words and hyphens; match its frontmatter name to the folder. Keep operative standard wording in the template. References may use labelled illustrative excerpts without creating a second competing source of operative wording.
 
 The generated SKILL.md must make the professional-quality and new-matter boundaries explicit and state when to load each supporting file. It should work from the delivered folder without access to original client files. Optional original-file references belong in private local records; do not expose identifying paths in a shared package. Keep extraction methodology in this builder, not in every generated skill.
 
@@ -55,7 +60,7 @@ Put the result where requested; otherwise beside the sample folder. Update an ex
 
 ## Tools
 
-The scripts run locally without network access or third-party Python packages. They assist inspection and templating; they do not determine legal meaning, prove complete sanitisation or render Word pages. Detailed syntax and limitations are in [structure-and-choices.md](references/structure-and-choices.md); each command also supports `--help`.
+Before first use, read [runtime requirements](references/runtime-compatibility.md). Use an available Python 3.9+ launcher or the documented uv setup; do not assume `python3` is installed. The commands below use `python3` as an example launcher. Once the runtime is available, the scripts run locally without network access or third-party Python packages. They assist inspection and templating; they do not determine legal meaning, prove complete sanitisation or render Word pages. Detailed syntax and limitations are in [structure-and-choices.md](references/structure-and-choices.md); each command also supports `--help`.
 
 ```bash
 python3 scripts/inspect_docx.py sample.docx
@@ -67,7 +72,3 @@ python3 output/create_docx.py values.json trial.docx
 ```
 
 When maintaining these helpers, run `python3 -m unittest discover -s tests -v`.
-
-## Runtime compatibility
-
-Read [runtime requirements](references/runtime-compatibility.md) when selecting tools or moving this workflow to another agent environment.

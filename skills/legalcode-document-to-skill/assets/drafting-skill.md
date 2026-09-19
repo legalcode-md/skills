@@ -1,8 +1,8 @@
 # Authoring scaffold for a generated drafting skill
 
-Adapt the fenced scaffold to the actual document in its language. Replace authoring placeholders and omit irrelevant sections before delivery. Keep the entrypoint concise; retain the professional-quality and matter boundaries even in a small form. The references named below are conditional: create them with learned, document-specific content when useful, or put brief guidance in the root and remove their links. Do not ship broken links, empty sections or this authoring preface.
+Adapt the fenced scaffold to the actual document in its language. Replace authoring placeholders and omit irrelevant sections before delivery. Keep the entrypoint concise; retain the professional-quality and matter boundaries even in a small form. Writing profiles, drafting rules and example inputs are conditional: create them with learned, document-specific content when useful, or put brief guidance in the root and remove their links. Do not ship broken links, empty sections or this authoring preface.
 
-While adapting it, apply the builder's [skill-authoring practices](../references/skill-authoring-practices.md). Use the sections the document needs; the scaffold is not a fixed outline or length target. The resulting skill should implement these principles without copying the builder's authoring checklist into its drafting workflow.
+While adapting it, apply the builder's [skill-authoring practices](../references/skill-authoring-practices.md). Copy the builder's [runtime requirements](../references/runtime-compatibility.md) into the generated skill's `references/runtime-compatibility.md` so first-use instructions work without the builder. Use the sections the document needs; the scaffold is not a fixed outline or length target. The resulting skill should implement these principles without copying the builder's authoring checklist into its drafting workflow.
 
 ```markdown
 ---
@@ -40,11 +40,17 @@ Every new-matter fact, name, figure, authority, argument and conclusion must com
 
 ## Create the document
 
+Before first use, read [runtime requirements](references/runtime-compatibility.md). It covers Windows machines with neither Python nor uv installed, including IT-managed installation restrictions. Reuse a working Python 3.9+ interpreter; `python3` below is an example launcher, not an assumption about the machine.
+
 Run these commands from this skill's folder, using explicit paths for the new matter's input and output:
 
     python3 create_docx.py --list
     python3 create_docx.py --text
     python3 create_docx.py values.json new-draft.docx
+
+With uv, the equivalent generation command is:
+
+    uv run --no-project --python 3.12 python create_docx.py values.json new-draft.docx
 
 Python 3.9+ and the standard library are sufficient for generation. Missing values remain yellow blanks; undecided choices retain their markers. Inspect the output report and resolve or disclose them. Existing outputs are protected; use a fresh filename, or --force only when replacing that output is intended. The template cannot be overwritten.
 
@@ -59,6 +65,9 @@ Inspect the rendered output with available suitable tools for <the form's materi
 No instruction note, example value or unresolved marker belongs in a finished document. An incomplete draft may retain visible blanks with a clear handover. Deliver the draft and a short note on outstanding information, choices made and material limitations. Sending, signing or filing requires the user's authorisation and the responsible lawyer's review.
 
 ## Evidence and maintenance
+
+Retain the bundled LICENSE.md and applicable attribution for reused Legalcode
+components. Distinguish those components from the user's original material.
 
 <Scope of the evidence, safe source identifiers, confirmed preferences, provisional observations, material conflicts and unresolved choices. Keep identifying source paths in private working records. Record sample dates separately from actual legal-verification dates. The delivered folder must work without the originals.>
 

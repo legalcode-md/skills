@@ -2,7 +2,7 @@
 title: Data Processing Agreement — United States (CCPA/CPRA + multi-state Service Provider Exhibit)
 jurisdictions: [us-ca, us-co, us-va, us-ct, us-ut, us-tx, us-or]
 statutes: [CCPA, CPRA, CPA, VCDPA, CTDPA, UCPA, TDPSA, OCPA]
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

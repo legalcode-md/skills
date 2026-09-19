@@ -7,7 +7,7 @@ statutes:
   - Standard Contractual Clauses (Commission Implementing Decision (EU) 2021/914)
   - BDSG (Bundesdatenschutzgesetz) — Germany
   - TTDSG (Telekommunikation-Telemedien-Datenschutzgesetz) — Germany
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

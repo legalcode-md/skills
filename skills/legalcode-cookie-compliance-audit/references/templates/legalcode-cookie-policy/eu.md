@@ -2,7 +2,7 @@
 title: Cookie Policy — EU/EEA (ePrivacy + GDPR + DE-TTDSG/TDDDG)
 jurisdictions: [eu, eea, de]
 statutes: [ePrivacy-2002/58/EC, GDPR, TTDSG, TDDDG, BDSG]
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 

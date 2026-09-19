@@ -10,7 +10,7 @@ statutes:
   - Reg. (EU) 2024/1689 (AI Act)
   - DE BGB §§ 305–310 / 126a / 314 (AGB / Schriftform / extraordinary termination)
   - DE GeschGehG §§ 1–4
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-29
 ---
 

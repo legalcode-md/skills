@@ -425,25 +425,25 @@
         "references/runtime-compatibility.md": "585c52257e62b7528bacd57f7d531cc8d9f506000bf5985d3a2b448285895b23",
         "references/templates/legalcode-csa/LICENSE.md": "1e0ab35490981c92e2646396714dc86b86be8716710cadf436e0ce9bcb7fd61c",
         "references/templates/legalcode-csa/README.md": "68bd2d1afc1e1e5e90c69119faf9b9627f6d06952d5a1e33ed075e8de64681ac",
-        "references/templates/legalcode-csa/core.md": "c697e58c0f6b3969c8cd20281705c7ccd4cb56b2e26864c941c63eb32d6553b1",
-        "references/templates/legalcode-csa/eu.md": "0c2beb5607b15097773f8568bc7a43b9fe3654cfd057325e07189129d4c0030a",
-        "references/templates/legalcode-csa/is.md": "3e3c72bc97b81c46a0b119d5d9ccaac6f65db9a4273f9ba30f8ff95986fe1e9d",
-        "references/templates/legalcode-csa/uk.md": "c5bdcc546adb502149cbfe2dabbd28c5584398e00c09a08e52ba8db0bd3b61e0",
-        "references/templates/legalcode-csa/us.md": "6365a2315919e91f6464a28cfaaa188ee68df78fe78f06f997a772285f129de4",
+        "references/templates/legalcode-csa/core.md": "4a8e34e90e22baf3e1bd1ab763bba08921ecd77d05765f1abb99dba1be6c94a7",
+        "references/templates/legalcode-csa/eu.md": "2d1136e1156c1ecdfd927d7db54b8a68a6b39832a814492cc87fb11f0e2fffc5",
+        "references/templates/legalcode-csa/is.md": "451f1c87ec9a04c1908a6b078fb7ab2a803cec0dea17d9a2261389a3395cf209",
+        "references/templates/legalcode-csa/uk.md": "440df64d7563b0951e7ed200731ba392f48192757b2f99cb9563a8901b4c9f48",
+        "references/templates/legalcode-csa/us.md": "18de8fb13943466bc79e6244bb4a74b2ede8cf9caf202ab13a0569cd9a958a01",
         "references/templates/legalcode-order-form/LICENSE.md": "8ad6087c8df57a25d55e81d4bbc397281d0e32f9bb7847e90b0a30aa290ca997",
         "references/templates/legalcode-order-form/README.md": "b911e7a29440d87ad2506bba9435de6a6516152bcf055bc57d5fa8210eff55c0",
-        "references/templates/legalcode-order-form/core.md": "f7ba88c0dd3e11909a45fa95220bd8ef9385b75b42357417e762a1b9c4ea3399",
-        "references/templates/legalcode-order-form/eu.md": "c8c68dd53331c26f6275036a1abb6c2c2dfc70c8301f01b24095034d8e589008",
-        "references/templates/legalcode-order-form/is.md": "01e8e5d407566a373e9fe40535ac367d86b07eae2b1edf00b8abc57836d0cb90",
-        "references/templates/legalcode-order-form/uk.md": "4c55262bee2c69ce53505bcf97328f5229938209aa625bd8f7273549339b976e",
-        "references/templates/legalcode-order-form/us.md": "67be86bc461c0aa3c3a24b6be7d33f9f949f1e1573e05ffdc746bfa4d9325421",
+        "references/templates/legalcode-order-form/core.md": "8875994ec1e52c09f29740c4e7066b6a45364bb4dc1a0e3e1d011b514b94aca3",
+        "references/templates/legalcode-order-form/eu.md": "89545c436fd9a7c9e715891f39dba38ff4554c83190ac63a7058346f1af14b5a",
+        "references/templates/legalcode-order-form/is.md": "ff74a9d6a43bd5e4d736d8c709ca5605337c1b74ec1b96c7f973b90db8b72b05",
+        "references/templates/legalcode-order-form/uk.md": "11057cec0caa85b126fab1a266149efc94989eaa1a6bfd7d4ea7e7094755c8f0",
+        "references/templates/legalcode-order-form/us.md": "e078c6a10a78d88c8b943657ebefffcbf52c8e116f838288941f04bb4e9c6cf7",
         "references/templates/legalcode-sla/LICENSE.md": "30acaf63a0ee831fbb57be4a14acfcb1182d10fddba82030cc168cd33e30a55c",
         "references/templates/legalcode-sla/README.md": "e730f7c43670d02ac1b135ed856dcdf491d9977695c3e3a7b9a877591895c09c",
-        "references/templates/legalcode-sla/core.md": "1fdea88c847b1807f80734cf0f928976cf85fbd7569af5361365cc581b7fa1f2",
-        "references/templates/legalcode-sla/eu.md": "6519e64a1325b300202b834296dff3e1fd0e37b2b137b72385224c12702f3ef5",
-        "references/templates/legalcode-sla/is.md": "0e92c6cfa773b52fb3890362dd07ac2144125d66563f85cdd83219d68aa2f468",
-        "references/templates/legalcode-sla/uk.md": "8ae5dd00895eed1fbc1fc831aa8da457efa484de43f8a85d652b8cdc07a65b62",
-        "references/templates/legalcode-sla/us.md": "14a2de59a1b76eb6c47798ee87893b46f3f91ea212bfce0365b0ce11d9be9b7d"
+        "references/templates/legalcode-sla/core.md": "bb4bdbe7154559c8dc49b7edce4658c9211466db299b0546cf69968db5764789",
+        "references/templates/legalcode-sla/eu.md": "2df5e9eb9e32e923e9bf96f3cfb7fc8cd583553a7d60902fd575fc071b963f23",
+        "references/templates/legalcode-sla/is.md": "9db08b0361ae6bac55f9481b91010b457b26249ec2f5850672a4acf9c3c8e1f3",
+        "references/templates/legalcode-sla/uk.md": "99a4838823651796a273acf99feb1b8560f6919e1f23e691debb0fd4cfb6d34b",
+        "references/templates/legalcode-sla/us.md": "a2126514fd0199cd5ef434323145ece9c4cd82ef3e42d39c763f5eabd6c9152a"
       }
     },
     {
@@ -469,11 +469,11 @@
         "references/runtime-compatibility.md": "585c52257e62b7528bacd57f7d531cc8d9f506000bf5985d3a2b448285895b23",
         "references/templates/legalcode-msa/LICENSE.md": "c596efcb0f51db9efeaf02f40d5adfc801247411c857914769bda051e9e90389",
         "references/templates/legalcode-msa/README.md": "086f64692ff15593ae383173edefa964c9a089311d4ec8b3bb23c0cb8c3db8f2",
-        "references/templates/legalcode-msa/core.md": "4b5e260ea38094e7b37d855946ce5c9a3fe93daa695866b9391249be80b8d733",
-        "references/templates/legalcode-msa/eu.md": "5ed7fcd15e983c2dad96471eb79fe5632672a91837b15079a5d44a4875aeba22",
-        "references/templates/legalcode-msa/is.md": "572a1783619d344f1433f61d58cfd9247e7b5c3c24f21c4b560c4e414c17e908",
-        "references/templates/legalcode-msa/uk.md": "d51fd9691e43a333d2a796d199c13a188960abfa4af18eb3557186de452a96e5",
-        "references/templates/legalcode-msa/us.md": "1612c4248c9020faeceae5ae3ebcbb5fa160a2a3e773f656304de760200c77e7"
+        "references/templates/legalcode-msa/core.md": "1a70662b4bba72e8556ca640d73c3b02650236ad45a4acd1c02dc0dd6256acf6",
+        "references/templates/legalcode-msa/eu.md": "5c5748bd35773944f85f97525cba349f89ed643f777c46cae573fe7493896a18",
+        "references/templates/legalcode-msa/is.md": "3f258cd98b12b6598bb8eea37856e9dd2951c7deb2e08b474343c1822dc7afa5",
+        "references/templates/legalcode-msa/uk.md": "c9c40d5d1da368c0a9bc69d2cfa0d169fb8804e72b1eb5ae2069f799565b9e29",
+        "references/templates/legalcode-msa/us.md": "30bd3a46b70a93c45919275b1fcf345cebd3ec960220fdbb1547a4e9d6f1603c"
       }
     },
     {
@@ -522,11 +522,11 @@
         "references/runtime-compatibility.md": "585c52257e62b7528bacd57f7d531cc8d9f506000bf5985d3a2b448285895b23",
         "references/templates/legalcode-tos/LICENSE.md": "42670b199f4b63cc1d8461a75eece1f4c83104e536fa57de3295fd77b133d26c",
         "references/templates/legalcode-tos/README.md": "5163d14dd250661b05c07a327571da22e6899135678585a3e4b6fba93fd6be2e",
-        "references/templates/legalcode-tos/core.md": "65de6bee7763d06b018121cf25765c7131c138362a8e80258d99b96c4222ecc6",
-        "references/templates/legalcode-tos/eu.md": "7d08a5a9c7f1db2cc0451c67c97f689447ea18ae1636e0ea54cd9d963dbfcc4e",
-        "references/templates/legalcode-tos/is.md": "37bb9f55fe952422082e5a8535edcd79b69ed193e5ed9b107308c1cf6b787604",
-        "references/templates/legalcode-tos/uk.md": "f2273a73d8a10acc037d83a079a25feac270c38cebf182507071d9a0f85a01c5",
-        "references/templates/legalcode-tos/us.md": "97bbd4e01a9e7380132f19aca0800ac1617b5bbd824f1c4bc3f2a2d6080ab2d9"
+        "references/templates/legalcode-tos/core.md": "7c62e8ee80916fd0d69ed1ccff624181964bcd3795ad1187d4331de5eff69a7b",
+        "references/templates/legalcode-tos/eu.md": "b3f49d88abf8372592dd1a37d4a1295779586b802d45c609e963e7102acc3025",
+        "references/templates/legalcode-tos/is.md": "2551af66d0824adafb16c4482e640f0dda3e4024d587fe3f804dc66c18e07cbf",
+        "references/templates/legalcode-tos/uk.md": "70e8b529aff52eb4546e79254293358c2cdb2d11ddeb5ea5d814f9331c00c21a",
+        "references/templates/legalcode-tos/us.md": "5effecb5b385571f790367b953077f03da5de5ede8a82803da3107379bb18ab8"
       }
     },
     {
@@ -552,11 +552,11 @@
         "references/runtime-compatibility.md": "585c52257e62b7528bacd57f7d531cc8d9f506000bf5985d3a2b448285895b23",
         "references/templates/legalcode-dpa/LICENSE.md": "cc3cda3362c6c920ee70f2e38e2ca577d5bdc3100ec5231826e5da95c2418bb2",
         "references/templates/legalcode-dpa/README.md": "9b61382bde9c2fb3c341c7d51c99e249885ea83183ead10a51db4080355baf49",
-        "references/templates/legalcode-dpa/core.md": "7df6999a01432dab580e9fa7ecefff3b5c3cebcaa0a2d7e9a9b3026c8b9377df",
-        "references/templates/legalcode-dpa/eu.md": "834dcc9a48f7eedfe76447446d64b20ccef37e26a55277a5642f4004edb62b59",
-        "references/templates/legalcode-dpa/is.md": "58f1c94e3a8e812826ecf7e563805a3ef63b1d9d4e9a78ff152dc08ba26ae324",
-        "references/templates/legalcode-dpa/uk.md": "57c30039f2a58db9058f111637afd31c0fec4448d7261aae5766f9d59bbd3cd6",
-        "references/templates/legalcode-dpa/us.md": "b098e00aff62224a6f88f4794a1933076d29e9846c7b65fbc8b14d235c57283c"
+        "references/templates/legalcode-dpa/core.md": "dcc50f677f4051aa58773b43dd5debb8f124ef779cfd8a8ba570df5474bcffc1",
+        "references/templates/legalcode-dpa/eu.md": "2023fb3af380681089e3b3c4f6f2e2e698b329622b04b7e1b6258b035ebc8400",
+        "references/templates/legalcode-dpa/is.md": "b9427bfe1a4a24a2e0cd87e29a486d2a3c21e2070f7e87d06f9449f46c49d950",
+        "references/templates/legalcode-dpa/uk.md": "5dcf9cda6f655f05bc602254be90b9a39b9306388d8ccdcc495d72b05552e260",
+        "references/templates/legalcode-dpa/us.md": "6444e24b679b9348c41732b856c05bb215451933601705597e2d00b562a05f9d"
       }
     },
     {
@@ -766,11 +766,11 @@
         "references/runtime-compatibility.md": "585c52257e62b7528bacd57f7d531cc8d9f506000bf5985d3a2b448285895b23",
         "references/templates/legalcode-privacy-policy/LICENSE.md": "eb4ce98f649f215df884f51aacacb5e17d0796fc35e4bd08cd76f04c69507daa",
         "references/templates/legalcode-privacy-policy/README.md": "6e51489563d6decab66758e02cd64448e07899215c1c80a9498b23808b81eba6",
-        "references/templates/legalcode-privacy-policy/core.md": "42663da119215b180cc3bce600536a87f914bfb63ccac32acd3e0017f47af238",
-        "references/templates/legalcode-privacy-policy/eu.md": "03415939d0f92fb308d46c2ff9908628b823454b8a065135886bbd82bea2b80c",
-        "references/templates/legalcode-privacy-policy/is.md": "23b8ce52b8c3802093fe8552afc738929d496799f396940e3eec6291494a46a9",
-        "references/templates/legalcode-privacy-policy/uk.md": "521fe0f0d7148331b80f636566d581b034f19e214496e0876f8def17d5f6959c",
-        "references/templates/legalcode-privacy-policy/us.md": "2fa96a46113fc2311243fa1a4427f56bbc4186e42a9487a1ad87af7137dc4667"
+        "references/templates/legalcode-privacy-policy/core.md": "5320f79aecdf7b8e35f6c3ed7fd896699437e74b5585da260b4304b072649979",
+        "references/templates/legalcode-privacy-policy/eu.md": "932a3554d67e652e71df6dbbfbb2bd95a836e4a984da8cfada01b890fa9b13f4",
+        "references/templates/legalcode-privacy-policy/is.md": "8ac2dfc1b9c72c65998fa1956e1f98225715dc6f16227b4b8daeeb39f13713ab",
+        "references/templates/legalcode-privacy-policy/uk.md": "553d3387e66d4ce1d87a58c3eef0465dace2aba05d0c6e44ca2d27f6c91fa2ae",
+        "references/templates/legalcode-privacy-policy/us.md": "c742860c6456c7d41bae34a8555eaf2628401d840e171cd5ab754a5f76258d37"
       }
     },
     {
@@ -796,11 +796,11 @@
         "references/runtime-compatibility.md": "585c52257e62b7528bacd57f7d531cc8d9f506000bf5985d3a2b448285895b23",
         "references/templates/legalcode-cookie-policy/LICENSE.md": "70c874a6ce5d1fe918a887c9d3c405419d236b54fa6347bcb66343db33834d02",
         "references/templates/legalcode-cookie-policy/README.md": "cd2ac4e8e3adbd5d138157c0bc57b476e92fd09d39cd8a9292459505501a00e9",
-        "references/templates/legalcode-cookie-policy/core.md": "ca9d706140f8f8259de4488c4096e514b4b9c0096ca8b364908078029241e578",
-        "references/templates/legalcode-cookie-policy/eu.md": "0c324b69cd5451dff774413c2f098213b9bc4e12ee676c220685e42694faa410",
-        "references/templates/legalcode-cookie-policy/is.md": "12d1f7efbbb70126ed29f42c5b6a9bb0833ef0156c3d39bf8d89a916a0cbef38",
-        "references/templates/legalcode-cookie-policy/uk.md": "e9a6ce622f5ef00f9ceb7121a1302630023d637d41d7c7dd1cf6821b8beb91b1",
-        "references/templates/legalcode-cookie-policy/us.md": "35b3f564f9adbb35d09d21bb85a6e3c4b93bb22d555361d88a5147cb085c87a5"
+        "references/templates/legalcode-cookie-policy/core.md": "24e48bb9d1f08815d864cafe1a8ab9e38a5daf3a3839db04ae450f4f4dd2b33f",
+        "references/templates/legalcode-cookie-policy/eu.md": "0a86a513e3317c3b3c5fce8c33c4256fbb849d38e2185f54563d6d74516a02ab",
+        "references/templates/legalcode-cookie-policy/is.md": "17453cd461951b487a52210168d30f0a7fc278ed36be710ccbf14bfde8280f73",
+        "references/templates/legalcode-cookie-policy/uk.md": "d703843554b175715a85f677eefc7987ffc00a2d5fc17c39ac9747162924355c",
+        "references/templates/legalcode-cookie-policy/us.md": "b7b5fa492666d72d03700436c40b216c226a03283d2f929bb3ace80c73b237c3"
       }
     },
     {
@@ -2643,11 +2643,11 @@
         "references/runtime-compatibility.md": "585c52257e62b7528bacd57f7d531cc8d9f506000bf5985d3a2b448285895b23",
         "references/templates/legalcode-mutual-nda/LICENSE.md": "b187c7aa4bd7c4a60bd854ed49e953aa07cbce3b3c362f485592117fb627f716",
         "references/templates/legalcode-mutual-nda/README.md": "7ca7f0a5738e1e39bc2c2434a74d3dc6cee5fd87a28a03a82c2103311e238229",
-        "references/templates/legalcode-mutual-nda/core.md": "72c6e2e9eca2471a94433cfe9d6919ef81ba190f64152ffd7078d147a94813f5",
-        "references/templates/legalcode-mutual-nda/eu.md": "c49fce72300bab15e088d2a759effe357c3b4d6df1e4701f1a581546a03a197f",
-        "references/templates/legalcode-mutual-nda/is.md": "74fd0e53011da8db03def0170e0bf444c01174b784de26b6a1e6368382e4f340",
-        "references/templates/legalcode-mutual-nda/uk.md": "1213687904f49526e024ece981ae720eeb8be08d4d071919e77967af96a2fa0b",
-        "references/templates/legalcode-mutual-nda/us.md": "b6ff027adac013c569c448cd4cdfd5e326e5da834e823ad63488a0dabcacdeb7"
+        "references/templates/legalcode-mutual-nda/core.md": "10fcd20a29ad2d7102860594414b1633095b0b137d8467686ab3d071b22cf2ad",
+        "references/templates/legalcode-mutual-nda/eu.md": "80c6894240efec426b2be427acbf1602f6a909cbb1990c6be21661bbd1b5f2b5",
+        "references/templates/legalcode-mutual-nda/is.md": "9a268e47bbc7ee4060d55d21f1d13c555e8a21f2efd3f68ca3df9630d9573f63",
+        "references/templates/legalcode-mutual-nda/uk.md": "cd741dca9ffc3e6892f8fe452b00ec1bfbfc68bcfffcc5baf94b9db3b692b716",
+        "references/templates/legalcode-mutual-nda/us.md": "585bf9dd0f05b170c136c8803d16dda912cd70f459e28d2b2a4dea03d7a41157"
       }
     },
     {
@@ -5915,7 +5915,7 @@
     {
       "name": "legalcode-document-to-skill",
       "source": "skills/general/workflows/legalcode-document-to-skill",
-      "source_skill_sha256": "392b756fc415c1394cf780f44d66e447d68a66f9bacd663973b0592c39c26353",
+      "source_skill_sha256": "38b4a858c97fc4621efda38cd7c68e807775bfdcd2d5cbb6b40252c96dca4213",
       "source_frontmatter": {
         "name": "legalcode-document-to-skill",
         "description": "Build or refine a reusable drafting skill from a lawyer's example documents, preserving their layout, structure, tone, style and word choice while removing matter-specific content. Use when asked to turn examples into a drafting skill."
@@ -5927,11 +5927,11 @@
       "selection_reason": "Added after the September 2026 expansion: build reusable drafting skills from lawyer samples, preserving form and professional writing while separating matter content.",
       "files": {
         "LICENSE.md": "ecc9a52d40f2d818937453cfcb1466ce6a0fc88abd6e8c44f9784a6d22dfc7ac",
-        "SKILL.md": "9ab58df55c82fb4c83095988dd47ab577f10b3d9eda19a099b3d018ca0648536",
+        "SKILL.md": "dd56885a6f914eb3dff2799ca48c345fcb92f4722302e7eedceb374111321427",
         "assets/create_docx.py": "5ef1fe3dcc2042a5cf09706df6b0dca621460c75b10b8d5cfe93895c09e7fc1b",
-        "assets/drafting-skill.md": "515e7316f8cd6013f758ec17c7a73915c886757bccd69084eb2f4bda1a2de001",
+        "assets/drafting-skill.md": "010382a683deaddf6cef11ee69064853508c998583375320de7b23a0a874ff0c",
         "references/legal-writing-analysis.md": "707624f3e1fe87ce01598822c15e82005c7f6ba4d9543bbb677eca6c9ac095c3",
-        "references/runtime-compatibility.md": "29bbee1faa77e9d1e4043ac3b6e480a9b0e8334ec4ee03fcc073234c11bd3475",
+        "references/runtime-compatibility.md": "c824b0463dacefe16e339e5388e8a5b9fa2a8acae1edaf9c73dcb042ed3ead84",
         "references/skill-authoring-practices.md": "d3d3190f244c3a7bb291131b9409020f45160534333542452aa7de52ca573808",
         "references/structure-and-choices.md": "6c3ad1c1ebe7edbf7d8dad9a9734cf5513d0b20b32bd1a1a135d450267ae47f4",
         "references/validation-and-learning.md": "2a55a3e069d299cad417e87c35db118c61bc099d4b0f6f914629132ed6f79296",

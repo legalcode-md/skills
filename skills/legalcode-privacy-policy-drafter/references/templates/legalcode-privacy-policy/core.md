@@ -1,7 +1,7 @@
 ---
 title: legalcode-privacy-policy (jurisdiction-neutral core)
 jurisdictions: [Global]
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 intended_use: |
   Skeleton baseline for assembling a privacy policy in jurisdictions

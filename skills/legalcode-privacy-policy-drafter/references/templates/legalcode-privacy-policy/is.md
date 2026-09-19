@@ -7,7 +7,7 @@ statutes:
   - Telecommunications Act No. 70/2022 (Lög um fjarskipti) — ePrivacy implementation
   - Standard Contractual Clauses (Commission Implementing Decision (EU) 2021/914)
 supervisory_authority: Persónuvernd (https://personuvernd.is)
-license: Legalcode Skills Source-Available License 1.0 (see LICENSE.md)
+license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 last_updated: 2026-04-28
 ---
 
