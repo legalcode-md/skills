@@ -4,11 +4,26 @@
 
 [Browse the catalogue](CATALOG.md) · [General skills](skills/general/README.md) · [By jurisdiction](skills/jurisdictions/README.md)
 
+## Featured skills
+
+| Skill | What it does |
+| --- | --- |
+| [Document to Skills](skills/general/drafting-documents/legalcode-document-to-skill/) | Turn example legal documents into a reusable drafting skill that preserves layout, structure, tone and wording while removing matter-specific content. |
+| [Tabulate](skills/general/drafting-documents/legalcode-tabulate/) | Turn a document collection into a traceable Excel workbook with a summary, topic-specific sheets, source references and visible uncertainty. Infer useful fields from the documents without requiring predefined columns. |
+
+Install either skill:
+
+```sh
+npx skills add legalcode-md/skills --skill legalcode-document-to-skill --full-depth
+npx skills add legalcode-md/skills --skill legalcode-tabulate --full-depth
+```
+
 ## Start with a task
 
 - [Review a contract](skills/general/contracts-commercial/legalcode-contract-review/SKILL.md)
 - [Research primary law](skills/general/legal-research/legalcode-public-search/SKILL.md)
 - [Build a skill from example documents](skills/general/drafting-documents/legalcode-document-to-skill/SKILL.md)
+- [Turn documents into a traceable Excel workbook](skills/general/drafting-documents/legalcode-tabulate/SKILL.md)
 - [Question and improve a legal draft](skills/general/drafting-documents/legalcode-grill-document/SKILL.md)
 - [Assess Icelandic EEA implementation](skills/jurisdictions/iceland/eu-eea-implementation/legalcode-eea-conformity-assessment-is/SKILL.md)
 - [Review a data breach](skills/general/privacy-data-protection/legalcode-breach-severity-assessment/SKILL.md)

@@ -172,6 +172,7 @@ def generate(root, move=False):
         ("Review a contract", "legalcode-contract-review"),
         ("Research primary law", "legalcode-public-search"),
         ("Build a skill from example documents", "legalcode-document-to-skill"),
+        ("Turn documents into a traceable Excel workbook", "legalcode-tabulate"),
         ("Question and improve a legal draft", "legalcode-grill-document"),
         ("Assess Icelandic EEA implementation", "legalcode-eea-conformity-assessment-is"),
         ("Review a data breach", "legalcode-breach-severity-assessment"),
@@ -179,6 +180,14 @@ def generate(root, move=False):
     by_name = {e["name"]: e for e in entries}
     readme = ["# Legalcode Skills", "", f"**{len(entries)} legal skills**, organized into **{len(by_area)} practice areas** and **{len(by_jurisdiction)} jurisdiction groups**.", "",
               "[Browse the catalogue](CATALOG.md) · [General skills](skills/general/README.md) · [By jurisdiction](skills/jurisdictions/README.md)", "",
+              "## Featured skills", "",
+              "| Skill | What it does |",
+              "| --- | --- |",
+              f"| [Document to Skills]({by_name['legalcode-document-to-skill']['path']}/) | Turn example legal documents into a reusable drafting skill that preserves layout, structure, tone and wording while removing matter-specific content. |",
+              f"| [Tabulate]({by_name['legalcode-tabulate']['path']}/) | Turn a document collection into a traceable Excel workbook with a summary, topic-specific sheets, source references and visible uncertainty. Infer useful fields from the documents without requiring predefined columns. |", "",
+              "Install either skill:", "", "```sh",
+              "npx skills add legalcode-md/skills --skill legalcode-document-to-skill --full-depth",
+              "npx skills add legalcode-md/skills --skill legalcode-tabulate --full-depth", "```", "",
               "## Start with a task", ""]
     for label, name in featured:
         readme.append(f"- [{label}]({by_name[name]['path']}/SKILL.md)")
