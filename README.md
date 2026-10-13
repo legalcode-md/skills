@@ -8,7 +8,7 @@
 
 | Skill | What it does |
 | --- | --- |
-| [Document to Skills](skills/general/drafting-documents/legalcode-document-to-skill/) | Turn example legal documents into a reusable drafting skill that preserves layout, structure, tone and wording while removing matter-specific content. |
+| [Document to Skills](skills/general/drafting-documents/legalcode-document-to-skill/) | Turn example legal documents, including Word (DOCX) and PowerPoint (PPTX), into a reusable drafting skill that preserves layout, structure, tone and wording while removing matter-specific content. |
 | [Tabulate](skills/general/drafting-documents/legalcode-tabulate/) | Turn a document collection into a traceable Excel workbook with a summary, topic-specific sheets, source references and visible uncertainty. Infer useful fields from the documents without requiring predefined columns. |
 
 Install either skill:

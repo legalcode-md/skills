@@ -256,10 +256,21 @@ def text_paragraphs(raw):
 
 
 def load_paragraphs(path):
-    """Paragraphs of a .docx, .txt, .md or (when pdftotext is installed) .pdf."""
+    """Paragraphs of a .docx, .pptx, .txt, .md or (with pdftotext) .pdf."""
     ext = os.path.splitext(path)[1].lower()
     if ext == ".docx":
         return docx_paragraphs(path)
+    if ext == ".pptx":
+        import importlib.util
+        helper = os.path.join(os.path.dirname(__file__), "..", "assets", "create_pptx.py")
+        spec = importlib.util.spec_from_file_location("pptx_text_helper", helper)
+        pptx = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(pptx)
+        parts = pptx.read_package(path)
+        # Speaker notes and hidden slides are separate evidence, not visible house prose.
+        return [text.strip() for name in pptx.slides(parts)
+                if pptx.parse_xml(parts[name]).get("show", "1") not in ("0", "false")
+                for text in pptx.paragraphs(parts[name]) if text.strip()]
     if ext in (".txt", ".md", ".markdown", ".text"):
         with open(path, encoding="utf-8", errors="replace") as f:
             return text_paragraphs(f.read())
@@ -271,7 +282,7 @@ def load_paragraphs(path):
                 "tool you have, save it as .txt, and pass that instead." % path)
         txt = subprocess.run([exe, "-enc", "UTF-8", path, "-"], capture_output=True).stdout
         return text_paragraphs(txt.decode("utf-8", "replace"))
-    raise ValueError("%s: unsupported type. Pass .docx, .txt, .md or .pdf; re-save .doc as .docx first." % path)
+    raise ValueError("%s: unsupported type. Pass .docx, .pptx, .txt, .md or .pdf; re-save .doc as .docx or .ppt as .pptx first." % path)
 
 
 SENTENCE_END = re.compile(r"[.!?][\"”“’)\]]*\s+")

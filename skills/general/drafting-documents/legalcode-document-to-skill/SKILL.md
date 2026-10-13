@@ -1,6 +1,6 @@
 ---
 name: legalcode-document-to-skill
-description: Build or refine a reusable drafting skill from a lawyer's example documents, preserving their layout, structure, tone, style and word choice while removing matter-specific content. Use when asked to turn examples into a drafting skill.
+description: Build or refine a reusable drafting skill from a lawyer's example documents, including Word (DOCX) and PowerPoint (PPTX), preserving layout, structure, tone, style and word choice while removing matter-specific content. Use when asked to turn examples into a document or presentation drafting skill.
 license: Legalcode Skills Source-Available License 1.0; see LICENSE.md
 ---
 
@@ -24,6 +24,8 @@ Read the brief and available documents before asking questions. One sample suppo
 
 Identify the document type, audience, drafting side and intended output. Group a mixed folder by the brief. Ask only for material gaps, such as whether a passage reflects a negotiated concession or whether the template's firm identity should remain fixed. Use established instructions without requesting approval again.
 
+For PPTX sources or presentation output, read [pptx-workflow.md](references/pptx-workflow.md). Carry over the source's backgrounds, colours, fonts, themes, masters, layouts and approved graphical assets as part of the house form. Learn slide design and sequence alongside writing patterns; inspect speaker notes and hidden slides separately. DOCX, PPTX, PDF and plain-text examples can contribute evidence without requiring the same output format.
+
 Keep original documents, identifying-detail inventories, detailed source maps, edits and trial outputs in a private working folder outside the distributable skill. Keep this material out of version control unless that repository is explicitly intended for it. Shared packages contain only authorised, sanitised examples and portable references.
 
 ## Build the skill
@@ -32,7 +34,7 @@ When creating or substantially revising the generated skill's instructions, appl
 
 1. **Understand the form and choices.** Read [structure-and-choices.md](references/structure-and-choices.md) when inspecting layout, separating reusable text from variables, or defining the input contract. Prefer the approved precedent; otherwise choose the best-supported representative sample. Record uncertainty and conflicts alongside the supporting evidence.
 2. **Learn the writing.** Read [legal-writing-analysis.md](references/legal-writing-analysis.md) when the document contains newly drafted prose or when revising its voice guidance. Produce instructions grounded in actual passages: how this lawyer attributes facts, develops reasoning, qualifies conclusions and chooses words. Include contextual tone and annotated examples where useful.
-3. **Prepare the template.** Use the supplied scripts for supported DOCX work. Preserve the source form and replace matter content with named blanks, passage notes, choices or repeated blocks. Copy [create_docx.py](assets/create_docx.py) into the generated skill. It needs only Python 3.9+ and the standard library.
+3. **Prepare the template.** Preserve the source form and replace matter content with named blanks and supported drafting choices. For DOCX, use the supplied DOCX scripts and copy [create_docx.py](assets/create_docx.py) into the generated skill. For PPTX, follow [pptx-workflow.md](references/pptx-workflow.md) and copy [create_pptx.py](assets/create_pptx.py) for supported text blanks; use a suitable presentation tool for slide selection, charts and complex edits. Both supplied generators need only Python 3.9+ and the standard library.
 4. **Write the entrypoint and references.** Adapt [drafting-skill.md](assets/drafting-skill.md); it is an authoring scaffold, not a finished skill. Keep shared rules and routing in SKILL.md. Bundle [runtime requirements](references/runtime-compatibility.md) as `references/runtime-compatibility.md` and link it for first use, including on Windows machines without Python. Put this lawyer's learned patterns in `references/legal-writing-profile.md` when substantial prose warrants it. Add `references/drafting-rules.md` for complex selection rules and `examples/values.json` for useful synthetic input examples. Small forms can keep their brief writing guidance in the root.
 5. **Validate and repair.** Read [validation-and-learning.md](references/validation-and-learning.md) for package isolation, generation trials, appearance, writing quality, meaning and revision learning. Exercise the actual delivered command. Repair the package and rerun the checks affected by a change. Do not claim visual fidelity from XML comparison alone.
 
@@ -43,7 +45,7 @@ package, include [LICENSE.md](LICENSE.md) and retain applicable attribution.
 Identify the copied components; do not imply that Legalcode owns the user's
 original content or that generating a skill removes restrictions on reused code.
 
-The generated folder contains `SKILL.md`, `template.docx`, `create_docx.py` and `references/runtime-compatibility.md`, plus the other references or examples justified by its work. Name it for the document type, using lowercase words and hyphens; match its frontmatter name to the folder. Keep operative standard wording in the template. References may use labelled illustrative excerpts without creating a second competing source of operative wording.
+The generated folder contains `SKILL.md`, the format-appropriate template and generator (`template.docx` / `create_docx.py` or `template.pptx` / `create_pptx.py`), and `references/runtime-compatibility.md`, plus the other references or examples justified by its work. Name it for the document type, using lowercase words and hyphens; match its frontmatter name to the folder. Keep operative standard wording in the template. References may use labelled illustrative excerpts without creating a second competing source of operative wording.
 
 The generated SKILL.md must make the professional-quality and new-matter boundaries explicit and state when to load each supporting file. It should work from the delivered folder without access to original client files. Optional original-file references belong in private local records; do not expose identifying paths in a shared package. Keep extraction methodology in this builder, not in every generated skill.
 
@@ -54,13 +56,13 @@ Put the result where requested; otherwise beside the sample folder. Update an ex
 - The folder and its references are complete, internally consistent and portable, and the generated instructions pass the skill-authoring check in [skill-authoring-practices.md](references/skill-authoring-practices.md).
 - A trial generated from the delivered folder exercises relevant fields, choices and prose. State which alternatives remain untested.
 - The supported house style is carried over, the writing meets the professional-quality standard, and meaning is preserved. Any material uncertainty remains explicit.
-- Review the whole package for old matter content, including DOCX XML, relationships and retained media; visible text alone is insufficient.
-- Inspect rendered pages using available suitable tools when appearance matters. If that is unavailable, report visual fidelity as unverified and identify the specific outstanding check.
+- Review the whole package for old matter content, including DOCX/PPTX XML, relationships and retained media; for presentations include notes, hidden slides, chart data and embedded files. Visible text alone is insufficient.
+- Inspect rendered pages or slides using available suitable tools when appearance matters. If that is unavailable, report visual fidelity as unverified and identify the specific outstanding check.
 - Hand over the folder, a trial draft, the evidence scope, actual verification, limitations and open decisions in the lawyer's language. Distinguish sample dates from dates of legal verification.
 
 ## Tools
 
-Before first use, read [runtime requirements](references/runtime-compatibility.md). Use an available Python 3.9+ launcher or the documented uv setup; do not assume `python3` is installed. The commands below use `python3` as an example launcher. Once the runtime is available, the scripts run locally without network access or third-party Python packages. They assist inspection and templating; they do not determine legal meaning, prove complete sanitisation or render Word pages. Detailed syntax and limitations are in [structure-and-choices.md](references/structure-and-choices.md); each command also supports `--help`.
+Before first use, read [runtime requirements](references/runtime-compatibility.md). Use an available Python 3.9+ launcher or the documented uv setup; do not assume `python3` is installed. The commands below use `python3` as an example launcher. Once the runtime is available, the scripts run locally without network access or third-party Python packages. They assist inspection and templating; they do not determine legal meaning, prove complete sanitisation or render pages or slides. Detailed syntax and limitations are in [structure-and-choices.md](references/structure-and-choices.md) and, for PPTX, [pptx-workflow.md](references/pptx-workflow.md); each command also supports `--help`.
 
 ```bash
 python3 scripts/inspect_docx.py sample.docx
@@ -69,6 +71,12 @@ python3 scripts/compare_samples.py a.docx b.docx --json comparison.json
 python3 scripts/make_template.py sample.docx output/template.docx --edits edits.json
 python3 scripts/inspect_docx.py --compare sample.docx output/template.docx
 python3 output/create_docx.py values.json trial.docx
+python3 scripts/inspect_pptx.py sample.pptx --text --include-notes
+python3 scripts/inspect_pptx.py sample.pptx --json private-inspection.json
+python3 scripts/compare_samples.py a.pptx b.pptx --json comparison.json
+python3 assets/create_pptx.py --template sample.pptx --replace edits.json output/template.pptx
+python3 output/create_pptx.py values.json trial.pptx
+python3 scripts/inspect_pptx.py --compare output/template.pptx trial.pptx
 ```
 
 When maintaining these helpers, run `python3 -m unittest discover -s tests -v`.

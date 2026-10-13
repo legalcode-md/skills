@@ -8,7 +8,7 @@ Prefer an approved blank precedent or maintained template over reconstructing on
 
 Inspect whether appearance comes from named styles, direct run formatting, tables, text boxes, sections, page breaks or fixed positioning. Inspect numbering, fields, repeated headers and footer relationships. The styles alone may not carry the form. Preserve approved firm branding; party identities vary with the matter. Where the intended firm identity is unresolved, keep an explicit placeholder rather than silently choosing one.
 
-The supplied helpers target ordinary DOCX packages using standard `word/document.xml` parts and conventional `w:` markup. Their text edits are not a general OOXML conversion engine. For unsupported structures, complex drawings, PDFs or other source types, use suitable available tools and document approximations. Prefer the source DOCX to reconstructing its PDF. Preserve originals and verify converted layout; do not label inferred PDF formatting an exact recovery.
+The DOCX helpers target ordinary packages using standard `word/document.xml` parts and conventional `w:` markup. For PPTX, use the separate helpers and read [pptx-workflow.md](pptx-workflow.md); the DOCX markers and editing rules below do not apply to presentations. The helpers are not a general OOXML conversion engine. For unsupported structures, complex drawings, PDFs or other source types, use suitable available tools and document approximations. Prefer the editable DOCX or PPTX source to reconstructing its PDF. Preserve originals and verify converted layout; do not label inferred PDF formatting an exact recovery.
 
 ## Decide what is reusable
 

@@ -2,6 +2,8 @@
 
 Adapt the fenced scaffold to the actual document in its language. Replace authoring placeholders and omit irrelevant sections before delivery. Keep the entrypoint concise; retain the professional-quality and matter boundaries even in a small form. Writing profiles, drafting rules and example inputs are conditional: create them with learned, document-specific content when useful, or put brief guidance in the root and remove their links. Do not ship broken links, empty sections or this authoring preface.
 
+For a PowerPoint drafting skill, adapt the scaffold using [pptx-workflow.md](../references/pptx-workflow.md): use `template.pptx`, `create_pptx.py` and `.pptx` output; preserve source backgrounds, colours, fonts, themes, masters, layouts and approved graphics in the template. Specify slide roles, inherited house layouts for new slides, notes, required fonts and rendering checks. Link substantial learned design rules when bundled. Replace the DOCX-specific choice/list, highlighting and inline-emphasis guidance with the actual PPTX generator's capabilities and limitations. Do not carry unsupported Word behaviour into a presentation skill.
+
 While adapting it, apply the builder's [skill-authoring practices](../references/skill-authoring-practices.md). Copy the builder's [runtime requirements](../references/runtime-compatibility.md) into the generated skill's `references/runtime-compatibility.md` so first-use instructions work without the builder. Use the sections the document needs; the scaffold is not a fixed outline or length target. The resulting skill should implement these principles without copying the builder's authoring checklist into its drafting workflow.
 
 ```markdown

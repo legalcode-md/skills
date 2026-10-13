@@ -183,7 +183,7 @@ def generate(root, move=False):
               "## Featured skills", "",
               "| Skill | What it does |",
               "| --- | --- |",
-              f"| [Document to Skills]({by_name['legalcode-document-to-skill']['path']}/) | Turn example legal documents into a reusable drafting skill that preserves layout, structure, tone and wording while removing matter-specific content. |",
+              f"| [Document to Skills]({by_name['legalcode-document-to-skill']['path']}/) | Turn example legal documents, including Word (DOCX) and PowerPoint (PPTX), into a reusable drafting skill that preserves layout, structure, tone and wording while removing matter-specific content. |",
               f"| [Tabulate]({by_name['legalcode-tabulate']['path']}/) | Turn a document collection into a traceable Excel workbook with a summary, topic-specific sheets, source references and visible uncertainty. Infer useful fields from the documents without requiring predefined columns. |", "",
               "Install either skill:", "", "```sh",
               "npx skills add legalcode-md/skills --skill legalcode-document-to-skill --full-depth",

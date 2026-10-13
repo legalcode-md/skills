@@ -1,7 +1,7 @@
 # Runtime requirements
 
 Use the user's chosen agent and available tools. Creating a template and filling it
-requires Python 3.9+ and the standard library. Do not assume Python is installed on
+with the supplied DOCX or PPTX text helpers requires Python 3.9+ and the standard library. Do not assume Python is installed on
 the user's computer. Check the environment where the helpers will actually run;
 an available agent runtime may already provide it. The supplied scripts run locally;
 no Legalcode connection or particular model is required for extraction or generation.

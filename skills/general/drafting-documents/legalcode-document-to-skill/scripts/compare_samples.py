@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Align several samples of one document type and sort their text by how it behaves.
 
-Usage:  python3 compare_samples.py <a.docx> <b.docx> [c.pdf d.txt ...]
+Usage:  python3 compare_samples.py <a.docx|a.pptx> <b.docx|b.pptx> [c.pdf d.txt ...]
                                    [--json out.json] [--full] [--base N] [--min-sim 0.55]
                                    [--unit paragraph|sentence]
 
@@ -24,7 +24,10 @@ up and show as ONLY in each sample; pair those by reading. A paragraph that move
 as missing in one place and extra in another. With a single sample there is nothing to
 compare: skip this script and sort matter details from standard wording by reading.
 
-Hidden text and tracked deletions are left out. Standard library only; makes no network
+DOCX hidden text and tracked deletions are left out. PPTX comparison uses slide text
+in presentation order, excluding hidden slides and speaker notes. It does not compare
+visual layout, chart data or text within images; inspect notes and rendered slides separately.
+Standard library only; makes no network
 calls. The output holds the samples' full text: keep it in the working folder, not in a
 skill folder or a repository.
 """
