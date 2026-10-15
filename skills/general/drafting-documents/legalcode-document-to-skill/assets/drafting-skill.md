@@ -42,17 +42,13 @@ Every new-matter fact, name, figure, authority, argument and conclusion must com
 
 ## Create the document
 
-Before first use, read [runtime requirements](references/runtime-compatibility.md). It covers Windows machines with neither Python nor uv installed, including IT-managed installation restrictions. Reuse a working Python 3.9+ interpreter; `python3` below is an example launcher, not an assumption about the machine.
+Before first use, read [runtime requirements](references/runtime-compatibility.md). Reuse an available Python 3.9+ interpreter, or let the platform choose its normal supported setup method within existing permissions. `python3` below is an example launcher, not an assumption about the machine.
 
 Run these commands from this skill's folder, using explicit paths for the new matter's input and output:
 
     python3 create_docx.py --list
     python3 create_docx.py --text
     python3 create_docx.py values.json new-draft.docx
-
-With uv, the equivalent generation command is:
-
-    uv run --no-project --python 3.12 python create_docx.py values.json new-draft.docx
 
 Python 3.9+ and the standard library are sufficient for generation. Missing values remain yellow blanks; undecided choices retain their markers. Inspect the output report and resolve or disclose them. Existing outputs are protected; use a fresh filename, or --force only when replacing that output is intended. The template cannot be overwritten.
 

@@ -62,7 +62,7 @@ Put the result where requested; otherwise beside the sample folder. Update an ex
 
 ## Tools
 
-Before first use, read [runtime requirements](references/runtime-compatibility.md). Use an available Python 3.9+ launcher or the documented uv setup; do not assume `python3` is installed. The commands below use `python3` as an example launcher. Once the runtime is available, the scripts run locally without network access or third-party Python packages. They assist inspection and templating; they do not determine legal meaning, prove complete sanitisation or render pages or slides. Detailed syntax and limitations are in [structure-and-choices.md](references/structure-and-choices.md) and, for PPTX, [pptx-workflow.md](references/pptx-workflow.md); each command also supports `--help`.
+Before first use, read [runtime requirements](references/runtime-compatibility.md). Use an available Python 3.9+ interpreter; if needed, let the platform choose its normal supported setup method. Do not assume `python3` is installed. The commands below use `python3` as an example launcher. Once the runtime is available, the scripts run locally without network access or third-party Python packages. They assist inspection and templating; they do not determine legal meaning, prove complete sanitisation or render pages or slides. Detailed syntax and limitations are in [structure-and-choices.md](references/structure-and-choices.md) and, for PPTX, [pptx-workflow.md](references/pptx-workflow.md); each command also supports `--help`.
 
 ```bash
 python3 scripts/inspect_docx.py sample.docx
