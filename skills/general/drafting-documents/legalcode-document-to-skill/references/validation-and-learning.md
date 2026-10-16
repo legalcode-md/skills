@@ -22,6 +22,8 @@ A held-back sample can be useful if sufficient representative evidence remains. 
 
 A fresh reader or separate agent can test whether the package is self-contained when delegation is available and authorised. Otherwise use a focused self-check and state that it was not independent. Record actual gaps without a quota. A tester's suggestion is feedback, not evidence of house practice. Resolve it against the sources or the lawyer's instruction.
 
+Separately, exercise the generated skill's required document review on the trial draft. The two reviewers assess the same draft independently: one verifies evidence and meaning; the other critiques reasoning, writing and presentation. Confirm that the drafter waits for both reports, evaluates their findings, applies supported improvements and rechecks affected parts before handover. Package review does not replace review of the document. If delegation is unavailable, prohibited or incomplete, exercise the stated fallback and record the limitation; do not claim the two-subagent workflow was tested. Check that the handover accurately distinguishes completed verification from unresolved issues and untested rendering.
+
 Evaluate these properties separately:
 
 | Property | Evidence |

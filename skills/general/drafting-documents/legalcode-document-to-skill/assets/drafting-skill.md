@@ -1,6 +1,6 @@
 # Authoring scaffold for a generated drafting skill
 
-Adapt the fenced scaffold to the actual document in its language. Replace authoring placeholders and omit irrelevant sections before delivery. Keep the entrypoint concise; retain the professional-quality and matter boundaries even in a small form. Writing profiles, drafting rules and example inputs are conditional: create them with learned, document-specific content when useful, or put brief guidance in the root and remove their links. Do not ship broken links, empty sections or this authoring preface.
+Adapt the fenced scaffold to the actual document in its language. Replace authoring placeholders and omit irrelevant sections before delivery. Keep the entrypoint concise; retain the professional-quality and matter boundaries and the independent document review workflow even in a small form. Writing profiles, drafting rules and example inputs are conditional: create them with learned, document-specific content when useful, or put brief guidance in the root and remove their links. Do not ship broken links, empty sections or this authoring preface.
 
 For a PowerPoint drafting skill, adapt the scaffold using [pptx-workflow.md](../references/pptx-workflow.md): use `template.pptx`, `create_pptx.py` and `.pptx` output; preserve source backgrounds, colours, fonts, themes, masters, layouts and approved graphics in the template. Specify slide roles, inherited house layouts for new slides, notes, required fonts and rendering checks. Link substantial learned design rules when bundled. Replace the DOCX-specific choice/list, highlighting and inline-emphasis guidance with the actual PPTX generator's capabilities and limitations. Do not carry unsupported Word behaviour into a presentation skill.
 
@@ -56,11 +56,20 @@ Python 3.9+ and the standard library are sufficient for generation. Missing valu
 
 ## Review and handover
 
-Check the filled values, identities, agreement, defined terms, amounts, references, clause choices and any outstanding issue relevant to this document. Verify authorities when used; a sample's date does not establish current law. Check that style edits preserve attribution, certainty, obligations, conditions, exceptions and conclusions.
+After creating or revising the document, and before handover, spawn two independent review subagents using the platform's available delegation tools. Run them in parallel where supported, otherwise sequentially. Give each the same draft version, the brief, relevant new-matter evidence, and the template and writing guidance needed for its review. Keep review within the authorised matter context; do not share the drafter's self-assessment or the other reviewer's findings before their initial reports. Assign these roles:
+
+- **Verifier:** Check facts, identities, dates, figures, calculations, defined terms, internal references, clause choices and legal assertions against the supplied evidence or authorised, verified research. Check that attribution, certainty, obligations, conditions, exceptions and conclusions remain supported. Identify missing evidence and checks that could not be completed; a sample's date does not establish current law.
+- **Critical editor:** Challenge reasoning, omissions, ambiguity, inconsistencies and plausible adverse readings. Propose concrete improvements to clarity, structure, precision, house voice and presentation without changing the instructed position, approved wording or legal effect. Inspect the rendered output when available; text alone cannot establish layout quality.
+
+Reviewers return findings rather than editing the shared draft. Each finding should identify its location, importance, supporting evidence or reasoning, and a proposed correction; distinguish verified defects from suggestions and unresolved questions. No finding quota is required. Reviewers must state what they actually checked and could not verify, and must not recursively delegate their review.
+
+Wait for both reports and assess each finding against the brief and sources. Resolve disagreements on evidence, not reviewer consensus. Apply supported corrections and improvements, then recheck affected content and rendering. Return materially changed or disputed parts to the relevant reviewer when needed; avoid an open-ended polishing loop. Keep unresolved material issues explicit rather than inventing facts or legal choices. The drafting agent remains responsible for the final document.
+
+If subagents are unavailable or prohibited by the user's instructions or environment, perform the two review passes yourself and disclose that independent review did not occur. If a reviewer fails, complete available checks and disclose the missing review. Never label self-review or an incomplete review as independent verification.
 
 Inspect the rendered output with available suitable tools for <the form's material layout features>. Preserve approved letterhead, fonts, spacing, numbering and signature structure unless the user requests a change. State when visual fidelity has not been checked.
 
-No instruction note, example value or unresolved marker belongs in a finished document. An incomplete draft may retain visible blanks with a clear handover. Deliver the draft and a short note on outstanding information, choices made and material limitations. Sending, signing or filing requires the user's authorisation and the responsible lawyer's review.
+No instruction note, example value or unresolved marker belongs in a finished document. An incomplete draft may retain visible blanks with a clear handover. Deliver the revised draft and a short note on reviews actually completed, material improvements, outstanding information, choices made and limitations. Sending, signing or filing requires the user's authorisation and the responsible lawyer's review.
 
 ## Evidence and maintenance
 
